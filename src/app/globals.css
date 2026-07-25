@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/*
+ * Palette drawn from the dhyāna verses themselves, which describe the goddess
+ * as sindūra-red at dawn, robed in gold, seated among red lotuses. Dark is the
+ * default because the site is used for chanting practice, often early.
+ */
+:root {
+  --ink: #f4ece2;
+  --ink-muted: #b6a693;
+  --ink-faint: #7d7062;
+
+  --surface-0: #100b0c;
+  --surface-1: #1a1214;
+  --surface-2: #241a1c;
+  --surface-3: #2f2325;
+
+  --sindura: #d94f3d;
+  --sindura-soft: #e8836f;
+  --gold: #d9a441;
+  --gold-soft: #ecc678;
+  --lotus: #c76b8a;
+  --leaf: #7f9b6a;
+
+  --border: #372a2c;
+  --border-strong: #4a3739;
+
+  --radius: 0.75rem;
+}
+
+[data-theme="light"] {
+  --ink: #2a1f1c;
+  --ink-muted: #6b5a52;
+  --ink-faint: #93827a;
+
+  --surface-0: #fbf6ee;
+  --surface-1: #f5ede1;
+  --surface-2: #efe3d3;
+  --surface-3: #e7d7c3;
+
+  --sindura: #b83a28;
+  --sindura-soft: #c9563f;
+  --gold: #a8761c;
+  --gold-soft: #c39337;
+  --lotus: #a4415f;
+  --leaf: #5c7a48;
+
+  --border: #ddcbb4;
+  --border-strong: #c9b295;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+
+  --color-sindura: var(--sindura);
+  --color-sindura-soft: var(--sindura-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-lotus: var(--lotus);
+  --color-leaf: var(--leaf);
+
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-cormorant);
+  --font-deva: var(--font-deva);
+  --font-iast: var(--font-iast);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* A faint radial warmth so large dark areas don't read as flat black. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(60rem 40rem at 50% -10%, color-mix(in oklab, var(--sindura) 12%, transparent), transparent 70%),
+    radial-gradient(40rem 30rem at 100% 100%, color-mix(in oklab, var(--gold) 7%, transparent), transparent 70%);
+}
+
+/* Devanagari needs more line height and a slightly larger optical size. */
+.deva {
+  font-family: var(--font-deva), serif;
+  line-height: 1.9;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.iast {
+  font-family: var(--font-iast), serif;
+  font-variant-ligatures: none;
+}
+
+.display {
+  font-family: var(--font-cormorant), serif;
+}
+
+/* Interactive text: words and syllables you can tap to inspect. */
+.tappable {
+  cursor: pointer;
+  border-radius: 0.3em;
+  padding: 0.02em 0.1em;
+  margin: 0 -0.06em;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease,
+    box-shadow 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tappable:hover {
+  background-color: color-mix(in oklab, var(--gold) 20%, transparent);
+}
+
+.tappable[data-active="true"] {
+  background-color: color-mix(in oklab, var(--sindura) 32%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--sindura) 55%, transparent);
+}
+
+.tappable[data-linked="true"] {
+  background-color: color-mix(in oklab, var(--gold) 22%, transparent);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--sindura) 40%, transparent);
+}
+
+/* Scrollbars, so panels don't get chrome that fights the palette. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

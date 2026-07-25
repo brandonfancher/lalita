@@ -1,0 +1,2378 @@
+[
+  {
+    "id": "000",
+    "kind": "dhyana",
+    "number": null,
+    "title": "Dhyāna",
+    "subtitle": "The meditation verses",
+    "previewDeva": "सिन्दूरारुण विग्रहां त्रिनयनां माणिक्यमौलि स्फुरत्",
+    "previewIast": "sindūrāruṇa vigrahāṃ trinayanāṃ māṇikyamauli sphurat",
+    "namaCount": 0
+  },
+  {
+    "id": "001",
+    "kind": "shloka",
+    "number": 1,
+    "title": "Shloka 1",
+    "namaRange": [
+      1,
+      5
+    ],
+    "previewDeva": "श्रीमाता श्रीमहाराज्ञी श्रीमत्सिंहासनेश्वरी",
+    "previewIast": "śrīmātā śrīmahārājñī śrīmatsiṃhāsaneśvarī",
+    "namaCount": 5
+  },
+  {
+    "id": "002",
+    "kind": "shloka",
+    "number": 2,
+    "title": "Shloka 2",
+    "namaRange": [
+      6,
+      9
+    ],
+    "previewDeva": "उद्यद्भानुसहस्राभा चतुर्बाहुसमन्विता",
+    "previewIast": "udyadbhānusahasrābhā caturbāhusamanvitā",
+    "namaCount": 4
+  },
+  {
+    "id": "003",
+    "kind": "shloka",
+    "number": 3,
+    "title": "Shloka 3",
+    "namaRange": [
+      10,
+      12
+    ],
+    "previewDeva": "मनोरूपेक्षुकोदण्डा पञ्चतन्मात्रसायका",
+    "previewIast": "manorūpekṣukodaṇḍā pañcatanmātrasāyakā",
+    "namaCount": 3
+  },
+  {
+    "id": "004",
+    "kind": "shloka",
+    "number": 4,
+    "title": "Shloka 4",
+    "namaRange": [
+      13,
+      14
+    ],
+    "previewDeva": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा",
+    "previewIast": "campakāśokapunnāgasaugandhikalasatkacā",
+    "namaCount": 2
+  },
+  {
+    "id": "005",
+    "kind": "shloka",
+    "number": 5,
+    "title": "Shloka 5",
+    "namaRange": [
+      15,
+      16
+    ],
+    "previewDeva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+    "previewIast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+    "namaCount": 2
+  },
+  {
+    "id": "006",
+    "kind": "shloka",
+    "number": 6,
+    "title": "Shloka 6",
+    "namaRange": [
+      17,
+      18
+    ],
+    "previewDeva": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका",
+    "previewIast": "vadanasmaramāṅgalyagṛhatoraṇacillikā",
+    "namaCount": 2
+  },
+  {
+    "id": "007",
+    "kind": "shloka",
+    "number": 7,
+    "title": "Shloka 7",
+    "namaRange": [
+      19,
+      20
+    ],
+    "previewDeva": "नवचम्पकपुष्पाभनासादण्डविराजिता",
+    "previewIast": "navacampakapuṣpābhanāsādaṇḍavirājitā",
+    "namaCount": 2
+  },
+  {
+    "id": "008",
+    "kind": "shloka",
+    "number": 8,
+    "title": "Shloka 8",
+    "namaRange": [
+      21,
+      22
+    ],
+    "previewDeva": "कदम्बमञ्जरीकॢप्तकर्णपूरमनोहरा",
+    "previewIast": "kadambamañjarīkḷptakarṇapūramanoharā",
+    "namaCount": 2
+  },
+  {
+    "id": "009",
+    "kind": "shloka",
+    "number": 9,
+    "title": "Shloka 9",
+    "namaRange": [
+      23,
+      24
+    ],
+    "previewDeva": "पद्मरागशिलादर्शपरिभाविकपोलभूः",
+    "previewIast": "padmarāgaśilādarśaparibhāvikapolabhūḥ",
+    "namaCount": 2
+  },
+  {
+    "id": "010",
+    "kind": "shloka",
+    "number": 10,
+    "title": "Shloka 10",
+    "namaRange": [
+      25,
+      26
+    ],
+    "previewDeva": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला",
+    "previewIast": "śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā",
+    "namaCount": 2
+  },
+  {
+    "id": "011",
+    "kind": "shloka",
+    "number": 11,
+    "title": "Shloka 11",
+    "namaRange": [
+      27,
+      28
+    ],
+    "previewDeva": "निजसल्लापमाधुर्यविनिर्भर्त्सितकच्छपी",
+    "previewIast": "nijasallāpamādhuryavinirbhartsitakacchapī",
+    "namaCount": 2
+  },
+  {
+    "id": "012",
+    "kind": "shloka",
+    "number": 12,
+    "title": "Shloka 12",
+    "namaRange": [
+      29,
+      30
+    ],
+    "previewDeva": "अनाकलितसादृश्यचिबुकश्रीविराजिता",
+    "previewIast": "anākalitasādṛśyacibukaśrīvirājitā",
+    "namaCount": 2
+  },
+  {
+    "id": "013",
+    "kind": "shloka",
+    "number": 13,
+    "title": "Shloka 13",
+    "namaRange": [
+      31,
+      32
+    ],
+    "previewDeva": "कनकाङ्गदकेयूरकमनीयभुजान्विता",
+    "previewIast": "kanakāṅgadakeyūrakamanīyabhujānvitā",
+    "namaCount": 2
+  },
+  {
+    "id": "014",
+    "kind": "shloka",
+    "number": 14,
+    "title": "Shloka 14",
+    "namaRange": [
+      33,
+      34
+    ],
+    "previewDeva": "कामेश्वरप्रेमरत्नमणिप्रतिपणस्तनी",
+    "previewIast": "kāmeśvarapremaratnamaṇipratipaṇastanī",
+    "namaCount": 2
+  },
+  {
+    "id": "015",
+    "kind": "shloka",
+    "number": 15,
+    "title": "Shloka 15",
+    "namaRange": [
+      35,
+      36
+    ],
+    "previewDeva": "लक्ष्यरोमलताधारतासमुन्नेयमध्यमा",
+    "previewIast": "lakṣyaromalatādhāratāsamunneyamadhyamā",
+    "namaCount": 2
+  },
+  {
+    "id": "016",
+    "kind": "shloka",
+    "number": 16,
+    "title": "Shloka 16",
+    "namaRange": [
+      37,
+      38
+    ],
+    "previewDeva": "अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतटी",
+    "previewIast": "aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭī",
+    "namaCount": 2
+  },
+  {
+    "id": "017",
+    "kind": "shloka",
+    "number": 17,
+    "title": "Shloka 17",
+    "namaRange": [
+      39,
+      40
+    ],
+    "previewDeva": "कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्विता",
+    "previewIast": "kāmeśajñātasaubhāgyamārdavorudvayānvitā",
+    "namaCount": 2
+  },
+  {
+    "id": "018",
+    "kind": "shloka",
+    "number": 18,
+    "title": "Shloka 18",
+    "namaRange": [
+      41,
+      43
+    ],
+    "previewDeva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+    "previewIast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+    "namaCount": 3
+  },
+  {
+    "id": "019",
+    "kind": "shloka",
+    "number": 19,
+    "title": "Shloka 19",
+    "namaRange": [
+      44,
+      45
+    ],
+    "previewDeva": "नखदीधितिसञ्छन्ननमज्जनतमोगुणा",
+    "previewIast": "nakhadīdhitisañchannanamajjanatamoguṇā",
+    "namaCount": 2
+  },
+  {
+    "id": "020",
+    "kind": "shloka",
+    "number": 20,
+    "title": "Shloka 20",
+    "namaRange": [
+      46,
+      48
+    ],
+    "previewDeva": "सिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजा",
+    "previewIast": "siñjānamaṇimañjīramaṇḍitaśrīpadāmbujā",
+    "namaCount": 3
+  },
+  {
+    "id": "021",
+    "kind": "shloka",
+    "number": 21,
+    "title": "Shloka 21",
+    "namaRange": [
+      49,
+      54
+    ],
+    "previewDeva": "सर्वारुणाऽनवद्याङ्गी सर्वाभरणभूषिता",
+    "previewIast": "sarvāruṇā'navadyāṅgī sarvābharaṇabhūṣitā",
+    "namaCount": 6
+  },
+  {
+    "id": "022",
+    "kind": "shloka",
+    "number": 22,
+    "title": "Shloka 22",
+    "namaRange": [
+      55,
+      58
+    ],
+    "previewDeva": "सुमेरुमध्यशृङ्गस्था श्रीमन्नगरनायिका",
+    "previewIast": "sumerumadhyaśṛṅgasthā śrīmannagaranāyikā",
+    "namaCount": 4
+  },
+  {
+    "id": "023",
+    "kind": "shloka",
+    "number": 23,
+    "title": "Shloka 23",
+    "namaRange": [
+      59,
+      63
+    ],
+    "previewDeva": "महापद्माटवीसंस्था कदम्बवनवासिनी",
+    "previewIast": "mahāpadmāṭavīsaṃsthā kadambavanavāsinī",
+    "namaCount": 5
+  },
+  {
+    "id": "024",
+    "kind": "shloka",
+    "number": 24,
+    "title": "Shloka 24",
+    "namaRange": [
+      64,
+      65
+    ],
+    "previewDeva": "देवर्षिगणसङ्घातस्तूयमानात्मवैभवा",
+    "previewIast": "devarṣigaṇasaṅghātastūyamānātmavaibhavā",
+    "namaCount": 2
+  },
+  {
+    "id": "025",
+    "kind": "shloka",
+    "number": 25,
+    "title": "Shloka 25",
+    "namaRange": [
+      66,
+      67
+    ],
+    "previewDeva": "सम्पत्करीसमारूढसिन्धुरव्रजसेविता",
+    "previewIast": "sampatkarīsamārūḍhasindhuravrajasevitā",
+    "namaCount": 2
+  },
+  {
+    "id": "026",
+    "kind": "shloka",
+    "number": 26,
+    "title": "Shloka 26",
+    "namaRange": [
+      68,
+      69
+    ],
+    "previewDeva": "चक्रराजरथारूढसर्वायुधपरिष्कृता",
+    "previewIast": "cakrarājarathārūḍhasarvāyudhapariṣkṛtā",
+    "namaCount": 2
+  },
+  {
+    "id": "027",
+    "kind": "shloka",
+    "number": 27,
+    "title": "Shloka 27",
+    "namaRange": [
+      70,
+      71
+    ],
+    "previewDeva": "किरिचक्ररथारूढदण्डनाथापुरस्कृता",
+    "previewIast": "kiricakrarathārūḍhadaṇḍanāthāpuraskṛtā",
+    "namaCount": 2
+  },
+  {
+    "id": "028",
+    "kind": "shloka",
+    "number": 28,
+    "title": "Shloka 28",
+    "namaRange": [
+      72,
+      73
+    ],
+    "previewDeva": "भण्डसैन्यवधोद्युक्तशक्तिविक्रमहर्षिता",
+    "previewIast": "bhaṇḍasainyavadhodyuktaśaktivikramaharṣitā",
+    "namaCount": 2
+  },
+  {
+    "id": "029",
+    "kind": "shloka",
+    "number": 29,
+    "title": "Shloka 29",
+    "namaRange": [
+      74,
+      75
+    ],
+    "previewDeva": "भण्डपुत्रवधोद्युक्तबालाविक्रमनन्दिता",
+    "previewIast": "bhaṇḍaputravadhodyuktabālāvikramananditā",
+    "namaCount": 2
+  },
+  {
+    "id": "030",
+    "kind": "shloka",
+    "number": 30,
+    "title": "Shloka 30",
+    "namaRange": [
+      76,
+      77
+    ],
+    "previewDeva": "विशुक्रप्राणहरणवाराहीवीर्यनन्दिता",
+    "previewIast": "viśukraprāṇaharaṇavārāhīvīryananditā",
+    "namaCount": 2
+  },
+  {
+    "id": "031",
+    "kind": "shloka",
+    "number": 31,
+    "title": "Shloka 31",
+    "namaRange": [
+      78,
+      79
+    ],
+    "previewDeva": "महागणेशनिर्भिन्नविघ्नयन्त्रप्रहर्षिता",
+    "previewIast": "mahāgaṇeśanirbhinnavighnayantrapraharṣitā",
+    "namaCount": 2
+  },
+  {
+    "id": "032",
+    "kind": "shloka",
+    "number": 32,
+    "title": "Shloka 32",
+    "namaRange": [
+      80,
+      81
+    ],
+    "previewDeva": "कराङ्गुलिनखोत्पन्ननारायणदशाकृतिः",
+    "previewIast": "karāṅgulinakhotpannanārāyaṇadaśākṛtiḥ",
+    "namaCount": 2
+  },
+  {
+    "id": "033",
+    "kind": "shloka",
+    "number": 33,
+    "title": "Shloka 33",
+    "namaRange": [
+      82,
+      83
+    ],
+    "previewDeva": "कामेश्वरास्त्रनिर्दग्धसभण्डासुरशून्यका",
+    "previewIast": "kāmeśvarāstranirdagdhasabhaṇḍāsuraśūnyakā",
+    "namaCount": 2
+  },
+  {
+    "id": "034",
+    "kind": "shloka",
+    "number": 34,
+    "title": "Shloka 34",
+    "namaRange": [
+      84,
+      85
+    ],
+    "previewDeva": "हरनेत्राग्निसन्दग्धकामसञ्जीवनौषधिः",
+    "previewIast": "haranetrāgnisandagdhakāmasañjīvanauṣadhiḥ",
+    "namaCount": 2
+  },
+  {
+    "id": "035",
+    "kind": "shloka",
+    "number": 35,
+    "title": "Shloka 35",
+    "namaRange": [
+      86,
+      87
+    ],
+    "previewDeva": "कण्ठाधःकटिपर्यन्तमध्यकूटस्वरूपिणी",
+    "previewIast": "kaṇṭhādhaḥkaṭiparyantamadhyakūṭasvarūpiṇī",
+    "namaCount": 2
+  },
+  {
+    "id": "036",
+    "kind": "shloka",
+    "number": 36,
+    "title": "Shloka 36",
+    "namaRange": [
+      88,
+      91
+    ],
+    "previewDeva": "मूलमन्त्रात्मिका मूलकूटत्रयकलेवरा",
+    "previewIast": "mūlamantrātmikā mūlakūṭatrayakalevarā",
+    "namaCount": 4
+  },
+  {
+    "id": "037",
+    "kind": "shloka",
+    "number": 37,
+    "title": "Shloka 37",
+    "namaRange": [
+      92,
+      98
+    ],
+    "previewDeva": "कुलाङ्गना कुलान्तस्था कौलिनी कुलयोगिनी",
+    "previewIast": "kulāṅganā kulāntasthā kaulinī kulayoginī",
+    "namaCount": 7
+  },
+  {
+    "id": "038",
+    "kind": "shloka",
+    "number": 38,
+    "title": "Shloka 38",
+    "namaRange": [
+      99,
+      102
+    ],
+    "previewDeva": "मूलाधारैकनिलया ब्रह्मग्रन्थिविभेदिनी",
+    "previewIast": "mūlādhāraikanilayā brahmagranthivibhedinī",
+    "namaCount": 4
+  },
+  {
+    "id": "039",
+    "kind": "shloka",
+    "number": 39,
+    "title": "Shloka 39",
+    "namaRange": [
+      103,
+      106
+    ],
+    "previewDeva": "आज्ञाचक्रान्तरालस्था रुद्रग्रन्थिविभेदिनी",
+    "previewIast": "ājñācakrāntarālasthā rudragranthivibhedinī",
+    "namaCount": 4
+  },
+  {
+    "id": "040",
+    "kind": "shloka",
+    "number": 40,
+    "title": "Shloka 40",
+    "namaRange": [
+      107,
+      111
+    ],
+    "previewDeva": "तडिल्लतासमरुचिः षट्चक्रोपरिसंस्थिता",
+    "previewIast": "taḍillatāsamaruciḥ ṣaṭcakroparisaṃsthitā",
+    "namaCount": 5
+  },
+  {
+    "id": "041",
+    "kind": "shloka",
+    "number": 41,
+    "title": "Shloka 41",
+    "namaRange": [
+      112,
+      117
+    ],
+    "previewDeva": "भवानी भावनागम्या भवारण्यकुठारिका",
+    "previewIast": "bhavānī bhāvanāgamyā bhavāraṇyakuṭhārikā",
+    "namaCount": 6
+  },
+  {
+    "id": "042",
+    "kind": "shloka",
+    "number": 42,
+    "title": "Shloka 42",
+    "namaRange": [
+      118,
+      125
+    ],
+    "previewDeva": "भक्तिप्रिया भक्तिगम्या भक्तिवश्या भयापहा",
+    "previewIast": "bhaktipriyā bhaktigamyā bhaktivaśyā bhayāpahā",
+    "namaCount": 8
+  },
+  {
+    "id": "043",
+    "kind": "shloka",
+    "number": 43,
+    "title": "Shloka 43",
+    "namaRange": [
+      126,
+      133
+    ],
+    "previewDeva": "शाङ्करी श्रीकरी साध्वी शरच्चन्द्रनिभानना",
+    "previewIast": "śāṅkarī śrīkarī sādhvī śaraccandranibhānanā",
+    "namaCount": 8
+  },
+  {
+    "id": "044",
+    "kind": "shloka",
+    "number": 44,
+    "title": "Shloka 44",
+    "namaRange": [
+      134,
+      143
+    ],
+    "previewDeva": "निर्लेपा निर्मला नित्या निराकारा निराकुला",
+    "previewIast": "nirlepā nirmalā nityā nirākārā nirākulā",
+    "namaCount": 10
+  },
+  {
+    "id": "045",
+    "kind": "shloka",
+    "number": 45,
+    "title": "Shloka 45",
+    "namaRange": [
+      144,
+      151
+    ],
+    "previewDeva": "नित्यमुक्ता निर्विकारा निष्प्रपञ्चा निराश्रया",
+    "previewIast": "nityamuktā nirvikārā niṣprapañcā nirāśrayā",
+    "namaCount": 8
+  },
+  {
+    "id": "046",
+    "kind": "shloka",
+    "number": 46,
+    "title": "Shloka 46",
+    "namaRange": [
+      152,
+      159
+    ],
+    "previewDeva": "निष्कारणा निष्कलङ्का निरुपाधिर्निरीश्वरा",
+    "previewIast": "niṣkāraṇā niṣkalaṅkā nirupādhirnirīśvarā",
+    "namaCount": 8
+  },
+  {
+    "id": "047",
+    "kind": "shloka",
+    "number": 47,
+    "title": "Shloka 47",
+    "namaRange": [
+      160,
+      167
+    ],
+    "previewDeva": "निश्चिन्ता निरहङ्कारा निर्मोहा मोहनाशिनी",
+    "previewIast": "niścintā nirahaṅkārā nirmohā mohanāśinī",
+    "namaCount": 8
+  },
+  {
+    "id": "048",
+    "kind": "shloka",
+    "number": 48,
+    "title": "Shloka 48",
+    "namaRange": [
+      168,
+      175
+    ],
+    "previewDeva": "निष्क्रोधा क्रोधशमनी निर्लोभा लोभनाशिनी",
+    "previewIast": "niṣkrodhā krodhaśamanī nirlobhā lobhanāśinī",
+    "namaCount": 8
+  },
+  {
+    "id": "049",
+    "kind": "shloka",
+    "number": 49,
+    "title": "Shloka 49",
+    "namaRange": [
+      176,
+      183
+    ],
+    "previewDeva": "निर्विकल्पा निराबाधा निर्भेदा भेदनाशिनी",
+    "previewIast": "nirvikalpā nirābādhā nirbhedā bhedanāśinī",
+    "namaCount": 8
+  },
+  {
+    "id": "050",
+    "kind": "shloka",
+    "number": 50,
+    "title": "Shloka 50",
+    "namaRange": [
+      184,
+      192
+    ],
+    "previewDeva": "निस्तुला नीलचिकुरा निरपाया निरत्यया",
+    "previewIast": "nistulā nīlacikurā nirapāyā niratyayā",
+    "namaCount": 9
+  },
+  {
+    "id": "051",
+    "kind": "shloka",
+    "number": 51,
+    "title": "Shloka 51",
+    "namaRange": [
+      193,
+      198
+    ],
+    "previewDeva": "दुष्टदूरा दुराचारशमनी दोषवर्जिता",
+    "previewIast": "duṣṭadūrā durācāraśamanī doṣavarjitā",
+    "namaCount": 6
+  },
+  {
+    "id": "052",
+    "kind": "shloka",
+    "number": 52,
+    "title": "Shloka 52",
+    "namaRange": [
+      199,
+      204
+    ],
+    "previewDeva": "सर्वशक्तिमयी सर्वमङ्गला सद्गतिप्रदा",
+    "previewIast": "sarvaśaktimayī sarvamaṅgalā sadgatipradā",
+    "namaCount": 6
+  },
+  {
+    "id": "053",
+    "kind": "shloka",
+    "number": 53,
+    "title": "Shloka 53",
+    "namaRange": [
+      205,
+      211
+    ],
+    "previewDeva": "सर्वयन्त्रात्मिका सर्वतन्त्ररूपा मनोन्मनी",
+    "previewIast": "sarvayantrātmikā sarvatantrarūpā manonmanī",
+    "namaCount": 7
+  },
+  {
+    "id": "054",
+    "kind": "shloka",
+    "number": 54,
+    "title": "Shloka 54",
+    "namaRange": [
+      212,
+      218
+    ],
+    "previewDeva": "महारूपा महापूज्या महापातकनाशिनी",
+    "previewIast": "mahārūpā mahāpūjyā mahāpātakanāśinī",
+    "namaCount": 7
+  },
+  {
+    "id": "055",
+    "kind": "shloka",
+    "number": 55,
+    "title": "Shloka 55",
+    "namaRange": [
+      219,
+      225
+    ],
+    "previewDeva": "महाभोगा महैश्वर्या महावीर्या महाबला",
+    "previewIast": "mahābhogā mahaiśvaryā mahāvīryā mahābalā",
+    "namaCount": 7
+  },
+  {
+    "id": "056",
+    "kind": "shloka",
+    "number": 56,
+    "title": "Shloka 56",
+    "namaRange": [
+      226,
+      231
+    ],
+    "previewDeva": "महातन्त्रा महामन्त्रा महायन्त्रा महासना",
+    "previewIast": "mahātantrā mahāmantrā mahāyantrā mahāsanā",
+    "namaCount": 6
+  },
+  {
+    "id": "057",
+    "kind": "shloka",
+    "number": 57,
+    "title": "Shloka 57",
+    "namaRange": [
+      232,
+      234
+    ],
+    "previewDeva": "महेश्वरमहाकल्पमहाताण्डवसाक्षिणी",
+    "previewIast": "maheśvaramahākalpamahātāṇḍavasākṣiṇī",
+    "namaCount": 3
+  },
+  {
+    "id": "058",
+    "kind": "shloka",
+    "number": 58,
+    "title": "Shloka 58",
+    "namaRange": [
+      235,
+      237
+    ],
+    "previewDeva": "चतुःषष्ट्युपचाराढ्या चतुःषष्टिकलामयी",
+    "previewIast": "catuḥṣaṣṭyupacārāḍhyā catuḥṣaṣṭikalāmayī",
+    "namaCount": 3
+  },
+  {
+    "id": "059",
+    "kind": "shloka",
+    "number": 59,
+    "title": "Shloka 59",
+    "namaRange": [
+      238,
+      243
+    ],
+    "previewDeva": "मनुविद्या चन्द्रविद्या चन्द्रमण्डलमध्यगा",
+    "previewIast": "manuvidyā candravidyā candramaṇḍalamadhyagā",
+    "namaCount": 6
+  },
+  {
+    "id": "060",
+    "kind": "shloka",
+    "number": 60,
+    "title": "Shloka 60",
+    "namaRange": [
+      244,
+      248
+    ],
+    "previewDeva": "चराचरजगन्नाथा चक्रराजनिकेतना",
+    "previewIast": "carācarajagannāthā cakrarājaniketanā",
+    "namaCount": 5
+  },
+  {
+    "id": "061",
+    "kind": "shloka",
+    "number": 61,
+    "title": "Shloka 61",
+    "namaRange": [
+      249,
+      253
+    ],
+    "previewDeva": "पञ्चप्रेतासनासीना पञ्चब्रह्मस्वरूपिणी",
+    "previewIast": "pañcapretāsanāsīnā pañcabrahmasvarūpiṇī",
+    "namaCount": 5
+  },
+  {
+    "id": "062",
+    "kind": "shloka",
+    "number": 62,
+    "title": "Shloka 62",
+    "namaRange": [
+      254,
+      259
+    ],
+    "previewDeva": "ध्यानध्यातृध्येयरूपा धर्माधर्मविवर्जिता",
+    "previewIast": "dhyānadhyātṛdhyeyarūpā dharmādharmavivarjitā",
+    "namaCount": 6
+  },
+  {
+    "id": "063",
+    "kind": "shloka",
+    "number": 63,
+    "title": "Shloka 63",
+    "namaRange": [
+      260,
+      267
+    ],
+    "previewDeva": "सुप्ता प्राज्ञात्मिका तुर्या सर्वावस्थाविवर्जिता",
+    "previewIast": "suptā prājñātmikā turyā sarvāvasthāvivarjitā",
+    "namaCount": 8
+  },
+  {
+    "id": "064",
+    "kind": "shloka",
+    "number": 64,
+    "title": "Shloka 64",
+    "namaRange": [
+      268,
+      274
+    ],
+    "previewDeva": "संहारिणी रुद्ररूपा तिरोधानकरीश्वरी",
+    "previewIast": "saṃhāriṇī rudrarūpā tirodhānakarīśvarī",
+    "namaCount": 7
+  },
+  {
+    "id": "065",
+    "kind": "shloka",
+    "number": 65,
+    "title": "Shloka 65",
+    "namaRange": [
+      275,
+      280
+    ],
+    "previewDeva": "भानुमण्डलमध्यस्था भैरवी भगमालिनी",
+    "previewIast": "bhānumaṇḍalamadhyasthā bhairavī bhagamālinī",
+    "namaCount": 6
+  },
+  {
+    "id": "066",
+    "kind": "shloka",
+    "number": 66,
+    "title": "Shloka 66",
+    "namaRange": [
+      281,
+      284
+    ],
+    "previewDeva": "उन्मेषनिमिषोत्पन्नविपन्नभुवनावली",
+    "previewIast": "unmeṣanimiṣotpannavipannabhuvanāvalī",
+    "namaCount": 4
+  },
+  {
+    "id": "067",
+    "kind": "shloka",
+    "number": 67,
+    "title": "Shloka 67",
+    "namaRange": [
+      285,
+      288
+    ],
+    "previewDeva": "आब्रह्मकीटजननी वर्णाश्रमविधायिनी",
+    "previewIast": "ābrahmakīṭajananī varṇāśramavidhāyinī",
+    "namaCount": 4
+  },
+  {
+    "id": "068",
+    "kind": "shloka",
+    "number": 68,
+    "title": "Shloka 68",
+    "namaRange": [
+      289,
+      290
+    ],
+    "previewDeva": "श्रुतिसीमन्तसिन्दूरीकृतपादाब्जधूलिका",
+    "previewIast": "śrutisīmantasindūrīkṛtapādābjadhūlikā",
+    "namaCount": 2
+  },
+  {
+    "id": "069",
+    "kind": "shloka",
+    "number": 69,
+    "title": "Shloka 69",
+    "namaRange": [
+      291,
+      297
+    ],
+    "previewDeva": "पुरुषार्थप्रदा पूर्णा भोगिनी भुवनेश्वरी",
+    "previewIast": "puruṣārthapradā pūrṇā bhoginī bhuvaneśvarī",
+    "namaCount": 7
+  },
+  {
+    "id": "070",
+    "kind": "shloka",
+    "number": 70,
+    "title": "Shloka 70",
+    "namaRange": [
+      298,
+      304
+    ],
+    "previewDeva": "नारायणी नादरूपा नामरूपविवर्जिता",
+    "previewIast": "nārāyaṇī nādarūpā nāmarūpavivarjitā",
+    "namaCount": 7
+  },
+  {
+    "id": "071",
+    "kind": "shloka",
+    "number": 71,
+    "title": "Shloka 71",
+    "namaRange": [
+      305,
+      312
+    ],
+    "previewDeva": "राजराजार्चिता राज्ञी रम्या राजीवलोचना",
+    "previewIast": "rājarājārcitā rājñī ramyā rājīvalocanā",
+    "namaCount": 8
+  },
+  {
+    "id": "072",
+    "kind": "shloka",
+    "number": 72,
+    "title": "Shloka 72",
+    "namaRange": [
+      313,
+      320
+    ],
+    "previewDeva": "रमा राकेन्दुवदना रतिरूपा रतिप्रिया",
+    "previewIast": "ramā rākenduvadanā ratirūpā ratipriyā",
+    "namaCount": 8
+  },
+  {
+    "id": "073",
+    "kind": "shloka",
+    "number": 73,
+    "title": "Shloka 73",
+    "namaRange": [
+      321,
+      326
+    ],
+    "previewDeva": "काम्या कामकलारूपा कदम्बकुसुमप्रिया",
+    "previewIast": "kāmyā kāmakalārūpā kadambakusumapriyā",
+    "namaCount": 6
+  },
+  {
+    "id": "074",
+    "kind": "shloka",
+    "number": 74,
+    "title": "Shloka 74",
+    "namaRange": [
+      327,
+      333
+    ],
+    "previewDeva": "कलावती कलालापा कान्ता कादम्बरीप्रिया",
+    "previewIast": "kalāvatī kalālāpā kāntā kādambarīpriyā",
+    "namaCount": 7
+  },
+  {
+    "id": "075",
+    "kind": "shloka",
+    "number": 75,
+    "title": "Shloka 75",
+    "namaRange": [
+      334,
+      340
+    ],
+    "previewDeva": "विश्वाधिका वेदवेद्या विन्ध्याचलनिवासिनी",
+    "previewIast": "viśvādhikā vedavedyā vindhyācalanivāsinī",
+    "namaCount": 7
+  },
+  {
+    "id": "076",
+    "kind": "shloka",
+    "number": 76,
+    "title": "Shloka 76",
+    "namaRange": [
+      341,
+      345
+    ],
+    "previewDeva": "क्षेत्रस्वरूपा क्षेत्रेशी क्षेत्रक्षेत्रज्ञपालिनी",
+    "previewIast": "kṣetrasvarūpā kṣetreśī kṣetrakṣetrajñapālinī",
+    "namaCount": 5
+  },
+  {
+    "id": "077",
+    "kind": "shloka",
+    "number": 77,
+    "title": "Shloka 77",
+    "namaRange": [
+      346,
+      352
+    ],
+    "previewDeva": "विजया विमला वन्द्या वन्दारुजनवत्सला",
+    "previewIast": "vijayā vimalā vandyā vandārujanavatsalā",
+    "namaCount": 7
+  },
+  {
+    "id": "078",
+    "kind": "shloka",
+    "number": 78,
+    "title": "Shloka 78",
+    "namaRange": [
+      353,
+      356
+    ],
+    "previewDeva": "भक्तिमत्कल्पलतिका पशुपाशविमोचिनी",
+    "previewIast": "bhaktimatkalpalatikā paśupāśavimocinī",
+    "namaCount": 4
+  },
+  {
+    "id": "079",
+    "kind": "shloka",
+    "number": 79,
+    "title": "Shloka 79",
+    "namaRange": [
+      357,
+      361
+    ],
+    "previewDeva": "तापत्रयाग्निसन्तप्तसमाह्लादनचन्द्रिका",
+    "previewIast": "tāpatrayāgnisantaptasamāhlādanacandrikā",
+    "namaCount": 5
+  },
+  {
+    "id": "080",
+    "kind": "shloka",
+    "number": 80,
+    "title": "Shloka 80",
+    "namaRange": [
+      362,
+      365
+    ],
+    "previewDeva": "चितिस्तत्पदलक्ष्यार्था चिदेकरसरूपिणी",
+    "previewIast": "citistatpadalakṣyārthā cidekarasarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "081",
+    "kind": "shloka",
+    "number": 81,
+    "title": "Shloka 81",
+    "namaRange": [
+      366,
+      372
+    ],
+    "previewDeva": "परा प्रत्यक्चितीरूपा पश्यन्ती परदेवता",
+    "previewIast": "parā pratyakcitīrūpā paśyantī paradevatā",
+    "namaCount": 7
+  },
+  {
+    "id": "082",
+    "kind": "shloka",
+    "number": 82,
+    "title": "Shloka 82",
+    "namaRange": [
+      373,
+      378
+    ],
+    "previewDeva": "कामेश्वरप्राणनाडी कृतज्ञा कामपूजिता",
+    "previewIast": "kāmeśvaraprāṇanāḍī kṛtajñā kāmapūjitā",
+    "namaCount": 6
+  },
+  {
+    "id": "083",
+    "kind": "shloka",
+    "number": 83,
+    "title": "Shloka 83",
+    "namaRange": [
+      379,
+      382
+    ],
+    "previewDeva": "ओड्याणपीठनिलया बिन्दुमण्डलवासिनी",
+    "previewIast": "oḍyāṇapīṭhanilayā bindumaṇḍalavāsinī",
+    "namaCount": 4
+  },
+  {
+    "id": "084",
+    "kind": "shloka",
+    "number": 84,
+    "title": "Shloka 84",
+    "namaRange": [
+      383,
+      387
+    ],
+    "previewDeva": "सद्यःप्रसादिनी विश्वसाक्षिणी साक्षिवर्जिता",
+    "previewIast": "sadyaḥprasādinī viśvasākṣiṇī sākṣivarjitā",
+    "namaCount": 5
+  },
+  {
+    "id": "085",
+    "kind": "shloka",
+    "number": 85,
+    "title": "Shloka 85",
+    "namaRange": [
+      388,
+      392
+    ],
+    "previewDeva": "नित्यक्लिन्ना निरुपमा निर्वाणसुखदायिनी",
+    "previewIast": "nityaklinnā nirupamā nirvāṇasukhadāyinī",
+    "namaCount": 5
+  },
+  {
+    "id": "086",
+    "kind": "shloka",
+    "number": 86,
+    "title": "Shloka 86",
+    "namaRange": [
+      393,
+      399
+    ],
+    "previewDeva": "प्रभावती प्रभारूपा प्रसिद्धा परमेश्वरी",
+    "previewIast": "prabhāvatī prabhārūpā prasiddhā parameśvarī",
+    "namaCount": 7
+  },
+  {
+    "id": "087",
+    "kind": "shloka",
+    "number": 87,
+    "title": "Shloka 87",
+    "namaRange": [
+      400,
+      403
+    ],
+    "previewDeva": "व्यापिनी विविधाकारा विद्याविद्या-स्वरूपिणी",
+    "previewIast": "vyāpinī vividhākārā vidyāvidyā-svarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "088",
+    "kind": "shloka",
+    "number": 88,
+    "title": "Shloka 88",
+    "namaRange": [
+      404,
+      408
+    ],
+    "previewDeva": "भक्तहार्दतमोभेदभानुमद्भानुसन्ततिः",
+    "previewIast": "bhaktahārdatamobhedabhānumadbhānusantatiḥ",
+    "namaCount": 5
+  },
+  {
+    "id": "089",
+    "kind": "shloka",
+    "number": 89,
+    "title": "Shloka 89",
+    "namaRange": [
+      409,
+      415
+    ],
+    "previewDeva": "शिवप्रिया शिवपरा शिष्टेष्टा शिष्टपूजिता",
+    "previewIast": "śivapriyā śivaparā śiṣṭeṣṭā śiṣṭapūjitā",
+    "namaCount": 7
+  },
+  {
+    "id": "090",
+    "kind": "shloka",
+    "number": 90,
+    "title": "Shloka 90",
+    "namaRange": [
+      416,
+      423
+    ],
+    "previewDeva": "चिच्छक्तिश् चेतनारूपा जडशक्तिर्जडात्मिका",
+    "previewIast": "cicchaktiś cetanārūpā jaḍaśaktirjaḍātmikā",
+    "namaCount": 8
+  },
+  {
+    "id": "091",
+    "kind": "shloka",
+    "number": 91,
+    "title": "Shloka 91",
+    "namaRange": [
+      424,
+      431
+    ],
+    "previewDeva": "तत्त्वासना तत्त्वमयी पञ्चकोशान्तरस्थिता",
+    "previewIast": "tattvāsanā tattvamayī pañcakośāntarasthitā",
+    "namaCount": 8
+  },
+  {
+    "id": "092",
+    "kind": "shloka",
+    "number": 92,
+    "title": "Shloka 92",
+    "namaRange": [
+      432,
+      435
+    ],
+    "previewDeva": "मदघूर्णितरक्ताक्षी मदपाटलगण्डभूः",
+    "previewIast": "madaghūrṇitaraktākṣī madapāṭalagaṇḍabhūḥ",
+    "namaCount": 4
+  },
+  {
+    "id": "093",
+    "kind": "shloka",
+    "number": 93,
+    "title": "Shloka 93",
+    "namaRange": [
+      436,
+      441
+    ],
+    "previewDeva": "कुशला कोमलाकारा कुरुकुल्ला कुलेश्वरी",
+    "previewIast": "kuśalā komalākārā kurukullā kuleśvarī",
+    "namaCount": 6
+  },
+  {
+    "id": "094",
+    "kind": "shloka",
+    "number": 94,
+    "title": "Shloka 94",
+    "namaRange": [
+      442,
+      451
+    ],
+    "previewDeva": "कुमारगणनाथाम्बा तुष्टिः पुष्टिर्मतिर्धृतिः",
+    "previewIast": "kumāragaṇanāthāmbā tuṣṭiḥ puṣṭirmatirdhṛtiḥ",
+    "namaCount": 10
+  },
+  {
+    "id": "095",
+    "kind": "shloka",
+    "number": 95,
+    "title": "Shloka 95",
+    "namaRange": [
+      452,
+      458
+    ],
+    "previewDeva": "तेजोवती त्रिनयना लोलाक्षीकामरूपिणी",
+    "previewIast": "tejovatī trinayanā lolākṣīkāmarūpiṇī",
+    "namaCount": 7
+  },
+  {
+    "id": "096",
+    "kind": "shloka",
+    "number": 96,
+    "title": "Shloka 96",
+    "namaRange": [
+      459,
+      467
+    ],
+    "previewDeva": "सुमुखी नलिनी सुभ्रूः शोभना सुरनायिका",
+    "previewIast": "sumukhī nalinī subhrūḥ śobhanā suranāyikā",
+    "namaCount": 9
+  },
+  {
+    "id": "097",
+    "kind": "shloka",
+    "number": 97,
+    "title": "Shloka 97",
+    "namaRange": [
+      468,
+      474
+    ],
+    "previewDeva": "वज्रेश्वरी वामदेवी वयोऽवस्थाविवर्जिता",
+    "previewIast": "vajreśvarī vāmadevī vayo'vasthāvivarjitā",
+    "namaCount": 7
+  },
+  {
+    "id": "098",
+    "kind": "shloka",
+    "number": 98,
+    "title": "Shloka 98",
+    "namaRange": [
+      475,
+      479
+    ],
+    "previewDeva": "विशुद्धिचक्रनिलयाऽऽरक्तवर्णा त्रिलोचना",
+    "previewIast": "viśuddhicakranilayā''raktavarṇā trilocanā",
+    "namaCount": 5
+  },
+  {
+    "id": "099",
+    "kind": "shloka",
+    "number": 99,
+    "title": "Shloka 99",
+    "namaRange": [
+      480,
+      484
+    ],
+    "previewDeva": "पायसान्नप्रिया त्वक्स्था पशुलोकभयङ्करी",
+    "previewIast": "pāyasānnapriyā tvaksthā paśulokabhayaṅkarī",
+    "namaCount": 5
+  },
+  {
+    "id": "100",
+    "kind": "shloka",
+    "number": 100,
+    "title": "Shloka 100",
+    "namaRange": [
+      485,
+      490
+    ],
+    "previewDeva": "अनाहताब्जनिलया श्यामाभा वदनद्वया",
+    "previewIast": "anāhatābjanilayā śyāmābhā vadanadvayā",
+    "namaCount": 6
+  },
+  {
+    "id": "101",
+    "kind": "shloka",
+    "number": 101,
+    "title": "Shloka 101",
+    "namaRange": [
+      491,
+      494
+    ],
+    "previewDeva": "कालरात्र्यादिशक्त्यौघवृता स्निग्धौदनप्रिया",
+    "previewIast": "kālarātryādiśaktyaughavṛtā snigdhaudanapriyā",
+    "namaCount": 4
+  },
+  {
+    "id": "102",
+    "kind": "shloka",
+    "number": 102,
+    "title": "Shloka 102",
+    "namaRange": [
+      495,
+      498
+    ],
+    "previewDeva": "मणिपूराब्जनिलया वदनत्रयसंयुता",
+    "previewIast": "maṇipūrābjanilayā vadanatrayasaṃyutā",
+    "namaCount": 4
+  },
+  {
+    "id": "103",
+    "kind": "shloka",
+    "number": 103,
+    "title": "Shloka 103",
+    "namaRange": [
+      499,
+      503
+    ],
+    "previewDeva": "रक्तवर्णा मांसनिष्ठा गुडान्नप्रीतमानसा",
+    "previewIast": "raktavarṇā māṃsaniṣṭhā guḍānnaprītamānasā",
+    "namaCount": 5
+  },
+  {
+    "id": "104",
+    "kind": "shloka",
+    "number": 104,
+    "title": "Shloka 104",
+    "namaRange": [
+      504,
+      508
+    ],
+    "previewDeva": "स्वाधिष्ठानाम्बुजगता चतुर्वक्त्रमनोहरा",
+    "previewIast": "svādhiṣṭhānāmbujagatā caturvaktramanoharā",
+    "namaCount": 5
+  },
+  {
+    "id": "105",
+    "kind": "shloka",
+    "number": 105,
+    "title": "Shloka 105",
+    "namaRange": [
+      509,
+      513
+    ],
+    "previewDeva": "मेदोनिष्ठा मधुप्रीता बन्धिन्यादिसमन्विता",
+    "previewIast": "medoniṣṭhā madhuprītā bandhinyādisamanvitā",
+    "namaCount": 5
+  },
+  {
+    "id": "106",
+    "kind": "shloka",
+    "number": 106,
+    "title": "Shloka 106",
+    "namaRange": [
+      514,
+      518
+    ],
+    "previewDeva": "मूलाधाराम्बुजारूढा पञ्चवक्त्राऽस्थिसंस्थिता",
+    "previewIast": "mūlādhārāmbujārūḍhā pañcavaktrā'sthisaṃsthitā",
+    "namaCount": 5
+  },
+  {
+    "id": "107",
+    "kind": "shloka",
+    "number": 107,
+    "title": "Shloka 107",
+    "namaRange": [
+      519,
+      523
+    ],
+    "previewDeva": "मुद्गौदनासक्तचित्ता साकिन्यम्बास्वरूपिणी",
+    "previewIast": "mudgaudanāsaktacittā sākinyambāsvarūpiṇī",
+    "namaCount": 5
+  },
+  {
+    "id": "108",
+    "kind": "shloka",
+    "number": 108,
+    "title": "Shloka 108",
+    "namaRange": [
+      524,
+      527
+    ],
+    "previewDeva": "मज्जासंस्था हंसवतीमुख्यशक्तिसमन्विता",
+    "previewIast": "majjāsaṃsthā haṃsavatīmukhyaśaktisamanvitā",
+    "namaCount": 4
+  },
+  {
+    "id": "109",
+    "kind": "shloka",
+    "number": 109,
+    "title": "Shloka 109",
+    "namaRange": [
+      528,
+      532
+    ],
+    "previewDeva": "सहस्रदलपद्मस्था सर्ववर्णोपशोभिता",
+    "previewIast": "sahasradalapadmasthā sarvavarṇopaśobhitā",
+    "namaCount": 5
+  },
+  {
+    "id": "110",
+    "kind": "shloka",
+    "number": 110,
+    "title": "Shloka 110",
+    "namaRange": [
+      533,
+      541
+    ],
+    "previewDeva": "सर्वौदनप्रीतचित्ता याकिन्यम्बास्वरूपिणी",
+    "previewIast": "sarvaudanaprītacittā yākinyambāsvarūpiṇī",
+    "namaCount": 9
+  },
+  {
+    "id": "111",
+    "kind": "shloka",
+    "number": 111,
+    "title": "Shloka 111",
+    "namaRange": [
+      542,
+      547
+    ],
+    "previewDeva": "पुण्यकीर्तिः पुण्यलभ्या पुण्यश्रवणकीर्तना",
+    "previewIast": "puṇyakīrtiḥ puṇyalabhyā puṇyaśravaṇakīrtanā",
+    "namaCount": 6
+  },
+  {
+    "id": "112",
+    "kind": "shloka",
+    "number": 112,
+    "title": "Shloka 112",
+    "namaRange": [
+      548,
+      552
+    ],
+    "previewDeva": "विमर्शरूपिणी विद्या वियदादिजगत्प्रसूः",
+    "previewIast": "vimarśarūpiṇī vidyā viyadādijagatprasūḥ",
+    "namaCount": 5
+  },
+  {
+    "id": "113",
+    "kind": "shloka",
+    "number": 113,
+    "title": "Shloka 113",
+    "namaRange": [
+      553,
+      558
+    ],
+    "previewDeva": "अग्रगण्याऽचिन्त्यरूपा कलिकल्मषनाशिनी",
+    "previewIast": "agragaṇyā'cintyarūpā kalikalmaṣanāśinī",
+    "namaCount": 6
+  },
+  {
+    "id": "114",
+    "kind": "shloka",
+    "number": 114,
+    "title": "Shloka 114",
+    "namaRange": [
+      559,
+      565
+    ],
+    "previewDeva": "ताम्बूलपूरितमुखी दाडिमीकुसुमप्रभा",
+    "previewIast": "tāmbūlapūritamukhī dāḍimīkusumaprabhā",
+    "namaCount": 7
+  },
+  {
+    "id": "115",
+    "kind": "shloka",
+    "number": 115,
+    "title": "Shloka 115",
+    "namaRange": [
+      566,
+      571
+    ],
+    "previewDeva": "नित्यतृप्ता भक्तनिधिर्नियन्त्री निखिलेश्वरी",
+    "previewIast": "nityatṛptā bhaktanidhirniyantrī nikhileśvarī",
+    "namaCount": 6
+  },
+  {
+    "id": "116",
+    "kind": "shloka",
+    "number": 116,
+    "title": "Shloka 116",
+    "namaRange": [
+      572,
+      577
+    ],
+    "previewDeva": "परा शक्तिः परा निष्ठा प्रज्ञानघनरूपिणी",
+    "previewIast": "parā śaktiḥ parā niṣṭhā prajñānaghanarūpiṇī",
+    "namaCount": 6
+  },
+  {
+    "id": "117",
+    "kind": "shloka",
+    "number": 117,
+    "title": "Shloka 117",
+    "namaRange": [
+      578,
+      582
+    ],
+    "previewDeva": "महाकैलासनिलया मृणालमृदुदोर्लता",
+    "previewIast": "mahākailāsanilayā mṛṇālamṛdudorlatā",
+    "namaCount": 5
+  },
+  {
+    "id": "118",
+    "kind": "shloka",
+    "number": 118,
+    "title": "Shloka 118",
+    "namaRange": [
+      583,
+      589
+    ],
+    "previewDeva": "आत्मविद्या महाविद्या श्रीविद्या कामसेविता",
+    "previewIast": "ātmavidyā mahāvidyā śrīvidyā kāmasevitā",
+    "namaCount": 7
+  },
+  {
+    "id": "119",
+    "kind": "shloka",
+    "number": 119,
+    "title": "Shloka 119",
+    "namaRange": [
+      590,
+      594
+    ],
+    "previewDeva": "कटाक्षकिङ्करीभूतकमलाकोटिसेविता",
+    "previewIast": "kaṭākṣakiṅkarībhūtakamalākoṭisevitā",
+    "namaCount": 5
+  },
+  {
+    "id": "120",
+    "kind": "shloka",
+    "number": 120,
+    "title": "Shloka 120",
+    "namaRange": [
+      595,
+      600
+    ],
+    "previewDeva": "हृदयस्था रविप्रख्या त्रिकोणान्तरदीपिका",
+    "previewIast": "hṛdayasthā raviprakhyā trikoṇāntaradīpikā",
+    "namaCount": 6
+  },
+  {
+    "id": "121",
+    "kind": "shloka",
+    "number": 121,
+    "title": "Shloka 121",
+    "namaRange": [
+      601,
+      606
+    ],
+    "previewDeva": "दरान्दोलितदीर्घाक्षी दरहासोज्ज्वलन्मुखी",
+    "previewIast": "darāndolitadīrghākṣī darahāsojjvalanmukhī",
+    "namaCount": 6
+  },
+  {
+    "id": "122",
+    "kind": "shloka",
+    "number": 122,
+    "title": "Shloka 122",
+    "namaRange": [
+      607,
+      610
+    ],
+    "previewDeva": "देवेशी दण्डनीतिस्था दहराकाशरूपिणी",
+    "previewIast": "deveśī daṇḍanītisthā daharākāśarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "123",
+    "kind": "shloka",
+    "number": 123,
+    "title": "Shloka 123",
+    "namaRange": [
+      611,
+      614
+    ],
+    "previewDeva": "कलात्मिका कलानाथा काव्यालापविनोदिनी",
+    "previewIast": "kalātmikā kalānāthā kāvyālāpavinodinī",
+    "namaCount": 4
+  },
+  {
+    "id": "124",
+    "kind": "shloka",
+    "number": 124,
+    "title": "Shloka 124",
+    "namaRange": [
+      615,
+      621
+    ],
+    "previewDeva": "आदिशक्तिरमेयाऽऽत्मा परमा पावनाकृतिः",
+    "previewIast": "ādiśaktirameyā''tmā paramā pāvanākṛtiḥ",
+    "namaCount": 7
+  },
+  {
+    "id": "125",
+    "kind": "shloka",
+    "number": 125,
+    "title": "Shloka 125",
+    "namaRange": [
+      622,
+      629
+    ],
+    "previewDeva": "क्लीङ्कारी केवला गुह्या कैवल्यपददायिनी",
+    "previewIast": "klīṅkārī kevalā guhyā kaivalyapadadāyinī",
+    "namaCount": 8
+  },
+  {
+    "id": "126",
+    "kind": "shloka",
+    "number": 126,
+    "title": "Shloka 126",
+    "namaRange": [
+      630,
+      636
+    ],
+    "previewDeva": "त्र्यक्षरी दिव्यगन्धाढ्या सिन्दूरतिलकाञ्चिता",
+    "previewIast": "tryakṣarī divyagandhāḍhyā sindūratilakāñcitā",
+    "namaCount": 7
+  },
+  {
+    "id": "127",
+    "kind": "shloka",
+    "number": 127,
+    "title": "Shloka 127",
+    "namaRange": [
+      637,
+      644
+    ],
+    "previewDeva": "विश्वगर्भा स्वर्णगर्भाऽवरदा वागधीश्वरी",
+    "previewIast": "viśvagarbhā svarṇagarbhā'varadā vāgadhīśvarī",
+    "namaCount": 8
+  },
+  {
+    "id": "128",
+    "kind": "shloka",
+    "number": 128,
+    "title": "Shloka 128",
+    "namaRange": [
+      645,
+      648
+    ],
+    "previewDeva": "सर्ववेदान्तसंवेद्या सत्यानन्दस्वरूपिणी",
+    "previewIast": "sarvavedāntasaṃvedyā satyānandasvarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "129",
+    "kind": "shloka",
+    "number": 129,
+    "title": "Shloka 129",
+    "namaRange": [
+      649,
+      657
+    ],
+    "previewDeva": "अदृश्या दृश्यरहिता विज्ञात्री वेद्यवर्जिता",
+    "previewIast": "adṛśyā dṛśyarahitā vijñātrī vedyavarjitā",
+    "namaCount": 9
+  },
+  {
+    "id": "130",
+    "kind": "shloka",
+    "number": 130,
+    "title": "Shloka 130",
+    "namaRange": [
+      658,
+      661
+    ],
+    "previewDeva": "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी",
+    "previewIast": "icchāśaktijñānaśaktikriyāśaktisvarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "131",
+    "kind": "shloka",
+    "number": 131,
+    "title": "Shloka 131",
+    "namaRange": [
+      662,
+      668
+    ],
+    "previewDeva": "अष्टमूर्तिरजाजैत्री लोकयात्राविधायिनी",
+    "previewIast": "aṣṭamūrtirajājaitrī lokayātrāvidhāyinī",
+    "namaCount": 7
+  },
+  {
+    "id": "132",
+    "kind": "shloka",
+    "number": 132,
+    "title": "Shloka 132",
+    "namaRange": [
+      669,
+      677
+    ],
+    "previewDeva": "अन्नदा वसुदा वृद्धा ब्रह्मात्मैक्यस्वरूपिणी",
+    "previewIast": "annadā vasudā vṛddhā brahmātmaikyasvarūpiṇī",
+    "namaCount": 9
+  },
+  {
+    "id": "133",
+    "kind": "shloka",
+    "number": 133,
+    "title": "Shloka 133",
+    "namaRange": [
+      678,
+      684
+    ],
+    "previewDeva": "भाषारूपा बृहत्सेना भावाभावविवर्जिता",
+    "previewIast": "bhāṣārūpā bṛhatsenā bhāvābhāvavivarjitā",
+    "namaCount": 7
+  },
+  {
+    "id": "134",
+    "kind": "shloka",
+    "number": 134,
+    "title": "Shloka 134",
+    "namaRange": [
+      685,
+      688
+    ],
+    "previewDeva": "राजराजेश्वरी राज्यदायिनी राज्यवल्लभा",
+    "previewIast": "rājarājeśvarī rājyadāyinī rājyavallabhā",
+    "namaCount": 4
+  },
+  {
+    "id": "135",
+    "kind": "shloka",
+    "number": 135,
+    "title": "Shloka 135",
+    "namaRange": [
+      689,
+      694
+    ],
+    "previewDeva": "राज्यलक्ष्मीः कोशनाथा चतुरङ्गबलेश्वरी",
+    "previewIast": "rājyalakṣmīḥ kośanāthā caturaṅgabaleśvarī",
+    "namaCount": 6
+  },
+  {
+    "id": "136",
+    "kind": "shloka",
+    "number": 136,
+    "title": "Shloka 136",
+    "namaRange": [
+      695,
+      700
+    ],
+    "previewDeva": "दीक्षिता दैत्यशमनी सर्वलोकवशङ्करी",
+    "previewIast": "dīkṣitā daityaśamanī sarvalokavaśaṅkarī",
+    "namaCount": 6
+  },
+  {
+    "id": "137",
+    "kind": "shloka",
+    "number": 137,
+    "title": "Shloka 137",
+    "namaRange": [
+      701,
+      707
+    ],
+    "previewDeva": "देशकालापरिच्छिन्ना सर्वगा सर्वमोहिनी",
+    "previewIast": "deśakālāparicchinnā sarvagā sarvamohinī",
+    "namaCount": 7
+  },
+  {
+    "id": "138",
+    "kind": "shloka",
+    "number": 138,
+    "title": "Shloka 138",
+    "namaRange": [
+      708,
+      713
+    ],
+    "previewDeva": "सर्वोपाधिविनिर्मुक्ता सदाशिवपतिव्रता",
+    "previewIast": "sarvopādhivinirmuktā sadāśivapativratā",
+    "namaCount": 6
+  },
+  {
+    "id": "139",
+    "kind": "shloka",
+    "number": 139,
+    "title": "Shloka 139",
+    "namaRange": [
+      714,
+      722
+    ],
+    "previewDeva": "कुलोत्तीर्णा भगाराध्या माया मधुमती मही",
+    "previewIast": "kulottīrṇā bhagārādhyā māyā madhumatī mahī",
+    "namaCount": 9
+  },
+  {
+    "id": "140",
+    "kind": "shloka",
+    "number": 140,
+    "title": "Shloka 140",
+    "namaRange": [
+      723,
+      727
+    ],
+    "previewDeva": "स्वतन्त्रा सर्वतन्त्रेशी दक्षिणामूर्तिरूपिणी",
+    "previewIast": "svatantrā sarvatantreśī dakṣiṇāmūrtirūpiṇī",
+    "namaCount": 5
+  },
+  {
+    "id": "141",
+    "kind": "shloka",
+    "number": 141,
+    "title": "Shloka 141",
+    "namaRange": [
+      728,
+      734
+    ],
+    "previewDeva": "चित्कलाऽऽनन्दकलिका प्रेमरूपा प्रियङ्करी",
+    "previewIast": "citkalā''nandakalikā premarūpā priyaṅkarī",
+    "namaCount": 7
+  },
+  {
+    "id": "142",
+    "kind": "shloka",
+    "number": 142,
+    "title": "Shloka 142",
+    "namaRange": [
+      735,
+      741
+    ],
+    "previewDeva": "मिथ्याजगदधिष्ठाना मुक्तिदा मुक्तिरूपिणी",
+    "previewIast": "mithyājagadadhiṣṭhānā muktidā muktirūpiṇī",
+    "namaCount": 7
+  },
+  {
+    "id": "143",
+    "kind": "shloka",
+    "number": 143,
+    "title": "Shloka 143",
+    "namaRange": [
+      742,
+      745
+    ],
+    "previewDeva": "भवदावसुधावृष्टिः पापारण्यदवानला",
+    "previewIast": "bhavadāvasudhāvṛṣṭiḥ pāpāraṇyadavānalā",
+    "namaCount": 4
+  },
+  {
+    "id": "144",
+    "kind": "shloka",
+    "number": 144,
+    "title": "Shloka 144",
+    "namaRange": [
+      746,
+      749
+    ],
+    "previewDeva": "भाग्याब्धिचन्द्रिका भक्तचित्तकेकिघनाघना",
+    "previewIast": "bhāgyābdhicandrikā bhaktacittakekighanāghanā",
+    "namaCount": 4
+  },
+  {
+    "id": "145",
+    "kind": "shloka",
+    "number": 145,
+    "title": "Shloka 145",
+    "namaRange": [
+      750,
+      756
+    ],
+    "previewDeva": "महेश्वरी महाकाली महाग्रासा महाशना",
+    "previewIast": "maheśvarī mahākālī mahāgrāsā mahāśanā",
+    "namaCount": 7
+  },
+  {
+    "id": "146",
+    "kind": "shloka",
+    "number": 146,
+    "title": "Shloka 146",
+    "namaRange": [
+      757,
+      763
+    ],
+    "previewDeva": "क्षराक्षरात्मिका सर्वलोकेशी विश्वधारिणी",
+    "previewIast": "kṣarākṣarātmikā sarvalokeśī viśvadhāriṇī",
+    "namaCount": 7
+  },
+  {
+    "id": "147",
+    "kind": "shloka",
+    "number": 147,
+    "title": "Shloka 147",
+    "namaRange": [
+      764,
+      770
+    ],
+    "previewDeva": "स्वर्गापवर्गदा शुद्धा जपापुष्पनिभाकृतिः",
+    "previewIast": "svargāpavargadā śuddhā japāpuṣpanibhākṛtiḥ",
+    "namaCount": 7
+  },
+  {
+    "id": "148",
+    "kind": "shloka",
+    "number": 148,
+    "title": "Shloka 148",
+    "namaRange": [
+      771,
+      776
+    ],
+    "previewDeva": "दुराराध्या दुराधर्षा पाटलीकुसुमप्रिया",
+    "previewIast": "durārādhyā durādharṣā pāṭalīkusumapriyā",
+    "namaCount": 6
+  },
+  {
+    "id": "149",
+    "kind": "shloka",
+    "number": 149,
+    "title": "Shloka 149",
+    "namaRange": [
+      777,
+      784
+    ],
+    "previewDeva": "वीराराध्या विराड्रूपा विरजा विश्वतोमुखी",
+    "previewIast": "vīrārādhyā virāḍrūpā virajā viśvatomukhī",
+    "namaCount": 8
+  },
+  {
+    "id": "150",
+    "kind": "shloka",
+    "number": 150,
+    "title": "Shloka 150",
+    "namaRange": [
+      785,
+      790
+    ],
+    "previewDeva": "मार्ताण्डभैरवाराध्या मन्त्रिणीन्यस्तराज्यधूः",
+    "previewIast": "mārtāṇḍabhairavārādhyā mantriṇīnyastarājyadhūḥ",
+    "namaCount": 6
+  },
+  {
+    "id": "151",
+    "kind": "shloka",
+    "number": 151,
+    "title": "Shloka 151",
+    "namaRange": [
+      791,
+      796
+    ],
+    "previewDeva": "सत्यज्ञानानन्दरूपा सामरस्यपरायणा",
+    "previewIast": "satyajñānānandarūpā sāmarasyaparāyaṇā",
+    "namaCount": 6
+  },
+  {
+    "id": "152",
+    "kind": "shloka",
+    "number": 152,
+    "title": "Shloka 152",
+    "namaRange": [
+      797,
+      805
+    ],
+    "previewDeva": "कलानिधिः काव्यकला रसज्ञा रसशेवधिः",
+    "previewIast": "kalānidhiḥ kāvyakalā rasajñā rasaśevadhiḥ",
+    "namaCount": 9
+  },
+  {
+    "id": "153",
+    "kind": "shloka",
+    "number": 153,
+    "title": "Shloka 153",
+    "namaRange": [
+      806,
+      812
+    ],
+    "previewDeva": "परञ्ज्योतिः परन्धाम परमाणुः परात्परा",
+    "previewIast": "parañjyotiḥ parandhāma paramāṇuḥ parātparā",
+    "namaCount": 7
+  },
+  {
+    "id": "154",
+    "kind": "shloka",
+    "number": 154,
+    "title": "Shloka 154",
+    "namaRange": [
+      813,
+      820
+    ],
+    "previewDeva": "मूर्ताऽमूर्ताऽनित्यतृप्ता मुनिमानसहंसिका",
+    "previewIast": "mūrtā'mūrtā'nityatṛptā munimānasahaṃsikā",
+    "namaCount": 8
+  },
+  {
+    "id": "155",
+    "kind": "shloka",
+    "number": 155,
+    "title": "Shloka 155",
+    "namaRange": [
+      821,
+      830
+    ],
+    "previewDeva": "ब्रह्माणी ब्रह्मजननी बहुरूपा बुधार्चिता",
+    "previewIast": "brahmāṇī brahmajananī bahurūpā budhārcitā",
+    "namaCount": 10
+  },
+  {
+    "id": "156",
+    "kind": "shloka",
+    "number": 156,
+    "title": "Shloka 156",
+    "namaRange": [
+      831,
+      837
+    ],
+    "previewDeva": "प्राणेश्वरी प्राणदात्री पञ्चाशत्पीठरूपिणी",
+    "previewIast": "prāṇeśvarī prāṇadātrī pañcāśatpīṭharūpiṇī",
+    "namaCount": 7
+  },
+  {
+    "id": "157",
+    "kind": "shloka",
+    "number": 157,
+    "title": "Shloka 157",
+    "namaRange": [
+      838,
+      843
+    ],
+    "previewDeva": "मुकुन्दा मुक्तिनिलया मूलविग्रहरूपिणी",
+    "previewIast": "mukundā muktinilayā mūlavigraharūpiṇī",
+    "namaCount": 6
+  },
+  {
+    "id": "158",
+    "kind": "shloka",
+    "number": 158,
+    "title": "Shloka 158",
+    "namaRange": [
+      844,
+      850
+    ],
+    "previewDeva": "छन्दःसारा शास्त्रसारा मन्त्रसारा तलोदरी",
+    "previewIast": "chandaḥsārā śāstrasārā mantrasārā talodarī",
+    "namaCount": 7
+  },
+  {
+    "id": "159",
+    "kind": "shloka",
+    "number": 159,
+    "title": "Shloka 159",
+    "namaRange": [
+      851,
+      853
+    ],
+    "previewDeva": "जन्ममृत्युजरातप्तजनविश्रान्तिदायिनी",
+    "previewIast": "janmamṛtyujarātaptajanaviśrāntidāyinī",
+    "namaCount": 3
+  },
+  {
+    "id": "160",
+    "kind": "shloka",
+    "number": 160,
+    "title": "Shloka 160",
+    "namaRange": [
+      854,
+      861
+    ],
+    "previewDeva": "गम्भीरा गगनान्तस्था गर्विता गानलोलुपा",
+    "previewIast": "gambhīrā gaganāntasthā garvitā gānalolupā",
+    "namaCount": 8
+  },
+  {
+    "id": "161",
+    "kind": "shloka",
+    "number": 161,
+    "title": "Shloka 161",
+    "namaRange": [
+      862,
+      865
+    ],
+    "previewDeva": "कार्यकारणनिर्मुक्ता कामकेलितरङ्गिता",
+    "previewIast": "kāryakāraṇanirmuktā kāmakelitaraṅgitā",
+    "namaCount": 4
+  },
+  {
+    "id": "162",
+    "kind": "shloka",
+    "number": 162,
+    "title": "Shloka 162",
+    "namaRange": [
+      866,
+      871
+    ],
+    "previewDeva": "अजा क्षयविनिर्मुक्ता मुग्धा क्षिप्रप्रसादिनी",
+    "previewIast": "ajā kṣayavinirmuktā mugdhā kṣipraprasādinī",
+    "namaCount": 6
+  },
+  {
+    "id": "163",
+    "kind": "shloka",
+    "number": 163,
+    "title": "Shloka 163",
+    "namaRange": [
+      872,
+      879
+    ],
+    "previewDeva": "त्रयी त्रिवर्गनिलया त्रिस्था त्रिपुरमालिनी",
+    "previewIast": "trayī trivarganilayā tristhā tripuramālinī",
+    "namaCount": 8
+  },
+  {
+    "id": "164",
+    "kind": "shloka",
+    "number": 164,
+    "title": "Shloka 164",
+    "namaRange": [
+      880,
+      883
+    ],
+    "previewDeva": "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता",
+    "previewIast": "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā",
+    "namaCount": 4
+  },
+  {
+    "id": "165",
+    "kind": "shloka",
+    "number": 165,
+    "title": "Shloka 165",
+    "namaRange": [
+      884,
+      889
+    ],
+    "previewDeva": "धर्माधारा धनाध्यक्षा धनधान्यविवर्धिनी",
+    "previewIast": "dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī",
+    "namaCount": 6
+  },
+  {
+    "id": "166",
+    "kind": "shloka",
+    "number": 166,
+    "title": "Shloka 166",
+    "namaRange": [
+      890,
+      897
+    ],
+    "previewDeva": "विश्वग्रासा विद्रुमाभा वैष्णवी विष्णुरूपिणी",
+    "previewIast": "viśvagrāsā vidrumābhā vaiṣṇavī viṣṇurūpiṇī",
+    "namaCount": 8
+  },
+  {
+    "id": "167",
+    "kind": "shloka",
+    "number": 167,
+    "title": "Shloka 167",
+    "namaRange": [
+      898,
+      905
+    ],
+    "previewDeva": "वीरगोष्ठीप्रिया वीरा नैष्कर्म्या नादरूपिणी",
+    "previewIast": "vīragoṣṭhīpriyā vīrā naiṣkarmyā nādarūpiṇī",
+    "namaCount": 8
+  },
+  {
+    "id": "168",
+    "kind": "shloka",
+    "number": 168,
+    "title": "Shloka 168",
+    "namaRange": [
+      906,
+      911
+    ],
+    "previewDeva": "तत्त्वाधिका तत्त्वमयी तत्त्वमर्थस्वरूपिणी",
+    "previewIast": "tattvādhikā tattvamayī tattvamarthasvarūpiṇī",
+    "namaCount": 6
+  },
+  {
+    "id": "169",
+    "kind": "shloka",
+    "number": 169,
+    "title": "Shloka 169",
+    "namaRange": [
+      912,
+      917
+    ],
+    "previewDeva": "सव्यापसव्यमार्गस्था सर्वापद्विनिवारिणी",
+    "previewIast": "savyāpasavyamārgasthā sarvāpadvinivāriṇī",
+    "namaCount": 6
+  },
+  {
+    "id": "170",
+    "kind": "shloka",
+    "number": 170,
+    "title": "Shloka 170",
+    "namaRange": [
+      918,
+      922
+    ],
+    "previewDeva": "चैतन्यार्घ्यसमाराध्या चैतन्यकुसुमप्रिया",
+    "previewIast": "caitanyārghyasamārādhyā caitanyakusumapriyā",
+    "namaCount": 5
+  },
+  {
+    "id": "171",
+    "kind": "shloka",
+    "number": 171,
+    "title": "Shloka 171",
+    "namaRange": [
+      923,
+      926
+    ],
+    "previewDeva": "दक्षिणादक्षिणाराध्या दरस्मेरमुखाम्बुजा",
+    "previewIast": "dakṣiṇādakṣiṇārādhyā darasmeramukhāmbujā",
+    "namaCount": 4
+  },
+  {
+    "id": "172",
+    "kind": "shloka",
+    "number": 172,
+    "title": "Shloka 172",
+    "namaRange": [
+      927,
+      933
+    ],
+    "previewDeva": "स्तोत्रप्रिया स्तुतिमती श्रुतिसंस्तुतवैभवा",
+    "previewIast": "stotrapriyā stutimatī śrutisaṃstutavaibhavā",
+    "namaCount": 7
+  },
+  {
+    "id": "173",
+    "kind": "shloka",
+    "number": 173,
+    "title": "Shloka 173",
+    "namaRange": [
+      934,
+      941
+    ],
+    "previewDeva": "विश्वमाता जगद्धात्री विशालाक्षी विरागिणी",
+    "previewIast": "viśvamātā jagaddhātrī viśālākṣī virāgiṇī",
+    "namaCount": 8
+  },
+  {
+    "id": "174",
+    "kind": "shloka",
+    "number": 174,
+    "title": "Shloka 174",
+    "namaRange": [
+      942,
+      947
+    ],
+    "previewDeva": "व्योमकेशी विमानस्था वज्रिणी वामकेश्वरी",
+    "previewIast": "vyomakeśī vimānasthā vajriṇī vāmakeśvarī",
+    "namaCount": 6
+  },
+  {
+    "id": "175",
+    "kind": "shloka",
+    "number": 175,
+    "title": "Shloka 175",
+    "namaRange": [
+      948,
+      954
+    ],
+    "previewDeva": "पञ्चमी पञ्चभूतेशी पञ्चसङ्ख्योपचारिणी",
+    "previewIast": "pañcamī pañcabhūteśī pañcasaṅkhyopacāriṇī",
+    "namaCount": 7
+  },
+  {
+    "id": "176",
+    "kind": "shloka",
+    "number": 176,
+    "title": "Shloka 176",
+    "namaRange": [
+      955,
+      963
+    ],
+    "previewDeva": "धराधरसुता धन्या धर्मिणी धर्मवर्धिनी",
+    "previewIast": "dharādharasutā dhanyā dharmiṇī dharmavardhinī",
+    "namaCount": 9
+  },
+  {
+    "id": "177",
+    "kind": "shloka",
+    "number": 177,
+    "title": "Shloka 177",
+    "namaRange": [
+      964,
+      970
+    ],
+    "previewDeva": "बन्धूककुसुमप्रख्या बाला लीलाविनोदिनी",
+    "previewIast": "bandhūkakusumaprakhyā bālā līlāvinodinī",
+    "namaCount": 7
+  },
+  {
+    "id": "178",
+    "kind": "shloka",
+    "number": 178,
+    "title": "Shloka 178",
+    "namaRange": [
+      971,
+      976
+    ],
+    "previewDeva": "सुवासिन्यर्चनप्रीताऽऽशोभना शुद्धमानसा",
+    "previewIast": "suvāsinyarcanaprītā''śobhanā śuddhamānasā",
+    "namaCount": 6
+  },
+  {
+    "id": "179",
+    "kind": "shloka",
+    "number": 179,
+    "title": "Shloka 179",
+    "namaRange": [
+      977,
+      981
+    ],
+    "previewDeva": "दशमुद्रासमाराध्या त्रिपुराश्रीवशङ्करी",
+    "previewIast": "daśamudrāsamārādhyā tripurāśrīvaśaṅkarī",
+    "namaCount": 5
+  },
+  {
+    "id": "180",
+    "kind": "shloka",
+    "number": 180,
+    "title": "Shloka 180",
+    "namaRange": [
+      982,
+      989
+    ],
+    "previewDeva": "योनिमुद्रा त्रिखण्डेशी त्रिगुणाम्बा त्रिकोणगा",
+    "previewIast": "yonimudrā trikhaṇḍeśī triguṇāmbā trikoṇagā",
+    "namaCount": 8
+  },
+  {
+    "id": "181",
+    "kind": "shloka",
+    "number": 181,
+    "title": "Shloka 181",
+    "namaRange": [
+      990,
+      993
+    ],
+    "previewDeva": "अभ्यासातिशयज्ञाता षडध्वातीतरूपिणी",
+    "previewIast": "abhyāsātiśayajñātā ṣaḍadhvātītarūpiṇī",
+    "namaCount": 4
+  },
+  {
+    "id": "182",
+    "kind": "shloka",
+    "number": 182,
+    "title": "Shloka 182",
+    "namaRange": [
+      994,
+      1000
+    ],
+    "previewDeva": "आबालगोपविदिता सर्वानुल्लङ्घ्यशासना",
+    "previewIast": "ābālagopaviditā sarvānullaṅghyaśāsanā",
+    "namaCount": 7
+  }
+]
