@@ -1,0 +1,147 @@
+{
+  "words": [
+    {
+      "module": "182",
+      "line": 4,
+      "token": 0,
+      "gloss": "thus, in this way",
+      "translation": "Thus — pointing back over all eighteen hundred and some syllables that have just been recited.",
+      "lemma": "evam",
+      "lemmaDeva": "एवम्",
+      "morphology": {
+        "pos": "indeclinable",
+        "stem": "एवम्",
+        "stemIast": "evam",
+        "note": "Indeclinables take no endings. The final m appears here as anusvāra because a sibilant follows: evam + śrī → evaṃ śrī."
+      },
+      "note": "The word that turns the preceding thousand names into a completed object. Everything before this line was the hymn; from here the text speaks about the hymn."
+    },
+    {
+      "module": "182",
+      "line": 4,
+      "token": 1,
+      "gloss": "Śrī Lalitā",
+      "translation": "…belonging to the goddess Śrī Lalitā, whose name the hymn has just finished pronouncing for the thousandth time.",
+      "lemma": "śrīlalitā",
+      "lemmaDeva": "श्रीललिता",
+      "morphology": {
+        "pos": "noun",
+        "stem": "श्रीललिता",
+        "stemIast": "śrīlalitā",
+        "gender": "feminine",
+        "note": "Carries no ending of its own: it is the prior member of a compound whose case is supplied at the far end, by devyāḥ."
+      },
+      "compound": {
+        "text": "श्रीललितादेवी",
+        "iast": "śrīlalitādevī",
+        "type": "karmadharaya",
+        "gloss": "the goddess Śrī Lalitā",
+        "vigraha": "śrīlalitā ca sā devī ca",
+        "children": [
+          {
+            "text": "श्री",
+            "iast": "śrī",
+            "gloss": "light, splendour, prosperity; as a prefix to a name, an honorific"
+          },
+          {
+            "text": "ललिता",
+            "iast": "lalitā",
+            "gloss": "playful, charming, lovely — from √lal, to play or sport; her proper name"
+          },
+          {
+            "text": "देवी",
+            "iast": "devī",
+            "gloss": "goddess"
+          }
+        ]
+      },
+      "partOf": "śrīlalitādevyāḥ",
+      "note": "Printed as a separate word, but grammatically it is bound to devyāḥ: the two together are one compound in the genitive. The same name closed the thousand two words earlier as lalitāmbikā, so it is heard twice in a single line — once as the last of the names, once as the owner of them all."
+    },
+    {
+      "module": "182",
+      "line": 4,
+      "token": 2,
+      "gloss": "of the goddess",
+      "translation": "…of the goddess — the genitive that the whole line hangs from.",
+      "lemma": "devī",
+      "lemmaDeva": "देवी",
+      "morphology": {
+        "pos": "noun",
+        "stem": "देवी",
+        "stemIast": "devī",
+        "gender": "feminine",
+        "case": "genitive",
+        "caseNumber": 6,
+        "number": "singular",
+        "declension": "ī-stem (devī-type)",
+        "note": "The genitive singular of devī is devyāḥ. The visarga is not missing: final -āḥ regularly loses it before a voiced sound, and nāmnāṃ begins with n, so devyāḥ nāmnāṃ is written devyā nāmnāṃ."
+      },
+      "note": "Worth pausing on, because the written form devyā is identical to the instrumental singular and is easily misread as \"by the goddess\" — which would make her the singer rather than the subject. The singers are plural, and named by the verb at the end of the line."
+    },
+    {
+      "module": "182",
+      "line": 4,
+      "token": 3,
+      "gloss": "of the names",
+      "translation": "…of the names — all of them, taken together.",
+      "lemma": "nāman",
+      "lemmaDeva": "नामन्",
+      "morphology": {
+        "pos": "noun",
+        "stem": "नामन्",
+        "stemIast": "nāman",
+        "gender": "neuter",
+        "case": "genitive",
+        "caseNumber": 6,
+        "number": "plural",
+        "declension": "consonant stem (neuter n-stem)",
+        "note": "Weak stem nāmn- plus the genitive plural -ām gives nāmnām, written with anusvāra before the following s: nāmnāṃ sāhasrakam."
+      },
+      "note": "A partitive genitive depending on sāhasrakam: not \"the thousand names\" as a loose phrase but \"the thousand-fold collection of the names\". Sanskrit is being precise about the fact that the thousand is a grouping imposed on the names, which is why the count can be a matter of argument at all."
+    },
+    {
+      "module": "182",
+      "line": 4,
+      "token": 4,
+      "gloss": "the set of a thousand",
+      "translation": "…the full thousand of them, as one thing.",
+      "lemma": "sāhasraka",
+      "lemmaDeva": "साहस्रक",
+      "morphology": {
+        "pos": "noun",
+        "stem": "साहस्रक",
+        "stemIast": "sāhasraka",
+        "gender": "neuter",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "a-stem",
+        "note": "A secondary derivative: sahasra, a thousand, with vṛddhi of the first vowel and the suffix -ka, giving a noun for the collection rather than the number."
+      },
+      "note": "The object of the verb, and singular — they did not sing a thousand names, they sang one thousand-fold thing. That grammatical choice is the reason the hymn is treated in practice as a single unbreakable recitation rather than a list one may sample from."
+    },
+    {
+      "module": "182",
+      "line": 4,
+      "token": 5,
+      "gloss": "they sang",
+      "translation": "…they sang. The hymn's last word puts the whole of it in the past tense and in someone else's mouth.",
+      "lemma": "gai",
+      "lemmaDeva": "गै",
+      "morphology": {
+        "pos": "verb",
+        "stem": "जगु",
+        "stemIast": "jagu",
+        "tense": "perfect",
+        "person": "third",
+        "number": "plural",
+        "voice": "active",
+        "root": "√gai",
+        "rootMeaning": "to sing, chant, recite in song",
+        "note": "Reduplicated perfect of √gai: the root vowel weakens and the reduplicating syllable ja- is prefixed, giving jagau in the third singular and jaguḥ in the third plural."
+      },
+      "note": "Plural, and no subject is stated, because the subject was established when the hymn began: the eight Vāgdevatās, the goddesses of speech, who were commissioned to compose it. The last act of the text is to disown its own authorship — it does not say \"I have praised you\" but \"thus they sang\", so that the reciter joins a performance already under way rather than starting one."
+    }
+  ]
+}

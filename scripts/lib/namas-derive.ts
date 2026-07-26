@@ -87,6 +87,7 @@ export const NOMINATIVE_OVERRIDES: Record<number, Override> = {
   397: { itrans: "mUlaprakR^itiH", why: "i-stem prakṛti" },
   404: { itrans: "bhaktAhArdatamobhedabhAnumadbhAnusantatiH", why: "i-stem santati" },
   407: { itrans: "shivamUrtiH", why: "i-stem mūrti" },
+  416: { itrans: "chichChaktiH", why: "i-stem śakti" },
   418: { itrans: "jaDashaktiH", why: "i-stem śakti" },
   421: { itrans: "vyAhR^itiH", why: "i-stem vyāhṛti" },
   443: { itrans: "tuShTiH", why: "i-stem tuṣṭi" },
@@ -155,6 +156,10 @@ export const NOMINATIVE_OVERRIDES: Record<number, Override> = {
   21: { itrans: "kadambama~njarIkL^iptakarNapUramanoharA", why: "kḷpta (√kḷp), for nāmāvalī klṛpta" },
   27: { itrans: "nijasallApamAdhuryavinirbhartsitakachChapI", why: "vinirbhartsita, for nāmāvalī vinirbhatsita" },
   31: { itrans: "kanakA~NgadakeyUrakamanIyabhujAnvitA", why: "bhujā (arm), for nāmāvalī mujā" },
+  64: {
+    itrans: "devarShigaNasa~NghAtastUyamAnAtmavaibhavA",
+    why: "vaibhava (majesty), for nāmāvalī vaibhā, which is not a word",
+  },
   66: { itrans: "sampatkarIsamArUDhasindhuravrajasevitA", why: "sindhura (elephant), for nāmāvalī sindura" },
   216: { itrans: "mahAsattvA", why: "sattva, for nāmāvalī satva" },
   258: { itrans: "svapantI", why: "svapantī (dreaming), for nāmāvalī svapatnī" },
@@ -165,6 +170,14 @@ export const NOMINATIVE_OVERRIDES: Record<number, Override> = {
   667: { itrans: "nirdvaitA", why: "nirdvaitā, for nāmāvalī nidvaitā" },
   680: { itrans: "bhAvAbhAvavivarjitA", why: "vivarjitā, for nāmāvalī virjitā" },
   697: { itrans: "sarvalokavasha~NkarI", why: "vaśaṅkarī, for nāmāvalī vaṃśakarī" },
+  851: {
+    itrans: "janmamR^ityujarAtaptajanavishrAntidAyinI",
+    why: "the stotra fills the whole line with this compound, which the nāmāvalī abbreviates to viśrāntidāyinī",
+  },
+  880: {
+    itrans: "saMsArapa~NkanirmagnasamuddharaNapaNDitA",
+    why: "the stotra fills the whole line with this compound, which the nāmāvalī abbreviates to samuddharaṇapaṇḍitā",
+  },
 };
 
 /**

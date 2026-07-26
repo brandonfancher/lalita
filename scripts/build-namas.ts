@@ -107,12 +107,29 @@ async function loadContent(): Promise<Map<number, NamaContent>> {
   return merged;
 }
 
-function assemble(index: number, derivedIast: string, derivedDeva: string, namavaliIast: string, namavaliDeva: string, content: NamaContent): OutNama {
+function assemble(
+  index: number,
+  derivedIast: string,
+  derivedDeva: string,
+  namavaliIast: string,
+  namavaliDeva: string,
+  content: NamaContent,
+  partial = false,
+): OutNama {
   const inferred = inferStem(derivedIast);
-  const declension = content.declension ?? inferred?.declension;
-  const stemIast = content.stem ?? inferred?.stem;
+  let declension = content.declension ?? inferred?.declension;
+  let stemIast = content.stem ?? inferred?.stem;
   if (!declension || !stemIast) {
-    throw new Error(`nāma ${index} (${derivedIast}): stem class cannot be inferred, supply declension and stem`);
+    // Consonant stems cannot be read off the nominative, so a full build
+    // requires them by hand. A partial build falls back so the name still
+    // renders while its entry is being written.
+    if (!partial) {
+      throw new Error(
+        `nāma ${index} (${derivedIast}): stem class cannot be inferred, supply declension and stem`,
+      );
+    }
+    declension = declension ?? "consonant stem";
+    stemIast = stemIast ?? derivedIast;
   }
 
   const out: OutNama = {
@@ -169,7 +186,10 @@ function validate(entries: OutNama[], partial: boolean): string[] {
   }
   entries.forEach((e, i) => {
     if (!partial && e.index !== i + 1) problems.push(`index gap at position ${i}: got ${e.index}`);
-    for (const field of ["iast", "deva", "gloss", "translation"] as const) {
+    // Script fields must always be present; the hand-written fields are
+    // allowed to be blank while content is still being written.
+    const required = partial ? (["iast", "deva"] as const) : (["iast", "deva", "gloss", "translation"] as const);
+    for (const field of required) {
       if (!e[field]?.trim()) problems.push(`nāma ${e.index}: empty ${field}`);
     }
     if (!e.morphology?.pos || !e.morphology?.stemIast) problems.push(`nāma ${e.index}: incomplete morphology`);
@@ -197,11 +217,14 @@ async function main(): Promise<void> {
     throw new Error(`missing content for ${missing.length} nāmas: ${preview}${missing.length > 20 ? " …" : ""}`);
   }
 
+  // In partial mode every name is still emitted, carrying the mechanically
+  // derived script and morphology with the hand-written fields left blank, so
+  // the site shows correct names and grammar while meanings are written.
   const entries: OutNama[] = [];
   for (const d of derived) {
-    const c = content.get(d.index);
+    const c = content.get(d.index) ?? (partial ? { gloss: "", translation: "" } : undefined);
     if (!c) continue;
-    entries.push(assemble(d.index, d.iast, d.deva, d.namavaliIast, d.namavaliDeva, c));
+    entries.push(assemble(d.index, d.iast, d.deva, d.namavaliIast, d.namavaliDeva, c, partial));
   }
 
   const problems = validate(entries, partial);

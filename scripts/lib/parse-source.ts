@@ -23,6 +23,13 @@ export interface RawVerse {
 export interface KalaMarker {
   /** Index into the verse array where this section begins. */
   verseIndex: number;
+  /**
+   * How many words of that verse already precede the marker. The editors did
+   * not always break a hundred at a verse boundary — the marker for 801 sits
+   * between the two lines of verse 152 — so a marker pinned to the start of its
+   * verse would place the boundary several words early.
+   */
+  wordsIntoVerse: number;
   firstNama: number;
   lastNama: number;
   label: string;
@@ -62,6 +69,7 @@ function collectVerses(lines: string[]): {
     if (markerMatch) {
       kalaMarkers.push({
         verseIndex: verses.length,
+        wordsIntoVerse: pending.join(" ").split(/\s+/).filter(Boolean).length,
         firstNama: Number(markerMatch[1]),
         lastNama: Number(markerMatch[2]),
         label: rawLine.trim().replace(/[()]/g, ""),

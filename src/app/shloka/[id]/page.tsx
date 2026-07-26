@@ -12,6 +12,21 @@ export function generateStaticParams() {
   return getAllModuleIds().map((id) => ({ id }));
 }
 
+/** Commentary prose is stored with blank lines between paragraphs. */
+function Prose({ text }: { text: string }) {
+  return (
+    <div className="space-y-4 text-[15px] leading-relaxed text-ink-muted">
+      {text
+        .split(/\n\s*\n/)
+        .map((p) => p.trim())
+        .filter(Boolean)
+        .map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+    </div>
+  );
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   try {
@@ -81,11 +96,7 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
       {mod.commentary.history && (
         <section className="mb-10 max-w-3xl">
           <h2 className="display mb-3 text-2xl text-ink">History and background</h2>
-          <div className="space-y-4 text-[15px] leading-relaxed text-ink-muted">
-            {mod.commentary.history.split("\n\n").map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
+          <Prose text={mod.commentary.history} />
         </section>
       )}
 
@@ -113,7 +124,7 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
       {mod.commentary.practice && (
         <section className="mb-10 max-w-3xl">
           <h2 className="display mb-3 text-2xl text-ink">For practice</h2>
-          <p className="text-[15px] leading-relaxed text-ink-muted">{mod.commentary.practice}</p>
+          <Prose text={mod.commentary.practice} />
         </section>
       )}
 

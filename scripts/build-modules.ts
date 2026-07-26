@@ -11,7 +11,7 @@
  * Run: pnpm tsx scripts/build-modules.ts
  */
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { parseSource, parseNamavali } from "./lib/parse-source";
@@ -29,6 +29,7 @@ import type {
   VerseLine,
   ChantTiming,
   CompoundNode,
+  WordGloss,
 } from "../src/lib/types";
 
 const root = resolve(import.meta.dirname, "..");
@@ -65,11 +66,39 @@ function readJsonIfPresent<T>(path: string): T | null {
   }
 }
 
+type CommentaryEntry = { commentary?: Commentary; references?: Reference[]; subtitle?: string };
+
+/**
+ * Commentary is keyed by module id and may be split across any number of files
+ * in `data/commentary/`, so that it can be written in parallel batches without
+ * contention. A single `data/commentary.json` is still honoured.
+ */
+function loadCommentary(dataDir: string): Record<string, CommentaryEntry> {
+  const merged: Record<string, CommentaryEntry> = {
+    ...(readJsonIfPresent<Record<string, CommentaryEntry>>(resolve(dataDir, "commentary.json")) ?? {}),
+  };
+
+  const dir = resolve(dataDir, "commentary");
+  if (!existsSync(dir)) return merged;
+
+  for (const file of readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
+    const part = readJsonIfPresent<Record<string, CommentaryEntry>>(resolve(dir, file));
+    if (!part) continue;
+    for (const [id, entry] of Object.entries(part)) {
+      if (merged[id]) console.warn(`  ! duplicate commentary for module ${id} in ${file}`);
+      merged[id] = entry;
+    }
+  }
+  return merged;
+}
+
 /** Build the clickable token list for a line of verse. */
 function buildTokens(
   lineItrans: string,
   lineIndex: number,
-  namaLookup: Map<string, number>,
+  /** Nāma numbers carried by each word, keyed `${lineIndex}-${wordIndex}`. */
+  namaLookup: Map<string, number[]>,
+  words?: Map<string, WordGloss>,
 ): Token[] {
   return lineItrans
     .split(/\s+/)
@@ -77,11 +106,13 @@ function buildTokens(
     .map((word, i) => {
       const deva = toDevanagari(word);
       const iast = toIast(word);
+      const namaIndices = namaLookup.get(`${lineIndex}-${i}`);
       return {
         id: `l${lineIndex}-t${i}`,
         deva,
         iast,
-        namaIndex: namaLookup.get(iast),
+        namaIndices: namaIndices?.length ? namaIndices : undefined,
+        word: words?.get(`${lineIndex}-${i}`),
         aksaras: analyzeAksaras(deva),
       };
     });
@@ -100,22 +131,57 @@ function main() {
   // Align names to verses, excluding the closing narrative line.
   const lastIdx = verses.length - 1;
   const words: { verseIndex: number; iast: string }[] = [];
+  // Where each word of that flat stream sits in the printed text, so the
+  // alignment can be read back onto the tokens the reader actually taps.
+  const wordPlaces: { verseIndex: number; lineIndex: number; tokenIndex: number }[] = [];
   verses.forEach((v, vi) => {
     const lines = vi === lastIdx ? v.lines.slice(0, 1) : v.lines;
-    for (const line of lines) {
-      for (const w of line.split(/\s+/).filter(Boolean)) {
-        words.push({ verseIndex: vi, iast: toIast(w) });
-      }
-    }
+    lines.forEach((line, li) => {
+      line
+        .split(/\s+/)
+        .filter(Boolean)
+        .forEach((w, ti) => {
+          words.push({ verseIndex: vi, iast: toIast(w) });
+          wordPlaces.push({ verseIndex: vi, lineIndex: li, tokenIndex: ti });
+        });
+    });
   });
 
   const anchors: Anchor[] = kalaMarkers.map((m) => ({
     namesBefore: m.firstNama - 1,
-    wordIndex: words.findIndex((w) => w.verseIndex >= m.verseIndex),
+    wordIndex: words.findIndex((w) => w.verseIndex >= m.verseIndex) + m.wordsIntoVerse,
   }));
+
+  // Verse boundaries taken from a published enumeration pin the alignment
+  // exactly. Only verses whose text is identical to ours are anchored, so a
+  // recension variant can never drag a name into the wrong verse.
+  const verseAnchors =
+    readJsonIfPresent<{ anchors: { verse: number; firstNama: number }[] }>(
+      resolve(dataDir, "verse-anchors.json"),
+    )?.anchors ?? [];
+  for (const a of verseAnchors) {
+    const wordIndex = words.findIndex((w) => w.verseIndex === a.verse - 1);
+    if (wordIndex >= 0) anchors.push({ namesBefore: a.firstNama - 1, wordIndex, hard: true });
+  }
+  console.log(`  verse anchors: ${verseAnchors.length} hard, ${kalaMarkers.length} soft`);
 
   const { byVerse, namas: aligned, warnings } = alignNamas(words, namavali, anchors);
   console.log(`  aligned ${aligned.length} names (${warnings.length} warnings)`);
+
+  // Read the alignment back onto the printed words. Matching a nāma to a token
+  // by string equality would miss every word that sandhi has altered or fused,
+  // and those are exactly the words a reader most needs explained.
+  const namasAtWord = new Map<string, number[]>();
+  for (const nama of aligned) {
+    for (const wi of nama.tokenIndices) {
+      const place = wordPlaces[wi];
+      if (!place) continue;
+      const key = `${place.verseIndex}:${place.lineIndex}-${place.tokenIndex}`;
+      const list = namasAtWord.get(key);
+      if (list) list.push(nama.index);
+      else namasAtWord.set(key, [nama.index]);
+    }
+  }
 
   // Optional enrichment.
   const enrichment = readJsonIfPresent<NamaEnrichment[]>(resolve(dataDir, "namas.json"));
@@ -126,10 +192,36 @@ function main() {
   const timings = readJsonIfPresent<ChantTimings>(resolve(dataDir, "chant/timings.json"));
   console.log(`  chant timings: ${timings?.verses ? `${timings.verses.length} verses` : "not yet available"}`);
 
-  const commentaryAll =
-    readJsonIfPresent<Record<string, { commentary?: Commentary; references?: Reference[]; subtitle?: string }>>(
-      resolve(dataDir, "commentary.json"),
-    ) ?? {};
+  // Word-by-word meanings for the dhyāna, whose verses are not made of nāmas
+  // and so have nothing else to hang an explanation on.
+  const dhyanaWordList =
+    readJsonIfPresent<{ words: ({ line: number; token: number } & WordGloss)[] }>(
+      resolve(dataDir, "dhyana-words.json"),
+    )?.words ?? [];
+  const dhyanaWords = new Map<string, WordGloss>();
+  for (const { line, token, ...gloss } of dhyanaWordList) {
+    dhyanaWords.set(`${line}-${token}`, gloss);
+  }
+  console.log(`  dhyāna words: ${dhyanaWordList.length ? `${dhyanaWordList.length} glossed` : "not yet available"}`);
+
+  // The stotra is nāmas throughout except for its closing line, which reports
+  // that the names have been sung. Those words have no nāma behind them, so
+  // they carry their own analysis in the same way the dhyāna's do.
+  const frameWordList =
+    readJsonIfPresent<{ words: ({ module: string; line: number; token: number } & WordGloss)[] }>(
+      resolve(dataDir, "frame-words.json"),
+    )?.words ?? [];
+  const frameWords = new Map<string, Map<string, WordGloss>>();
+  for (const { module: modId, line, token, ...gloss } of frameWordList) {
+    const byModule = frameWords.get(modId) ?? new Map<string, WordGloss>();
+    byModule.set(`${line - 1}-${token}`, gloss);
+    frameWords.set(modId, byModule);
+  }
+  console.log(`  frame words: ${frameWordList.length ? `${frameWordList.length} glossed` : "not yet available"}`);
+
+  const commentaryAll = loadCommentary(dataDir);
+  const commentaryCount = Object.keys(commentaryAll).length;
+  console.log(`  commentary: ${commentaryCount ? `${commentaryCount} modules` : "not yet available"}`);
 
   mkdirSync(modulesDir, { recursive: true });
 
@@ -138,13 +230,16 @@ function main() {
 
   // --- Module 000: the dhyāna verses -------------------------------------
   {
+    // Keyed by the line's position in the printed dhyāna, counting from 1, so
+    // the word data can be written against what the reader actually sees.
     const lines: VerseLine[] = [];
-    dhyanaVerses.forEach((verse, vi) => {
-      verse.forEach((line, li) => {
+    dhyanaVerses.forEach((verse) => {
+      verse.forEach((line) => {
+        const lineNo = lines.length + 1;
         lines.push({
           deva: toDevanagari(line),
           iast: toIast(line),
-          tokens: buildTokens(line, vi * 10 + li, new Map()),
+          tokens: buildTokens(line, lineNo, new Map(), dhyanaWords),
         });
       });
     });
@@ -187,14 +282,25 @@ function main() {
 
     // The final half-verse belongs with verse 182.
     const isTrailingHalf = verse.number === null;
+    const existing = modules.find((m) => m.id === id);
 
-    const namaLookup = new Map<string, number>();
-    for (const n of verseNamas) namaLookup.set(n.iast, n.index);
+    // Lines appended to an existing module have to keep counting from where
+    // that module left off, or their token ids collide with the lines already
+    // there and tapping a word in the first half opens a word from the second.
+    const lineOffset = isTrailingHalf ? (existing?.lines.length ?? 0) : 0;
+
+    const namaLookup = new Map<string, number[]>();
+    for (const [key, list] of namasAtWord) {
+      const [v, rest] = key.split(":");
+      if (Number(v) !== vi) continue;
+      const [li, ti] = rest.split("-");
+      namaLookup.set(`${lineOffset + Number(li)}-${ti}`, list);
+    }
 
     const lines: VerseLine[] = verse.lines.map((line, li) => ({
       deva: toDevanagari(line),
       iast: toIast(line),
-      tokens: buildTokens(line, li, namaLookup),
+      tokens: buildTokens(line, lineOffset + li, namaLookup, frameWords.get(id)),
     }));
 
     const namas: Nama[] = verseNamas.map((a) => {
@@ -213,6 +319,8 @@ function main() {
         };
       return {
         index: a.index,
+        // The nāmāvalī-derived citation form is authoritative; the aligned
+        // slice is only used when enrichment has not reached this name yet.
         deva,
         iast,
         namavaliDeva: e?.namavaliDeva,
@@ -226,7 +334,6 @@ function main() {
       };
     });
 
-    const existing = modules.find((m) => m.id === id);
     if (isTrailingHalf && existing) {
       existing.lines.push(...lines);
       existing.namas.push(...namas);

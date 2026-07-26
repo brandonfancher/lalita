@@ -180,11 +180,42 @@ export interface Token {
   id: string;
   deva: string;
   iast: string;
-  /** Index into the module's `namas`, when this token belongs to a nāma. */
-  namaIndex?: number;
+  /**
+   * The nāmas this written word carries, by their number in the thousand.
+   *
+   * Usually one. Sandhi regularly fuses two names into a single written word
+   * (`ayoniryoninilayā` is `ayoniḥ` and `yoninilayā`), and conversely a long
+   * name is sometimes printed as two words, in which case both words point back
+   * at the same nāma.
+   */
+  namaIndices?: number[];
+  /**
+   * Word-level analysis for verses not built out of the thousand names — the
+   * dhyāna verses above all, where every word still has to be inspectable.
+   */
+  word?: WordGloss;
   aksaras: Aksara[];
   /** Sandhi note explaining how this surface form arose, when it isn't obvious. */
   sandhi?: string;
+}
+
+/** The meaning and grammar of a single word that is not one of the nāmas. */
+export interface WordGloss {
+  /** Short gloss, a few words. */
+  gloss: string;
+  /** A fuller rendering of the word in context. */
+  translation?: string;
+  /** Dictionary form, IAST. */
+  lemma?: string;
+  lemmaDeva?: string;
+  morphology?: Morphology;
+  compound?: CompoundNode;
+  /**
+   * Set when the printed text breaks a single compound across a space, so the
+   * reader is told which neighbouring words belong with this one.
+   */
+  partOf?: string;
+  note?: string;
 }
 
 /** One of the thousand names. */

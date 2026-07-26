@@ -1,0 +1,2235 @@
+{
+  "note": "Word-by-word analysis of the dhyāna verses. Meanings are grounded in Monier-Williams (1899); the prose is written for this site.",
+  "words": [
+    {
+      "line": 1,
+      "token": 0,
+      "gloss": "red as vermilion",
+      "translation": "Her body is the deep orange-red of sindūra powder.",
+      "lemma": "sindūrāruṇa",
+      "lemmaDeva": "सिन्दूरारुण",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सिन्दूरारुण",
+        "stemIast": "sindūrāruṇa",
+        "note": "A prior member inside a longer compound, so it carries no ending of its own. The case is supplied at the far end of the word, by vigrahāṃ."
+      },
+      "compound": {
+        "text": "सिन्दूरारुण",
+        "iast": "sindūrāruṇa",
+        "type": "karmadharaya",
+        "gloss": "as red as vermilion",
+        "vigraha": "sindūram iva aruṇaḥ",
+        "children": [
+          {
+            "text": "सिन्दूर",
+            "iast": "sindūra",
+            "gloss": "red lead, minium, vermilion — the bright orange-red mineral powder"
+          },
+          {
+            "text": "अरुण",
+            "iast": "aruṇa",
+            "gloss": "reddish-brown, tawny, ruddy; Monier-Williams adds that it is the colour of morning as against the darkness of night"
+          }
+        ]
+      },
+      "partOf": "sindūrāruṇavigrahām",
+      "note": "The first member names the standard of comparison rather than a further quality, which is what makes this a karmadhāraya of the comparative kind: not \"vermilion and red\" but \"red in the way vermilion is red\". Sandhi joins the two at a + a → ā. Nothing in the word is decorative: red is the colour this whole set of verses keeps returning to."
+    },
+    {
+      "line": 1,
+      "token": 1,
+      "gloss": "body, bodily form",
+      "translation": "…and it is her body, her whole visible form, that has that colour.",
+      "lemma": "vigraha",
+      "lemmaDeva": "विग्रह",
+      "morphology": {
+        "pos": "noun",
+        "stem": "विग्रहा",
+        "stemIast": "vigrahā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "vigraha is masculine standing alone. At the end of a bahuvrīhi describing the goddess it takes the feminine -ā and declines like any ā-stem, giving the accusative vigrahām."
+      },
+      "compound": {
+        "text": "सिन्दूरारुणविग्रहा",
+        "iast": "sindūrāruṇavigrahā",
+        "type": "bahuvrihi",
+        "gloss": "she whose body is vermilion-red",
+        "vigraha": "sindūrāruṇo vigraho yasyāḥ sā",
+        "children": [
+          {
+            "text": "सिन्दूरारुण",
+            "iast": "sindūrāruṇa",
+            "type": "karmadharaya",
+            "gloss": "as red as vermilion",
+            "vigraha": "sindūram iva aruṇaḥ",
+            "children": [
+              {
+                "text": "सिन्दूर",
+                "iast": "sindūra",
+                "gloss": "red lead, vermilion"
+              },
+              {
+                "text": "अरुण",
+                "iast": "aruṇa",
+                "gloss": "reddish, ruddy, the colour of daybreak"
+              }
+            ]
+          },
+          {
+            "text": "विग्रह",
+            "iast": "vigraha",
+            "gloss": "individual form or shape, figure, the body"
+          }
+        ]
+      },
+      "partOf": "sindūrāruṇavigrahām",
+      "note": "This is the word that carries the case for the whole compound, and the case is accusative — the first of a long chain of them that will not be discharged until dhyāyet arrives at the end of the fourth line. Monier-Williams gives vigraha a wide spread of senses: separation, analysis of a compound, even war; the sense wanted here is the eighth, \"separate i.e. individual form or shape, the body\", a form marked off from everything around it."
+    },
+    {
+      "line": 1,
+      "token": 2,
+      "gloss": "three-eyed",
+      "translation": "She has three eyes — the right the sun, the left the moon, and between them the third, which is the twilight.",
+      "lemma": "trinayana",
+      "lemmaDeva": "त्रिनयन",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "त्रिनयना",
+        "stemIast": "trinayanā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "त्रिनयना",
+        "iast": "trinayanā",
+        "type": "bahuvrihi",
+        "gloss": "she who has three eyes",
+        "vigraha": "trīṇi nayanāni yasyāḥ sā",
+        "children": [
+          {
+            "text": "त्रि",
+            "iast": "tri",
+            "gloss": "three"
+          },
+          {
+            "text": "नयन",
+            "iast": "nayana",
+            "gloss": "the eye — literally \"the leading organ\", from √nī, to lead"
+          }
+        ]
+      },
+      "note": "A complete word, unlike its neighbours, and a good place to hear the difference the script insists on. sindūrāruṇa just before it has a retroflex ṇ, made with the tongue-tip curled back; trinayanā has three dental n sounds, made with the tongue-tip at the upper teeth. Nothing separates them but a syllable or two. On the three eyes the site follows Saundaryalaharī 48, quoted on this page: they are not borrowed from Śiva as an ornament but a statement about time, her looking being what divides day from night."
+    },
+    {
+      "line": 1,
+      "token": 3,
+      "gloss": "a diadem of rubies",
+      "translation": "A crown of rubies sits on the top of her head.",
+      "lemma": "māṇikyamauli",
+      "lemmaDeva": "माणिक्यमौलि",
+      "morphology": {
+        "pos": "noun",
+        "stem": "माणिक्यमौलि",
+        "stemIast": "māṇikyamauli",
+        "note": "A prior member inside a much longer compound, so it stands in the bare stem with no ending."
+      },
+      "compound": {
+        "text": "माणिक्यमौलि",
+        "iast": "māṇikyamauli",
+        "type": "tatpurusha",
+        "gloss": "a crown made of rubies",
+        "vigraha": "māṇikyānāṃ mauliḥ",
+        "children": [
+          {
+            "text": "माणिक्य",
+            "iast": "māṇikya",
+            "gloss": "a ruby"
+          },
+          {
+            "text": "मौलि",
+            "iast": "mauli",
+            "gloss": "the head, the top of anything; a diadem, crown, crest"
+          }
+        ]
+      },
+      "partOf": "māṇikyamaulisphurattārānāyakaśekharām",
+      "note": "Monier-Williams gives mauli both \"the head, the top of anything\" and \"a diadem, crown\", and the ambiguity is useful here: mauli is also the hair piled on top of the head, which is where the moon of the next few syllables is going to sit. The whole compound this belongs to is diagrammed under śekharāṃ, where its ending finally appears."
+    },
+    {
+      "line": 1,
+      "token": 4,
+      "gloss": "flashing, glittering",
+      "translation": "Something is catching the light up there — the crown, or the moon above it.",
+      "lemma": "sphurat",
+      "lemmaDeva": "स्फुरत्",
+      "morphology": {
+        "pos": "participle",
+        "stem": "स्फुरत्",
+        "stemIast": "sphurat",
+        "tense": "present",
+        "voice": "active",
+        "root": "√sphur",
+        "rootMeaning": "to throb, quiver, twitch; to flash, glitter, sparkle",
+        "note": "Present active participle in the bare stem -at, used as a compound member and so uninflected."
+      },
+      "partOf": "māṇikyamaulisphurattārānāyakaśekharām",
+      "note": "Two readings circulate and the compound does not decide between them: the moon flashing above the ruby crown, or the ruby crown itself flashing beneath the moon. Either way the same root is at work — √sphur is a physical word, used of a nerve twitching in the arm as readily as of light on a jewel, so the flashing here is intermittent rather than steady. In pronunciation, sph is s followed by an aspirated p, not an English f: let the breath be heard after the p. The final t assimilates to the following t of tārā, giving -sphurattārā-."
+    },
+    {
+      "line": 2,
+      "token": 0,
+      "gloss": "star",
+      "translation": "Of the stars…",
+      "lemma": "tārā",
+      "lemmaDeva": "तारा",
+      "morphology": {
+        "pos": "noun",
+        "stem": "तारा",
+        "stemIast": "tārā",
+        "gender": "feminine",
+        "declension": "ā-stem",
+        "note": "A prior member inside a compound: the stem keeps its long ā and takes no ending."
+      },
+      "partOf": "māṇikyamaulisphurattārānāyakaśekharām",
+      "note": "Monier-Williams gives tārā \"a fixed star\" first and \"the pupil of the eye\" second. Here it is a star, and it is about to be made subordinate: with the next word it forms tārānāyaka, lord of the stars, which is one of the standard ways of naming the moon without naming it. Tārā is of course also a goddess in her own right in the tantric traditions, but nothing in this compound points that way."
+    },
+    {
+      "line": 2,
+      "token": 1,
+      "gloss": "leader, lord",
+      "translation": "…the lord: that is, the moon.",
+      "lemma": "nāyaka",
+      "lemmaDeva": "नायक",
+      "morphology": {
+        "pos": "noun",
+        "stem": "नायक",
+        "stemIast": "nāyaka",
+        "gender": "masculine",
+        "declension": "a-stem",
+        "note": "A prior member inside a compound, so it stands in the bare stem."
+      },
+      "compound": {
+        "text": "तारानायक",
+        "iast": "tārānāyaka",
+        "type": "tatpurusha",
+        "gloss": "lord of the stars — the moon",
+        "vigraha": "tārāṇāṃ nāyakaḥ",
+        "children": [
+          {
+            "text": "तारा",
+            "iast": "tārā",
+            "gloss": "a star"
+          },
+          {
+            "text": "नायक",
+            "iast": "nāyaka",
+            "gloss": "a guide, leader, chief, lord"
+          }
+        ]
+      },
+      "partOf": "māṇikyamaulisphurattārānāyakaśekharām",
+      "note": "nāyaka is from √nī, \"to lead\", by the same derivation that gives naya, \"conduct, policy\" — the leader is the one who takes you somewhere. Kāvya prefers a periphrasis like this to the plain candra: calling the moon lord of the stars keeps the whole night sky in the picture at once."
+    },
+    {
+      "line": 2,
+      "token": 2,
+      "gloss": "crest, head-ornament",
+      "translation": "The moon flashing above her ruby diadem is the ornament worn on the crown of her head.",
+      "lemma": "śekhara",
+      "lemmaDeva": "शेखर",
+      "morphology": {
+        "pos": "noun",
+        "stem": "शेखरा",
+        "stemIast": "śekharā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "śekhara is masculine alone; at the end of a bahuvrīhi describing the goddess it becomes feminine śekharā, accusative śekharām."
+      },
+      "compound": {
+        "text": "माणिक्यमौलिस्फुरत्तारानायकशेखरा",
+        "iast": "māṇikyamaulisphurattārānāyakaśekharā",
+        "type": "bahuvrihi",
+        "gloss": "she whose crest-ornament is the moon, flashing above her ruby diadem",
+        "vigraha": "māṇikyamaulau sphuran tārānāyakaḥ śekharo yasyāḥ sā",
+        "children": [
+          {
+            "text": "माणिक्यमौलि",
+            "iast": "māṇikyamauli",
+            "type": "tatpurusha",
+            "gloss": "a crown made of rubies",
+            "vigraha": "māṇikyānāṃ mauliḥ",
+            "children": [
+              {
+                "text": "माणिक्य",
+                "iast": "māṇikya",
+                "gloss": "a ruby"
+              },
+              {
+                "text": "मौलि",
+                "iast": "mauli",
+                "gloss": "the top of the head; a diadem, crown"
+              }
+            ]
+          },
+          {
+            "text": "स्फुरत्तारानायक",
+            "iast": "sphurattārānāyaka",
+            "type": "karmadharaya",
+            "gloss": "the flashing lord of the stars — the moon",
+            "vigraha": "sphuraṃś cāsau tārānāyakaś ca",
+            "children": [
+              {
+                "text": "स्फुरत्",
+                "iast": "sphurat",
+                "gloss": "flashing, glittering"
+              },
+              {
+                "text": "तारानायक",
+                "iast": "tārānāyaka",
+                "type": "tatpurusha",
+                "gloss": "lord of the stars — the moon",
+                "vigraha": "tārāṇāṃ nāyakaḥ",
+                "children": [
+                  {
+                    "text": "तारा",
+                    "iast": "tārā",
+                    "gloss": "a star"
+                  },
+                  {
+                    "text": "नायक",
+                    "iast": "nāyaka",
+                    "gloss": "leader, lord"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "शेखर",
+            "iast": "śekhara",
+            "gloss": "the crown of the head; a chaplet, diadem, crest"
+          }
+        ]
+      },
+      "partOf": "māṇikyamaulisphurattārānāyakaśekharām",
+      "note": "Five printed tokens, one word. The ending arrives only here, and it is accusative again, still waiting on dhyāyet. Note the ś of śekharāṃ: a palatal sibilant, made further back than the s of saumyāṃ and further forward than the ṣ inside vakṣoruhām — all three sibilants occur within a few words of each other in this verse."
+    },
+    {
+      "line": 2,
+      "token": 3,
+      "gloss": "smiling-faced, and full of breast",
+      "translation": "A smile on her face; her breasts full.",
+      "lemma": "smitamukhī",
+      "lemmaDeva": "स्मितमुखी",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "स्मितमुखी",
+        "stemIast": "smitamukhī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "Two separate accusatives are printed as a single token here. āpīnavakṣoruhām, the second of them, is likewise feminine accusative singular, an ā-stem."
+      },
+      "compound": {
+        "text": "स्मितमुखीमापीनवक्षोरुहाम्",
+        "iast": "smitamukhīmāpīnavakṣoruhām",
+        "gloss": "Not one compound but two words run together by sandhi: smitamukhīm + āpīnavakṣoruhām",
+        "children": [
+          {
+            "text": "स्मितमुखी",
+            "iast": "smitamukhī",
+            "type": "bahuvrihi",
+            "gloss": "she whose face is smiling",
+            "vigraha": "smitaṃ mukhaṃ yasyāḥ sā",
+            "children": [
+              {
+                "text": "स्मित",
+                "iast": "smita",
+                "gloss": "smiled, smiling; as a noun, a smile or gentle laugh"
+              },
+              {
+                "text": "मुख",
+                "iast": "mukha",
+                "gloss": "the mouth, face, countenance"
+              }
+            ]
+          },
+          {
+            "text": "आपीनवक्षोरुहा",
+            "iast": "āpīnavakṣoruhā",
+            "type": "bahuvrihi",
+            "gloss": "she whose breasts are full",
+            "vigraha": "āpīnāni vakṣoruhāṇi yasyāḥ sā",
+            "children": [
+              {
+                "text": "आपीन",
+                "iast": "āpīna",
+                "gloss": "swollen, full, round — the same family as pīna, \"swelling, full, fleshy\""
+              },
+              {
+                "text": "वक्षोरुह",
+                "iast": "vakṣoruha",
+                "type": "upapada",
+                "gloss": "\"that which grows on the chest\" — the breast",
+                "vigraha": "vakṣasi rohati iti",
+                "children": [
+                  {
+                    "text": "वक्षस्",
+                    "iast": "vakṣas",
+                    "gloss": "the breast, bosom, chest"
+                  },
+                  {
+                    "text": "रुह",
+                    "iast": "ruha",
+                    "gloss": "growing, sprouting on — from √ruh, and never used alone"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Two sandhi joins worth slowing over. Between the words, final -īm meets initial ā- and the m simply carries across: smitamukhīm āpīna- is written smitamukhīmāpīna-. Inside the second word, vakṣas + ruha becomes vakṣoruha, because a final -as before a voiced sound turns into -o. mukha, neuter on its own, ends this bahuvrīhi as feminine mukhī, which is why the first word has an ī-stem ending and the second an ā-stem one."
+    },
+    {
+      "line": 3,
+      "token": 0,
+      "gloss": "in her two hands, a jewelled goblet filled to the brim",
+      "translation": "She holds in her two hands a goblet of gems, full.",
+      "lemma": "pāṇi",
+      "lemmaDeva": "पाणि",
+      "morphology": {
+        "pos": "noun",
+        "stem": "पाणि",
+        "stemIast": "pāṇi",
+        "gender": "masculine",
+        "case": "instrumental",
+        "caseNumber": 3,
+        "number": "dual",
+        "declension": "i-stem",
+        "note": "The token holds two words. pāṇibhyām is instrumental dual — a form Sanskrit keeps for things that naturally come in twos, and one of the few duals in the whole dhyāna. The second word, alipūrṇaratnacaṣakam, is accusative singular neuter: the object of bibhratīm at the end of the line."
+      },
+      "compound": {
+        "text": "पाणिभ्यामलिपूर्णरत्नचषकम्",
+        "iast": "pāṇibhyāmalipūrṇaratnacaṣakam",
+        "gloss": "Not one compound but two words run together by sandhi: pāṇibhyām + alipūrṇaratnacaṣakam",
+        "children": [
+          {
+            "text": "पाणिभ्याम्",
+            "iast": "pāṇibhyām",
+            "gloss": "with her two hands (instrumental dual of pāṇi, the hand)"
+          },
+          {
+            "text": "अलिपूर्णरत्नचषक",
+            "iast": "alipūrṇaratnacaṣaka",
+            "type": "karmadharaya",
+            "gloss": "a jewelled goblet, and it is full",
+            "vigraha": "alipūrṇaṃ ca tad ratnacaṣakaṃ ca",
+            "children": [
+              {
+                "text": "अलिपूर्ण",
+                "iast": "alipūrṇa",
+                "type": "tatpurusha",
+                "gloss": "filled with ali",
+                "vigraha": "alinā pūrṇam",
+                "children": [
+                  {
+                    "text": "अलि",
+                    "iast": "ali",
+                    "gloss": "a large black bee; also, in Monier-Williams, spirituous liquor"
+                  },
+                  {
+                    "text": "पूर्ण",
+                    "iast": "pūrṇa",
+                    "gloss": "filled, full — the past participle of √pṝ, to fill"
+                  }
+                ]
+              },
+              {
+                "text": "रत्नचषक",
+                "iast": "ratnacaṣaka",
+                "type": "tatpurusha",
+                "gloss": "a goblet made of gems",
+                "vigraha": "ratnamayaṃ caṣakam",
+                "children": [
+                  {
+                    "text": "रत्न",
+                    "iast": "ratna",
+                    "gloss": "a jewel, gem, treasure; earlier, simply a gift or wealth"
+                  },
+                  {
+                    "text": "चषक",
+                    "iast": "caṣaka",
+                    "gloss": "a cup, wineglass, goblet"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "What the cup is full of is the one genuinely unsettled point in these verses. Monier-Williams gives ali two relevant senses, \"a large black bee\" and \"spirituous liquor\", and reciters split accordingly: a gem cup brimming with mead, or a gem cup with bees hovering over its sweetness. The dictionary is no help in deciding, since it also lists \"spirituous liquor\" under caṣaka itself. This site's commentary keeps to what the verse guarantees — a jewelled goblet — and leaves the contents where the poet left them. Note too that the number is right for a two-armed form: two hands, one cup, one lotus, and no weapon anywhere in this verse."
+    },
+    {
+      "line": 3,
+      "token": 1,
+      "gloss": "a red lotus",
+      "translation": "And in the other hand, a red water-lily.",
+      "lemma": "raktotpala",
+      "lemmaDeva": "रक्तोत्पल",
+      "morphology": {
+        "pos": "noun",
+        "stem": "रक्तोत्पल",
+        "stemIast": "raktotpala",
+        "gender": "neuter",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "a-stem",
+        "note": "Accusative because it is a second object of bibhratīm, not because of dhyāyet."
+      },
+      "compound": {
+        "text": "रक्तोत्पल",
+        "iast": "raktotpala",
+        "type": "karmadharaya",
+        "gloss": "a water-lily, and a red one",
+        "vigraha": "raktaṃ ca tad utpalaṃ ca",
+        "children": [
+          {
+            "text": "रक्त",
+            "iast": "rakta",
+            "gloss": "coloured, dyed; reddened, red"
+          },
+          {
+            "text": "उत्पल",
+            "iast": "utpala",
+            "gloss": "the blossom of the blue lotus, Nymphaea caerulea; any water-lily"
+          }
+        ]
+      },
+      "note": "Sandhi hides the seam: rakta + utpala gives raktotpala, a + u contracting to o. Since utpala is properly the blue night-lily, specifying a red one is a deliberate move rather than a filler epithet. And rakta is worth a second look — it is the past participle of √rañj, \"to be dyed, to redden\", the same root that gives rāga, so the word means \"reddened\" and \"impassioned\" at once. Monier-Williams lists both senses under the one headword."
+    },
+    {
+      "line": 3,
+      "token": 2,
+      "gloss": "bearing, holding",
+      "translation": "…holding them: the cup in one hand, the lotus in the other.",
+      "lemma": "bibhrat",
+      "lemmaDeva": "बिभ्रत्",
+      "morphology": {
+        "pos": "participle",
+        "stem": "बिभ्रती",
+        "stemIast": "bibhratī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "tense": "present",
+        "voice": "active",
+        "root": "√bhṛ",
+        "rootMeaning": "to bear, carry, hold; to wear; to support, maintain",
+        "note": "Present active participle of a reduplicating (class 3) verb: bibharti, \"she bears\" → stem bibhrat-, feminine bibhratī, accusative bibhratīm."
+      },
+      "note": "This participle is doing two jobs at once. It agrees with the goddess, so it takes the same feminine accusative ending as every epithet around it; and being a participle it also governs objects of its own, which is why the goblet and the lotus are in the accusative independently of dhyāyet. √bhṛ is the root behind bharaṇa and bhartṛ, and its range runs from carrying an object to maintaining a household — she is not just holding these things, she is sustaining them."
+    },
+    {
+      "line": 4,
+      "token": 0,
+      "gloss": "gentle, benign",
+      "translation": "Her whole aspect is mild.",
+      "lemma": "saumya",
+      "lemmaDeva": "सौम्य",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सौम्या",
+        "stemIast": "saumyā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "note": "The gentleness here is literally lunar. saumya is a vṛddhi derivative of soma, and Monier-Williams puts the senses in their historical order: first \"relating to Soma — the juice, the sacrifice, the moon\", then \"cool and moist, as opposed to hot and dry\", and only then \"resembling the moon: placid, gentle, mild\". Set against the fierce forms of the goddess, this word is doing real work: of the four dhyāna verses, this is the only one that puts no weapon in her hands."
+    },
+    {
+      "line": 4,
+      "token": 1,
+      "gloss": "jewel, gem",
+      "translation": "Made of gems…",
+      "lemma": "ratna",
+      "lemmaDeva": "रत्न",
+      "morphology": {
+        "pos": "noun",
+        "stem": "रत्न",
+        "stemIast": "ratna",
+        "gender": "neuter",
+        "declension": "a-stem",
+        "note": "A prior member inside a compound, so it takes no ending."
+      },
+      "partOf": "ratnaghaṭastharaktacaraṇām",
+      "note": "Monier-Williams derives ratna from √rā, \"to give\", and lists \"a gift, present, goods, wealth\" before \"a jewel, gem, treasure\" — the gem is first of all something bestowed. The full compound this opens is diagrammed under raktacaraṇāṃ, three tokens along."
+    },
+    {
+      "line": 4,
+      "token": 2,
+      "gloss": "resting on a vessel",
+      "translation": "…a vessel, and her feet are set on it.",
+      "lemma": "ghaṭastha",
+      "lemmaDeva": "घटस्थ",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "घटस्थ",
+        "stemIast": "ghaṭastha",
+        "note": "A prior member inside a compound, so it takes no ending of its own."
+      },
+      "compound": {
+        "text": "घटस्थ",
+        "iast": "ghaṭastha",
+        "type": "upapada",
+        "gloss": "standing on a pot",
+        "vigraha": "ghaṭe tiṣṭhati iti",
+        "children": [
+          {
+            "text": "घट",
+            "iast": "ghaṭa",
+            "gloss": "a jar, pitcher, large earthen water-jar"
+          },
+          {
+            "text": "स्थ",
+            "iast": "stha",
+            "gloss": "standing, staying, situated in — from √sthā"
+          }
+        ]
+      },
+      "partOf": "ratnaghaṭastharaktacaraṇām",
+      "note": "This is the clearest upapada compound in the set. Monier-Williams marks stha \"only ifc.\", meaning it never appears as a word in its own right: it is a verbal root pressed flat into a compound-final, and it needs something in front of it to exist at all. The same element will return in the third verse, in padmāsanasthāṃ."
+    },
+    {
+      "line": 4,
+      "token": 3,
+      "gloss": "red-footed",
+      "translation": "Her reddened feet rest on a vessel of gems.",
+      "lemma": "raktacaraṇa",
+      "lemmaDeva": "रक्तचरण",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "रक्तचरणा",
+        "stemIast": "raktacaraṇā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "The feet are two, but a bahuvrīhi is resolved as a whole and agrees with the person it describes — hence feminine accusative singular, matching her and not them."
+      },
+      "compound": {
+        "text": "रत्नघटस्थरक्तचरणा",
+        "iast": "ratnaghaṭastharaktacaraṇā",
+        "type": "bahuvrihi",
+        "gloss": "she whose reddened feet rest on a jewelled vessel",
+        "vigraha": "ratnaghaṭasthau raktau caraṇau yasyāḥ sā",
+        "children": [
+          {
+            "text": "रत्नघटस्थ",
+            "iast": "ratnaghaṭastha",
+            "type": "upapada",
+            "gloss": "standing on a jewelled pot",
+            "vigraha": "ratnaghaṭe tiṣṭhati iti",
+            "children": [
+              {
+                "text": "रत्नघट",
+                "iast": "ratnaghaṭa",
+                "type": "tatpurusha",
+                "gloss": "a pot made of gems",
+                "vigraha": "ratnamayo ghaṭaḥ",
+                "children": [
+                  {
+                    "text": "रत्न",
+                    "iast": "ratna",
+                    "gloss": "a jewel, gem"
+                  },
+                  {
+                    "text": "घट",
+                    "iast": "ghaṭa",
+                    "gloss": "a jar, pitcher, water-pot"
+                  }
+                ]
+              },
+              {
+                "text": "स्थ",
+                "iast": "stha",
+                "gloss": "standing on, resting on"
+              }
+            ]
+          },
+          {
+            "text": "रक्त",
+            "iast": "rakta",
+            "gloss": "reddened, red"
+          },
+          {
+            "text": "चरण",
+            "iast": "caraṇa",
+            "gloss": "the foot"
+          }
+        ]
+      },
+      "partOf": "ratnaghaṭastharaktacaraṇām",
+      "note": "caraṇa is from √car, \"to move, walk, roam\": the foot named as the thing that goes. The redness is the lac dye women painted on the soles and toes, so this is an observed detail rather than a symbol, and it completes the colour scheme the verse opened with at sindūrāruṇa."
+    },
+    {
+      "line": 4,
+      "token": 4,
+      "gloss": "one should meditate on",
+      "translation": "One should meditate on her — and only now, at the end of nineteen syllables of description, does the sentence say what to do with it all.",
+      "lemma": "dhyai",
+      "lemmaDeva": "ध्यै",
+      "morphology": {
+        "pos": "verb",
+        "stem": "ध्याय",
+        "stemIast": "dhyāya",
+        "tense": "optative",
+        "person": "third",
+        "number": "singular",
+        "voice": "active",
+        "root": "√dhyai",
+        "rootMeaning": "to think of, imagine, contemplate, meditate on, call to mind",
+        "note": "Class-4 present stem dhyāya-, plus the optative marker -ī- and the third-singular active ending -t: dhyāya + ī + t → dhyāyet."
+      },
+      "note": "This is the word that makes the dhyāna a dhyāna. The optative — the tradition calls this use of it the vidhi-liṅ, the \"injunctive optative\" — turns what would otherwise be a portrait into an instruction: not \"she is like this\" but \"this is how one should hold her in mind\". Every accusative from sindūrāruṇa onwards has been waiting for it, which is why the verse cannot be broken into shorter sentences without losing its grammar."
+    },
+    {
+      "line": 4,
+      "token": 5,
+      "gloss": "the supreme Mother",
+      "translation": "…the supreme Mother.",
+      "lemma": "ambikā",
+      "lemmaDeva": "अम्बिका",
+      "morphology": {
+        "pos": "noun",
+        "stem": "अम्बिका",
+        "stemIast": "ambikā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "Two words are printed as one: parām, accusative singular feminine of para, and ambikām. Both are accusative because both are governed by dhyāyet — the adjective simply agrees with its noun."
+      },
+      "compound": {
+        "text": "परामम्बिकाम्",
+        "iast": "parāmambikām",
+        "gloss": "Not a compound — an adjective and its noun run together by sandhi: parām + ambikām",
+        "children": [
+          {
+            "text": "पराम्",
+            "iast": "parām",
+            "gloss": "supreme, highest, beyond (feminine accusative singular)"
+          },
+          {
+            "text": "अम्बिकाम्",
+            "iast": "ambikām",
+            "gloss": "the Mother (feminine accusative singular)"
+          }
+        ]
+      },
+      "note": "para begins as a word about distance — Monier-Williams opens with \"far, distant, remote, on the farther side of\" — and only from there becomes \"supreme\". What is supreme is what lies beyond. ambikā is a plain domestic word, \"mother, good woman\", used as a respectful form of address long before it became a name of the goddess. Putting the two together is the whole point of the verse: what is furthest beyond is addressed as the nearest thing there is. Readers inside this tradition will also hear parā, the highest of the four levels of speech, though the syntax here asks for nothing more than \"supreme\"."
+    },
+    {
+      "line": 5,
+      "token": 0,
+      "gloss": "red, ruddy",
+      "translation": "She is red — the colour the sky takes just before the sun comes up.",
+      "lemma": "aruṇa",
+      "lemmaDeva": "अरुण",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "अरुणा",
+        "stemIast": "aruṇā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "First of a run of accusatives that will not find their verb until vibhāvaye, two lines below."
+      },
+      "note": "Monier-Williams glosses aruṇa \"reddish-brown, tawny, red, ruddy\" and then specifies it: \"the colour of the morning opposed to the darkness of night\". Aruṇa is also the sun's charioteer, dawn personified, so the word names a moment as much as a hue — the light before the light. The ṇ is retroflex, pulled back by the r just before it; the same happens in karuṇā and caraṇa, and it does not happen in bhavānī or vadana."
+    },
+    {
+      "line": 5,
+      "token": 1,
+      "gloss": "eyes rippling with compassion",
+      "translation": "Compassion moves across her eyes the way waves move across water.",
+      "lemma": "karuṇātaraṅgitākṣī",
+      "lemmaDeva": "करुणातरङ्गिताक्षी",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "करुणातरङ्गिताक्षी",
+        "stemIast": "karuṇātaraṅgitākṣī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "akṣi, \"eye\", is neuter standing alone. At the end of a bahuvrīhi describing a woman it becomes -ākṣī and declines like nadī, giving the accusative -ākṣīm."
+      },
+      "compound": {
+        "text": "करुणातरङ्गिताक्षी",
+        "iast": "karuṇātaraṅgitākṣī",
+        "type": "bahuvrihi",
+        "gloss": "she whose eyes are set rippling by compassion",
+        "vigraha": "karuṇayā taraṅgite akṣiṇī yasyāḥ sā",
+        "children": [
+          {
+            "text": "करुणातरङ्गित",
+            "iast": "karuṇātaraṅgita",
+            "type": "tatpurusha",
+            "gloss": "made to move in waves by compassion",
+            "vigraha": "karuṇayā taraṅgitam",
+            "children": [
+              {
+                "text": "करुणा",
+                "iast": "karuṇā",
+                "gloss": "pity, compassion — one of the four brahmavihāras"
+              },
+              {
+                "text": "तरङ्गित",
+                "iast": "taraṅgita",
+                "gloss": "wavy, waving, moving restlessly to and fro"
+              }
+            ]
+          },
+          {
+            "text": "अक्षि",
+            "iast": "akṣi",
+            "gloss": "the eye"
+          }
+        ]
+      },
+      "note": "The metaphor is built into the morphology rather than laid on top of it. taraṅga is a wave, and Monier-Williams unpacks it charmingly as taram-ga, the \"across-goer\", from √tṝ, to cross over. From that noun Sanskrit makes a denominative verb, taraṅgayati, \"to cause to move to and fro\", and taraṅgita is its past participle. So her eyes have literally been wave-d — compassion is the thing doing it, which is why karuṇā stands in an instrumental relation inside the compound. Two joins to hear: karuṇā absorbs the following a, and taraṅgita + akṣī contracts a + a to ā."
+    },
+    {
+      "line": 5,
+      "token": 2,
+      "gloss": "holding noose, goad, flower-arrow and bow",
+      "translation": "Four hands, and in them the noose, the goad, the arrow made of flowers, and the bow.",
+      "lemma": "dhṛtapāśāṅkuśapuṣpabāṇacāpā",
+      "lemmaDeva": "धृतपाशाङ्कुशपुष्पबाणचापा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "धृतपाशाङ्कुशपुष्पबाणचापा",
+        "stemIast": "dhṛtapāśāṅkuśapuṣpabāṇacāpā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "धृतपाशाङ्कुशपुष्पबाणचापा",
+        "iast": "dhṛtapāśāṅkuśapuṣpabāṇacāpā",
+        "type": "bahuvrihi",
+        "gloss": "she by whom noose, goad, flower-arrow and bow are held",
+        "vigraha": "dhṛtāḥ pāśāṅkuśapuṣpabāṇacāpā yayā sā",
+        "children": [
+          {
+            "text": "धृत",
+            "iast": "dhṛta",
+            "gloss": "held, borne, carried — past participle of √dhṛ"
+          },
+          {
+            "text": "पाशाङ्कुशपुष्पबाणचाप",
+            "iast": "pāśāṅkuśapuṣpabāṇacāpa",
+            "type": "dvandva",
+            "gloss": "noose, goad, flower-arrow and bow",
+            "vigraha": "pāśaś cāṅkuśaś ca puṣpabāṇaś ca cāpaś ca",
+            "children": [
+              {
+                "text": "पाश",
+                "iast": "pāśa",
+                "gloss": "a snare, noose, tie, bond, fetter"
+              },
+              {
+                "text": "अङ्कुश",
+                "iast": "aṅkuśa",
+                "gloss": "a hook, especially an elephant-driver's hook"
+              },
+              {
+                "text": "पुष्पबाण",
+                "iast": "puṣpabāṇa",
+                "type": "karmadharaya",
+                "gloss": "an arrow that is a flower",
+                "vigraha": "puṣpam eva bāṇaḥ",
+                "children": [
+                  {
+                    "text": "पुष्प",
+                    "iast": "puṣpa",
+                    "gloss": "a flower, blossom"
+                  },
+                  {
+                    "text": "बाण",
+                    "iast": "bāṇa",
+                    "gloss": "a reed-shaft, an arrow"
+                  }
+                ]
+              },
+              {
+                "text": "चाप",
+                "iast": "cāpa",
+                "gloss": "a bow"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "A dvandva of four items with a participle in front of it, the whole then turned outward onto her: she is not the holding, she is the one who holds. Sandhi welds pāśa to aṅkuśa at a + a → ā, which is why the noose and the goad look like a single item in the printed line. puṣpabāṇa is the compound type the poets like best, where the first member does not qualify the second but simply is it — the arrow does not have flowers, the arrow is a flower. What the four objects mean is not this verse's business; the stotra's own next two verses take that up, and the site's cross-reference to Saundaryalaharī 7 shows the same four in the same four hands."
+    },
+    {
+      "line": 6,
+      "token": 0,
+      "gloss": "surrounded by the powers beginning with aṇimā",
+      "translation": "The eight attainments stand around her in a ring.",
+      "lemma": "āvṛta",
+      "lemmaDeva": "आवृत",
+      "morphology": {
+        "pos": "participle",
+        "stem": "आवृता",
+        "stemIast": "āvṛtā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "voice": "passive",
+        "root": "√vṛ",
+        "rootMeaning": "to cover, screen, conceal, surround, enclose",
+        "note": "Past passive participle of ā + √vṛ. The token also carries a second word in front of it, aṇimādibhiḥ, instrumental plural — \"by those beginning with aṇimā\"."
+      },
+      "compound": {
+        "text": "अणिमादिभिरावृताम्",
+        "iast": "aṇimādibhirāvṛtām",
+        "gloss": "Not a compound — two words joined by sandhi: aṇimādibhiḥ + āvṛtām",
+        "children": [
+          {
+            "text": "अणिमादि",
+            "iast": "aṇimādi",
+            "type": "bahuvrihi",
+            "gloss": "the set that has aṇimā for its first member — aṇimā and the rest",
+            "vigraha": "aṇimā ādir yeṣāṃ te",
+            "children": [
+              {
+                "text": "अणिमन्",
+                "iast": "aṇiman",
+                "gloss": "minuteness, fineness; the power of becoming as small as an atom"
+              },
+              {
+                "text": "आदि",
+                "iast": "ādi",
+                "gloss": "beginning; at the end of a compound, \"beginning with, and so on\""
+              }
+            ]
+          },
+          {
+            "text": "आवृताम्",
+            "iast": "āvṛtām",
+            "gloss": "surrounded, encompassed (feminine accusative singular)"
+          }
+        ]
+      },
+      "note": "The eight siddhis that this phrase gestures at are aṇimā, laghimā, mahimā, prāpti, prākāmya, īśitva, vaśitva and kāmāvasāyitā — the powers to become minute, to become weightless, to become vast, to reach anywhere, to have one's will unobstructed, to command, to subdue, and to have every wish already fulfilled. The compound names only the first and lets ādi carry the rest, which is standard Sanskrit shorthand. Two points of form: aṇiman is an -an stem and drops its final n before a compound member, exactly as rājan gives rāja-; and at the word join, final -bhiḥ becomes -bhir before the vowel of āvṛtām."
+    },
+    {
+      "line": 6,
+      "token": 1,
+      "gloss": "by rays — as simply \"I\"",
+      "translation": "They ring her like rays thrown off her own body; and I contemplate her as nothing other than \"I\".",
+      "lemma": "mayūkha",
+      "lemmaDeva": "मयूख",
+      "morphology": {
+        "pos": "noun",
+        "stem": "मयूख",
+        "stemIast": "mayūkha",
+        "gender": "masculine",
+        "case": "instrumental",
+        "caseNumber": 3,
+        "number": "plural",
+        "declension": "a-stem",
+        "note": "Four words are printed as one token. mayūkhaiḥ is instrumental plural and belongs with āvṛtām in the phrase before it. aham is the nominative singular pronoun \"I\", quoted rather than construed. iti closes the quotation, and eva narrows it."
+      },
+      "compound": {
+        "text": "मयूखैरहमित्येव",
+        "iast": "mayūkhairahamityeva",
+        "gloss": "Not a compound — four words joined by sandhi: mayūkhaiḥ + aham + iti + eva",
+        "children": [
+          {
+            "text": "मयूखैः",
+            "iast": "mayūkhaiḥ",
+            "gloss": "with rays, as rays (instrumental plural of mayūkha, a ray of light)"
+          },
+          {
+            "text": "अहम्",
+            "iast": "aham",
+            "gloss": "I (nominative singular)"
+          },
+          {
+            "text": "इति",
+            "iast": "iti",
+            "gloss": "thus, so — the particle that closes a quotation and points back at it"
+          },
+          {
+            "text": "एव",
+            "iast": "eva",
+            "gloss": "just, only, exactly, nothing but"
+          }
+        ]
+      },
+      "note": "The most consequential four syllables in the dhyāna are hiding inside a token that looks like one long word. aham ity eva is a quotation: the thing contemplated is the word \"I\". eva is the restrictive particle — Monier-Williams says its main job is to strengthen whatever it follows — so the sense is not \"I contemplate her, and also myself\" but \"I contemplate her as just this and nothing else: I\". mayūkha itself is a homely word before it is a radiant one; the dictionary's first sense is a wooden peg for hanging cloth on, then the gnomon of a sundial, and only then a ray of light. Sandhi runs the whole chain together: -aiḥ becomes -air before a vowel, and iti + eva contracts to ity eva."
+    },
+    {
+      "line": 6,
+      "token": 2,
+      "gloss": "I bring vividly to mind",
+      "translation": "I make her present to myself by imagining her.",
+      "lemma": "vibhāvayati",
+      "lemmaDeva": "विभावयति",
+      "morphology": {
+        "pos": "verb",
+        "stem": "विभावय",
+        "stemIast": "vibhāvaya",
+        "tense": "present",
+        "person": "first",
+        "number": "singular",
+        "voice": "middle",
+        "root": "√bhū",
+        "rootMeaning": "to be, become — with the prefix vi- and the causative -aya-, to cause to appear, to make manifest, to bring clearly before the mind",
+        "note": "Causative stem bhāvaya-, \"cause to be\", with the prefix vi-, in the ātmanepada first singular: vibhāvaya + e → vibhāvaye. The middle ending marks the action as done by the speaker for the speaker."
+      },
+      "note": "Everything turns on the causative. Monier-Williams glosses the related vibhāvana as \"causing to appear, developing, manifesting\", and vibhāvita as \"caused to arise or appear\" — so this is not \"I see her\" or \"I worship her\" but something closer to \"I bring her into appearance\". Compare dhyāyet in the first and third verses: there someone is told what should be done, in the third person and at a distance. Here the speaker steps forward and says what he is doing, in the first person and in the middle voice, which in Sanskrit is precisely the voice for an action that comes back on the doer."
+    },
+    {
+      "line": 6,
+      "token": 3,
+      "gloss": "Bhavānī, Bhava's own",
+      "translation": "…Bhavānī.",
+      "lemma": "bhavānī",
+      "lemmaDeva": "भवानी",
+      "morphology": {
+        "pos": "noun",
+        "stem": "भवानी",
+        "stemIast": "bhavānī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "Formed from bhava with the feminine suffix -ānī, the same suffix behind indrāṇī, rudrāṇī and śarvāṇī. It declines like nadī: accusative singular bhavānīm."
+      },
+      "note": "The object the whole verse has been reaching for. Bhava is one of the oldest names of Śiva, so Bhavānī is \"she who belongs to Bhava\" — but bhava is also an ordinary noun, and Monier-Williams lists its senses first: \"coming into existence, birth, production\", then \"being, existence, life\", then \"worldly existence, the world\". Both readings are live in a text like this one. She is Śiva's, and she is what coming-into-being belongs to."
+    },
+    {
+      "line": 7,
+      "token": 0,
+      "gloss": "one should meditate on",
+      "translation": "One should meditate on her — and this time the instruction comes first, so everything after it is already known to be a thing to hold in mind.",
+      "lemma": "dhyai",
+      "lemmaDeva": "ध्यै",
+      "morphology": {
+        "pos": "verb",
+        "stem": "ध्याय",
+        "stemIast": "dhyāya",
+        "tense": "optative",
+        "person": "third",
+        "number": "singular",
+        "voice": "active",
+        "root": "√dhyai",
+        "rootMeaning": "to think of, imagine, contemplate, meditate on, call to mind",
+        "note": "Class-4 present stem dhyāya-, the optative marker -ī-, and the third-singular active ending -t: dhyāya + ī + t → dhyāyet."
+      },
+      "note": "The same verb that ended the first verse now opens the third, and the difference in placement changes how the verse is read aloud. In the first, nineteen syllables of description have to be carried in suspense before the verb resolves them; here the verb lands at once and the twelve epithets that follow can be taken one at a time. Both are optatives, and in both the force is the same: this is what one should do, not what happens to be the case."
+    },
+    {
+      "line": 7,
+      "token": 1,
+      "gloss": "seated on a lotus",
+      "translation": "Her seat is a lotus, and she is sitting in it in the lotus posture.",
+      "lemma": "padmāsanastha",
+      "lemmaDeva": "पद्मासनस्थ",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "पद्मासनस्था",
+        "stemIast": "padmāsanasthā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "Accusative, governed by the dhyāyet that has just been spoken."
+      },
+      "compound": {
+        "text": "पद्मासनस्था",
+        "iast": "padmāsanasthā",
+        "type": "upapada",
+        "gloss": "seated on a lotus throne",
+        "vigraha": "padmāsane tiṣṭhati iti",
+        "children": [
+          {
+            "text": "पद्मासन",
+            "iast": "padmāsana",
+            "type": "karmadharaya",
+            "gloss": "a seat that is a lotus",
+            "vigraha": "padmam eva āsanam",
+            "children": [
+              {
+                "text": "पद्म",
+                "iast": "padma",
+                "gloss": "a lotus, especially the flower of Nelumbium speciosum, which closes towards evening"
+              },
+              {
+                "text": "आसन",
+                "iast": "āsana",
+                "gloss": "sitting, a sitting posture; a seat, place, stool"
+              }
+            ]
+          },
+          {
+            "text": "स्थ",
+            "iast": "stha",
+            "gloss": "standing on, seated in — from √sthā, and never used alone"
+          }
+        ]
+      },
+      "note": "The word says two things at once and the dictionary confirms both. āsana means a seat, and it also means a yogic posture — Monier-Williams's second sense for it is \"sitting in a peculiar posture according to the custom of devotees\", and the very first example he names is padmāsana. So padmāsanasthā is both \"she who is on a lotus seat\" and \"she who is in the lotus posture\". The second dhyāna verse never said where she was sitting; this one does, and the site's cross-reference to Saundaryalaharī 8 supplies the rest of the setting."
+    },
+    {
+      "line": 7,
+      "token": 2,
+      "gloss": "face open like a blossom",
+      "translation": "Her face has opened the way a flower opens.",
+      "lemma": "vikasitavadana",
+      "lemmaDeva": "विकसितवदन",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "विकसितवदना",
+        "stemIast": "vikasitavadanā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "विकसितवदना",
+        "iast": "vikasitavadanā",
+        "type": "bahuvrihi",
+        "gloss": "she whose face is open and bright",
+        "vigraha": "vikasitaṃ vadanaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "विकसित",
+            "iast": "vikasita",
+            "gloss": "opened, expanded, budded, blown — the past participle of vi + √kas"
+          },
+          {
+            "text": "वदन",
+            "iast": "vadana",
+            "gloss": "the mouth, face, countenance — literally the speaking part, from √vad"
+          }
+        ]
+      },
+      "note": "vikasita is the ordinary word for a flower coming open, and Monier-Williams gives the verb vi-√kas both \"to open, expand, blossom\" and \"to shine, be bright, beam with joy\". Applied to a face seated on a lotus, it keeps the two senses in contact: her expression does what the flower under her is doing. English has to choose between \"blossoming\" and \"beaming\"; Sanskrit does not."
+    },
+    {
+      "line": 7,
+      "token": 3,
+      "gloss": "eyes long as lotus petals",
+      "translation": "Her eyes are drawn out long, the shape of a lotus petal.",
+      "lemma": "padmapatrāyatākṣī",
+      "lemmaDeva": "पद्मपत्रायताक्षी",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "पद्मपत्रायताक्षी",
+        "stemIast": "padmapatrāyatākṣī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "As in karuṇātaraṅgitākṣīṃ, the neuter akṣi becomes -ākṣī at the end of a bahuvrīhi describing a woman, and declines like nadī."
+      },
+      "compound": {
+        "text": "पद्मपत्रायताक्षी",
+        "iast": "padmapatrāyatākṣī",
+        "type": "bahuvrihi",
+        "gloss": "she whose eyes are as long as the petal of a lotus",
+        "vigraha": "padmapatre iva āyate akṣiṇī yasyāḥ sā",
+        "children": [
+          {
+            "text": "पद्मपत्रायत",
+            "iast": "padmapatrāyata",
+            "type": "karmadharaya",
+            "gloss": "long in the way a lotus petal is long",
+            "vigraha": "padmapatram iva āyatam",
+            "children": [
+              {
+                "text": "पद्मपत्र",
+                "iast": "padmapatra",
+                "type": "tatpurusha",
+                "gloss": "the petal of a lotus",
+                "vigraha": "padmasya patram",
+                "children": [
+                  {
+                    "text": "पद्म",
+                    "iast": "padma",
+                    "gloss": "a lotus"
+                  },
+                  {
+                    "text": "पत्र",
+                    "iast": "patra",
+                    "gloss": "a leaf, a petal"
+                  }
+                ]
+              },
+              {
+                "text": "आयत",
+                "iast": "āyata",
+                "gloss": "stretched, extended, drawn out long — the past participle of ā + √yam"
+              }
+            ]
+          },
+          {
+            "text": "अक्षि",
+            "iast": "akṣi",
+            "gloss": "the eye"
+          }
+        ]
+      },
+      "note": "Monier-Williams files the word for leaf under pattra and notes that patra is a later spelling; his gloss is worth having in mind here, because he defines the petal as \"regarded as the plumage of a tree or flower\", the first senses of the word being wing, pinion and feather. The comparison in this compound is therefore not only about shape. āyata, from ā + √yam, \"to stretch out\", is what a bowstring does — the eye is drawn, not merely long. Sandhi joins āyata to akṣī at a + a → ā."
+    },
+    {
+      "line": 8,
+      "token": 0,
+      "gloss": "gold in colour",
+      "translation": "The light coming off her is the colour of gold.",
+      "lemma": "hemābhā",
+      "lemmaDeva": "हेमाभा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "हेमाभा",
+        "stemIast": "hemābhā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "हेमाभा",
+        "iast": "hemābhā",
+        "type": "bahuvrihi",
+        "gloss": "she whose sheen is that of gold",
+        "vigraha": "hemnaḥ ābhā yasyāḥ sā",
+        "children": [
+          {
+            "text": "हेम",
+            "iast": "hema",
+            "gloss": "gold — the compound form of heman"
+          },
+          {
+            "text": "आभा",
+            "iast": "ābhā",
+            "gloss": "splendour, light, a flash; colour, appearance; a reflected image"
+          }
+        ]
+      },
+      "note": "Here the four dhyāna verses openly part company. The first made her the colour of vermilion, the fourth will make her the colour of hibiscus, and this one makes her gold. The site's commentary takes the disagreement at face value: these verses come from different places and were never meant to be one picture. ābhā is a nicely unstable word — Monier-Williams runs it from \"splendour, light\" through \"colour, appearance\" to \"a reflected image, likeness, resemblance\", so what is gold may be her body or only the light she throws. Sandhi: hema + ābhā, a + ā → ā."
+    },
+    {
+      "line": 8,
+      "token": 1,
+      "gloss": "robed in yellow",
+      "translation": "Her garment is yellow.",
+      "lemma": "pītavastra",
+      "lemmaDeva": "पीतवस्त्र",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "पीतवस्त्रा",
+        "stemIast": "pītavastrā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "पीतवस्त्रा",
+        "iast": "pītavastrā",
+        "type": "bahuvrihi",
+        "gloss": "she whose cloth is yellow",
+        "vigraha": "pītaṃ vastraṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "पीत",
+            "iast": "pīta",
+            "gloss": "yellow — the colour Monier-Williams assigns to the Vaiśyas, as white is to Brāhmans and red to Kṣatriyas"
+          },
+          {
+            "text": "वस्त्र",
+            "iast": "vastra",
+            "gloss": "cloth, clothes, garment, dress"
+          }
+        ]
+      },
+      "note": "A useful reminder that Sanskrit dictionaries number their homonyms for a reason. Monier-Williams's first pīta is the past participle of √pā, \"drunk, sipped, quaffed\"; the pīta that means \"yellow\" is a separate word listed further down the same entry, possibly from √pyai and named, he suggests, after the colour of butter and oil. The forms are identical, and only the sense of the compound tells you which one is in front of you."
+    },
+    {
+      "line": 8,
+      "token": 2,
+      "gloss": "a shining golden lotus held in her hand",
+      "translation": "A lotus of gold, catching the light, rests in her hand.",
+      "lemma": "karakalitalasaddhemapadma",
+      "lemmaDeva": "करकलितलसद्धेमपद्म",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "करकलितलसद्धेमपद्मा",
+        "stemIast": "karakalitalasaddhemapadmā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "करकलितलसद्धेमपद्मा",
+        "iast": "karakalitalasaddhemapadmā",
+        "type": "bahuvrihi",
+        "gloss": "she in whose hand a glittering golden lotus is held",
+        "vigraha": "kare kalitaṃ lasad dhemapadmaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "करकलित",
+            "iast": "karakalita",
+            "type": "tatpurusha",
+            "gloss": "held in the hand",
+            "vigraha": "kare kalitam",
+            "children": [
+              {
+                "text": "कर",
+                "iast": "kara",
+                "gloss": "the hand — literally \"the doer\", from √kṛ"
+              },
+              {
+                "text": "कलित",
+                "iast": "kalita",
+                "gloss": "held, borne, taken up; furnished or provided with"
+              }
+            ]
+          },
+          {
+            "text": "लसद्धेमपद्म",
+            "iast": "lasaddhemapadma",
+            "type": "karmadharaya",
+            "gloss": "a lotus of gold, and it is glittering",
+            "vigraha": "lasac ca tad hemapadmaṃ ca",
+            "children": [
+              {
+                "text": "लसत्",
+                "iast": "lasat",
+                "gloss": "shining, glittering, playing — present participle of √las"
+              },
+              {
+                "text": "हेमपद्म",
+                "iast": "hemapadma",
+                "type": "tatpurusha",
+                "gloss": "a lotus made of gold",
+                "vigraha": "hemnaḥ padmam",
+                "children": [
+                  {
+                    "text": "हेम",
+                    "iast": "hema",
+                    "gloss": "gold"
+                  },
+                  {
+                    "text": "पद्म",
+                    "iast": "padma",
+                    "gloss": "a lotus"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "This is the one place in the dhyāna where a conjunct consonant hides a word boundary. lasat ends in t and hema begins with h; the t voices to d and the h is pulled along with it into dh, so the two become lasaddhema and the seam disappears from the page. Reading the compound is largely a matter of finding that seam again. √las is a pleasant root to know: Monier-Williams gives it \"to shine, flash, glitter\", but also \"to play, sport, frolic\" and \"to dance\", and lāsya, the graceful dance, comes from it. The lotus is not merely bright; it is playing with the light."
+    },
+    {
+      "line": 8,
+      "token": 3,
+      "gloss": "beautiful of body",
+      "translation": "Every part of her is well made.",
+      "lemma": "varāṅga",
+      "lemmaDeva": "वराङ्ग",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "वराङ्गी",
+        "stemIast": "varāṅgī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "aṅga is neuter alone; ending a bahuvrīhi applied to a woman it takes the feminine -ī, giving varāṅgī, accusative varāṅgīm."
+      },
+      "compound": {
+        "text": "वराङ्गी",
+        "iast": "varāṅgī",
+        "type": "bahuvrihi",
+        "gloss": "she whose limbs are the choicest",
+        "vigraha": "varāṇy aṅgāni yasyāḥ sā",
+        "children": [
+          {
+            "text": "वर",
+            "iast": "vara",
+            "gloss": "choicest, valuable, precious, best, most excellent"
+          },
+          {
+            "text": "अङ्ग",
+            "iast": "aṅga",
+            "gloss": "a limb, member; the body; a subordinate part of anything"
+          }
+        ]
+      },
+      "note": "vara is from √vṛ, \"to choose\": the best is what would be chosen. Monier-Williams records varāṅga both as a neuter noun, \"the best member of the body\", meaning the head, and as an adjective, \"having an excellent form, excellent or beautiful in all parts\" — the adjectival sense is the one at work here, since the word has to agree with her. Sandhi joins the two members at a + a → ā."
+    },
+    {
+      "line": 9,
+      "token": 0,
+      "gloss": "wearing every ornament",
+      "translation": "She is decked in ornaments of every kind.",
+      "lemma": "sarvālaṅkārayukta",
+      "lemmaDeva": "सर्वालङ्कारयुक्त",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सर्वालङ्कारयुक्ता",
+        "stemIast": "sarvālaṅkārayuktā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "सर्वालङ्कारयुक्ता",
+        "iast": "sarvālaṅkārayuktā",
+        "type": "tatpurusha",
+        "gloss": "joined with all the ornaments",
+        "vigraha": "sarvālaṅkāraiḥ yuktā",
+        "children": [
+          {
+            "text": "सर्वालङ्कार",
+            "iast": "sarvālaṅkāra",
+            "type": "karmadharaya",
+            "gloss": "all the ornaments there are",
+            "vigraha": "sarve ca te alaṅkārāś ca",
+            "children": [
+              {
+                "text": "सर्व",
+                "iast": "sarva",
+                "gloss": "whole, entire, all, every"
+              },
+              {
+                "text": "अलङ्कार",
+                "iast": "alaṅkāra",
+                "gloss": "the act of decorating; an ornament, decoration"
+              }
+            ]
+          },
+          {
+            "text": "युक्त",
+            "iast": "yukta",
+            "gloss": "yoked, joined, furnished with — past participle of √yuj"
+          }
+        ]
+      },
+      "note": "alaṅkāra is alam, \"enough, sufficiently\", plus √kṛ, \"to make\": an ornament is what brings a thing up to the mark. The same word is the technical term for a figure of speech, which is why Sanskrit poetics is called alaṅkāraśāstra — poems are adorned the way bodies are. Monier-Williams files the headword as alaṃkāra; this text writes the nasal as ṅ before the k, which is the same sound spelled to match its neighbour. yukta is from √yuj, so the ornaments are yoked to her rather than merely placed on her."
+    },
+    {
+      "line": 9,
+      "token": 1,
+      "gloss": "constantly, without a break",
+      "translation": "Constantly — not now and then.",
+      "lemma": "satatam",
+      "lemmaDeva": "सततम्",
+      "morphology": {
+        "pos": "indeclinable",
+        "stem": "सततम्",
+        "stemIast": "satatam",
+        "note": "An adverb, the neuter accusative of satata pressed into adverbial service. It takes no further ending and never changes shape."
+      },
+      "partOf": "satatam abhayadām",
+      "note": "The printed line breaks in the wrong place. What the poet wrote is satatam abhayadām, two words; this recension sets the break after satata and hands the final m to the following token, so both halves are fragments. Monier-Williams derives satata from saṃ-tata, \"stretched together, continuous\", with the nasal lost exactly as in sa-hita for saṃ-hita — tata being the past participle of √tan, to stretch. So \"constantly\" is literally \"in one unbroken stretch\", which is the point of the epithet it governs."
+    },
+    {
+      "line": 9,
+      "token": 2,
+      "gloss": "granting freedom from fear",
+      "translation": "She gives fearlessness, and gives it without interruption.",
+      "lemma": "abhayadā",
+      "lemmaDeva": "अभयदा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "अभयदा",
+        "stemIast": "abhayadā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "The m that opens this token is not part of the word: it is the last letter of satatam, carried across by the printed line break. The word itself is abhayadām."
+      },
+      "compound": {
+        "text": "अभयदा",
+        "iast": "abhayadā",
+        "type": "upapada",
+        "gloss": "she who gives freedom from fear",
+        "vigraha": "abhayaṃ dadāti iti",
+        "children": [
+          {
+            "text": "अभय",
+            "iast": "abhaya",
+            "gloss": "absence of fear, safety, security — the negative prefix a- on bhaya, fear"
+          },
+          {
+            "text": "दा",
+            "iast": "dā",
+            "gloss": "giving, granting — the bare root √dā, which Monier-Williams marks as occurring only at the end of a compound"
+          }
+        ]
+      },
+      "partOf": "satatam abhayadām",
+      "note": "An upapada compound of the same kind as ghaṭastha in the first verse: -dā cannot stand on its own and exists only as the tail of a word. The epithet is the verbal twin of the abhaya-mudrā, the open palm raised in the gesture of reassurance that this goddess is almost always shown making, though the verse names the act and not the gesture. Read with satatam in front of it, the claim is about duration: the granting does not lapse."
+    },
+    {
+      "line": 9,
+      "token": 3,
+      "gloss": "inclined toward her devotees",
+      "translation": "She bends toward those who have given themselves to her.",
+      "lemma": "bhaktanamra",
+      "lemmaDeva": "भक्तनम्र",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "भक्तनम्रा",
+        "stemIast": "bhaktanamrā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "भक्तनम्रा",
+        "iast": "bhaktanamrā",
+        "type": "tatpurusha",
+        "gloss": "bending toward her devotees",
+        "vigraha": "bhakteṣu namrā",
+        "children": [
+          {
+            "text": "भक्त",
+            "iast": "bhakta",
+            "gloss": "devoted, attached; a devotee — past participle of √bhaj, to share, apportion, be devoted to"
+          },
+          {
+            "text": "नम्र",
+            "iast": "namra",
+            "gloss": "bowing, inclining, bent; submissive, humble; bowing to (at the end of a compound)"
+          }
+        ]
+      },
+      "note": "This is the one epithet in the dhyāna whose direction is genuinely disputed. namra is active in form and sense — Monier-Williams gives \"bowing, inclining\" and, for the compounded use, \"bowing to\" — which makes the natural reading the one taken here: she is the one who inclines, and her devotees are what she inclines toward. Many reciters render it the other way, \"she to whom devotees bow\", which reads namra as though it were passive. The grammar favours the first; the devotional habit favours the second; the compound itself does not say, and a reader is entitled to hold both."
+    },
+    {
+      "line": 9,
+      "token": 4,
+      "gloss": "Bhavānī, Bhava's own",
+      "translation": "Bhavānī — the name the second verse ended on, here in the middle of the chain rather than at its close.",
+      "lemma": "bhavānī",
+      "lemmaDeva": "भवानी",
+      "morphology": {
+        "pos": "noun",
+        "stem": "भवानी",
+        "stemIast": "bhavānī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "bhava plus the feminine suffix -ānī, declined like nadī. Written here with anusvāra, bhavānīṃ, because the next word begins with ś."
+      },
+      "note": "The only proper name shared between two of the four verses, which is part of why the second and third are often printed together. Its position is different, though: in the second verse it is the last word and receives vibhāvaye; here it is one epithet among a dozen, and the sentence keeps going past it for another whole line."
+    },
+    {
+      "line": 10,
+      "token": 0,
+      "gloss": "Śrīvidyā, the auspicious knowledge",
+      "translation": "She is called Śrīvidyā outright — not a goddess who possesses a mantra, but the mantra itself wearing a body.",
+      "lemma": "śrīvidyā",
+      "lemmaDeva": "श्रीविद्या",
+      "morphology": {
+        "pos": "noun",
+        "stem": "श्रीविद्या",
+        "stemIast": "śrīvidyā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "श्रीविद्या",
+        "iast": "śrīvidyā",
+        "type": "karmadharaya",
+        "gloss": "the knowledge that is itself radiance and good fortune",
+        "vigraha": "śrīś cāsau vidyā ca",
+        "children": [
+          {
+            "text": "श्री",
+            "iast": "śrī",
+            "gloss": "light, lustre, radiance, splendour, beauty; prosperity, good fortune, majesty, royal dignity"
+          },
+          {
+            "text": "विद्या",
+            "iast": "vidyā",
+            "gloss": "knowledge, science, learning; also a spell, an incantation"
+          }
+        ]
+      },
+      "note": "Everything depends on which sense of vidyā is heard. Monier-Williams gives \"knowledge, science, learning\" first and \"a spell, incantation\" third, and in this tradition the third is technical: a vidyā is a goddess's mantra, and Śrīvidyā is the name both of the fifteen-syllabled mantra and of the whole system built around it. The nyāsa printed just before these verses spells that out, naming the three segments of the mantra as bīja, śakti and kīlaka — which is the tradition's way of saying that the thousand names to come are that mantra written out at length. The compound can also be read as a tatpuruṣa, \"the knowledge belonging to Śrī\"; the karmadhāraya taken here, in which the knowledge simply is the radiance, is the reading the tradition prefers."
+    },
+    {
+      "line": 10,
+      "token": 1,
+      "gloss": "whose form is stillness",
+      "translation": "Her form is a settled, quieted one.",
+      "lemma": "śāntamūrti",
+      "lemmaDeva": "शान्तमूर्ति",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "शान्तमूर्ति",
+        "stemIast": "śāntamūrti",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "i-stem",
+        "note": "mūrti is a feminine i-stem, so the accusative singular is mūrtim — written here with anusvāra before the s of sakala-."
+      },
+      "compound": {
+        "text": "शान्तमूर्ति",
+        "iast": "śāntamūrti",
+        "type": "bahuvrihi",
+        "gloss": "she whose embodied form is at peace",
+        "vigraha": "śāntā mūrtir yasyāḥ sā",
+        "children": [
+          {
+            "text": "शान्त",
+            "iast": "śānta",
+            "gloss": "appeased, pacified, tranquil, calm, free from passions — past participle of √śam"
+          },
+          {
+            "text": "मूर्ति",
+            "iast": "mūrti",
+            "gloss": "any solid body or material form; embodiment, manifestation; an image, statue"
+          }
+        ]
+      },
+      "note": "Because mūrti is already feminine, the compound can be parsed two ways with no change of ending: as the bahuvrīhi taken here, \"she whose form is peaceful\", or as a karmadhāraya, \"peace given a body\", śāntā cāsau mūrtiś ca. Both are recited. The root behind śānta is √śam, \"to come to rest, be quiet, be satisfied\", the root of śānti and of the śam that opens so many Vedic benedictions; and mūrti is the ordinary word for a temple image, so the epithet quietly says that what is being described is a form made for looking at."
+    },
+    {
+      "line": 10,
+      "token": 2,
+      "gloss": "praised by all the gods",
+      "translation": "There is no god who does not praise her.",
+      "lemma": "sakalasuranuta",
+      "lemmaDeva": "सकलसुरनुत",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सकलसुरनुता",
+        "stemIast": "sakalasuranutā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "सकलसुरनुता",
+        "iast": "sakalasuranutā",
+        "type": "tatpurusha",
+        "gloss": "praised by the gods, all of them",
+        "vigraha": "sakalaiḥ suraiḥ nutā",
+        "children": [
+          {
+            "text": "सकलसुर",
+            "iast": "sakalasura",
+            "type": "karmadharaya",
+            "gloss": "the entire body of gods",
+            "vigraha": "sakalāś ca te surāś ca",
+            "children": [
+              {
+                "text": "सकल",
+                "iast": "sakala",
+                "gloss": "consisting of all its parts, complete, entire, whole"
+              },
+              {
+                "text": "सुर",
+                "iast": "sura",
+                "gloss": "a god, divinity, deity"
+              }
+            ]
+          },
+          {
+            "text": "नुत",
+            "iast": "nuta",
+            "gloss": "praised, commended — past participle of √nu, to praise"
+          }
+        ]
+      },
+      "note": "Two small etymologies that repay a look. sakala is sa + kalā, \"having its parts\", so \"entire\" is arrived at by addition rather than by asserting a whole. And sura, the ordinary word for a god, is according to Monier-Williams probably a back-formation: asura was misread as a-sura, as though it carried a negative prefix, and the positive was invented to match. The gods are named after the demons they are not."
+    },
+    {
+      "line": 10,
+      "token": 3,
+      "gloss": "all, every",
+      "translation": "Every kind of…",
+      "lemma": "sarva",
+      "lemmaDeva": "सर्व",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सर्व",
+        "stemIast": "sarva",
+        "note": "A prior member inside a compound, so it takes no ending. Standing alone sarva declines as a pronoun rather than as an ordinary adjective."
+      },
+      "partOf": "sarvasampatpradātrīm",
+      "note": "Its second appearance in two lines — sarvālaṅkāra- opened line 9 — and both times it is doing the same work, refusing to let the epithet be partial. Monier-Williams notes that sarva is inflected as a pronoun and serves as the model for a whole class of pronominals. The full compound it begins here is diagrammed under the next token, where the ending finally arrives."
+    },
+    {
+      "line": 10,
+      "token": 4,
+      "gloss": "bestower of prosperity",
+      "translation": "…good fortune, and she is the one who gives it. The verb spoken at the very start of the verse finally has its object.",
+      "lemma": "pradātṛ",
+      "lemmaDeva": "प्रदातृ",
+      "morphology": {
+        "pos": "noun",
+        "stem": "सर्वसम्पत्प्रदात्री",
+        "stemIast": "sarvasampatpradātrī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ṛ-stem agent noun, feminine in -trī",
+        "note": "Agent nouns in -tṛ make their feminine in -trī and then decline like nadī: accusative singular -trīm."
+      },
+      "compound": {
+        "text": "सर्वसम्पत्प्रदात्री",
+        "iast": "sarvasampatpradātrī",
+        "type": "tatpurusha",
+        "gloss": "she who bestows prosperity of every kind",
+        "vigraha": "sarvasampadāṃ pradātrī",
+        "children": [
+          {
+            "text": "सर्वसम्पद्",
+            "iast": "sarvasampad",
+            "type": "karmadharaya",
+            "gloss": "every kind of good fortune",
+            "vigraha": "sarvā cāsau sampac ca",
+            "children": [
+              {
+                "text": "सर्व",
+                "iast": "sarva",
+                "gloss": "whole, entire, all, every"
+              },
+              {
+                "text": "सम्पद्",
+                "iast": "sampad",
+                "gloss": "success, accomplishment, fulfilment; acquisition, possession, advantage, blessing"
+              }
+            ]
+          },
+          {
+            "text": "प्रदात्री",
+            "iast": "pradātrī",
+            "gloss": "a giver, bestower — the feminine agent noun of pra + √dā, to give forth"
+          }
+        ]
+      },
+      "partOf": "sarvasampatpradātrīm",
+      "note": "The final -d of sampad devoices to -t before the voiceless p of pradātrī, which is why the printed word reads sampat-. sampad is itself sam + √pad, \"to fall together, to come out right\", so prosperity in Sanskrit is a matter of things landing in the right arrangement rather than of accumulation. Monier-Williams even records sampatpradā, \"bestowing fortune\", as an established name of a form of Bhairavī — the epithet was already a title before this verse used it."
+    },
+    {
+      "line": 11,
+      "token": 0,
+      "gloss": "smeared with saffron, musk touching her forehead",
+      "translation": "Saffron paste on her body, and a mark of musk that just reaches her forehead.",
+      "lemma": "sakuṅkumavilepanā",
+      "lemmaDeva": "सकुङ्कुमविलेपना",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सकुङ्कुमविलेपना",
+        "stemIast": "sakuṅkumavilepanā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "Two words are printed as one token. Both are feminine accusative singular and both describe her: sakuṅkumavilepanām, and then alikacumbikastūrikām."
+      },
+      "compound": {
+        "text": "सकुङ्कुमविलेपनामलिकचुम्बिकस्तूरिकाम्",
+        "iast": "sakuṅkumavilepanāmalikacumbikastūrikām",
+        "gloss": "Not one compound but two epithets joined by sandhi: sakuṅkumavilepanām + alikacumbikastūrikām",
+        "children": [
+          {
+            "text": "सकुङ्कुमविलेपना",
+            "iast": "sakuṅkumavilepanā",
+            "type": "bahuvrihi",
+            "gloss": "she who wears an unguent of saffron",
+            "vigraha": "kuṅkumavilepanena saha vartate iti",
+            "children": [
+              {
+                "text": "स",
+                "iast": "sa",
+                "gloss": "with, accompanied by — the prefix that turns the whole word into a bahuvrīhi"
+              },
+              {
+                "text": "कुङ्कुमविलेपन",
+                "iast": "kuṅkumavilepana",
+                "type": "tatpurusha",
+                "gloss": "an ointment of saffron",
+                "vigraha": "kuṅkumasya vilepanam",
+                "children": [
+                  {
+                    "text": "कुङ्कुम",
+                    "iast": "kuṅkuma",
+                    "gloss": "saffron — Crocus sativus, both the plant and the pollen of its flowers"
+                  },
+                  {
+                    "text": "विलेपन",
+                    "iast": "vilepana",
+                    "gloss": "smearing, anointing; an unguent, ointment, perfume for the person"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "अलिकचुम्बिकस्तूरिका",
+            "iast": "alikacumbikastūrikā",
+            "type": "bahuvrihi",
+            "gloss": "she whose musk-mark touches her forehead",
+            "vigraha": "alikaṃ cumbikā kastūrikā yasyāḥ sā",
+            "children": [
+              {
+                "text": "अलिकचुम्बिक",
+                "iast": "alikacumbika",
+                "type": "tatpurusha",
+                "gloss": "kissing the forehead",
+                "vigraha": "alikaṃ cumbati iti",
+                "children": [
+                  {
+                    "text": "अलिक",
+                    "iast": "alika",
+                    "gloss": "the forehead"
+                  },
+                  {
+                    "text": "चुम्बिक",
+                    "iast": "cumbika",
+                    "gloss": "kissing, touching — an agent form of √cumb, to kiss, to touch with the mouth"
+                  }
+                ]
+              },
+              {
+                "text": "कस्तूरिका",
+                "iast": "kastūrikā",
+                "gloss": "musk, the animal perfume; also the musk-deer itself"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "The sa- at the head of the first word is worth marking, because this verse uses it three times: sakuṅkuma-, samanda-, saśara-. It is the cheapest way Sanskrit has of making a bahuvrīhi — prefix sa- to a noun and the whole thing becomes an adjective meaning \"having that\". On cumbika: Monier-Williams has the root √cumb, \"to kiss, to touch with the mouth\", and the agent forms cumbaka and cumbin, but not cumbika, which is the same formation with the -ka suffix; many printings give alikacumbi-kastūrikām, with cumbin instead. The sense is unaffected — the musk does not sit on the forehead so much as brush it. This is also the word the metre cuts in half: the pṛthvī pause falls after the eighth syllable, inside vilepana, so the break should be heard without opening a gap in the sound."
+    },
+    {
+      "line": 12,
+      "token": 0,
+      "gloss": "a faint smile in her glance",
+      "translation": "Her look carries the beginning of a smile rather than a full one.",
+      "lemma": "samandahasitekṣaṇā",
+      "lemmaDeva": "समन्दहसितेक्षणा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "समन्दहसितेक्षणा",
+        "stemIast": "samandahasitekṣaṇā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "समन्दहसितेक्षणा",
+        "iast": "samandahasitekṣaṇā",
+        "type": "bahuvrihi",
+        "gloss": "she whose glance comes with a slight smile in it",
+        "vigraha": "mandahasitena sahitam īkṣaṇaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "स",
+            "iast": "sa",
+            "gloss": "with, accompanied by"
+          },
+          {
+            "text": "मन्दहसित",
+            "iast": "mandahasita",
+            "type": "karmadharaya",
+            "gloss": "a faint laugh, a half-smile",
+            "vigraha": "mandaṃ hasitam",
+            "children": [
+              {
+                "text": "मन्द",
+                "iast": "manda",
+                "gloss": "slow, soft, faint, slack, gentle — used of light, of a voice, of rain and wind"
+              },
+              {
+                "text": "हसित",
+                "iast": "hasita",
+                "gloss": "laughing, smiling; as a noun, laughter — past participle of √has"
+              }
+            ]
+          },
+          {
+            "text": "ईक्षण",
+            "iast": "īkṣaṇa",
+            "gloss": "a look, view, glance, sight; also the eye itself"
+          }
+        ]
+      },
+      "note": "The precision is in manda. Monier-Williams's senses for it are all about something running below its full strength — slow, faint, slack, low, gentle — so mandahasita is not a smile but a laugh turned down, √has being the root for laughing outright. And the smile is placed in the īkṣaṇa, the glance, not on the mouth: what is being described is a way of looking. Sandhi hides the join, hasita + īkṣaṇa contracting a + ī to e, so the compound has to be cut at -hasit-ekṣaṇā rather than where the eye first wants to cut it."
+    },
+    {
+      "line": 12,
+      "token": 1,
+      "gloss": "bearing arrow, bow, noose and goad",
+      "translation": "She carries the arrow, the bow, the noose and the goad.",
+      "lemma": "saśaracāpapāśāṅkuśā",
+      "lemmaDeva": "सशरचापपाशाङ्कुशा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "सशरचापपाशाङ्कुशा",
+        "stemIast": "saśaracāpapāśāṅkuśā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "सशरचापपाशाङ्कुशा",
+        "iast": "saśaracāpapāśāṅkuśā",
+        "type": "bahuvrihi",
+        "gloss": "she who has arrow, bow, noose and goad about her",
+        "vigraha": "śaracāpapāśāṅkuśaiḥ saha vartate iti",
+        "children": [
+          {
+            "text": "स",
+            "iast": "sa",
+            "gloss": "with, accompanied by"
+          },
+          {
+            "text": "शरचापपाशाङ्कुश",
+            "iast": "śaracāpapāśāṅkuśa",
+            "type": "dvandva",
+            "gloss": "arrow, bow, noose and goad",
+            "vigraha": "śaraś ca cāpaś ca pāśaś cāṅkuśaś ca",
+            "children": [
+              {
+                "text": "शर",
+                "iast": "śara",
+                "gloss": "a reed of the kind arrows are made from; an arrow, shaft"
+              },
+              {
+                "text": "चाप",
+                "iast": "cāpa",
+                "gloss": "a bow"
+              },
+              {
+                "text": "पाश",
+                "iast": "pāśa",
+                "gloss": "a snare, noose, bond, fetter"
+              },
+              {
+                "text": "अङ्कुश",
+                "iast": "aṅkuśa",
+                "gloss": "a hook, especially an elephant-driver's hook"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "The same four objects as the second dhyāna verse, in a different order and reached by a different route: there a participle, dhṛta-, said they were held; here the bare prefix sa- says only that they are with her. Note also that this verse says śara where the other said puṣpabāṇa — the plain arrow rather than the arrow of flowers. Saundaryalaharī 7, quoted on this page, gives the oldest and most famous version of the same four hands."
+    },
+    {
+      "line": 13,
+      "token": 0,
+      "gloss": "who bewilders every living being",
+      "translation": "No creature is left out of it: every one of them is thrown off balance by her.",
+      "lemma": "aśeṣajanamohinī",
+      "lemmaDeva": "अशेषजनमोहिनी",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "अशेषजनमोहिनी",
+        "stemIast": "aśeṣajanamohinī",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "Stems in -in form their feminine in -inī and then decline like nadī: accusative singular -inīm."
+      },
+      "compound": {
+        "text": "अशेषजनमोहिनी",
+        "iast": "aśeṣajanamohinī",
+        "type": "tatpurusha",
+        "gloss": "she who bewilders all beings",
+        "vigraha": "aśeṣaṃ janaṃ mohayati iti",
+        "children": [
+          {
+            "text": "अशेषजन",
+            "iast": "aśeṣajana",
+            "type": "karmadharaya",
+            "gloss": "every creature, with none left over",
+            "vigraha": "aśeṣaś cāsau janaś ca",
+            "children": [
+              {
+                "text": "अशेष",
+                "iast": "aśeṣa",
+                "gloss": "without remainder, entire, all — the negative a- on śeṣa, remainder"
+              },
+              {
+                "text": "जन",
+                "iast": "jana",
+                "gloss": "a creature, living being, person; people collectively"
+              }
+            ]
+          },
+          {
+            "text": "मोहिनी",
+            "iast": "mohinī",
+            "gloss": "deluding, confusing, perplexing, illusive — from the causative of √muh"
+          }
+        ]
+      },
+      "note": "Softer translations make this \"she who enchants everyone\", but Monier-Williams is blunter: mohin is \"deluding, confusing, perplexing, illusive\", and the root √muh means to become stupefied, to be bewildered, to go astray. What she does to beings is closer to disorientation than to charm — and Mohinī is of course also the name of the form Viṣṇu took to bewilder the demons out of the nectar. Grammatically, agent nouns in -in govern an accusative, which is what lets aśeṣajana- stand as their object inside the compound. aśeṣa is worth keeping: not \"all\" as a total, but \"with nothing left over\"."
+    },
+    {
+      "line": 13,
+      "token": 1,
+      "gloss": "red garland, red ornaments, red robes",
+      "translation": "Garland, jewellery and clothing are all the same red.",
+      "lemma": "aruṇamālyabhūṣāmbarā",
+      "lemmaDeva": "अरुणमाल्यभूषाम्बरा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "अरुणमाल्यभूषाम्बरा",
+        "stemIast": "aruṇamālyabhūṣāmbarā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "अरुणमाल्यभूषाम्बरा",
+        "iast": "aruṇamālyabhūṣāmbarā",
+        "type": "bahuvrihi",
+        "gloss": "she whose garland, ornaments and garments are all ruddy",
+        "vigraha": "aruṇāni mālyabhūṣāmbarāṇi yasyāḥ sā",
+        "children": [
+          {
+            "text": "अरुण",
+            "iast": "aruṇa",
+            "gloss": "reddish, ruddy, the colour of daybreak"
+          },
+          {
+            "text": "माल्यभूषाम्बर",
+            "iast": "mālyabhūṣāmbara",
+            "type": "dvandva",
+            "gloss": "garland, ornament and garment",
+            "vigraha": "mālyaṃ ca bhūṣā cāmbaraṃ ca",
+            "children": [
+              {
+                "text": "माल्य",
+                "iast": "mālya",
+                "gloss": "a wreath, garland, chaplet"
+              },
+              {
+                "text": "भूषा",
+                "iast": "bhūṣā",
+                "gloss": "ornament, decoration"
+              },
+              {
+                "text": "अम्बर",
+                "iast": "ambara",
+                "gloss": "clothes, apparel, garment; also the sky"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "One adjective is made to cover three nouns at once, which is what a dvandva inside a bahuvrīhi is for. Sandhi joins bhūṣā to ambara at ā + a → ā, so the last two look like one item. ambara is a word poets enjoy, since it means both a garment and the sky and either can be draped; here the garland and the ornaments beside it settle the sense. This is the third dhyāna verse to insist on red, after the sindūra of the first and the aruṇā that opens the second — the site's commentary reads that insistence as a statement about icchā, desire understood as the first stirring by which anything comes to be."
+    },
+    {
+      "line": 14,
+      "token": 0,
+      "gloss": "shining like a hibiscus flower",
+      "translation": "She is as bright as the scarlet japā blossom.",
+      "lemma": "japākusumabhāsurā",
+      "lemmaDeva": "जपाकुसुमभासुरा",
+      "morphology": {
+        "pos": "adjective",
+        "stem": "जपाकुसुमभासुरा",
+        "stemIast": "japākusumabhāsurā",
+        "gender": "feminine",
+        "case": "accusative",
+        "caseNumber": 2,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "The last of the accusatives, and the one immediately before the verb that governs them all."
+      },
+      "compound": {
+        "text": "जपाकुसुमभासुरा",
+        "iast": "japākusumabhāsurā",
+        "type": "karmadharaya",
+        "gloss": "radiant in the way the hibiscus blossom is radiant",
+        "vigraha": "japākusumam iva bhāsurā",
+        "children": [
+          {
+            "text": "जपाकुसुम",
+            "iast": "japākusuma",
+            "type": "tatpurusha",
+            "gloss": "the flower of the japā plant",
+            "vigraha": "japāyāḥ kusumam",
+            "children": [
+              {
+                "text": "जपा",
+                "iast": "japā",
+                "gloss": "the China rose, Hibiscus rosa-sinensis"
+              },
+              {
+                "text": "कुसुम",
+                "iast": "kusuma",
+                "gloss": "a flower, blossom"
+              }
+            ]
+          },
+          {
+            "text": "भासुर",
+            "iast": "bhāsura",
+            "gloss": "shining, radiant, bright, splendid — from √bhās, to shine"
+          }
+        ]
+      },
+      "note": "Like sindūrāruṇa at the very beginning of the dhyāna, this is a karmadhāraya of comparison: the first member is not a further quality but the thing being compared to. The japā is the deep scarlet hibiscus offered to the goddess in worship, and the comparison was standard long before this verse — Monier-Williams records japākusumasaṃnibha, \"resembling the japā flower\", as a compound in its own right. Keep the vowel lengths clean here, because the next word is japavidhau with a short a: the flower and the recitation are two different words that the poet has deliberately set side by side."
+    },
+    {
+      "line": 14,
+      "token": 1,
+      "gloss": "at the rite of recitation",
+      "translation": "This is the form to hold in mind at the moment of counting the mantra.",
+      "lemma": "japavidhi",
+      "lemmaDeva": "जपविधि",
+      "morphology": {
+        "pos": "noun",
+        "stem": "जपविधि",
+        "stemIast": "japavidhi",
+        "gender": "masculine",
+        "case": "locative",
+        "caseNumber": 7,
+        "number": "singular",
+        "declension": "i-stem",
+        "note": "Locative singular of an i-stem: vidhi → vidhau. This is the only locative in the whole dhyāna."
+      },
+      "compound": {
+        "text": "जपविधि",
+        "iast": "japavidhi",
+        "type": "tatpurusha",
+        "gloss": "the rite of muttered recitation",
+        "vigraha": "japasya vidhiḥ",
+        "children": [
+          {
+            "text": "जप",
+            "iast": "japa",
+            "gloss": "muttering prayers, repeating scripture or the names of a deity in a low murmuring tone"
+          },
+          {
+            "text": "विधि",
+            "iast": "vidhi",
+            "gloss": "a rule, injunction, precept; any prescribed act, rite or ceremony"
+          }
+        ]
+      },
+      "note": "One word changes the standing of the entire verse. Every other word in the dhyāna is either an accusative describing her or a verb governing those accusatives; this locative names an occasion, and in doing so tells you when the verse is for. The fourth dhyāna is the only one of the four that announces its own use. Note also that japa is defined by its volume — Monier-Williams's gloss turns on the murmuring, not on the words being said — and that vidhi is the same word the ritual manuals use for a prescribed procedure, so \"japavidhau\" is roughly \"when you get to the recitation section\"."
+    },
+    {
+      "line": 14,
+      "token": 2,
+      "gloss": "I call the Mother to mind",
+      "translation": "I call the Mother to mind — and the four verses close on the same word the first of them ended with.",
+      "lemma": "smṛ",
+      "lemmaDeva": "स्मृ",
+      "morphology": {
+        "pos": "verb",
+        "stem": "स्मर",
+        "stemIast": "smara",
+        "tense": "present",
+        "person": "first",
+        "number": "singular",
+        "voice": "active",
+        "root": "√smṛ",
+        "rootMeaning": "to remember, recollect, bear in mind, call to mind, think of",
+        "note": "Class-1 present stem smara- with the first-singular parasmaipada ending -mi. The token also carries the object, ambikām, feminine accusative singular."
+      },
+      "compound": {
+        "text": "स्मराम्यम्बिकाम्",
+        "iast": "smarāmyambikām",
+        "gloss": "Not a compound — a verb and its object joined by sandhi: smarāmi + ambikām",
+        "children": [
+          {
+            "text": "स्मरामि",
+            "iast": "smarāmi",
+            "gloss": "I remember, I call to mind"
+          },
+          {
+            "text": "अम्बिकाम्",
+            "iast": "ambikām",
+            "gloss": "the Mother (feminine accusative singular of ambikā)"
+          }
+        ]
+      },
+      "note": "The sandhi is the ordinary one for a final i meeting a following vowel: smarāmi + ambikām gives smarāmy ambikām, printed here as one word. √smṛ carries more weight than \"remember\" suggests in English — it is the root behind smṛti, the whole class of remembered texts, and Monier-Williams's entry runs from recollecting to handing down and reciting. Set beside the other three verbs of the dhyāna it completes a range: dhyāyet says what one should do, vibhāvaye says the speaker is causing her to appear, and smarāmi says only that he is calling to mind something already known. The set began with parām ambikām and ends with ambikām; the last word is the first word, minus the distance."
+    }
+  ]
+}

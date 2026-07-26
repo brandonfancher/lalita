@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
-import type { Nama, StudyModule, Token } from "@/lib/types";
+import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
 type ScriptMode = "both" | "deva" | "iast";
@@ -36,7 +36,24 @@ export function VerseReader({ module: mod }: { module: StudyModule }) {
   }, [mod.namas]);
 
   const active = activeId ? tokensById.get(activeId) : undefined;
-  const activeNama = active?.namaIndex ? namasByIndex.get(active.namaIndex) : undefined;
+  const activeNamas = (active?.namaIndices ?? [])
+    .map((i) => namasByIndex.get(i))
+    .filter((n): n is Nama => Boolean(n));
+
+  // A name printed as two words should light up both when either is touched.
+  const linkedIds = useMemo(() => {
+    const source = hoverId ?? activeId;
+    const token = source ? tokensById.get(source) : undefined;
+    if (!token?.namaIndices?.length) return new Set<string>();
+    const shared = new Set(token.namaIndices);
+    const ids = new Set<string>();
+    for (const line of mod.lines) {
+      for (const t of line.tokens) {
+        if (t.id !== source && t.namaIndices?.some((i) => shared.has(i))) ids.add(t.id);
+      }
+    }
+    return ids;
+  }, [hoverId, activeId, tokensById, mod.lines]);
 
   return (
     <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-8">
@@ -78,6 +95,7 @@ export function VerseReader({ module: mod }: { module: StudyModule }) {
                       text={t.deva}
                       activeId={activeId}
                       hoverId={hoverId}
+                      linked={linkedIds.has(t.id)}
                       onSelect={setActiveId}
                       onHover={setHoverId}
                     />
@@ -100,6 +118,7 @@ export function VerseReader({ module: mod }: { module: StudyModule }) {
                       text={t.iast}
                       activeId={activeId}
                       hoverId={hoverId}
+                      linked={linkedIds.has(t.id)}
                       onSelect={setActiveId}
                       onHover={setHoverId}
                     />
@@ -122,13 +141,13 @@ export function VerseReader({ module: mod }: { module: StudyModule }) {
             <div className="sticky top-24">
               <Inspector
                 token={active}
-                nama={activeNama}
+                namas={activeNamas}
                 onClose={() => setActiveId(null)}
               />
             </div>
           </div>
           <div className="fixed inset-x-0 bottom-0 z-40 max-h-[70dvh] overflow-y-auto rounded-t-2xl border-t border-line-strong bg-surface-1 p-4 shadow-2xl lg:hidden">
-            <Inspector token={active} nama={activeNama} onClose={() => setActiveId(null)} />
+            <Inspector token={active} namas={activeNamas} onClose={() => setActiveId(null)} />
           </div>
         </>
       )}
@@ -141,6 +160,7 @@ function TokenSpan({
   text,
   activeId,
   hoverId,
+  linked,
   onSelect,
   onHover,
 }: {
@@ -148,6 +168,7 @@ function TokenSpan({
   text: string;
   activeId: string | null;
   hoverId: string | null;
+  linked: boolean;
   onSelect: (id: string | null) => void;
   onHover: (id: string | null) => void;
 }) {
@@ -158,7 +179,7 @@ function TokenSpan({
         tabIndex={0}
         className="tappable"
         data-active={activeId === token.id}
-        data-linked={hoverId === token.id && activeId !== token.id}
+        data-linked={linked || (hoverId === token.id && activeId !== token.id)}
         onClick={() => onSelect(activeId === token.id ? null : token.id)}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
@@ -177,16 +198,13 @@ function TokenSpan({
 
 function Inspector({
   token,
-  nama,
+  namas,
   onClose,
 }: {
   token: Token;
-  nama?: Nama;
+  namas: Nama[];
   onClose: () => void;
 }) {
-  const m = nama?.morphology;
-  const ci = caseInfo(m?.case);
-
   return (
     <div className="rounded-2xl border border-line bg-surface-1 p-4">
       <div className="mb-3 flex items-start gap-2">
@@ -204,65 +222,20 @@ function Inspector({
         </button>
       </div>
 
-      {nama ? (
-        <div className="space-y-4">
-          <div>
-            <div className="mb-1 flex items-center gap-2">
-              <span className="rounded-full bg-sindura/15 px-2 py-0.5 text-[10px] uppercase tracking-wider text-sindura-soft">
-                nāma {nama.index}
-              </span>
-            </div>
-            {nama.gloss && <p className="text-[15px] font-medium text-ink">{nama.gloss}</p>}
-            {nama.translation && (
-              <p className="mt-1 text-sm leading-relaxed text-ink-muted">{nama.translation}</p>
-            )}
-            {!nama.gloss && !nama.translation && (
-              <p className="text-sm text-ink-faint">Meaning not yet written for this name.</p>
-            )}
-          </div>
-
-          {m && (
-            <section>
-              <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Grammar</h4>
-              <dl className="space-y-1 text-[13px]">
-                <Row label="stem">
-                  <span className="deva mr-1.5">{m.stem}</span>
-                  <span className="iast text-ink-muted">{m.stemIast}</span>
-                </Row>
-                <Row label="part of speech">{m.pos}</Row>
-                {m.gender && <Row label="gender">{m.gender}</Row>}
-                {ci && (
-                  <Row label="case">
-                    {m.case} ({ci.sanskrit}
-                    {m.caseNumber ? `, ${m.caseNumber}` : ""}) &middot;{" "}
-                    <span className="text-ink-faint">{ci.sense}</span>
-                  </Row>
-                )}
-                {m.number && <Row label="number">{m.number}</Row>}
-                {m.declension && <Row label="declension">{m.declension}</Row>}
-                {m.tense && <Row label="tense">{m.tense}</Row>}
-                {m.person && <Row label="person">{m.person}</Row>}
-                {m.voice && <Row label="voice">{m.voice}</Row>}
-                {m.root && (
-                  <Row label="root">
-                    <span className="iast">{m.root}</span>
-                    {m.rootMeaning ? ` — ${m.rootMeaning}` : ""}
-                  </Row>
-                )}
-                {m.note && <Row label="note">{m.note}</Row>}
-              </dl>
-            </section>
+      {namas.length > 0 ? (
+        <div className="space-y-5">
+          {namas.length > 1 && (
+            <p className="rounded-lg bg-surface-2/60 px-2.5 py-1.5 text-[13px] leading-relaxed text-ink-muted">
+              Sandhi has joined {namas.length === 2 ? "two names" : `${namas.length} names`} into
+              this one written word.
+            </p>
           )}
-
-          {nama.compound && (
-            <section>
-              <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">
-                Compound
-              </h4>
-              <CompoundTree node={nama.compound} />
-            </section>
-          )}
+          {namas.map((nama) => (
+            <NamaPanel key={nama.index} nama={nama} />
+          ))}
         </div>
+      ) : token.word ? (
+        <WordPanel word={token.word} />
       ) : (
         <p className="mb-4 text-sm text-ink-faint">
           This word is part of the verse frame rather than one of the thousand names.
@@ -273,6 +246,120 @@ function Inspector({
         <h4 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">Syllables</h4>
         <AksaraStrip aksaras={token.aksaras} />
       </section>
+    </div>
+  );
+}
+
+/** One of the thousand names, as reached by tapping a word of the verse. */
+function NamaPanel({ nama }: { nama: Nama }) {
+  return (
+    <div className="space-y-4">
+      <div>
+        <div className="mb-1 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <span className="rounded-full bg-sindura/15 px-2 py-0.5 text-[10px] uppercase tracking-wider text-sindura-soft">
+            nāma {nama.index}
+          </span>
+          <span className="deva text-base text-ink">{nama.deva}</span>
+          <span className="iast text-[13px] text-ink-muted">{nama.iast}</span>
+        </div>
+        {nama.gloss && <p className="text-[15px] font-medium text-ink">{nama.gloss}</p>}
+        {nama.translation && (
+          <p className="mt-1 text-sm leading-relaxed text-ink-muted">{nama.translation}</p>
+        )}
+        {!nama.gloss && !nama.translation && (
+          <p className="text-sm text-ink-faint">Meaning not yet written for this name.</p>
+        )}
+      </div>
+
+      <Grammar m={nama.morphology} />
+
+      {nama.compound && (
+        <section>
+          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Compound</h4>
+          <CompoundTree node={nama.compound} />
+        </section>
+      )}
+    </div>
+  );
+}
+
+function Grammar({ m }: { m?: Morphology }) {
+  const ci = caseInfo(m?.case);
+  if (!m) return null;
+
+  return (
+    <section>
+      <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Grammar</h4>
+      <dl className="space-y-1 text-[13px]">
+        <Row label="stem">
+          <span className="deva mr-1.5">{m.stem}</span>
+          <span className="iast text-ink-muted">{m.stemIast}</span>
+        </Row>
+        <Row label="part of speech">{m.pos}</Row>
+        {m.gender && <Row label="gender">{m.gender}</Row>}
+        {ci && (
+          <Row label="case">
+            {m.case} ({ci.sanskrit}
+            {m.caseNumber ? `, ${m.caseNumber}` : ""}) &middot;{" "}
+            <span className="text-ink-faint">{ci.sense}</span>
+          </Row>
+        )}
+        {m.number && <Row label="number">{m.number}</Row>}
+        {m.declension && <Row label="declension">{m.declension}</Row>}
+        {m.tense && <Row label="tense">{m.tense}</Row>}
+        {m.person && <Row label="person">{m.person}</Row>}
+        {m.voice && <Row label="voice">{m.voice}</Row>}
+        {m.root && (
+          <Row label="root">
+            <span className="iast">{m.root}</span>
+            {m.rootMeaning ? ` — ${m.rootMeaning}` : ""}
+          </Row>
+        )}
+        {m.note && <Row label="note">{m.note}</Row>}
+      </dl>
+    </section>
+  );
+}
+
+/** A word of the dhyāna, which carries its own meaning rather than a nāma's. */
+function WordPanel({ word }: { word: WordGloss }) {
+  return (
+    <div className="space-y-4">
+      <div>
+        <p className="text-[15px] font-medium text-ink">{word.gloss}</p>
+        {word.translation && (
+          <p className="mt-1 text-sm leading-relaxed text-ink-muted">{word.translation}</p>
+        )}
+        {word.partOf && (
+          <p className="mt-2 rounded-lg bg-surface-2/60 px-2.5 py-1.5 text-[13px] text-ink-muted">
+            Printed apart, but part of{" "}
+            <span className="iast text-ink">{word.partOf}</span>.
+          </p>
+        )}
+      </div>
+
+      {word.lemma && (
+        <section>
+          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">
+            Dictionary form
+          </h4>
+          <p className="text-[13px]">
+            {word.lemmaDeva && <span className="deva mr-1.5 text-ink">{word.lemmaDeva}</span>}
+            <span className="iast text-ink-muted">{word.lemma}</span>
+          </p>
+        </section>
+      )}
+
+      <Grammar m={word.morphology} />
+
+      {word.compound && (
+        <section>
+          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Compound</h4>
+          <CompoundTree node={word.compound} />
+        </section>
+      )}
+
+      {word.note && <p className="text-[13px] leading-relaxed text-ink-faint">{word.note}</p>}
     </div>
   );
 }

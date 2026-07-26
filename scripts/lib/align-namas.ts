@@ -46,8 +46,11 @@ export interface AlignmentResult {
 
 /** Maximum names one written word may carry. */
 const MAX_NAMES_PER_TOKEN = 3;
-/** Maximum words one name may span. */
-const MAX_TOKENS_PER_NAME = 2;
+/**
+ * Maximum words one name may span. Three is needed for the likes of
+ * `śobhanā sulabhā gatiḥ`, a single name the source prints as three words.
+ */
+const MAX_TOKENS_PER_NAME = 3;
 
 /**
  * Cost of reading several names out of one written word. Sandhi fuses roughly
@@ -178,6 +181,12 @@ export interface Anchor {
   namesBefore: number;
   /** Word index where that is expected to fall. */
   wordIndex: number;
+  /**
+   * A hard anchor is a known-good verse boundary taken from a published
+   * enumeration: the alignment must pass exactly through it. Soft anchors only
+   * bias the search.
+   */
+  hard?: boolean;
 }
 
 export function alignNamas(
@@ -235,17 +244,50 @@ export function alignNamas(
   const concatTokens = (from: number, count: number) =>
     tokens.slice(from, from + count).map((t) => t.skeleton).join("");
 
-  /** Penalty for arriving at a state that disagrees with an anchor. */
-  const anchorByName = new Map(anchors.map((a) => [a.namesBefore, a.wordIndex]));
+  /** Penalty for arriving at a state that disagrees with a soft anchor. */
+  const anchorByName = new Map(anchors.filter((a) => !a.hard).map((a) => [a.namesBefore, a.wordIndex]));
   const ANCHOR_WEIGHT = 0.6;
   const anchorPenalty = (nameCount: number, wordCount: number): number => {
     const expected = anchorByName.get(nameCount);
     return expected === undefined ? 0 : ANCHOR_WEIGHT * Math.abs(wordCount - expected);
   };
 
+  // A hard anchor fixes the name count at a given word, so every other state in
+  // that column is unreachable. Pruning them makes the boundary exact.
+  const namesAtWord = new Map<number, number>();
+  for (const a of anchors) if (a.hard) namesAtWord.set(a.wordIndex, a.namesBefore);
+  const forbidden = (nameCount: number, wordCount: number): boolean => {
+    const required = namesAtWord.get(wordCount);
+    return required !== undefined && required !== nameCount;
+  };
+  /**
+   * A name spanning several words would step over the columns in between, so a
+   * verse boundary inside that span has to be rejected explicitly: no single
+   * name may straddle two verses.
+   */
+  const straddlesAnchor = (from: number, span: number): boolean => {
+    for (let j = from + 1; j < from + span; j += 1) if (namesAtWord.has(j)) return true;
+    return false;
+  };
+
+  /**
+   * No name is written across a verse break, so a span that reaches into the
+   * next verse is not a legal reading. Without this the aligner can pair the
+   * tail of one verse with the head of the next and carry a name into the
+   * wrong module.
+   */
+  const crossesVerse = (from: number, span: number): boolean => {
+    const verse = tokens[from].verseIndex;
+    for (let j = from + 1; j < from + span; j += 1) {
+      if (tokens[j].verseIndex !== verse) return true;
+    }
+    return false;
+  };
+
   for (let i = 0; i <= N; i += 1) {
     for (let j = 0; j <= M; j += 1) {
       if (f[i][j] === INF) continue;
+      if (forbidden(i, j)) continue;
       if (!inBand(i, j)) continue;
 
       // One word carries k names.
@@ -264,6 +306,7 @@ export function alignNamas(
       // One name spans m words.
       for (let m = 2; m <= MAX_TOKENS_PER_NAME; m += 1) {
         if (i + 1 > N || j + m > M) break;
+        if (straddlesAnchor(j, m) || crossesVerse(j, m)) break;
         const cost = groupCost(i, 1, concatTokens(j, m));
         const penalty = (m - 1) * SPAN_PENALTY + anchorPenalty(i + 1, j + m);
         const next = f[i][j] + cost + penalty;
