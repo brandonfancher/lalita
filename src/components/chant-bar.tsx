@@ -81,13 +81,22 @@ export function ChantBar({ timing, label }: { timing?: ChantTiming; label: strin
     const p = playerRef.current;
     if (!p || !timing) return;
     const t = p.getCurrentTime();
+    // Preroll (seek before startSec) doesn't count toward elapsed.
     setElapsed(Math.min(duration, Math.max(0, t - timing.startSec)));
+
+    if (t < timing.startSec) {
+      rafRef.current = requestAnimationFrame(tick);
+      return;
+    }
 
     if (t >= timing.endSec) {
       if (loop) {
         p.seekTo(timing.startSec, true);
       } else {
+        // Pause and pin to the boundary so YouTube's lagged clock can't keep
+        // audibly rolling into the next verse after we've decided to stop.
         p.pauseVideo();
+        p.seekTo(timing.endSec, true);
         setState("paused");
         setElapsed(duration);
         stopTicking();
@@ -139,7 +148,13 @@ export function ChantBar({ timing, label }: { timing?: ChantTiming; label: strin
     }
     const t = p.getCurrentTime();
     const outside = t < timing.startSec || t >= timing.endSec;
-    p.seekTo(outside || elapsed >= duration ? timing.startSec : t, true);
+    // Seek a brief preroll before the boundary: YouTube often drops the attack
+    // of the first syllable when play() follows seekTo(start) immediately.
+    const seekTarget =
+      outside || elapsed >= duration
+        ? Math.max(0, timing.startSec - 0.2)
+        : t;
+    p.seekTo(seekTarget, true);
     p.setPlaybackRate(rate);
     p.playVideo();
     setState("playing");
@@ -155,7 +170,7 @@ export function ChantBar({ timing, label }: { timing?: ChantTiming; label: strin
 
   const restart = () => {
     if (!timing || !playerRef.current) return;
-    playerRef.current.seekTo(timing.startSec, true);
+    playerRef.current.seekTo(Math.max(0, timing.startSec - 0.2), true);
     setElapsed(0);
     if (state !== "playing") void play();
   };

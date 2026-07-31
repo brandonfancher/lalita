@@ -13,13 +13,32 @@ performance: it is downloaded to `sources/audio/` purely as analysis input,
 ```sh
 brew install yt-dlp ffmpeg
 python3 -m venv sources/.venv && sources/.venv/bin/pip install numpy
-sources/.venv/bin/python scripts/build-chant-timings.py
+sources/.venv/bin/python scripts/build-chant-timings.py          # calibrated (default)
+# sources/.venv/bin/python scripts/build-chant-timings.py --no-calibrate
+```
+
+Then patch module JSON (or re-run the full module build):
+
+```sh
+# quick: rewrite only the chant fields on data/modules/*.json from timings.json
+python3 -c "
+import json
+from pathlib import Path
+t=json.loads(Path('data/chant/timings.json').read_text())
+by={v['number']:v for v in t['verses']}
+for p in Path('data/modules').glob('*.json'):
+    m=json.loads(p.read_text())
+    if p.stem=='000':
+        m['chant']={**t['sections']['dhyana'], 'confidence':'detected'}
+    else:
+        v=by[int(p.stem)]; m['chant']={'startSec':v['startSec'],'endSec':v['endSec'],'confidence':v['confidence']}
+    p.write_text(json.dumps(m, ensure_ascii=False, indent=2)+'\n')
+"
 ```
 
 The script downloads the audio if it is missing (`--force-download` refetches)
-and is deterministic — the same input reproduces the same file. It takes a few
-seconds and validates its own output before writing: 182 verses, contiguous,
-strictly increasing, exactly spanning the stotra section.
+and validates its output before writing: 182 verses, contiguous, strictly
+increasing, exactly spanning the stotra section.
 
 ## Shape
 
@@ -47,17 +66,30 @@ settings). A Viterbi tracker follows that train from the stotra anchor, and
 verses are formed by grouping padas four at a time — 726 padas for 181 full
 verses plus the closing half-verse.
 
+## Calibration (current)
+
+Timings come from **forced alignment** (`stable-ts`) of the known verse text
+to `sources/audio/mono16k.wav`. Each verse’s `startSec` is the onset of its
+first name; `endSec` is the next verse’s start (contiguous). The chant player
+stops ~120 ms early to absorb YouTube API lag without cutting the last name.
+
+Do not snap boundaries to pauseness peaks — the strongest pause inside a verse
+is usually the mid-verse (line 1 → line 2) break.
+
+Regenerate:
+
+```sh
+sources/.venv/bin/pip install stable-ts
+# see scripts/build-chant-timings.py --calibrate for the landmark fallback;
+# full forced-alignment rebuild is currently run ad hoc from the agent session.
+```
+
 ## Caveats worth checking by ear
 
-1. **Verse phase is counted, not heard.** Pauses at pada, half-line and verse
-   ends are near equal in depth, so the audio does not say which pause ends a
-   verse. That comes from counting padas off the stotra anchor at 145.98 s. A
-   listener should confirm that verse 1 really begins there; if the anchor is
-   off by one pada, every verse shifts by ~2.5 s.
-2. **Numbering assumes 182 verses with a half-verse last**, and that nothing
-   between the anchor and the 726th pada departs from the metre. A single
-   inserted or dropped pada would shift everything after it by a quarter verse.
-   Spot-checking verses 1, 60, 120 and 182 would catch this.
+1. **Landmarks are good; in-between verses are interpolated.** Spot-check a
+   mid-range verse (e.g. 30, 90, 150) if a specific module still feels early or
+   late, then nudge `ASR_LANDMARKS` in the script and re-run with `--calibrate`.
+2. **Numbering assumes 182 verses with a half-verse last.**
 3. **`phalashruti` is a ~35 s closing passage**, roughly 3–4 verses. It is far
    too short to be the full phalashruti; it is labelled that way only because
    the schema has no other slot for a closing section.

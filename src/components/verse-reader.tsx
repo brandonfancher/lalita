@@ -5,6 +5,8 @@ import { X } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
+import { SoundButton } from "@/components/sound-button";
+import { playAksaras } from "@/lib/sound-audio";
 import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
@@ -212,6 +214,12 @@ function Inspector({
           <p className="deva text-2xl leading-snug text-ink">{token.deva}</p>
           <p className="iast text-sm text-gold-soft">{token.iast}</p>
         </div>
+        {token.aksaras.length > 0 && (
+          <SoundButton
+            label={`Play ${token.iast}`}
+            onPlay={() => playAksaras(token.aksaras)}
+          />
+        )}
         <button
           type="button"
           onClick={onClose}
@@ -261,6 +269,13 @@ function NamaPanel({ nama }: { nama: Nama }) {
           </span>
           <span className="deva text-base text-ink">{nama.deva}</span>
           <span className="iast text-[13px] text-ink-muted">{nama.iast}</span>
+          {nama.aksaras.length > 0 && (
+            <SoundButton
+              size="sm"
+              label={`Play ${nama.iast}`}
+              onPlay={() => playAksaras(nama.aksaras)}
+            />
+          )}
         </div>
         {nama.gloss && <p className="text-[15px] font-medium text-ink">{nama.gloss}</p>}
         {nama.translation && (

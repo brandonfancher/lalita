@@ -5,6 +5,8 @@ import { ChevronDown } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
+import { SoundButton } from "@/components/sound-button";
+import { playAksaras } from "@/lib/sound-audio";
 import type { Nama } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
@@ -44,6 +46,13 @@ export function NamaList({ namas }: { namas: Nama[] }) {
                 <span className="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
                   <span className="deva text-xl text-ink">{nama.deva}</span>
                   <span className="iast text-sm text-gold-soft">{nama.iast}</span>
+                  {nama.aksaras.length > 0 && (
+                    <SoundButton
+                      size="sm"
+                      label={`Play ${nama.iast}`}
+                      onPlay={() => playAksaras(nama.aksaras)}
+                    />
+                  )}
                 </span>
                 {nama.gloss && (
                   <span className="mt-0.5 block text-[13px] text-ink-muted">{nama.gloss}</span>

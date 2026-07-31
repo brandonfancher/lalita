@@ -1,1 +1,1814 @@
-{"id":"005","kind":"shloka","number":5,"title":"Shloka 5","subtitle":"The eighth-night moon on her brow","lines":[{"deva":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता","iast":"aṣṭamīcandravibhrājadalikasthalaśobhitā","tokens":[{"id":"l0-t0","deva":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता","iast":"aṣṭamīcandravibhrājadalikasthalaśobhitā","namaIndices":[15],"aksaras":[{"text":"अ","iast":"a","parts":[{"char":"अ","role":"vowel","iast":"a","name":"a (independent)","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ष्ट","iast":"ṣṭa","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ट","role":"consonant","iast":"ṭa","name":"ṭa","articulation":"retroflex","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"मी","iast":"mī","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"च","iast":"ca","parts":[{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"भ्रा","iast":"bhrā","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"द","iast":"da","parts":[{"char":"द","role":"consonant","iast":"da","name":"da","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"लि","iast":"li","parts":[{"char":"ल","role":"consonant","iast":"l","name":"la","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"स्थ","iast":"stha","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"थ","role":"consonant","iast":"tha","name":"tha","articulation":"dental","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":true},{"text":"ल","iast":"la","parts":[{"char":"ल","role":"consonant","iast":"la","name":"la","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"शो","iast":"śo","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"भि","iast":"bhi","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ता","iast":"tā","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]},{"deva":"मुखचन्द्रकलङ्काभमृगनाभिविशेषका","iast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakā","tokens":[{"id":"l1-t0","deva":"मुखचन्द्रकलङ्काभमृगनाभिविशेषका","iast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakā","namaIndices":[16],"aksaras":[{"text":"मु","iast":"mu","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ख","iast":"kha","parts":[{"char":"ख","role":"consonant","iast":"kha","name":"kha","articulation":"guttural","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"च","iast":"ca","parts":[{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ल","iast":"la","parts":[{"char":"ल","role":"consonant","iast":"la","name":"la","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ङ्का","iast":"ṅkā","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"भ","iast":"bha","parts":[{"char":"भ","role":"consonant","iast":"bha","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"मृ","iast":"mṛ","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ृ","role":"vowel-sign","iast":"ṛ","name":"ṛ-kāra","articulation":"retroflex","voicing":"voiced"}],"isConjunct":false},{"text":"ग","iast":"ga","parts":[{"char":"ग","role":"consonant","iast":"ga","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"भि","iast":"bhi","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"शे","iast":"śe","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"े","role":"vowel-sign","iast":"e","name":"e-kāra","articulation":"guttural-palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ष","iast":"ṣa","parts":[{"char":"ष","role":"consonant","iast":"ṣa","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]}],"namas":[{"index":15,"deva":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता","iast":"aṣṭamīcandravibhrājadalikasthalaśobhitā","namavaliDeva":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभितायै","namavaliIast":"aṣṭamīcandravibhrājadalikasthalaśobhitāyai","gloss":"Graced By A Half-Moon Brow","translation":"The broad curve of her forehead carries the same clear light as the moon on the eighth night of the waxing fortnight.","aksaras":[{"text":"अ","iast":"a","parts":[{"char":"अ","role":"vowel","iast":"a","name":"a (independent)","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ष्ट","iast":"ṣṭa","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ट","role":"consonant","iast":"ṭa","name":"ṭa","articulation":"retroflex","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"मी","iast":"mī","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"च","iast":"ca","parts":[{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"भ्रा","iast":"bhrā","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"द","iast":"da","parts":[{"char":"द","role":"consonant","iast":"da","name":"da","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"लि","iast":"li","parts":[{"char":"ल","role":"consonant","iast":"l","name":"la","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"स्थ","iast":"stha","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"थ","role":"consonant","iast":"tha","name":"tha","articulation":"dental","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":true},{"text":"ल","iast":"la","parts":[{"char":"ल","role":"consonant","iast":"la","name":"la","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"शो","iast":"śo","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"भि","iast":"bhi","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ता","iast":"tā","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता","stemIast":"aṣṭamīcandravibhrājadalikasthalaśobhitā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem","note":"Frequently listed as a bahuvrīhi, but the final member śobhitā is a participle predicated of the goddess herself, which makes an instrumental tatpuruṣa the tighter analysis."},"compound":{"text":"अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता","iast":"aṣṭamīcandravibhrājadalikasthalaśobhitā","type":"tatpuruṣa","gloss":"made beautiful by a brow shining like the eighth-night moon","vigraha":"aṣṭamīcandravibhrājatā alikasthalena śobhitā","children":[{"text":"अष्टमीचन्द्रविभ्राजदलिकस्थल","iast":"aṣṭamīcandravibhrājadalikasthala","gloss":"the expanse of brow that shines like the eighth-night moon","type":"karmadhāraya","vigraha":"aṣṭamīcandravibhrājac ca tad alikasthalaṃ ca","children":[{"text":"अष्टमीचन्द्रविभ्राजत्","iast":"aṣṭamīcandravibhrājat","gloss":"shining like the moon of the eighth lunar day","type":"tatpuruṣa","vigraha":"aṣṭamīcandra iva vibhrājat","children":[{"text":"अष्टमीचन्द्र","iast":"aṣṭamīcandra","gloss":"the moon of the eighth lunar day","type":"tatpuruṣa","vigraha":"aṣṭamyāś candraḥ","children":[{"text":"अष्टमी","iast":"aṣṭamī","gloss":"the eighth day or night of a lunar fortnight"},{"text":"चन्द्र","iast":"candra","gloss":"moon"}]},{"text":"विभ्राजत्","iast":"vibhrājat","gloss":"shining forth, gleaming brightly"}]},{"text":"अलिकस्थल","iast":"alikasthala","gloss":"the expanse of the forehead","type":"karmadhāraya","vigraha":"alikam eva sthalam","children":[{"text":"अलिक","iast":"alika","gloss":"forehead, brow"},{"text":"स्थल","iast":"sthala","gloss":"level ground, tract, expanse"}]}]},{"text":"शोभित","iast":"śobhita","gloss":"made beautiful, graced, embellished by"}]}},{"index":16,"deva":"मुखचन्द्रकलङ्काभमृगनाभिविशेषका","iast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakā","namavaliDeva":"मुखचन्द्रकलङ्काभमृगनाभिविशेषकायै","namavaliIast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakāyai","gloss":"Whose Musk Mark Is The Moon's Spot","translation":"The dab of musk on her face plays the part that the dark blemish plays on the moon, a small shadow that only sharpens the brightness around it.","aksaras":[{"text":"मु","iast":"mu","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ख","iast":"kha","parts":[{"char":"ख","role":"consonant","iast":"kha","name":"kha","articulation":"guttural","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"च","iast":"ca","parts":[{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ल","iast":"la","parts":[{"char":"ल","role":"consonant","iast":"la","name":"la","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ङ्का","iast":"ṅkā","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"भ","iast":"bha","parts":[{"char":"भ","role":"consonant","iast":"bha","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"मृ","iast":"mṛ","parts":[{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ृ","role":"vowel-sign","iast":"ṛ","name":"ṛ-kāra","articulation":"retroflex","voicing":"voiced"}],"isConjunct":false},{"text":"ग","iast":"ga","parts":[{"char":"ग","role":"consonant","iast":"ga","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"भि","iast":"bhi","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"शे","iast":"śe","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"े","role":"vowel-sign","iast":"e","name":"e-kāra","articulation":"guttural-palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ष","iast":"ṣa","parts":[{"char":"ष","role":"consonant","iast":"ṣa","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"मुखचन्द्रकलङ्काभमृगनाभिविशेषका","stemIast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"मुखचन्द्रकलङ्काभमृगनाभिविशेषका","iast":"mukhacandrakalaṅkābhamṛganābhiviśeṣakā","type":"bahuvrīhi","gloss":"she whose musk mark looks like the spot on the moon of her face","vigraha":"mukhacandrakalaṅkābhaṃ mṛganābhiviśeṣakaṃ yasyāḥ sā","children":[{"text":"मुखचन्द्रकलङ्काभ","iast":"mukhacandrakalaṅkābha","gloss":"resembling the blemish on the moon that is her face","type":"bahuvrīhi","vigraha":"mukhacandrakalaṅkasya ābheva ābhā yasya tat","children":[{"text":"मुखचन्द्रकलङ्क","iast":"mukhacandrakalaṅka","gloss":"the dark mark on the face-moon","type":"tatpuruṣa","vigraha":"mukhacandrasya kalaṅkaḥ","children":[{"text":"मुखचन्द्र","iast":"mukhacandra","gloss":"the moon that is her face","type":"karmadhāraya","vigraha":"mukham eva candraḥ","children":[{"text":"मुख","iast":"mukha","gloss":"face, countenance"},{"text":"चन्द्र","iast":"candra","gloss":"moon"}]},{"text":"कलङ्क","iast":"kalaṅka","gloss":"spot, stain, blemish"}]},{"text":"आभ","iast":"ābha","gloss":"resembling, having the look of"}]},{"text":"मृगनाभिविशेषक","iast":"mṛganābhiviśeṣaka","gloss":"the ornamental mark drawn in musk","type":"tatpuruṣa","vigraha":"mṛganābhinā kṛtaṃ viśeṣakam","children":[{"text":"मृगनाभि","iast":"mṛganābhi","gloss":"musk, literally the deer's navel"},{"text":"विशेषक","iast":"viśeṣaka","gloss":"a decorative mark painted on the face"}]}]}}],"namaRange":[15,16],"chant":{"startSec":186.04,"endSec":196.4,"confidence":"detected"},"commentary":{"meaning":"Two names, and both of them are moons. The first says that her forehead — the broad, clear expanse of it — carries the same light as the moon on the eighth night of the waxing fortnight, which is the night the disc stands at exactly half and makes the shape of a brow. The second changes the scale: now the whole face is the moon, and the small dab of musk on it is doing what the dark blemish does on the real moon. The pairing is careful. The first name gives her a moon; the second makes her one, and then hands her the flaw as an ornament. Nobody has ever seen an unmarked moon, and the poet, instead of pretending otherwise, puts the mark on with a fingertip and turns it into cosmetics.","history":"The eighth lunar day is not chosen at random. On the aṣṭamī of the bright fortnight the moon shows exactly half its disc, so the figure is not the thin crescent that Śiva wears in his hair but a full broad arc — the shape of a forehead seen straight on. It is worth holding both moons in view. Śiva carries a fragment of the moon; here she does not wear one, she is the arc. The meditation verse had already called her tārānāyakaśekharā, crowned with the lord of the stars, so within a few lines the moon has been placed on her head, then identified with her brow, then with her whole face. The stotra is not repeating itself. It is tightening.\n\nThe second name contains a pun that is easy to walk past. Mṛganābhi, the word used here for musk, means literally \"deer's navel\", from the gland of the male musk deer from which the substance is taken. And one of the ordinary Sanskrit names of the moon is mṛgāṅka, \"deer-marked\", because the dark patches on the lunar surface were seen as a deer, just as they were seen elsewhere as a hare — hence the moon's other name, śaśāṅka. So the spot that the poet paints on her moon-face in order to imitate the moon's own spot is itself named after the animal that the moon's spot is traditionally taken to be. The image closes on itself. This is the kind of buried figure that Sanskrit poetics treats as the mark of a real poet, and it is a reason to take the Vāgdevatās' hymn seriously as literature and not only as liturgy.\n\nViśeṣaka is the technical word for a mark made on the forehead with sandal paste or a similar substance — the dictionary gives exactly that — so what is being described is a cosmetic tilaka of musk, not a natural mole. The detail is not new to the text. The fourth meditation verse, which comes from a completely different source, describes her as alikacumbikastūrikā, with musk kissing her forehead, using a different word for musk and a different word for forehead. Two independent formulations of the same observed image, sitting a few lines apart on the same page, is good evidence that both belong to a settled visual tradition rather than to one poet's invention.\n\nOne last word repays a look. Kalaṅka, the moon's spot, also means defamation, blame, a stain on a reputation. The commentators enjoy this. The only blemish anywhere near her is one that she has applied herself, deliberately, and that improves the face it is on.","practice":"Two more sixteen-syllable names, one per line, and both of them front-loaded with hard consonants. Aṣṭamī opens with ṣṭ, the retroflex sibilant running straight into the retroflex stop: the tongue-tip curls back for the ṣ and stays there for the ṭ, with no forward movement in between. This is the same cluster as in aṣṭa, eight, and in every word built on it, so it is worth twenty seconds of drilling.\n\nThe join between vibhrājat and alika shows the same sandhi you met in cidagni: a final unvoiced t before a vowel becomes a voiced d, giving vibhrājadalika, written विभ्राजदलिक. Seeing that lets you find the word-boundary the ear cannot hear, and it tells you that vibhrājat is another of this stotra's present participles in -at.\n\nSthala needs care. The th is an aspirated dental — t with a puff of breath — and never the English sound in \"thing\". Say s, then t, then release the breath: s-tʰa-la.\n\nMṛga contains a genuine syllabic vowel, ṛ. It is not the sequence \"ri\", though most northern reciters approximate it that way, nor \"ru\", though many southern reciters do. The grammarians describe a short r held as the nucleus of the syllable, made with the tongue in the retroflex position. Whichever regional habit you adopt, keep it short: mṛ is one beat, and lengthening it will throw the count of the line.\n\nThe ṅk of kalaṅka is the guttural nasal, made at exactly the place where the following k is made, so the tongue does not travel. And viśeṣakā gives you the palatal ś and the retroflex ṣ in adjacent syllables, vi-śe-ṣa-kā, which makes it one of the best two-second drills in the whole first ten verses. If you can hear the difference there, you can hear it anywhere.\n\nAs for what this verse asks of the attention: the two verses before it described power and the two after it will describe expression. This one describes a surface at rest. It is the still point of the opening sequence, and the traditional advice about the moon-images in this stotra is simply not to hurry them — a half-moon and a face are both things that reward being looked at longer than seems necessary.","crossReferences":[{"source":"Saundaryalaharī 46","deva":"ललाटं लावण्यद्युतिविमलमाभाति तव यत् द्वितीयं तन्मन्ये मकुटघटितं चन्द्रशकलम् । विपर्यासन्यासादुभयमपि सम्भूय च मिथः सुधालेपस्यूतिः परिणमति राकाहिमकरः ॥","iast":"lalāṭaṃ lāvaṇyadyutivimalamābhāti tava yat dvitīyaṃ tanmanye makuṭaghaṭitaṃ candraśakalam | viparyāsanyāsādubhayamapi sambhūya ca mithaḥ sudhālepasyūtiḥ pariṇamati rākāhimakaraḥ ||","translation":"That forehead of yours, shining spotless with the light of loveliness — I take it for a second crescent moon, set beside the one fixed in your crown. And if the two were laid the other way about and brought together, seamed with a smear of nectar, they would come out as the full moon of the night of the full moon.","relevance":"The same comparison, worked out with more arithmetic. Śaṅkara notices that a crescent on the crown and a crescent of a brow are two halves, and that if you turn one of them round they make a whole. The sahasranāma's aṣṭamī, the exactly half-lit eighth night, is a compressed version of the same insight: half a moon is what a forehead looks like."},{"source":"Lalitā Sahasranāma, fourth meditation verse","deva":"सकुङ्कुमविलेपनामलिकचुम्बिकस्तूरिकां समन्दहसितेक्षणां सशरचापपाशाङ्कुशाम् ॥","iast":"sakuṅkumavilepanāmalikacumbikastūrikāṃ samandahasitekṣaṇāṃ saśaracāpapāśāṅkuśām ||","translation":"Smeared with saffron, with musk kissing her forehead, her glance carrying a slight smile, bearing arrow and bow and noose and goad.","relevance":"The same musk on the same forehead, described a few lines earlier in the ritual preliminaries with an entirely different vocabulary — kastūrikā for the musk, alika for the brow, and the vivid verb cumbi, kissing. That two independent formulations agree on so small a detail is a sign that the image was fixed in practice before either text wrote it down."}]},"references":[{"kind":"book","title":"The Origin and Development of the Bengali Language","author":"Suniti Kumar Chatterji","note":"An unexpected recommendation, but the introductory chapters on Indo-Aryan phonology are the clearest short account of what the syllabic ṛ actually was and how the modern regional pronunciations — \"ri\" in the north, \"ru\" in the south — diverged from it. Useful if the vowel in mṛga has been bothering you."},{"kind":"book","title":"A Sanskrit Grammar for Students","author":"Arthur A. Macdonell (Oxford, 3rd ed. 1927)","note":"Out of copyright and still the best short reference. The opening pages on the alphabet and the places of articulation are worth rereading whenever a verse like this one piles up retroflexes, and the appendix on metre explains the anuṣṭubh in two pages."}]}
+{
+  "id": "005",
+  "kind": "shloka",
+  "number": 5,
+  "title": "Shloka 5",
+  "subtitle": "The eighth-night moon on her brow",
+  "lines": [
+    {
+      "deva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+      "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+      "tokens": [
+        {
+          "id": "l0-t0",
+          "deva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+          "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+          "namaIndices": [
+            15
+          ],
+          "aksaras": [
+            {
+              "text": "अ",
+              "iast": "a",
+              "parts": [
+                {
+                  "char": "अ",
+                  "role": "vowel",
+                  "iast": "a",
+                  "name": "a (independent)",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ष्ट",
+              "iast": "ṣṭa",
+              "parts": [
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣ",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ट",
+                  "role": "consonant",
+                  "iast": "ṭa",
+                  "name": "ṭa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "मी",
+              "iast": "mī",
+              "parts": [
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "m",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "च",
+              "iast": "ca",
+              "parts": [
+                {
+                  "char": "च",
+                  "role": "consonant",
+                  "iast": "ca",
+                  "name": "ca",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्द्र",
+              "iast": "ndra",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "d",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "भ्रा",
+              "iast": "bhrā",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bh",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "ज",
+              "iast": "ja",
+              "parts": [
+                {
+                  "char": "ज",
+                  "role": "consonant",
+                  "iast": "ja",
+                  "name": "ja",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "द",
+              "iast": "da",
+              "parts": [
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "da",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "लि",
+              "iast": "li",
+              "parts": [
+                {
+                  "char": "ल",
+                  "role": "consonant",
+                  "iast": "l",
+                  "name": "la",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "क",
+              "iast": "ka",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "ka",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "स्थ",
+              "iast": "stha",
+              "parts": [
+                {
+                  "char": "स",
+                  "role": "consonant",
+                  "iast": "s",
+                  "name": "sa",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "थ",
+                  "role": "consonant",
+                  "iast": "tha",
+                  "name": "tha",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "ल",
+              "iast": "la",
+              "parts": [
+                {
+                  "char": "ल",
+                  "role": "consonant",
+                  "iast": "la",
+                  "name": "la",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "शो",
+              "iast": "śo",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ो",
+                  "role": "vowel-sign",
+                  "iast": "o",
+                  "name": "o-kāra",
+                  "articulation": "guttural-labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "भि",
+              "iast": "bhi",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bh",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ता",
+              "iast": "tā",
+              "parts": [
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+      "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+      "tokens": [
+        {
+          "id": "l1-t0",
+          "deva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+          "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+          "namaIndices": [
+            16
+          ],
+          "aksaras": [
+            {
+              "text": "मु",
+              "iast": "mu",
+              "parts": [
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "m",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ु",
+                  "role": "vowel-sign",
+                  "iast": "u",
+                  "name": "u-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ख",
+              "iast": "kha",
+              "parts": [
+                {
+                  "char": "ख",
+                  "role": "consonant",
+                  "iast": "kha",
+                  "name": "kha",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "च",
+              "iast": "ca",
+              "parts": [
+                {
+                  "char": "च",
+                  "role": "consonant",
+                  "iast": "ca",
+                  "name": "ca",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्द्र",
+              "iast": "ndra",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "d",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "क",
+              "iast": "ka",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "ka",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ल",
+              "iast": "la",
+              "parts": [
+                {
+                  "char": "ल",
+                  "role": "consonant",
+                  "iast": "la",
+                  "name": "la",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ङ्का",
+              "iast": "ṅkā",
+              "parts": [
+                {
+                  "char": "ङ",
+                  "role": "consonant",
+                  "iast": "ṅ",
+                  "name": "ṅa",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "भ",
+              "iast": "bha",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bha",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "मृ",
+              "iast": "mṛ",
+              "parts": [
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "m",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ृ",
+                  "role": "vowel-sign",
+                  "iast": "ṛ",
+                  "name": "ṛ-kāra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ग",
+              "iast": "ga",
+              "parts": [
+                {
+                  "char": "ग",
+                  "role": "consonant",
+                  "iast": "ga",
+                  "name": "ga",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ना",
+              "iast": "nā",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "भि",
+              "iast": "bhi",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bh",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "शे",
+              "iast": "śe",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "े",
+                  "role": "vowel-sign",
+                  "iast": "e",
+                  "name": "e-kāra",
+                  "articulation": "guttural-palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ष",
+              "iast": "ṣa",
+              "parts": [
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣa",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "का",
+              "iast": "kā",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namas": [
+    {
+      "index": 15,
+      "deva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+      "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+      "namavaliDeva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभितायै",
+      "namavaliIast": "aṣṭamīcandravibhrājadalikasthalaśobhitāyai",
+      "gloss": "Graced By A Half-Moon Brow",
+      "translation": "The broad curve of her forehead carries the same clear light as the moon on the eighth night of the waxing fortnight.",
+      "aksaras": [
+        {
+          "text": "अ",
+          "iast": "a",
+          "parts": [
+            {
+              "char": "अ",
+              "role": "vowel",
+              "iast": "a",
+              "name": "a (independent)",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ष्ट",
+          "iast": "ṣṭa",
+          "parts": [
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣ",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ट",
+              "role": "consonant",
+              "iast": "ṭa",
+              "name": "ṭa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "मी",
+          "iast": "mī",
+          "parts": [
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "m",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "च",
+          "iast": "ca",
+          "parts": [
+            {
+              "char": "च",
+              "role": "consonant",
+              "iast": "ca",
+              "name": "ca",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्द्र",
+          "iast": "ndra",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "d",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "भ्रा",
+          "iast": "bhrā",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bh",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "ज",
+          "iast": "ja",
+          "parts": [
+            {
+              "char": "ज",
+              "role": "consonant",
+              "iast": "ja",
+              "name": "ja",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "द",
+          "iast": "da",
+          "parts": [
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "da",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "लि",
+          "iast": "li",
+          "parts": [
+            {
+              "char": "ल",
+              "role": "consonant",
+              "iast": "l",
+              "name": "la",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "क",
+          "iast": "ka",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "ka",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "स्थ",
+          "iast": "stha",
+          "parts": [
+            {
+              "char": "स",
+              "role": "consonant",
+              "iast": "s",
+              "name": "sa",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "थ",
+              "role": "consonant",
+              "iast": "tha",
+              "name": "tha",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "ल",
+          "iast": "la",
+          "parts": [
+            {
+              "char": "ल",
+              "role": "consonant",
+              "iast": "la",
+              "name": "la",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "शो",
+          "iast": "śo",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ो",
+              "role": "vowel-sign",
+              "iast": "o",
+              "name": "o-kāra",
+              "articulation": "guttural-labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "भि",
+          "iast": "bhi",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bh",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ता",
+          "iast": "tā",
+          "parts": [
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+        "stemIast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem",
+        "note": "Frequently listed as a bahuvrīhi, but the final member śobhitā is a participle predicated of the goddess herself, which makes an instrumental tatpuruṣa the tighter analysis."
+      },
+      "compound": {
+        "text": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+        "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+        "type": "tatpuruṣa",
+        "gloss": "made beautiful by a brow shining like the eighth-night moon",
+        "vigraha": "aṣṭamīcandravibhrājatā alikasthalena śobhitā",
+        "children": [
+          {
+            "text": "अष्टमीचन्द्रविभ्राजदलिकस्थल",
+            "iast": "aṣṭamīcandravibhrājadalikasthala",
+            "gloss": "the expanse of brow that shines like the eighth-night moon",
+            "type": "karmadhāraya",
+            "vigraha": "aṣṭamīcandravibhrājac ca tad alikasthalaṃ ca",
+            "children": [
+              {
+                "text": "अष्टमीचन्द्रविभ्राजत्",
+                "iast": "aṣṭamīcandravibhrājat",
+                "gloss": "shining like the moon of the eighth lunar day",
+                "type": "tatpuruṣa",
+                "vigraha": "aṣṭamīcandra iva vibhrājat",
+                "children": [
+                  {
+                    "text": "अष्टमीचन्द्र",
+                    "iast": "aṣṭamīcandra",
+                    "gloss": "the moon of the eighth lunar day",
+                    "type": "tatpuruṣa",
+                    "vigraha": "aṣṭamyāś candraḥ",
+                    "children": [
+                      {
+                        "text": "अष्टमी",
+                        "iast": "aṣṭamī",
+                        "gloss": "the eighth day or night of a lunar fortnight"
+                      },
+                      {
+                        "text": "चन्द्र",
+                        "iast": "candra",
+                        "gloss": "moon"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "विभ्राजत्",
+                    "iast": "vibhrājat",
+                    "gloss": "shining forth, gleaming brightly"
+                  }
+                ]
+              },
+              {
+                "text": "अलिकस्थल",
+                "iast": "alikasthala",
+                "gloss": "the expanse of the forehead",
+                "type": "karmadhāraya",
+                "vigraha": "alikam eva sthalam",
+                "children": [
+                  {
+                    "text": "अलिक",
+                    "iast": "alika",
+                    "gloss": "forehead, brow"
+                  },
+                  {
+                    "text": "स्थल",
+                    "iast": "sthala",
+                    "gloss": "level ground, tract, expanse"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "शोभित",
+            "iast": "śobhita",
+            "gloss": "made beautiful, graced, embellished by"
+          }
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "deva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+      "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+      "namavaliDeva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषकायै",
+      "namavaliIast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakāyai",
+      "gloss": "Whose Musk Mark Is The Moon's Spot",
+      "translation": "The dab of musk on her face plays the part that the dark blemish plays on the moon, a small shadow that only sharpens the brightness around it.",
+      "aksaras": [
+        {
+          "text": "मु",
+          "iast": "mu",
+          "parts": [
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "m",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ु",
+              "role": "vowel-sign",
+              "iast": "u",
+              "name": "u-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ख",
+          "iast": "kha",
+          "parts": [
+            {
+              "char": "ख",
+              "role": "consonant",
+              "iast": "kha",
+              "name": "kha",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "च",
+          "iast": "ca",
+          "parts": [
+            {
+              "char": "च",
+              "role": "consonant",
+              "iast": "ca",
+              "name": "ca",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्द्र",
+          "iast": "ndra",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "d",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "क",
+          "iast": "ka",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "ka",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ल",
+          "iast": "la",
+          "parts": [
+            {
+              "char": "ल",
+              "role": "consonant",
+              "iast": "la",
+              "name": "la",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ङ्का",
+          "iast": "ṅkā",
+          "parts": [
+            {
+              "char": "ङ",
+              "role": "consonant",
+              "iast": "ṅ",
+              "name": "ṅa",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "भ",
+          "iast": "bha",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bha",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "मृ",
+          "iast": "mṛ",
+          "parts": [
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "m",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ृ",
+              "role": "vowel-sign",
+              "iast": "ṛ",
+              "name": "ṛ-kāra",
+              "articulation": "retroflex",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ग",
+          "iast": "ga",
+          "parts": [
+            {
+              "char": "ग",
+              "role": "consonant",
+              "iast": "ga",
+              "name": "ga",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ना",
+          "iast": "nā",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "भि",
+          "iast": "bhi",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bh",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "शे",
+          "iast": "śe",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "े",
+              "role": "vowel-sign",
+              "iast": "e",
+              "name": "e-kāra",
+              "articulation": "guttural-palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ष",
+          "iast": "ṣa",
+          "parts": [
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣa",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "का",
+          "iast": "kā",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+        "stemIast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+        "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+        "type": "bahuvrīhi",
+        "gloss": "she whose musk mark looks like the spot on the moon of her face",
+        "vigraha": "mukhacandrakalaṅkābhaṃ mṛganābhiviśeṣakaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "मुखचन्द्रकलङ्काभ",
+            "iast": "mukhacandrakalaṅkābha",
+            "gloss": "resembling the blemish on the moon that is her face",
+            "type": "bahuvrīhi",
+            "vigraha": "mukhacandrakalaṅkasya ābheva ābhā yasya tat",
+            "children": [
+              {
+                "text": "मुखचन्द्रकलङ्क",
+                "iast": "mukhacandrakalaṅka",
+                "gloss": "the dark mark on the face-moon",
+                "type": "tatpuruṣa",
+                "vigraha": "mukhacandrasya kalaṅkaḥ",
+                "children": [
+                  {
+                    "text": "मुखचन्द्र",
+                    "iast": "mukhacandra",
+                    "gloss": "the moon that is her face",
+                    "type": "karmadhāraya",
+                    "vigraha": "mukham eva candraḥ",
+                    "children": [
+                      {
+                        "text": "मुख",
+                        "iast": "mukha",
+                        "gloss": "face, countenance"
+                      },
+                      {
+                        "text": "चन्द्र",
+                        "iast": "candra",
+                        "gloss": "moon"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "कलङ्क",
+                    "iast": "kalaṅka",
+                    "gloss": "spot, stain, blemish"
+                  }
+                ]
+              },
+              {
+                "text": "आभ",
+                "iast": "ābha",
+                "gloss": "resembling, having the look of"
+              }
+            ]
+          },
+          {
+            "text": "मृगनाभिविशेषक",
+            "iast": "mṛganābhiviśeṣaka",
+            "gloss": "the ornamental mark drawn in musk",
+            "type": "tatpuruṣa",
+            "vigraha": "mṛganābhinā kṛtaṃ viśeṣakam",
+            "children": [
+              {
+                "text": "मृगनाभि",
+                "iast": "mṛganābhi",
+                "gloss": "musk, literally the deer's navel"
+              },
+              {
+                "text": "विशेषक",
+                "iast": "viśeṣaka",
+                "gloss": "a decorative mark painted on the face"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "namaRange": [
+    15,
+    16
+  ],
+  "chant": {
+    "startSec": 181.89,
+    "endSec": 191.63,
+    "confidence": "interpolated"
+  },
+  "commentary": {
+    "meaning": "Two names, and both of them are moons. The first says that her forehead — the broad, clear expanse of it — carries the same light as the moon on the eighth night of the waxing fortnight, which is the night the disc stands at exactly half and makes the shape of a brow. The second changes the scale: now the whole face is the moon, and the small dab of musk on it is doing what the dark blemish does on the real moon. The pairing is careful. The first name gives her a moon; the second makes her one, and then hands her the flaw as an ornament. Nobody has ever seen an unmarked moon, and the poet, instead of pretending otherwise, puts the mark on with a fingertip and turns it into cosmetics.",
+    "history": "The eighth lunar day is not chosen at random. On the aṣṭamī of the bright fortnight the moon shows exactly half its disc, so the figure is not the thin crescent that Śiva wears in his hair but a full broad arc — the shape of a forehead seen straight on. It is worth holding both moons in view. Śiva carries a fragment of the moon; here she does not wear one, she is the arc. The meditation verse had already called her tārānāyakaśekharā, crowned with the lord of the stars, so within a few lines the moon has been placed on her head, then identified with her brow, then with her whole face. The stotra is not repeating itself. It is tightening.\n\nThe second name contains a pun that is easy to walk past. Mṛganābhi, the word used here for musk, means literally \"deer's navel\", from the gland of the male musk deer from which the substance is taken. And one of the ordinary Sanskrit names of the moon is mṛgāṅka, \"deer-marked\", because the dark patches on the lunar surface were seen as a deer, just as they were seen elsewhere as a hare — hence the moon's other name, śaśāṅka. So the spot that the poet paints on her moon-face in order to imitate the moon's own spot is itself named after the animal that the moon's spot is traditionally taken to be. The image closes on itself. This is the kind of buried figure that Sanskrit poetics treats as the mark of a real poet, and it is a reason to take the Vāgdevatās' hymn seriously as literature and not only as liturgy.\n\nViśeṣaka is the technical word for a mark made on the forehead with sandal paste or a similar substance — the dictionary gives exactly that — so what is being described is a cosmetic tilaka of musk, not a natural mole. The detail is not new to the text. The fourth meditation verse, which comes from a completely different source, describes her as alikacumbikastūrikā, with musk kissing her forehead, using a different word for musk and a different word for forehead. Two independent formulations of the same observed image, sitting a few lines apart on the same page, is good evidence that both belong to a settled visual tradition rather than to one poet's invention.\n\nOne last word repays a look. Kalaṅka, the moon's spot, also means defamation, blame, a stain on a reputation. The commentators enjoy this. The only blemish anywhere near her is one that she has applied herself, deliberately, and that improves the face it is on.",
+    "practice": "Two more sixteen-syllable names, one per line, and both of them front-loaded with hard consonants. Aṣṭamī opens with ṣṭ, the retroflex sibilant running straight into the retroflex stop: the tongue-tip curls back for the ṣ and stays there for the ṭ, with no forward movement in between. This is the same cluster as in aṣṭa, eight, and in every word built on it, so it is worth twenty seconds of drilling.\n\nThe join between vibhrājat and alika shows the same sandhi you met in cidagni: a final unvoiced t before a vowel becomes a voiced d, giving vibhrājadalika, written विभ्राजदलिक. Seeing that lets you find the word-boundary the ear cannot hear, and it tells you that vibhrājat is another of this stotra's present participles in -at.\n\nSthala needs care. The th is an aspirated dental — t with a puff of breath — and never the English sound in \"thing\". Say s, then t, then release the breath: s-tʰa-la.\n\nMṛga contains a genuine syllabic vowel, ṛ. It is not the sequence \"ri\", though most northern reciters approximate it that way, nor \"ru\", though many southern reciters do. The grammarians describe a short r held as the nucleus of the syllable, made with the tongue in the retroflex position. Whichever regional habit you adopt, keep it short: mṛ is one beat, and lengthening it will throw the count of the line.\n\nThe ṅk of kalaṅka is the guttural nasal, made at exactly the place where the following k is made, so the tongue does not travel. And viśeṣakā gives you the palatal ś and the retroflex ṣ in adjacent syllables, vi-śe-ṣa-kā, which makes it one of the best two-second drills in the whole first ten verses. If you can hear the difference there, you can hear it anywhere.\n\nAs for what this verse asks of the attention: the two verses before it described power and the two after it will describe expression. This one describes a surface at rest. It is the still point of the opening sequence, and the traditional advice about the moon-images in this stotra is simply not to hurry them — a half-moon and a face are both things that reward being looked at longer than seems necessary.",
+    "crossReferences": [
+      {
+        "source": "Saundaryalaharī 46",
+        "deva": "ललाटं लावण्यद्युतिविमलमाभाति तव यत् द्वितीयं तन्मन्ये मकुटघटितं चन्द्रशकलम् । विपर्यासन्यासादुभयमपि सम्भूय च मिथः सुधालेपस्यूतिः परिणमति राकाहिमकरः ॥",
+        "iast": "lalāṭaṃ lāvaṇyadyutivimalamābhāti tava yat dvitīyaṃ tanmanye makuṭaghaṭitaṃ candraśakalam | viparyāsanyāsādubhayamapi sambhūya ca mithaḥ sudhālepasyūtiḥ pariṇamati rākāhimakaraḥ ||",
+        "translation": "That forehead of yours, shining spotless with the light of loveliness — I take it for a second crescent moon, set beside the one fixed in your crown. And if the two were laid the other way about and brought together, seamed with a smear of nectar, they would come out as the full moon of the night of the full moon.",
+        "relevance": "The same comparison, worked out with more arithmetic. Śaṅkara notices that a crescent on the crown and a crescent of a brow are two halves, and that if you turn one of them round they make a whole. The sahasranāma's aṣṭamī, the exactly half-lit eighth night, is a compressed version of the same insight: half a moon is what a forehead looks like."
+      },
+      {
+        "source": "Lalitā Sahasranāma, fourth meditation verse",
+        "deva": "सकुङ्कुमविलेपनामलिकचुम्बिकस्तूरिकां समन्दहसितेक्षणां सशरचापपाशाङ्कुशाम् ॥",
+        "iast": "sakuṅkumavilepanāmalikacumbikastūrikāṃ samandahasitekṣaṇāṃ saśaracāpapāśāṅkuśām ||",
+        "translation": "Smeared with saffron, with musk kissing her forehead, her glance carrying a slight smile, bearing arrow and bow and noose and goad.",
+        "relevance": "The same musk on the same forehead, described a few lines earlier in the ritual preliminaries with an entirely different vocabulary — kastūrikā for the musk, alika for the brow, and the vivid verb cumbi, kissing. That two independent formulations agree on so small a detail is a sign that the image was fixed in practice before either text wrote it down."
+      }
+    ]
+  },
+  "references": [
+    {
+      "kind": "book",
+      "title": "The Origin and Development of the Bengali Language",
+      "author": "Suniti Kumar Chatterji",
+      "note": "An unexpected recommendation, but the introductory chapters on Indo-Aryan phonology are the clearest short account of what the syllabic ṛ actually was and how the modern regional pronunciations — \"ri\" in the north, \"ru\" in the south — diverged from it. Useful if the vowel in mṛga has been bothering you."
+    },
+    {
+      "kind": "book",
+      "title": "A Sanskrit Grammar for Students",
+      "author": "Arthur A. Macdonell (Oxford, 3rd ed. 1927)",
+      "note": "Out of copyright and still the best short reference. The opening pages on the alphabet and the places of articulation are worth rereading whenever a verse like this one piles up retroflexes, and the appendix on metre explains the anuṣṭubh in two pages."
+    }
+  ]
+}

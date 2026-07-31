@@ -1,1 +1,2085 @@
-{"id":"043","kind":"shloka","number":43,"title":"Shloka 43","subtitle":"The autumn moon, and then the turn to nothing","lines":[{"deva":"शाङ्करी श्रीकरी साध्वी शरच्चन्द्रनिभानना","iast":"śāṅkarī śrīkarī sādhvī śaraccandranibhānanā","tokens":[{"id":"l0-t0","deva":"शाङ्करी","iast":"śāṅkarī","namaIndices":[126],"aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ङ्क","iast":"ṅka","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]},{"id":"l0-t1","deva":"श्रीकरी","iast":"śrīkarī","namaIndices":[127],"aksaras":[{"text":"श्री","iast":"śrī","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]},{"id":"l0-t2","deva":"साध्वी","iast":"sādhvī","namaIndices":[128],"aksaras":[{"text":"सा","iast":"sā","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ध्वी","iast":"dhvī","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true}]},{"id":"l0-t3","deva":"शरच्चन्द्रनिभानना","iast":"śaraccandranibhānanā","namaIndices":[129],"aksaras":[{"text":"श","iast":"śa","parts":[{"char":"श","role":"consonant","iast":"śa","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"च्च","iast":"cca","parts":[{"char":"च","role":"consonant","iast":"c","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"भा","iast":"bhā","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न","iast":"na","parts":[{"char":"न","role":"consonant","iast":"na","name":"na","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]},{"deva":"शातोदरी शान्तिमती निराधारा निरञ्जना","iast":"śātodarī śāntimatī nirādhārā nirañjanā","tokens":[{"id":"l1-t0","deva":"शातोदरी","iast":"śātodarī","namaIndices":[130],"aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"तो","iast":"to","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"द","iast":"da","parts":[{"char":"द","role":"consonant","iast":"da","name":"da","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]},{"id":"l1-t1","deva":"शान्तिमती","iast":"śāntimatī","namaIndices":[131],"aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्ति","iast":"nti","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"म","iast":"ma","parts":[{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ती","iast":"tī","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]},{"id":"l1-t2","deva":"निराधारा","iast":"nirādhārā","namaIndices":[132],"aksaras":[{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]},{"id":"l1-t3","deva":"निरञ्जना","iast":"nirañjanā","namaIndices":[133],"aksaras":[{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ञ्ज","iast":"ñja","parts":[{"char":"ञ","role":"consonant","iast":"ñ","name":"ña","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]}],"namas":[{"index":126,"deva":"शाङ्करी","iast":"śāṅkarī","namavaliDeva":"शाङ्कर्यै","namavaliIast":"śāṅkaryai","gloss":"She Who Belongs To Śaṅkara","translation":"She is Śaṅkara's own, the female half of the god whose name means the one who makes things well.","aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ङ्क","iast":"ṅka","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"शाङ्करी","stemIast":"śāṅkarī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem","note":"A vṛddhi derivative of śaṅkara with the feminine -ī, not a compound."}},{"index":127,"deva":"श्रीकरी","iast":"śrīkarī","namavaliDeva":"श्रीकर्यै","namavaliIast":"śrīkaryai","gloss":"Maker Of Prosperity","translation":"She manufactures splendour, and wealth and beauty gather wherever she turns her attention.","aksaras":[{"text":"श्री","iast":"śrī","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"क","iast":"ka","parts":[{"char":"क","role":"consonant","iast":"ka","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"श्रीकरी","stemIast":"śrīkarī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem"},"compound":{"text":"श्रीकरी","iast":"śrīkarī","type":"tatpuruṣa","gloss":"she who produces prosperity","vigraha":"śriyaṃ karoti iti","children":[{"text":"श्री","iast":"śrī","gloss":"radiance, prosperity, good fortune"},{"text":"कर","iast":"kara","gloss":"making, producing"}]}},{"index":128,"deva":"साध्वी","iast":"sādhvī","namavaliDeva":"साध्व्यै","namavaliIast":"sādhvyai","gloss":"The Virtuous One","translation":"She is straight and true in conduct, the standard by which a good woman is measured.","aksaras":[{"text":"सा","iast":"sā","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ध्वी","iast":"dhvī","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true}],"morphology":{"pos":"noun","stem":"साध्वी","stemIast":"sādhvī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem","note":"The feminine of sādhu, 'straight, right, good'."}},{"index":129,"deva":"शरच्चन्द्रनिभानना","iast":"śaraccandranibhānanā","namavaliDeva":"शरच्चन्द्रनिभाननायै","namavaliIast":"śaraccandranibhānanāyai","gloss":"Face Like The Autumn Moon","translation":"Her face holds the clean cool light of the moon in autumn, once the rains have scrubbed the sky.","aksaras":[{"text":"श","iast":"śa","parts":[{"char":"श","role":"consonant","iast":"śa","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"च्च","iast":"cca","parts":[{"char":"च","role":"consonant","iast":"c","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"च","role":"consonant","iast":"ca","name":"ca","articulation":"palatal","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"भा","iast":"bhā","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न","iast":"na","parts":[{"char":"न","role":"consonant","iast":"na","name":"na","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"शरच्चन्द्रनिभानना","stemIast":"śaraccandranibhānanā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"शरच्चन्द्रनिभानना","iast":"śaraccandranibhānanā","type":"bahuvrīhi","gloss":"she whose face resembles the autumn moon","vigraha":"śaraccandranibham ānanaṃ yasyāḥ sā","children":[{"text":"शरच्चन्द्रनिभ","iast":"śaraccandranibha","gloss":"resembling the autumn moon","type":"tatpuruṣa","vigraha":"śaraccandreṇa nibham","children":[{"text":"शरच्चन्द्र","iast":"śaraccandra","gloss":"the moon of autumn","type":"tatpuruṣa","vigraha":"śaradi candraḥ","children":[{"text":"शरद्","iast":"śarad","gloss":"autumn, the season of ripening"},{"text":"चन्द्र","iast":"candra","gloss":"the moon, the shining one"}]},{"text":"निभ","iast":"nibha","gloss":"resembling, of the same look as"}]},{"text":"आनन","iast":"ānana","gloss":"the face"}]}},{"index":130,"deva":"शातोदरी","iast":"śātodarī","namavaliDeva":"शातोदर्यै","namavaliIast":"śātodaryai","gloss":"Slender-Waisted","translation":"Her waist is drawn thin, the one narrow line in a figure otherwise full.","aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"तो","iast":"to","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"द","iast":"da","parts":[{"char":"द","role":"consonant","iast":"da","name":"da","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"री","iast":"rī","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"शातोदरी","stemIast":"śātodarī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem"},"compound":{"text":"शातोदरी","iast":"śātodarī","type":"bahuvrīhi","gloss":"she whose belly is slender","vigraha":"śātam udaraṃ yasyāḥ sā","children":[{"text":"शात","iast":"śāta","gloss":"thin, slender, finely drawn"},{"text":"उदर","iast":"udara","gloss":"the belly, the waist"}]}},{"index":131,"deva":"शान्तिमती","iast":"śāntimatī","namavaliDeva":"शान्तिमत्यै","namavaliIast":"śāntimatyai","gloss":"Possessed Of Peace","translation":"Peace is a property she owns outright, a stillness that nothing arriving from outside can shake.","aksaras":[{"text":"शा","iast":"śā","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्ति","iast":"nti","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"म","iast":"ma","parts":[{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ती","iast":"tī","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"शान्तिमती","stemIast":"śāntimatī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem","note":"Formed from śānti, 'peace', with the possessive suffix -mat and its feminine -matī; a secondary derivative rather than a compound."}},{"index":132,"deva":"निराधारा","iast":"nirādhārā","namavaliDeva":"निराधारायै","namavaliIast":"nirādhārāyai","gloss":"Without Support","translation":"Nothing props her up, because she is the ground on which everything else is standing.","aksaras":[{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"निराधारा","stemIast":"nirādhārā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"निराधारा","iast":"nirādhārā","type":"bahuvrīhi","gloss":"she for whom there is no support","vigraha":"na vidyate ādhāraḥ yasyāḥ sā","children":[{"text":"निस्","iast":"nis","gloss":"without, free from"},{"text":"आधार","iast":"ādhāra","gloss":"a support, the base a thing rests on"}]}},{"index":133,"deva":"निरञ्जना","iast":"nirañjanā","namavaliDeva":"निरञ्जनायै","namavaliIast":"nirañjanāyai","gloss":"Unstained","translation":"No pigment takes on her; she goes through the world without picking up its colour.","aksaras":[{"text":"नि","iast":"ni","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ञ्ज","iast":"ñja","parts":[{"char":"ञ","role":"consonant","iast":"ñ","name":"ña","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"निरञ्जना","stemIast":"nirañjanā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"निरञ्जना","iast":"nirañjanā","type":"bahuvrīhi","gloss":"she on whom there is no smear","vigraha":"na vidyate añjanaṃ yasyāḥ sā","children":[{"text":"निस्","iast":"nis","gloss":"without, free from"},{"text":"अञ्जन","iast":"añjana","gloss":"an ointment or dark pigment, and so a smear or stain"}]}}],"namaRange":[126,133],"chant":{"startSec":550.04,"endSec":560.48,"confidence":"detected"},"commentary":{"meaning":"The sibilant run finishes and the hymn pivots. Six names carry on in the manner of the last verse — Śaṅkara's own, maker of prosperity, the virtuous one, her face the autumn moon, her waist drawn thin, possessed of peace — and they are the ordinary currency of praise poetry: a husband's name, a benefit, a moral quality, a simile, a body part. Then the last two names of the verse do something the hymn has not done before. Nirādhārā and nirañjanā are both formed by negation, and after them the stotra will not stop negating for fifty-six names. The hinge is placed with some care. Śāntimatī, possessed of peace, still describes her as having something. Nirādhārā says she has no support, which after the cakra verses is pointed, since she was called the one whose single dwelling is the root support only thirty-three names ago. Nirañjanā says nothing takes on her at all. The verse begins by comparing her face to the moon and ends by saying that she has no surface for a comparison to stick to.","history":"Śaṅkara is the name of Śiva as the one who makes things well, from śam and the root kṛ, and it is also of course the name of the philosopher whom tradition credits with the Saundaryalaharī and with the reconciliation of Advaita Vedānta and goddess worship on which Śrīvidyā depends. Whether Śaṅkarācārya wrote that poem is doubtful and has been doubted for a long time, but the association is old and it is part of why this stotra can move, as it is about to, from erotic simile to unqualified negation without any sense of changing subject. Śrīkarī, immediately after, is the counterweight: the maker of śrī, of splendour and prosperity and Lakṣmī's own quality, which is the word the first three names of the whole stotra were built on.\n\nSādhvī is the only plainly moral epithet in this stretch and the only name in the line that begins with a dental s rather than a palatal ś. It means straight, true, good — from the root sādh, to succeed or to bring to completion — and in ordinary usage it is what one calls a virtuous woman. Placed among names for the wife of Śaṅkara and the maker of fortune, it insists that the goddess is also simply good in the domestic and social sense, which a tradition with the reputation Śrīvidyā has needs to say from time to time and does say, repeatedly, in its most public texts.\n\nThe two physical names are worth pausing over because they arrive out of order. The head-to-foot description of her body finished long ago, around the fiftieth name, and the hymn has since covered the mantra, the cakras and the ascent of kuṇḍalinī. Now, in the middle of an alphabetical run, her face and her waist reappear, and another such intrusion is coming at nīlacikurā seven verses from now. This is not carelessness. The alliterative principle governing this stretch throws up whatever names begin with the right sound, and the composers evidently preferred to keep the body present rather than to let the hymn become an argument. The comparison itself is the oldest in the language: śarat is autumn, the season after the monsoon has washed the sky, when the moon is at its clearest, and śaraccandra is the standard against which faces are measured from the Rāmāyaṇa onward. Śātodarī, thin-bellied, belongs to the same conventional repertoire.\n\nThen the turn. Nirādhārā means without a support, and ādhāra is not a vague word in this hymn: at name ninety-nine she was mūlādhāraikanilayā, she whose one dwelling is the root support, the lowest of the cakras. The tradition reads the present name as saying that she is the ground and therefore stands on nothing, which is the answer the Chāndogya Upaniṣad gives when the question is put directly and the pupil is told that the infinite rests in its own greatness, or perhaps not even in that. Much later in the stotra, at name six hundred and fifty-nine, she is called sarvādhārā, the support of everything. The negation here and the affirmation there are the same statement made twice, and the whole architecture of the next thirteen verses works that way.\n\nNirañjanā is the heavier of the two. Añjana is what you smear on — collyrium for the eyes, ointment, pigment — and by extension any taint or colouring. Nirañjana is one of the most widely used words in Indian religious vocabulary for the unstained absolute; the Muṇḍaka Upaniṣad uses it of the knower who has shaken off both merit and demerit, and the Śvetāśvatara puts it in a list of five epithets of which four will turn up as names in the next six verses of this stotra. The haṭha yoga texts use nirañjana as one of the synonyms for the state of samādhi. When the sahasranāma reaches for the word it is not coining anything; it is stepping into a vocabulary that the upaniṣads, the Vedāntins, the Śaivas and the yogins had all been using for centuries, and it is announcing, at the end of a verse about a moonlike face and a slender waist, that everything said so far is going to be taken back.","practice":"The first line contains all three Sanskrit sibilants in the space of ten syllables and it is the best drill in this batch. Śāṅkarī and śrīkarī open with the palatal ś, tongue-body against the hard palate. Sādhvī opens with the dental s, tongue-tip forward at the teeth. Then śaraccandra returns to the palatal. Three names, ś ś s ś, and if the difference is not being made the line collapses into an undifferentiated hiss.\n\nŚāṅkarī has the guttural nasal ṅ before k, made right at the back where the k is made; the tongue never leaves that position between the two sounds. Śrīkarī opens with śr, palatal sibilant into r, which is the same cluster as the śrī that opens the whole stotra. Sādhvī puts a voiced aspirated dh in front of v: sā-dhvī, two syllables, and the aspiration must be heard.\n\nŚaraccandranibhānanā holds the verse's best sandhi. The first element is śarat, autumn, ending in a dental t. Before the palatal c of candra that t has itself become a palatal and doubled, so śarat plus candra gives śaraccandra, written with c and c joined. This is a rule you will meet everywhere once you have seen it: a final t assimilates to a following palatal. Say it as śa-rac-can-dra, letting the doubled consonant have its full length, and the metre will come out right. The rest of the name is three dental nasals in a row across nibhānanā — ni-bhā-na-nā — with an aspirated bh in the middle.\n\nŚātodarī has a dental t, not a retroflex one, which surprises people who expect a retroflex after the long ā. Śāntimatī has the dental cluster nt. Neither is difficult, but both are places where a reciter drifting on autopilot will start curling the tongue back out of habit, because the retroflexes are coming.\n\nThe last two names are where the verse changes character and the mouth should register it. Nirādhārā is four open syllables with an aspirated dh in the middle and nothing to trip on. Nirañjanā has ñj, the palatal nasal followed by the palatal j, and it is one of the sounds English speakers habitually replace with the n of ninja, which is close but made further forward. Put the tongue-body where it goes for y, keep it there, and let the j come off the same surface.\n\nMetrically the first quarter is unusually crowded — three names in eight syllables, three plus three plus two — and then a single eight-syllable name fills the second. The second line is four names of four syllables each. Breathe after śaraccandranibhānanā.\n\nFor what to hold: this is the verse where the hymn turns, and it is worth chanting the two halves with different weight. The first six names are praise of a kind anyone can follow. The last two withdraw the ground from under them. The traditional counsel for the long negative series that follows is not to treat it as philosophy being recited but as a series of removals actually being performed, one name at a time, and this verse is where the first two are taken away.","crossReferences":[{"source":"Chāndogya Upaniṣad 7.24.1","deva":"यत्र नान्यत्पश्यति नान्यच्छृणोति नान्यद्विजानाति स भूमा । अथ यत्रान्यत्पश्यत्यन्यच्छृणोत्यन्यद्विजानाति तदल्पम् । यो वै भूमा तदमृतम् अथ यदल्पं तन्मर्त्यम् । स भगवः कस्मिन्प्रतिष्ठित इति । स्वे महिम्नि यदि वा न महिम्नीति ॥","iast":"yatra nānyat paśyati nānyac chṛṇoti nānyad vijānāti sa bhūmā | atha yatrānyat paśyaty anyac chṛṇoty anyad vijānāti tad alpam | yo vai bhūmā tad amṛtam atha yad alpaṃ tan martyam | sa bhagavaḥ kasmin pratiṣṭhita iti | sve mahimni yadi vā na mahimnīti ||","translation":"Where one sees nothing else, hears nothing else, knows nothing else — that is the infinite. Where one does see something else, hears something else, knows something else — that is the small. The infinite is the deathless; the small is what dies. And on what, sir, does the infinite rest? On its own greatness — or perhaps not even on that.","relevance":"The exact question nirādhārā answers, put by a pupil and answered by a teacher who then immediately takes his own answer back. The last clause is the closest thing in the upaniṣads to the grammar of this name: not supported by anything else, and then not supported by anything at all."},{"source":"Muṇḍaka Upaniṣad 3.1.3","deva":"यदा पश्यः पश्यते रुक्मवर्णं कर्तारमीशं पुरुषं ब्रह्मयोनिम् । तदा विद्वान् पुण्यपापे विधूय निरञ्जनः परमं साम्यमुपैति ॥","iast":"yadā paśyaḥ paśyate rukmavarṇaṃ kartāram īśaṃ puruṣaṃ brahmayonim | tadā vidvān puṇyapāpe vidhūya nirañjanaḥ paramaṃ sāmyam upaiti ||","translation":"When the seer sees the gold-coloured one, the maker, the lord, the person who is the womb of brahman — then, shaking off both his merit and his wrongdoing, unstained, he comes to the highest likeness.","relevance":"The word nirañjana in its classical setting. Note what is shaken off: not sin only but merit as well, both of them treated as pigment. That is what añjana means, something applied to a surface, and it is why the name is stronger than nirmalā, stainless, which is coming in the next verse."},{"source":"Saundaryalaharī 63","deva":"स्मितज्योत्स्नाजालं तव वदनचन्द्रस्य पिबतां चकोराणामासीदतिरसतया चञ्चुजडिमा । अतस्ते शीतांशोरमृतलहरीमाम्लरुचयः पिबन्ति स्वच्छन्दं निशिनिशि भृशं काञ्जिकधिया ॥","iast":"smitajyotsnājālaṃ tava vadanacandrasya pibatāṃ cakorāṇām āsīd atirasatayā cañcujaḍimā | ataste śītāṃśor amṛtalaharīm āmlarucayaḥ pibanti svacchandaṃ niśiniśi bhṛśaṃ kāñjikadhiyā ||","translation":"The cakora birds drank the net of moonlight that is your smile, from that moon which is your face, and it was so rich that their beaks went numb. So now, wanting something sour, they drink up the nectar-waves of the ordinary cold-rayed moon, night after night, as freely as if it were sour gruel.","relevance":"What the tradition does with the moon-face comparison when it is not in a hurry. Śaraccandranibhānanā states the convention in one compound; Śaṅkara's verse pushes it until the real moon becomes the inferior drink. Worth reading here because within two names the sahasranāma will withdraw the whole apparatus of comparison, and it is useful to see what is being withdrawn."}]},"references":[{"kind":"text","title":"Chāndogya Upaniṣad, Sanskrit text","author":"sanskritdocuments.org","url":"https://sanskritdocuments.org/doc_upanishhat/chhaandogya.html","note":"The bhūman dialogue is in the seventh chapter, and the whole of that chapter is a staircase of definitions, each one taken back by the next. It is the best preparation there is for the fifty-six negative names about to begin."},{"kind":"text","title":"Muṇḍaka Upaniṣad, Sanskrit text","author":"sanskritdocuments.org","url":"https://sanskritdocuments.org/doc_upanishhat/mundaka.html","note":"Short enough to read in a sitting, and the source of several words the stotra is about to use — nirañjana here, niṣkala in the next verse, and the cutting of the knot of the heart that the stotra already invoked at names one hundred and above."},{"kind":"book","title":"The Saundaryalaharī, or Flood of Beauty","author":"W. Norman Brown (Harvard Oriental Series 43, 1958)","note":"Brown's introduction discusses the attribution to Śaṅkarācārya soberly and without either piety or debunking. Useful at exactly this verse, where the name śāṅkarī sits next to the philosophical turn that the attribution is supposed to explain."},{"kind":"dictionary","title":"Cologne Digital Sanskrit Dictionaries (Monier-Williams, 1899)","author":"Universität zu Köln","url":"https://www.sanskrit-lexicon.uni-koeln.de/","note":"Look up añjana and ādhāra. Both are concrete before they are abstract — eye-paint and a prop — and seeing the physical sense first is what keeps the negative names from turning into vague piety."}]}
+{
+  "id": "043",
+  "kind": "shloka",
+  "number": 43,
+  "title": "Shloka 43",
+  "subtitle": "The autumn moon, and then the turn to nothing",
+  "lines": [
+    {
+      "deva": "शाङ्करी श्रीकरी साध्वी शरच्चन्द्रनिभानना",
+      "iast": "śāṅkarī śrīkarī sādhvī śaraccandranibhānanā",
+      "tokens": [
+        {
+          "id": "l0-t0",
+          "deva": "शाङ्करी",
+          "iast": "śāṅkarī",
+          "namaIndices": [
+            126
+          ],
+          "aksaras": [
+            {
+              "text": "शा",
+              "iast": "śā",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ङ्क",
+              "iast": "ṅka",
+              "parts": [
+                {
+                  "char": "ङ",
+                  "role": "consonant",
+                  "iast": "ṅ",
+                  "name": "ṅa",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "ka",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "री",
+              "iast": "rī",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l0-t1",
+          "deva": "श्रीकरी",
+          "iast": "śrīkarī",
+          "namaIndices": [
+            127
+          ],
+          "aksaras": [
+            {
+              "text": "श्री",
+              "iast": "śrī",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "क",
+              "iast": "ka",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "ka",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "री",
+              "iast": "rī",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l0-t2",
+          "deva": "साध्वी",
+          "iast": "sādhvī",
+          "namaIndices": [
+            128
+          ],
+          "aksaras": [
+            {
+              "text": "सा",
+              "iast": "sā",
+              "parts": [
+                {
+                  "char": "स",
+                  "role": "consonant",
+                  "iast": "s",
+                  "name": "sa",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ध्वी",
+              "iast": "dhvī",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            }
+          ]
+        },
+        {
+          "id": "l0-t3",
+          "deva": "शरच्चन्द्रनिभानना",
+          "iast": "śaraccandranibhānanā",
+          "namaIndices": [
+            129
+          ],
+          "aksaras": [
+            {
+              "text": "श",
+              "iast": "śa",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "śa",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "र",
+              "iast": "ra",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "च्च",
+              "iast": "cca",
+              "parts": [
+                {
+                  "char": "च",
+                  "role": "consonant",
+                  "iast": "c",
+                  "name": "ca",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "च",
+                  "role": "consonant",
+                  "iast": "ca",
+                  "name": "ca",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "न्द्र",
+              "iast": "ndra",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "d",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "नि",
+              "iast": "ni",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "भा",
+              "iast": "bhā",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bh",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न",
+              "iast": "na",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "na",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ना",
+              "iast": "nā",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deva": "शातोदरी शान्तिमती निराधारा निरञ्जना",
+      "iast": "śātodarī śāntimatī nirādhārā nirañjanā",
+      "tokens": [
+        {
+          "id": "l1-t0",
+          "deva": "शातोदरी",
+          "iast": "śātodarī",
+          "namaIndices": [
+            130
+          ],
+          "aksaras": [
+            {
+              "text": "शा",
+              "iast": "śā",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "तो",
+              "iast": "to",
+              "parts": [
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ो",
+                  "role": "vowel-sign",
+                  "iast": "o",
+                  "name": "o-kāra",
+                  "articulation": "guttural-labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "द",
+              "iast": "da",
+              "parts": [
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "da",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "री",
+              "iast": "rī",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l1-t1",
+          "deva": "शान्तिमती",
+          "iast": "śāntimatī",
+          "namaIndices": [
+            131
+          ],
+          "aksaras": [
+            {
+              "text": "शा",
+              "iast": "śā",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्ति",
+              "iast": "nti",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "म",
+              "iast": "ma",
+              "parts": [
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "ma",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ती",
+              "iast": "tī",
+              "parts": [
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l1-t2",
+          "deva": "निराधारा",
+          "iast": "nirādhārā",
+          "namaIndices": [
+            132
+          ],
+          "aksaras": [
+            {
+              "text": "नि",
+              "iast": "ni",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "रा",
+              "iast": "rā",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "धा",
+              "iast": "dhā",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "रा",
+              "iast": "rā",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l1-t3",
+          "deva": "निरञ्जना",
+          "iast": "nirañjanā",
+          "namaIndices": [
+            133
+          ],
+          "aksaras": [
+            {
+              "text": "नि",
+              "iast": "ni",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "र",
+              "iast": "ra",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ञ्ज",
+              "iast": "ñja",
+              "parts": [
+                {
+                  "char": "ञ",
+                  "role": "consonant",
+                  "iast": "ñ",
+                  "name": "ña",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ज",
+                  "role": "consonant",
+                  "iast": "ja",
+                  "name": "ja",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "ना",
+              "iast": "nā",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namas": [
+    {
+      "index": 126,
+      "deva": "शाङ्करी",
+      "iast": "śāṅkarī",
+      "namavaliDeva": "शाङ्कर्यै",
+      "namavaliIast": "śāṅkaryai",
+      "gloss": "She Who Belongs To Śaṅkara",
+      "translation": "She is Śaṅkara's own, the female half of the god whose name means the one who makes things well.",
+      "aksaras": [
+        {
+          "text": "शा",
+          "iast": "śā",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ङ्क",
+          "iast": "ṅka",
+          "parts": [
+            {
+              "char": "ङ",
+              "role": "consonant",
+              "iast": "ṅ",
+              "name": "ṅa",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "ka",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "री",
+          "iast": "rī",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "शाङ्करी",
+        "stemIast": "śāṅkarī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "A vṛddhi derivative of śaṅkara with the feminine -ī, not a compound."
+      }
+    },
+    {
+      "index": 127,
+      "deva": "श्रीकरी",
+      "iast": "śrīkarī",
+      "namavaliDeva": "श्रीकर्यै",
+      "namavaliIast": "śrīkaryai",
+      "gloss": "Maker Of Prosperity",
+      "translation": "She manufactures splendour, and wealth and beauty gather wherever she turns her attention.",
+      "aksaras": [
+        {
+          "text": "श्री",
+          "iast": "śrī",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "क",
+          "iast": "ka",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "ka",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "री",
+          "iast": "rī",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "श्रीकरी",
+        "stemIast": "śrīkarī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem"
+      },
+      "compound": {
+        "text": "श्रीकरी",
+        "iast": "śrīkarī",
+        "type": "tatpuruṣa",
+        "gloss": "she who produces prosperity",
+        "vigraha": "śriyaṃ karoti iti",
+        "children": [
+          {
+            "text": "श्री",
+            "iast": "śrī",
+            "gloss": "radiance, prosperity, good fortune"
+          },
+          {
+            "text": "कर",
+            "iast": "kara",
+            "gloss": "making, producing"
+          }
+        ]
+      }
+    },
+    {
+      "index": 128,
+      "deva": "साध्वी",
+      "iast": "sādhvī",
+      "namavaliDeva": "साध्व्यै",
+      "namavaliIast": "sādhvyai",
+      "gloss": "The Virtuous One",
+      "translation": "She is straight and true in conduct, the standard by which a good woman is measured.",
+      "aksaras": [
+        {
+          "text": "सा",
+          "iast": "sā",
+          "parts": [
+            {
+              "char": "स",
+              "role": "consonant",
+              "iast": "s",
+              "name": "sa",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ध्वी",
+          "iast": "dhvī",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "साध्वी",
+        "stemIast": "sādhvī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "The feminine of sādhu, 'straight, right, good'."
+      }
+    },
+    {
+      "index": 129,
+      "deva": "शरच्चन्द्रनिभानना",
+      "iast": "śaraccandranibhānanā",
+      "namavaliDeva": "शरच्चन्द्रनिभाननायै",
+      "namavaliIast": "śaraccandranibhānanāyai",
+      "gloss": "Face Like The Autumn Moon",
+      "translation": "Her face holds the clean cool light of the moon in autumn, once the rains have scrubbed the sky.",
+      "aksaras": [
+        {
+          "text": "श",
+          "iast": "śa",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "śa",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "र",
+          "iast": "ra",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "च्च",
+          "iast": "cca",
+          "parts": [
+            {
+              "char": "च",
+              "role": "consonant",
+              "iast": "c",
+              "name": "ca",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "च",
+              "role": "consonant",
+              "iast": "ca",
+              "name": "ca",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "न्द्र",
+          "iast": "ndra",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "d",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "नि",
+          "iast": "ni",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "भा",
+          "iast": "bhā",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bh",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न",
+          "iast": "na",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "na",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ना",
+          "iast": "nā",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "शरच्चन्द्रनिभानना",
+        "stemIast": "śaraccandranibhānanā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "शरच्चन्द्रनिभानना",
+        "iast": "śaraccandranibhānanā",
+        "type": "bahuvrīhi",
+        "gloss": "she whose face resembles the autumn moon",
+        "vigraha": "śaraccandranibham ānanaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "शरच्चन्द्रनिभ",
+            "iast": "śaraccandranibha",
+            "gloss": "resembling the autumn moon",
+            "type": "tatpuruṣa",
+            "vigraha": "śaraccandreṇa nibham",
+            "children": [
+              {
+                "text": "शरच्चन्द्र",
+                "iast": "śaraccandra",
+                "gloss": "the moon of autumn",
+                "type": "tatpuruṣa",
+                "vigraha": "śaradi candraḥ",
+                "children": [
+                  {
+                    "text": "शरद्",
+                    "iast": "śarad",
+                    "gloss": "autumn, the season of ripening"
+                  },
+                  {
+                    "text": "चन्द्र",
+                    "iast": "candra",
+                    "gloss": "the moon, the shining one"
+                  }
+                ]
+              },
+              {
+                "text": "निभ",
+                "iast": "nibha",
+                "gloss": "resembling, of the same look as"
+              }
+            ]
+          },
+          {
+            "text": "आनन",
+            "iast": "ānana",
+            "gloss": "the face"
+          }
+        ]
+      }
+    },
+    {
+      "index": 130,
+      "deva": "शातोदरी",
+      "iast": "śātodarī",
+      "namavaliDeva": "शातोदर्यै",
+      "namavaliIast": "śātodaryai",
+      "gloss": "Slender-Waisted",
+      "translation": "Her waist is drawn thin, the one narrow line in a figure otherwise full.",
+      "aksaras": [
+        {
+          "text": "शा",
+          "iast": "śā",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "तो",
+          "iast": "to",
+          "parts": [
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ो",
+              "role": "vowel-sign",
+              "iast": "o",
+              "name": "o-kāra",
+              "articulation": "guttural-labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "द",
+          "iast": "da",
+          "parts": [
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "da",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "री",
+          "iast": "rī",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "शातोदरी",
+        "stemIast": "śātodarī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem"
+      },
+      "compound": {
+        "text": "शातोदरी",
+        "iast": "śātodarī",
+        "type": "bahuvrīhi",
+        "gloss": "she whose belly is slender",
+        "vigraha": "śātam udaraṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "शात",
+            "iast": "śāta",
+            "gloss": "thin, slender, finely drawn"
+          },
+          {
+            "text": "उदर",
+            "iast": "udara",
+            "gloss": "the belly, the waist"
+          }
+        ]
+      }
+    },
+    {
+      "index": 131,
+      "deva": "शान्तिमती",
+      "iast": "śāntimatī",
+      "namavaliDeva": "शान्तिमत्यै",
+      "namavaliIast": "śāntimatyai",
+      "gloss": "Possessed Of Peace",
+      "translation": "Peace is a property she owns outright, a stillness that nothing arriving from outside can shake.",
+      "aksaras": [
+        {
+          "text": "शा",
+          "iast": "śā",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्ति",
+          "iast": "nti",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "म",
+          "iast": "ma",
+          "parts": [
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "ma",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ती",
+          "iast": "tī",
+          "parts": [
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "शान्तिमती",
+        "stemIast": "śāntimatī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem",
+        "note": "Formed from śānti, 'peace', with the possessive suffix -mat and its feminine -matī; a secondary derivative rather than a compound."
+      }
+    },
+    {
+      "index": 132,
+      "deva": "निराधारा",
+      "iast": "nirādhārā",
+      "namavaliDeva": "निराधारायै",
+      "namavaliIast": "nirādhārāyai",
+      "gloss": "Without Support",
+      "translation": "Nothing props her up, because she is the ground on which everything else is standing.",
+      "aksaras": [
+        {
+          "text": "नि",
+          "iast": "ni",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "रा",
+          "iast": "rā",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "धा",
+          "iast": "dhā",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "रा",
+          "iast": "rā",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "निराधारा",
+        "stemIast": "nirādhārā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "निराधारा",
+        "iast": "nirādhārā",
+        "type": "bahuvrīhi",
+        "gloss": "she for whom there is no support",
+        "vigraha": "na vidyate ādhāraḥ yasyāḥ sā",
+        "children": [
+          {
+            "text": "निस्",
+            "iast": "nis",
+            "gloss": "without, free from"
+          },
+          {
+            "text": "आधार",
+            "iast": "ādhāra",
+            "gloss": "a support, the base a thing rests on"
+          }
+        ]
+      }
+    },
+    {
+      "index": 133,
+      "deva": "निरञ्जना",
+      "iast": "nirañjanā",
+      "namavaliDeva": "निरञ्जनायै",
+      "namavaliIast": "nirañjanāyai",
+      "gloss": "Unstained",
+      "translation": "No pigment takes on her; she goes through the world without picking up its colour.",
+      "aksaras": [
+        {
+          "text": "नि",
+          "iast": "ni",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "र",
+          "iast": "ra",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ञ्ज",
+          "iast": "ñja",
+          "parts": [
+            {
+              "char": "ञ",
+              "role": "consonant",
+              "iast": "ñ",
+              "name": "ña",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ज",
+              "role": "consonant",
+              "iast": "ja",
+              "name": "ja",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "ना",
+          "iast": "nā",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "निरञ्जना",
+        "stemIast": "nirañjanā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "निरञ्जना",
+        "iast": "nirañjanā",
+        "type": "bahuvrīhi",
+        "gloss": "she on whom there is no smear",
+        "vigraha": "na vidyate añjanaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "निस्",
+            "iast": "nis",
+            "gloss": "without, free from"
+          },
+          {
+            "text": "अञ्जन",
+            "iast": "añjana",
+            "gloss": "an ointment or dark pigment, and so a smear or stain"
+          }
+        ]
+      }
+    }
+  ],
+  "namaRange": [
+    126,
+    133
+  ],
+  "chant": {
+    "startSec": 534.23,
+    "endSec": 543.59,
+    "confidence": "detected"
+  },
+  "commentary": {
+    "meaning": "The sibilant run finishes and the hymn pivots. Six names carry on in the manner of the last verse — Śaṅkara's own, maker of prosperity, the virtuous one, her face the autumn moon, her waist drawn thin, possessed of peace — and they are the ordinary currency of praise poetry: a husband's name, a benefit, a moral quality, a simile, a body part. Then the last two names of the verse do something the hymn has not done before. Nirādhārā and nirañjanā are both formed by negation, and after them the stotra will not stop negating for fifty-six names. The hinge is placed with some care. Śāntimatī, possessed of peace, still describes her as having something. Nirādhārā says she has no support, which after the cakra verses is pointed, since she was called the one whose single dwelling is the root support only thirty-three names ago. Nirañjanā says nothing takes on her at all. The verse begins by comparing her face to the moon and ends by saying that she has no surface for a comparison to stick to.",
+    "history": "Śaṅkara is the name of Śiva as the one who makes things well, from śam and the root kṛ, and it is also of course the name of the philosopher whom tradition credits with the Saundaryalaharī and with the reconciliation of Advaita Vedānta and goddess worship on which Śrīvidyā depends. Whether Śaṅkarācārya wrote that poem is doubtful and has been doubted for a long time, but the association is old and it is part of why this stotra can move, as it is about to, from erotic simile to unqualified negation without any sense of changing subject. Śrīkarī, immediately after, is the counterweight: the maker of śrī, of splendour and prosperity and Lakṣmī's own quality, which is the word the first three names of the whole stotra were built on.\n\nSādhvī is the only plainly moral epithet in this stretch and the only name in the line that begins with a dental s rather than a palatal ś. It means straight, true, good — from the root sādh, to succeed or to bring to completion — and in ordinary usage it is what one calls a virtuous woman. Placed among names for the wife of Śaṅkara and the maker of fortune, it insists that the goddess is also simply good in the domestic and social sense, which a tradition with the reputation Śrīvidyā has needs to say from time to time and does say, repeatedly, in its most public texts.\n\nThe two physical names are worth pausing over because they arrive out of order. The head-to-foot description of her body finished long ago, around the fiftieth name, and the hymn has since covered the mantra, the cakras and the ascent of kuṇḍalinī. Now, in the middle of an alphabetical run, her face and her waist reappear, and another such intrusion is coming at nīlacikurā seven verses from now. This is not carelessness. The alliterative principle governing this stretch throws up whatever names begin with the right sound, and the composers evidently preferred to keep the body present rather than to let the hymn become an argument. The comparison itself is the oldest in the language: śarat is autumn, the season after the monsoon has washed the sky, when the moon is at its clearest, and śaraccandra is the standard against which faces are measured from the Rāmāyaṇa onward. Śātodarī, thin-bellied, belongs to the same conventional repertoire.\n\nThen the turn. Nirādhārā means without a support, and ādhāra is not a vague word in this hymn: at name ninety-nine she was mūlādhāraikanilayā, she whose one dwelling is the root support, the lowest of the cakras. The tradition reads the present name as saying that she is the ground and therefore stands on nothing, which is the answer the Chāndogya Upaniṣad gives when the question is put directly and the pupil is told that the infinite rests in its own greatness, or perhaps not even in that. Much later in the stotra, at name six hundred and fifty-nine, she is called sarvādhārā, the support of everything. The negation here and the affirmation there are the same statement made twice, and the whole architecture of the next thirteen verses works that way.\n\nNirañjanā is the heavier of the two. Añjana is what you smear on — collyrium for the eyes, ointment, pigment — and by extension any taint or colouring. Nirañjana is one of the most widely used words in Indian religious vocabulary for the unstained absolute; the Muṇḍaka Upaniṣad uses it of the knower who has shaken off both merit and demerit, and the Śvetāśvatara puts it in a list of five epithets of which four will turn up as names in the next six verses of this stotra. The haṭha yoga texts use nirañjana as one of the synonyms for the state of samādhi. When the sahasranāma reaches for the word it is not coining anything; it is stepping into a vocabulary that the upaniṣads, the Vedāntins, the Śaivas and the yogins had all been using for centuries, and it is announcing, at the end of a verse about a moonlike face and a slender waist, that everything said so far is going to be taken back.",
+    "practice": "The first line contains all three Sanskrit sibilants in the space of ten syllables and it is the best drill in this batch. Śāṅkarī and śrīkarī open with the palatal ś, tongue-body against the hard palate. Sādhvī opens with the dental s, tongue-tip forward at the teeth. Then śaraccandra returns to the palatal. Three names, ś ś s ś, and if the difference is not being made the line collapses into an undifferentiated hiss.\n\nŚāṅkarī has the guttural nasal ṅ before k, made right at the back where the k is made; the tongue never leaves that position between the two sounds. Śrīkarī opens with śr, palatal sibilant into r, which is the same cluster as the śrī that opens the whole stotra. Sādhvī puts a voiced aspirated dh in front of v: sā-dhvī, two syllables, and the aspiration must be heard.\n\nŚaraccandranibhānanā holds the verse's best sandhi. The first element is śarat, autumn, ending in a dental t. Before the palatal c of candra that t has itself become a palatal and doubled, so śarat plus candra gives śaraccandra, written with c and c joined. This is a rule you will meet everywhere once you have seen it: a final t assimilates to a following palatal. Say it as śa-rac-can-dra, letting the doubled consonant have its full length, and the metre will come out right. The rest of the name is three dental nasals in a row across nibhānanā — ni-bhā-na-nā — with an aspirated bh in the middle.\n\nŚātodarī has a dental t, not a retroflex one, which surprises people who expect a retroflex after the long ā. Śāntimatī has the dental cluster nt. Neither is difficult, but both are places where a reciter drifting on autopilot will start curling the tongue back out of habit, because the retroflexes are coming.\n\nThe last two names are where the verse changes character and the mouth should register it. Nirādhārā is four open syllables with an aspirated dh in the middle and nothing to trip on. Nirañjanā has ñj, the palatal nasal followed by the palatal j, and it is one of the sounds English speakers habitually replace with the n of ninja, which is close but made further forward. Put the tongue-body where it goes for y, keep it there, and let the j come off the same surface.\n\nMetrically the first quarter is unusually crowded — three names in eight syllables, three plus three plus two — and then a single eight-syllable name fills the second. The second line is four names of four syllables each. Breathe after śaraccandranibhānanā.\n\nFor what to hold: this is the verse where the hymn turns, and it is worth chanting the two halves with different weight. The first six names are praise of a kind anyone can follow. The last two withdraw the ground from under them. The traditional counsel for the long negative series that follows is not to treat it as philosophy being recited but as a series of removals actually being performed, one name at a time, and this verse is where the first two are taken away.",
+    "crossReferences": [
+      {
+        "source": "Chāndogya Upaniṣad 7.24.1",
+        "deva": "यत्र नान्यत्पश्यति नान्यच्छृणोति नान्यद्विजानाति स भूमा । अथ यत्रान्यत्पश्यत्यन्यच्छृणोत्यन्यद्विजानाति तदल्पम् । यो वै भूमा तदमृतम् अथ यदल्पं तन्मर्त्यम् । स भगवः कस्मिन्प्रतिष्ठित इति । स्वे महिम्नि यदि वा न महिम्नीति ॥",
+        "iast": "yatra nānyat paśyati nānyac chṛṇoti nānyad vijānāti sa bhūmā | atha yatrānyat paśyaty anyac chṛṇoty anyad vijānāti tad alpam | yo vai bhūmā tad amṛtam atha yad alpaṃ tan martyam | sa bhagavaḥ kasmin pratiṣṭhita iti | sve mahimni yadi vā na mahimnīti ||",
+        "translation": "Where one sees nothing else, hears nothing else, knows nothing else — that is the infinite. Where one does see something else, hears something else, knows something else — that is the small. The infinite is the deathless; the small is what dies. And on what, sir, does the infinite rest? On its own greatness — or perhaps not even on that.",
+        "relevance": "The exact question nirādhārā answers, put by a pupil and answered by a teacher who then immediately takes his own answer back. The last clause is the closest thing in the upaniṣads to the grammar of this name: not supported by anything else, and then not supported by anything at all."
+      },
+      {
+        "source": "Muṇḍaka Upaniṣad 3.1.3",
+        "deva": "यदा पश्यः पश्यते रुक्मवर्णं कर्तारमीशं पुरुषं ब्रह्मयोनिम् । तदा विद्वान् पुण्यपापे विधूय निरञ्जनः परमं साम्यमुपैति ॥",
+        "iast": "yadā paśyaḥ paśyate rukmavarṇaṃ kartāram īśaṃ puruṣaṃ brahmayonim | tadā vidvān puṇyapāpe vidhūya nirañjanaḥ paramaṃ sāmyam upaiti ||",
+        "translation": "When the seer sees the gold-coloured one, the maker, the lord, the person who is the womb of brahman — then, shaking off both his merit and his wrongdoing, unstained, he comes to the highest likeness.",
+        "relevance": "The word nirañjana in its classical setting. Note what is shaken off: not sin only but merit as well, both of them treated as pigment. That is what añjana means, something applied to a surface, and it is why the name is stronger than nirmalā, stainless, which is coming in the next verse."
+      },
+      {
+        "source": "Saundaryalaharī 63",
+        "deva": "स्मितज्योत्स्नाजालं तव वदनचन्द्रस्य पिबतां चकोराणामासीदतिरसतया चञ्चुजडिमा । अतस्ते शीतांशोरमृतलहरीमाम्लरुचयः पिबन्ति स्वच्छन्दं निशिनिशि भृशं काञ्जिकधिया ॥",
+        "iast": "smitajyotsnājālaṃ tava vadanacandrasya pibatāṃ cakorāṇām āsīd atirasatayā cañcujaḍimā | ataste śītāṃśor amṛtalaharīm āmlarucayaḥ pibanti svacchandaṃ niśiniśi bhṛśaṃ kāñjikadhiyā ||",
+        "translation": "The cakora birds drank the net of moonlight that is your smile, from that moon which is your face, and it was so rich that their beaks went numb. So now, wanting something sour, they drink up the nectar-waves of the ordinary cold-rayed moon, night after night, as freely as if it were sour gruel.",
+        "relevance": "What the tradition does with the moon-face comparison when it is not in a hurry. Śaraccandranibhānanā states the convention in one compound; Śaṅkara's verse pushes it until the real moon becomes the inferior drink. Worth reading here because within two names the sahasranāma will withdraw the whole apparatus of comparison, and it is useful to see what is being withdrawn."
+      }
+    ]
+  },
+  "references": [
+    {
+      "kind": "text",
+      "title": "Chāndogya Upaniṣad, Sanskrit text",
+      "author": "sanskritdocuments.org",
+      "url": "https://sanskritdocuments.org/doc_upanishhat/chhaandogya.html",
+      "note": "The bhūman dialogue is in the seventh chapter, and the whole of that chapter is a staircase of definitions, each one taken back by the next. It is the best preparation there is for the fifty-six negative names about to begin."
+    },
+    {
+      "kind": "text",
+      "title": "Muṇḍaka Upaniṣad, Sanskrit text",
+      "author": "sanskritdocuments.org",
+      "url": "https://sanskritdocuments.org/doc_upanishhat/mundaka.html",
+      "note": "Short enough to read in a sitting, and the source of several words the stotra is about to use — nirañjana here, niṣkala in the next verse, and the cutting of the knot of the heart that the stotra already invoked at names one hundred and above."
+    },
+    {
+      "kind": "book",
+      "title": "The Saundaryalaharī, or Flood of Beauty",
+      "author": "W. Norman Brown (Harvard Oriental Series 43, 1958)",
+      "note": "Brown's introduction discusses the attribution to Śaṅkarācārya soberly and without either piety or debunking. Useful at exactly this verse, where the name śāṅkarī sits next to the philosophical turn that the attribution is supposed to explain."
+    },
+    {
+      "kind": "dictionary",
+      "title": "Cologne Digital Sanskrit Dictionaries (Monier-Williams, 1899)",
+      "author": "Universität zu Köln",
+      "url": "https://www.sanskrit-lexicon.uni-koeln.de/",
+      "note": "Look up añjana and ādhāra. Both are concrete before they are abstract — eye-paint and a prop — and seeing the physical sense first is what keeps the negative names from turning into vague piety."
+    }
+  ]
+}

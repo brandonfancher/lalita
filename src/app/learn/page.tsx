@@ -1,17 +1,10 @@
 import Link from "next/link";
 
-import { CONSONANTS, INDEPENDENT_VOWELS, ARTICULATION_LABELS } from "@/lib/aksara";
-import type { Articulation } from "@/lib/types";
+import { AlphabetSounds } from "@/components/alphabet-sounds";
 
 export const metadata = { title: "Learn Sanskrit" };
 
-/** The five places of articulation, in the traditional order. */
-const ORDER: Articulation[] = ["guttural", "palatal", "retroflex", "dental", "labial"];
-
 export default function LearnPage() {
-  const vowels = Object.entries(INDEPENDENT_VOWELS);
-  const consonants = Object.entries(CONSONANTS);
-
   return (
     <div className="mx-auto max-w-4xl px-4 pb-24 pt-8 sm:px-6 sm:pt-12">
       <header className="mb-10">
@@ -22,61 +15,7 @@ export default function LearnPage() {
         </p>
       </header>
 
-      <section className="mb-12">
-        <h2 className="display mb-2 text-2xl text-ink">The sounds</h2>
-        <p className="mb-5 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
-          Sanskrit orders its alphabet by where in the mouth each sound is made, moving from the
-          back of the throat forward to the lips. Once you hear that order, the script stops looking
-          arbitrary.
-        </p>
-
-        <h3 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">Vowels</h3>
-        <div className="mb-6 flex flex-wrap gap-2">
-          {vowels.map(([char, info]) => (
-            <div
-              key={char}
-              className="flex min-w-[3.5rem] flex-col items-center rounded-lg border border-line bg-surface-1/60 px-2.5 py-2"
-            >
-              <span className="deva text-2xl leading-none text-ink">{char}</span>
-              <span className="iast mt-1 text-xs text-gold-soft">{info.iast}</span>
-              <span className="mt-0.5 text-[9px] uppercase tracking-wide text-ink-faint">
-                {info.long ? "long" : "short"}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <h3 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">
-          Consonants, by place of articulation
-        </h3>
-        <div className="space-y-2">
-          {ORDER.map((place) => {
-            const row = consonants.filter(([, i]) => i.articulation === place && i.class !== "semivowel");
-            if (!row.length) return null;
-            return (
-              <div
-                key={place}
-                className="flex flex-wrap items-center gap-2 rounded-xl border border-line bg-surface-1/50 p-3"
-              >
-                <span className="w-full text-[11px] text-gold sm:w-32 sm:shrink-0">
-                  {ARTICULATION_LABELS[place].sa}
-                  <span className="ml-1 text-ink-faint">{ARTICULATION_LABELS[place].en}</span>
-                </span>
-                {row.map(([char, info]) => (
-                  <div
-                    key={char}
-                    title={`${info.voicing}${info.aspirated ? ", aspirated" : ""}`}
-                    className="flex min-w-[3rem] flex-col items-center rounded-lg border border-line bg-surface-2/60 px-2 py-1.5"
-                  >
-                    <span className="deva text-xl leading-none text-ink">{char}</span>
-                    <span className="iast text-[11px] text-ink-muted">{info.iast}a</span>
-                  </div>
-                ))}
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <AlphabetSounds />
 
       <section className="mb-12">
         <h2 className="display mb-2 text-2xl text-ink">The eight cases</h2>

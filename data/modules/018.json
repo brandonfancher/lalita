@@ -1,1 +1,2004 @@
-{"id":"018","kind":"shloka","number":18,"title":"Shloka 18","subtitle":"Quivers strewn with rain-insects, and the arch of the foot","lines":[{"deva":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका","iast":"indragopaparikṣiptasmaratūṇābhajaṅghikā","tokens":[{"id":"l0-t0","deva":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका","iast":"indragopaparikṣiptasmaratūṇābhajaṅghikā","namaIndices":[41],"aksaras":[{"text":"इ","iast":"i","parts":[{"char":"इ","role":"vowel","iast":"i","name":"i (independent)","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"गो","iast":"go","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"रि","iast":"ri","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"क्षि","iast":"kṣi","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"प्त","iast":"pta","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"त","role":"consonant","iast":"ta","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"स्म","iast":"sma","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"तू","iast":"tū","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"णा","iast":"ṇā","parts":[{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"भ","iast":"bha","parts":[{"char":"भ","role":"consonant","iast":"bha","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ङ्घि","iast":"ṅghi","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"घ","role":"consonant","iast":"gh","name":"gha","articulation":"guttural","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]},{"deva":"गूढगुल्फा कूर्मपृष्ठजयिष्णुप्रपदान्विता","iast":"gūḍhagulphā kūrmapṛṣṭhajayiṣṇuprapadānvitā","tokens":[{"id":"l1-t0","deva":"गूढगुल्फा","iast":"gūḍhagulphā","namaIndices":[42],"aksaras":[{"text":"गू","iast":"gū","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ढ","iast":"ḍha","parts":[{"char":"ढ","role":"consonant","iast":"ḍha","name":"ḍha","articulation":"retroflex","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"गु","iast":"gu","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ल्फा","iast":"lphā","parts":[{"char":"ल","role":"consonant","iast":"l","name":"la","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"फ","role":"consonant","iast":"ph","name":"pha","articulation":"labial","voicing":"unvoiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true}]},{"id":"l1-t1","deva":"कूर्मपृष्ठजयिष्णुप्रपदान्विता","iast":"kūrmapṛṣṭhajayiṣṇuprapadānvitā","namaIndices":[43],"aksaras":[{"text":"कू","iast":"kū","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"र्म","iast":"rma","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"पृ","iast":"pṛ","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"ृ","role":"vowel-sign","iast":"ṛ","name":"ṛ-kāra","articulation":"retroflex","voicing":"voiced"}],"isConjunct":false},{"text":"ष्ठ","iast":"ṣṭha","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ठ","role":"consonant","iast":"ṭha","name":"ṭha","articulation":"retroflex","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":true},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"यि","iast":"yi","parts":[{"char":"य","role":"consonant","iast":"y","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ष्णु","iast":"ṣṇu","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":true},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"दा","iast":"dā","parts":[{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्वि","iast":"nvi","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"ता","iast":"tā","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]}]}],"namas":[{"index":41,"deva":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका","iast":"indragopaparikṣiptasmaratūṇābhajaṅghikā","namavaliDeva":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिकायै","namavaliIast":"indragopaparikṣiptasmaratūṇābhajaṅghikāyai","gloss":"Whose Shanks Are Love's Quivers","translation":"Her calves taper like the quivers of the god of love, scattered over with the small scarlet insects that appear with the rains.","aksaras":[{"text":"इ","iast":"i","parts":[{"char":"इ","role":"vowel","iast":"i","name":"i (independent)","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"न्द्र","iast":"ndra","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"गो","iast":"go","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ो","role":"vowel-sign","iast":"o","name":"o-kāra","articulation":"guttural-labial","voicing":"voiced"}],"isConjunct":false},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"रि","iast":"ri","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"क्षि","iast":"kṣi","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"प्त","iast":"pta","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"त","role":"consonant","iast":"ta","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"स्म","iast":"sma","parts":[{"char":"स","role":"consonant","iast":"s","name":"sa","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"र","iast":"ra","parts":[{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"तू","iast":"tū","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"णा","iast":"ṇā","parts":[{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"भ","iast":"bha","parts":[{"char":"भ","role":"consonant","iast":"bha","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ङ्घि","iast":"ṅghi","parts":[{"char":"ङ","role":"consonant","iast":"ṅ","name":"ṅa","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"घ","role":"consonant","iast":"gh","name":"gha","articulation":"guttural","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका","stemIast":"indragopaparikṣiptasmaratūṇābhajaṅghikā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका","iast":"indragopaparikṣiptasmaratūṇābhajaṅghikā","type":"bahuvrīhi","gloss":"she whose shanks resemble Love's quivers strewn with cochineal insects","vigraha":"indragopaparikṣiptasmaratūṇābhe jaṅghike yasyāḥ sā","children":[{"text":"इन्द्रगोपपरिक्षिप्तस्मरतूणाभ","iast":"indragopaparikṣiptasmaratūṇābha","gloss":"resembling a quiver of Love scattered over with cochineal insects","type":"bahuvrīhi","vigraha":"indragopaparikṣiptasmaratūṇasya ābheva ābhā yayos te","children":[{"text":"इन्द्रगोपपरिक्षिप्तस्मरतूण","iast":"indragopaparikṣiptasmaratūṇa","gloss":"Love's quiver strewn with scarlet insects","type":"karmadhāraya","vigraha":"indragopaparikṣiptaś cāsau smaratūṇaś ca","children":[{"text":"इन्द्रगोपपरिक्षिप्त","iast":"indragopaparikṣipta","gloss":"scattered over with cochineal insects","type":"tatpuruṣa","vigraha":"indragopaiḥ parikṣiptaḥ","children":[{"text":"इन्द्रगोप","iast":"indragopa","gloss":"the cochineal insect, a small bright red insect of the rains"},{"text":"परिक्षिप्त","iast":"parikṣipta","gloss":"thrown about, scattered over, surrounded"}]},{"text":"स्मरतूण","iast":"smaratūṇa","gloss":"the quiver of the god of love","type":"tatpuruṣa","vigraha":"smarasya tūṇaḥ","children":[{"text":"स्मर","iast":"smara","gloss":"Kāma, the god of love"},{"text":"तूण","iast":"tūṇa","gloss":"quiver"}]}]},{"text":"आभ","iast":"ābha","gloss":"resembling, having the appearance of"}]},{"text":"जङ्घिका","iast":"jaṅghikā","gloss":"the shank, the leg between ankle and knee"}]}},{"index":42,"deva":"गूढगुल्फा","iast":"gūḍhagulphā","namavaliDeva":"गूढगुल्फायै","namavaliIast":"gūḍhagulphāyai","gloss":"Whose Ankles Are Hidden","translation":"Her ankle bones do not stand out at all, the sign of a body finished with perfect proportion.","aksaras":[{"text":"गू","iast":"gū","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ढ","iast":"ḍha","parts":[{"char":"ढ","role":"consonant","iast":"ḍha","name":"ḍha","articulation":"retroflex","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"गु","iast":"gu","parts":[{"char":"ग","role":"consonant","iast":"g","name":"ga","articulation":"guttural","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"ल्फा","iast":"lphā","parts":[{"char":"ल","role":"consonant","iast":"l","name":"la","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"फ","role":"consonant","iast":"ph","name":"pha","articulation":"labial","voicing":"unvoiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true}],"morphology":{"pos":"adjective","stem":"गूढगुल्फा","stemIast":"gūḍhagulphā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"गूढगुल्फा","iast":"gūḍhagulphā","type":"bahuvrīhi","gloss":"she whose ankles are concealed","vigraha":"gūḍhau gulphau yasyāḥ sā","children":[{"text":"गूढ","iast":"gūḍha","gloss":"covered, hidden, not apparent"},{"text":"गुल्फ","iast":"gulpha","gloss":"ankle"}]}},{"index":43,"deva":"कूर्मपृष्ठजयिष्णुप्रपदान्विता","iast":"kūrmapṛṣṭhajayiṣṇuprapadānvitā","namavaliDeva":"कूर्म पृष्ठजयिष्णुप्रपदान्वितायै","namavaliIast":"kūrma pṛṣṭhajayiṣṇuprapadānvitāyai","gloss":"Whose Insteps Outdo The Tortoise Shell","translation":"The arch of her foot rises with a curve smoother and more perfect than the domed back of a tortoise.","aksaras":[{"text":"कू","iast":"kū","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"र्म","iast":"rma","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"पृ","iast":"pṛ","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"ृ","role":"vowel-sign","iast":"ṛ","name":"ṛ-kāra","articulation":"retroflex","voicing":"voiced"}],"isConjunct":false},{"text":"ष्ठ","iast":"ṣṭha","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ठ","role":"consonant","iast":"ṭha","name":"ṭha","articulation":"retroflex","voicing":"unvoiced","aspirated":true,"inherentVowel":true}],"isConjunct":true},{"text":"ज","iast":"ja","parts":[{"char":"ज","role":"consonant","iast":"ja","name":"ja","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"यि","iast":"yi","parts":[{"char":"य","role":"consonant","iast":"y","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"ष्णु","iast":"ṣṇu","parts":[{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ु","role":"vowel-sign","iast":"u","name":"u-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":true},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"प","iast":"pa","parts":[{"char":"प","role":"consonant","iast":"pa","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"दा","iast":"dā","parts":[{"char":"द","role":"consonant","iast":"d","name":"da","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्वि","iast":"nvi","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"ता","iast":"tā","parts":[{"char":"त","role":"consonant","iast":"t","name":"ta","articulation":"dental","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"कूर्मपृष्ठजयिष्णुप्रपदान्विता","stemIast":"kūrmapṛṣṭhajayiṣṇuprapadānvitā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"कूर्मपृष्ठजयिष्णुप्रपदान्विता","iast":"kūrmapṛṣṭhajayiṣṇuprapadānvitā","type":"tatpuruṣa","gloss":"endowed with insteps that surpass the back of a tortoise","vigraha":"kūrmapṛṣṭhajayiṣṇunā prapadena anvitā","children":[{"text":"कूर्मपृष्ठजयिष्णुप्रपद","iast":"kūrmapṛṣṭhajayiṣṇuprapada","gloss":"the instep that vanquishes the tortoise's shell","type":"karmadhāraya","vigraha":"kūrmapṛṣṭhajayiṣṇu ca tat prapadaṃ ca","children":[{"text":"कूर्मपृष्ठजयिष्णु","iast":"kūrmapṛṣṭhajayiṣṇu","gloss":"conquering the back of a tortoise","type":"tatpuruṣa","vigraha":"kūrmapṛṣṭhaṃ jayiṣṇu","children":[{"text":"कूर्मपृष्ठ","iast":"kūrmapṛṣṭha","gloss":"the back of a tortoise","type":"tatpuruṣa","vigraha":"kūrmasya pṛṣṭham","children":[{"text":"कूर्म","iast":"kūrma","gloss":"tortoise, turtle"},{"text":"पृष्ठ","iast":"pṛṣṭha","gloss":"the back, the rounded upper surface"}]},{"text":"जयिष्णु","iast":"jayiṣṇu","gloss":"victorious, overcoming"}]},{"text":"प्रपद","iast":"prapada","gloss":"the fore part of the foot, the instep and toes"}]},{"text":"अन्वित","iast":"anvita","gloss":"endowed with, furnished with"}]}}],"namaRange":[41,43],"chant":{"startSec":309.04,"endSec":319.3,"confidence":"interpolated"},"commentary":{"meaning":"Three names, and the verse breaks the pattern of the last several by fitting a very short one between two long. The shanks first, tapering like the quivers of the god of love and scattered over with indragopa, the small brilliant scarlet insects that come up out of the ground with the first rain. Then, in four syllables, the ankles: hidden. No bone stands out, nothing shows through, which in the descriptive tradition is the mark of a body finished properly. Then the instep, which is said to beat the domed back of a tortoise at its own game — the smooth unbroken rising curve that the comparison was invented for, outdone by the thing it was invented to describe. The description has reached the feet, and it will stay there for the rest of this verse and the whole of the next.","history":"Indragopa is a real animal and a fixed poetic signal. Monier-Williams gives it as the cochineal insect of various kinds, and as a firefly; what is generally meant is the tiny bright red velvet mite that appears in enormous numbers on wet ground within a day or two of the first monsoon rain, all over India — a scrap of scarlet velvet about the size of a grain of rice. Sanskrit poets use it as the sign that the rains have begun, the way English poets use the cuckoo for spring. Its name means Indra's cowherd, or the one Indra protects, and Indra is the god who sends the rain.\n\nWhat the name does with it is not what a poet usually does. The insects are not simply present on the ground; they are parikṣipta, scattered over or strewn about the quiver itself. So the picture is a leather case flecked all over with points of scarlet, and an entire monsoon convention has been converted into upholstery. Whether the flecks are meant to be the natural mottling of her skin or the insects themselves crawling on it, the poem does not say, and the ambiguity is probably the point.\n\nThe quiver is Kāma's, so this is the fifth or sixth time his equipment has been found on her: the noose and goad in the second verse, the sugarcane bow and five arrows in the third, the wedding arch and the fish-banner at her eyebrows and eyes in the sixth, and now his quivers for her shins. The word tūṇa is derived by Monier-Williams from √tul, so a quiver is literally a bearer. The comparison is entirely about shape — a quiver tapers from a wide mouth to a narrow foot, exactly as a calf tapers to an ankle.\n\nThen jaṅghikā, which is a diminutive. Monier-Williams's headword is jaṅghā, the shank from ankle to knee, and jaṅghikā appears in the dictionary only as an equivalent of it, with a cross-reference and nothing more. The affectionate small form, dropped into the middle of a martial image, is one of the quieter pieces of tenderness in the hymn.\n\nŚaṅkara takes the same figure and does arithmetic with it, and it is his best piece of counting. In order to defeat Rudra, he says, the god of the uneven arrows has certainly made her two shanks into a pair of quivers loaded with twice his usual number of shafts. How does one know? Because at the tips of them ten arrow-heads can be seen, disguised as the nails at the ends of her two feet, and whetted on the single whetstone which is the crowns of the gods. Kāma carries five arrows; two quivers of five make ten; and there are exactly ten toenails. The heads are sharp because so many gods have bowed at those feet that their diadems have polished them. The sahasranāma will pick up those toenails in the very next verse, and a reader who has this in mind will know why they shine.\n\nGūḍhagulphā is the shortest name the hymn has produced so far, and all it says is that a joint does not show. Concealed ankles belong to the old repertoire of the well-made body, in which any prominent bone anywhere is a defect and the ideal limb is one whose structure is not legible through the skin. The brevity is itself an effect: after sixteen syllables of quiver and insect the poem says two words and moves on.\n\nThe tortoise is the standard comparison for the top of a foot and the reason is exact rather than fanciful. A tortoise carapace rises in a single continuous dome with no ridge and no break in it, which is precisely what an instep does. The name says her instep is jayiṣṇu over it, victorious — the same figure the ninth verse used to dispose of coral and the bimba fruit.\n\nŚaṅkara, characteristically, will not defeat the comparison; he quarrels with it. How, he asks, did good judges ever come to weigh your instep against the hard shell of a tortoise? And how did the breaker of the three cities, at the time of the wedding, take it up in both hands and set it down on the stone, with a heart full of pity? The second question is the one that matters. He is referring to the aśmārohaṇa, the mounting of the stone, a step in the classical wedding in which the groom places the bride's foot on a millstone and asks her to be as firm as it is. Śaṅkara is objecting that a foot which had to be handled that carefully cannot be the same foot the poets compare to something hard, and the answer he leaves unspoken is that it is soft and the comparison is a slander. The sahasranāma keeps the tortoise and simply lets her win.\n\nOne small resonance. The tortoise has been in this hymn before under a different word: the lute of the eleventh verse, kacchapī, is named for its tortoise-shaped body. Two tortoises seven verses apart, one shouted into silence and one overtaken. And two references to the wedding rite within nine names, the thread at the throat and the stone here, which is a reminder that this hymn assumes throughout that she is married. She is never once described as a maiden.","practice":"This is the first verse since the eighth to hold three names instead of two, and the arithmetic is sixteen, four, twelve. Indragopaparikṣiptasmaratūṇābhajaṅghikā fills the first line by itself; gūḍhagulphā takes four syllables of the second; kūrmapṛṣṭhajayiṣṇuprapadānvitā takes the remaining twelve. Getting that in the ear stops the verse from feeling lopsided.\n\nBecause a name ends inside the second line there is a genuine word-break after gulphā, and it should be audible. But the metre puts its caesura after the eighth syllable — gū-ḍha-gul-phā-kūr-ma-pṛ-ṣṭha — which falls inside the third name. So the sense break and the metrical break do not coincide, and you have to let one be heard without making the other. Articulate lightly after gulphā and let the metrical pause pass through the middle of kūrmapṛṣṭha without a gap, as at ādhāratā three verses ago.\n\nThe consonants here are the hardest in this whole range and the verse deserves to be drilled slowly. Parikṣipta puts kṣ and then pt into five syllables: pa-ri-kṣip-ta. Jaṅghikā has ṅgh, a guttural nasal running into a voiced aspirated velar, and the breath must be released. Gūḍha contains ḍh, the voiced retroflex aspirate that the pilot flagged at pāśāḍhyā in the second verse as one of the rarest and hardest sounds in the language: tongue-tip curled right back, voice on, and a distinct puff as it comes away. Gulpha has lph, an l into an aspirated p.\n\nPṛṣṭha is probably the single most difficult word in the first fifty names. It stacks the syllabic ṛ, the retroflex sibilant ṣ and the retroflex aspirated stop ṭh into one syllable: pṛṣ-ṭha, with the tongue-tip going back for the ṛ and staying back through the ṣ and the ṭh without coming forward at any point. Practise it alone before putting it back in the line.\n\nThe retroflex inventory for the verse is the largest so far: the ṣ of parikṣipta, the ḍh of gūḍha, the ṣ and the ṭh of pṛṣṭha, and the ṣ and the ṇ of jayiṣṇu. Six retroflexes in thirty-two syllables. Everything else — indra, gopa, smara, tūṇa apart from its ṇ, gulpha, prapada, anvitā — is dental or labial. The verse is therefore an unusually good exercise in the single contrast the whole phonology turns on.\n\nJayiṣṇu shows the ṇatva rule at short range: the retroflex ṣ pulls the following n back into the retroflex position and makes it ṇ. Two verses ago pratipaṇa showed the same rule triggered by an r across two syllables. Different trigger, same result, and between them they account for most of the retroflex nasals in this hymn.\n\nOne caution about the third name. Monier-Williams gives prapada as the point of the foot and the tips of the toes, and records the adverb prapadais, on tiptoe. The rendering used on this site, the fore part of the foot including the instep, is what the comparison with a tortoise's back requires, and it is what the commentators take; but the dictionary is narrower than the translation and it is worth knowing that.\n\nGūḍhagulphā is short enough to be memorized at once, and it is worth having by heart as a checkpoint: if you arrive at the second line and cannot find it, you have lost your place.\n\nFor the archanā, indragopaparikṣiptasmaratūṇābhajaṅghikāyai namaḥ, gūḍhagulphāyai namaḥ, kūrmapṛṣṭhajayiṣṇuprapadānvitāyai namaḥ. The middle one takes about a second and is a small relief in the middle of the sequence.\n\nOn what to hold: this verse is a fair test of whether the head-to-foot form can be taken on its own terms. There is no doctrine in an ankle. What the form asks is that the same quality of attention be spent on a joint that does not show as was spent on the flood of light in the third verse, and the tradition is entirely serious that this is a practice and not a distraction from one.","crossReferences":[{"source":"Saundaryalaharī 83","deva":"पराजेतुं रुद्रं द्विगुणशरगर्भौ गिरिसुते निषङ्गौ जङ्घे ते विषमविशिखो बाढमकृत । यदग्रे दृश्यन्ते दशशरफलाः पादयुगली-नखाग्रच्छद्मानः सुरमकुटशाणैकनिशिताः ॥","iast":"parājetuṃ rudraṃ dviguṇaśaragarbhau girisute niṣaṅgau jaṅghe te viṣamaviśikho bāḍhamakṛta | yadagre dṛśyante daśaśaraphalāḥ pādayugalī-nakhāgracchadmānaḥ suramakuṭaśāṇaikaniśitāḥ ||","translation":"Daughter of the mountain: in order to conquer Rudra, the god of the uneven arrows has certainly made your two shanks into a pair of quivers holding twice his usual store of shafts. For at the tips of them ten arrow-heads can be seen, disguised as the nails at the ends of your two feet, whetted on that single whetstone which is the crowns of the gods.","relevance":"The same shanks and the same quivers, worked out with arithmetic the sahasranāma has no room for. Kāma carries five arrows, two quivers hold ten, and there are ten toenails; and the nails are bright because so many gods have bowed there that their diadems have sharpened them. It also sets up the next verse of this hymn, which is about the light coming off those same nails."},{"source":"Saundaryalaharī 88","deva":"पदं ते कीर्तीनां प्रपदमपदं देवि विपदां कथं नीतं सद्भिः कठिनकमठीकर्परतुलाम् । कथं वा बाहुभ्यामुपयमनकाले पुरभिदा यदादाय न्यस्तं दृषदि दयमानेन मनसा ॥","iast":"padaṃ te kīrtīnāṃ prapadamapadaṃ devi vipadāṃ kathaṃ nītaṃ sadbhiḥ kaṭhinakamaṭhīkarparatulām | kathaṃ vā bāhubhyāmupayamanakāle purabhidā yadādāya nyastaṃ dṛṣadi dayamānena manasā ||","translation":"Goddess, your instep is the standing-place of every fame and no place at all for misfortune. However did good judges bring it to be weighed against the hard shell of a tortoise? And however did the breaker of the cities take it up in both hands at the time of the wedding, and set it down on the stone, with pity in his heart?","relevance":"The same instep and the same tortoise, and a refusal to accept the comparison at all. Śaṅkara's second question points at the aśmārohaṇa, the step in the wedding at which the groom sets the bride's foot on a millstone: a foot that had to be handled that gently cannot be the hard thing the poets say it is. The sahasranāma keeps the tortoise and simply has her defeat it, which is the blunter and, in a hymn of names, the more efficient move."}]},"references":[{"kind":"book","title":"The Book of Indian Animals","author":"S. H. Prater (Bombay Natural History Society, 3rd ed. 1971)","note":"For the indragopa, if you have never seen one. The red velvet mite is not in every edition, but the volume is the standard field reference and gives a sense of how sudden and how numerous the post-monsoon emergence is, which is what the poets are relying on."},{"kind":"book","title":"Hindu Saṃskāras: Socio-religious Study of the Hindu Sacraments","author":"Rajbali Pandey (Motilal Banarsidass, 2nd rev. ed. 1969)","note":"For the aśmārohaṇa, the mounting of the stone, which is what Śaṅkara's second question refers to. The wedding chapter gives the sequence of steps and the formula spoken over the bride's foot, and it makes his objection land properly."},{"kind":"dictionary","title":"Cologne Digital Sanskrit Dictionaries (Monier-Williams, 1899)","author":"Universität zu Köln","url":"https://www.sanskrit-lexicon.uni-koeln.de/","note":"Search jaṅghikā and watch the dictionary shrug: it records only that the word equals jaṅghā, with a cross-reference and nothing else. The diminutive is real and the lexicon has almost nothing to say about it, which is a useful thing to know about the vocabulary this hymn uses."}]}
+{
+  "id": "018",
+  "kind": "shloka",
+  "number": 18,
+  "title": "Shloka 18",
+  "subtitle": "Quivers strewn with rain-insects, and the arch of the foot",
+  "lines": [
+    {
+      "deva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+      "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+      "tokens": [
+        {
+          "id": "l0-t0",
+          "deva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+          "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+          "namaIndices": [
+            41
+          ],
+          "aksaras": [
+            {
+              "text": "इ",
+              "iast": "i",
+              "parts": [
+                {
+                  "char": "इ",
+                  "role": "vowel",
+                  "iast": "i",
+                  "name": "i (independent)",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्द्र",
+              "iast": "ndra",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "d",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "गो",
+              "iast": "go",
+              "parts": [
+                {
+                  "char": "ग",
+                  "role": "consonant",
+                  "iast": "g",
+                  "name": "ga",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ो",
+                  "role": "vowel-sign",
+                  "iast": "o",
+                  "name": "o-kāra",
+                  "articulation": "guttural-labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "प",
+              "iast": "pa",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "pa",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "प",
+              "iast": "pa",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "pa",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "रि",
+              "iast": "ri",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "क्षि",
+              "iast": "kṣi",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣ",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "प्त",
+              "iast": "pta",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "ta",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "स्म",
+              "iast": "sma",
+              "parts": [
+                {
+                  "char": "स",
+                  "role": "consonant",
+                  "iast": "s",
+                  "name": "sa",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "ma",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "र",
+              "iast": "ra",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "तू",
+              "iast": "tū",
+              "parts": [
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ू",
+                  "role": "vowel-sign",
+                  "iast": "ū",
+                  "name": "ū-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "णा",
+              "iast": "ṇā",
+              "parts": [
+                {
+                  "char": "ण",
+                  "role": "consonant",
+                  "iast": "ṇ",
+                  "name": "ṇa",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "भ",
+              "iast": "bha",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bha",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ज",
+              "iast": "ja",
+              "parts": [
+                {
+                  "char": "ज",
+                  "role": "consonant",
+                  "iast": "ja",
+                  "name": "ja",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ङ्घि",
+              "iast": "ṅghi",
+              "parts": [
+                {
+                  "char": "ङ",
+                  "role": "consonant",
+                  "iast": "ṅ",
+                  "name": "ṅa",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "घ",
+                  "role": "consonant",
+                  "iast": "gh",
+                  "name": "gha",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "का",
+              "iast": "kā",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deva": "गूढगुल्फा कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+      "iast": "gūḍhagulphā kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+      "tokens": [
+        {
+          "id": "l1-t0",
+          "deva": "गूढगुल्फा",
+          "iast": "gūḍhagulphā",
+          "namaIndices": [
+            42
+          ],
+          "aksaras": [
+            {
+              "text": "गू",
+              "iast": "gū",
+              "parts": [
+                {
+                  "char": "ग",
+                  "role": "consonant",
+                  "iast": "g",
+                  "name": "ga",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ू",
+                  "role": "vowel-sign",
+                  "iast": "ū",
+                  "name": "ū-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ढ",
+              "iast": "ḍha",
+              "parts": [
+                {
+                  "char": "ढ",
+                  "role": "consonant",
+                  "iast": "ḍha",
+                  "name": "ḍha",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "गु",
+              "iast": "gu",
+              "parts": [
+                {
+                  "char": "ग",
+                  "role": "consonant",
+                  "iast": "g",
+                  "name": "ga",
+                  "articulation": "guttural",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ु",
+                  "role": "vowel-sign",
+                  "iast": "u",
+                  "name": "u-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ल्फा",
+              "iast": "lphā",
+              "parts": [
+                {
+                  "char": "ल",
+                  "role": "consonant",
+                  "iast": "l",
+                  "name": "la",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "फ",
+                  "role": "consonant",
+                  "iast": "ph",
+                  "name": "pha",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            }
+          ]
+        },
+        {
+          "id": "l1-t1",
+          "deva": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+          "iast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+          "namaIndices": [
+            43
+          ],
+          "aksaras": [
+            {
+              "text": "कू",
+              "iast": "kū",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ू",
+                  "role": "vowel-sign",
+                  "iast": "ū",
+                  "name": "ū-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "र्म",
+              "iast": "rma",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "ma",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "पृ",
+              "iast": "pṛ",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ृ",
+                  "role": "vowel-sign",
+                  "iast": "ṛ",
+                  "name": "ṛ-kāra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ष्ठ",
+              "iast": "ṣṭha",
+              "parts": [
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣ",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ठ",
+                  "role": "consonant",
+                  "iast": "ṭha",
+                  "name": "ṭha",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "ज",
+              "iast": "ja",
+              "parts": [
+                {
+                  "char": "ज",
+                  "role": "consonant",
+                  "iast": "ja",
+                  "name": "ja",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "यि",
+              "iast": "yi",
+              "parts": [
+                {
+                  "char": "य",
+                  "role": "consonant",
+                  "iast": "y",
+                  "name": "ya",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ष्णु",
+              "iast": "ṣṇu",
+              "parts": [
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣ",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ण",
+                  "role": "consonant",
+                  "iast": "ṇ",
+                  "name": "ṇa",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ु",
+                  "role": "vowel-sign",
+                  "iast": "u",
+                  "name": "u-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "प्र",
+              "iast": "pra",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "प",
+              "iast": "pa",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "pa",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "दा",
+              "iast": "dā",
+              "parts": [
+                {
+                  "char": "द",
+                  "role": "consonant",
+                  "iast": "d",
+                  "name": "da",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्वि",
+              "iast": "nvi",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "ता",
+              "iast": "tā",
+              "parts": [
+                {
+                  "char": "त",
+                  "role": "consonant",
+                  "iast": "t",
+                  "name": "ta",
+                  "articulation": "dental",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namas": [
+    {
+      "index": 41,
+      "deva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+      "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+      "namavaliDeva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिकायै",
+      "namavaliIast": "indragopaparikṣiptasmaratūṇābhajaṅghikāyai",
+      "gloss": "Whose Shanks Are Love's Quivers",
+      "translation": "Her calves taper like the quivers of the god of love, scattered over with the small scarlet insects that appear with the rains.",
+      "aksaras": [
+        {
+          "text": "इ",
+          "iast": "i",
+          "parts": [
+            {
+              "char": "इ",
+              "role": "vowel",
+              "iast": "i",
+              "name": "i (independent)",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्द्र",
+          "iast": "ndra",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "d",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "गो",
+          "iast": "go",
+          "parts": [
+            {
+              "char": "ग",
+              "role": "consonant",
+              "iast": "g",
+              "name": "ga",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ो",
+              "role": "vowel-sign",
+              "iast": "o",
+              "name": "o-kāra",
+              "articulation": "guttural-labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "प",
+          "iast": "pa",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "pa",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "प",
+          "iast": "pa",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "pa",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "रि",
+          "iast": "ri",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "क्षि",
+          "iast": "kṣi",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣ",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "प्त",
+          "iast": "pta",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "ta",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "स्म",
+          "iast": "sma",
+          "parts": [
+            {
+              "char": "स",
+              "role": "consonant",
+              "iast": "s",
+              "name": "sa",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "ma",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "र",
+          "iast": "ra",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "तू",
+          "iast": "tū",
+          "parts": [
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ू",
+              "role": "vowel-sign",
+              "iast": "ū",
+              "name": "ū-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "णा",
+          "iast": "ṇā",
+          "parts": [
+            {
+              "char": "ण",
+              "role": "consonant",
+              "iast": "ṇ",
+              "name": "ṇa",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "भ",
+          "iast": "bha",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bha",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ज",
+          "iast": "ja",
+          "parts": [
+            {
+              "char": "ज",
+              "role": "consonant",
+              "iast": "ja",
+              "name": "ja",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ङ्घि",
+          "iast": "ṅghi",
+          "parts": [
+            {
+              "char": "ङ",
+              "role": "consonant",
+              "iast": "ṅ",
+              "name": "ṅa",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "घ",
+              "role": "consonant",
+              "iast": "gh",
+              "name": "gha",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "का",
+          "iast": "kā",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+        "stemIast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+        "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+        "type": "bahuvrīhi",
+        "gloss": "she whose shanks resemble Love's quivers strewn with cochineal insects",
+        "vigraha": "indragopaparikṣiptasmaratūṇābhe jaṅghike yasyāḥ sā",
+        "children": [
+          {
+            "text": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभ",
+            "iast": "indragopaparikṣiptasmaratūṇābha",
+            "gloss": "resembling a quiver of Love scattered over with cochineal insects",
+            "type": "bahuvrīhi",
+            "vigraha": "indragopaparikṣiptasmaratūṇasya ābheva ābhā yayos te",
+            "children": [
+              {
+                "text": "इन्द्रगोपपरिक्षिप्तस्मरतूण",
+                "iast": "indragopaparikṣiptasmaratūṇa",
+                "gloss": "Love's quiver strewn with scarlet insects",
+                "type": "karmadhāraya",
+                "vigraha": "indragopaparikṣiptaś cāsau smaratūṇaś ca",
+                "children": [
+                  {
+                    "text": "इन्द्रगोपपरिक्षिप्त",
+                    "iast": "indragopaparikṣipta",
+                    "gloss": "scattered over with cochineal insects",
+                    "type": "tatpuruṣa",
+                    "vigraha": "indragopaiḥ parikṣiptaḥ",
+                    "children": [
+                      {
+                        "text": "इन्द्रगोप",
+                        "iast": "indragopa",
+                        "gloss": "the cochineal insect, a small bright red insect of the rains"
+                      },
+                      {
+                        "text": "परिक्षिप्त",
+                        "iast": "parikṣipta",
+                        "gloss": "thrown about, scattered over, surrounded"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "स्मरतूण",
+                    "iast": "smaratūṇa",
+                    "gloss": "the quiver of the god of love",
+                    "type": "tatpuruṣa",
+                    "vigraha": "smarasya tūṇaḥ",
+                    "children": [
+                      {
+                        "text": "स्मर",
+                        "iast": "smara",
+                        "gloss": "Kāma, the god of love"
+                      },
+                      {
+                        "text": "तूण",
+                        "iast": "tūṇa",
+                        "gloss": "quiver"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "आभ",
+                "iast": "ābha",
+                "gloss": "resembling, having the appearance of"
+              }
+            ]
+          },
+          {
+            "text": "जङ्घिका",
+            "iast": "jaṅghikā",
+            "gloss": "the shank, the leg between ankle and knee"
+          }
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "deva": "गूढगुल्फा",
+      "iast": "gūḍhagulphā",
+      "namavaliDeva": "गूढगुल्फायै",
+      "namavaliIast": "gūḍhagulphāyai",
+      "gloss": "Whose Ankles Are Hidden",
+      "translation": "Her ankle bones do not stand out at all, the sign of a body finished with perfect proportion.",
+      "aksaras": [
+        {
+          "text": "गू",
+          "iast": "gū",
+          "parts": [
+            {
+              "char": "ग",
+              "role": "consonant",
+              "iast": "g",
+              "name": "ga",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ू",
+              "role": "vowel-sign",
+              "iast": "ū",
+              "name": "ū-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ढ",
+          "iast": "ḍha",
+          "parts": [
+            {
+              "char": "ढ",
+              "role": "consonant",
+              "iast": "ḍha",
+              "name": "ḍha",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "गु",
+          "iast": "gu",
+          "parts": [
+            {
+              "char": "ग",
+              "role": "consonant",
+              "iast": "g",
+              "name": "ga",
+              "articulation": "guttural",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ु",
+              "role": "vowel-sign",
+              "iast": "u",
+              "name": "u-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ल्फा",
+          "iast": "lphā",
+          "parts": [
+            {
+              "char": "ल",
+              "role": "consonant",
+              "iast": "l",
+              "name": "la",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "फ",
+              "role": "consonant",
+              "iast": "ph",
+              "name": "pha",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": true
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "गूढगुल्फा",
+        "stemIast": "gūḍhagulphā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "गूढगुल्फा",
+        "iast": "gūḍhagulphā",
+        "type": "bahuvrīhi",
+        "gloss": "she whose ankles are concealed",
+        "vigraha": "gūḍhau gulphau yasyāḥ sā",
+        "children": [
+          {
+            "text": "गूढ",
+            "iast": "gūḍha",
+            "gloss": "covered, hidden, not apparent"
+          },
+          {
+            "text": "गुल्फ",
+            "iast": "gulpha",
+            "gloss": "ankle"
+          }
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "deva": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+      "iast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+      "namavaliDeva": "कूर्म पृष्ठजयिष्णुप्रपदान्वितायै",
+      "namavaliIast": "kūrma pṛṣṭhajayiṣṇuprapadānvitāyai",
+      "gloss": "Whose Insteps Outdo The Tortoise Shell",
+      "translation": "The arch of her foot rises with a curve smoother and more perfect than the domed back of a tortoise.",
+      "aksaras": [
+        {
+          "text": "कू",
+          "iast": "kū",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ू",
+              "role": "vowel-sign",
+              "iast": "ū",
+              "name": "ū-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "र्म",
+          "iast": "rma",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "ma",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "पृ",
+          "iast": "pṛ",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ृ",
+              "role": "vowel-sign",
+              "iast": "ṛ",
+              "name": "ṛ-kāra",
+              "articulation": "retroflex",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ष्ठ",
+          "iast": "ṣṭha",
+          "parts": [
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣ",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ठ",
+              "role": "consonant",
+              "iast": "ṭha",
+              "name": "ṭha",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "ज",
+          "iast": "ja",
+          "parts": [
+            {
+              "char": "ज",
+              "role": "consonant",
+              "iast": "ja",
+              "name": "ja",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "यि",
+          "iast": "yi",
+          "parts": [
+            {
+              "char": "य",
+              "role": "consonant",
+              "iast": "y",
+              "name": "ya",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ष्णु",
+          "iast": "ṣṇu",
+          "parts": [
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣ",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ण",
+              "role": "consonant",
+              "iast": "ṇ",
+              "name": "ṇa",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ु",
+              "role": "vowel-sign",
+              "iast": "u",
+              "name": "u-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "प्र",
+          "iast": "pra",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "प",
+          "iast": "pa",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "pa",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "दा",
+          "iast": "dā",
+          "parts": [
+            {
+              "char": "द",
+              "role": "consonant",
+              "iast": "d",
+              "name": "da",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्वि",
+          "iast": "nvi",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "ता",
+          "iast": "tā",
+          "parts": [
+            {
+              "char": "त",
+              "role": "consonant",
+              "iast": "t",
+              "name": "ta",
+              "articulation": "dental",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+        "stemIast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+        "iast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+        "type": "tatpuruṣa",
+        "gloss": "endowed with insteps that surpass the back of a tortoise",
+        "vigraha": "kūrmapṛṣṭhajayiṣṇunā prapadena anvitā",
+        "children": [
+          {
+            "text": "कूर्मपृष्ठजयिष्णुप्रपद",
+            "iast": "kūrmapṛṣṭhajayiṣṇuprapada",
+            "gloss": "the instep that vanquishes the tortoise's shell",
+            "type": "karmadhāraya",
+            "vigraha": "kūrmapṛṣṭhajayiṣṇu ca tat prapadaṃ ca",
+            "children": [
+              {
+                "text": "कूर्मपृष्ठजयिष्णु",
+                "iast": "kūrmapṛṣṭhajayiṣṇu",
+                "gloss": "conquering the back of a tortoise",
+                "type": "tatpuruṣa",
+                "vigraha": "kūrmapṛṣṭhaṃ jayiṣṇu",
+                "children": [
+                  {
+                    "text": "कूर्मपृष्ठ",
+                    "iast": "kūrmapṛṣṭha",
+                    "gloss": "the back of a tortoise",
+                    "type": "tatpuruṣa",
+                    "vigraha": "kūrmasya pṛṣṭham",
+                    "children": [
+                      {
+                        "text": "कूर्म",
+                        "iast": "kūrma",
+                        "gloss": "tortoise, turtle"
+                      },
+                      {
+                        "text": "पृष्ठ",
+                        "iast": "pṛṣṭha",
+                        "gloss": "the back, the rounded upper surface"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "जयिष्णु",
+                    "iast": "jayiṣṇu",
+                    "gloss": "victorious, overcoming"
+                  }
+                ]
+              },
+              {
+                "text": "प्रपद",
+                "iast": "prapada",
+                "gloss": "the fore part of the foot, the instep and toes"
+              }
+            ]
+          },
+          {
+            "text": "अन्वित",
+            "iast": "anvita",
+            "gloss": "endowed with, furnished with"
+          }
+        ]
+      }
+    }
+  ],
+  "namaRange": [
+    41,
+    43
+  ],
+  "chant": {
+    "startSec": 302.7,
+    "endSec": 311.52,
+    "confidence": "detected"
+  },
+  "commentary": {
+    "meaning": "Three names, and the verse breaks the pattern of the last several by fitting a very short one between two long. The shanks first, tapering like the quivers of the god of love and scattered over with indragopa, the small brilliant scarlet insects that come up out of the ground with the first rain. Then, in four syllables, the ankles: hidden. No bone stands out, nothing shows through, which in the descriptive tradition is the mark of a body finished properly. Then the instep, which is said to beat the domed back of a tortoise at its own game — the smooth unbroken rising curve that the comparison was invented for, outdone by the thing it was invented to describe. The description has reached the feet, and it will stay there for the rest of this verse and the whole of the next.",
+    "history": "Indragopa is a real animal and a fixed poetic signal. Monier-Williams gives it as the cochineal insect of various kinds, and as a firefly; what is generally meant is the tiny bright red velvet mite that appears in enormous numbers on wet ground within a day or two of the first monsoon rain, all over India — a scrap of scarlet velvet about the size of a grain of rice. Sanskrit poets use it as the sign that the rains have begun, the way English poets use the cuckoo for spring. Its name means Indra's cowherd, or the one Indra protects, and Indra is the god who sends the rain.\n\nWhat the name does with it is not what a poet usually does. The insects are not simply present on the ground; they are parikṣipta, scattered over or strewn about the quiver itself. So the picture is a leather case flecked all over with points of scarlet, and an entire monsoon convention has been converted into upholstery. Whether the flecks are meant to be the natural mottling of her skin or the insects themselves crawling on it, the poem does not say, and the ambiguity is probably the point.\n\nThe quiver is Kāma's, so this is the fifth or sixth time his equipment has been found on her: the noose and goad in the second verse, the sugarcane bow and five arrows in the third, the wedding arch and the fish-banner at her eyebrows and eyes in the sixth, and now his quivers for her shins. The word tūṇa is derived by Monier-Williams from √tul, so a quiver is literally a bearer. The comparison is entirely about shape — a quiver tapers from a wide mouth to a narrow foot, exactly as a calf tapers to an ankle.\n\nThen jaṅghikā, which is a diminutive. Monier-Williams's headword is jaṅghā, the shank from ankle to knee, and jaṅghikā appears in the dictionary only as an equivalent of it, with a cross-reference and nothing more. The affectionate small form, dropped into the middle of a martial image, is one of the quieter pieces of tenderness in the hymn.\n\nŚaṅkara takes the same figure and does arithmetic with it, and it is his best piece of counting. In order to defeat Rudra, he says, the god of the uneven arrows has certainly made her two shanks into a pair of quivers loaded with twice his usual number of shafts. How does one know? Because at the tips of them ten arrow-heads can be seen, disguised as the nails at the ends of her two feet, and whetted on the single whetstone which is the crowns of the gods. Kāma carries five arrows; two quivers of five make ten; and there are exactly ten toenails. The heads are sharp because so many gods have bowed at those feet that their diadems have polished them. The sahasranāma will pick up those toenails in the very next verse, and a reader who has this in mind will know why they shine.\n\nGūḍhagulphā is the shortest name the hymn has produced so far, and all it says is that a joint does not show. Concealed ankles belong to the old repertoire of the well-made body, in which any prominent bone anywhere is a defect and the ideal limb is one whose structure is not legible through the skin. The brevity is itself an effect: after sixteen syllables of quiver and insect the poem says two words and moves on.\n\nThe tortoise is the standard comparison for the top of a foot and the reason is exact rather than fanciful. A tortoise carapace rises in a single continuous dome with no ridge and no break in it, which is precisely what an instep does. The name says her instep is jayiṣṇu over it, victorious — the same figure the ninth verse used to dispose of coral and the bimba fruit.\n\nŚaṅkara, characteristically, will not defeat the comparison; he quarrels with it. How, he asks, did good judges ever come to weigh your instep against the hard shell of a tortoise? And how did the breaker of the three cities, at the time of the wedding, take it up in both hands and set it down on the stone, with a heart full of pity? The second question is the one that matters. He is referring to the aśmārohaṇa, the mounting of the stone, a step in the classical wedding in which the groom places the bride's foot on a millstone and asks her to be as firm as it is. Śaṅkara is objecting that a foot which had to be handled that carefully cannot be the same foot the poets compare to something hard, and the answer he leaves unspoken is that it is soft and the comparison is a slander. The sahasranāma keeps the tortoise and simply lets her win.\n\nOne small resonance. The tortoise has been in this hymn before under a different word: the lute of the eleventh verse, kacchapī, is named for its tortoise-shaped body. Two tortoises seven verses apart, one shouted into silence and one overtaken. And two references to the wedding rite within nine names, the thread at the throat and the stone here, which is a reminder that this hymn assumes throughout that she is married. She is never once described as a maiden.",
+    "practice": "This is the first verse since the eighth to hold three names instead of two, and the arithmetic is sixteen, four, twelve. Indragopaparikṣiptasmaratūṇābhajaṅghikā fills the first line by itself; gūḍhagulphā takes four syllables of the second; kūrmapṛṣṭhajayiṣṇuprapadānvitā takes the remaining twelve. Getting that in the ear stops the verse from feeling lopsided.\n\nBecause a name ends inside the second line there is a genuine word-break after gulphā, and it should be audible. But the metre puts its caesura after the eighth syllable — gū-ḍha-gul-phā-kūr-ma-pṛ-ṣṭha — which falls inside the third name. So the sense break and the metrical break do not coincide, and you have to let one be heard without making the other. Articulate lightly after gulphā and let the metrical pause pass through the middle of kūrmapṛṣṭha without a gap, as at ādhāratā three verses ago.\n\nThe consonants here are the hardest in this whole range and the verse deserves to be drilled slowly. Parikṣipta puts kṣ and then pt into five syllables: pa-ri-kṣip-ta. Jaṅghikā has ṅgh, a guttural nasal running into a voiced aspirated velar, and the breath must be released. Gūḍha contains ḍh, the voiced retroflex aspirate that the pilot flagged at pāśāḍhyā in the second verse as one of the rarest and hardest sounds in the language: tongue-tip curled right back, voice on, and a distinct puff as it comes away. Gulpha has lph, an l into an aspirated p.\n\nPṛṣṭha is probably the single most difficult word in the first fifty names. It stacks the syllabic ṛ, the retroflex sibilant ṣ and the retroflex aspirated stop ṭh into one syllable: pṛṣ-ṭha, with the tongue-tip going back for the ṛ and staying back through the ṣ and the ṭh without coming forward at any point. Practise it alone before putting it back in the line.\n\nThe retroflex inventory for the verse is the largest so far: the ṣ of parikṣipta, the ḍh of gūḍha, the ṣ and the ṭh of pṛṣṭha, and the ṣ and the ṇ of jayiṣṇu. Six retroflexes in thirty-two syllables. Everything else — indra, gopa, smara, tūṇa apart from its ṇ, gulpha, prapada, anvitā — is dental or labial. The verse is therefore an unusually good exercise in the single contrast the whole phonology turns on.\n\nJayiṣṇu shows the ṇatva rule at short range: the retroflex ṣ pulls the following n back into the retroflex position and makes it ṇ. Two verses ago pratipaṇa showed the same rule triggered by an r across two syllables. Different trigger, same result, and between them they account for most of the retroflex nasals in this hymn.\n\nOne caution about the third name. Monier-Williams gives prapada as the point of the foot and the tips of the toes, and records the adverb prapadais, on tiptoe. The rendering used on this site, the fore part of the foot including the instep, is what the comparison with a tortoise's back requires, and it is what the commentators take; but the dictionary is narrower than the translation and it is worth knowing that.\n\nGūḍhagulphā is short enough to be memorized at once, and it is worth having by heart as a checkpoint: if you arrive at the second line and cannot find it, you have lost your place.\n\nFor the archanā, indragopaparikṣiptasmaratūṇābhajaṅghikāyai namaḥ, gūḍhagulphāyai namaḥ, kūrmapṛṣṭhajayiṣṇuprapadānvitāyai namaḥ. The middle one takes about a second and is a small relief in the middle of the sequence.\n\nOn what to hold: this verse is a fair test of whether the head-to-foot form can be taken on its own terms. There is no doctrine in an ankle. What the form asks is that the same quality of attention be spent on a joint that does not show as was spent on the flood of light in the third verse, and the tradition is entirely serious that this is a practice and not a distraction from one.",
+    "crossReferences": [
+      {
+        "source": "Saundaryalaharī 83",
+        "deva": "पराजेतुं रुद्रं द्विगुणशरगर्भौ गिरिसुते निषङ्गौ जङ्घे ते विषमविशिखो बाढमकृत । यदग्रे दृश्यन्ते दशशरफलाः पादयुगली-नखाग्रच्छद्मानः सुरमकुटशाणैकनिशिताः ॥",
+        "iast": "parājetuṃ rudraṃ dviguṇaśaragarbhau girisute niṣaṅgau jaṅghe te viṣamaviśikho bāḍhamakṛta | yadagre dṛśyante daśaśaraphalāḥ pādayugalī-nakhāgracchadmānaḥ suramakuṭaśāṇaikaniśitāḥ ||",
+        "translation": "Daughter of the mountain: in order to conquer Rudra, the god of the uneven arrows has certainly made your two shanks into a pair of quivers holding twice his usual store of shafts. For at the tips of them ten arrow-heads can be seen, disguised as the nails at the ends of your two feet, whetted on that single whetstone which is the crowns of the gods.",
+        "relevance": "The same shanks and the same quivers, worked out with arithmetic the sahasranāma has no room for. Kāma carries five arrows, two quivers hold ten, and there are ten toenails; and the nails are bright because so many gods have bowed there that their diadems have sharpened them. It also sets up the next verse of this hymn, which is about the light coming off those same nails."
+      },
+      {
+        "source": "Saundaryalaharī 88",
+        "deva": "पदं ते कीर्तीनां प्रपदमपदं देवि विपदां कथं नीतं सद्भिः कठिनकमठीकर्परतुलाम् । कथं वा बाहुभ्यामुपयमनकाले पुरभिदा यदादाय न्यस्तं दृषदि दयमानेन मनसा ॥",
+        "iast": "padaṃ te kīrtīnāṃ prapadamapadaṃ devi vipadāṃ kathaṃ nītaṃ sadbhiḥ kaṭhinakamaṭhīkarparatulām | kathaṃ vā bāhubhyāmupayamanakāle purabhidā yadādāya nyastaṃ dṛṣadi dayamānena manasā ||",
+        "translation": "Goddess, your instep is the standing-place of every fame and no place at all for misfortune. However did good judges bring it to be weighed against the hard shell of a tortoise? And however did the breaker of the cities take it up in both hands at the time of the wedding, and set it down on the stone, with pity in his heart?",
+        "relevance": "The same instep and the same tortoise, and a refusal to accept the comparison at all. Śaṅkara's second question points at the aśmārohaṇa, the step in the wedding at which the groom sets the bride's foot on a millstone: a foot that had to be handled that gently cannot be the hard thing the poets say it is. The sahasranāma keeps the tortoise and simply has her defeat it, which is the blunter and, in a hymn of names, the more efficient move."
+      }
+    ]
+  },
+  "references": [
+    {
+      "kind": "book",
+      "title": "The Book of Indian Animals",
+      "author": "S. H. Prater (Bombay Natural History Society, 3rd ed. 1971)",
+      "note": "For the indragopa, if you have never seen one. The red velvet mite is not in every edition, but the volume is the standard field reference and gives a sense of how sudden and how numerous the post-monsoon emergence is, which is what the poets are relying on."
+    },
+    {
+      "kind": "book",
+      "title": "Hindu Saṃskāras: Socio-religious Study of the Hindu Sacraments",
+      "author": "Rajbali Pandey (Motilal Banarsidass, 2nd rev. ed. 1969)",
+      "note": "For the aśmārohaṇa, the mounting of the stone, which is what Śaṅkara's second question refers to. The wedding chapter gives the sequence of steps and the formula spoken over the bride's foot, and it makes his objection land properly."
+    },
+    {
+      "kind": "dictionary",
+      "title": "Cologne Digital Sanskrit Dictionaries (Monier-Williams, 1899)",
+      "author": "Universität zu Köln",
+      "url": "https://www.sanskrit-lexicon.uni-koeln.de/",
+      "note": "Search jaṅghikā and watch the dictionary shrug: it records only that the word equals jaṅghā, with a cross-reference and nothing else. The diminutive is real and the lexicon has almost nothing to say about it, which is a useful thing to know about the vocabulary this hymn uses."
+    }
+  ]
+}

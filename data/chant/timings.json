@@ -5,19 +5,29 @@
     "performers": "Ranjani - Gayatri",
     "url": "https://youtu.be/zgG-gjioU1g",
     "durationSec": 1979.41,
-    "analyzedAt": "2026-07-25T21:15:59+00:00"
+    "analyzedAt": "2026-07-27T00:04:33+00:00",
+    "calibration": {
+      "method": "stable-ts-forced-alignment",
+      "notes": "Forced alignment onsets were slightly late vs audible attack. Kept verse 1; pulled verses 2\u2013182 earlier by 0.6s. Module for verse 1 still ends in the breath before verse 2.",
+      "goldOpenings": {
+        "1": 137.5,
+        "2": 152.2,
+        "3": 162.98
+      },
+      "postAlignLeadInSec": 0.6
+    }
   },
   "sections": {
     "dhyana": {
       "startSec": 0.3,
-      "endSec": 145.98
+      "endSec": 137.5
     },
     "stotra": {
-      "startSec": 145.98,
-      "endSec": 1935.12
+      "startSec": 137.5,
+      "endSec": 1926.94
     },
     "phalashruti": {
-      "startSec": 1935.12,
+      "startSec": 1926.94,
       "endSec": 1969.82
     }
   },
@@ -133,1102 +143,1102 @@
     {
       "index": 19,
       "startSec": 136.85,
-      "endSec": 145.98,
+      "endSec": 138.65,
       "confidence": "interpolated"
     }
   ],
   "verses": [
     {
       "number": 1,
-      "startSec": 145.98,
-      "endSec": 156.86,
+      "startSec": 137.5,
+      "endSec": 151.6,
       "confidence": "detected"
     },
     {
       "number": 2,
-      "startSec": 156.86,
-      "endSec": 166.24,
-      "confidence": "interpolated"
+      "startSec": 151.6,
+      "endSec": 162.38,
+      "confidence": "detected"
     },
     {
       "number": 3,
-      "startSec": 166.24,
-      "endSec": 176.24,
+      "startSec": 162.38,
+      "endSec": 172.14,
       "confidence": "detected"
     },
     {
       "number": 4,
-      "startSec": 176.24,
-      "endSec": 186.04,
+      "startSec": 172.14,
+      "endSec": 181.89,
       "confidence": "interpolated"
     },
     {
       "number": 5,
-      "startSec": 186.04,
-      "endSec": 196.4,
-      "confidence": "detected"
+      "startSec": 181.89,
+      "endSec": 191.63,
+      "confidence": "interpolated"
     },
     {
       "number": 6,
-      "startSec": 196.4,
-      "endSec": 205.9,
-      "confidence": "detected"
+      "startSec": 191.63,
+      "endSec": 201.38,
+      "confidence": "interpolated"
     },
     {
       "number": 7,
-      "startSec": 205.9,
-      "endSec": 215.06,
-      "confidence": "detected"
+      "startSec": 201.38,
+      "endSec": 211.12,
+      "confidence": "interpolated"
     },
     {
       "number": 8,
-      "startSec": 215.06,
-      "endSec": 224.04,
+      "startSec": 211.12,
+      "endSec": 220.32,
       "confidence": "detected"
     },
     {
       "number": 9,
-      "startSec": 224.04,
-      "endSec": 233.46,
-      "confidence": "detected"
+      "startSec": 220.32,
+      "endSec": 229.53,
+      "confidence": "interpolated"
     },
     {
       "number": 10,
-      "startSec": 233.46,
-      "endSec": 243.02,
-      "confidence": "detected"
+      "startSec": 229.53,
+      "endSec": 238.73,
+      "confidence": "interpolated"
     },
     {
       "number": 11,
-      "startSec": 243.02,
-      "endSec": 252.32,
-      "confidence": "detected"
+      "startSec": 238.73,
+      "endSec": 247.94,
+      "confidence": "interpolated"
     },
     {
       "number": 12,
-      "startSec": 252.32,
-      "endSec": 261.76,
-      "confidence": "detected"
+      "startSec": 247.94,
+      "endSec": 257.14,
+      "confidence": "interpolated"
     },
     {
       "number": 13,
-      "startSec": 261.76,
-      "endSec": 271.94,
+      "startSec": 257.14,
+      "endSec": 266.18,
       "confidence": "detected"
     },
     {
       "number": 14,
-      "startSec": 271.94,
-      "endSec": 281.66,
+      "startSec": 266.18,
+      "endSec": 275.22,
       "confidence": "interpolated"
     },
     {
       "number": 15,
-      "startSec": 281.66,
-      "endSec": 290.54,
-      "confidence": "detected"
-    },
-    {
-      "number": 16,
-      "startSec": 290.54,
-      "endSec": 300.2,
+      "startSec": 275.22,
+      "endSec": 284.26,
       "confidence": "interpolated"
     },
     {
+      "number": 16,
+      "startSec": 284.26,
+      "endSec": 293.48,
+      "confidence": "detected"
+    },
+    {
       "number": 17,
-      "startSec": 300.2,
-      "endSec": 309.04,
+      "startSec": 293.48,
+      "endSec": 302.7,
       "confidence": "interpolated"
     },
     {
       "number": 18,
-      "startSec": 309.04,
-      "endSec": 319.3,
-      "confidence": "interpolated"
-    },
-    {
-      "number": 19,
-      "startSec": 319.3,
-      "endSec": 328.86,
+      "startSec": 302.7,
+      "endSec": 311.52,
       "confidence": "detected"
     },
     {
+      "number": 19,
+      "startSec": 311.52,
+      "endSec": 320.34,
+      "confidence": "interpolated"
+    },
+    {
       "number": 20,
-      "startSec": 328.86,
-      "endSec": 339.12,
+      "startSec": 320.34,
+      "endSec": 328.2,
       "confidence": "detected"
     },
     {
       "number": 21,
-      "startSec": 339.12,
-      "endSec": 349.34,
+      "startSec": 328.2,
+      "endSec": 338.23,
       "confidence": "detected"
     },
     {
       "number": 22,
-      "startSec": 349.34,
-      "endSec": 359.24,
+      "startSec": 338.23,
+      "endSec": 348.91,
       "confidence": "detected"
     },
     {
       "number": 23,
-      "startSec": 359.24,
-      "endSec": 368.54,
+      "startSec": 348.91,
+      "endSec": 358.51,
       "confidence": "detected"
     },
     {
       "number": 24,
-      "startSec": 368.54,
-      "endSec": 377.52,
-      "confidence": "detected"
+      "startSec": 358.51,
+      "endSec": 368.11,
+      "confidence": "interpolated"
     },
     {
       "number": 25,
-      "startSec": 377.52,
-      "endSec": 386.12,
-      "confidence": "detected"
+      "startSec": 368.11,
+      "endSec": 377.71,
+      "confidence": "interpolated"
     },
     {
       "number": 26,
-      "startSec": 386.12,
-      "endSec": 395.32,
+      "startSec": 377.71,
+      "endSec": 387.87,
       "confidence": "detected"
     },
     {
       "number": 27,
-      "startSec": 395.32,
-      "endSec": 405.68,
+      "startSec": 387.87,
+      "endSec": 396.5,
       "confidence": "detected"
     },
     {
       "number": 28,
-      "startSec": 405.68,
-      "endSec": 415.68,
-      "confidence": "detected"
+      "startSec": 396.5,
+      "endSec": 405.12,
+      "confidence": "interpolated"
     },
     {
       "number": 29,
-      "startSec": 415.68,
-      "endSec": 425.58,
+      "startSec": 405.12,
+      "endSec": 413.75,
       "confidence": "interpolated"
     },
     {
       "number": 30,
-      "startSec": 425.58,
-      "endSec": 434.58,
-      "confidence": "detected"
+      "startSec": 413.75,
+      "endSec": 422.37,
+      "confidence": "interpolated"
     },
     {
       "number": 31,
-      "startSec": 434.58,
-      "endSec": 443.82,
-      "confidence": "detected"
+      "startSec": 422.37,
+      "endSec": 431.0,
+      "confidence": "interpolated"
     },
     {
       "number": 32,
-      "startSec": 443.82,
-      "endSec": 452.54,
+      "startSec": 431.0,
+      "endSec": 439.99,
       "confidence": "detected"
     },
     {
       "number": 33,
-      "startSec": 452.54,
-      "endSec": 461.62,
-      "confidence": "detected"
+      "startSec": 439.99,
+      "endSec": 448.97,
+      "confidence": "interpolated"
     },
     {
       "number": 34,
-      "startSec": 461.62,
-      "endSec": 470.66,
-      "confidence": "detected"
+      "startSec": 448.97,
+      "endSec": 457.96,
+      "confidence": "interpolated"
     },
     {
       "number": 35,
-      "startSec": 470.66,
-      "endSec": 480.08,
+      "startSec": 457.96,
+      "endSec": 465.14,
       "confidence": "detected"
     },
     {
       "number": 36,
-      "startSec": 480.08,
-      "endSec": 489.76,
+      "startSec": 465.14,
+      "endSec": 474.0,
       "confidence": "detected"
     },
     {
       "number": 37,
-      "startSec": 489.76,
-      "endSec": 500.1,
+      "startSec": 474.0,
+      "endSec": 483.56,
       "confidence": "detected"
     },
     {
       "number": 38,
-      "startSec": 500.1,
-      "endSec": 509.66,
+      "startSec": 483.56,
+      "endSec": 493.86,
       "confidence": "detected"
     },
     {
       "number": 39,
-      "startSec": 509.66,
-      "endSec": 519.52,
+      "startSec": 493.86,
+      "endSec": 505.23,
       "confidence": "detected"
     },
     {
       "number": 40,
-      "startSec": 519.52,
-      "endSec": 529.2,
+      "startSec": 505.23,
+      "endSec": 513.93,
       "confidence": "detected"
     },
     {
       "number": 41,
-      "startSec": 529.2,
-      "endSec": 539.7,
+      "startSec": 513.93,
+      "endSec": 523.25,
       "confidence": "detected"
     },
     {
       "number": 42,
-      "startSec": 539.7,
-      "endSec": 550.04,
+      "startSec": 523.25,
+      "endSec": 534.23,
       "confidence": "detected"
     },
     {
       "number": 43,
-      "startSec": 550.04,
-      "endSec": 560.48,
+      "startSec": 534.23,
+      "endSec": 543.59,
       "confidence": "detected"
     },
     {
       "number": 44,
-      "startSec": 560.48,
-      "endSec": 570.48,
+      "startSec": 543.59,
+      "endSec": 554.43,
       "confidence": "detected"
     },
     {
       "number": 45,
-      "startSec": 570.48,
-      "endSec": 580.64,
+      "startSec": 554.43,
+      "endSec": 564.33,
       "confidence": "detected"
     },
     {
       "number": 46,
-      "startSec": 580.64,
-      "endSec": 591.02,
+      "startSec": 564.33,
+      "endSec": 574.17,
       "confidence": "detected"
     },
     {
       "number": 47,
-      "startSec": 591.02,
-      "endSec": 601.6,
+      "startSec": 574.17,
+      "endSec": 584.77,
       "confidence": "detected"
     },
     {
       "number": 48,
-      "startSec": 601.6,
-      "endSec": 611.54,
+      "startSec": 584.77,
+      "endSec": 595.1,
       "confidence": "detected"
     },
     {
       "number": 49,
-      "startSec": 611.54,
-      "endSec": 621.3,
-      "confidence": "interpolated"
+      "startSec": 595.1,
+      "endSec": 606.3,
+      "confidence": "detected"
     },
     {
       "number": 50,
-      "startSec": 621.3,
-      "endSec": 630.62,
+      "startSec": 606.3,
+      "endSec": 615.6,
       "confidence": "detected"
     },
     {
       "number": 51,
-      "startSec": 630.62,
-      "endSec": 640.66,
+      "startSec": 615.6,
+      "endSec": 625.26,
       "confidence": "detected"
     },
     {
       "number": 52,
-      "startSec": 640.66,
-      "endSec": 651.2,
+      "startSec": 625.26,
+      "endSec": 634.58,
       "confidence": "detected"
     },
     {
       "number": 53,
-      "startSec": 651.2,
-      "endSec": 661.5,
+      "startSec": 634.58,
+      "endSec": 645.12,
       "confidence": "detected"
     },
     {
       "number": 54,
-      "startSec": 661.5,
-      "endSec": 671.74,
+      "startSec": 645.12,
+      "endSec": 655.84,
       "confidence": "detected"
     },
     {
       "number": 55,
-      "startSec": 671.74,
-      "endSec": 681.08,
+      "startSec": 655.84,
+      "endSec": 665.44,
       "confidence": "detected"
     },
     {
       "number": 56,
-      "startSec": 681.08,
-      "endSec": 690.64,
-      "confidence": "detected"
+      "startSec": 665.44,
+      "endSec": 675.03,
+      "confidence": "interpolated"
     },
     {
       "number": 57,
-      "startSec": 690.64,
-      "endSec": 699.9,
-      "confidence": "detected"
+      "startSec": 675.03,
+      "endSec": 684.63,
+      "confidence": "interpolated"
     },
     {
       "number": 58,
-      "startSec": 699.9,
-      "endSec": 709.66,
+      "startSec": 684.63,
+      "endSec": 693.95,
       "confidence": "detected"
     },
     {
       "number": 59,
-      "startSec": 709.66,
-      "endSec": 719.8,
+      "startSec": 693.95,
+      "endSec": 704.53,
       "confidence": "detected"
     },
     {
       "number": 60,
-      "startSec": 719.8,
-      "endSec": 730.24,
+      "startSec": 704.53,
+      "endSec": 713.43,
       "confidence": "detected"
     },
     {
       "number": 61,
-      "startSec": 730.24,
-      "endSec": 740.86,
+      "startSec": 713.43,
+      "endSec": 723.81,
       "confidence": "detected"
     },
     {
       "number": 62,
-      "startSec": 740.86,
-      "endSec": 751.4,
+      "startSec": 723.81,
+      "endSec": 734.07,
       "confidence": "detected"
     },
     {
       "number": 63,
-      "startSec": 751.4,
-      "endSec": 761.08,
+      "startSec": 734.07,
+      "endSec": 745.27,
       "confidence": "detected"
     },
     {
       "number": 64,
-      "startSec": 761.08,
-      "endSec": 770.08,
+      "startSec": 745.27,
+      "endSec": 754.93,
       "confidence": "detected"
     },
     {
       "number": 65,
-      "startSec": 770.08,
-      "endSec": 780.12,
-      "confidence": "detected"
+      "startSec": 754.93,
+      "endSec": 764.58,
+      "confidence": "interpolated"
     },
     {
       "number": 66,
-      "startSec": 780.12,
-      "endSec": 789.68,
-      "confidence": "detected"
+      "startSec": 764.58,
+      "endSec": 774.24,
+      "confidence": "interpolated"
     },
     {
       "number": 67,
-      "startSec": 789.68,
-      "endSec": 798.96,
+      "startSec": 774.24,
+      "endSec": 783.58,
       "confidence": "detected"
     },
     {
       "number": 68,
-      "startSec": 798.96,
-      "endSec": 809.04,
-      "confidence": "detected"
+      "startSec": 783.58,
+      "endSec": 792.92,
+      "confidence": "interpolated"
     },
     {
       "number": 69,
-      "startSec": 809.04,
-      "endSec": 820.02,
+      "startSec": 792.92,
+      "endSec": 802.9,
       "confidence": "detected"
     },
     {
       "number": 70,
-      "startSec": 820.02,
-      "endSec": 829.82,
+      "startSec": 802.9,
+      "endSec": 813.72,
       "confidence": "detected"
     },
     {
       "number": 71,
-      "startSec": 829.82,
-      "endSec": 839.78,
+      "startSec": 813.72,
+      "endSec": 824.56,
       "confidence": "detected"
     },
     {
       "number": 72,
-      "startSec": 839.78,
-      "endSec": 849.62,
+      "startSec": 824.56,
+      "endSec": 833.84,
       "confidence": "detected"
     },
     {
       "number": 73,
-      "startSec": 849.62,
-      "endSec": 859.4,
+      "startSec": 833.84,
+      "endSec": 843.56,
       "confidence": "detected"
     },
     {
       "number": 74,
-      "startSec": 859.4,
-      "endSec": 869.76,
+      "startSec": 843.56,
+      "endSec": 853.94,
       "confidence": "detected"
     },
     {
       "number": 75,
-      "startSec": 869.76,
-      "endSec": 879.66,
+      "startSec": 853.94,
+      "endSec": 863.45,
       "confidence": "detected"
     },
     {
       "number": 76,
-      "startSec": 879.66,
-      "endSec": 889.28,
+      "startSec": 863.45,
+      "endSec": 873.61,
       "confidence": "detected"
     },
     {
       "number": 77,
-      "startSec": 889.28,
-      "endSec": 899.1,
+      "startSec": 873.61,
+      "endSec": 883.77,
       "confidence": "detected"
     },
     {
       "number": 78,
-      "startSec": 899.1,
-      "endSec": 908.68,
+      "startSec": 883.77,
+      "endSec": 895.31,
       "confidence": "detected"
     },
     {
       "number": 79,
-      "startSec": 908.68,
-      "endSec": 918.68,
+      "startSec": 895.31,
+      "endSec": 902.85,
       "confidence": "detected"
     },
     {
       "number": 80,
-      "startSec": 918.68,
-      "endSec": 928.76,
+      "startSec": 902.85,
+      "endSec": 913.23,
       "confidence": "detected"
     },
     {
       "number": 81,
-      "startSec": 928.76,
-      "endSec": 938.46,
+      "startSec": 913.23,
+      "endSec": 922.61,
       "confidence": "detected"
     },
     {
       "number": 82,
-      "startSec": 938.46,
-      "endSec": 948.32,
+      "startSec": 922.61,
+      "endSec": 932.87,
       "confidence": "detected"
     },
     {
       "number": 83,
-      "startSec": 948.32,
-      "endSec": 958.22,
+      "startSec": 932.87,
+      "endSec": 942.47,
       "confidence": "detected"
     },
     {
       "number": 84,
-      "startSec": 958.22,
-      "endSec": 968.66,
+      "startSec": 942.47,
+      "endSec": 952.42,
       "confidence": "detected"
     },
     {
       "number": 85,
-      "startSec": 968.66,
-      "endSec": 979.08,
-      "confidence": "interpolated"
+      "startSec": 952.42,
+      "endSec": 962.68,
+      "confidence": "detected"
     },
     {
       "number": 86,
-      "startSec": 979.08,
-      "endSec": 988.14,
+      "startSec": 962.68,
+      "endSec": 972.92,
       "confidence": "detected"
     },
     {
       "number": 87,
-      "startSec": 988.14,
-      "endSec": 997.82,
+      "startSec": 972.92,
+      "endSec": 984.06,
       "confidence": "detected"
     },
     {
       "number": 88,
-      "startSec": 997.82,
-      "endSec": 1008.14,
+      "startSec": 984.06,
+      "endSec": 991.8,
       "confidence": "detected"
     },
     {
       "number": 89,
-      "startSec": 1008.14,
-      "endSec": 1018.12,
+      "startSec": 991.8,
+      "endSec": 1001.94,
       "confidence": "detected"
     },
     {
       "number": 90,
-      "startSec": 1018.12,
-      "endSec": 1027.42,
-      "confidence": "interpolated"
+      "startSec": 1001.94,
+      "endSec": 1012.16,
+      "confidence": "detected"
     },
     {
       "number": 91,
-      "startSec": 1027.42,
-      "endSec": 1037.14,
+      "startSec": 1012.16,
+      "endSec": 1022.16,
       "confidence": "detected"
     },
     {
       "number": 92,
-      "startSec": 1037.14,
-      "endSec": 1046.46,
+      "startSec": 1022.16,
+      "endSec": 1031.94,
       "confidence": "detected"
     },
     {
       "number": 93,
-      "startSec": 1046.46,
-      "endSec": 1056.4,
+      "startSec": 1031.94,
+      "endSec": 1040.59,
       "confidence": "detected"
     },
     {
       "number": 94,
-      "startSec": 1056.4,
-      "endSec": 1066.1,
+      "startSec": 1040.59,
+      "endSec": 1050.41,
       "confidence": "detected"
     },
     {
       "number": 95,
-      "startSec": 1066.1,
-      "endSec": 1076.2,
+      "startSec": 1050.41,
+      "endSec": 1060.61,
       "confidence": "detected"
     },
     {
       "number": 96,
-      "startSec": 1076.2,
-      "endSec": 1085.64,
+      "startSec": 1060.61,
+      "endSec": 1070.11,
       "confidence": "detected"
     },
     {
       "number": 97,
-      "startSec": 1085.64,
-      "endSec": 1095.32,
+      "startSec": 1070.11,
+      "endSec": 1080.91,
       "confidence": "detected"
     },
     {
       "number": 98,
-      "startSec": 1095.32,
-      "endSec": 1104.34,
+      "startSec": 1080.91,
+      "endSec": 1089.53,
       "confidence": "detected"
     },
     {
       "number": 99,
-      "startSec": 1104.34,
-      "endSec": 1113.82,
+      "startSec": 1089.53,
+      "endSec": 1098.65,
       "confidence": "detected"
     },
     {
       "number": 100,
-      "startSec": 1113.82,
-      "endSec": 1123.46,
+      "startSec": 1098.65,
+      "endSec": 1108.87,
       "confidence": "detected"
     },
     {
       "number": 101,
-      "startSec": 1123.46,
-      "endSec": 1133.58,
+      "startSec": 1108.87,
+      "endSec": 1117.99,
       "confidence": "detected"
     },
     {
       "number": 102,
-      "startSec": 1133.58,
-      "endSec": 1143.48,
+      "startSec": 1117.99,
+      "endSec": 1128.18,
       "confidence": "detected"
     },
     {
       "number": 103,
-      "startSec": 1143.48,
-      "endSec": 1154.12,
+      "startSec": 1128.18,
+      "endSec": 1137.84,
       "confidence": "detected"
     },
     {
       "number": 104,
-      "startSec": 1154.12,
-      "endSec": 1164.6,
+      "startSec": 1137.84,
+      "endSec": 1147.66,
       "confidence": "detected"
     },
     {
       "number": 105,
-      "startSec": 1164.6,
-      "endSec": 1174.5,
+      "startSec": 1147.66,
+      "endSec": 1158.84,
       "confidence": "detected"
     },
     {
       "number": 106,
-      "startSec": 1174.5,
-      "endSec": 1184.56,
+      "startSec": 1158.84,
+      "endSec": 1168.22,
       "confidence": "detected"
     },
     {
       "number": 107,
-      "startSec": 1184.56,
-      "endSec": 1194.14,
+      "startSec": 1168.22,
+      "endSec": 1180.42,
       "confidence": "detected"
     },
     {
       "number": 108,
-      "startSec": 1194.14,
-      "endSec": 1203.98,
+      "startSec": 1180.42,
+      "endSec": 1188.64,
       "confidence": "detected"
     },
     {
       "number": 109,
-      "startSec": 1203.98,
-      "endSec": 1213.78,
+      "startSec": 1188.64,
+      "endSec": 1197.8,
       "confidence": "detected"
     },
     {
       "number": 110,
-      "startSec": 1213.78,
-      "endSec": 1223.28,
+      "startSec": 1197.8,
+      "endSec": 1207.54,
       "confidence": "detected"
     },
     {
       "number": 111,
-      "startSec": 1223.28,
-      "endSec": 1232.96,
-      "confidence": "detected"
+      "startSec": 1207.54,
+      "endSec": 1217.29,
+      "confidence": "interpolated"
     },
     {
       "number": 112,
-      "startSec": 1232.96,
-      "endSec": 1242.46,
+      "startSec": 1217.29,
+      "endSec": 1227.71,
       "confidence": "detected"
     },
     {
       "number": 113,
-      "startSec": 1242.46,
-      "endSec": 1252.0,
+      "startSec": 1227.71,
+      "endSec": 1236.89,
       "confidence": "detected"
     },
     {
       "number": 114,
-      "startSec": 1252.0,
-      "endSec": 1262.12,
+      "startSec": 1236.89,
+      "endSec": 1246.39,
       "confidence": "detected"
     },
     {
       "number": 115,
-      "startSec": 1262.12,
-      "endSec": 1272.1,
+      "startSec": 1246.39,
+      "endSec": 1256.01,
       "confidence": "detected"
     },
     {
       "number": 116,
-      "startSec": 1272.1,
-      "endSec": 1282.16,
+      "startSec": 1256.01,
+      "endSec": 1266.63,
       "confidence": "detected"
     },
     {
       "number": 117,
-      "startSec": 1282.16,
-      "endSec": 1291.48,
+      "startSec": 1266.63,
+      "endSec": 1276.01,
       "confidence": "detected"
     },
     {
       "number": 118,
-      "startSec": 1291.48,
-      "endSec": 1301.14,
+      "startSec": 1276.01,
+      "endSec": 1287.51,
       "confidence": "detected"
     },
     {
       "number": 119,
-      "startSec": 1301.14,
-      "endSec": 1310.62,
+      "startSec": 1287.51,
+      "endSec": 1295.43,
       "confidence": "detected"
     },
     {
       "number": 120,
-      "startSec": 1310.62,
-      "endSec": 1320.24,
+      "startSec": 1295.43,
+      "endSec": 1305.04,
       "confidence": "detected"
     },
     {
       "number": 121,
-      "startSec": 1320.24,
-      "endSec": 1329.24,
+      "startSec": 1305.04,
+      "endSec": 1314.04,
       "confidence": "detected"
     },
     {
       "number": 122,
-      "startSec": 1329.24,
-      "endSec": 1338.3,
+      "startSec": 1314.04,
+      "endSec": 1323.44,
       "confidence": "detected"
     },
     {
       "number": 123,
-      "startSec": 1338.3,
-      "endSec": 1347.76,
+      "startSec": 1323.44,
+      "endSec": 1332.76,
       "confidence": "detected"
     },
     {
       "number": 124,
-      "startSec": 1347.76,
-      "endSec": 1357.52,
+      "startSec": 1332.76,
+      "endSec": 1342.4,
       "confidence": "detected"
     },
     {
       "number": 125,
-      "startSec": 1357.52,
-      "endSec": 1367.16,
+      "startSec": 1342.4,
+      "endSec": 1351.38,
       "confidence": "detected"
     },
     {
       "number": 126,
-      "startSec": 1367.16,
-      "endSec": 1377.76,
+      "startSec": 1351.38,
+      "endSec": 1361.58,
       "confidence": "detected"
     },
     {
       "number": 127,
-      "startSec": 1377.76,
-      "endSec": 1388.0,
+      "startSec": 1361.58,
+      "endSec": 1372.0,
       "confidence": "detected"
     },
     {
       "number": 128,
-      "startSec": 1388.0,
-      "endSec": 1398.34,
+      "startSec": 1372.0,
+      "endSec": 1382.0,
       "confidence": "detected"
     },
     {
       "number": 129,
-      "startSec": 1398.34,
-      "endSec": 1409.02,
+      "startSec": 1382.0,
+      "endSec": 1394.49,
       "confidence": "detected"
     },
     {
       "number": 130,
-      "startSec": 1409.02,
-      "endSec": 1419.98,
+      "startSec": 1394.49,
+      "endSec": 1402.67,
       "confidence": "detected"
     },
     {
       "number": 131,
-      "startSec": 1419.98,
-      "endSec": 1431.0,
+      "startSec": 1402.67,
+      "endSec": 1413.37,
       "confidence": "detected"
     },
     {
       "number": 132,
-      "startSec": 1431.0,
-      "endSec": 1440.46,
+      "startSec": 1413.37,
+      "endSec": 1424.73,
       "confidence": "detected"
     },
     {
       "number": 133,
-      "startSec": 1440.46,
-      "endSec": 1449.86,
+      "startSec": 1424.73,
+      "endSec": 1435.01,
       "confidence": "detected"
     },
     {
       "number": 134,
-      "startSec": 1449.86,
-      "endSec": 1459.2,
+      "startSec": 1435.01,
+      "endSec": 1443.95,
       "confidence": "detected"
     },
     {
       "number": 135,
-      "startSec": 1459.2,
-      "endSec": 1469.62,
+      "startSec": 1443.95,
+      "endSec": 1454.09,
       "confidence": "detected"
     },
     {
       "number": 136,
-      "startSec": 1469.62,
-      "endSec": 1479.42,
+      "startSec": 1454.09,
+      "endSec": 1463.55,
       "confidence": "detected"
     },
     {
       "number": 137,
-      "startSec": 1479.42,
-      "endSec": 1489.6,
+      "startSec": 1463.55,
+      "endSec": 1473.59,
       "confidence": "detected"
     },
     {
       "number": 138,
-      "startSec": 1489.6,
-      "endSec": 1499.92,
+      "startSec": 1473.59,
+      "endSec": 1483.36,
       "confidence": "detected"
     },
     {
       "number": 139,
-      "startSec": 1499.92,
-      "endSec": 1509.72,
+      "startSec": 1483.36,
+      "endSec": 1494.42,
       "confidence": "detected"
     },
     {
       "number": 140,
-      "startSec": 1509.72,
-      "endSec": 1519.78,
+      "startSec": 1494.42,
+      "endSec": 1504.0,
       "confidence": "detected"
     },
     {
       "number": 141,
-      "startSec": 1519.78,
-      "endSec": 1529.24,
+      "startSec": 1504.0,
+      "endSec": 1514.58,
       "confidence": "detected"
     },
     {
       "number": 142,
-      "startSec": 1529.24,
-      "endSec": 1539.22,
+      "startSec": 1514.58,
+      "endSec": 1523.9,
       "confidence": "detected"
     },
     {
       "number": 143,
-      "startSec": 1539.22,
-      "endSec": 1548.78,
+      "startSec": 1523.9,
+      "endSec": 1533.56,
       "confidence": "detected"
     },
     {
       "number": 144,
-      "startSec": 1548.78,
-      "endSec": 1558.04,
+      "startSec": 1533.56,
+      "endSec": 1542.78,
       "confidence": "detected"
     },
     {
       "number": 145,
-      "startSec": 1558.04,
-      "endSec": 1567.96,
+      "startSec": 1542.78,
+      "endSec": 1552.48,
       "confidence": "detected"
     },
     {
       "number": 146,
-      "startSec": 1567.96,
-      "endSec": 1577.76,
+      "startSec": 1552.48,
+      "endSec": 1562.24,
       "confidence": "detected"
     },
     {
       "number": 147,
-      "startSec": 1577.76,
-      "endSec": 1587.8,
-      "confidence": "detected"
+      "startSec": 1562.24,
+      "endSec": 1571.99,
+      "confidence": "interpolated"
     },
     {
       "number": 148,
-      "startSec": 1587.8,
-      "endSec": 1598.86,
+      "startSec": 1571.99,
+      "endSec": 1581.93,
       "confidence": "detected"
     },
     {
       "number": 149,
-      "startSec": 1598.86,
-      "endSec": 1609.36,
+      "startSec": 1581.93,
+      "endSec": 1592.19,
       "confidence": "detected"
     },
     {
       "number": 150,
-      "startSec": 1609.36,
-      "endSec": 1619.22,
+      "startSec": 1592.19,
+      "endSec": 1602.95,
       "confidence": "detected"
     },
     {
       "number": 151,
-      "startSec": 1619.22,
-      "endSec": 1628.92,
+      "startSec": 1602.95,
+      "endSec": 1613.45,
       "confidence": "detected"
     },
     {
       "number": 152,
-      "startSec": 1628.92,
-      "endSec": 1638.76,
+      "startSec": 1613.45,
+      "endSec": 1623.13,
       "confidence": "detected"
     },
     {
       "number": 153,
-      "startSec": 1638.76,
-      "endSec": 1649.2,
+      "startSec": 1623.13,
+      "endSec": 1632.77,
       "confidence": "detected"
     },
     {
       "number": 154,
-      "startSec": 1649.2,
-      "endSec": 1659.44,
+      "startSec": 1632.77,
+      "endSec": 1643.75,
       "confidence": "detected"
     },
     {
       "number": 155,
-      "startSec": 1659.44,
-      "endSec": 1669.72,
+      "startSec": 1643.75,
+      "endSec": 1653.72,
       "confidence": "detected"
     },
     {
       "number": 156,
-      "startSec": 1669.72,
-      "endSec": 1680.12,
-      "confidence": "detected"
+      "startSec": 1653.72,
+      "endSec": 1663.68,
+      "confidence": "interpolated"
     },
     {
       "number": 157,
-      "startSec": 1680.12,
-      "endSec": 1689.38,
+      "startSec": 1663.68,
+      "endSec": 1673.96,
       "confidence": "detected"
     },
     {
       "number": 158,
-      "startSec": 1689.38,
-      "endSec": 1699.7,
+      "startSec": 1673.96,
+      "endSec": 1685.56,
       "confidence": "detected"
     },
     {
       "number": 159,
-      "startSec": 1699.7,
-      "endSec": 1709.94,
+      "startSec": 1685.56,
+      "endSec": 1693.38,
       "confidence": "detected"
     },
     {
       "number": 160,
-      "startSec": 1709.94,
-      "endSec": 1719.82,
+      "startSec": 1693.38,
+      "endSec": 1704.64,
       "confidence": "detected"
     },
     {
       "number": 161,
-      "startSec": 1719.82,
-      "endSec": 1729.28,
+      "startSec": 1704.64,
+      "endSec": 1713.84,
       "confidence": "detected"
     },
     {
       "number": 162,
-      "startSec": 1729.28,
-      "endSec": 1739.04,
+      "startSec": 1713.84,
+      "endSec": 1723.82,
       "confidence": "detected"
     },
     {
       "number": 163,
-      "startSec": 1739.04,
-      "endSec": 1749.18,
+      "startSec": 1723.82,
+      "endSec": 1734.24,
       "confidence": "detected"
     },
     {
       "number": 164,
-      "startSec": 1749.18,
-      "endSec": 1759.34,
+      "startSec": 1734.24,
+      "endSec": 1742.88,
       "confidence": "detected"
     },
     {
       "number": 165,
-      "startSec": 1759.34,
-      "endSec": 1769.68,
+      "startSec": 1742.88,
+      "endSec": 1753.03,
       "confidence": "detected"
     },
     {
       "number": 166,
-      "startSec": 1769.68,
-      "endSec": 1779.86,
+      "startSec": 1753.03,
+      "endSec": 1763.17,
       "confidence": "detected"
     },
     {
       "number": 167,
-      "startSec": 1779.86,
-      "endSec": 1790.06,
+      "startSec": 1763.17,
+      "endSec": 1773.75,
       "confidence": "detected"
     },
     {
       "number": 168,
-      "startSec": 1790.06,
-      "endSec": 1800.2,
+      "startSec": 1773.75,
+      "endSec": 1783.79,
       "confidence": "detected"
     },
     {
       "number": 169,
-      "startSec": 1800.2,
-      "endSec": 1810.06,
+      "startSec": 1783.79,
+      "endSec": 1793.97,
       "confidence": "detected"
     },
     {
       "number": 170,
-      "startSec": 1810.06,
-      "endSec": 1819.3,
+      "startSec": 1793.97,
+      "endSec": 1804.21,
       "confidence": "detected"
     },
     {
       "number": 171,
-      "startSec": 1819.3,
-      "endSec": 1829.4,
+      "startSec": 1804.21,
+      "endSec": 1813.89,
       "confidence": "detected"
     },
     {
       "number": 172,
-      "startSec": 1829.4,
-      "endSec": 1839.72,
+      "startSec": 1813.89,
+      "endSec": 1823.25,
       "confidence": "detected"
     },
     {
       "number": 173,
-      "startSec": 1839.72,
-      "endSec": 1849.8,
+      "startSec": 1823.25,
+      "endSec": 1834.03,
       "confidence": "detected"
     },
     {
       "number": 174,
-      "startSec": 1849.8,
-      "endSec": 1860.04,
+      "startSec": 1834.03,
+      "endSec": 1843.48,
       "confidence": "detected"
     },
     {
       "number": 175,
-      "startSec": 1860.04,
-      "endSec": 1870.58,
+      "startSec": 1843.48,
+      "endSec": 1854.22,
       "confidence": "detected"
     },
     {
       "number": 176,
-      "startSec": 1870.58,
-      "endSec": 1880.36,
+      "startSec": 1854.22,
+      "endSec": 1864.68,
       "confidence": "detected"
     },
     {
       "number": 177,
-      "startSec": 1880.36,
-      "endSec": 1890.14,
+      "startSec": 1864.68,
+      "endSec": 1874.3,
       "confidence": "detected"
     },
     {
       "number": 178,
-      "startSec": 1890.14,
-      "endSec": 1900.58,
+      "startSec": 1874.3,
+      "endSec": 1884.1,
       "confidence": "detected"
     },
     {
       "number": 179,
-      "startSec": 1900.58,
-      "endSec": 1910.58,
+      "startSec": 1884.1,
+      "endSec": 1895.06,
       "confidence": "detected"
     },
     {
       "number": 180,
-      "startSec": 1910.58,
-      "endSec": 1920.26,
+      "startSec": 1895.06,
+      "endSec": 1904.64,
       "confidence": "detected"
     },
     {
       "number": 181,
-      "startSec": 1920.26,
-      "endSec": 1930.0,
+      "startSec": 1904.64,
+      "endSec": 1914.34,
       "confidence": "detected"
     },
     {
       "number": 182,
-      "startSec": 1930.0,
-      "endSec": 1935.12,
-      "confidence": "interpolated"
+      "startSec": 1914.34,
+      "endSec": 1926.94,
+      "confidence": "detected"
     }
   ]
 }

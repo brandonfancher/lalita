@@ -1,1 +1,2068 @@
-{"id":"165","kind":"shloka","number":165,"title":"Shloka 165","subtitle":"Three names in dha, three in vi: from grain in the store to the turning of the world","lines":[{"deva":"धर्माधारा धनाध्यक्षा धनधान्यविवर्धिनी","iast":"dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī","tokens":[{"id":"l0-t0","deva":"धर्माधारा","iast":"dharmādhārā","namaIndices":[884],"aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"र्मा","iast":"rmā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]},{"id":"l0-t1","deva":"धनाध्यक्षा","iast":"dhanādhyakṣā","namaIndices":[885],"aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ध्य","iast":"dhya","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"य","role":"consonant","iast":"ya","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"क्षा","iast":"kṣā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true}]},{"id":"l0-t2","deva":"धनधान्यविवर्धिनी","iast":"dhanadhānyavivardhinī","namaIndices":[886],"aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"न","iast":"na","parts":[{"char":"न","role":"consonant","iast":"na","name":"na","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्य","iast":"nya","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"य","role":"consonant","iast":"ya","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"व","iast":"va","parts":[{"char":"व","role":"consonant","iast":"va","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"र्धि","iast":"rdhi","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"नी","iast":"nī","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]}]},{"deva":"विप्रप्रिया विप्ररूपा विश्वभ्रमणकारिणी","iast":"viprapriyā viprarūpā viśvabhramaṇakāriṇī","tokens":[{"id":"l1-t0","deva":"विप्रप्रिया","iast":"viprapriyā","namaIndices":[887],"aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"प्रि","iast":"pri","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"या","iast":"yā","parts":[{"char":"य","role":"consonant","iast":"y","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]},{"id":"l1-t1","deva":"विप्ररूपा","iast":"viprarūpā","namaIndices":[888],"aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"रू","iast":"rū","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"पा","iast":"pā","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}]},{"id":"l1-t2","deva":"विश्वभ्रमणकारिणी","iast":"viśvabhramaṇakāriṇī","namaIndices":[889],"aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"श्व","iast":"śva","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"va","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"भ्र","iast":"bhra","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"म","iast":"ma","parts":[{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ण","iast":"ṇa","parts":[{"char":"ण","role":"consonant","iast":"ṇa","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रि","iast":"ri","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"णी","iast":"ṇī","parts":[{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}]}]}],"namas":[{"index":884,"deva":"धर्माधारा","iast":"dharmādhārā","namavaliDeva":"धर्माधारायै","namavaliIast":"dharmādhārāyai","gloss":"Support Of Dharma","translation":"Right order does not hold itself up; it rests on her, and would give way the moment she withdrew.","aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"र्मा","iast":"rmā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"म","role":"consonant","iast":"m","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रा","iast":"rā","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"धर्माधारा","stemIast":"dharmādhārā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"धर्माधारा","iast":"dharmādhārā","type":"tatpuruṣa","gloss":"the support of righteousness","vigraha":"dharmasya ādhāraḥ","children":[{"text":"धर्म","iast":"dharma","gloss":"law, right order, duty, righteousness"},{"text":"आधार","iast":"ādhāra","gloss":"support, prop, substratum"}]}},{"index":885,"deva":"धनाध्यक्षा","iast":"dhanādhyakṣā","namavaliDeva":"धनाध्यक्षायै","namavaliIast":"dhanādhyakṣāyai","gloss":"Overseer Of Wealth","translation":"Riches fall under her supervision, dispensed and withheld at her discretion rather than simply earned.","aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"ना","iast":"nā","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"ध्य","iast":"dhya","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"य","role":"consonant","iast":"ya","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"क्षा","iast":"kṣā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ष","role":"consonant","iast":"ṣ","name":"ṣa","articulation":"retroflex","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":true}],"morphology":{"pos":"noun","stem":"धनाध्यक्षा","stemIast":"dhanādhyakṣā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"धनाध्यक्षा","iast":"dhanādhyakṣā","type":"tatpuruṣa","gloss":"the superintendent of wealth","vigraha":"dhanasya adhyakṣā","children":[{"text":"धन","iast":"dhana","gloss":"wealth, riches, property"},{"text":"अध्यक्ष","iast":"adhyakṣa","gloss":"superintendent, overseer, presiding one"}]}},{"index":886,"deva":"धनधान्यविवर्धिनी","iast":"dhanadhānyavivardhinī","namavaliDeva":"धनधान्यविवर्धिन्यै","namavaliIast":"dhanadhānyavivardhinyai","gloss":"Increaser Of Wealth And Grain","translation":"Money in the box and grain in the store both swell under her hand, which is the plain prosperity householders ask her for.","aksaras":[{"text":"ध","iast":"dha","parts":[{"char":"ध","role":"consonant","iast":"dha","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true,"inherentVowel":true}],"isConjunct":false},{"text":"न","iast":"na","parts":[{"char":"न","role":"consonant","iast":"na","name":"na","articulation":"dental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"धा","iast":"dhā","parts":[{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"न्य","iast":"nya","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"य","role":"consonant","iast":"ya","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"व","iast":"va","parts":[{"char":"व","role":"consonant","iast":"va","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"र्धि","iast":"rdhi","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"ध","role":"consonant","iast":"dh","name":"dha","articulation":"dental","voicing":"voiced","aspirated":true},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"नी","iast":"nī","parts":[{"char":"न","role":"consonant","iast":"n","name":"na","articulation":"dental","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"धनधान्यविवर्धिनी","stemIast":"dhanadhānyavivardhinī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem"},"compound":{"text":"धनधान्यविवर्धिनी","iast":"dhanadhānyavivardhinī","type":"tatpuruṣa","gloss":"she who makes wealth and grain grow","vigraha":"dhanadhānyaṃ vivardhayati iti dhanadhānyavivardhinī","children":[{"text":"धनधान्य","iast":"dhanadhānya","gloss":"wealth and grain","type":"dvandva","vigraha":"dhanaṃ ca dhānyaṃ ca","children":[{"text":"धन","iast":"dhana","gloss":"wealth, riches"},{"text":"धान्य","iast":"dhānya","gloss":"grain, corn"}]},{"text":"विवर्धिनी","iast":"vivardhinī","gloss":"she who increases, augments, makes grow"}]}},{"index":887,"deva":"विप्रप्रिया","iast":"viprapriyā","namavaliDeva":"विप्रप्रियायै","namavaliIast":"viprapriyāyai","gloss":"To Whom Brahmins Are Dear","translation":"The inspired and the learned stand close to her, and she favours those who keep the sacred word in use.","aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"प्रि","iast":"pri","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":true},{"text":"या","iast":"yā","parts":[{"char":"य","role":"consonant","iast":"y","name":"ya","articulation":"palatal","voicing":"voiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"विप्रप्रिया","stemIast":"viprapriyā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"विप्रप्रिया","iast":"viprapriyā","type":"bahuvrīhi","gloss":"to whom brahmins are dear","vigraha":"viprāḥ priyāḥ yasyāḥ sā","children":[{"text":"विप्र","iast":"vipra","gloss":"inwardly stirred, inspired one, sage, brahmin"},{"text":"प्रिय","iast":"priya","gloss":"dear, beloved, pleasing"}]}},{"index":888,"deva":"विप्ररूपा","iast":"viprarūpā","namavaliDeva":"विप्ररूपायै","namavaliIast":"viprarūpāyai","gloss":"Whose Form Is The Brahmin","translation":"She appears as the brahmin himself, so respect paid to him is not a substitute for worship of her but the thing itself.","aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"प्र","iast":"pra","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"रू","iast":"rū","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ू","role":"vowel-sign","iast":"ū","name":"ū-kāra","articulation":"labial","voicing":"voiced"}],"isConjunct":false},{"text":"पा","iast":"pā","parts":[{"char":"प","role":"consonant","iast":"p","name":"pa","articulation":"labial","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"adjective","stem":"विप्ररूपा","stemIast":"viprarūpā","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ā-stem"},"compound":{"text":"विप्ररूपा","iast":"viprarūpā","type":"bahuvrīhi","gloss":"having the brahmin for her form","vigraha":"vipraḥ eva rūpaṃ yasyāḥ sā","children":[{"text":"विप्र","iast":"vipra","gloss":"inspired one, sage, brahmin"},{"text":"रूप","iast":"rūpa","gloss":"form, shape, appearance"}]}},{"index":889,"deva":"विश्वभ्रमणकारिणी","iast":"viśvabhramaṇakāriṇī","namavaliDeva":"विश्वभ्रमणकारिण्यै","namavaliIast":"viśvabhramaṇakāriṇyai","gloss":"She Who Makes The Universe Revolve","translation":"Planets, seasons and lifetimes all come round again, and the turning happens because she keeps causing it.","aksaras":[{"text":"वि","iast":"vi","parts":[{"char":"व","role":"consonant","iast":"v","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"श्व","iast":"śva","parts":[{"char":"श","role":"consonant","iast":"ś","name":"śa","articulation":"palatal","voicing":"unvoiced","aspirated":false},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"व","role":"consonant","iast":"va","name":"va","articulation":"labiodental","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"भ्र","iast":"bhra","parts":[{"char":"भ","role":"consonant","iast":"bh","name":"bha","articulation":"labial","voicing":"voiced","aspirated":true},{"char":"्","role":"virama","iast":"","name":"virāma (cancels the inherent a)"},{"char":"र","role":"consonant","iast":"ra","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":true},{"text":"म","iast":"ma","parts":[{"char":"म","role":"consonant","iast":"ma","name":"ma","articulation":"labial","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"ण","iast":"ṇa","parts":[{"char":"ण","role":"consonant","iast":"ṇa","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false,"inherentVowel":true}],"isConjunct":false},{"text":"का","iast":"kā","parts":[{"char":"क","role":"consonant","iast":"k","name":"ka","articulation":"guttural","voicing":"unvoiced","aspirated":false},{"char":"ा","role":"vowel-sign","iast":"ā","name":"ā-kāra","articulation":"guttural","voicing":"voiced"}],"isConjunct":false},{"text":"रि","iast":"ri","parts":[{"char":"र","role":"consonant","iast":"r","name":"ra","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ि","role":"vowel-sign","iast":"i","name":"i-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false},{"text":"णी","iast":"ṇī","parts":[{"char":"ण","role":"consonant","iast":"ṇ","name":"ṇa","articulation":"retroflex","voicing":"voiced","aspirated":false},{"char":"ी","role":"vowel-sign","iast":"ī","name":"ī-kāra","articulation":"palatal","voicing":"voiced"}],"isConjunct":false}],"morphology":{"pos":"noun","stem":"विश्वभ्रमणकारिणी","stemIast":"viśvabhramaṇakāriṇī","gender":"feminine","case":"nominative","caseNumber":1,"number":"singular","declension":"ī-stem"},"compound":{"text":"विश्वभ्रमणकारिणी","iast":"viśvabhramaṇakāriṇī","type":"tatpuruṣa","gloss":"she who causes the whirling of the universe","vigraha":"viśvasya bhramaṇaṃ karoti iti viśvabhramaṇakāriṇī","children":[{"text":"विश्वभ्रमण","iast":"viśvabhramaṇa","gloss":"the revolving of the universe","type":"tatpuruṣa","vigraha":"viśvasya bhramaṇam","children":[{"text":"विश्व","iast":"viśva","gloss":"all, the whole, the universe"},{"text":"भ्रमण","iast":"bhramaṇa","gloss":"wandering about, revolving, turning round"}]},{"text":"कारिणी","iast":"kāriṇī","gloss":"she who does, makes or causes"}]}}],"namaRange":[884,889],"chant":{"startSec":1759.34,"endSec":1769.68,"confidence":"detected"},"commentary":{"meaning":"The verse falls into two halves of three names each, and the halves are marked by their opening sound as clearly as by their subject. The first three all begin with dha and all concern holding and increase: she is what dharma rests on, she is the officer in charge of wealth, and she is the one who makes money and grain multiply. That is the ordinary business of a household religion, stated without embarrassment. The second three begin with vi. Two of them concern the brahmin, first as the object of her favour and then as her own form, and the third pulls the frame open with no transition at all: she is the one who makes the universe revolve. Nothing in the verse marks the jump from the grain in the storehouse to the rotation of everything, and that refusal to grade its subjects is characteristic. Two verses earlier the hymn named her the seat of the three worldly aims; here it takes two of them — right order and material means — and says concretely what her holding them up looks like.","history":"Dharmādhārā is a play on a single root that no translation preserves. Dharma is a noun of action from √dhṛ, to hold or uphold, and its oldest force is not \"religion\" or even \"duty\" but that which keeps things in place. Ādhāra is a noun from the same root with the prefix ā, and it means the support, the thing something rests on. The name therefore says that the upholding rests on her: she is the holder of what holds. The construction is a favourite in Sanskrit religious language because it makes an argument by morphology. Dharma is not self-supporting, however absolute its claims sound; take away what carries it and it falls, and what carries it is a person rather than a principle.\n\nAdhyakṣa, in the second name, is a piece of administrative vocabulary rather than a religious title. It is adhi plus akṣa, eye — the one whose eye is over something — and it is the standard word for a government superintendent. The classical treatise on statecraft devotes an entire long book to the adhyakṣas, superintendents of the treasury, of mines, of weights, of the ports, of the granaries, each with a defined remit. To call her dhanādhyakṣā is to appoint her to an office, and it is an office that already had a well-known holder: Kubera, lord of wealth, whose whole identity is that he keeps the treasury. The name transfers the post without argument, which is how this hymn generally handles other deities.\n\nDhana and dhānya, money and grain, are an old formulaic pair, and they are what the ordinary blessing has always asked for. The verb is vi-√vṛdh, to cause to grow. There is nothing figurative here, and attempts to read it as spiritual increase strain the words; the hymn is willing to say plainly that people want a full box and a full barn and that she is who they ask. What keeps it from being merely transactional is the placement. The name comes immediately after dharmādhārā, so the increase is offered inside a frame in which right order is what her support is chiefly for.\n\nVipra is a more interesting word than \"brahmin\" suggests. The dictionaries derive it from √vip, to tremble or quiver, and the oldest sense is the inspired one — the poet or seer who shakes under the pressure of vision. By the period of this hymn it has become a plain synonym for brāhmaṇa, and the two names here have to be read at both levels. At the level of the etymology, viprapriyā says that the inspired are dear to her and viprarūpā that inspiration is a shape she takes, which is a claim about a function. At the level of ordinary usage, they say that brahmins are dear to her and that the brahmin is her form, which is a claim about a class of persons. The tradition has generally preferred to hear the first and has never given up the second, and the older warrant for the second is the Vedic image of the cosmic person out of whose mouth the brahmin came — a verse used for two millennia to make a social arrangement look like a description of the universe. A modern reader is entitled to find the second claim harder than the first; what is not defensible is pretending that only the first is present in the text.\n\nThese names also have a history of use. As with the sacrifice names of the previous verse, they helped this hymn travel. A Śākta text that honours the brahmin and calls him the goddess's own form could be adopted by orthodox households in the South that would have refused the tantric literature standing behind it, and the adoption is a large part of why the Lalitā Sahasranāma is the most widely recited Śākta text in India while its parent tradition remains comparatively specialised.\n\nThe last name changes everything about the scale. Bhramaṇa is from √bhram, and the root covers wandering, whirling, and going astray in the sense of error — bhrama is both a spinning motion and a delusion. The name says she causes the universe to whirl, and the root leaves it deliberately unclear whether the whirling is the majestic revolution of the spheres or the confusion of creatures who cannot stand still. The Gītā, describing the same thing, adds the machine: beings are mounted on a contrivance and spun by it. Placed at the end of a verse about grain and wealth, the name reminds the person asking for prosperity what kind of motion the prosperity is embedded in.","practice":"The first line is a run of dh, and it is denser than it looks on the page: dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī gives seven syllables beginning with the aspirated dental in the space of sixteen. Dh is one sound, not d followed by h — a dental stop released with a puff of voiced breath, the tongue tip against the back of the upper teeth throughout. English speakers who substitute a plain d lose the line's whole texture, and those who over-aspirate turn it into panting.\n\nDhanādhyakṣā adds two difficulties to that. The dhy in the middle is the aspirated dental plus the palatal glide, run together; and the kṣ is the velar stop plus the retroflex sibilant. Neither cluster should be broken by a vowel. Note the internal sandhi: dhana plus adhyakṣā, two short a's meeting to give a single long ā, and the same join produces dharmādhārā from dharma and ādhāra.\n\nThe two dhana- names sit next to each other and are the likeliest place in the verse to lose your footing, because dhanādhyakṣā and dhanadhānya begin identically. Keep them apart by their second element: eye over the wealth, then growth of the wealth.\n\nIn the second line the initial v is the Sanskrit labiodental, closer to English w after a consonant and to v at the start of a word; vipra and viśva both take it in the initial position. Viprapriyā and viprarūpā are another near-identical pair, differing only in their fifth syllable, and both contain the pra cluster with the light tapped r. Viśva begins with ś, the palatal sibilant, made with the tongue nearer the hard palate than English sh, and viśvabhramaṇakāriṇī then gives bhr — the voiced aspirated labial plus r — which is the hardest single cluster in the verse. Say bha with full voicing, then let the r follow as its own articulation, and only then speed it up.\n\nTwo retroflex ṇ's appear in that last name, in bhramaṇa and in kāriṇī, and both are there by the same rule that produced them in the verses just before: an r earlier in the word pulls a following n back.\n\nThe metre is regular, eight syllables to the quarter, with the break after dhanādhyakṣā. The verse rewards a steady tempo more than most, because both of its halves are lists of near-identical shapes and any hurry in one of them will swallow a name.\n\nFor archanā: dharmādhārāyai namaḥ, dhanādhyakṣāyai namaḥ, dhanadhānyavivardhinyai namaḥ, viprapriyāyai namaḥ, viprarūpāyai namaḥ, viśvabhramaṇakāriṇyai namaḥ. Four ā-stems in -āyai and two ī-stems contracting to -inyai and -iṇyai. The two ī-stems are also the two longest names, which means the two hardest endings arrive when the breath is shortest; plan for it.\n\nWhat the verse asks is that you make the request without apology and without stopping there. It is entirely proper, on this hymn's account, to ask her for money and grain. It is the last name that keeps the asking honest, by placing the storehouse inside something that is turning and will not stop turning because you have had a good year.","crossReferences":[{"source":"Śrī Sūkta, second verse (Ṛgveda khila)","deva":"तां म आवह जातवेदो लक्ष्मीमनपगामिनीम् । यस्यां हिरण्यं विन्देयं गामश्वं पुरुषानहम् ॥","iast":"tāṃ ma āvaha jātavedo lakṣmīm anapagāminīm | yasyāṃ hiraṇyaṃ vindeyaṃ gām aśvaṃ puruṣān aham ||","translation":"Bring her to me, Jātavedas — Lakṣmī, who does not go away — in whom I may find gold, cattle, horses and people.","relevance":"The oldest liturgical form of the request that dhanādhyakṣā and dhanadhānyavivardhinī answer, and it is as unembarrassed as they are: gold, livestock, dependants, named without a figurative gloss. The epithet that matters is anapagāminī, she who does not depart, since the anxiety behind the request is not poverty but reversal. The Śrī Sūkta is a khila appended to the Ṛgveda and its verses are numbered differently in different printings, so it is cited here by position rather than by a fixed number."},{"source":"Ṛgveda 10.90.12 (Puruṣa Sūkta)","deva":"ब्राह्मणोऽस्य मुखमासीद्बाहू राजन्यः कृतः । ऊरू तदस्य यद्वैश्यः पद्भ्यां शूद्रो अजायत ॥","iast":"brāhmaṇo 'sya mukham āsīd bāhū rājanyaḥ kṛtaḥ | ūrū tad asya yad vaiśyaḥ padbhyāṃ śūdro ajāyata ||","translation":"The brahmin was his mouth; the arms were made the warrior; his thighs were the commoner; from the feet the servant was born.","relevance":"The textual warrant behind viprarūpā, and the reason the name has the force it has: the identification of a social class with a part of the divine body is not this hymn's invention but its inheritance. Worth reading beside 10.90.16, quoted in the previous verse of this commentary, since the two come from the same hymn and show it doing two very different kinds of work — collapsing the sacrifice into itself, and fixing a hierarchy in place."},{"source":"Bhagavadgītā 18.61","deva":"ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥","iast":"īśvaraḥ sarvabhūtānāṃ hṛddeśe 'rjuna tiṣṭhati | bhrāmayan sarvabhūtāni yantrārūḍhāni māyayā ||","translation":"The lord stands in the heart-region of all beings, Arjuna, spinning all beings round by his power of appearance, as though they were mounted on a machine.","relevance":"The same root, √bhram, in the same causative sense, and the closest thing in the older literature to viśvabhramaṇakāriṇī. Two details are worth carrying back to the name. The spinner is located in the heart rather than above the sky, and the beings are described as mounted on a yantra — a contrivance, the same word this tradition uses for the diagram of worship."}]},"references":[{"kind":"book","title":"King, Governance, and Law in Ancient India: Kauṭilya's Arthaśāstra","author":"tr. Patrick Olivelle (Oxford University Press, 2013)","note":"The current standard translation, with the long book on the superintendents that gives dhanādhyakṣā its flavour. Reading a few pages of it makes clear that the name is a job title from a functioning bureaucracy, not a poetic abstraction."},{"kind":"book","title":"The Rigveda: The Earliest Religious Poetry of India","author":"tr. Stephanie W. Jamison and Joel P. Brereton (Oxford University Press, 3 vols., 2014)","note":"The best English Ṛgveda, with introductions to each hymn that say what is uncertain. Use it for the Puruṣa hymn quoted above; note that it does not include the khila hymns, so the Śrī Sūkta has to be sought elsewhere."},{"kind":"book","title":"Hindu Goddesses: Visions of the Divine Feminine in the Hindu Religious Tradition","author":"David Kinsley (University of California Press, 1986)","note":"The chapter on Śrī-Lakṣmī traces how the goddess of prosperity acquired her attributes and how thoroughly wealth and auspiciousness were fused in her. Useful background for why a hymn to Lalitā can absorb the office of the lord of wealth in a single word."},{"kind":"book","title":"History of Dharmaśāstra","author":"P. V. Kane (Bhandarkar Oriental Research Institute, 5 vols., 1930–1962)","note":"Not a book to read through, but the place to look up what dharma and the brahmin's status actually meant in the legal literature, with the sources quoted. It will complicate any tidy reading of dharmādhārā and viprarūpā, which is the reason to consult it."}]}
+{
+  "id": "165",
+  "kind": "shloka",
+  "number": 165,
+  "title": "Shloka 165",
+  "subtitle": "Three names in dha, three in vi: from grain in the store to the turning of the world",
+  "lines": [
+    {
+      "deva": "धर्माधारा धनाध्यक्षा धनधान्यविवर्धिनी",
+      "iast": "dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī",
+      "tokens": [
+        {
+          "id": "l0-t0",
+          "deva": "धर्माधारा",
+          "iast": "dharmādhārā",
+          "namaIndices": [
+            884
+          ],
+          "aksaras": [
+            {
+              "text": "ध",
+              "iast": "dha",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dha",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "र्मा",
+              "iast": "rmā",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "m",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "धा",
+              "iast": "dhā",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "रा",
+              "iast": "rā",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l0-t1",
+          "deva": "धनाध्यक्षा",
+          "iast": "dhanādhyakṣā",
+          "namaIndices": [
+            885
+          ],
+          "aksaras": [
+            {
+              "text": "ध",
+              "iast": "dha",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dha",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ना",
+              "iast": "nā",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ध्य",
+              "iast": "dhya",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "य",
+                  "role": "consonant",
+                  "iast": "ya",
+                  "name": "ya",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "क्षा",
+              "iast": "kṣā",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ष",
+                  "role": "consonant",
+                  "iast": "ṣ",
+                  "name": "ṣa",
+                  "articulation": "retroflex",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            }
+          ]
+        },
+        {
+          "id": "l0-t2",
+          "deva": "धनधान्यविवर्धिनी",
+          "iast": "dhanadhānyavivardhinī",
+          "namaIndices": [
+            886
+          ],
+          "aksaras": [
+            {
+              "text": "ध",
+              "iast": "dha",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dha",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न",
+              "iast": "na",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "na",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "धा",
+              "iast": "dhā",
+              "parts": [
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "न्य",
+              "iast": "nya",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "य",
+                  "role": "consonant",
+                  "iast": "ya",
+                  "name": "ya",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "व",
+              "iast": "va",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "va",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "र्धि",
+              "iast": "rdhi",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "ध",
+                  "role": "consonant",
+                  "iast": "dh",
+                  "name": "dha",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "नी",
+              "iast": "nī",
+              "parts": [
+                {
+                  "char": "न",
+                  "role": "consonant",
+                  "iast": "n",
+                  "name": "na",
+                  "articulation": "dental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deva": "विप्रप्रिया विप्ररूपा विश्वभ्रमणकारिणी",
+      "iast": "viprapriyā viprarūpā viśvabhramaṇakāriṇī",
+      "tokens": [
+        {
+          "id": "l1-t0",
+          "deva": "विप्रप्रिया",
+          "iast": "viprapriyā",
+          "namaIndices": [
+            887
+          ],
+          "aksaras": [
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "प्र",
+              "iast": "pra",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "प्रि",
+              "iast": "pri",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "या",
+              "iast": "yā",
+              "parts": [
+                {
+                  "char": "य",
+                  "role": "consonant",
+                  "iast": "y",
+                  "name": "ya",
+                  "articulation": "palatal",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l1-t1",
+          "deva": "विप्ररूपा",
+          "iast": "viprarūpā",
+          "namaIndices": [
+            888
+          ],
+          "aksaras": [
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "प्र",
+              "iast": "pra",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "रू",
+              "iast": "rū",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ू",
+                  "role": "vowel-sign",
+                  "iast": "ū",
+                  "name": "ū-kāra",
+                  "articulation": "labial",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "पा",
+              "iast": "pā",
+              "parts": [
+                {
+                  "char": "प",
+                  "role": "consonant",
+                  "iast": "p",
+                  "name": "pa",
+                  "articulation": "labial",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        },
+        {
+          "id": "l1-t2",
+          "deva": "विश्वभ्रमणकारिणी",
+          "iast": "viśvabhramaṇakāriṇī",
+          "namaIndices": [
+            889
+          ],
+          "aksaras": [
+            {
+              "text": "वि",
+              "iast": "vi",
+              "parts": [
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "v",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "श्व",
+              "iast": "śva",
+              "parts": [
+                {
+                  "char": "श",
+                  "role": "consonant",
+                  "iast": "ś",
+                  "name": "śa",
+                  "articulation": "palatal",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "व",
+                  "role": "consonant",
+                  "iast": "va",
+                  "name": "va",
+                  "articulation": "labiodental",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "भ्र",
+              "iast": "bhra",
+              "parts": [
+                {
+                  "char": "भ",
+                  "role": "consonant",
+                  "iast": "bh",
+                  "name": "bha",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": true
+                },
+                {
+                  "char": "्",
+                  "role": "virama",
+                  "iast": "",
+                  "name": "virāma (cancels the inherent a)"
+                },
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "ra",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": true
+            },
+            {
+              "text": "म",
+              "iast": "ma",
+              "parts": [
+                {
+                  "char": "म",
+                  "role": "consonant",
+                  "iast": "ma",
+                  "name": "ma",
+                  "articulation": "labial",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "ण",
+              "iast": "ṇa",
+              "parts": [
+                {
+                  "char": "ण",
+                  "role": "consonant",
+                  "iast": "ṇa",
+                  "name": "ṇa",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false,
+                  "inherentVowel": true
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "का",
+              "iast": "kā",
+              "parts": [
+                {
+                  "char": "क",
+                  "role": "consonant",
+                  "iast": "k",
+                  "name": "ka",
+                  "articulation": "guttural",
+                  "voicing": "unvoiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ा",
+                  "role": "vowel-sign",
+                  "iast": "ā",
+                  "name": "ā-kāra",
+                  "articulation": "guttural",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "रि",
+              "iast": "ri",
+              "parts": [
+                {
+                  "char": "र",
+                  "role": "consonant",
+                  "iast": "r",
+                  "name": "ra",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ि",
+                  "role": "vowel-sign",
+                  "iast": "i",
+                  "name": "i-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            },
+            {
+              "text": "णी",
+              "iast": "ṇī",
+              "parts": [
+                {
+                  "char": "ण",
+                  "role": "consonant",
+                  "iast": "ṇ",
+                  "name": "ṇa",
+                  "articulation": "retroflex",
+                  "voicing": "voiced",
+                  "aspirated": false
+                },
+                {
+                  "char": "ी",
+                  "role": "vowel-sign",
+                  "iast": "ī",
+                  "name": "ī-kāra",
+                  "articulation": "palatal",
+                  "voicing": "voiced"
+                }
+              ],
+              "isConjunct": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namas": [
+    {
+      "index": 884,
+      "deva": "धर्माधारा",
+      "iast": "dharmādhārā",
+      "namavaliDeva": "धर्माधारायै",
+      "namavaliIast": "dharmādhārāyai",
+      "gloss": "Support Of Dharma",
+      "translation": "Right order does not hold itself up; it rests on her, and would give way the moment she withdrew.",
+      "aksaras": [
+        {
+          "text": "ध",
+          "iast": "dha",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dha",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "र्मा",
+          "iast": "rmā",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "m",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "धा",
+          "iast": "dhā",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "रा",
+          "iast": "rā",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "धर्माधारा",
+        "stemIast": "dharmādhārā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "धर्माधारा",
+        "iast": "dharmādhārā",
+        "type": "tatpuruṣa",
+        "gloss": "the support of righteousness",
+        "vigraha": "dharmasya ādhāraḥ",
+        "children": [
+          {
+            "text": "धर्म",
+            "iast": "dharma",
+            "gloss": "law, right order, duty, righteousness"
+          },
+          {
+            "text": "आधार",
+            "iast": "ādhāra",
+            "gloss": "support, prop, substratum"
+          }
+        ]
+      }
+    },
+    {
+      "index": 885,
+      "deva": "धनाध्यक्षा",
+      "iast": "dhanādhyakṣā",
+      "namavaliDeva": "धनाध्यक्षायै",
+      "namavaliIast": "dhanādhyakṣāyai",
+      "gloss": "Overseer Of Wealth",
+      "translation": "Riches fall under her supervision, dispensed and withheld at her discretion rather than simply earned.",
+      "aksaras": [
+        {
+          "text": "ध",
+          "iast": "dha",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dha",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ना",
+          "iast": "nā",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ध्य",
+          "iast": "dhya",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "य",
+              "role": "consonant",
+              "iast": "ya",
+              "name": "ya",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "क्षा",
+          "iast": "kṣā",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ष",
+              "role": "consonant",
+              "iast": "ṣ",
+              "name": "ṣa",
+              "articulation": "retroflex",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "धनाध्यक्षा",
+        "stemIast": "dhanādhyakṣā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "धनाध्यक्षा",
+        "iast": "dhanādhyakṣā",
+        "type": "tatpuruṣa",
+        "gloss": "the superintendent of wealth",
+        "vigraha": "dhanasya adhyakṣā",
+        "children": [
+          {
+            "text": "धन",
+            "iast": "dhana",
+            "gloss": "wealth, riches, property"
+          },
+          {
+            "text": "अध्यक्ष",
+            "iast": "adhyakṣa",
+            "gloss": "superintendent, overseer, presiding one"
+          }
+        ]
+      }
+    },
+    {
+      "index": 886,
+      "deva": "धनधान्यविवर्धिनी",
+      "iast": "dhanadhānyavivardhinī",
+      "namavaliDeva": "धनधान्यविवर्धिन्यै",
+      "namavaliIast": "dhanadhānyavivardhinyai",
+      "gloss": "Increaser Of Wealth And Grain",
+      "translation": "Money in the box and grain in the store both swell under her hand, which is the plain prosperity householders ask her for.",
+      "aksaras": [
+        {
+          "text": "ध",
+          "iast": "dha",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dha",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न",
+          "iast": "na",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "na",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "धा",
+          "iast": "dhā",
+          "parts": [
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "न्य",
+          "iast": "nya",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "य",
+              "role": "consonant",
+              "iast": "ya",
+              "name": "ya",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "व",
+          "iast": "va",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "va",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "र्धि",
+          "iast": "rdhi",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "ध",
+              "role": "consonant",
+              "iast": "dh",
+              "name": "dha",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "नी",
+          "iast": "nī",
+          "parts": [
+            {
+              "char": "न",
+              "role": "consonant",
+              "iast": "n",
+              "name": "na",
+              "articulation": "dental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "धनधान्यविवर्धिनी",
+        "stemIast": "dhanadhānyavivardhinī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem"
+      },
+      "compound": {
+        "text": "धनधान्यविवर्धिनी",
+        "iast": "dhanadhānyavivardhinī",
+        "type": "tatpuruṣa",
+        "gloss": "she who makes wealth and grain grow",
+        "vigraha": "dhanadhānyaṃ vivardhayati iti dhanadhānyavivardhinī",
+        "children": [
+          {
+            "text": "धनधान्य",
+            "iast": "dhanadhānya",
+            "gloss": "wealth and grain",
+            "type": "dvandva",
+            "vigraha": "dhanaṃ ca dhānyaṃ ca",
+            "children": [
+              {
+                "text": "धन",
+                "iast": "dhana",
+                "gloss": "wealth, riches"
+              },
+              {
+                "text": "धान्य",
+                "iast": "dhānya",
+                "gloss": "grain, corn"
+              }
+            ]
+          },
+          {
+            "text": "विवर्धिनी",
+            "iast": "vivardhinī",
+            "gloss": "she who increases, augments, makes grow"
+          }
+        ]
+      }
+    },
+    {
+      "index": 887,
+      "deva": "विप्रप्रिया",
+      "iast": "viprapriyā",
+      "namavaliDeva": "विप्रप्रियायै",
+      "namavaliIast": "viprapriyāyai",
+      "gloss": "To Whom Brahmins Are Dear",
+      "translation": "The inspired and the learned stand close to her, and she favours those who keep the sacred word in use.",
+      "aksaras": [
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "प्र",
+          "iast": "pra",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "प्रि",
+          "iast": "pri",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "या",
+          "iast": "yā",
+          "parts": [
+            {
+              "char": "य",
+              "role": "consonant",
+              "iast": "y",
+              "name": "ya",
+              "articulation": "palatal",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "विप्रप्रिया",
+        "stemIast": "viprapriyā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "विप्रप्रिया",
+        "iast": "viprapriyā",
+        "type": "bahuvrīhi",
+        "gloss": "to whom brahmins are dear",
+        "vigraha": "viprāḥ priyāḥ yasyāḥ sā",
+        "children": [
+          {
+            "text": "विप्र",
+            "iast": "vipra",
+            "gloss": "inwardly stirred, inspired one, sage, brahmin"
+          },
+          {
+            "text": "प्रिय",
+            "iast": "priya",
+            "gloss": "dear, beloved, pleasing"
+          }
+        ]
+      }
+    },
+    {
+      "index": 888,
+      "deva": "विप्ररूपा",
+      "iast": "viprarūpā",
+      "namavaliDeva": "विप्ररूपायै",
+      "namavaliIast": "viprarūpāyai",
+      "gloss": "Whose Form Is The Brahmin",
+      "translation": "She appears as the brahmin himself, so respect paid to him is not a substitute for worship of her but the thing itself.",
+      "aksaras": [
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "प्र",
+          "iast": "pra",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "रू",
+          "iast": "rū",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ू",
+              "role": "vowel-sign",
+              "iast": "ū",
+              "name": "ū-kāra",
+              "articulation": "labial",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "पा",
+          "iast": "pā",
+          "parts": [
+            {
+              "char": "प",
+              "role": "consonant",
+              "iast": "p",
+              "name": "pa",
+              "articulation": "labial",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "adjective",
+        "stem": "विप्ररूपा",
+        "stemIast": "viprarūpā",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ā-stem"
+      },
+      "compound": {
+        "text": "विप्ररूपा",
+        "iast": "viprarūpā",
+        "type": "bahuvrīhi",
+        "gloss": "having the brahmin for her form",
+        "vigraha": "vipraḥ eva rūpaṃ yasyāḥ sā",
+        "children": [
+          {
+            "text": "विप्र",
+            "iast": "vipra",
+            "gloss": "inspired one, sage, brahmin"
+          },
+          {
+            "text": "रूप",
+            "iast": "rūpa",
+            "gloss": "form, shape, appearance"
+          }
+        ]
+      }
+    },
+    {
+      "index": 889,
+      "deva": "विश्वभ्रमणकारिणी",
+      "iast": "viśvabhramaṇakāriṇī",
+      "namavaliDeva": "विश्वभ्रमणकारिण्यै",
+      "namavaliIast": "viśvabhramaṇakāriṇyai",
+      "gloss": "She Who Makes The Universe Revolve",
+      "translation": "Planets, seasons and lifetimes all come round again, and the turning happens because she keeps causing it.",
+      "aksaras": [
+        {
+          "text": "वि",
+          "iast": "vi",
+          "parts": [
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "v",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "श्व",
+          "iast": "śva",
+          "parts": [
+            {
+              "char": "श",
+              "role": "consonant",
+              "iast": "ś",
+              "name": "śa",
+              "articulation": "palatal",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "व",
+              "role": "consonant",
+              "iast": "va",
+              "name": "va",
+              "articulation": "labiodental",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "भ्र",
+          "iast": "bhra",
+          "parts": [
+            {
+              "char": "भ",
+              "role": "consonant",
+              "iast": "bh",
+              "name": "bha",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": true
+            },
+            {
+              "char": "्",
+              "role": "virama",
+              "iast": "",
+              "name": "virāma (cancels the inherent a)"
+            },
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "ra",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": true
+        },
+        {
+          "text": "म",
+          "iast": "ma",
+          "parts": [
+            {
+              "char": "म",
+              "role": "consonant",
+              "iast": "ma",
+              "name": "ma",
+              "articulation": "labial",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "ण",
+          "iast": "ṇa",
+          "parts": [
+            {
+              "char": "ण",
+              "role": "consonant",
+              "iast": "ṇa",
+              "name": "ṇa",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false,
+              "inherentVowel": true
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "का",
+          "iast": "kā",
+          "parts": [
+            {
+              "char": "क",
+              "role": "consonant",
+              "iast": "k",
+              "name": "ka",
+              "articulation": "guttural",
+              "voicing": "unvoiced",
+              "aspirated": false
+            },
+            {
+              "char": "ा",
+              "role": "vowel-sign",
+              "iast": "ā",
+              "name": "ā-kāra",
+              "articulation": "guttural",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "रि",
+          "iast": "ri",
+          "parts": [
+            {
+              "char": "र",
+              "role": "consonant",
+              "iast": "r",
+              "name": "ra",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ि",
+              "role": "vowel-sign",
+              "iast": "i",
+              "name": "i-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        },
+        {
+          "text": "णी",
+          "iast": "ṇī",
+          "parts": [
+            {
+              "char": "ण",
+              "role": "consonant",
+              "iast": "ṇ",
+              "name": "ṇa",
+              "articulation": "retroflex",
+              "voicing": "voiced",
+              "aspirated": false
+            },
+            {
+              "char": "ी",
+              "role": "vowel-sign",
+              "iast": "ī",
+              "name": "ī-kāra",
+              "articulation": "palatal",
+              "voicing": "voiced"
+            }
+          ],
+          "isConjunct": false
+        }
+      ],
+      "morphology": {
+        "pos": "noun",
+        "stem": "विश्वभ्रमणकारिणी",
+        "stemIast": "viśvabhramaṇakāriṇī",
+        "gender": "feminine",
+        "case": "nominative",
+        "caseNumber": 1,
+        "number": "singular",
+        "declension": "ī-stem"
+      },
+      "compound": {
+        "text": "विश्वभ्रमणकारिणी",
+        "iast": "viśvabhramaṇakāriṇī",
+        "type": "tatpuruṣa",
+        "gloss": "she who causes the whirling of the universe",
+        "vigraha": "viśvasya bhramaṇaṃ karoti iti viśvabhramaṇakāriṇī",
+        "children": [
+          {
+            "text": "विश्वभ्रमण",
+            "iast": "viśvabhramaṇa",
+            "gloss": "the revolving of the universe",
+            "type": "tatpuruṣa",
+            "vigraha": "viśvasya bhramaṇam",
+            "children": [
+              {
+                "text": "विश्व",
+                "iast": "viśva",
+                "gloss": "all, the whole, the universe"
+              },
+              {
+                "text": "भ्रमण",
+                "iast": "bhramaṇa",
+                "gloss": "wandering about, revolving, turning round"
+              }
+            ]
+          },
+          {
+            "text": "कारिणी",
+            "iast": "kāriṇī",
+            "gloss": "she who does, makes or causes"
+          }
+        ]
+      }
+    }
+  ],
+  "namaRange": [
+    884,
+    889
+  ],
+  "chant": {
+    "startSec": 1742.88,
+    "endSec": 1753.03,
+    "confidence": "detected"
+  },
+  "commentary": {
+    "meaning": "The verse falls into two halves of three names each, and the halves are marked by their opening sound as clearly as by their subject. The first three all begin with dha and all concern holding and increase: she is what dharma rests on, she is the officer in charge of wealth, and she is the one who makes money and grain multiply. That is the ordinary business of a household religion, stated without embarrassment. The second three begin with vi. Two of them concern the brahmin, first as the object of her favour and then as her own form, and the third pulls the frame open with no transition at all: she is the one who makes the universe revolve. Nothing in the verse marks the jump from the grain in the storehouse to the rotation of everything, and that refusal to grade its subjects is characteristic. Two verses earlier the hymn named her the seat of the three worldly aims; here it takes two of them — right order and material means — and says concretely what her holding them up looks like.",
+    "history": "Dharmādhārā is a play on a single root that no translation preserves. Dharma is a noun of action from √dhṛ, to hold or uphold, and its oldest force is not \"religion\" or even \"duty\" but that which keeps things in place. Ādhāra is a noun from the same root with the prefix ā, and it means the support, the thing something rests on. The name therefore says that the upholding rests on her: she is the holder of what holds. The construction is a favourite in Sanskrit religious language because it makes an argument by morphology. Dharma is not self-supporting, however absolute its claims sound; take away what carries it and it falls, and what carries it is a person rather than a principle.\n\nAdhyakṣa, in the second name, is a piece of administrative vocabulary rather than a religious title. It is adhi plus akṣa, eye — the one whose eye is over something — and it is the standard word for a government superintendent. The classical treatise on statecraft devotes an entire long book to the adhyakṣas, superintendents of the treasury, of mines, of weights, of the ports, of the granaries, each with a defined remit. To call her dhanādhyakṣā is to appoint her to an office, and it is an office that already had a well-known holder: Kubera, lord of wealth, whose whole identity is that he keeps the treasury. The name transfers the post without argument, which is how this hymn generally handles other deities.\n\nDhana and dhānya, money and grain, are an old formulaic pair, and they are what the ordinary blessing has always asked for. The verb is vi-√vṛdh, to cause to grow. There is nothing figurative here, and attempts to read it as spiritual increase strain the words; the hymn is willing to say plainly that people want a full box and a full barn and that she is who they ask. What keeps it from being merely transactional is the placement. The name comes immediately after dharmādhārā, so the increase is offered inside a frame in which right order is what her support is chiefly for.\n\nVipra is a more interesting word than \"brahmin\" suggests. The dictionaries derive it from √vip, to tremble or quiver, and the oldest sense is the inspired one — the poet or seer who shakes under the pressure of vision. By the period of this hymn it has become a plain synonym for brāhmaṇa, and the two names here have to be read at both levels. At the level of the etymology, viprapriyā says that the inspired are dear to her and viprarūpā that inspiration is a shape she takes, which is a claim about a function. At the level of ordinary usage, they say that brahmins are dear to her and that the brahmin is her form, which is a claim about a class of persons. The tradition has generally preferred to hear the first and has never given up the second, and the older warrant for the second is the Vedic image of the cosmic person out of whose mouth the brahmin came — a verse used for two millennia to make a social arrangement look like a description of the universe. A modern reader is entitled to find the second claim harder than the first; what is not defensible is pretending that only the first is present in the text.\n\nThese names also have a history of use. As with the sacrifice names of the previous verse, they helped this hymn travel. A Śākta text that honours the brahmin and calls him the goddess's own form could be adopted by orthodox households in the South that would have refused the tantric literature standing behind it, and the adoption is a large part of why the Lalitā Sahasranāma is the most widely recited Śākta text in India while its parent tradition remains comparatively specialised.\n\nThe last name changes everything about the scale. Bhramaṇa is from √bhram, and the root covers wandering, whirling, and going astray in the sense of error — bhrama is both a spinning motion and a delusion. The name says she causes the universe to whirl, and the root leaves it deliberately unclear whether the whirling is the majestic revolution of the spheres or the confusion of creatures who cannot stand still. The Gītā, describing the same thing, adds the machine: beings are mounted on a contrivance and spun by it. Placed at the end of a verse about grain and wealth, the name reminds the person asking for prosperity what kind of motion the prosperity is embedded in.",
+    "practice": "The first line is a run of dh, and it is denser than it looks on the page: dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī gives seven syllables beginning with the aspirated dental in the space of sixteen. Dh is one sound, not d followed by h — a dental stop released with a puff of voiced breath, the tongue tip against the back of the upper teeth throughout. English speakers who substitute a plain d lose the line's whole texture, and those who over-aspirate turn it into panting.\n\nDhanādhyakṣā adds two difficulties to that. The dhy in the middle is the aspirated dental plus the palatal glide, run together; and the kṣ is the velar stop plus the retroflex sibilant. Neither cluster should be broken by a vowel. Note the internal sandhi: dhana plus adhyakṣā, two short a's meeting to give a single long ā, and the same join produces dharmādhārā from dharma and ādhāra.\n\nThe two dhana- names sit next to each other and are the likeliest place in the verse to lose your footing, because dhanādhyakṣā and dhanadhānya begin identically. Keep them apart by their second element: eye over the wealth, then growth of the wealth.\n\nIn the second line the initial v is the Sanskrit labiodental, closer to English w after a consonant and to v at the start of a word; vipra and viśva both take it in the initial position. Viprapriyā and viprarūpā are another near-identical pair, differing only in their fifth syllable, and both contain the pra cluster with the light tapped r. Viśva begins with ś, the palatal sibilant, made with the tongue nearer the hard palate than English sh, and viśvabhramaṇakāriṇī then gives bhr — the voiced aspirated labial plus r — which is the hardest single cluster in the verse. Say bha with full voicing, then let the r follow as its own articulation, and only then speed it up.\n\nTwo retroflex ṇ's appear in that last name, in bhramaṇa and in kāriṇī, and both are there by the same rule that produced them in the verses just before: an r earlier in the word pulls a following n back.\n\nThe metre is regular, eight syllables to the quarter, with the break after dhanādhyakṣā. The verse rewards a steady tempo more than most, because both of its halves are lists of near-identical shapes and any hurry in one of them will swallow a name.\n\nFor archanā: dharmādhārāyai namaḥ, dhanādhyakṣāyai namaḥ, dhanadhānyavivardhinyai namaḥ, viprapriyāyai namaḥ, viprarūpāyai namaḥ, viśvabhramaṇakāriṇyai namaḥ. Four ā-stems in -āyai and two ī-stems contracting to -inyai and -iṇyai. The two ī-stems are also the two longest names, which means the two hardest endings arrive when the breath is shortest; plan for it.\n\nWhat the verse asks is that you make the request without apology and without stopping there. It is entirely proper, on this hymn's account, to ask her for money and grain. It is the last name that keeps the asking honest, by placing the storehouse inside something that is turning and will not stop turning because you have had a good year.",
+    "crossReferences": [
+      {
+        "source": "Śrī Sūkta, second verse (Ṛgveda khila)",
+        "deva": "तां म आवह जातवेदो लक्ष्मीमनपगामिनीम् । यस्यां हिरण्यं विन्देयं गामश्वं पुरुषानहम् ॥",
+        "iast": "tāṃ ma āvaha jātavedo lakṣmīm anapagāminīm | yasyāṃ hiraṇyaṃ vindeyaṃ gām aśvaṃ puruṣān aham ||",
+        "translation": "Bring her to me, Jātavedas — Lakṣmī, who does not go away — in whom I may find gold, cattle, horses and people.",
+        "relevance": "The oldest liturgical form of the request that dhanādhyakṣā and dhanadhānyavivardhinī answer, and it is as unembarrassed as they are: gold, livestock, dependants, named without a figurative gloss. The epithet that matters is anapagāminī, she who does not depart, since the anxiety behind the request is not poverty but reversal. The Śrī Sūkta is a khila appended to the Ṛgveda and its verses are numbered differently in different printings, so it is cited here by position rather than by a fixed number."
+      },
+      {
+        "source": "Ṛgveda 10.90.12 (Puruṣa Sūkta)",
+        "deva": "ब्राह्मणोऽस्य मुखमासीद्बाहू राजन्यः कृतः । ऊरू तदस्य यद्वैश्यः पद्भ्यां शूद्रो अजायत ॥",
+        "iast": "brāhmaṇo 'sya mukham āsīd bāhū rājanyaḥ kṛtaḥ | ūrū tad asya yad vaiśyaḥ padbhyāṃ śūdro ajāyata ||",
+        "translation": "The brahmin was his mouth; the arms were made the warrior; his thighs were the commoner; from the feet the servant was born.",
+        "relevance": "The textual warrant behind viprarūpā, and the reason the name has the force it has: the identification of a social class with a part of the divine body is not this hymn's invention but its inheritance. Worth reading beside 10.90.16, quoted in the previous verse of this commentary, since the two come from the same hymn and show it doing two very different kinds of work — collapsing the sacrifice into itself, and fixing a hierarchy in place."
+      },
+      {
+        "source": "Bhagavadgītā 18.61",
+        "deva": "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥",
+        "iast": "īśvaraḥ sarvabhūtānāṃ hṛddeśe 'rjuna tiṣṭhati | bhrāmayan sarvabhūtāni yantrārūḍhāni māyayā ||",
+        "translation": "The lord stands in the heart-region of all beings, Arjuna, spinning all beings round by his power of appearance, as though they were mounted on a machine.",
+        "relevance": "The same root, √bhram, in the same causative sense, and the closest thing in the older literature to viśvabhramaṇakāriṇī. Two details are worth carrying back to the name. The spinner is located in the heart rather than above the sky, and the beings are described as mounted on a yantra — a contrivance, the same word this tradition uses for the diagram of worship."
+      }
+    ]
+  },
+  "references": [
+    {
+      "kind": "book",
+      "title": "King, Governance, and Law in Ancient India: Kauṭilya's Arthaśāstra",
+      "author": "tr. Patrick Olivelle (Oxford University Press, 2013)",
+      "note": "The current standard translation, with the long book on the superintendents that gives dhanādhyakṣā its flavour. Reading a few pages of it makes clear that the name is a job title from a functioning bureaucracy, not a poetic abstraction."
+    },
+    {
+      "kind": "book",
+      "title": "The Rigveda: The Earliest Religious Poetry of India",
+      "author": "tr. Stephanie W. Jamison and Joel P. Brereton (Oxford University Press, 3 vols., 2014)",
+      "note": "The best English Ṛgveda, with introductions to each hymn that say what is uncertain. Use it for the Puruṣa hymn quoted above; note that it does not include the khila hymns, so the Śrī Sūkta has to be sought elsewhere."
+    },
+    {
+      "kind": "book",
+      "title": "Hindu Goddesses: Visions of the Divine Feminine in the Hindu Religious Tradition",
+      "author": "David Kinsley (University of California Press, 1986)",
+      "note": "The chapter on Śrī-Lakṣmī traces how the goddess of prosperity acquired her attributes and how thoroughly wealth and auspiciousness were fused in her. Useful background for why a hymn to Lalitā can absorb the office of the lord of wealth in a single word."
+    },
+    {
+      "kind": "book",
+      "title": "History of Dharmaśāstra",
+      "author": "P. V. Kane (Bhandarkar Oriental Research Institute, 5 vols., 1930–1962)",
+      "note": "Not a book to read through, but the place to look up what dharma and the brahmin's status actually meant in the legal literature, with the sources quoted. It will complicate any tidy reading of dharmādhārā and viprarūpā, which is the reason to consult it."
+    }
+  ]
+}

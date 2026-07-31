@@ -73,10 +73,27 @@ PADAS_PER_VERSE = 4
 N_PADAS = (N_VERSES - 1) * PADAS_PER_VERSE + 2
 
 # Search window for the dhyana -> stotra transition, and the measured pada period.
-STOTRA_START_WINDOW = (120.0, 165.0)
-PADA_PERIOD = 2.462
+# NOTE: picking the *strongest* pause in a wide window is unsafe — pada / half-line /
+# verse pauses are similar, and the previous default (120–165) latched onto 145.98s,
+# roughly one verse late. Prefer an explicit --stotra-start, or the narrower window
+# below which covers the true śrīmātā onset (~135s).
+STOTRA_START_WINDOW = (128.0, 140.0)
+PADA_PERIOD = 2.454
 DP_LAMBDA = 30.0
 DP_MIN_RATIO, DP_MAX_RATIO = 0.72, 1.40
+
+# ASR-verified FULL-VERSE onsets (start of line 1, not the mid-verse pause).
+# The strong pause near 145.98s is the break *between* the two lines of verse 1;
+# snapping there cuts playback after line 1. Landmarks must begin each verse's
+# first line and span through its second.
+ASR_LANDMARKS = {
+    1: 138.00,
+    2: 152.00,
+    3: 160.00,
+    60: 704.50,
+    120: 1296.00,
+    182: 1915.50,
+}
 
 # A verse boundary counts as "detected" when a clear pause peak sits on it.
 # The median boundary scores ~1.8; 1.2 isolates the weakest tenth for review.
@@ -226,49 +243,114 @@ def classify(p: np.ndarray, t: float) -> str:
 # -------------------------------------------------------------------------- main
 
 
+def calibrate_from_landmarks(p: np.ndarray) -> list[dict]:
+    """Piecewise-linear full-verse starts from ASR landmarks.
+
+    Do **not** snap to nearby pauseness peaks: the strongest pause in a verse is
+    often the mid-verse (line 1 → line 2) break, which would truncate playback
+    after the first line.
+    """
+    del p  # kept in signature for call-site symmetry with classify()
+    lm_nums = sorted(ASR_LANDMARKS)
+
+    def interp(n: int) -> float:
+        if n in ASR_LANDMARKS:
+            return float(ASR_LANDMARKS[n])
+        for a, b in zip(lm_nums, lm_nums[1:]):
+            if a < n < b:
+                frac = (n - a) / (b - a)
+                return ASR_LANDMARKS[a] + frac * (ASR_LANDMARKS[b] - ASR_LANDMARKS[a])
+        raise ValueError(n)
+
+    starts = [interp(n) for n in range(1, N_VERSES + 1)]
+    period_end = (ASR_LANDMARKS[182] - ASR_LANDMARKS[120]) / (182 - 120)
+    stotra_end = ASR_LANDMARKS[182] + period_end * 0.55  # half-verse 182
+    ends = starts[1:] + [stotra_end]
+
+    verses = []
+    for k in range(1, N_VERSES + 1):
+        s, e = float(starts[k - 1]), float(ends[k - 1])
+        verses.append({
+            "number": k,
+            "startSec": round(s, 2),
+            "endSec": round(e, 2),
+            "confidence": "detected" if k in ASR_LANDMARKS else "interpolated",
+        })
+    return verses
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force-download", action="store_true")
+    ap.add_argument(
+        "--stotra-start",
+        type=float,
+        default=None,
+        help="Force the stotra/verse-1 onset in seconds (skips auto-detect).",
+    )
+    ap.add_argument(
+        "--calibrate",
+        action="store_true",
+        default=True,
+        help="Use ASR landmark interpolation (default). Preferred over bare DP.",
+    )
+    ap.add_argument(
+        "--no-calibrate",
+        action="store_true",
+        help="Use the Viterbi pada tracker only (legacy).",
+    )
     args = ap.parse_args()
+    use_calibrate = args.calibrate and not args.no_calibrate
 
     mono = ensure_audio(args.force_download)
     x = read_mono(mono)
     duration = len(x) / SR
     p, voice_db = pauseness(x)
 
-    stotra_start = find_stotra_start(p)
-    padas = track_padas(p, stotra_start, N_PADAS)[: N_PADAS + 1]
-    stotra_end = float(padas[N_PADAS])
+    if use_calibrate:
+        verses = calibrate_from_landmarks(p)
+        stotra_start = verses[0]["startSec"]
+        stotra_end = verses[-1]["endSec"]
+    else:
+        stotra_start = args.stotra_start if args.stotra_start is not None else find_stotra_start(p)
+        padas = track_padas(p, stotra_start, N_PADAS)[: N_PADAS + 1]
+        stotra_end = float(padas[N_PADAS])
 
-    # Verses 1..181 span 4 padas; verse 182 is the closing half-verse (2 padas).
-    verses = []
-    for k in range(1, N_VERSES + 1):
-        i0 = (k - 1) * PADAS_PER_VERSE
-        i1 = i0 + (PADAS_PER_VERSE if k < N_VERSES else 2)
-        start, end = float(padas[i0]), float(padas[i1])
-        # Verse 1 starts at the section anchor, which is itself a detected pause.
-        conf = "detected" if k == 1 else classify(p, start)
-        verses.append({
-            "number": k,
-            "startSec": round(start, 2),
-            "endSec": round(end, 2),
-            "confidence": conf,
-        })
+        # Verses 1..181 span 4 padas; verse 182 is the closing half-verse (2 padas).
+        verses = []
+        for k in range(1, N_VERSES + 1):
+            i0 = (k - 1) * PADAS_PER_VERSE
+            i1 = i0 + (PADAS_PER_VERSE if k < N_VERSES else 2)
+            start, end = float(padas[i0]), float(padas[i1])
+            conf = "detected" if k == 1 else classify(p, start)
+            verses.append({
+                "number": k,
+                "startSec": round(start, 2),
+                "endSec": round(end, 2),
+                "confidence": conf,
+            })
 
     # Everything before the anchor is the dhyana; anything chanted after the
-    # 726th pada is the closing section.
+    # last verse is the closing section.
     dhyana_start = first_audio(x)
     closing_end = last_chanting(voice_db, stotra_end)
 
+    source: dict = {
+        "youtubeId": YOUTUBE_ID,
+        "title": TITLE,
+        "performers": PERFORMERS,
+        "url": URL,
+        "durationSec": round(duration, 2),
+        "analyzedAt": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
+    }
+    if use_calibrate:
+        source["calibration"] = {
+            "method": "asr-landmark-interpolation",
+            "landmarks": ASR_LANDMARKS,
+        }
+
     payload = {
-        "source": {
-            "youtubeId": YOUTUBE_ID,
-            "title": TITLE,
-            "performers": PERFORMERS,
-            "url": URL,
-            "durationSec": round(duration, 2),
-            "analyzedAt": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
-        },
+        "source": source,
         "sections": {
             "dhyana": {"startSec": round(dhyana_start, 2), "endSec": round(stotra_start, 2)},
             "stotra": {"startSec": round(stotra_start, 2), "endSec": round(stotra_end, 2)},
