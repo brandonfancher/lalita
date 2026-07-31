@@ -157,18 +157,18 @@
     {
       "number": 2,
       "startSec": 151.6,
-      "endSec": 162.38,
+      "endSec": 163.0,
       "confidence": "detected"
     },
     {
       "number": 3,
-      "startSec": 162.38,
-      "endSec": 172.14,
+      "startSec": 163.0,
+      "endSec": 173.5,
       "confidence": "detected"
     },
     {
       "number": 4,
-      "startSec": 172.14,
+      "startSec": 173.5,
       "endSec": 181.89,
       "confidence": "interpolated"
     },
