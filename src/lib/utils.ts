@@ -11,6 +11,11 @@ export function formatTime(seconds: number): string {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
 
+/** Practice-page label: dhyāna is “Shloka 0”. */
+export function practiceLabel(number: number): string {
+  return `Shloka ${number}`;
+}
+
 const CASE_LABELS: Record<string, { short: string; sanskrit: string; sense: string }> = {
   nominative: { short: "nom.", sanskrit: "prathamā", sense: "the subject; who or what it is" },
   accusative: { short: "acc.", sanskrit: "dvitīyā", sense: "the object; what is acted upon" },

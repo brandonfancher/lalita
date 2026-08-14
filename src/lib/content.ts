@@ -52,6 +52,17 @@ export function getNeighbours(id: string): {
   };
 }
 
+/** Inclusive practice range: 0 = dhyāna (`000`), 1–182 = stotra shlokas. */
+export function getModulesInRange(from: number, to: number): StudyModule[] {
+  const start = Math.min(from, to);
+  const end = Math.max(from, to);
+  const modules: StudyModule[] = [];
+  for (let n = start; n <= end; n++) {
+    modules.push(getModule(String(n).padStart(3, "0")));
+  }
+  return modules;
+}
+
 export type NamaIndexEntry = Omit<Nama, "aksaras"> & { moduleId: string };
 
 let namaIndexCache: NamaIndexEntry[] | null = null;

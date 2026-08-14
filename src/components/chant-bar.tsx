@@ -59,13 +59,22 @@ function loadYouTubeApi(): Promise<void> {
   });
 }
 
-export function ChantBar({ timing, label }: { timing?: ChantTiming; label: string }) {
+export function ChantBar({
+  timing,
+  label,
+  defaultLoop = false,
+}: {
+  timing?: ChantTiming;
+  label: string;
+  /** When true, loop starts on (used by the practice range page). */
+  defaultLoop?: boolean;
+}) {
   const holderRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
   const rafRef = useRef<number | null>(null);
 
   const [state, setState] = useState<PlayerState>("idle");
-  const [loop, setLoop] = useState(false);
+  const [loop, setLoop] = useState(defaultLoop);
   const [rate, setRate] = useState(1);
   const [elapsed, setElapsed] = useState(0);
 
