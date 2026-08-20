@@ -17,6 +17,10 @@ import { cn, formatTime } from "@/lib/utils";
 
 const YT_ID = "zgG-gjioU1g";
 const PERFORMERS = "Ranjani \u2013 Gayatri";
+/** Preroll before startSec so the attack of the first syllable isn't dropped. */
+const PREROLL_SEC = 0.2;
+/** Poll interval for progress — YT's clock doesn't advance usefully every frame. */
+const TICK_MS = 100;
 
 type PlayerState = "idle" | "loading" | "playing" | "paused";
 
@@ -33,7 +37,14 @@ declare global {
   interface Window {
     YT?: {
       Player: new (el: HTMLElement | string, opts: Record<string, unknown>) => YTPlayer;
-      PlayerState: { PLAYING: number; PAUSED: number; ENDED: number };
+      PlayerState: {
+        UNSTARTED: number;
+        ENDED: number;
+        PLAYING: number;
+        PAUSED: number;
+        BUFFERING: number;
+        CUED: number;
+      };
     };
     onYouTubeIframeAPIReady?: () => void;
   }
@@ -51,12 +62,20 @@ function loadYouTubeApi(): Promise<void> {
       prev?.();
       resolve();
     };
-    if (existing) return;
+    if (existing) {
+      // Script already injected; if YT appeared between the check and now, resolve.
+      if (window.YT?.Player) resolve();
+      return;
+    }
     const tag = document.createElement("script");
     tag.id = "yt-iframe-api";
     tag.src = "https://www.youtube.com/iframe_api";
     document.body.appendChild(tag);
   });
+}
+
+function startOf(timing: ChantTiming) {
+  return Math.max(0, timing.startSec - PREROLL_SEC);
 }
 
 export function ChantBar({
@@ -71,7 +90,20 @@ export function ChantBar({
 }) {
   const holderRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
-  const rafRef = useRef<number | null>(null);
+  const readyPromiseRef = useRef<Promise<YTPlayer | null> | null>(null);
+  const tickRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const loopRef = useRef(defaultLoop);
+  const timingRef = useRef(timing);
+  const durationRef = useRef(0);
+  /** True when the user asked to play before the iframe finished loading. */
+  const pendingPlayRef = useRef(false);
+  /** Mirrors intent so brief PAUSED events during seek don't kill the ticker. */
+  const wantPlayingRef = useRef(false);
+  /**
+   * After a seek-to-start, YouTube's getCurrentTime() can lag on the old
+   * position for a few hundred ms. Ignore end-of-verse stops until then.
+   */
+  const ignoreEndUntilRef = useRef(0);
 
   const [state, setState] = useState<PlayerState>("idle");
   const [loop, setLoop] = useState(defaultLoop);
@@ -80,108 +112,274 @@ export function ChantBar({
 
   const duration = timing ? Math.max(0.1, timing.endSec - timing.startSec) : 0;
 
-  const stopTicking = () => {
-    if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
-    rafRef.current = null;
-  };
+  loopRef.current = loop;
+  timingRef.current = timing;
+  durationRef.current = duration;
+
+  const stopTicking = useCallback(() => {
+    if (tickRef.current !== null) {
+      clearInterval(tickRef.current);
+      tickRef.current = null;
+    }
+  }, []);
 
   /** Watch playback position so we can stop at the end of this verse. */
-  const tick = useCallback(() => {
+  const tickOnce = useCallback(() => {
     const p = playerRef.current;
-    if (!p || !timing) return;
-    const t = p.getCurrentTime();
-    // Preroll (seek before startSec) doesn't count toward elapsed.
-    setElapsed(Math.min(duration, Math.max(0, t - timing.startSec)));
+    const tmg = timingRef.current;
+    if (!p || !tmg) return;
 
-    if (t < timing.startSec) {
-      rafRef.current = requestAnimationFrame(tick);
+    let t: number;
+    try {
+      t = p.getCurrentTime();
+    } catch {
       return;
     }
 
-    if (t >= timing.endSec) {
-      if (loop) {
-        p.seekTo(timing.startSec, true);
-      } else {
-        // Pause and pin to the boundary so YouTube's lagged clock can't keep
-        // audibly rolling into the next verse after we've decided to stop.
-        p.pauseVideo();
-        p.seekTo(timing.endSec, true);
-        setState("paused");
-        setElapsed(duration);
-        stopTicking();
+    const dur = durationRef.current;
+    // Preroll (seek before startSec) doesn't count toward elapsed.
+    const nextElapsed = Math.min(dur, Math.max(0, t - tmg.startSec));
+    setElapsed(nextElapsed);
+
+    if (t < tmg.startSec) return;
+
+    if (t >= tmg.endSec) {
+      // Seek-to-start often leaves getCurrentTime() at the old end briefly —
+      // without this guard, restart/play-from-end immediately re-pauses.
+      if (performance.now() < ignoreEndUntilRef.current) {
+        p.seekTo(tmg.startSec, true);
+        setElapsed(0);
         return;
       }
+      if (loopRef.current) {
+        ignoreEndUntilRef.current = performance.now() + 750;
+        p.seekTo(tmg.startSec, true);
+        setElapsed(0);
+        return;
+      }
+      // Pause and pin to the boundary so YouTube's lagged clock can't keep
+      // audibly rolling into the next verse after we've decided to stop.
+      wantPlayingRef.current = false;
+      p.pauseVideo();
+      p.seekTo(tmg.endSec, true);
+      setState("paused");
+      setElapsed(dur);
+      stopTicking();
     }
-    rafRef.current = requestAnimationFrame(tick);
-  }, [duration, loop, timing]);
+  }, [stopTicking]);
 
-  useEffect(() => stopTicking, []);
+  const startTicking = useCallback(() => {
+    stopTicking();
+    tickOnce();
+    tickRef.current = setInterval(tickOnce, TICK_MS);
+  }, [stopTicking, tickOnce]);
+
+  useEffect(() => () => stopTicking(), [stopTicking]);
 
   // Reset when navigating between shlokas.
   useEffect(() => {
-    setState("idle");
+    pendingPlayRef.current = false;
+    wantPlayingRef.current = false;
+    setState(playerRef.current ? "paused" : "idle");
     setElapsed(0);
     stopTicking();
     playerRef.current?.pauseVideo();
-  }, [timing?.startSec]);
+  }, [timing?.startSec, timing?.endSec, stopTicking]);
 
-  const ensurePlayer = useCallback(async () => {
-    if (playerRef.current || !holderRef.current) return playerRef.current;
-    setState("loading");
-    await loadYouTubeApi();
-    if (!window.YT?.Player || !holderRef.current) return null;
+  const ensurePlayer = useCallback(async (): Promise<YTPlayer | null> => {
+    if (playerRef.current) return playerRef.current;
+    if (readyPromiseRef.current) return readyPromiseRef.current;
+    if (!holderRef.current) return null;
 
-    return new Promise<YTPlayer | null>((resolve) => {
-      const player = new window.YT!.Player(holderRef.current!, {
-        videoId: YT_ID,
-        playerVars: { controls: 0, disablekb: 1, modestbranding: 1, rel: 0, playsinline: 1 },
-        events: {
-          onReady: () => {
-            playerRef.current = player;
-            resolve(player);
+    setState((s) => (s === "playing" ? s : "loading"));
+
+    readyPromiseRef.current = (async () => {
+      await loadYouTubeApi();
+      if (!window.YT?.Player || !holderRef.current) return null;
+
+      return new Promise<YTPlayer | null>((resolve) => {
+        const player = new window.YT!.Player(holderRef.current!, {
+          videoId: YT_ID,
+          width: 320,
+          height: 180,
+          playerVars: {
+            controls: 0,
+            disablekb: 1,
+            modestbranding: 1,
+            rel: 0,
+            playsinline: 1,
+            fs: 0,
+            // Origin helps some mobile browsers keep the iframe in a playable state.
+            origin: typeof window !== "undefined" ? window.location.origin : undefined,
           },
-          onStateChange: (e: { data: number }) => {
-            if (e.data === window.YT?.PlayerState.PAUSED) setState("paused");
+          events: {
+            onReady: () => {
+              playerRef.current = player;
+              resolve(player);
+            },
+            onError: () => {
+              resolve(null);
+            },
+            onStateChange: (e: { data: number }) => {
+              const YT = window.YT;
+              if (!YT) return;
+              // Seek/buffer often emits a brief PAUSED — only trust PLAYING from YT,
+              // and ignore PAUSED unless we actually intended to stop.
+              if (e.data === YT.PlayerState.PLAYING) {
+                setState("playing");
+                if (wantPlayingRef.current) startTicking();
+              } else if (
+                e.data === YT.PlayerState.PAUSED &&
+                !wantPlayingRef.current
+              ) {
+                setState((s) => (s === "loading" ? s : "paused"));
+                stopTicking();
+                tickOnce();
+              }
+            },
           },
-        },
+        });
       });
+    })();
+
+    const player = await readyPromiseRef.current;
+    if (!player) {
+      readyPromiseRef.current = null;
+      setState("idle");
+    }
+    return player;
+  }, [startTicking, stopTicking, tickOnce]);
+
+  // Warm the iframe as soon as the bar mounts so the first play click stays
+  // inside a user gesture (critical on iOS) and getCurrentTime stays live.
+  useEffect(() => {
+    if (!timing) return;
+    void ensurePlayer().then((p) => {
+      if (!p || !timing) return;
+      try {
+        p.seekTo(startOf(timing), true);
+        p.pauseVideo();
+      } catch {
+        /* player may not accept seeks until fully cued */
+      }
+      setState((s) => (s === "loading" ? "paused" : s));
+      if (pendingPlayRef.current) {
+        pendingPlayRef.current = false;
+        wantPlayingRef.current = true;
+        p.setPlaybackRate(rate);
+        p.playVideo();
+        setState("playing");
+        startTicking();
+      }
     });
-  }, []);
+    // Only warm once per mount / timing identity; rate is read from closure on pending play.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional warm-on-mount
+  }, [timing?.startSec, timing?.endSec]);
+
+  useEffect(() => {
+    return () => {
+      stopTicking();
+      try {
+        playerRef.current?.destroy();
+      } catch {
+        /* ignore */
+      }
+      playerRef.current = null;
+      readyPromiseRef.current = null;
+    };
+  }, [stopTicking]);
+
+  const playFromStart = (p: YTPlayer, tmg: ChantTiming) => {
+    wantPlayingRef.current = true;
+    ignoreEndUntilRef.current = performance.now() + 750;
+    p.seekTo(startOf(tmg), true);
+    p.setPlaybackRate(rate);
+    p.playVideo();
+    setElapsed(0);
+    setState("playing");
+    startTicking();
+  };
 
   const play = async () => {
     if (!timing) return;
-    const p = playerRef.current ?? (await ensurePlayer());
-    if (!p) {
-      setState("idle");
+
+    const existing = playerRef.current;
+    if (!existing) {
+      // First tap while the iframe is still booting: remember intent so onReady
+      // can start playback without requiring another press (mobile).
+      pendingPlayRef.current = true;
+      wantPlayingRef.current = true;
+      setState("loading");
+      const p = await ensurePlayer();
+      if (!p || !timing) {
+        pendingPlayRef.current = false;
+        wantPlayingRef.current = false;
+        setState("idle");
+        return;
+      }
+      if (pendingPlayRef.current) {
+        pendingPlayRef.current = false;
+        playFromStart(p, timing);
+      }
       return;
     }
-    const t = p.getCurrentTime();
+
+    pendingPlayRef.current = false;
+    let t = 0;
+    try {
+      t = existing.getCurrentTime();
+    } catch {
+      t = 0;
+    }
     const outside = t < timing.startSec || t >= timing.endSec;
-    // Seek a brief preroll before the boundary: YouTube often drops the attack
-    // of the first syllable when play() follows seekTo(start) immediately.
-    const seekTarget =
-      outside || elapsed >= duration
-        ? Math.max(0, timing.startSec - 0.2)
-        : t;
-    p.seekTo(seekTarget, true);
-    p.setPlaybackRate(rate);
-    p.playVideo();
+    const atEnd = elapsed >= duration - 0.05;
+    if (outside || atEnd) {
+      playFromStart(existing, timing);
+      return;
+    }
+
+    wantPlayingRef.current = true;
+    existing.setPlaybackRate(rate);
+    existing.playVideo();
     setState("playing");
-    stopTicking();
-    rafRef.current = requestAnimationFrame(tick);
+    startTicking();
   };
 
   const pause = () => {
+    pendingPlayRef.current = false;
+    wantPlayingRef.current = false;
     playerRef.current?.pauseVideo();
     setState("paused");
     stopTicking();
+    tickOnce();
   };
 
-  const restart = () => {
-    if (!timing || !playerRef.current) return;
-    playerRef.current.seekTo(Math.max(0, timing.startSec - 0.2), true);
+  const restart = async () => {
+    if (!timing) return;
+
+    // Ensure the player exists even if the user never hit play (restart used to
+    // no-op when playerRef was null).
+    const p = playerRef.current ?? (await ensurePlayer());
+    if (!p) return;
+
+    ignoreEndUntilRef.current = performance.now() + 750;
+    p.seekTo(startOf(timing), true);
     setElapsed(0);
-    if (state !== "playing") void play();
+
+    if (wantPlayingRef.current || state === "playing") {
+      // Already playing — seek is enough; keep the tick alive.
+      wantPlayingRef.current = true;
+      startTicking();
+      return;
+    }
+
+    // When stopped/paused, begin from the top so restart isn't a silent no-op
+    // (seek alone often does nothing on a suspended mobile player).
+    wantPlayingRef.current = true;
+    p.setPlaybackRate(rate);
+    p.playVideo();
+    setState("playing");
+    startTicking();
   };
 
   const changeRate = (r: number) => {
@@ -200,16 +398,24 @@ export function ChantBar({
   const pct = duration ? (elapsed / duration) * 100 : 0;
 
   return (
-    <div className="rounded-2xl border border-line bg-surface-1/70 p-3">
-      {/* The player is present but visually hidden; only audio is wanted. */}
-      <div className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0">
-        <div ref={holderRef} />
+    <div className="relative rounded-2xl border border-line bg-surface-1/70 p-3">
+      {/*
+        Keep a real-sized iframe off-screen. A 0×0 / display:none host makes
+        mobile browsers suspend the player (multi-tap to play, frozen progress,
+        dead seeks when paused).
+      */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed left-0 top-0 -z-10 h-[180px] w-[320px] opacity-[0.01]"
+        style={{ transform: "translate(-100%, -100%)" }}
+      >
+        <div ref={holderRef} className="h-full w-full" />
       </div>
 
       <div className="flex items-center gap-3">
         <button
           type="button"
-          onClick={state === "playing" ? pause : play}
+          onClick={state === "playing" ? pause : () => void play()}
           aria-label={state === "playing" ? "Pause" : `Play ${label}`}
           className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gradient-to-br from-sindura to-lotus text-white shadow-lg transition-transform active:scale-95"
         >
@@ -231,7 +437,7 @@ export function ChantBar({
           </div>
           <div className="h-1.5 overflow-hidden rounded-full bg-surface-3">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-sindura to-gold transition-[width] duration-150"
+              className="h-full rounded-full bg-gradient-to-r from-sindura to-gold"
               style={{ width: `${pct}%` }}
             />
           </div>
@@ -240,7 +446,7 @@ export function ChantBar({
         <div className="flex shrink-0 items-center gap-1">
           <button
             type="button"
-            onClick={restart}
+            onClick={() => void restart()}
             aria-label="Restart this shloka"
             className="grid h-8 w-8 place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink"
           >
