@@ -7,8 +7,6 @@ import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
 import { Lotus } from "@/components/ornament";
-import { SoundButton } from "@/components/sound-button";
-import { playAksaras } from "@/lib/sound-audio";
 import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
 import { caseInfo, cn, toDevanagariDigits } from "@/lib/utils";
 
@@ -301,12 +299,6 @@ function Inspector({
             {token.iast}
           </FitText>
         </div>
-        {token.aksaras.length > 0 && (
-          <SoundButton
-            label={`Play ${token.iast}`}
-            onPlay={() => playAksaras(token.aksaras)}
-          />
-        )}
         <button
           type="button"
           onClick={onClose}
@@ -359,13 +351,6 @@ function NamaPanel({ nama }: { nama: Nama }) {
           <FitText container="marker" className="iast text-[15px] text-ink-muted">
             {nama.iast}
           </FitText>
-          {nama.aksaras.length > 0 && (
-            <SoundButton
-              size="sm"
-              label={`Play ${nama.iast}`}
-              onPlay={() => playAksaras(nama.aksaras)}
-            />
-          )}
         </div>
         {nama.gloss && <p className="display text-xl leading-snug text-ink">{nama.gloss}</p>}
         {nama.translation && (

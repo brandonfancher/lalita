@@ -6,8 +6,6 @@ import { ChevronDown } from "lucide-react";
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
-import { SoundButton } from "@/components/sound-button";
-import { playAksaras } from "@/lib/sound-audio";
 import type { Nama } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
@@ -34,10 +32,6 @@ export function NamaList({ namas }: { namas: Nama[] }) {
               expanded && "bg-surface-1/70",
             )}
           >
-            {/*
-              The toggle stretches over the whole row, so the speaker button
-              can sit inside the row without being nested in another button.
-            */}
             <div className="group relative flex w-full items-start gap-4 px-2 py-4 transition-colors hover:bg-surface-1/60 sm:px-3">
               <span className="numerals w-10 shrink-0 pt-1.5 text-right font-serif text-lg text-sindura">
                 {nama.index}
@@ -59,14 +53,6 @@ export function NamaList({ namas }: { namas: Nama[] }) {
                   <FitText container="marker" className="iast text-[1.05rem] text-gold-soft">
                     {nama.iast}
                   </FitText>
-                  {nama.aksaras.length > 0 && (
-                    <SoundButton
-                      size="sm"
-                      className="relative z-10"
-                      label={`Play ${nama.iast}`}
-                      onPlay={() => playAksaras(nama.aksaras)}
-                    />
-                  )}
                 </span>
                 {nama.gloss && (
                   <span className="mt-0.5 block text-[1.02rem] text-ink-muted">{nama.gloss}</span>
