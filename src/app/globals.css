@@ -330,6 +330,15 @@ body:has([data-art-trigger]:hover) .shloka-art {
   animation: art-ember var(--dur) linear var(--delay) infinite;
 }
 
+/*
+ * Surfaces, sinks slowly out of sight, and surfaces again: a world going
+ * under. Set `--dur` and `--delay` per element; give every piece of one
+ * sinking thing the same values so they move together.
+ */
+.adornment .m-sink {
+  animation: art-sink var(--dur, 28s) ease-in-out var(--delay, 0s) infinite;
+}
+
 /* Offsets any of the above so neighbours don't move in lockstep. */
 .adornment .m-late {
   animation-delay: -1.7s;
@@ -443,6 +452,24 @@ body:has([data-art-trigger]:hover) .shloka-art {
   100% {
     opacity: 0;
     transform: translate(var(--dx), -260px);
+  }
+}
+
+@keyframes art-sink {
+  0% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  14% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  72% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
   }
 }
 
