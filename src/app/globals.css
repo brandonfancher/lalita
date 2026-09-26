@@ -220,6 +220,198 @@ body::after {
   background: color-mix(in oklab, var(--sindura) 25%, transparent);
 }
 
+/*
+ * Artwork adorning a shloka page. By day it reads as vermilion and gold wash
+ * on the paper; by lamplight the same drawing glows like the fire it depicts.
+ *
+ * `.adornment` is any rendering of an artwork; `.shloka-art` is the faded
+ * backdrop behind the page.
+ */
+.adornment {
+  --art-glow: #e0932f;
+  --art-vermilion: #c63d17;
+  --art-saffron: #d8741f;
+  --art-core: #efb440;
+  --art-ember: var(--sindura-soft);
+  --art-stone: var(--surface-1);
+  --art-carve: var(--surface-0);
+}
+
+[data-theme="dark"] .adornment {
+  --art-glow: var(--sindura);
+  --art-vermilion: var(--sindura);
+  --art-saffron: #e8913a;
+  --art-core: #ffe4ae;
+  --art-ember: #f3b36b;
+}
+
+.shloka-art {
+  opacity: 0.6;
+  transition: opacity 600ms ease;
+  mask-image:
+    linear-gradient(to bottom, #000 68%, transparent 96%),
+    linear-gradient(to right, transparent, #000 24%);
+  mask-composite: intersect;
+}
+
+[data-theme="dark"] .shloka-art {
+  opacity: 0.62;
+}
+
+/* Reaching for the note brings the artwork forward. */
+body:has([data-art-trigger]:hover) .shloka-art {
+  opacity: 0.85;
+}
+
+.shloka-art-kindle {
+  animation: art-kindle 2.4s ease-out both;
+}
+
+.art-plate {
+  --art-stone: var(--surface-2);
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .art-plate {
+  opacity: 1;
+}
+
+.adornment [data-part] {
+  transition: opacity 450ms ease;
+}
+
+.adornment [data-dim] {
+  opacity: 0.1;
+}
+
+.adornment .sa-flame {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: art-breathe 7s ease-in-out infinite alternate;
+}
+
+.adornment .sa-core {
+  animation: art-flicker 3.2s ease-in-out infinite alternate;
+}
+
+.adornment .sa-lick {
+  animation: art-lick 2.8s ease-in-out infinite alternate;
+}
+
+.adornment .sa-lick-late {
+  animation-delay: -1.4s;
+  animation-duration: 3.4s;
+}
+
+.adornment .sa-rays {
+  animation: art-shimmer 11s ease-in-out infinite alternate;
+}
+
+.adornment .sa-ember {
+  opacity: 0;
+  animation: art-ember var(--dur) linear var(--delay) infinite;
+}
+
+.art-overlay[data-state="open"] {
+  animation: art-fade-in 300ms ease-out;
+}
+
+.art-overlay[data-state="closed"] {
+  animation: art-fade-in 200ms ease-in reverse forwards;
+}
+
+.art-dialog[data-state="open"] {
+  animation: art-rise-in 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.art-dialog[data-state="closed"] {
+  animation: art-rise-in 200ms ease-in reverse forwards;
+}
+
+@keyframes art-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes art-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+}
+
+@keyframes art-kindle {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+}
+
+@keyframes art-breathe {
+  0% {
+    transform: scale(1, 1) skewX(0deg);
+  }
+  50% {
+    transform: scale(0.985, 1.025) skewX(-0.6deg);
+  }
+  100% {
+    transform: scale(1.01, 0.99) skewX(0.5deg);
+  }
+}
+
+@keyframes art-flicker {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes art-lick {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes art-shimmer {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes art-ember {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  12% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), -260px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shloka-art-kindle,
+  .adornment * {
+    animation: none !important;
+  }
+
+  .adornment .sa-ember {
+    opacity: 0.7;
+  }
+}
+
 /* Scrollbars, so panels don't get chrome that fights the palette. */
 * {
   scrollbar-width: thin;

@@ -213,7 +213,7 @@ export function VerseReader({
 
 function IdleCard({ namaCount }: { namaCount: number }) {
   return (
-    <div className="rounded-sm border border-dashed border-line-strong/70 px-5 py-6 text-center">
+    <div className="rounded-sm border border-dashed border-line-strong/70 bg-surface-0/55 px-5 py-6 text-center backdrop-blur-[3px]">
       <MousePointerClick size={18} className="mx-auto mb-3 text-gold" strokeWidth={1.5} />
       <p className="display text-lg text-ink">Tap any word of the verse</p>
       <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">
