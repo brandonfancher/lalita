@@ -284,32 +284,59 @@ body:has([data-art-trigger]:hover) .shloka-art {
   opacity: 0.1;
 }
 
-.adornment .sa-flame {
+/*
+ * The motion vocabulary shared by every artwork. Keep it slow and sparing:
+ * two or three of these per artwork, on elements inside a part, never on a
+ * part's own group.
+ */
+
+/* Swells gently from its base: flames, buds, rising forms. */
+.adornment .m-breathe {
   transform-box: fill-box;
   transform-origin: 50% 100%;
   animation: art-breathe 7s ease-in-out infinite alternate;
 }
 
-.adornment .sa-core {
+/* Swings gently from its top: garlands, bells, tassels, pendants. */
+.adornment .m-sway {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+  animation: art-sway 6s ease-in-out infinite alternate;
+}
+
+/* A soft, quick brightening: the hottest core of a flame. */
+.adornment .m-flicker {
   animation: art-flicker 3.2s ease-in-out infinite alternate;
 }
 
-.adornment .sa-lick {
+/* Comes and goes: a detached lick of flame, a passing glint. */
+.adornment .m-lick {
   animation: art-lick 2.8s ease-in-out infinite alternate;
 }
 
-.adornment .sa-lick-late {
-  animation-delay: -1.4s;
-  animation-duration: 3.4s;
+/* A slow pulse of brilliance: jewels, stars, the moon's light. */
+.adornment .m-twinkle {
+  animation: art-twinkle 4.2s ease-in-out infinite alternate;
 }
 
-.adornment .sa-rays {
+/* A very slow swell of light: rays, halos, glows. */
+.adornment .m-shimmer {
   animation: art-shimmer 11s ease-in-out infinite alternate;
 }
 
-.adornment .sa-ember {
+/* Rises and fades on a loop; see the Embers primitive for its variables. */
+.adornment .m-ember {
   opacity: 0;
   animation: art-ember var(--dur) linear var(--delay) infinite;
+}
+
+/* Offsets any of the above so neighbours don't move in lockstep. */
+.adornment .m-late {
+  animation-delay: -1.7s;
+}
+
+.adornment .m-later {
+  animation-delay: -3.3s;
 }
 
 .art-overlay[data-state="open"] {
@@ -378,6 +405,24 @@ body:has([data-art-trigger]:hover) .shloka-art {
   }
 }
 
+@keyframes art-sway {
+  from {
+    transform: rotate(-1.5deg);
+  }
+  to {
+    transform: rotate(1.5deg);
+  }
+}
+
+@keyframes art-twinkle {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes art-shimmer {
   from {
     opacity: 0.75;
@@ -407,7 +452,7 @@ body:has([data-art-trigger]:hover) .shloka-art {
     animation: none !important;
   }
 
-  .adornment .sa-ember {
+  .adornment .m-ember {
     opacity: 0.7;
   }
 }

@@ -6,58 +6,15 @@
  * for readers in the registry, next to this artwork's entry.
  */
 
-import type { ArtPart, ArtProps } from "./types";
+import { alongArch, archPath, artIds, Embers, Lion, partProps, round, tongue, type Arch } from "./primitives";
+import type { ArtProps } from "./types";
 
 const CX = 320;
 const CY = 390;
 const R = 230;
 /** The bindu, where she appears, sits in the neck of the flame below the arch's centre. */
 const BY = 470;
-const POST_BOTTOM = 790;
-
-const round = (n: number) => Math.round(n * 100) / 100;
-
-function archPath(r: number, bottom = POST_BOTTOM) {
-  return `M ${CX - r} ${bottom} V ${CY} A ${r} ${r} 0 0 1 ${CX + r} ${CY} V ${bottom}`;
-}
-
-type Placement = { x: number; y: number; angle: number };
-
-/** Points spaced evenly along an arch of radius r, with their outward angle. */
-function alongArch(r: number, spacing: number, skip?: (p: Placement) => boolean): Placement[] {
-  const out: Placement[] = [];
-  const postLength = POST_BOTTOM - 24 - CY;
-  const postCount = Math.floor(postLength / spacing);
-  for (let i = postCount; i >= 1; i--) {
-    out.push({ x: CX - r, y: CY + i * spacing, angle: -90 });
-  }
-  const arcSteps = Math.round((Math.PI * r) / spacing);
-  for (let i = 0; i <= arcSteps; i++) {
-    const theta = Math.PI - (i / arcSteps) * Math.PI;
-    out.push({
-      x: CX + r * Math.cos(theta),
-      y: CY - r * Math.sin(theta),
-      angle: 90 - (theta * 180) / Math.PI,
-    });
-  }
-  for (let i = 1; i <= postCount; i++) {
-    out.push({ x: CX + r, y: CY + i * spacing, angle: 90 });
-  }
-  return skip ? out.filter((p) => !skip(p)) : out;
-}
-
-/** A single tongue of flame, base at the origin, pointing up, tip leaning by `lean`. */
-function tongue(h: number, w: number, lean: number) {
-  const p = (n: number) => round(n);
-  return [
-    `M ${p(-w / 2)} 0`,
-    `C ${p(-w / 2 - 1)} ${p(-h * 0.35)} ${p(-w * 0.15)} ${p(-h * 0.5)} ${p(lean * 0.3)} ${p(-h * 0.68)}`,
-    `C ${p(lean * 0.65)} ${p(-h * 0.8)} ${p(lean * 1.1)} ${p(-h * 0.88)} ${p(lean)} ${p(-h)}`,
-    `C ${p(lean + w * 0.45)} ${p(-h * 0.8)} ${p(w * 0.6)} ${p(-h * 0.55)} ${p(w * 0.35)} ${p(-h * 0.35)}`,
-    `C ${p(w * 0.22)} ${p(-h * 0.2)} ${p(w / 2 + 1)} ${p(-h * 0.1)} ${p(w / 2)} 0`,
-    "Z",
-  ].join(" ");
-}
+const ARCH: Arch = { cx: CX, cy: CY, bottom: 790 };
 
 const SRI_ANGLES = [150, 90, 30];
 const sriPoints = SRI_ANGLES.map((deg) => {
@@ -66,7 +23,7 @@ const sriPoints = SRI_ANGLES.map((deg) => {
   return { x: CX + r * Math.cos(t), y: CY - r * Math.sin(t), rotate: 90 - deg };
 });
 
-const garland = alongArch(R, 25, (p) => Math.abs(p.angle) < 11).map((p, i) => {
+const garland = alongArch(ARCH, R, 25, (p) => Math.abs(p.angle) < 11).map((p, i) => {
   const big = i % 2 === 0;
   // Flames on the sides lift toward the sky instead of pointing straight out.
   const angle = p.angle * 0.8;
@@ -78,7 +35,7 @@ const garland = alongArch(R, 25, (p) => Math.abs(p.angle) < 11).map((p, i) => {
   };
 });
 
-const pearls = alongArch(R - 24, 13, (p) =>
+const pearls = alongArch(ARCH, R - 24, 13, (p) =>
   sriPoints.some((s) => Math.hypot(s.x - p.x, s.y - p.y) < 17),
 );
 
@@ -115,49 +72,9 @@ const EMBERS = [
   { x: 334, y: 450, r: 1.1, dx: 6, dur: 9.5, delay: 11 },
 ];
 
-/** A seated lion facing right, base on y = 92, about 96 units wide. */
-function Lion() {
-  const mane = Array.from({ length: 11 }, (_, i) => {
-    const deg = -200 + i * 26;
-    const t = (deg * Math.PI) / 180;
-    return {
-      d: tongue(11, 8, 3),
-      transform: `translate(${round(72 + 15 * Math.cos(t))} ${round(34 + 15 * Math.sin(t))}) rotate(${round(deg + 90)})`,
-    };
-  });
-  return (
-    <g>
-      <path
-        d="M 12 90 C -4 84 -6 62 4 52 C 10 46 14 40 10 32"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2.2}
-        strokeLinecap="round"
-      />
-      <path d={tongue(12, 9, -3)} transform="translate(10 33) rotate(-20)" />
-      <path d="M 12 92 C 2 84 4 62 22 55 C 34 50 44 54 54 46 L 78 48 C 84 58 83 70 78 78 L 79 86 C 88 86 93 88 93 92 Z" />
-      {mane.map((m, i) => (
-        <path key={i} d={m.d} transform={m.transform} />
-      ))}
-      <circle cx={72} cy={34} r={16} />
-      <path d="M 78 25 C 88 24 96 30 96 37 C 96 43 90 47 82 46 Z" />
-      <g fill="none" stroke="var(--art-carve)" strokeWidth={1.3} strokeLinecap="round">
-        <path d="M 20 72 C 30 62 48 64 54 76 C 57 83 62 88 70 88" />
-        <path d="M 68 64 L 68 91" />
-        <path d="M 88 41 C 91 42 93 41 95 40" />
-      </g>
-      <circle cx={84} cy={32} r={1.8} fill="var(--art-carve)" />
-    </g>
-  );
-}
-
 export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
-  const id = (name: string) => `${idPrefix}-${name}`;
-  const url = (name: string) => `url(#${id(name)})`;
-  const part = (name: ArtPart) => ({
-    "data-part": name,
-    "data-dim": active !== null && active !== name ? true : undefined,
-  });
+  const { id, url } = artIds(idPrefix);
+  const part = partProps(active);
 
   return (
     <svg viewBox="0 0 640 830" fill="none" className="block h-full w-full overflow-visible">
@@ -193,7 +110,7 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
       {/* śrī: light radiating from the point where she appears */}
       <g {...part("rays")}>
         <circle cx={CX} cy={470} r={330} fill={url("glow")} />
-        <g className="sa-rays" mask={url("rays-mask")} stroke="var(--gold)" strokeLinecap="round">
+        <g className="m-shimmer" mask={url("rays-mask")} stroke="var(--gold)" strokeLinecap="round">
           {rays.map(({ long, ...r }, i) => (
             <line key={i} {...r} strokeWidth={long ? 0.9 : 0.6} strokeOpacity={long ? 0.7 : 0.45} />
           ))}
@@ -214,10 +131,10 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
           ))}
         </g>
         <g stroke="var(--gold)" fill="none">
-          <path d={archPath(R)} strokeWidth={1.4} />
-          <path d={archPath(R - 8)} strokeWidth={0.7} strokeOpacity={0.8} />
-          <path d={archPath(R - 40)} strokeWidth={0.7} strokeOpacity={0.8} />
-          <path d={archPath(R - 46)} strokeWidth={1.2} />
+          <path d={archPath(ARCH, R)} strokeWidth={1.4} />
+          <path d={archPath(ARCH, R - 8)} strokeWidth={0.7} strokeOpacity={0.8} />
+          <path d={archPath(ARCH, R - 40)} strokeWidth={0.7} strokeOpacity={0.8} />
+          <path d={archPath(ARCH, R - 46)} strokeWidth={1.2} />
         </g>
         <g fill="var(--gold)">
           {pearls.map((p, i) => (
@@ -269,15 +186,15 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
 
       {/* The fire of awareness, rising from its kuṇḍa */}
       <g {...part("flame")}>
-        <g className="sa-flame">
+        <g className="m-breathe">
           <path
-            className="sa-lick"
+            className="m-lick"
             d={tongue(30, 11, -5)}
             transform="translate(238 440) rotate(-8)"
             fill={url("flame")}
           />
           <path
-            className="sa-lick sa-lick-late"
+            className="m-lick m-late"
             d={tongue(26, 10, 5)}
             transform="translate(414 404) rotate(10)"
             fill={url("flame")}
@@ -303,7 +220,7 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
             fillOpacity={0.8}
           />
           <path
-            className="sa-core"
+            className="m-flicker"
             d="M 320 702 C 296 702 288 676 293 652 C 298 626 316 608 318 574 C 322 606 342 626 346 652 C 350 678 342 702 320 702 Z"
             fill="var(--art-core)"
             fillOpacity={0.85}
@@ -334,22 +251,7 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
 
       {/* Rising for the gods' cause */}
       <g {...part("embers")} fill="var(--art-ember)">
-        {EMBERS.map((e, i) => (
-          <circle
-            key={i}
-            className="sa-ember"
-            cx={e.x}
-            cy={e.y}
-            r={e.r}
-            style={
-              {
-                "--dx": `${e.dx}px`,
-                "--dur": `${e.dur}s`,
-                "--delay": `${e.delay}s`,
-              } as React.CSSProperties
-            }
-          />
-        ))}
+        <Embers embers={EMBERS} />
       </g>
 
       {/* The lion throne */}

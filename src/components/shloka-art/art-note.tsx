@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 import { Lotus } from "@/components/ornament";
 import { cn } from "@/lib/utils";
 import { ARTWORK } from "./registry";
-import type { ArtPart, Artwork } from "./types";
+import type { ArtPart, Artwork, NoteEntry } from "./types";
 
 export type NoteNama = { index: number; deva: string; iast: string; gloss: string };
 
@@ -134,11 +134,18 @@ function Plate({ id, artwork, namas }: { id: string; artwork: Artwork; namas: No
   });
 
   const order: ArtPart[] = [
-    ...artwork.names.map((n) => n.part),
+    ...artwork.entries.map((e) => e.part),
     ...(artwork.detail ? [artwork.detail.part] : []),
   ];
+  const noun = artwork.entries.every((e) => "nama" in e) ? "name" : "phrase";
 
-  // ← and → walk the names. Handling them here also keeps them from turning the page.
+  const heading = (entry: NoteEntry) => {
+    if (!("nama" in entry)) return entry.phrase;
+    const n = namas.find((x) => x.index === entry.nama);
+    return n && { label: `Nāma ${n.index}`, deva: n.deva, iast: n.iast, gloss: n.gloss };
+  };
+
+  // ← and → walk the entries. Handling them here also keeps them from turning the page.
   const onKeyDown = (e: KeyboardEvent) => {
     if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
     e.preventDefault();
@@ -171,16 +178,17 @@ function Plate({ id, artwork, namas }: { id: string; artwork: Artwork; namas: No
           </Dialog.Description>
 
           <p className="mt-5 text-sm italic text-ink-faint">
-            <span className="hidden [@media(hover:hover)]:inline">Hover over a name to find it in the artwork.</span>
-            <span className="[@media(hover:hover)]:hidden">Tap a name to find it in the artwork.</span>
+            <span className="hidden [@media(hover:hover)]:inline">Hover over a {noun} to find it in the artwork.</span>
+            <span className="[@media(hover:hover)]:hidden">Tap a {noun} to find it in the artwork.</span>
           </p>
 
           <ol className="mt-3 border-t border-line">
-            {artwork.names.map(({ nama, part, depicts }) => {
-              const n = namas.find((x) => x.index === nama);
+            {artwork.entries.map((entry) => {
+              const { part, depicts } = entry;
+              const n = heading(entry);
               if (!n) return null;
               return (
-                <li key={nama} className="border-b border-line">
+                <li key={part} className="border-b border-line">
                   <button
                     type="button"
                     {...aim(part)}
@@ -192,7 +200,7 @@ function Plate({ id, artwork, namas }: { id: string; artwork: Artwork; namas: No
                     )}
                   >
                     <span className="flex flex-wrap items-baseline gap-x-2.5">
-                      <span className="eyebrow text-sindura">Nāma {n.index}</span>
+                      <span className="eyebrow text-sindura">{n.label}</span>
                       <span className="deva text-[1.3rem] leading-snug text-ink">{n.deva}</span>
                       <span className="iast text-[1rem] italic text-gold-soft">{n.iast}</span>
                     </span>

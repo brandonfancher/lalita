@@ -15,7 +15,7 @@ export const ARTWORK: Record<string, Artwork> = {
         the five names.
       </>
     ),
-    names: [
+    entries: [
       { nama: 1, part: "rays", depicts: "108 fine rays of light shining out from the bindu." },
       { nama: 2, part: "parasol", depicts: "A royal parasol, the emblem of sovereignty, above the arch." },
       {

@@ -22,6 +22,9 @@
 
 # misc
 .DS_Store
+
+# review screenshots (pnpm art:preview)
+/output/
 *.pem
 
 # downloaded/derived dictionary data (rebuild with scripts/build-lexicon.ts)
