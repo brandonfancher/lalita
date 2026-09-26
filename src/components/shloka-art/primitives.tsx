@@ -53,6 +53,24 @@ export function tongue(h: number, w: number, lean: number) {
   ].join(" ");
 }
 
+type Pt = { x: number; y: number };
+
+/** A point `t` of the way along a cubic Bézier. */
+export function cubicAt(p0: Pt, p1: Pt, p2: Pt, p3: Pt, t: number): Pt {
+  const u = 1 - t;
+  const a = u * u * u;
+  const b = 3 * u * u * t;
+  const c = 3 * u * t * t;
+  const d = t * t * t;
+  return { x: a * p0.x + b * p1.x + c * p2.x + d * p3.x, y: a * p0.y + b * p1.y + c * p2.y + d * p3.y };
+}
+
+/** A four-pointed glint of light centred on the origin. */
+export function glint(s: number) {
+  const q = round(s * 0.12);
+  return `M 0 ${-s} Q ${q} ${-q} ${s} 0 Q ${q} ${q} 0 ${s} Q ${-q} ${q} ${-s} 0 Q ${-q} ${-q} 0 ${-s} Z`;
+}
+
 /** A round-topped arch: a semicircle of radius r centred on (cx, cy), on posts down to `bottom`. */
 export type Arch = { cx: number; cy: number; bottom: number };
 
@@ -148,6 +166,115 @@ export function Lion() {
         <path d="M 88 41 C 91 42 93 41 95 40" />
       </g>
       <circle cx={84} cy={32} r={1.8} fill="var(--art-carve)" />
+    </g>
+  );
+}
+
+const NOOSE_LOOP = { x: 0, y: -52, r: 34 };
+const NOOSE_TAIL: [Pt, Pt, Pt, Pt] = [
+  { x: 0, y: -10 },
+  { x: -5, y: 6 },
+  { x: 9, y: 16 },
+  { x: 4, y: 32 },
+];
+
+/** Short strokes across a cord, slanted like the lay of a two-ply rope. */
+function twists(points: { p: Pt; tangent: Pt }[], half: number) {
+  const k = Math.cos((40 * Math.PI) / 180);
+  const s = Math.sin((40 * Math.PI) / 180);
+  return points
+    .map(({ p, tangent }) => {
+      const dx = -tangent.y * k + tangent.x * s;
+      const dy = tangent.x * k + tangent.y * s;
+      return `M ${round(p.x - dx * half)} ${round(p.y - dy * half)} L ${round(p.x + dx * half)} ${round(p.y + dy * half)}`;
+    })
+    .join(" ");
+}
+
+const nooseLoopTwists = twists(
+  Array.from({ length: 34 }, (_, i) => (i / 34) * Math.PI * 2)
+    .filter((t) => Math.abs(t - Math.PI / 2) > 0.34)
+    .map((t) => ({
+      p: { x: NOOSE_LOOP.x + NOOSE_LOOP.r * Math.cos(t), y: NOOSE_LOOP.y + NOOSE_LOOP.r * Math.sin(t) },
+      tangent: { x: -Math.sin(t), y: Math.cos(t) },
+    })),
+  2.6,
+);
+
+const nooseTailTwists = twists(
+  Array.from({ length: 6 }, (_, i) => (i + 1) / 7).map((t) => {
+    const a = cubicAt(...NOOSE_TAIL, t);
+    const b = cubicAt(...NOOSE_TAIL, t + 0.01);
+    const len = Math.hypot(b.x - a.x, b.y - a.y);
+    return { p: a, tangent: { x: (b.x - a.x) / len, y: (b.y - a.y) / len } };
+  }),
+  2.4,
+);
+
+const nooseBeads = [-150, -110, -70, -30].map((deg) => {
+  const t = (deg * Math.PI) / 180;
+  return { x: round(NOOSE_LOOP.x + NOOSE_LOOP.r * Math.cos(t)), y: round(NOOSE_LOOP.y + NOOSE_LOOP.r * Math.sin(t)) };
+});
+
+/**
+ * Her noose (pāśa), the cord of longing: a loop of twisted red cord, bound
+ * with gold where it closes, strung with beads, the tail ending in a tassel.
+ * Held at the origin, loop upward; about 70 units wide and 140 tall.
+ */
+export function Noose() {
+  const [p0, p1, p2, p3] = NOOSE_TAIL;
+  const { x, y, r } = NOOSE_LOOP;
+  return (
+    <g>
+      <g stroke="var(--art-vermilion)" strokeWidth={5} strokeLinecap="round">
+        <circle cx={x} cy={y} r={r} />
+        <path d={`M ${p0.x} ${p0.y} C ${p1.x} ${p1.y} ${p2.x} ${p2.y} ${p3.x} ${p3.y}`} />
+      </g>
+      <path d={nooseLoopTwists + " " + nooseTailTwists} stroke="var(--art-carve)" strokeWidth={1.1} strokeLinecap="round" />
+      <g fill="var(--gold)">
+        {nooseBeads.map((b, i) => (
+          <g key={i}>
+            <circle cx={b.x} cy={b.y} r={3.4} />
+            <circle cx={b.x} cy={b.y} r={1.4} fill="var(--art-carve)" />
+          </g>
+        ))}
+        <rect x={-7} y={-26} width={14} height={14} rx={2.5} />
+        <path d={`M ${p3.x - 4} ${p3.y + 1} Q ${p3.x} ${p3.y - 4} ${p3.x + 4} ${p3.y + 1} L ${p3.x + 5.5} ${p3.y + 8} L ${p3.x - 5.5} ${p3.y + 8} Z`} />
+      </g>
+      <path d="M -7 -21.5 H 7 M -7 -16.5 H 7" stroke="var(--art-carve)" strokeWidth={1} />
+      <g stroke="var(--gold)" strokeWidth={1.1} strokeLinecap="round">
+        {[-4, -2, 0, 2, 4].map((dx) => (
+          <path key={dx} d={`M ${p3.x + dx} ${p3.y + 8} L ${round(p3.x + dx * 1.6)} ${p3.y + 24}`} />
+        ))}
+      </g>
+    </g>
+  );
+}
+
+/**
+ * Her goad (aṅkuśa), the elephant-driver's hook: a banded gold shaft with a
+ * spear point, and a hook curving out to the right below it. Held at the
+ * origin, pointing up; mirror with `scale(-1 1)` to hook left.
+ */
+export function Goad() {
+  return (
+    <g>
+      <g fill="var(--gold)">
+        <path d="M -3 34 L -2.2 -86 L 2.2 -86 L 3 34 Z" />
+        <circle cx={0} cy={39} r={5} />
+        <path d="M -2.5 42 L 0 50 L 2.5 42 Z" />
+        {[-16, 14, -68].map((y) => (
+          <rect key={y} x={-5} y={y - 2} width={10} height={4} rx={1.5} />
+        ))}
+        <path d="M -7 -84 Q -8 -93 -3 -97 L 3 -97 Q 8 -93 7 -84 Z" />
+        <path d="M -4.5 -97 C -7 -110 -3 -128 0 -144 C 3 -128 7 -110 4.5 -97 Z" />
+        <path d="M 3 -95 C 20 -106 40 -98 40 -78 C 40 -65 31 -56 19 -57 C 26 -62 31 -70 30 -79 C 29 -91 17 -94 3 -88 Z" />
+      </g>
+      <g stroke="var(--art-carve)" strokeWidth={1} strokeLinecap="round">
+        <path d="M 0 -101 L 0 -134" />
+        <path d="M 8 -95 C 22 -100 35 -93 35 -79 C 35 -71 31 -65 25 -61" />
+        <path d="M -5 -88 H 5" />
+      </g>
     </g>
   );
 }
