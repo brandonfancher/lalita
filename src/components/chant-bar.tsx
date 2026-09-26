@@ -389,7 +389,7 @@ export function ChantBar({
 
   if (!timing) {
     return (
-      <div className="rounded-2xl border border-dashed border-line bg-surface-1/40 px-4 py-3 text-sm text-ink-faint">
+      <div className="rounded-sm border border-dashed border-line-strong/70 px-4 py-3 text-[15px] italic text-ink-faint">
         Chant audio for this shloka is not mapped yet.
       </div>
     );
@@ -398,7 +398,7 @@ export function ChantBar({
   const pct = duration ? (elapsed / duration) * 100 : 0;
 
   return (
-    <div className="relative rounded-2xl border border-line bg-surface-1/70 p-3">
+    <div className="relative rounded-sm border border-line bg-surface-1/60 px-3 py-3 sm:px-4">
       {/*
         Keep a real-sized iframe off-screen. A 0×0 / display:none host makes
         mobile browsers suspend the player (multi-tap to play, frozen progress,
@@ -412,81 +412,91 @@ export function ChantBar({
         <div ref={holderRef} className="h-full w-full" />
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 sm:gap-4">
         <button
           type="button"
           onClick={state === "playing" ? pause : () => void play()}
           aria-label={state === "playing" ? "Pause" : `Play ${label}`}
-          className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gradient-to-br from-sindura to-lotus text-white shadow-lg transition-transform active:scale-95"
+          className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-sindura text-on-sindura shadow-[0_6px_16px_-6px_color-mix(in_oklab,var(--sindura)_70%,transparent)] ring-4 ring-sindura/10 transition-transform hover:scale-[1.03] active:scale-95"
         >
           {state === "loading" ? (
-            <Loader2 size={18} className="animate-spin" />
+            <Loader2 size={19} className="animate-spin" />
           ) : state === "playing" ? (
-            <Pause size={18} />
+            <Pause size={19} fill="currentColor" strokeWidth={0} />
           ) : (
-            <Play size={18} className="ml-0.5" />
+            <Play size={19} className="ml-0.5" fill="currentColor" strokeWidth={0} />
           )}
         </button>
 
         <div className="min-w-0 flex-1">
-          <div className="mb-1 flex items-baseline justify-between gap-2">
-            <span className="truncate text-[13px] text-ink">{label}</span>
-            <span className="shrink-0 font-mono text-[11px] text-ink-faint">
+          <div className="mb-2 flex items-baseline justify-between gap-2">
+            <span className="truncate">
+              <span className="eyebrow mr-2 text-ink-faint">Chant</span>
+              <span className="display text-[1.05rem] italic text-ink">{label}</span>
+            </span>
+            <span className="shrink-0 font-sans text-[11px] tabular-nums text-ink-faint">
               {formatTime(elapsed)} / {formatTime(duration)}
             </span>
           </div>
-          <div className="h-1.5 overflow-hidden rounded-full bg-surface-3">
+          <div className="relative h-[3px] rounded-full bg-line">
+            <div className="h-full rounded-full bg-sindura" style={{ width: `${pct}%` }} />
             <div
-              className="h-full rounded-full bg-gradient-to-r from-sindura to-gold"
-              style={{ width: `${pct}%` }}
+              aria-hidden
+              className="absolute top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface-0 bg-sindura"
+              style={{ left: `${pct}%` }}
             />
           </div>
         </div>
 
-        <div className="flex shrink-0 items-center gap-1">
+        <div className="flex shrink-0 items-center gap-0.5">
           <button
             type="button"
             onClick={() => void restart()}
             aria-label="Restart this shloka"
-            className="grid h-8 w-8 place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink"
+            title="Restart"
+            className="grid h-9 w-9 place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-2 hover:text-ink"
           >
-            <RotateCcw size={15} />
+            <RotateCcw size={16} />
           </button>
           <button
             type="button"
             onClick={() => setLoop((v) => !v)}
             aria-label="Loop this shloka"
             aria-pressed={loop}
+            title="Loop"
             className={cn(
-              "grid h-8 w-8 place-items-center rounded-full transition-colors",
-              loop ? "bg-gold/20 text-gold" : "text-ink-muted hover:bg-surface-2 hover:text-ink",
+              "grid h-9 w-9 place-items-center rounded-full transition-colors",
+              loop ? "bg-gold/15 text-gold" : "text-ink-muted hover:bg-surface-2 hover:text-ink",
             )}
           >
-            <Repeat size={15} />
+            <Repeat size={16} />
           </button>
         </div>
       </div>
 
-      <div className="mt-2.5 flex items-center gap-2 border-t border-line/60 pt-2.5">
-        <span className="text-[11px] text-ink-faint">Speed</span>
-        {[0.5, 0.75, 1].map((r) => (
-          <button
-            key={r}
-            type="button"
-            onClick={() => changeRate(r)}
-            className={cn(
-              "rounded-full px-2 py-0.5 text-[11px] transition-colors",
-              rate === r ? "bg-surface-3 text-ink" : "text-ink-muted hover:text-ink",
-            )}
-          >
-            {r}&times;
-          </button>
-        ))}
+      <div className="mt-3 flex items-center gap-2 border-t border-line/70 pt-2.5 font-sans">
+        <span className="eyebrow text-ink-faint">Speed</span>
+        <div className="inline-flex rounded border border-line p-px">
+          {[0.5, 0.75, 1].map((r) => (
+            <button
+              key={r}
+              type="button"
+              onClick={() => changeRate(r)}
+              aria-pressed={rate === r}
+              className={cn(
+                "rounded-sm px-2 py-0.5 text-[11px] tabular-nums transition-colors",
+                rate === r ? "bg-surface-3 text-ink" : "text-ink-muted hover:text-ink",
+              )}
+            >
+              {r}&times;
+            </button>
+          ))}
+        </div>
         <a
           href={`https://youtu.be/${YT_ID}?t=${Math.floor(timing.startSec)}`}
           target="_blank"
           rel="noreferrer"
-          className="ml-auto truncate text-[11px] text-ink-faint underline-offset-2 hover:text-ink hover:underline"
+          className="ml-auto truncate font-serif text-[13px] italic text-ink-faint underline-offset-2 hover:text-ink hover:underline"
         >
           {PERFORMERS}
         </a>

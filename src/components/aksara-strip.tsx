@@ -50,16 +50,16 @@ export function AksaraStrip({ aksaras }: { aksaras: Aksara[] }) {
                 playAksara(a);
               }}
               className={cn(
-                "group flex flex-col items-center gap-0.5 rounded-lg border px-2.5 py-1.5 transition-colors",
+                "group flex min-w-[2.75rem] flex-col items-center gap-1 rounded-sm border px-2.5 pb-1.5 pt-2 transition-colors",
                 active
-                  ? "border-sindura/60 bg-sindura/15"
-                  : "border-line bg-surface-2/60 hover:border-line-strong hover:bg-surface-3/60",
+                  ? "border-sindura/60 bg-sindura/10"
+                  : "border-line bg-surface-0/60 hover:border-line-strong hover:bg-surface-2/60",
               )}
             >
               <span className="deva text-2xl leading-none text-ink">{a.text}</span>
-              <span className="iast text-[11px] leading-none text-ink-muted">{a.iast}</span>
+              <span className="iast text-[13px] leading-none text-ink-muted">{a.iast}</span>
               {a.isConjunct && (
-                <span className="text-[9px] uppercase tracking-wider text-gold">joined</span>
+                <span className="font-sans text-[9px] uppercase tracking-wider text-gold">joined</span>
               )}
             </button>
           );
@@ -67,7 +67,7 @@ export function AksaraStrip({ aksaras }: { aksaras: Aksara[] }) {
       </div>
 
       {open !== null && aksaras[open] && (
-        <div className="rounded-xl border border-line bg-surface-1/80 p-3">
+        <div className="rounded-sm border border-line bg-surface-1/80 p-3">
           <div className="mb-2 flex items-baseline gap-2">
             <span className="deva text-3xl text-ink">{aksaras[open].text}</span>
             <span className="iast text-sm text-ink-muted">= {aksaras[open].iast}</span>
@@ -78,7 +78,7 @@ export function AksaraStrip({ aksaras }: { aksaras: Aksara[] }) {
               onPlay={() => playAksara(aksaras[open])}
             />
             {aksaras[open].isConjunct && (
-              <span className="ml-auto rounded-full bg-gold/15 px-2 py-0.5 text-[10px] uppercase tracking-wider text-gold">
+              <span className="eyebrow ml-auto rounded-sm bg-gold/15 px-2 py-0.5 text-[10px] text-gold">
                 conjunct
               </span>
             )}
@@ -93,7 +93,7 @@ export function AksaraStrip({ aksaras }: { aksaras: Aksara[] }) {
                   key={`${p.char}-${k}`}
                   className={cn(
                     "flex items-center gap-3 py-2",
-                    canPlay && "cursor-pointer rounded-lg hover:bg-surface-2/80",
+                    canPlay && "cursor-pointer rounded-sm hover:bg-surface-2/80",
                   )}
                   onClick={canPlay ? () => playPart(p) : undefined}
                   onKeyDown={
@@ -114,12 +114,12 @@ export function AksaraStrip({ aksaras }: { aksaras: Aksara[] }) {
                   </span>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-baseline gap-x-2">
-                      <span className="iast text-sm text-ink">{p.name}</span>
-                      <span className="text-[11px] text-ink-faint">
+                      <span className="iast text-[15px] text-ink">{p.name}</span>
+                      <span className="font-sans text-[11px] text-ink-faint">
                         {ROLE_LABEL[p.role] ?? p.role}
                       </span>
                     </div>
-                    <div className="mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-ink-muted">
+                    <div className="mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[13px] text-ink-muted">
                       {p.articulation && (
                         <span>
                           {ARTICULATION_LABELS[p.articulation].sa} &middot;{" "}

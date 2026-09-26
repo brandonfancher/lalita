@@ -5,6 +5,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
+import { FitText } from "@/components/fit-text";
 import type { ChantTiming } from "@/lib/types";
 import { cn, practiceLabel } from "@/lib/utils";
 
@@ -71,9 +72,9 @@ export function PracticeSession({
     <div className="space-y-8">
       <form
         onSubmit={submit}
-        className="flex flex-wrap items-end gap-3 rounded-2xl border border-line bg-surface-1/70 p-4"
+        className="flex flex-wrap items-end gap-3 rounded-sm border border-line bg-surface-1/60 p-4 font-sans"
       >
-        <label className="flex flex-col gap-1.5 text-[13px] text-ink-muted">
+        <label className="eyebrow flex flex-col gap-1.5 text-ink-faint">
           From
           <input
             type="number"
@@ -81,10 +82,10 @@ export function PracticeSession({
             max={MAX}
             value={fromInput}
             onChange={(e) => setFromInput(e.target.value)}
-            className="w-24 rounded-xl border border-line bg-surface-0 px-3 py-2 text-sm text-ink outline-none focus:border-line-strong"
+            className="w-24 rounded-sm border border-line-strong bg-surface-0 px-3 py-2 text-sm font-normal normal-case tracking-normal text-ink outline-none focus:border-sindura/60"
           />
         </label>
-        <label className="flex flex-col gap-1.5 text-[13px] text-ink-muted">
+        <label className="eyebrow flex flex-col gap-1.5 text-ink-faint">
           To
           <input
             type="number"
@@ -92,16 +93,16 @@ export function PracticeSession({
             max={MAX}
             value={toInput}
             onChange={(e) => setToInput(e.target.value)}
-            className="w-24 rounded-xl border border-line bg-surface-0 px-3 py-2 text-sm text-ink outline-none focus:border-line-strong"
+            className="w-24 rounded-sm border border-line-strong bg-surface-0 px-3 py-2 text-sm font-normal normal-case tracking-normal text-ink outline-none focus:border-sindura/60"
           />
         </label>
         <button
           type="submit"
-          className="rounded-full bg-gradient-to-br from-sindura to-lotus px-4 py-2 text-sm font-medium text-white shadow-md transition-transform active:scale-95"
+          className="rounded-sm bg-sindura px-4 py-2 text-sm font-medium tracking-wide text-on-sindura shadow-sm transition-transform active:scale-95"
         >
           Practice
         </button>
-        <p className="w-full text-[12px] text-ink-faint sm:ml-auto sm:w-auto sm:self-center">
+        <p className="w-full font-serif text-[15px] italic text-ink-faint sm:ml-auto sm:w-auto sm:self-center">
           0 is the dhyāna (Shloka 0). Range is inclusive, up to 182.
         </p>
       </form>
@@ -109,8 +110,12 @@ export function PracticeSession({
       <ChantBar timing={timing} label={playerLabel} defaultLoop />
 
       <div>
-        <div className="mb-3 flex flex-wrap items-center gap-x-1 gap-y-1 text-xs">
-          <span className="mr-1 text-ink-faint">Show</span>
+        <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+          <div
+            role="radiogroup"
+            aria-label="Script"
+            className="inline-flex rounded-md border border-line bg-surface-1/60 p-0.5 font-sans text-xs"
+          >
           {(
             [
               ["both", "Both"],
@@ -121,23 +126,27 @@ export function PracticeSession({
             <button
               key={value}
               type="button"
+              role="radio"
+              aria-checked={script === value}
               onClick={() => setScript(value)}
               className={cn(
-                "rounded-full px-2.5 py-1 transition-colors",
+                "rounded px-3 py-1 transition-colors",
+                value === "deva" && "deva py-0 text-[13px]",
                 script === value
-                  ? "bg-surface-3 text-ink"
-                  : "text-ink-muted hover:bg-surface-2 hover:text-ink",
+                  ? "bg-surface-0 text-ink shadow-sm ring-1 ring-line"
+                  : "text-ink-muted hover:text-ink",
               )}
             >
               {label}
             </button>
           ))}
-          <span className="ml-auto text-[11px] text-ink-faint">
+          </div>
+          <span className="ml-auto text-[15px] italic text-ink-faint">
             Hover or tap a name for its gloss
           </span>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-3">
           {verses.map((verse) => (
             <PracticeVerseCard
               key={verse.id}
@@ -175,15 +184,15 @@ function PracticeVerseCard({
   }, [activeTokenId, verse.lines]);
 
   return (
-    <article className="rounded-2xl border border-line bg-surface-1/60 px-4 py-3 sm:px-5">
+    <article className="folio rounded-sm px-5 py-4 sm:px-7 sm:py-5">
       <div className="mb-1.5">
         <a
           href={`/shloka/${verse.id}`}
           target="_blank"
           rel="noreferrer"
-          className="group inline-flex items-center gap-1.5 text-gold-soft transition-colors hover:text-gold"
+          className="group inline-flex items-center gap-1.5 text-sindura transition-colors hover:text-sindura-soft"
         >
-          <span className="display text-lg text-inherit sm:text-xl">{title}</span>
+          <span className="eyebrow text-inherit">{title}</span>
           <ExternalLink
             size={13}
             className="shrink-0 text-ink-faint opacity-60 group-hover:opacity-100"
@@ -197,7 +206,12 @@ function PracticeVerseCard({
         {verse.lines.map((line, li) => (
           <div key={li} className="space-y-0.5">
             {script !== "iast" && (
-              <p className="deva text-[1.25rem] leading-[1.75] text-ink sm:text-[1.45rem]">
+              <FitText
+                as="p"
+                mode="words"
+                fitKey={line.tokens.map((t) => t.id).join()}
+                className="deva text-[1.4rem] leading-[1.75] text-ink sm:text-[1.65rem]"
+              >
                 {line.tokens.map((token) => (
                   <GlossToken
                     key={`d-${token.id}`}
@@ -207,15 +221,18 @@ function PracticeVerseCard({
                     onToggle={onToggleToken}
                   />
                 ))}
-              </p>
+              </FitText>
             )}
             {script !== "deva" && (
-              <p
+              <FitText
+                as="p"
+                mode="words"
+                fitKey={`${script}:${line.tokens.map((t) => t.id).join()}`}
                 className={cn(
                   "iast leading-snug",
                   script === "iast"
-                    ? "text-base text-ink sm:text-lg"
-                    : "text-[13px] text-ink-muted sm:text-[14px]",
+                    ? "text-lg text-ink sm:text-xl"
+                    : "text-[1rem] text-ink-muted sm:text-[1.05rem]",
                 )}
               >
                 {line.tokens.map((token) => (
@@ -227,14 +244,14 @@ function PracticeVerseCard({
                     onToggle={onToggleToken}
                   />
                 ))}
-              </p>
+              </FitText>
             )}
           </div>
         ))}
       </div>
 
       {activeGlosses && (
-        <p className="mt-2 border-t border-line/50 pt-2 text-[13px] leading-snug text-ink-muted">
+        <p className="mt-2 border-t border-line pt-2 text-[15px] italic leading-snug text-ink-muted">
           {activeGlosses.join(" · ")}
         </p>
       )}
@@ -258,12 +275,18 @@ function GlossToken({
   const label = glosses?.join(" · ");
 
   if (!interactive) {
-    return <span>{text} </span>;
+    return (
+      <>
+        <span data-fit-word className="whitespace-nowrap">
+          {text}
+        </span>{" "}
+      </>
+    );
   }
 
   return (
     <>
-      <span className="group/tok relative inline-block">
+      <span data-fit-word className="group/tok relative inline-block whitespace-nowrap">
         <span
           role="button"
           tabIndex={0}
@@ -286,7 +309,7 @@ function GlossToken({
         <span
           role="tooltip"
           className={cn(
-            "pointer-events-none absolute bottom-full left-1/2 z-20 mb-1.5 w-max max-w-[16rem] -translate-x-1/2 rounded-lg border border-line bg-surface-2 px-2.5 py-1.5 text-left font-sans text-[12px] font-normal normal-case leading-snug tracking-normal text-ink shadow-lg",
+            "pointer-events-none absolute bottom-full left-1/2 z-20 mb-1.5 w-max max-w-[16rem] -translate-x-1/2 rounded-sm border border-line-strong bg-surface-0 px-2.5 py-1.5 text-left font-sans text-[12px] font-normal not-italic normal-case leading-snug tracking-normal text-ink shadow-lg",
             // Desktop: hover tip. Mobile: gloss pins under the verse instead.
             "hidden opacity-0 transition-opacity lg:block lg:group-hover/tok:opacity-100",
           )}

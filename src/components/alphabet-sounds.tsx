@@ -13,23 +13,23 @@ export function AlphabetSounds() {
   const consonants = Object.entries(CONSONANTS);
 
   return (
-    <section className="mb-12">
-      <h2 className="display mb-2 text-2xl text-ink">The sounds</h2>
-      <p className="mb-5 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
+    <section className="mb-14">
+      <h2 className="display mb-2 text-[2rem] text-ink">The sounds</h2>
+      <p className="mb-6 max-w-2xl text-[1.075rem] leading-relaxed text-ink-muted">
         Sanskrit orders its alphabet by where in the mouth each sound is made, moving from the back
         of the throat forward to the lips. Tap any letter to hear it — clips from{" "}
         <a
           href="https://learnsanskrit.org/sounds/"
           target="_blank"
           rel="noreferrer"
-          className="text-gold-soft underline-offset-2 hover:underline"
+          className="text-sindura underline decoration-sindura/40 underline-offset-4 hover:decoration-sindura"
         >
           learnsanskrit.org
         </a>
         .
       </p>
 
-      <h3 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">Vowels</h3>
+      <h3 className="eyebrow mb-3 text-ink-faint">Vowels</h3>
       <div className="mb-6 flex flex-wrap gap-2">
         {vowels.map(([char, info]) => (
           <LetterTile
@@ -42,10 +42,8 @@ export function AlphabetSounds() {
         ))}
       </div>
 
-      <h3 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">
-        Consonants, by place of articulation
-      </h3>
-      <div className="space-y-2">
+      <h3 className="eyebrow mb-3 text-ink-faint">Consonants, by place of articulation</h3>
+      <div className="divide-y divide-line border-y border-line-strong">
         {ORDER.map((place) => {
           const row = consonants.filter(
             ([, i]) => i.articulation === place && i.class !== "semivowel",
@@ -54,11 +52,11 @@ export function AlphabetSounds() {
           return (
             <div
               key={place}
-              className="flex flex-wrap items-center gap-2 rounded-xl border border-line bg-surface-1/50 p-3"
+              className="flex flex-wrap items-center gap-2 py-3"
             >
-              <span className="w-full text-[11px] text-gold sm:w-32 sm:shrink-0">
-                {ARTICULATION_LABELS[place].sa}
-                <span className="ml-1 text-ink-faint">{ARTICULATION_LABELS[place].en}</span>
+              <span className="w-full sm:w-36 sm:shrink-0">
+                <span className="iast block text-[1.05rem] text-sindura">{ARTICULATION_LABELS[place].sa}</span>
+                <span className="block text-[15px] text-ink-faint">{ARTICULATION_LABELS[place].en}</span>
               </span>
               {row.map(([char, info]) => (
                 <LetterTile
@@ -74,9 +72,7 @@ export function AlphabetSounds() {
         })}
       </div>
 
-      <h3 className="mb-2 mt-6 text-[11px] uppercase tracking-wider text-ink-faint">
-        Semivowels &amp; sibilants
-      </h3>
+      <h3 className="eyebrow mb-3 mt-8 text-ink-faint">Semivowels &amp; sibilants</h3>
       <div className="flex flex-wrap gap-2">
         {consonants
           .filter(([, i]) => i.class === "semivowel" || i.class === "sibilant" || i.class === "aspirate" || i.class === "lateral")
@@ -115,16 +111,16 @@ function LetterTile({
       title={title ?? (playable ? `Play ${iast}` : undefined)}
       onClick={() => playSounds([soundKey])}
       className={cn(
-        "flex min-w-[3.5rem] flex-col items-center rounded-lg border px-2.5 py-2 transition-colors",
+        "flex min-w-[3.5rem] flex-col items-center rounded-sm border px-2.5 pb-1.5 pt-2.5 transition-colors",
         playable
-          ? "border-line bg-surface-1/60 hover:border-gold/50 hover:bg-gold/10"
-          : "cursor-default border-line bg-surface-1/40 opacity-60",
+          ? "border-line bg-surface-0/60 hover:border-sindura/40 hover:bg-sindura/[0.06]"
+          : "cursor-default border-line bg-surface-0/40 opacity-60",
       )}
     >
       <span className="deva text-2xl leading-none text-ink">{deva}</span>
-      <span className="iast mt-1 text-xs text-gold-soft">{iast}</span>
+      <span className="iast mt-1 text-sm text-gold-soft">{iast}</span>
       {caption && (
-        <span className="mt-0.5 text-[9px] uppercase tracking-wide text-ink-faint">{caption}</span>
+        <span className="mt-0.5 font-sans text-[9px] uppercase tracking-wide text-ink-faint">{caption}</span>
       )}
     </button>
   );

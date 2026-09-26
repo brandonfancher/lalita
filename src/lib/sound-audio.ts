@@ -131,11 +131,6 @@ export function soundKeysForAksara(aksara: Aksara): string[] {
   return keys;
 }
 
-/** Ordered clip keys for a whole word (all of its akṣaras). */
-export function soundKeysForAksaras(aksaras: Aksara[]): string[] {
-  return aksaras.flatMap(soundKeysForAksara);
-}
-
 // ---------------------------------------------------------------------------
 // Playback (browser only)
 // ---------------------------------------------------------------------------
@@ -194,8 +189,4 @@ export function playPart(part: AksaraPart): void {
 
 export function playAksara(aksara: Aksara): void {
   playSounds(soundKeysForAksara(aksara));
-}
-
-export function playAksaras(aksaras: Aksara[]): void {
-  playSounds(soundKeysForAksaras(aksaras));
 }

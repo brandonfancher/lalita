@@ -73,10 +73,13 @@ export default async function PracticePage({
     from === to ? practiceLabel(from) : `${practiceLabel(from)} – ${practiceLabel(to)}`;
 
   return (
-    <div className="mx-auto max-w-3xl px-4 pb-24 pt-8 sm:px-6 sm:pt-12">
+    <div className="mx-auto max-w-3xl px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
       <header className="mb-8">
-        <h1 className="display text-3xl font-medium text-ink sm:text-4xl">Practice</h1>
-        <p className="mt-2 max-w-2xl text-[15px] text-ink-muted">
+        <p className="eyebrow text-sindura">Abhyāsa</p>
+        <h1 className="display mt-2 text-[2.6rem] leading-tight text-ink sm:text-[3.25rem]">
+          Practice
+        </h1>
+        <p className="mt-3 max-w-2xl text-[1.1rem] leading-relaxed text-ink-muted">
           Choose an inclusive range, play the chant on loop, and keep the text in view. Open any
           shloka in a new tab when you want the full study page.
         </p>

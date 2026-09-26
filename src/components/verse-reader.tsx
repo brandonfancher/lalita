@@ -1,14 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { X } from "lucide-react";
+import { MousePointerClick, X } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
-import { SoundButton } from "@/components/sound-button";
-import { playAksaras } from "@/lib/sound-audio";
+import { FitText } from "@/components/fit-text";
+import { Lotus } from "@/components/ornament";
 import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
-import { caseInfo, cn } from "@/lib/utils";
+import { caseInfo, cn, toDevanagariDigits } from "@/lib/utils";
 
 type ScriptMode = "both" | "deva" | "iast";
 
@@ -20,7 +20,14 @@ type ScriptMode = "both" | "deva" | "iast";
  * Tapping any word opens the inspector; the script toggle lets you progressively
  * hide the romanization as the script becomes readable.
  */
-export function VerseReader({ module: mod }: { module: StudyModule }) {
+export function VerseReader({
+  module: mod,
+  chant,
+}: {
+  module: StudyModule;
+  /** Rendered at the top of the reading column, above the verse. */
+  chant?: React.ReactNode;
+}) {
   const [script, setScript] = useState<ScriptMode>("both");
   const [activeId, setActiveId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
@@ -57,101 +64,166 @@ export function VerseReader({ module: mod }: { module: StudyModule }) {
     return ids;
   }, [hoverId, activeId, tokensById, mod.lines]);
 
+  /** Printed editions close each half-verse with a daṇḍa and number the verse. */
+  const markerFor = (li: number, kind: "deva" | "iast") => {
+    if (mod.kind !== "shloka" || mod.number === null) return null;
+    const last = li === mod.lines.length - 1;
+    if (kind === "deva") return last ? `॥ ${toDevanagariDigits(mod.number)} ॥` : "।";
+    return last ? `‖ ${mod.number} ‖` : "|";
+  };
+
+  const renderToken = (t: Token, kind: "deva" | "iast") => (
+    <TokenSpan
+      key={`${kind}-${t.id}`}
+      token={t}
+      text={t[kind]}
+      activeId={activeId}
+      hoverId={hoverId}
+      linked={linkedIds.has(t.id)}
+      onSelect={setActiveId}
+      onHover={setHoverId}
+    />
+  );
+
+  // The closing daṇḍa travels with the last word so it never wraps alone.
+  const renderTokens = (tokens: Token[], kind: "deva" | "iast", marker: string | null) => {
+    if (!marker || tokens.length === 0) return tokens.map((t) => renderToken(t, kind));
+    const last = tokens[tokens.length - 1];
+    return (
+      <>
+        {tokens.slice(0, -1).map((t) => renderToken(t, kind))}
+        <span data-fit-word className="whitespace-nowrap">
+          {renderToken(last, kind)}
+          <span aria-hidden className="text-sindura">
+            {marker}
+          </span>
+        </span>
+      </>
+    );
+  };
+
   return (
-    <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-8">
-      <div>
-        <div className="mb-4 flex items-center gap-1 text-xs">
-          <span className="mr-1 text-ink-faint">Show</span>
-          {(
-            [
-              ["both", "Both"],
-              ["deva", "देवनागरी"],
-              ["iast", "Romanized"],
-            ] as const
-          ).map(([value, label]) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => setScript(value)}
-              className={cn(
-                "rounded-full px-2.5 py-1 transition-colors",
-                script === value
-                  ? "bg-surface-3 text-ink"
-                  : "text-ink-muted hover:bg-surface-2 hover:text-ink",
-              )}
-            >
-              {label}
-            </button>
-          ))}
+    <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-10">
+      <div className="min-w-0">
+        {chant && <div className="mb-6">{chant}</div>}
+
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <div
+            role="radiogroup"
+            aria-label="Script"
+            className="inline-flex rounded-md border border-line bg-surface-1/60 p-0.5 font-sans text-xs"
+          >
+            {(
+              [
+                ["both", "Both"],
+                ["deva", "देवनागरी"],
+                ["iast", "Romanized"],
+              ] as const
+            ).map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                role="radio"
+                aria-checked={script === value}
+                onClick={() => setScript(value)}
+                className={cn(
+                  "rounded px-3 py-1 transition-colors",
+                  value === "deva" && "deva py-0 text-[13px]",
+                  script === value
+                    ? "bg-surface-0 text-ink shadow-sm ring-1 ring-line"
+                    : "text-ink-muted hover:text-ink",
+                )}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <p className="hidden text-sm italic text-ink-faint sm:block lg:hidden">
+            Tap any word to inspect it.
+          </p>
         </div>
 
-        <div className="space-y-5 rounded-2xl border border-line bg-surface-1/60 p-4 sm:p-6">
-          {mod.lines.map((line, li) => (
-            <div key={li} className="space-y-1.5">
-              {script !== "iast" && (
-                <p className="deva text-[1.6rem] leading-[1.85] text-ink sm:text-3xl">
-                  {line.tokens.map((t) => (
-                    <TokenSpan
-                      key={`d-${t.id}`}
-                      token={t}
-                      text={t.deva}
-                      activeId={activeId}
-                      hoverId={hoverId}
-                      linked={linkedIds.has(t.id)}
-                      onSelect={setActiveId}
-                      onHover={setHoverId}
-                    />
-                  ))}
-                </p>
-              )}
-              {script !== "deva" && (
-                <p
-                  className={cn(
-                    "iast leading-relaxed",
-                    script === "iast"
-                      ? "text-xl text-ink sm:text-2xl"
-                      : "text-[15px] text-ink-muted sm:text-base",
-                  )}
-                >
-                  {line.tokens.map((t) => (
-                    <TokenSpan
-                      key={`i-${t.id}`}
-                      token={t}
-                      text={t.iast}
-                      activeId={activeId}
-                      hoverId={hoverId}
-                      linked={linkedIds.has(t.id)}
-                      onSelect={setActiveId}
-                      onHover={setHoverId}
-                    />
-                  ))}
-                </p>
-              )}
-            </div>
-          ))}
+        <div className="folio rounded-sm px-5 py-7 sm:px-10 sm:py-10">
+          <div className="space-y-6">
+            {mod.lines.map((line, li) => (
+              <div key={li} className="space-y-1">
+                {script !== "iast" && (
+                  <FitText
+                    as="p"
+                    mode="words"
+                    fitKey={line.deva}
+                    className="deva text-[1.65rem] leading-[1.8] text-ink sm:text-[2.05rem]"
+                  >
+                    {renderTokens(line.tokens, "deva", markerFor(li, "deva"))}
+                  </FitText>
+                )}
+                {script !== "deva" && (
+                  <FitText
+                    as="p"
+                    mode="words"
+                    fitKey={`${script}:${line.iast}`}
+                    className={cn(
+                      "iast leading-relaxed",
+                      script === "iast"
+                        ? "text-[1.45rem] text-ink sm:text-[1.7rem]"
+                        : "text-[1.05rem] text-ink-muted sm:text-[1.2rem]",
+                    )}
+                  >
+                    {renderTokens(
+                      line.tokens,
+                      "iast",
+                      script === "iast" ? markerFor(li, "iast") : null,
+                    )}
+                  </FitText>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
 
-        <p className="mt-3 text-xs text-ink-faint">
+        <p className="mt-3 text-sm italic text-ink-faint sm:hidden">
           Tap any word to inspect its meaning, grammar, and syllables.
         </p>
       </div>
 
       {/* Desktop: a sticky column. Mobile: a bottom sheet. */}
-      {active && (
-        <>
-          <div className="hidden lg:block">
-            <div className="sticky top-24">
-              <Inspector
-                token={active}
-                namas={activeNamas}
-                onClose={() => setActiveId(null)}
-              />
-            </div>
-          </div>
-          <div className="fixed inset-x-0 bottom-0 z-40 max-h-[70dvh] overflow-y-auto rounded-t-2xl border-t border-line-strong bg-surface-1 p-4 shadow-2xl lg:hidden">
+      <aside className="hidden lg:block">
+        <div className="sticky top-20">
+          {active ? (
             <Inspector token={active} namas={activeNamas} onClose={() => setActiveId(null)} />
-          </div>
-        </>
+          ) : (
+            <IdleCard namaCount={mod.namas.length} />
+          )}
+        </div>
+      </aside>
+      {active && (
+        <div className="fixed inset-x-0 bottom-0 z-40 max-h-[72dvh] overflow-y-auto rounded-t-xl border-t border-line-strong bg-surface-0 px-4 pb-6 pt-2 shadow-[0_-20px_50px_-20px_rgba(40,20,10,0.4)] lg:hidden">
+          <div aria-hidden className="mx-auto mb-3 h-1 w-10 rounded-full bg-line-strong" />
+          <Inspector
+            token={active}
+            namas={activeNamas}
+            onClose={() => setActiveId(null)}
+            bare
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function IdleCard({ namaCount }: { namaCount: number }) {
+  return (
+    <div className="rounded-sm border border-dashed border-line-strong/70 px-5 py-6 text-center">
+      <MousePointerClick size={18} className="mx-auto mb-3 text-gold" strokeWidth={1.5} />
+      <p className="display text-lg text-ink">Tap any word of the verse</p>
+      <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">
+        to see its meaning, its grammar, how its compound is built, and the syllables it is
+        written with.
+      </p>
+      {namaCount > 0 && (
+        <p className="mt-4 border-t border-line pt-3 text-sm italic text-ink-faint">
+          This shloka carries {namaCount} of the thousand names.
+        </p>
       )}
     </div>
   );
@@ -179,7 +251,8 @@ function TokenSpan({
       <span
         role="button"
         tabIndex={0}
-        className="tappable"
+        data-fit-word
+        className="tappable whitespace-nowrap"
         data-active={activeId === token.id}
         data-linked={linked || (hoverId === token.id && activeId !== token.id)}
         onClick={() => onSelect(activeId === token.id ? null : token.id)}
@@ -202,38 +275,45 @@ function Inspector({
   token,
   namas,
   onClose,
+  bare = false,
 }: {
   token: Token;
   namas: Nama[];
   onClose: () => void;
+  /** Drop the card chrome when already inside a sheet. */
+  bare?: boolean;
 }) {
   return (
-    <div className="rounded-2xl border border-line bg-surface-1 p-4">
-      <div className="mb-3 flex items-start gap-2">
+    <div
+      className={cn(
+        !bare &&
+          "max-h-[calc(100dvh-6.5rem)] overflow-y-auto rounded-sm border border-line-strong bg-surface-0/90 p-5 shadow-[0_18px_40px_-28px_rgba(40,20,10,0.5)]",
+      )}
+    >
+      <div className="mb-4 flex items-start gap-2 border-b border-line pb-4">
         <div className="min-w-0 flex-1">
-          <p className="deva text-2xl leading-snug text-ink">{token.deva}</p>
-          <p className="iast text-sm text-gold-soft">{token.iast}</p>
+          <FitText as="p" className="deva text-[1.75rem] leading-snug text-ink">
+            {token.deva}
+          </FitText>
+          <FitText as="p" className="iast text-[1.05rem] text-gold-soft">
+            {token.iast}
+          </FitText>
         </div>
-        {token.aksaras.length > 0 && (
-          <SoundButton
-            label={`Play ${token.iast}`}
-            onPlay={() => playAksaras(token.aksaras)}
-          />
-        )}
         <button
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-ink-faint transition-colors hover:bg-surface-2 hover:text-ink"
+          className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-ink-faint transition-colors hover:bg-surface-2 hover:text-ink"
         >
-          <X size={15} />
+          <X size={16} />
         </button>
       </div>
 
       {namas.length > 0 ? (
-        <div className="space-y-5">
+        <div className="space-y-6">
           {namas.length > 1 && (
-            <p className="rounded-lg bg-surface-2/60 px-2.5 py-1.5 text-[13px] leading-relaxed text-ink-muted">
+            <p className="flex items-start gap-2 rounded-sm bg-surface-2/60 px-3 py-2 text-[15px] leading-snug text-ink-muted">
+              <Lotus size={16} className="mt-1 shrink-0 text-gold" />
               Sandhi has joined {namas.length === 2 ? "two names" : `${namas.length} names`} into
               this one written word.
             </p>
@@ -245,13 +325,13 @@ function Inspector({
       ) : token.word ? (
         <WordPanel word={token.word} />
       ) : (
-        <p className="mb-4 text-sm text-ink-faint">
+        <p className="mb-4 text-[15px] italic text-ink-faint">
           This word is part of the verse frame rather than one of the thousand names.
         </p>
       )}
 
-      <section className="mt-4">
-        <h4 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">Syllables</h4>
+      <section className="mt-5">
+        <h4 className="eyebrow mb-2 text-ink-faint">Syllables</h4>
         <AksaraStrip aksaras={token.aksaras} />
       </section>
     </div>
@@ -261,28 +341,23 @@ function Inspector({
 /** One of the thousand names, as reached by tapping a word of the verse. */
 function NamaPanel({ nama }: { nama: Nama }) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       <div>
-        <div className="mb-1 flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <span className="rounded-full bg-sindura/15 px-2 py-0.5 text-[10px] uppercase tracking-wider text-sindura-soft">
-            nāma {nama.index}
-          </span>
-          <span className="deva text-base text-ink">{nama.deva}</span>
-          <span className="iast text-[13px] text-ink-muted">{nama.iast}</span>
-          {nama.aksaras.length > 0 && (
-            <SoundButton
-              size="sm"
-              label={`Play ${nama.iast}`}
-              onPlay={() => playAksaras(nama.aksaras)}
-            />
-          )}
+        <div data-fit-container className="mb-1.5 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <span className="eyebrow text-sindura">Nāma {nama.index}</span>
+          <FitText container="marker" className="deva text-lg text-ink">
+            {nama.deva}
+          </FitText>
+          <FitText container="marker" className="iast text-[15px] text-ink-muted">
+            {nama.iast}
+          </FitText>
         </div>
-        {nama.gloss && <p className="text-[15px] font-medium text-ink">{nama.gloss}</p>}
+        {nama.gloss && <p className="display text-xl leading-snug text-ink">{nama.gloss}</p>}
         {nama.translation && (
-          <p className="mt-1 text-sm leading-relaxed text-ink-muted">{nama.translation}</p>
+          <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{nama.translation}</p>
         )}
         {!nama.gloss && !nama.translation && (
-          <p className="text-sm text-ink-faint">Meaning not yet written for this name.</p>
+          <p className="text-[15px] italic text-ink-faint">Meaning not yet written for this name.</p>
         )}
       </div>
 
@@ -290,7 +365,7 @@ function NamaPanel({ nama }: { nama: Nama }) {
 
       {nama.compound && (
         <section>
-          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Compound</h4>
+          <h4 className="eyebrow mb-2 text-ink-faint">Compound</h4>
           <CompoundTree node={nama.compound} />
         </section>
       )}
@@ -304,8 +379,8 @@ function Grammar({ m }: { m?: Morphology }) {
 
   return (
     <section>
-      <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Grammar</h4>
-      <dl className="space-y-1 text-[13px]">
+      <h4 className="eyebrow mb-2 text-ink-faint">Grammar</h4>
+      <dl className="divide-y divide-line/70 border-y border-line/70 text-[15px]">
         <Row label="stem">
           <span className="deva mr-1.5">{m.stem}</span>
           <span className="iast text-ink-muted">{m.stemIast}</span>
@@ -339,26 +414,23 @@ function Grammar({ m }: { m?: Morphology }) {
 /** A word of the dhyāna, which carries its own meaning rather than a nāma's. */
 function WordPanel({ word }: { word: WordGloss }) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       <div>
-        <p className="text-[15px] font-medium text-ink">{word.gloss}</p>
+        <p className="display text-xl leading-snug text-ink">{word.gloss}</p>
         {word.translation && (
-          <p className="mt-1 text-sm leading-relaxed text-ink-muted">{word.translation}</p>
+          <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{word.translation}</p>
         )}
         {word.partOf && (
-          <p className="mt-2 rounded-lg bg-surface-2/60 px-2.5 py-1.5 text-[13px] text-ink-muted">
-            Printed apart, but part of{" "}
-            <span className="iast text-ink">{word.partOf}</span>.
+          <p className="mt-2 rounded-sm bg-surface-2/60 px-3 py-2 text-[15px] text-ink-muted">
+            Printed apart, but part of <span className="iast text-ink">{word.partOf}</span>.
           </p>
         )}
       </div>
 
       {word.lemma && (
         <section>
-          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">
-            Dictionary form
-          </h4>
-          <p className="text-[13px]">
+          <h4 className="eyebrow mb-2 text-ink-faint">Dictionary form</h4>
+          <p className="text-[15px]">
             {word.lemmaDeva && <span className="deva mr-1.5 text-ink">{word.lemmaDeva}</span>}
             <span className="iast text-ink-muted">{word.lemma}</span>
           </p>
@@ -369,21 +441,21 @@ function WordPanel({ word }: { word: WordGloss }) {
 
       {word.compound && (
         <section>
-          <h4 className="mb-1.5 text-[11px] uppercase tracking-wider text-ink-faint">Compound</h4>
+          <h4 className="eyebrow mb-2 text-ink-faint">Compound</h4>
           <CompoundTree node={word.compound} />
         </section>
       )}
 
-      {word.note && <p className="text-[13px] leading-relaxed text-ink-faint">{word.note}</p>}
+      {word.note && <p className="text-[15px] italic leading-relaxed text-ink-faint">{word.note}</p>}
     </div>
   );
 }
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="flex gap-2">
-      <dt className="w-24 shrink-0 text-ink-faint">{label}</dt>
-      <dd className="min-w-0 flex-1 text-ink">{children}</dd>
+    <div className="flex gap-3 py-1.5">
+      <dt className="w-[6.5rem] shrink-0 text-[14px] italic leading-6 text-ink-faint">{label}</dt>
+      <dd className="min-w-0 flex-1 text-ink [overflow-wrap:anywhere]">{children}</dd>
     </div>
   );
 }
