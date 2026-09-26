@@ -10,7 +10,17 @@
 
 import type { CSSProperties } from "react";
 
-import { artIds, BeeString, bowTips, FlowerArrow, partProps, round, SugarcaneBow, type Tattva } from "./primitives";
+import {
+  artIds,
+  BeeString,
+  bowTips,
+  FlowerArrow,
+  glint,
+  partProps,
+  round,
+  SugarcaneBow,
+  type Tattva,
+} from "./primitives";
 import type { ArtProps } from "./types";
 
 /** The nock, where she draws the string: the bindu. */
@@ -169,22 +179,13 @@ export function DrawnBow({ idPrefix = "sa3", active = null }: ArtProps) {
         {ring.map((e, i) => (
           <g key={i} className={e.sink ? "m-sink" : undefined} style={sinkStyle(e)}>
             <path d={eggPath(e.x, e.cy, e.w, e.h)} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.1} />
-            <ellipse
-              cx={e.x}
-              cy={round(e.cy - 0.3 * e.h)}
-              rx={round(0.62 * e.w)}
-              ry={round(0.2 * e.w)}
-              stroke="var(--gold)"
-              strokeWidth={0.5}
-              strokeOpacity={0.8}
-            />
-            <circle
-              className={["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"][e.group]}
-              cx={e.x}
-              cy={round(e.cy - 0.3 * e.h)}
-              r={round(0.22 * e.w)}
-              fill="var(--art-core)"
-            />
+            <g transform={`translate(${e.x} ${round(e.cy - 0.3 * e.h)})`}>
+              <path
+                className={["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"][e.group]}
+                d={glint(round(0.5 * e.w))}
+                fill="var(--art-saffron)"
+              />
+            </g>
           </g>
         ))}
         <g clipPath={url("under")}>

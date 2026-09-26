@@ -47,16 +47,19 @@ second time it is needed.
 | Bangle (kaṅkaṇa) | A gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | Inline | Shloka 2 |
 | The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | Inline | Shloka 2 |
 | The sea | Rows of shallow gold ripple arcs, closer near the horizon, faded at the sides; the light on it as a column of saffron lozenges | Inline | Shloka 2 |
+| Her sugarcane bow (ikṣu-kodaṇḍa) | `SugarcaneBow` with a `BowShape` (`half`, `grip`, `bend`): a thick gold cane stave with a paler edge, jointed every 25 units, bound at the grip, a tuft of three `--leaf` leaves at each tip. Drawn in a frame where it is aimed up; `bowTips` gives where the string is tied. Drawn, the string runs from each tip to the origin; braced, tip to tip | `primitives.tsx` | Shloka 3 |
+| Bowstring of bees | `BeeString`: a gold hairline with a line of tiny bees along it, heads toward `to` | `primitives.tsx` | Shloka 3 |
+| Her flower arrows (puṣpa-bāṇa) | `FlowerArrow`: a gold shaft, saffron fletching, a gold calyx, and a budding flower (vermilion centre petal between two saffron ones). Nock at the origin, pointing up | `primitives.tsx` | Shloka 3 |
+| The five elements' signs | Inside `FlowerArrow` via `sign`: a ring for space (sound), a six-pointed star for air (touch), an upward triangle for fire (form), a crescent with its horns up for water (taste), a square for earth (smell). Filled with `--art-core` on the vermilion petal. When the five arrows appear together, set them left to right in that order | `primitives.tsx` | Shloka 3 |
+| A world-egg (brahmāṇḍa) | An egg, broad end down, in `--art-stone` with a gold rim and a saffron `glint` inside. Afloat in her light, it sits half-sunk: the part below the surface tinted vermilion, a flat gold ring where the surface meets it | Inline | Shloka 3 |
+
+When all four weapons appear together, the upper hands hold the noose (left) and the goad
+(right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
 
 ### Anticipated
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **Her bow and arrows** (Shloka 3): the sugarcane bow (ikṣu-kodaṇḍa, the mind) and the five
-  flower arrows (the subtle elements). With the noose and goad they recur in the Dhyāna and
-  throughout the stotra, so draw each as a self-contained component and promote it to
-  `primitives.tsx` at once, as `Noose` and `Goad` were. In Shloka 2 the upper arms hold the noose
-  (on the left) and the goad (on the right); keep that order whenever all four appear.
 - **The crescent moon** on her crown (Shloka 5, and the Dhyāna's *tārā-nāyaka-śekharām*).
 - **Her ruby crown** (Shloka 4, and the Dhyāna's *māṇikya-mauli*).
 - **The Śrīcakra and its triangles.** The site's own `YantraMark` in `src/components/ornament.tsx`
@@ -75,7 +78,10 @@ None yet. The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, 
 Classes added to the motion vocabulary beyond the starting set: `m-breathe`, `m-sway`,
 `m-flicker`, `m-lick`, `m-twinkle`, `m-shimmer`, `m-ember`, `m-late`, `m-later`.
 
-None yet.
+- **`m-sink`** (Shloka 3): surfaces, sinks 15 units while fading out, and surfaces again, over
+  `--dur` (default 28s) from `--delay`. For worlds going under in her flood. Give every piece of
+  one sinking thing the same `--dur` and `--delay`, and keep anything that marks the fixed
+  surface (a clip, a waterline) outside the moving group. Use it on a few elements, never all.
 
 ## Composition log
 
@@ -125,6 +131,33 @@ One entry per finished artwork, in the order they were made.
   single solid wedges, read as wooden poles; nesting three faint layers made them light. This
   shloka's long title reaches much further into the crown zone than Shloka 1's did, so the noose
   was moved right to clear it.
+
+### Shloka 3: The drawn bow
+
+- **Component:** `drawn-bow.tsx` (defs prefix `sa3`)
+- **Composition:** tension and aim. The sugarcane bow is drawn to full, tilted 12° and aimed at
+  the sky, its stave arched over the card and its string a V down to the bindu, the hand that
+  draws it. Five flower arrows fan up from the nock to bloom above the grip. Below, her red light
+  pours into a pool seen at a slant, with ripple rings and a foreshortened ring of sixteen
+  world-eggs floating half-sunk; fainter eggs lie deeper. The first composition with a direction
+  of force, and the first with depth.
+- **Name → part:**
+  - Manorūpekṣukodaṇḍā → `bow`: the jointed sugarcane stave, its grip, and its leaf tufts
+  - Pañcatanmātrasāyakā → `arrows`: five flower arrows, each flower bearing one element's sign
+  - Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā → `flood`: the glow, the pool and its ripples, the
+    ring of world-eggs (four of them sinking), and the sunk eggs below
+  - Intro, *the bindu* → `bindu`: the point of light where the string is drawn
+  - Detail → `bees`: the bowstring, a line of honeybees
+- **Palette:** vermilion, saffron, and gold, and `--leaf` for the first time (the cane's leaves);
+  no additions.
+- **Motion:** `m-breathe` (the flowers), `m-twinkle` (the spark in each egg, in three offset
+  groups), `m-shimmer` (the glow and ripples), and the new `m-sink` on four of the sixteen eggs.
+- **Notes:** This subtitle reaches x ≈ 228 of the artwork at y ≈ 82–138 on desktop, so the aim
+  leans right and the left tip's leaves turn away from the title. A first tapered "pour" of
+  light from the bindu to the pool read as a spotlight cone; a soft radial glow replaced it. A
+  tiny ring around each egg's spark read as an eye; a plain glint replaced it. On tablet the
+  flower heads fall under the "The artwork" badge, as Shloka 2's goad tip does; the bow still
+  reads there.
 
 ## Open questions
 

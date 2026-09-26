@@ -327,9 +327,9 @@ function caneLeaf(l: number, w: number, curl: number) {
 }
 
 const CANE_LEAVES = [
-  { angle: 38, l: 30, curl: 7 },
-  { angle: 78, l: 42, curl: 10 },
-  { angle: 118, l: 34, curl: 9 },
+  { angle: 58, l: 30, curl: 7 },
+  { angle: 92, l: 42, curl: 10 },
+  { angle: 128, l: 34, curl: 9 },
 ];
 
 /**
