@@ -1,52 +1,67 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /*
- * Palette drawn from the dhyāna verses themselves, which describe the goddess
- * as sindūra-red at dawn, robed in gold, seated among red lotuses. Dark is the
- * default because the site is used for chanting practice, often early.
+ * A rubricated edition.
+ *
+ * The look borrows from printed Sanskrit editions and palm-leaf manuscripts:
+ * warm paper, dark ink, vermilion (sindūra) for numerals and markers, and
+ * gold hairlines for rules and frames. The dark theme is the same page by
+ * lamplight, for early-morning chanting.
  */
 :root {
-  --ink: #f4ece2;
-  --ink-muted: #b6a693;
-  --ink-faint: #7d7062;
+  --ink: #241913;
+  --ink-muted: #5d493b;
+  --ink-faint: #8a7461;
 
-  --surface-0: #100b0c;
-  --surface-1: #1a1214;
-  --surface-2: #241a1c;
-  --surface-3: #2f2325;
+  --surface-0: #f5eddf;
+  --surface-1: #f0e6d4;
+  --surface-2: #e9dcc5;
+  --surface-3: #e0d0b4;
 
-  --sindura: #d94f3d;
-  --sindura-soft: #e8836f;
-  --gold: #d9a441;
-  --gold-soft: #ecc678;
-  --lotus: #c76b8a;
-  --leaf: #7f9b6a;
+  --sindura: #a8321f;
+  --sindura-soft: #b9432d;
+  --on-sindura: #fff7ea;
+  --gold: #99722a;
+  --gold-soft: #86621d;
+  --lotus: #963a58;
+  --leaf: #55703e;
 
-  --border: #372a2c;
-  --border-strong: #4a3739;
+  --border: #dccbad;
+  --border-strong: #c2a77a;
 
-  --radius: 0.75rem;
+  --paper-grain-opacity: 0.55;
+  --paper-grain-blend: multiply;
+
+  color-scheme: light;
 }
 
-[data-theme="light"] {
-  --ink: #2a1f1c;
-  --ink-muted: #6b5a52;
-  --ink-faint: #93827a;
+[data-theme="dark"] {
+  --ink: #f1e5d1;
+  --ink-muted: #bca98f;
+  --ink-faint: #85735e;
 
-  --surface-0: #fbf6ee;
-  --surface-1: #f5ede1;
-  --surface-2: #efe3d3;
-  --surface-3: #e7d7c3;
+  --surface-0: #15100c;
+  --surface-1: #1d1611;
+  --surface-2: #271e17;
+  --surface-3: #33281e;
 
-  --sindura: #b83a28;
-  --sindura-soft: #c9563f;
-  --gold: #a8761c;
-  --gold-soft: #c39337;
-  --lotus: #a4415f;
-  --leaf: #5c7a48;
+  --sindura: #e2674c;
+  --sindura-soft: #ee8b70;
+  --on-sindura: #1a0f0a;
+  --gold: #d0a24a;
+  --gold-soft: #e2bf78;
+  --lotus: #d6809e;
+  --leaf: #95ae7c;
 
-  --border: #ddcbb4;
-  --border-strong: #c9b295;
+  --border: #3a2d23;
+  --border-strong: #56432f;
+
+  --paper-grain-opacity: 0.35;
+  --paper-grain-blend: soft-light;
+
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -61,6 +76,7 @@
 
   --color-sindura: var(--sindura);
   --color-sindura-soft: var(--sindura-soft);
+  --color-on-sindura: var(--on-sindura);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-lotus: var(--lotus);
@@ -69,10 +85,10 @@
   --color-line: var(--border);
   --color-line-strong: var(--border-strong);
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-cormorant);
-  --font-deva: var(--font-deva);
-  --font-iast: var(--font-iast);
+  --font-sans: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-garamond), Georgia, serif;
+  --font-deva: var(--font-tiro), serif;
+  --font-iast: var(--font-garamond), Georgia, serif;
 }
 
 * {
@@ -86,43 +102,88 @@ html {
 body {
   background: var(--surface-0);
   color: var(--ink);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-garamond), Georgia, serif;
+  font-size: 17px;
+  /* Sanskrit compounds can run longer than a phone is wide. */
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-/* A faint radial warmth so large dark areas don't read as flat black. */
+/* Paper: a fine fibrous grain plus a soft warm vignette at the edges. */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  opacity: var(--paper-grain-opacity);
+  mix-blend-mode: var(--paper-grain-blend);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.33 0 0 0 0 0.2 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
   background:
-    radial-gradient(60rem 40rem at 50% -10%, color-mix(in oklab, var(--sindura) 12%, transparent), transparent 70%),
-    radial-gradient(40rem 30rem at 100% 100%, color-mix(in oklab, var(--gold) 7%, transparent), transparent 70%);
+    radial-gradient(70rem 45rem at 50% -15%, color-mix(in oklab, var(--gold) 9%, transparent), transparent 70%),
+    radial-gradient(120% 90% at 50% 50%, transparent 60%, color-mix(in oklab, var(--gold) 10%, transparent) 100%);
 }
 
 /* Devanagari needs more line height and a slightly larger optical size. */
 .deva {
-  font-family: var(--font-deva), serif;
-  line-height: 1.9;
+  font-family: var(--font-tiro), serif;
+  line-height: 1.85;
   font-feature-settings: "kern" 1, "liga" 1;
+  overflow-wrap: anywhere;
 }
 
 .iast {
-  font-family: var(--font-iast), serif;
+  font-family: var(--font-garamond), Georgia, serif;
   font-variant-ligatures: none;
+  overflow-wrap: anywhere;
 }
 
 .display {
-  font-family: var(--font-cormorant), serif;
+  font-family: var(--font-garamond), Georgia, serif;
+  letter-spacing: -0.005em;
+}
+
+/* Small uppercase label used above headings and for metadata. */
+.eyebrow {
+  font-family: var(--font-ui), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.numerals {
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+
+/*
+ * The framed page the verse sits on: a strong outer hairline and a fainter
+ * inner one, like the ruled border of a manuscript leaf.
+ */
+.folio {
+  position: relative;
+  background: color-mix(in oklab, var(--surface-1) 70%, transparent);
+  border: 1px solid var(--border-strong);
+  box-shadow:
+    inset 0 0 0 5px color-mix(in oklab, var(--surface-0) 55%, transparent),
+    inset 0 0 0 6px var(--border),
+    0 1px 0 color-mix(in oklab, var(--ink) 4%, transparent),
+    0 18px 40px -28px color-mix(in oklab, var(--ink) 35%, transparent);
 }
 
 /* Interactive text: words and syllables you can tap to inspect. */
 .tappable {
   cursor: pointer;
-  border-radius: 0.3em;
+  border-radius: 0.2em;
   padding: 0.02em 0.1em;
   margin: 0 -0.06em;
   transition:
@@ -133,20 +194,30 @@ body::before {
 }
 
 .tappable:hover {
-  background-color: color-mix(in oklab, var(--gold) 20%, transparent);
+  background-color: color-mix(in oklab, var(--gold) 18%, transparent);
+}
+
+.tappable:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--sindura) 60%, transparent);
+  outline-offset: 1px;
 }
 
 .tappable[data-active="true"] {
-  background-color: color-mix(in oklab, var(--sindura) 32%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--sindura) 55%, transparent);
+  color: var(--sindura);
+  background-color: color-mix(in oklab, var(--sindura) 13%, transparent);
+  box-shadow: inset 0 -2px 0 color-mix(in oklab, var(--sindura) 70%, transparent);
 }
 
 .tappable[data-linked="true"] {
-  background-color: color-mix(in oklab, var(--gold) 22%, transparent);
+  background-color: color-mix(in oklab, var(--gold) 20%, transparent);
+}
+
+:focus-visible {
+  outline-color: var(--sindura);
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--sindura) 40%, transparent);
+  background: color-mix(in oklab, var(--sindura) 25%, transparent);
 }
 
 /* Scrollbars, so panels don't get chrome that fights the palette. */

@@ -1,34 +1,39 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, Headphones, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
+import { Divider, YantraMark } from "@/components/ornament";
 import { getModuleSummaries } from "@/lib/content";
 
 export default function HomePage() {
   const all = getModuleSummaries();
   const shlokas = all.filter((s) => s.kind === "shloka");
   const first = all[0];
+  const opening = shlokas[0];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6 sm:pt-20">
-      <section className="mb-16 text-center">
-        <p className="deva mb-4 text-2xl text-sindura-soft sm:text-3xl">
-          श्रीमाता श्रीमहाराज्ञी
+    <div className="mx-auto max-w-5xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
+      <section className="text-center">
+        <YantraMark size={56} className="mx-auto mb-6 text-sindura" />
+        <p className="deva text-[1.6rem] text-ink sm:text-[2.1rem]">
+          श्रीललितासहस्रनामस्तोत्रम्
         </p>
-        <h1 className="display mx-auto max-w-3xl text-4xl font-light leading-tight text-ink sm:text-6xl">
-          The Lalitā Sahasranāma,
-          <span className="block text-gold-soft">one shloka at a time</span>
+        <p className="eyebrow mt-4 text-sindura">The thousand names of the Divine Mother</p>
+        <h1 className="display mx-auto mt-3 max-w-3xl text-[3.25rem] leading-[1] text-ink sm:text-[5.5rem]">
+          Lalitā Sahasranāma
         </h1>
-        <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-ink-muted sm:text-base">
-          A study of the thousand names of Lalitā Tripurasundarī: chant each verse in the original
-          recording, read it in both scripts, take apart every name, and learn Sanskrit through the
-          text itself.
+        <p className="display mt-3 text-2xl italic text-ink-muted sm:text-[1.9rem]">
+          studied one shloka at a time
+        </p>
+        <p className="mx-auto mt-6 max-w-xl text-[1.1rem] leading-relaxed text-ink-muted">
+          Chant each verse with the original recording, read it in both scripts, take apart every
+          name, and learn Sanskrit through the text itself.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-9 flex flex-wrap items-center justify-center gap-3 font-sans">
           {first && (
             <Link
               href={`/shloka/${first.id}`}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-sindura to-lotus px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-transform hover:scale-[1.02]"
+              className="group inline-flex items-center gap-2 rounded-sm bg-sindura px-5 py-3 text-sm font-medium tracking-wide text-on-sindura shadow-[0_10px_24px_-12px_color-mix(in_oklab,var(--sindura)_80%,transparent)] transition-transform hover:-translate-y-px"
             >
               Begin with the dhyāna
               <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
@@ -36,48 +41,61 @@ export default function HomePage() {
           )}
           <Link
             href="/shlokas"
-            className="inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-2.5 text-sm text-ink transition-colors hover:bg-surface-2"
+            className="inline-flex items-center gap-2 rounded-sm border border-line-strong px-5 py-3 text-sm font-medium tracking-wide text-ink transition-colors hover:bg-surface-1"
           >
             Browse all {shlokas.length} shlokas
           </Link>
         </div>
       </section>
 
-      <section className="grid gap-4 sm:grid-cols-3">
+      <Divider className="mx-auto my-16 max-w-md" />
+
+      <section className="grid gap-10 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-line">
         <Feature
-          icon={Headphones}
+          numeral="i"
           title="Chant it"
           body="Every shloka plays from the original recording, looping and slowing down as you commit it to memory."
         />
         <Feature
-          icon={BookOpen}
+          numeral="ii"
           title="Read it"
           body="Devanagari and romanization side by side, linked word for word, so you can drop the transliteration when ready."
         />
         <Feature
-          icon={Sparkles}
+          numeral="iii"
           title="Take it apart"
           body="Tap any word for its meaning and grammar, any syllable for the letters inside it, any name for how its compound is built."
         />
       </section>
+
+      {opening && (
+        <Link
+          href={`/shloka/${opening.id}`}
+          className="folio group mx-auto mt-20 block max-w-3xl rounded-sm px-6 py-10 text-center transition-transform hover:-translate-y-0.5 sm:px-12"
+        >
+          <p className="eyebrow text-ink-faint">The first shloka</p>
+          <p className="deva mt-4 text-[1.6rem] leading-snug text-ink sm:text-[2rem]">
+            {opening.previewDeva} <span className="text-sindura">।</span>
+          </p>
+          <p className="iast mt-1 text-lg text-ink-muted">{opening.previewIast}</p>
+          {opening.subtitle && (
+            <p className="display mt-6 inline-flex items-center gap-2 text-lg italic text-sindura">
+              {opening.subtitle}
+              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+            </p>
+          )}
+        </Link>
+      )}
     </div>
   );
 }
 
-function Feature({
-  icon: Icon,
-  title,
-  body,
-}: {
-  icon: typeof BookOpen;
-  title: string;
-  body: string;
-}) {
+function Feature({ numeral, title, body }: { numeral: string; title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-line bg-surface-1/50 p-5">
-      <Icon size={18} className="mb-3 text-gold" />
-      <h2 className="display mb-1.5 text-xl text-ink">{title}</h2>
-      <p className="text-[13px] leading-relaxed text-ink-muted">{body}</p>
+    <div className="text-center sm:px-8">
+      <p className="display text-lg italic text-sindura">{numeral}.</p>
+      <h2 className="display mt-1 text-[1.6rem] text-ink">{title}</h2>
+      <p className="mx-auto mt-2 max-w-xs text-[1.02rem] leading-relaxed text-ink-muted">{body}</p>
     </div>
   );
 }

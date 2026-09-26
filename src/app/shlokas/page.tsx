@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 import { getModuleSummaries } from "@/lib/content";
+import type { ModuleSummary } from "@/lib/types";
+import { toDevanagariDigits } from "@/lib/utils";
 
 export const metadata = { title: "All shlokas" };
 
@@ -10,33 +12,34 @@ export default function ShlokasPage() {
   const shlokas = all.filter((s) => s.kind === "shloka");
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pb-24 pt-8 sm:px-6 sm:pt-12">
-      <header className="mb-8">
-        <h1 className="display text-3xl font-medium text-ink sm:text-4xl">The modules</h1>
-        <p className="mt-2 max-w-2xl text-[15px] text-ink-muted">
-          One module for the meditation verses, then one for each of the 182 shlokas of the stotra,
-          in the order they are chanted.
+    <div className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
+      <header className="mb-10 max-w-2xl">
+        <p className="eyebrow text-sindura">Sūcī &middot; Contents</p>
+        <h1 className="display mt-2 text-[2.6rem] leading-tight text-ink sm:text-[3.25rem]">
+          The shlokas
+        </h1>
+        <p className="mt-3 text-[1.1rem] leading-relaxed text-ink-muted">
+          The meditation verses first, then each of the 182 shlokas of the stotra, in the order they
+          are chanted.
         </p>
       </header>
 
       {dhyana.length > 0 && (
-        <section className="mb-10">
-          <h2 className="mb-3 text-[11px] uppercase tracking-wider text-ink-faint">Opening</h2>
-          <div className="grid gap-3">
+        <section className="mb-12">
+          <h2 className="eyebrow mb-3 text-ink-faint">Opening</h2>
+          <div className="border-t border-line-strong">
             {dhyana.map((s) => (
-              <Card key={s.id} summary={s} />
+              <Entry key={s.id} summary={s} />
             ))}
           </div>
         </section>
       )}
 
       <section>
-        <h2 className="mb-3 text-[11px] uppercase tracking-wider text-ink-faint">
-          The thousand names
-        </h2>
-        <div className="grid gap-3 sm:grid-cols-2">
+        <h2 className="eyebrow mb-3 text-ink-faint">The thousand names</h2>
+        <div className="grid grid-cols-1 border-t border-line-strong lg:grid-cols-2 lg:gap-x-12">
           {shlokas.map((s) => (
-            <Card key={s.id} summary={s} />
+            <Entry key={s.id} summary={s} />
           ))}
         </div>
       </section>
@@ -44,25 +47,38 @@ export default function ShlokasPage() {
   );
 }
 
-function Card({ summary }: { summary: ReturnType<typeof getModuleSummaries>[number] }) {
+function Entry({ summary }: { summary: ModuleSummary }) {
   return (
     <Link
       href={`/shloka/${summary.id}`}
-      className="group rounded-2xl border border-line bg-surface-1/50 p-4 transition-colors hover:border-line-strong hover:bg-surface-2/60"
+      className="group grid grid-cols-[3.25rem_minmax(0,1fr)_auto] items-baseline gap-x-4 border-b border-line py-4 transition-colors hover:bg-surface-1/60 sm:px-2"
     >
-      <div className="mb-1.5 flex items-baseline justify-between gap-2">
-        <span className="text-sm text-gold-soft">{summary.title}</span>
-        {summary.namaRange && (
-          <span className="shrink-0 font-mono text-[11px] text-ink-faint">
-            {summary.namaRange[0]}&ndash;{summary.namaRange[1]}
+      <span
+        aria-hidden
+        className="deva text-right text-[1.5rem] leading-none text-sindura"
+      >
+        {summary.number === null ? "ॐ" : toDevanagariDigits(summary.number)}
+      </span>
+      <span className="min-w-0">
+        <span className="sr-only">{summary.title}: </span>
+        <span className="deva block truncate text-[1.3rem] leading-snug text-ink">
+          {summary.previewDeva}
+        </span>
+        {summary.subtitle && (
+          <span className="display mt-0.5 block truncate text-[1.02rem] italic text-ink-muted group-hover:text-sindura">
+            {summary.subtitle}
           </span>
         )}
-      </div>
-      <p className="deva line-clamp-2 text-lg leading-relaxed text-ink">{summary.previewDeva}</p>
-      <p className="iast mt-1 line-clamp-1 text-[13px] text-ink-faint">{summary.previewIast}</p>
-      {summary.subtitle && (
-        <p className="mt-2 text-[13px] text-ink-muted">{summary.subtitle}</p>
-      )}
+      </span>
+      <span className="numerals text-right text-[15px] text-ink-faint">
+        {summary.namaRange ? (
+          <>
+            {summary.namaRange[0]}&ndash;{summary.namaRange[1]}
+          </>
+        ) : (
+          summary.title
+        )}
+      </span>
     </Link>
   );
 }

@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
+import { FitText } from "@/components/fit-text";
 import { SoundButton } from "@/components/sound-button";
 import { playAksaras } from "@/lib/sound-audio";
 import type { Nama } from "@/lib/types";
@@ -19,7 +20,7 @@ export function NamaList({ namas }: { namas: Nama[] }) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <ul className="space-y-2">
+    <ul className="border-t border-line-strong">
       {namas.map((nama) => {
         const expanded = open === nama.index;
         const m = nama.morphology;
@@ -29,87 +30,97 @@ export function NamaList({ namas }: { namas: Nama[] }) {
           <li
             key={nama.index}
             className={cn(
-              "overflow-hidden rounded-2xl border transition-colors",
-              expanded ? "border-line-strong bg-surface-1" : "border-line bg-surface-1/50",
+              "border-b border-line transition-colors",
+              expanded && "bg-surface-1/70",
             )}
           >
-            <button
-              type="button"
-              onClick={() => setOpen(expanded ? null : nama.index)}
-              aria-expanded={expanded}
-              className="flex w-full items-center gap-3 px-4 py-3 text-left"
-            >
-              <span className="w-10 shrink-0 font-mono text-[11px] text-ink-faint">
+            {/*
+              The toggle stretches over the whole row, so the speaker button
+              can sit inside the row without being nested in another button.
+            */}
+            <div className="group relative flex w-full items-start gap-4 px-2 py-4 transition-colors hover:bg-surface-1/60 sm:px-3">
+              <span className="numerals w-10 shrink-0 pt-1.5 text-right font-serif text-lg text-sindura">
                 {nama.index}
               </span>
               <span className="min-w-0 flex-1">
-                <span className="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
-                  <span className="deva text-xl text-ink">{nama.deva}</span>
-                  <span className="iast text-sm text-gold-soft">{nama.iast}</span>
+                <span
+                  data-fit-container
+                  className="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpen(expanded ? null : nama.index)}
+                    aria-expanded={expanded}
+                    aria-label={nama.gloss ? `${nama.iast}: ${nama.gloss}` : nama.iast}
+                    className="deva text-left text-[1.45rem] leading-snug text-ink outline-none after:absolute after:inset-0 after:content-[''] focus-visible:after:ring-2 focus-visible:after:ring-inset focus-visible:after:ring-sindura/50"
+                  >
+                    <FitText container="marker">{nama.deva}</FitText>
+                  </button>
+                  <FitText container="marker" className="iast text-[1.05rem] text-gold-soft">
+                    {nama.iast}
+                  </FitText>
                   {nama.aksaras.length > 0 && (
                     <SoundButton
                       size="sm"
+                      className="relative z-10"
                       label={`Play ${nama.iast}`}
                       onPlay={() => playAksaras(nama.aksaras)}
                     />
                   )}
                 </span>
                 {nama.gloss && (
-                  <span className="mt-0.5 block text-[13px] text-ink-muted">{nama.gloss}</span>
+                  <span className="mt-0.5 block text-[1.02rem] text-ink-muted">{nama.gloss}</span>
                 )}
               </span>
               <ChevronDown
+                aria-hidden
                 size={16}
                 className={cn(
-                  "shrink-0 text-ink-faint transition-transform",
+                  "mt-2.5 shrink-0 text-ink-faint transition-transform group-hover:text-ink",
                   expanded && "rotate-180",
                 )}
               />
-            </button>
+            </div>
 
             {expanded && (
-              <div className="space-y-5 border-t border-line/60 px-4 py-4">
+              <div className="space-y-5 px-2 pb-6 pl-16 pr-3 sm:pl-[4.25rem]">
                 {nama.translation && (
-                  <p className="text-[15px] leading-relaxed text-ink">{nama.translation}</p>
+                  <p className="display text-[1.15rem] leading-relaxed text-ink">{nama.translation}</p>
                 )}
 
                 {nama.commentary && (
-                  <p className="text-sm leading-relaxed text-ink-muted">{nama.commentary}</p>
+                  <p className="text-[1rem] leading-relaxed text-ink-muted">{nama.commentary}</p>
                 )}
 
                 {m && (
-                  <div className="flex flex-wrap gap-1.5 text-[11px]">
+                  <div data-fit-container className="flex flex-wrap gap-1.5 font-sans text-[11px]">
                     <Chip>{m.pos}</Chip>
                     {m.gender && <Chip>{m.gender}</Chip>}
                     {ci && <Chip title={ci.sense}>{`${m.case} (${ci.sanskrit})`}</Chip>}
                     {m.number && <Chip>{m.number}</Chip>}
                     {m.declension && <Chip>{m.declension}</Chip>}
-                    {m.stemIast && <Chip>stem: {m.stemIast}</Chip>}
+                    {m.stemIast && <Chip fit>{`stem: ${m.stemIast}`}</Chip>}
                   </div>
                 )}
 
-                {m?.note && <p className="text-[13px] text-ink-faint">{m.note}</p>}
+                {m?.note && <p className="text-[15px] italic text-ink-faint">{m.note}</p>}
 
                 {nama.compound && (
                   <div>
-                    <h4 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">
-                      How the compound is built
-                    </h4>
+                    <h4 className="eyebrow mb-2 text-ink-faint">How the compound is built</h4>
                     <CompoundTree node={nama.compound} />
                   </div>
                 )}
 
                 <div>
-                  <h4 className="mb-2 text-[11px] uppercase tracking-wider text-ink-faint">
-                    Syllables
-                  </h4>
+                  <h4 className="eyebrow mb-2 text-ink-faint">Syllables</h4>
                   <AksaraStrip aksaras={nama.aksaras} />
                 </div>
 
                 {nama.namavaliIast && (
-                  <p className="border-t border-line/60 pt-3 text-[13px] text-ink-faint">
-                    In recitation:{" "}
-                    <span className="deva text-base text-ink-muted">
+                  <p className="border-t border-line pt-3 text-[15px] text-ink-faint">
+                    <span className="eyebrow mr-2">In recitation</span>
+                    <span className="deva text-lg text-sindura">
                       {nama.namavaliDeva} नमः
                     </span>{" "}
                     <span className="iast">({nama.namavaliIast} namaḥ)</span>
@@ -124,12 +135,26 @@ export function NamaList({ namas }: { namas: Nama[] }) {
   );
 }
 
-function Chip({ children, title }: { children: React.ReactNode; title?: string }) {
+function Chip({
+  children,
+  title,
+  fit = false,
+}: {
+  children: React.ReactNode;
+  title?: string;
+  /** Scale down to stay on one line, for chips holding a long Sanskrit word. */
+  fit?: boolean;
+}) {
+  const className = "rounded-sm border border-line bg-surface-0/70 px-2 py-0.5 text-ink-muted";
+  if (fit) {
+    return (
+      <FitText container="marker" title={title} className={className}>
+        {children}
+      </FitText>
+    );
+  }
   return (
-    <span
-      title={title}
-      className="rounded-full border border-line bg-surface-2/70 px-2 py-0.5 text-ink-muted"
-    >
+    <span title={title} className={className}>
       {children}
     </span>
   );

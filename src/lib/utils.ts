@@ -11,6 +11,13 @@ export function formatTime(seconds: number): string {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
 
+const DEVA_DIGITS = "०१२३४५६७८९";
+
+/** 12 → "१२", for verse markers and numerals set in Devanagari. */
+export function toDevanagariDigits(n: number): string {
+  return String(n).replace(/\d/g, (d) => DEVA_DIGITS[Number(d)]);
+}
+
 /** Practice-page label: dhyāna is “Shloka 0”. */
 export function practiceLabel(number: number): string {
   return `Shloka ${number}`;

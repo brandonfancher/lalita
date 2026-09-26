@@ -6,10 +6,13 @@ export const metadata = { title: "Learn Sanskrit" };
 
 export default function LearnPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 pb-24 pt-8 sm:px-6 sm:pt-12">
-      <header className="mb-10">
-        <h1 className="display text-3xl font-medium text-ink sm:text-4xl">Learning the language</h1>
-        <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
+    <div className="mx-auto max-w-4xl px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
+      <header className="mb-12">
+        <p className="eyebrow text-sindura">Vyākaraṇa</p>
+        <h1 className="display mt-2 text-[2.6rem] leading-tight text-ink sm:text-[3.25rem]">
+          Learning the language
+        </h1>
+        <p className="mt-3 max-w-2xl text-[1.1rem] leading-relaxed text-ink-muted">
           Reference pages for the grammar you meet in the text. Every grammatical label on a shloka
           page links back here.
         </p>
@@ -17,21 +20,21 @@ export default function LearnPage() {
 
       <AlphabetSounds />
 
-      <section className="mb-12">
-        <h2 className="display mb-2 text-2xl text-ink">The eight cases</h2>
-        <p className="mb-5 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
+      <section className="mb-14">
+        <h2 className="display mb-2 text-[2rem] text-ink">The eight cases</h2>
+        <p className="mb-5 max-w-2xl text-[1.075rem] leading-relaxed text-ink-muted">
           Sanskrit marks a noun&rsquo;s role with an ending rather than word order. Almost every name
           in this text is in the first case, the nominative, because each one simply names her.
         </p>
-        <dl className="divide-y divide-line/60 overflow-hidden rounded-2xl border border-line bg-surface-1/50">
+        <dl className="divide-y divide-line border-y border-line-strong">
           {CASES.map((c, i) => (
-            <div key={c.name} className="flex gap-3 px-4 py-3">
-              <span className="w-5 shrink-0 font-mono text-[11px] text-ink-faint">{i + 1}</span>
+            <div key={c.name} className="flex gap-4 px-1 py-3">
+              <span className="numerals w-6 shrink-0 pt-0.5 text-right text-lg text-sindura">{i + 1}</span>
               <div className="min-w-0 flex-1">
-                <dt className="text-[15px] text-ink">
-                  {c.name} <span className="iast text-[13px] text-gold-soft">{c.sanskrit}</span>
+                <dt className="text-[1.1rem] text-ink">
+                  {c.name} <span className="iast text-[1rem] text-gold-soft">{c.sanskrit}</span>
                 </dt>
-                <dd className="text-[13px] text-ink-muted">{c.sense}</dd>
+                <dd className="text-[1rem] text-ink-muted">{c.sense}</dd>
               </div>
             </div>
           ))}
@@ -39,19 +42,19 @@ export default function LearnPage() {
       </section>
 
       <section>
-        <h2 className="display mb-2 text-2xl text-ink">Compounds</h2>
-        <p className="mb-5 max-w-2xl text-[15px] leading-relaxed text-ink-muted">
+        <h2 className="display mb-2 text-[2rem] text-ink">Compounds</h2>
+        <p className="mb-5 max-w-2xl text-[1.075rem] leading-relaxed text-ink-muted">
           Most of the thousand names are compounds &mdash; several words fused into one. Sanskrit
           classifies them by how the pieces relate, and knowing the type tells you how to unpack the
           meaning.
         </p>
-        <dl className="space-y-2">
+        <dl className="grid gap-x-10 border-t border-line-strong sm:grid-cols-2">
           {COMPOUNDS.map((c) => (
-            <div key={c.name} className="rounded-2xl border border-line bg-surface-1/50 px-4 py-3">
-              <dt className="iast text-[15px] text-gold-soft">{c.name}</dt>
-              <dd className="mt-0.5 text-[13px] leading-relaxed text-ink-muted">{c.sense}</dd>
+            <div key={c.name} className="border-b border-line px-1 py-4">
+              <dt className="iast text-[1.25rem] text-sindura">{c.name}</dt>
+              <dd className="mt-1 text-[1rem] leading-relaxed text-ink-muted">{c.sense}</dd>
               {c.example && (
-                <dd className="mt-1.5 text-[13px] text-ink-faint">
+                <dd className="mt-1.5 text-[1rem] text-ink-faint">
                   e.g. <span className="iast text-ink-muted">{c.example}</span>
                 </dd>
               )}
@@ -60,9 +63,9 @@ export default function LearnPage() {
         </dl>
       </section>
 
-      <p className="mt-12 text-sm text-ink-muted">
+      <p className="mt-14 text-lg italic text-ink-muted">
         Ready to apply it?{" "}
-        <Link href="/shlokas" className="text-gold-soft underline-offset-2 hover:underline">
+        <Link href="/shlokas" className="text-sindura underline decoration-sindura/40 underline-offset-4 hover:decoration-sindura">
           Go to the shlokas
         </Link>
         .

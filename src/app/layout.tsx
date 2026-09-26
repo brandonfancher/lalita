@@ -1,32 +1,30 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter, Noto_Serif, Noto_Serif_Devanagari } from "next/font/google";
+import { EB_Garamond, Instrument_Sans, Tiro_Devanagari_Sanskrit } from "next/font/google";
 
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+/** EB Garamond covers the full IAST diacritic range (ṛ ṝ ḷ ṃ ḥ ś ṣ ñ ṅ ṭ ḍ ṇ). */
+const garamond = EB_Garamond({
+  variable: "--font-garamond",
   subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
-/** Noto Serif covers the full IAST diacritic range (ṛ ṝ ḷ ṃ ḥ ś ṣ ñ ṅ ṭ ḍ ṇ). */
-const notoSerif = Noto_Serif({
-  variable: "--font-iast",
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
-
-const notoDeva = Noto_Serif_Devanagari({
-  variable: "--font-deva",
+/** Drawn specifically for Sanskrit, including its conjuncts and Vedic marks. */
+const tiro = Tiro_Devanagari_Sanskrit({
+  variable: "--font-tiro",
   subsets: ["devanagari", "latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const instrumentSans = Instrument_Sans({
+  variable: "--font-ui",
+  subsets: ["latin", "latin-ext"],
   display: "swap",
 });
 
@@ -40,7 +38,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#100b0c",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5eddf" },
+    { media: "(prefers-color-scheme: dark)", color: "#15100c" },
+  ],
   width: "device-width",
   initialScale: 1,
 };
@@ -52,20 +53,22 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/*
-          Applied before paint so a chosen light theme doesn't flash dark.
+          Applied before paint so the page never flashes the wrong theme. An
+          explicit choice wins; otherwise follow the system setting.
         */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}`,
+            __html: `try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`,
           }}
         />
       </head>
       <body
-        className={`${inter.variable} ${cormorant.variable} ${notoSerif.variable} ${notoDeva.variable} antialiased`}
+        className={`${garamond.variable} ${tiro.variable} ${instrumentSans.variable} antialiased`}
       >
         <div className="relative z-10 flex min-h-dvh flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
+          <SiteFooter />
         </div>
       </body>
     </html>
