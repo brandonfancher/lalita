@@ -31,7 +31,7 @@ second time it is needed.
 
 | Motif | Rendering | Where | First drawn |
 |---|---|---|---|
-| Her presence (the bindu) | Small `--art-core` disc, a thin ring, a soft radial glow of `--art-core` | Inline | Shloka 1 |
+| Her presence (the bindu) | Small `--art-core` disc, a thin ring, a soft radial glow of `--art-core`. Set it against saffron, not `--art-core`, or it vanishes by day | Inline | Shloka 1 |
 | Tongue of flame | `tongue(h, w, lean)`: an S-curved tongue, tip leaning | `primitives.tsx` | Shloka 1 |
 | Lion (siṃha) | `Lion`: seated, gold, flame-tongue mane; paired lions face inward toward the centre | `primitives.tsx` | Shloka 1 |
 | Rising sparks | `Embers`, filled with `--art-ember` | `primitives.tsx` | Shloka 1 |
@@ -40,15 +40,23 @@ second time it is needed.
 | Royal parasol (chattra) | Vermilion dome with gold ribs, scalloped fringe, beaded tassels, bud finial | Inline | Shloka 1 |
 | Lotus pedestal | A row of pointed, upturned gold petals | Inline | Shloka 1 |
 | Round arch | `archPath` and `alongArch` | `primitives.tsx` | Shloka 1 |
+| Her noose (pāśa) | `Noose`: a loop of twisted `--art-vermilion` cord (red because *rāga* is colouring), gold binding where it closes, four gold beads, a tail ending in a gold tassel. Held at the origin, loop up | `primitives.tsx` | Shloka 2 |
+| Her goad (aṅkuśa) | `Goad`: a banded gold shaft with a bud-shaped butt, a lotus collar, a leaf-shaped spear point, and a hook curving out to the right. Held at the origin, pointing up | `primitives.tsx` | Shloka 2 |
+| Glint | `glint(s)`: a four-pointed flash of `--art-core`, for blazing metal and jewels | `primitives.tsx` | Shloka 2 |
+| Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs | Inline | Shloka 2 |
+| Bangle (kaṅkaṇa) | A gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | Inline | Shloka 2 |
+| The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | Inline | Shloka 2 |
+| The sea | Rows of shallow gold ripple arcs, closer near the horizon, faded at the sides; the light on it as a column of saffron lozenges | Inline | Shloka 2 |
 
 ### Anticipated
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **Her four weapons** (Shlokas 2–3): the noose (pāśa, longing), the goad (aṅkuśa, wrath), the
-  sugarcane bow (ikṣu-kodaṇḍa, the mind), and the five flower arrows (the subtle elements). They
-  recur in the Dhyāna and throughout the stotra, so draw each as a self-contained component and
-  promote it to `primitives.tsx` at once.
+- **Her bow and arrows** (Shloka 3): the sugarcane bow (ikṣu-kodaṇḍa, the mind) and the five
+  flower arrows (the subtle elements). With the noose and goad they recur in the Dhyāna and
+  throughout the stotra, so draw each as a self-contained component and promote it to
+  `primitives.tsx` at once, as `Noose` and `Goad` were. In Shloka 2 the upper arms hold the noose
+  (on the left) and the goad (on the right); keep that order whenever all four appear.
 - **The crescent moon** on her crown (Shloka 5, and the Dhyāna's *tārā-nāyaka-śekharām*).
 - **Her ruby crown** (Shloka 4, and the Dhyāna's *māṇikya-mauli*).
 - **The Śrīcakra and its triangles.** The site's own `YantraMark` in `src/components/ornament.tsx`
@@ -92,6 +100,31 @@ One entry per finished artwork, in the order they were made.
   (rays), `m-ember`.
 - **Notes:** This was the pilot, and it established the layout zones: the arch was enlarged so the
   sidebar card sits inside it, and the bindu was moved below the card.
+
+### Shloka 2: A thousand dawns
+
+- **Component:** `thousand-dawns.tsx` (defs prefix `sa2`)
+- **Composition:** a landscape. The sun sits half risen on the horizon of the eastern sea, ringed
+  by a thousand points of light in a sunflower spiral. Four beams of light reach out from it as
+  her arms: the upper two climb past the card to hold the noose (left) and the goad (right) in
+  the crown zone, and the lower two lie along the horizon. Open, horizontal, and paired by
+  contrast (soft red cord, hard gold hook) rather than mirrored.
+- **Name → part:**
+  - Udyadbhānusahasrābhā → `sunrise`: the half-risen sun, exactly 1,000 points of light, the
+    dawn glow, and the bindu at the sun's heart
+  - Caturbāhusamanvitā → `arms`: four beams of light, the upper two with gold bangles
+  - Rāgasvarūpapāśāḍhyā → `noose`: the red noose
+  - Krodhākārāṅkuśojjvalā → `goad`: the gold goad, with glints and a blaze
+  - Intro, *the eastern sea* → `sea`: the horizon, the ripples, and the sun's reflection
+  - Detail → `thread`: a hair-fine red thread from the noose's tassel to the bindu
+- **Palette:** vermilion, saffron, and gold; no additions.
+- **Motion:** `m-breathe` (the sun and its rays), `m-twinkle` (the thousand points and the
+  reflection, in three offset groups), `m-lick` (glints on the goad).
+- **Notes:** The lower two arms were first meant to carry empty bangles, waiting for the bow and
+  arrows of Shloka 3; they were dropped so the arms don't look unfinished. The first beams, as
+  single solid wedges, read as wooden poles; nesting three faint layers made them light. This
+  shloka's long title reaches much further into the crown zone than Shloka 1's did, so the noose
+  was moved right to clear it.
 
 ## Open questions
 
