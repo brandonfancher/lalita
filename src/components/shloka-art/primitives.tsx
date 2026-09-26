@@ -278,3 +278,215 @@ export function Goad() {
     </g>
   );
 }
+
+/** Points every `spacing` units along a cubic, starting `from` units in, each with its unit tangent. */
+function alongCubic(c: [Pt, Pt, Pt, Pt], spacing: number, from: number) {
+  const out: { p: Pt; tangent: Pt }[] = [];
+  let prev = c[0];
+  let len = 0;
+  let next = from;
+  for (let i = 1; i <= 240; i++) {
+    const p = cubicAt(...c, i / 240);
+    const d = Math.hypot(p.x - prev.x, p.y - prev.y);
+    len += d;
+    if (len >= next) {
+      out.push({ p, tangent: { x: (p.x - prev.x) / d, y: (p.y - prev.y) / d } });
+      next += spacing;
+    }
+    prev = p;
+  }
+  return out;
+}
+
+/**
+ * The shape of her sugarcane bow, in a frame where the bow is aimed up: the
+ * grip at (0, -grip) and the tips at (±half, bend - grip). Drawn, the string
+ * runs from each tip to the origin; braced, straight from tip to tip.
+ */
+export type BowShape = { half: number; grip: number; bend: number };
+
+function bowLimb({ half, grip, bend }: BowShape): [Pt, Pt, Pt, Pt] {
+  return [
+    { x: 0, y: -grip },
+    { x: half * 0.5, y: -grip },
+    { x: half * 0.88, y: round(-grip + bend * 0.4) },
+    { x: half, y: -grip + bend },
+  ];
+}
+
+/** Where the string is tied: the left tip, then the right. */
+export function bowTips(shape: BowShape): [Pt, Pt] {
+  const tip = bowLimb(shape)[3];
+  return [{ x: -tip.x, y: tip.y }, tip];
+}
+
+/** A long sugarcane leaf, base at the origin, pointing up and arching toward +x by `curl`. */
+function caneLeaf(l: number, w: number, curl: number) {
+  const p = round;
+  return `M ${p(-w / 2)} 0 C ${p(-w)} ${p(-l * 0.35)} ${p(curl * 0.4 - w * 0.4)} ${p(-l * 0.75)} ${p(curl)} ${p(-l)} C ${p(curl * 0.4 + w * 0.9)} ${p(-l * 0.7)} ${p(w)} ${p(-l * 0.3)} ${p(w / 2)} 0 Z`;
+}
+
+const CANE_LEAVES = [
+  { angle: 38, l: 30, curl: 7 },
+  { angle: 78, l: 42, curl: 10 },
+  { angle: 118, l: 34, curl: 9 },
+];
+
+/**
+ * Her bow of sugarcane (ikṣu-kodaṇḍa), the mind: a gold cane stave jointed
+ * at every node, bound at the grip, with a tuft of leaves at each tip. Draw
+ * its string separately with `BeeString`.
+ */
+export function SugarcaneBow({ shape }: { shape: BowShape }) {
+  const limb = bowLimb(shape);
+  const [p0, p1, p2, p3] = limb;
+  const stave = `M ${-p3.x} ${p3.y} C ${-p2.x} ${p2.y} ${-p1.x} ${p1.y} ${p0.x} ${p0.y} C ${p1.x} ${p1.y} ${p2.x} ${p2.y} ${p3.x} ${p3.y}`;
+  const nodes = alongCubic(limb, 25, 19).filter(({ p }) => Math.hypot(p.x - p3.x, p.y - p3.y) > 10);
+  const across = (half: number) =>
+    nodes
+      .flatMap(({ p, tangent: t }) =>
+        [1, -1].map((side) => {
+          const x = p.x * side;
+          const nx = -t.y * side;
+          const ny = t.x;
+          return `M ${round(x - nx * half)} ${round(p.y - ny * half)} L ${round(x + nx * half)} ${round(p.y + ny * half)}`;
+        }),
+      )
+      .join(" ");
+  const leaves = CANE_LEAVES.map((f) => ({ d: caneLeaf(f.l, 6, f.curl), transform: `rotate(${f.angle})` }));
+  const tuft = (
+    <>
+      <g fill="var(--leaf)">
+        {leaves.map((f, i) => (
+          <path key={i} d={f.d} transform={f.transform} />
+        ))}
+      </g>
+      <g stroke="var(--art-carve)" strokeWidth={0.7} strokeLinecap="round">
+        {CANE_LEAVES.map((f, i) => (
+          <path key={i} d={`M 0 -2 Q ${round(f.curl * 0.3)} ${round(-f.l * 0.55)} ${f.curl} ${-f.l}`} transform={`rotate(${f.angle})`} />
+        ))}
+      </g>
+    </>
+  );
+  return (
+    <g>
+      <g transform={`translate(${p3.x} ${p3.y})`}>{tuft}</g>
+      <g transform={`translate(${-p3.x} ${p3.y}) scale(-1 1)`}>{tuft}</g>
+      <path d={stave} stroke="var(--gold-soft)" strokeWidth={10} strokeLinecap="round" />
+      <path d={stave} stroke="var(--gold)" strokeWidth={7.4} strokeLinecap="round" />
+      <path d={across(6.4)} stroke="var(--gold-soft)" strokeWidth={2.8} strokeLinecap="round" />
+      <path d={across(3.6)} stroke="var(--art-carve)" strokeWidth={1} strokeLinecap="round" />
+      <rect x={-10} y={p0.y - 8} width={20} height={16} rx={3} fill="var(--gold-soft)" />
+      <path
+        d={[-6, -2, 2, 6].map((x) => `M ${x} ${p0.y - 6.5} V ${p0.y + 6.5}`).join(" ")}
+        stroke="var(--art-carve)"
+        strokeWidth={0.8}
+      />
+    </g>
+  );
+}
+
+/** An ellipse as a path, centred on (x, y), its long axis turned `deg` degrees. */
+function ellipsePath(x: number, y: number, rx: number, ry: number, deg: number) {
+  const t = (deg * Math.PI) / 180;
+  const dx = round(rx * Math.cos(t));
+  const dy = round(rx * Math.sin(t));
+  return `M ${round(x - dx)} ${round(y - dy)} A ${rx} ${ry} ${round(deg)} 1 0 ${round(x + dx)} ${round(y + dy)} A ${rx} ${ry} ${round(deg)} 1 0 ${round(x - dx)} ${round(y - dy)} Z`;
+}
+
+/**
+ * A bowstring of honeybees, as Kāma's is in the poets: a hairline from
+ * `from` to `to` with a line of tiny bees along it, heads toward `to`.
+ */
+export function BeeString({ from, to, spacing = 8 }: { from: Pt; to: Pt; spacing?: number }) {
+  const len = Math.hypot(to.x - from.x, to.y - from.y);
+  const d = { x: (to.x - from.x) / len, y: (to.y - from.y) / len };
+  const n = { x: -d.y, y: d.x };
+  const deg = (Math.atan2(d.y, d.x) * 180) / Math.PI;
+  const count = Math.floor((len - 8) / spacing);
+  let wings = "";
+  let bodies = "";
+  let heads = "";
+  let stripes = "";
+  for (let i = 0; i < count; i++) {
+    const s = 6 + i * spacing;
+    const p = { x: from.x + d.x * s, y: from.y + d.y * s };
+    const at = (a: number, b: number) => ({ x: p.x + d.x * a + n.x * b, y: p.y + d.y * a + n.y * b });
+    const w1 = at(-0.8, 1.9);
+    const w2 = at(-0.8, -1.9);
+    wings += ellipsePath(w1.x, w1.y, 1.7, 0.9, deg - 35) + ellipsePath(w2.x, w2.y, 1.7, 0.9, deg + 35);
+    bodies += ellipsePath(p.x, p.y, 2.6, 1.45, deg);
+    const h = at(3.2, 0);
+    heads += ellipsePath(h.x, h.y, 1.05, 1.05, 0);
+    for (const a of [-0.9, 0.7]) {
+      const s1 = at(a, 1.35);
+      const s2 = at(a, -1.35);
+      stripes += `M ${round(s1.x)} ${round(s1.y)} L ${round(s2.x)} ${round(s2.y)} `;
+    }
+  }
+  return (
+    <g>
+      <path d={`M ${from.x} ${from.y} L ${to.x} ${to.y}`} stroke="var(--gold-soft)" strokeWidth={0.6} />
+      <path d={wings} fill="var(--art-carve)" fillOpacity={0.85} stroke="var(--gold-soft)" strokeWidth={0.3} />
+      <path d={bodies + heads} fill="var(--gold-soft)" />
+      <path d={stripes} stroke="var(--art-carve)" strokeWidth={0.55} />
+    </g>
+  );
+}
+
+/** The five elements, each born from one subtle element: sound, touch, form, taste, smell. */
+export type Tattva = "space" | "air" | "fire" | "water" | "earth";
+
+/** The traditional sign of each element, centred on the origin, about 2s across. */
+function tattvaSign(t: Tattva, s: number) {
+  const p = round;
+  switch (t) {
+    case "space":
+      return `M ${-s} 0 a ${s} ${s} 0 1 0 ${2 * s} 0 a ${s} ${s} 0 1 0 ${-2 * s} 0 Z M ${p(-s * 0.5)} 0 a ${p(s * 0.5)} ${p(s * 0.5)} 0 1 1 ${s} 0 a ${p(s * 0.5)} ${p(s * 0.5)} 0 1 1 ${-s} 0 Z`;
+    case "air": {
+      const tri = (flip: number) =>
+        [90, 210, 330].map((deg, i) => `${i ? "L" : "M"} ${p(s * Math.cos((deg * Math.PI) / 180))} ${p(-flip * s * Math.sin((deg * Math.PI) / 180))}`).join(" ") + " Z";
+      return `${tri(1)} ${tri(-1)}`;
+    }
+    case "fire":
+      return `M 0 ${p(-s)} L ${p(s * 0.95)} ${p(s * 0.7)} L ${p(-s * 0.95)} ${p(s * 0.7)} Z`;
+    case "water":
+      return `M ${-s} ${p(-s * 0.4)} A ${s} ${s} 0 0 0 ${s} ${p(-s * 0.4)} A ${s} ${p(s * 0.5)} 0 0 1 ${-s} ${p(-s * 0.4)} Z`;
+    case "earth":
+      return `M ${p(-s * 0.8)} ${p(-s * 0.8)} H ${p(s * 0.8)} V ${p(s * 0.8)} H ${p(-s * 0.8)} Z`;
+  }
+}
+
+/**
+ * One of her five flower arrows (puṣpa-bāṇa): a gold shaft with saffron
+ * fletching, tipped with a budding flower. With `sign`, the flower holds at
+ * its heart the sign of the element its subtle quality gives rise to. Nock at
+ * the origin, pointing up; `headClassName` animates the flower.
+ */
+export function FlowerArrow({ length, sign, headClassName }: { length: number; sign?: Tattva; headClassName?: string }) {
+  return (
+    <g>
+      <path d={`M 0 -2 V ${-length}`} stroke="var(--gold)" strokeWidth={1.8} />
+      <path d="M -2.4 0.5 L 0 -4 L 2.4 0.5" stroke="var(--gold)" strokeWidth={1.2} strokeLinejoin="round" />
+      <path
+        d="M -0.9 -9 C -5 -13 -6.5 -30 -6 -40 L -0.9 -35 Z M 0.9 -9 C 5 -13 6.5 -30 6 -40 L 0.9 -35 Z"
+        fill="var(--art-saffron)"
+      />
+      <path
+        d="M -1.5 -16 L -5 -20 M -1.5 -22 L -5.4 -26 M -1.5 -28 L -5.6 -32 M 1.5 -16 L 5 -20 M 1.5 -22 L 5.4 -26 M 1.5 -28 L 5.6 -32"
+        stroke="var(--art-carve)"
+        strokeWidth={0.6}
+        strokeLinecap="round"
+      />
+      <g transform={`translate(0 ${-length})`}>
+        <g className={headClassName}>
+          <path d="M -2 -7 C -13 -10 -17 -22 -12 -32 C -9 -23 -5 -16 -0.5 -12 Z" fill="var(--art-saffron)" />
+          <path d="M 2 -7 C 13 -10 17 -22 12 -32 C 9 -23 5 -16 0.5 -12 Z" fill="var(--art-saffron)" />
+          <path d="M -7 -8 C -9.5 -19 -4.5 -30 0 -38 C 4.5 -30 9.5 -19 7 -8 Z" fill="var(--art-vermilion)" />
+          <path d="M -5.5 1 Q -7.5 -5 -3.5 -9 L 3.5 -9 Q 7.5 -5 5.5 1 Z" fill="var(--gold)" />
+          {sign && <path d={tattvaSign(sign, 3.6)} transform="translate(0 -21)" fill="var(--art-core)" fillRule={sign === "space" ? "evenodd" : "nonzero"} />}
+        </g>
+      </g>
+    </g>
+  );
+}

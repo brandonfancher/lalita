@@ -1,3 +1,4 @@
+import { DrawnBow } from "./drawn-bow";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { ThousandDawns } from "./thousand-dawns";
 import type { Artwork } from "./types";
@@ -86,6 +87,44 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: a hair-fine red thread runs from the noose&rsquo;s tail down to
           the bindu. Whoever this cord draws is held at the other end by her.
+        </>
+      ),
+    },
+  },
+  "003": {
+    Art: DrawnBow,
+    intro: (Spot) => (
+      <>
+        Her bow is drawn to full and aimed at the sky, and the hand that draws it is a{" "}
+        <Spot part="bindu">point of light</Spot>, the bindu. Every element comes from one of the three names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 10,
+        part: "bow",
+        depicts:
+          "A bow of sugarcane arched across the top, jointed like the cane and sprouting leaves at both tips, bent as far as it will go.",
+      },
+      {
+        nama: 11,
+        part: "arrows",
+        depicts:
+          "Five flower-tipped arrows on the string. Each flower holds the old sign of an element at its heart: the ring of space for sound, the star of air for touch, the triangle of fire for form, the crescent of water for taste, the square of earth for smell.",
+      },
+      {
+        nama: 12,
+        part: "flood",
+        depicts:
+          "Her red light pours down into a pool where a ring of world-eggs floats half-sunk, each with a spark of its own. A few are going under as you watch, and deeper ones show faintly below.",
+      },
+    ],
+    detail: {
+      part: "bees",
+      body: (
+        <>
+          There is also a small detail for the attentive: the bowstring is a line of honeybees, as Kāma&rsquo;s is in the
+          old poems.
         </>
       ),
     },
