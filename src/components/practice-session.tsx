@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState, type ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
@@ -25,7 +25,20 @@ export type PracticeToken = {
 export type PracticeVerse = {
   id: string;
   number: number;
+  /** A miniature of the shloka's artwork, when it has one. */
+  art?: ReactNode;
   lines: { tokens: PracticeToken[] }[];
+};
+
+/**
+ * Sized so the art never makes a card taller. On phones the verse fills the
+ * width, so it keeps to the corner beside the title; wider, it floats beside a
+ * two-line verse in each script.
+ */
+const ART_WIDTH: Record<ScriptMode, string> = {
+  both: "sm:w-[5.5rem] md:w-[7.5rem]",
+  deva: "sm:w-[5.375rem]",
+  iast: "sm:w-[3.75rem]",
 };
 
 export function PracticeSession({
@@ -45,8 +58,8 @@ export function PracticeSession({
   const [fromInput, setFromInput] = useState(String(from));
   const [toInput, setToInput] = useState(String(to));
   const [script, setScript] = useState<ScriptMode>("both");
-  /** Token whose gloss is pinned open (tap / keyboard). */
-  const [activeTokenId, setActiveTokenId] = useState<string | null>(null);
+  /** Token whose gloss is pinned open (tap / keyboard). Token ids are only unique within a verse. */
+  const [activeToken, setActiveToken] = useState<{ verseId: string; tokenId: string } | null>(null);
 
   useEffect(() => {
     setFromInput(String(from));
@@ -54,7 +67,7 @@ export function PracticeSession({
   }, [from, to]);
 
   useEffect(() => {
-    setActiveTokenId(null);
+    setActiveToken(null);
   }, [from, to]);
 
   const submit = (e: FormEvent) => {
@@ -152,8 +165,8 @@ export function PracticeSession({
               key={verse.id}
               verse={verse}
               script={script}
-              activeTokenId={activeTokenId}
-              onToggleToken={setActiveTokenId}
+              activeTokenId={activeToken?.verseId === verse.id ? activeToken.tokenId : null}
+              onToggleToken={(tokenId) => setActiveToken(tokenId ? { verseId: verse.id, tokenId } : null)}
             />
           ))}
         </div>
@@ -184,7 +197,17 @@ function PracticeVerseCard({
   }, [activeTokenId, verse.lines]);
 
   return (
-    <article className="folio rounded-sm px-5 py-4 sm:px-7 sm:py-5">
+    <article className="folio flow-root rounded-sm px-5 py-4 sm:px-7 sm:py-5">
+      {verse.art && (
+        <div
+          className={cn(
+            "absolute right-4 top-2 w-[1.75rem] sm:static sm:float-right sm:mb-1 sm:ml-4 md:ml-5",
+            ART_WIDTH[script],
+          )}
+        >
+          {verse.art}
+        </div>
+      )}
       <div className="mb-1.5">
         <a
           href={`/shloka/${verse.id}`}
@@ -251,7 +274,7 @@ function PracticeVerseCard({
       </div>
 
       {activeGlosses && (
-        <p className="mt-2 border-t border-line pt-2 text-[15px] italic leading-snug text-ink-muted">
+        <p className="clear-both mt-2 border-t border-line pt-2 text-[15px] italic leading-snug text-ink-muted">
           {activeGlosses.join(" · ")}
         </p>
       )}

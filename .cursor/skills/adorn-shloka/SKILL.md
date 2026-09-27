@@ -28,9 +28,10 @@ Copy this checklist and keep it updated as you go:
 - [ ] 4. Draw the artwork
 - [ ] 5. Write the note and register it
 - [ ] 6. Preview, review, iterate (at least twice)
-- [ ] 7. Verify: types, lint, preview script passes
-- [ ] 8. Update the ledger
-- [ ] 9. Commit
+- [ ] 7. Check the miniature on the practice page
+- [ ] 8. Verify: types, lint, preview script passes
+- [ ] 9. Update the ledger
+- [ ] 10. Commit
 ```
 
 ### 1. Set up
@@ -155,27 +156,50 @@ The first render always reveals something. Iterate at least twice. Lessons from 
 - In this repo, Tailwind border-colour utilities have no effect: a global rule in `globals.css`
   outranks them. Use inset `box-shadow` for coloured edges.
 
-### 7. Verify
+### 7. Check the miniature on the practice page
+
+On the practice page, each verse card shows its shloka's artwork as a small miniature, a
+reminder while chanting of what the verse depicts. Registering the artwork in step 5 is what puts
+it there: `ShlokaMiniature` in `shloka-art/index.tsx` renders any shloka in `ARTWORK`, so there
+is no other code to add. Don't change the miniature's size or placement for one shloka; they are
+set so a card never grows taller.
+
+Open `/practice?from=<n-1>&to=<n+1>` and look at the new card beside its neighbours, in both
+themes, at desktop width and at phone width (390px), and in each script mode (Both, देवनागरी,
+Romanized). Hold it to this bar:
+
+- **Beside the verse** (tablet and desktop): recognisable at a glance from its silhouette and
+  focal glow, and nothing important is cut off by the crop or lost in its feathered edge (see
+  [composition.md](composition.md#the-practice-miniature)).
+- **In the corner** (phones): at 28px wide it still reads as a distinct mark, not a smudge, and
+  is told apart from its neighbours' miniatures.
+- **The card:** the verse is untouched and the card is no taller than its neighbours.
+
+If the miniature doesn't read, strengthen the big masses of the artwork itself (in step 6's
+loop) rather than adding detail that only shows at full size.
+
+### 8. Verify
 
 - `npx tsc --noEmit -p .`
 - `npx eslint src/components/shloka-art src/app/shloka` (the wider project has unrelated
   pre-existing lint errors; don't fix those as part of this work)
 - `pnpm art:preview <n>` must end with "No problems found."
 
-### 8. Update the ledger
+### 9. Update the ledger
 
 In `docs/artwork-ledger.md`, add the shloka to the composition log, and record any new canon
 motif, palette variable, or motion class. Future sessions depend on this; do it in the same
 commit.
 
-### 9. Commit
+### 10. Commit
 
 Commit the artwork, the registry entry, any primitives or CSS additions, and the ledger update
 together, e.g. `Adorn Shloka 12 with <concept>`. Push and open a pull request when the user asks.
 
 ## Additional resources
 
-- [composition.md](composition.md): measured zones, palette variables, motion vocabulary
+- [composition.md](composition.md): measured zones, the practice miniature's crop, palette
+  variables, motion vocabulary
 - `docs/artwork-ledger.md`: series principles, motif canon, composition log
 - `src/components/shloka-art/`: `types.ts`, `primitives.tsx`, `registry.tsx`, the plate in
-  `art-note.tsx`, and the backdrop in `index.tsx`
+  `art-note.tsx`, and the backdrop and the practice miniature in `index.tsx`

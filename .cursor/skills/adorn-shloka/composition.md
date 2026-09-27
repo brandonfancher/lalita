@@ -68,6 +68,15 @@ fade mask. Everything the fade hides on the page, including the ground zone, is 
 so it must be finished work, not filler. Each part is spotlit in turn: the others fall to
 opacity 0.1.
 
+## The practice miniature
+
+Each verse card on the practice page carries the artwork as a miniature (`ShlokaMiniature` in
+`shloka-art/index.tsx`), a reminder of what is being chanted. It shows only x 70–570, y 30–780,
+with the edges feathered, so keep every element inside that region. Beside the verse on wider
+screens it is 60–120px wide (1 unit ≈ 0.12–0.24px); on phones it is a 28px glyph beside the
+title. At that size only the silhouette and the focal glow survive, so the big masses should say
+what the shloka is on their own.
+
 ## Palette
 
 Use CSS variables only, never literal colours in the component.

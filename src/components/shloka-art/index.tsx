@@ -1,7 +1,46 @@
 import type { Nama } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 import { ArtNote, type NoteNama } from "./art-note";
 import { ARTWORK } from "./registry";
+
+export const hasArtwork = (id: string) => id in ARTWORK;
+
+/**
+ * The part of the canvas every composition keeps its elements within, in
+ * artwork units. A miniature shows only this, so the drawing fills its frame.
+ */
+const CROP = { x: 70, y: 30, w: 500, h: 750 };
+
+/**
+ * A shloka's artwork at thumbnail size, as a reminder of what the verse
+ * depicts. Size it by width; the height follows from the crop.
+ */
+export function ShlokaMiniature({ id, className }: { id: string; className?: string }) {
+  const artwork = ARTWORK[id];
+  if (!artwork) return null;
+  const { Art } = artwork;
+
+  return (
+    <div
+      aria-hidden
+      className={cn("adornment art-miniature relative select-none overflow-hidden", className)}
+      style={{ aspectRatio: `${CROP.w} / ${CROP.h}` }}
+    >
+      <div
+        className="absolute"
+        style={{
+          left: `${(-CROP.x / CROP.w) * 100}%`,
+          top: `${(-CROP.y / CROP.h) * 100}%`,
+          width: `${(640 / CROP.w) * 100}%`,
+          height: `${(830 / CROP.h) * 100}%`,
+        }}
+      >
+        <Art idPrefix={`mini-${id}`} />
+      </div>
+    </div>
+  );
+}
 
 /**
  * A backdrop for the top of a shloka page, and the way into its story. The
