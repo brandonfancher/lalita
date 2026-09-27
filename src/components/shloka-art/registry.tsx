@@ -1,5 +1,6 @@
 import { DrawnBow } from "./drawn-bow";
 import { FireOfAwareness } from "./fire-of-awareness";
+import { FloweringHair } from "./flowering-hair";
 import { ThousandDawns } from "./thousand-dawns";
 import type { Artwork } from "./types";
 
@@ -125,6 +126,39 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: the bowstring is a line of honeybees, as Kāma&rsquo;s is in the
           old poems.
+        </>
+      ),
+    },
+  },
+  "004": {
+    Art: FloweringHair,
+    intro: (Spot) => (
+      <>
+        Here the stotra begins to describe her from head to foot, so the artwork reads from the top down. She herself is
+        only the <Spot part="light">point of light</Spot> where a jewel is worn at the head of a plait. Every element
+        comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 13,
+        part: "flower-plait",
+        depicts:
+          "Her hair is glimpsed only as a blue-black gloss, gathered from under the crown into a plait woven with the four flowers in the order the name gives them: gold campaka, red aśoka, white punnāga and the white water-lily.",
+      },
+      {
+        nama: 14,
+        part: "crown",
+        depicts:
+          "A tall crown set tier upon tier with rows of rubies, throwing off short rays of gold and red, because the name settles on its glittering.",
+      },
+    ],
+    detail: {
+      part: "stars",
+      body: (
+        <>
+          There is also a small detail for the attentive: above the crown, a few stars are turning red and coming down
+          to it. Śaṅkara says the rubies in her crown were stars that became rubies to be set there.
         </>
       ),
     },
