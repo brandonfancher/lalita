@@ -1,4 +1,5 @@
 import { PracticeSession, type PracticeVerse } from "@/components/practice-session";
+import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
 import { getModulesInRange } from "@/lib/content";
 import type { ChantTiming, StudyModule } from "@/lib/types";
 import { practiceLabel } from "@/lib/utils";
@@ -33,6 +34,7 @@ function toPracticeVerse(mod: StudyModule): PracticeVerse {
   return {
     id: mod.id,
     number: Number(mod.id),
+    ...(hasArtwork(mod.id) ? { art: <ShlokaMiniature id={mod.id} className="w-full" /> } : {}),
     lines: mod.lines.map((line) => ({
       tokens: line.tokens.map((token) => {
         const glosses: string[] = [];

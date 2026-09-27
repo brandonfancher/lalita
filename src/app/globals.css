@@ -282,6 +282,17 @@ body:has([data-art-trigger]:hover) .shloka-art {
   opacity: 1;
 }
 
+/* Soft edges, since the crop can cut through a glow. */
+.art-miniature {
+  --art-stone: var(--surface-2);
+  opacity: 0.9;
+  mask-image: radial-gradient(closest-side, #000 72%, transparent);
+}
+
+[data-theme="dark"] .art-miniature {
+  opacity: 1;
+}
+
 .adornment [data-part] {
   transition: opacity 450ms ease;
 }
