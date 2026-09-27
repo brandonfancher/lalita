@@ -235,6 +235,10 @@ body::after {
   --art-ember: var(--sindura-soft);
   --art-stone: var(--surface-1);
   --art-carve: var(--surface-0);
+  /* White petals; the paper colours can't serve, since they turn dark by lamplight. */
+  --art-ivory: #fffaf0;
+  /* The blue-black gloss of her hair, only ever in thin lines and glimpses. */
+  --art-hair: #1f2a55;
 }
 
 [data-theme="dark"] .adornment {
@@ -243,6 +247,8 @@ body::after {
   --art-saffron: #e8913a;
   --art-core: #ffe4ae;
   --art-ember: #f3b36b;
+  --art-ivory: #f1e8d6;
+  --art-hair: #5d6788;
 }
 
 .shloka-art {
