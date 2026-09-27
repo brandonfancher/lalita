@@ -4,9 +4,79 @@ import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
 import { ThousandDawns } from "./thousand-dawns";
 import type { Artwork } from "./types";
+import { WholeImage } from "./whole-image";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
+  "000": {
+    Art: WholeImage,
+    intro: (Spot) => (
+      <>
+        A <i>dhyāna</i> builds an image in the mind, and these four verses build four different ones. The artwork
+        gathers them into one, laid out from crest to foot as a temple image is. There is no figure: where she is there
+        is only a <Spot part="bindu">point of light</Spot>, and the second verse says what it is: &ldquo;I&rdquo;.
+      </>
+    ),
+    entries: [
+      {
+        phrase: { label: "Line 1", deva: "सिन्दूरारुण विग्रहां", iast: "sindūrāruṇa vigrahāṃ", gloss: "her body red as vermilion" },
+        part: "light",
+        depicts: "Her body is drawn only as its colour: a tall glow of vermilion light from the crown down to the seat.",
+      },
+      {
+        phrase: { label: "Line 1", deva: "माणिक्यमौलि स्फुरत्", iast: "māṇikyamauli sphurat", gloss: "a diadem of rubies, flashing" },
+        part: "crown",
+        depicts: "The domed crown of Shloka 4, tier upon tier of rubies, with flashes passing over its stones.",
+      },
+      {
+        phrase: { label: "Line 2", deva: "तारा नायक शेखरां", iast: "tārā nāyaka śekharāṃ", gloss: "the lord of the stars as her crest" },
+        part: "moon",
+        depicts: "On the crown's finial rests the moon as a slender crescent, its horns turned up.",
+      },
+      {
+        phrase: { label: "Line 4", deva: "रत्न घटस्थ रक्तचरणां", iast: "ratna ghaṭastha raktacaraṇāṃ", gloss: "her red feet resting on a jewelled vessel" },
+        part: "vessel",
+        depicts:
+          "At the foot, a gold pot set with rubies and emeralds. On its lid are two red footprints, the old way of showing that she stands there.",
+      },
+      {
+        phrase: {
+          label: "Line 5",
+          deva: "धृतपाशाङ्कुशपुष्पबाणचापाम्",
+          iast: "dhṛtapāśāṅkuśapuṣpabāṇacāpām",
+          gloss: "holding noose, goad, flower-arrow and bow",
+        },
+        part: "weapons",
+        depicts:
+          "Four arms of light, each with a bangle. The upper two raise the noose and the goad beside the crown; the lower two hold the sugarcane bow, strung with bees, and the five flower arrows.",
+      },
+      {
+        phrase: { label: "Line 6", deva: "अणिमादिभिरावृतां मयूखैः", iast: "aṇimādibhirāvṛtāṃ mayūkhaiḥ", gloss: "ringed by aṇimā and the rest, as rays" },
+        part: "siddhis",
+        depicts: "Eight short rays around her, one for each of the eight powers, each ending in a point of light between her arms.",
+      },
+      {
+        phrase: { label: "Line 7", deva: "पद्मासनस्थां", iast: "padmāsanasthāṃ", gloss: "seated on a lotus" },
+        part: "lotus-seat",
+        depicts: "A lotus seat of upturned and downturned petals, gold because this verse makes her gold.",
+      },
+      {
+        phrase: { label: "Line 14", deva: "जपाकुसुमभासुरां", iast: "japākusumabhāsurāṃ", gloss: "shining like a hibiscus flower" },
+        part: "hibiscus",
+        depicts:
+          "At her heart a scarlet hibiscus opens: five broad petals round a dark eye, and its column of pollen leaning out.",
+      },
+    ],
+    detail: {
+      part: "yantra",
+      body: (
+        <>
+          There is also a small detail for the attentive: a hair-fine downward triangle surrounds the bindu. It is the
+          innermost enclosure of the Śrīcakra, the yantra of Śrīvidyā, and the third verse calls her Śrīvidyā outright.
+        </>
+      ),
+    },
+  },
   "001": {
     Art: FireOfAwareness,
     intro: (Spot) => (

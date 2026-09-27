@@ -6,7 +6,7 @@
  * for readers in the registry, next to this artwork's entry.
  */
 
-import { alongArch, archPath, artIds, Embers, Lion, partProps, round, tongue, type Arch } from "./primitives";
+import { alongArch, archPath, artIds, Embers, Lion, lotusPetals, partProps, round, tongue, type Arch } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -53,11 +53,7 @@ const rays = Array.from({ length: 108 }, (_, i) => {
   };
 });
 
-const petals = Array.from({ length: 17 }, (_, i) => {
-  const w = 420 / 17;
-  const x0 = 110 + i * w;
-  return `M ${round(x0)} 774 Q ${round(x0)} 754 ${round(x0 + w / 2)} 748 Q ${round(x0 + w)} 754 ${round(x0 + w)} 774 Z`;
-});
+const petals = lotusPetals({ x: 110, width: 420, count: 17, base: 774, height: 26 });
 
 const EMBERS = [
   { x: 300, y: 520, r: 2.2, dx: -18, dur: 11, delay: 0 },

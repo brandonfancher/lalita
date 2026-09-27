@@ -10,7 +10,7 @@
  * artwork's entry.
  */
 
-import { artIds, partProps, polar, round } from "./primitives";
+import { artIds, litPart, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -101,20 +101,6 @@ const DEER_LEGS = [
 const DEER_AT = { x: 318, y: 462, s: 1.12 };
 
 /* ── The fifteen nights of the bright fortnight ────────────────────────── */
-
-/** How far through its waxing each night's moon is: 0 is new, 90 exactly half, 180 full. */
-const phaseAngle = (night: number) => (night <= 8 ? night * (90 / 8) : 90 + (night - 8) * (90 / 7));
-
-/**
- * The lit part of a waxing moon of radius r at the origin, lit from above so
- * the eighth night matches the brow: the limb over the top, then back along
- * the terminator.
- */
-function litPart(night: number, r: number) {
-  const theta = (phaseAngle(night) * Math.PI) / 180;
-  const rx = round(r * Math.abs(Math.cos(theta)));
-  return `M ${-r} 0 A ${r} ${r} 0 0 1 ${r} 0 A ${r} ${rx} 0 0 ${theta < Math.PI / 2 ? 0 : 1} ${-r} 0 Z`;
-}
 
 const NIGHT_R = 9.5;
 const NIGHT_STEP = 27;

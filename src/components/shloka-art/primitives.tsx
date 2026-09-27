@@ -71,6 +71,20 @@ export function glint(s: number) {
   return `M 0 ${-s} Q ${q} ${-q} ${s} 0 Q ${q} ${q} 0 ${s} Q ${-q} ${q} ${-s} 0 Q ${-q} ${-q} 0 ${-s} Z`;
 }
 
+/**
+ * A row of pointed lotus petals standing on `base`, `count` of them across
+ * `width` from `x`. A negative `height` turns them down.
+ */
+export function lotusPetals({ x, width, count, base, height }: { x: number; width: number; count: number; base: number; height: number }) {
+  const w = width / count;
+  const shoulder = round(base - (height * 10) / 13);
+  const tip = round(base - height);
+  return Array.from({ length: count }, (_, i) => {
+    const x0 = x + i * w;
+    return `M ${round(x0)} ${base} Q ${round(x0)} ${shoulder} ${round(x0 + w / 2)} ${tip} Q ${round(x0 + w)} ${shoulder} ${round(x0 + w)} ${base} Z`;
+  });
+}
+
 /** A round-topped arch: a semicircle of radius r centred on (cx, cy), on posts down to `bottom`. */
 export type Arch = { cx: number; cy: number; bottom: number };
 
@@ -488,5 +502,323 @@ export function FlowerArrow({ length, sign, headClassName }: { length: number; s
         </g>
       </g>
     </g>
+  );
+}
+
+/* ── Her arms ──────────────────────────────────────────────────────────── */
+
+export type Beam = { layers: string[]; x1: number; y1: number; x2: number; y2: number; angle: number };
+
+/**
+ * One of her arms: a beam of light from her source `from` to `tip`, drawn as
+ * nested tapering layers so its edges stay soft. It leaves the source
+ * `start` units out; `w0` and `w1` are the widths of the outermost layer.
+ */
+export function armBeam(from: Pt, tip: Pt, w0: number, w1: number, start = 70): Beam {
+  const dx = tip.x - from.x;
+  const dy = tip.y - from.y;
+  const len = Math.hypot(dx, dy);
+  const ux = dx / len;
+  const uy = dy / len;
+  const b = { x: from.x + ux * start, y: from.y + uy * start };
+  const side = (p: Pt, w: number, s: number) => `${round(p.x - uy * (w / 2) * s)} ${round(p.y + ux * (w / 2) * s)}`;
+  const layer = (k: number) => {
+    const a = w0 * k;
+    const c = w1 * k;
+    return `M ${side(b, a, 1)} L ${side(tip, c, 1)} Q ${round(tip.x + ux * c)} ${round(tip.y + uy * c)} ${side(tip, c, -1)} L ${side(b, a, -1)} Q ${round(b.x - ux * a)} ${round(b.y - uy * a)} ${side(b, a, 1)} Z`;
+  };
+  return {
+    layers: [layer(1), layer(0.55), layer(0.22)],
+    x1: round(b.x),
+    y1: round(b.y),
+    x2: round(tip.x),
+    y2: round(tip.y),
+    angle: round((Math.atan2(dy, dx) * 180) / Math.PI),
+  };
+}
+
+/** Where the bangle sits: on the arm from `from`, just short of the point `at` where a weapon is held. */
+export function wrist(from: Pt, at: Pt) {
+  const dx = from.x - at.x;
+  const dy = from.y - at.y;
+  const len = Math.hypot(dx, dy);
+  return { x: at.x + (dx / len) * 6, y: at.y + (dy / len) * 6 };
+}
+
+/** An arm's three layers of light, filled with `fill` (a gradient along the beam). */
+export function ArmLight({ beam, fill }: { beam: Beam; fill: string }) {
+  return (
+    <g fill={fill}>
+      <path d={beam.layers[0]} fillOpacity={0.12} />
+      <path d={beam.layers[1]} fillOpacity={0.2} />
+      <path d={beam.layers[2]} fillOpacity={0.45} />
+    </g>
+  );
+}
+
+/**
+ * A bangle (kaṅkaṇa) across an arm, centred on the origin with the arm
+ * running up and down: place it at the beam's tip, rotated by `angle + 90`.
+ */
+export function Bangle() {
+  return (
+    <>
+      <ellipse rx={12} ry={4.5} stroke="var(--gold)" strokeWidth={2.6} />
+      <ellipse rx={12} ry={4.5} stroke="var(--art-carve)" strokeWidth={0.6} />
+      <g fill="var(--art-vermilion)">
+        <circle cx={-6} cy={3.9} r={1.5} />
+        <circle cx={0} cy={4.5} r={1.7} />
+        <circle cx={6} cy={3.9} r={1.5} />
+      </g>
+    </>
+  );
+}
+
+/* ── The moon ──────────────────────────────────────────────────────────── */
+
+/** How far through its waxing a night's moon is: 0 is new, 90 exactly half, 180 full. */
+export const phaseAngle = (night: number) => (night <= 8 ? night * (90 / 8) : 90 + (night - 8) * (90 / 7));
+
+/**
+ * The lit part of a waxing moon of radius r at the origin, for nights 1–15 of
+ * the bright fortnight, lit from above: the limb over the top, then back
+ * along the terminator. Turn it over for a crescent with its horns up.
+ */
+export function litPart(night: number, r: number) {
+  const theta = (phaseAngle(night) * Math.PI) / 180;
+  const rx = round(r * Math.abs(Math.cos(theta)));
+  return `M ${-r} 0 A ${r} ${r} 0 0 1 ${r} 0 A ${r} ${rx} 0 0 ${theta < Math.PI / 2 ? 0 : 1} ${-r} 0 Z`;
+}
+
+/* ── Her ruby crown ────────────────────────────────────────────────────── */
+
+/** A ruby in its setting, lit from the upper left. */
+export function Ruby({ x, y, r }: { x: number; y: number; r: number }) {
+  return (
+    <g>
+      <ellipse cx={x} cy={y} rx={round(r + 1.3)} ry={round(r * 1.15 + 1.3)} fill="var(--art-carve)" />
+      <ellipse cx={x} cy={y} rx={r} ry={round(r * 1.15)} fill="var(--art-vermilion)" />
+      <path
+        d={`M ${round(x - r * 0.55)} ${round(y - r * 0.2)} Q ${round(x - r * 0.4)} ${round(y - r * 0.85)} ${round(x + r * 0.15)} ${round(y - r * 0.9)}`}
+        stroke="var(--art-core)"
+        strokeWidth={0.7}
+        strokeLinecap="round"
+      />
+    </g>
+  );
+}
+
+/** A passing flash on a jewel, in one of three offset groups. */
+export function Flash({ x, y, s, group }: { x: number; y: number; s: number; group: number }) {
+  return (
+    <g transform={`translate(${round(x)} ${round(y)})`}>
+      <path className={["m-lick", "m-lick m-late", "m-lick m-later"][group]} d={glint(round(s))} fill="var(--art-core)" />
+    </g>
+  );
+}
+
+/** How far each band dips at the front, as a band round a crown seen from a little above. */
+const SAG = 4;
+const sagAt = (dx: number, hw: number) => SAG * (1 - (dx / hw) ** 2);
+
+/** The crown's half-width at height y: a swelling dome from the finial (y 82) to the diadem (y 166). */
+const crownHalf = (y: number) => round(28 + 64 * Math.max(0, (y - 82) / 84) ** 0.5);
+
+const DIADEM = { top: 164, bottom: 188, hwT: 94, hwB: 98 };
+const TIER_EDGES = [164, 142, 121, 101, 82];
+const TIER_RUBIES = [9, 9, 7, 5];
+/** The diadem's crest of petals, which hides the foot of the lowest tier. */
+const PETAL_H = 12;
+/** The rubies that flash, keyed by row ("d" for the diadem) and place, with one of three offset groups. */
+const FLASHING: Record<string, number> = { "d-2": 0, "d-8": 1, "0-2": 2, "0-7": 0, "1-5": 1, "2-1": 2, "3-3": 0 };
+
+const crownPetal = (a: number, h: number) =>
+  `M ${-a} 0 C ${-a} ${round(-h * 0.55)} ${round(-a * 0.4)} ${round(-h * 0.8)} 0 ${-h} C ${round(a * 0.4)} ${round(-h * 0.8)} ${a} ${round(-h * 0.55)} ${a} 0 Z`;
+
+/** One of the short rays the crown throws off: `deg` round from the right, `left` its outer end's x. */
+export type CrownRay = { d: string; red: boolean; deg: number; left: number };
+
+function crownGeometry(cx: number) {
+  const bandPath = (bottom: number, top: number, hwB: number, hwT: number) =>
+    [
+      `M ${cx - hwB} ${bottom}`,
+      `Q ${cx} ${bottom + 2 * SAG} ${cx + hwB} ${bottom}`,
+      `L ${cx + hwT} ${top}`,
+      `Q ${cx} ${top + 2 * SAG} ${cx - hwT} ${top}`,
+      "Z",
+    ].join(" ");
+
+  const petalRow = (top: number, hw: number, width: number, h: number) => {
+    const n = Math.floor((2 * hw) / width);
+    const w = (2 * hw) / n;
+    return {
+      half: round(w * 0.5),
+      h,
+      at: Array.from({ length: n }, (_, k) => {
+        const dx = -hw + (k + 0.5) * w;
+        return { x: round(cx + dx), y: round(top + sagAt(dx, hw) + 1) };
+      }),
+    };
+  };
+
+  const rubyRow = (mid: number, hw: number, count: number, inset: number) => {
+    const step = count > 1 ? (2 * (hw - inset)) / (count - 1) : 0;
+    return Array.from({ length: count }, (_, k) => {
+      const dx = (k - (count - 1) / 2) * step;
+      return { x: round(cx + dx), y: round(mid + sagAt(dx, hw)) };
+    });
+  };
+
+  const tiers = TIER_RUBIES.map((count, i) => {
+    const bottom = TIER_EDGES[i];
+    const top = TIER_EDGES[i + 1];
+    const hwB = crownHalf(bottom);
+    const hwT = crownHalf(top);
+    const hw = (hwB + hwT) / 2;
+    const r = round(4.3 - 0.3 * i);
+    const mid = i === 0 ? (top + bottom - PETAL_H) / 2 + 1 : (top + bottom) / 2 + 1;
+    const n = Math.round((2 * hwT) / 4.6);
+    return {
+      d: bandPath(bottom, top, hwB, hwT),
+      r,
+      rubies: rubyRow(mid, hw, count, 9 + i),
+      beads: Array.from({ length: n }, (_, k) => {
+        const dx = -hwT + ((k + 0.5) * 2 * hwT) / n;
+        return { x: round(cx + dx), y: round(top + 1.4 + sagAt(dx, hwT)) };
+      }),
+    };
+  });
+
+  const rays: CrownRay[] = Array.from({ length: 56 }, (_, k) => ({ k, deg: k * (360 / 56) }))
+    .filter(({ deg }) => deg < 192 || deg > 348)
+    .map(({ k, deg }) => {
+      const t = (deg * Math.PI) / 180;
+      const len = k % 2 ? 8 : 16;
+      const at = (d: number) => ({ x: round(cx + (116 + d) * Math.cos(t)), y: round(116 - (104 + d) * Math.sin(t)) });
+      const a = at(0);
+      const b = at(len);
+      return { d: `M ${a.x} ${a.y} L ${b.x} ${b.y}`, red: k % 4 === 1 || k % 4 === 2, deg, left: b.x };
+    });
+
+  return {
+    tiers,
+    rays,
+    topCrest: petalRow(TIER_EDGES[TIER_EDGES.length - 1] + 1, crownHalf(TIER_EDGES[TIER_EDGES.length - 1]), 8, 7),
+    diadem: {
+      d: bandPath(DIADEM.bottom, DIADEM.top, DIADEM.hwB, DIADEM.hwT),
+      rubies: rubyRow(176, 96, 11, 10),
+      petals: petalRow(DIADEM.top, DIADEM.hwT, 14, PETAL_H),
+    },
+    rimBeads: Array.from({ length: 35 }, (_, k) => {
+      const dx = -93.5 + k * 5.5;
+      return { x: round(cx + dx), y: round(DIADEM.bottom - 1.5 + sagAt(dx, DIADEM.hwB)) };
+    }),
+  };
+}
+
+const crowns = new Map<number, ReturnType<typeof crownGeometry>>();
+
+type PetalRow = ReturnType<typeof crownGeometry>["topCrest"];
+
+function CrownPetals({ row, dots = true }: { row: PetalRow; dots?: boolean }) {
+  return (
+    <>
+      <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.6}>
+        {row.at.map((p, k) => (
+          <path key={k} d={crownPetal(row.half, row.h)} transform={`translate(${p.x} ${p.y})`} />
+        ))}
+      </g>
+      {dots && (
+        <g fill="var(--art-vermilion)">
+          {row.at.map((p, k) => (
+            <circle key={k} cx={p.x} cy={round(p.y - row.h * 0.42)} r={1.4} />
+          ))}
+        </g>
+      )}
+    </>
+  );
+}
+
+/**
+ * Her ruby crown (koṭīra): a gold dome swelling from a budded finial (y 24)
+ * to a broad diadem (y 190), tier upon tier of rubies edged with gold beads,
+ * a large front ruby in a ring of petals, and short rays of gold and red.
+ * Centred on x = cx at its size in Shloka 4; `rays` picks which rays to draw.
+ */
+export function RubyCrown({ cx, rays: keep }: { cx: number; rays?: (ray: CrownRay) => boolean }) {
+  let g = crowns.get(cx);
+  if (!g) {
+    g = crownGeometry(cx);
+    crowns.set(cx, g);
+  }
+  const { tiers, topCrest, diadem, rimBeads } = g;
+  const rays = keep ? g.rays.filter(keep) : g.rays;
+  const front = (diadem.rubies.length - 1) / 2;
+
+  return (
+    <>
+      <g strokeWidth={0.9} strokeLinecap="round" strokeOpacity={0.7}>
+        {rays.map((r, i) => (
+          <path key={i} d={r.d} stroke={r.red ? "var(--art-vermilion)" : "var(--gold-soft)"} />
+        ))}
+      </g>
+      <g fill="var(--gold)">
+        <path d={`M ${cx - 30} 82 C ${cx - 30} 67 ${cx - 11} 64 ${cx - 7} 58 L ${cx + 7} 58 C ${cx + 11} 64 ${cx + 30} 67 ${cx + 30} 82 Z`} />
+        <path d={`M ${cx} 28 C ${cx + 10} 37 ${cx + 12} 49 ${cx + 7} 59 L ${cx - 7} 59 C ${cx - 12} 49 ${cx - 10} 37 ${cx} 28 Z`} />
+        <circle cx={cx} cy={24} r={2.8} />
+      </g>
+      <path d={`M ${cx - 25} 74 Q ${cx} 67 ${cx + 25} 74`} stroke="var(--art-carve)" strokeWidth={0.8} />
+      <Ruby x={cx} y={45} r={3.8} />
+      {tiers
+        .map((t, i) => ({ t, i }))
+        .reverse()
+        .map(({ t, i }) => (
+          <g key={i}>
+            <path d={t.d} fill="var(--gold)" />
+            <g fill="var(--gold-soft)">
+              {t.beads.map((b, k) => (
+                <circle key={k} cx={b.x} cy={b.y} r={1.35} />
+              ))}
+            </g>
+            {t.rubies.map((r, k) => (
+              <Ruby key={k} x={r.x} y={r.y} r={t.r} />
+            ))}
+          </g>
+        ))}
+      <CrownPetals row={topCrest} dots={false} />
+      <path d={diadem.d} fill="var(--gold)" />
+      <path
+        d={`M ${cx - 95} ${DIADEM.bottom - 5} Q ${cx} ${DIADEM.bottom - 5 + 2 * SAG} ${cx + 95} ${DIADEM.bottom - 5}`}
+        stroke="var(--art-carve)"
+        strokeWidth={0.7}
+      />
+      {diadem.rubies.map((r, k) =>
+        k === front ? (
+          <g key={k}>
+            <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.5}>
+              {Array.from({ length: 10 }, (_, j) => (
+                <path key={j} d="M -2.4 0 Q -2.4 -3.4 0 -5.6 Q 2.4 -3.4 2.4 0 Z" transform={`translate(${r.x} ${r.y - 2}) rotate(${j * 36}) translate(0 -8.4)`} />
+              ))}
+            </g>
+            <Ruby x={r.x} y={r.y - 2} r={7} />
+          </g>
+        ) : (
+          <Ruby key={k} x={r.x} y={r.y} r={4.3} />
+        ),
+      )}
+      <CrownPetals row={diadem.petals} />
+      <g fill="var(--gold-soft)">
+        {rimBeads.map((b, k) => (
+          <circle key={k} cx={b.x} cy={b.y} r={1.7} />
+        ))}
+      </g>
+      {Object.entries(FLASHING).map(([key, group]) => {
+        const [row, place] = key.split("-");
+        const r = row === "d" ? diadem.rubies[+place] : tiers[+row].rubies[+place];
+        const size = row === "d" ? 4.3 : tiers[+row].r;
+        return <Flash key={key} x={r.x - size * 0.4} y={r.y - size * 0.6} s={size * 1.6} group={group} />;
+      })}
+      <Flash x={cx - 2.8} y={DIADEM.top + 7} s={9} group={1} />
+    </>
   );
 }

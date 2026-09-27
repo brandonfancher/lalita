@@ -243,6 +243,8 @@ body::after {
   --art-moon: #fdfcf8;
   /* Musk, only ever laid on the moon's pale face, so it stays dark in both themes. */
   --art-musk: #3b2518;
+  /* The dark eye at the heart of a red flower; darker than the petals in both themes. */
+  --art-crimson: #7e1d14;
 }
 
 [data-theme="dark"] .adornment {
@@ -255,6 +257,7 @@ body::after {
   --art-hair: #5d6788;
   --art-moon: #e9edf3;
   --art-musk: #34221a;
+  --art-crimson: #9c3024;
 }
 
 .shloka-art {
