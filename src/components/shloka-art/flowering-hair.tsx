@@ -9,7 +9,7 @@
  * next to this artwork's entry.
  */
 
-import { artIds, cubicAt, glint, partProps, round, Ruby, RubyCrown } from "./primitives";
+import { artIds, campakaPetal, cubicAt, partProps, round, Ruby, RubyCrown, Star } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -113,11 +113,6 @@ const rosette = Array.from({ length: 12 }, (_, k) => {
 /* The four flowers, each centred on the origin and about 26 units across. */
 
 const CAMPAKA_PETALS = Array.from({ length: 9 }, (_, i) => ({ angle: i * 40 + (i % 2) * 6, l: i % 2 ? 11 : 13.5 }));
-function campakaPetal(l: number) {
-  const w = 2.6;
-  const t = 2.2;
-  return `M 0 0 C ${-w} ${round(-l * 0.35)} ${round(-w * 0.5 + t * 0.4)} ${round(-l * 0.8)} ${t} ${-l} C ${round(w * 0.3 + t)} ${round(-l * 0.7)} ${round(w * 1.1)} ${round(-l * 0.3)} 0 0 Z`;
-}
 
 /** Campaka: slender, pointed, slightly twisted petals of deep gold. */
 function Campaka() {
@@ -318,11 +313,7 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
               </g>
             );
           }
-          return (
-            <g key={i} transform={`translate(${s.x} ${s.y})`}>
-              <path className={cls} d={glint(s.s)} fill={s.kind === "turning" ? "var(--art-vermilion)" : "var(--gold-soft)"} />
-            </g>
-          );
+          return <Star key={i} x={s.x} y={s.y} s={s.s} className={cls} fill={s.kind === "turning" ? "var(--art-vermilion)" : undefined} />;
         })}
       </g>
     </svg>

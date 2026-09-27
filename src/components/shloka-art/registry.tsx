@@ -1,3 +1,4 @@
+import { CampakaJewel } from "./campaka-jewel";
 import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
@@ -298,6 +299,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: a point of light in the space between the two brows. The
           tradition places the <i>ājñā</i> cakra there, and it gives the attention somewhere to rest while chanting.
+        </>
+      ),
+    },
+  },
+  "007": {
+    Art: CampakaJewel,
+    intro: (Spot) => (
+      <>
+        The whole verse is about her nose, so the artwork draws what the names liken it to, in a night sky where the{" "}
+        <Spot part="stars">stars</Spot> keep their distance. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 19,
+        part: "campaka",
+        depicts:
+          "A single campaka stands straight up on its stem, just opened, its narrow petals still almost closed and at their palest. The name calls her nose a daṇḍa, a stalk that grows straight up.",
+      },
+      {
+        nama: 20,
+        part: "nose-jewel",
+        depicts:
+          "On the flower's flank is a nose stud of seven diamonds in gold, as the goddess wears in the temples of the south. No star shows anywhere near it, and the nearest have faded to faint rings.",
+      },
+    ],
+    detail: {
+      part: "pearl",
+      body: (
+        <>
+          There is also a small detail for the attentive: a pearl hangs from the stud. Śaṅkara says her breath is so cool
+          that it condenses into pearls inside her nose, and she wears one of the surplus outside.
         </>
       ),
     },
