@@ -4,6 +4,7 @@ import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
 import { ThousandDawns } from "./thousand-dawns";
 import type { Artwork } from "./types";
+import { WeddingDoorway } from "./wedding-doorway";
 import { WholeImage } from "./whole-image";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -264,6 +265,39 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: along the foot runs a string of the fifteen nights of the
           bright fortnight, waxing from left to right. The eighth, ringed in red and gold beneath her face, is the same half as
           her brow.
+        </>
+      ),
+    },
+  },
+  "006": {
+    Art: WeddingDoorway,
+    intro: (Spot) => (
+      <>
+        Both names make her face a place that belongs to Love. Here it is his wedding house, seen only as the light that
+        fills its <Spot part="doorway">doorway</Spot> and brims at the threshold. Every element comes from one of the two
+        names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 17,
+        part: "torana",
+        depicts:
+          "Over the door stands a toraṇa, the gateway put up for a wedding, and its two arches are her brows. Mango leaves, jasmine and bells hang from it, and plantain stems are tied up as its posts.",
+      },
+      {
+        nama: 18,
+        part: "stream",
+        depicts:
+          "Her beauty spills over the threshold and runs off to the side, as a full tank spills into its outlet channel. Two fish circle in it, now and then darting, as her eyes do.",
+      },
+    ],
+    detail: {
+      part: "ajna",
+      body: (
+        <>
+          There is also a small detail for the attentive: a point of light in the space between the two brows. The
+          tradition places the <i>ājñā</i> cakra there, and it gives the attention somewhere to rest while chanting.
         </>
       ),
     },

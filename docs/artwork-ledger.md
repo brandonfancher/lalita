@@ -69,6 +69,12 @@ second time it is needed.
 | Jewelled vessel (ratna-ghaṭa) | A round-bellied `--gold` pot: a tilted `--gold-soft` lid, a collar line at the neck, a belt of rubies and `--leaf` emeralds by turns between two rows of pearls, a soft `--art-core` sheen on the left of the belly, and upturned petals round the foot. Downturned petals at the shoulder read as fangs | Inline (`whole-image.tsx`) | Dhyāna |
 | The eight powers (aṇimādi siddhis) | Eight short `--art-saffron` rays round her source, 76–92 units out, each tipped with an `--art-core` `glint` and a gold dot (`m-twinkle`, three groups). Set them at 0°, 45°, … so her four arms pass between them | Inline (`whole-image.tsx`) | Dhyāna |
 | The innermost triangle (trikoṇa) | A hair-fine `--gold-soft` downward triangle round the bindu, circumradius 22 so the bindu's ring sits inside it. Kept faint: bright, with the bindu's glow inside it, it read as an eye in a triangle | Inline (`whole-image.tsx`) | Dhyāna |
+| Her brows as the toraṇa | Two gold arches standing on a straight gold beam, each shaped as a brow: a blunt head by the centre, thickest just after it, tapering to a tail that stands on the beam on a small gold knob with a vermilion dot. A vermilion line runs inside each arch, an `--art-core` sheen along its top, and gold beads under it. Keep them low and long (about 2.5 : 1): taller, they read as two horseshoe arches. The gap between the heads is the ājñā point | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Festoon (vandanavāra) | A row of mango leaves hanging tip down from a beam, `--leaf` with a `--gold-soft` midrib, lengths alternating, a jasmine bud between each pair; `m-sway` in three groups | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Jasmine (mallikā) | Small `--art-ivory` buds outlined in hair-fine gold, strung close on a gold thread; a string ends in a small gold bell. Chosen over marigold, which reached India only after 1500 | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Plantain post | A tall, faintly tapering `--leaf` stem with slanting sheath lines, tied with a vermilion and a gold thread, two plantain leaves arching out and down from its top (keep the left ones below the title) | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Fish (mīna) | Seen from above, as fish are seen in shallow water: a slim body about 70 units long, bent a little as if turning, with a forked tail, two pairs of side fins in `--art-saffron`, a gold spine line, gold scale arcs, and two small eyes (`--art-musk` in an `--art-core` ring). The body is vermilion down the spine, shading to saffron at the sides. A faint `--art-crimson` shadow falls on the bed beneath. A pair circles one centre, one turned 180° from the other. `m-dart` | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Water in a channel | Filled with the miniature painters' pattern of small arcs, each row set half an arc along (a `<pattern>`, `--gold-soft`), over a soft saffron glow, between gold banks with a fainter outer kerb. Rounded, organic banks: straight banks and square corners read as a pipe, a band of constant width as a snake. Dashed flow lines read as road markings by lamplight | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -80,6 +86,8 @@ Not yet drawn. Whoever draws one first sets its canon here.
 - **The Śrīcakra entire.** The Dhyāna draws only its innermost triangle round the bindu. The site's
   own `YantraMark` in `src/components/ornament.tsx` is that enclosure in a circle. When the names
   reach the cakra and its nine enclosures, build the whole yantra from that triangle outward.
+- **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
+  fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
 - **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
   water-lily of its first verse, the golden lotus of its third, her three eyes (sun, moon, and fire
   between them, Saundaryalaharī 48), and her red garland. Whoever draws one first sets its canon.
@@ -116,6 +124,10 @@ Classes added to the motion vocabulary beyond the starting set: `m-breathe`, `m-
   `--dur` (default 28s) from `--delay`. For worlds going under in her flood. Give every piece of
   one sinking thing the same `--dur` and `--delay`, and keep anything that marks the fixed
   surface (a clip, a waterline) outside the moving group. Use it on a few elements, never all.
+- **`m-dart`** (Shloka 6): holds still, then darts 9 units forward with a 5° turn and drifts back,
+  over 9s. For fish, which in shallow water are seen chiefly as a movement. Put it on a group drawn
+  heading +x, inside the group that places and turns it, so the dart follows the heading; a shadow
+  that should move with its fish gets the same class and offset.
 
 ## Composition log
 
@@ -287,6 +299,40 @@ One entry per finished artwork, in the order they were made.
   crown. The crescent first read as a pearl, then as a bowl: dropping its ashen disc and its round
   glow, and slimming it to the fourth night, made it a moon. On tablet the goad falls partly under
   the "The artwork" badge, as in earlier shlokas.
+
+### Shloka 6: The wedding doorway
+
+- **Component:** `wedding-doorway.tsx` (defs prefix `sa6`)
+- **Composition:** a doorway, and water leaving it. Her face is Love's wedding house, seen only as
+  the light that fills its door. A toraṇa stands over the door: two gold brow-shaped arches on a
+  beam hung with mango leaves and jasmine, on plantain stems for posts, with a point of light in
+  the gap between the brows. The card sits in the doorway. Below it the light brims over the
+  threshold and falls into the head of a channel, where two fish circle. The channel runs right,
+  narrows, turns down, and opens into broad water across the foot. The first architecture, the
+  first moving water, and the first living creatures in motion. The gateway is symmetric; the
+  water breaks the symmetry and carries the eye down to the right.
+- **Name → part:**
+  - Vadanasmaramāṅgalyagṛhatoraṇacillikā → `torana`: the brow-shaped arches, the beam, the festoon
+    of mango leaves and jasmine, the jasmine strings and bells, and the plantain posts
+  - Vaktralakṣmīparīvāhacalanmīnābhalocanā → `stream`: the brim and fall over the threshold, the
+    channel and the broad water, and the two fish
+  - Intro, *its doorway* → `doorway`: the glow within the door and the threshold, marked with
+    vermilion and turmeric
+  - Detail → `ajna`: the point of light between the brows, where the ājñā cakra is placed
+- **Palette:** vermilion, saffron, and gold; `--leaf` as a major colour for the first time (mango
+  leaves, plantains), `--art-ivory` for jasmine, `--art-musk` for the fishes' eyes, and
+  `--art-crimson` for their shadows. No additions.
+- **Motion:** `m-sway` (the festoon's leaves, the jasmine strings), `m-shimmer` (the glows and the
+  ripples under the fall), and the new `m-dart` (the fish).
+- **Notes:** This subtitle reaches x ≈ 175 of the artwork at y ≈ 85–140 on screens 1280–1440px
+  wide, so the arches stand on the beam at x ≈ 180, and the left plantain leaves stay below
+  y ≈ 145. The first arches, tall and wiry with volutes, crossed the title and read as horns;
+  lower, heavier brows fixed both. The festoon first hung behind the card and frosted into streaks;
+  raising the beam to y ≈ 150 cleared it. A flat doorway fill read as a red box by lamplight; a
+  radial glow brightest at the threshold replaced it. The water went through four shapes: a
+  tongue-like blob, a fishbowl basin with a snake-like channel, an L-shaped pipe, and finally an
+  organic runnel filled with the miniature painters' wave pattern. Top-view fish, one turned 180°
+  from the other, avoid the pair reading as two eyes under the brows.
 
 ## Open questions
 

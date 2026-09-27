@@ -365,6 +365,17 @@ body:has([data-art-trigger]:hover) .shloka-art {
   animation: art-sink var(--dur, 28s) ease-in-out var(--delay, 0s) infinite;
 }
 
+/*
+ * Holds still, darts a few units forward with a slight turn, and drifts back:
+ * a fish in shallow water, seen chiefly as a movement. Put it on a group
+ * drawn heading +x, inside the group that places and turns it.
+ */
+.adornment .m-dart {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: art-dart 9s ease-in-out infinite;
+}
+
 /* Offsets any of the above so neighbours don't move in lockstep. */
 .adornment .m-late {
   animation-delay: -1.7s;
@@ -496,6 +507,22 @@ body:has([data-art-trigger]:hover) .shloka-art {
   100% {
     opacity: 0;
     transform: translateY(15px);
+  }
+}
+
+@keyframes art-dart {
+  0%,
+  52% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  58% {
+    transform: translate(9px, -1.5px) rotate(-5deg);
+  }
+  70% {
+    transform: translate(8px, -1px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
   }
 }
 
