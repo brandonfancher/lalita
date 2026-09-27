@@ -171,8 +171,9 @@ Romanized). Hold it to this bar:
 - **Beside the verse** (tablet and desktop): recognisable at a glance from its silhouette and
   focal glow, and nothing important is cut off by the crop or lost in its feathered edge (see
   [composition.md](composition.md#the-practice-miniature)).
-- **In the corner** (phones): at 28px wide it still reads as a distinct mark, not a smudge, and
-  is told apart from its neighbours' miniatures.
+- **Behind the verse** (phones): recognisable through the text, and every word over it stays
+  easy to read in both themes. Watch for bright glows under light text by lamplight, and dark
+  detail under dark text by day.
 - **The card:** the verse is untouched and the card is no taller than its neighbours.
 
 If the miniature doesn't read, strengthen the big masses of the artwork itself (in step 6's

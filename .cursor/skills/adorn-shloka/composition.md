@@ -73,9 +73,10 @@ opacity 0.1.
 Each verse card on the practice page carries the artwork as a miniature (`ShlokaMiniature` in
 `shloka-art/index.tsx`), a reminder of what is being chanted. It shows only x 70–570, y 30–780,
 with the edges feathered, so keep every element inside that region. Beside the verse on wider
-screens it is 60–120px wide (1 unit ≈ 0.12–0.24px); on phones it is a 28px glyph beside the
-title. At that size only the silhouette and the focal glow survive, so the big masses should say
-what the shloka is on their own.
+screens it is 60–120px wide (1 unit ≈ 0.12–0.24px). On phones it stands behind the verse at the
+card's full height (about 130px wide) and at 55% opacity, so the verse is read over it. At that
+size only the silhouette and the focal glow survive, so the big masses should say what the shloka
+is on their own.
 
 ## Palette
 

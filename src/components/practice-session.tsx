@@ -32,8 +32,8 @@ export type PracticeVerse = {
 
 /**
  * Sized so the art never makes a card taller. On phones the verse fills the
- * width, so it keeps to the corner beside the title; wider, it floats beside a
- * two-line verse in each script.
+ * width, so the art stands softened behind it at the card's full height; wider,
+ * it floats beside a two-line verse in each script.
  */
 const ART_WIDTH: Record<ScriptMode, string> = {
   both: "sm:w-[5.5rem] md:w-[7.5rem]",
@@ -197,11 +197,12 @@ function PracticeVerseCard({
   }, [activeTokenId, verse.lines]);
 
   return (
-    <article className="folio flow-root rounded-sm px-5 py-4 sm:px-7 sm:py-5">
+    <article className="folio isolate flow-root rounded-sm px-5 py-4 sm:px-7 sm:py-5">
       {verse.art && (
         <div
           className={cn(
-            "absolute right-4 top-2 w-[1.75rem] sm:static sm:float-right sm:mb-1 sm:ml-4 md:ml-5",
+            "pointer-events-none absolute right-2 top-2 -z-10 aspect-[2/3] h-[calc(100%-1rem)] max-h-[18rem] opacity-55",
+            "sm:pointer-events-auto sm:static sm:float-right sm:mb-1 sm:ml-4 sm:aspect-auto sm:h-auto sm:max-h-none sm:opacity-100 md:ml-5",
             ART_WIDTH[script],
           )}
         >
