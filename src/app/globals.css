@@ -239,6 +239,10 @@ body::after {
   --art-ivory: #fffaf0;
   /* The blue-black gloss of her hair, only ever in thin lines and glimpses. */
   --art-hair: #1f2a55;
+  /* The moon's pearl face; cooler than ivory, and silver by lamplight. */
+  --art-moon: #fdfcf8;
+  /* Musk, only ever laid on the moon's pale face, so it stays dark in both themes. */
+  --art-musk: #3b2518;
 }
 
 [data-theme="dark"] .adornment {
@@ -249,6 +253,8 @@ body::after {
   --art-ember: #f3b36b;
   --art-ivory: #f1e8d6;
   --art-hair: #5d6788;
+  --art-moon: #e9edf3;
+  --art-musk: #34221a;
 }
 
 .shloka-art {
