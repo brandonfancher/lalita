@@ -7,7 +7,7 @@
  * this artwork's entry.
  */
 
-import { artIds, glint, Goad, Noose, partProps, round } from "./primitives";
+import { ArmLight, armBeam, artIds, Bangle, glint, Goad, Noose, partProps, round, wrist } from "./primitives";
 import type { ArtProps } from "./types";
 
 const SX = 320;
@@ -61,46 +61,10 @@ const sunRays = Array.from({ length: 16 }, (_, i) => {
 const NOOSE_AT = { x: 218, y: 172 };
 const GOAD_AT = { x: 446, y: 174 };
 
-type Beam = { layers: string[]; x1: number; y1: number; x2: number; y2: number; angle: number };
+const SUN = { x: SX, y: HY };
 
-/**
- * A beam of light from the sun to `tip`, drawn as nested tapering layers so
- * its edges stay soft; `w0` and `w1` are the widths of the outermost layer.
- */
-function beam(tip: { x: number; y: number }, w0: number, w1: number): Beam {
-  const dx = tip.x - SX;
-  const dy = tip.y - HY;
-  const len = Math.hypot(dx, dy);
-  const ux = dx / len;
-  const uy = dy / len;
-  const b = { x: SX + ux * 70, y: HY + uy * 70 };
-  const side = (p: { x: number; y: number }, w: number, s: number) =>
-    `${round(p.x - uy * (w / 2) * s)} ${round(p.y + ux * (w / 2) * s)}`;
-  const layer = (k: number) => {
-    const a = w0 * k;
-    const c = w1 * k;
-    return `M ${side(b, a, 1)} L ${side(tip, c, 1)} Q ${round(tip.x + ux * c)} ${round(tip.y + uy * c)} ${side(tip, c, -1)} L ${side(b, a, -1)} Q ${round(b.x - ux * a)} ${round(b.y - uy * a)} ${side(b, a, 1)} Z`;
-  };
-  return {
-    layers: [layer(1), layer(0.55), layer(0.22)],
-    x1: round(b.x),
-    y1: round(b.y),
-    x2: round(tip.x),
-    y2: round(tip.y),
-    angle: round((Math.atan2(dy, dx) * 180) / Math.PI),
-  };
-}
-
-/** The bangle sits on the beam just short of where the weapon is held. */
-function wrist(at: { x: number; y: number }) {
-  const dx = SX - at.x;
-  const dy = HY - at.y;
-  const len = Math.hypot(dx, dy);
-  return { x: at.x + (dx / len) * 6, y: at.y + (dy / len) * 6 };
-}
-
-const upperBeams = [beam(wrist(NOOSE_AT), 40, 14), beam(wrist(GOAD_AT), 40, 14)];
-const lowerBeams = [beam({ x: 112, y: 522 }, 34, 4), beam({ x: 528, y: 522 }, 34, 4)];
+const upperBeams = [armBeam(SUN, wrist(SUN, NOOSE_AT), 40, 14), armBeam(SUN, wrist(SUN, GOAD_AT), 40, 14)];
+const lowerBeams = [armBeam(SUN, { x: 112, y: 522 }, 34, 4), armBeam(SUN, { x: 528, y: 522 }, 34, 4)];
 
 /** Rows of ripples on the sea, closer together near the horizon. */
 const seaRows = Array.from({ length: 16 }, (_, k) => HY + 8 + 6 * k + 0.7 * k * k).filter((y) => y < 800);
@@ -294,21 +258,11 @@ export function ThousandDawns({ idPrefix = "sa2", active = null }: ArtProps) {
       {/* Four arms of light, the upper two with their bangles */}
       <g {...part("arms")}>
         {[...upperBeams, ...lowerBeams].map((b, i) => (
-          <g key={i} fill={url(`arm-${i}`)}>
-            <path d={b.layers[0]} fillOpacity={0.12} />
-            <path d={b.layers[1]} fillOpacity={0.2} />
-            <path d={b.layers[2]} fillOpacity={0.45} />
-          </g>
+          <ArmLight key={i} beam={b} fill={url(`arm-${i}`)} />
         ))}
         {upperBeams.map((b, i) => (
           <g key={i} transform={`translate(${b.x2} ${b.y2}) rotate(${round(b.angle + 90)})`}>
-            <ellipse rx={12} ry={4.5} stroke="var(--gold)" strokeWidth={2.6} />
-            <ellipse rx={12} ry={4.5} stroke="var(--art-carve)" strokeWidth={0.6} />
-            <g fill="var(--art-vermilion)">
-              <circle cx={-6} cy={3.9} r={1.5} />
-              <circle cx={0} cy={4.5} r={1.7} />
-              <circle cx={6} cy={3.9} r={1.5} />
-            </g>
+            <Bangle />
           </g>
         ))}
       </g>

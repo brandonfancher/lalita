@@ -9,114 +9,12 @@
  * next to this artwork's entry.
  */
 
-import { artIds, cubicAt, glint, partProps, round } from "./primitives";
+import { artIds, cubicAt, glint, partProps, round, Ruby, RubyCrown } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
 
 const CX = 320;
-
-/* ── The crown ─────────────────────────────────────────────────────────── */
-
-/** How far each band dips at the front, as a band round a crown seen from a little above. */
-const SAG = 4;
-const sagAt = (dx: number, hw: number) => SAG * (1 - (dx / hw) ** 2);
-
-/** The crown's half-width at height y: a swelling dome from the finial (y 82) to the diadem (y 166). */
-const crownHalf = (y: number) => round(28 + 64 * Math.max(0, (y - 82) / 84) ** 0.5);
-
-const DIADEM = { top: 164, bottom: 188, hwT: 94, hwB: 98 };
-const TIER_EDGES = [164, 142, 121, 101, 82];
-const TIER_RUBIES = [9, 9, 7, 5];
-/** The diadem's crest of petals, which hides the foot of the lowest tier. */
-const PETAL_H = 12;
-
-function bandPath(bottom: number, top: number, hwB: number, hwT: number) {
-  return [
-    `M ${CX - hwB} ${bottom}`,
-    `Q ${CX} ${bottom + 2 * SAG} ${CX + hwB} ${bottom}`,
-    `L ${CX + hwT} ${top}`,
-    `Q ${CX} ${top + 2 * SAG} ${CX - hwT} ${top}`,
-    "Z",
-  ].join(" ");
-}
-
-function petalRow(top: number, hw: number, width: number, h: number) {
-  const n = Math.floor((2 * hw) / width);
-  const w = (2 * hw) / n;
-  return {
-    half: round(w * 0.5),
-    h,
-    at: Array.from({ length: n }, (_, k) => {
-      const dx = -hw + (k + 0.5) * w;
-      return { x: round(CX + dx), y: round(top + sagAt(dx, hw) + 1) };
-    }),
-  };
-}
-
-function rubyRow(mid: number, hw: number, count: number, inset: number) {
-  const step = count > 1 ? (2 * (hw - inset)) / (count - 1) : 0;
-  return Array.from({ length: count }, (_, k) => {
-    const dx = (k - (count - 1) / 2) * step;
-    return { x: round(CX + dx), y: round(mid + sagAt(dx, hw)) };
-  });
-}
-
-/** The tiers above the diadem, bottom to top, each a band of rubies edged with a line of gold beads. */
-const tiers = TIER_RUBIES.map((count, i) => {
-  const bottom = TIER_EDGES[i];
-  const top = TIER_EDGES[i + 1];
-  const hwB = crownHalf(bottom);
-  const hwT = crownHalf(top);
-  const hw = (hwB + hwT) / 2;
-  const r = round(4.3 - 0.3 * i);
-  const mid = i === 0 ? (top + bottom - PETAL_H) / 2 + 1 : (top + bottom) / 2 + 1;
-  const n = Math.round((2 * hwT) / 4.6);
-  return {
-    d: bandPath(bottom, top, hwB, hwT),
-    r,
-    rubies: rubyRow(mid, hw, count, 9 + i),
-    beads: Array.from({ length: n }, (_, k) => {
-      const dx = -hwT + ((k + 0.5) * 2 * hwT) / n;
-      return { x: round(CX + dx), y: round(top + 1.4 + sagAt(dx, hwT)) };
-    }),
-  };
-});
-
-/** A small crest of petals where the topmost tier meets the finial. */
-const topCrest = petalRow(TIER_EDGES[TIER_EDGES.length - 1] + 1, crownHalf(TIER_EDGES[TIER_EDGES.length - 1]), 8, 7);
-
-const diadem = {
-  d: bandPath(DIADEM.bottom, DIADEM.top, DIADEM.hwB, DIADEM.hwT),
-  rubies: rubyRow(176, 96, 11, 10),
-  petals: petalRow(DIADEM.top, DIADEM.hwT, 14, PETAL_H),
-};
-
-const crownPetal = (a: number, h: number) =>
-  `M ${-a} 0 C ${-a} ${round(-h * 0.55)} ${round(-a * 0.4)} ${round(-h * 0.8)} 0 ${-h} C ${round(a * 0.4)} ${round(-h * 0.8)} ${a} ${round(-h * 0.55)} ${a} 0 Z`;
-
-/** Gold beads along the diadem's lower rim. */
-const rimBeads = Array.from({ length: 35 }, (_, k) => {
-  const dx = -93.5 + k * 5.5;
-  return { x: round(CX + dx), y: round(DIADEM.bottom - 1.5 + sagAt(dx, DIADEM.hwB)) };
-});
-
-/** The rubies that flash, keyed by row ("d" for the diadem) and place, with one of three offset groups. */
-const FLASHING: Record<string, number> = { "d-2": 0, "d-8": 1, "0-2": 2, "0-7": 0, "1-5": 1, "2-1": 2, "3-3": 0 };
-const FRONT = (diadem.rubies.length - 1) / 2;
-
-/** The glitter thrown off the crown: short rays, alternately gold and ruby-red. */
-const rays = Array.from({ length: 56 }, (_, k) => ({ k, deg: k * (360 / 56) }))
-  .filter(({ deg }) => deg < 192 || deg > 348)
-  .map(({ k, deg }) => {
-    const t = (deg * Math.PI) / 180;
-    const len = k % 2 ? 8 : 16;
-    const at = (d: number) => ({ x: round(CX + (116 + d) * Math.cos(t)), y: round(116 - (104 + d) * Math.sin(t)) });
-    const a = at(0);
-    const b = at(len);
-    return { d: `M ${a.x} ${a.y} L ${b.x} ${b.y}`, red: k % 4 === 1 || k % 4 === 2, left: b.x };
-  })
-  .filter((r) => r.left > 212);
 
 /** Stars that are turning into rubies to be set in the crown, and a few that are still only stars. */
 const STARS: { x: number; y: number; s: number; kind: "star" | "turning" | "ruby" }[] = [
@@ -329,48 +227,6 @@ function Saugandhika() {
 
 const FLOWER = { campaka: Campaka, asoka: Asoka, punnaga: Punnaga, saugandhika: Saugandhika };
 
-function Ruby({ x, y, r }: { x: number; y: number; r: number }) {
-  return (
-    <g>
-      <ellipse cx={x} cy={y} rx={round(r + 1.3)} ry={round(r * 1.15 + 1.3)} fill="var(--art-carve)" />
-      <ellipse cx={x} cy={y} rx={r} ry={round(r * 1.15)} fill="var(--art-vermilion)" />
-      <path
-        d={`M ${round(x - r * 0.55)} ${round(y - r * 0.2)} Q ${round(x - r * 0.4)} ${round(y - r * 0.85)} ${round(x + r * 0.15)} ${round(y - r * 0.9)}`}
-        stroke="var(--art-core)"
-        strokeWidth={0.7}
-        strokeLinecap="round"
-      />
-    </g>
-  );
-}
-
-function Flash({ x, y, s, group }: { x: number; y: number; s: number; group: number }) {
-  return (
-    <g transform={`translate(${round(x)} ${round(y)})`}>
-      <path className={["m-lick", "m-lick m-late", "m-lick m-later"][group]} d={glint(round(s))} fill="var(--art-core)" />
-    </g>
-  );
-}
-
-function Petals({ row, dots = true }: { row: ReturnType<typeof petalRow>; dots?: boolean }) {
-  return (
-    <>
-      <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.6}>
-        {row.at.map((p, k) => (
-          <path key={k} d={crownPetal(row.half, row.h)} transform={`translate(${p.x} ${p.y})`} />
-        ))}
-      </g>
-      {dots && (
-        <g fill="var(--art-vermilion)">
-          {row.at.map((p, k) => (
-            <circle key={k} cx={p.x} cy={round(p.y - row.h * 0.42)} r={1.4} />
-          ))}
-        </g>
-      )}
-    </>
-  );
-}
-
 export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
   const part = partProps(active);
@@ -397,68 +253,7 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
       {/* The crown, tier upon tier of rubies, and the light its stones throw off */}
       <g {...part("crown")}>
         <circle cx={CX} cy={210} r={270} fill={url("glow")} />
-        <g strokeWidth={0.9} strokeLinecap="round" strokeOpacity={0.7}>
-          {rays.map((r, i) => (
-            <path key={i} d={r.d} stroke={r.red ? "var(--art-vermilion)" : "var(--gold-soft)"} />
-          ))}
-        </g>
-        <g fill="var(--gold)">
-          <path d="M 290 82 C 290 67 309 64 313 58 L 327 58 C 331 64 350 67 350 82 Z" />
-          <path d="M 320 28 C 330 37 332 49 327 59 L 313 59 C 308 49 310 37 320 28 Z" />
-          <circle cx={CX} cy={24} r={2.8} />
-        </g>
-        <path d="M 295 74 Q 320 67 345 74" stroke="var(--art-carve)" strokeWidth={0.8} />
-        <Ruby x={CX} y={45} r={3.8} />
-        {tiers
-          .map((t, i) => ({ t, i }))
-          .reverse()
-          .map(({ t, i }) => (
-            <g key={i}>
-              <path d={t.d} fill="var(--gold)" />
-              <g fill="var(--gold-soft)">
-                {t.beads.map((b, k) => (
-                  <circle key={k} cx={b.x} cy={b.y} r={1.35} />
-                ))}
-              </g>
-              {t.rubies.map((r, k) => (
-                <Ruby key={k} x={r.x} y={r.y} r={t.r} />
-              ))}
-            </g>
-          ))}
-        <Petals row={topCrest} dots={false} />
-        <path d={diadem.d} fill="var(--gold)" />
-        <path
-          d={`M ${CX - 95} ${DIADEM.bottom - 5} Q ${CX} ${DIADEM.bottom - 5 + 2 * SAG} ${CX + 95} ${DIADEM.bottom - 5}`}
-          stroke="var(--art-carve)"
-          strokeWidth={0.7}
-        />
-        {diadem.rubies.map((r, k) =>
-          k === FRONT ? (
-            <g key={k}>
-              <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.5}>
-                {Array.from({ length: 10 }, (_, j) => (
-                  <path key={j} d="M -2.4 0 Q -2.4 -3.4 0 -5.6 Q 2.4 -3.4 2.4 0 Z" transform={`translate(${r.x} ${r.y - 2}) rotate(${j * 36}) translate(0 -8.4)`} />
-                ))}
-              </g>
-              <Ruby x={r.x} y={r.y - 2} r={7} />
-            </g>
-          ) : (
-            <Ruby key={k} x={r.x} y={r.y} r={4.3} />
-          ),
-        )}
-        <Petals row={diadem.petals} />
-        <g fill="var(--gold-soft)">
-          {rimBeads.map((b, k) => (
-            <circle key={k} cx={b.x} cy={b.y} r={1.7} />
-          ))}
-        </g>
-        {Object.entries(FLASHING).map(([key, group]) => {
-          const [row, place] = key.split("-");
-          const r = row === "d" ? diadem.rubies[+place] : tiers[+row].rubies[+place];
-          const size = row === "d" ? 4.3 : tiers[+row].r;
-          return <Flash key={key} x={r.x - size * 0.4} y={r.y - size * 0.6} s={size * 1.6} group={group} />;
-        })}
-        <Flash x={CX - 2.8} y={DIADEM.top + 7} s={9} group={1} />
+        <RubyCrown cx={CX} rays={(r) => r.left > 212} />
       </g>
 
       {/* Her hair, gathered from under the crown into a rosette and a plait of the four flowers */}

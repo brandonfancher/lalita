@@ -38,13 +38,13 @@ second time it is needed.
 | The syllable śrī | श्री in Tiro Devanagari, `--sindura` | Inline | Shloka 1 |
 | Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | Inline | Shloka 1 |
 | Royal parasol (chattra) | Vermilion dome with gold ribs, scalloped fringe, beaded tassels, bud finial | Inline | Shloka 1 |
-| Lotus pedestal | A row of pointed, upturned gold petals | Inline | Shloka 1 |
+| Lotus pedestal | `lotusPetals`: a row of pointed, upturned gold petals. A lotus seat stacks a taller back row (`--art-saffron`), a front row (`--art-core`, so it reads as gold by day, not khaki), a beaded band, and a row turned down (negative `height`) | `primitives.tsx` | Shloka 1 |
 | Round arch | `archPath` and `alongArch` | `primitives.tsx` | Shloka 1 |
 | Her noose (pāśa) | `Noose`: a loop of twisted `--art-vermilion` cord (red because *rāga* is colouring), gold binding where it closes, four gold beads, a tail ending in a gold tassel. Held at the origin, loop up | `primitives.tsx` | Shloka 2 |
 | Her goad (aṅkuśa) | `Goad`: a banded gold shaft with a bud-shaped butt, a lotus collar, a leaf-shaped spear point, and a hook curving out to the right. Held at the origin, pointing up | `primitives.tsx` | Shloka 2 |
 | Glint | `glint(s)`: a four-pointed flash of `--art-core`, for blazing metal and jewels | `primitives.tsx` | Shloka 2 |
-| Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs | Inline | Shloka 2 |
-| Bangle (kaṅkaṇa) | A gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | Inline | Shloka 2 |
+| Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs: `armBeam` (and `wrist` for where the bangle sits), painted with `ArmLight` and a gradient from `--art-saffron` to `--art-core` | `primitives.tsx` | Shloka 2 |
+| Bangle (kaṅkaṇa) | `Bangle`: a gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | `primitives.tsx` | Shloka 2 |
 | The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | Inline | Shloka 2 |
 | The sea | Rows of shallow gold ripple arcs, closer near the horizon, faded at the sides; the light on it as a column of saffron lozenges | Inline | Shloka 2 |
 | Her sugarcane bow (ikṣu-kodaṇḍa) | `SugarcaneBow` with a `BowShape` (`half`, `grip`, `bend`): a thick gold cane stave with a paler edge, jointed every 25 units, bound at the grip, a tuft of three `--leaf` leaves at each tip. Drawn in a frame where it is aimed up; `bowTips` gives where the string is tied. Drawn, the string runs from each tip to the origin; braced, tip to tip | `primitives.tsx` | Shloka 3 |
@@ -52,8 +52,8 @@ second time it is needed.
 | Her flower arrows (puṣpa-bāṇa) | `FlowerArrow`: a gold shaft, saffron fletching, a gold calyx, and a budding flower (vermilion centre petal between two saffron ones). Nock at the origin, pointing up | `primitives.tsx` | Shloka 3 |
 | The five elements' signs | Inside `FlowerArrow` via `sign`: a ring for space (sound), a six-pointed star for air (touch), an upward triangle for fire (form), a crescent with its horns up for water (taste), a square for earth (smell). Filled with `--art-core` on the vermilion petal. When the five arrows appear together, set them left to right in that order | `primitives.tsx` | Shloka 3 |
 | A world-egg (brahmāṇḍa) | An egg, broad end down, in `--art-stone` with a gold rim and a saffron `glint` inside. Afloat in her light, it sits half-sunk: the part below the surface tinted vermilion, a flat gold ring where the surface meets it | Inline | Shloka 3 |
-| Her ruby crown (koṭīra) | A gold dome that swells from the finial to a broad diadem: four tiers, each a band of rubies edged with a line of gold beads, the bands dipping slightly at the front. The diadem carries a row of larger rubies, a large front ruby in a ring of ten gold petals, a crest of gold petals each with a red dot, and a beaded lower rim. A small petal crest, a gold dome, and a bud holding one ruby make the finial. No side wings (they read as horns). Short rays spring from it, gold alternating with red | Inline (`flowering-hair.tsx`) | Shloka 4 |
-| Ruby | An `--art-vermilion` oval (a little taller than wide) in a thin `--art-carve` setting ring, with a short `--art-core` highlight arc at the upper left. A flashing ruby adds a `glint` with `m-lick` | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Her ruby crown (koṭīra) | A gold dome that swells from the finial to a broad diadem: four tiers, each a band of rubies edged with a line of gold beads, the bands dipping slightly at the front. The diadem carries a row of larger rubies, a large front ruby in a ring of ten gold petals, a crest of gold petals each with a red dot, and a beaded lower rim. A small petal crest, a gold dome, and a bud holding one ruby make the finial. No side wings (they read as horns). Short rays spring from it, gold alternating with red | `RubyCrown` in `primitives.tsx` (drawn at Shloka 4's size; scale it with a transform, and pick its rays with `rays`) | Shloka 4 |
+| Ruby | An `--art-vermilion` oval (a little taller than wide) in a thin `--art-carve` setting ring, with a short `--art-core` highlight arc at the upper left. A flashing ruby adds a `Flash` (a `glint` with `m-lick`) | `Ruby`, `Flash` in `primitives.tsx` | Shloka 4 |
 | Her hair | Never drawn as a mass or a head. It shows as flowers and ornament, with `--art-hair` glimpsed between them: a plait of rounded lobes laid alternately from each side, each lobe with a gold sheen line and a flower on it, ending in a gold binding and a small tuft. Loose strands read as a broom or cords; don't draw them | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Campaka | Nine slender, pointed, slightly twisted petals of `--art-core` edged in `--art-saffron`, a saffron centre | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
@@ -61,8 +61,14 @@ second time it is needed.
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
 | The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
-| The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | `primitives.tsx` | Shloka 5 |
 | The deer in the moon (mṛgāṅka) | A small leaping blackbuck facing right, in `--art-musk`, with short spiralled horns, a flicked tail, legs out fore and aft, and a pale eye. Soft musk smudge behind it. About 50 units long, so it reads as a dab from afar | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| Her crescent crest (śekhara) | The fourth night's `litPart` turned over, horns up, radius 22, cradled on the crown's finial: an `--art-moon` fill with a 1.3-unit `--gold` edge, and its glow drawn as two soft `--art-moon` strokes round the crescent itself. Unlike a half moon, a crescent shows only its lit part: with its ashen disc, and with a round glow, it read as a ball in a cup. Clear the crown's rays from under it | Inline (`whole-image.tsx`) | Dhyāna |
+| Hibiscus (japā) | Face-on: five broad, slightly ruffled petals (radius 64) turned in a pinwheel, `--art-vermilion` round an `--art-crimson` eye, `--art-crimson` veins and edges, and an `--art-saffron` sheen down each petal. The staminal column is what makes it a hibiscus: a `--gold-soft` stalk from the centre leaning up and out past the petals, pollen dots of `--art-core` on its outer third, five `--art-crimson` stigma pads at the tip. The bindu sits in the eye. Darkening the petals' rim by day made it a brick-red blob | Inline (`whole-image.tsx`) | Dhyāna |
+| Her footprints (śrīpāda) | A pair of `--art-vermilion` footprints, toes up, big toes inward, laid on a surface and foreshortened to about 0.7 of their height: a sole with a narrow inner arch and five separate toes. Without the arch and the gap before the toes they read as mittens | Inline (`whole-image.tsx`) | Dhyāna |
+| Jewelled vessel (ratna-ghaṭa) | A round-bellied `--gold` pot: a tilted `--gold-soft` lid, a collar line at the neck, a belt of rubies and `--leaf` emeralds by turns between two rows of pearls, a soft `--art-core` sheen on the left of the belly, and upturned petals round the foot. Downturned petals at the shoulder read as fangs | Inline (`whole-image.tsx`) | Dhyāna |
+| The eight powers (aṇimādi siddhis) | Eight short `--art-saffron` rays round her source, 76–92 units out, each tipped with an `--art-core` `glint` and a gold dot (`m-twinkle`, three groups). Set them at 0°, 45°, … so her four arms pass between them | Inline (`whole-image.tsx`) | Dhyāna |
+| The innermost triangle (trikoṇa) | A hair-fine `--gold-soft` downward triangle round the bindu, circumradius 22 so the bindu's ring sits inside it. Kept faint: bright, with the bindu's glow inside it, it read as an eye in a triangle | Inline (`whole-image.tsx`) | Dhyāna |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -71,10 +77,12 @@ When all four weapons appear together, the upper hands hold the noose (left) and
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **The crescent moon** on her crown (the Dhyāna's *tārā-nāyaka-śekharām*). Shloka 5's moon is the
-  eighth-night half, not a crescent; draw the crown's crescent as a phase of the moon canon above.
-- **The Śrīcakra and its triangles.** The site's own `YantraMark` in `src/components/ornament.tsx`
-  is the innermost enclosure: a downward triangle in a circle, with the bindu.
+- **The Śrīcakra entire.** The Dhyāna draws only its innermost triangle round the bindu. The site's
+  own `YantraMark` in `src/components/ornament.tsx` is that enclosure in a circle. When the names
+  reach the cakra and its nine enclosures, build the whole yantra from that triangle outward.
+- **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
+  water-lily of its first verse, the golden lotus of its third, her three eyes (sun, moon, and fire
+  between them, Saundaryalaharī 48), and her red garland. Whoever draws one first sets its canon.
 
 ## Palette additions
 
@@ -95,6 +103,9 @@ The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, `--art-cor
   so a moon depends on its gold rim and its halo.
 - **`--art-musk`** (Shloka 5): day `#3b2518`, lamplight `#34221a`. Musk, dark brown. It is only
   ever laid on the pale moon, so it stays dark in both themes.
+- **`--art-crimson`** (Dhyāna): day `#7e1d14`, lamplight `#9c3024`. The dark eye of a red flower,
+  and its veins. By lamplight `--art-vermilion` and `--sindura` are the same colour, so neither can
+  darken a red flower's centre.
 
 ## Motion additions
 
@@ -240,8 +251,43 @@ One entry per finished artwork, in the order they were made.
   plate's width, which two stacked moons alone left empty. On tablet the half moon falls partly
   under the "The artwork" badge, as in earlier shlokas.
 
+### Dhyāna: The whole image
+
+- **Component:** `whole-image.tsx` (defs prefix `sa0`)
+- **Composition:** her whole form, gathered from four separate meditation verses and laid out from
+  crest to foot as a temple image is, with nothing where she is but light. The crescent rests on
+  the ruby crown in the crown zone, between the noose (left) and the goad (right). Her vermilion
+  body is a tall glow behind the card. Below it a scarlet hibiscus opens at her heart, ringed by
+  eight short rays, and her lower arms reach out to the bow (left) and the five arrows (right). She
+  sits on a gold lotus, and beneath it her red footprints rest on a jewelled vessel. The first
+  composition of her entire image rather than one or two of her attributes, and the first with all
+  four hands full (Shloka 2's lower arms were empty).
+- **Phrase → part:**
+  - Line 1, *sindūrāruṇa vigrahāṃ* → `light`: the tall vermilion glow of her body
+  - Line 1, *māṇikyamauli sphurat* → `crown`: the ruby crown, flashing
+  - Line 2, *tārā nāyaka śekharāṃ* → `moon`: the crescent crest on the finial
+  - Line 4, *ratna ghaṭastha raktacaraṇāṃ* → `vessel`: the jewelled pot and the red footprints on it
+  - Line 5, *dhṛtapāśāṅkuśapuṣpabāṇacāpām* → `weapons`: four arms of light with bangles, the noose,
+    the goad, the bow strung with bees, and the five arrows in the elements' order
+  - Line 6, *aṇimādibhirāvṛtāṃ mayūkhaiḥ* → `siddhis`: eight short rays tipped with points of light
+  - Line 7, *padmāsanasthāṃ* → `lotus-seat`: the gold lotus seat
+  - Line 14, *japākusumabhāsurāṃ* → `hibiscus`: the hibiscus at her heart
+  - Intro, *a point of light* → `bindu`: the bindu in the hibiscus's eye, which the second verse
+    calls "I"
+  - Detail → `yantra`: the Śrīcakra's innermost triangle round the bindu (Line 10, *śrīvidyāṃ*)
+- **Palette:** vermilion, saffron, and gold; `--art-moon` for the crescent, `--leaf` for the bow's
+  tufts and the emeralds, and the new `--art-crimson` for the hibiscus's eye.
+- **Motion:** `m-shimmer` (her body's glow), `m-twinkle` (the eight points of light, in three
+  groups), and `m-lick` (the crown's ruby flashes, from `RubyCrown`).
+- **Notes:** The four verses give her different hands; the artwork draws the four weapons (verses
+  2 and 4) and leaves the others to the Anticipated list above. This was the second use of the
+  ruby crown, the arms and bangles, the lotus pedestal, and the moon's phases, so all four moved
+  into `primitives.tsx`; Shlokas 1, 2, 4, and 5 render byte-for-byte as before. At Shloka 4's
+  scale × 0.72 the crown read as a beehive; at 0.84, its diadem resting on the card, it reads as a
+  crown. The crescent first read as a pearl, then as a bowl: dropping its ashen disc and its round
+  glow, and slimming it to the fourth night, made it a moon. On tablet the goad falls partly under
+  the "The artwork" badge, as in earlier shlokas.
+
 ## Open questions
 
-- **The Dhyāna.** Its verses describe her whole form in one continuous meditation. Principle 3
-  still applies: she is present as light, not a figure. It is the natural place to gather her
-  attributes (weapons, crown, moon, lotus, jewelled vessel). Shlokas 2–5 have now set their canon.
+- None at present. Record here anything a future artwork should settle.
