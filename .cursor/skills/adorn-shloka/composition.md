@@ -44,8 +44,9 @@ compose within it.
 - **Title:** its length varies by shloka. A short one (Shloka 1) stays left of the artwork, but a
   long one (Shloka 2, "Four arms, and the noose of desire") reaches x ≈ 140 of the artwork at
   y ≈ 105–150 on screens 1280–1440px wide. Shloka 6's ("Love's archway and the darting fish")
-  reaches x ≈ 175 at y ≈ 85–140. Check the subtitle's length and keep crown-zone elements on the
-  left clear of it.
+  reaches x ≈ 175 at y ≈ 85–140. Shloka 7's ("A campaka bud, and a jewel that shames the stars")
+  reaches x ≈ 360 at y ≈ 110–150 at 1440px. Check the subtitle's length and keep crown-zone
+  elements on the left clear of it.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.
 - **Plate caption:** a button centred beneath the artwork at y ≈ 824 on screens ≥ 1280px.

@@ -55,7 +55,7 @@ second time it is needed.
 | Her ruby crown (koṭīra) | A gold dome that swells from the finial to a broad diadem: four tiers, each a band of rubies edged with a line of gold beads, the bands dipping slightly at the front. The diadem carries a row of larger rubies, a large front ruby in a ring of ten gold petals, a crest of gold petals each with a red dot, and a beaded lower rim. A small petal crest, a gold dome, and a bud holding one ruby make the finial. No side wings (they read as horns). Short rays spring from it, gold alternating with red | `RubyCrown` in `primitives.tsx` (drawn at Shloka 4's size; scale it with a transform, and pick its rays with `rays`) | Shloka 4 |
 | Ruby | An `--art-vermilion` oval (a little taller than wide) in a thin `--art-carve` setting ring, with a short `--art-core` highlight arc at the upper left. A flashing ruby adds a `Flash` (a `glint` with `m-lick`) | `Ruby`, `Flash` in `primitives.tsx` | Shloka 4 |
 | Her hair | Never drawn as a mass or a head. It shows as flowers and ornament, with `--art-hair` glimpsed between them: a plait of rounded lobes laid alternately from each side, each lobe with a gold sheen line and a flower on it, ending in a gold binding and a small tuft. Loose strands read as a broom or cords; don't draw them | Inline (`flowering-hair.tsx`) | Shloka 4 |
-| Campaka | Nine slender, pointed, slightly twisted petals of `--art-core` edged in `--art-saffron`, a saffron centre | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Campaka | Nine slender, pointed, slightly twisted petals (`campakaPetal`) of `--art-core` edged in `--art-saffron`, a saffron centre. Seen from the side, see "Campaka, newly opened" | `campakaPetal` in `primitives.tsx`; the face-on flower inline (`flowering-hair.tsx`) | Shloka 4 |
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
@@ -74,6 +74,11 @@ second time it is needed.
 | Jasmine (mallikā) | Small `--art-ivory` buds outlined in hair-fine gold, strung close on a gold thread; a string ends in a small gold bell. Chosen over marigold, which reached India only after 1500 | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 | Plantain post | A tall, faintly tapering `--leaf` stem with slanting sheath lines, tied with a vermilion and a gold thread, two plantain leaves arching out and down from its top (keep the left ones below the title) | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 | Fish (mīna) | Seen from above, as fish are seen in shallow water: a slim body about 70 units long, bent a little as if turning, with a forked tail, two pairs of side fins in `--art-saffron`, a gold spine line, gold scale arcs, and two small eyes (`--art-musk` in an `--art-core` ring). The body is vermilion down the spine, shading to saffron at the sides. A faint `--art-crimson` shadow falls on the bed beneath. A pair circles one centre, one turned 180° from the other. `m-dart` | Inline (`wedding-doorway.tsx`) | Shloka 6 |
+| Star | `Star`: a four-pointed `glint` in `--gold-soft` (`m-twinkle`, three groups). A bright star adds a faint `--gold-soft` disc behind it. A star put out by a greater light is a still `--gold-soft` dot, or at most a hair-fine ring | `primitives.tsx` | Shloka 4 (promoted at Shloka 7) |
+| Campaka, newly opened | Seen from the side as a slim torch: eleven `campakaPetal`s from one calyx, most nearly closed (within 9° of upright), only the outer pair parting, tips curling a little outward. Filled with a gradient from `--art-saffron` at the base through `--art-core` to `--art-ivory` at the tips (the palest, first-day flower), edged in `--art-saffron`. A small three-sepal `--leaf` calyx; a straight `--leaf` stem with a `--gold-soft` line; lance-shaped `--leaf` leaves with a gold midrib. Splayed wider, it read as a daisy or an agave | `campakaPetal` in `primitives.tsx`; the flower inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | Inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Her nose stud (mūkkutti) | Seven diamonds in a gold rosette (one in the middle, six round it, one straight up), beaded at the rim, outlined in `--art-carve`. A small `--art-moon` glow just round it makes it white-hot against gold by day; behind that a larger `--art-core` glow, a four- and an eight-pointed `glint`, and sixteen hair-fine rays, the upward one longest. Flashes on three stones | Inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap | Inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Water in a channel | Filled with the miniature painters' pattern of small arcs, each row set half an arc along (a `<pattern>`, `--gold-soft`), over a soft saffron glow, between gold banks with a fainter outer kerb. Rounded, organic banks: straight banks and square corners read as a pipe, a band of constant width as a snake. Dashed flow lines read as road markings by lamplight | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -333,6 +338,43 @@ One entry per finished artwork, in the order they were made.
   tongue-like blob, a fishbowl basin with a snake-like channel, an L-shaped pipe, and finally an
   organic runnel filled with the miniature painters' wave pattern. Top-view fish, one turned 180°
   from the other, avoid the pair reading as two eyes under the brows.
+
+### Shloka 7: A campaka bud, and a jewel that shames the stars
+
+- **Component:** `campaka-jewel.tsx` (defs prefix `sa7`)
+- **Composition:** one plant and one point of fire. A single campaka, newly opened, stands straight
+  up on its stem, its tips just under the card and its calyx at the top of the ground zone. On its
+  right flank is a seven-diamond nose stud, white-hot, throwing hair-fine rays, its longest ray
+  climbing past the card. Stars fill the rest of the sky, and their dimming is laid out by distance
+  from the stud: far off, in the crown zone and the lower corners, they twinkle; nearer they are
+  still dots, then faint rings, and within 200 units there are none. The first composition built
+  on one straight vertical line, the first starry sky, and the first whose focus is a hard,
+  faceted point rather than a glow or a disc. No frame, architecture, or water.
+- **Name → part:**
+  - Navacampakapuṣpābhanāsādaṇḍavirājitā → `campaka`: the flower, its calyx, its straight stem, two
+    leaves, and a soft aura
+  - Tārākāntitiraskārināsābharaṇabhāsurā → `nose-jewel`: the stud, its glows, glints, rays, and
+    flashes
+  - Intro, *the stars* → `stars`: the sky, from twinkling stars to the ring of faint ones round the
+    stud
+  - Detail → `pearl`: a pearl hanging from the stud (Saundaryalaharī 61: her cool breath condenses
+    pearls in her nose, and she wears one of the surplus)
+- **Palette:** `--art-core`, `--art-saffron`, and `--art-ivory` for the flower; `--leaf`; `--art-moon`
+  and gold for the diamonds and the pearl; `--gold-soft` stars. Vermilion appears nowhere; this is
+  the palest piece so far, as the verse's colour is the campaka's pale gold. No additions.
+- **Motion:** `m-twinkle` (the far stars, in three groups), `m-shimmer` (the stud's glow and rays),
+  and `m-lick` (flashes on three diamonds). The flower is still.
+- **Notes:** This subtitle is long and runs to x ≈ 360 of the artwork at y ≈ 110–150 on 1440px
+  screens; only faint stars sit there. Shloka 4's campaka petal and stars moved into
+  `primitives.tsx` (`campakaPetal`, `Star`); Shloka 4 renders byte-for-byte as before. The first
+  flower splayed its petals to ±40° and read as a daisy; narrowed to a torch, with more petals
+  overlapping, it read as a paintbrush until its tips were paled toward ivory and given uneven
+  lengths and a slight outward curl. The stud, set on the petals, vanished gold-on-gold by day; moved
+  to the flower's edge and given a small `--art-moon` glow, it reads as white fire. The long
+  horizontal rays read as a crosshair and were shortened. Stars first stopped at the focal zone,
+  leaving the plate's lower half empty; carried down the sides, they close the dark ring round the
+  stud. On phones by lamplight the stud's glow sits under the last syllables of the second line;
+  its white glow was trimmed to keep them legible.
 
 ## Open questions
 

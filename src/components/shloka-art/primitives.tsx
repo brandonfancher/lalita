@@ -71,6 +71,24 @@ export function glint(s: number) {
   return `M 0 ${-s} Q ${q} ${-q} ${s} 0 Q ${q} ${q} 0 ${s} Q ${-q} ${q} ${-s} 0 Q ${-q} ${-q} 0 ${-s} Z`;
 }
 
+/** A star: a four-pointed glint of `--gold-soft` (or `fill`), centred on (x, y). */
+export function Star({ x, y, s, className, fill = "var(--gold-soft)" }: { x: number; y: number; s: number; className?: string; fill?: string }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <path className={className} d={glint(s)} fill={fill} />
+    </g>
+  );
+}
+
+/**
+ * A campaka petal: slender, pointed, a little twisted, `l` long from its base
+ * at the origin, pointing up, its tip `t` to the side. Fill it `--art-core`
+ * and edge it `--art-saffron`. Shloka 4's tiny face-on flower uses the defaults.
+ */
+export function campakaPetal(l: number, w = 2.6, t = 2.2) {
+  return `M 0 0 C ${-w} ${round(-l * 0.35)} ${round(-w * 0.5 + t * 0.4)} ${round(-l * 0.8)} ${t} ${-l} C ${round(w * 0.3 + t)} ${round(-l * 0.7)} ${round(w * 1.1)} ${round(-l * 0.3)} 0 0 Z`;
+}
+
 /**
  * A row of pointed lotus petals standing on `base`, `count` of them across
  * `width` from `x`. A negative `height` turns them down.
