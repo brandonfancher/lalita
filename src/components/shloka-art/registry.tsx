@@ -144,13 +144,13 @@ export const ARTWORK: Record<string, Artwork> = {
         nama: 13,
         part: "flower-plait",
         depicts:
-          "Her hair is glimpsed only as a blue-black gloss, gathered from under the crown into a plait woven with the four flowers in the order the name gives them: gold campaka, red aśoka, white punnāga and the white water-lily.",
+          "A rosette and a long plait, her hair glimpsed only as a blue-black gloss between the flowers woven through it. The four kinds come in the order the name gives them: gold campaka, red aśoka, white punnāga and the white water-lily.",
       },
       {
         nama: 14,
         part: "crown",
         depicts:
-          "A tall crown set tier upon tier with rows of rubies, throwing off short rays of gold and red, because the name settles on its glittering.",
+          "A domed crown set tier upon tier with rows of rubies. Short rays of gold and red spring from it, because the name dwells on its glittering.",
       },
     ],
     detail: {

@@ -238,7 +238,7 @@ body::after {
   /* White petals; the paper colours can't serve, since they turn dark by lamplight. */
   --art-ivory: #fffaf0;
   /* The blue-black gloss of her hair, only ever in thin lines and glimpses. */
-  --art-hair: #2b3148;
+  --art-hair: #1f2a55;
 }
 
 [data-theme="dark"] .adornment {

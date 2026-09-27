@@ -52,6 +52,13 @@ second time it is needed.
 | Her flower arrows (puṣpa-bāṇa) | `FlowerArrow`: a gold shaft, saffron fletching, a gold calyx, and a budding flower (vermilion centre petal between two saffron ones). Nock at the origin, pointing up | `primitives.tsx` | Shloka 3 |
 | The five elements' signs | Inside `FlowerArrow` via `sign`: a ring for space (sound), a six-pointed star for air (touch), an upward triangle for fire (form), a crescent with its horns up for water (taste), a square for earth (smell). Filled with `--art-core` on the vermilion petal. When the five arrows appear together, set them left to right in that order | `primitives.tsx` | Shloka 3 |
 | A world-egg (brahmāṇḍa) | An egg, broad end down, in `--art-stone` with a gold rim and a saffron `glint` inside. Afloat in her light, it sits half-sunk: the part below the surface tinted vermilion, a flat gold ring where the surface meets it | Inline | Shloka 3 |
+| Her ruby crown (koṭīra) | A gold dome that swells from the finial to a broad diadem: four tiers, each a band of rubies edged with a line of gold beads, the bands dipping slightly at the front. The diadem carries a row of larger rubies, a large front ruby in a ring of ten gold petals, a crest of gold petals each with a red dot, and a beaded lower rim. A small petal crest, a gold dome, and a bud holding one ruby make the finial. No side wings (they read as horns). Short rays spring from it, gold alternating with red | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Ruby | An `--art-vermilion` oval (a little taller than wide) in a thin `--art-carve` setting ring, with a short `--art-core` highlight arc at the upper left. A flashing ruby adds a `glint` with `m-lick` | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Her hair | Never drawn as a mass or a head. It shows as flowers and ornament, with `--art-hair` glimpsed between them: a plait of rounded lobes laid alternately from each side, each lobe with a gold sheen line and a flower on it, ending in a gold binding and a small tuft. Loose strands read as a broom or cords; don't draw them | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Campaka | Nine slender, pointed, slightly twisted petals of `--art-core` edged in `--art-saffron`, a saffron centre | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -61,7 +68,6 @@ When all four weapons appear together, the upper hands hold the noose (left) and
 Not yet drawn. Whoever draws one first sets its canon here.
 
 - **The crescent moon** on her crown (Shloka 5, and the Dhyāna's *tārā-nāyaka-śekharām*).
-- **Her ruby crown** (Shloka 4, and the Dhyāna's *māṇikya-mauli*).
 - **The Śrīcakra and its triangles.** The site's own `YantraMark` in `src/components/ornament.tsx`
   is the innermost enclosure: a downward triangle in a circle, with the bindu.
 
@@ -70,8 +76,15 @@ Not yet drawn. Whoever draws one first sets its canon here.
 Colours added to `.adornment` in `src/app/globals.css` beyond the starting set. Record the day
 and lamplight values and what the colour is for.
 
-None yet. The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, `--art-core`,
-`--art-ember`, `--art-stone`, and `--art-carve`.
+The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, `--art-core`, `--art-ember`,
+`--art-stone`, and `--art-carve`.
+
+- **`--art-ivory`** (Shloka 4): day `#fffaf0`, lamplight `#f1e8d6`. White petals. The paper colours
+  can't serve, because they turn dark by lamplight. Outline ivory shapes in `--gold` so they read
+  on paper by day.
+- **`--art-hair`** (Shloka 4): day `#1f2a55`, lamplight `#5d6788`. The blue-black gloss of her
+  hair, only in glimpses and thin lines. The day value leans indigo so it dilutes to slate blue on
+  the paper; a neutral blue-black turned grey.
 
 ## Motion additions
 
@@ -158,6 +171,36 @@ One entry per finished artwork, in the order they were made.
   tiny ring around each egg's spark read as an eye; a plain glint replaced it. On tablet the
   flower heads fall under the "The artwork" badge, as Shloka 2's goad tip does; the bow still
   reads there.
+
+### Shloka 4: Flowering hair, a crown of rubies
+
+- **Component:** `flowering-hair.tsx` (defs prefix `sa4`)
+- **Composition:** a hanging ornament in open space that reads from the top down, as the
+  stotra's head-to-foot description begins here. A domed ruby crown fills the crown zone, sitting
+  on the card, with short rays of gold and red. Her light glows beneath it through the card
+  window. Just below the card, a rosette of the four flowers rings the bindu, and a plait woven
+  with them hangs from it in a gentle S into the ground zone. The first vertical composition,
+  with no frame or ground.
+- **Name → part:**
+  - Campakāśokapunnāgasaugandhikalasatkacā → `flower-plait`: the rosette and the plait, the
+    four flowers in verse order
+  - Kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitā → `crown`: the crown, its rubies and flashes, its rays,
+    and the glow beneath it
+  - Intro, *the point of light* → `light`: the bindu in the rosette, set in saffron light
+  - Detail → `stars`: stars above the crown turning red, the nearest already rubies
+    (Saundaryalaharī 42)
+- **Palette:** vermilion, saffron, and gold, with the new `--art-ivory` and `--art-hair`.
+- **Motion:** `m-lick` (ruby flashes, in three offset groups), `m-sway` (the whole plait, from
+  its head), and `m-twinkle` (the stars).
+- **Notes:** The first crown, a straight tapered stack, read as a pyramid; a swelling dome with a
+  broad diadem made it a crown. Side wings on the diadem read as horns and were dropped. A petal
+  crest on every tier made a fish-scale texture; bead lines between the tiers show the rows of
+  rubies instead. Strands of hair from the crown down to the plait read first as a broom and then
+  as parachute cords, so the crown and the plait are joined only by her light. Pointed plait lobes
+  read as leaves on a vine; rounded lobes read as a braid. A plait that left the rosette sideways
+  made a question mark, so it now falls downward first. The bindu's pale glow on the navy of the
+  rosette turned grey, so it sits in a saffron disc. On tablet the crown falls partly under the
+  "The artwork" badge, as Shloka 2's goad tip does.
 
 ## Open questions
 

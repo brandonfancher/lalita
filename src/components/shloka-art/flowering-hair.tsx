@@ -4,9 +4,9 @@
  * The stotra's head-to-foot description begins here, and this artwork reads
  * from the top down: a tall crown set tier upon tier with rubies, throwing off
  * their light; beneath it her hair, never drawn as a mass, gathered at a point
- * of light into a plait woven from the four named flowers. Which name each
- * part answers to is written up for readers in the registry, next to this
- * artwork's entry.
+ * of light into a rosette and a plait woven from the four named flowers.
+ * Which name each part answers to is written up for readers in the registry,
+ * next to this artwork's entry.
  */
 
 import { artIds, cubicAt, glint, partProps, round } from "./primitives";
@@ -16,102 +16,135 @@ type Pt = { x: number; y: number };
 
 const CX = 320;
 
-/** How far each band of the crown dips at the front, as a band round a cylinder seen from a little above. */
+/* ── The crown ─────────────────────────────────────────────────────────── */
+
+/** How far each band dips at the front, as a band round a crown seen from a little above. */
 const SAG = 4;
 const sagAt = (dx: number, hw: number) => SAG * (1 - (dx / hw) ** 2);
 
-/** The crown's tiers, bottom to top. */
-const TIERS = [
-  { bottom: 184, top: 160, hwB: 72, hwT: 66, rubies: 9, r: 4.3 },
-  { bottom: 160, top: 138, hwB: 62, hwT: 56, rubies: 7, r: 3.9 },
-  { bottom: 138, top: 117, hwB: 52, hwT: 46, rubies: 7, r: 3.5 },
-  { bottom: 117, top: 97, hwB: 42, hwT: 36, rubies: 5, r: 3.2 },
-  { bottom: 97, top: 78, hwB: 32, hwT: 26, rubies: 3, r: 2.9 },
-];
-/** Each tier's crest of petal points covers this much of the tier above it. */
-const PETAL_H = 8;
+/** The crown's half-width at height y: a swelling dome from the finial (y 82) to the diadem (y 166). */
+const crownHalf = (y: number) => round(28 + 64 * Math.max(0, (y - 82) / 84) ** 0.5);
 
-function tierPath(t: (typeof TIERS)[number]) {
+const DIADEM = { top: 164, bottom: 188, hwT: 94, hwB: 98 };
+const TIER_EDGES = [164, 142, 121, 101, 82];
+const TIER_RUBIES = [9, 9, 7, 5];
+/** The diadem's crest of petals, which hides the foot of the lowest tier. */
+const PETAL_H = 12;
+
+function bandPath(bottom: number, top: number, hwB: number, hwT: number) {
   return [
-    `M ${CX - t.hwB} ${t.bottom}`,
-    `Q ${CX} ${t.bottom + 2 * SAG} ${CX + t.hwB} ${t.bottom}`,
-    `L ${CX + t.hwT} ${t.top}`,
-    `Q ${CX} ${t.top + 2 * SAG} ${CX - t.hwT} ${t.top}`,
+    `M ${CX - hwB} ${bottom}`,
+    `Q ${CX} ${bottom + 2 * SAG} ${CX + hwB} ${bottom}`,
+    `L ${CX + hwT} ${top}`,
+    `Q ${CX} ${top + 2 * SAG} ${CX - hwT} ${top}`,
     "Z",
   ].join(" ");
 }
 
-const tiers = TIERS.map((t, i) => {
-  const hw = (t.hwB + t.hwT) / 2;
-  const mid = i === 0 ? (t.top + t.bottom - 4) / 2 : (t.top + t.bottom - PETAL_H) / 2;
-  const step = i === 0 ? 15 : round((2 * (hw - 9)) / (t.rubies - 1));
-  const rubies = Array.from({ length: t.rubies }, (_, k) => {
-    const dx = (k - (t.rubies - 1) / 2) * step;
-    return { x: round(CX + dx), y: round(mid + sagAt(dx, hw)), front: i === 0 && dx === 0 };
+function petalRow(top: number, hw: number, width: number, h: number) {
+  const n = Math.floor((2 * hw) / width);
+  const w = (2 * hw) / n;
+  return {
+    half: round(w * 0.5),
+    h,
+    at: Array.from({ length: n }, (_, k) => {
+      const dx = -hw + (k + 0.5) * w;
+      return { x: round(CX + dx), y: round(top + sagAt(dx, hw) + 1) };
+    }),
+  };
+}
+
+function rubyRow(mid: number, hw: number, count: number, inset: number) {
+  const step = count > 1 ? (2 * (hw - inset)) / (count - 1) : 0;
+  return Array.from({ length: count }, (_, k) => {
+    const dx = (k - (count - 1) / 2) * step;
+    return { x: round(CX + dx), y: round(mid + sagAt(dx, hw)) };
   });
-  const n = Math.floor((2 * t.hwT) / 9.5);
-  const w = (2 * t.hwT) / n;
-  const petals = Array.from({ length: n }, (_, k) => {
-    const dx = -t.hwT + (k + 0.5) * w;
-    return { x: round(CX + dx), y: round(t.top + sagAt(dx, t.hwT) + 1) };
-  });
-  return { ...t, d: tierPath(t), rubies, petals, petalHalf: round(w * 0.48) };
+}
+
+/** The tiers above the diadem, bottom to top, each a band of rubies edged with a line of gold beads. */
+const tiers = TIER_RUBIES.map((count, i) => {
+  const bottom = TIER_EDGES[i];
+  const top = TIER_EDGES[i + 1];
+  const hwB = crownHalf(bottom);
+  const hwT = crownHalf(top);
+  const hw = (hwB + hwT) / 2;
+  const r = round(4.3 - 0.3 * i);
+  const mid = i === 0 ? (top + bottom - PETAL_H) / 2 + 1 : (top + bottom) / 2 + 1;
+  const n = Math.round((2 * hwT) / 4.6);
+  return {
+    d: bandPath(bottom, top, hwB, hwT),
+    r,
+    rubies: rubyRow(mid, hw, count, 9 + i),
+    beads: Array.from({ length: n }, (_, k) => {
+      const dx = -hwT + ((k + 0.5) * 2 * hwT) / n;
+      return { x: round(CX + dx), y: round(top + 1.4 + sagAt(dx, hwT)) };
+    }),
+  };
 });
 
-const crownPetal = (a: number) => `M ${-a} 0 Q ${-a} ${round(-PETAL_H * 0.6)} 0 ${-PETAL_H} Q ${a} ${round(-PETAL_H * 0.6)} ${a} 0 Z`;
+/** A small crest of petals where the topmost tier meets the finial. */
+const topCrest = petalRow(TIER_EDGES[TIER_EDGES.length - 1] + 1, crownHalf(TIER_EDGES[TIER_EDGES.length - 1]), 8, 7);
 
-/** Gold beads along the crown's lower rim. */
-const rimBeads = Array.from({ length: 25 }, (_, k) => {
-  const dx = -66 + k * 5.5;
-  return { x: round(CX + dx), y: round(181 + sagAt(dx, 72)) };
+const diadem = {
+  d: bandPath(DIADEM.bottom, DIADEM.top, DIADEM.hwB, DIADEM.hwT),
+  rubies: rubyRow(176, 96, 11, 10),
+  petals: petalRow(DIADEM.top, DIADEM.hwT, 14, PETAL_H),
+};
+
+const crownPetal = (a: number, h: number) =>
+  `M ${-a} 0 C ${-a} ${round(-h * 0.55)} ${round(-a * 0.4)} ${round(-h * 0.8)} 0 ${-h} C ${round(a * 0.4)} ${round(-h * 0.8)} ${a} ${round(-h * 0.55)} ${a} 0 Z`;
+
+/** Gold beads along the diadem's lower rim. */
+const rimBeads = Array.from({ length: 35 }, (_, k) => {
+  const dx = -93.5 + k * 5.5;
+  return { x: round(CX + dx), y: round(DIADEM.bottom - 1.5 + sagAt(dx, DIADEM.hwB)) };
 });
 
-/** The rubies that flash, and in which of three offset groups. */
-const FLASHING: Record<string, number> = { "0-2": 0, "0-6": 1, "1-1": 2, "1-4": 0, "2-5": 1, "3-1": 2, "3-3": 0, "4-1": 1 };
+/** The rubies that flash, keyed by row ("d" for the diadem) and place, with one of three offset groups. */
+const FLASHING: Record<string, number> = { "d-2": 0, "d-8": 1, "0-2": 2, "0-7": 0, "1-5": 1, "2-1": 2, "3-3": 0 };
+const FRONT = (diadem.rubies.length - 1) / 2;
 
 /** The glitter thrown off the crown: short rays, alternately gold and ruby-red. */
-const rays = Array.from({ length: 48 }, (_, k) => {
-  const deg = k * 7.5;
-  const t = (deg * Math.PI) / 180;
-  const start = { x: CX + 96 * Math.cos(t), y: 112 - 104 * Math.sin(t) };
-  const len = k % 2 ? 7 : 14;
-  const end = { x: CX + (96 + len) * Math.cos(t), y: 112 - (104 + len) * Math.sin(t) };
-  return { d: `M ${round(start.x)} ${round(start.y)} L ${round(end.x)} ${round(end.y)}`, red: k % 4 === 1 || k % 4 === 2 };
-}).filter((_, k) => {
-  const deg = k * 7.5;
-  return deg < 200 || deg > 340;
-});
+const rays = Array.from({ length: 56 }, (_, k) => ({ k, deg: k * (360 / 56) }))
+  .filter(({ deg }) => deg < 192 || deg > 348)
+  .map(({ k, deg }) => {
+    const t = (deg * Math.PI) / 180;
+    const len = k % 2 ? 8 : 16;
+    const at = (d: number) => ({ x: round(CX + (116 + d) * Math.cos(t)), y: round(116 - (104 + d) * Math.sin(t)) });
+    const a = at(0);
+    const b = at(len);
+    return { d: `M ${a.x} ${a.y} L ${b.x} ${b.y}`, red: k % 4 === 1 || k % 4 === 2, left: b.x };
+  })
+  .filter((r) => r.left > 212);
 
 /** Stars that are turning into rubies to be set in the crown, and a few that are still only stars. */
 const STARS: { x: number; y: number; s: number; kind: "star" | "turning" | "ruby" }[] = [
-  { x: 540, y: 26, s: 2.6, kind: "star" },
-  { x: 512, y: 66, s: 3.4, kind: "star" },
-  { x: 470, y: 34, s: 4, kind: "star" },
-  { x: 424, y: 18, s: 3.4, kind: "turning" },
-  { x: 384, y: 16, s: 3, kind: "turning" },
-  { x: 352, y: 26, s: 2.3, kind: "ruby" },
-  { x: 560, y: 112, s: 2.6, kind: "star" },
-  { x: 198, y: 28, s: 3.4, kind: "star" },
-  { x: 240, y: 12, s: 3, kind: "star" },
-  { x: 272, y: 16, s: 3, kind: "turning" },
-  { x: 294, y: 30, s: 2.1, kind: "ruby" },
+  { x: 548, y: 30, s: 3, kind: "star" },
+  { x: 514, y: 70, s: 3.6, kind: "star" },
+  { x: 474, y: 34, s: 4.4, kind: "star" },
+  { x: 428, y: 16, s: 3.8, kind: "turning" },
+  { x: 388, y: 14, s: 3.2, kind: "turning" },
+  { x: 354, y: 22, s: 2.3, kind: "ruby" },
+  { x: 566, y: 118, s: 2.8, kind: "star" },
+  { x: 196, y: 26, s: 3.8, kind: "star" },
+  { x: 240, y: 10, s: 3.2, kind: "star" },
+  { x: 274, y: 14, s: 3.2, kind: "turning" },
+  { x: 290, y: 26, s: 2.1, kind: "ruby" },
 ];
 
-/** Her hair behind the card, gathered from under the crown's rim down to the knot. */
-const KNOT = { x: CX, y: 438 };
-const strands = Array.from({ length: 13 }, (_, k) => {
-  const x0 = -54 + 9 * k;
-  const top = round(184 + sagAt(x0, 72) + 1);
-  return `M ${CX + x0} ${top} C ${round(CX + x0 * 1.05)} 270 ${round(CX + x0 * 0.6)} 385 ${round(CX + x0 * 0.32)} ${KNOT.y - 2}`;
-});
-const GLOSS_STRANDS = [3, 6, 9];
+/* ── Her hair and the four flowers ─────────────────────────────────────── */
 
-/** The plait's centreline, from the knot down to its tip. */
+/** The rosette at the head of the plait, and the bindu at its heart. */
+const KNOT = { x: CX, y: 458 };
+const ROSETTE_R = 37;
+
+/** The plait's centreline, from under the rosette down to its tip. */
 const PLAIT: [Pt, Pt, Pt, Pt] = [
-  { x: CX, y: KNOT.y + 4 },
-  { x: 500, y: 500 },
-  { x: 140, y: 575 },
-  { x: 292, y: 648 },
+  { x: CX, y: KNOT.y + 18 },
+  { x: 430, y: 560 },
+  { x: 190, y: 612 },
+  { x: 300, y: 712 },
 ];
 
 const samples = (() => {
@@ -130,7 +163,8 @@ const PLAIT_LENGTH = samples[samples.length - 1].s;
 
 /** The point `s` units down the plait, its unit tangent (pointing down the plait), and its unit normal. */
 function alongPlait(s: number) {
-  const i = Math.max(1, Math.min(samples.length - 1, samples.findIndex((e) => e.s >= s)));
+  const found = samples.findIndex((e) => e.s >= s);
+  const i = Math.max(1, found < 0 ? samples.length - 1 : found);
   const a = samples[i - 1].p;
   const b = samples[i].p;
   const len = Math.hypot(b.x - a.x, b.y - a.y);
@@ -138,52 +172,45 @@ function alongPlait(s: number) {
   return { p: b, t, n: { x: -t.y, y: t.x } };
 }
 
-const plaitWidth = (s: number) => 36 - 12 * (s / PLAIT_LENGTH);
+const plaitWidth = (s: number) => 48 - 18 * (s / PLAIT_LENGTH);
 /** Rotation (degrees) that turns a local "down" (+y) along the tangent t. */
 const downAlong = (t: Pt) => round((Math.atan2(-t.x, t.y) * 180) / Math.PI);
 
-const plaitBand = (() => {
-  const left: string[] = [];
-  const right: string[] = [];
-  for (let k = 0; k <= 60; k++) {
-    const s = (k / 60) * PLAIT_LENGTH;
-    const { p, n } = alongPlait(s);
-    const h = plaitWidth(s) / 2;
-    left.push(`${round(p.x + n.x * h)} ${round(p.y + n.y * h)}`);
-    right.push(`${round(p.x - n.x * h)} ${round(p.y - n.y * h)}`);
-  }
-  return `M ${left.join(" L ")} L ${right.reverse().join(" L ")} Z`;
-})();
-
 type Species = "campaka" | "asoka" | "punnaga" | "saugandhika";
 const SPECIES: Species[] = ["campaka", "asoka", "punnaga", "saugandhika"];
-const FLOWER_STEP = 23;
+const LOBE_STEP = 15;
 
-/** The flowers woven into the plait, one to each bend, in the order the name gives them. */
-const flowers = Array.from({ length: Math.floor((PLAIT_LENGTH - 30) / FLOWER_STEP) + 1 }, (_, i) => {
-  const s = 14 + i * FLOWER_STEP;
+/**
+ * The plait: lobes of hair laid alternately from each side, each with a
+ * flower worked into it, the four kinds in the order the name gives them.
+ */
+const lobes = Array.from({ length: Math.floor((PLAIT_LENGTH - 12) / LOBE_STEP) + 1 }, (_, i) => {
+  const s = 6 + i * LOBE_STEP;
   const { p, n, t } = alongPlait(s);
   const side = i % 2 ? 1 : -1;
-  const off = side * plaitWidth(s) * 0.2;
+  const w = plaitWidth(s);
+  const c = { x: round(p.x + n.x * side * w * 0.2), y: round(p.y + n.y * side * w * 0.2) };
+  const len = round(w * 0.5);
   return {
+    lobe: `M 0 ${-len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${-len} Z`,
+    sheen: `M ${round(len * 0.12)} ${round(-len * 0.72)} Q ${round(len * 0.46)} 0 ${round(len * 0.12)} ${round(len * 0.72)}`,
+    at: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) - side * 36)})`,
+    flower: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) + side * 20)}) scale(${round(1.06 - 0.3 * (s / PLAIT_LENGTH))})`,
     species: SPECIES[i % 4],
-    transform: `translate(${round(p.x + n.x * off)} ${round(p.y + n.y * off)}) rotate(${round(downAlong(t) + side * 18)}) scale(${round(1 - 0.26 * (s / PLAIT_LENGTH))})`,
   };
 });
 
-/** Where the plait's strands cross, glimpsed between the flowers. */
-const crossings = flowers.map((_, i) => {
-  const s = 14 + i * FLOWER_STEP + FLOWER_STEP / 2;
-  const a = alongPlait(s - 7);
-  const b = alongPlait(s + 3);
-  const h = (plaitWidth(s) / 2) * 0.85;
-  const L = { x: a.p.x + a.n.x * h, y: a.p.y + a.n.y * h };
-  const R = { x: a.p.x - a.n.x * h, y: a.p.y - a.n.y * h };
-  return `M ${round(L.x)} ${round(L.y)} Q ${round(b.p.x)} ${round(b.p.y)} ${round(R.x)} ${round(R.y)}`;
-});
-
 const tip = alongPlait(PLAIT_LENGTH);
-const TIP_STRANDS = [-7, -4.5, -2, 0.5, 3, 5.5, 8];
+const TIP_STRANDS = [-6, -4, -2, 0, 2, 4, 6];
+
+const rosette = Array.from({ length: 12 }, (_, k) => {
+  const deg = -90 + k * 30;
+  const t = (deg * Math.PI) / 180;
+  return {
+    species: SPECIES[k % 4],
+    transform: `translate(${round(KNOT.x + ROSETTE_R * Math.cos(t))} ${round(KNOT.y + ROSETTE_R * Math.sin(t))}) rotate(${deg + 90})`,
+  };
+});
 
 /* The four flowers, each centred on the origin and about 26 units across. */
 
@@ -198,7 +225,7 @@ function campakaPetal(l: number) {
 function Campaka() {
   return (
     <g>
-      <g fill="var(--art-core)" stroke="var(--art-saffron)" strokeWidth={0.5}>
+      <g fill="var(--art-core)" stroke="var(--art-saffron)" strokeWidth={0.55}>
         {CAMPAKA_PETALS.map((p, i) => (
           <path key={i} d={campakaPetal(p.l)} transform={`rotate(${p.angle})`} />
         ))}
@@ -209,42 +236,45 @@ function Campaka() {
 }
 
 const ASOKA_FLORETS = [
-  { x: 0, y: 0, c: "var(--art-vermilion)" },
-  { x: -6, y: -4, c: "var(--art-vermilion)" },
-  { x: 6, y: -4, c: "var(--art-saffron)" },
-  { x: -7, y: 4, c: "var(--art-saffron)" },
-  { x: 7, y: 4, c: "var(--art-vermilion)" },
+  { x: 0, y: -1, c: "var(--art-vermilion)" },
+  { x: -6.5, y: -3.5, c: "var(--art-vermilion)" },
+  { x: 6.5, y: -3.5, c: "var(--art-saffron)" },
+  { x: -5, y: 4.5, c: "var(--art-saffron)" },
+  { x: 5, y: 4.5, c: "var(--art-vermilion)" },
   { x: 0, y: -8, c: "var(--art-vermilion)" },
-  { x: 0, y: 7.5, c: "var(--art-vermilion)" },
-  { x: -11, y: -1, c: "var(--art-vermilion)" },
-  { x: 11, y: -1, c: "var(--art-vermilion)" },
+  { x: 0, y: 7, c: "var(--art-vermilion)" },
 ];
-const asokaStamens = ASOKA_FLORETS.map((f) => {
-  const len = Math.hypot(f.x, f.y) || 1;
-  const d = f.x === 0 && f.y === 0 ? { x: 0.3, y: -1 } : { x: f.x / len, y: f.y / len };
-  return { from: f, to: { x: round(f.x + d.x * 7), y: round(f.y + d.y * 7) } };
+const ASOKA_PETAL = "M 0 -0.6 C -1.5 -1.4 -1.4 -3.6 0 -3.8 C 1.4 -3.6 1.5 -1.4 0 -0.6 Z";
+const asokaStamens = Array.from({ length: 11 }, (_, k) => {
+  const t = ((-90 + (k - 5) * 30) * Math.PI) / 180;
+  const r0 = 5;
+  const r1 = k % 2 ? 12.5 : 14.5;
+  return {
+    d: `M ${round(r0 * Math.cos(t))} ${round(r0 * Math.sin(t))} Q ${round(((r0 + r1) / 2) * Math.cos(t) + 1)} ${round(((r0 + r1) / 2) * Math.sin(t))} ${round(r1 * Math.cos(t))} ${round(r1 * Math.sin(t))}`,
+    tip: { x: round(r1 * Math.cos(t)), y: round(r1 * Math.sin(t)) },
+  };
 });
 
-/** Aśoka: a dense round cluster of small four-lobed flowers, orange to red, with long stamens. */
+/** Aśoka: a dense round cluster of small four-petalled flowers, orange to red, with long stamens. */
 function Asoka() {
   return (
     <g>
       <g stroke="var(--art-vermilion)" strokeWidth={0.55} strokeLinecap="round">
         {asokaStamens.map((st, i) => (
-          <path key={i} d={`M ${st.from.x} ${st.from.y} L ${st.to.x} ${st.to.y}`} />
+          <path key={i} d={st.d} />
         ))}
       </g>
       {ASOKA_FLORETS.map((f, i) => (
-        <g key={i} fill={f.c} transform={`translate(${f.x} ${f.y})`}>
-          <circle cx={-2} r={2.2} />
-          <circle cx={2} r={2.2} />
-          <circle cy={-2} r={2.2} />
-          <circle cy={2} r={2.2} />
+        <g key={i} fill={f.c} transform={`translate(${f.x} ${f.y}) rotate(${i * 17})`}>
+          {[0, 90, 180, 270].map((a) => (
+            <path key={a} d={ASOKA_PETAL} transform={`rotate(${a})`} />
+          ))}
+          <circle r={0.8} fill="var(--art-core)" />
         </g>
       ))}
       <g fill="var(--art-core)">
         {asokaStamens.map((st, i) => (
-          <circle key={i} cx={st.to.x} cy={st.to.y} r={0.85} />
+          <circle key={i} cx={st.tip.x} cy={st.tip.y} r={0.9} />
         ))}
       </g>
     </g>
@@ -314,6 +344,33 @@ function Ruby({ x, y, r }: { x: number; y: number; r: number }) {
   );
 }
 
+function Flash({ x, y, s, group }: { x: number; y: number; s: number; group: number }) {
+  return (
+    <g transform={`translate(${round(x)} ${round(y)})`}>
+      <path className={["m-lick", "m-lick m-late", "m-lick m-later"][group]} d={glint(round(s))} fill="var(--art-core)" />
+    </g>
+  );
+}
+
+function Petals({ row, dots = true }: { row: ReturnType<typeof petalRow>; dots?: boolean }) {
+  return (
+    <>
+      <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.6}>
+        {row.at.map((p, k) => (
+          <path key={k} d={crownPetal(row.half, row.h)} transform={`translate(${p.x} ${p.y})`} />
+        ))}
+      </g>
+      {dots && (
+        <g fill="var(--art-vermilion)">
+          {row.at.map((p, k) => (
+            <circle key={k} cx={p.x} cy={round(p.y - row.h * 0.42)} r={1.4} />
+          ))}
+        </g>
+      )}
+    </>
+  );
+}
+
 export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
   const part = partProps(active);
@@ -321,119 +378,106 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
   return (
     <svg viewBox="0 0 640 830" fill="none" className="block h-full w-full overflow-visible">
       <defs>
-        <radialGradient id={id("glow")} cx={CX} cy={200} r={260} gradientUnits="userSpaceOnUse">
+        <radialGradient id={id("glow")} cx={CX} cy={210} r={270} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.42 }} />
           <stop offset="0.45" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.12 }} />
           <stop offset="1" style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }} />
         </radialGradient>
-        <linearGradient id={id("fall")} x1={0} y1={186} x2={0} y2={KNOT.y} gradientUnits="userSpaceOnUse">
-          <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.2 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.85 }} />
-        </linearGradient>
-        <radialGradient id={id("bindu")} cx={KNOT.x} cy={KNOT.y} r={40} gradientUnits="userSpaceOnUse">
+        <radialGradient id={id("lit")}>
+          <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.95 }} />
+          <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
+        </radialGradient>
+        <radialGradient id={id("bindu")} cx={KNOT.x} cy={KNOT.y} r={30} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 1 }} />
-          <stop offset="0.3" style={{ stopColor: "var(--art-core)", stopOpacity: 0.6 }} />
+          <stop offset="0.35" style={{ stopColor: "var(--art-core)", stopOpacity: 0.6 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
       </defs>
 
       {/* The crown, tier upon tier of rubies, and the light its stones throw off */}
       <g {...part("crown")}>
-        <circle className="m-shimmer" cx={CX} cy={200} r={260} fill={url("glow")} />
+        <circle cx={CX} cy={210} r={270} fill={url("glow")} />
         <g strokeWidth={0.9} strokeLinecap="round" strokeOpacity={0.7}>
           {rays.map((r, i) => (
             <path key={i} d={r.d} stroke={r.red ? "var(--art-vermilion)" : "var(--gold-soft)"} />
           ))}
         </g>
         <g fill="var(--gold)">
-          <path d="M 298 80 C 298 67 311 63 314 57 L 326 57 C 329 63 342 67 342 80 Z" />
-          <path d="M 320 30 C 329 38 331 48 326 58 L 314 58 C 309 48 311 38 320 30 Z" />
-          <circle cx={CX} cy={26} r={2.6} />
+          <path d="M 290 82 C 290 67 309 64 313 58 L 327 58 C 331 64 350 67 350 82 Z" />
+          <path d="M 320 28 C 330 37 332 49 327 59 L 313 59 C 308 49 310 37 320 28 Z" />
+          <circle cx={CX} cy={24} r={2.8} />
         </g>
-        <path d="M 302 72 Q 320 66 338 72" stroke="var(--art-carve)" strokeWidth={0.8} />
-        <Ruby x={CX} y={46} r={3.6} />
-        {tiers.map((t, i) => ({ t, i })).reverse().map(({ t, i }) => {
-          return (
-            <g key={t.bottom}>
+        <path d="M 295 74 Q 320 67 345 74" stroke="var(--art-carve)" strokeWidth={0.8} />
+        <Ruby x={CX} y={45} r={3.8} />
+        {tiers
+          .map((t, i) => ({ t, i }))
+          .reverse()
+          .map(({ t, i }) => (
+            <g key={i}>
               <path d={t.d} fill="var(--gold)" />
-              <path
-                d={`M ${CX - t.hwT + 1} ${t.top + 2.5} Q ${CX} ${t.top + 2.5 + 2 * SAG} ${CX + t.hwT - 1} ${t.top + 2.5}`}
-                stroke="var(--art-carve)"
-                strokeWidth={0.7}
-              />
-              {t.rubies.map((r, k) =>
-                r.front ? (
-                  <g key={k}>
-                    <g fill="var(--gold-soft)">
-                      {Array.from({ length: 8 }, (_, j) => (
-                        <path key={j} d="M -2 0 Q -2 -3 0 -5 Q 2 -3 2 0 Z" transform={`translate(${r.x} ${r.y}) rotate(${j * 45}) translate(0 -7.6)`} />
-                      ))}
-                    </g>
-                    <Ruby x={r.x} y={r.y} r={6.2} />
-                  </g>
-                ) : (
-                  <Ruby key={k} x={r.x} y={r.y} r={t.r} />
-                ),
-              )}
               <g fill="var(--gold-soft)">
-                {t.petals.map((p, k) => (
-                  <path key={k} d={crownPetal(t.petalHalf)} transform={`translate(${p.x} ${p.y})`} />
+                {t.beads.map((b, k) => (
+                  <circle key={k} cx={b.x} cy={b.y} r={1.35} />
                 ))}
               </g>
-              <g stroke="var(--art-carve)" strokeWidth={0.6} strokeLinecap="round">
-                {t.petals.map((p, k) => (
-                  <path key={k} d={`M ${p.x} ${round(p.y - 1.8)} V ${round(p.y - PETAL_H + 2.6)}`} />
-                ))}
-              </g>
-              {t.rubies.map((r, k) => {
-                const group = FLASHING[`${i}-${k}`];
-                if (group === undefined && !r.front) return null;
-                const s = r.front ? 7 : t.r * 1.5;
-                return (
-                  <g key={`g${k}`} transform={`translate(${round(r.x - (r.front ? 2.5 : t.r * 0.4))} ${round(r.y - (r.front ? 3.5 : t.r * 0.6))})`}>
-                    <path
-                      className={["m-lick", "m-lick m-late", "m-lick m-later"][group ?? 0]}
-                      d={glint(round(s))}
-                      fill="var(--art-core)"
-                    />
-                  </g>
-                );
-              })}
+              {t.rubies.map((r, k) => (
+                <Ruby key={k} x={r.x} y={r.y} r={t.r} />
+              ))}
             </g>
-          );
-        })}
+          ))}
+        <Petals row={topCrest} dots={false} />
+        <path d={diadem.d} fill="var(--gold)" />
+        <path
+          d={`M ${CX - 95} ${DIADEM.bottom - 5} Q ${CX} ${DIADEM.bottom - 5 + 2 * SAG} ${CX + 95} ${DIADEM.bottom - 5}`}
+          stroke="var(--art-carve)"
+          strokeWidth={0.7}
+        />
+        {diadem.rubies.map((r, k) =>
+          k === FRONT ? (
+            <g key={k}>
+              <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.5}>
+                {Array.from({ length: 10 }, (_, j) => (
+                  <path key={j} d="M -2.4 0 Q -2.4 -3.4 0 -5.6 Q 2.4 -3.4 2.4 0 Z" transform={`translate(${r.x} ${r.y - 2}) rotate(${j * 36}) translate(0 -8.4)`} />
+                ))}
+              </g>
+              <Ruby x={r.x} y={r.y - 2} r={7} />
+            </g>
+          ) : (
+            <Ruby key={k} x={r.x} y={r.y} r={4.3} />
+          ),
+        )}
+        <Petals row={diadem.petals} />
         <g fill="var(--gold-soft)">
           {rimBeads.map((b, k) => (
             <circle key={k} cx={b.x} cy={b.y} r={1.7} />
           ))}
         </g>
+        {Object.entries(FLASHING).map(([key, group]) => {
+          const [row, place] = key.split("-");
+          const r = row === "d" ? diadem.rubies[+place] : tiers[+row].rubies[+place];
+          const size = row === "d" ? 4.3 : tiers[+row].r;
+          return <Flash key={key} x={r.x - size * 0.4} y={r.y - size * 0.6} s={size * 1.6} group={group} />;
+        })}
+        <Flash x={CX - 2.8} y={DIADEM.top + 7} s={9} group={1} />
       </g>
 
-      {/* Her hair, gathered from under the crown into a plait of the four flowers */}
+      {/* Her hair, gathered from under the crown into a rosette and a plait of the four flowers */}
       <g {...part("flower-plait")}>
-        <g stroke={url("fall")} strokeWidth={1.1} strokeLinecap="round">
-          {strands.map((d, k) => (
-            <path key={k} d={d} />
-          ))}
-        </g>
-        <g stroke="var(--gold-soft)" strokeWidth={0.6} strokeOpacity={0.4} strokeLinecap="round">
-          {GLOSS_STRANDS.map((k) => (
-            <path key={k} d={strands[k]} />
-          ))}
-        </g>
-        <path d={`M ${CX - 17} ${KNOT.y - 4} H ${CX + 17} V ${KNOT.y + 5} H ${CX - 17} Z`} fill="var(--gold)" />
-        <path d={`M ${CX - 17} ${KNOT.y - 1.5} H ${CX + 17} M ${CX - 17} ${KNOT.y + 2.5} H ${CX + 17}`} stroke="var(--art-carve)" strokeWidth={0.6} />
         <g className="m-sway">
-          <path d={plaitBand} fill="var(--art-hair)" fillOpacity={0.9} />
-          <g stroke="var(--gold-soft)" strokeWidth={0.8} strokeOpacity={0.55} strokeLinecap="round">
-            {crossings.map((d, k) => (
-              <path key={k} d={d} />
+          <g fill="var(--art-hair)">
+            {lobes.map((l, i) => (
+              <path key={i} d={l.lobe} transform={l.at} />
             ))}
           </g>
-          {flowers.map((f, i) => {
-            const Flower = FLOWER[f.species];
+          <g stroke="var(--gold-soft)" strokeWidth={0.7} strokeOpacity={0.6} strokeLinecap="round">
+            {lobes.map((l, i) => (
+              <path key={i} d={l.sheen} transform={l.at} />
+            ))}
+          </g>
+          {lobes.map((l, i) => {
+            const Flower = FLOWER[l.species];
             return (
-              <g key={i} transform={f.transform}>
+              <g key={i} transform={l.flower}>
                 <Flower />
               </g>
             );
@@ -441,20 +485,29 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
           <g transform={`translate(${round(tip.p.x)} ${round(tip.p.y)}) rotate(${downAlong(tip.t)})`}>
             <g stroke="var(--art-hair)" strokeWidth={1.1} strokeLinecap="round">
               {TIP_STRANDS.map((x) => (
-                <path key={x} d={`M ${x} 2 Q ${round(x * 1.3)} 18 ${round(x * 1.7 + 3)} ${round(34 - Math.abs(x) * 0.8)}`} />
+                <path key={x} d={`M ${x} 2 Q ${round(x * 1.3)} 16 ${round(x * 1.7 + 3)} ${round(30 - Math.abs(x) * 0.8)}`} />
               ))}
             </g>
-            <path d={`M 1 4 Q 2 18 5 32`} stroke="var(--gold-soft)" strokeWidth={0.6} strokeOpacity={0.5} />
-            <rect x={-11} y={-3} width={22} height={7} rx={1.5} fill="var(--gold)" />
-            <path d="M -11 0.5 H 11" stroke="var(--art-carve)" strokeWidth={0.6} />
+            <rect x={-10} y={-3} width={20} height={7} rx={1.5} fill="var(--gold)" />
+            <path d="M -10 0.5 H 10" stroke="var(--art-carve)" strokeWidth={0.6} />
           </g>
         </g>
+        <circle cx={KNOT.x} cy={KNOT.y} r={ROSETTE_R + 4} fill="var(--art-hair)" />
+        {rosette.map((f, i) => {
+          const Flower = FLOWER[f.species];
+          return (
+            <g key={i} transform={f.transform}>
+              <Flower />
+            </g>
+          );
+        })}
       </g>
 
       {/* Her presence, where a jewel is worn at the head of a plait: the bindu */}
       <g {...part("light")}>
+        <circle cx={KNOT.x} cy={KNOT.y} r={ROSETTE_R - 11} fill={url("lit")} />
         <circle cx={KNOT.x} cy={KNOT.y} r={12} fill="var(--art-saffron)" />
-        <circle cx={KNOT.x} cy={KNOT.y} r={40} fill={url("bindu")} />
+        <circle cx={KNOT.x} cy={KNOT.y} r={30} fill={url("bindu")} />
         <circle cx={KNOT.x} cy={KNOT.y} r={4.5} fill="var(--art-core)" />
         <circle cx={KNOT.x} cy={KNOT.y} r={9} stroke="var(--art-core)" strokeWidth={0.8} strokeOpacity={0.85} />
       </g>
@@ -472,11 +525,7 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
           }
           return (
             <g key={i} transform={`translate(${s.x} ${s.y})`}>
-              <path
-                className={cls}
-                d={glint(s.s)}
-                fill={s.kind === "turning" ? "var(--art-vermilion)" : "var(--gold-soft)"}
-              />
+              <path className={cls} d={glint(s.s)} fill={s.kind === "turning" ? "var(--art-vermilion)" : "var(--gold-soft)"} />
             </g>
           );
         })}
