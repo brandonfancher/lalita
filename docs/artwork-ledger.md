@@ -59,6 +59,10 @@ second time it is needed.
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
+| The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The deer in the moon (mṛgāṅka) | A small leaping blackbuck facing right, in `--art-musk`, with short spiralled horns, a flicked tail, legs out fore and aft, and a pale eye. Soft musk smudge behind it. About 50 units long, so it reads as a dab from afar | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -67,7 +71,8 @@ When all four weapons appear together, the upper hands hold the noose (left) and
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **The crescent moon** on her crown (Shloka 5, and the Dhyāna's *tārā-nāyaka-śekharām*).
+- **The crescent moon** on her crown (the Dhyāna's *tārā-nāyaka-śekharām*). Shloka 5's moon is the
+  eighth-night half, not a crescent; draw the crown's crescent as a phase of the moon canon above.
 - **The Śrīcakra and its triangles.** The site's own `YantraMark` in `src/components/ornament.tsx`
   is the innermost enclosure: a downward triangle in a circle, with the bindu.
 
@@ -85,6 +90,11 @@ The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, `--art-cor
 - **`--art-hair`** (Shloka 4): day `#1f2a55`, lamplight `#5d6788`. The blue-black gloss of her
   hair, only in glimpses and thin lines. The day value leans indigo so it dilutes to slate blue on
   the paper; a neutral blue-black turned grey.
+- **`--art-moon`** (Shloka 5): day `#fdfcf8`, lamplight `#e9edf3`. The moon's pearl face and its
+  glow. Cooler than `--art-ivory`, silver by lamplight. By day it barely separates from the paper,
+  so a moon depends on its gold rim and its halo.
+- **`--art-musk`** (Shloka 5): day `#3b2518`, lamplight `#34221a`. Musk, dark brown. It is only
+  ever laid on the pale moon, so it stays dark in both themes.
 
 ## Motion additions
 
@@ -202,9 +212,36 @@ One entry per finished artwork, in the order they were made.
   rosette turned grey, so it sits in a saffron disc. On tablet the crown falls partly under the
   "The artwork" badge, as Shloka 2's goad tip does.
 
+### Shloka 5: The eighth-night moon on her brow
+
+- **Component:** `eighth-night-moon.tsx` (defs prefix `sa5`)
+- **Composition:** a nocturne built on a rhyme. The eighth-night moon stands above the card at
+  exactly half, flat edge down like a brow, its ashen half falling behind the card. Below it, the
+  full moon is her face, with one dab of musk on it that is, up close, a leaping deer. Each moon
+  wears a halo of red, saffron, and gold rings and pearls, and fine rings of moonlight spread
+  from both and cross between them. A garland of the fifteen nights of the bright fortnight hangs
+  at the foot. The first night piece, the stillest, and the first with a dark point at its focus.
+  There is no separate bindu: the full moon is her.
+- **Name → part:**
+  - Aṣṭamīcandravibhrājadalikasthalaśobhitā → `half-moon`: the half-lit moon, its ashen half, its
+    glow and halo
+  - Mukhacandrakalaṅkābhamṛganābhiviśeṣakā → `face-moon`: the full moon, its glow and halo, and
+    the musk mark as a deer (*mṛganābhi*, "deer's navel", on the *mṛgāṅka*, the "deer-marked")
+  - Intro, *their light* → `moonlight`: the soft glow and the crossing rings between the moons
+  - Detail → `fortnight`: fifteen waxing moons on a gold thread, the eighth ringed in red and
+    gold beneath her face, the same half as her brow
+- **Palette:** `--art-moon` and `--art-musk` are new; vermilion, saffron, and gold only in the
+  halos and the fortnight's beads.
+- **Motion:** `m-shimmer` (the glow, the halo rings, and the moonlight rings) and `m-twinkle` (the
+  halo pearls and the fifteen nights, in three offset groups). The moons themselves are still.
+- **Notes:** The first render was two white discs on the paper that read as buttons, and fogged by
+  lamplight; the halos brought the series' pigment in, and the glows were halved. A thin inner
+  gold ring on each moon made it a plate and was dropped. The crossing moonlight rings fill the
+  plate's width, which two stacked moons alone left empty. On tablet the half moon falls partly
+  under the "The artwork" badge, as in earlier shlokas.
+
 ## Open questions
 
 - **The Dhyāna.** Its verses describe her whole form in one continuous meditation. Principle 3
   still applies: she is present as light, not a figure. It is the natural place to gather her
-  attributes (weapons, crown, moon, lotus, jewelled vessel), so consider drawing it after
-  Shlokas 2–5 have set their canon.
+  attributes (weapons, crown, moon, lotus, jewelled vessel). Shlokas 2–5 have now set their canon.

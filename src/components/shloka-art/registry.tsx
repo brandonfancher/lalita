@@ -1,4 +1,5 @@
 import { DrawnBow } from "./drawn-bow";
+import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
 import { ThousandDawns } from "./thousand-dawns";
@@ -159,6 +160,40 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: above the crown, a few stars are turning red and coming down
           to it. Śaṅkara says the rubies in her crown were stars that became rubies to be set there.
+        </>
+      ),
+    },
+  },
+  "005": {
+    Art: EighthNightMoon,
+    intro: (Spot) => (
+      <>
+        Both names are moons, so this is a night lit only by them, with their{" "}
+        <Spot part="moonlight">light</Spot> filling the space between. The first name gives her a moon; the second
+        makes her one.
+      </>
+    ),
+    entries: [
+      {
+        nama: 15,
+        part: "half-moon",
+        depicts:
+          "The moon of the eighth night stands above at exactly half, its flat edge down like the line of a brow, its dark half faintly visible. It is ringed with a halo because the name dwells on its shining.",
+      },
+      {
+        nama: 16,
+        part: "face-moon",
+        depicts:
+          "Below, the full moon is her face, and its only mark is a dab of musk where the moon's own spot would be. Up close the mark is a leaping deer: musk is \u201cdeer's navel\u201d, and the moon is \u201cdeer-marked\u201d.",
+      },
+    ],
+    detail: {
+      part: "fortnight",
+      body: (
+        <>
+          There is also a small detail for the attentive: along the foot runs a string of the fifteen nights of the
+          bright fortnight, waxing from left to right. The eighth, ringed in red and gold beneath her face, is the same half as
+          her brow.
         </>
       ),
     },
