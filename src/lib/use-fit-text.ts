@@ -94,7 +94,8 @@ function schedule(els: Iterable<HTMLElement>) {
   if (!frame) frame = requestAnimationFrame(flush);
 }
 
-function refitAll() {
+/** Refit everything, for changes made outside React such as a page-wide class or attribute. */
+export function refitAll() {
   schedule(fitted.keys());
 }
 

@@ -6,10 +6,9 @@ import { ExternalLink } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
 import { FitText } from "@/components/fit-text";
+import { ScriptToggle } from "@/components/script-toggle";
 import type { ChantTiming } from "@/lib/types";
 import { cn, practiceLabel } from "@/lib/utils";
-
-type ScriptMode = "both" | "deva" | "iast";
 
 const MIN = 0;
 const MAX = 182;
@@ -35,11 +34,8 @@ export type PracticeVerse = {
  * width, so the art stands softened behind it at the card's full height; wider,
  * it floats beside a two-line verse in each script.
  */
-const ART_WIDTH: Record<ScriptMode, string> = {
-  both: "sm:w-[5.5rem] md:w-[7.5rem]",
-  deva: "sm:w-[5.375rem]",
-  iast: "sm:w-[3.75rem]",
-};
+const ART_WIDTH =
+  "sm:script-both:w-[5.5rem] md:script-both:w-[7.5rem] sm:script-deva:w-[5.375rem] sm:script-iast:w-[3.75rem]";
 
 export function PracticeSession({
   from,
@@ -57,7 +53,6 @@ export function PracticeSession({
   const router = useRouter();
   const [fromInput, setFromInput] = useState(String(from));
   const [toInput, setToInput] = useState(String(to));
-  const [script, setScript] = useState<ScriptMode>("both");
   /** Token whose gloss is pinned open (tap / keyboard). Token ids are only unique within a verse. */
   const [activeToken, setActiveToken] = useState<{ verseId: string; tokenId: string } | null>(null);
 
@@ -124,36 +119,7 @@ export function PracticeSession({
 
       <div>
         <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-          <div
-            role="radiogroup"
-            aria-label="Script"
-            className="inline-flex rounded-md border border-line bg-surface-1/60 p-0.5 font-sans text-xs"
-          >
-          {(
-            [
-              ["both", "Both"],
-              ["deva", "देवनागरी"],
-              ["iast", "Romanized"],
-            ] as const
-          ).map(([value, label]) => (
-            <button
-              key={value}
-              type="button"
-              role="radio"
-              aria-checked={script === value}
-              onClick={() => setScript(value)}
-              className={cn(
-                "rounded px-3 py-1 transition-colors",
-                value === "deva" && "deva py-0 text-[13px]",
-                script === value
-                  ? "bg-surface-0 text-ink shadow-sm ring-1 ring-line"
-                  : "text-ink-muted hover:text-ink",
-              )}
-            >
-              {label}
-            </button>
-          ))}
-          </div>
+          <ScriptToggle />
           <span className="ml-auto text-[15px] italic text-ink-faint">
             Hover or tap a name for its gloss
           </span>
@@ -164,7 +130,6 @@ export function PracticeSession({
             <PracticeVerseCard
               key={verse.id}
               verse={verse}
-              script={script}
               activeTokenId={activeToken?.verseId === verse.id ? activeToken.tokenId : null}
               onToggleToken={(tokenId) => setActiveToken(tokenId ? { verseId: verse.id, tokenId } : null)}
             />
@@ -177,12 +142,10 @@ export function PracticeSession({
 
 function PracticeVerseCard({
   verse,
-  script,
   activeTokenId,
   onToggleToken,
 }: {
   verse: PracticeVerse;
-  script: ScriptMode;
   activeTokenId: string | null;
   onToggleToken: (id: string | null) => void;
 }) {
@@ -203,7 +166,7 @@ function PracticeVerseCard({
           className={cn(
             "pointer-events-none absolute right-2 top-2 -z-10 aspect-[2/3] h-[calc(100%-1rem)] max-h-[18rem] opacity-55",
             "sm:pointer-events-auto sm:static sm:float-right sm:mb-1 sm:ml-4 sm:aspect-auto sm:h-auto sm:max-h-none sm:opacity-100 md:ml-5",
-            ART_WIDTH[script],
+            ART_WIDTH,
           )}
         >
           {verse.art}
@@ -229,47 +192,42 @@ function PracticeVerseCard({
       <div className="space-y-1.5">
         {verse.lines.map((line, li) => (
           <div key={li} className="space-y-0.5">
-            {script !== "iast" && (
-              <FitText
-                as="p"
-                mode="words"
-                fitKey={line.tokens.map((t) => t.id).join()}
-                className="deva text-[1.4rem] leading-[1.75] text-ink sm:text-[1.65rem]"
-              >
-                {line.tokens.map((token) => (
-                  <GlossToken
-                    key={`d-${token.id}`}
-                    token={token}
-                    text={token.deva}
-                    active={activeTokenId === token.id}
-                    onToggle={onToggleToken}
-                  />
-                ))}
-              </FitText>
-            )}
-            {script !== "deva" && (
-              <FitText
-                as="p"
-                mode="words"
-                fitKey={`${script}:${line.tokens.map((t) => t.id).join()}`}
-                className={cn(
-                  "iast leading-snug",
-                  script === "iast"
-                    ? "text-lg text-ink sm:text-xl"
-                    : "text-[1rem] text-ink-muted sm:text-[1.05rem]",
-                )}
-              >
-                {line.tokens.map((token) => (
-                  <GlossToken
-                    key={`i-${token.id}`}
-                    token={token}
-                    text={token.iast}
-                    active={activeTokenId === token.id}
-                    onToggle={onToggleToken}
-                  />
-                ))}
-              </FitText>
-            )}
+            <FitText
+              as="p"
+              mode="words"
+              fitKey={line.tokens.map((t) => t.id).join()}
+              className="deva text-[1.4rem] leading-[1.75] text-ink script-iast:hidden sm:text-[1.65rem]"
+            >
+              {line.tokens.map((token) => (
+                <GlossToken
+                  key={`d-${token.id}`}
+                  token={token}
+                  text={token.deva}
+                  active={activeTokenId === token.id}
+                  onToggle={onToggleToken}
+                />
+              ))}
+            </FitText>
+            <FitText
+              as="p"
+              mode="words"
+              fitKey={line.tokens.map((t) => t.id).join()}
+              className={cn(
+                "iast leading-snug script-deva:hidden",
+                "script-both:text-[1rem] script-both:text-ink-muted sm:script-both:text-[1.05rem]",
+                "script-iast:text-lg script-iast:text-ink sm:script-iast:text-xl",
+              )}
+            >
+              {line.tokens.map((token) => (
+                <GlossToken
+                  key={`i-${token.id}`}
+                  token={token}
+                  text={token.iast}
+                  active={activeTokenId === token.id}
+                  onToggle={onToggleToken}
+                />
+              ))}
+            </FitText>
           </div>
         ))}
       </div>

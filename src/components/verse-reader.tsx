@@ -7,10 +7,9 @@ import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
 import { Lotus } from "@/components/ornament";
+import { ScriptToggle } from "@/components/script-toggle";
 import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
 import { caseInfo, cn, toDevanagariDigits } from "@/lib/utils";
-
-type ScriptMode = "both" | "deva" | "iast";
 
 /**
  * The dual-script reading pane.
@@ -28,7 +27,6 @@ export function VerseReader({
   /** Rendered at the top of the reading column, above the verse. */
   chant?: React.ReactNode;
 }) {
-  const [script, setScript] = useState<ScriptMode>("both");
   const [activeId, setActiveId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
 
@@ -86,6 +84,7 @@ export function VerseReader({
   );
 
   // The closing daṇḍa travels with the last word so it never wraps alone.
+  // Under the Devanagari, the romanization goes unmarked.
   const renderTokens = (tokens: Token[], kind: "deva" | "iast", marker: string | null) => {
     if (!marker || tokens.length === 0) return tokens.map((t) => renderToken(t, kind));
     const last = tokens[tokens.length - 1];
@@ -94,7 +93,7 @@ export function VerseReader({
         {tokens.slice(0, -1).map((t) => renderToken(t, kind))}
         <span data-fit-word className="whitespace-nowrap">
           {renderToken(last, kind)}
-          <span aria-hidden className="text-sindura">
+          <span aria-hidden className={cn("text-sindura", kind === "iast" && "script-both:hidden")}>
             {marker}
           </span>
         </span>
@@ -108,36 +107,7 @@ export function VerseReader({
         {chant && <div className="mb-6">{chant}</div>}
 
         <div className="mb-3 flex items-center justify-between gap-3">
-          <div
-            role="radiogroup"
-            aria-label="Script"
-            className="inline-flex rounded-md border border-line bg-surface-1/60 p-0.5 font-sans text-xs"
-          >
-            {(
-              [
-                ["both", "Both"],
-                ["deva", "देवनागरी"],
-                ["iast", "Romanized"],
-              ] as const
-            ).map(([value, label]) => (
-              <button
-                key={value}
-                type="button"
-                role="radio"
-                aria-checked={script === value}
-                onClick={() => setScript(value)}
-                className={cn(
-                  "rounded px-3 py-1 transition-colors",
-                  value === "deva" && "deva py-0 text-[13px]",
-                  script === value
-                    ? "bg-surface-0 text-ink shadow-sm ring-1 ring-line"
-                    : "text-ink-muted hover:text-ink",
-                )}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+          <ScriptToggle />
           <p className="hidden text-sm italic text-ink-faint sm:block lg:hidden">
             Tap any word to inspect it.
           </p>
@@ -147,35 +117,26 @@ export function VerseReader({
           <div className="space-y-6">
             {mod.lines.map((line, li) => (
               <div key={li} className="space-y-1">
-                {script !== "iast" && (
-                  <FitText
-                    as="p"
-                    mode="words"
-                    fitKey={line.deva}
-                    className="deva text-[1.65rem] leading-[1.8] text-ink sm:text-[2.05rem]"
-                  >
-                    {renderTokens(line.tokens, "deva", markerFor(li, "deva"))}
-                  </FitText>
-                )}
-                {script !== "deva" && (
-                  <FitText
-                    as="p"
-                    mode="words"
-                    fitKey={`${script}:${line.iast}`}
-                    className={cn(
-                      "iast leading-relaxed",
-                      script === "iast"
-                        ? "text-[1.45rem] text-ink sm:text-[1.7rem]"
-                        : "text-[1.05rem] text-ink-muted sm:text-[1.2rem]",
-                    )}
-                  >
-                    {renderTokens(
-                      line.tokens,
-                      "iast",
-                      script === "iast" ? markerFor(li, "iast") : null,
-                    )}
-                  </FitText>
-                )}
+                <FitText
+                  as="p"
+                  mode="words"
+                  fitKey={line.deva}
+                  className="deva text-[1.65rem] leading-[1.8] text-ink script-iast:hidden sm:text-[2.05rem]"
+                >
+                  {renderTokens(line.tokens, "deva", markerFor(li, "deva"))}
+                </FitText>
+                <FitText
+                  as="p"
+                  mode="words"
+                  fitKey={line.iast}
+                  className={cn(
+                    "iast leading-relaxed script-deva:hidden",
+                    "script-both:text-[1.05rem] script-both:text-ink-muted sm:script-both:text-[1.2rem]",
+                    "script-iast:text-[1.45rem] script-iast:text-ink sm:script-iast:text-[1.7rem]",
+                  )}
+                >
+                  {renderTokens(line.tokens, "iast", markerFor(li, "iast"))}
+                </FitText>
               </div>
             ))}
           </div>

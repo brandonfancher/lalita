@@ -54,11 +54,12 @@ export default function RootLayout({
       <head>
         {/*
           Applied before paint so the page never flashes the wrong theme. An
-          explicit choice wins; otherwise follow the system setting.
+          explicit choice wins; otherwise follow the system setting. The
+          chosen script is restored the same way, defaulting to both.
         */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`,
+            __html: `try{var d=document.documentElement,t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";d.dataset.theme=t;var s=localStorage.getItem("script");if(s==="deva"||s==="iast")d.dataset.script=s}catch(e){}`,
           }}
         />
       </head>
