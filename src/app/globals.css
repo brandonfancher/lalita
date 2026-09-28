@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
+/* The reader's chosen script; see `lib/script-preference.ts`. Both is the default. */
+@custom-variant script-both (&:where(:root:not([data-script="deva"], [data-script="iast"]) *));
+@custom-variant script-deva (&:where([data-script="deva"] *));
+@custom-variant script-iast (&:where([data-script="iast"] *));
+
 /*
  * A rubricated edition.
  *
