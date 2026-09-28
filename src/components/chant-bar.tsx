@@ -19,6 +19,12 @@ const YT_ID = "zgG-gjioU1g";
 const PERFORMERS = "Ranjani \u2013 Gayatri";
 /** Preroll before startSec so the attack of the first syllable isn't dropped. */
 const PREROLL_SEC = 0.2;
+/**
+ * Stop this far before endSec. Polling plus pauseVideo() latency lets the
+ * audio overrun the check by a fraction of a second of wall-clock time, which
+ * otherwise leaks the next verse's first attack. Scaled by playback rate.
+ */
+const STOP_LEAD_SEC = 0.15;
 /** Poll interval for progress — YT's clock doesn't advance usefully every frame. */
 const TICK_MS = 100;
 
@@ -93,6 +99,7 @@ export function ChantBar({
   const readyPromiseRef = useRef<Promise<YTPlayer | null> | null>(null);
   const tickRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const loopRef = useRef(defaultLoop);
+  const rateRef = useRef(1);
   const timingRef = useRef(timing);
   const durationRef = useRef(0);
   /** True when the user asked to play before the iframe finished loading. */
@@ -143,7 +150,7 @@ export function ChantBar({
 
     if (t < tmg.startSec) return;
 
-    if (t >= tmg.endSec) {
+    if (t >= tmg.endSec - STOP_LEAD_SEC * rateRef.current) {
       // Seek-to-start often leaves getCurrentTime() at the old end briefly —
       // without this guard, restart/play-from-end immediately re-pauses.
       if (performance.now() < ignoreEndUntilRef.current) {
@@ -384,6 +391,7 @@ export function ChantBar({
 
   const changeRate = (r: number) => {
     setRate(r);
+    rateRef.current = r;
     playerRef.current?.setPlaybackRate(r);
   };
 
