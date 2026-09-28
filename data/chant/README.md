@@ -68,31 +68,44 @@ verses plus the closing half-verse.
 
 ## Calibration (current)
 
-Timings come from **forced alignment** (`stable-ts`) of the known verse text
-to `sources/audio/mono16k.wav`. Each verse’s `startSec` is the onset of its
-first name; `endSec` is the next verse’s start (contiguous). The chant player
-stops ~120 ms early to absorb YouTube API lag without cutting the last name.
+Verses 1–5 were nudged by ear. Verses 6–182 are snapped to breaths:
 
-Do not snap boundaries to pauseness peaks — the strongest pause inside a verse
-is usually the mid-verse (line 1 → line 2) break.
+1. Whisper large-v3 (`language="hi"`) transcribes the audio between breaths;
+   the transcripts are aligned character-by-character to the verse text, which
+   says which breath precedes each verse. Counting breaths does not work: the
+   singers also breathe between padas, and a few verses follow without one.
+2. A breath is where energy below 900 Hz sits near its floor and 1–4 kHz is at
+   most moderately raised. Watching only 1–4 kHz mistakes a held final ī/ū for
+   breath, and treats an audible in-breath as voice.
+3. The first attack is where either band comes back up, stepped back over an
+   unvoiced onset (ś, kṣ, stop bursts) that only shows above 1 kHz.
 
-Regenerate:
+Each verse’s `startSec` sits in the breath about 200 ms before its first
+attack, and at least 200 ms after the previous verse’s voice ends; `endSec` is
+the next verse’s start (contiguous). Verse 182 includes the closing “evaṃ
+śrīlalitā devyā … jaguḥ” and ends before the colophon, which is recorded as
+`phalashruti`.
 
-```sh
-sources/.venv/bin/pip install stable-ts
-# see scripts/build-chant-timings.py --calibrate for the landmark fallback;
-# full forced-alignment rebuild is currently run ad hoc from the agent session.
-```
+The chant player starts 200 ms before `startSec` and stops 150 ms (× playback
+speed) before `endSec` to absorb polling and YouTube API lag; with those margins
+the next verse starts inside the breath and the previous one stops before the
+attack. Breaths narrower than ~0.42 s cannot satisfy both margins, so the cut is
+split between them (verses 13, 14, 26, 35 and 126 are the tightest).
+
+To check a boundary, transcribe the clip the player would play
+(`startSec − 0.2` to `endSec − 0.15 + ~0.2`) and confirm it opens on the verse’s
+first word and closes on its last.
 
 ## Caveats worth checking by ear
 
-1. **Landmarks are good; in-between verses are interpolated.** Spot-check a
-   mid-range verse (e.g. 30, 90, 150) if a specific module still feels early or
-   late, then nudge `ASR_LANDMARKS` in the script and re-run with `--calibrate`.
+1. **Every boundary is measured, but only verses 1–10 have been checked by
+   ear.** If one sounds off, move the cut within the breath just before the
+   verse rather than re-running the older scripts, which regenerate the drifted
+   forced-alignment timings.
 2. **Numbering assumes 182 verses with a half-verse last.**
-3. **`phalashruti` is a ~35 s closing passage**, roughly 3–4 verses. It is far
-   too short to be the full phalashruti; it is labelled that way only because
-   the schema has no other slot for a closing section.
+3. **`phalashruti` is the ~30 s closing colophon** (“iti śrī brahmāṇḍapurāṇe
+   uttarakhaṇḍe … sampūrṇam”), not a phalashruti; it is labelled that way only
+   because the schema has no other slot for a closing section.
 4. **`dhyanaVerses` is a hint, not a measurement.** The dhyana verses are not
    all in one metre and their boundaries were not reliably separable, so every
    entry is marked `interpolated`. The section span itself is solid.
