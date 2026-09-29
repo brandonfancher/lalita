@@ -46,7 +46,10 @@ compose within it.
   y ≈ 105–150 on screens 1280–1440px wide. Shloka 6's ("Love's archway and the darting fish")
   reaches x ≈ 175 at y ≈ 85–140. Shloka 7's ("A campaka bud, and a jewel that shames the stars")
   reaches x ≈ 360 at y ≈ 110–150 at 1440px. Check the subtitle's length and keep crown-zone
-  elements on the left clear of it.
+  elements on the left clear of it. A title that wraps to two lines moves the whole card down
+  instead: Shloka 8's ("Kadamba flowers, and the sun and moon for earrings") wraps at every desktop
+  width, stays left of the artwork, and pushes the card window to y ≈ 225–438, which leaves only
+  y ≈ 440–564 clear above the fade. Look at the first render to see where the card really sits.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.
 - **Plate caption:** a button centred beneath the artwork at y ≈ 824 on screens ≥ 1280px.

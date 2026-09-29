@@ -45,7 +45,8 @@ second time it is needed.
 | Glint | `glint(s)`: a four-pointed flash of `--art-core`, for blazing metal and jewels | `primitives.tsx` | Shloka 2 |
 | Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs: `armBeam` (and `wrist` for where the bangle sits), painted with `ArmLight` and a gradient from `--art-saffron` to `--art-core` | `primitives.tsx` | Shloka 2 |
 | Bangle (kaṅkaṇa) | `Bangle`: a gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | `primitives.tsx` | Shloka 2 |
-| The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | Inline | Shloka 2 |
+| The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | `sunRays` in `primitives.tsx` (promoted at Shloka 8); the disc inline | Shloka 2 |
+| The sun's full disc | A radial gradient from `--art-saffron` (a quarter out) to `--art-vermilion` at the rim, a 1.3-unit `--gold` rim line and a fainter gold ring 9 units inside, and 32 rays, at the half-risen sun's spacing, alternating vermilion (long) and saffron. As a jewel it adds a ring of small `--gold-soft` beads just outside the rim, and its rays stop short of the fittings above and below. Its radiance is the 108 gold hairlines of Shloka 1, starting at the disc | `sunRays` in `primitives.tsx`; the disc inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | The sea | Rows of shallow gold ripple arcs, closer near the horizon, faded at the sides; the light on it as a column of saffron lozenges | Inline | Shloka 2 |
 | Her sugarcane bow (ikṣu-kodaṇḍa) | `SugarcaneBow` with a `BowShape` (`half`, `grip`, `bend`): a thick gold cane stave with a paler edge, jointed every 25 units, bound at the grip, a tuft of three `--leaf` leaves at each tip. Drawn in a frame where it is aimed up; `bowTips` gives where the string is tied. Drawn, the string runs from each tip to the origin; braced, tip to tip | `primitives.tsx` | Shloka 3 |
 | Bowstring of bees | `BeeString`: a gold hairline with a line of tiny bees along it, heads toward `to` | `primitives.tsx` | Shloka 3 |
@@ -60,9 +61,10 @@ second time it is needed.
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
-| The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | `MoonHalo` in `primitives.tsx` (promoted at Shloka 8) | Shloka 5 |
+| Moonlight | Fine `--gold-soft` rings round the moon, about 0.6 units wide, 22–26 units apart, fading outward from about 0.45 opacity. Where a second light shares the sky, they cross (two moons) or fade out against it (the sun's radiance) | Inline (`eighth-night-moon.tsx`, `sun-moon-earrings.tsx`) | Shloka 5 |
 | The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | `primitives.tsx` | Shloka 5 |
-| The deer in the moon (mṛgāṅka) | A small leaping blackbuck facing right, in `--art-musk`, with short spiralled horns, a flicked tail, legs out fore and aft, and a pale eye. Soft musk smudge behind it. About 50 units long, so it reads as a dab from afar | Inline (`eighth-night-moon.tsx`) | Shloka 5 |
+| The deer in the moon (mṛgāṅka) | A small leaping blackbuck facing right, in `--art-musk`, with short spiralled horns, a flicked tail, legs out fore and aft, and a pale eye. Soft musk smudge behind it. About 50 units long, so it reads as a dab from afar; on a smaller moon, scale it with the disc (0.66 on a moon of radius 56) | `MoonDeer` in `primitives.tsx` (promoted at Shloka 8) | Shloka 5 |
 | Her crescent crest (śekhara) | The fourth night's `litPart` turned over, horns up, radius 22, cradled on the crown's finial: an `--art-moon` fill with a 1.3-unit `--gold` edge, and its glow drawn as two soft `--art-moon` strokes round the crescent itself. Unlike a half moon, a crescent shows only its lit part: with its ashen disc, and with a round glow, it read as a ball in a cup. Clear the crown's rays from under it | Inline (`whole-image.tsx`) | Dhyāna |
 | Hibiscus (japā) | Face-on: five broad, slightly ruffled petals (radius 64) turned in a pinwheel, `--art-vermilion` round an `--art-crimson` eye, `--art-crimson` veins and edges, and an `--art-saffron` sheen down each petal. The staminal column is what makes it a hibiscus: a `--gold-soft` stalk from the centre leaning up and out past the petals, pollen dots of `--art-core` on its outer third, five `--art-crimson` stigma pads at the tip. The bindu sits in the eye. Darkening the petals' rim by day made it a brick-red blob | Inline (`whole-image.tsx`) | Dhyāna |
 | Her footprints (śrīpāda) | A pair of `--art-vermilion` footprints, toes up, big toes inward, laid on a surface and foreshortened to about 0.7 of their height: a sole with a narrow inner arch and five separate toes. Without the arch and the gap before the toes they read as mittens | Inline (`whole-image.tsx`) | Dhyāna |
@@ -79,6 +81,9 @@ second time it is needed.
 | Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | Inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Her nose stud (mūkkutti) | Seven diamonds in a gold rosette (one in the middle, six round it, one straight up), beaded at the rim, outlined in `--art-carve`. A small `--art-moon` glow just round it makes it white-hot against gold by day; behind that a larger `--art-core` glow, a four- and an eight-pointed `glint`, and sixteen hair-fine rays, the upward one longest. Flashes on three stones | Inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap | Inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Kadamba | A head is a ball of radius 9–14: a radial gradient from `--art-core` (upper left) through `--art-saffron` to `--art-vermilion`, stippled with tiny `--art-ivory` florets in a sunflower spiral, and ringed by short `--art-saffron` hairline styles that stand out to about 1.3 times its radius, each tipped with an `--art-ivory` dot edged in gold (`m-twinkle`, three groups). The pale tips make it a kadamba and not an orange or a berry. Heads come in sprays (mañjarī) of four or five on short `--leaf` stalks, among broad, pointed, glossy `--leaf` leaves with a `--gold-soft` midrib and curved veins, long enough to show beyond the heads | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
+| Ear pendant (tāṭaṅka) | Hung from a gold stud in the lobe (a ruby in it on the sun's side, a pearl on the moon's), a short gold link with gold beads, a bail, the disc, and a drop beneath (a `Ruby` under the sun, a pearl under the moon). Viewer's left is her right ear: the sun there, the moon on the other side. Each pendant swings from its lobe (`m-sway`, see Motion additions) | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
+| The moon as a little boat (uḍupa) | A small gold crescent, horns up, radius 13, riding the top of the moon's disc as its bail, with three `--art-vermilion` beads along the hull and the ring for the link between its horns | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | Water in a channel | Filled with the miniature painters' pattern of small arcs, each row set half an arc along (a `<pattern>`, `--gold-soft`), over a soft saffron glow, between gold banks with a fainter outer kerb. Rounded, organic banks: straight banks and square corners read as a pipe, a band of constant width as a snake. Dashed flow lines read as road markings by lamplight | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -133,6 +138,12 @@ Classes added to the motion vocabulary beyond the starting set: `m-breathe`, `m-
   over 9s. For fish, which in shallow water are seen chiefly as a movement. Put it on a group drawn
   heading +x, inside the group that places and turns it, so the dart follows the heading; a shadow
   that should move with its fish gets the same class and offset.
+
+No new class at Shloka 8, but one technique: `m-sway` swings a group from the top centre of its own
+bounding box, so two parts that must swing together (a pendant and its bail, spotlit separately)
+would pivot at different points. Give each group the same classes and an inline
+`style={{ transformBox: "view-box", transformOrigin: "<x>px <y>px" }}` naming the one point they
+hang from (in artwork units), and they move as one.
 
 ## Composition log
 
@@ -375,6 +386,43 @@ One entry per finished artwork, in the order they were made.
   leaving the plate's lower half empty; carried down the sides, they close the dark ring round the
   stud. On phones by lamplight the stud's glow sits under the last syllables of the second line;
   its white glow was trimmed to keep them legible.
+
+### Shloka 8: Kadamba flowers, and the sun and moon for earrings
+
+- **Component:** `sun-moon-earrings.tsx` (defs prefix `sa8`)
+- **Composition:** a pair, side by side and unreconciled, as the commentary reads the verse. Her
+  face is only a tall soft light, and at its two sides, just below the card, hang her earrings: the
+  sun on her right (the viewer's left), the full moon on her left, each on a gold stud and link,
+  swinging a little. Over each ear a spray of kadamba fans out sideways, small orange balls
+  bristling with pale styles, so the little globes rhyme with the great discs. The sun's radiance of
+  gold hairlines fills the left half of the plate and the moon's rings the right, fading out against
+  each other at her face: day and night at once, without mixing. The first composition built on a
+  contrasting pair, the first to hold the sun and the moon together, and the first whose main
+  elements swing.
+- **Name → part:**
+  - Kadambamañjarīkḷptakarṇapūramanoharā → `kadamba`: the two sprays, their heads, stalks, and
+    leaves
+  - Tāṭaṅkayugalībhūtatapanoḍupamaṇḍalā → `earrings`: the two pendants with their studs, links,
+    and drops, the sun's rays and radiance, the moon's halo, deer, and rings of moonlight
+  - Intro, *her face* → `face-light`: the tall glow between her ears
+  - Detail → `boat`: the moon's bail, a little gold crescent boat (*uḍupa*, a raft, hidden in the
+    sandhi of *tapanoḍupa*)
+- **Palette:** vermilion, saffron, and gold for the sun and the kadamba; `--art-moon`, `--sindura`,
+  and `--art-musk` for the moon; `--leaf`; `--art-ivory` for the styles. No additions.
+- **Motion:** `m-sway` (the two pendants, from their lobes, a beat apart), `m-shimmer` (the face's
+  light, the sun's rays, radiance, and glow, the moonlight, and the moon's halo), and `m-twinkle`
+  (the kadamba's style tips and the halo pearls, in three groups).
+- **Notes:** This title wraps to two lines at every desktop width, which pushes the card down to
+  y ≈ 225–438 (see `composition.md`). The first render, laid out for the usual card, had the sprays
+  frosted behind it; the pendants moved down to hang from y ≈ 466 and the sprays turned to fan out
+  sideways. The same render left the plate empty above and below the pendants; the sun's radiance
+  and the moon's rings, each confined to its own half, fill it. The radiance first started 32 units
+  out, which left a dark ring round the sun by lamplight; it now starts at the disc. The crown zone is
+  kept quiet on purpose: only the upper part of her face's light and the faint far rays and rings
+  reach it. This was the second use of the sun's rays, the moon's halo, and the deer, so `sunRays`,
+  `MoonHalo`, and `MoonDeer` moved into `primitives.tsx`; Shlokas 2 and 5 render byte-for-byte as
+  before. On phones the pendants sit behind the chant bar, and in the practice miniature on phones
+  the sun lies under the last syllables of the second line, which stay legible in both themes.
 
 ## Open questions
 

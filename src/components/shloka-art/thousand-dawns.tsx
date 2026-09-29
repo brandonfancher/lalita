@@ -7,7 +7,7 @@
  * this artwork's entry.
  */
 
-import { ArmLight, armBeam, artIds, Bangle, glint, Goad, Noose, partProps, round, wrist } from "./primitives";
+import { ArmLight, armBeam, artIds, Bangle, glint, Goad, Noose, partProps, round, sunRays, wrist } from "./primitives";
 import type { ArtProps } from "./types";
 
 const SX = 320;
@@ -47,16 +47,7 @@ const thousand = (() => {
   return groups;
 })();
 
-const sunRays = Array.from({ length: 16 }, (_, i) => {
-  const deg = (180 * (i + 0.5)) / 16;
-  const long = i % 2 === 0;
-  const t = (deg * Math.PI) / 180;
-  const at = (r: number, d: number) => {
-    const u = t + (d * Math.PI) / 180;
-    return `${round(SX + r * Math.cos(u))} ${round(HY - r * Math.sin(u))}`;
-  };
-  return { d: `M ${at(SR + 5, -4)} L ${at(long ? 96 : 84, 0)} L ${at(SR + 5, 4)} Z`, long };
-});
+const rays = sunRays({ cx: SX, cy: HY, r: SR, long: 96, short: 84 });
 
 const NOOSE_AT = { x: 218, y: 172 };
 const GOAD_AT = { x: 446, y: 174 };
@@ -197,7 +188,7 @@ export function ThousandDawns({ idPrefix = "sa2", active = null }: ArtProps) {
           <path className="m-twinkle m-later" d={thousand[2]} />
         </g>
         <g className="m-breathe">
-          {sunRays.map((r, i) => (
+          {rays.map((r, i) => (
             <path
               key={i}
               d={r.d}

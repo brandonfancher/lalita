@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
@@ -331,6 +332,40 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: a pearl hangs from the stud. Śaṅkara says her breath is so cool
           that it condenses into pearls inside her nose, and she wears one of the surplus outside.
+        </>
+      ),
+    },
+  },
+  "008": {
+    Art: SunMoonEarrings,
+    intro: (Spot) => (
+      <>
+        The verse turns to her ears and hangs two things of wildly different size on them, side by side and without
+        comment. Her <Spot part="face-light">face</Spot> is only the light between them. Every element comes from one of
+        the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 21,
+        part: "kadamba",
+        depicts:
+          "Over each ear is tucked a sprig of kadamba, her own tree: small orange balls of blossom bristling with pale styles, among broad glossy leaves.",
+      },
+      {
+        nama: 22,
+        part: "earrings",
+        depicts:
+          "From her ears hang the sun, on her right, and the full moon, on her left, each set in gold and swinging a little. The moon keeps its halo and its deer, and the sun its rays.",
+      },
+    ],
+    detail: {
+      part: "boat",
+      body: (
+        <>
+          There is also a small detail for the attentive: the moon hangs from a clasp shaped like a little boat. The
+          verse&rsquo;s word for the moon is <i>uḍupa</i>, a raft, for the boat-shaped half moon, and it hides in the{" "}
+          <i>o</i> of <i>tapanoḍupa</i>.
         </>
       ),
     },
