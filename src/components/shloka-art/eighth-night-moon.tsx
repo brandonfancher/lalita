@@ -10,7 +10,7 @@
  * artwork's entry.
  */
 
-import { artIds, litPart, partProps, polar, round } from "./primitives";
+import { artIds, litPart, MoonDeer, MoonHalo, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -23,81 +23,12 @@ const FULL = { y: 500, r: 94 };
 const upperHalf = (cy: number, r: number) => `M ${CX - r} ${cy} A ${r} ${r} 0 0 1 ${CX + r} ${cy} Z`;
 const lowerHalf = (cy: number, r: number) => `M ${CX + r} ${cy} A ${r} ${r} 0 0 1 ${CX - r} ${cy} Z`;
 
-/** An arc of the circle round (CX, cy), from `from` to `to` degrees (0 = east, counter-clockwise). */
-function arc(cy: number, r: number, from: number, to: number) {
-  const a = polar(CX, cy, r, from);
-  const b = polar(CX, cy, r, to);
-  return `M ${a.x} ${a.y} A ${r} ${r} 0 ${to - from > 180 ? 1 : 0} 0 ${b.x} ${b.y}`;
-}
-
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
-
-/**
- * A moon's halo (pariveṣa): rings, never rays, so it can't be taken for the
- * sun. Like a real lunar halo it is red on its inner edge, then saffron, then
- * gold, with a ring of gold pearls beyond and one faint outer ring.
- */
-function Halo({ cy, r, from = -90, to = 270 }: { cy: number; r: number; from?: number; to?: number }) {
-  const ring = (rr: number) => (to - from >= 360 ? null : arc(cy, rr, from, to));
-  const bands = [
-    { d: r + 10, color: "var(--sindura)", width: 2, opacity: 1 },
-    { d: r + 14, color: "var(--art-saffron)", width: 1.3, opacity: 0.85 },
-    { d: r + 18, color: "var(--gold)", width: 1, opacity: 0.8 },
-    { d: r + 40, color: "var(--gold-soft)", width: 0.7, opacity: 0.4 },
-  ];
-  const count = Math.round(((to - from) / 360) * 64);
-  const full = to - from >= 360;
-  const pearls = Array.from({ length: count + (full ? 0 : 1) }, (_, k) => polar(CX, cy, r + 28, from + (k * (to - from)) / count));
-  return (
-    <>
-      <g className="m-shimmer" strokeLinecap="round">
-        {bands.map((b) =>
-          full ? (
-            <circle key={b.d} cx={CX} cy={cy} r={b.d} stroke={b.color} strokeWidth={b.width} strokeOpacity={b.opacity} />
-          ) : (
-            <path key={b.d} d={ring(b.d)!} stroke={b.color} strokeWidth={b.width} strokeOpacity={b.opacity} />
-          ),
-        )}
-      </g>
-      <g fill="var(--gold-soft)">
-        {pearls.map((p, k) => (
-          <circle key={k} className={TWINKLE[k % 3]} cx={p.x} cy={p.y} r={k % 2 ? 1.2 : 1.9} />
-        ))}
-      </g>
-    </>
-  );
-}
 
 /** The moonlight spreading from both moons: fine rings that cross in the space between them. */
 const LIGHT_RINGS = Array.from({ length: 9 }, (_, k) => ({ r: 158 + k * 22, opacity: round(0.42 - k * 0.042) }));
 
-/* ── The deer in the musk ──────────────────────────────────────────────── */
-
-/** A leaping blackbuck facing right, about 44 units nose to hind hoof, centred on the origin. */
-const DEER_BODY = [
-  "M -12 -3",
-  "C -8 -7.5 4 -7.5 9.5 -5.5",
-  "C 11.5 -8.5 13 -11.5 14.5 -14.5",
-  "C 16.5 -16.5 19.5 -16.5 22 -14.2",
-  "C 22.4 -13.4 21.8 -12.6 20.8 -12.6",
-  "C 19 -12.6 17.6 -12 16.8 -10.8",
-  "C 15.8 -8 14.5 -4.5 11 -1.5",
-  "C 5 1 -5 1 -9.5 -0.5",
-  "C -12.5 -1 -13.5 -2 -12 -3",
-  "Z",
-].join(" ");
-const DEER_EAR = "M 15.2 -14.5 L 13.2 -18.4 L 16.6 -15.3 Z";
-const DEER_LINES = [
-  "M -12 -3.5 Q -15 -5.5 -15.5 -8.5",
-  "M 16.2 -15.8 Q 15.2 -20 17.4 -23.4",
-  "M 17.6 -16 Q 17.4 -19.8 19.8 -22.4",
-];
-const DEER_LEGS = [
-  "M 11.5 -2.5 L 16 1 L 22.5 2.2",
-  "M 9.5 -2 L 13 3 L 19 5.6",
-  "M -9 -1 L -13 3.5 L -20 4.6",
-  "M -7 0 L -10 5 L -16.5 7.6",
-];
+/** Where the deer in the musk leaps. */
 const DEER_AT = { x: 318, y: 462, s: 1.12 };
 
 /* ── The fifteen nights of the bright fortnight ────────────────────────── */
@@ -172,7 +103,7 @@ export function EighthNightMoon({ idPrefix = "sa5", active = null }: ArtProps) {
       {/* The eighth-night moon, exactly half lit, flat edge down like a brow */}
       <g {...part("half-moon")}>
         <circle cx={CX} cy={HALF.y} r={HALF.r + 44} fill={url("half-glow")} />
-        <Halo cy={HALF.y} r={HALF.r} from={-16} to={196} />
+        <MoonHalo cx={CX} cy={HALF.y} r={HALF.r} from={-16} to={196} />
         <path d={lowerHalf(HALF.y, HALF.r)} fill="var(--art-hair)" fillOpacity={0.16} />
         <path d={lowerHalf(HALF.y, HALF.r)} stroke="var(--gold-soft)" strokeWidth={0.8} strokeOpacity={0.5} />
         <path d={upperHalf(HALF.y, HALF.r)} fill="var(--art-moon)" />
@@ -183,18 +114,12 @@ export function EighthNightMoon({ idPrefix = "sa5", active = null }: ArtProps) {
       {/* The full moon of her face, and the dab of musk that is its spot */}
       <g {...part("face-moon")}>
         <circle cx={CX} cy={FULL.y} r={FULL.r + 44} fill={url("full-glow")} />
-        <Halo cy={FULL.y} r={FULL.r} />
+        <MoonHalo cx={CX} cy={FULL.y} r={FULL.r} />
         <circle cx={CX} cy={FULL.y} r={FULL.r} fill="var(--art-moon)" />
         <circle cx={CX} cy={FULL.y} r={FULL.r} fill={url("full-limb")} />
         <circle cx={CX} cy={FULL.y} r={FULL.r} stroke="var(--gold)" strokeWidth={1.6} />
         <g transform={`translate(${DEER_AT.x} ${DEER_AT.y}) scale(${DEER_AT.s})`}>
-          <ellipse cx={1} cy={-5} rx={30} ry={22} fill={url("smudge")} />
-          <path d={DEER_BODY + " " + DEER_EAR} fill="var(--art-musk)" />
-          <g stroke="var(--art-musk)" strokeLinecap="round" strokeLinejoin="round">
-            <path d={DEER_LEGS.join(" ")} strokeWidth={1.7} />
-            <path d={DEER_LINES.join(" ")} strokeWidth={1.1} />
-          </g>
-          <circle cx={19} cy={-14.3} r={0.6} fill="var(--art-moon)" />
+          <MoonDeer smudge={url("smudge")} />
         </g>
       </g>
 
