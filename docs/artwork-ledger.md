@@ -154,7 +154,7 @@ hang from (in artwork units), and they move as one.
 
 One entry per finished artwork, in the order they were made.
 
-### Shloka 1: Born from the fire of awareness
+### Shloka 1: Risen from the fire of awareness
 
 - **Component:** `fire-of-awareness.tsx` (defs prefix `sa1`)
 - **Composition:** a shrine. A round-topped prabhāvalī arch, a ring of flame tongues around a band

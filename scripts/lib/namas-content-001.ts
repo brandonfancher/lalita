@@ -81,9 +81,9 @@ export const batch: Batch = {
   },
 
   4: {
-    gloss: "Born From The Fire Of Awareness",
+    gloss: "Risen From The Fire Of Awareness",
     translation:
-      "She rose out of the sacrificial pit whose fire is pure consciousness, so that her origin is awareness itself rather than any element.",
+      "She rose out of the sacrificial pit whose fire is pure consciousness, the fire that burns away ignorance, so that her origin is awareness itself rather than any element.",
     compound: {
       type: "tatpuruṣa",
       gloss: "arisen from the fire-pit of consciousness",
