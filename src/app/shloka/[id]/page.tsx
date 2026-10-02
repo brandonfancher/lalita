@@ -155,6 +155,17 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
               </section>
             )}
 
+            {mod.commentary.reflections && (
+              <section>
+                <SectionHeading eyebrow="Manana">Further reflections</SectionHeading>
+                <p className="mb-5 text-[1rem] italic leading-relaxed text-ink-faint">
+                  Readings that go beyond the classical commentary, offered for contemplation rather
+                  than as tradition.
+                </p>
+                <Prose text={mod.commentary.reflections} />
+              </section>
+            )}
+
             {mod.references.length > 0 && (
               <section>
                 <SectionHeading eyebrow="Ādhāra">Sources and further study</SectionHeading>

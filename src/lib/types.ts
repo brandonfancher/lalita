@@ -287,6 +287,12 @@ export interface Commentary {
   history?: string;
   /** Practice or contemplative notes. Markdown. */
   practice?: string;
+  /**
+   * Speculative or devotional readings that go beyond the classical
+   * commentary. Kept apart from `history` so the two are never confused.
+   * Markdown.
+   */
+  reflections?: string;
   crossReferences?: CrossReference[];
 }
 
