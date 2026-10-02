@@ -25,7 +25,7 @@ export default function HomePage() {
           studied one shloka at a time
         </p>
         <p className="mx-auto mt-6 max-w-xl text-[1.1rem] leading-relaxed text-ink-muted">
-          Chant each verse with the original recording, read it in both scripts, take apart every
+          Chant each verse with the recording, read it in both scripts, take apart every
           name, and learn Sanskrit through the text itself.
         </p>
 
@@ -54,7 +54,7 @@ export default function HomePage() {
         <Feature
           numeral="i"
           title="Chant it"
-          body="Every shloka plays from the original recording, looping and slowing down as you commit it to memory."
+          body="Every shloka plays from the recording, looping and slowing down as you commit it to memory."
         />
         <Feature
           numeral="ii"
