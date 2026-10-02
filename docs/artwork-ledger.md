@@ -84,6 +84,11 @@ second time it is needed.
 | Kadamba | A head is a ball of radius 9–14: a radial gradient from `--art-core` (upper left) through `--art-saffron` to `--art-vermilion`, stippled with tiny `--art-ivory` florets in a sunflower spiral, and ringed by short `--art-saffron` hairline styles that stand out to about 1.3 times its radius, each tipped with an `--art-ivory` dot edged in gold (`m-twinkle`, three groups). The pale tips make it a kadamba and not an orange or a berry. Heads come in sprays (mañjarī) of four or five on short `--leaf` stalks, among broad, pointed, glossy `--leaf` leaves with a `--gold-soft` midrib and curved veins, long enough to show beyond the heads | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | Ear pendant (tāṭaṅka) | Hung from a gold stud in the lobe (a ruby in it on the sun's side, a pearl on the moon's), a short gold link with gold beads, a bail, the disc, and a drop beneath (a `Ruby` under the sun, a pearl under the moon). Viewer's left is her right ear: the sun there, the moon on the other side. Each pendant swings from its lobe (`m-sway`, see Motion additions) | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | The moon as a little boat (uḍupa) | A small gold crescent, horns up, radius 13, riding the top of the moon's disc as its bail, with three `--art-vermilion` beads along the hull and the ring for the link between its horns | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
+| Balance (tulā) | A gold beam, thickest at the middle and tapering to bud finials, with four `--gold-soft` bands, a carved centre line, and a boss at the pivot. It hangs in a fork (two gold cheeks under a crossbar with a red mark at its centre) from a ring and a short chain. A tongue stands at right angles to the beam, so when the beam tips, the tongue leans out from under the red mark toward the heavier pan. Each pan is a shallow gold bowl on three cords (one behind) from a ring under a hook at the beam's end: a `--gold-soft` inside, a beaded front rim, a carved band, a saffron sheen, and a bud drop beneath. The pans swing from their hooks (`m-sway`) | Inline (`tipped-scales.tsx`) | Shloka 9 |
+| Her light in a vessel | A pool of light filling the vessel (a radial gradient from `--art-core` through `--art-saffron` to `--art-vermilion`), a soft tall glow rising from it, and the bindu hanging in the glow just above the surface, not on it: a bright dot on a red ellipse reads as an eye. Her radiance (the 108 hairlines) starts at the bindu and fades in from nothing | Inline (`tipped-scales.tsx`) | Shloka 9 |
+| Ruby mirror (ādarśa) | A round hand mirror: a flat `--art-vermilion` face with a soft `--art-crimson` bevel at its edge and two diagonal `--art-core` sheen streaks, in an `--art-carve` setting, a beaded gold frame, and a gold handle with a collar and a bud foot. A shaded, domed face, or a crest of petals on the frame, made it a pomegranate | Inline (`tipped-scales.tsx`) | Shloka 9 |
+| Coral (vidruma) | A branching sprig of round-capped `--art-vermilion` strokes over slightly wider `--art-crimson` ones, knobbed tips, a few tiny `--art-ivory` polyps (fresh coral is alive; `m-twinkle`), in a small gold mount | Inline (`tipped-scales.tsx`) | Shloka 9 |
+| Bimba (ivy gourd) | A `--leaf` creeper with five-lobed, heart-based leaves veined in `--gold-soft`, coiling tendrils, and small oval gourds on short stalks. Each gourd is scarlet only on the side facing her light and `--leaf` on the far side, with pale stripes there and a core sheen on the red side: Śaṅkara's bimba is red only by reflecting her | Inline (`tipped-scales.tsx`) | Shloka 9 |
 | Water in a channel | Filled with the miniature painters' pattern of small arcs, each row set half an arc along (a `<pattern>`, `--gold-soft`), over a soft saffron glow, between gold banks with a fainter outer kerb. Rounded, organic banks: straight banks and square corners read as a pipe, a band of constant width as a snake. Dashed flow lines read as road markings by lamplight | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -424,6 +429,48 @@ One entry per finished artwork, in the order they were made.
   before. On phones the pendants sit behind the chant bar, and in the practice miniature on phones
   the sun lies under the last syllables of the second line, which stay legible in both themes.
 
+### Shloka 9: The tipped scales
+
+- **Component:** `tipped-scales.tsx` (defs prefix `sa9`)
+- **Composition:** a weighing, as Saundaryalaharī 62 stages the verse. A gold balance hangs from a
+  chain in the crown zone, its beam over the card and tipped 10° to the left. The tongue leans out
+  from under the fork's red mark. On the left, the sunk pan holds her light: a pool of light, a
+  rising glow, and the bindu, with the 108 hairlines of her radiance spreading across the plate.
+  On the right, the lifted pan holds the standards of red, outweighed: a ruby hand mirror leaning
+  toward her, and a sprig of coral. The bimba creeper trails along the ground under both pans
+  without climbing on. Its fruits are red only on the side that faces her, so the fruits left of
+  her pan are red on their right. The first composition built on an imbalance, the first to draw
+  what she outdoes rather than what adorns her, and the first with its focus off-centre (low on
+  the left, answered by a raised mass on the right).
+- **Name → part:**
+  - Padmarāgaśilādarśaparibhāvikapolabhūḥ → `mirror`: the ruby mirror on the lifted pan, with a
+    dull copy of her light in its face
+  - Navavidrumabimbaśrīnyakkāriradanacchadā → `coral-bimba`: the coral on the lifted pan, and the
+    bimba creeper on the ground, its tendrils curling away (one reaches up toward the pan and
+    coils back short of it)
+  - Intro, *the balance* → `scales`: chain, fork, tongue, beam, cords, and both pans
+  - Intro, *her light* → `light`: the pool, the rising glow, the bindu, and the radiance. The
+    first intro to point at two parts
+  - Detail → `reflections`: a tiny sun and moon on the pool, Shloka 8's earrings reflected in
+    her cheek (Saundaryalaharī 59)
+- **Palette:** vermilion, saffron, and gold; `--art-crimson` for the mirror's bevel and the coral's
+  shading, `--art-ivory` for the polyps, `--leaf` for the creeper, `--art-moon` for the tiny moon.
+  No additions.
+- **Motion:** `m-sway` (each pan with everything in it, from its hook, a beat apart),
+  `m-shimmer` (her glow and radiance, the mirror's dull reflection), and `m-twinkle` (the polyps
+  and the reflections).
+- **Notes:** The title stays on one line and left of the artwork, so the card sits in its usual
+  window. The beam lies above it, and both pans hang below it within x 112–528. The first render
+  was too thin to be striking: the beam, fork, and pans were thickened, and the tongue lengthened
+  until its lean reads. The first mirror, with a domed, shaded face and a crest of petals, read as
+  a pomegranate. Her light was first a solid red dome in the pan, which read as a mushroom cap.
+  A pool with a rising glow made it light, but the glow first had a visible edge (a second sun) and
+  was softened. The radiance first started 30 units out, which left a dark disc round the bindu by
+  lamplight; it now fades in from the bindu. On phones by lamplight the bindu's glow sits under
+  the last syllables of the second line in the practice miniature; they stay legible.
+
 ## Open questions
 
-- None at present. Record here anything a future artwork should settle.
+- The radiance of 108 hairlines is now drawn inline three times (Shlokas 1, 8, and 9), each a
+  little differently (start, lengths, fade). If a fourth artwork needs it, consider a `radiance()`
+  helper in `primitives.tsx`, kept byte-for-byte for the existing three.

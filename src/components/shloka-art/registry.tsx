@@ -5,6 +5,7 @@ import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
+import { TippedScales } from "./tipped-scales";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
 import { WholeImage } from "./whole-image";
@@ -366,6 +367,41 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: the moon hangs from a clasp shaped like a little boat. The
           verse&rsquo;s word for the moon is <i>uḍupa</i>, a raft, for the boat-shaped half moon, and it hides in the{" "}
           <i>o</i> of <i>tapanoḍupa</i>.
+        </>
+      ),
+    },
+  },
+  "009": {
+    Art: TippedScales,
+    intro: (Spot) => (
+      <>
+        Both names are contests that the thing she is compared to loses, so the artwork stages them as Śaṅkara does, as
+        a weighing. The <Spot part="scales">balance</Spot> has tipped, and its tongue leans toward the pan that sank,
+        where <Spot part="light">her light</Spot> lies, red by its own nature. Every element comes from one of the two
+        names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 23,
+        part: "mirror",
+        depicts:
+          "In the pan that rose stands a round mirror cut from a single ruby, leaning toward her side. Its polished face catches only a dull copy of her light.",
+      },
+      {
+        nama: 24,
+        part: "coral-bimba",
+        depicts:
+          "Beside the mirror stands a sprig of fresh coral. The bimba creeper lies on the ground beneath and won't climb on: its tendrils curl away, and its fruits are red only on the side that faces her.",
+      },
+    ],
+    detail: {
+      part: "reflections",
+      body: (
+        <>
+          There is also a small detail for the attentive: on the pool of light that fills her pan float two
+          reflections, a sun and a moon. They are the earrings of the verse before, reflected in her cheek, which is how
+          Śaṅkara explains why a cheek is compared to a mirror at all.
         </>
       ),
     },
