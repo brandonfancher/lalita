@@ -7,6 +7,7 @@ import { ExternalLink } from "lucide-react";
 import { ChantBar } from "@/components/chant-bar";
 import { FitText } from "@/components/fit-text";
 import { ScriptToggle } from "@/components/script-toggle";
+import { rememberPracticeRange } from "@/lib/practice-range";
 import type { ChantTiming } from "@/lib/types";
 import { cn, practiceLabel } from "@/lib/utils";
 
@@ -63,6 +64,10 @@ export function PracticeSession({
 
   useEffect(() => {
     setActiveToken(null);
+  }, [from, to]);
+
+  useEffect(() => {
+    rememberPracticeRange(from, to);
   }, [from, to]);
 
   const submit = (e: FormEvent) => {

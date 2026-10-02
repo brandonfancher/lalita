@@ -1,6 +1,9 @@
+import { cookies } from "next/headers";
+
 import { PracticeSession, type PracticeVerse } from "@/components/practice-session";
 import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
 import { getModulesInRange } from "@/lib/content";
+import { PRACTICE_RANGE_COOKIE, parsePracticeRange } from "@/lib/practice-range";
 import type { ChantTiming, StudyModule } from "@/lib/types";
 import { practiceLabel } from "@/lib/utils";
 
@@ -63,8 +66,12 @@ export default async function PracticePage({
   searchParams: Promise<{ from?: string | string[]; to?: string | string[] }>;
 }) {
   const params = await searchParams;
-  const fromRaw = parseBound(params.from, DEFAULT_FROM);
-  const toRaw = parseBound(params.to, DEFAULT_TO);
+  const remembered =
+    params.from === undefined && params.to === undefined
+      ? parsePracticeRange((await cookies()).get(PRACTICE_RANGE_COOKIE)?.value)
+      : null;
+  const fromRaw = parseBound(remembered?.from ?? params.from, DEFAULT_FROM);
+  const toRaw = parseBound(remembered?.to ?? params.to, DEFAULT_TO);
   const from = Math.min(fromRaw, toRaw);
   const to = Math.max(fromRaw, toRaw);
 
