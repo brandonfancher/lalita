@@ -1,5 +1,5 @@
 /**
- * Shloka 1 — "Born from the fire of awareness".
+ * Shloka 1 — "Risen from the fire of awareness".
  *
  * A prabhāvalī, the flaming aureole that frames a temple image, drawn from
  * the five names of the verse. Which name each part answers to is written up
