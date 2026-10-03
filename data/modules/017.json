@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्विता",
           "iast": "kāmeśajñātasaubhāgyamārdavorudvayānvitā",
+          "hyphenated": {
+            "deva": "कामेश-ज्ञात-सौभाग्य-मार्दवोरु-द्वयान्विता",
+            "iast": "kāmeśa-jñāta-saubhāgya-mārdavoru-dvayānvitā"
+          },
           "namaIndices": [
             39
           ],
@@ -453,6 +457,10 @@
           "id": "l1-t0",
           "deva": "माणिक्यमुकुटाकारजानुद्वयविराजिता",
           "iast": "māṇikyamukuṭākārajānudvayavirājitā",
+          "hyphenated": {
+            "deva": "माणिक्य-मुकुटाकार-जानु-द्वय-विराजिता",
+            "iast": "māṇikya-mukuṭākāra-jānu-dvaya-virājitā"
+          },
           "namaIndices": [
             40
           ],
@@ -853,8 +861,16 @@
       "index": 39,
       "deva": "कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्विता",
       "iast": "kāmeśajñātasaubhāgyamārdavorudvayānvitā",
+      "hyphenated": {
+        "deva": "कामेश-ज्ञात-सौभाग्य-मार्दवोरु-द्वयान्विता",
+        "iast": "kāmeśa-jñāta-saubhāgya-mārdavoru-dvayānvitā"
+      },
       "namavaliDeva": "कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्वितायै",
       "namavaliIast": "kāmeśajñātasaubhāgyamārdavorudvayānvitāyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश-ज्ञात-सौभाग्य-मार्दवोरु-द्वयान्वितायै",
+        "iast": "kāmeśa-jñāta-saubhāgya-mārdavoru-dvayānvitāyai"
+      },
       "gloss": "Whose Thighs Only Kāmeśa Knows",
       "translation": "The beauty and softness of her thighs are a thing known to her husband alone, and to no other witness.",
       "aksaras": [
@@ -1387,8 +1403,16 @@
       "index": 40,
       "deva": "माणिक्यमुकुटाकारजानुद्वयविराजिता",
       "iast": "māṇikyamukuṭākārajānudvayavirājitā",
+      "hyphenated": {
+        "deva": "माणिक्य-मुकुटाकार-जानु-द्वय-विराजिता",
+        "iast": "māṇikya-mukuṭākāra-jānu-dvaya-virājitā"
+      },
       "namavaliDeva": "माणिक्यमुकुटाकारजानुद्वयविराजितायै",
       "namavaliIast": "māṇikyamukuṭākārajānudvayavirājitāyai",
+      "namavaliHyphenated": {
+        "deva": "माणिक्य-मुकुटाकार-जानु-द्वय-विराजितायै",
+        "iast": "māṇikya-mukuṭākāra-jānu-dvaya-virājitāyai"
+      },
       "gloss": "Whose Knees Are Crowns Of Ruby",
       "translation": "Her two knees are rounded and glowing, shaped like a pair of crowns cut out of ruby.",
       "aksaras": [

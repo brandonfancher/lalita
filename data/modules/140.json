@@ -126,6 +126,10 @@
           "id": "l0-t1",
           "deva": "सर्वतन्त्रेशी",
           "iast": "sarvatantreśī",
+          "hyphenated": {
+            "deva": "सर्व-तन्त्रेशी",
+            "iast": "sarva-tantreśī"
+          },
           "namaIndices": [
             724
           ],
@@ -280,6 +284,10 @@
           "id": "l0-t2",
           "deva": "दक्षिणामूर्तिरूपिणी",
           "iast": "dakṣiṇāmūrtirūpiṇī",
+          "hyphenated": {
+            "deva": "दक्षिणा-मूर्ति-रूपिणी",
+            "iast": "dakṣiṇā-mūrti-rūpiṇī"
+          },
           "namaIndices": [
             725
           ],
@@ -511,6 +519,10 @@
           "id": "l1-t0",
           "deva": "सनकादिसमाराध्या",
           "iast": "sanakādisamārādhyā",
+          "hyphenated": {
+            "deva": "सनकादि-समाराध्या",
+            "iast": "sanakādi-samārādhyā"
+          },
           "namaIndices": [
             726
           ],
@@ -707,6 +719,10 @@
           "id": "l1-t1",
           "deva": "शिवज्ञानप्रदायिनी",
           "iast": "śivajñānapradāyinī",
+          "hyphenated": {
+            "deva": "शिव-ज्ञान-प्रदायिनी",
+            "iast": "śiva-jñāna-pradāyinī"
+          },
           "namaIndices": [
             727
           ],
@@ -1065,8 +1081,16 @@
       "index": 724,
       "deva": "सर्वतन्त्रेशी",
       "iast": "sarvatantreśī",
+      "hyphenated": {
+        "deva": "सर्व-तन्त्रेशी",
+        "iast": "sarva-tantreśī"
+      },
       "namavaliDeva": "सर्वतन्त्रेश्यै",
       "namavaliIast": "sarvatantreśyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-तन्त्रेश्यै",
+        "iast": "sarva-tantreśyai"
+      },
       "gloss": "Ruler Of All The Tantras",
       "translation": "Every tantra, whatever its school, is under her command and describes her.",
       "aksaras": [
@@ -1263,8 +1287,16 @@
       "index": 725,
       "deva": "दक्षिणामूर्तिरूपिणी",
       "iast": "dakṣiṇāmūrtirūpiṇī",
+      "hyphenated": {
+        "deva": "दक्षिणा-मूर्ति-रूपिणी",
+        "iast": "dakṣiṇā-mūrti-rūpiṇī"
+      },
       "namavaliDeva": "दक्षिणामूर्तिरूपिण्यै",
       "namavaliIast": "dakṣiṇāmūrtirūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "दक्षिणा-मूर्ति-रूपिण्यै",
+        "iast": "dakṣiṇā-mūrti-rūpiṇyai"
+      },
       "gloss": "Embodied As Dakṣiṇāmūrti",
       "translation": "She takes the shape of Dakṣiṇāmūrti, the south-facing teacher who instructs by keeping silent.",
       "aksaras": [
@@ -1533,8 +1565,16 @@
       "index": 726,
       "deva": "सनकादिसमाराध्या",
       "iast": "sanakādisamārādhyā",
+      "hyphenated": {
+        "deva": "सनकादि-समाराध्या",
+        "iast": "sanakādi-samārādhyā"
+      },
       "namavaliDeva": "सनकादिसमाराध्यायै",
       "namavaliIast": "sanakādisamārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "सनकादि-समाराध्यायै",
+        "iast": "sanakādi-samārādhyāyai"
+      },
       "gloss": "Worshipped By Sanaka And His Brothers",
       "translation": "Sanaka and the other mind-born sons of Brahmā, forever boys, give her their full worship.",
       "aksaras": [
@@ -1773,8 +1813,16 @@
       "index": 727,
       "deva": "शिवज्ञानप्रदायिनी",
       "iast": "śivajñānapradāyinī",
+      "hyphenated": {
+        "deva": "शिव-ज्ञान-प्रदायिनी",
+        "iast": "śiva-jñāna-pradāyinī"
+      },
       "namavaliDeva": "शिवज्ञानप्रदायिन्यै",
       "namavaliIast": "śivajñānapradāyinyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-ज्ञान-प्रदायिन्यै",
+        "iast": "śiva-jñāna-pradāyinyai"
+      },
       "gloss": "Giver Of The Knowledge Of Śiva",
       "translation": "The knowledge in which Śiva is finally recognised is a gift only she can make.",
       "aksaras": [

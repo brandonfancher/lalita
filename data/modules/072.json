@@ -64,6 +64,10 @@
           "id": "l0-t1",
           "deva": "राकेन्दुवदना",
           "iast": "rākenduvadanā",
+          "hyphenated": {
+            "deva": "राकेन्दु-वदना",
+            "iast": "rākendu-vadanā"
+          },
           "namaIndices": [
             314
           ],
@@ -219,6 +223,10 @@
           "id": "l0-t2",
           "deva": "रतिरूपा",
           "iast": "ratirūpā",
+          "hyphenated": {
+            "deva": "रति-रूपा",
+            "iast": "rati-rūpā"
+          },
           "namaIndices": [
             315
           ],
@@ -318,6 +326,10 @@
           "id": "l0-t3",
           "deva": "रतिप्रिया",
           "iast": "ratipriyā",
+          "hyphenated": {
+            "deva": "रति-प्रिया",
+            "iast": "rati-priyā"
+          },
           "namaIndices": [
             316
           ],
@@ -725,6 +737,10 @@
           "id": "l1-t3",
           "deva": "रमणलम्पटा",
           "iast": "ramaṇalampaṭā",
+          "hyphenated": {
+            "deva": "रमण-लम्पटा",
+            "iast": "ramaṇa-lampaṭā"
+          },
           "namaIndices": [
             320
           ],
@@ -925,8 +941,16 @@
       "index": 314,
       "deva": "राकेन्दुवदना",
       "iast": "rākenduvadanā",
+      "hyphenated": {
+        "deva": "राकेन्दु-वदना",
+        "iast": "rākendu-vadanā"
+      },
       "namavaliDeva": "राकेन्दुवदनायै",
       "namavaliIast": "rākenduvadanāyai",
+      "namavaliHyphenated": {
+        "deva": "राकेन्दु-वदनायै",
+        "iast": "rākendu-vadanāyai"
+      },
       "gloss": "Full-Moon-Faced",
       "translation": "Her face carries the round unclouded brightness of the moon on the night it comes to the full.",
       "aksaras": [
@@ -1124,8 +1148,16 @@
       "index": 315,
       "deva": "रतिरूपा",
       "iast": "ratirūpā",
+      "hyphenated": {
+        "deva": "रति-रूपा",
+        "iast": "rati-rūpā"
+      },
       "namavaliDeva": "रतिरूपायै",
       "namavaliIast": "ratirūpāyai",
+      "namavaliHyphenated": {
+        "deva": "रति-रूपायै",
+        "iast": "rati-rūpāyai"
+      },
       "gloss": "Shaped Of Delight",
       "translation": "She wears the form of Rati, so that erotic delight is not something she has but something she is.",
       "aksaras": [
@@ -1253,8 +1285,16 @@
       "index": 316,
       "deva": "रतिप्रिया",
       "iast": "ratipriyā",
+      "hyphenated": {
+        "deva": "रति-प्रिया",
+        "iast": "rati-priyā"
+      },
       "namavaliDeva": "रतिप्रियायै",
       "namavaliIast": "ratipriyāyai",
+      "namavaliHyphenated": {
+        "deva": "रति-प्रियायै",
+        "iast": "rati-priyāyai"
+      },
       "gloss": "Fond Of Delight",
       "translation": "Love's pleasure is dear to her, and she is dear in turn to Rati who presides over it.",
       "aksaras": [
@@ -1755,8 +1795,16 @@
       "index": 320,
       "deva": "रमणलम्पटा",
       "iast": "ramaṇalampaṭā",
+      "hyphenated": {
+        "deva": "रमण-लम्पटा",
+        "iast": "ramaṇa-lampaṭā"
+      },
       "namavaliDeva": "रमणलम्पटायै",
       "namavaliIast": "ramaṇalampaṭāyai",
+      "namavaliHyphenated": {
+        "deva": "रमण-लम्पटायै",
+        "iast": "ramaṇa-lampaṭāyai"
+      },
       "gloss": "Eager For Her Lover",
       "translation": "She is greedy for her consort, wanting nothing else while he is not beside her.",
       "aksaras": [

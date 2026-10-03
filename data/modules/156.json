@@ -142,6 +142,10 @@
           "id": "l0-t1",
           "deva": "प्राणदात्री",
           "iast": "prāṇadātrī",
+          "hyphenated": {
+            "deva": "प्राण-दात्री",
+            "iast": "prāṇa-dātrī"
+          },
           "namaIndices": [
             832
           ],
@@ -271,6 +275,10 @@
           "id": "l0-t2",
           "deva": "पञ्चाशत्पीठरूपिणी",
           "iast": "pañcāśatpīṭharūpiṇī",
+          "hyphenated": {
+            "deva": "पञ्चाशत्-पीठ-रूपिणी",
+            "iast": "pañcāśat-pīṭha-rūpiṇī"
+          },
           "namaIndices": [
             833
           ],
@@ -731,6 +739,10 @@
           "id": "l1-t2",
           "deva": "वीरमाता",
           "iast": "vīramātā",
+          "hyphenated": {
+            "deva": "वीर-माता",
+            "iast": "vīra-mātā"
+          },
           "namaIndices": [
             836
           ],
@@ -830,6 +842,10 @@
           "id": "l1-t3",
           "deva": "वियत्प्रसूः",
           "iast": "viyatprasūḥ",
+          "hyphenated": {
+            "deva": "वियत्-प्रसूः",
+            "iast": "viyat-prasūḥ"
+          },
           "namaIndices": [
             837
           ],
@@ -1122,8 +1138,16 @@
       "index": 832,
       "deva": "प्राणदात्री",
       "iast": "prāṇadātrī",
+      "hyphenated": {
+        "deva": "प्राण-दात्री",
+        "iast": "prāṇa-dātrī"
+      },
       "namavaliDeva": "प्राणदात्र्यै",
       "namavaliIast": "prāṇadātryai",
+      "namavaliHyphenated": {
+        "deva": "प्राण-दात्र्यै",
+        "iast": "prāṇa-dātryai"
+      },
       "gloss": "Giver Of Life",
       "translation": "She hands out breath, and a body becomes a living creature at the moment she does.",
       "aksaras": [
@@ -1281,8 +1305,16 @@
       "index": 833,
       "deva": "पञ्चाशत्पीठरूपिणी",
       "iast": "pañcāśatpīṭharūpiṇī",
+      "hyphenated": {
+        "deva": "पञ्चाशत्-पीठ-रूपिणी",
+        "iast": "pañcāśat-pīṭha-rūpiṇī"
+      },
       "namavaliDeva": "पञ्चाशत्पीठरूपिण्यै",
       "namavaliIast": "pañcāśatpīṭharūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्चाशत्-पीठ-रूपिण्यै",
+        "iast": "pañcāśat-pīṭha-rūpiṇyai"
+      },
       "gloss": "Embodied As The Fifty Seats",
       "translation": "She takes the form of the fifty sacred seats, one for each sound of the alphabet, so that the map of holy places and the map of speech turn out to be one map.",
       "aksaras": [
@@ -1840,8 +1872,16 @@
       "index": 836,
       "deva": "वीरमाता",
       "iast": "vīramātā",
+      "hyphenated": {
+        "deva": "वीर-माता",
+        "iast": "vīra-mātā"
+      },
       "namavaliDeva": "वीरमात्रे",
       "namavaliIast": "vīramātre",
+      "namavaliHyphenated": {
+        "deva": "वीर-मात्रे",
+        "iast": "vīra-mātre"
+      },
       "gloss": "Mother Of Heroes",
       "translation": "She bears heroes, and in the tantric reading her child is the vīra, the adept brave enough for her rites.",
       "aksaras": [
@@ -1969,8 +2009,16 @@
       "index": 837,
       "deva": "वियत्प्रसूः",
       "iast": "viyatprasūḥ",
+      "hyphenated": {
+        "deva": "वियत्-प्रसूः",
+        "iast": "viyat-prasūḥ"
+      },
       "namavaliDeva": "वियत्प्रसुवे",
       "namavaliIast": "viyatprasuve",
+      "namavaliHyphenated": {
+        "deva": "वियत्-प्रसुवे",
+        "iast": "viyat-prasuve"
+      },
       "gloss": "Mother Of Space",
       "translation": "Ether, the first and subtlest of the elements, comes out of her, so that even emptiness has a parent.",
       "aksaras": [

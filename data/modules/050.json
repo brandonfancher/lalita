@@ -110,6 +110,10 @@
           "id": "l0-t1",
           "deva": "नीलचिकुरा",
           "iast": "nīlacikurā",
+          "hyphenated": {
+            "deva": "नील-चिकुरा",
+            "iast": "nīla-cikurā"
+          },
           "namaIndices": [
             185
           ],
@@ -698,6 +702,10 @@
           "id": "l1-t3",
           "deva": "दुःखहन्त्री",
           "iast": "duḥkhahantrī",
+          "hyphenated": {
+            "deva": "दुःख-हन्त्री",
+            "iast": "duḥkha-hantrī"
+          },
           "namaIndices": [
             191
           ],
@@ -827,6 +835,10 @@
           "id": "l1-t4",
           "deva": "सुखप्रदा",
           "iast": "sukhapradā",
+          "hyphenated": {
+            "deva": "सुख-प्रदा",
+            "iast": "sukha-pradā"
+          },
           "namaIndices": [
             192
           ],
@@ -1065,8 +1077,16 @@
       "index": 185,
       "deva": "नीलचिकुरा",
       "iast": "nīlacikurā",
+      "hyphenated": {
+        "deva": "नील-चिकुरा",
+        "iast": "nīla-cikurā"
+      },
       "namavaliDeva": "नीलचिकुरायै",
       "namavaliIast": "nīlacikurāyai",
+      "namavaliHyphenated": {
+        "deva": "नील-चिकुरायै",
+        "iast": "nīla-cikurāyai"
+      },
       "gloss": "Dark-Haired",
       "translation": "The hair of her head is a deep blue-black, falling dark across all that brightness.",
       "aksaras": [
@@ -1829,8 +1849,16 @@
       "index": 191,
       "deva": "दुःखहन्त्री",
       "iast": "duḥkhahantrī",
+      "hyphenated": {
+        "deva": "दुःख-हन्त्री",
+        "iast": "duḥkha-hantrī"
+      },
       "namavaliDeva": "दुःखहन्त्र्यै",
       "namavaliIast": "duḥkhahantryai",
+      "namavaliHyphenated": {
+        "deva": "दुःख-हन्त्र्यै",
+        "iast": "duḥkha-hantryai"
+      },
       "gloss": "Slayer Of Sorrow",
       "translation": "She strikes pain down rather than merely consoling the one who is in it.",
       "aksaras": [
@@ -1988,8 +2016,16 @@
       "index": 192,
       "deva": "सुखप्रदा",
       "iast": "sukhapradā",
+      "hyphenated": {
+        "deva": "सुख-प्रदा",
+        "iast": "sukha-pradā"
+      },
       "namavaliDeva": "सुखप्रदायै",
       "namavaliIast": "sukhapradāyai",
+      "namavaliHyphenated": {
+        "deva": "सुख-प्रदायै",
+        "iast": "sukha-pradāyai"
+      },
       "gloss": "Giver Of Happiness",
       "translation": "Having taken the pain away she does not leave the space empty but fills it with ease.",
       "aksaras": [

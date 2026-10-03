@@ -120,6 +120,10 @@
           "id": "l0-t1",
           "deva": "महाकाली",
           "iast": "mahākālī",
+          "hyphenated": {
+            "deva": "महा-काली",
+            "iast": "mahā-kālī"
+          },
           "namaIndices": [
             751
           ],
@@ -219,6 +223,10 @@
           "id": "l0-t2",
           "deva": "महाग्रासा",
           "iast": "mahāgrāsā",
+          "hyphenated": {
+            "deva": "महा-ग्रासा",
+            "iast": "mahā-grāsā"
+          },
           "namaIndices": [
             752
           ],
@@ -602,6 +610,10 @@
           "id": "l1-t2",
           "deva": "चण्डमुण्डासुरनिषूदिनी",
           "iast": "caṇḍamuṇḍāsuraniṣūdinī",
+          "hyphenated": {
+            "deva": "चण्ड-मुण्डासुर-निषूदिनी",
+            "iast": "caṇḍa-muṇḍāsura-niṣūdinī"
+          },
           "namaIndices": [
             756
           ],
@@ -1002,8 +1014,16 @@
       "index": 751,
       "deva": "महाकाली",
       "iast": "mahākālī",
+      "hyphenated": {
+        "deva": "महा-काली",
+        "iast": "mahā-kālī"
+      },
       "namavaliDeva": "महाकाल्यै",
       "namavaliIast": "mahākālyai",
+      "namavaliHyphenated": {
+        "deva": "महा-काल्यै",
+        "iast": "mahā-kālyai"
+      },
       "gloss": "Great Kālī",
       "translation": "She is Mahākālī, the dark one who outlasts time by devouring it.",
       "aksaras": [
@@ -1131,8 +1151,16 @@
       "index": 752,
       "deva": "महाग्रासा",
       "iast": "mahāgrāsā",
+      "hyphenated": {
+        "deva": "महा-ग्रासा",
+        "iast": "mahā-grāsā"
+      },
       "namavaliDeva": "महाग्रासायै",
       "namavaliIast": "mahāgrāsāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-ग्रासायै",
+        "iast": "mahā-grāsāyai"
+      },
       "gloss": "Of The Great Devouring",
       "translation": "At the end of an age the whole of creation is one mouthful to her.",
       "aksaras": [
@@ -1609,8 +1637,16 @@
       "index": 756,
       "deva": "चण्डमुण्डासुरनिषूदिनी",
       "iast": "caṇḍamuṇḍāsuraniṣūdinī",
+      "hyphenated": {
+        "deva": "चण्ड-मुण्डासुर-निषूदिनी",
+        "iast": "caṇḍa-muṇḍāsura-niṣūdinī"
+      },
       "namavaliDeva": "चण्डमुण्डासुरनिषूदिन्यै",
       "namavaliIast": "caṇḍamuṇḍāsuraniṣūdinyai",
+      "namavaliHyphenated": {
+        "deva": "चण्ड-मुण्डासुर-निषूदिन्यै",
+        "iast": "caṇḍa-muṇḍāsura-niṣūdinyai"
+      },
       "gloss": "Slayer Of The Asuras Caṇḍa And Muṇḍa",
       "translation": "She struck down Caṇḍa and Muṇḍa, the two demon captains, and took the name Cāmuṇḍā from them.",
       "aksaras": [

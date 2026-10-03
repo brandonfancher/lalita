@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "पद्मरागशिलादर्शपरिभाविकपोलभूः",
           "iast": "padmarāgaśilādarśaparibhāvikapolabhūḥ",
+          "hyphenated": {
+            "deva": "पद्म-राग-शिलादर्श-परिभावि-कपोलभूः",
+            "iast": "padma-rāga-śilādarśa-paribhāvi-kapolabhūḥ"
+          },
           "namaIndices": [
             23
           ],
@@ -394,6 +398,10 @@
           "id": "l1-t0",
           "deva": "नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदा",
           "iast": "navavidrumabimbaśrīnyakkāriradanacchadā",
+          "hyphenated": {
+            "deva": "नव-विद्रुम-बिम्ब-श्री-न्यक्कारि-रदन-च्छदा",
+            "iast": "nava-vidruma-bimba-śrī-nyakkāri-radana-cchadā"
+          },
           "namaIndices": [
             24
           ],
@@ -819,8 +827,16 @@
       "index": 23,
       "deva": "पद्मरागशिलादर्शपरिभाविकपोलभूः",
       "iast": "padmarāgaśilādarśaparibhāvikapolabhūḥ",
+      "hyphenated": {
+        "deva": "पद्म-राग-शिलादर्श-परिभावि-कपोलभूः",
+        "iast": "padma-rāga-śilādarśa-paribhāvi-kapolabhūḥ"
+      },
       "namavaliDeva": "पद्मरागशिलादर्शपरिभाविकपोलभुवे",
       "namavaliIast": "padmarāgaśilādarśaparibhāvikapolabhuve",
+      "namavaliHyphenated": {
+        "deva": "पद्म-राग-शिलादर्श-परिभावि-कपोलभुवे",
+        "iast": "padma-rāga-śilādarśa-paribhāvi-kapolabhuve"
+      },
       "gloss": "Whose Cheeks Shame Ruby Mirrors",
       "translation": "Her cheeks are so smooth and so deeply flushed that a mirror cut from ruby would look dull held beside them.",
       "aksaras": [
@@ -1295,8 +1311,16 @@
       "index": 24,
       "deva": "नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदा",
       "iast": "navavidrumabimbaśrīnyakkāriradanacchadā",
+      "hyphenated": {
+        "deva": "नव-विद्रुम-बिम्ब-श्री-न्यक्कारि-रदन-च्छदा",
+        "iast": "nava-vidruma-bimba-śrī-nyakkāri-radana-cchadā"
+      },
       "namavaliDeva": "नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदायै",
       "namavaliIast": "navavidrumabimbaśrīnyakkāriradanacchadāyai",
+      "namavaliHyphenated": {
+        "deva": "नव-विद्रुम-बिम्ब-श्री-न्यक्कारि-रदन-च्छदायै",
+        "iast": "nava-vidruma-bimba-śrī-nyakkāri-radana-cchadāyai"
+      },
       "gloss": "Whose Lips Outdo Coral And Bimba",
       "translation": "Fresh coral and the ripe bimba fruit are the two standards of red, and her lips leave both of them behind.",
       "aksaras": [

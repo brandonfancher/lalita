@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मूलाधारैकनिलया",
           "iast": "mūlādhāraikanilayā",
+          "hyphenated": {
+            "deva": "मूलाधारैक-निलया",
+            "iast": "mūlādhāraika-nilayā"
+          },
           "namaIndices": [
             99
           ],
@@ -201,6 +205,10 @@
           "id": "l0-t1",
           "deva": "ब्रह्मग्रन्थिविभेदिनी",
           "iast": "brahmagranthivibhedinī",
+          "hyphenated": {
+            "deva": "ब्रह्म-ग्रन्थि-विभेदिनी",
+            "iast": "brahma-granthi-vibhedinī"
+          },
           "namaIndices": [
             100
           ],
@@ -651,6 +659,10 @@
           "id": "l1-t1",
           "deva": "विष्णुग्रन्थिविभेदिनी",
           "iast": "viṣṇugranthivibhedinī",
+          "hyphenated": {
+            "deva": "विष्णु-ग्रन्थि-विभेदिनी",
+            "iast": "viṣṇu-granthi-vibhedinī"
+          },
           "namaIndices": [
             102
           ],
@@ -895,8 +907,16 @@
       "index": 99,
       "deva": "मूलाधारैकनिलया",
       "iast": "mūlādhāraikanilayā",
+      "hyphenated": {
+        "deva": "मूलाधारैक-निलया",
+        "iast": "mūlādhāraika-nilayā"
+      },
       "namavaliDeva": "मूलाधारैकनिलयायै",
       "namavaliIast": "mūlādhāraikanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "मूलाधारैक-निलयायै",
+        "iast": "mūlādhāraika-nilayāyai"
+      },
       "gloss": "Whose One Seat Is The Root Centre",
       "translation": "At the base of the spine is the centre she calls her single dwelling, the ground on which the rest is built.",
       "aksaras": [
@@ -1141,8 +1161,16 @@
       "index": 100,
       "deva": "ब्रह्मग्रन्थिविभेदिनी",
       "iast": "brahmagranthivibhedinī",
+      "hyphenated": {
+        "deva": "ब्रह्म-ग्रन्थि-विभेदिनी",
+        "iast": "brahma-granthi-vibhedinī"
+      },
       "namavaliDeva": "ब्रह्मग्रन्थिविभेदिन्यै",
       "namavaliIast": "brahmagranthivibhedinyai",
+      "namavaliHyphenated": {
+        "deva": "ब्रह्म-ग्रन्थि-विभेदिन्यै",
+        "iast": "brahma-granthi-vibhedinyai"
+      },
       "gloss": "Who Cuts The Knot Of Brahmā",
       "translation": "The first of the three knots that hold the rising energy down is untied by her, and the way upward opens.",
       "aksaras": [
@@ -1673,8 +1701,16 @@
       "index": 102,
       "deva": "विष्णुग्रन्थिविभेदिनी",
       "iast": "viṣṇugranthivibhedinī",
+      "hyphenated": {
+        "deva": "विष्णु-ग्रन्थि-विभेदिनी",
+        "iast": "viṣṇu-granthi-vibhedinī"
+      },
       "namavaliDeva": "विष्णुग्रन्थिविभेदिन्यै",
       "namavaliIast": "viṣṇugranthivibhedinyai",
+      "namavaliHyphenated": {
+        "deva": "विष्णु-ग्रन्थि-विभेदिन्यै",
+        "iast": "viṣṇu-granthi-vibhedinyai"
+      },
       "gloss": "Piercer Of The Viṣṇu Knot",
       "translation": "She splits the knot that bears Viṣṇu's name, the second of the three ties that hold the rising power in check.",
       "aksaras": [

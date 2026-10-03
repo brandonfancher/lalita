@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मूर्ताऽमूर्ताऽनित्यतृप्ता",
           "iast": "mūrtā'mūrtā'nityatṛptā",
+          "hyphenated": {
+            "deva": "मूर्ताऽमूर्ताऽनित्य-तृप्ता",
+            "iast": "mūrtā'mūrtā'nitya-tṛptā"
+          },
           "namaIndices": [
             813,
             814,
@@ -296,6 +300,10 @@
           "id": "l0-t1",
           "deva": "मुनिमानसहंसिका",
           "iast": "munimānasahaṃsikā",
+          "hyphenated": {
+            "deva": "मुनि-मानस-हंसिका",
+            "iast": "muni-mānasa-haṃsikā"
+          },
           "namaIndices": [
             816
           ],
@@ -490,6 +498,10 @@
           "id": "l1-t0",
           "deva": "सत्यव्रता",
           "iast": "satyavratā",
+          "hyphenated": {
+            "deva": "सत्य-व्रता",
+            "iast": "satya-vratā"
+          },
           "namaIndices": [
             817
           ],
@@ -605,6 +617,10 @@
           "id": "l1-t1",
           "deva": "सत्यरूपा",
           "iast": "satyarūpā",
+          "hyphenated": {
+            "deva": "सत्य-रूपा",
+            "iast": "satya-rūpā"
+          },
           "namaIndices": [
             818
           ],
@@ -712,6 +728,10 @@
           "id": "l1-t2",
           "deva": "सर्वान्तर्यामिनी",
           "iast": "sarvāntaryāminī",
+          "hyphenated": {
+            "deva": "सर्वान्तर्-यामिनी",
+            "iast": "sarvāntar-yāminī"
+          },
           "namaIndices": [
             819
           ],
@@ -1154,8 +1174,16 @@
       "index": 815,
       "deva": "अनित्यतृप्ता",
       "iast": "anityatṛptā",
+      "hyphenated": {
+        "deva": "अनित्य-तृप्ता",
+        "iast": "anitya-tṛptā"
+      },
       "namavaliDeva": "अनित्यतृप्तायै",
       "namavaliIast": "anityatṛptāyai",
+      "namavaliHyphenated": {
+        "deva": "अनित्य-तृप्तायै",
+        "iast": "anitya-tṛptāyai"
+      },
       "gloss": "Content With Perishable Gifts",
       "translation": "She is satisfied by what fades — a flower, a handful of rice, a passing thought — and asks no offering that will last.",
       "aksaras": [
@@ -1342,8 +1370,16 @@
       "index": 816,
       "deva": "मुनिमानसहंसिका",
       "iast": "munimānasahaṃsikā",
+      "hyphenated": {
+        "deva": "मुनि-मानस-हंसिका",
+        "iast": "muni-mānasa-haṃsikā"
+      },
       "namavaliDeva": "मुनिमानसहंसिकायै",
       "namavaliIast": "munimānasahaṃsikāyai",
+      "namavaliHyphenated": {
+        "deva": "मुनि-मानस-हंसिकायै",
+        "iast": "muni-mānasa-haṃsikāyai"
+      },
       "gloss": "Swan On The Sages' Mind-Lake",
       "translation": "The quieted mind of a sage is her lake Mānasa, and she floats there as a swan that will settle on no more troubled water.",
       "aksaras": [
@@ -1574,8 +1610,16 @@
       "index": 817,
       "deva": "सत्यव्रता",
       "iast": "satyavratā",
+      "hyphenated": {
+        "deva": "सत्य-व्रता",
+        "iast": "satya-vratā"
+      },
       "namavaliDeva": "सत्यव्रतायै",
       "namavaliIast": "satyavratāyai",
+      "namavaliHyphenated": {
+        "deva": "सत्य-व्रतायै",
+        "iast": "satya-vratāyai"
+      },
       "gloss": "Whose Vow Is Truth",
       "translation": "Truth is the observance she keeps, so that what she says is the case by her saying it.",
       "aksaras": [
@@ -1719,8 +1763,16 @@
       "index": 818,
       "deva": "सत्यरूपा",
       "iast": "satyarūpā",
+      "hyphenated": {
+        "deva": "सत्य-रूपा",
+        "iast": "satya-rūpā"
+      },
       "namavaliDeva": "सत्यरूपायै",
       "namavaliIast": "satyarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "सत्य-रूपायै",
+        "iast": "satya-rūpāyai"
+      },
       "gloss": "Whose Form Is The Real",
       "translation": "Whatever is genuinely there in a thing is her form; take away everything that merely seems, and she is the remainder.",
       "aksaras": [
@@ -1856,8 +1908,16 @@
       "index": 819,
       "deva": "सर्वान्तर्यामिणी",
       "iast": "sarvāntaryāmiṇī",
+      "hyphenated": {
+        "deva": "सर्वान्तर्-यामिणी",
+        "iast": "sarvāntar-yāmiṇī"
+      },
       "namavaliDeva": "सर्वान्तर्यामिण्यै",
       "namavaliIast": "sarvāntaryāmiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वान्तर्-यामिण्यै",
+        "iast": "sarvāntar-yāmiṇyai"
+      },
       "gloss": "Inner Ruler Of All",
       "translation": "She governs each creature from inside it, standing nearer to that creature than it stands to itself.",
       "aksaras": [

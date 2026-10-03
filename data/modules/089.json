@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "शिवप्रिया",
           "iast": "śivapriyā",
+          "hyphenated": {
+            "deva": "शिव-प्रिया",
+            "iast": "śiva-priyā"
+          },
           "namaIndices": [
             409
           ],
@@ -127,6 +131,10 @@
           "id": "l0-t1",
           "deva": "शिवपरा",
           "iast": "śivaparā",
+          "hyphenated": {
+            "deva": "शिव-परा",
+            "iast": "śiva-parā"
+          },
           "namaIndices": [
             410
           ],
@@ -331,6 +339,10 @@
           "id": "l0-t3",
           "deva": "शिष्टपूजिता",
           "iast": "śiṣṭapūjitā",
+          "hyphenated": {
+            "deva": "शिष्ट-पूजिता",
+            "iast": "śiṣṭa-pūjitā"
+          },
           "namaIndices": [
             412
           ],
@@ -702,6 +714,10 @@
           "id": "l1-t2",
           "deva": "मनोवाचामगोचरा",
           "iast": "manovācāmagocarā",
+          "hyphenated": {
+            "deva": "मनो-वाचामगोचरा",
+            "iast": "mano-vācāmagocarā"
+          },
           "namaIndices": [
             415
           ],
@@ -887,8 +903,16 @@
       "index": 409,
       "deva": "शिवप्रिया",
       "iast": "śivapriyā",
+      "hyphenated": {
+        "deva": "शिव-प्रिया",
+        "iast": "śiva-priyā"
+      },
       "namavaliDeva": "शिवप्रियायै",
       "namavaliIast": "śivapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-प्रियायै",
+        "iast": "śiva-priyāyai"
+      },
       "gloss": "Dear To Śiva",
       "translation": "Of everything Śiva holds dear, she is the dearest.",
       "aksaras": [
@@ -1031,8 +1055,16 @@
       "index": 410,
       "deva": "शिवपरा",
       "iast": "śivaparā",
+      "hyphenated": {
+        "deva": "शिव-परा",
+        "iast": "śiva-parā"
+      },
       "namavaliDeva": "शिवपरायै",
       "namavaliIast": "śivaparāyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-परायै",
+        "iast": "śiva-parāyai"
+      },
       "gloss": "Intent On Śiva",
       "translation": "Her whole regard rests on Śiva, who is for her the one thing of highest worth.",
       "aksaras": [
@@ -1295,8 +1327,16 @@
       "index": 412,
       "deva": "शिष्टपूजिता",
       "iast": "śiṣṭapūjitā",
+      "hyphenated": {
+        "deva": "शिष्ट-पूजिता",
+        "iast": "śiṣṭa-pūjitā"
+      },
       "namavaliDeva": "शिष्टपूजितायै",
       "namavaliIast": "śiṣṭapūjitāyai",
+      "namavaliHyphenated": {
+        "deva": "शिष्ट-पूजितायै",
+        "iast": "śiṣṭa-pūjitāyai"
+      },
       "gloss": "Worshipped By The Virtuous",
       "translation": "The homage of those schooled in right conduct is directed to her.",
       "aksaras": [
@@ -1750,8 +1790,16 @@
       "index": 415,
       "deva": "मनोवाचामगोचरा",
       "iast": "manovācāmagocarā",
+      "hyphenated": {
+        "deva": "मनो-वाचामगोचरा",
+        "iast": "mano-vācāmagocarā"
+      },
       "namavaliDeva": "मनोवाचामगोचरायै",
       "namavaliIast": "manovācāmagocarāyai",
+      "namavaliHyphenated": {
+        "deva": "मनो-वाचामगोचरायै",
+        "iast": "mano-vācāmagocarāyai"
+      },
       "gloss": "Beyond The Reach Of Mind And Speech",
       "translation": "Thought and word both stop short at the edge of her, having no field in which to grasp her.",
       "aksaras": [

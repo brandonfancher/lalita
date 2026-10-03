@@ -345,6 +345,10 @@
           "id": "l0-t3",
           "deva": "भेदनाशिनी",
           "iast": "bhedanāśinī",
+          "hyphenated": {
+            "deva": "भेद-नाशिनी",
+            "iast": "bheda-nāśinī"
+          },
           "namaIndices": [
             179
           ],
@@ -571,6 +575,10 @@
           "id": "l1-t1",
           "deva": "मृत्युमथनी",
           "iast": "mṛtyumathanī",
+          "hyphenated": {
+            "deva": "मृत्यु-मथनी",
+            "iast": "mṛtyu-mathanī"
+          },
           "namaIndices": [
             181
           ],
@@ -1386,8 +1394,16 @@
       "index": 179,
       "deva": "भेदनाशिनी",
       "iast": "bhedanāśinī",
+      "hyphenated": {
+        "deva": "भेद-नाशिनी",
+        "iast": "bheda-nāśinī"
+      },
       "namavaliDeva": "भेदनाशिन्यै",
       "namavaliIast": "bhedanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "भेद-नाशिन्यै",
+        "iast": "bheda-nāśinyai"
+      },
       "gloss": "Destroyer Of Division",
       "translation": "She dissolves the sense of separateness, beginning with the one between worshipper and worshipped.",
       "aksaras": [
@@ -1666,8 +1682,16 @@
       "index": 181,
       "deva": "मृत्युमथनी",
       "iast": "mṛtyumathanī",
+      "hyphenated": {
+        "deva": "मृत्यु-मथनी",
+        "iast": "mṛtyu-mathanī"
+      },
       "namavaliDeva": "मृत्युमथन्यै",
       "namavaliIast": "mṛtyumathanyai",
+      "namavaliHyphenated": {
+        "deva": "मृत्यु-मथन्यै",
+        "iast": "mṛtyu-mathanyai"
+      },
       "gloss": "Crusher Of Death",
       "translation": "She grinds death down, which is in the end what her worshippers are asking her for.",
       "aksaras": [

@@ -134,6 +134,10 @@
           "id": "l0-t1",
           "deva": "वेदवेद्या",
           "iast": "vedavedyā",
+          "hyphenated": {
+            "deva": "वेद-वेद्या",
+            "iast": "veda-vedyā"
+          },
           "namaIndices": [
             335
           ],
@@ -248,6 +252,10 @@
           "id": "l0-t2",
           "deva": "विन्ध्याचलनिवासिनी",
           "iast": "vindhyācalanivāsinī",
+          "hyphenated": {
+            "deva": "विन्ध्याचल-निवासिनी",
+            "iast": "vindhyācala-nivāsinī"
+          },
           "namaIndices": [
             336
           ],
@@ -569,6 +577,10 @@
           "id": "l1-t1",
           "deva": "वेदजननी",
           "iast": "vedajananī",
+          "hyphenated": {
+            "deva": "वेद-जननी",
+            "iast": "veda-jananī"
+          },
           "namaIndices": [
             338
           ],
@@ -678,6 +690,10 @@
           "id": "l1-t2",
           "deva": "विष्णुमाया",
           "iast": "viṣṇumāyā",
+          "hyphenated": {
+            "deva": "विष्णु-माया",
+            "iast": "viṣṇu-māyā"
+          },
           "namaIndices": [
             339
           ],
@@ -1060,8 +1076,16 @@
       "index": 335,
       "deva": "वेदवेद्या",
       "iast": "vedavedyā",
+      "hyphenated": {
+        "deva": "वेद-वेद्या",
+        "iast": "veda-vedyā"
+      },
       "namavaliDeva": "वेदवेद्यायै",
       "namavaliIast": "vedavedyāyai",
+      "namavaliHyphenated": {
+        "deva": "वेद-वेद्यायै",
+        "iast": "veda-vedyāyai"
+      },
       "gloss": "Known Through The Veda",
       "translation": "What the Vedas are for is to make her knowable; strip that away and they say nothing.",
       "aksaras": [
@@ -1204,8 +1228,16 @@
       "index": 336,
       "deva": "विन्ध्याचलनिवासिनी",
       "iast": "vindhyācalanivāsinī",
+      "hyphenated": {
+        "deva": "विन्ध्याचल-निवासिनी",
+        "iast": "vindhyācala-nivāsinī"
+      },
       "namavaliDeva": "विन्ध्याचलनिवासिन्यै",
       "namavaliIast": "vindhyācalanivāsinyai",
+      "namavaliHyphenated": {
+        "deva": "विन्ध्याचल-निवासिन्यै",
+        "iast": "vindhyācala-nivāsinyai"
+      },
       "gloss": "Dweller On The Vindhyas",
       "translation": "She has her seat in the Vindhya range, the wall of hills that divides the north of the land from the south.",
       "aksaras": [
@@ -1575,8 +1607,16 @@
       "index": 338,
       "deva": "वेदजननी",
       "iast": "vedajananī",
+      "hyphenated": {
+        "deva": "वेद-जननी",
+        "iast": "veda-jananī"
+      },
       "namavaliDeva": "वेदजनन्यै",
       "namavaliIast": "vedajananyai",
+      "namavaliHyphenated": {
+        "deva": "वेद-जनन्यै",
+        "iast": "veda-jananyai"
+      },
       "gloss": "Mother Of The Vedas",
       "translation": "The Vedas are born from her, not she from them.",
       "aksaras": [
@@ -1714,8 +1754,16 @@
       "index": 339,
       "deva": "विष्णुमाया",
       "iast": "viṣṇumāyā",
+      "hyphenated": {
+        "deva": "विष्णु-माया",
+        "iast": "viṣṇu-māyā"
+      },
       "namavaliDeva": "विष्णुमायायै",
       "namavaliIast": "viṣṇumāyāyai",
+      "namavaliHyphenated": {
+        "deva": "विष्णु-मायायै",
+        "iast": "viṣṇu-māyāyai"
+      },
       "gloss": "The Māyā Of Viṣṇu",
       "translation": "She is the power by which Viṣṇu throws the world up as an appearance and keeps it convincing.",
       "aksaras": [

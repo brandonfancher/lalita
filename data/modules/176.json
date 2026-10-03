@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "धराधरसुता",
           "iast": "dharādharasutā",
+          "hyphenated": {
+            "deva": "धरा-धर-सुता",
+            "iast": "dharā-dhara-sutā"
+          },
           "namaIndices": [
             955,
             956
@@ -303,6 +307,10 @@
           "id": "l0-t3",
           "deva": "धर्मवर्धिनी",
           "iast": "dharmavardhinī",
+          "hyphenated": {
+            "deva": "धर्म-वर्धिनी",
+            "iast": "dharma-vardhinī"
+          },
           "namaIndices": [
             959
           ],
@@ -955,8 +963,16 @@
       "index": 956,
       "deva": "धरसुता",
       "iast": "dharasutā",
+      "hyphenated": {
+        "deva": "धर-सुता",
+        "iast": "dhara-sutā"
+      },
       "namavaliDeva": "धरसुतायै",
       "namavaliIast": "dharasutāyai",
+      "namavaliHyphenated": {
+        "deva": "धर-सुतायै",
+        "iast": "dhara-sutāyai"
+      },
       "gloss": "Daughter Of The Mountain",
       "translation": "She is born to the mountain, dhara naming that which holds firm and so the Himālaya.",
       "aksaras": [
@@ -1256,8 +1272,16 @@
       "index": 959,
       "deva": "धर्मवर्धिनी",
       "iast": "dharmavardhinī",
+      "hyphenated": {
+        "deva": "धर्म-वर्धिनी",
+        "iast": "dharma-vardhinī"
+      },
       "namavaliDeva": "धर्मवर्धिन्यै",
       "namavaliIast": "dharmavardhinyai",
+      "namavaliHyphenated": {
+        "deva": "धर्म-वर्धिन्यै",
+        "iast": "dharma-vardhinyai"
+      },
       "gloss": "Increaser Of Dharma",
       "translation": "Where she is honoured, right order grows of itself.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "पायसान्नप्रिया",
           "iast": "pāyasānnapriyā",
+          "hyphenated": {
+            "deva": "पायसान्न-प्रिया",
+            "iast": "pāyasānna-priyā"
+          },
           "namaIndices": [
             480
           ],
@@ -279,6 +283,10 @@
           "id": "l0-t2",
           "deva": "पशुलोकभयङ्करी",
           "iast": "paśulokabhayaṅkarī",
+          "hyphenated": {
+            "deva": "पशु-लोक-भयङ्करी",
+            "iast": "paśu-loka-bhayaṅkarī"
+          },
           "namaIndices": [
             482
           ],
@@ -467,6 +475,10 @@
           "id": "l1-t0",
           "deva": "अमृतादिमहाशक्तिसंवृता",
           "iast": "amṛtādimahāśaktisaṃvṛtā",
+          "hyphenated": {
+            "deva": "अमृतादि-महा-शक्ति-संवृता",
+            "iast": "amṛtādi-mahā-śakti-saṃvṛtā"
+          },
           "namaIndices": [
             483
           ],
@@ -875,8 +887,16 @@
       "index": 480,
       "deva": "पायसान्नप्रिया",
       "iast": "pāyasānnapriyā",
+      "hyphenated": {
+        "deva": "पायसान्न-प्रिया",
+        "iast": "pāyasānna-priyā"
+      },
       "namavaliDeva": "पायसान्नप्रियायै",
       "namavaliIast": "pāyasānnapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "पायसान्न-प्रियायै",
+        "iast": "pāyasānna-priyāyai"
+      },
       "gloss": "Fond Of Milk-Rice",
       "translation": "The offering she favours is rice boiled in milk.",
       "aksaras": [
@@ -1215,8 +1235,16 @@
       "index": 482,
       "deva": "पशुलोकभयङ्करी",
       "iast": "paśulokabhayaṅkarī",
+      "hyphenated": {
+        "deva": "पशु-लोक-भयङ्करी",
+        "iast": "paśu-loka-bhayaṅkarī"
+      },
       "namavaliDeva": "पशुलोकभयङ्कर्यै",
       "namavaliIast": "paśulokabhayaṅkaryai",
+      "namavaliHyphenated": {
+        "deva": "पशु-लोक-भयङ्कर्यै",
+        "iast": "paśu-loka-bhayaṅkaryai"
+      },
       "gloss": "Terror To The Herd-Bound World",
       "translation": "To those still tethered like cattle by their own bonds she is an object of dread.",
       "aksaras": [
@@ -1455,8 +1483,16 @@
       "index": 483,
       "deva": "अमृतादिमहाशक्तिसंवृता",
       "iast": "amṛtādimahāśaktisaṃvṛtā",
+      "hyphenated": {
+        "deva": "अमृतादि-महा-शक्ति-संवृता",
+        "iast": "amṛtādi-mahā-śakti-saṃvṛtā"
+      },
       "namavaliDeva": "अमृतादिमहाशक्तिसंवृतायै",
       "namavaliIast": "amṛtādimahāśaktisaṃvṛtāyai",
+      "namavaliHyphenated": {
+        "deva": "अमृतादि-महा-शक्ति-संवृतायै",
+        "iast": "amṛtādi-mahā-śakti-saṃvṛtāyai"
+      },
       "gloss": "Encircled By The Great Powers From Amṛtā On",
       "translation": "The great śaktis of the throat wheel, Amṛtā at their head, stand ranged about her.",
       "aksaras": [

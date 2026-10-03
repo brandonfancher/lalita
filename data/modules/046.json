@@ -249,6 +249,10 @@
           "id": "l0-t2",
           "deva": "निरुपाधिर्निरीश्वरा",
           "iast": "nirupādhirnirīśvarā",
+          "hyphenated": {
+            "deva": "निरुपाधिर्-निरीश्वरा",
+            "iast": "nirupādhir-nirīśvarā"
+          },
           "namaIndices": [
             154,
             155
@@ -563,6 +567,10 @@
           "id": "l1-t1",
           "deva": "रागमथनी",
           "iast": "rāgamathanī",
+          "hyphenated": {
+            "deva": "राग-मथनी",
+            "iast": "rāga-mathanī"
+          },
           "namaIndices": [
             157
           ],
@@ -762,6 +770,10 @@
           "id": "l1-t3",
           "deva": "मदनाशिनी",
           "iast": "madanāśinī",
+          "hyphenated": {
+            "deva": "मद-नाशिनी",
+            "iast": "mada-nāśinī"
+          },
           "namaIndices": [
             159
           ],
@@ -1578,8 +1590,16 @@
       "index": 157,
       "deva": "रागमथनी",
       "iast": "rāgamathanī",
+      "hyphenated": {
+        "deva": "राग-मथनी",
+        "iast": "rāga-mathanī"
+      },
       "namavaliDeva": "रागमथन्यै",
       "namavaliIast": "rāgamathanyai",
+      "namavaliHyphenated": {
+        "deva": "राग-मथन्यै",
+        "iast": "rāga-mathanyai"
+      },
       "gloss": "Crusher Of Passion",
       "translation": "She wears passion down and grinds it away in whoever holds to her long enough.",
       "aksaras": [
@@ -1837,8 +1857,16 @@
       "index": 159,
       "deva": "मदनाशिनी",
       "iast": "madanāśinī",
+      "hyphenated": {
+        "deva": "मद-नाशिनी",
+        "iast": "mada-nāśinī"
+      },
       "namavaliDeva": "मदनाशिन्यै",
       "namavaliIast": "madanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "मद-नाशिन्यै",
+        "iast": "mada-nāśinyai"
+      },
       "gloss": "Destroyer Of Pride",
       "translation": "She ends the drunkenness of self-regard in anyone who stands close enough to her.",
       "aksaras": [

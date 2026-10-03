@@ -253,6 +253,10 @@
           "id": "l0-t1",
           "deva": "सर्वाभरणभूषिता",
           "iast": "sarvābharaṇabhūṣitā",
+          "hyphenated": {
+            "deva": "सर्वाभरण-भूषिता",
+            "iast": "sarvābharaṇa-bhūṣitā"
+          },
           "namaIndices": [
             51
           ],
@@ -448,6 +452,10 @@
           "id": "l1-t0",
           "deva": "शिवकामेश्वराङ्कस्था",
           "iast": "śivakāmeśvarāṅkasthā",
+          "hyphenated": {
+            "deva": "शिव-कामेश्वराङ्कस्था",
+            "iast": "śiva-kāmeśvarāṅkasthā"
+          },
           "namaIndices": [
             52
           ],
@@ -732,6 +740,10 @@
           "id": "l1-t2",
           "deva": "स्वाधीनवल्लभा",
           "iast": "svādhīnavallabhā",
+          "hyphenated": {
+            "deva": "स्वाधीन-वल्लभा",
+            "iast": "svādhīna-vallabhā"
+          },
           "namaIndices": [
             54
           ],
@@ -1210,8 +1222,16 @@
       "index": 51,
       "deva": "सर्वाभरणभूषिता",
       "iast": "sarvābharaṇabhūṣitā",
+      "hyphenated": {
+        "deva": "सर्वाभरण-भूषिता",
+        "iast": "sarvābharaṇa-bhūṣitā"
+      },
       "namavaliDeva": "सर्वाभरणभूषितायै",
       "namavaliIast": "sarvābharaṇabhūṣitāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वाभरण-भूषितायै",
+        "iast": "sarvābharaṇa-bhūṣitāyai"
+      },
       "gloss": "Adorned With Every Ornament",
       "translation": "There is no jewel she does not wear, and no ornament that is not made more valuable by being worn by her.",
       "aksaras": [
@@ -1443,8 +1463,16 @@
       "index": 52,
       "deva": "शिवकामेश्वराङ्कस्था",
       "iast": "śivakāmeśvarāṅkasthā",
+      "hyphenated": {
+        "deva": "शिव-कामेश्वराङ्कस्था",
+        "iast": "śiva-kāmeśvarāṅkasthā"
+      },
       "namavaliDeva": "शिवकामेश्वराङ्कस्थायै",
       "namavaliIast": "śivakāmeśvarāṅkasthāyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-कामेश्वराङ्कस्थायै",
+        "iast": "śiva-kāmeśvarāṅkasthāyai"
+      },
       "gloss": "Seated On Śiva Kāmeśvara's Lap",
       "translation": "Her place is on the lap of Śiva in his form as the lord of desire, the two of them making one seat between them.",
       "aksaras": [
@@ -1796,8 +1824,16 @@
       "index": 54,
       "deva": "स्वाधीनवल्लभा",
       "iast": "svādhīnavallabhā",
+      "hyphenated": {
+        "deva": "स्वाधीन-वल्लभा",
+        "iast": "svādhīna-vallabhā"
+      },
       "namavaliDeva": "स्वाधीनवल्लभायै",
       "namavaliIast": "svādhīnavallabhāyai",
+      "namavaliHyphenated": {
+        "deva": "स्वाधीन-वल्लभायै",
+        "iast": "svādhīna-vallabhāyai"
+      },
       "gloss": "Whose Beloved Is Her Own",
       "translation": "Her husband is entirely hers, held not by force but by an attachment he has no wish to break.",
       "aksaras": [

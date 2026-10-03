@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महागणेशनिर्भिन्नविघ्नयन्त्रप्रहर्षिता",
           "iast": "mahāgaṇeśanirbhinnavighnayantrapraharṣitā",
+          "hyphenated": {
+            "deva": "महा-गणेश-निर्भिन्न-विघ्न-यन्त्र-प्रहर्षिता",
+            "iast": "mahā-gaṇeśa-nirbhinna-vighna-yantra-praharṣitā"
+          },
           "namaIndices": [
             78
           ],
@@ -455,6 +459,10 @@
           "id": "l1-t0",
           "deva": "भण्डासुरेन्द्रनिर्मुक्तशस्त्रप्रत्यस्त्रवर्षिणी",
           "iast": "bhaṇḍāsurendranirmuktaśastrapratyastravarṣiṇī",
+          "hyphenated": {
+            "deva": "भण्डासुरेन्द्र-निर्मुक्त-शस्त्र-प्रत्यस्त्र-वर्षिणी",
+            "iast": "bhaṇḍāsurendra-nirmukta-śastra-pratyastra-varṣiṇī"
+          },
           "namaIndices": [
             79
           ],
@@ -970,8 +978,16 @@
       "index": 78,
       "deva": "महागणेशनिर्भिन्नविघ्नयन्त्रप्रहर्षिता",
       "iast": "mahāgaṇeśanirbhinnavighnayantrapraharṣitā",
+      "hyphenated": {
+        "deva": "महा-गणेश-निर्भिन्न-विघ्न-यन्त्र-प्रहर्षिता",
+        "iast": "mahā-gaṇeśa-nirbhinna-vighna-yantra-praharṣitā"
+      },
       "namavaliDeva": "महागणेशनिर्भिन्नविघ्नयन्त्रप्रहर्षितायै",
       "namavaliIast": "mahāgaṇeśanirbhinnavighnayantrapraharṣitāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-गणेश-निर्भिन्न-विघ्न-यन्त्र-प्रहर्षितायै",
+        "iast": "mahā-gaṇeśa-nirbhinna-vighna-yantra-praharṣitāyai"
+      },
       "gloss": "Rejoicing When Gaṇeśa Broke The Obstacle Engine",
       "translation": "The demons set up a contrivance to obstruct her army; the great Gaṇeśa smashed it, and she was overjoyed.",
       "aksaras": [
@@ -1492,8 +1508,16 @@
       "index": 79,
       "deva": "भण्डासुरेन्द्रनिर्मुक्तशस्त्रप्रत्यस्त्रवर्षिणी",
       "iast": "bhaṇḍāsurendranirmuktaśastrapratyastravarṣiṇī",
+      "hyphenated": {
+        "deva": "भण्डासुरेन्द्र-निर्मुक्त-शस्त्र-प्रत्यस्त्र-वर्षिणी",
+        "iast": "bhaṇḍāsurendra-nirmukta-śastra-pratyastra-varṣiṇī"
+      },
       "namavaliDeva": "भण्डासुरेन्द्रनिर्मुक्तशस्त्रप्रत्यस्त्रवर्षिण्यै",
       "namavaliIast": "bhaṇḍāsurendranirmuktaśastrapratyastravarṣiṇyai",
+      "namavaliHyphenated": {
+        "deva": "भण्डासुरेन्द्र-निर्मुक्त-शस्त्र-प्रत्यस्त्र-वर्षिण्यै",
+        "iast": "bhaṇḍāsurendra-nirmukta-śastra-pratyastra-varṣiṇyai"
+      },
       "gloss": "Who Rains Counter-Weapons On Bhaṇḍa's Missiles",
       "translation": "For every weapon the demon king released she sent back a shower of answering missiles.",
       "aksaras": [

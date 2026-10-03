@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चक्रराजरथारूढसर्वायुधपरिष्कृता",
           "iast": "cakrarājarathārūḍhasarvāyudhapariṣkṛtā",
+          "hyphenated": {
+            "deva": "चक्र-राज-रथारूढ-सर्वायुध-परिष्कृता",
+            "iast": "cakra-rāja-rathārūḍha-sarvāyudha-pariṣkṛtā"
+          },
           "namaIndices": [
             68
           ],
@@ -402,6 +406,10 @@
           "id": "l1-t0",
           "deva": "गेयचक्ररथारूढमन्त्रिणीपरिसेविता",
           "iast": "geyacakrarathārūḍhamantriṇīparisevitā",
+          "hyphenated": {
+            "deva": "गेय-चक्र-रथारूढ-मन्त्रिणी-परिसेविता",
+            "iast": "geya-cakra-rathārūḍha-mantriṇī-parisevitā"
+          },
           "namaIndices": [
             69
           ],
@@ -796,8 +804,16 @@
       "index": 68,
       "deva": "चक्रराजरथारूढसर्वायुधपरिष्कृता",
       "iast": "cakrarājarathārūḍhasarvāyudhapariṣkṛtā",
+      "hyphenated": {
+        "deva": "चक्र-राज-रथारूढ-सर्वायुध-परिष्कृता",
+        "iast": "cakra-rāja-rathārūḍha-sarvāyudha-pariṣkṛtā"
+      },
       "namavaliDeva": "चक्रराजरथारूढसर्वायुधपरिष्कृतायै",
       "namavaliIast": "cakrarājarathārūḍhasarvāyudhapariṣkṛtāyai",
+      "namavaliHyphenated": {
+        "deva": "चक्र-राज-रथारूढ-सर्वायुध-परिष्कृतायै",
+        "iast": "cakra-rāja-rathārūḍha-sarvāyudha-pariṣkṛtāyai"
+      },
       "gloss": "Armed On The Cakrarāja Chariot",
       "translation": "Every weapon there is stands ready on the great chariot called King of Wheels, and she goes to war fitted out with all of them.",
       "aksaras": [
@@ -1280,8 +1296,16 @@
       "index": 69,
       "deva": "गेयचक्ररथारूढमन्त्रिणीपरिसेविता",
       "iast": "geyacakrarathārūḍhamantriṇīparisevitā",
+      "hyphenated": {
+        "deva": "गेय-चक्र-रथारूढ-मन्त्रिणी-परिसेविता",
+        "iast": "geya-cakra-rathārūḍha-mantriṇī-parisevitā"
+      },
       "namavaliDeva": "गेयचक्ररथारूढमन्त्रिणीपरिसेवितायै",
       "namavaliIast": "geyacakrarathārūḍhamantriṇīparisevitāyai",
+      "namavaliHyphenated": {
+        "deva": "गेय-चक्र-रथारूढ-मन्त्रिणी-परिसेवितायै",
+        "iast": "geya-cakra-rathārūḍha-mantriṇī-parisevitāyai"
+      },
       "gloss": "Waited On By Mantriṇī",
       "translation": "Her minister rides beside her on the chariot named Wheel of Song, attending her throughout the battle.",
       "aksaras": [

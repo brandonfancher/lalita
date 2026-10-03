@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भक्तहार्दतमोभेदभानुमद्भानुसन्ततिः",
           "iast": "bhaktahārdatamobhedabhānumadbhānusantatiḥ",
+          "hyphenated": {
+            "deva": "भक्तहार्द-तमो-भेद-भानुमद्-भानु-सन्ततिः",
+            "iast": "bhaktahārda-tamo-bheda-bhānumad-bhānu-santatiḥ"
+          },
           "namaIndices": [
             404
           ],
@@ -424,6 +428,10 @@
           "id": "l1-t0",
           "deva": "शिवदूती",
           "iast": "śivadūtī",
+          "hyphenated": {
+            "deva": "शिव-दूती",
+            "iast": "śiva-dūtī"
+          },
           "namaIndices": [
             405
           ],
@@ -644,6 +652,10 @@
           "id": "l1-t2",
           "deva": "शिवमूर्तिः",
           "iast": "śivamūrtiḥ",
+          "hyphenated": {
+            "deva": "शिव-मूर्तिः",
+            "iast": "śiva-mūrtiḥ"
+          },
           "namaIndices": [
             407
           ],
@@ -876,8 +888,16 @@
       "index": 404,
       "deva": "भक्ताहार्दतमोभेदभानुमद्भानुसन्ततिः",
       "iast": "bhaktāhārdatamobhedabhānumadbhānusantatiḥ",
+      "hyphenated": {
+        "deva": "भक्ताहार्द-तमो-भेद-भानुमद्-भानु-सन्ततिः",
+        "iast": "bhaktāhārda-tamo-bheda-bhānumad-bhānu-santatiḥ"
+      },
       "namavaliDeva": "भक्ताहार्दतमोभेदभानुमद्भानुसन्तत्यै",
       "namavaliIast": "bhaktāhārdatamobhedabhānumadbhānusantatyai",
+      "namavaliHyphenated": {
+        "deva": "भक्ताहार्द-तमो-भेद-भानुमद्-भानु-सन्तत्यै",
+        "iast": "bhaktāhārda-tamo-bheda-bhānumad-bhānu-santatyai"
+      },
       "gloss": "Sunbeams Dispelling Devotees' Inward Darkness",
       "translation": "The darkness lodged in a devotee's heart breaks apart before her, as night gives way to an unbroken stream of sunbeams.",
       "aksaras": [
@@ -1361,8 +1381,16 @@
       "index": 405,
       "deva": "शिवदूती",
       "iast": "śivadūtī",
+      "hyphenated": {
+        "deva": "शिव-दूती",
+        "iast": "śiva-dūtī"
+      },
       "namavaliDeva": "शिवदूत्यै",
       "namavaliIast": "śivadūtyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-दूत्यै",
+        "iast": "śiva-dūtyai"
+      },
       "gloss": "She Whose Envoy Is Śiva",
       "translation": "She is the one who sent Śiva himself on her errand, taking the supreme god as her ambassador.",
       "aksaras": [
@@ -1641,8 +1669,16 @@
       "index": 407,
       "deva": "शिवमूर्तिः",
       "iast": "śivamūrtiḥ",
+      "hyphenated": {
+        "deva": "शिव-मूर्तिः",
+        "iast": "śiva-mūrtiḥ"
+      },
       "namavaliDeva": "शिवमूर्त्यै",
       "namavaliIast": "śivamūrtyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-मूर्त्यै",
+        "iast": "śiva-mūrtyai"
+      },
       "gloss": "The Very Form Of Śiva",
       "translation": "The shape in which Śiva becomes visible is no other than she.",
       "aksaras": [

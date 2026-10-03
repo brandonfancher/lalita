@@ -327,6 +327,10 @@
           "id": "l1-t2",
           "deva": "त्रिनयनां",
           "iast": "trinayanāṃ",
+          "hyphenated": {
+            "deva": "त्रि-नयनां",
+            "iast": "tri-nayanāṃ"
+          },
           "word": {
             "gloss": "three-eyed",
             "translation": "She has three eyes — the right the sun, the left the moon, and between them the third, which is the twilight.",
@@ -474,6 +478,10 @@
           "id": "l1-t3",
           "deva": "माणिक्यमौलि",
           "iast": "māṇikyamauli",
+          "hyphenated": {
+            "deva": "माणिक्य-मौलि",
+            "iast": "māṇikya-mauli"
+          },
           "word": {
             "gloss": "a diadem of rubies",
             "translation": "A crown of rubies sits on the top of her head.",
@@ -1086,6 +1094,10 @@
           "id": "l2-t3",
           "deva": "स्मितमुखीमापीनवक्षोरुहाम्",
           "iast": "smitamukhīmāpīnavakṣoruhām",
+          "hyphenated": {
+            "deva": "स्मित-मुखीमापीन-वक्षो-रुहाम्",
+            "iast": "smita-mukhīmāpīna-vakṣo-ruhām"
+          },
           "word": {
             "gloss": "smiling-faced, and full of breast",
             "translation": "A smile on her face; her breasts full.",
@@ -1471,6 +1483,10 @@
           "id": "l3-t0",
           "deva": "पाणिभ्यामलिपूर्णरत्नचषकं",
           "iast": "pāṇibhyāmalipūrṇaratnacaṣakaṃ",
+          "hyphenated": {
+            "deva": "पाणिभ्यामलि-पूर्ण-रत्न-चषकं",
+            "iast": "pāṇibhyāmali-pūrṇa-ratna-caṣakaṃ"
+          },
           "word": {
             "gloss": "in her two hands, a jewelled goblet filled to the brim",
             "translation": "She holds in her two hands a goblet of gems, full.",
@@ -2396,6 +2412,10 @@
           "id": "l4-t3",
           "deva": "रक्तचरणां",
           "iast": "raktacaraṇāṃ",
+          "hyphenated": {
+            "deva": "रक्त-चरणां",
+            "iast": "rakta-caraṇāṃ"
+          },
           "word": {
             "gloss": "red-footed",
             "translation": "Her reddened feet rest on a vessel of gems.",
@@ -2985,6 +3005,10 @@
           "id": "l5-t1",
           "deva": "करुणातरङ्गिताक्षीं",
           "iast": "karuṇātaraṅgitākṣīṃ",
+          "hyphenated": {
+            "deva": "करुणा-तरङ्गिताक्षीं",
+            "iast": "karuṇā-taraṅgitākṣīṃ"
+          },
           "word": {
             "gloss": "eyes rippling with compassion",
             "translation": "Compassion moves across her eyes the way waves move across water.",
@@ -3251,6 +3275,10 @@
           "id": "l5-t2",
           "deva": "धृतपाशाङ्कुशपुष्पबाणचापाम्",
           "iast": "dhṛtapāśāṅkuśapuṣpabāṇacāpām",
+          "hyphenated": {
+            "deva": "धृत-पाशाङ्कुश-पुष्प-बाण-चापाम्",
+            "iast": "dhṛta-pāśāṅkuśa-puṣpa-bāṇa-cāpām"
+          },
           "word": {
             "gloss": "holding noose, goad, flower-arrow and bow",
             "translation": "Four hands, and in them the noose, the goad, the arrow made of flowers, and the bow.",
@@ -4668,6 +4696,10 @@
           "id": "l7-t2",
           "deva": "विकसितवदनां",
           "iast": "vikasitavadanāṃ",
+          "hyphenated": {
+            "deva": "विकसित-वदनां",
+            "iast": "vikasita-vadanāṃ"
+          },
           "word": {
             "gloss": "face open like a blossom",
             "translation": "Her face has opened the way a flower opens.",
@@ -4858,6 +4890,10 @@
           "id": "l7-t3",
           "deva": "पद्मपत्रायताक्षीं",
           "iast": "padmapatrāyatākṣīṃ",
+          "hyphenated": {
+            "deva": "पद्म-पत्रायताक्षीं",
+            "iast": "padma-patrāyatākṣīṃ"
+          },
           "word": {
             "gloss": "eyes long as lotus petals",
             "translation": "Her eyes are drawn out long, the shape of a lotus petal.",
@@ -5250,6 +5286,10 @@
           "id": "l8-t1",
           "deva": "पीतवस्त्रां",
           "iast": "pītavastrāṃ",
+          "hyphenated": {
+            "deva": "पीत-वस्त्रां",
+            "iast": "pīta-vastrāṃ"
+          },
           "word": {
             "gloss": "robed in yellow",
             "translation": "Her garment is yellow.",
@@ -5412,6 +5452,10 @@
           "id": "l8-t2",
           "deva": "करकलितलसद्धेमपद्मां",
           "iast": "karakalitalasaddhemapadmāṃ",
+          "hyphenated": {
+            "deva": "कर-कलित-लसद्-धेम-पद्मां",
+            "iast": "kara-kalita-lasad-dhema-padmāṃ"
+          },
           "word": {
             "gloss": "a shining golden lotus held in her hand",
             "translation": "A lotus of gold, catching the light, rests in her hand.",
@@ -5894,6 +5938,10 @@
           "id": "l9-t0",
           "deva": "सर्वालङ्कारयुक्तां",
           "iast": "sarvālaṅkārayuktāṃ",
+          "hyphenated": {
+            "deva": "सर्वालङ्कार-युक्तां",
+            "iast": "sarvālaṅkāra-yuktāṃ"
+          },
           "word": {
             "gloss": "wearing every ornament",
             "translation": "She is decked in ornaments of every kind.",
@@ -6349,6 +6397,10 @@
           "id": "l9-t3",
           "deva": "भक्तनम्रां",
           "iast": "bhaktanamrāṃ",
+          "hyphenated": {
+            "deva": "भक्त-नम्रां",
+            "iast": "bhakta-namrāṃ"
+          },
           "word": {
             "gloss": "inclined toward her devotees",
             "translation": "She bends toward those who have given themselves to her.",
@@ -6607,6 +6659,10 @@
           "id": "l10-t0",
           "deva": "श्रीविद्यां",
           "iast": "śrīvidyāṃ",
+          "hyphenated": {
+            "deva": "श्री-विद्यां",
+            "iast": "śrī-vidyāṃ"
+          },
           "word": {
             "gloss": "Śrīvidyā, the auspicious knowledge",
             "translation": "She is called Śrīvidyā outright — not a goddess who possesses a mantra, but the mantra itself wearing a body.",
@@ -6759,6 +6815,10 @@
           "id": "l10-t1",
           "deva": "शान्तमूर्तिं",
           "iast": "śāntamūrtiṃ",
+          "hyphenated": {
+            "deva": "शान्त-मूर्तिं",
+            "iast": "śānta-mūrtiṃ"
+          },
           "word": {
             "gloss": "whose form is stillness",
             "translation": "Her form is a settled, quieted one.",
@@ -6929,6 +6989,10 @@
           "id": "l10-t2",
           "deva": "सकलसुरनुतां",
           "iast": "sakalasuranutāṃ",
+          "hyphenated": {
+            "deva": "सकल-सुर-नुतां",
+            "iast": "sakala-sura-nutāṃ"
+          },
           "word": {
             "gloss": "praised by all the gods",
             "translation": "There is no god who does not praise her.",
@@ -7203,6 +7267,10 @@
           "id": "l10-t4",
           "deva": "सम्पत्प्रदात्रीम्",
           "iast": "sampatpradātrīm",
+          "hyphenated": {
+            "deva": "सम्पत्-प्रदात्रीम्",
+            "iast": "sampat-pradātrīm"
+          },
           "word": {
             "gloss": "bestower of prosperity",
             "translation": "…good fortune, and she is the one who gives it. The verb spoken at the very start of the verse finally has its object.",
@@ -7449,6 +7517,10 @@
           "id": "l11-t0",
           "deva": "सकुङ्कुमविलेपनामलिकचुम्बिकस्तूरिकां",
           "iast": "sakuṅkumavilepanāmalikacumbikastūrikāṃ",
+          "hyphenated": {
+            "deva": "सकुङ्कुम-विलेपनामलिक-चुम्बि-कस्तूरिकां",
+            "iast": "sakuṅkuma-vilepanāmalika-cumbi-kastūrikāṃ"
+          },
           "word": {
             "gloss": "smeared with saffron, musk touching her forehead",
             "translation": "Saffron paste on her body, and a mark of musk that just reaches her forehead.",
@@ -7971,6 +8043,10 @@
           "id": "l12-t0",
           "deva": "समन्दहसितेक्षणां",
           "iast": "samandahasitekṣaṇāṃ",
+          "hyphenated": {
+            "deva": "समन्द-हसितेक्षणां",
+            "iast": "samanda-hasitekṣaṇāṃ"
+          },
           "word": {
             "gloss": "a faint smile in her glance",
             "translation": "Her look carries the beginning of a smile rather than a full one.",
@@ -8227,6 +8303,10 @@
           "id": "l12-t1",
           "deva": "सशरचापपाशाङ्कुशाम्",
           "iast": "saśaracāpapāśāṅkuśām",
+          "hyphenated": {
+            "deva": "सशर-चाप-पाशाङ्कुशाम्",
+            "iast": "saśara-cāpa-pāśāṅkuśām"
+          },
           "word": {
             "gloss": "bearing arrow, bow, noose and goad",
             "translation": "She carries the arrow, the bow, the noose and the goad.",
@@ -8525,6 +8605,10 @@
           "id": "l13-t0",
           "deva": "अशेषजनमोहिनीं",
           "iast": "aśeṣajanamohinīṃ",
+          "hyphenated": {
+            "deva": "अशेष-जन-मोहिनीं",
+            "iast": "aśeṣa-jana-mohinīṃ"
+          },
           "word": {
             "gloss": "who bewilders every living being",
             "translation": "No creature is left out of it: every one of them is thrown off balance by her.",
@@ -8752,6 +8836,10 @@
           "id": "l13-t1",
           "deva": "अरुणमाल्यभूषाम्बरां",
           "iast": "aruṇamālyabhūṣāmbarāṃ",
+          "hyphenated": {
+            "deva": "अरुण-माल्य-भूषाम्बरां",
+            "iast": "aruṇa-mālya-bhūṣāmbarāṃ"
+          },
           "word": {
             "gloss": "red garland, red ornaments, red robes",
             "translation": "Garland, jewellery and clothing are all the same red.",
@@ -9043,6 +9131,10 @@
           "id": "l14-t0",
           "deva": "जपाकुसुमभासुरां",
           "iast": "japākusumabhāsurāṃ",
+          "hyphenated": {
+            "deva": "जपा-कुसुम-भासुरां",
+            "iast": "japā-kusuma-bhāsurāṃ"
+          },
           "word": {
             "gloss": "shining like a hibiscus flower",
             "translation": "She is as bright as the scarlet japā blossom.",
@@ -9286,6 +9378,10 @@
           "id": "l14-t1",
           "deva": "जपविधौ",
           "iast": "japavidhau",
+          "hyphenated": {
+            "deva": "जप-विधौ",
+            "iast": "japa-vidhau"
+          },
           "word": {
             "gloss": "at the rite of recitation",
             "translation": "This is the form to hold in mind at the moment of counting the mantra.",

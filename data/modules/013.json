@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कनकाङ्गदकेयूरकमनीयभुजान्विता",
           "iast": "kanakāṅgadakeyūrakamanīyabhujānvitā",
+          "hyphenated": {
+            "deva": "कनकाङ्गद-केयूर-कमनीय-भुजान्विता",
+            "iast": "kanakāṅgada-keyūra-kamanīya-bhujānvitā"
+          },
           "namaIndices": [
             31
           ],
@@ -387,6 +391,10 @@
           "id": "l1-t0",
           "deva": "रत्नग्रैवेयचिन्ताकलोलमुक्ताफलान्विता",
           "iast": "ratnagraiveyacintākalolamuktāphalānvitā",
+          "hyphenated": {
+            "deva": "रत्न-ग्रैवेय-चिन्ताक-लोल-मुक्ता-फलान्विता",
+            "iast": "ratna-graiveya-cintāka-lola-muktā-phalānvitā"
+          },
           "namaIndices": [
             32
           ],
@@ -818,8 +826,16 @@
       "index": 31,
       "deva": "कनकाङ्गदकेयूरकमनीयभुजान्विता",
       "iast": "kanakāṅgadakeyūrakamanīyabhujānvitā",
+      "hyphenated": {
+        "deva": "कनकाङ्गद-केयूर-कमनीय-भुजान्विता",
+        "iast": "kanakāṅgada-keyūra-kamanīya-bhujānvitā"
+      },
       "namavaliDeva": "कनकाङ्गदकेयूरकमनीयमुजान्वितायै",
       "namavaliIast": "kanakāṅgadakeyūrakamanīyamujānvitāyai",
+      "namavaliHyphenated": {
+        "deva": "कनकाङ्गद-केयूर-कमनीयमुजान्वितायै",
+        "iast": "kanakāṅgada-keyūra-kamanīyamujānvitāyai"
+      },
       "gloss": "Whose Arms Wear Golden Armlets",
       "translation": "Bands and bracelets of gold circle her upper arms and make their curve still more lovely.",
       "aksaras": [
@@ -1272,8 +1288,16 @@
       "index": 32,
       "deva": "रत्नग्रैवेयचिन्ताकलोलमुक्ताफलान्विता",
       "iast": "ratnagraiveyacintākalolamuktāphalānvitā",
+      "hyphenated": {
+        "deva": "रत्न-ग्रैवेय-चिन्ताक-लोल-मुक्ता-फलान्विता",
+        "iast": "ratna-graiveya-cintāka-lola-muktā-phalānvitā"
+      },
       "namavaliDeva": "रत्नग्रैवेय चिन्ताकलोलमुक्ताफलान्वितायै",
       "namavaliIast": "ratnagraiveya cintākalolamuktāphalānvitāyai",
+      "namavaliHyphenated": {
+        "deva": "रत्न-ग्रैवेय चिन्ताक-लोल-मुक्ता-फलान्वितायै",
+        "iast": "ratna-graiveya cintāka-lola-muktā-phalānvitāyai"
+      },
       "gloss": "Wearing Jewelled Necklace And Pearls",
       "translation": "A necklace of gems with its pendant hangs at her throat, and strings of pearls swing loosely below it.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भानुमण्डलमध्यस्था",
           "iast": "bhānumaṇḍalamadhyasthā",
+          "hyphenated": {
+            "deva": "भानु-मण्डल-मध्यस्था",
+            "iast": "bhānu-maṇḍala-madhyasthā"
+          },
           "namaIndices": [
             275
           ],
@@ -300,6 +304,10 @@
           "id": "l0-t2",
           "deva": "भगमालिनी",
           "iast": "bhagamālinī",
+          "hyphenated": {
+            "deva": "भग-मालिनी",
+            "iast": "bhaga-mālinī"
+          },
           "namaIndices": [
             277
           ],
@@ -614,6 +622,10 @@
           "id": "l1-t2",
           "deva": "पद्मनाभसहोदरी",
           "iast": "padmanābhasahodarī",
+          "hyphenated": {
+            "deva": "पद्म-नाभ-सहोदरी",
+            "iast": "padma-nābha-sahodarī"
+          },
           "namaIndices": [
             280
           ],
@@ -800,8 +812,16 @@
       "index": 275,
       "deva": "भानुमण्डलमध्यस्था",
       "iast": "bhānumaṇḍalamadhyasthā",
+      "hyphenated": {
+        "deva": "भानु-मण्डल-मध्यस्था",
+        "iast": "bhānu-maṇḍala-madhyasthā"
+      },
       "namavaliDeva": "भानुमण्डलमध्यस्थायै",
       "namavaliIast": "bhānumaṇḍalamadhyasthāyai",
+      "namavaliHyphenated": {
+        "deva": "भानु-मण्डल-मध्यस्थायै",
+        "iast": "bhānu-maṇḍala-madhyasthāyai"
+      },
       "gloss": "Standing In The Sun's Orb",
       "translation": "She stands at the heart of the solar disc as she does at the heart of the moon's, heat answering to coolness.",
       "aksaras": [
@@ -1157,8 +1177,16 @@
       "index": 277,
       "deva": "भगमालिनी",
       "iast": "bhagamālinī",
+      "hyphenated": {
+        "deva": "भग-मालिनी",
+        "iast": "bhaga-mālinī"
+      },
       "namavaliDeva": "भगमालिन्यै",
       "namavaliIast": "bhagamālinyai",
+      "namavaliHyphenated": {
+        "deva": "भग-मालिन्यै",
+        "iast": "bhaga-mālinyai"
+      },
       "gloss": "Garlanded With Excellences",
       "translation": "The six perfections that make a being worth calling lord hang on her like a wreath.",
       "aksaras": [
@@ -1537,8 +1565,16 @@
       "index": 280,
       "deva": "पद्मनाभसहोदरी",
       "iast": "padmanābhasahodarī",
+      "hyphenated": {
+        "deva": "पद्म-नाभ-सहोदरी",
+        "iast": "padma-nābha-sahodarī"
+      },
       "namavaliDeva": "पद्मनाभसहोदर्यै",
       "namavaliIast": "padmanābhasahodaryai",
+      "namavaliHyphenated": {
+        "deva": "पद्म-नाभ-सहोदर्यै",
+        "iast": "padma-nābha-sahodaryai"
+      },
       "gloss": "Sister Of Viṣṇu",
       "translation": "She and the lotus-navelled god came from one womb, which is why Viṣṇu ranks as her brother rather than her devotee.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चराचरजगन्नाथा",
           "iast": "carācarajagannāthā",
+          "hyphenated": {
+            "deva": "चराचर-जगन्-नाथा",
+            "iast": "carācara-jagan-nāthā"
+          },
           "namaIndices": [
             244
           ],
@@ -195,6 +199,10 @@
           "id": "l0-t1",
           "deva": "चक्रराजनिकेतना",
           "iast": "cakrarājaniketanā",
+          "hyphenated": {
+            "deva": "चक्र-राज-निकेतना",
+            "iast": "cakra-rāja-niketanā"
+          },
           "namaIndices": [
             245
           ],
@@ -480,6 +488,10 @@
           "id": "l1-t1",
           "deva": "पद्मनयना",
           "iast": "padmanayanā",
+          "hyphenated": {
+            "deva": "पद्म-नयना",
+            "iast": "padma-nayanā"
+          },
           "namaIndices": [
             247
           ],
@@ -597,6 +609,10 @@
           "id": "l1-t2",
           "deva": "पद्मरागसमप्रभा",
           "iast": "padmarāgasamaprabhā",
+          "hyphenated": {
+            "deva": "पद्म-राग-सम-प्रभा",
+            "iast": "padma-rāga-sama-prabhā"
+          },
           "namaIndices": [
             248
           ],
@@ -791,8 +807,16 @@
       "index": 244,
       "deva": "चराचरजगन्नाथा",
       "iast": "carācarajagannāthā",
+      "hyphenated": {
+        "deva": "चराचर-जगन्-नाथा",
+        "iast": "carācara-jagan-nāthā"
+      },
       "namavaliDeva": "चराचरजगन्नाथायै",
       "namavaliIast": "carācarajagannāthāyai",
+      "namavaliHyphenated": {
+        "deva": "चराचर-जगन्-नाथायै",
+        "iast": "carācara-jagan-nāthāyai"
+      },
       "gloss": "Mistress Of The Moving And Unmoving World",
       "translation": "Beasts and stones alike fall under one rule, and that rule is hers.",
       "aksaras": [
@@ -1031,8 +1055,16 @@
       "index": 245,
       "deva": "चक्रराजनिकेतना",
       "iast": "cakrarājaniketanā",
+      "hyphenated": {
+        "deva": "चक्र-राज-निकेतना",
+        "iast": "cakra-rāja-niketanā"
+      },
       "namavaliDeva": "चक्रराजनिकेतनायै",
       "namavaliIast": "cakrarājaniketanāyai",
+      "namavaliHyphenated": {
+        "deva": "चक्र-राज-निकेतनायै",
+        "iast": "cakra-rāja-niketanāyai"
+      },
       "gloss": "Dwelling In The King Of Cakras",
       "translation": "Her residence is the Śrīcakra, which outranks every other diagram as a king outranks his subjects.",
       "aksaras": [
@@ -1366,8 +1398,16 @@
       "index": 247,
       "deva": "पद्मनयना",
       "iast": "padmanayanā",
+      "hyphenated": {
+        "deva": "पद्म-नयना",
+        "iast": "padma-nayanā"
+      },
       "namavaliDeva": "पद्मनयनायै",
       "namavaliIast": "padmanayanāyai",
+      "namavaliHyphenated": {
+        "deva": "पद्म-नयनायै",
+        "iast": "padma-nayanāyai"
+      },
       "gloss": "Lotus-Eyed",
       "translation": "Her eyes have the shape, breadth and freshness of an opened lotus.",
       "aksaras": [
@@ -1513,8 +1553,16 @@
       "index": 248,
       "deva": "पद्मरागसमप्रभा",
       "iast": "padmarāgasamaprabhā",
+      "hyphenated": {
+        "deva": "पद्म-राग-सम-प्रभा",
+        "iast": "padma-rāga-sama-prabhā"
+      },
       "namavaliDeva": "पद्मरागसमप्रभायै",
       "namavaliIast": "padmarāgasamaprabhāyai",
+      "namavaliHyphenated": {
+        "deva": "पद्म-राग-सम-प्रभायै",
+        "iast": "padma-rāga-sama-prabhāyai"
+      },
       "gloss": "Radiant As A Ruby",
       "translation": "Her complexion throws off the same deep red light as a ruby held against the sun.",
       "aksaras": [

@@ -120,6 +120,10 @@
           "id": "l0-t1",
           "deva": "रविप्रख्या",
           "iast": "raviprakhyā",
+          "hyphenated": {
+            "deva": "रवि-प्रख्या",
+            "iast": "ravi-prakhyā"
+          },
           "namaIndices": [
             596
           ],
@@ -242,6 +246,10 @@
           "id": "l0-t2",
           "deva": "त्रिकोणान्तरदीपिका",
           "iast": "trikoṇāntaradīpikā",
+          "hyphenated": {
+            "deva": "त्रि-कोणान्तर-दीपिका",
+            "iast": "tri-koṇāntara-dīpikā"
+          },
           "namaIndices": [
             597
           ],
@@ -580,6 +588,10 @@
           "id": "l1-t1",
           "deva": "दैत्यहन्त्री",
           "iast": "daityahantrī",
+          "hyphenated": {
+            "deva": "दैत्य-हन्त्री",
+            "iast": "daitya-hantrī"
+          },
           "namaIndices": [
             599
           ],
@@ -717,6 +729,10 @@
           "id": "l1-t2",
           "deva": "दक्षयज्ञविनाशिनी",
           "iast": "dakṣayajñavināśinī",
+          "hyphenated": {
+            "deva": "दक्ष-यज्ञ-विनाशिनी",
+            "iast": "dakṣa-yajña-vināśinī"
+          },
           "namaIndices": [
             600
           ],
@@ -1062,8 +1078,16 @@
       "index": 596,
       "deva": "रविप्रख्या",
       "iast": "raviprakhyā",
+      "hyphenated": {
+        "deva": "रवि-प्रख्या",
+        "iast": "ravi-prakhyā"
+      },
       "namavaliDeva": "रविप्रख्यायै",
       "namavaliIast": "raviprakhyāyai",
+      "namavaliHyphenated": {
+        "deva": "रवि-प्रख्यायै",
+        "iast": "ravi-prakhyāyai"
+      },
       "gloss": "Like The Sun",
       "translation": "In the heart her brightness is no longer cool but blazing, comparable to the sun.",
       "aksaras": [
@@ -1214,8 +1238,16 @@
       "index": 597,
       "deva": "त्रिकोणान्तरदीपिका",
       "iast": "trikoṇāntaradīpikā",
+      "hyphenated": {
+        "deva": "त्रि-कोणान्तर-दीपिका",
+        "iast": "tri-koṇāntara-dīpikā"
+      },
       "namavaliDeva": "त्रिकोणान्तरदीपिकायै",
       "namavaliIast": "trikoṇāntaradīpikāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-कोणान्तर-दीपिकायै",
+        "iast": "tri-koṇāntara-dīpikāyai"
+      },
       "gloss": "Lamp Within The Triangle",
       "translation": "At the centre of the innermost triangle of the diagram she burns like a small steady flame.",
       "aksaras": [
@@ -1616,8 +1648,16 @@
       "index": 599,
       "deva": "दैत्यहन्त्री",
       "iast": "daityahantrī",
+      "hyphenated": {
+        "deva": "दैत्य-हन्त्री",
+        "iast": "daitya-hantrī"
+      },
       "namavaliDeva": "दैत्यहन्त्र्यै",
       "namavaliIast": "daityahantryai",
+      "namavaliHyphenated": {
+        "deva": "दैत्य-हन्त्र्यै",
+        "iast": "daitya-hantryai"
+      },
       "gloss": "Slayer Of The Demons",
       "translation": "The sons of Diti, who set themselves against the ordered world, meet their end at her hand.",
       "aksaras": [
@@ -1783,8 +1823,16 @@
       "index": 600,
       "deva": "दक्षयज्ञविनाशिनी",
       "iast": "dakṣayajñavināśinī",
+      "hyphenated": {
+        "deva": "दक्ष-यज्ञ-विनाशिनी",
+        "iast": "dakṣa-yajña-vināśinī"
+      },
       "namavaliDeva": "दक्षयज्ञविनाशिन्यै",
       "namavaliIast": "dakṣayajñavināśinyai",
+      "namavaliHyphenated": {
+        "deva": "दक्ष-यज्ञ-विनाशिन्यै",
+        "iast": "dakṣa-yajña-vināśinyai"
+      },
       "gloss": "Wrecker Of Dakṣa's Sacrifice",
       "translation": "The same daughter whose father slighted her husband saw to it that his great rite was broken up and left unfinished.",
       "aksaras": [

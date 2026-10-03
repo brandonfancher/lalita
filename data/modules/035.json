@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कण्ठाधःकटिपर्यन्तमध्यकूटस्वरूपिणी",
           "iast": "kaṇṭhādhaḥkaṭiparyantamadhyakūṭasvarūpiṇī",
+          "hyphenated": {
+            "deva": "कण्ठाधः-कटि-पर्यन्त-मध्य-कूट-स्वरूपिणी",
+            "iast": "kaṇṭhādhaḥ-kaṭi-paryanta-madhya-kūṭa-svarūpiṇī"
+          },
           "namaIndices": [
             86
           ],
@@ -425,6 +429,10 @@
           "id": "l1-t0",
           "deva": "शक्तिकूटैकतापन्नकट्यधोभागधारिणी",
           "iast": "śaktikūṭaikatāpannakaṭyadhobhāgadhāriṇī",
+          "hyphenated": {
+            "deva": "शक्ति-कूटैकतापन्न-कट्यधोभाग-धारिणी",
+            "iast": "śakti-kūṭaikatāpanna-kaṭyadhobhāga-dhāriṇī"
+          },
           "namaIndices": [
             87
           ],
@@ -819,8 +827,16 @@
       "index": 86,
       "deva": "कण्ठाधःकटिपर्यन्तमध्यकूटस्वरूपिणी",
       "iast": "kaṇṭhādhaḥkaṭiparyantamadhyakūṭasvarūpiṇī",
+      "hyphenated": {
+        "deva": "कण्ठाधः-कटि-पर्यन्त-मध्य-कूट-स्वरूपिणी",
+        "iast": "kaṇṭhādhaḥ-kaṭi-paryanta-madhya-kūṭa-svarūpiṇī"
+      },
       "namavaliDeva": "कण्ठाधः कटिपर्यन्तमध्यकूटस्वरूपिण्यै",
       "namavaliIast": "kaṇṭhādhaḥ kaṭiparyantamadhyakūṭasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "कण्ठाधः कटि-पर्यन्त-मध्य-कूट-स्वरूपिण्यै",
+        "iast": "kaṇṭhādhaḥ kaṭi-paryanta-madhya-kūṭa-svarūpiṇyai"
+      },
       "gloss": "Whose Torso Is The Middle Syllables",
       "translation": "Everything from below her throat down to her waist is the second cluster of the mantra taken on as a body.",
       "aksaras": [
@@ -1326,8 +1342,16 @@
       "index": 87,
       "deva": "शक्तिकूटैकतापन्नकट्यधोभागधारिणी",
       "iast": "śaktikūṭaikatāpannakaṭyadhobhāgadhāriṇī",
+      "hyphenated": {
+        "deva": "शक्ति-कूटैकतापन्न-कट्यधोभाग-धारिणी",
+        "iast": "śakti-kūṭaikatāpanna-kaṭyadhobhāga-dhāriṇī"
+      },
       "namavaliDeva": "शक्तिकूटैकतापन्नकट्यधोभागधारिण्यै",
       "namavaliIast": "śaktikūṭaikatāpannakaṭyadhobhāgadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "शक्ति-कूटैकतापन्न-कट्यधोभाग-धारिण्यै",
+        "iast": "śakti-kūṭaikatāpanna-kaṭyadhobhāga-dhāriṇyai"
+      },
       "gloss": "Who Bears The Śakti Syllables Below The Waist",
       "translation": "Her body from the waist downward has become one with the third cluster of the mantra, and she carries it as her own.",
       "aksaras": [

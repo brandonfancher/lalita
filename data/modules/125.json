@@ -273,6 +273,10 @@
           "id": "l0-t3",
           "deva": "कैवल्यपददायिनी",
           "iast": "kaivalyapadadāyinī",
+          "hyphenated": {
+            "deva": "कैवल्य-पद-दायिनी",
+            "iast": "kaivalya-pada-dāyinī"
+          },
           "namaIndices": [
             625
           ],
@@ -468,6 +472,10 @@
           "id": "l1-t0",
           "deva": "त्रिपुरा",
           "iast": "tripurā",
+          "hyphenated": {
+            "deva": "त्रि-पुरा",
+            "iast": "tri-purā"
+          },
           "namaIndices": [
             626
           ],
@@ -565,6 +573,10 @@
           "id": "l1-t1",
           "deva": "त्रिजगद्वन्द्या",
           "iast": "trijagadvandyā",
+          "hyphenated": {
+            "deva": "त्रि-जगद्-वन्द्या",
+            "iast": "tri-jagad-vandyā"
+          },
           "namaIndices": [
             627
           ],
@@ -734,6 +746,10 @@
           "id": "l1-t2",
           "deva": "त्रिमूर्तिस्त्रिदशेश्वरी",
           "iast": "trimūrtistridaśeśvarī",
+          "hyphenated": {
+            "deva": "त्रि-मूर्तिस्-त्रि-दशेश्वरी",
+            "iast": "tri-mūrtis-tri-daśeśvarī"
+          },
           "namaIndices": [
             628,
             629
@@ -1314,8 +1330,16 @@
       "index": 625,
       "deva": "कैवल्यपददायिनी",
       "iast": "kaivalyapadadāyinī",
+      "hyphenated": {
+        "deva": "कैवल्य-पद-दायिनी",
+        "iast": "kaivalya-pada-dāyinī"
+      },
       "namavaliDeva": "कैवल्यपददायिन्यै",
       "namavaliIast": "kaivalyapadadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "कैवल्य-पद-दायिन्यै",
+        "iast": "kaivalya-pada-dāyinyai"
+      },
       "gloss": "Giver Of The State Of Aloneness",
       "translation": "She hands over the condition of perfect solitude in which the soul is loosed from every tie.",
       "aksaras": [
@@ -1547,8 +1571,16 @@
       "index": 626,
       "deva": "त्रिपुरा",
       "iast": "tripurā",
+      "hyphenated": {
+        "deva": "त्रि-पुरा",
+        "iast": "tri-purā"
+      },
       "namavaliDeva": "त्रिपुरायै",
       "namavaliIast": "tripurāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-पुरायै",
+        "iast": "tri-purāyai"
+      },
       "gloss": "She Of The Three Cities",
       "translation": "She is Tripurā, the goddess whose name gathers up every triad, from the three fortified cities of the old story to the three states in which a person lives.",
       "aksaras": [
@@ -1674,8 +1706,16 @@
       "index": 627,
       "deva": "त्रिजगद्वन्द्या",
       "iast": "trijagadvandyā",
+      "hyphenated": {
+        "deva": "त्रि-जगद्-वन्द्या",
+        "iast": "tri-jagad-vandyā"
+      },
       "namavaliDeva": "त्रिजगद्वन्द्यायै",
       "namavaliIast": "trijagadvandyāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-जगद्-वन्द्यायै",
+        "iast": "tri-jagad-vandyāyai"
+      },
       "gloss": "Revered By The Three Worlds",
       "translation": "Earth, air and heaven together bow to her.",
       "aksaras": [
@@ -1887,8 +1927,16 @@
       "index": 628,
       "deva": "त्रिमूर्तिः",
       "iast": "trimūrtiḥ",
+      "hyphenated": {
+        "deva": "त्रि-मूर्तिः",
+        "iast": "tri-mūrtiḥ"
+      },
       "namavaliDeva": "त्रिमूर्त्यै",
       "namavaliIast": "trimūrtyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-मूर्त्यै",
+        "iast": "tri-mūrtyai"
+      },
       "gloss": "Of Threefold Form",
       "translation": "She wears three shapes, matching the three works of making, keeping and withdrawing the world.",
       "aksaras": [
@@ -2036,8 +2084,16 @@
       "index": 629,
       "deva": "त्रिदशेश्वरी",
       "iast": "tridaśeśvarī",
+      "hyphenated": {
+        "deva": "त्रि-दशेश्वरी",
+        "iast": "tri-daśeśvarī"
+      },
       "namavaliDeva": "त्रिदशेश्वर्यै",
       "namavaliIast": "tridaśeśvaryai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-दशेश्वर्यै",
+        "iast": "tri-daśeśvaryai"
+      },
       "gloss": "Sovereign Of The Thirty Gods",
       "translation": "The thirty deities of the Vedic reckoning hold her as their queen.",
       "aksaras": [

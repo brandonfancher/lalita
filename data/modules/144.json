@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भाग्याब्धिचन्द्रिका",
           "iast": "bhāgyābdhicandrikā",
+          "hyphenated": {
+            "deva": "भाग्याब्धि-चन्द्रिका",
+            "iast": "bhāgyābdhi-candrikā"
+          },
           "namaIndices": [
             746
           ],
@@ -220,6 +224,10 @@
           "id": "l0-t1",
           "deva": "भक्तचित्तकेकिघनाघना",
           "iast": "bhaktacittakekighanāghanā",
+          "hyphenated": {
+            "deva": "भक्त-चित्त-केकि-घनाघना",
+            "iast": "bhakta-citta-keki-ghanāghanā"
+          },
           "namaIndices": [
             747
           ],
@@ -471,6 +479,10 @@
           "id": "l1-t0",
           "deva": "रोगपर्वतदम्भोलिर्मृत्युदारुकुठारिका",
           "iast": "rogaparvatadambholirmṛtyudārukuṭhārikā",
+          "hyphenated": {
+            "deva": "रोग-पर्वत-दम्भोलिर्-मृत्यु-दारु-कुठारिका",
+            "iast": "roga-parvata-dambholir-mṛtyu-dāru-kuṭhārikā"
+          },
           "namaIndices": [
             748,
             749
@@ -895,8 +907,16 @@
       "index": 746,
       "deva": "भाग्याब्धिचन्द्रिका",
       "iast": "bhāgyābdhicandrikā",
+      "hyphenated": {
+        "deva": "भाग्याब्धि-चन्द्रिका",
+        "iast": "bhāgyābdhi-candrikā"
+      },
       "namavaliDeva": "भाग्याब्धिचन्द्रिकायै",
       "namavaliIast": "bhāgyābdhicandrikāyai",
+      "namavaliHyphenated": {
+        "deva": "भाग्याब्धि-चन्द्रिकायै",
+        "iast": "bhāgyābdhi-candrikāyai"
+      },
       "gloss": "Moonlight On The Sea Of Good Fortune",
       "translation": "As moonlight draws the tide up, her light makes a devotee's good fortune rise.",
       "aksaras": [
@@ -1146,8 +1166,16 @@
       "index": 747,
       "deva": "भक्तचित्तकेकिघनाघना",
       "iast": "bhaktacittakekighanāghanā",
+      "hyphenated": {
+        "deva": "भक्त-चित्त-केकि-घनाघना",
+        "iast": "bhakta-citta-keki-ghanāghanā"
+      },
       "namavaliDeva": "भक्तचित्तकेकिघनाघनायै",
       "namavaliIast": "bhaktacittakekighanāghanāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्त-चित्त-केकि-घनाघनायै",
+        "iast": "bhakta-citta-keki-ghanāghanāyai"
+      },
       "gloss": "Raincloud To The Peacock Of The Devotee's Mind",
       "translation": "A devotee's mind cries out for her as a peacock cries for the monsoon, and she gathers overhead as the rain.",
       "aksaras": [
@@ -1449,8 +1477,16 @@
       "index": 748,
       "deva": "रोगपर्वतदम्भोलिः",
       "iast": "rogaparvatadambholiḥ",
+      "hyphenated": {
+        "deva": "रोग-पर्वत-दम्भोलिः",
+        "iast": "roga-parvata-dambholiḥ"
+      },
       "namavaliDeva": "रोगपर्वतदम्भोलये",
       "namavaliIast": "rogaparvatadambholaye",
+      "namavaliHyphenated": {
+        "deva": "रोग-पर्वत-दम्भोलये",
+        "iast": "roga-parvata-dambholaye"
+      },
       "gloss": "Thunderbolt To The Mountain Of Disease",
       "translation": "Sickness piles up like a mountain, and she splits it as Indra's bolt split the wings off the hills.",
       "aksaras": [
@@ -1698,8 +1734,16 @@
       "index": 749,
       "deva": "मृत्युदारुकुठारिका",
       "iast": "mṛtyudārukuṭhārikā",
+      "hyphenated": {
+        "deva": "मृत्यु-दारु-कुठारिका",
+        "iast": "mṛtyu-dāru-kuṭhārikā"
+      },
       "namavaliDeva": "मृत्युदारुकुठारिकायै",
       "namavaliIast": "mṛtyudārukuṭhārikāyai",
+      "namavaliHyphenated": {
+        "deva": "मृत्यु-दारु-कुठारिकायै",
+        "iast": "mṛtyu-dāru-kuṭhārikāyai"
+      },
       "gloss": "Axe To The Tree Of Death",
       "translation": "Death stands like a hardwood tree in the path, and she is the small bright axe that fells it.",
       "aksaras": [

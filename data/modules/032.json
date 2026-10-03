@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कराङ्गुलिनखोत्पन्ननारायणदशाकृतिः",
           "iast": "karāṅgulinakhotpannanārāyaṇadaśākṛtiḥ",
+          "hyphenated": {
+            "deva": "कराङ्गुलि-नखोत्पन्न-नारायण-दशाकृतिः",
+            "iast": "karāṅguli-nakhotpanna-nārāyaṇa-daśākṛtiḥ"
+          },
           "namaIndices": [
             80
           ],
@@ -416,6 +420,10 @@
           "id": "l1-t0",
           "deva": "महापाशुपतास्त्राग्निनिर्दग्धासुरसैनिका",
           "iast": "mahāpāśupatāstrāgninirdagdhāsurasainikā",
+          "hyphenated": {
+            "deva": "महा-पाशुपतास्त्राग्नि-निर्दग्धासुर-सैनिका",
+            "iast": "mahā-pāśupatāstrāgni-nirdagdhāsura-sainikā"
+          },
           "namaIndices": [
             81
           ],
@@ -861,8 +869,16 @@
       "index": 80,
       "deva": "कराङ्गुलिनखोत्पन्ननारायणदशाकृतिः",
       "iast": "karāṅgulinakhotpannanārāyaṇadaśākṛtiḥ",
+      "hyphenated": {
+        "deva": "कराङ्गुलि-नखोत्पन्न-नारायण-दशाकृतिः",
+        "iast": "karāṅguli-nakhotpanna-nārāyaṇa-daśākṛtiḥ"
+      },
       "namavaliDeva": "कराङ्गुलिनखोत्पन्ननारायणदशाकृत्यै",
       "namavaliIast": "karāṅgulinakhotpannanārāyaṇadaśākṛtyai",
+      "namavaliHyphenated": {
+        "deva": "कराङ्गुलि-नखोत्पन्न-नारायण-दशाकृत्यै",
+        "iast": "karāṅguli-nakhotpanna-nārāyaṇa-daśākṛtyai"
+      },
       "gloss": "From Whose Nails Viṣṇu's Ten Forms Arose",
       "translation": "The ten descents of Nārāyaṇa came out of the nails on her fingers when the battle needed them.",
       "aksaras": [
@@ -1358,8 +1374,16 @@
       "index": 81,
       "deva": "महापाशुपतास्त्राग्निनिर्दग्धासुरसैनिका",
       "iast": "mahāpāśupatāstrāgninirdagdhāsurasainikā",
+      "hyphenated": {
+        "deva": "महा-पाशुपतास्त्राग्नि-निर्दग्धासुर-सैनिका",
+        "iast": "mahā-pāśupatāstrāgni-nirdagdhāsura-sainikā"
+      },
       "namavaliDeva": "महापाशुपतास्त्राग्निनिर्दग्धासुरसैनिकायै",
       "namavaliIast": "mahāpāśupatāstrāgninirdagdhāsurasainikāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-पाशुपतास्त्राग्नि-निर्दग्धासुर-सैनिकायै",
+        "iast": "mahā-pāśupatāstrāgni-nirdagdhāsura-sainikāyai"
+      },
       "gloss": "Who Burned The Demon Host With Śiva's Weapon",
       "translation": "She loosed the great Pāśupata missile, and its fire left nothing of the demon soldiers.",
       "aksaras": [

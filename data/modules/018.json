@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
           "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+          "hyphenated": {
+            "deva": "इन्द्रगोप-परिक्षिप्त-स्मर-तूणाभ-जङ्घिका",
+            "iast": "indragopa-parikṣipta-smara-tūṇābha-jaṅghikā"
+          },
           "namaIndices": [
             41
           ],
@@ -438,6 +442,10 @@
           "id": "l1-t0",
           "deva": "गूढगुल्फा",
           "iast": "gūḍhagulphā",
+          "hyphenated": {
+            "deva": "गूढ-गुल्फा",
+            "iast": "gūḍha-gulphā"
+          },
           "namaIndices": [
             42
           ],
@@ -552,6 +560,10 @@
           "id": "l1-t1",
           "deva": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
           "iast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+          "hyphenated": {
+            "deva": "कूर्म-पृष्ठ-जयिष्णु-प्रपदान्विता",
+            "iast": "kūrma-pṛṣṭha-jayiṣṇu-prapadānvitā"
+          },
           "namaIndices": [
             43
           ],
@@ -894,8 +906,16 @@
       "index": 41,
       "deva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
       "iast": "indragopaparikṣiptasmaratūṇābhajaṅghikā",
+      "hyphenated": {
+        "deva": "इन्द्रगोप-परिक्षिप्त-स्मर-तूणाभ-जङ्घिका",
+        "iast": "indragopa-parikṣipta-smara-tūṇābha-jaṅghikā"
+      },
       "namavaliDeva": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिकायै",
       "namavaliIast": "indragopaparikṣiptasmaratūṇābhajaṅghikāyai",
+      "namavaliHyphenated": {
+        "deva": "इन्द्रगोप-परिक्षिप्त-स्मर-तूणाभ-जङ्घिकायै",
+        "iast": "indragopa-parikṣipta-smara-tūṇābha-jaṅghikāyai"
+      },
       "gloss": "Whose Shanks Are Love's Quivers",
       "translation": "Her calves taper like the quivers of the god of love, scattered over with the small scarlet insects that appear with the rains.",
       "aksaras": [
@@ -1399,8 +1419,16 @@
       "index": 42,
       "deva": "गूढगुल्फा",
       "iast": "gūḍhagulphā",
+      "hyphenated": {
+        "deva": "गूढ-गुल्फा",
+        "iast": "gūḍha-gulphā"
+      },
       "namavaliDeva": "गूढगुल्फायै",
       "namavaliIast": "gūḍhagulphāyai",
+      "namavaliHyphenated": {
+        "deva": "गूढ-गुल्फायै",
+        "iast": "gūḍha-gulphāyai"
+      },
       "gloss": "Whose Ankles Are Hidden",
       "translation": "Her ankle bones do not stand out at all, the sign of a body finished with perfect proportion.",
       "aksaras": [
@@ -1543,8 +1571,16 @@
       "index": 43,
       "deva": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
       "iast": "kūrmapṛṣṭhajayiṣṇuprapadānvitā",
+      "hyphenated": {
+        "deva": "कूर्म-पृष्ठ-जयिष्णु-प्रपदान्विता",
+        "iast": "kūrma-pṛṣṭha-jayiṣṇu-prapadānvitā"
+      },
       "namavaliDeva": "कूर्म पृष्ठजयिष्णुप्रपदान्वितायै",
       "namavaliIast": "kūrma pṛṣṭhajayiṣṇuprapadānvitāyai",
+      "namavaliHyphenated": {
+        "deva": "कूर्म पृष्ठ-जयिष्णु-प्रपदान्वितायै",
+        "iast": "kūrma pṛṣṭha-jayiṣṇu-prapadānvitāyai"
+      },
       "gloss": "Whose Insteps Outdo The Tortoise Shell",
       "translation": "The arch of her foot rises with a curve smoother and more perfect than the domed back of a tortoise.",
       "aksaras": [

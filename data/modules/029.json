@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भण्डपुत्रवधोद्युक्तबालाविक्रमनन्दिता",
           "iast": "bhaṇḍaputravadhodyuktabālāvikramananditā",
+          "hyphenated": {
+            "deva": "भण्ड-पुत्र-वधोद्युक्त-बाला-विक्रम-नन्दिता",
+            "iast": "bhaṇḍa-putra-vadhodyukta-bālā-vikrama-nanditā"
+          },
           "namaIndices": [
             74
           ],
@@ -447,6 +451,10 @@
           "id": "l1-t0",
           "deva": "मन्त्रिण्यम्बाविरचितविषङ्गवधतोषिता",
           "iast": "mantriṇyambāviracitaviṣaṅgavadhatoṣitā",
+          "hyphenated": {
+            "deva": "मन्त्रिण्यम्बा-विरचित-विषङ्ग-वध-तोषिता",
+            "iast": "mantriṇyambā-viracita-viṣaṅga-vadha-toṣitā"
+          },
           "namaIndices": [
             75
           ],
@@ -864,8 +872,16 @@
       "index": 74,
       "deva": "भण्डपुत्रवधोद्युक्तबालाविक्रमनन्दिता",
       "iast": "bhaṇḍaputravadhodyuktabālāvikramananditā",
+      "hyphenated": {
+        "deva": "भण्ड-पुत्र-वधोद्युक्त-बाला-विक्रम-नन्दिता",
+        "iast": "bhaṇḍa-putra-vadhodyukta-bālā-vikrama-nanditā"
+      },
       "namavaliDeva": "भण्डपुत्रवधोद्युक्तबालाविक्रमनन्दितायै",
       "namavaliIast": "bhaṇḍaputravadhodyuktabālāvikramananditāyai",
+      "namavaliHyphenated": {
+        "deva": "भण्ड-पुत्र-वधोद्युक्त-बाला-विक्रम-नन्दितायै",
+        "iast": "bhaṇḍa-putra-vadhodyukta-bālā-vikrama-nanditāyai"
+      },
       "gloss": "Delighted By Bālā's Prowess",
       "translation": "The girl-goddess Bālā set out to kill the sons of Bhaṇḍa, and her daring gave the mother open joy.",
       "aksaras": [
@@ -1383,8 +1399,16 @@
       "index": 75,
       "deva": "मन्त्रिण्यम्बाविरचितविषङ्गवधतोषिता",
       "iast": "mantriṇyambāviracitaviṣaṅgavadhatoṣitā",
+      "hyphenated": {
+        "deva": "मन्त्रिण्यम्बा-विरचित-विषङ्ग-वध-तोषिता",
+        "iast": "mantriṇyambā-viracita-viṣaṅga-vadha-toṣitā"
+      },
       "namavaliDeva": "मन्त्रिण्यम्बाविरचितविषङ्गवधतोषितायै",
       "namavaliIast": "mantriṇyambāviracitaviṣaṅgavadhatoṣitāyai",
+      "namavaliHyphenated": {
+        "deva": "मन्त्रिण्यम्बा-विरचित-विषङ्ग-वध-तोषितायै",
+        "iast": "mantriṇyambā-viracita-viṣaṅga-vadha-toṣitāyai"
+      },
       "gloss": "Pleased By The Fall Of Viṣaṅga",
       "translation": "Mother Mantriṇī brought down the demon Viṣaṅga, and the deed satisfied her completely.",
       "aksaras": [

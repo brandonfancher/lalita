@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सम्पत्करीसमारूढसिन्धुरव्रजसेविता",
           "iast": "sampatkarīsamārūḍhasindhuravrajasevitā",
+          "hyphenated": {
+            "deva": "सम्पत्करी-समारूढ-सिन्धुर-व्रज-सेविता",
+            "iast": "sampatkarī-samārūḍha-sindhura-vraja-sevitā"
+          },
           "namaIndices": [
             66
           ],
@@ -417,6 +421,10 @@
           "id": "l1-t0",
           "deva": "अश्वारूढाधिष्ठिताश्वकोटिकोटिभिरावृता",
           "iast": "aśvārūḍhādhiṣṭhitāśvakoṭikoṭibhirāvṛtā",
+          "hyphenated": {
+            "deva": "अश्वारूढाधिष्ठिताश्व-कोटिकोटिभिरावृता",
+            "iast": "aśvārūḍhādhiṣṭhitāśva-koṭikoṭibhirāvṛtā"
+          },
           "namaIndices": [
             67
           ],
@@ -844,8 +852,16 @@
       "index": 66,
       "deva": "सम्पत्करीसमारूढसिन्धुरव्रजसेविता",
       "iast": "sampatkarīsamārūḍhasindhuravrajasevitā",
+      "hyphenated": {
+        "deva": "सम्पत्करी-समारूढ-सिन्धुर-व्रज-सेविता",
+        "iast": "sampatkarī-samārūḍha-sindhura-vraja-sevitā"
+      },
       "namavaliDeva": "सम्पत्करीसमारूढसिन्दुरव्रजसेवितायै",
       "namavaliIast": "sampatkarīsamārūḍhasinduravrajasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "सम्पत्करी-समारूढ-सिन्दुर-व्रज-सेवितायै",
+        "iast": "sampatkarī-samārūḍha-sindura-vraja-sevitāyai"
+      },
       "gloss": "Served By Sampatkarī's Elephant Corps",
       "translation": "The herd of war-elephants that the goddess Sampatkarī rides at the head of moves with her as her retinue.",
       "aksaras": [
@@ -1328,8 +1344,16 @@
       "index": 67,
       "deva": "अश्वारूढाधिष्ठिताश्वकोटिकोटिभिरावृता",
       "iast": "aśvārūḍhādhiṣṭhitāśvakoṭikoṭibhirāvṛtā",
+      "hyphenated": {
+        "deva": "अश्वारूढाधिष्ठिताश्व-कोटिकोटिभिरावृता",
+        "iast": "aśvārūḍhādhiṣṭhitāśva-koṭikoṭibhirāvṛtā"
+      },
       "namavaliDeva": "अश्वारूढाधिष्ठिताश्वकोटिकोटिभिरावृतायै",
       "namavaliIast": "aśvārūḍhādhiṣṭhitāśvakoṭikoṭibhirāvṛtāyai",
+      "namavaliHyphenated": {
+        "deva": "अश्वारूढाधिष्ठिताश्व-कोटिकोटिभिरावृतायै",
+        "iast": "aśvārūḍhādhiṣṭhitāśva-koṭikoṭibhirāvṛtāyai"
+      },
       "gloss": "Ringed By Aśvārūḍhā's Cavalry",
       "translation": "Uncountable crores of horses, marshalled by the goddess who rides at their head, close round her on every side.",
       "aksaras": [

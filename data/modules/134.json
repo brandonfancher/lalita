@@ -168,6 +168,10 @@
           "id": "l0-t1",
           "deva": "राज्यदायिनी",
           "iast": "rājyadāyinī",
+          "hyphenated": {
+            "deva": "राज्य-दायिनी",
+            "iast": "rājya-dāyinī"
+          },
           "namaIndices": [
             685
           ],
@@ -306,6 +310,10 @@
           "id": "l0-t2",
           "deva": "राज्यवल्लभा",
           "iast": "rājyavallabhā",
+          "hyphenated": {
+            "deva": "राज्य-वल्लभा",
+            "iast": "rājya-vallabhā"
+          },
           "namaIndices": [
             686
           ],
@@ -451,6 +459,10 @@
           "id": "l1-t0",
           "deva": "राजत्कृपा",
           "iast": "rājatkṛpā",
+          "hyphenated": {
+            "deva": "राजत्-कृपा",
+            "iast": "rājat-kṛpā"
+          },
           "namaIndices": [
             687
           ],
@@ -565,6 +577,10 @@
           "id": "l1-t1",
           "deva": "राजपीठनिवेशितनिजाश्रिता",
           "iast": "rājapīṭhaniveśitanijāśritā",
+          "hyphenated": {
+            "deva": "राज-पीठ-निवेशित-निजाश्रिता",
+            "iast": "rāja-pīṭha-niveśita-nijāśritā"
+          },
           "namaIndices": [
             688
           ],
@@ -1060,8 +1076,16 @@
       "index": 685,
       "deva": "राज्यदायिनी",
       "iast": "rājyadāyinī",
+      "hyphenated": {
+        "deva": "राज्य-दायिनी",
+        "iast": "rājya-dāyinī"
+      },
       "namavaliDeva": "राज्यदायिन्यै",
       "namavaliIast": "rājyadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "राज्य-दायिन्यै",
+        "iast": "rājya-dāyinyai"
+      },
       "gloss": "Giver Of Kingdoms",
       "translation": "Sovereignty is one of the things she hands out.",
       "aksaras": [
@@ -1228,8 +1252,16 @@
       "index": 686,
       "deva": "राज्यवल्लभा",
       "iast": "rājyavallabhā",
+      "hyphenated": {
+        "deva": "राज्य-वल्लभा",
+        "iast": "rājya-vallabhā"
+      },
       "namavaliDeva": "राज्यवल्लभायै",
       "namavaliIast": "rājyavallabhāyai",
+      "namavaliHyphenated": {
+        "deva": "राज्य-वल्लभायै",
+        "iast": "rājya-vallabhāyai"
+      },
       "gloss": "Beloved Of The Realm",
       "translation": "The kingdom holds her dear, and its prosperity is a matter of her favour.",
       "aksaras": [
@@ -1397,8 +1429,16 @@
       "index": 687,
       "deva": "राजत्कृपा",
       "iast": "rājatkṛpā",
+      "hyphenated": {
+        "deva": "राजत्-कृपा",
+        "iast": "rājat-kṛpā"
+      },
       "namavaliDeva": "राजत्कृपायै",
       "namavaliIast": "rājatkṛpāyai",
+      "namavaliHyphenated": {
+        "deva": "राजत्-कृपायै",
+        "iast": "rājat-kṛpāyai"
+      },
       "gloss": "Whose Compassion Shines",
       "translation": "Her pity is not hidden but visibly radiant, the first thing about her that anyone notices.",
       "aksaras": [
@@ -1541,8 +1581,16 @@
       "index": 688,
       "deva": "राजपीठनिवेशितनिजाश्रिता",
       "iast": "rājapīṭhaniveśitanijāśritā",
+      "hyphenated": {
+        "deva": "राज-पीठ-निवेशित-निजाश्रिता",
+        "iast": "rāja-pīṭha-niveśita-nijāśritā"
+      },
       "namavaliDeva": "राजपीठनिवेशितनिजाश्रितायै",
       "namavaliIast": "rājapīṭhaniveśitanijāśritāyai",
+      "namavaliHyphenated": {
+        "deva": "राज-पीठ-निवेशित-निजाश्रितायै",
+        "iast": "rāja-pīṭha-niveśita-nijāśritāyai"
+      },
       "gloss": "By Whom Her Own Dependents Are Set On Royal Thrones",
       "translation": "Those who have taken shelter with her she raises up and seats on the thrones of kings.",
       "aksaras": [

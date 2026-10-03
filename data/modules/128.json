@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सर्ववेदान्तसंवेद्या",
           "iast": "sarvavedāntasaṃvedyā",
+          "hyphenated": {
+            "deva": "सर्व-वेदान्त-संवेद्या",
+            "iast": "sarva-vedānta-saṃvedyā"
+          },
           "namaIndices": [
             645
           ],
@@ -239,6 +243,10 @@
           "id": "l0-t1",
           "deva": "सत्यानन्दस्वरूपिणी",
           "iast": "satyānandasvarūpiṇī",
+          "hyphenated": {
+            "deva": "सत्यानन्द-स्वरूपिणी",
+            "iast": "satyānanda-svarūpiṇī"
+          },
           "namaIndices": [
             646
           ],
@@ -648,6 +656,10 @@
           "id": "l1-t1",
           "deva": "लीलाकॢप्तब्रह्माण्डमण्डला",
           "iast": "līlākḷptabrahmāṇḍamaṇḍalā",
+          "hyphenated": {
+            "deva": "लीला-कॢप्त-ब्रह्माण्ड-मण्डला",
+            "iast": "līlā-kḷpta-brahmāṇḍa-maṇḍalā"
+          },
           "namaIndices": [
             648
           ],
@@ -942,8 +954,16 @@
       "index": 645,
       "deva": "सर्ववेदान्तसंवेद्या",
       "iast": "sarvavedāntasaṃvedyā",
+      "hyphenated": {
+        "deva": "सर्व-वेदान्त-संवेद्या",
+        "iast": "sarva-vedānta-saṃvedyā"
+      },
       "namavaliDeva": "सर्ववेदान्तसंवेद्यायै",
       "namavaliIast": "sarvavedāntasaṃvedyāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-वेदान्त-संवेद्यायै",
+        "iast": "sarva-vedānta-saṃvedyāyai"
+      },
       "gloss": "Known Through All The Vedānta",
       "translation": "The closing portions of every Veda exist in order to make her known.",
       "aksaras": [
@@ -1226,8 +1246,16 @@
       "index": 646,
       "deva": "सत्यानन्दस्वरूपिणी",
       "iast": "satyānandasvarūpiṇī",
+      "hyphenated": {
+        "deva": "सत्यानन्द-स्वरूपिणी",
+        "iast": "satyānanda-svarūpiṇī"
+      },
       "namavaliDeva": "सत्यानन्दस्वरूपिण्यै",
       "namavaliIast": "satyānandasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सत्यानन्द-स्वरूपिण्यै",
+        "iast": "satyānanda-svarūpiṇyai"
+      },
       "gloss": "Whose Nature Is Truth And Bliss",
       "translation": "What she is made of is real being together with joy that has no end to it.",
       "aksaras": [
@@ -1704,8 +1732,16 @@
       "index": 648,
       "deva": "लीलाकॢप्तब्रह्माण्डमण्डला",
       "iast": "līlākḷptabrahmāṇḍamaṇḍalā",
+      "hyphenated": {
+        "deva": "लीला-कॢप्त-ब्रह्माण्ड-मण्डला",
+        "iast": "līlā-kḷpta-brahmāṇḍa-maṇḍalā"
+      },
       "namavaliDeva": "लीलाक्लृप्तब्रह्माण्डमण्डलायै",
       "namavaliIast": "līlāklṛptabrahmāṇḍamaṇḍalāyai",
+      "namavaliHyphenated": {
+        "deva": "लीला-क्लृप्त-ब्रह्माण्ड-मण्डलायै",
+        "iast": "līlā-klṛpta-brahmāṇḍa-maṇḍalāyai"
+      },
       "gloss": "By Whom The Round Of Worlds Was Fashioned In Play",
       "translation": "The whole assembly of world-eggs was put together by her with the ease of a child at a game.",
       "aksaras": [

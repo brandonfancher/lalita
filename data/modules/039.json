@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "आज्ञाचक्रान्तरालस्था",
           "iast": "ājñācakrāntarālasthā",
+          "hyphenated": {
+            "deva": "आज्ञा-चक्रान्तरालस्था",
+            "iast": "ājñā-cakrāntarālasthā"
+          },
           "namaIndices": [
             103
           ],
@@ -245,6 +249,10 @@
           "id": "l0-t1",
           "deva": "रुद्रग्रन्थिविभेदिनी",
           "iast": "rudragranthivibhedinī",
+          "hyphenated": {
+            "deva": "रुद्र-ग्रन्थि-विभेदिनी",
+            "iast": "rudra-granthi-vibhedinī"
+          },
           "namaIndices": [
             104
           ],
@@ -702,6 +710,10 @@
           "id": "l1-t1",
           "deva": "सुधासाराभिवर्षिणी",
           "iast": "sudhāsārābhivarṣiṇī",
+          "hyphenated": {
+            "deva": "सुधा-साराभिवर्षिणी",
+            "iast": "sudhā-sārābhivarṣiṇī"
+          },
           "namaIndices": [
             106
           ],
@@ -916,8 +928,16 @@
       "index": 103,
       "deva": "आज्ञाचक्रान्तरालस्था",
       "iast": "ājñācakrāntarālasthā",
+      "hyphenated": {
+        "deva": "आज्ञा-चक्रान्तरालस्था",
+        "iast": "ājñā-cakrāntarālasthā"
+      },
       "namavaliDeva": "आज्ञाचक्रान्तरालस्थायै",
       "namavaliIast": "ājñācakrāntarālasthāyai",
+      "namavaliHyphenated": {
+        "deva": "आज्ञा-चक्रान्तरालस्थायै",
+        "iast": "ājñā-cakrāntarālasthāyai"
+      },
       "gloss": "Seated Within The Ājñā Wheel",
       "translation": "She stands in the hollow of the ājñā wheel between the brows, the station from which command is issued.",
       "aksaras": [
@@ -1206,8 +1226,16 @@
       "index": 104,
       "deva": "रुद्रग्रन्थिविभेदिनी",
       "iast": "rudragranthivibhedinī",
+      "hyphenated": {
+        "deva": "रुद्र-ग्रन्थि-विभेदिनी",
+        "iast": "rudra-granthi-vibhedinī"
+      },
       "namavaliDeva": "रुद्रग्रन्थिविभेदिन्यै",
       "namavaliIast": "rudragranthivibhedinyai",
+      "namavaliHyphenated": {
+        "deva": "रुद्र-ग्रन्थि-विभेदिन्यै",
+        "iast": "rudra-granthi-vibhedinyai"
+      },
       "gloss": "Piercer Of The Rudra Knot",
       "translation": "She breaks through the knot named for Rudra, the last of the three obstructions on the upward road.",
       "aksaras": [
@@ -1773,8 +1801,16 @@
       "index": 106,
       "deva": "सुधासाराभिवर्षिणी",
       "iast": "sudhāsārābhivarṣiṇī",
+      "hyphenated": {
+        "deva": "सुधा-साराभिवर्षिणी",
+        "iast": "sudhā-sārābhivarṣiṇī"
+      },
       "namavaliDeva": "सुधासाराभिवर्षिण्यै",
       "namavaliIast": "sudhāsārābhivarṣiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सुधा-साराभिवर्षिण्यै",
+        "iast": "sudhā-sārābhivarṣiṇyai"
+      },
       "gloss": "Raining Down A Flood Of Nectar",
       "translation": "From that height she pours the deathless drink downward, soaking the body she has just climbed through.",
       "aksaras": [

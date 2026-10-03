@@ -244,6 +244,10 @@
           "id": "l0-t3",
           "deva": "वन्दारुजनवत्सला",
           "iast": "vandārujanavatsalā",
+          "hyphenated": {
+            "deva": "वन्दारु-जन-वत्सला",
+            "iast": "vandāru-jana-vatsalā"
+          },
           "namaIndices": [
             349
           ],
@@ -447,6 +451,10 @@
           "id": "l1-t0",
           "deva": "वाग्वादिनी",
           "iast": "vāgvādinī",
+          "hyphenated": {
+            "deva": "वाग्-वादिनी",
+            "iast": "vāg-vādinī"
+          },
           "namaIndices": [
             350
           ],
@@ -568,6 +576,10 @@
           "id": "l1-t1",
           "deva": "वामकेशी",
           "iast": "vāmakeśī",
+          "hyphenated": {
+            "deva": "वाम-केशी",
+            "iast": "vāma-keśī"
+          },
           "namaIndices": [
             351
           ],
@@ -667,6 +679,10 @@
           "id": "l1-t2",
           "deva": "वह्निमण्डलवासिनी",
           "iast": "vahnimaṇḍalavāsinī",
+          "hyphenated": {
+            "deva": "वह्नि-मण्डल-वासिनी",
+            "iast": "vahni-maṇḍala-vāsinī"
+          },
           "namaIndices": [
             352
           ],
@@ -1158,8 +1174,16 @@
       "index": 349,
       "deva": "वन्दारुजनवत्सला",
       "iast": "vandārujanavatsalā",
+      "hyphenated": {
+        "deva": "वन्दारु-जन-वत्सला",
+        "iast": "vandāru-jana-vatsalā"
+      },
       "namavaliDeva": "वन्दारुजनवत्सलायै",
       "namavaliIast": "vandārujanavatsalāyai",
+      "namavaliHyphenated": {
+        "deva": "वन्दारु-जन-वत्सलायै",
+        "iast": "vandāru-jana-vatsalāyai"
+      },
       "gloss": "Tender To Those Who Bow",
       "translation": "Towards people who come reverently to her she feels what a cow feels for her calf.",
       "aksaras": [
@@ -1399,8 +1423,16 @@
       "index": 350,
       "deva": "वाग्वादिनी",
       "iast": "vāgvādinī",
+      "hyphenated": {
+        "deva": "वाग्-वादिनी",
+        "iast": "vāg-vādinī"
+      },
       "namavaliDeva": "वाग्वादिन्यै",
       "namavaliIast": "vāgvādinyai",
+      "namavaliHyphenated": {
+        "deva": "वाग्-वादिन्यै",
+        "iast": "vāg-vādinyai"
+      },
       "gloss": "Speaker Of The Word",
       "translation": "Speech does not happen to her; she is the one uttering it wherever it is uttered.",
       "aksaras": [
@@ -1550,8 +1582,16 @@
       "index": 351,
       "deva": "वामकेशी",
       "iast": "vāmakeśī",
+      "hyphenated": {
+        "deva": "वाम-केशी",
+        "iast": "vāma-keśī"
+      },
       "namavaliDeva": "वामकेश्यै",
       "namavaliIast": "vāmakeśyai",
+      "namavaliHyphenated": {
+        "deva": "वाम-केश्यै",
+        "iast": "vāma-keśyai"
+      },
       "gloss": "Lovely-Haired",
       "translation": "Her hair falls beautifully, dark and loose down her back.",
       "aksaras": [
@@ -1679,8 +1719,16 @@
       "index": 352,
       "deva": "वह्निमण्डलवासिनी",
       "iast": "vahnimaṇḍalavāsinī",
+      "hyphenated": {
+        "deva": "वह्नि-मण्डल-वासिनी",
+        "iast": "vahni-maṇḍala-vāsinī"
+      },
       "namavaliDeva": "वह्निमण्डलवासिन्यै",
       "namavaliIast": "vahnimaṇḍalavāsinyai",
+      "namavaliHyphenated": {
+        "deva": "वह्नि-मण्डल-वासिन्यै",
+        "iast": "vahni-maṇḍala-vāsinyai"
+      },
       "gloss": "Dwelling In The Circle Of Fire",
       "translation": "Her seat is the fiery ring, the region of flame that meditation places at the base of the body.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "रक्तवर्णा",
           "iast": "raktavarṇā",
+          "hyphenated": {
+            "deva": "रक्त-वर्णा",
+            "iast": "rakta-varṇā"
+          },
           "namaIndices": [
             499
           ],
@@ -128,6 +132,10 @@
           "id": "l0-t1",
           "deva": "मांसनिष्ठा",
           "iast": "māṃsaniṣṭhā",
+          "hyphenated": {
+            "deva": "मांस-निष्ठा",
+            "iast": "māṃsa-niṣṭhā"
+          },
           "namaIndices": [
             500
           ],
@@ -249,6 +257,10 @@
           "id": "l0-t2",
           "deva": "गुडान्नप्रीतमानसा",
           "iast": "guḍānnaprītamānasā",
+          "hyphenated": {
+            "deva": "गुडान्न-प्रीत-मानसा",
+            "iast": "guḍānna-prīta-mānasā"
+          },
           "namaIndices": [
             501
           ],
@@ -466,6 +478,10 @@
           "id": "l1-t0",
           "deva": "समस्तभक्तसुखदा",
           "iast": "samastabhaktasukhadā",
+          "hyphenated": {
+            "deva": "समस्त-भक्त-सुखदा",
+            "iast": "samasta-bhakta-sukhadā"
+          },
           "namaIndices": [
             502
           ],
@@ -656,6 +672,10 @@
           "id": "l1-t1",
           "deva": "लाकिन्यम्बास्वरूपिणी",
           "iast": "lākinyambāsvarūpiṇī",
+          "hyphenated": {
+            "deva": "लाकिन्यम्बा-स्वरूपिणी",
+            "iast": "lākinyambā-svarūpiṇī"
+          },
           "namaIndices": [
             503
           ],
@@ -893,8 +913,16 @@
       "index": 499,
       "deva": "रक्तवर्णा",
       "iast": "raktavarṇā",
+      "hyphenated": {
+        "deva": "रक्त-वर्णा",
+        "iast": "rakta-varṇā"
+      },
       "namavaliDeva": "रक्तवर्णायै",
       "namavaliIast": "raktavarṇāyai",
+      "namavaliHyphenated": {
+        "deva": "रक्त-वर्णायै",
+        "iast": "rakta-varṇāyai"
+      },
       "gloss": "Red In Colour",
       "translation": "The colour of Lākinī is plain red, unmixed with any other shade.",
       "aksaras": [
@@ -1038,8 +1066,16 @@
       "index": 500,
       "deva": "मांसनिष्ठा",
       "iast": "māṃsaniṣṭhā",
+      "hyphenated": {
+        "deva": "मांस-निष्ठा",
+        "iast": "māṃsa-niṣṭhā"
+      },
       "namavaliDeva": "मांसनिष्ठायै",
       "namavaliIast": "māṃsaniṣṭhāyai",
+      "namavaliHyphenated": {
+        "deva": "मांस-निष्ठायै",
+        "iast": "māṃsa-niṣṭhāyai"
+      },
       "gloss": "Established In The Flesh",
       "translation": "Among the bodily constituents she is fixed in the flesh.",
       "aksaras": [
@@ -1189,8 +1225,16 @@
       "index": 501,
       "deva": "गुडान्नप्रीतमानसा",
       "iast": "guḍānnaprītamānasā",
+      "hyphenated": {
+        "deva": "गुडान्न-प्रीत-मानसा",
+        "iast": "guḍānna-prīta-mānasā"
+      },
       "namavaliDeva": "गुडान्नप्रीतमानसायै",
       "namavaliIast": "guḍānnaprītamānasāyai",
+      "namavaliHyphenated": {
+        "deva": "गुडान्न-प्रीत-मानसायै",
+        "iast": "guḍānna-prīta-mānasāyai"
+      },
       "gloss": "Gladdened By Jaggery-Rice",
       "translation": "The offering set before her at this station is rice sweetened with raw cane sugar, and her mind receives it with pleasure.",
       "aksaras": [
@@ -1458,8 +1502,16 @@
       "index": 502,
       "deva": "समस्तभक्तसुखदा",
       "iast": "samastabhaktasukhadā",
+      "hyphenated": {
+        "deva": "समस्त-भक्त-सुखदा",
+        "iast": "samasta-bhakta-sukhadā"
+      },
       "namavaliDeva": "समस्तभक्तसुखदायै",
       "namavaliIast": "samastabhaktasukhadāyai",
+      "namavaliHyphenated": {
+        "deva": "समस्त-भक्त-सुखदायै",
+        "iast": "samasta-bhakta-sukhadāyai"
+      },
       "gloss": "Giver Of Joy To Every Devotee",
       "translation": "No worshipper is left out of her generosity; happiness reaches each of them without exception.",
       "aksaras": [
@@ -1706,8 +1758,16 @@
       "index": 503,
       "deva": "लाकिन्यम्बास्वरूपिणी",
       "iast": "lākinyambāsvarūpiṇī",
+      "hyphenated": {
+        "deva": "लाकिन्यम्बा-स्वरूपिणी",
+        "iast": "lākinyambā-svarūpiṇī"
+      },
       "namavaliDeva": "लाकिन्यम्बास्वरूपिण्यै",
       "namavaliIast": "lākinyambāsvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "लाकिन्यम्बा-स्वरूपिण्यै",
+        "iast": "lākinyambā-svarūpiṇyai"
+      },
       "gloss": "Embodied As Mother Lākinī",
       "translation": "Presiding over the maṇipūra station, she takes on the shape of the Tantric goddess Lākinī, addressed with the respectful title of mother.",
       "aksaras": [

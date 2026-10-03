@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भण्डसैन्यवधोद्युक्तशक्तिविक्रमहर्षिता",
           "iast": "bhaṇḍasainyavadhodyuktaśaktivikramaharṣitā",
+          "hyphenated": {
+            "deva": "भण्ड-सैन्य-वधोद्युक्त-शक्ति-विक्रम-हर्षिता",
+            "iast": "bhaṇḍa-sainya-vadhodyukta-śakti-vikrama-harṣitā"
+          },
           "namaIndices": [
             72
           ],
@@ -455,6 +459,10 @@
           "id": "l1-t0",
           "deva": "नित्यापराक्रमाटोपनिरीक्षणसमुत्सुका",
           "iast": "nityāparākramāṭopanirīkṣaṇasamutsukā",
+          "hyphenated": {
+            "deva": "नित्या-पराक्रमाटोप-निरीक्षण-समुत्सुका",
+            "iast": "nityā-parākramāṭopa-nirīkṣaṇa-samutsukā"
+          },
           "namaIndices": [
             73
           ],
@@ -871,8 +879,16 @@
       "index": 72,
       "deva": "भण्डसैन्यवधोद्युक्तशक्तिविक्रमहर्षिता",
       "iast": "bhaṇḍasainyavadhodyuktaśaktivikramaharṣitā",
+      "hyphenated": {
+        "deva": "भण्ड-सैन्य-वधोद्युक्त-शक्ति-विक्रम-हर्षिता",
+        "iast": "bhaṇḍa-sainya-vadhodyukta-śakti-vikrama-harṣitā"
+      },
       "namavaliDeva": "भण्डसैन्यवधोद्युक्तशक्तिविक्रमहर्षितायै",
       "namavaliIast": "bhaṇḍasainyavadhodyuktaśaktivikramaharṣitāyai",
+      "namavaliHyphenated": {
+        "deva": "भण्ड-सैन्य-वधोद्युक्त-शक्ति-विक्रम-हर्षितायै",
+        "iast": "bhaṇḍa-sainya-vadhodyukta-śakti-vikrama-harṣitāyai"
+      },
       "gloss": "Gladdened By The Śaktis' Valour",
       "translation": "Watching her powers press the attack on Bhaṇḍa's forces, she is filled with delight at their courage.",
       "aksaras": [
@@ -1398,8 +1414,16 @@
       "index": 73,
       "deva": "नित्यापराक्रमाटोपनिरीक्षणसमुत्सुका",
       "iast": "nityāparākramāṭopanirīkṣaṇasamutsukā",
+      "hyphenated": {
+        "deva": "नित्या-पराक्रमाटोप-निरीक्षण-समुत्सुका",
+        "iast": "nityā-parākramāṭopa-nirīkṣaṇa-samutsukā"
+      },
       "namavaliDeva": "नित्यापराक्रमाटोपनिरीक्षणसमुत्सुकायै",
       "namavaliIast": "nityāparākramāṭopanirīkṣaṇasamutsukāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्या-पराक्रमाटोप-निरीक्षण-समुत्सुकायै",
+        "iast": "nityā-parākramāṭopa-nirīkṣaṇa-samutsukāyai"
+      },
       "gloss": "Eager To Watch The Nityās' Onslaught",
       "translation": "She leans forward with open pleasure to see the swelling force with which the Nityā goddesses fight.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कटाक्षकिङ्करीभूतकमलाकोटिसेविता",
           "iast": "kaṭākṣakiṅkarībhūtakamalākoṭisevitā",
+          "hyphenated": {
+            "deva": "कटाक्ष-किङ्करी-भूत-कमला-कोटि-सेविता",
+            "iast": "kaṭākṣa-kiṅkarī-bhūta-kamalā-koṭi-sevitā"
+          },
           "namaIndices": [
             590
           ],
@@ -401,6 +405,10 @@
           "id": "l1-t0",
           "deva": "शिरःस्थिता",
           "iast": "śiraḥsthitā",
+          "hyphenated": {
+            "deva": "शिरः-स्थिता",
+            "iast": "śiraḥ-sthitā"
+          },
           "namaIndices": [
             591
           ],
@@ -522,6 +530,10 @@
           "id": "l1-t1",
           "deva": "चन्द्रनिभा",
           "iast": "candranibhā",
+          "hyphenated": {
+            "deva": "चन्द्र-निभा",
+            "iast": "candra-nibhā"
+          },
           "namaIndices": [
             592
           ],
@@ -644,6 +656,10 @@
           "id": "l1-t2",
           "deva": "भालस्थेन्द्रधनुःप्रभा",
           "iast": "bhālasthendradhanuḥprabhā",
+          "hyphenated": {
+            "deva": "भालस्थेन्द्र-धनुः-प्रभा",
+            "iast": "bhālasthendra-dhanuḥ-prabhā"
+          },
           "namaIndices": [
             593,
             594
@@ -890,8 +906,16 @@
       "index": 590,
       "deva": "कटाक्षकिङ्करीभूतकमलाकोटिसेविता",
       "iast": "kaṭākṣakiṅkarībhūtakamalākoṭisevitā",
+      "hyphenated": {
+        "deva": "कटाक्ष-किङ्करी-भूत-कमला-कोटि-सेविता",
+        "iast": "kaṭākṣa-kiṅkarī-bhūta-kamalā-koṭi-sevitā"
+      },
       "namavaliDeva": "कटाक्षकिङ्करीभूतकमलाकोटिसेवितायै",
       "namavaliIast": "kaṭākṣakiṅkarībhūtakamalākoṭisevitāyai",
+      "namavaliHyphenated": {
+        "deva": "कटाक्ष-किङ्करी-भूत-कमला-कोटि-सेवितायै",
+        "iast": "kaṭākṣa-kiṅkarī-bhūta-kamalā-koṭi-sevitāyai"
+      },
       "gloss": "Served By Millions Of Lakṣmīs Made Her Handmaids",
       "translation": "One sidelong look from her turns countless goddesses of fortune into attendants, and it is these who then wait on her.",
       "aksaras": [
@@ -1349,8 +1373,16 @@
       "index": 591,
       "deva": "शिरःस्थिता",
       "iast": "śiraḥsthitā",
+      "hyphenated": {
+        "deva": "शिरः-स्थिता",
+        "iast": "śiraḥ-sthitā"
+      },
       "namavaliDeva": "शिरःस्थितायै",
       "namavaliIast": "śiraḥsthitāyai",
+      "namavaliHyphenated": {
+        "deva": "शिरः-स्थितायै",
+        "iast": "śiraḥ-sthitāyai"
+      },
       "gloss": "Seated In The Head",
       "translation": "In the meditation on her placement through the body she is first fixed at the crown of the head.",
       "aksaras": [
@@ -1500,8 +1532,16 @@
       "index": 592,
       "deva": "चन्द्रनिभा",
       "iast": "candranibhā",
+      "hyphenated": {
+        "deva": "चन्द्र-निभा",
+        "iast": "candra-nibhā"
+      },
       "namavaliDeva": "चन्द्रनिभायै",
       "namavaliIast": "candranibhāyai",
+      "namavaliHyphenated": {
+        "deva": "चन्द्र-निभायै",
+        "iast": "candra-nibhāyai"
+      },
       "gloss": "Like The Moon",
       "translation": "At the crown her light is cool and white, matching the disc of the moon.",
       "aksaras": [
@@ -1772,8 +1812,16 @@
       "index": 594,
       "deva": "इन्द्रधनुःप्रभा",
       "iast": "indradhanuḥprabhā",
+      "hyphenated": {
+        "deva": "इन्द्र-धनुः-प्रभा",
+        "iast": "indra-dhanuḥ-prabhā"
+      },
       "namavaliDeva": "इन्द्रधनुःप्रभायै",
       "namavaliIast": "indradhanuḥprabhāyai",
+      "namavaliHyphenated": {
+        "deva": "इन्द्र-धनुः-प्रभायै",
+        "iast": "indra-dhanuḥ-prabhāyai"
+      },
       "gloss": "Bright As A Rainbow",
       "translation": "There her colour is not single but banded, the bow of Indra arched across the sky.",
       "aksaras": [

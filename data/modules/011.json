@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "निजसल्लापमाधुर्यविनिर्भर्त्सितकच्छपी",
           "iast": "nijasallāpamādhuryavinirbhartsitakacchapī",
+          "hyphenated": {
+            "deva": "निज-सल्लाप-माधुर्य-विनिर्भर्त्सित-कच्छपी",
+            "iast": "nija-sallāpa-mādhurya-vinirbhartsita-kacchapī"
+          },
           "namaIndices": [
             27
           ],
@@ -447,6 +451,10 @@
           "id": "l1-t0",
           "deva": "मन्दस्मितप्रभापूरमज्जत्कामेशमानसा",
           "iast": "mandasmitaprabhāpūramajjatkāmeśamānasā",
+          "hyphenated": {
+            "deva": "मन्द-स्मित-प्रभा-पूर-मज्जत्-कामेश-मानसा",
+            "iast": "manda-smita-prabhā-pūra-majjat-kāmeśa-mānasā"
+          },
           "namaIndices": [
             28
           ],
@@ -857,8 +865,16 @@
       "index": 27,
       "deva": "निजसल्लापमाधुर्यविनिर्भर्त्सितकच्छपी",
       "iast": "nijasallāpamādhuryavinirbhartsitakacchapī",
+      "hyphenated": {
+        "deva": "निज-सल्लाप-माधुर्य-विनिर्भर्त्सित-कच्छपी",
+        "iast": "nija-sallāpa-mādhurya-vinirbhartsita-kacchapī"
+      },
       "namavaliDeva": "निजसल्लापमाधुर्य विनिर्भत्सितकच्छप्यै",
       "namavaliIast": "nijasallāpamādhurya vinirbhatsitakacchapyai",
+      "namavaliHyphenated": {
+        "deva": "निज-सल्लाप-माधुर्य विनिर्भत्सित-कच्छप्यै",
+        "iast": "nija-sallāpa-mādhurya vinirbhatsita-kacchapyai"
+      },
       "gloss": "Whose Speech Outsings The Lute",
       "translation": "The sweetness of her ordinary conversation silences the kacchapī lute, which had until then been the standard of sweet sound.",
       "aksaras": [
@@ -1357,8 +1373,16 @@
       "index": 28,
       "deva": "मन्दस्मितप्रभापूरमज्जत्कामेशमानसा",
       "iast": "mandasmitaprabhāpūramajjatkāmeśamānasā",
+      "hyphenated": {
+        "deva": "मन्द-स्मित-प्रभा-पूर-मज्जत्-कामेश-मानसा",
+        "iast": "manda-smita-prabhā-pūra-majjat-kāmeśa-mānasā"
+      },
       "namavaliDeva": "मन्दस्मितप्रभापूरमज्जत्कामेशमानसायै",
       "namavaliIast": "mandasmitaprabhāpūramajjatkāmeśamānasāyai",
+      "namavaliHyphenated": {
+        "deva": "मन्द-स्मित-प्रभा-पूर-मज्जत्-कामेश-मानसायै",
+        "iast": "manda-smita-prabhā-pūra-majjat-kāmeśa-mānasāyai"
+      },
       "gloss": "In Whose Smile Kāmeśa's Mind Is Drowned",
       "translation": "Light spills from her faint smile in such quantity that the mind of her consort sinks and is lost in it.",
       "aksaras": [

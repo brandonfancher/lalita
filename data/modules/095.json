@@ -112,6 +112,10 @@
           "id": "l0-t1",
           "deva": "त्रिनयना",
           "iast": "trinayanā",
+          "hyphenated": {
+            "deva": "त्रि-नयना",
+            "iast": "tri-nayanā"
+          },
           "namaIndices": [
             453
           ],
@@ -219,6 +223,10 @@
           "id": "l0-t2",
           "deva": "लोलाक्षीकामरूपिणी",
           "iast": "lolākṣīkāmarūpiṇī",
+          "hyphenated": {
+            "deva": "लोलाक्षी-काम-रूपिणी",
+            "iast": "lolākṣī-kāma-rūpiṇī"
+          },
           "namaIndices": [
             454
           ],
@@ -657,6 +665,10 @@
           "id": "l1-t3",
           "deva": "मलयाचलवासिनी",
           "iast": "malayācalavāsinī",
+          "hyphenated": {
+            "deva": "मलयाचल-वासिनी",
+            "iast": "malayācala-vāsinī"
+          },
           "namaIndices": [
             458
           ],
@@ -946,8 +958,16 @@
       "index": 453,
       "deva": "त्रिनयना",
       "iast": "trinayanā",
+      "hyphenated": {
+        "deva": "त्रि-नयना",
+        "iast": "tri-nayanā"
+      },
       "namavaliDeva": "त्रिनयनायै",
       "namavaliIast": "trinayanāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-नयनायै",
+        "iast": "tri-nayanāyai"
+      },
       "gloss": "Three-Eyed",
       "translation": "Two eyes take in the world and a third, set upright between them, burns through it.",
       "aksaras": [
@@ -1083,8 +1103,16 @@
       "index": 454,
       "deva": "लोलाक्षीकामरूपिणी",
       "iast": "lolākṣīkāmarūpiṇī",
+      "hyphenated": {
+        "deva": "लोलाक्षी-काम-रूपिणी",
+        "iast": "lolākṣī-kāma-rūpiṇī"
+      },
       "namavaliDeva": "लोलाक्षीकामरूपिण्यै",
       "namavaliIast": "lolākṣīkāmarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "लोलाक्षी-काम-रूपिण्यै",
+        "iast": "lolākṣī-kāma-rūpiṇyai"
+      },
       "gloss": "Taking At Will The Form Of Lolākṣī",
       "translation": "She shows herself as Lolākṣī, the goddess of restless eyes, wearing that shape as freely as she wears any other.",
       "aksaras": [
@@ -1609,8 +1637,16 @@
       "index": 458,
       "deva": "मलयाचलवासिनी",
       "iast": "malayācalavāsinī",
+      "hyphenated": {
+        "deva": "मलयाचल-वासिनी",
+        "iast": "malayācala-vāsinī"
+      },
       "namavaliDeva": "मलयाचलवासिन्यै",
       "namavaliIast": "malayācalavāsinyai",
+      "namavaliHyphenated": {
+        "deva": "मलयाचल-वासिन्यै",
+        "iast": "malayācala-vāsinyai"
+      },
       "gloss": "Dwelling On Mount Malaya",
       "translation": "She lives on the sandal-bearing western range, and its fragrance goes with her.",
       "aksaras": [

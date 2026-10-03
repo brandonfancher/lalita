@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विश्वगर्भा",
           "iast": "viśvagarbhā",
+          "hyphenated": {
+            "deva": "विश्व-गर्भा",
+            "iast": "viśva-garbhā"
+          },
           "namaIndices": [
             637
           ],
@@ -135,6 +139,10 @@
           "id": "l0-t1",
           "deva": "स्वर्णगर्भाऽवरदा",
           "iast": "svarṇagarbhā'varadā",
+          "hyphenated": {
+            "deva": "स्वर्ण-गर्भाऽवरदा",
+            "iast": "svarṇa-garbhā'varadā"
+          },
           "namaIndices": [
             638,
             639
@@ -474,6 +482,10 @@
           "id": "l1-t0",
           "deva": "ध्यानगम्याऽपरिच्छेद्या",
           "iast": "dhyānagamyā'paricchedyā",
+          "hyphenated": {
+            "deva": "ध्यान-गम्याऽपरिच्छेद्या",
+            "iast": "dhyāna-gamyā'paricchedyā"
+          },
           "namaIndices": [
             641,
             642
@@ -819,6 +831,10 @@
           "id": "l1-t2",
           "deva": "ज्ञानविग्रहा",
           "iast": "jñānavigrahā",
+          "hyphenated": {
+            "deva": "ज्ञान-विग्रहा",
+            "iast": "jñāna-vigrahā"
+          },
           "namaIndices": [
             644
           ],
@@ -969,8 +985,16 @@
       "index": 637,
       "deva": "विश्वगर्भा",
       "iast": "viśvagarbhā",
+      "hyphenated": {
+        "deva": "विश्व-गर्भा",
+        "iast": "viśva-garbhā"
+      },
       "namavaliDeva": "विश्वगर्भायै",
       "namavaliIast": "viśvagarbhāyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-गर्भायै",
+        "iast": "viśva-garbhāyai"
+      },
       "gloss": "Whose Womb Is The Universe",
       "translation": "All that exists is carried inside her.",
       "aksaras": [
@@ -1121,8 +1145,16 @@
       "index": 638,
       "deva": "स्वर्णगर्भा",
       "iast": "svarṇagarbhā",
+      "hyphenated": {
+        "deva": "स्वर्ण-गर्भा",
+        "iast": "svarṇa-garbhā"
+      },
       "namavaliDeva": "स्वर्णगर्भायै",
       "namavaliIast": "svarṇagarbhāyai",
+      "namavaliHyphenated": {
+        "deva": "स्वर्ण-गर्भायै",
+        "iast": "svarṇa-garbhāyai"
+      },
       "gloss": "Whose Womb Holds The Gold",
       "translation": "The golden germ from which the worlds unfold lies within her.",
       "aksaras": [
@@ -1569,8 +1601,16 @@
       "index": 641,
       "deva": "ध्यानगम्या",
       "iast": "dhyānagamyā",
+      "hyphenated": {
+        "deva": "ध्यान-गम्या",
+        "iast": "dhyāna-gamyā"
+      },
       "namavaliDeva": "ध्यानगम्यायै",
       "namavaliIast": "dhyānagamyāyai",
+      "namavaliHyphenated": {
+        "deva": "ध्यान-गम्यायै",
+        "iast": "dhyāna-gamyāyai"
+      },
       "gloss": "Reached Through Meditation",
       "translation": "There is no road to her but the inward one.",
       "aksaras": [
@@ -2015,8 +2055,16 @@
       "index": 644,
       "deva": "ज्ञानविग्रहा",
       "iast": "jñānavigrahā",
+      "hyphenated": {
+        "deva": "ज्ञान-विग्रहा",
+        "iast": "jñāna-vigrahā"
+      },
       "namavaliDeva": "ज्ञानविग्रहायै",
       "namavaliIast": "jñānavigrahāyai",
+      "namavaliHyphenated": {
+        "deva": "ज्ञान-विग्रहायै",
+        "iast": "jñāna-vigrahāyai"
+      },
       "gloss": "Whose Body Is Knowledge",
       "translation": "What in another would be flesh is in her nothing but knowing.",
       "aksaras": [

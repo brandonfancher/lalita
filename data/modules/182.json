@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "आबालगोपविदिता",
           "iast": "ābālagopaviditā",
+          "hyphenated": {
+            "deva": "आबाल-गोप-विदिता",
+            "iast": "ābāla-gopa-viditā"
+          },
           "namaIndices": [
             994
           ],
@@ -192,6 +196,10 @@
           "id": "l0-t1",
           "deva": "सर्वानुल्लङ्घ्यशासना",
           "iast": "sarvānullaṅghyaśāsanā",
+          "hyphenated": {
+            "deva": "सर्वानुल्लङ्घ्य-शासना",
+            "iast": "sarvānullaṅghya-śāsanā"
+          },
           "namaIndices": [
             995
           ],
@@ -432,6 +440,10 @@
           "id": "l1-t0",
           "deva": "श्रीचक्रराजनिलया",
           "iast": "śrīcakrarājanilayā",
+          "hyphenated": {
+            "deva": "श्री-चक्र-राज-निलया",
+            "iast": "śrī-cakra-rāja-nilayā"
+          },
           "namaIndices": [
             996
           ],
@@ -636,6 +648,10 @@
           "id": "l1-t1",
           "deva": "श्रीमत्त्रिपुरसुन्दरी",
           "iast": "śrīmattripurasundarī",
+          "hyphenated": {
+            "deva": "श्रीमत्-त्रि-पुर-सुन्दरी",
+            "iast": "śrīmat-tri-pura-sundarī"
+          },
           "namaIndices": [
             997
           ],
@@ -883,6 +899,10 @@
           "id": "l2-t0",
           "deva": "श्रीशिवा",
           "iast": "śrīśivā",
+          "hyphenated": {
+            "deva": "श्री-शिवा",
+            "iast": "śrī-śivā"
+          },
           "namaIndices": [
             998
           ],
@@ -980,6 +1000,10 @@
           "id": "l2-t1",
           "deva": "शिवशक्त्यैक्यरूपिणी",
           "iast": "śivaśaktyaikyarūpiṇī",
+          "hyphenated": {
+            "deva": "शिव-शक्त्यैक्य-रूपिणी",
+            "iast": "śiva-śaktyaikya-rūpiṇī"
+          },
           "namaIndices": [
             999
           ],
@@ -1409,6 +1433,10 @@
           "id": "l3-t1",
           "deva": "श्रीललिता",
           "iast": "śrīlalitā",
+          "hyphenated": {
+            "deva": "श्री-ललिता",
+            "iast": "śrī-lalitā"
+          },
           "word": {
             "gloss": "Śrī Lalitā",
             "translation": "…belonging to the goddess Śrī Lalitā, whose name the hymn has just finished pronouncing for the thousandth time.",
@@ -1942,8 +1970,16 @@
       "index": 994,
       "deva": "आबालगोपविदिता",
       "iast": "ābālagopaviditā",
+      "hyphenated": {
+        "deva": "आबाल-गोप-विदिता",
+        "iast": "ābāla-gopa-viditā"
+      },
       "namavaliDeva": "आबालगोपविदितायै",
       "namavaliIast": "ābālagopaviditāyai",
+      "namavaliHyphenated": {
+        "deva": "आबाल-गोप-विदितायै",
+        "iast": "ābāla-gopa-viditāyai"
+      },
       "gloss": "Known To Child And Cowherd",
       "translation": "Her fame reaches everyone, from small children to herdsmen, and asks no learning of those who receive it.",
       "aksaras": [
@@ -2179,8 +2215,16 @@
       "index": 995,
       "deva": "सर्वानुल्लङ्घ्यशासना",
       "iast": "sarvānullaṅghyaśāsanā",
+      "hyphenated": {
+        "deva": "सर्वानुल्लङ्घ्य-शासना",
+        "iast": "sarvānullaṅghya-śāsanā"
+      },
       "namavaliDeva": "सर्वानुल्लङ्घ्यशासनायै",
       "namavaliIast": "sarvānullaṅghyaśāsanāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वानुल्लङ्घ्य-शासनायै",
+        "iast": "sarvānullaṅghya-śāsanāyai"
+      },
       "gloss": "Whose Command None Transgresses",
       "translation": "Her order stands over everyone, and nobody has the standing to step across it.",
       "aksaras": [
@@ -2471,8 +2515,16 @@
       "index": 996,
       "deva": "श्रीचक्रराजनिलया",
       "iast": "śrīcakrarājanilayā",
+      "hyphenated": {
+        "deva": "श्री-चक्र-राज-निलया",
+        "iast": "śrī-cakra-rāja-nilayā"
+      },
       "namavaliDeva": "श्रीचक्रराजनिलयायै",
       "namavaliIast": "śrīcakrarājanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "श्री-चक्र-राज-निलयायै",
+        "iast": "śrī-cakra-rāja-nilayāyai"
+      },
       "gloss": "Dwelling In The Sovereign Śrīcakra",
       "translation": "The Śrīcakra, first among all diagrams, is the house she lives in.",
       "aksaras": [
@@ -2733,8 +2785,16 @@
       "index": 997,
       "deva": "श्रीमत्त्रिपुरसुन्दरी",
       "iast": "śrīmattripurasundarī",
+      "hyphenated": {
+        "deva": "श्रीमत्-त्रि-पुर-सुन्दरी",
+        "iast": "śrīmat-tri-pura-sundarī"
+      },
       "namavaliDeva": "श्रीमत्त्रिपुरसुन्दर्यै",
       "namavaliIast": "śrīmattripurasundaryai",
+      "namavaliHyphenated": {
+        "deva": "श्रीमत्-त्रि-पुर-सुन्दर्यै",
+        "iast": "śrīmat-tri-pura-sundaryai"
+      },
       "gloss": "The Glorious Tripurasundarī",
       "translation": "She is the beautiful one of the three cities, and the honorific śrīmat marks this as the name under which the whole tradition knows her.",
       "aksaras": [
@@ -3032,8 +3092,16 @@
       "index": 998,
       "deva": "श्रीशिवा",
       "iast": "śrīśivā",
+      "hyphenated": {
+        "deva": "श्री-शिवा",
+        "iast": "śrī-śivā"
+      },
       "namavaliDeva": "श्रीशिवायै",
       "namavaliIast": "śrīśivāyai",
+      "namavaliHyphenated": {
+        "deva": "श्री-शिवायै",
+        "iast": "śrī-śivāyai"
+      },
       "gloss": "The Blessed Śivā",
       "translation": "She is Śrī and Śivā at once, radiant prosperity and quiet beatitude held in one name, the feminine of auspiciousness itself.",
       "aksaras": [
@@ -3159,8 +3227,16 @@
       "index": 999,
       "deva": "शिवशक्त्यैक्यरूपिणी",
       "iast": "śivaśaktyaikyarūpiṇī",
+      "hyphenated": {
+        "deva": "शिव-शक्त्यैक्य-रूपिणी",
+        "iast": "śiva-śaktyaikya-rūpiṇī"
+      },
       "namavaliDeva": "शिवशक्त्यैक्यरूपिण्यै",
       "namavaliIast": "śivaśaktyaikyarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "शिव-शक्त्यैक्य-रूपिण्यै",
+        "iast": "śiva-śaktyaikya-rūpiṇyai"
+      },
       "gloss": "Form Of Śiva-Śakti Union",
       "translation": "Her form is the single fact of Śiva and Śakti being one, and the stotra ends by saying not that she is a partner in that union but that she is the union.",
       "aksaras": [

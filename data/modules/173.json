@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विश्वमाता",
           "iast": "viśvamātā",
+          "hyphenated": {
+            "deva": "विश्व-माता",
+            "iast": "viśva-mātā"
+          },
           "namaIndices": [
             934
           ],
@@ -127,6 +131,10 @@
           "id": "l0-t1",
           "deva": "जगद्धात्री",
           "iast": "jagaddhātrī",
+          "hyphenated": {
+            "deva": "जगद्-धात्री",
+            "iast": "jagad-dhātrī"
+          },
           "namaIndices": [
             935
           ],
@@ -891,8 +899,16 @@
       "index": 934,
       "deva": "विश्वमाता",
       "iast": "viśvamātā",
+      "hyphenated": {
+        "deva": "विश्व-माता",
+        "iast": "viśva-mātā"
+      },
       "namavaliDeva": "विश्वमात्रे",
       "namavaliIast": "viśvamātre",
+      "namavaliHyphenated": {
+        "deva": "विश्व-मात्रे",
+        "iast": "viśva-mātre"
+      },
       "gloss": "Mother Of All",
       "translation": "Everything that exists counts as her child.",
       "aksaras": [
@@ -1036,8 +1052,16 @@
       "index": 935,
       "deva": "जगद्धात्री",
       "iast": "jagaddhātrī",
+      "hyphenated": {
+        "deva": "जगद्-धात्री",
+        "iast": "jagad-dhātrī"
+      },
       "namavaliDeva": "जगद्धात्र्यै",
       "namavaliIast": "jagaddhātryai",
+      "namavaliHyphenated": {
+        "deva": "जगद्-धात्र्यै",
+        "iast": "jagad-dhātryai"
+      },
       "gloss": "Sustainer Of The World",
       "translation": "She holds the moving world in being, nurse and support of what she has borne.",
       "aksaras": [

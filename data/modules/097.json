@@ -135,6 +135,10 @@
           "id": "l0-t1",
           "deva": "वामदेवी",
           "iast": "vāmadevī",
+          "hyphenated": {
+            "deva": "वाम-देवी",
+            "iast": "vāma-devī"
+          },
           "namaIndices": [
             469
           ],
@@ -234,6 +238,10 @@
           "id": "l0-t2",
           "deva": "वयोऽवस्थाविवर्जिता",
           "iast": "vayo'vasthāvivarjitā",
+          "hyphenated": {
+            "deva": "वयोऽवस्था-विवर्जिता",
+            "iast": "vayo'vasthā-vivarjitā"
+          },
           "namaIndices": [
             470
           ],
@@ -593,6 +601,10 @@
           "id": "l1-t1",
           "deva": "सिद्धविद्या",
           "iast": "siddhavidyā",
+          "hyphenated": {
+            "deva": "सिद्ध-विद्या",
+            "iast": "siddha-vidyā"
+          },
           "namaIndices": [
             472
           ],
@@ -722,6 +734,10 @@
           "id": "l1-t2",
           "deva": "सिद्धमाता",
           "iast": "siddhamātā",
+          "hyphenated": {
+            "deva": "सिद्ध-माता",
+            "iast": "siddha-mātā"
+          },
           "namaIndices": [
             473
           ],
@@ -1099,8 +1115,16 @@
       "index": 469,
       "deva": "वामदेवी",
       "iast": "vāmadevī",
+      "hyphenated": {
+        "deva": "वाम-देवी",
+        "iast": "vāma-devī"
+      },
       "namavaliDeva": "वामदेव्यै",
       "namavaliIast": "vāmadevyai",
+      "namavaliHyphenated": {
+        "deva": "वाम-देव्यै",
+        "iast": "vāma-devyai"
+      },
       "gloss": "The Gracious Goddess",
       "translation": "She is Vāmā, the lovely and left-hand one, answering to the Śiva-face of that name.",
       "aksaras": [
@@ -1228,8 +1252,16 @@
       "index": 470,
       "deva": "वयोऽवस्थाविवर्जिता",
       "iast": "vayo'vasthāvivarjitā",
+      "hyphenated": {
+        "deva": "वयोऽवस्था-विवर्जिता",
+        "iast": "vayo'vasthā-vivarjitā"
+      },
       "namavaliDeva": "वयोऽवस्थाविवर्जितायै",
       "namavaliIast": "vayo'vasthāvivarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "वयोऽवस्था-विवर्जितायै",
+        "iast": "vayo'vasthā-vivarjitāyai"
+      },
       "gloss": "Free From The Stages Of Age",
       "translation": "Childhood, prime and old age do not take their turns in her; she stands outside that succession.",
       "aksaras": [
@@ -1646,8 +1678,16 @@
       "index": 472,
       "deva": "सिद्धविद्या",
       "iast": "siddhavidyā",
+      "hyphenated": {
+        "deva": "सिद्ध-विद्या",
+        "iast": "siddha-vidyā"
+      },
       "namavaliDeva": "सिद्धविद्यायै",
       "namavaliIast": "siddhavidyāyai",
+      "namavaliHyphenated": {
+        "deva": "सिद्ध-विद्यायै",
+        "iast": "siddha-vidyāyai"
+      },
       "gloss": "The Perfected Lore",
       "translation": "She is the mantra already brought to full effect, which works from the moment it is taken up.",
       "aksaras": [
@@ -1805,8 +1845,16 @@
       "index": 473,
       "deva": "सिद्धमाता",
       "iast": "siddhamātā",
+      "hyphenated": {
+        "deva": "सिद्ध-माता",
+        "iast": "siddha-mātā"
+      },
       "namavaliDeva": "सिद्धमात्रे",
       "namavaliIast": "siddhamātre",
+      "namavaliHyphenated": {
+        "deva": "सिद्ध-मात्रे",
+        "iast": "siddha-mātre"
+      },
       "gloss": "Mother Of The Siddhas",
       "translation": "The adepts owe their attainment to her as a child owes its birth.",
       "aksaras": [

@@ -120,6 +120,10 @@
           "id": "l0-t1",
           "deva": "प्रभारूपा",
           "iast": "prabhārūpā",
+          "hyphenated": {
+            "deva": "प्रभा-रूपा",
+            "iast": "prabhā-rūpā"
+          },
           "namaIndices": [
             394
           ],
@@ -469,6 +473,10 @@
           "id": "l1-t0",
           "deva": "मूलप्रकृतिरव्यक्ता",
           "iast": "mūlaprakṛtiravyaktā",
+          "hyphenated": {
+            "deva": "मूल-प्रकृतिरव्यक्ता",
+            "iast": "mūla-prakṛtiravyaktā"
+          },
           "namaIndices": [
             397,
             398
@@ -689,6 +697,10 @@
           "id": "l1-t1",
           "deva": "व्यक्ताव्यक्तस्वरूपिणी",
           "iast": "vyaktāvyaktasvarūpiṇī",
+          "hyphenated": {
+            "deva": "व्यक्ताव्यक्त-स्वरूपिणी",
+            "iast": "vyaktāvyakta-svarūpiṇī"
+          },
           "namaIndices": [
             399
           ],
@@ -1061,8 +1073,16 @@
       "index": 394,
       "deva": "प्रभारूपा",
       "iast": "prabhārūpā",
+      "hyphenated": {
+        "deva": "प्रभा-रूपा",
+        "iast": "prabhā-rūpā"
+      },
       "namavaliDeva": "प्रभारूपायै",
       "namavaliIast": "prabhārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रभा-रूपायै",
+        "iast": "prabhā-rūpāyai"
+      },
       "gloss": "Formed Of Light",
       "translation": "There is nothing under the brightness — the brightness is what she is made of.",
       "aksaras": [
@@ -1475,8 +1495,16 @@
       "index": 397,
       "deva": "मूलप्रकृतिः",
       "iast": "mūlaprakṛtiḥ",
+      "hyphenated": {
+        "deva": "मूल-प्रकृतिः",
+        "iast": "mūla-prakṛtiḥ"
+      },
       "namavaliDeva": "मूलप्रकृत्यै",
       "namavaliIast": "mūlaprakṛtyai",
+      "namavaliHyphenated": {
+        "deva": "मूल-प्रकृत्यै",
+        "iast": "mūla-prakṛtyai"
+      },
       "gloss": "Nature At The Root",
       "translation": "She is the first material, the nature that everything else is a modification of and that is a modification of nothing.",
       "aksaras": [
@@ -1769,8 +1797,16 @@
       "index": 399,
       "deva": "व्यक्ताव्यक्तस्वरूपिणी",
       "iast": "vyaktāvyaktasvarūpiṇī",
+      "hyphenated": {
+        "deva": "व्यक्ताव्यक्त-स्वरूपिणी",
+        "iast": "vyaktāvyakta-svarūpiṇī"
+      },
       "namavaliDeva": "व्यक्ताव्यक्तस्वरूपिण्यै",
       "namavaliIast": "vyaktāvyaktasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "व्यक्ताव्यक्त-स्वरूपिण्यै",
+        "iast": "vyaktāvyakta-svarūpiṇyai"
+      },
       "gloss": "Formed Of Manifest And Unmanifest",
       "translation": "What shows and what stays hidden are both her own shape; she is not divided between them.",
       "aksaras": [

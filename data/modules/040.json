@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "तडिल्लतासमरुचिः",
           "iast": "taḍillatāsamaruciḥ",
+          "hyphenated": {
+            "deva": "तडिल्-लता-सम-रुचिः",
+            "iast": "taḍil-latā-sama-ruciḥ"
+          },
           "namaIndices": [
             107
           ],
@@ -209,6 +213,10 @@
           "id": "l0-t1",
           "deva": "षट्चक्रोपरिसंस्थिता",
           "iast": "ṣaṭcakroparisaṃsthitā",
+          "hyphenated": {
+            "deva": "षट्-चक्रोपरि-संस्थिता",
+            "iast": "ṣaṭ-cakropari-saṃsthitā"
+          },
           "namaIndices": [
             108
           ],
@@ -669,6 +677,10 @@
           "id": "l1-t2",
           "deva": "बिसतन्तुतनीयसी",
           "iast": "bisatantutanīyasī",
+          "hyphenated": {
+            "deva": "बिस-तन्तु-तनीयसी",
+            "iast": "bisa-tantu-tanīyasī"
+          },
           "namaIndices": [
             111
           ],
@@ -862,8 +874,16 @@
       "index": 107,
       "deva": "तडिल्लतासमरुचिः",
       "iast": "taḍillatāsamaruciḥ",
+      "hyphenated": {
+        "deva": "तडिल्-लता-सम-रुचिः",
+        "iast": "taḍil-latā-sama-ruciḥ"
+      },
       "namavaliDeva": "तटिल्लतासमरुच्यै",
       "namavaliIast": "taṭillatāsamarucyai",
+      "namavaliHyphenated": {
+        "deva": "तटिल्-लता-सम-रुच्यै",
+        "iast": "taṭil-latā-sama-rucyai"
+      },
       "gloss": "Radiant As A Streak Of Lightning",
       "translation": "Her brilliance is the brilliance of lightning drawn out like a vine, thin and sudden and impossible to look away from.",
       "aksaras": [
@@ -1116,8 +1136,16 @@
       "index": 108,
       "deva": "षट्चक्रोपरिसंस्थिता",
       "iast": "ṣaṭcakroparisaṃsthitā",
+      "hyphenated": {
+        "deva": "षट्-चक्रोपरि-संस्थिता",
+        "iast": "ṣaṭ-cakropari-saṃsthitā"
+      },
       "namavaliDeva": "षट्चक्रोपरिसंस्थितायै",
       "namavaliIast": "ṣaṭcakroparisaṃsthitāyai",
+      "namavaliHyphenated": {
+        "deva": "षट्-चक्रोपरि-संस्थितायै",
+        "iast": "ṣaṭ-cakropari-saṃsthitāyai"
+      },
       "gloss": "Established Above The Six Wheels",
       "translation": "She rests beyond the six wheels strung along the spine, higher than the whole ladder she has just climbed.",
       "aksaras": [
@@ -1671,8 +1699,16 @@
       "index": 111,
       "deva": "बिसतन्तुतनीयसी",
       "iast": "bisatantutanīyasī",
+      "hyphenated": {
+        "deva": "बिस-तन्तु-तनीयसी",
+        "iast": "bisa-tantu-tanīyasī"
+      },
       "namavaliDeva": "बिसतन्तुतनीयस्यै",
       "namavaliIast": "bisatantutanīyasyai",
+      "namavaliHyphenated": {
+        "deva": "बिस-तन्तु-तनीयस्यै",
+        "iast": "bisa-tantu-tanīyasyai"
+      },
       "gloss": "Finer Than A Lotus Fibre",
       "translation": "She is subtler than the thread that trails from a broken lotus stalk, too fine for the eye to follow.",
       "aksaras": [

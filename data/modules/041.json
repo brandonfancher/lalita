@@ -88,6 +88,10 @@
           "id": "l0-t1",
           "deva": "भावनागम्या",
           "iast": "bhāvanāgamyā",
+          "hyphenated": {
+            "deva": "भावना-गम्या",
+            "iast": "bhāvanā-gamyā"
+          },
           "namaIndices": [
             113
           ],
@@ -219,6 +223,10 @@
           "id": "l0-t2",
           "deva": "भवारण्यकुठारिका",
           "iast": "bhavāraṇyakuṭhārikā",
+          "hyphenated": {
+            "deva": "भवारण्य-कुठारिका",
+            "iast": "bhavāraṇya-kuṭhārikā"
+          },
           "namaIndices": [
             114
           ],
@@ -421,6 +429,10 @@
           "id": "l1-t0",
           "deva": "भद्रप्रिया",
           "iast": "bhadrapriyā",
+          "hyphenated": {
+            "deva": "भद्र-प्रिया",
+            "iast": "bhadra-priyā"
+          },
           "namaIndices": [
             115
           ],
@@ -543,6 +555,10 @@
           "id": "l1-t1",
           "deva": "भद्रमूर्तिर्भक्तसौभाग्यदायिनी",
           "iast": "bhadramūrtirbhaktasaubhāgyadāyinī",
+          "hyphenated": {
+            "deva": "भद्र-मूर्तिर्-भक्त-सौभाग्य-दायिनी",
+            "iast": "bhadra-mūrtir-bhakta-saubhāgya-dāyinī"
+          },
           "namaIndices": [
             116,
             117
@@ -973,8 +989,16 @@
       "index": 113,
       "deva": "भावनागम्या",
       "iast": "bhāvanāgamyā",
+      "hyphenated": {
+        "deva": "भावना-गम्या",
+        "iast": "bhāvanā-gamyā"
+      },
       "namavaliDeva": "भावनागम्यायै",
       "namavaliIast": "bhāvanāgamyāyai",
+      "namavaliHyphenated": {
+        "deva": "भावना-गम्यायै",
+        "iast": "bhāvanā-gamyāyai"
+      },
       "gloss": "Reached By Contemplation",
       "translation": "She is arrived at by holding her steadily in mind, not by anything the hands can perform.",
       "aksaras": [
@@ -1134,8 +1158,16 @@
       "index": 114,
       "deva": "भवारण्यकुठारिका",
       "iast": "bhavāraṇyakuṭhārikā",
+      "hyphenated": {
+        "deva": "भवारण्य-कुठारिका",
+        "iast": "bhavāraṇya-kuṭhārikā"
+      },
       "namavaliDeva": "भवारण्यकुठारिकायै",
       "namavaliIast": "bhavāraṇyakuṭhārikāyai",
+      "namavaliHyphenated": {
+        "deva": "भवारण्य-कुठारिकायै",
+        "iast": "bhavāraṇya-kuṭhārikāyai"
+      },
       "gloss": "Axe To The Forest Of Existence",
       "translation": "Worldly life grows as thick as a forest, and she is the hatchet taken to its trunks.",
       "aksaras": [
@@ -1374,8 +1406,16 @@
       "index": 115,
       "deva": "भद्रप्रिया",
       "iast": "bhadrapriyā",
+      "hyphenated": {
+        "deva": "भद्र-प्रिया",
+        "iast": "bhadra-priyā"
+      },
       "namavaliDeva": "भद्रप्रियायै",
       "namavaliIast": "bhadrapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "भद्र-प्रियायै",
+        "iast": "bhadra-priyāyai"
+      },
       "gloss": "Fond Of The Auspicious",
       "translation": "What is good and fortunate is what she loves, and she keeps company with those who love it as well.",
       "aksaras": [
@@ -1526,8 +1566,16 @@
       "index": 116,
       "deva": "भद्रमूर्तिः",
       "iast": "bhadramūrtiḥ",
+      "hyphenated": {
+        "deva": "भद्र-मूर्तिः",
+        "iast": "bhadra-mūrtiḥ"
+      },
       "namavaliDeva": "भद्रमूर्त्यै",
       "namavaliIast": "bhadramūrtyai",
+      "namavaliHyphenated": {
+        "deva": "भद्र-मूर्त्यै",
+        "iast": "bhadra-mūrtyai"
+      },
       "gloss": "Auspicious In Form",
       "translation": "Her shape is itself good fortune, so that to catch sight of her is already a blessing.",
       "aksaras": [
@@ -1685,8 +1733,16 @@
       "index": 117,
       "deva": "भक्तसौभाग्यदायिनी",
       "iast": "bhaktasaubhāgyadāyinī",
+      "hyphenated": {
+        "deva": "भक्त-सौभाग्य-दायिनी",
+        "iast": "bhakta-saubhāgya-dāyinī"
+      },
       "namavaliDeva": "भक्तसौभाग्यदायिन्यै",
       "namavaliIast": "bhaktasaubhāgyadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "भक्त-सौभाग्य-दायिन्यै",
+        "iast": "bhakta-saubhāgya-dāyinyai"
+      },
       "gloss": "Giver Of Fortune To Devotees",
       "translation": "She hands her devotees the good fortune they had no means of earning for themselves.",
       "aksaras": [

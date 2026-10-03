@@ -325,6 +325,10 @@
           "id": "l0-t4",
           "deva": "सुरनायिका",
           "iast": "suranāyikā",
+          "hyphenated": {
+            "deva": "सुर-नायिका",
+            "iast": "sura-nāyikā"
+          },
           "namaIndices": [
             463
           ],
@@ -454,6 +458,10 @@
           "id": "l1-t0",
           "deva": "कालकण्ठी",
           "iast": "kālakaṇṭhī",
+          "hyphenated": {
+            "deva": "काल-कण्ठी",
+            "iast": "kāla-kaṇṭhī"
+          },
           "namaIndices": [
             464
           ],
@@ -772,6 +780,10 @@
           "id": "l1-t3",
           "deva": "सूक्ष्मरूपिणी",
           "iast": "sūkṣmarūpiṇī",
+          "hyphenated": {
+            "deva": "सूक्ष्म-रूपिणी",
+            "iast": "sūkṣma-rūpiṇī"
+          },
           "namaIndices": [
             467
           ],
@@ -1324,8 +1336,16 @@
       "index": 463,
       "deva": "सुरनायिका",
       "iast": "suranāyikā",
+      "hyphenated": {
+        "deva": "सुर-नायिका",
+        "iast": "sura-nāyikā"
+      },
       "namavaliDeva": "सुरनायिकायै",
       "namavaliIast": "suranāyikāyai",
+      "namavaliHyphenated": {
+        "deva": "सुर-नायिकायै",
+        "iast": "sura-nāyikāyai"
+      },
       "gloss": "Leader Of The Gods",
       "translation": "The gods take their direction from her and follow where she goes.",
       "aksaras": [
@@ -1477,8 +1497,16 @@
       "index": 464,
       "deva": "कालकण्ठी",
       "iast": "kālakaṇṭhī",
+      "hyphenated": {
+        "deva": "काल-कण्ठी",
+        "iast": "kāla-kaṇṭhī"
+      },
       "namavaliDeva": "कालकण्ठ्यै",
       "namavaliIast": "kālakaṇṭhyai",
+      "namavaliHyphenated": {
+        "deva": "काल-कण्ठ्यै",
+        "iast": "kāla-kaṇṭhyai"
+      },
       "gloss": "Dark-Throated",
       "translation": "Her throat is dark as her husband's, marked by the poison he held there for the world's sake.",
       "aksaras": [
@@ -1849,8 +1877,16 @@
       "index": 467,
       "deva": "सूक्ष्मरूपिणी",
       "iast": "sūkṣmarūpiṇī",
+      "hyphenated": {
+        "deva": "सूक्ष्म-रूपिणी",
+        "iast": "sūkṣma-rūpiṇī"
+      },
       "namavaliDeva": "सूक्ष्मरूपिण्यै",
       "namavaliIast": "sūkṣmarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सूक्ष्म-रूपिण्यै",
+        "iast": "sūkṣma-rūpiṇyai"
+      },
       "gloss": "Of Subtle Form",
       "translation": "The form she wears is too fine for any sense to lay hold of.",
       "aksaras": [

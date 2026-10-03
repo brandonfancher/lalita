@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चितिस्तत्पदलक्ष्यार्था",
           "iast": "citistatpadalakṣyārthā",
+          "hyphenated": {
+            "deva": "चितिस्-तत्-पद-लक्ष्यार्था",
+            "iast": "citis-tat-pada-lakṣyārthā"
+          },
           "namaIndices": [
             362,
             363
@@ -263,6 +267,10 @@
           "id": "l0-t1",
           "deva": "चिदेकरसरूपिणी",
           "iast": "cidekarasarūpiṇī",
+          "hyphenated": {
+            "deva": "चिदेक-रस-रूपिणी",
+            "iast": "cideka-rasa-rūpiṇī"
+          },
           "namaIndices": [
             364
           ],
@@ -450,6 +458,10 @@
           "id": "l1-t0",
           "deva": "स्वात्मानन्दलवीभूतब्रह्माद्यानन्दसन्ततिः",
           "iast": "svātmānandalavībhūtabrahmādyānandasantatiḥ",
+          "hyphenated": {
+            "deva": "स्वात्मानन्द-लवीभूत-ब्रह्माद्यानन्द-सन्ततिः",
+            "iast": "svātmānanda-lavībhūta-brahmādyānanda-santatiḥ"
+          },
           "namaIndices": [
             365
           ],
@@ -988,8 +1000,16 @@
       "index": 363,
       "deva": "तत्पदलक्ष्यार्था",
       "iast": "tatpadalakṣyārthā",
+      "hyphenated": {
+        "deva": "तत्-पद-लक्ष्यार्था",
+        "iast": "tat-pada-lakṣyārthā"
+      },
       "namavaliDeva": "तत्पदलक्ष्यार्थायै",
       "namavaliIast": "tatpadalakṣyārthāyai",
+      "namavaliHyphenated": {
+        "deva": "तत्-पद-लक्ष्यार्थायै",
+        "iast": "tat-pada-lakṣyārthāyai"
+      },
       "gloss": "What The Word 'That' Points To",
       "translation": "When the great sentence says 'that', she is what the word reaches for without naming it directly.",
       "aksaras": [
@@ -1233,8 +1253,16 @@
       "index": 364,
       "deva": "चिदेकरसरूपिणी",
       "iast": "cidekarasarūpiṇī",
+      "hyphenated": {
+        "deva": "चिदेक-रस-रूपिणी",
+        "iast": "cideka-rasa-rūpiṇī"
+      },
       "namavaliDeva": "चिदेकरसरूपिण्यै",
       "namavaliIast": "cidekarasarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "चिदेक-रस-रूपिण्यै",
+        "iast": "cideka-rasa-rūpiṇyai"
+      },
       "gloss": "Formed Of Consciousness, One Savour",
       "translation": "She has one taste throughout, and the taste is awareness; there is no second ingredient in her.",
       "aksaras": [
@@ -1473,8 +1501,16 @@
       "index": 365,
       "deva": "स्वात्मानन्दलवीभूतब्रह्माद्यानन्दसन्ततिः",
       "iast": "svātmānandalavībhūtabrahmādyānandasantatiḥ",
+      "hyphenated": {
+        "deva": "स्वात्मानन्द-लवीभूत-ब्रह्माद्यानन्द-सन्ततिः",
+        "iast": "svātmānanda-lavībhūta-brahmādyānanda-santatiḥ"
+      },
       "namavaliDeva": "स्वात्मानन्दलवीभूतब्रह्माद्यानन्दसन्तत्यै",
       "namavaliIast": "svātmānandalavībhūtabrahmādyānandasantatyai",
+      "namavaliHyphenated": {
+        "deva": "स्वात्मानन्द-लवीभूत-ब्रह्माद्यानन्द-सन्तत्यै",
+        "iast": "svātmānanda-lavībhūta-brahmādyānanda-santatyai"
+      },
       "gloss": "Whose Bliss Dwarfs The Gods'",
       "translation": "Set the unbroken joy of Brahmā and every god beneath him against the bliss of her own Self, and the whole run of it comes to one shaving of hers.",
       "aksaras": [

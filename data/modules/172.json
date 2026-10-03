@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "स्तोत्रप्रिया",
           "iast": "stotrapriyā",
+          "hyphenated": {
+            "deva": "स्तोत्र-प्रिया",
+            "iast": "stotra-priyā"
+          },
           "namaIndices": [
             927
           ],
@@ -271,6 +275,10 @@
           "id": "l0-t2",
           "deva": "श्रुतिसंस्तुतवैभवा",
           "iast": "śrutisaṃstutavaibhavā",
+          "hyphenated": {
+            "deva": "श्रुति-संस्तुत-वैभवा",
+            "iast": "śruti-saṃstuta-vaibhavā"
+          },
           "namaIndices": [
             929
           ],
@@ -911,8 +919,16 @@
       "index": 927,
       "deva": "स्तोत्रप्रिया",
       "iast": "stotrapriyā",
+      "hyphenated": {
+        "deva": "स्तोत्र-प्रिया",
+        "iast": "stotra-priyā"
+      },
       "namavaliDeva": "स्तोत्रप्रियायै",
       "namavaliIast": "stotrapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "स्तोत्र-प्रियायै",
+        "iast": "stotra-priyāyai"
+      },
       "gloss": "Delighting In Hymns",
       "translation": "Songs of praise please her, so that singing to her is itself a means of reaching her.",
       "aksaras": [
@@ -1211,8 +1227,16 @@
       "index": 929,
       "deva": "श्रुतिसंस्तुतवैभवा",
       "iast": "śrutisaṃstutavaibhavā",
+      "hyphenated": {
+        "deva": "श्रुति-संस्तुत-वैभवा",
+        "iast": "śruti-saṃstuta-vaibhavā"
+      },
       "namavaliDeva": "श्रुतिसंस्तुतवैभवायै",
       "namavaliIast": "śrutisaṃstutavaibhavāyai",
+      "namavaliHyphenated": {
+        "deva": "श्रुति-संस्तुत-वैभवायै",
+        "iast": "śruti-saṃstuta-vaibhavāyai"
+      },
       "gloss": "Whose Glory The Vedas Hymn",
       "translation": "Revealed scripture itself undertakes the celebration of her magnificence.",
       "aksaras": [

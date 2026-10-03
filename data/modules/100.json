@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अनाहताब्जनिलया",
           "iast": "anāhatābjanilayā",
+          "hyphenated": {
+            "deva": "अनाहताब्ज-निलया",
+            "iast": "anāhatābja-nilayā"
+          },
           "namaIndices": [
             485
           ],
@@ -297,6 +301,10 @@
           "id": "l0-t2",
           "deva": "वदनद्वया",
           "iast": "vadanadvayā",
+          "hyphenated": {
+            "deva": "वदन-द्वया",
+            "iast": "vadana-dvayā"
+          },
           "namaIndices": [
             487
           ],
@@ -420,6 +428,10 @@
           "id": "l1-t0",
           "deva": "दंष्ट्रोज्ज्वलाऽक्षमालादिधरा",
           "iast": "daṃṣṭrojjvalā'kṣamālādidharā",
+          "hyphenated": {
+            "deva": "दंष्ट्रोज्ज्वलाऽक्षमालादि-धरा",
+            "iast": "daṃṣṭrojjvalā'kṣamālādi-dharā"
+          },
           "namaIndices": [
             488,
             489
@@ -738,6 +750,10 @@
           "id": "l1-t1",
           "deva": "रुधिरसंस्थिता",
           "iast": "rudhirasaṃsthitā",
+          "hyphenated": {
+            "deva": "रुधिर-संस्थिता",
+            "iast": "rudhira-saṃsthitā"
+          },
           "namaIndices": [
             490
           ],
@@ -904,8 +920,16 @@
       "index": 485,
       "deva": "अनाहताब्जनिलया",
       "iast": "anāhatābjanilayā",
+      "hyphenated": {
+        "deva": "अनाहताब्ज-निलया",
+        "iast": "anāhatābja-nilayā"
+      },
       "namavaliDeva": "अनाहताब्जनिलयायै",
       "namavaliIast": "anāhatābjanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "अनाहताब्ज-निलयायै",
+        "iast": "anāhatābja-nilayāyai"
+      },
       "gloss": "Seated In The Anāhata Lotus",
       "translation": "Her place is the lotus at the heart, named for the sound that no striking produces.",
       "aksaras": [
@@ -1277,8 +1301,16 @@
       "index": 487,
       "deva": "वदनद्वया",
       "iast": "vadanadvayā",
+      "hyphenated": {
+        "deva": "वदन-द्वया",
+        "iast": "vadana-dvayā"
+      },
       "namavaliDeva": "वदनद्वयायै",
       "namavaliIast": "vadanadvayāyai",
+      "namavaliHyphenated": {
+        "deva": "वदन-द्वयायै",
+        "iast": "vadana-dvayāyai"
+      },
       "gloss": "Two-Faced",
       "translation": "Rākiṇī of the heart wheel looks out through a pair of faces.",
       "aksaras": [
@@ -1613,8 +1645,16 @@
       "index": 489,
       "deva": "अक्षमालादिधरा",
       "iast": "akṣamālādidharā",
+      "hyphenated": {
+        "deva": "अक्ष-मालादि-धरा",
+        "iast": "akṣa-mālādi-dharā"
+      },
       "namavaliDeva": "अक्षमालादिधरायै",
       "namavaliIast": "akṣamālādidharāyai",
+      "namavaliHyphenated": {
+        "deva": "अक्ष-मालादि-धरायै",
+        "iast": "akṣa-mālādi-dharāyai"
+      },
       "gloss": "Bearing The Rosary And More",
       "translation": "In her hands are the string of beads and the other emblems that go with it.",
       "aksaras": [
@@ -1841,8 +1881,16 @@
       "index": 490,
       "deva": "रुधिरसंस्थिता",
       "iast": "rudhirasaṃsthitā",
+      "hyphenated": {
+        "deva": "रुधिर-संस्थिता",
+        "iast": "rudhira-saṃsthitā"
+      },
       "namavaliDeva": "रुधिरसंस्थितायै",
       "namavaliIast": "rudhirasaṃsthitāyai",
+      "namavaliHyphenated": {
+        "deva": "रुधिर-संस्थितायै",
+        "iast": "rudhira-saṃsthitāyai"
+      },
       "gloss": "Established In The Blood",
       "translation": "Among the bodily constituents she is stationed in the blood.",
       "aksaras": [
@@ -2036,7 +2084,7 @@
   ],
   "chant": {
     "startSec": 1099.72,
-    "endSec": 1109.0,
+    "endSec": 1109,
     "confidence": "detected"
   },
   "commentary": {

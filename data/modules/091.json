@@ -135,6 +135,10 @@
           "id": "l0-t1",
           "deva": "तत्त्वमयी",
           "iast": "tattvamayī",
+          "hyphenated": {
+            "deva": "तत्-त्वमयी",
+            "iast": "tat-tvamayī"
+          },
           "namaIndices": [
             425,
             426,
@@ -252,6 +256,10 @@
           "id": "l0-t2",
           "deva": "पञ्चकोशान्तरस्थिता",
           "iast": "pañcakośāntarasthitā",
+          "hyphenated": {
+            "deva": "पञ्च-कोशान्तरस्थिता",
+            "iast": "pañca-kośāntarasthitā"
+          },
           "namaIndices": [
             428
           ],
@@ -477,6 +485,10 @@
           "id": "l1-t0",
           "deva": "निःसीममहिमा",
           "iast": "niḥsīmamahimā",
+          "hyphenated": {
+            "deva": "निःसीम-महिमा",
+            "iast": "niḥsīma-mahimā"
+          },
           "namaIndices": [
             429
           ],
@@ -624,6 +636,10 @@
           "id": "l1-t1",
           "deva": "नित्ययौवना",
           "iast": "nityayauvanā",
+          "hyphenated": {
+            "deva": "नित्य-यौवना",
+            "iast": "nitya-yauvanā"
+          },
           "namaIndices": [
             430
           ],
@@ -755,6 +771,10 @@
           "id": "l1-t2",
           "deva": "मदशालिनी",
           "iast": "madaśālinī",
+          "hyphenated": {
+            "deva": "मद-शालिनी",
+            "iast": "mada-śālinī"
+          },
           "namaIndices": [
             431
           ],
@@ -1225,8 +1245,16 @@
       "index": 428,
       "deva": "पञ्चकोशान्तरस्थिता",
       "iast": "pañcakośāntarasthitā",
+      "hyphenated": {
+        "deva": "पञ्च-कोशान्तरस्थिता",
+        "iast": "pañca-kośāntarasthitā"
+      },
       "namavaliDeva": "पञ्चकोशान्तरस्थितायै",
       "namavaliIast": "pañcakośāntarasthitāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-कोशान्तरस्थितायै",
+        "iast": "pañca-kośāntarasthitāyai"
+      },
       "gloss": "Abiding Within The Five Sheaths",
       "translation": "She stands inside the five wrappings of the self, further in than any of them reaches.",
       "aksaras": [
@@ -1493,8 +1521,16 @@
       "index": 429,
       "deva": "निःसीममहिमा",
       "iast": "niḥsīmamahimā",
+      "hyphenated": {
+        "deva": "निःसीम-महिमा",
+        "iast": "niḥsīma-mahimā"
+      },
       "namavaliDeva": "निःसीममहिम्ने",
       "namavaliIast": "niḥsīmamahimne",
+      "namavaliHyphenated": {
+        "deva": "निःसीम-महिम्ने",
+        "iast": "niḥsīma-mahimne"
+      },
       "gloss": "Of Boundless Greatness",
       "translation": "Her greatness overruns every boundary anyone might try to set around it.",
       "aksaras": [
@@ -1671,8 +1707,16 @@
       "index": 430,
       "deva": "नित्ययौवना",
       "iast": "nityayauvanā",
+      "hyphenated": {
+        "deva": "नित्य-यौवना",
+        "iast": "nitya-yauvanā"
+      },
       "namavaliDeva": "नित्ययौवनायै",
       "namavaliIast": "nityayauvanāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-यौवनायै",
+        "iast": "nitya-yauvanāyai"
+      },
       "gloss": "Ever Young",
       "translation": "Her youth does not pass into anything else; she stands permanently at its height.",
       "aksaras": [
@@ -1832,8 +1876,16 @@
       "index": 431,
       "deva": "मदशालिनी",
       "iast": "madaśālinī",
+      "hyphenated": {
+        "deva": "मद-शालिनी",
+        "iast": "mada-śālinī"
+      },
       "namavaliDeva": "मदशालिन्यै",
       "namavaliIast": "madaśālinyai",
+      "namavaliHyphenated": {
+        "deva": "मद-शालिन्यै",
+        "iast": "mada-śālinyai"
+      },
       "gloss": "Abounding In Rapture",
       "translation": "A wine-like exhilaration fills her and shows itself in every movement.",
       "aksaras": [

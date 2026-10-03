@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "नित्यतृप्ता",
           "iast": "nityatṛptā",
+          "hyphenated": {
+            "deva": "नित्य-तृप्ता",
+            "iast": "nitya-tṛptā"
+          },
           "namaIndices": [
             566
           ],
@@ -142,6 +146,10 @@
           "id": "l0-t1",
           "deva": "भक्तनिधिर्नियन्त्री",
           "iast": "bhaktanidhirniyantrī",
+          "hyphenated": {
+            "deva": "भक्त-निधिर्-नियन्त्री",
+            "iast": "bhakta-nidhir-niyantrī"
+          },
           "namaIndices": [
             567,
             568
@@ -504,6 +512,10 @@
           "id": "l1-t0",
           "deva": "मैत्र्यादिवासनालभ्या",
           "iast": "maitryādivāsanālabhyā",
+          "hyphenated": {
+            "deva": "मैत्र्यादि-वासना-लभ्या",
+            "iast": "maitryādi-vāsanā-labhyā"
+          },
           "namaIndices": [
             570
           ],
@@ -737,6 +749,10 @@
           "id": "l1-t1",
           "deva": "महाप्रलयसाक्षिणी",
           "iast": "mahāpralayasākṣiṇī",
+          "hyphenated": {
+            "deva": "महा-प्रलय-साक्षिणी",
+            "iast": "mahā-pralaya-sākṣiṇī"
+          },
           "namaIndices": [
             571
           ],
@@ -945,8 +961,16 @@
       "index": 566,
       "deva": "नित्यतृप्ता",
       "iast": "nityatṛptā",
+      "hyphenated": {
+        "deva": "नित्य-तृप्ता",
+        "iast": "nitya-tṛptā"
+      },
       "namavaliDeva": "नित्यतृप्तायै",
       "namavaliIast": "nityatṛptāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-तृप्तायै",
+        "iast": "nitya-tṛptāyai"
+      },
       "gloss": "Forever Content",
       "translation": "Since she lacks nothing, no satisfaction of hers depends on anything being supplied.",
       "aksaras": [
@@ -1104,8 +1128,16 @@
       "index": 567,
       "deva": "भक्तनिधिः",
       "iast": "bhaktanidhiḥ",
+      "hyphenated": {
+        "deva": "भक्त-निधिः",
+        "iast": "bhakta-nidhiḥ"
+      },
       "namavaliDeva": "भक्तनिधये",
       "namavaliIast": "bhaktanidhaye",
+      "namavaliHyphenated": {
+        "deva": "भक्त-निधये",
+        "iast": "bhakta-nidhaye"
+      },
       "gloss": "Treasury Of The Devoted",
       "translation": "For those attached to her she is the hoard itself, the wealth kept in reserve against every need.",
       "aksaras": [
@@ -1533,8 +1565,16 @@
       "index": 570,
       "deva": "मैत्र्यादिवासनालभ्या",
       "iast": "maitryādivāsanālabhyā",
+      "hyphenated": {
+        "deva": "मैत्र्यादि-वासना-लभ्या",
+        "iast": "maitryādi-vāsanā-labhyā"
+      },
       "namavaliDeva": "मैत्र्यादिवासनालभ्यायै",
       "namavaliIast": "maitryādivāsanālabhyāyai",
+      "namavaliHyphenated": {
+        "deva": "मैत्र्यादि-वासना-लभ्यायै",
+        "iast": "maitryādi-vāsanā-labhyāyai"
+      },
       "gloss": "Attained Through Friendliness And Its Kin",
       "translation": "The settled dispositions of goodwill, compassion, gladness and evenness make the mind fit to receive her.",
       "aksaras": [
@@ -1824,8 +1864,16 @@
       "index": 571,
       "deva": "महाप्रलयसाक्षिणी",
       "iast": "mahāpralayasākṣiṇī",
+      "hyphenated": {
+        "deva": "महा-प्रलय-साक्षिणी",
+        "iast": "mahā-pralaya-sākṣiṇī"
+      },
       "namavaliDeva": "महाप्रलयसाक्षिण्यै",
       "namavaliIast": "mahāpralayasākṣiṇyai",
+      "namavaliHyphenated": {
+        "deva": "महा-प्रलय-साक्षिण्यै",
+        "iast": "mahā-pralaya-sākṣiṇyai"
+      },
       "gloss": "Witness Of The Great Dissolution",
       "translation": "When the worlds are reabsorbed at the close of an age she alone remains, looking on at their disappearance.",
       "aksaras": [

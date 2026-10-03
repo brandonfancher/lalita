@@ -248,6 +248,10 @@
           "id": "l0-t2",
           "deva": "पाटलीकुसुमप्रिया",
           "iast": "pāṭalīkusumapriyā",
+          "hyphenated": {
+            "deva": "पाटली-कुसुम-प्रिया",
+            "iast": "pāṭalī-kusuma-priyā"
+          },
           "namaIndices": [
             773
           ],
@@ -525,6 +529,10 @@
           "id": "l1-t1",
           "deva": "मेरुनिलया",
           "iast": "merunilayā",
+          "hyphenated": {
+            "deva": "मेरु-निलया",
+            "iast": "meru-nilayā"
+          },
           "namaIndices": [
             775
           ],
@@ -648,6 +656,10 @@
           "id": "l1-t2",
           "deva": "मन्दारकुसुमप्रिया",
           "iast": "mandārakusumapriyā",
+          "hyphenated": {
+            "deva": "मन्दार-कुसुम-प्रिया",
+            "iast": "mandāra-kusuma-priyā"
+          },
           "namaIndices": [
             776
           ],
@@ -1158,8 +1170,16 @@
       "index": 773,
       "deva": "पाटलीकुसुमप्रिया",
       "iast": "pāṭalīkusumapriyā",
+      "hyphenated": {
+        "deva": "पाटली-कुसुम-प्रिया",
+        "iast": "pāṭalī-kusuma-priyā"
+      },
       "namavaliDeva": "पाटलीकुसुमप्रियायै",
       "namavaliIast": "pāṭalīkusumapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "पाटली-कुसुम-प्रियायै",
+        "iast": "pāṭalī-kusuma-priyāyai"
+      },
       "gloss": "Fond Of Pāṭalī Blossoms",
       "translation": "The pale trumpet flowers of the pāṭalī tree are what she likes to be offered.",
       "aksaras": [
@@ -1485,8 +1505,16 @@
       "index": 775,
       "deva": "मेरुनिलया",
       "iast": "merunilayā",
+      "hyphenated": {
+        "deva": "मेरु-निलया",
+        "iast": "meru-nilayā"
+      },
       "namavaliDeva": "मेरुनिलयायै",
       "namavaliIast": "merunilayāyai",
+      "namavaliHyphenated": {
+        "deva": "मेरु-निलयायै",
+        "iast": "meru-nilayāyai"
+      },
       "gloss": "Dwelling On Meru",
       "translation": "Her house stands on Meru, the golden mountain at the centre around which everything else turns.",
       "aksaras": [
@@ -1638,8 +1666,16 @@
       "index": 776,
       "deva": "मन्दारकुसुमप्रिया",
       "iast": "mandārakusumapriyā",
+      "hyphenated": {
+        "deva": "मन्दार-कुसुम-प्रिया",
+        "iast": "mandāra-kusuma-priyā"
+      },
       "namavaliDeva": "मन्दारकुसुमप्रियायै",
       "namavaliIast": "mandārakusumapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "मन्दार-कुसुम-प्रियायै",
+        "iast": "mandāra-kusuma-priyāyai"
+      },
       "gloss": "Fond Of Mandāra Blossoms",
       "translation": "The coral tree of paradise flowers for her, and she is pleased when its blossoms are laid before her.",
       "aksaras": [

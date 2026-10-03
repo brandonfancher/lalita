@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
+import { HyphenatedText } from "@/components/hyphenated-text";
 import type { Nama } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
@@ -48,10 +49,12 @@ export function NamaList({ namas }: { namas: Nama[] }) {
                     aria-label={nama.gloss ? `${nama.iast}: ${nama.gloss}` : nama.iast}
                     className="deva text-left text-[1.45rem] leading-snug text-ink outline-none after:absolute after:inset-0 after:content-[''] focus-visible:after:ring-2 focus-visible:after:ring-inset focus-visible:after:ring-sindura/50"
                   >
-                    <FitText container="marker">{nama.deva}</FitText>
+                    <FitText container="marker" fitKey={nama.deva}>
+                      <HyphenatedText text={nama.deva} hyphenated={nama.hyphenated?.deva} />
+                    </FitText>
                   </button>
-                  <FitText container="marker" className="iast text-[1.05rem] text-gold-soft">
-                    {nama.iast}
+                  <FitText container="marker" fitKey={nama.iast} className="iast text-[1.05rem] text-gold-soft">
+                    <HyphenatedText text={nama.iast} hyphenated={nama.hyphenated?.iast} />
                   </FitText>
                 </span>
                 {nama.gloss && (
@@ -107,9 +110,20 @@ export function NamaList({ namas }: { namas: Nama[] }) {
                   <p className="border-t border-line pt-3 text-[15px] text-ink-faint">
                     <span className="eyebrow mr-2">In recitation</span>
                     <span className="deva text-lg text-sindura">
-                      {nama.namavaliDeva} नमः
+                      <HyphenatedText
+                        text={nama.namavaliDeva ?? ""}
+                        hyphenated={nama.namavaliHyphenated?.deva}
+                      />{" "}
+                      नमः
                     </span>{" "}
-                    <span className="iast">({nama.namavaliIast} namaḥ)</span>
+                    <span className="iast">
+                      (
+                      <HyphenatedText
+                        text={nama.namavaliIast}
+                        hyphenated={nama.namavaliHyphenated?.iast}
+                      />{" "}
+                      namaḥ)
+                    </span>
                   </p>
                 )}
               </div>

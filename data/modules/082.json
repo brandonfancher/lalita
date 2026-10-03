@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कामेश्वरप्राणनाडी",
           "iast": "kāmeśvaraprāṇanāḍī",
+          "hyphenated": {
+            "deva": "कामेश्वर-प्राण-नाडी",
+            "iast": "kāmeśvara-prāṇa-nāḍī"
+          },
           "namaIndices": [
             373
           ],
@@ -314,6 +318,10 @@
           "id": "l0-t2",
           "deva": "कामपूजिता",
           "iast": "kāmapūjitā",
+          "hyphenated": {
+            "deva": "काम-पूजिता",
+            "iast": "kāma-pūjitā"
+          },
           "namaIndices": [
             375
           ],
@@ -443,6 +451,10 @@
           "id": "l1-t0",
           "deva": "शृङ्गाररससम्पूर्णा",
           "iast": "śṛṅgārarasasampūrṇā",
+          "hyphenated": {
+            "deva": "शृङ्गार-रस-सम्पूर्णा",
+            "iast": "śṛṅgāra-rasa-sampūrṇā"
+          },
           "namaIndices": [
             376
           ],
@@ -713,6 +725,10 @@
           "id": "l1-t2",
           "deva": "जालन्धरस्थिता",
           "iast": "jālandharasthitā",
+          "hyphenated": {
+            "deva": "जालन्धर-स्थिता",
+            "iast": "jālandhara-sthitā"
+          },
           "namaIndices": [
             378
           ],
@@ -880,8 +896,16 @@
       "index": 373,
       "deva": "कामेश्वरप्राणनाडी",
       "iast": "kāmeśvaraprāṇanāḍī",
+      "hyphenated": {
+        "deva": "कामेश्वर-प्राण-नाडी",
+        "iast": "kāmeśvara-prāṇa-nāḍī"
+      },
       "namavaliDeva": "कामेश्वरप्राणनाड्यै",
       "namavaliIast": "kāmeśvaraprāṇanāḍyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश्वर-प्राण-नाड्यै",
+        "iast": "kāmeśvara-prāṇa-nāḍyai"
+      },
       "gloss": "Life-Vein Of Kāmeśvara",
       "translation": "She runs through her consort like the vessel that carries his breath; cut her out and nothing of him is left alive.",
       "aksaras": [
@@ -1269,8 +1293,16 @@
       "index": 375,
       "deva": "कामपूजिता",
       "iast": "kāmapūjitā",
+      "hyphenated": {
+        "deva": "काम-पूजिता",
+        "iast": "kāma-pūjitā"
+      },
       "namavaliDeva": "कामपूजितायै",
       "namavaliIast": "kāmapūjitāyai",
+      "namavaliHyphenated": {
+        "deva": "काम-पूजितायै",
+        "iast": "kāma-pūjitāyai"
+      },
       "gloss": "Worshipped By Kāma",
       "translation": "Desire itself, in the person of the god Kāma, comes to her as a worshipper.",
       "aksaras": [
@@ -1422,8 +1454,16 @@
       "index": 376,
       "deva": "शृङ्गाररससम्पूर्णा",
       "iast": "śṛṅgārarasasampūrṇā",
+      "hyphenated": {
+        "deva": "शृङ्गार-रस-सम्पूर्णा",
+        "iast": "śṛṅgāra-rasa-sampūrṇā"
+      },
       "namavaliDeva": "शृङ्गाररससम्पूर्णायै",
       "namavaliIast": "śṛṅgārarasasampūrṇāyai",
+      "namavaliHyphenated": {
+        "deva": "शृङ्गार-रस-सम्पूर्णायै",
+        "iast": "śṛṅgāra-rasa-sampūrṇāyai"
+      },
       "gloss": "Brimming With Erotic Savour",
       "translation": "She is filled to the top with śṛṅgāra, the flavour that poetry reserves for love.",
       "aksaras": [
@@ -1747,8 +1787,16 @@
       "index": 378,
       "deva": "जालन्धरस्थिता",
       "iast": "jālandharasthitā",
+      "hyphenated": {
+        "deva": "जालन्धर-स्थिता",
+        "iast": "jālandhara-sthitā"
+      },
       "namavaliDeva": "जालन्धरस्थितायै",
       "namavaliIast": "jālandharasthitāyai",
+      "namavaliHyphenated": {
+        "deva": "जालन्धर-स्थितायै",
+        "iast": "jālandhara-sthitāyai"
+      },
       "gloss": "Seated At Jālandhara",
       "translation": "She has her station at Jālandhara, one of the seats where the goddess is held to be locally present.",
       "aksaras": [

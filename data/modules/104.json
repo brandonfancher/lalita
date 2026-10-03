@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "स्वाधिष्ठानाम्बुजगता",
           "iast": "svādhiṣṭhānāmbujagatā",
+          "hyphenated": {
+            "deva": "स्वाधिष्ठानाम्बुज-गता",
+            "iast": "svādhiṣṭhānāmbuja-gatā"
+          },
           "namaIndices": [
             504
           ],
@@ -246,6 +250,10 @@
           "id": "l0-t1",
           "deva": "चतुर्वक्त्रमनोहरा",
           "iast": "caturvaktramanoharā",
+          "hyphenated": {
+            "deva": "चतुर्-वक्त्र-मनो-हरा",
+            "iast": "catur-vaktra-mano-harā"
+          },
           "namaIndices": [
             505
           ],
@@ -464,6 +472,10 @@
           "id": "l1-t0",
           "deva": "शूलाद्यायुधसम्पन्ना",
           "iast": "śūlādyāyudhasampannā",
+          "hyphenated": {
+            "deva": "शूलाद्यायुध-सम्पन्ना",
+            "iast": "śūlādyāyudha-sampannā"
+          },
           "namaIndices": [
             506
           ],
@@ -690,6 +702,10 @@
           "id": "l1-t1",
           "deva": "पीतवर्णाऽतिगर्विता",
           "iast": "pītavarṇā'tigarvitā",
+          "hyphenated": {
+            "deva": "पीत-वर्णाऽतिगर्विता",
+            "iast": "pīta-varṇā'tigarvitā"
+          },
           "namaIndices": [
             507,
             508
@@ -919,8 +935,16 @@
       "index": 504,
       "deva": "स्वाधिष्ठानाम्बुजगता",
       "iast": "svādhiṣṭhānāmbujagatā",
+      "hyphenated": {
+        "deva": "स्वाधिष्ठानाम्बुज-गता",
+        "iast": "svādhiṣṭhānāmbuja-gatā"
+      },
       "namavaliDeva": "स्वाधिष्ठानाम्बुजगतायै",
       "namavaliIast": "svādhiṣṭhānāmbujagatāyai",
+      "namavaliHyphenated": {
+        "deva": "स्वाधिष्ठानाम्बुज-गतायै",
+        "iast": "svādhiṣṭhānāmbuja-gatāyai"
+      },
       "gloss": "Seated In The Svādhiṣṭhāna Lotus",
       "translation": "Her place is the second of the six mystical circles, the wheel that yogins locate at the root of the generative organs.",
       "aksaras": [
@@ -1197,8 +1221,16 @@
       "index": 505,
       "deva": "चतुर्वक्त्रमनोहरा",
       "iast": "caturvaktramanoharā",
+      "hyphenated": {
+        "deva": "चतुर्-वक्त्र-मनो-हरा",
+        "iast": "catur-vaktra-mano-harā"
+      },
       "namavaliDeva": "चतुर्वक्त्रमनोहरायै",
       "namavaliIast": "caturvaktramanoharāyai",
+      "namavaliHyphenated": {
+        "deva": "चतुर्-वक्त्र-मनो-हरायै",
+        "iast": "catur-vaktra-mano-harāyai"
+      },
       "gloss": "Captivating With Four Faces",
       "translation": "Kākinī looks out in four directions at once, and every one of those countenances carries away the beholder's heart.",
       "aksaras": [
@@ -1467,8 +1499,16 @@
       "index": 506,
       "deva": "शूलाद्यायुधसम्पन्ना",
       "iast": "śūlādyāyudhasampannā",
+      "hyphenated": {
+        "deva": "शूलाद्यायुध-सम्पन्ना",
+        "iast": "śūlādyāyudha-sampannā"
+      },
       "namavaliDeva": "शूलाद्यायुधसम्पन्नायै",
       "namavaliIast": "śūlādyāyudhasampannāyai",
+      "namavaliHyphenated": {
+        "deva": "शूलाद्यायुध-सम्पन्नायै",
+        "iast": "śūlādyāyudha-sampannāyai"
+      },
       "gloss": "Armed With Trident And More",
       "translation": "Her hands are fully supplied with weapons, the trident standing first in the list.",
       "aksaras": [
@@ -1751,8 +1791,16 @@
       "index": 507,
       "deva": "पीतवर्णा",
       "iast": "pītavarṇā",
+      "hyphenated": {
+        "deva": "पीत-वर्णा",
+        "iast": "pīta-varṇā"
+      },
       "namavaliDeva": "पीतवर्णायै",
       "namavaliIast": "pītavarṇāyai",
+      "namavaliHyphenated": {
+        "deva": "पीत-वर्णायै",
+        "iast": "pīta-varṇāyai"
+      },
       "gloss": "Yellow In Hue",
       "translation": "The colour proper to this śakti is yellow, the shade the dictionaries associate with butter and turmeric.",
       "aksaras": [
@@ -1888,8 +1936,16 @@
       "index": 508,
       "deva": "अतिगर्विता",
       "iast": "atigarvitā",
+      "hyphenated": {
+        "deva": "अति-गर्विता",
+        "iast": "ati-garvitā"
+      },
       "namavaliDeva": "अतिगर्वितायै",
       "namavaliIast": "atigarvitāyai",
+      "namavaliHyphenated": {
+        "deva": "अति-गर्वितायै",
+        "iast": "ati-garvitāyai"
+      },
       "gloss": "Exceedingly Proud",
       "translation": "Pride here is not a fault but an overflow of power: the śakti is flushed with her own sovereignty.",
       "aksaras": [

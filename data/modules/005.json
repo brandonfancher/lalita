@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
           "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+          "hyphenated": {
+            "deva": "अष्टमी-चन्द्र-विभ्राजदलिक-स्थल-शोभिता",
+            "iast": "aṣṭamī-candra-vibhrājadalika-sthala-śobhitā"
+          },
           "namaIndices": [
             15
           ],
@@ -423,6 +427,10 @@
           "id": "l1-t0",
           "deva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
           "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+          "hyphenated": {
+            "deva": "मुख-चन्द्र-कलङ्काभ-मृगनाभि-विशेषका",
+            "iast": "mukha-candra-kalaṅkābha-mṛganābhi-viśeṣakā"
+          },
           "namaIndices": [
             16
           ],
@@ -810,8 +818,16 @@
       "index": 15,
       "deva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
       "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+      "hyphenated": {
+        "deva": "अष्टमी-चन्द्र-विभ्राजदलिक-स्थल-शोभिता",
+        "iast": "aṣṭamī-candra-vibhrājadalika-sthala-śobhitā"
+      },
       "namavaliDeva": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभितायै",
       "namavaliIast": "aṣṭamīcandravibhrājadalikasthalaśobhitāyai",
+      "namavaliHyphenated": {
+        "deva": "अष्टमी-चन्द्र-विभ्राजदलिक-स्थल-शोभितायै",
+        "iast": "aṣṭamī-candra-vibhrājadalika-sthala-śobhitāyai"
+      },
       "gloss": "Graced By A Half-Moon Brow",
       "translation": "The broad curve of her forehead carries the same clear light as the moon on the eighth night of the waxing fortnight.",
       "aksaras": [
@@ -1301,8 +1317,16 @@
       "index": 16,
       "deva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
       "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+      "hyphenated": {
+        "deva": "मुख-चन्द्र-कलङ्काभ-मृगनाभि-विशेषका",
+        "iast": "mukha-candra-kalaṅkābha-mṛganābhi-viśeṣakā"
+      },
       "namavaliDeva": "मुखचन्द्रकलङ्काभमृगनाभिविशेषकायै",
       "namavaliIast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakāyai",
+      "namavaliHyphenated": {
+        "deva": "मुख-चन्द्र-कलङ्काभ-मृगनाभि-विशेषकायै",
+        "iast": "mukha-candra-kalaṅkābha-mṛganābhi-viśeṣakāyai"
+      },
       "gloss": "Whose Musk Mark Is The Moon's Spot",
       "translation": "The dab of musk on her face plays the part that the dark blemish plays on the moon, a small shadow that only sharpens the brightness around it.",
       "aksaras": [
@@ -1773,7 +1797,7 @@
   ],
   "chant": {
     "startSec": 183.2,
-    "endSec": 192.0,
+    "endSec": 192,
     "confidence": "interpolated"
   },
   "commentary": {

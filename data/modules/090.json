@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चिच्छक्तिश्",
           "iast": "cicchaktiś",
+          "hyphenated": {
+            "deva": "चिच्-छक्तिश्",
+            "iast": "cic-chaktiś"
+          },
           "namaIndices": [
             416
           ],
@@ -140,6 +144,10 @@
           "id": "l0-t1",
           "deva": "चेतनारूपा",
           "iast": "cetanārūpā",
+          "hyphenated": {
+            "deva": "चेतना-रूपा",
+            "iast": "cetanā-rūpā"
+          },
           "namaIndices": [
             417
           ],
@@ -263,6 +271,10 @@
           "id": "l0-t2",
           "deva": "जडशक्तिर्जडात्मिका",
           "iast": "jaḍaśaktirjaḍātmikā",
+          "hyphenated": {
+            "deva": "जड-शक्तिर्-जडात्मिका",
+            "iast": "jaḍa-śaktir-jaḍātmikā"
+          },
           "namaIndices": [
             418,
             419
@@ -764,6 +776,10 @@
           "id": "l1-t3",
           "deva": "द्विजवृन्दनिषेविता",
           "iast": "dvijavṛndaniṣevitā",
+          "hyphenated": {
+            "deva": "द्विज-वृन्द-निषेविता",
+            "iast": "dvija-vṛnda-niṣevitā"
+          },
           "namaIndices": [
             423
           ],
@@ -986,8 +1002,16 @@
       "index": 416,
       "deva": "चिच्छक्तिः",
       "iast": "cicchaktiḥ",
+      "hyphenated": {
+        "deva": "चिच्-छक्तिः",
+        "iast": "cic-chaktiḥ"
+      },
       "namavaliDeva": "चिच्छक्त्यै",
       "namavaliIast": "cicchaktyai",
+      "namavaliHyphenated": {
+        "deva": "चिच्-छक्त्यै",
+        "iast": "cic-chaktyai"
+      },
       "gloss": "The Power Of Consciousness",
       "translation": "She is awareness taken as sheer power, the force by which anything whatever comes to be known.",
       "aksaras": [
@@ -1129,8 +1153,16 @@
       "index": 417,
       "deva": "चेतनारूपा",
       "iast": "cetanārūpā",
+      "hyphenated": {
+        "deva": "चेतना-रूपा",
+        "iast": "cetanā-rūpā"
+      },
       "namavaliDeva": "चेतनारूपायै",
       "namavaliIast": "cetanārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "चेतना-रूपायै",
+        "iast": "cetanā-rūpāyai"
+      },
       "gloss": "Whose Form Is Sentience",
       "translation": "What shows itself as her form is sentience and nothing besides.",
       "aksaras": [
@@ -1282,8 +1314,16 @@
       "index": 418,
       "deva": "जडशक्तिः",
       "iast": "jaḍaśaktiḥ",
+      "hyphenated": {
+        "deva": "जड-शक्तिः",
+        "iast": "jaḍa-śaktiḥ"
+      },
       "namavaliDeva": "जडशक्त्यै",
       "namavaliIast": "jaḍaśaktyai",
+      "namavaliHyphenated": {
+        "deva": "जड-शक्त्यै",
+        "iast": "jaḍa-śaktyai"
+      },
       "gloss": "The Power In Inert Matter",
       "translation": "Even what is lifeless and unknowing holds together by a power that is hers.",
       "aksaras": [
@@ -1873,8 +1913,16 @@
       "index": 423,
       "deva": "द्विजवृन्दनिषेविता",
       "iast": "dvijavṛndaniṣevitā",
+      "hyphenated": {
+        "deva": "द्विज-वृन्द-निषेविता",
+        "iast": "dvija-vṛnda-niṣevitā"
+      },
       "namavaliDeva": "द्विजवृन्दनिषेवितायै",
       "namavaliIast": "dvijavṛndaniṣevitāyai",
+      "namavaliHyphenated": {
+        "deva": "द्विज-वृन्द-निषेवितायै",
+        "iast": "dvija-vṛnda-niṣevitāyai"
+      },
       "gloss": "Served By Throngs Of The Twice-Born",
       "translation": "Crowds of brahmins wait upon her, and their whole observance amounts to attendance on her.",
       "aksaras": [

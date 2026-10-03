@@ -827,6 +827,10 @@
           "id": "l1-t3",
           "deva": "गुरुप्रिया",
           "iast": "gurupriyā",
+          "hyphenated": {
+            "deva": "गुरु-प्रिया",
+            "iast": "guru-priyā"
+          },
           "namaIndices": [
             722
           ],
@@ -1944,8 +1948,16 @@
       "index": 722,
       "deva": "गुरुप्रिया",
       "iast": "gurupriyā",
+      "hyphenated": {
+        "deva": "गुरु-प्रिया",
+        "iast": "guru-priyā"
+      },
       "namavaliDeva": "गुरुप्रियायै",
       "namavaliIast": "gurupriyāyai",
+      "namavaliHyphenated": {
+        "deva": "गुरु-प्रियायै",
+        "iast": "guru-priyāyai"
+      },
       "gloss": "Fond Of The Guru",
       "translation": "The teacher is what she loves, and she is in turn the teacher's own delight.",
       "aksaras": [

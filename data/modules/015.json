@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "लक्ष्यरोमलताधारतासमुन्नेयमध्यमा",
           "iast": "lakṣyaromalatādhāratāsamunneyamadhyamā",
+          "hyphenated": {
+            "deva": "लक्ष्य-रोम-लताधारता-समुन्नेय-मध्यमा",
+            "iast": "lakṣya-roma-latādhāratā-samunneya-madhyamā"
+          },
           "namaIndices": [
             35
           ],
@@ -410,6 +414,10 @@
           "id": "l1-t0",
           "deva": "स्तनभारदलन्मध्यपट्टबन्धवलित्रया",
           "iast": "stanabhāradalanmadhyapaṭṭabandhavalitrayā",
+          "hyphenated": {
+            "deva": "स्तन-भार-दलन्-मध्य-पट्ट-बन्ध-वलि-त्रया",
+            "iast": "stana-bhāra-dalan-madhya-paṭṭa-bandha-vali-trayā"
+          },
           "namaIndices": [
             36
           ],
@@ -807,8 +815,16 @@
       "index": 35,
       "deva": "लक्ष्यरोमलताधारतासमुन्नेयमध्यमा",
       "iast": "lakṣyaromalatādhāratāsamunneyamadhyamā",
+      "hyphenated": {
+        "deva": "लक्ष्य-रोम-लताधारता-समुन्नेय-मध्यमा",
+        "iast": "lakṣya-roma-latādhāratā-samunneya-madhyamā"
+      },
       "namavaliDeva": "लक्ष्यरोमलताधारतासमुन्नेयमध्यमायै",
       "namavaliIast": "lakṣyaromalatādhāratāsamunneyamadhyamāyai",
+      "namavaliHyphenated": {
+        "deva": "लक्ष्य-रोम-लताधारता-समुन्नेय-मध्यमायै",
+        "iast": "lakṣya-roma-latādhāratā-samunneya-madhyamāyai"
+      },
       "gloss": "Whose Waist Is Known Only By Inference",
       "translation": "Her waist is too slender to be seen directly, and one knows it is there only because the visible line of down must be growing on something.",
       "aksaras": [
@@ -1284,8 +1300,16 @@
       "index": 36,
       "deva": "स्तनभारदलन्मध्यपट्टबन्धवलित्रया",
       "iast": "stanabhāradalanmadhyapaṭṭabandhavalitrayā",
+      "hyphenated": {
+        "deva": "स्तन-भार-दलन्-मध्य-पट्ट-बन्ध-वलि-त्रया",
+        "iast": "stana-bhāra-dalan-madhya-paṭṭa-bandha-vali-trayā"
+      },
       "namavaliDeva": "स्तनभारदलन्मध्यपट्टबन्धवलित्रयायै",
       "namavaliIast": "stanabhāradalanmadhyapaṭṭabandhavalitrayāyai",
+      "namavaliHyphenated": {
+        "deva": "स्तन-भार-दलन्-मध्य-पट्ट-बन्ध-वलि-त्रयायै",
+        "iast": "stana-bhāra-dalan-madhya-paṭṭa-bandha-vali-trayāyai"
+      },
       "gloss": "Whose Three Waist Folds Are A Binding Band",
       "translation": "Her middle looks ready to give way under the weight of her breasts, and the three folds across it hold it like a bandage tied round.",
       "aksaras": [

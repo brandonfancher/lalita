@@ -6,9 +6,11 @@ import { ExternalLink } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
 import { FitText } from "@/components/fit-text";
+import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
+import { WordBreakToggle } from "@/components/word-break-toggle";
 import { rememberPracticeRange } from "@/lib/practice-range";
-import type { ChantTiming } from "@/lib/types";
+import type { ChantTiming, Hyphenated } from "@/lib/types";
 import { cn, practiceLabel } from "@/lib/utils";
 
 const MIN = 0;
@@ -18,6 +20,7 @@ export type PracticeToken = {
   id: string;
   deva: string;
   iast: string;
+  hyphenated?: Hyphenated;
   /** Nama (or dhyāna word) glosses for this written form. */
   glosses?: string[];
 };
@@ -124,7 +127,10 @@ export function PracticeSession({
 
       <div>
         <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-          <ScriptToggle />
+          <div className="flex flex-wrap items-center gap-2">
+            <ScriptToggle />
+            <WordBreakToggle />
+          </div>
           <span className="ml-auto text-[15px] italic text-ink-faint">
             Hover or tap a name for its gloss
           </span>
@@ -207,7 +213,7 @@ function PracticeVerseCard({
                 <GlossToken
                   key={`d-${token.id}`}
                   token={token}
-                  text={token.deva}
+                  kind="deva"
                   active={activeTokenId === token.id}
                   onToggle={onToggleToken}
                 />
@@ -227,7 +233,7 @@ function PracticeVerseCard({
                 <GlossToken
                   key={`i-${token.id}`}
                   token={token}
-                  text={token.iast}
+                  kind="iast"
                   active={activeTokenId === token.id}
                   onToggle={onToggleToken}
                 />
@@ -248,24 +254,26 @@ function PracticeVerseCard({
 
 function GlossToken({
   token,
-  text,
+  kind,
   active,
   onToggle,
 }: {
   token: PracticeToken;
-  text: string;
+  kind: "deva" | "iast";
   active: boolean;
   onToggle: (id: string | null) => void;
 }) {
   const glosses = token.glosses;
   const interactive = Boolean(glosses?.length);
   const label = glosses?.join(" · ");
+  const text = token[kind];
+  const shown = <HyphenatedText text={text} hyphenated={token.hyphenated?.[kind]} />;
 
   if (!interactive) {
     return (
       <>
         <span data-fit-word className="whitespace-nowrap">
-          {text}
+          {shown}
         </span>{" "}
       </>
     );
@@ -291,7 +299,7 @@ function GlossToken({
             }
           }}
         >
-          {text}
+          {shown}
         </span>
         <span
           role="tooltip"

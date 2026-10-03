@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कामेश्वरप्रेमरत्नमणिप्रतिपणस्तनी",
           "iast": "kāmeśvarapremaratnamaṇipratipaṇastanī",
+          "hyphenated": {
+            "deva": "कामेश्वर-प्रेम-रत्न-मणि-प्रतिपण-स्तनी",
+            "iast": "kāmeśvara-prema-ratna-maṇi-pratipaṇa-stanī"
+          },
           "namaIndices": [
             33
           ],
@@ -418,6 +422,10 @@
           "id": "l1-t0",
           "deva": "नाभ्यालवालरोमालिलताफलकुचद्वयी",
           "iast": "nābhyālavālaromālilatāphalakucadvayī",
+          "hyphenated": {
+            "deva": "नाभ्यालवाल-रोमालि-लता-फल-कुच-द्वयी",
+            "iast": "nābhyālavāla-romāli-latā-phala-kuca-dvayī"
+          },
           "namaIndices": [
             34
           ],
@@ -797,8 +805,16 @@
       "index": 33,
       "deva": "कामेश्वरप्रेमरत्नमणिप्रतिपणस्तनी",
       "iast": "kāmeśvarapremaratnamaṇipratipaṇastanī",
+      "hyphenated": {
+        "deva": "कामेश्वर-प्रेम-रत्न-मणि-प्रतिपण-स्तनी",
+        "iast": "kāmeśvara-prema-ratna-maṇi-pratipaṇa-stanī"
+      },
       "namavaliDeva": "कामेश्वरप्रेमरत्नमणिप्रतिपणस्तन्यै",
       "namavaliIast": "kāmeśvarapremaratnamaṇipratipaṇastanyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश्वर-प्रेम-रत्न-मणि-प्रतिपण-स्तन्यै",
+        "iast": "kāmeśvara-prema-ratna-maṇi-pratipaṇa-stanyai"
+      },
       "gloss": "Whose Breasts Bought Kāmeśvara's Love",
       "translation": "Her breasts are the counter-stake she laid down in exchange for the jewel that is her husband's love, and the bargain was an even one.",
       "aksaras": [
@@ -1296,8 +1312,16 @@
       "index": 34,
       "deva": "नाभ्यालवालरोमालिलताफलकुचद्वयी",
       "iast": "nābhyālavālaromālilatāphalakucadvayī",
+      "hyphenated": {
+        "deva": "नाभ्यालवाल-रोमालि-लता-फल-कुच-द्वयी",
+        "iast": "nābhyālavāla-romāli-latā-phala-kuca-dvayī"
+      },
       "namavaliDeva": "नाभ्यालवालरोमालिलताफलकुचद्वय्यै",
       "namavaliIast": "nābhyālavālaromālilatāphalakucadvayyai",
+      "namavaliHyphenated": {
+        "deva": "नाभ्यालवाल-रोमालि-लता-फल-कुच-द्वय्यै",
+        "iast": "nābhyālavāla-romāli-latā-phala-kuca-dvayyai"
+      },
       "gloss": "Whose Navel Is The Watering Basin",
       "translation": "Her navel is the hollow dug round a root, the line of down above it is the creeper, and her two breasts are the fruit that creeper bears.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कुमारगणनाथाम्बा",
           "iast": "kumāragaṇanāthāmbā",
+          "hyphenated": {
+            "deva": "कुमार-गण-नाथाम्बा",
+            "iast": "kumāra-gaṇa-nāthāmbā"
+          },
           "namaIndices": [
             442
           ],
@@ -289,6 +293,10 @@
           "id": "l0-t2",
           "deva": "पुष्टिर्मतिर्धृतिः",
           "iast": "puṣṭirmatirdhṛtiḥ",
+          "hyphenated": {
+            "deva": "पुष्टिर्-मतिर्-धृतिः",
+            "iast": "puṣṭir-matir-dhṛtiḥ"
+          },
           "namaIndices": [
             444,
             445,
@@ -698,6 +706,10 @@
           "id": "l1-t2",
           "deva": "कान्तिर्नन्दिनी",
           "iast": "kāntirnandinī",
+          "hyphenated": {
+            "deva": "कान्तिर्-नन्दिनी",
+            "iast": "kāntir-nandinī"
+          },
           "namaIndices": [
             449,
             450
@@ -867,6 +879,10 @@
           "id": "l1-t3",
           "deva": "विघ्ननाशिनी",
           "iast": "vighnanāśinī",
+          "hyphenated": {
+            "deva": "विघ्न-नाशिनी",
+            "iast": "vighna-nāśinī"
+          },
           "namaIndices": [
             451
           ],
@@ -1009,8 +1025,16 @@
       "index": 442,
       "deva": "कुमारगणनाथाम्बा",
       "iast": "kumāragaṇanāthāmbā",
+      "hyphenated": {
+        "deva": "कुमार-गण-नाथाम्बा",
+        "iast": "kumāra-gaṇa-nāthāmbā"
+      },
       "namavaliDeva": "कुमारगणनाथाम्बायै",
       "namavaliIast": "kumāragaṇanāthāmbāyai",
+      "namavaliHyphenated": {
+        "deva": "कुमार-गण-नाथाम्बायै",
+        "iast": "kumāra-gaṇa-nāthāmbāyai"
+      },
       "gloss": "Mother Of Kumāra And Gaṇanātha",
       "translation": "Skanda and the lord of Śiva's hosts are alike her children.",
       "aksaras": [
@@ -2007,8 +2031,16 @@
       "index": 451,
       "deva": "विघ्ननाशिनी",
       "iast": "vighnanāśinī",
+      "hyphenated": {
+        "deva": "विघ्न-नाशिनी",
+        "iast": "vighna-nāśinī"
+      },
       "namavaliDeva": "विघ्ननाशिन्यै",
       "namavaliIast": "vighnanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "विघ्न-नाशिन्यै",
+        "iast": "vighna-nāśinyai"
+      },
       "gloss": "Destroyer Of Obstacles",
       "translation": "Whatever blocks the way is undone by her before it can hold.",
       "aksaras": [

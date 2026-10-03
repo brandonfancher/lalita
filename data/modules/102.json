@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मणिपूराब्जनिलया",
           "iast": "maṇipūrābjanilayā",
+          "hyphenated": {
+            "deva": "मणिपूराब्ज-निलया",
+            "iast": "maṇipūrābja-nilayā"
+          },
           "namaIndices": [
             495
           ],
@@ -209,6 +213,10 @@
           "id": "l0-t1",
           "deva": "वदनत्रयसंयुता",
           "iast": "vadanatrayasaṃyutā",
+          "hyphenated": {
+            "deva": "वदन-त्रय-संयुता",
+            "iast": "vadana-traya-saṃyutā"
+          },
           "namaIndices": [
             496
           ],
@@ -821,8 +829,16 @@
       "index": 495,
       "deva": "मणिपूराब्जनिलया",
       "iast": "maṇipūrābjanilayā",
+      "hyphenated": {
+        "deva": "मणिपूराब्ज-निलया",
+        "iast": "maṇipūrābja-nilayā"
+      },
       "namavaliDeva": "मणिपूराब्जनिलयायै",
       "namavaliIast": "maṇipūrābjanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "मणिपूराब्ज-निलयायै",
+        "iast": "maṇipūrābja-nilayāyai"
+      },
       "gloss": "Seated In The Maṇipūra Lotus",
       "translation": "Her place is the lotus at the navel, the jewelled city for which it is named.",
       "aksaras": [
@@ -1061,8 +1077,16 @@
       "index": 496,
       "deva": "वदनत्रयसंयुता",
       "iast": "vadanatrayasaṃyutā",
+      "hyphenated": {
+        "deva": "वदन-त्रय-संयुता",
+        "iast": "vadana-traya-saṃyutā"
+      },
       "namavaliDeva": "वदनत्रयसंयुतायै",
       "namavaliIast": "vadanatrayasaṃyutāyai",
+      "namavaliHyphenated": {
+        "deva": "वदन-त्रय-संयुतायै",
+        "iast": "vadana-traya-saṃyutāyai"
+      },
       "gloss": "Joined With Three Faces",
       "translation": "Lākinī of the navel wheel is furnished with a set of three faces.",
       "aksaras": [

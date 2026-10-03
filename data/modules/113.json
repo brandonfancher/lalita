@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अग्रगण्याऽचिन्त्यरूपा",
           "iast": "agragaṇyā'cintyarūpā",
+          "hyphenated": {
+            "deva": "अग्र-गण्याऽचिन्त्य-रूपा",
+            "iast": "agra-gaṇyā'cintya-rūpā"
+          },
           "namaIndices": [
             553,
             554
@@ -259,6 +263,10 @@
           "id": "l0-t1",
           "deva": "कलिकल्मषनाशिनी",
           "iast": "kalikalmaṣanāśinī",
+          "hyphenated": {
+            "deva": "कलि-कल्मष-नाशिनी",
+            "iast": "kali-kalmaṣa-nāśinī"
+          },
           "namaIndices": [
             555
           ],
@@ -568,6 +576,10 @@
           "id": "l1-t1",
           "deva": "कालहन्त्री",
           "iast": "kālahantrī",
+          "hyphenated": {
+            "deva": "काल-हन्त्री",
+            "iast": "kāla-hantrī"
+          },
           "namaIndices": [
             557
           ],
@@ -690,6 +702,10 @@
           "id": "l1-t2",
           "deva": "कमलाक्षनिषेविता",
           "iast": "kamalākṣaniṣevitā",
+          "hyphenated": {
+            "deva": "कमलाक्ष-निषेविता",
+            "iast": "kamalākṣa-niṣevitā"
+          },
           "namaIndices": [
             558
           ],
@@ -890,8 +906,16 @@
       "index": 553,
       "deva": "अग्रगण्या",
       "iast": "agragaṇyā",
+      "hyphenated": {
+        "deva": "अग्र-गण्या",
+        "iast": "agra-gaṇyā"
+      },
       "namavaliDeva": "अग्रगण्यायै",
       "namavaliIast": "agragaṇyāyai",
+      "namavaliHyphenated": {
+        "deva": "अग्र-गण्यायै",
+        "iast": "agra-gaṇyāyai"
+      },
       "gloss": "Counted First",
       "translation": "In any reckoning of what deserves regard her name is set down at the head of the list.",
       "aksaras": [
@@ -1033,8 +1057,16 @@
       "index": 554,
       "deva": "अचिन्त्यरूपा",
       "iast": "acintyarūpā",
+      "hyphenated": {
+        "deva": "अचिन्त्य-रूपा",
+        "iast": "acintya-rūpā"
+      },
       "namavaliDeva": "अचिन्त्यरूपायै",
       "namavaliIast": "acintyarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "अचिन्त्य-रूपायै",
+        "iast": "acintya-rūpāyai"
+      },
       "gloss": "Of Unthinkable Form",
       "translation": "Her shape defeats the imagination, since every form the mind supplies is drawn from what she has already made.",
       "aksaras": [
@@ -1221,8 +1253,16 @@
       "index": 555,
       "deva": "कलिकल्मषनाशिनी",
       "iast": "kalikalmaṣanāśinī",
+      "hyphenated": {
+        "deva": "कलि-कल्मष-नाशिनी",
+        "iast": "kali-kalmaṣa-nāśinī"
+      },
       "namavaliDeva": "कलिकल्मषनाशिन्यै",
       "namavaliIast": "kalikalmaṣanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "कलि-कल्मष-नाशिन्यै",
+        "iast": "kali-kalmaṣa-nāśinyai"
+      },
       "gloss": "Destroyer Of The Stain Of This Dark Age",
       "translation": "The moral grime that gathers in the Kali era is rubbed away by her.",
       "aksaras": [
@@ -1580,8 +1620,16 @@
       "index": 557,
       "deva": "कालहन्त्री",
       "iast": "kālahantrī",
+      "hyphenated": {
+        "deva": "काल-हन्त्री",
+        "iast": "kāla-hantrī"
+      },
       "namavaliDeva": "कालहन्त्र्यै",
       "namavaliIast": "kālahantryai",
+      "namavaliHyphenated": {
+        "deva": "काल-हन्त्र्यै",
+        "iast": "kāla-hantryai"
+      },
       "gloss": "Slayer Of Time",
       "translation": "Time, which carries everything else away, is itself brought to an end by her.",
       "aksaras": [
@@ -1732,8 +1780,16 @@
       "index": 558,
       "deva": "कमलाक्षनिषेविता",
       "iast": "kamalākṣaniṣevitā",
+      "hyphenated": {
+        "deva": "कमलाक्ष-निषेविता",
+        "iast": "kamalākṣa-niṣevitā"
+      },
       "namavaliDeva": "कमलाक्षनिषेवितायै",
       "namavaliIast": "kamalākṣaniṣevitāyai",
+      "namavaliHyphenated": {
+        "deva": "कमलाक्ष-निषेवितायै",
+        "iast": "kamalākṣa-niṣevitāyai"
+      },
       "gloss": "Served By The Lotus-Eyed",
       "translation": "Viṣṇu, whose eyes the poets liken to lotus petals, attends upon her.",
       "aksaras": [

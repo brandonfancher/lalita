@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजा",
           "iast": "siñjānamaṇimañjīramaṇḍitaśrīpadāmbujā",
+          "hyphenated": {
+            "deva": "सिञ्जान-मणि-मञ्जीर-मण्डित-श्री-पदाम्बुजा",
+            "iast": "siñjāna-maṇi-mañjīra-maṇḍita-śrī-padāmbujā"
+          },
           "namaIndices": [
             46
           ],
@@ -439,6 +443,10 @@
           "id": "l1-t0",
           "deva": "मरालीमन्दगमना",
           "iast": "marālīmandagamanā",
+          "hyphenated": {
+            "deva": "मराली-मन्द-गमना",
+            "iast": "marālī-manda-gamanā"
+          },
           "namaIndices": [
             47
           ],
@@ -621,6 +629,10 @@
           "id": "l1-t1",
           "deva": "महालावण्यशेवधिः",
           "iast": "mahālāvaṇyaśevadhiḥ",
+          "hyphenated": {
+            "deva": "महा-लावण्य-शेवधिः",
+            "iast": "mahā-lāvaṇya-śevadhiḥ"
+          },
           "namaIndices": [
             48
           ],
@@ -821,8 +833,16 @@
       "index": 46,
       "deva": "शिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजा",
       "iast": "śiñjānamaṇimañjīramaṇḍitaśrīpadāmbujā",
+      "hyphenated": {
+        "deva": "शिञ्जान-मणि-मञ्जीर-मण्डित-श्री-पदाम्बुजा",
+        "iast": "śiñjāna-maṇi-mañjīra-maṇḍita-śrī-padāmbujā"
+      },
       "namavaliDeva": "शिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजायै",
       "namavaliIast": "śiñjānamaṇimañjīramaṇḍitaśrīpadāmbujāyai",
+      "namavaliHyphenated": {
+        "deva": "शिञ्जान-मणि-मञ्जीर-मण्डित-श्री-पदाम्बुजायै",
+        "iast": "śiñjāna-maṇi-mañjīra-maṇḍita-śrī-padāmbujāyai"
+      },
       "gloss": "Whose Lotus Feet Wear Ringing Anklets",
       "translation": "Jewelled anklets sound softly about her feet, and those feet open like lotuses wherever she sets them down.",
       "aksaras": [
@@ -1341,8 +1361,16 @@
       "index": 47,
       "deva": "मरालीमन्दगमना",
       "iast": "marālīmandagamanā",
+      "hyphenated": {
+        "deva": "मराली-मन्द-गमना",
+        "iast": "marālī-manda-gamanā"
+      },
       "namavaliDeva": "मरालीमन्दगमनायै",
       "namavaliIast": "marālīmandagamanāyai",
+      "namavaliHyphenated": {
+        "deva": "मराली-मन्द-गमनायै",
+        "iast": "marālī-manda-gamanāyai"
+      },
       "gloss": "Who Walks With A Swan's Slow Grace",
       "translation": "She moves without hurry, in the gliding unhurried manner of a swan crossing still water.",
       "aksaras": [
@@ -1567,8 +1595,16 @@
       "index": 48,
       "deva": "महालावण्यशेवधिः",
       "iast": "mahālāvaṇyaśevadhiḥ",
+      "hyphenated": {
+        "deva": "महा-लावण्य-शेवधिः",
+        "iast": "mahā-lāvaṇya-śevadhiḥ"
+      },
       "namavaliDeva": "महालावण्यशेवधये",
       "namavaliIast": "mahālāvaṇyaśevadhaye",
+      "namavaliHyphenated": {
+        "deva": "महा-लावण्य-शेवधये",
+        "iast": "mahā-lāvaṇya-śevadhaye"
+      },
       "gloss": "The Treasury Of Great Loveliness",
       "translation": "Beauty is not something she possesses in part; she is the hoard from which every instance of it is drawn.",
       "aksaras": [

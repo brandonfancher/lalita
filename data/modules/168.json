@@ -257,6 +257,10 @@
           "id": "l0-t2",
           "deva": "तत्त्वमर्थस्वरूपिणी",
           "iast": "tattvamarthasvarūpiṇī",
+          "hyphenated": {
+            "deva": "तत्-त्वमर्थ-स्वरूपिणी",
+            "iast": "tat-tvamartha-svarūpiṇī"
+          },
           "namaIndices": [
             908
           ],
@@ -490,6 +494,10 @@
           "id": "l1-t0",
           "deva": "सामगानप्रिया",
           "iast": "sāmagānapriyā",
+          "hyphenated": {
+            "deva": "साम-गान-प्रिया",
+            "iast": "sāma-gāna-priyā"
+          },
           "namaIndices": [
             909
           ],
@@ -718,6 +726,10 @@
           "id": "l1-t2",
           "deva": "सदाशिवकुटुम्बिनी",
           "iast": "sadāśivakuṭumbinī",
+          "hyphenated": {
+            "deva": "सदा-शिव-कुटुम्बिनी",
+            "iast": "sadā-śiva-kuṭumbinī"
+          },
           "namaIndices": [
             911
           ],
@@ -1229,8 +1241,16 @@
       "index": 908,
       "deva": "तत्त्वमर्थस्वरूपिणी",
       "iast": "tattvamarthasvarūpiṇī",
+      "hyphenated": {
+        "deva": "तत्-त्वमर्थ-स्वरूपिणी",
+        "iast": "tat-tvamartha-svarūpiṇī"
+      },
       "namavaliDeva": "तत्त्वमर्थस्वरूपिण्यै",
       "namavaliIast": "tattvamarthasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "तत्-त्वमर्थ-स्वरूपिण्यै",
+        "iast": "tat-tvamartha-svarūpiṇyai"
+      },
       "gloss": "Essence Of 'That Thou Art'",
       "translation": "Her own being is the import of the great Upaniṣadic sentence tat tvam asi, in which the individual self and the absolute are declared to be one.",
       "aksaras": [
@@ -1515,8 +1535,16 @@
       "index": 909,
       "deva": "सामगानप्रिया",
       "iast": "sāmagānapriyā",
+      "hyphenated": {
+        "deva": "साम-गान-प्रिया",
+        "iast": "sāma-gāna-priyā"
+      },
       "namavaliDeva": "सामगानप्रियायै",
       "namavaliIast": "sāmagānapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "साम-गान-प्रियायै",
+        "iast": "sāma-gāna-priyāyai"
+      },
       "gloss": "Lover Of Sāman Chant",
       "translation": "The measured singing of the Sāmaveda pleases her beyond other music.",
       "aksaras": [
@@ -1798,8 +1826,16 @@
       "index": 911,
       "deva": "सदाशिवकुटुम्बिनी",
       "iast": "sadāśivakuṭumbinī",
+      "hyphenated": {
+        "deva": "सदा-शिव-कुटुम्बिनी",
+        "iast": "sadā-śiva-kuṭumbinī"
+      },
       "namavaliDeva": "सदाशिवकुटुम्बिन्यै",
       "namavaliIast": "sadāśivakuṭumbinyai",
+      "namavaliHyphenated": {
+        "deva": "सदा-शिव-कुटुम्बिन्यै",
+        "iast": "sadā-śiva-kuṭumbinyai"
+      },
       "gloss": "Consort Of Sadāśiva",
       "translation": "She keeps house with Sadāśiva, and the word chosen for her is the homely one for the mistress of a household.",
       "aksaras": [

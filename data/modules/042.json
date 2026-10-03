@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भक्तिप्रिया",
           "iast": "bhaktipriyā",
+          "hyphenated": {
+            "deva": "भक्ति-प्रिया",
+            "iast": "bhakti-priyā"
+          },
           "namaIndices": [
             118
           ],
@@ -142,6 +146,10 @@
           "id": "l0-t1",
           "deva": "भक्तिगम्या",
           "iast": "bhaktigamyā",
+          "hyphenated": {
+            "deva": "भक्ति-गम्या",
+            "iast": "bhakti-gamyā"
+          },
           "namaIndices": [
             119
           ],
@@ -264,6 +272,10 @@
           "id": "l0-t2",
           "deva": "भक्तिवश्या",
           "iast": "bhaktivaśyā",
+          "hyphenated": {
+            "deva": "भक्ति-वश्या",
+            "iast": "bhakti-vaśyā"
+          },
           "namaIndices": [
             120
           ],
@@ -802,6 +814,10 @@
           "id": "l1-t3",
           "deva": "शर्मदायिनी",
           "iast": "śarmadāyinī",
+          "hyphenated": {
+            "deva": "शर्म-दायिनी",
+            "iast": "śarma-dāyinī"
+          },
           "namaIndices": [
             125
           ],
@@ -937,8 +953,16 @@
       "index": 118,
       "deva": "भक्तिप्रिया",
       "iast": "bhaktipriyā",
+      "hyphenated": {
+        "deva": "भक्ति-प्रिया",
+        "iast": "bhakti-priyā"
+      },
       "namavaliDeva": "भक्तिप्रियायै",
       "namavaliIast": "bhaktipriyāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्ति-प्रियायै",
+        "iast": "bhakti-priyāyai"
+      },
       "gloss": "Fond Of Devotion",
       "translation": "Of everything set before her it is devotion, and not the offering it comes wrapped in, that she prizes.",
       "aksaras": [
@@ -1096,8 +1120,16 @@
       "index": 119,
       "deva": "भक्तिगम्या",
       "iast": "bhaktigamyā",
+      "hyphenated": {
+        "deva": "भक्ति-गम्या",
+        "iast": "bhakti-gamyā"
+      },
       "namavaliDeva": "भक्तिगम्यायै",
       "namavaliIast": "bhaktigamyāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्ति-गम्यायै",
+        "iast": "bhakti-gamyāyai"
+      },
       "gloss": "Reached By Devotion",
       "translation": "Devotion is the road that arrives at her; scholarship and ritual walk only part of the way.",
       "aksaras": [
@@ -1248,8 +1280,16 @@
       "index": 120,
       "deva": "भक्तिवश्या",
       "iast": "bhaktivaśyā",
+      "hyphenated": {
+        "deva": "भक्ति-वश्या",
+        "iast": "bhakti-vaśyā"
+      },
       "namavaliDeva": "भक्तिवश्यायै",
       "namavaliIast": "bhaktivaśyāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्ति-वश्यायै",
+        "iast": "bhakti-vaśyāyai"
+      },
       "gloss": "Won Over By Devotion",
       "translation": "Devotion has power over her, and she consents to be governed by it as by nothing else.",
       "aksaras": [
@@ -1895,8 +1935,16 @@
       "index": 125,
       "deva": "शर्मदायिनी",
       "iast": "śarmadāyinī",
+      "hyphenated": {
+        "deva": "शर्म-दायिनी",
+        "iast": "śarma-dāyinī"
+      },
       "namavaliDeva": "शर्मदायिन्यै",
       "namavaliIast": "śarmadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "शर्म-दायिन्यै",
+        "iast": "śarma-dāyinyai"
+      },
       "gloss": "Bestower Of Bliss",
       "translation": "She deals out shelter, and with the shelter the ease that comes of being safe.",
       "aksaras": [

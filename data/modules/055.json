@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महाभोगा",
           "iast": "mahābhogā",
+          "hyphenated": {
+            "deva": "महा-भोगा",
+            "iast": "mahā-bhogā"
+          },
           "namaIndices": [
             219
           ],
@@ -234,6 +238,10 @@
           "id": "l0-t2",
           "deva": "महावीर्या",
           "iast": "mahāvīryā",
+          "hyphenated": {
+            "deva": "महा-वीर्या",
+            "iast": "mahā-vīryā"
+          },
           "namaIndices": [
             221
           ],
@@ -348,6 +356,10 @@
           "id": "l0-t3",
           "deva": "महाबला",
           "iast": "mahābalā",
+          "hyphenated": {
+            "deva": "महा-बला",
+            "iast": "mahā-balā"
+          },
           "namaIndices": [
             222
           ],
@@ -446,6 +458,10 @@
           "id": "l1-t0",
           "deva": "महाबुद्धिर्महासिद्धिर्महायोगेश्वरेश्वरी",
           "iast": "mahābuddhirmahāsiddhirmahāyogeśvareśvarī",
+          "hyphenated": {
+            "deva": "महा-बुद्धिर्-महा-सिद्धिर्-महा-योगेश्वरेश्वरी",
+            "iast": "mahā-buddhir-mahā-siddhir-mahā-yogeśvareśvarī"
+          },
           "namaIndices": [
             223,
             224,
@@ -901,8 +917,16 @@
       "index": 219,
       "deva": "महाभोगा",
       "iast": "mahābhogā",
+      "hyphenated": {
+        "deva": "महा-भोगा",
+        "iast": "mahā-bhogā"
+      },
       "namavaliDeva": "महाभोगायै",
       "namavaliIast": "mahābhogāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-भोगायै",
+        "iast": "mahā-bhogāyai"
+      },
       "gloss": "Of Boundless Enjoyment",
       "translation": "What is offered to her she truly enjoys, and her capacity for it has no floor.",
       "aksaras": [
@@ -1182,8 +1206,16 @@
       "index": 221,
       "deva": "महावीर्या",
       "iast": "mahāvīryā",
+      "hyphenated": {
+        "deva": "महा-वीर्या",
+        "iast": "mahā-vīryā"
+      },
       "namavaliDeva": "महावीर्यायै",
       "namavaliIast": "mahāvīryāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-वीर्यायै",
+        "iast": "mahā-vīryāyai"
+      },
       "gloss": "Of Great Potency",
       "translation": "Her valour is the force behind every act of heroism anyone else performs.",
       "aksaras": [
@@ -1326,8 +1358,16 @@
       "index": 222,
       "deva": "महाबला",
       "iast": "mahābalā",
+      "hyphenated": {
+        "deva": "महा-बला",
+        "iast": "mahā-balā"
+      },
       "namavaliDeva": "महाबलायै",
       "namavaliIast": "mahābalāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-बलायै",
+        "iast": "mahā-balāyai"
+      },
       "gloss": "Of Great Strength",
       "translation": "Strength does not have to be summoned in her, since she is where it comes from.",
       "aksaras": [
@@ -1448,8 +1488,16 @@
       "index": 223,
       "deva": "महाबुद्धिः",
       "iast": "mahābuddhiḥ",
+      "hyphenated": {
+        "deva": "महा-बुद्धिः",
+        "iast": "mahā-buddhiḥ"
+      },
       "namavaliDeva": "महाबुद्ध्यै",
       "namavaliIast": "mahābuddhyai",
+      "namavaliHyphenated": {
+        "deva": "महा-बुद्ध्यै",
+        "iast": "mahā-buddhyai"
+      },
       "gloss": "The Great Intelligence",
       "translation": "The faculty by which anything at all is understood is her own discernment at work.",
       "aksaras": [
@@ -1599,8 +1647,16 @@
       "index": 224,
       "deva": "महासिद्धिः",
       "iast": "mahāsiddhiḥ",
+      "hyphenated": {
+        "deva": "महा-सिद्धिः",
+        "iast": "mahā-siddhiḥ"
+      },
       "namavaliDeva": "महासिद्ध्यै",
       "namavaliIast": "mahāsiddhyai",
+      "namavaliHyphenated": {
+        "deva": "महा-सिद्ध्यै",
+        "iast": "mahā-siddhyai"
+      },
       "gloss": "The Great Attainment",
       "translation": "Lesser accomplishments are steps; she is the arrival that makes them worth taking.",
       "aksaras": [
@@ -1750,8 +1806,16 @@
       "index": 225,
       "deva": "महायोगेश्वरेश्वरी",
       "iast": "mahāyogeśvareśvarī",
+      "hyphenated": {
+        "deva": "महा-योगेश्वरेश्वरी",
+        "iast": "mahā-yogeśvareśvarī"
+      },
       "namavaliDeva": "महायोगेश्वरेश्वर्यै",
       "namavaliIast": "mahāyogeśvareśvaryai",
+      "namavaliHyphenated": {
+        "deva": "महा-योगेश्वरेश्वर्यै",
+        "iast": "mahā-yogeśvareśvaryai"
+      },
       "gloss": "Sovereign Over The Masters Of Yoga",
       "translation": "Those whom other yogins call master themselves look up to her.",
       "aksaras": [

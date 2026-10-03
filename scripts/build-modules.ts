@@ -17,9 +17,11 @@ import { resolve } from "node:path";
 import { parseSource, parseNamavali } from "./lib/parse-source";
 import { alignNamas, type Anchor } from "./lib/align-namas";
 import { toDevanagari, toIast, iastToDeva } from "./lib/itrans";
+import { compoundLeaves, hyphenate, joinHyphenated } from "./lib/hyphenate";
 import { analyzeAksaras } from "../src/lib/aksara";
 import type {
   Commentary,
+  Hyphenated,
   Morphology,
   Nama,
   Reference,
@@ -116,6 +118,67 @@ function buildTokens(
         aksaras: analyzeAksaras(deva),
       };
     });
+}
+
+/** Rebuild an object with `hyphenated` placed straight after `after`, so the JSON reads in order. */
+function placeAfter<T extends object>(obj: T, after: keyof T, key: string, value: Hyphenated | undefined): T {
+  if (!value) return obj;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(obj)) {
+    if (k === key) continue;
+    out[k] = v;
+    if (k === after) out[key] = value;
+  }
+  return out as T;
+}
+
+/**
+ * Mark the word breaks in every name and every word of the verses, from the
+ * compound analyses. A word that carries several names fused by sandhi is
+ * broken between the names as well as within them.
+ */
+function addHyphenation(modules: StudyModule[]) {
+  let namas = 0;
+  let tokens = 0;
+  let compoundTokens = 0;
+
+  for (const mod of modules) {
+    const leavesOf = new Map<number, string[]>();
+    for (const nama of mod.namas) {
+      const leaves = nama.compound ? compoundLeaves(nama.compound) : [nama.iast];
+      leavesOf.set(nama.index, leaves);
+    }
+
+    mod.namas = mod.namas.map((nama) => {
+      const leaves = leavesOf.get(nama.index)!;
+      let out = placeAfter(nama, "iast", "hyphenated", hyphenate(nama.iast, nama.deva, leaves));
+      if (nama.namavaliIast && nama.namavaliDeva) {
+        out = placeAfter(
+          out,
+          "namavaliIast",
+          "namavaliHyphenated",
+          hyphenate(nama.namavaliIast, nama.namavaliDeva, leaves),
+        );
+      }
+      if (out.hyphenated) namas++;
+      return out;
+    });
+
+    for (const line of mod.lines) {
+      line.tokens = line.tokens.map((token) => {
+        const leaves = token.namaIndices?.length
+          ? token.namaIndices.flatMap((i) => leavesOf.get(i) ?? [])
+          : compoundLeaves(token.word?.compound);
+        if (leaves.length < 2) return token;
+        compoundTokens++;
+        const hyphenated = hyphenate(token.iast, token.deva, leaves);
+        if (hyphenated) tokens++;
+        return placeAfter(token, "iast", "hyphenated", hyphenated);
+      });
+    }
+  }
+
+  return { namas, tokens, compoundTokens };
 }
 
 function main() {
@@ -262,16 +325,6 @@ function main() {
       references: extra.references ?? [],
     };
     modules.push(mod);
-    summaries.push({
-      id: mod.id,
-      kind: mod.kind,
-      number: null,
-      title: mod.title,
-      subtitle: mod.subtitle,
-      previewDeva: lines[0]?.deva ?? "",
-      previewIast: lines[0]?.iast ?? "",
-      namaCount: 0,
-    });
   }
 
   // --- Modules 001..182: the stotra ---------------------------------------
@@ -372,9 +425,13 @@ function main() {
     modules.push(mod);
   });
 
-  // Summaries for every stotra module, in order.
+  const hyphenation = addHyphenation(modules);
+  console.log(
+    `  word breaks: ${hyphenation.namas} of 1000 names, ${hyphenation.tokens} of ${hyphenation.compoundTokens} compound words in the verses`,
+  );
+
+  // Summaries for every module, in order.
   for (const mod of modules) {
-    if (mod.kind === "dhyana") continue;
     summaries.push({
       id: mod.id,
       kind: mod.kind,
@@ -384,12 +441,13 @@ function main() {
       namaRange: mod.namaRange,
       previewDeva: mod.lines[0]?.deva ?? "",
       previewIast: mod.lines[0]?.iast ?? "",
+      previewHyphenated: mod.lines[0] && joinHyphenated(mod.lines[0].tokens),
       namaCount: mod.namas.length,
     });
   }
 
   for (const mod of modules) {
-    writeFileSync(resolve(modulesDir, `${mod.id}.json`), JSON.stringify(mod), "utf8");
+    writeFileSync(resolve(modulesDir, `${mod.id}.json`), `${JSON.stringify(mod, null, 2)}\n`, "utf8");
   }
   writeFileSync(resolve(dataDir, "index.json"), JSON.stringify(summaries, null, 2), "utf8");
 

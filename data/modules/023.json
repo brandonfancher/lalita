@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महापद्माटवीसंस्था",
           "iast": "mahāpadmāṭavīsaṃsthā",
+          "hyphenated": {
+            "deva": "महा-पद्माटवी-संस्था",
+            "iast": "mahā-padmāṭavī-saṃsthā"
+          },
           "namaIndices": [
             59
           ],
@@ -224,6 +228,10 @@
           "id": "l0-t1",
           "deva": "कदम्बवनवासिनी",
           "iast": "kadambavanavāsinī",
+          "hyphenated": {
+            "deva": "कदम्ब-वन-वासिनी",
+            "iast": "kadamba-vana-vāsinī"
+          },
           "namaIndices": [
             60
           ],
@@ -412,6 +420,10 @@
           "id": "l1-t0",
           "deva": "सुधासागरमध्यस्था",
           "iast": "sudhāsāgaramadhyasthā",
+          "hyphenated": {
+            "deva": "सुधा-सागर-मध्यस्था",
+            "iast": "sudhā-sāgara-madhyasthā"
+          },
           "namaIndices": [
             61
           ],
@@ -713,6 +725,10 @@
           "id": "l1-t2",
           "deva": "कामदायिनी",
           "iast": "kāmadāyinī",
+          "hyphenated": {
+            "deva": "काम-दायिनी",
+            "iast": "kāma-dāyinī"
+          },
           "namaIndices": [
             63
           ],
@@ -840,8 +856,16 @@
       "index": 59,
       "deva": "महापद्माटवीसंस्था",
       "iast": "mahāpadmāṭavīsaṃsthā",
+      "hyphenated": {
+        "deva": "महा-पद्माटवी-संस्था",
+        "iast": "mahā-padmāṭavī-saṃsthā"
+      },
       "namavaliDeva": "महापद्माटवीसंस्थायै",
       "namavaliIast": "mahāpadmāṭavīsaṃsthāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-पद्माटवी-संस्थायै",
+        "iast": "mahā-padmāṭavī-saṃsthāyai"
+      },
       "gloss": "Dwelling In The Great Lotus Forest",
       "translation": "She has her seat in a thicket of enormous lotuses, a place where the flowers grow as thick as trees.",
       "aksaras": [
@@ -1109,8 +1133,16 @@
       "index": 60,
       "deva": "कदम्बवनवासिनी",
       "iast": "kadambavanavāsinī",
+      "hyphenated": {
+        "deva": "कदम्ब-वन-वासिनी",
+        "iast": "kadamba-vana-vāsinī"
+      },
       "namavaliDeva": "कदम्बवनवासिन्यै",
       "namavaliIast": "kadambavanavāsinyai",
+      "namavaliHyphenated": {
+        "deva": "कदम्ब-वन-वासिन्यै",
+        "iast": "kadamba-vana-vāsinyai"
+      },
       "gloss": "Dweller In The Kadamba Grove",
       "translation": "She keeps her residence among kadamba trees, whose orange blossoms open at the first touch of the rains.",
       "aksaras": [
@@ -1335,8 +1367,16 @@
       "index": 61,
       "deva": "सुधासागरमध्यस्था",
       "iast": "sudhāsāgaramadhyasthā",
+      "hyphenated": {
+        "deva": "सुधा-सागर-मध्यस्था",
+        "iast": "sudhā-sāgara-madhyasthā"
+      },
       "namavaliDeva": "सुधासागरमध्यस्थायै",
       "namavaliIast": "sudhāsāgaramadhyasthāyai",
+      "namavaliHyphenated": {
+        "deva": "सुधा-सागर-मध्यस्थायै",
+        "iast": "sudhā-sāgara-madhyasthāyai"
+      },
       "gloss": "Abiding Amid The Sea Of Nectar",
       "translation": "Her island stands at the centre of an ocean of the drink that keeps the gods from dying.",
       "aksaras": [
@@ -1724,8 +1764,16 @@
       "index": 63,
       "deva": "कामदायिनी",
       "iast": "kāmadāyinī",
+      "hyphenated": {
+        "deva": "काम-दायिनी",
+        "iast": "kāma-dāyinī"
+      },
       "namavaliDeva": "कामदायिन्यै",
       "namavaliIast": "kāmadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "काम-दायिन्यै",
+        "iast": "kāma-dāyinyai"
+      },
       "gloss": "The Giver Of What Is Wished For",
       "translation": "Whatever a person genuinely wants, she is the one who hands it over.",
       "aksaras": [

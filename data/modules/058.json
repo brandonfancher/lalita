@@ -246,6 +246,10 @@
           "id": "l0-t1",
           "deva": "चतुःषष्टिकलामयी",
           "iast": "catuḥṣaṣṭikalāmayī",
+          "hyphenated": {
+            "deva": "चतुःषष्टि-कलामयी",
+            "iast": "catuḥṣaṣṭi-kalāmayī"
+          },
           "namaIndices": [
             236
           ],
@@ -448,6 +452,10 @@
           "id": "l1-t0",
           "deva": "महाचतुःषष्टिकोटियोगिनीगणसेविता",
           "iast": "mahācatuḥṣaṣṭikoṭiyoginīgaṇasevitā",
+          "hyphenated": {
+            "deva": "महा-चतुःषष्टि-कोटि-योगिनी-गण-सेविता",
+            "iast": "mahā-catuḥṣaṣṭi-koṭi-yoginī-gaṇa-sevitā"
+          },
           "namaIndices": [
             237
           ],
@@ -1110,8 +1118,16 @@
       "index": 236,
       "deva": "चतुःषष्टिकलामयी",
       "iast": "catuḥṣaṣṭikalāmayī",
+      "hyphenated": {
+        "deva": "चतुःषष्टि-कलामयी",
+        "iast": "catuḥṣaṣṭi-kalāmayī"
+      },
       "namavaliDeva": "चतुःषष्टिकलामय्यै",
       "namavaliIast": "catuḥṣaṣṭikalāmayyai",
+      "namavaliHyphenated": {
+        "deva": "चतुःषष्टि-कलामय्यै",
+        "iast": "catuḥṣaṣṭi-kalāmayyai"
+      },
       "gloss": "Made Of The Sixty-Four Arts",
       "translation": "Every craft and skill counted among the sixty-four arts is a portion of her substance.",
       "aksaras": [
@@ -1350,8 +1366,16 @@
       "index": 237,
       "deva": "महाचतुःषष्टिकोटियोगिनीगणसेविता",
       "iast": "mahācatuḥṣaṣṭikoṭiyoginīgaṇasevitā",
+      "hyphenated": {
+        "deva": "महा-चतुःषष्टि-कोटि-योगिनी-गण-सेविता",
+        "iast": "mahā-catuḥṣaṣṭi-koṭi-yoginī-gaṇa-sevitā"
+      },
       "namavaliDeva": "महाचतुःषष्टिकोटि योगिनीगणसेवितायै",
       "namavaliIast": "mahācatuḥṣaṣṭikoṭi yoginīgaṇasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-चतुःषष्टि-कोटि योगिनी-गण-सेवितायै",
+        "iast": "mahā-catuḥṣaṣṭi-koṭi yoginī-gaṇa-sevitāyai"
+      },
       "gloss": "Served By Sixty-Four Crore Yoginīs",
       "translation": "An uncountable retinue of yoginīs, reckoned at sixty-four crores, waits upon her in troops.",
       "aksaras": [

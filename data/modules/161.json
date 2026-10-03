@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कार्यकारणनिर्मुक्ता",
           "iast": "kāryakāraṇanirmuktā",
+          "hyphenated": {
+            "deva": "कार्य-कारण-निर्मुक्ता",
+            "iast": "kārya-kāraṇa-nirmuktā"
+          },
           "namaIndices": [
             862
           ],
@@ -239,6 +243,10 @@
           "id": "l0-t1",
           "deva": "कामकेलितरङ्गिता",
           "iast": "kāmakelitaraṅgitā",
+          "hyphenated": {
+            "deva": "काम-केलि-तरङ्गिता",
+            "iast": "kāma-keli-taraṅgitā"
+          },
           "namaIndices": [
             863
           ],
@@ -441,6 +449,10 @@
           "id": "l1-t0",
           "deva": "कनत्कनकताटङ्का",
           "iast": "kanatkanakatāṭaṅkā",
+          "hyphenated": {
+            "deva": "कनत्-कनक-ताटङ्का",
+            "iast": "kanat-kanaka-tāṭaṅkā"
+          },
           "namaIndices": [
             864
           ],
@@ -631,6 +643,10 @@
           "id": "l1-t1",
           "deva": "लीलाविग्रहधारिणी",
           "iast": "līlāvigrahadhāriṇī",
+          "hyphenated": {
+            "deva": "लीला-विग्रह-धारिणी",
+            "iast": "līlā-vigraha-dhāriṇī"
+          },
           "namaIndices": [
             865
           ],
@@ -838,8 +854,16 @@
       "index": 862,
       "deva": "कार्यकारणनिर्मुक्ता",
       "iast": "kāryakāraṇanirmuktā",
+      "hyphenated": {
+        "deva": "कार्य-कारण-निर्मुक्ता",
+        "iast": "kārya-kāraṇa-nirmuktā"
+      },
       "namavaliDeva": "कार्यकारणनिर्मुक्तायै",
       "namavaliIast": "kāryakāraṇanirmuktāyai",
+      "namavaliHyphenated": {
+        "deva": "कार्य-कारण-निर्मुक्तायै",
+        "iast": "kārya-kāraṇa-nirmuktāyai"
+      },
       "gloss": "Free Of Cause And Effect",
       "translation": "Nothing produced her and she follows from nothing, so the chain of dependence that binds other things has no grip on her.",
       "aksaras": [
@@ -1108,8 +1132,16 @@
       "index": 863,
       "deva": "कामकेलितरङ्गिता",
       "iast": "kāmakelitaraṅgitā",
+      "hyphenated": {
+        "deva": "काम-केलि-तरङ्गिता",
+        "iast": "kāma-keli-taraṅgitā"
+      },
       "namavaliDeva": "कामकेलितरङ्गितायै",
       "namavaliIast": "kāmakelitaraṅgitāyai",
+      "namavaliHyphenated": {
+        "deva": "काम-केलि-तरङ्गितायै",
+        "iast": "kāma-keli-taraṅgitāyai"
+      },
       "gloss": "Rippling With Love-Play",
       "translation": "Amorous play moves through her as waves move through water, each crest lifting the next.",
       "aksaras": [
@@ -1348,8 +1380,16 @@
       "index": 864,
       "deva": "कनत्कनकताटङ्का",
       "iast": "kanatkanakatāṭaṅkā",
+      "hyphenated": {
+        "deva": "कनत्-कनक-ताटङ्का",
+        "iast": "kanat-kanaka-tāṭaṅkā"
+      },
       "namavaliDeva": "कनत्कनकताटङ्कायै",
       "namavaliIast": "kanatkanakatāṭaṅkāyai",
+      "namavaliHyphenated": {
+        "deva": "कनत्-कनक-ताटङ्कायै",
+        "iast": "kanat-kanaka-tāṭaṅkāyai"
+      },
       "gloss": "Wearing Earrings Of Gleaming Gold",
       "translation": "Gold catches the light at her ears, and the flash of those ornaments is often the first thing a worshipper sees of her face.",
       "aksaras": [
@@ -1582,8 +1622,16 @@
       "index": 865,
       "deva": "लीलाविग्रहधारिणी",
       "iast": "līlāvigrahadhāriṇī",
+      "hyphenated": {
+        "deva": "लीला-विग्रह-धारिणी",
+        "iast": "līlā-vigraha-dhāriṇī"
+      },
       "namavaliDeva": "लीलाविग्रहधारिण्यै",
       "namavaliIast": "līlāvigrahadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "लीला-विग्रह-धारिण्यै",
+        "iast": "līlā-vigraha-dhāriṇyai"
+      },
       "gloss": "Wearing A Body For Play",
       "translation": "The form she takes is put on for sport, worn the way a player wears a costume and set down again as easily.",
       "aksaras": [
@@ -1831,7 +1879,7 @@
     865
   ],
   "chant": {
-    "startSec": 1705.0,
+    "startSec": 1705,
     "endSec": 1714.71,
     "confidence": "detected"
   },

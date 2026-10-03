@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "वीरगोष्ठीप्रिया",
           "iast": "vīragoṣṭhīpriyā",
+          "hyphenated": {
+            "deva": "वीर-गोष्ठी-प्रिया",
+            "iast": "vīra-goṣṭhī-priyā"
+          },
           "namaIndices": [
             898
           ],
@@ -368,6 +372,10 @@
           "id": "l0-t3",
           "deva": "नादरूपिणी",
           "iast": "nādarūpiṇī",
+          "hyphenated": {
+            "deva": "नाद-रूपिणी",
+            "iast": "nāda-rūpiṇī"
+          },
           "namaIndices": [
             901
           ],
@@ -497,6 +505,10 @@
           "id": "l1-t0",
           "deva": "विज्ञानकलना",
           "iast": "vijñānakalanā",
+          "hyphenated": {
+            "deva": "विज्ञान-कलना",
+            "iast": "vijñāna-kalanā"
+          },
           "namaIndices": [
             902
           ],
@@ -936,8 +948,16 @@
       "index": 898,
       "deva": "वीरगोष्ठीप्रिया",
       "iast": "vīragoṣṭhīpriyā",
+      "hyphenated": {
+        "deva": "वीर-गोष्ठी-प्रिया",
+        "iast": "vīra-goṣṭhī-priyā"
+      },
       "namavaliDeva": "वीरगोष्ठीप्रियायै",
       "namavaliIast": "vīragoṣṭhīpriyāyai",
+      "namavaliHyphenated": {
+        "deva": "वीर-गोष्ठी-प्रियायै",
+        "iast": "vīra-goṣṭhī-priyāyai"
+      },
       "gloss": "Fond Of The Company Of Heroes",
       "translation": "The circle of adepts pleases her, and she is drawn to the gathering where those fit for her rites sit together.",
       "aksaras": [
@@ -1358,8 +1378,16 @@
       "index": 901,
       "deva": "नादरूपिणी",
       "iast": "nādarūpiṇī",
+      "hyphenated": {
+        "deva": "नाद-रूपिणी",
+        "iast": "nāda-rūpiṇī"
+      },
       "namavaliDeva": "नादरूपिण्यै",
       "namavaliIast": "nādarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "नाद-रूपिण्यै",
+        "iast": "nāda-rūpiṇyai"
+      },
       "gloss": "Embodied As Primal Sound",
       "translation": "She takes the form of nāda, the resonance out of which speech and world alike unfold.",
       "aksaras": [
@@ -1512,8 +1540,16 @@
       "index": 902,
       "deva": "विज्ञानकलना",
       "iast": "vijñānakalanā",
+      "hyphenated": {
+        "deva": "विज्ञान-कलना",
+        "iast": "vijñāna-kalanā"
+      },
       "namavaliDeva": "विज्ञानकलनायै",
       "namavaliIast": "vijñānakalanāyai",
+      "namavaliHyphenated": {
+        "deva": "विज्ञान-कलनायै",
+        "iast": "vijñāna-kalanāyai"
+      },
       "gloss": "Producer Of Discerning Knowledge",
       "translation": "She sets discrimination working, rousing the faculty that tells the real from the merely apparent.",
       "aksaras": [

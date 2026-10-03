@@ -246,6 +246,10 @@
           "id": "l0-t1",
           "deva": "दरस्मेरमुखाम्बुजा",
           "iast": "darasmeramukhāmbujā",
+          "hyphenated": {
+            "deva": "दर-स्मेर-मुखाम्बुजा",
+            "iast": "dara-smera-mukhāmbujā"
+          },
           "namaIndices": [
             924
           ],
@@ -463,6 +467,10 @@
           "id": "l1-t0",
           "deva": "कौलिनीकेवलाऽनर्घ्यकैवल्यपददायिनी",
           "iast": "kaulinīkevalā'narghyakaivalyapadadāyinī",
+          "hyphenated": {
+            "deva": "कौलिनी-केवलाऽनर्घ्य-कैवल्य-पद-दायिनी",
+            "iast": "kaulinī-kevalā'narghya-kaivalya-pada-dāyinī"
+          },
           "namaIndices": [
             925,
             926
@@ -1148,8 +1156,16 @@
       "index": 924,
       "deva": "दरस्मेरमुखाम्बुजा",
       "iast": "darasmeramukhāmbujā",
+      "hyphenated": {
+        "deva": "दर-स्मेर-मुखाम्बुजा",
+        "iast": "dara-smera-mukhāmbujā"
+      },
       "namavaliDeva": "दरस्मेरमुखाम्बुजायै",
       "namavaliIast": "darasmeramukhāmbujāyai",
+      "namavaliHyphenated": {
+        "deva": "दर-स्मेर-मुखाम्बुजायै",
+        "iast": "dara-smera-mukhāmbujāyai"
+      },
       "gloss": "Faintly Smiling Lotus Face",
       "translation": "The lotus of her face carries the barest opening of a smile.",
       "aksaras": [
@@ -1417,8 +1433,16 @@
       "index": 925,
       "deva": "कौलिनीकेवला",
       "iast": "kaulinīkevalā",
+      "hyphenated": {
+        "deva": "कौलिनी-केवला",
+        "iast": "kaulinī-kevalā"
+      },
       "namavaliDeva": "कौलिनीकेवलायै",
       "namavaliIast": "kaulinīkevalāyai",
+      "namavaliHyphenated": {
+        "deva": "कौलिनी-केवलायै",
+        "iast": "kaulinī-kevalāyai"
+      },
       "gloss": "The Absolute Of The Kaulas",
       "translation": "To the Kaula practitioner she is the one unaccompanied reality, invoked as Kaulinī and known as the sole absolute.",
       "aksaras": [
@@ -1594,8 +1618,16 @@
       "index": 926,
       "deva": "अनर्घ्यकैवल्यपददायिनी",
       "iast": "anarghyakaivalyapadadāyinī",
+      "hyphenated": {
+        "deva": "अनर्घ्य-कैवल्य-पद-दायिनी",
+        "iast": "anarghya-kaivalya-pada-dāyinī"
+      },
       "namavaliDeva": "अनर्घ्य कैवल्यपददायिन्यै",
       "namavaliIast": "anarghya kaivalyapadadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "अनर्घ्य कैवल्य-पद-दायिन्यै",
+        "iast": "anarghya kaivalya-pada-dāyinyai"
+      },
       "gloss": "Giver Of Priceless Liberation",
       "translation": "She hands over the standing of absolute aloneness, a gift on which no price can be set.",
       "aksaras": [

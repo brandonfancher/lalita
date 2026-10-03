@@ -261,6 +261,10 @@
           "id": "l0-t4",
           "deva": "प्रज्ञानघनरूपिणी",
           "iast": "prajñānaghanarūpiṇī",
+          "hyphenated": {
+            "deva": "प्रज्ञान-घन-रूपिणी",
+            "iast": "prajñāna-ghana-rūpiṇī"
+          },
           "namaIndices": [
             574
           ],
@@ -471,6 +475,10 @@
           "id": "l1-t0",
           "deva": "माध्वीपानालसा",
           "iast": "mādhvīpānālasā",
+          "hyphenated": {
+            "deva": "माध्वी-पानालसा",
+            "iast": "mādhvī-pānālasā"
+          },
           "namaIndices": [
             575
           ],
@@ -699,6 +707,10 @@
           "id": "l1-t2",
           "deva": "मातृकावर्णरूपिणी",
           "iast": "mātṛkāvarṇarūpiṇī",
+          "hyphenated": {
+            "deva": "मातृका-वर्ण-रूपिणी",
+            "iast": "mātṛkā-varṇa-rūpiṇī"
+          },
           "namaIndices": [
             577
           ],
@@ -906,8 +918,16 @@
       "index": 572,
       "deva": "पराशक्तिः",
       "iast": "parāśaktiḥ",
+      "hyphenated": {
+        "deva": "परा-शक्तिः",
+        "iast": "parā-śaktiḥ"
+      },
       "namavaliDeva": "पराशक्त्यै",
       "namavaliIast": "parāśaktyai",
+      "namavaliHyphenated": {
+        "deva": "परा-शक्त्यै",
+        "iast": "parā-śaktyai"
+      },
       "gloss": "The Supreme Power",
       "translation": "She is energy at its highest reach, the capacity from which every lesser power is a portion.",
       "aksaras": [
@@ -1050,8 +1070,16 @@
       "index": 573,
       "deva": "परानिष्ठा",
       "iast": "parāniṣṭhā",
+      "hyphenated": {
+        "deva": "परा-निष्ठा",
+        "iast": "parā-niṣṭhā"
+      },
       "namavaliDeva": "परानिष्ठायै",
       "namavaliIast": "parāniṣṭhāyai",
+      "namavaliHyphenated": {
+        "deva": "परा-निष्ठायै",
+        "iast": "parā-niṣṭhāyai"
+      },
       "gloss": "The Highest Consummation",
       "translation": "She is the culminating point at which seeking has nowhere further to go.",
       "aksaras": [
@@ -1194,8 +1222,16 @@
       "index": 574,
       "deva": "प्रज्ञानघनरूपिणी",
       "iast": "prajñānaghanarūpiṇī",
+      "hyphenated": {
+        "deva": "प्रज्ञान-घन-रूपिणी",
+        "iast": "prajñāna-ghana-rūpiṇī"
+      },
       "namavaliDeva": "प्रज्ञानघनरूपिण्यै",
       "namavaliIast": "prajñānaghanarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "प्रज्ञान-घन-रूपिण्यै",
+        "iast": "prajñāna-ghana-rūpiṇyai"
+      },
       "gloss": "Solid Mass Of Consciousness",
       "translation": "The Upaniṣadic phrase for the fourth state, awareness thickened until nothing else is left in it, describes her form.",
       "aksaras": [
@@ -1443,8 +1479,16 @@
       "index": 575,
       "deva": "माध्वीपानालसा",
       "iast": "mādhvīpānālasā",
+      "hyphenated": {
+        "deva": "माध्वी-पानालसा",
+        "iast": "mādhvī-pānālasā"
+      },
       "namavaliDeva": "माध्वीपानालसायै",
       "namavaliIast": "mādhvīpānālasāyai",
+      "namavaliHyphenated": {
+        "deva": "माध्वी-पानालसायै",
+        "iast": "mādhvī-pānālasāyai"
+      },
       "gloss": "Languid From The Sweet Draught",
       "translation": "Having drunk the honey wine, she moves with the slowness of one whose limbs have gone heavy.",
       "aksaras": [
@@ -1726,8 +1770,16 @@
       "index": 577,
       "deva": "मातृकावर्णरूपिणी",
       "iast": "mātṛkāvarṇarūpiṇī",
+      "hyphenated": {
+        "deva": "मातृका-वर्ण-रूपिणी",
+        "iast": "mātṛkā-varṇa-rūpiṇī"
+      },
       "namavaliDeva": "मातृकावर्ण रूपिण्यै",
       "namavaliIast": "mātṛkāvarṇa rūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "मातृका-वर्ण रूपिण्यै",
+        "iast": "mātṛkā-varṇa rūpiṇyai"
+      },
       "gloss": "Formed Of The Alphabet's Letters",
       "translation": "The speech-sounds called mothers, from which every mantra is built, are the substance she is made of.",
       "aksaras": [

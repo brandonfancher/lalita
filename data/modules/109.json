@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सहस्रदलपद्मस्था",
           "iast": "sahasradalapadmasthā",
+          "hyphenated": {
+            "deva": "सहस्र-दल-पद्मस्था",
+            "iast": "sahasra-dala-padmasthā"
+          },
           "namaIndices": [
             528
           ],
@@ -211,6 +215,10 @@
           "id": "l0-t1",
           "deva": "सर्ववर्णोपशोभिता",
           "iast": "sarvavarṇopaśobhitā",
+          "hyphenated": {
+            "deva": "सर्व-वर्णोपशोभिता",
+            "iast": "sarva-varṇopaśobhitā"
+          },
           "namaIndices": [
             529
           ],
@@ -421,6 +429,10 @@
           "id": "l1-t0",
           "deva": "सर्वायुधधरा",
           "iast": "sarvāyudhadharā",
+          "hyphenated": {
+            "deva": "सर्वायुध-धरा",
+            "iast": "sarvāyudha-dharā"
+          },
           "namaIndices": [
             530
           ],
@@ -569,6 +581,10 @@
           "id": "l1-t1",
           "deva": "शुक्लसंस्थिता",
           "iast": "śuklasaṃsthitā",
+          "hyphenated": {
+            "deva": "शुक्ल-संस्थिता",
+            "iast": "śukla-saṃsthitā"
+          },
           "namaIndices": [
             531
           ],
@@ -722,6 +738,10 @@
           "id": "l1-t2",
           "deva": "सर्वतोमुखी",
           "iast": "sarvatomukhī",
+          "hyphenated": {
+            "deva": "सर्वतो-मुखी",
+            "iast": "sarvato-mukhī"
+          },
           "namaIndices": [
             532
           ],
@@ -857,8 +877,16 @@
       "index": 528,
       "deva": "सहस्रदलपद्मस्था",
       "iast": "sahasradalapadmasthā",
+      "hyphenated": {
+        "deva": "सहस्र-दल-पद्मस्था",
+        "iast": "sahasra-dala-padmasthā"
+      },
       "namavaliDeva": "सहस्रदलपद्मस्थायै",
       "namavaliIast": "sahasradalapadmasthāyai",
+      "namavaliHyphenated": {
+        "deva": "सहस्र-दल-पद्मस्थायै",
+        "iast": "sahasra-dala-padmasthāyai"
+      },
       "gloss": "Seated In The Thousand-Petalled Lotus",
       "translation": "Above the six wheels opens the lotus of a thousand petals, and there she takes her place.",
       "aksaras": [
@@ -1113,8 +1141,16 @@
       "index": 529,
       "deva": "सर्ववर्णोपशोभिता",
       "iast": "sarvavarṇopaśobhitā",
+      "hyphenated": {
+        "deva": "सर्व-वर्णोपशोभिता",
+        "iast": "sarva-varṇopaśobhitā"
+      },
       "namavaliDeva": "सर्ववर्णोपशोभितायै",
       "namavaliIast": "sarvavarṇopaśobhitāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-वर्णोपशोभितायै",
+        "iast": "sarva-varṇopaśobhitāyai"
+      },
       "gloss": "Radiant With Every Colour",
       "translation": "All shades adorn her, and since varṇa also names a letter of the alphabet, the whole range of speech-sounds shines in her too.",
       "aksaras": [
@@ -1361,8 +1397,16 @@
       "index": 530,
       "deva": "सर्वायुधधरा",
       "iast": "sarvāyudhadharā",
+      "hyphenated": {
+        "deva": "सर्वायुध-धरा",
+        "iast": "sarvāyudha-dharā"
+      },
       "namavaliDeva": "सर्वायुधधरायै",
       "namavaliIast": "sarvāyudhadharāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वायुध-धरायै",
+        "iast": "sarvāyudha-dharāyai"
+      },
       "gloss": "Bearer Of All Weapons",
       "translation": "Whatever arms exist she holds, so that no instrument of protection is missing from her hands.",
       "aksaras": [
@@ -1553,8 +1597,16 @@
       "index": 531,
       "deva": "शुक्लसंस्थिता",
       "iast": "śuklasaṃsthitā",
+      "hyphenated": {
+        "deva": "शुक्ल-संस्थिता",
+        "iast": "śukla-saṃsthitā"
+      },
       "namavaliDeva": "शुक्लसंस्थितायै",
       "namavaliIast": "śuklasaṃsthitāyai",
+      "namavaliHyphenated": {
+        "deva": "शुक्ल-संस्थितायै",
+        "iast": "śukla-saṃsthitāyai"
+      },
       "gloss": "Established In Śukla",
       "translation": "The bright constituent, the last and finest distillation of the bodily elements, is where she rests.",
       "aksaras": [
@@ -1736,8 +1788,16 @@
       "index": 532,
       "deva": "सर्वतोमुखी",
       "iast": "sarvatomukhī",
+      "hyphenated": {
+        "deva": "सर्वतो-मुखी",
+        "iast": "sarvato-mukhī"
+      },
       "namavaliDeva": "सर्वतोमुख्यै",
       "namavaliIast": "sarvatomukhyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वतो-मुख्यै",
+        "iast": "sarvato-mukhyai"
+      },
       "gloss": "Facing Everywhere",
       "translation": "There is no direction she does not look toward, and so no worshipper stands behind her back.",
       "aksaras": [

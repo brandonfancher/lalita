@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "हरनेत्राग्निसन्दग्धकामसञ्जीवनौषधिः",
           "iast": "haranetrāgnisandagdhakāmasañjīvanauṣadhiḥ",
+          "hyphenated": {
+            "deva": "हर-नेत्राग्नि-सन्दग्ध-काम-सञ्जीवनौषधिः",
+            "iast": "hara-netrāgni-sandagdha-kāma-sañjīvanauṣadhiḥ"
+          },
           "namaIndices": [
             84
           ],
@@ -432,6 +436,10 @@
           "id": "l1-t0",
           "deva": "श्रीमद्वाग्भवकूटैकस्वरूपमुखपङ्कजा",
           "iast": "śrīmadvāgbhavakūṭaikasvarūpamukhapaṅkajā",
+          "hyphenated": {
+            "deva": "श्रीमद्-वाग्-भव-कूटैक-स्वरूप-मुख-पङ्कजा",
+            "iast": "śrīmad-vāg-bhava-kūṭaika-svarūpa-mukha-paṅkajā"
+          },
           "namaIndices": [
             85
           ],
@@ -842,8 +850,16 @@
       "index": 84,
       "deva": "हरनेत्राग्निसन्दग्धकामसञ्जीवनौषधिः",
       "iast": "haranetrāgnisandagdhakāmasañjīvanauṣadhiḥ",
+      "hyphenated": {
+        "deva": "हर-नेत्राग्नि-सन्दग्ध-काम-सञ्जीवनौषधिः",
+        "iast": "hara-netrāgni-sandagdha-kāma-sañjīvanauṣadhiḥ"
+      },
       "namavaliDeva": "हरनेत्राग्निसन्दग्धकामसञ्जीवनौषध्यै",
       "namavaliIast": "haranetrāgnisandagdhakāmasañjīvanauṣadhyai",
+      "namavaliHyphenated": {
+        "deva": "हर-नेत्राग्नि-सन्दग्ध-काम-सञ्जीवनौषध्यै",
+        "iast": "hara-netrāgni-sandagdha-kāma-sañjīvanauṣadhyai"
+      },
       "gloss": "The Herb That Revived Burnt Kāma",
       "translation": "Desire was reduced to ash by the fire of Hara's third eye, and she is the healing plant that brought it back to life.",
       "aksaras": [
@@ -1355,8 +1371,16 @@
       "index": 85,
       "deva": "श्रीमद्वाग्भवकूटैकस्वरूपमुखपङ्कजा",
       "iast": "śrīmadvāgbhavakūṭaikasvarūpamukhapaṅkajā",
+      "hyphenated": {
+        "deva": "श्रीमद्-वाग्-भव-कूटैक-स्वरूप-मुख-पङ्कजा",
+        "iast": "śrīmad-vāg-bhava-kūṭaika-svarūpa-mukha-paṅkajā"
+      },
       "namavaliDeva": "श्रीमद्वाग्भवकूटैकस्वरूपमुखपङ्कजायै",
       "namavaliIast": "śrīmadvāgbhavakūṭaikasvarūpamukhapaṅkajāyai",
+      "namavaliHyphenated": {
+        "deva": "श्रीमद्-वाग्-भव-कूटैक-स्वरूप-मुख-पङ्कजायै",
+        "iast": "śrīmad-vāg-bhava-kūṭaika-svarūpa-mukha-paṅkajāyai"
+      },
       "gloss": "Whose Lotus Face Is The Vāgbhava Syllables",
       "translation": "The first cluster of her mantra, the one that governs speech, takes visible shape as the lotus of her face.",
       "aksaras": [

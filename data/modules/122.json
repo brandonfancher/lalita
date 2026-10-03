@@ -95,6 +95,10 @@
           "id": "l0-t1",
           "deva": "दण्डनीतिस्था",
           "iast": "daṇḍanītisthā",
+          "hyphenated": {
+            "deva": "दण्ड-नीतिस्था",
+            "iast": "daṇḍa-nītisthā"
+          },
           "namaIndices": [
             608
           ],
@@ -241,6 +245,10 @@
           "id": "l0-t2",
           "deva": "दहराकाशरूपिणी",
           "iast": "daharākāśarūpiṇī",
+          "hyphenated": {
+            "deva": "दहराकाश-रूपिणी",
+            "iast": "daharākāśa-rūpiṇī"
+          },
           "namaIndices": [
             609
           ],
@@ -428,6 +436,10 @@
           "id": "l1-t0",
           "deva": "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता",
           "iast": "pratipanmukhyarākāntatithimaṇḍalapūjitā",
+          "hyphenated": {
+            "deva": "प्रतिपन्-मुख्य-राकान्ततिथि-मण्डल-पूजिता",
+            "iast": "pratipan-mukhya-rākāntatithi-maṇḍala-pūjitā"
+          },
           "namaIndices": [
             610
           ],
@@ -964,8 +976,16 @@
       "index": 608,
       "deva": "दण्डनीतिस्था",
       "iast": "daṇḍanītisthā",
+      "hyphenated": {
+        "deva": "दण्ड-नीतिस्था",
+        "iast": "daṇḍa-nītisthā"
+      },
       "namavaliDeva": "दण्डनीतिस्थायै",
       "namavaliIast": "daṇḍanītisthāyai",
+      "namavaliHyphenated": {
+        "deva": "दण्ड-नीतिस्थायै",
+        "iast": "daṇḍa-nītisthāyai"
+      },
       "gloss": "Abiding In The Rule Of Law",
       "translation": "Just government is her own ground, and she stands within it wherever a ruler wields the rod fairly.",
       "aksaras": [
@@ -1154,8 +1174,16 @@
       "index": 609,
       "deva": "दहराकाशरूपिणी",
       "iast": "daharākāśarūpiṇī",
+      "hyphenated": {
+        "deva": "दहराकाश-रूपिणी",
+        "iast": "daharākāśa-rūpiṇī"
+      },
       "namavaliDeva": "दहराकाशरूपिण्यै",
       "namavaliIast": "daharākāśarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "दहराकाश-रूपिण्यै",
+        "iast": "daharākāśa-rūpiṇyai"
+      },
       "gloss": "Whose Form Is The Tiny Space",
       "translation": "She has the shape of the minute space within the heart that the Upaniṣads call small yet find the whole world inside.",
       "aksaras": [
@@ -1380,8 +1408,16 @@
       "index": 610,
       "deva": "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता",
       "iast": "pratipanmukhyarākāntatithimaṇḍalapūjitā",
+      "hyphenated": {
+        "deva": "प्रतिपन्-मुख्य-राकान्ततिथि-मण्डल-पूजिता",
+        "iast": "pratipan-mukhya-rākāntatithi-maṇḍala-pūjitā"
+      },
       "namavaliDeva": "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजितायै",
       "namavaliIast": "pratipanmukhyarākāntatithimaṇḍalapūjitāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रतिपन्-मुख्य-राकान्ततिथि-मण्डल-पूजितायै",
+        "iast": "pratipan-mukhya-rākāntatithi-maṇḍala-pūjitāyai"
+      },
       "gloss": "Worshipped By The Circle Of Lunar Days",
       "translation": "The whole ring of lunar days honours her, from the first day after the new moon through to the night of the full moon.",
       "aksaras": [

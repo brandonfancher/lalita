@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "दुष्टदूरा",
           "iast": "duṣṭadūrā",
+          "hyphenated": {
+            "deva": "दुष्ट-दूरा",
+            "iast": "duṣṭa-dūrā"
+          },
           "namaIndices": [
             193
           ],
@@ -127,6 +131,10 @@
           "id": "l0-t1",
           "deva": "दुराचारशमनी",
           "iast": "durācāraśamanī",
+          "hyphenated": {
+            "deva": "दुराचार-शमनी",
+            "iast": "durācāra-śamanī"
+          },
           "namaIndices": [
             194
           ],
@@ -284,6 +292,10 @@
           "id": "l0-t2",
           "deva": "दोषवर्जिता",
           "iast": "doṣavarjitā",
+          "hyphenated": {
+            "deva": "दोष-वर्जिता",
+            "iast": "doṣa-varjitā"
+          },
           "namaIndices": [
             195
           ],
@@ -519,6 +531,10 @@
           "id": "l1-t1",
           "deva": "सान्द्रकरुणा",
           "iast": "sāndrakaruṇā",
+          "hyphenated": {
+            "deva": "सान्द्र-करुणा",
+            "iast": "sāndra-karuṇā"
+          },
           "namaIndices": [
             197
           ],
@@ -665,6 +681,10 @@
           "id": "l1-t2",
           "deva": "समानाधिकवर्जिता",
           "iast": "samānādhikavarjitā",
+          "hyphenated": {
+            "deva": "समानाधिक-वर्जिता",
+            "iast": "samānādhika-varjitā"
+          },
           "namaIndices": [
             198
           ],
@@ -865,8 +885,16 @@
       "index": 193,
       "deva": "दुष्टदूरा",
       "iast": "duṣṭadūrā",
+      "hyphenated": {
+        "deva": "दुष्ट-दूरा",
+        "iast": "duṣṭa-dūrā"
+      },
       "namavaliDeva": "दुष्टदूरायै",
       "namavaliIast": "duṣṭadūrāyai",
+      "namavaliHyphenated": {
+        "deva": "दुष्ट-दूरायै",
+        "iast": "duṣṭa-dūrāyai"
+      },
       "gloss": "Far From The Wicked",
       "translation": "She keeps her distance from the corrupt, who never find her however close they stand.",
       "aksaras": [
@@ -1010,8 +1038,16 @@
       "index": 194,
       "deva": "दुराचारशमनी",
       "iast": "durācāraśamanī",
+      "hyphenated": {
+        "deva": "दुराचार-शमनी",
+        "iast": "durācāra-śamanī"
+      },
       "namavaliDeva": "दुराचारशमन्यै",
       "namavaliIast": "durācāraśamanyai",
+      "namavaliHyphenated": {
+        "deva": "दुराचार-शमन्यै",
+        "iast": "durācāra-śamanyai"
+      },
       "gloss": "Queller Of Bad Conduct",
       "translation": "She quiets evil habits down instead of punishing them, so that they simply stop.",
       "aksaras": [
@@ -1211,8 +1247,16 @@
       "index": 195,
       "deva": "दोषवर्जिता",
       "iast": "doṣavarjitā",
+      "hyphenated": {
+        "deva": "दोष-वर्जिता",
+        "iast": "doṣa-varjitā"
+      },
       "namavaliDeva": "दोषवर्जितायै",
       "namavaliIast": "doṣavarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "दोष-वर्जितायै",
+        "iast": "doṣa-varjitāyai"
+      },
       "gloss": "Free Of Fault",
       "translation": "Every defect has been left out of her, and there is no flaw for the eye to catch on.",
       "aksaras": [
@@ -1501,8 +1545,16 @@
       "index": 197,
       "deva": "सान्द्रकरुणा",
       "iast": "sāndrakaruṇā",
+      "hyphenated": {
+        "deva": "सान्द्र-करुणा",
+        "iast": "sāndra-karuṇā"
+      },
       "namavaliDeva": "सान्द्रकरुणायै",
       "namavaliIast": "sāndrakaruṇāyai",
+      "namavaliHyphenated": {
+        "deva": "सान्द्र-करुणायै",
+        "iast": "sāndra-karuṇāyai"
+      },
       "gloss": "Of Thick Compassion",
       "translation": "Her pity is not thinly spread; it comes dense and unbroken, poured rather than sprinkled.",
       "aksaras": [
@@ -1677,8 +1729,16 @@
       "index": 198,
       "deva": "समानाधिकवर्जिता",
       "iast": "samānādhikavarjitā",
+      "hyphenated": {
+        "deva": "समानाधिक-वर्जिता",
+        "iast": "samānādhika-varjitā"
+      },
       "namavaliDeva": "समानाधिकवर्जितायै",
       "namavaliIast": "samānādhikavarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "समानाधिक-वर्जितायै",
+        "iast": "samānādhika-varjitāyai"
+      },
       "gloss": "Without Equal Or Superior",
       "translation": "No one stands level with her and no one stands above her.",
       "aksaras": [

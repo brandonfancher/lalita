@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महाकैलासनिलया",
           "iast": "mahākailāsanilayā",
+          "hyphenated": {
+            "deva": "महा-कैलास-निलया",
+            "iast": "mahā-kailāsa-nilayā"
+          },
           "namaIndices": [
             578
           ],
@@ -194,6 +198,10 @@
           "id": "l0-t1",
           "deva": "मृणालमृदुदोर्लता",
           "iast": "mṛṇālamṛdudorlatā",
+          "hyphenated": {
+            "deva": "मृणाल-मृदु-दोर्-लता",
+            "iast": "mṛṇāla-mṛdu-dor-latā"
+          },
           "namaIndices": [
             579
           ],
@@ -495,6 +503,10 @@
           "id": "l1-t1",
           "deva": "दयामूर्तिर्महासाम्राज्यशालिनी",
           "iast": "dayāmūrtirmahāsāmrājyaśālinī",
+          "hyphenated": {
+            "deva": "दया-मूर्तिर्-महा-साम्राज्य-शालिनी",
+            "iast": "dayā-mūrtir-mahā-sāmrājya-śālinī"
+          },
           "namaIndices": [
             581,
             582
@@ -837,8 +849,16 @@
       "index": 578,
       "deva": "महाकैलासनिलया",
       "iast": "mahākailāsanilayā",
+      "hyphenated": {
+        "deva": "महा-कैलास-निलया",
+        "iast": "mahā-kailāsa-nilayā"
+      },
       "namavaliDeva": "महाकैलासनिलयायै",
       "namavaliIast": "mahākailāsanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-कैलास-निलयायै",
+        "iast": "mahā-kailāsa-nilayāyai"
+      },
       "gloss": "Housed On The Great Kailāsa",
       "translation": "Her residence is the northern peak where Śiva is said to sit, here called great to mark it off from any earthly mountain.",
       "aksaras": [
@@ -1062,8 +1082,16 @@
       "index": 579,
       "deva": "मृणालमृदुदोर्लता",
       "iast": "mṛṇālamṛdudorlatā",
+      "hyphenated": {
+        "deva": "मृणाल-मृदु-दोर्-लता",
+        "iast": "mṛṇāla-mṛdu-dor-latā"
+      },
       "namavaliDeva": "मृणालमृदुदोर्लतायै",
       "namavaliIast": "mṛṇālamṛdudorlatāyai",
+      "namavaliHyphenated": {
+        "deva": "मृणाल-मृदु-दोर्-लतायै",
+        "iast": "mṛṇāla-mṛdu-dor-latāyai"
+      },
       "gloss": "Arms Soft As Lotus Fibre",
       "translation": "Her two arms curve like creepers and yield to the touch as the tender thread inside a lotus stalk does.",
       "aksaras": [
@@ -1426,8 +1454,16 @@
       "index": 581,
       "deva": "दयामूर्तिः",
       "iast": "dayāmūrtiḥ",
+      "hyphenated": {
+        "deva": "दया-मूर्तिः",
+        "iast": "dayā-mūrtiḥ"
+      },
       "namavaliDeva": "दयामूर्त्यै",
       "namavaliIast": "dayāmūrtyai",
+      "namavaliHyphenated": {
+        "deva": "दया-मूर्त्यै",
+        "iast": "dayā-mūrtyai"
+      },
       "gloss": "Compassion Given A Body",
       "translation": "Pity does not merely belong to her; it has taken shape and become her outline.",
       "aksaras": [
@@ -1577,8 +1613,16 @@
       "index": 582,
       "deva": "महासाम्राज्यशालिनी",
       "iast": "mahāsāmrājyaśālinī",
+      "hyphenated": {
+        "deva": "महा-साम्राज्य-शालिनी",
+        "iast": "mahā-sāmrājya-śālinī"
+      },
       "namavaliDeva": "महासाम्राज्यशालिन्यै",
       "namavaliIast": "mahāsāmrājyaśālinyai",
+      "namavaliHyphenated": {
+        "deva": "महा-साम्राज्य-शालिन्यै",
+        "iast": "mahā-sāmrājya-śālinyai"
+      },
       "gloss": "Clothed In Imperial Rule",
       "translation": "Universal sovereignty is not conferred on her but worn by her, as a quality she is amply furnished with.",
       "aksaras": [

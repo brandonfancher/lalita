@@ -499,6 +499,10 @@
           "id": "l1-t0",
           "deva": "महाकामेशनयनकुमुदाह्लादकौमुदी",
           "iast": "mahākāmeśanayanakumudāhlādakaumudī",
+          "hyphenated": {
+            "deva": "महा-कामेश-नयन-कुमुदाह्लाद-कौमुदी",
+            "iast": "mahā-kāmeśa-nayana-kumudāhlāda-kaumudī"
+          },
           "namaIndices": [
             403
           ],
@@ -1138,8 +1142,16 @@
       "index": 402,
       "deva": "विद्याविद्यास्वरूपिणी",
       "iast": "vidyāvidyāsvarūpiṇī",
+      "hyphenated": {
+        "deva": "विद्याविद्या-स्वरूपिणी",
+        "iast": "vidyāvidyā-svarūpiṇī"
+      },
       "namavaliDeva": "विद्याविद्यास्वरूपिण्यै",
       "namavaliIast": "vidyāvidyāsvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "विद्याविद्या-स्वरूपिण्यै",
+        "iast": "vidyāvidyā-svarūpiṇyai"
+      },
       "gloss": "Embodying Knowledge And Ignorance",
       "translation": "The wisdom that frees and the ignorance that binds are equally her own essential nature.",
       "aksaras": [
@@ -1423,8 +1435,16 @@
       "index": 403,
       "deva": "महाकामेशनयनकुमुदाह्लादकौमुदी",
       "iast": "mahākāmeśanayanakumudāhlādakaumudī",
+      "hyphenated": {
+        "deva": "महा-कामेश-नयन-कुमुदाह्लाद-कौमुदी",
+        "iast": "mahā-kāmeśa-nayana-kumudāhlāda-kaumudī"
+      },
       "namavaliDeva": "महाकामेशनयनकुमुदाह्लादकौमुद्यै",
       "namavaliIast": "mahākāmeśanayanakumudāhlādakaumudyai",
+      "namavaliHyphenated": {
+        "deva": "महा-कामेश-नयन-कुमुदाह्लाद-कौमुद्यै",
+        "iast": "mahā-kāmeśa-nayana-kumudāhlāda-kaumudyai"
+      },
       "gloss": "Moonlight Gladdening Mahākāmeśa's Lotus Eyes",
       "translation": "She falls upon the eyes of the great lord of desire as moonlight falls on night-lotuses, opening them in delight.",
       "aksaras": [

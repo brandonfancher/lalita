@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "पञ्चप्रेतासनासीना",
           "iast": "pañcapretāsanāsīnā",
+          "hyphenated": {
+            "deva": "पञ्च-प्रेतासनासीना",
+            "iast": "pañca-pretāsanāsīnā"
+          },
           "namaIndices": [
             249
           ],
@@ -224,6 +228,10 @@
           "id": "l0-t1",
           "deva": "पञ्चब्रह्मस्वरूपिणी",
           "iast": "pañcabrahmasvarūpiṇī",
+          "hyphenated": {
+            "deva": "पञ्च-ब्रह्म-स्वरूपिणी",
+            "iast": "pañca-brahma-svarūpiṇī"
+          },
           "namaIndices": [
             250
           ],
@@ -671,6 +679,10 @@
           "id": "l1-t2",
           "deva": "विज्ञानघनरूपिणी",
           "iast": "vijñānaghanarūpiṇī",
+          "hyphenated": {
+            "deva": "विज्ञान-घन-रूपिणी",
+            "iast": "vijñāna-ghana-rūpiṇī"
+          },
           "namaIndices": [
             253
           ],
@@ -871,8 +883,16 @@
       "index": 249,
       "deva": "पञ्चप्रेतासनासीना",
       "iast": "pañcapretāsanāsīnā",
+      "hyphenated": {
+        "deva": "पञ्च-प्रेतासनासीना",
+        "iast": "pañca-pretāsanāsīnā"
+      },
       "namavaliDeva": "पञ्चप्रेतासनासीनायै",
       "namavaliIast": "pañcapretāsanāsīnāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-प्रेतासनासीनायै",
+        "iast": "pañca-pretāsanāsīnāyai"
+      },
       "gloss": "Seated On The Couch Of Five Corpses",
       "translation": "Her couch rests on five gods who lie inert beneath her, alive only insofar as she animates them.",
       "aksaras": [
@@ -1140,8 +1160,16 @@
       "index": 250,
       "deva": "पञ्चब्रह्मस्वरूपिणी",
       "iast": "pañcabrahmasvarūpiṇī",
+      "hyphenated": {
+        "deva": "पञ्च-ब्रह्म-स्वरूपिणी",
+        "iast": "pañca-brahma-svarūpiṇī"
+      },
       "namavaliDeva": "पञ्चब्रह्मस्वरूपिण्यै",
       "namavaliIast": "pañcabrahmasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-ब्रह्म-स्वरूपिण्यै",
+        "iast": "pañca-brahma-svarūpiṇyai"
+      },
       "gloss": "Embodiment Of The Five Brahmās",
       "translation": "The five gods charged with creating, sustaining, dissolving, concealing and blessing are so many aspects of her single form.",
       "aksaras": [
@@ -1700,8 +1728,16 @@
       "index": 253,
       "deva": "विज्ञानघनरूपिणी",
       "iast": "vijñānaghanarūpiṇī",
+      "hyphenated": {
+        "deva": "विज्ञान-घन-रूपिणी",
+        "iast": "vijñāna-ghana-rūpiṇī"
+      },
       "namavaliDeva": "विज्ञानघनरूपिण्यै",
       "namavaliIast": "vijñānaghanarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "विज्ञान-घन-रूपिण्यै",
+        "iast": "vijñāna-ghana-rūpiṇyai"
+      },
       "gloss": "Solid Mass Of Knowing",
       "translation": "She has the density the Upaniṣads ascribe to pure knowing, with no gap in it where unconsciousness could lodge.",
       "aksaras": [

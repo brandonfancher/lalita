@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "पुण्यकीर्तिः",
           "iast": "puṇyakīrtiḥ",
+          "hyphenated": {
+            "deva": "पुण्य-कीर्तिः",
+            "iast": "puṇya-kīrtiḥ"
+          },
           "namaIndices": [
             542
           ],
@@ -149,6 +153,10 @@
           "id": "l0-t1",
           "deva": "पुण्यलभ्या",
           "iast": "puṇyalabhyā",
+          "hyphenated": {
+            "deva": "पुण्य-लभ्या",
+            "iast": "puṇya-labhyā"
+          },
           "namaIndices": [
             543
           ],
@@ -271,6 +279,10 @@
           "id": "l0-t2",
           "deva": "पुण्यश्रवणकीर्तना",
           "iast": "puṇyaśravaṇakīrtanā",
+          "hyphenated": {
+            "deva": "पुण्य-श्रवण-कीर्तना",
+            "iast": "puṇya-śravaṇa-kīrtanā"
+          },
           "namaIndices": [
             544
           ],
@@ -651,6 +663,10 @@
           "id": "l1-t1",
           "deva": "बन्धमोचनी",
           "iast": "bandhamocanī",
+          "hyphenated": {
+            "deva": "बन्ध-मोचनी",
+            "iast": "bandha-mocanī"
+          },
           "namaIndices": [
             546
           ],
@@ -910,8 +926,16 @@
       "index": 542,
       "deva": "पुण्यकीर्तिः",
       "iast": "puṇyakīrtiḥ",
+      "hyphenated": {
+        "deva": "पुण्य-कीर्तिः",
+        "iast": "puṇya-kīrtiḥ"
+      },
       "namavaliDeva": "पुण्यकीर्त्यै",
       "namavaliIast": "puṇyakīrtyai",
+      "namavaliHyphenated": {
+        "deva": "पुण्य-कीर्त्यै",
+        "iast": "puṇya-kīrtyai"
+      },
       "gloss": "Of Holy Renown",
       "translation": "The fame that attaches to her is itself sanctifying, so that speaking of her purifies the speaker.",
       "aksaras": [
@@ -1076,8 +1100,16 @@
       "index": 543,
       "deva": "पुण्यलभ्या",
       "iast": "puṇyalabhyā",
+      "hyphenated": {
+        "deva": "पुण्य-लभ्या",
+        "iast": "puṇya-labhyā"
+      },
       "namavaliDeva": "पुण्यलभ्यायै",
       "namavaliIast": "puṇyalabhyāyai",
+      "namavaliHyphenated": {
+        "deva": "पुण्य-लभ्यायै",
+        "iast": "puṇya-labhyāyai"
+      },
       "gloss": "Won Through Merit",
       "translation": "She does not come by contrivance; a store of good acts is what finally brings her within reach.",
       "aksaras": [
@@ -1228,8 +1260,16 @@
       "index": 544,
       "deva": "पुण्यश्रवणकीर्तना",
       "iast": "puṇyaśravaṇakīrtanā",
+      "hyphenated": {
+        "deva": "पुण्य-श्रवण-कीर्तना",
+        "iast": "puṇya-śravaṇa-kīrtanā"
+      },
       "namavaliDeva": "पुण्यश्रवणकीर्तनायै",
       "namavaliIast": "puṇyaśravaṇakīrtanāyai",
+      "namavaliHyphenated": {
+        "deva": "पुण्य-श्रवण-कीर्तनायै",
+        "iast": "puṇya-śravaṇa-kīrtanāyai"
+      },
       "gloss": "Holy To Hear And To Praise",
       "translation": "Merit accrues both to the one who listens to her story and to the one who tells it.",
       "aksaras": [
@@ -1690,8 +1730,16 @@
       "index": 546,
       "deva": "बन्धमोचनी",
       "iast": "bandhamocanī",
+      "hyphenated": {
+        "deva": "बन्ध-मोचनी",
+        "iast": "bandha-mocanī"
+      },
       "namavaliDeva": "बन्धमोचन्यै",
       "namavaliIast": "bandhamocanyai",
+      "namavaliHyphenated": {
+        "deva": "बन्ध-मोचन्यै",
+        "iast": "bandha-mocanyai"
+      },
       "gloss": "Loosener Of Bonds",
       "translation": "Whatever ties a soul to repeated birth she unties, being herself unbound.",
       "aksaras": [

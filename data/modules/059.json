@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मनुविद्या",
           "iast": "manuvidyā",
+          "hyphenated": {
+            "deva": "मनु-विद्या",
+            "iast": "manu-vidyā"
+          },
           "namaIndices": [
             238
           ],
@@ -127,6 +131,10 @@
           "id": "l0-t1",
           "deva": "चन्द्रविद्या",
           "iast": "candravidyā",
+          "hyphenated": {
+            "deva": "चन्द्र-विद्या",
+            "iast": "candra-vidyā"
+          },
           "namaIndices": [
             239
           ],
@@ -264,6 +272,10 @@
           "id": "l0-t2",
           "deva": "चन्द्रमण्डलमध्यगा",
           "iast": "candramaṇḍalamadhyagā",
+          "hyphenated": {
+            "deva": "चन्द्र-मण्डल-मध्यगा",
+            "iast": "candra-maṇḍala-madhyagā"
+          },
           "namaIndices": [
             240
           ],
@@ -483,6 +495,10 @@
           "id": "l1-t0",
           "deva": "चारुरूपा",
           "iast": "cārurūpā",
+          "hyphenated": {
+            "deva": "चारु-रूपा",
+            "iast": "cāru-rūpā"
+          },
           "namaIndices": [
             241
           ],
@@ -589,6 +605,10 @@
           "id": "l1-t1",
           "deva": "चारुहासा",
           "iast": "cāruhāsā",
+          "hyphenated": {
+            "deva": "चारु-हासा",
+            "iast": "cāru-hāsā"
+          },
           "namaIndices": [
             242
           ],
@@ -695,6 +715,10 @@
           "id": "l1-t2",
           "deva": "चारुचन्द्रकलाधरा",
           "iast": "cārucandrakalādharā",
+          "hyphenated": {
+            "deva": "चारु-चन्द्र-कला-धरा",
+            "iast": "cāru-candra-kalā-dharā"
+          },
           "namaIndices": [
             243
           ],
@@ -903,8 +927,16 @@
       "index": 238,
       "deva": "मनुविद्या",
       "iast": "manuvidyā",
+      "hyphenated": {
+        "deva": "मनु-विद्या",
+        "iast": "manu-vidyā"
+      },
       "namavaliDeva": "मनुविद्यायै",
       "namavaliIast": "manuvidyāyai",
+      "namavaliHyphenated": {
+        "deva": "मनु-विद्यायै",
+        "iast": "manu-vidyāyai"
+      },
       "gloss": "The Vidyā Of Manu",
       "translation": "She is the secret formula in the recension that Manu handed down.",
       "aksaras": [
@@ -1047,8 +1079,16 @@
       "index": 239,
       "deva": "चन्द्रविद्या",
       "iast": "candravidyā",
+      "hyphenated": {
+        "deva": "चन्द्र-विद्या",
+        "iast": "candra-vidyā"
+      },
       "namavaliDeva": "चन्द्रविद्यायै",
       "namavaliIast": "candravidyāyai",
+      "namavaliHyphenated": {
+        "deva": "चन्द्र-विद्यायै",
+        "iast": "candra-vidyāyai"
+      },
       "gloss": "The Vidyā Of Candra",
       "translation": "She is equally the formula in the line of transmission that goes back to the moon.",
       "aksaras": [
@@ -1214,8 +1254,16 @@
       "index": 240,
       "deva": "चन्द्रमण्डलमध्यगा",
       "iast": "candramaṇḍalamadhyagā",
+      "hyphenated": {
+        "deva": "चन्द्र-मण्डल-मध्यगा",
+        "iast": "candra-maṇḍala-madhyagā"
+      },
       "namavaliDeva": "चन्द्रमण्डलमध्यगायै",
       "namavaliIast": "candramaṇḍalamadhyagāyai",
+      "namavaliHyphenated": {
+        "deva": "चन्द्र-मण्डल-मध्यगायै",
+        "iast": "candra-maṇḍala-madhyagāyai"
+      },
       "gloss": "Dwelling In The Moon's Orb",
       "translation": "She is to be found at the very centre of the lunar disc, where its coolness gathers.",
       "aksaras": [
@@ -1485,8 +1533,16 @@
       "index": 241,
       "deva": "चारुरूपा",
       "iast": "cārurūpā",
+      "hyphenated": {
+        "deva": "चारु-रूपा",
+        "iast": "cāru-rūpā"
+      },
       "namavaliDeva": "चारुरूपायै",
       "namavaliIast": "cārurūpāyai",
+      "namavaliHyphenated": {
+        "deva": "चारु-रूपायै",
+        "iast": "cāru-rūpāyai"
+      },
       "gloss": "Of Lovely Form",
       "translation": "Her shape is beautiful in the plain sense, pleasing to whoever is granted sight of it.",
       "aksaras": [
@@ -1621,8 +1677,16 @@
       "index": 242,
       "deva": "चारुहासा",
       "iast": "cāruhāsā",
+      "hyphenated": {
+        "deva": "चारु-हासा",
+        "iast": "cāru-hāsā"
+      },
       "namavaliDeva": "चारुहासायै",
       "namavaliIast": "cāruhāsāyai",
+      "namavaliHyphenated": {
+        "deva": "चारु-हासायै",
+        "iast": "cāru-hāsāyai"
+      },
       "gloss": "Of Lovely Smile",
       "translation": "The smile she wears is itself the reassurance her worshippers come for.",
       "aksaras": [
@@ -1757,8 +1821,16 @@
       "index": 243,
       "deva": "चारुचन्द्रकलाधरा",
       "iast": "cārucandrakalādharā",
+      "hyphenated": {
+        "deva": "चारु-चन्द्र-कला-धरा",
+        "iast": "cāru-candra-kalā-dharā"
+      },
       "namavaliDeva": "चारुचन्द्रकलाधरायै",
       "namavaliIast": "cārucandrakalādharāyai",
+      "namavaliHyphenated": {
+        "deva": "चारु-चन्द्र-कला-धरायै",
+        "iast": "cāru-candra-kalā-dharāyai"
+      },
       "gloss": "Wearing The Lovely Crescent",
       "translation": "Like Śiva she carries a sliver of moon, and on her it is an ornament rather than a mark of austerity.",
       "aksaras": [

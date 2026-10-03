@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भवदावसुधावृष्टिः",
           "iast": "bhavadāvasudhāvṛṣṭiḥ",
+          "hyphenated": {
+            "deva": "भव-दाव-सुधा-वृष्टिः",
+            "iast": "bhava-dāva-sudhā-vṛṣṭiḥ"
+          },
           "namaIndices": [
             742
           ],
@@ -216,6 +220,10 @@
           "id": "l0-t1",
           "deva": "पापारण्यदवानला",
           "iast": "pāpāraṇyadavānalā",
+          "hyphenated": {
+            "deva": "पापारण्य-दवानला",
+            "iast": "pāpāraṇya-davānalā"
+          },
           "namaIndices": [
             743
           ],
@@ -411,6 +419,10 @@
           "id": "l1-t0",
           "deva": "दौर्भाग्यतूलवातूला",
           "iast": "daurbhāgyatūlavātūlā",
+          "hyphenated": {
+            "deva": "दौर्भाग्य-तूल-वातूला",
+            "iast": "daurbhāgya-tūla-vātūlā"
+          },
           "namaIndices": [
             744
           ],
@@ -629,6 +641,10 @@
           "id": "l1-t1",
           "deva": "जराध्वान्तरविप्रभा",
           "iast": "jarādhvāntaraviprabhā",
+          "hyphenated": {
+            "deva": "जरा-ध्वान्त-रवि-प्रभा",
+            "iast": "jarā-dhvānta-ravi-prabhā"
+          },
           "namaIndices": [
             745
           ],
@@ -852,8 +868,16 @@
       "index": 742,
       "deva": "भवदावसुधावृष्टिः",
       "iast": "bhavadāvasudhāvṛṣṭiḥ",
+      "hyphenated": {
+        "deva": "भव-दाव-सुधा-वृष्टिः",
+        "iast": "bhava-dāva-sudhā-vṛṣṭiḥ"
+      },
       "namavaliDeva": "भवदावसुधावृष्ट्यै",
       "namavaliIast": "bhavadāvasudhāvṛṣṭyai",
+      "namavaliHyphenated": {
+        "deva": "भव-दाव-सुधा-वृष्ट्यै",
+        "iast": "bhava-dāva-sudhā-vṛṣṭyai"
+      },
       "gloss": "Nectar-Rain On The Wildfire Of Existence",
       "translation": "Worldly life burns like a forest fire, and she falls on it as a downpour of nectar.",
       "aksaras": [
@@ -1113,8 +1137,16 @@
       "index": 743,
       "deva": "पापारण्यदवानला",
       "iast": "pāpāraṇyadavānalā",
+      "hyphenated": {
+        "deva": "पापारण्य-दवानला",
+        "iast": "pāpāraṇya-davānalā"
+      },
       "namavaliDeva": "पापारण्यदवानलायै",
       "namavaliIast": "pāpāraṇyadavānalāyai",
+      "namavaliHyphenated": {
+        "deva": "पापारण्य-दवानलायै",
+        "iast": "pāpāraṇya-davānalāyai"
+      },
       "gloss": "Wildfire In The Forest Of Sins",
       "translation": "Accumulated wrongdoing stands thick as a forest, and she runs through it as fire.",
       "aksaras": [
@@ -1361,8 +1393,16 @@
       "index": 744,
       "deva": "दौर्भाग्यतूलवातूला",
       "iast": "daurbhāgyatūlavātūlā",
+      "hyphenated": {
+        "deva": "दौर्भाग्य-तूल-वातूला",
+        "iast": "daurbhāgya-tūla-vātūlā"
+      },
       "namavaliDeva": "दौर्भाग्यतूलवातूलायै",
       "namavaliIast": "daurbhāgyatūlavātūlāyai",
+      "namavaliHyphenated": {
+        "deva": "दौर्भाग्य-तूल-वातूलायै",
+        "iast": "daurbhāgya-tūla-vātūlāyai"
+      },
       "gloss": "Whirlwind To The Cotton Of Misfortune",
       "translation": "Ill luck is as light as cotton fluff before her, and she is the gale that scatters it.",
       "aksaras": [
@@ -1623,8 +1663,16 @@
       "index": 745,
       "deva": "जराध्वान्तरविप्रभा",
       "iast": "jarādhvāntaraviprabhā",
+      "hyphenated": {
+        "deva": "जरा-ध्वान्त-रवि-प्रभा",
+        "iast": "jarā-dhvānta-ravi-prabhā"
+      },
       "namavaliDeva": "जराध्वान्तरविप्रभायै",
       "namavaliIast": "jarādhvāntaraviprabhāyai",
+      "namavaliHyphenated": {
+        "deva": "जरा-ध्वान्त-रवि-प्रभायै",
+        "iast": "jarā-dhvānta-ravi-prabhāyai"
+      },
       "gloss": "Sunlight On The Darkness Of Age",
       "translation": "Old age closes in like nightfall, and she rises against it with the light of the sun.",
       "aksaras": [

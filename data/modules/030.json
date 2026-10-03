@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विशुक्रप्राणहरणवाराहीवीर्यनन्दिता",
           "iast": "viśukraprāṇaharaṇavārāhīvīryananditā",
+          "hyphenated": {
+            "deva": "विशुक्र-प्राण-हरण-वाराही-वीर्य-नन्दिता",
+            "iast": "viśukra-prāṇa-haraṇa-vārāhī-vīrya-nanditā"
+          },
           "namaIndices": [
             76
           ],
@@ -424,6 +428,10 @@
           "id": "l1-t0",
           "deva": "कामेश्वरमुखालोककल्पितश्रीगणेश्वरा",
           "iast": "kāmeśvaramukhālokakalpitaśrīgaṇeśvarā",
+          "hyphenated": {
+            "deva": "कामेश्वर-मुखालोक-कल्पित-श्री-गणेश्वरा",
+            "iast": "kāmeśvara-mukhāloka-kalpita-śrī-gaṇeśvarā"
+          },
           "namaIndices": [
             77
           ],
@@ -833,8 +841,16 @@
       "index": 76,
       "deva": "विशुक्रप्राणहरणवाराहीवीर्यनन्दिता",
       "iast": "viśukraprāṇaharaṇavārāhīvīryananditā",
+      "hyphenated": {
+        "deva": "विशुक्र-प्राण-हरण-वाराही-वीर्य-नन्दिता",
+        "iast": "viśukra-prāṇa-haraṇa-vārāhī-vīrya-nanditā"
+      },
       "namavaliDeva": "विशुक्रप्राणहरणवाराहीवीर्यनन्दितायै",
       "namavaliIast": "viśukraprāṇaharaṇavārāhīvīryananditāyai",
+      "namavaliHyphenated": {
+        "deva": "विशुक्र-प्राण-हरण-वाराही-वीर्य-नन्दितायै",
+        "iast": "viśukra-prāṇa-haraṇa-vārāhī-vīrya-nanditāyai"
+      },
       "gloss": "Delighted By Vārāhī's Might",
       "translation": "Vārāhī took the life-breath out of Viśukra, and the strength she showed in doing it made the goddess rejoice.",
       "aksaras": [
@@ -1315,8 +1331,16 @@
       "index": 77,
       "deva": "कामेश्वरमुखालोककल्पितश्रीगणेश्वरा",
       "iast": "kāmeśvaramukhālokakalpitaśrīgaṇeśvarā",
+      "hyphenated": {
+        "deva": "कामेश्वर-मुखालोक-कल्पित-श्री-गणेश्वरा",
+        "iast": "kāmeśvara-mukhāloka-kalpita-śrī-gaṇeśvarā"
+      },
       "namavaliDeva": "कामेश्वरमुखालोककल्पितश्रीगणेश्वरायै",
       "namavaliIast": "kāmeśvaramukhālokakalpitaśrīgaṇeśvarāyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश्वर-मुखालोक-कल्पित-श्री-गणेश्वरायै",
+        "iast": "kāmeśvara-mukhāloka-kalpita-śrī-gaṇeśvarāyai"
+      },
       "gloss": "Who Made Gaṇeśa With A Glance",
       "translation": "A single look exchanged with her husband's face was enough to bring the elephant-headed lord into existence.",
       "aksaras": [

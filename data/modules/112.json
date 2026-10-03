@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विमर्शरूपिणी",
           "iast": "vimarśarūpiṇī",
+          "hyphenated": {
+            "deva": "विमर्श-रूपिणी",
+            "iast": "vimarśa-rūpiṇī"
+          },
           "namaIndices": [
             548
           ],
@@ -241,6 +245,10 @@
           "id": "l0-t2",
           "deva": "वियदादिजगत्प्रसूः",
           "iast": "viyadādijagatprasūḥ",
+          "hyphenated": {
+            "deva": "वियदादि-जगत्-प्रसूः",
+            "iast": "viyadādi-jagat-prasūḥ"
+          },
           "namaIndices": [
             550
           ],
@@ -458,6 +466,10 @@
           "id": "l1-t0",
           "deva": "सर्वव्याधिप्रशमनी",
           "iast": "sarvavyādhipraśamanī",
+          "hyphenated": {
+            "deva": "सर्व-व्याधि-प्रशमनी",
+            "iast": "sarva-vyādhi-praśamanī"
+          },
           "namaIndices": [
             551
           ],
@@ -670,6 +682,10 @@
           "id": "l1-t1",
           "deva": "सर्वमृत्युनिवारिणी",
           "iast": "sarvamṛtyunivāriṇī",
+          "hyphenated": {
+            "deva": "सर्व-मृत्यु-निवारिणी",
+            "iast": "sarva-mṛtyu-nivāriṇī"
+          },
           "namaIndices": [
             552
           ],
@@ -892,8 +908,16 @@
       "index": 548,
       "deva": "विमर्शरूपिणी",
       "iast": "vimarśarūpiṇī",
+      "hyphenated": {
+        "deva": "विमर्श-रूपिणी",
+        "iast": "vimarśa-rūpiṇī"
+      },
       "namavaliDeva": "विमर्शरूपिण्यै",
       "namavaliIast": "vimarśarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "विमर्श-रूपिण्यै",
+        "iast": "vimarśa-rūpiṇyai"
+      },
       "gloss": "Formed Of Reflective Awareness",
       "translation": "In the Śaiva analysis prakāśa is the light of pure being and vimarśa its self-recognition; she is the second, the turning of that light upon itself.",
       "aksaras": [
@@ -1162,8 +1186,16 @@
       "index": 550,
       "deva": "वियदादिजगत्प्रसूः",
       "iast": "viyadādijagatprasūḥ",
+      "hyphenated": {
+        "deva": "वियदादि-जगत्-प्रसूः",
+        "iast": "viyadādi-jagat-prasūḥ"
+      },
       "namavaliDeva": "वियदादिजगत्प्रसुवे",
       "namavaliIast": "viyadādijagatprasuve",
+      "namavaliHyphenated": {
+        "deva": "वियदादि-जगत्-प्रसुवे",
+        "iast": "viyadādi-jagat-prasuve"
+      },
       "gloss": "Mother Of The World From Ether Down",
       "translation": "Space is the first of the elements to come forth, and the whole ordered world that follows is her offspring.",
       "aksaras": [
@@ -1431,8 +1463,16 @@
       "index": 551,
       "deva": "सर्वव्याधिप्रशमनी",
       "iast": "sarvavyādhipraśamanī",
+      "hyphenated": {
+        "deva": "सर्व-व्याधि-प्रशमनी",
+        "iast": "sarva-vyādhi-praśamanī"
+      },
       "namavaliDeva": "सर्व व्याधिप्रशमन्यै",
       "namavaliIast": "sarva vyādhipraśamanyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व व्याधि-प्रशमन्यै",
+        "iast": "sarva vyādhi-praśamanyai"
+      },
       "gloss": "Quencher Of Every Illness",
       "translation": "Sickness of body and of mind alike subsides in her presence.",
       "aksaras": [
@@ -1687,8 +1727,16 @@
       "index": 552,
       "deva": "सर्वमृत्युनिवारिणी",
       "iast": "sarvamṛtyunivāriṇī",
+      "hyphenated": {
+        "deva": "सर्व-मृत्यु-निवारिणी",
+        "iast": "sarva-mṛtyu-nivāriṇī"
+      },
       "namavaliDeva": "सर्व मृत्युनिवारिण्यै",
       "namavaliIast": "sarva mṛtyunivāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व मृत्यु-निवारिण्यै",
+        "iast": "sarva mṛtyu-nivāriṇyai"
+      },
       "gloss": "Warder Off Of All Death",
       "translation": "Every kind of dying, the hundred violent ones and the one that comes of age, is held back by her.",
       "aksaras": [

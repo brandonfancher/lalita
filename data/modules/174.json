@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "व्योमकेशी",
           "iast": "vyomakeśī",
+          "hyphenated": {
+            "deva": "व्योम-केशी",
+            "iast": "vyoma-keśī"
+          },
           "namaIndices": [
             942
           ],
@@ -468,6 +472,10 @@
           "id": "l1-t0",
           "deva": "पञ्चयज्ञप्रिया",
           "iast": "pañcayajñapriyā",
+          "hyphenated": {
+            "deva": "पञ्च-यज्ञ-प्रिया",
+            "iast": "pañca-yajña-priyā"
+          },
           "namaIndices": [
             946
           ],
@@ -639,6 +647,10 @@
           "id": "l1-t1",
           "deva": "पञ्चप्रेतमञ्चाधिशायिनी",
           "iast": "pañcapretamañcādhiśāyinī",
+          "hyphenated": {
+            "deva": "पञ्च-प्रेत-मञ्चाधिशायिनी",
+            "iast": "pañca-preta-mañcādhiśāyinī"
+          },
           "namaIndices": [
             947
           ],
@@ -910,8 +922,16 @@
       "index": 942,
       "deva": "व्योमकेशी",
       "iast": "vyomakeśī",
+      "hyphenated": {
+        "deva": "व्योम-केशी",
+        "iast": "vyoma-keśī"
+      },
       "namavaliDeva": "व्योमकेश्यै",
       "namavaliIast": "vyomakeśyai",
+      "namavaliHyphenated": {
+        "deva": "व्योम-केश्यै",
+        "iast": "vyoma-keśyai"
+      },
       "gloss": "Whose Hair Is The Sky",
       "translation": "Open space streams from her head as hair, matching the epithet Vyomakeśa borne by Śiva.",
       "aksaras": [
@@ -1462,8 +1482,16 @@
       "index": 946,
       "deva": "पञ्चयज्ञप्रिया",
       "iast": "pañcayajñapriyā",
+      "hyphenated": {
+        "deva": "पञ्च-यज्ञ-प्रिया",
+        "iast": "pañca-yajña-priyā"
+      },
       "namavaliDeva": "पञ्चयज्ञप्रियायै",
       "namavaliIast": "pañcayajñapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-यज्ञ-प्रियायै",
+        "iast": "pañca-yajña-priyāyai"
+      },
       "gloss": "Fond Of The Five Sacrifices",
       "translation": "The five daily offerings laid on a householder are dear to her.",
       "aksaras": [
@@ -1677,8 +1705,16 @@
       "index": 947,
       "deva": "पञ्चप्रेतमञ्चाधिशायिनी",
       "iast": "pañcapretamañcādhiśāyinī",
+      "hyphenated": {
+        "deva": "पञ्च-प्रेत-मञ्चाधिशायिनी",
+        "iast": "pañca-preta-mañcādhiśāyinī"
+      },
       "namavaliDeva": "पञ्चप्रेतमञ्चाधिशायिन्यै",
       "namavaliIast": "pañcapretamañcādhiśāyinyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-प्रेत-मञ्चाधिशायिन्यै",
+        "iast": "pañca-preta-mañcādhiśāyinyai"
+      },
       "gloss": "Reclining On The Corpse Couch",
       "translation": "Her couch is carried by five gods lying inert as corpses, and she alone upon it remains awake.",
       "aksaras": [

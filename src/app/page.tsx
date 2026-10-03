@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+import { HyphenatedText } from "@/components/hyphenated-text";
 import { Divider, YantraMark } from "@/components/ornament";
 import { getModuleSummaries } from "@/lib/content";
 
@@ -75,9 +76,12 @@ export default function HomePage() {
         >
           <p className="eyebrow text-ink-faint">The first shloka</p>
           <p className="deva mt-4 text-[1.6rem] leading-snug text-ink sm:text-[2rem]">
-            {opening.previewDeva} <span className="text-sindura">।</span>
+            <HyphenatedText text={opening.previewDeva} hyphenated={opening.previewHyphenated?.deva} />{" "}
+            <span className="text-sindura">।</span>
           </p>
-          <p className="iast mt-1 text-lg text-ink-muted">{opening.previewIast}</p>
+          <p className="iast mt-1 text-lg text-ink-muted">
+            <HyphenatedText text={opening.previewIast} hyphenated={opening.previewHyphenated?.iast} />
+          </p>
           {opening.subtitle && (
             <p className="display mt-6 inline-flex items-center gap-2 text-lg italic text-sindura">
               {opening.subtitle}

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अष्टमूर्तिरजाजैत्री",
           "iast": "aṣṭamūrtirajājaitrī",
+          "hyphenated": {
+            "deva": "अष्ट-मूर्तिरजा-जैत्री",
+            "iast": "aṣṭa-mūrtirajā-jaitrī"
+          },
           "namaIndices": [
             662,
             663
@@ -238,6 +242,10 @@
           "id": "l0-t1",
           "deva": "लोकयात्राविधायिनी",
           "iast": "lokayātrāvidhāyinī",
+          "hyphenated": {
+            "deva": "लोक-यात्रा-विधायिनी",
+            "iast": "loka-yātrā-vidhāyinī"
+          },
           "namaIndices": [
             664
           ],
@@ -551,6 +559,10 @@
           "id": "l1-t1",
           "deva": "भूमरूपा",
           "iast": "bhūmarūpā",
+          "hyphenated": {
+            "deva": "भूम-रूपा",
+            "iast": "bhūma-rūpā"
+          },
           "namaIndices": [
             666
           ],
@@ -762,6 +774,10 @@
           "id": "l1-t3",
           "deva": "द्वैतवर्जिता",
           "iast": "dvaitavarjitā",
+          "hyphenated": {
+            "deva": "द्वैत-वर्जिता",
+            "iast": "dvaita-varjitā"
+          },
           "namaIndices": [
             668
           ],
@@ -912,8 +928,16 @@
       "index": 662,
       "deva": "अष्टमूर्तिः",
       "iast": "aṣṭamūrtiḥ",
+      "hyphenated": {
+        "deva": "अष्ट-मूर्तिः",
+        "iast": "aṣṭa-mūrtiḥ"
+      },
       "namavaliDeva": "अष्टमूर्त्यै",
       "namavaliIast": "aṣṭamūrtyai",
+      "namavaliHyphenated": {
+        "deva": "अष्ट-मूर्त्यै",
+        "iast": "aṣṭa-mūrtyai"
+      },
       "gloss": "Of Eightfold Form",
       "translation": "She stands in eight shapes at once, as the elements and the luminaries and the sacrificer are all reckoned forms of the divine.",
       "aksaras": [
@@ -1069,8 +1093,16 @@
       "index": 663,
       "deva": "अजाजैत्री",
       "iast": "ajājaitrī",
+      "hyphenated": {
+        "deva": "अजा-जैत्री",
+        "iast": "ajā-jaitrī"
+      },
       "namavaliDeva": "अजाजैत्र्यै",
       "namavaliIast": "ajājaitryai",
+      "namavaliHyphenated": {
+        "deva": "अजा-जैत्र्यै",
+        "iast": "ajā-jaitryai"
+      },
       "gloss": "Conqueror Of The Unborn",
       "translation": "She defeats the unborn one, that beginningless material nature which binds everybody else.",
       "aksaras": [
@@ -1211,8 +1243,16 @@
       "index": 664,
       "deva": "लोकयात्राविधायिनी",
       "iast": "lokayātrāvidhāyinī",
+      "hyphenated": {
+        "deva": "लोक-यात्रा-विधायिनी",
+        "iast": "loka-yātrā-vidhāyinī"
+      },
       "namavaliDeva": "लोकयात्राविधायिन्यै",
       "namavaliIast": "lokayātrāvidhāyinyai",
+      "namavaliHyphenated": {
+        "deva": "लोक-यात्रा-विधायिन्यै",
+        "iast": "loka-yātrā-vidhāyinyai"
+      },
       "gloss": "Ordainer Of The World's Course",
       "translation": "The ordinary going-on of the world, its work and traffic and getting of a living, is laid down by her.",
       "aksaras": [
@@ -1573,8 +1613,16 @@
       "index": 666,
       "deva": "भूमरूपा",
       "iast": "bhūmarūpā",
+      "hyphenated": {
+        "deva": "भूम-रूपा",
+        "iast": "bhūma-rūpā"
+      },
       "namavaliDeva": "भूमरूपायै",
       "namavaliIast": "bhūmarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "भूम-रूपायै",
+        "iast": "bhūma-rūpāyai"
+      },
       "gloss": "Whose Form Is Plenitude",
       "translation": "Her shape is sheer fullness, the unbounded amplitude in which there is nothing further to want.",
       "aksaras": [
@@ -1844,8 +1892,16 @@
       "index": 668,
       "deva": "द्वैतवर्जिता",
       "iast": "dvaitavarjitā",
+      "hyphenated": {
+        "deva": "द्वैत-वर्जिता",
+        "iast": "dvaita-varjitā"
+      },
       "namavaliDeva": "द्वैतवर्जितायै",
       "namavaliIast": "dvaitavarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "द्वैत-वर्जितायै",
+        "iast": "dvaita-varjitāyai"
+      },
       "gloss": "Free Of Duality",
       "translation": "Whatever splits the world into two has been left behind in her.",
       "aksaras": [

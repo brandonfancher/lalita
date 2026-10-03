@@ -96,6 +96,10 @@
           "id": "l0-t1",
           "deva": "पञ्चभूतेशी",
           "iast": "pañcabhūteśī",
+          "hyphenated": {
+            "deva": "पञ्च-भूतेशी",
+            "iast": "pañca-bhūteśī"
+          },
           "namaIndices": [
             949
           ],
@@ -227,6 +231,10 @@
           "id": "l0-t2",
           "deva": "पञ्चसङ्ख्योपचारिणी",
           "iast": "pañcasaṅkhyopacāriṇī",
+          "hyphenated": {
+            "deva": "पञ्च-सङ्ख्योपचारिणी",
+            "iast": "pañca-saṅkhyopacāriṇī"
+          },
           "namaIndices": [
             950
           ],
@@ -786,6 +794,10 @@
           "id": "l1-t3",
           "deva": "शम्भुमोहिनी",
           "iast": "śambhumohinī",
+          "hyphenated": {
+            "deva": "शम्भु-मोहिनी",
+            "iast": "śambhu-mohinī"
+          },
           "namaIndices": [
             954
           ],
@@ -1023,8 +1035,16 @@
       "index": 949,
       "deva": "पञ्चभूतेशी",
       "iast": "pañcabhūteśī",
+      "hyphenated": {
+        "deva": "पञ्च-भूतेशी",
+        "iast": "pañca-bhūteśī"
+      },
       "namavaliDeva": "पञ्चभूतेश्यै",
       "namavaliIast": "pañcabhūteśyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-भूतेश्यै",
+        "iast": "pañca-bhūteśyai"
+      },
       "gloss": "Ruler Of The Five Elements",
       "translation": "Earth, water, fire, air and space are all under her hand.",
       "aksaras": [
@@ -1198,8 +1218,16 @@
       "index": 950,
       "deva": "पञ्चसङ्ख्योपचारिणी",
       "iast": "pañcasaṅkhyopacāriṇī",
+      "hyphenated": {
+        "deva": "पञ्च-सङ्ख्योपचारिणी",
+        "iast": "pañca-saṅkhyopacāriṇī"
+      },
       "namavaliDeva": "पञ्चसङ्ख्योपचारिण्यै",
       "namavaliIast": "pañcasaṅkhyopacāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-सङ्ख्योपचारिण्यै",
+        "iast": "pañca-saṅkhyopacāriṇyai"
+      },
       "gloss": "Served With Fivefold Offering",
       "translation": "The rite she accepts uses five articles of attendance, the short form of the far longer sequence of services.",
       "aksaras": [
@@ -1867,8 +1895,16 @@
       "index": 954,
       "deva": "शम्भुमोहिनी",
       "iast": "śambhumohinī",
+      "hyphenated": {
+        "deva": "शम्भु-मोहिनी",
+        "iast": "śambhu-mohinī"
+      },
       "namavaliDeva": "शम्भुमोहिन्यै",
       "namavaliIast": "śambhumohinyai",
+      "namavaliHyphenated": {
+        "deva": "शम्भु-मोहिन्यै",
+        "iast": "śambhu-mohinyai"
+      },
       "gloss": "Enchantress Of Śambhu",
       "translation": "She casts her spell over Śiva himself, so that the source of all detachment is drawn towards her.",
       "aksaras": [

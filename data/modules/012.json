@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अनाकलितसादृश्यचिबुकश्रीविराजिता",
           "iast": "anākalitasādṛśyacibukaśrīvirājitā",
+          "hyphenated": {
+            "deva": "अनाकलित-सादृश्य-चिबुक-श्री-विराजिता",
+            "iast": "anākalita-sādṛśya-cibuka-śrī-virājitā"
+          },
           "namaIndices": [
             29
           ],
@@ -406,6 +410,10 @@
           "id": "l1-t0",
           "deva": "कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरा",
           "iast": "kāmeśabaddhamāṅgalyasūtraśobhitakandharā",
+          "hyphenated": {
+            "deva": "कामेश-बद्ध-माङ्गल्य-सूत्र-शोभित-कन्धरा",
+            "iast": "kāmeśa-baddha-māṅgalya-sūtra-śobhita-kandharā"
+          },
           "namaIndices": [
             30
           ],
@@ -816,8 +824,16 @@
       "index": 29,
       "deva": "अनाकलितसादृश्यचिबुकश्रीविराजिता",
       "iast": "anākalitasādṛśyacibukaśrīvirājitā",
+      "hyphenated": {
+        "deva": "अनाकलित-सादृश्य-चिबुक-श्री-विराजिता",
+        "iast": "anākalita-sādṛśya-cibuka-śrī-virājitā"
+      },
       "namavaliDeva": "अनाकलितसादृश्यचिबुकश्रीविराजितायै",
       "namavaliIast": "anākalitasādṛśyacibukaśrīvirājitāyai",
+      "namavaliHyphenated": {
+        "deva": "अनाकलित-सादृश्य-चिबुक-श्री-विराजितायै",
+        "iast": "anākalita-sādṛśya-cibuka-śrī-virājitāyai"
+      },
       "gloss": "Whose Chin Has No Equal",
       "translation": "Poets looking for something to compare her chin to have never found one, and she shines all the more for that failure.",
       "aksaras": [
@@ -1275,8 +1291,16 @@
       "index": 30,
       "deva": "कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरा",
       "iast": "kāmeśabaddhamāṅgalyasūtraśobhitakandharā",
+      "hyphenated": {
+        "deva": "कामेश-बद्ध-माङ्गल्य-सूत्र-शोभित-कन्धरा",
+        "iast": "kāmeśa-baddha-māṅgalya-sūtra-śobhita-kandharā"
+      },
       "namavaliDeva": "कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरायै",
       "namavaliIast": "kāmeśabaddhamāṅgalyasūtraśobhitakandharāyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश-बद्ध-माङ्गल्य-सूत्र-शोभित-कन्धरायै",
+        "iast": "kāmeśa-baddha-māṅgalya-sūtra-śobhita-kandharāyai"
+      },
       "gloss": "Whose Neck Wears Kāmeśa's Marriage Thread",
       "translation": "The auspicious cord her husband knotted at her throat is the one ornament that outshines everything else she wears.",
       "aksaras": [

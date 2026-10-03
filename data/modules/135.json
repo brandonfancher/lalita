@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "राज्यलक्ष्मीः",
           "iast": "rājyalakṣmīḥ",
+          "hyphenated": {
+            "deva": "राज्य-लक्ष्मीः",
+            "iast": "rājya-lakṣmīḥ"
+          },
           "namaIndices": [
             689
           ],
@@ -157,6 +161,10 @@
           "id": "l0-t1",
           "deva": "कोशनाथा",
           "iast": "kośanāthā",
+          "hyphenated": {
+            "deva": "कोश-नाथा",
+            "iast": "kośa-nāthā"
+          },
           "namaIndices": [
             690
           ],
@@ -256,6 +264,10 @@
           "id": "l0-t2",
           "deva": "चतुरङ्गबलेश्वरी",
           "iast": "caturaṅgabaleśvarī",
+          "hyphenated": {
+            "deva": "चतुरङ्ग-बलेश्वरी",
+            "iast": "caturaṅga-baleśvarī"
+          },
           "namaIndices": [
             691
           ],
@@ -459,6 +471,10 @@
           "id": "l1-t0",
           "deva": "साम्राज्यदायिनी",
           "iast": "sāmrājyadāyinī",
+          "hyphenated": {
+            "deva": "साम्राज्य-दायिनी",
+            "iast": "sāmrājya-dāyinī"
+          },
           "namaIndices": [
             692
           ],
@@ -636,6 +652,10 @@
           "id": "l1-t1",
           "deva": "सत्यसन्धा",
           "iast": "satyasandhā",
+          "hyphenated": {
+            "deva": "सत्य-सन्धा",
+            "iast": "satya-sandhā"
+          },
           "namaIndices": [
             693
           ],
@@ -751,6 +771,10 @@
           "id": "l1-t2",
           "deva": "सागरमेखला",
           "iast": "sāgaramekhalā",
+          "hyphenated": {
+            "deva": "सागर-मेखला",
+            "iast": "sāgara-mekhalā"
+          },
           "namaIndices": [
             694
           ],
@@ -888,8 +912,16 @@
       "index": 689,
       "deva": "राज्यलक्ष्मीः",
       "iast": "rājyalakṣmīḥ",
+      "hyphenated": {
+        "deva": "राज्य-लक्ष्मीः",
+        "iast": "rājya-lakṣmīḥ"
+      },
       "namavaliDeva": "राज्यलक्ष्म्यै",
       "namavaliIast": "rājyalakṣmyai",
+      "namavaliHyphenated": {
+        "deva": "राज्य-लक्ष्म्यै",
+        "iast": "rājya-lakṣmyai"
+      },
       "gloss": "The Fortune Of Sovereignty",
       "translation": "She is the good luck that attaches to rule, the splendour without which a throne is only furniture.",
       "aksaras": [
@@ -1062,8 +1094,16 @@
       "index": 690,
       "deva": "कोशनाथा",
       "iast": "kośanāthā",
+      "hyphenated": {
+        "deva": "कोश-नाथा",
+        "iast": "kośa-nāthā"
+      },
       "namavaliDeva": "कोशनाथायै",
       "namavaliIast": "kośanāthāyai",
+      "namavaliHyphenated": {
+        "deva": "कोश-नाथायै",
+        "iast": "kośa-nāthāyai"
+      },
       "gloss": "Mistress Of The Treasury",
       "translation": "The store from which everything is paid out is under her keeping.",
       "aksaras": [
@@ -1191,8 +1231,16 @@
       "index": 691,
       "deva": "चतुरङ्गबलेश्वरी",
       "iast": "caturaṅgabaleśvarī",
+      "hyphenated": {
+        "deva": "चतुरङ्ग-बलेश्वरी",
+        "iast": "caturaṅga-baleśvarī"
+      },
       "namavaliDeva": "चतुरङ्गबलेश्वर्यै",
       "namavaliIast": "caturaṅgabaleśvaryai",
+      "namavaliHyphenated": {
+        "deva": "चतुरङ्ग-बलेश्वर्यै",
+        "iast": "caturaṅga-baleśvaryai"
+      },
       "gloss": "Commander Of The Fourfold Army",
       "translation": "Elephants, chariots, cavalry and foot all answer to her.",
       "aksaras": [
@@ -1446,8 +1494,16 @@
       "index": 692,
       "deva": "साम्राज्यदायिनी",
       "iast": "sāmrājyadāyinī",
+      "hyphenated": {
+        "deva": "साम्राज्य-दायिनी",
+        "iast": "sāmrājya-dāyinī"
+      },
       "namavaliDeva": "साम्राज्यदायिन्यै",
       "namavaliIast": "sāmrājyadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "साम्राज्य-दायिन्यै",
+        "iast": "sāmrājya-dāyinyai"
+      },
       "gloss": "Giver Of Universal Empire",
       "translation": "Rule over the whole earth is a gift within her power.",
       "aksaras": [
@@ -1653,8 +1709,16 @@
       "index": 693,
       "deva": "सत्यसन्धा",
       "iast": "satyasandhā",
+      "hyphenated": {
+        "deva": "सत्य-सन्धा",
+        "iast": "satya-sandhā"
+      },
       "namavaliDeva": "सत्यसन्धायै",
       "namavaliIast": "satyasandhāyai",
+      "namavaliHyphenated": {
+        "deva": "सत्य-सन्धायै",
+        "iast": "satya-sandhāyai"
+      },
       "gloss": "Whose Pledge Is True",
       "translation": "What she has undertaken she performs, so a promise from her is already an accomplished thing.",
       "aksaras": [
@@ -1798,8 +1862,16 @@
       "index": 694,
       "deva": "सागरमेखला",
       "iast": "sāgaramekhalā",
+      "hyphenated": {
+        "deva": "सागर-मेखला",
+        "iast": "sāgara-mekhalā"
+      },
       "namavaliDeva": "सागरमेखलायै",
       "namavaliIast": "sāgaramekhalāyai",
+      "namavaliHyphenated": {
+        "deva": "सागर-मेखलायै",
+        "iast": "sāgara-mekhalāyai"
+      },
       "gloss": "Girdled By The Ocean",
       "translation": "She wears the sea about her waist as the earth wears it, which is to say the earth is her body.",
       "aksaras": [
