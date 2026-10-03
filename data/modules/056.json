@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महातन्त्रा",
           "iast": "mahātantrā",
+          "hyphenated": {
+            "deva": "महा-तन्त्रा",
+            "iast": "mahā-tantrā"
+          },
           "namaIndices": [
             226
           ],
@@ -135,6 +139,10 @@
           "id": "l0-t1",
           "deva": "महामन्त्रा",
           "iast": "mahāmantrā",
+          "hyphenated": {
+            "deva": "महा-मन्त्रा",
+            "iast": "mahā-mantrā"
+          },
           "namaIndices": [
             227
           ],
@@ -257,6 +265,10 @@
           "id": "l0-t2",
           "deva": "महायन्त्रा",
           "iast": "mahāyantrā",
+          "hyphenated": {
+            "deva": "महा-यन्त्रा",
+            "iast": "mahā-yantrā"
+          },
           "namaIndices": [
             228
           ],
@@ -477,6 +489,10 @@
           "id": "l1-t0",
           "deva": "महायागक्रमाराध्या",
           "iast": "mahāyāgakramārādhyā",
+          "hyphenated": {
+            "deva": "महा-याग-क्रमाराध्या",
+            "iast": "mahā-yāga-kramārādhyā"
+          },
           "namaIndices": [
             230
           ],
@@ -688,6 +704,10 @@
           "id": "l1-t1",
           "deva": "महाभैरवपूजिता",
           "iast": "mahābhairavapūjitā",
+          "hyphenated": {
+            "deva": "महा-भैरव-पूजिता",
+            "iast": "mahā-bhairava-pūjitā"
+          },
           "namaIndices": [
             231
           ],
@@ -873,8 +893,16 @@
       "index": 226,
       "deva": "महातन्त्रा",
       "iast": "mahātantrā",
+      "hyphenated": {
+        "deva": "महा-तन्त्रा",
+        "iast": "mahā-tantrā"
+      },
       "namavaliDeva": "महातन्त्रायै",
       "namavaliIast": "mahātantrāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-तन्त्रायै",
+        "iast": "mahā-tantrāyai"
+      },
       "gloss": "Mistress Of The Great Tantra",
       "translation": "The great tantras are hers in the way a system belongs to the one it describes.",
       "aksaras": [
@@ -1025,8 +1053,16 @@
       "index": 227,
       "deva": "महामन्त्रा",
       "iast": "mahāmantrā",
+      "hyphenated": {
+        "deva": "महा-मन्त्रा",
+        "iast": "mahā-mantrā"
+      },
       "namavaliDeva": "महामन्त्रायै",
       "namavaliIast": "mahāmantrāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-मन्त्रायै",
+        "iast": "mahā-mantrāyai"
+      },
       "gloss": "Mistress Of The Great Mantra",
       "translation": "The fifteen-syllabled formula that summons her is her own possession before it is anyone's practice.",
       "aksaras": [
@@ -1177,8 +1213,16 @@
       "index": 228,
       "deva": "महायन्त्रा",
       "iast": "mahāyantrā",
+      "hyphenated": {
+        "deva": "महा-यन्त्रा",
+        "iast": "mahā-yantrā"
+      },
       "namavaliDeva": "महायन्त्रायै",
       "namavaliIast": "mahāyantrāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-यन्त्रायै",
+        "iast": "mahā-yantrāyai"
+      },
       "gloss": "Mistress Of The Great Yantra",
       "translation": "The nine-triangled diagram is not a picture of her dwelling but a thing she owns and occupies.",
       "aksaras": [
@@ -1451,8 +1495,16 @@
       "index": 230,
       "deva": "महायागक्रमाराध्या",
       "iast": "mahāyāgakramārādhyā",
+      "hyphenated": {
+        "deva": "महा-याग-क्रमाराध्या",
+        "iast": "mahā-yāga-kramārādhyā"
+      },
       "namavaliDeva": "महायागक्रमाराध्यायै",
       "namavaliIast": "mahāyāgakramārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-याग-क्रमाराध्यायै",
+        "iast": "mahā-yāga-kramārādhyāyai"
+      },
       "gloss": "Worshipped By The Great Rite",
       "translation": "She is reached through the full sequence of the great sacrifice, performed in its proper order and not in fragments.",
       "aksaras": [
@@ -1720,8 +1772,16 @@
       "index": 231,
       "deva": "महाभैरवपूजिता",
       "iast": "mahābhairavapūjitā",
+      "hyphenated": {
+        "deva": "महा-भैरव-पूजिता",
+        "iast": "mahā-bhairava-pūjitā"
+      },
       "namavaliDeva": "महाभैरवपूजितायै",
       "namavaliIast": "mahābhairavapūjitāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-भैरव-पूजितायै",
+        "iast": "mahā-bhairava-pūjitāyai"
+      },
       "gloss": "Worshipped By Great Bhairava",
       "translation": "Śiva in his most terrifying form sets his terror aside to worship her.",
       "aksaras": [

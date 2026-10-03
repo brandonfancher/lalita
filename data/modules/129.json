@@ -101,6 +101,10 @@
           "id": "l0-t1",
           "deva": "दृश्यरहिता",
           "iast": "dṛśyarahitā",
+          "hyphenated": {
+            "deva": "दृश्य-रहिता",
+            "iast": "dṛśya-rahitā"
+          },
           "namaIndices": [
             650
           ],
@@ -344,6 +348,10 @@
           "id": "l0-t3",
           "deva": "वेद्यवर्जिता",
           "iast": "vedyavarjitā",
+          "hyphenated": {
+            "deva": "वेद्य-वर्जिता",
+            "iast": "vedya-varjitā"
+          },
           "namaIndices": [
             652
           ],
@@ -840,6 +848,10 @@
           "id": "l1-t4",
           "deva": "युगन्धरा",
           "iast": "yugandharā",
+          "hyphenated": {
+            "deva": "युगन्-धरा",
+            "iast": "yugan-dharā"
+          },
           "namaIndices": [
             657
           ],
@@ -1069,8 +1081,16 @@
       "index": 650,
       "deva": "दृश्यरहिता",
       "iast": "dṛśyarahitā",
+      "hyphenated": {
+        "deva": "दृश्य-रहिता",
+        "iast": "dṛśya-rahitā"
+      },
       "namavaliDeva": "दृश्यरहितायै",
       "namavaliIast": "dṛśyarahitāyai",
+      "namavaliHyphenated": {
+        "deva": "दृश्य-रहितायै",
+        "iast": "dṛśya-rahitāyai"
+      },
       "gloss": "Free Of Anything Visible",
       "translation": "Nothing that could be looked at is left in her once she is seen truly.",
       "aksaras": [
@@ -1353,8 +1373,16 @@
       "index": 652,
       "deva": "वेद्यवर्जिता",
       "iast": "vedyavarjitā",
+      "hyphenated": {
+        "deva": "वेद्य-वर्जिता",
+        "iast": "vedya-varjitā"
+      },
       "namavaliDeva": "वेद्यवर्जितायै",
       "namavaliIast": "vedyavarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "वेद्य-वर्जितायै",
+        "iast": "vedya-varjitāyai"
+      },
       "gloss": "Without Anything To Be Known",
       "translation": "Nothing is left over outside her for her to learn.",
       "aksaras": [
@@ -1955,8 +1983,16 @@
       "index": 657,
       "deva": "युगन्धरा",
       "iast": "yugandharā",
+      "hyphenated": {
+        "deva": "युगन्-धरा",
+        "iast": "yugan-dharā"
+      },
       "namavaliDeva": "युगन्धरायै",
       "namavaliIast": "yugandharāyai",
+      "namavaliHyphenated": {
+        "deva": "युगन्-धरायै",
+        "iast": "yugan-dharāyai"
+      },
       "gloss": "Bearer Of The Yoke",
       "translation": "She carries the yoke of the world's order, holding the ages steady as they turn.",
       "aksaras": [

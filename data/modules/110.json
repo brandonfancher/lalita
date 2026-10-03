@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सर्वौदनप्रीतचित्ता",
           "iast": "sarvaudanaprītacittā",
+          "hyphenated": {
+            "deva": "सर्वौदन-प्रीत-चित्ता",
+            "iast": "sarvaudana-prīta-cittā"
+          },
           "namaIndices": [
             533
           ],
@@ -232,6 +236,10 @@
           "id": "l0-t1",
           "deva": "याकिन्यम्बास्वरूपिणी",
           "iast": "yākinyambāsvarūpiṇī",
+          "hyphenated": {
+            "deva": "याकिन्यम्बा-स्वरूपिणी",
+            "iast": "yākinyambā-svarūpiṇī"
+          },
           "namaIndices": [
             534
           ],
@@ -544,6 +552,10 @@
           "id": "l1-t1",
           "deva": "स्वधाऽमतिर्मेधा",
           "iast": "svadhā'matirmedhā",
+          "hyphenated": {
+            "deva": "स्वधाऽमतिर्-मेधा",
+            "iast": "svadhā'matir-medhā"
+          },
           "namaIndices": [
             536,
             537,
@@ -984,8 +996,16 @@
       "index": 533,
       "deva": "सर्वौदनप्रीतचित्ता",
       "iast": "sarvaudanaprītacittā",
+      "hyphenated": {
+        "deva": "सर्वौदन-प्रीत-चित्ता",
+        "iast": "sarvaudana-prīta-cittā"
+      },
       "namavaliDeva": "सर्वौदनप्रीतचित्तायै",
       "namavaliIast": "sarvaudanaprītacittāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वौदन-प्रीत-चित्तायै",
+        "iast": "sarvaudana-prīta-cittāyai"
+      },
       "gloss": "Pleased By Rice Of Every Kind",
       "translation": "At the crown no single dish is singled out; every sort of cooked offering gladdens her.",
       "aksaras": [
@@ -1261,8 +1281,16 @@
       "index": 534,
       "deva": "याकिन्यम्बास्वरूपिणी",
       "iast": "yākinyambāsvarūpiṇī",
+      "hyphenated": {
+        "deva": "याकिन्यम्बा-स्वरूपिणी",
+        "iast": "yākinyambā-svarūpiṇī"
+      },
       "namavaliDeva": "याकिन्यम्बास्वरूपिण्यै",
       "namavaliIast": "yākinyambāsvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "याकिन्यम्बा-स्वरूपिण्यै",
+        "iast": "yākinyambā-svarūpiṇyai"
+      },
       "gloss": "Embodied As Mother Yākinī",
       "translation": "The last of the cakra goddesses, presiding at the crown, is her own form under another name.",
       "aksaras": [

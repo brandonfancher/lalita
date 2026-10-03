@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "नित्यमुक्ता",
           "iast": "nityamuktā",
+          "hyphenated": {
+            "deva": "नित्य-मुक्ता",
+            "iast": "nitya-muktā"
+          },
           "namaIndices": [
             144
           ],
@@ -520,6 +524,10 @@
           "id": "l1-t0",
           "deva": "नित्यशुद्धा",
           "iast": "nityaśuddhā",
+          "hyphenated": {
+            "deva": "नित्य-शुद्धा",
+            "iast": "nitya-śuddhā"
+          },
           "namaIndices": [
             148
           ],
@@ -649,6 +657,10 @@
           "id": "l1-t1",
           "deva": "नित्यबुद्धा",
           "iast": "nityabuddhā",
+          "hyphenated": {
+            "deva": "नित्य-बुद्धा",
+            "iast": "nitya-buddhā"
+          },
           "namaIndices": [
             149
           ],
@@ -996,8 +1008,16 @@
       "index": 144,
       "deva": "नित्यमुक्ता",
       "iast": "nityamuktā",
+      "hyphenated": {
+        "deva": "नित्य-मुक्ता",
+        "iast": "nitya-muktā"
+      },
       "namavaliDeva": "नित्यमुक्तायै",
       "namavaliIast": "nityamuktāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-मुक्तायै",
+        "iast": "nitya-muktāyai"
+      },
       "gloss": "Forever Free",
       "translation": "She was never bound, so her freedom is not something achieved but something always the case.",
       "aksaras": [
@@ -1617,8 +1637,16 @@
       "index": 148,
       "deva": "नित्यशुद्धा",
       "iast": "nityaśuddhā",
+      "hyphenated": {
+        "deva": "नित्य-शुद्धा",
+        "iast": "nitya-śuddhā"
+      },
       "namavaliDeva": "नित्यशुद्धायै",
       "namavaliIast": "nityaśuddhāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-शुद्धायै",
+        "iast": "nitya-śuddhāyai"
+      },
       "gloss": "Forever Pure",
       "translation": "Her purity is not the result of any washing; it has never at any point been otherwise.",
       "aksaras": [
@@ -1776,8 +1804,16 @@
       "index": 149,
       "deva": "नित्यबुद्धा",
       "iast": "nityabuddhā",
+      "hyphenated": {
+        "deva": "नित्य-बुद्धा",
+        "iast": "nitya-buddhā"
+      },
       "namavaliDeva": "नित्यबुद्धायै",
       "namavaliIast": "nityabuddhāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-बुद्धायै",
+        "iast": "nitya-buddhāyai"
+      },
       "gloss": "Forever Awake",
       "translation": "She never nods off to herself, and her knowing has no first moment to date it from.",
       "aksaras": [

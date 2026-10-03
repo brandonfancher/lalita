@@ -6,6 +6,7 @@
 @custom-variant script-both (&:where(:root:not([data-script="deva"], [data-script="iast"]) *));
 @custom-variant script-deva (&:where([data-script="deva"] *));
 @custom-variant script-iast (&:where([data-script="iast"] *));
+@custom-variant word-breaks (&:where([data-word-breaks="on"] *));
 
 /*
  * A rubricated edition.
@@ -155,6 +156,20 @@ body::after {
 .display {
   font-family: var(--font-garamond), Georgia, serif;
   letter-spacing: -0.005em;
+}
+
+/*
+ * A compound in both its forms, whole and broken into words; the reader's
+ * choice on `<html data-word-breaks>` shows one. See `HyphenatedText`.
+ */
+:root:not([data-word-breaks="on"]) .with-word-breaks,
+[data-word-breaks="on"] .without-word-breaks {
+  display: none;
+}
+
+/* Quieter than the letters, so the eye still reads one word. */
+.word-break {
+  opacity: 0.5;
 }
 
 /* Small uppercase label used above headings and for metadata. */

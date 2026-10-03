@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका",
           "iast": "vadanasmaramāṅgalyagṛhatoraṇacillikā",
+          "hyphenated": {
+            "deva": "वदन-स्मर-माङ्गल्य-गृह-तोरण-चिल्लिका",
+            "iast": "vadana-smara-māṅgalya-gṛha-toraṇa-cillikā"
+          },
           "namaIndices": [
             17
           ],
@@ -403,6 +407,10 @@
           "id": "l1-t0",
           "deva": "वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचना",
           "iast": "vaktralakṣmīparīvāhacalanmīnābhalocanā",
+          "hyphenated": {
+            "deva": "वक्त्र-लक्ष्मी-परीवाह-चलन्-मीनाभ-लोचना",
+            "iast": "vaktra-lakṣmī-parīvāha-calan-mīnābha-locanā"
+          },
           "namaIndices": [
             18
           ],
@@ -813,8 +821,16 @@
       "index": 17,
       "deva": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका",
       "iast": "vadanasmaramāṅgalyagṛhatoraṇacillikā",
+      "hyphenated": {
+        "deva": "वदन-स्मर-माङ्गल्य-गृह-तोरण-चिल्लिका",
+        "iast": "vadana-smara-māṅgalya-gṛha-toraṇa-cillikā"
+      },
       "namavaliDeva": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिकायै",
       "namavaliIast": "vadanasmaramāṅgalyagṛhatoraṇacillikāyai",
+      "namavaliHyphenated": {
+        "deva": "वदन-स्मर-माङ्गल्य-गृह-तोरण-चिल्लिकायै",
+        "iast": "vadana-smara-māṅgalya-gṛha-toraṇa-cillikāyai"
+      },
       "gloss": "Whose Brows Are Love's Archway",
       "translation": "Her face is the festive house of Love, and her two eyebrows are the garlanded arch flung across its doorway.",
       "aksaras": [
@@ -1275,8 +1291,16 @@
       "index": 18,
       "deva": "वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचना",
       "iast": "vaktralakṣmīparīvāhacalanmīnābhalocanā",
+      "hyphenated": {
+        "deva": "वक्त्र-लक्ष्मी-परीवाह-चलन्-मीनाभ-लोचना",
+        "iast": "vaktra-lakṣmī-parīvāha-calan-mīnābha-locanā"
+      },
       "namavaliDeva": "वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचनायै",
       "namavaliIast": "vaktralakṣmīparīvāhacalanmīnābhalocanāyai",
+      "namavaliHyphenated": {
+        "deva": "वक्त्र-लक्ष्मी-परीवाह-चलन्-मीनाभ-लोचनायै",
+        "iast": "vaktra-lakṣmī-parīvāha-calan-mīnābha-locanāyai"
+      },
       "gloss": "Whose Eyes Are Fish In Beauty's Stream",
       "translation": "The loveliness of her face brims over like a channel in flood, and her eyes move in it the way fish dart through running water.",
       "aksaras": [
@@ -1783,7 +1807,7 @@
     18
   ],
   "chant": {
-    "startSec": 192.0,
+    "startSec": 192,
     "endSec": 201.25,
     "confidence": "detected"
   },

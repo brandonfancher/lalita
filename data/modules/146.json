@@ -198,6 +198,10 @@
           "id": "l0-t1",
           "deva": "सर्वलोकेशी",
           "iast": "sarvalokeśī",
+          "hyphenated": {
+            "deva": "सर्व-लोकेशी",
+            "iast": "sarva-lokeśī"
+          },
           "namaIndices": [
             758
           ],
@@ -329,6 +333,10 @@
           "id": "l0-t2",
           "deva": "विश्वधारिणी",
           "iast": "viśvadhāriṇī",
+          "hyphenated": {
+            "deva": "विश्व-धारिणी",
+            "iast": "viśva-dhāriṇī"
+          },
           "namaIndices": [
             759
           ],
@@ -473,6 +481,10 @@
           "id": "l1-t0",
           "deva": "त्रिवर्गदात्री",
           "iast": "trivargadātrī",
+          "hyphenated": {
+            "deva": "त्रि-वर्ग-दात्री",
+            "iast": "tri-varga-dātrī"
+          },
           "namaIndices": [
             760
           ],
@@ -822,6 +834,10 @@
           "id": "l1-t3",
           "deva": "त्रिगुणात्मिका",
           "iast": "triguṇātmikā",
+          "hyphenated": {
+            "deva": "त्रि-गुणात्मिका",
+            "iast": "tri-guṇātmikā"
+          },
           "namaIndices": [
             763
           ],
@@ -1216,8 +1232,16 @@
       "index": 758,
       "deva": "सर्वलोकेशी",
       "iast": "sarvalokeśī",
+      "hyphenated": {
+        "deva": "सर्व-लोकेशी",
+        "iast": "sarva-lokeśī"
+      },
       "namavaliDeva": "सर्वलोकेश्यै",
       "namavaliIast": "sarvalokeśyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-लोकेश्यै",
+        "iast": "sarva-lokeśyai"
+      },
       "gloss": "Ruler Of All The Worlds",
       "translation": "Every world, high or low, has her for its one sovereign.",
       "aksaras": [
@@ -1391,8 +1415,16 @@
       "index": 759,
       "deva": "विश्वधारिणी",
       "iast": "viśvadhāriṇī",
+      "hyphenated": {
+        "deva": "विश्व-धारिणी",
+        "iast": "viśva-dhāriṇī"
+      },
       "namavaliDeva": "विश्वधारिण्यै",
       "namavaliIast": "viśvadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-धारिण्यै",
+        "iast": "viśva-dhāriṇyai"
+      },
       "gloss": "Upholder Of The Universe",
       "translation": "She carries the whole world, and it stays in being only because she keeps holding it.",
       "aksaras": [
@@ -1559,8 +1591,16 @@
       "index": 760,
       "deva": "त्रिवर्गदात्री",
       "iast": "trivargadātrī",
+      "hyphenated": {
+        "deva": "त्रि-वर्ग-दात्री",
+        "iast": "tri-varga-dātrī"
+      },
       "namavaliDeva": "त्रिवर्गदात्र्यै",
       "namavaliIast": "trivargadātryai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-वर्ग-दात्र्यै",
+        "iast": "tri-varga-dātryai"
+      },
       "gloss": "Giver Of The Three Aims",
       "translation": "Right conduct, means and pleasure — the three ends a person may honourably pursue — are all in her gift.",
       "aksaras": [
@@ -2012,8 +2052,16 @@
       "index": 763,
       "deva": "त्रिगुणात्मिका",
       "iast": "triguṇātmikā",
+      "hyphenated": {
+        "deva": "त्रि-गुणात्मिका",
+        "iast": "tri-guṇātmikā"
+      },
       "namavaliDeva": "त्रिगुणात्मिकायै",
       "namavaliIast": "triguṇātmikāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-गुणात्मिकायै",
+        "iast": "tri-guṇātmikāyai"
+      },
       "gloss": "Whose Nature Is The Three Strands",
       "translation": "Purity, energy and inertia are the three threads she is spun from, and she weaves the world out of them.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "बन्धूककुसुमप्रख्या",
           "iast": "bandhūkakusumaprakhyā",
+          "hyphenated": {
+            "deva": "बन्धूक-कुसुम-प्रख्या",
+            "iast": "bandhūka-kusuma-prakhyā"
+          },
           "namaIndices": [
             964
           ],
@@ -290,6 +294,10 @@
           "id": "l0-t2",
           "deva": "लीलाविनोदिनी",
           "iast": "līlāvinodinī",
+          "hyphenated": {
+            "deva": "लीला-विनोदिनी",
+            "iast": "līlā-vinodinī"
+          },
           "namaIndices": [
             966
           ],
@@ -880,8 +888,16 @@
       "index": 964,
       "deva": "बन्धूककुसुमप्रख्या",
       "iast": "bandhūkakusumaprakhyā",
+      "hyphenated": {
+        "deva": "बन्धूक-कुसुम-प्रख्या",
+        "iast": "bandhūka-kusuma-prakhyā"
+      },
       "namavaliDeva": "बन्धूककुसुमप्रख्यायै",
       "namavaliIast": "bandhūkakusumaprakhyāyai",
+      "namavaliHyphenated": {
+        "deva": "बन्धूक-कुसुम-प्रख्यायै",
+        "iast": "bandhūka-kusuma-prakhyāyai"
+      },
       "gloss": "Bright As The Bandhūka Blossom",
       "translation": "Her colour answers to the scarlet flower of the bandhūka, which opens red at midday.",
       "aksaras": [
@@ -1212,8 +1228,16 @@
       "index": 966,
       "deva": "लीलाविनोदिनी",
       "iast": "līlāvinodinī",
+      "hyphenated": {
+        "deva": "लीला-विनोदिनी",
+        "iast": "līlā-vinodinī"
+      },
       "namavaliDeva": "लीलाविनोदिन्यै",
       "namavaliIast": "līlāvinodinyai",
+      "namavaliHyphenated": {
+        "deva": "लीला-विनोदिन्यै",
+        "iast": "līlā-vinodinyai"
+      },
       "gloss": "Delighting In Play",
       "translation": "Creation costs her no effort; she keeps it going as an amusement.",
       "aksaras": [

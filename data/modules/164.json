@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता",
           "iast": "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā",
+          "hyphenated": {
+            "deva": "संसारपङ्क-निर्मग्न-समुद्धरण-पण्डिता",
+            "iast": "saṃsārapaṅka-nirmagna-samuddharaṇa-paṇḍitā"
+          },
           "namaIndices": [
             880
           ],
@@ -418,6 +422,10 @@
           "id": "l1-t0",
           "deva": "यज्ञप्रिया",
           "iast": "yajñapriyā",
+          "hyphenated": {
+            "deva": "यज्ञ-प्रिया",
+            "iast": "yajña-priyā"
+          },
           "namaIndices": [
             881
           ],
@@ -540,6 +548,10 @@
           "id": "l1-t1",
           "deva": "यज्ञकर्त्री",
           "iast": "yajñakartrī",
+          "hyphenated": {
+            "deva": "यज्ञ-कर्त्री",
+            "iast": "yajña-kartrī"
+          },
           "namaIndices": [
             882
           ],
@@ -670,6 +682,10 @@
           "id": "l1-t2",
           "deva": "यजमानस्वरूपिणी",
           "iast": "yajamānasvarūpiṇī",
+          "hyphenated": {
+            "deva": "यजमान-स्वरूपिणी",
+            "iast": "yajamāna-svarūpiṇī"
+          },
           "namaIndices": [
             883
           ],
@@ -863,8 +879,16 @@
       "index": 880,
       "deva": "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता",
       "iast": "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā",
+      "hyphenated": {
+        "deva": "संसारपङ्क-निर्मग्न-समुद्धरण-पण्डिता",
+        "iast": "saṃsārapaṅka-nirmagna-samuddharaṇa-paṇḍitā"
+      },
       "namavaliDeva": "समुद्धरणपण्डितायै",
       "namavaliIast": "samuddharaṇapaṇḍitāyai",
+      "namavaliHyphenated": {
+        "deva": "समुद्धरण-पण्डितायै",
+        "iast": "samuddharaṇa-paṇḍitāyai"
+      },
       "gloss": "Expert At Raising Those Sunk In The Mire Of Rebirth",
       "translation": "Hauling the sunk up out of where they have sunk is a skill, and she has it completely. The name fills the whole first line of its verse: those it rescues are stuck fast in saṃsāra as in mud, and she is not merely willing to pull them out but expert at it.",
       "aksaras": [
@@ -1303,8 +1327,16 @@
       "index": 881,
       "deva": "यज्ञप्रिया",
       "iast": "yajñapriyā",
+      "hyphenated": {
+        "deva": "यज्ञ-प्रिया",
+        "iast": "yajña-priyā"
+      },
       "namavaliDeva": "यज्ञप्रियायै",
       "namavaliIast": "yajñapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "यज्ञ-प्रियायै",
+        "iast": "yajña-priyāyai"
+      },
       "gloss": "To Whom Sacrifice Is Dear",
       "translation": "The offering fire pleases her, and she comes willingly wherever a rite is carried out properly.",
       "aksaras": [
@@ -1455,8 +1487,16 @@
       "index": 882,
       "deva": "यज्ञकर्त्री",
       "iast": "yajñakartrī",
+      "hyphenated": {
+        "deva": "यज्ञ-कर्त्री",
+        "iast": "yajña-kartrī"
+      },
       "namavaliDeva": "यज्ञकर्त्र्यै",
       "namavaliIast": "yajñakartryai",
+      "namavaliHyphenated": {
+        "deva": "यज्ञ-कर्त्र्यै",
+        "iast": "yajña-kartryai"
+      },
       "gloss": "Performer Of The Sacrifice",
       "translation": "She is not only the one the rite honours but the one carrying it out, acting through the priest's hands.",
       "aksaras": [
@@ -1615,8 +1655,16 @@
       "index": 883,
       "deva": "यजमानस्वरूपिणी",
       "iast": "yajamānasvarūpiṇī",
+      "hyphenated": {
+        "deva": "यजमान-स्वरूपिणी",
+        "iast": "yajamāna-svarūpiṇī"
+      },
       "namavaliDeva": "यजमानस्वरूपिण्यै",
       "namavaliIast": "yajamānasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "यजमान-स्वरूपिण्यै",
+        "iast": "yajamāna-svarūpiṇyai"
+      },
       "gloss": "Embodied As The Sacrificer",
       "translation": "The patron who commissions the rite and bears its cost is also her, so offering, priest and patron collapse into a single presence.",
       "aksaras": [

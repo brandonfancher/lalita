@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सुमेरुमध्यशृङ्गस्था",
           "iast": "sumerumadhyaśṛṅgasthā",
+          "hyphenated": {
+            "deva": "सुमेरु-मध्य-शृङ्गस्था",
+            "iast": "sumeru-madhya-śṛṅgasthā"
+          },
           "namaIndices": [
             55
           ],
@@ -239,6 +243,10 @@
           "id": "l0-t1",
           "deva": "श्रीमन्नगरनायिका",
           "iast": "śrīmannagaranāyikā",
+          "hyphenated": {
+            "deva": "श्रीमन्-नगर-नायिका",
+            "iast": "śrīman-nagara-nāyikā"
+          },
           "namaIndices": [
             56
           ],
@@ -449,6 +457,10 @@
           "id": "l1-t0",
           "deva": "चिन्तामणिगृहान्तस्था",
           "iast": "cintāmaṇigṛhāntasthā",
+          "hyphenated": {
+            "deva": "चिन्ता-मणि-गृहान्तस्था",
+            "iast": "cintā-maṇi-gṛhāntasthā"
+          },
           "namaIndices": [
             57
           ],
@@ -682,6 +694,10 @@
           "id": "l1-t1",
           "deva": "पञ्चब्रह्मासनस्थिता",
           "iast": "pañcabrahmāsanasthitā",
+          "hyphenated": {
+            "deva": "पञ्च-ब्रह्मासन-स्थिता",
+            "iast": "pañca-brahmāsana-sthitā"
+          },
           "namaIndices": [
             58
           ],
@@ -913,8 +929,16 @@
       "index": 55,
       "deva": "सुमेरुमध्यशृङ्गस्था",
       "iast": "sumerumadhyaśṛṅgasthā",
+      "hyphenated": {
+        "deva": "सुमेरु-मध्य-शृङ्गस्था",
+        "iast": "sumeru-madhya-śṛṅgasthā"
+      },
       "namavaliDeva": "सुमेरुमध्यशृङ्गस्थायै",
       "namavaliIast": "sumerumadhyaśṛṅgasthāyai",
+      "namavaliHyphenated": {
+        "deva": "सुमेरु-मध्य-शृङ्गस्थायै",
+        "iast": "sumeru-madhya-śṛṅgasthāyai"
+      },
       "gloss": "Dwelling On Meru's Middle Peak",
       "translation": "Of the three summits of the golden mountain she occupies the central one, the point on which the whole world is balanced.",
       "aksaras": [
@@ -1211,8 +1235,16 @@
       "index": 56,
       "deva": "श्रीमन्नगरनायिका",
       "iast": "śrīmannagaranāyikā",
+      "hyphenated": {
+        "deva": "श्रीमन्-नगर-नायिका",
+        "iast": "śrīman-nagara-nāyikā"
+      },
       "namavaliDeva": "श्रीमन्नगरनायिकायै",
       "namavaliIast": "śrīmannagaranāyikāyai",
+      "namavaliHyphenated": {
+        "deva": "श्रीमन्-नगर-नायिकायै",
+        "iast": "śrīman-nagara-nāyikāyai"
+      },
       "gloss": "Lady Of The Resplendent City",
       "translation": "The shining city built in tiers around her is hers to govern, and she is its presiding lady.",
       "aksaras": [
@@ -1459,8 +1491,16 @@
       "index": 57,
       "deva": "चिन्तामणिगृहान्तस्था",
       "iast": "cintāmaṇigṛhāntasthā",
+      "hyphenated": {
+        "deva": "चिन्ता-मणि-गृहान्तस्था",
+        "iast": "cintā-maṇi-gṛhāntasthā"
+      },
       "namavaliDeva": "चिन्तामणिगृहान्तस्थायै",
       "namavaliIast": "cintāmaṇigṛhāntasthāyai",
+      "namavaliHyphenated": {
+        "deva": "चिन्ता-मणि-गृहान्तस्थायै",
+        "iast": "cintā-maṇi-gṛhāntasthāyai"
+      },
       "gloss": "Dwelling In The Wish-Gem House",
       "translation": "At the centre of her city stands a house built out of the gem that grants whatever is thought of, and she lives within it.",
       "aksaras": [
@@ -1764,8 +1804,16 @@
       "index": 58,
       "deva": "पञ्चब्रह्मासनस्थिता",
       "iast": "pañcabrahmāsanasthitā",
+      "hyphenated": {
+        "deva": "पञ्च-ब्रह्मासन-स्थिता",
+        "iast": "pañca-brahmāsana-sthitā"
+      },
       "namavaliDeva": "पञ्चब्रह्मासनस्थितायै",
       "namavaliIast": "pañcabrahmāsanasthitāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-ब्रह्मासन-स्थितायै",
+        "iast": "pañca-brahmāsana-sthitāyai"
+      },
       "gloss": "Seated On The Couch Of Five Brahmās",
       "translation": "Her couch is made of five great gods who have taken the shape of its legs and its plank, so that the whole hierarchy of creation supports her.",
       "aksaras": [

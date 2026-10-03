@@ -64,6 +64,10 @@
           "id": "l0-t1",
           "deva": "प्रत्यक्चितीरूपा",
           "iast": "pratyakcitīrūpā",
+          "hyphenated": {
+            "deva": "प्रत्यक्-चिती-रूपा",
+            "iast": "pratyak-citī-rūpā"
+          },
           "namaIndices": [
             367
           ],
@@ -347,6 +351,10 @@
           "id": "l0-t3",
           "deva": "परदेवता",
           "iast": "paradevatā",
+          "hyphenated": {
+            "deva": "पर-देवता",
+            "iast": "para-devatā"
+          },
           "namaIndices": [
             369
           ],
@@ -545,6 +553,10 @@
           "id": "l1-t1",
           "deva": "वैखरीरूपा",
           "iast": "vaikharīrūpā",
+          "hyphenated": {
+            "deva": "वैखरी-रूपा",
+            "iast": "vaikharī-rūpā"
+          },
           "namaIndices": [
             371
           ],
@@ -668,6 +680,10 @@
           "id": "l1-t2",
           "deva": "भक्तमानसहंसिका",
           "iast": "bhaktamānasahaṃsikā",
+          "hyphenated": {
+            "deva": "भक्त-मानस-हंसिका",
+            "iast": "bhakta-mānasa-haṃsikā"
+          },
           "namaIndices": [
             372
           ],
@@ -923,8 +939,16 @@
       "index": 367,
       "deva": "प्रत्यक्चितीरूपा",
       "iast": "pratyakcitīrūpā",
+      "hyphenated": {
+        "deva": "प्रत्यक्-चिती-रूपा",
+        "iast": "pratyak-citī-rūpā"
+      },
       "namavaliDeva": "प्रत्यक् चितीरूपायै",
       "namavaliIast": "pratyak citīrūpāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रत्यक् चिती-रूपायै",
+        "iast": "pratyak citī-rūpāyai"
+      },
       "gloss": "Formed Of Inward Consciousness",
       "translation": "Her form is awareness turned back on itself, facing inward rather than out at objects.",
       "aksaras": [
@@ -1263,8 +1287,16 @@
       "index": 369,
       "deva": "परदेवता",
       "iast": "paradevatā",
+      "hyphenated": {
+        "deva": "पर-देवता",
+        "iast": "para-devatā"
+      },
       "namavaliDeva": "परदेवतायै",
       "namavaliIast": "paradevatāyai",
+      "namavaliHyphenated": {
+        "deva": "पर-देवतायै",
+        "iast": "para-devatāyai"
+      },
       "gloss": "The Supreme Deity",
       "translation": "Whatever else is called a god, she is the divinity above them.",
       "aksaras": [
@@ -1496,8 +1528,16 @@
       "index": 371,
       "deva": "वैखरीरूपा",
       "iast": "vaikharīrūpā",
+      "hyphenated": {
+        "deva": "वैखरी-रूपा",
+        "iast": "vaikharī-rūpā"
+      },
       "namavaliDeva": "वैखरीरूपायै",
       "namavaliIast": "vaikharīrūpāyai",
+      "namavaliHyphenated": {
+        "deva": "वैखरी-रूपायै",
+        "iast": "vaikharī-rūpāyai"
+      },
       "gloss": "Formed Of Uttered Speech",
       "translation": "She takes shape as vaikharī, speech that has come all the way out into audible, sentence-shaped sound.",
       "aksaras": [
@@ -1649,8 +1689,16 @@
       "index": 372,
       "deva": "भक्तमानसहंसिका",
       "iast": "bhaktamānasahaṃsikā",
+      "hyphenated": {
+        "deva": "भक्त-मानस-हंसिका",
+        "iast": "bhakta-mānasa-haṃsikā"
+      },
       "namavaliDeva": "भक्तमानसहंसिकायै",
       "namavaliIast": "bhaktamānasahaṃsikāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्त-मानस-हंसिकायै",
+        "iast": "bhakta-mānasa-haṃsikāyai"
+      },
       "gloss": "Swan On The Devotee's Lake",
       "translation": "The devotee's mind is the lake Mānasa, and she is the swan that floats on it.",
       "aksaras": [

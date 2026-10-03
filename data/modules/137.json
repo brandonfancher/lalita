@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "देशकालापरिच्छिन्ना",
           "iast": "deśakālāparicchinnā",
+          "hyphenated": {
+            "deva": "देश-कालापरिच्छिन्ना",
+            "iast": "deśa-kālāparicchinnā"
+          },
           "namaIndices": [
             701
           ],
@@ -314,6 +318,10 @@
           "id": "l0-t2",
           "deva": "सर्वमोहिनी",
           "iast": "sarvamohinī",
+          "hyphenated": {
+            "deva": "सर्व-मोहिनी",
+            "iast": "sarva-mohinī"
+          },
           "namaIndices": [
             703
           ],
@@ -770,6 +778,10 @@
           "id": "l1-t3",
           "deva": "गुह्यरूपिणी",
           "iast": "guhyarūpiṇī",
+          "hyphenated": {
+            "deva": "गुह्य-रूपिणी",
+            "iast": "guhya-rūpiṇī"
+          },
           "namaIndices": [
             707
           ],
@@ -912,8 +924,16 @@
       "index": 701,
       "deva": "देशकालापरिच्छिन्ना",
       "iast": "deśakālāparicchinnā",
+      "hyphenated": {
+        "deva": "देश-कालापरिच्छिन्ना",
+        "iast": "deśa-kālāparicchinnā"
+      },
       "namavaliDeva": "देशकालापरिच्छिन्नायै",
       "namavaliIast": "deśakālāparicchinnāyai",
+      "namavaliHyphenated": {
+        "deva": "देश-कालापरिच्छिन्नायै",
+        "iast": "deśa-kālāparicchinnāyai"
+      },
       "gloss": "Unbounded By Space And Time",
       "translation": "Neither place nor moment can fence her in, for she is wholly present wherever and whenever anything is.",
       "aksaras": [
@@ -1301,8 +1321,16 @@
       "index": 703,
       "deva": "सर्वमोहिनी",
       "iast": "sarvamohinī",
+      "hyphenated": {
+        "deva": "सर्व-मोहिनी",
+        "iast": "sarva-mohinī"
+      },
       "namavaliDeva": "सर्वमोहिन्यै",
       "namavaliIast": "sarvamohinyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-मोहिन्यै",
+        "iast": "sarva-mohinyai"
+      },
       "gloss": "Enchantress Of All",
       "translation": "Everything that lives is drawn out of itself by her beauty, so that she bewilders the whole of creation.",
       "aksaras": [
@@ -1852,8 +1880,16 @@
       "index": 707,
       "deva": "गुह्यरूपिणी",
       "iast": "guhyarūpiṇī",
+      "hyphenated": {
+        "deva": "गुह्य-रूपिणी",
+        "iast": "guhya-rūpiṇī"
+      },
       "namavaliDeva": "गुह्यरूपिण्यै",
       "namavaliIast": "guhyarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "गुह्य-रूपिण्यै",
+        "iast": "guhya-rūpiṇyai"
+      },
       "gloss": "Whose Form Is Secret",
       "translation": "Her real shape is a mystery, disclosed only where it is kept hidden.",
       "aksaras": [

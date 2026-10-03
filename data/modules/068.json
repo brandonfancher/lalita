@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "श्रुतिसीमन्तसिन्दूरीकृतपादाब्जधूलिका",
           "iast": "śrutisīmantasindūrīkṛtapādābjadhūlikā",
+          "hyphenated": {
+            "deva": "श्रुति-सीमन्त-सिन्दूरीकृत-पादाब्ज-धूलिका",
+            "iast": "śruti-sīmanta-sindūrīkṛta-pādābja-dhūlikā"
+          },
           "namaIndices": [
             289
           ],
@@ -445,6 +449,10 @@
           "id": "l1-t0",
           "deva": "सकलागमसन्दोहशुक्तिसम्पुटमौक्तिका",
           "iast": "sakalāgamasandohaśuktisampuṭamauktikā",
+          "hyphenated": {
+            "deva": "सकलागम-सन्दोह-शुक्ति-सम्पुट-मौक्तिका",
+            "iast": "sakalāgama-sandoha-śukti-sampuṭa-mauktikā"
+          },
           "namaIndices": [
             290
           ],
@@ -847,8 +855,16 @@
       "index": 289,
       "deva": "श्रुतिसीमन्तसिन्दूरीकृतपादाब्जधूलिका",
       "iast": "śrutisīmantasindūrīkṛtapādābjadhūlikā",
+      "hyphenated": {
+        "deva": "श्रुति-सीमन्त-सिन्दूरीकृत-पादाब्ज-धूलिका",
+        "iast": "śruti-sīmanta-sindūrīkṛta-pādābja-dhūlikā"
+      },
       "namavaliDeva": "श्रुतिसीमन्तसिन्दूरीकृत पादाब्जधूलिकायै",
       "namavaliIast": "śrutisīmantasindūrīkṛta pādābjadhūlikāyai",
+      "namavaliHyphenated": {
+        "deva": "श्रुति-सीमन्त-सिन्दूरीकृत पादाब्ज-धूलिकायै",
+        "iast": "śruti-sīmanta-sindūrīkṛta pādābja-dhūlikāyai"
+      },
       "gloss": "Whose Foot-Dust Reddens The Parting Of The Vedas",
       "translation": "The Upaniṣads bow so low that the dust of her lotus feet settles along their hair-parting like a married woman's vermilion.",
       "aksaras": [
@@ -1350,8 +1366,16 @@
       "index": 290,
       "deva": "सकलागमसन्दोहशुक्तिसम्पुटमौक्तिका",
       "iast": "sakalāgamasandohaśuktisampuṭamauktikā",
+      "hyphenated": {
+        "deva": "सकलागम-सन्दोह-शुक्ति-सम्पुट-मौक्तिका",
+        "iast": "sakalāgama-sandoha-śukti-sampuṭa-mauktikā"
+      },
       "namavaliDeva": "सकलागमसन्दोहशुक्तिसम्पुटमौक्तिकायै",
       "namavaliIast": "sakalāgamasandohaśuktisampuṭamauktikāyai",
+      "namavaliHyphenated": {
+        "deva": "सकलागम-सन्दोह-शुक्ति-सम्पुट-मौक्तिकायै",
+        "iast": "sakalāgama-sandoha-śukti-sampuṭa-mauktikāyai"
+      },
       "gloss": "Pearl In The Shell Of All Scripture",
       "translation": "The mass of revealed texts closes around her like the two halves of an oyster around its one pearl.",
       "aksaras": [

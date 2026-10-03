@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सर्वोपाधिविनिर्मुक्ता",
           "iast": "sarvopādhivinirmuktā",
+          "hyphenated": {
+            "deva": "सर्वोपाधि-विनिर्मुक्ता",
+            "iast": "sarvopādhi-vinirmuktā"
+          },
           "namaIndices": [
             708
           ],
@@ -253,6 +257,10 @@
           "id": "l0-t1",
           "deva": "सदाशिवपतिव्रता",
           "iast": "sadāśivapativratā",
+          "hyphenated": {
+            "deva": "सदा-शिव-पति-व्रता",
+            "iast": "sadā-śiva-pati-vratā"
+          },
           "namaIndices": [
             709
           ],
@@ -700,6 +708,10 @@
           "id": "l1-t2",
           "deva": "गुरुमण्डलरूपिणी",
           "iast": "gurumaṇḍalarūpiṇī",
+          "hyphenated": {
+            "deva": "गुरु-मण्डल-रूपिणी",
+            "iast": "guru-maṇḍala-rūpiṇī"
+          },
           "namaIndices": [
             713
           ],
@@ -900,8 +912,16 @@
       "index": 708,
       "deva": "सर्वोपाधिविनिर्मुक्ता",
       "iast": "sarvopādhivinirmuktā",
+      "hyphenated": {
+        "deva": "सर्वोपाधि-विनिर्मुक्ता",
+        "iast": "sarvopādhi-vinirmuktā"
+      },
       "namavaliDeva": "सर्वोपाधिविनिर्मुक्तायै",
       "namavaliIast": "sarvopādhivinirmuktāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वोपाधि-विनिर्मुक्तायै",
+        "iast": "sarvopādhi-vinirmuktāyai"
+      },
       "gloss": "Free Of Every Limitation",
       "translation": "No adjunct of body, name or condition attaches to her; she stands loose from all of them.",
       "aksaras": [
@@ -1184,8 +1204,16 @@
       "index": 709,
       "deva": "सदाशिवपतिव्रता",
       "iast": "sadāśivapativratā",
+      "hyphenated": {
+        "deva": "सदा-शिव-पति-व्रता",
+        "iast": "sadā-śiva-pati-vratā"
+      },
       "namavaliDeva": "सदाशिवपतिव्रतायै",
       "namavaliIast": "sadāśivapativratāyai",
+      "namavaliHyphenated": {
+        "deva": "सदा-शिव-पति-व्रतायै",
+        "iast": "sadā-śiva-pati-vratāyai"
+      },
       "gloss": "Wife Devoted To Sadāśiva",
       "translation": "Her husband Sadāśiva is her one observance, and she keeps that vow perfectly.",
       "aksaras": [
@@ -1746,8 +1774,16 @@
       "index": 713,
       "deva": "गुरुमण्डलरूपिणी",
       "iast": "gurumaṇḍalarūpiṇī",
+      "hyphenated": {
+        "deva": "गुरु-मण्डल-रूपिणी",
+        "iast": "guru-maṇḍala-rūpiṇī"
+      },
       "namavaliDeva": "गुरुमण्डलरूपिण्यै",
       "namavaliIast": "gurumaṇḍalarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "गुरु-मण्डल-रूपिण्यै",
+        "iast": "guru-maṇḍala-rūpiṇyai"
+      },
       "gloss": "Embodied As The Circle Of Gurus",
       "translation": "The whole succession of teachers is her body, so that reverence paid to any of them reaches her.",
       "aksaras": [

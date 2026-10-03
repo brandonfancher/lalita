@@ -54,7 +54,7 @@ export function ShlokaArt({ id, namas }: { id: string; namas: Nama[] }) {
 
   const noteNamas: NoteNama[] = namas
     .filter((n) => artwork.entries.some((x) => "nama" in x && x.nama === n.index))
-    .map(({ index, deva, iast, gloss }) => ({ index, deva, iast, gloss }));
+    .map(({ index, deva, iast, hyphenated, gloss }) => ({ index, deva, iast, hyphenated, gloss }));
 
   return (
     <>

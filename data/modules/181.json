@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अभ्यासातिशयज्ञाता",
           "iast": "abhyāsātiśayajñātā",
+          "hyphenated": {
+            "deva": "अभ्यासातिशय-ज्ञाता",
+            "iast": "abhyāsātiśaya-jñātā"
+          },
           "namaIndices": [
             990
           ],
@@ -222,6 +226,10 @@
           "id": "l0-t1",
           "deva": "षडध्वातीतरूपिणी",
           "iast": "ṣaḍadhvātītarūpiṇī",
+          "hyphenated": {
+            "deva": "षडध्वातीत-रूपिणी",
+            "iast": "ṣaḍadhvātīta-rūpiṇī"
+          },
           "namaIndices": [
             991
           ],
@@ -424,6 +432,10 @@
           "id": "l1-t0",
           "deva": "अव्याजकरुणामूर्तिरज्ञानध्वान्तदीपिका",
           "iast": "avyājakaruṇāmūrtirajñānadhvāntadīpikā",
+          "hyphenated": {
+            "deva": "अव्याज-करुणा-मूर्तिरज्ञान-ध्वान्त-दीपिका",
+            "iast": "avyāja-karuṇā-mūrtirajñāna-dhvānta-dīpikā"
+          },
           "namaIndices": [
             992,
             993
@@ -854,8 +866,16 @@
       "index": 990,
       "deva": "अभ्यासातिशयज्ञाता",
       "iast": "abhyāsātiśayajñātā",
+      "hyphenated": {
+        "deva": "अभ्यासातिशय-ज्ञाता",
+        "iast": "abhyāsātiśaya-jñātā"
+      },
       "namavaliDeva": "अभ्यासातिशयज्ञातायै",
       "namavaliIast": "abhyāsātiśayajñātāyai",
+      "namavaliHyphenated": {
+        "deva": "अभ्यासातिशय-ज्ञातायै",
+        "iast": "abhyāsātiśaya-jñātāyai"
+      },
       "gloss": "Known Through Sustained Practice",
       "translation": "She becomes known only where practice has been carried well past the ordinary measure.",
       "aksaras": [
@@ -1107,8 +1127,16 @@
       "index": 991,
       "deva": "षडध्वातीतरूपिणी",
       "iast": "ṣaḍadhvātītarūpiṇī",
+      "hyphenated": {
+        "deva": "षडध्वातीत-रूपिणी",
+        "iast": "ṣaḍadhvātīta-rūpiṇī"
+      },
       "namavaliDeva": "षडध्वातीतरूपिण्यै",
       "namavaliIast": "ṣaḍadhvātītarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "षडध्वातीत-रूपिण्यै",
+        "iast": "ṣaḍadhvātīta-rūpiṇyai"
+      },
       "gloss": "Whose Form Transcends Six Paths",
       "translation": "The six courses by which words and worlds are mapped out all lie behind the form she wears.",
       "aksaras": [
@@ -1362,8 +1390,16 @@
       "index": 992,
       "deva": "अव्याजकरुणामूर्तिः",
       "iast": "avyājakaruṇāmūrtiḥ",
+      "hyphenated": {
+        "deva": "अव्याज-करुणा-मूर्तिः",
+        "iast": "avyāja-karuṇā-mūrtiḥ"
+      },
       "namavaliDeva": "अव्याजकरुणामूर्तये",
       "namavaliIast": "avyājakaruṇāmūrtaye",
+      "namavaliHyphenated": {
+        "deva": "अव्याज-करुणा-मूर्तये",
+        "iast": "avyāja-karuṇā-mūrtaye"
+      },
       "gloss": "Embodiment Of Guileless Mercy",
       "translation": "She is compassion given a body, and that compassion asks for nothing and pretends nothing.",
       "aksaras": [
@@ -1636,8 +1672,16 @@
       "index": 993,
       "deva": "अज्ञानध्वान्तदीपिका",
       "iast": "ajñānadhvāntadīpikā",
+      "hyphenated": {
+        "deva": "अज्ञान-ध्वान्त-दीपिका",
+        "iast": "ajñāna-dhvānta-dīpikā"
+      },
       "namavaliDeva": "अज्ञानध्वान्तदीपिकायै",
       "namavaliIast": "ajñānadhvāntadīpikāyai",
+      "namavaliHyphenated": {
+        "deva": "अज्ञान-ध्वान्त-दीपिकायै",
+        "iast": "ajñāna-dhvānta-dīpikāyai"
+      },
       "gloss": "Lamp In The Dark Of Ignorance",
       "translation": "She is the small steady light by which the dark of not-knowing is put out.",
       "aksaras": [

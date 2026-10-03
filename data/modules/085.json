@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "नित्यक्लिन्ना",
           "iast": "nityaklinnā",
+          "hyphenated": {
+            "deva": "नित्य-क्लिन्ना",
+            "iast": "nitya-klinnā"
+          },
           "namaIndices": [
             388
           ],
@@ -256,6 +260,10 @@
           "id": "l0-t2",
           "deva": "निर्वाणसुखदायिनी",
           "iast": "nirvāṇasukhadāyinī",
+          "hyphenated": {
+            "deva": "निर्वाण-सुख-दायिनी",
+            "iast": "nirvāṇa-sukha-dāyinī"
+          },
           "namaIndices": [
             390
           ],
@@ -465,6 +473,10 @@
           "id": "l1-t0",
           "deva": "नित्याषोडशिकारूपा",
           "iast": "nityāṣoḍaśikārūpā",
+          "hyphenated": {
+            "deva": "नित्या-षोडशिका-रूपा",
+            "iast": "nityā-ṣoḍaśikā-rūpā"
+          },
           "namaIndices": [
             391
           ],
@@ -675,6 +687,10 @@
           "id": "l1-t1",
           "deva": "श्रीकण्ठार्धशरीरिणी",
           "iast": "śrīkaṇṭhārdhaśarīriṇī",
+          "hyphenated": {
+            "deva": "श्री-कण्ठार्ध-शरीरिणी",
+            "iast": "śrī-kaṇṭhārdha-śarīriṇī"
+          },
           "namaIndices": [
             392
           ],
@@ -905,8 +921,16 @@
       "index": 388,
       "deva": "नित्यक्लिन्ना",
       "iast": "nityaklinnā",
+      "hyphenated": {
+        "deva": "नित्य-क्लिन्ना",
+        "iast": "nitya-klinnā"
+      },
       "namavaliDeva": "नित्यक्लिन्नायै",
       "namavaliIast": "nityaklinnāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्य-क्लिन्नायै",
+        "iast": "nitya-klinnāyai"
+      },
       "gloss": "Ever Moist",
       "translation": "She is never dry towards those who ask; the tenderness in her is always already wet, as her name among the Nityā goddesses says.",
       "aksaras": [
@@ -1208,8 +1232,16 @@
       "index": 390,
       "deva": "निर्वाणसुखदायिनी",
       "iast": "nirvāṇasukhadāyinī",
+      "hyphenated": {
+        "deva": "निर्वाण-सुख-दायिनी",
+        "iast": "nirvāṇa-sukha-dāyinī"
+      },
       "namavaliDeva": "निर्वाणसुखदायिन्यै",
       "namavaliIast": "nirvāṇasukhadāyinyai",
+      "namavaliHyphenated": {
+        "deva": "निर्वाण-सुख-दायिन्यै",
+        "iast": "nirvāṇa-sukha-dāyinyai"
+      },
       "gloss": "Giver Of The Bliss Of Release",
       "translation": "What she hands over at the end is the happiness of being blown out, with nothing further to want.",
       "aksaras": [
@@ -1455,8 +1487,16 @@
       "index": 391,
       "deva": "नित्याषोडशिकारूपा",
       "iast": "nityāṣoḍaśikārūpā",
+      "hyphenated": {
+        "deva": "नित्या-षोडशिका-रूपा",
+        "iast": "nityā-ṣoḍaśikā-rūpā"
+      },
       "namavaliDeva": "नित्याषोडशिकारूपायै",
       "namavaliIast": "nityāṣoḍaśikārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "नित्या-षोडशिका-रूपायै",
+        "iast": "nityā-ṣoḍaśikā-rūpāyai"
+      },
       "gloss": "Formed Of The Sixteen Nityās",
       "translation": "Her body is the set of sixteen eternal goddesses, of whom she herself is the sixteenth and the whole.",
       "aksaras": [
@@ -1710,8 +1750,16 @@
       "index": 392,
       "deva": "श्रीकण्ठार्धशरीरिणी",
       "iast": "śrīkaṇṭhārdhaśarīriṇī",
+      "hyphenated": {
+        "deva": "श्री-कण्ठार्ध-शरीरिणी",
+        "iast": "śrī-kaṇṭhārdha-śarīriṇī"
+      },
       "namavaliDeva": "श्रीकण्ठार्धशरीरिण्यै",
       "namavaliIast": "śrīkaṇṭhārdhaśarīriṇyai",
+      "namavaliHyphenated": {
+        "deva": "श्री-कण्ठार्ध-शरीरिण्यै",
+        "iast": "śrī-kaṇṭhārdha-śarīriṇyai"
+      },
       "gloss": "Half The Body Of Śiva",
       "translation": "She occupies one side of Śrīkaṇṭha's frame, so that the pair of them make a single figure.",
       "aksaras": [

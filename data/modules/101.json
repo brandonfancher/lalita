@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कालरात्र्यादिशक्त्यौघवृता",
           "iast": "kālarātryādiśaktyaughavṛtā",
+          "hyphenated": {
+            "deva": "काल-रात्र्यादि-शक्त्यौघ-वृता",
+            "iast": "kāla-rātryādi-śaktyaugha-vṛtā"
+          },
           "namaIndices": [
             491
           ],
@@ -302,6 +306,10 @@
           "id": "l0-t1",
           "deva": "स्निग्धौदनप्रिया",
           "iast": "snigdhaudanapriyā",
+          "hyphenated": {
+            "deva": "स्निग्धौदन-प्रिया",
+            "iast": "snigdhaudana-priyā"
+          },
           "namaIndices": [
             492
           ],
@@ -493,6 +501,10 @@
           "id": "l1-t0",
           "deva": "महावीरेन्द्रवरदा",
           "iast": "mahāvīrendravaradā",
+          "hyphenated": {
+            "deva": "महा-वीरेन्द्र-वरदा",
+            "iast": "mahā-vīrendra-varadā"
+          },
           "namaIndices": [
             493
           ],
@@ -697,6 +709,10 @@
           "id": "l1-t1",
           "deva": "राकिण्यम्बास्वरूपिणी",
           "iast": "rākiṇyambāsvarūpiṇī",
+          "hyphenated": {
+            "deva": "राकिण्यम्बा-स्वरूपिणी",
+            "iast": "rākiṇyambā-svarūpiṇī"
+          },
           "namaIndices": [
             494
           ],
@@ -934,8 +950,16 @@
       "index": 491,
       "deva": "कालरात्र्यादिशक्त्यौघवृता",
       "iast": "kālarātryādiśaktyaughavṛtā",
+      "hyphenated": {
+        "deva": "काल-रात्र्यादि-शक्त्यौघ-वृता",
+        "iast": "kāla-rātryādi-śaktyaugha-vṛtā"
+      },
       "namavaliDeva": "कालरात्र्यादिशक्त्यौघवृतायै",
       "namavaliIast": "kālarātryādiśaktyaughavṛtāyai",
+      "namavaliHyphenated": {
+        "deva": "काल-रात्र्यादि-शक्त्यौघ-वृतायै",
+        "iast": "kāla-rātryādi-śaktyaugha-vṛtāyai"
+      },
       "gloss": "Ringed By The Host Of Powers From Kālarātri On",
       "translation": "A flood of śaktis, Kālarātri leading them, closes around her in the heart wheel.",
       "aksaras": [
@@ -1309,8 +1333,16 @@
       "index": 492,
       "deva": "स्निग्धौदनप्रिया",
       "iast": "snigdhaudanapriyā",
+      "hyphenated": {
+        "deva": "स्निग्धौदन-प्रिया",
+        "iast": "snigdhaudana-priyā"
+      },
       "namavaliDeva": "स्निग्धौदनप्रियायै",
       "namavaliIast": "snigdhaudanapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "स्निग्धौदन-प्रियायै",
+        "iast": "snigdhaudana-priyāyai"
+      },
       "gloss": "Fond Of Rich Boiled Rice",
       "translation": "What is set before her is boiled rice made glossy with butter.",
       "aksaras": [
@@ -1538,8 +1570,16 @@
       "index": 493,
       "deva": "महावीरेन्द्रवरदा",
       "iast": "mahāvīrendravaradā",
+      "hyphenated": {
+        "deva": "महा-वीरेन्द्र-वरदा",
+        "iast": "mahā-vīrendra-varadā"
+      },
       "namavaliDeva": "महावीरेन्द्रवरदायै",
       "namavaliIast": "mahāvīrendravaradāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-वीरेन्द्र-वरदायै",
+        "iast": "mahā-vīrendra-varadāyai"
+      },
       "gloss": "Granting Boons To The Foremost Of Heroes",
       "translation": "To the greatest of the heroic adepts she gives whatever they ask for.",
       "aksaras": [
@@ -1814,8 +1854,16 @@
       "index": 494,
       "deva": "राकिण्यम्बास्वरूपिणी",
       "iast": "rākiṇyambāsvarūpiṇī",
+      "hyphenated": {
+        "deva": "राकिण्यम्बा-स्वरूपिणी",
+        "iast": "rākiṇyambā-svarūpiṇī"
+      },
       "namavaliDeva": "राकिण्यम्बास्वरूपिण्यै",
       "namavaliIast": "rākiṇyambāsvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "राकिण्यम्बा-स्वरूपिण्यै",
+        "iast": "rākiṇyambā-svarūpiṇyai"
+      },
       "gloss": "Embodying Mother Rākiṇī",
       "translation": "Rākiṇī, the goddess who holds the heart wheel, is her own shape.",
       "aksaras": [
@@ -2094,7 +2142,7 @@
     494
   ],
   "chant": {
-    "startSec": 1109.0,
+    "startSec": 1109,
     "endSec": 1118.93,
     "confidence": "detected"
   },

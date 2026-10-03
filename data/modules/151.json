@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सत्यज्ञानानन्दरूपा",
           "iast": "satyajñānānandarūpā",
+          "hyphenated": {
+            "deva": "सत्य-ज्ञानानन्द-रूपा",
+            "iast": "satya-jñānānanda-rūpā"
+          },
           "namaIndices": [
             791
           ],
@@ -232,6 +236,10 @@
           "id": "l0-t1",
           "deva": "सामरस्यपरायणा",
           "iast": "sāmarasyaparāyaṇā",
+          "hyphenated": {
+            "deva": "सामरस्य-परायणा",
+            "iast": "sāmarasya-parāyaṇā"
+          },
           "namaIndices": [
             792
           ],
@@ -527,6 +535,10 @@
           "id": "l1-t1",
           "deva": "कलामाला",
           "iast": "kalāmālā",
+          "hyphenated": {
+            "deva": "कला-माला",
+            "iast": "kalā-mālā"
+          },
           "namaIndices": [
             794
           ],
@@ -723,6 +735,10 @@
           "id": "l1-t3",
           "deva": "कामरूपिणी",
           "iast": "kāmarūpiṇī",
+          "hyphenated": {
+            "deva": "काम-रूपिणी",
+            "iast": "kāma-rūpiṇī"
+          },
           "namaIndices": [
             796
           ],
@@ -850,8 +866,16 @@
       "index": 791,
       "deva": "सत्यज्ञानानन्दरूपा",
       "iast": "satyajñānānandarūpā",
+      "hyphenated": {
+        "deva": "सत्य-ज्ञानानन्द-रूपा",
+        "iast": "satya-jñānānanda-rūpā"
+      },
       "namavaliDeva": "सत्यज्ञानानन्दरूपायै",
       "namavaliIast": "satyajñānānandarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "सत्य-ज्ञानानन्द-रूपायै",
+        "iast": "satya-jñānānanda-rūpāyai"
+      },
       "gloss": "Whose Form Is Truth, Knowledge And Bliss",
       "translation": "What is real, what knows, and what is happy are not three things in her but one.",
       "aksaras": [
@@ -1118,8 +1142,16 @@
       "index": 792,
       "deva": "सामरस्यपरायणा",
       "iast": "sāmarasyaparāyaṇā",
+      "hyphenated": {
+        "deva": "सामरस्य-परायणा",
+        "iast": "sāmarasya-parāyaṇā"
+      },
       "namavaliDeva": "सामरस्यपरायणायै",
       "namavaliIast": "sāmarasyaparāyaṇāyai",
+      "namavaliHyphenated": {
+        "deva": "सामरस्य-परायणायै",
+        "iast": "sāmarasya-parāyaṇāyai"
+      },
       "gloss": "Intent On Perfect Union",
       "translation": "Her whole aim is sāmarasya, the state in which two things share a single flavour and stop being two.",
       "aksaras": [
@@ -1449,8 +1481,16 @@
       "index": 794,
       "deva": "कलामाला",
       "iast": "kalāmālā",
+      "hyphenated": {
+        "deva": "कला-माला",
+        "iast": "kalā-mālā"
+      },
       "namavaliDeva": "कलामालायै",
       "namavaliIast": "kalāmālāyai",
+      "namavaliHyphenated": {
+        "deva": "कला-मालायै",
+        "iast": "kalā-mālāyai"
+      },
       "gloss": "Garland Of Digits",
       "translation": "The sixteen digits of the moon hang together on her as a strand of beads, and the arts they stand for are the same garland.",
       "aksaras": [
@@ -1706,8 +1746,16 @@
       "index": 796,
       "deva": "कामरूपिणी",
       "iast": "kāmarūpiṇī",
+      "hyphenated": {
+        "deva": "काम-रूपिणी",
+        "iast": "kāma-rūpiṇī"
+      },
       "namavaliDeva": "कामरूपिण्यै",
       "namavaliIast": "kāmarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "काम-रूपिण्यै",
+        "iast": "kāma-rūpiṇyai"
+      },
       "gloss": "Taking Any Form She Wishes",
       "translation": "She wears whatever shape she pleases, and the shape desire itself takes is also hers.",
       "aksaras": [

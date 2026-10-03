@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चित्कलाऽऽनन्दकलिका",
           "iast": "citkalā''nandakalikā",
+          "hyphenated": {
+            "deva": "चित्-कलाऽऽनन्द-कलिका",
+            "iast": "cit-kalā''nanda-kalikā"
+          },
           "namaIndices": [
             728,
             729
@@ -244,6 +248,10 @@
           "id": "l0-t1",
           "deva": "प्रेमरूपा",
           "iast": "premarūpā",
+          "hyphenated": {
+            "deva": "प्रेम-रूपा",
+            "iast": "prema-rūpā"
+          },
           "namaIndices": [
             730
           ],
@@ -486,6 +494,10 @@
           "id": "l1-t0",
           "deva": "नामपारायणप्रीता",
           "iast": "nāmapārāyaṇaprītā",
+          "hyphenated": {
+            "deva": "नाम-पारायण-प्रीता",
+            "iast": "nāma-pārāyaṇa-prītā"
+          },
           "namaIndices": [
             732
           ],
@@ -682,6 +694,10 @@
           "id": "l1-t1",
           "deva": "नन्दिविद्या",
           "iast": "nandividyā",
+          "hyphenated": {
+            "deva": "नन्दि-विद्या",
+            "iast": "nandi-vidyā"
+          },
           "namaIndices": [
             733
           ],
@@ -922,8 +938,16 @@
       "index": 728,
       "deva": "चित्कला",
       "iast": "citkalā",
+      "hyphenated": {
+        "deva": "चित्-कला",
+        "iast": "cit-kalā"
+      },
       "namavaliDeva": "चित्कलायै",
       "namavaliIast": "citkalāyai",
+      "namavaliHyphenated": {
+        "deva": "चित्-कलायै",
+        "iast": "cit-kalāyai"
+      },
       "gloss": "Digit Of Pure Consciousness",
       "translation": "She is that fine sliver of awareness which is never itself an object, the way one digit stands for the whole moon.",
       "aksaras": [
@@ -1042,8 +1066,16 @@
       "index": 729,
       "deva": "आनन्दकलिका",
       "iast": "ānandakalikā",
+      "hyphenated": {
+        "deva": "आनन्द-कलिका",
+        "iast": "ānanda-kalikā"
+      },
       "namavaliDeva": "आनन्दकलिकायै",
       "namavaliIast": "ānandakalikāyai",
+      "namavaliHyphenated": {
+        "deva": "आनन्द-कलिकायै",
+        "iast": "ānanda-kalikāyai"
+      },
       "gloss": "Bud Of Bliss",
       "translation": "Bliss appears in her as a flower still closed, holding everything it will become.",
       "aksaras": [
@@ -1211,8 +1243,16 @@
       "index": 730,
       "deva": "प्रेमरूपा",
       "iast": "premarūpā",
+      "hyphenated": {
+        "deva": "प्रेम-रूपा",
+        "iast": "prema-rūpā"
+      },
       "namavaliDeva": "प्रेमरूपायै",
       "namavaliIast": "premarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रेम-रूपायै",
+        "iast": "prema-rūpāyai"
+      },
       "gloss": "Whose Nature Is Love",
       "translation": "Love is not something she feels but the very stuff she is made of.",
       "aksaras": [
@@ -1507,8 +1547,16 @@
       "index": 732,
       "deva": "नामपारायणप्रीता",
       "iast": "nāmapārāyaṇaprītā",
+      "hyphenated": {
+        "deva": "नाम-पारायण-प्रीता",
+        "iast": "nāma-pārāyaṇa-prītā"
+      },
       "namavaliDeva": "नामपारायणप्रीतायै",
       "namavaliIast": "nāmapārāyaṇaprītāyai",
+      "namavaliHyphenated": {
+        "deva": "नाम-पारायण-प्रीतायै",
+        "iast": "nāma-pārāyaṇa-prītāyai"
+      },
       "gloss": "Pleased By The Recital Of Her Names",
       "translation": "Reading her thousand names straight through is enough to win her, no other offering being required.",
       "aksaras": [
@@ -1747,8 +1795,16 @@
       "index": 733,
       "deva": "नन्दिविद्या",
       "iast": "nandividyā",
+      "hyphenated": {
+        "deva": "नन्दि-विद्या",
+        "iast": "nandi-vidyā"
+      },
       "namavaliDeva": "नन्दिविद्यायै",
       "namavaliIast": "nandividyāyai",
+      "namavaliHyphenated": {
+        "deva": "नन्दि-विद्यायै",
+        "iast": "nandi-vidyāyai"
+      },
       "gloss": "The Vidyā Of Nandin",
       "translation": "She is the mantra-lore that Nandin received and passed on, a form of her own vidyā carrying his name.",
       "aksaras": [

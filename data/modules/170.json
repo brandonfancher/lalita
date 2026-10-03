@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चैतन्यार्घ्यसमाराध्या",
           "iast": "caitanyārghyasamārādhyā",
+          "hyphenated": {
+            "deva": "चैतन्यार्घ्य-समाराध्या",
+            "iast": "caitanyārghya-samārādhyā"
+          },
           "namaIndices": [
             918
           ],
@@ -254,6 +258,10 @@
           "id": "l0-t1",
           "deva": "चैतन्यकुसुमप्रिया",
           "iast": "caitanyakusumapriyā",
+          "hyphenated": {
+            "deva": "चैतन्य-कुसुम-प्रिया",
+            "iast": "caitanya-kusuma-priyā"
+          },
           "namaIndices": [
             919
           ],
@@ -570,6 +578,10 @@
           "id": "l1-t1",
           "deva": "सदातुष्टा",
           "iast": "sadātuṣṭā",
+          "hyphenated": {
+            "deva": "सदा-तुष्टा",
+            "iast": "sadā-tuṣṭā"
+          },
           "namaIndices": [
             921
           ],
@@ -684,6 +696,10 @@
           "id": "l1-t2",
           "deva": "तरुणादित्यपाटला",
           "iast": "taruṇādityapāṭalā",
+          "hyphenated": {
+            "deva": "तरुणादित्य-पाटला",
+            "iast": "taruṇāditya-pāṭalā"
+          },
           "namaIndices": [
             922
           ],
@@ -884,8 +900,16 @@
       "index": 918,
       "deva": "चैतन्यार्घ्यसमाराध्या",
       "iast": "caitanyārghyasamārādhyā",
+      "hyphenated": {
+        "deva": "चैतन्यार्घ्य-समाराध्या",
+        "iast": "caitanyārghya-samārādhyā"
+      },
       "namavaliDeva": "चैतन्यार्घ्यसमाराध्यायै",
       "namavaliIast": "caitanyārghyasamārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "चैतन्यार्घ्य-समाराध्यायै",
+        "iast": "caitanyārghya-samārādhyāyai"
+      },
       "gloss": "Worshipped With Consciousness As Offering",
       "translation": "The guest-water poured out for her is awareness itself rather than anything drawn from a well.",
       "aksaras": [
@@ -1169,8 +1193,16 @@
       "index": 919,
       "deva": "चैतन्यकुसुमप्रिया",
       "iast": "caitanyakusumapriyā",
+      "hyphenated": {
+        "deva": "चैतन्य-कुसुम-प्रिया",
+        "iast": "caitanya-kusuma-priyā"
+      },
       "namavaliDeva": "चैतन्यकुसुमप्रियायै",
       "namavaliIast": "caitanyakusumapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "चैतन्य-कुसुम-प्रियायै",
+        "iast": "caitanya-kusuma-priyāyai"
+      },
       "gloss": "Fond Of The Flower Of Consciousness",
       "translation": "The blossom she cares for is the worshipper's own awareness, laid before her in place of anything picked.",
       "aksaras": [
@@ -1553,8 +1585,16 @@
       "index": 921,
       "deva": "सदातुष्टा",
       "iast": "sadātuṣṭā",
+      "hyphenated": {
+        "deva": "सदा-तुष्टा",
+        "iast": "sadā-tuṣṭā"
+      },
       "namavaliDeva": "सदातुष्टायै",
       "namavaliIast": "sadātuṣṭāyai",
+      "namavaliHyphenated": {
+        "deva": "सदा-तुष्टायै",
+        "iast": "sadā-tuṣṭāyai"
+      },
       "gloss": "Ever Content",
       "translation": "Nothing can add to her satisfaction and nothing can dent it.",
       "aksaras": [
@@ -1697,8 +1737,16 @@
       "index": 922,
       "deva": "तरुणादित्यपाटला",
       "iast": "taruṇādityapāṭalā",
+      "hyphenated": {
+        "deva": "तरुणादित्य-पाटला",
+        "iast": "taruṇāditya-pāṭalā"
+      },
       "namavaliDeva": "तरुणादित्यपाटलायै",
       "namavaliIast": "taruṇādityapāṭalāyai",
+      "namavaliHyphenated": {
+        "deva": "तरुणादित्य-पाटलायै",
+        "iast": "taruṇāditya-pāṭalāyai"
+      },
       "gloss": "Rose-Red As The Young Sun",
       "translation": "Her colour is the pale red of the sun in the moment after it clears the horizon.",
       "aksaras": [

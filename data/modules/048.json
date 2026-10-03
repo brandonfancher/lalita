@@ -125,6 +125,10 @@
           "id": "l0-t1",
           "deva": "क्रोधशमनी",
           "iast": "krodhaśamanī",
+          "hyphenated": {
+            "deva": "क्रोध-शमनी",
+            "iast": "krodha-śamanī"
+          },
           "namaIndices": [
             169
           ],
@@ -346,6 +350,10 @@
           "id": "l0-t3",
           "deva": "लोभनाशिनी",
           "iast": "lobhanāśinī",
+          "hyphenated": {
+            "deva": "लोभ-नाशिनी",
+            "iast": "lobha-nāśinī"
+          },
           "namaIndices": [
             171
           ],
@@ -778,6 +786,10 @@
           "id": "l1-t3",
           "deva": "भवनाशिनी",
           "iast": "bhavanāśinī",
+          "hyphenated": {
+            "deva": "भव-नाशिनी",
+            "iast": "bhava-nāśinī"
+          },
           "namaIndices": [
             175
           ],
@@ -1040,8 +1052,16 @@
       "index": 169,
       "deva": "क्रोधशमनी",
       "iast": "krodhaśamanī",
+      "hyphenated": {
+        "deva": "क्रोध-शमनी",
+        "iast": "krodha-śamanī"
+      },
       "namavaliDeva": "क्रोधशमन्यै",
       "namavaliIast": "krodhaśamanyai",
+      "namavaliHyphenated": {
+        "deva": "क्रोध-शमन्यै",
+        "iast": "krodha-śamanyai"
+      },
       "gloss": "Queller Of Anger",
       "translation": "She cools anger in others, settling it rather than answering it in kind.",
       "aksaras": [
@@ -1321,8 +1341,16 @@
       "index": 171,
       "deva": "लोभनाशिनी",
       "iast": "lobhanāśinī",
+      "hyphenated": {
+        "deva": "लोभ-नाशिनी",
+        "iast": "lobha-nāśinī"
+      },
       "namavaliDeva": "लोभनाशिन्यै",
       "namavaliIast": "lobhanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "लोभ-नाशिन्यै",
+        "iast": "lobha-nāśinyai"
+      },
       "gloss": "Destroyer Of Greed",
       "translation": "She undoes the appetite for getting and keeping in those who worship her.",
       "aksaras": [
@@ -1867,8 +1895,16 @@
       "index": 175,
       "deva": "भवनाशिनी",
       "iast": "bhavanāśinī",
+      "hyphenated": {
+        "deva": "भव-नाशिनी",
+        "iast": "bhava-nāśinī"
+      },
       "namavaliDeva": "भवनाशिन्यै",
       "namavaliIast": "bhavanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "भव-नाशिन्यै",
+        "iast": "bhava-nāśinyai"
+      },
       "gloss": "Destroyer Of Worldly Existence",
       "translation": "For those who ask it of her she brings the round of becoming to a close.",
       "aksaras": [

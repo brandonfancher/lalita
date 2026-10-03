@@ -277,6 +277,10 @@
           "id": "l0-t3",
           "deva": "कादम्बरीप्रिया",
           "iast": "kādambarīpriyā",
+          "hyphenated": {
+            "deva": "कादम्बरी-प्रिया",
+            "iast": "kādambarī-priyā"
+          },
           "namaIndices": [
             330
           ],
@@ -521,6 +525,10 @@
           "id": "l1-t1",
           "deva": "वामनयना",
           "iast": "vāmanayanā",
+          "hyphenated": {
+            "deva": "वाम-नयना",
+            "iast": "vāma-nayanā"
+          },
           "namaIndices": [
             332
           ],
@@ -630,6 +638,10 @@
           "id": "l1-t2",
           "deva": "वारुणीमदविह्वला",
           "iast": "vāruṇīmadavihvalā",
+          "hyphenated": {
+            "deva": "वारुणी-मद-विह्वला",
+            "iast": "vāruṇī-mada-vihvalā"
+          },
           "namaIndices": [
             333
           ],
@@ -1147,8 +1159,16 @@
       "index": 330,
       "deva": "कादम्बरीप्रिया",
       "iast": "kādambarīpriyā",
+      "hyphenated": {
+        "deva": "कादम्बरी-प्रिया",
+        "iast": "kādambarī-priyā"
+      },
       "namavaliDeva": "कादम्बरीप्रियायै",
       "namavaliIast": "kādambarīpriyāyai",
+      "namavaliHyphenated": {
+        "deva": "कादम्बरी-प्रियायै",
+        "iast": "kādambarī-priyāyai"
+      },
       "gloss": "Lover Of Kādambarī Wine",
       "translation": "She is fond of kādambarī, the liquor distilled from kadamba flowers, and her devotees pour it out for her.",
       "aksaras": [
@@ -1445,8 +1465,16 @@
       "index": 332,
       "deva": "वामनयना",
       "iast": "vāmanayanā",
+      "hyphenated": {
+        "deva": "वाम-नयना",
+        "iast": "vāma-nayanā"
+      },
       "namavaliDeva": "वामनयनायै",
       "namavaliIast": "vāmanayanāyai",
+      "namavaliHyphenated": {
+        "deva": "वाम-नयनायै",
+        "iast": "vāma-nayanāyai"
+      },
       "gloss": "Beautiful-Eyed",
       "translation": "Her eyes are lovely, and a glance from them is itself a favour.",
       "aksaras": [
@@ -1584,8 +1612,16 @@
       "index": 333,
       "deva": "वारुणीमदविह्वला",
       "iast": "vāruṇīmadavihvalā",
+      "hyphenated": {
+        "deva": "वारुणी-मद-विह्वला",
+        "iast": "vāruṇī-mada-vihvalā"
+      },
       "namavaliDeva": "वारुणीमदविह्वलायै",
       "namavaliIast": "vāruṇīmadavihvalāyai",
+      "namavaliHyphenated": {
+        "deva": "वारुणी-मद-विह्वलायै",
+        "iast": "vāruṇī-mada-vihvalāyai"
+      },
       "gloss": "Swaying With Wine",
       "translation": "The vāruṇī liquor has gone to her head, and she is unsteady with the sweetness of it.",
       "aksaras": [

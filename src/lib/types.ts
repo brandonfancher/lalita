@@ -8,6 +8,17 @@
 /** Transliteration schemes used throughout. */
 export type Script = "devanagari" | "iast";
 
+/**
+ * A word with hyphens between the words its compound is built from, in both
+ * scripts: padma-rāga-śilādarśa-paribhāvi-kapolabhūḥ. Removing the hyphens
+ * always gives back the plain spelling exactly, and the breaks fall in the
+ * same places in each script. Absent where no break can be placed.
+ */
+export interface Hyphenated {
+  deva: string;
+  iast: string;
+}
+
 // ---------------------------------------------------------------------------
 // Akṣara (syllable) decomposition
 // ---------------------------------------------------------------------------
@@ -180,6 +191,7 @@ export interface Token {
   id: string;
   deva: string;
   iast: string;
+  hyphenated?: Hyphenated;
   /**
    * The nāmas this written word carries, by their number in the thousand.
    *
@@ -226,9 +238,11 @@ export interface Nama {
   deva: string;
   /** Citation form, IAST. */
   iast: string;
+  hyphenated?: Hyphenated;
   /** The dative form used in ritual recitation, e.g. "śrīmātre namaḥ". */
   namavaliDeva?: string;
   namavaliIast?: string;
+  namavaliHyphenated?: Hyphenated;
   /** Short gloss, a few words. */
   gloss: string;
   /** Fuller rendering into English. */
@@ -346,6 +360,7 @@ export interface ModuleSummary {
   /** First line, for preview. */
   previewDeva: string;
   previewIast: string;
+  previewHyphenated?: Hyphenated;
   namaCount: number;
 }
 

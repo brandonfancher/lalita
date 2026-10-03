@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "आब्रह्मकीटजननी",
           "iast": "ābrahmakīṭajananī",
+          "hyphenated": {
+            "deva": "आब्रह्म-कीट-जननी",
+            "iast": "ābrahma-kīṭa-jananī"
+          },
           "namaIndices": [
             285
           ],
@@ -201,6 +205,10 @@
           "id": "l0-t1",
           "deva": "वर्णाश्रमविधायिनी",
           "iast": "varṇāśramavidhāyinī",
+          "hyphenated": {
+            "deva": "वर्णाश्रम-विधायिनी",
+            "iast": "varṇāśrama-vidhāyinī"
+          },
           "namaIndices": [
             286
           ],
@@ -418,6 +426,10 @@
           "id": "l1-t0",
           "deva": "निजाज्ञारूपनिगमा",
           "iast": "nijājñārūpanigamā",
+          "hyphenated": {
+            "deva": "निजाज्ञा-रूप-निगमा",
+            "iast": "nijājñā-rūpa-nigamā"
+          },
           "namaIndices": [
             287
           ],
@@ -621,6 +633,10 @@
           "id": "l1-t1",
           "deva": "पुण्यापुण्यफलप्रदा",
           "iast": "puṇyāpuṇyaphalapradā",
+          "hyphenated": {
+            "deva": "पुण्यापुण्य-फल-प्रदा",
+            "iast": "puṇyāpuṇya-phala-pradā"
+          },
           "namaIndices": [
             288
           ],
@@ -844,8 +860,16 @@
       "index": 285,
       "deva": "आब्रह्मकीटजननी",
       "iast": "ābrahmakīṭajananī",
+      "hyphenated": {
+        "deva": "आब्रह्म-कीट-जननी",
+        "iast": "ābrahma-kīṭa-jananī"
+      },
       "namavaliDeva": "आब्रह्मकीटजनन्यै",
       "namavaliIast": "ābrahmakīṭajananyai",
+      "namavaliHyphenated": {
+        "deva": "आब्रह्म-कीट-जनन्यै",
+        "iast": "ābrahma-kīṭa-jananyai"
+      },
       "gloss": "Mother From Brahmā To The Worm",
       "translation": "The creator god and the insect underfoot have the same mother, and she makes no distinction between them.",
       "aksaras": [
@@ -1081,8 +1105,16 @@
       "index": 286,
       "deva": "वर्णाश्रमविधायिनी",
       "iast": "varṇāśramavidhāyinī",
+      "hyphenated": {
+        "deva": "वर्णाश्रम-विधायिनी",
+        "iast": "varṇāśrama-vidhāyinī"
+      },
       "namavaliDeva": "वर्णाश्रमविधायिन्यै",
       "namavaliIast": "varṇāśramavidhāyinyai",
+      "namavaliHyphenated": {
+        "deva": "वर्णाश्रम-विधायिन्यै",
+        "iast": "varṇāśrama-vidhāyinyai"
+      },
       "gloss": "Ordainer Of Class And Stage Of Life",
       "translation": "The divisions of society and the four stages of a life are arrangements she laid down.",
       "aksaras": [
@@ -1336,8 +1368,16 @@
       "index": 287,
       "deva": "निजाज्ञारूपनिगमा",
       "iast": "nijājñārūpanigamā",
+      "hyphenated": {
+        "deva": "निजाज्ञा-रूप-निगमा",
+        "iast": "nijājñā-rūpa-nigamā"
+      },
       "namavaliDeva": "निजाज्ञारूपनिगमायै",
       "namavaliIast": "nijājñārūpanigamāyai",
+      "namavaliHyphenated": {
+        "deva": "निजाज्ञा-रूप-निगमायै",
+        "iast": "nijājñā-rūpa-nigamāyai"
+      },
       "gloss": "Whose Command Takes Shape As Scripture",
       "translation": "Revealed scripture carries authority because it is nothing other than her own order set down in words.",
       "aksaras": [
@@ -1597,8 +1637,16 @@
       "index": 288,
       "deva": "पुण्यापुण्यफलप्रदा",
       "iast": "puṇyāpuṇyaphalapradā",
+      "hyphenated": {
+        "deva": "पुण्यापुण्य-फल-प्रदा",
+        "iast": "puṇyāpuṇya-phala-pradā"
+      },
       "namavaliDeva": "पुण्यापुण्यफलप्रदायै",
       "namavaliIast": "puṇyāpuṇyaphalapradāyai",
+      "namavaliHyphenated": {
+        "deva": "पुण्यापुण्य-फल-प्रदायै",
+        "iast": "puṇyāpuṇya-phala-pradāyai"
+      },
       "gloss": "Giver Of The Fruits Of Good And Evil",
       "translation": "Deeds do not ripen by themselves; she is the one who hands out what they have earned, pleasant or not.",
       "aksaras": [

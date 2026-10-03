@@ -134,6 +134,10 @@
           "id": "l0-t1",
           "deva": "विराड्रूपा",
           "iast": "virāḍrūpā",
+          "hyphenated": {
+            "deva": "विराड्-रूपा",
+            "iast": "virāḍ-rūpā"
+          },
           "namaIndices": [
             778
           ],
@@ -330,6 +334,10 @@
           "id": "l0-t3",
           "deva": "विश्वतोमुखी",
           "iast": "viśvatomukhī",
+          "hyphenated": {
+            "deva": "विश्वतो-मुखी",
+            "iast": "viśvato-mukhī"
+          },
           "namaIndices": [
             780
           ],
@@ -474,6 +482,10 @@
           "id": "l1-t0",
           "deva": "प्रत्यग्रूपा",
           "iast": "pratyagrūpā",
+          "hyphenated": {
+            "deva": "प्रत्यग्-रूपा",
+            "iast": "pratyag-rūpā"
+          },
           "namaIndices": [
             781
           ],
@@ -800,6 +812,10 @@
           "id": "l1-t3",
           "deva": "प्राणरूपिणी",
           "iast": "prāṇarūpiṇī",
+          "hyphenated": {
+            "deva": "प्राण-रूपिणी",
+            "iast": "prāṇa-rūpiṇī"
+          },
           "namaIndices": [
             784
           ],
@@ -1093,8 +1109,16 @@
       "index": 778,
       "deva": "विराड्रूपा",
       "iast": "virāḍrūpā",
+      "hyphenated": {
+        "deva": "विराड्-रूपा",
+        "iast": "virāḍ-rūpā"
+      },
       "namavaliDeva": "विराड्रूपायै",
       "namavaliIast": "virāḍrūpāyai",
+      "namavaliHyphenated": {
+        "deva": "विराड्-रूपायै",
+        "iast": "virāḍ-rūpāyai"
+      },
       "gloss": "Whose Form Is Virāj",
       "translation": "The vast shining body of the universe, Virāj, is one of her shapes.",
       "aksaras": [
@@ -1356,8 +1380,16 @@
       "index": 780,
       "deva": "विश्वतोमुखी",
       "iast": "viśvatomukhī",
+      "hyphenated": {
+        "deva": "विश्वतो-मुखी",
+        "iast": "viśvato-mukhī"
+      },
       "namavaliDeva": "विश्वतोमुख्यै",
       "namavaliIast": "viśvatomukhyai",
+      "namavaliHyphenated": {
+        "deva": "विश्वतो-मुख्यै",
+        "iast": "viśvato-mukhyai"
+      },
       "gloss": "Facing Every Direction",
       "translation": "Turn where you like and you meet her face, for she has no back to be behind.",
       "aksaras": [
@@ -1524,8 +1556,16 @@
       "index": 781,
       "deva": "प्रत्यग्रूपा",
       "iast": "pratyagrūpā",
+      "hyphenated": {
+        "deva": "प्रत्यग्-रूपा",
+        "iast": "pratyag-rūpā"
+      },
       "namavaliDeva": "प्रत्यग्रूपायै",
       "namavaliIast": "pratyagrūpāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रत्यग्-रूपायै",
+        "iast": "pratyag-rūpāyai"
+      },
       "gloss": "Whose Form Is The Inward Self",
       "translation": "She is what is found by turning attention around to face the one who is looking.",
       "aksaras": [
@@ -1941,8 +1981,16 @@
       "index": 784,
       "deva": "प्राणरूपिणी",
       "iast": "prāṇarūpiṇī",
+      "hyphenated": {
+        "deva": "प्राण-रूपिणी",
+        "iast": "prāṇa-rūpiṇī"
+      },
       "namavaliDeva": "प्राणरूपिण्यै",
       "namavaliIast": "prāṇarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "प्राण-रूपिण्यै",
+        "iast": "prāṇa-rūpiṇyai"
+      },
       "gloss": "Embodied As The Breath Of Life",
       "translation": "She does not merely grant the life-breath; she is it, moving in every chest that rises and falls.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "छन्दःसारा",
           "iast": "chandaḥsārā",
+          "hyphenated": {
+            "deva": "छन्दः-सारा",
+            "iast": "chandaḥ-sārā"
+          },
           "namaIndices": [
             844
           ],
@@ -127,6 +131,10 @@
           "id": "l0-t1",
           "deva": "शास्त्रसारा",
           "iast": "śāstrasārā",
+          "hyphenated": {
+            "deva": "शास्त्र-सारा",
+            "iast": "śāstra-sārā"
+          },
           "namaIndices": [
             845
           ],
@@ -256,6 +264,10 @@
           "id": "l0-t2",
           "deva": "मन्त्रसारा",
           "iast": "mantrasārā",
+          "hyphenated": {
+            "deva": "मन्त्र-सारा",
+            "iast": "mantra-sārā"
+          },
           "namaIndices": [
             846
           ],
@@ -476,6 +488,10 @@
           "id": "l1-t0",
           "deva": "उदारकीर्तिरुद्दामवैभवा",
           "iast": "udārakīrtiruddāmavaibhavā",
+          "hyphenated": {
+            "deva": "उदार-कीर्तिरुद्दाम-वैभवा",
+            "iast": "udāra-kīrtiruddāma-vaibhavā"
+          },
           "namaIndices": [
             848,
             849
@@ -751,6 +767,10 @@
           "id": "l1-t1",
           "deva": "वर्णरूपिणी",
           "iast": "varṇarūpiṇī",
+          "hyphenated": {
+            "deva": "वर्ण-रूपिणी",
+            "iast": "varṇa-rūpiṇī"
+          },
           "namaIndices": [
             850
           ],
@@ -886,8 +906,16 @@
       "index": 844,
       "deva": "छन्दःसारा",
       "iast": "chandaḥsārā",
+      "hyphenated": {
+        "deva": "छन्दः-सारा",
+        "iast": "chandaḥ-sārā"
+      },
       "namavaliDeva": "छन्दःसारायै",
       "namavaliIast": "chandaḥsārāyai",
+      "namavaliHyphenated": {
+        "deva": "छन्दः-सारायै",
+        "iast": "chandaḥ-sārāyai"
+      },
       "gloss": "Essence Of The Vedic Metres",
       "translation": "What the metres of the hymns are carrying, underneath the count of their syllables, is her.",
       "aksaras": [
@@ -1030,8 +1058,16 @@
       "index": 845,
       "deva": "शास्त्रसारा",
       "iast": "śāstrasārā",
+      "hyphenated": {
+        "deva": "शास्त्र-सारा",
+        "iast": "śāstra-sārā"
+      },
       "namavaliDeva": "शास्त्रसारायै",
       "namavaliIast": "śāstrasārāyai",
+      "namavaliHyphenated": {
+        "deva": "शास्त्र-सारायै",
+        "iast": "śāstra-sārāyai"
+      },
       "gloss": "Essence Of Scripture",
       "translation": "Take the treatises apart into their definitions and arguments, and what will not reduce any further is her.",
       "aksaras": [
@@ -1189,8 +1225,16 @@
       "index": 846,
       "deva": "मन्त्रसारा",
       "iast": "mantrasārā",
+      "hyphenated": {
+        "deva": "मन्त्र-सारा",
+        "iast": "mantra-sārā"
+      },
       "namavaliDeva": "मन्त्रसारायै",
       "namavaliIast": "mantrasārāyai",
+      "namavaliHyphenated": {
+        "deva": "मन्त्र-सारायै",
+        "iast": "mantra-sārāyai"
+      },
       "gloss": "Essence Of Mantras",
       "translation": "A mantra works because she is the potency inside the syllables, not because the syllables have force of their own.",
       "aksaras": [
@@ -1463,8 +1507,16 @@
       "index": 848,
       "deva": "उदारकीर्तिः",
       "iast": "udārakīrtiḥ",
+      "hyphenated": {
+        "deva": "उदार-कीर्तिः",
+        "iast": "udāra-kīrtiḥ"
+      },
       "namavaliDeva": "उदारकीर्तये",
       "namavaliIast": "udārakīrtaye",
+      "namavaliHyphenated": {
+        "deva": "उदार-कीर्तये",
+        "iast": "udāra-kīrtaye"
+      },
       "gloss": "Of Exalted Fame",
       "translation": "Her renown is noble in its own right, praise that lifts whoever repeats it rather than merely spreading a name about.",
       "aksaras": [
@@ -1629,8 +1681,16 @@
       "index": 849,
       "deva": "उद्दामवैभवा",
       "iast": "uddāmavaibhavā",
+      "hyphenated": {
+        "deva": "उद्दाम-वैभवा",
+        "iast": "uddāma-vaibhavā"
+      },
       "namavaliDeva": "उद्दामवैभवायै",
       "namavaliIast": "uddāmavaibhavāyai",
+      "namavaliHyphenated": {
+        "deva": "उद्दाम-वैभवायै",
+        "iast": "uddāma-vaibhavāyai"
+      },
       "gloss": "Of Unbounded Glory",
       "translation": "Her majesty has had its tether cut: there is no measure it keeps inside and no rival it has to share room with.",
       "aksaras": [
@@ -1819,8 +1879,16 @@
       "index": 850,
       "deva": "वर्णरूपिणी",
       "iast": "varṇarūpiṇī",
+      "hyphenated": {
+        "deva": "वर्ण-रूपिणी",
+        "iast": "varṇa-rūpiṇī"
+      },
       "namavaliDeva": "वर्णरूपिण्यै",
       "namavaliIast": "varṇarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "वर्ण-रूपिण्यै",
+        "iast": "varṇa-rūpiṇyai"
+      },
       "gloss": "Embodied As The Letters",
       "translation": "She takes the form of the sounds of the alphabet, so speech is not a description of her but a piece of her.",
       "aksaras": [

@@ -230,6 +230,10 @@
           "id": "l0-t1",
           "deva": "पञ्चवक्त्राऽस्थिसंस्थिता",
           "iast": "pañcavaktrā'sthisaṃsthitā",
+          "hyphenated": {
+            "deva": "पञ्च-वक्त्राऽस्थिसंस्थिता",
+            "iast": "pañca-vaktrā'sthisaṃsthitā"
+          },
           "namaIndices": [
             515,
             516
@@ -506,6 +510,10 @@
           "id": "l1-t0",
           "deva": "अङ्कुशादिप्रहरणा",
           "iast": "aṅkuśādipraharaṇā",
+          "hyphenated": {
+            "deva": "अङ्कुशादि-प्रहरणा",
+            "iast": "aṅkuśādi-praharaṇā"
+          },
           "namaIndices": [
             517
           ],
@@ -708,6 +716,10 @@
           "id": "l1-t1",
           "deva": "वरदादिनिषेविता",
           "iast": "varadādiniṣevitā",
+          "hyphenated": {
+            "deva": "वरदादि-निषेविता",
+            "iast": "varadādi-niṣevitā"
+          },
           "namaIndices": [
             518
           ],
@@ -1162,8 +1174,16 @@
       "index": 515,
       "deva": "पञ्चवक्त्रा",
       "iast": "pañcavaktrā",
+      "hyphenated": {
+        "deva": "पञ्च-वक्त्रा",
+        "iast": "pañca-vaktrā"
+      },
       "namavaliDeva": "पञ्चवक्त्रायै",
       "namavaliIast": "pañcavaktrāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-वक्त्रायै",
+        "iast": "pañca-vaktrāyai"
+      },
       "gloss": "Five-Faced",
       "translation": "Sākinī shows five countenances, matching the five elements her station is said to gather.",
       "aksaras": [
@@ -1322,8 +1342,16 @@
       "index": 516,
       "deva": "अस्थिसंस्थिता",
       "iast": "asthisaṃsthitā",
+      "hyphenated": {
+        "deva": "अस्थि-संस्थिता",
+        "iast": "asthi-saṃsthitā"
+      },
       "namavaliDeva": "अस्थिसंस्थितायै",
       "namavaliIast": "asthisaṃsthitāyai",
+      "namavaliHyphenated": {
+        "deva": "अस्थि-संस्थितायै",
+        "iast": "asthi-saṃsthitāyai"
+      },
       "gloss": "Abiding In The Bones",
       "translation": "The constituent under her charge is bone, the hardest of the body's seven layers.",
       "aksaras": [
@@ -1503,8 +1531,16 @@
       "index": 517,
       "deva": "अङ्कुशादिप्रहरणा",
       "iast": "aṅkuśādipraharaṇā",
+      "hyphenated": {
+        "deva": "अङ्कुशादि-प्रहरणा",
+        "iast": "aṅkuśādi-praharaṇā"
+      },
       "namavaliDeva": "अङ्कुशादिप्रहरणायै",
       "namavaliIast": "aṅkuśādipraharaṇāyai",
+      "namavaliHyphenated": {
+        "deva": "अङ्कुशादि-प्रहरणायै",
+        "iast": "aṅkuśādi-praharaṇāyai"
+      },
       "gloss": "Striking With Goad And More",
       "translation": "The elephant-driver's hook heads the array of implements she strikes with.",
       "aksaras": [
@@ -1749,6 +1785,10 @@
       "index": 518,
       "deva": "वरदादिनिषेविता",
       "iast": "varadādiniṣevitā",
+      "hyphenated": {
+        "deva": "वरदादि-निषेविता",
+        "iast": "varadādi-niṣevitā"
+      },
       "namavaliDeva": "वरदादि निषेवितायै",
       "namavaliIast": "varadādi niṣevitāyai",
       "gloss": "Served By Varadā And The Others",

@@ -62,6 +62,10 @@
           "id": "l0-t1",
           "deva": "क्षयविनिर्मुक्ता",
           "iast": "kṣayavinirmuktā",
+          "hyphenated": {
+            "deva": "क्षय-विनिर्मुक्ता",
+            "iast": "kṣaya-vinirmuktā"
+          },
           "namaIndices": [
             867
           ],
@@ -320,6 +324,10 @@
           "id": "l0-t3",
           "deva": "क्षिप्रप्रसादिनी",
           "iast": "kṣipraprasādinī",
+          "hyphenated": {
+            "deva": "क्षिप्र-प्रसादिनी",
+            "iast": "kṣipra-prasādinī"
+          },
           "namaIndices": [
             869
           ],
@@ -511,6 +519,10 @@
           "id": "l1-t0",
           "deva": "अन्तर्मुखसमाराध्या",
           "iast": "antarmukhasamārādhyā",
+          "hyphenated": {
+            "deva": "अन्तर्-मुख-समाराध्या",
+            "iast": "antar-mukha-samārādhyā"
+          },
           "namaIndices": [
             870
           ],
@@ -728,6 +740,10 @@
           "id": "l1-t1",
           "deva": "बहिर्मुखसुदुर्लभा",
           "iast": "bahirmukhasudurlabhā",
+          "hyphenated": {
+            "deva": "बहिर्-मुख-सुदुर्लभा",
+            "iast": "bahir-mukha-sudurlabhā"
+          },
           "namaIndices": [
             871
           ],
@@ -1022,8 +1038,16 @@
       "index": 867,
       "deva": "क्षयविनिर्मुक्ता",
       "iast": "kṣayavinirmuktā",
+      "hyphenated": {
+        "deva": "क्षय-विनिर्मुक्ता",
+        "iast": "kṣaya-vinirmuktā"
+      },
       "namavaliDeva": "क्षयविनिर्मुक्तायै",
       "namavaliIast": "kṣayavinirmuktāyai",
+      "namavaliHyphenated": {
+        "deva": "क्षय-विनिर्मुक्तायै",
+        "iast": "kṣaya-vinirmuktāyai"
+      },
       "gloss": "Free Of Decay",
       "translation": "Nothing in her wears thin or wanes, so time takes from her none of what it takes from everything else.",
       "aksaras": [
@@ -1321,8 +1345,16 @@
       "index": 869,
       "deva": "क्षिप्रप्रसादिनी",
       "iast": "kṣipraprasādinī",
+      "hyphenated": {
+        "deva": "क्षिप्र-प्रसादिनी",
+        "iast": "kṣipra-prasādinī"
+      },
       "namavaliDeva": "क्षिप्रप्रसादिन्यै",
       "namavaliIast": "kṣipraprasādinyai",
+      "namavaliHyphenated": {
+        "deva": "क्षिप्र-प्रसादिन्यै",
+        "iast": "kṣipra-prasādinyai"
+      },
       "gloss": "Quick To Be Pleased",
       "translation": "Her favour does not have to be earned slowly; a small sincerity is enough, and she is already gracious.",
       "aksaras": [
@@ -1536,8 +1568,16 @@
       "index": 870,
       "deva": "अन्तर्मुखसमाराध्या",
       "iast": "antarmukhasamārādhyā",
+      "hyphenated": {
+        "deva": "अन्तर्-मुख-समाराध्या",
+        "iast": "antar-mukha-samārādhyā"
+      },
       "namavaliDeva": "अन्तर्मुखसमाराध्यायै",
       "namavaliIast": "antarmukhasamārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "अन्तर्-मुख-समाराध्यायै",
+        "iast": "antar-mukha-samārādhyāyai"
+      },
       "gloss": "Worshipped By The Inward-Turned",
       "translation": "Those who have turned their attention around to face inward can reach her by worship, the rite working where the gaze has already gone.",
       "aksaras": [
@@ -1797,8 +1837,16 @@
       "index": 871,
       "deva": "बहिर्मुखसुदुर्लभा",
       "iast": "bahirmukhasudurlabhā",
+      "hyphenated": {
+        "deva": "बहिर्-मुख-सुदुर्लभा",
+        "iast": "bahir-mukha-sudurlabhā"
+      },
       "namavaliDeva": "बहिर्मुखसुदुर्लभायै",
       "namavaliIast": "bahirmukhasudurlabhāyai",
+      "namavaliHyphenated": {
+        "deva": "बहिर्-मुख-सुदुर्लभायै",
+        "iast": "bahir-mukha-sudurlabhāyai"
+      },
       "gloss": "Hard To Reach For The Outward-Turned",
       "translation": "For those whose attention stays fastened on outside things she is next to impossible to find, being nowhere they are looking.",
       "aksaras": [

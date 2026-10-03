@@ -257,6 +257,10 @@
           "id": "l0-t2",
           "deva": "जपापुष्पनिभाकृतिः",
           "iast": "japāpuṣpanibhākṛtiḥ",
+          "hyphenated": {
+            "deva": "जपा-पुष्प-निभाकृतिः",
+            "iast": "japā-puṣpa-nibhākṛtiḥ"
+          },
           "namaIndices": [
             766
           ],
@@ -563,6 +567,10 @@
           "id": "l1-t1",
           "deva": "द्युतिधरा",
           "iast": "dyutidharā",
+          "hyphenated": {
+            "deva": "द्युति-धरा",
+            "iast": "dyuti-dharā"
+          },
           "namaIndices": [
             768
           ],
@@ -677,6 +685,10 @@
           "id": "l1-t2",
           "deva": "यज्ञरूपा",
           "iast": "yajñarūpā",
+          "hyphenated": {
+            "deva": "यज्ञ-रूपा",
+            "iast": "yajña-rūpā"
+          },
           "namaIndices": [
             769
           ],
@@ -784,6 +796,10 @@
           "id": "l1-t3",
           "deva": "प्रियव्रता",
           "iast": "priyavratā",
+          "hyphenated": {
+            "deva": "प्रिय-व्रता",
+            "iast": "priya-vratā"
+          },
           "namaIndices": [
             770
           ],
@@ -1209,8 +1225,16 @@
       "index": 766,
       "deva": "जपापुष्पनिभाकृतिः",
       "iast": "japāpuṣpanibhākṛtiḥ",
+      "hyphenated": {
+        "deva": "जपा-पुष्प-निभाकृतिः",
+        "iast": "japā-puṣpa-nibhākṛtiḥ"
+      },
       "namavaliDeva": "जपापुष्पनिभाकृतये",
       "namavaliIast": "japāpuṣpanibhākṛtaye",
+      "namavaliHyphenated": {
+        "deva": "जपा-पुष्प-निभाकृतये",
+        "iast": "japā-puṣpa-nibhākṛtaye"
+      },
       "gloss": "Whose Form Glows Like A Hibiscus",
       "translation": "Her body has the deep red of a hibiscus flower, the colour of the dawn and of the offerings she likes best.",
       "aksaras": [
@@ -1579,8 +1603,16 @@
       "index": 768,
       "deva": "द्युतिधरा",
       "iast": "dyutidharā",
+      "hyphenated": {
+        "deva": "द्युति-धरा",
+        "iast": "dyuti-dharā"
+      },
       "namavaliDeva": "द्युतिधरायै",
       "namavaliIast": "dyutidharāyai",
+      "namavaliHyphenated": {
+        "deva": "द्युति-धरायै",
+        "iast": "dyuti-dharāyai"
+      },
       "gloss": "Bearer Of Radiance",
       "translation": "She carries her own light, owing nothing of her brilliance to anything outside her.",
       "aksaras": [
@@ -1723,8 +1755,16 @@
       "index": 769,
       "deva": "यज्ञरूपा",
       "iast": "yajñarūpā",
+      "hyphenated": {
+        "deva": "यज्ञ-रूपा",
+        "iast": "yajña-rūpā"
+      },
       "namavaliDeva": "यज्ञरूपायै",
       "namavaliIast": "yajñarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "यज्ञ-रूपायै",
+        "iast": "yajña-rūpāyai"
+      },
       "gloss": "Whose Form Is The Sacrifice",
       "translation": "The rite, the offering and the one who offers are all shapes of her, so that every sacrifice reaches her.",
       "aksaras": [
@@ -1860,8 +1900,16 @@
       "index": 770,
       "deva": "प्रियव्रता",
       "iast": "priyavratā",
+      "hyphenated": {
+        "deva": "प्रिय-व्रता",
+        "iast": "priya-vratā"
+      },
       "namavaliDeva": "प्रियव्रतायै",
       "namavaliIast": "priyavratāyai",
+      "namavaliHyphenated": {
+        "deva": "प्रिय-व्रतायै",
+        "iast": "priya-vratāyai"
+      },
       "gloss": "Devoted To Her Observance",
       "translation": "The vow she has taken is precious to her, and she is equally fond of those who keep their own.",
       "aksaras": [

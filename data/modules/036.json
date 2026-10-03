@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मूलमन्त्रात्मिका",
           "iast": "mūlamantrātmikā",
+          "hyphenated": {
+            "deva": "मूल-मन्त्रात्मिका",
+            "iast": "mūla-mantrātmikā"
+          },
           "namaIndices": [
             88
           ],
@@ -198,6 +202,10 @@
           "id": "l0-t1",
           "deva": "मूलकूटत्रयकलेवरा",
           "iast": "mūlakūṭatrayakalevarā",
+          "hyphenated": {
+            "deva": "मूल-कूट-त्रय-कलेवरा",
+            "iast": "mūla-kūṭa-traya-kalevarā"
+          },
           "namaIndices": [
             89
           ],
@@ -427,6 +435,10 @@
           "id": "l1-t0",
           "deva": "कुलामृतैकरसिका",
           "iast": "kulāmṛtaikarasikā",
+          "hyphenated": {
+            "deva": "कुलामृतैक-रसिका",
+            "iast": "kulāmṛtaika-rasikā"
+          },
           "namaIndices": [
             90
           ],
@@ -615,6 +627,10 @@
           "id": "l1-t1",
           "deva": "कुलसङ्केतपालिनी",
           "iast": "kulasaṅketapālinī",
+          "hyphenated": {
+            "deva": "कुल-सङ्केत-पालिनी",
+            "iast": "kula-saṅketa-pālinī"
+          },
           "namaIndices": [
             91
           ],
@@ -815,8 +831,16 @@
       "index": 88,
       "deva": "मूलमन्त्रात्मिका",
       "iast": "mūlamantrātmikā",
+      "hyphenated": {
+        "deva": "मूल-मन्त्रात्मिका",
+        "iast": "mūla-mantrātmikā"
+      },
       "namavaliDeva": "मूलमन्त्रात्मिकायै",
       "namavaliIast": "mūlamantrātmikāyai",
+      "namavaliHyphenated": {
+        "deva": "मूल-मन्त्रात्मिकायै",
+        "iast": "mūla-mantrātmikāyai"
+      },
       "gloss": "Whose Very Self Is The Root Mantra",
       "translation": "She is not represented by the root mantra; she is what the root mantra is made of.",
       "aksaras": [
@@ -1045,8 +1069,16 @@
       "index": 89,
       "deva": "मूलकूटत्रयकलेवरा",
       "iast": "mūlakūṭatrayakalevarā",
+      "hyphenated": {
+        "deva": "मूल-कूट-त्रय-कलेवरा",
+        "iast": "mūla-kūṭa-traya-kalevarā"
+      },
       "namavaliDeva": "मूलकूटत्रयकलेवरायै",
       "namavaliIast": "mūlakūṭatrayakalevarāyai",
+      "namavaliHyphenated": {
+        "deva": "मूल-कूट-त्रय-कलेवरायै",
+        "iast": "mūla-kūṭa-traya-kalevarāyai"
+      },
       "gloss": "Whose Body Is The Three Root Clusters",
       "translation": "The three groups of syllables at the root of her mantra together make up the frame she inhabits.",
       "aksaras": [
@@ -1326,8 +1358,16 @@
       "index": 90,
       "deva": "कुलामृतैकरसिका",
       "iast": "kulāmṛtaikarasikā",
+      "hyphenated": {
+        "deva": "कुलामृतैक-रसिका",
+        "iast": "kulāmṛtaika-rasikā"
+      },
       "namavaliDeva": "कुलामृतैकरसिकायै",
       "namavaliIast": "kulāmṛtaikarasikāyai",
+      "namavaliHyphenated": {
+        "deva": "कुलामृतैक-रसिकायै",
+        "iast": "kulāmṛtaika-rasikāyai"
+      },
       "gloss": "Who Savours The Nectar Of Kula Alone",
       "translation": "One taste holds her, and it is the nectar of the kula; nothing else has any savour for her.",
       "aksaras": [
@@ -1572,8 +1612,16 @@
       "index": 91,
       "deva": "कुलसङ्केतपालिनी",
       "iast": "kulasaṅketapālinī",
+      "hyphenated": {
+        "deva": "कुल-सङ्केत-पालिनी",
+        "iast": "kula-saṅketa-pālinī"
+      },
       "namavaliDeva": "कुलसङ्केतपालिन्यै",
       "namavaliIast": "kulasaṅketapālinyai",
+      "namavaliHyphenated": {
+        "deva": "कुल-सङ्केत-पालिन्यै",
+        "iast": "kula-saṅketa-pālinyai"
+      },
       "gloss": "Guardian Of The Kula's Covenant",
       "translation": "The private agreements that bind the kula together are kept safe by her and by no one else.",
       "aksaras": [

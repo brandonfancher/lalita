@@ -119,6 +119,10 @@
           "id": "l0-t1",
           "deva": "रुद्ररूपा",
           "iast": "rudrarūpā",
+          "hyphenated": {
+            "deva": "रुद्र-रूपा",
+            "iast": "rudra-rūpā"
+          },
           "namaIndices": [
             269
           ],
@@ -436,6 +440,10 @@
           "id": "l1-t0",
           "deva": "सदाशिवाऽनुग्रहदा",
           "iast": "sadāśivā'nugrahadā",
+          "hyphenated": {
+            "deva": "सदा-शिवाऽनुग्रहदा",
+            "iast": "sadā-śivā'nugrahadā"
+          },
           "namaIndices": [
             272,
             273
@@ -646,6 +654,10 @@
           "id": "l1-t1",
           "deva": "पञ्चकृत्यपरायणा",
           "iast": "pañcakṛtyaparāyaṇā",
+          "hyphenated": {
+            "deva": "पञ्च-कृत्य-परायणा",
+            "iast": "pañca-kṛtya-parāyaṇā"
+          },
           "namaIndices": [
             274
           ],
@@ -965,8 +977,16 @@
       "index": 269,
       "deva": "रुद्ररूपा",
       "iast": "rudrarūpā",
+      "hyphenated": {
+        "deva": "रुद्र-रूपा",
+        "iast": "rudra-rūpā"
+      },
       "namavaliDeva": "रुद्ररूपायै",
       "namavaliIast": "rudrarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "रुद्र-रूपायै",
+        "iast": "rudra-rūpāyai"
+      },
       "gloss": "Whose Form Is Rudra",
       "translation": "That withdrawal shows itself as Rudra, the howling one whose terror is only her own act of gathering up.",
       "aksaras": [
@@ -1372,8 +1392,16 @@
       "index": 272,
       "deva": "सदाशिवा",
       "iast": "sadāśivā",
+      "hyphenated": {
+        "deva": "सदा-शिवा",
+        "iast": "sadā-śivā"
+      },
       "namavaliDeva": "सदाशिवायै",
       "namavaliIast": "sadāśivāyai",
+      "namavaliHyphenated": {
+        "deva": "सदा-शिवायै",
+        "iast": "sadā-śivāyai"
+      },
       "gloss": "Ever Auspicious",
       "translation": "The fifth act is grace, and here she takes the form of Sadāśiva, whose kindness never lapses.",
       "aksaras": [
@@ -1653,8 +1681,16 @@
       "index": 274,
       "deva": "पञ्चकृत्यपरायणा",
       "iast": "pañcakṛtyaparāyaṇā",
+      "hyphenated": {
+        "deva": "पञ्च-कृत्य-परायणा",
+        "iast": "pañca-kṛtya-parāyaṇā"
+      },
       "namavaliDeva": "पञ्चकृत्यपरायणायै",
       "namavaliIast": "pañcakṛtyaparāyaṇāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-कृत्य-परायणायै",
+        "iast": "pañca-kṛtya-parāyaṇāyai"
+      },
       "gloss": "Devoted To The Five Acts",
       "translation": "Creating, preserving, withdrawing, veiling and gracing are not five occupations but her single unbroken business.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सर्वयन्त्रात्मिका",
           "iast": "sarvayantrātmikā",
+          "hyphenated": {
+            "deva": "सर्व-यन्त्रात्मिका",
+            "iast": "sarva-yantrātmikā"
+          },
           "namaIndices": [
             205
           ],
@@ -206,6 +210,10 @@
           "id": "l0-t1",
           "deva": "सर्वतन्त्ररूपा",
           "iast": "sarvatantrarūpā",
+          "hyphenated": {
+            "deva": "सर्व-तन्त्र-रूपा",
+            "iast": "sarva-tantra-rūpā"
+          },
           "namaIndices": [
             206
           ],
@@ -604,6 +612,10 @@
           "id": "l1-t1",
           "deva": "महादेवी",
           "iast": "mahādevī",
+          "hyphenated": {
+            "deva": "महा-देवी",
+            "iast": "mahā-devī"
+          },
           "namaIndices": [
             209
           ],
@@ -703,6 +715,10 @@
           "id": "l1-t2",
           "deva": "महालक्ष्मीर्मृडप्रिया",
           "iast": "mahālakṣmīrmṛḍapriyā",
+          "hyphenated": {
+            "deva": "महा-लक्ष्मीर्-मृड-प्रिया",
+            "iast": "mahā-lakṣmīr-mṛḍa-priyā"
+          },
           "namaIndices": [
             210,
             211
@@ -949,8 +965,16 @@
       "index": 205,
       "deva": "सर्वयन्त्रात्मिका",
       "iast": "sarvayantrātmikā",
+      "hyphenated": {
+        "deva": "सर्व-यन्त्रात्मिका",
+        "iast": "sarva-yantrātmikā"
+      },
       "namavaliDeva": "सर्वयन्त्रात्मिकायै",
       "namavaliIast": "sarvayantrātmikāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-यन्त्रात्मिकायै",
+        "iast": "sarva-yantrātmikāyai"
+      },
       "gloss": "Soul Of Every Yantra",
       "translation": "A drawn diagram is only lines until she inhabits it as its living self.",
       "aksaras": [
@@ -1187,8 +1211,16 @@
       "index": 206,
       "deva": "सर्वतन्त्ररूपा",
       "iast": "sarvatantrarūpā",
+      "hyphenated": {
+        "deva": "सर्व-तन्त्र-रूपा",
+        "iast": "sarva-tantra-rūpā"
+      },
       "namavaliDeva": "सर्वतन्त्ररूपायै",
       "namavaliIast": "sarvatantrarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-तन्त्र-रूपायै",
+        "iast": "sarva-tantra-rūpāyai"
+      },
       "gloss": "Whose Form Is All Tantra",
       "translation": "The whole tantric revelation, root text and ritual alike, is the shape she wears.",
       "aksaras": [
@@ -1684,8 +1716,16 @@
       "index": 209,
       "deva": "महादेवी",
       "iast": "mahādevī",
+      "hyphenated": {
+        "deva": "महा-देवी",
+        "iast": "mahā-devī"
+      },
       "namavaliDeva": "महादेव्यै",
       "namavaliIast": "mahādevyai",
+      "namavaliHyphenated": {
+        "deva": "महा-देव्यै",
+        "iast": "mahā-devyai"
+      },
       "gloss": "The Great Goddess",
       "translation": "Of all the goddesses she is the one from whom the title itself derives.",
       "aksaras": [
@@ -1813,8 +1853,16 @@
       "index": 210,
       "deva": "महालक्ष्मीः",
       "iast": "mahālakṣmīḥ",
+      "hyphenated": {
+        "deva": "महा-लक्ष्मीः",
+        "iast": "mahā-lakṣmīḥ"
+      },
       "namavaliDeva": "महालक्ष्म्यै",
       "namavaliIast": "mahālakṣmyai",
+      "namavaliHyphenated": {
+        "deva": "महा-लक्ष्म्यै",
+        "iast": "mahā-lakṣmyai"
+      },
       "gloss": "The Great Lakṣmī",
       "translation": "As Mahālakṣmī she is fortune at its source, not the small luck that comes and goes.",
       "aksaras": [
@@ -1972,8 +2020,16 @@
       "index": 211,
       "deva": "मृडप्रिया",
       "iast": "mṛḍapriyā",
+      "hyphenated": {
+        "deva": "मृड-प्रिया",
+        "iast": "mṛḍa-priyā"
+      },
       "namavaliDeva": "मृडप्रियायै",
       "namavaliIast": "mṛḍapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "मृड-प्रियायै",
+        "iast": "mṛḍa-priyāyai"
+      },
       "gloss": "Beloved Of Mṛḍa",
       "translation": "She is dear to Śiva under the name he bears when he is merciful.",
       "aksaras": [

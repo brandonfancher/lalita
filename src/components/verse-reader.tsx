@@ -6,8 +6,10 @@ import { MousePointerClick, X } from "lucide-react";
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
+import { HyphenatedText } from "@/components/hyphenated-text";
 import { Lotus } from "@/components/ornament";
 import { ScriptToggle } from "@/components/script-toggle";
+import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { Morphology, Nama, StudyModule, Token, WordGloss } from "@/lib/types";
 import { caseInfo, cn, toDevanagariDigits } from "@/lib/utils";
 
@@ -75,6 +77,7 @@ export function VerseReader({
       key={`${kind}-${t.id}`}
       token={t}
       text={t[kind]}
+      hyphenated={t.hyphenated?.[kind]}
       activeId={activeId}
       hoverId={hoverId}
       linked={linkedIds.has(t.id)}
@@ -107,7 +110,10 @@ export function VerseReader({
         {chant && <div className="mb-6">{chant}</div>}
 
         <div className="mb-3 flex items-center justify-between gap-3">
-          <ScriptToggle />
+          <div className="flex flex-wrap items-center gap-2">
+            <ScriptToggle />
+            <WordBreakToggle />
+          </div>
           <p className="hidden text-sm italic text-ink-faint sm:block lg:hidden">
             Tap any word to inspect it.
           </p>
@@ -193,6 +199,7 @@ function IdleCard({ namaCount }: { namaCount: number }) {
 function TokenSpan({
   token,
   text,
+  hyphenated,
   activeId,
   hoverId,
   linked,
@@ -201,6 +208,7 @@ function TokenSpan({
 }: {
   token: Token;
   text: string;
+  hyphenated?: string;
   activeId: string | null;
   hoverId: string | null;
   linked: boolean;
@@ -226,7 +234,7 @@ function TokenSpan({
         onMouseEnter={() => onHover(token.id)}
         onMouseLeave={() => onHover(null)}
       >
-        {text}
+        <HyphenatedText text={text} hyphenated={hyphenated} />
       </span>{" "}
     </>
   );
@@ -253,11 +261,11 @@ function Inspector({
     >
       <div className="mb-4 flex items-start gap-2 border-b border-line pb-4">
         <div className="min-w-0 flex-1">
-          <FitText as="p" className="deva text-[1.75rem] leading-snug text-ink">
-            {token.deva}
+          <FitText as="p" fitKey={token.deva} className="deva text-[1.75rem] leading-snug text-ink">
+            <HyphenatedText text={token.deva} hyphenated={token.hyphenated?.deva} />
           </FitText>
-          <FitText as="p" className="iast text-[1.05rem] text-gold-soft">
-            {token.iast}
+          <FitText as="p" fitKey={token.iast} className="iast text-[1.05rem] text-gold-soft">
+            <HyphenatedText text={token.iast} hyphenated={token.hyphenated?.iast} />
           </FitText>
         </div>
         <button
@@ -306,11 +314,11 @@ function NamaPanel({ nama }: { nama: Nama }) {
       <div>
         <div data-fit-container className="mb-1.5 flex flex-wrap items-baseline gap-x-2 gap-y-1">
           <span className="eyebrow text-sindura">Nāma {nama.index}</span>
-          <FitText container="marker" className="deva text-lg text-ink">
-            {nama.deva}
+          <FitText container="marker" fitKey={nama.deva} className="deva text-lg text-ink">
+            <HyphenatedText text={nama.deva} hyphenated={nama.hyphenated?.deva} />
           </FitText>
-          <FitText container="marker" className="iast text-[15px] text-ink-muted">
-            {nama.iast}
+          <FitText container="marker" fitKey={nama.iast} className="iast text-[15px] text-ink-muted">
+            <HyphenatedText text={nama.iast} hyphenated={nama.hyphenated?.iast} />
           </FitText>
         </div>
         {nama.gloss && <p className="display text-xl leading-snug text-ink">{nama.gloss}</p>}

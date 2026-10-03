@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महेश्वरमहाकल्पमहाताण्डवसाक्षिणी",
           "iast": "maheśvaramahākalpamahātāṇḍavasākṣiṇī",
+          "hyphenated": {
+            "deva": "महेश्वर-महा-कल्प-महा-ताण्डव-साक्षिणी",
+            "iast": "maheśvara-mahā-kalpa-mahā-tāṇḍava-sākṣiṇī"
+          },
           "namaIndices": [
             232
           ],
@@ -410,6 +414,10 @@
           "id": "l1-t0",
           "deva": "महाकामेशमहिषी",
           "iast": "mahākāmeśamahiṣī",
+          "hyphenated": {
+            "deva": "महा-कामेश-महिषी",
+            "iast": "mahā-kāmeśa-mahiṣī"
+          },
           "namaIndices": [
             233
           ],
@@ -591,6 +599,10 @@
           "id": "l1-t1",
           "deva": "महात्रिपुरसुन्दरी",
           "iast": "mahātripurasundarī",
+          "hyphenated": {
+            "deva": "महा-त्रि-पुर-सुन्दरी",
+            "iast": "mahā-tri-pura-sundarī"
+          },
           "namaIndices": [
             234
           ],
@@ -806,8 +818,16 @@
       "index": 232,
       "deva": "महेश्वरमहाकल्पमहाताण्डवसाक्षिणी",
       "iast": "maheśvaramahākalpamahātāṇḍavasākṣiṇī",
+      "hyphenated": {
+        "deva": "महेश्वर-महा-कल्प-महा-ताण्डव-साक्षिणी",
+        "iast": "maheśvara-mahā-kalpa-mahā-tāṇḍava-sākṣiṇī"
+      },
       "namavaliDeva": "महेश्वरमहाकल्पमहा ताण्डवसाक्षिण्यै",
       "namavaliIast": "maheśvaramahākalpamahā tāṇḍavasākṣiṇyai",
+      "namavaliHyphenated": {
+        "deva": "महेश्वर-महा-कल्प-महा ताण्डव-साक्षिण्यै",
+        "iast": "maheśvara-mahā-kalpa-mahā tāṇḍava-sākṣiṇyai"
+      },
       "gloss": "Witness Of Śiva's Dance At The Great Dissolution",
       "translation": "When the worlds end and Śiva dances them out of existence, she alone remains as the onlooker.",
       "aksaras": [
@@ -1279,8 +1299,16 @@
       "index": 233,
       "deva": "महाकामेशमहिषी",
       "iast": "mahākāmeśamahiṣī",
+      "hyphenated": {
+        "deva": "महा-कामेश-महिषी",
+        "iast": "mahā-kāmeśa-mahiṣī"
+      },
       "namavaliDeva": "महाकामेशमहिष्यै",
       "namavaliIast": "mahākāmeśamahiṣyai",
+      "namavaliHyphenated": {
+        "deva": "महा-कामेश-महिष्यै",
+        "iast": "mahā-kāmeśa-mahiṣyai"
+      },
       "gloss": "Queen Of Great Kāmeśa",
       "translation": "She is the consecrated queen of the lord of desire, sharing his throne rather than attending on it.",
       "aksaras": [
@@ -1518,8 +1546,16 @@
       "index": 234,
       "deva": "महात्रिपुरसुन्दरी",
       "iast": "mahātripurasundarī",
+      "hyphenated": {
+        "deva": "महा-त्रि-पुर-सुन्दरी",
+        "iast": "mahā-tri-pura-sundarī"
+      },
       "namavaliDeva": "महात्रिपुरसुन्दर्यै",
       "namavaliIast": "mahātripurasundaryai",
+      "namavaliHyphenated": {
+        "deva": "महा-त्रि-पुर-सुन्दर्यै",
+        "iast": "mahā-tri-pura-sundaryai"
+      },
       "gloss": "Great Beauty Of The Three Cities",
       "translation": "Under this name she is worshipped as the loveliness that presides over the three cities of waking, dream and sleep.",
       "aksaras": [

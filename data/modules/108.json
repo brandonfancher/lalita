@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मज्जासंस्था",
           "iast": "majjāsaṃsthā",
+          "hyphenated": {
+            "deva": "मज्जा-संस्था",
+            "iast": "majjā-saṃsthā"
+          },
           "namaIndices": [
             524
           ],
@@ -142,6 +146,10 @@
           "id": "l0-t1",
           "deva": "हंसवतीमुख्यशक्तिसमन्विता",
           "iast": "haṃsavatīmukhyaśaktisamanvitā",
+          "hyphenated": {
+            "deva": "हंसवती-मुख्य-शक्ति-समन्विता",
+            "iast": "haṃsavatī-mukhya-śakti-samanvitā"
+          },
           "namaIndices": [
             525
           ],
@@ -449,6 +457,10 @@
           "id": "l1-t0",
           "deva": "हरिद्रान्नैकरसिका",
           "iast": "haridrānnaikarasikā",
+          "hyphenated": {
+            "deva": "हरिद्रान्नैक-रसिका",
+            "iast": "haridrānnaika-rasikā"
+          },
           "namaIndices": [
             526
           ],
@@ -660,6 +672,10 @@
           "id": "l1-t1",
           "deva": "हाकिनीरूपधारिणी",
           "iast": "hākinīrūpadhāriṇī",
+          "hyphenated": {
+            "deva": "हाकिनी-रूप-धारिणी",
+            "iast": "hākinī-rūpa-dhāriṇī"
+          },
           "namaIndices": [
             527
           ],
@@ -859,8 +875,16 @@
       "index": 524,
       "deva": "मज्जासंस्था",
       "iast": "majjāsaṃsthā",
+      "hyphenated": {
+        "deva": "मज्जा-संस्था",
+        "iast": "majjā-saṃsthā"
+      },
       "namavaliDeva": "मज्जासंस्थायै",
       "namavaliIast": "majjāsaṃsthāyai",
+      "namavaliHyphenated": {
+        "deva": "मज्जा-संस्थायै",
+        "iast": "majjā-saṃsthāyai"
+      },
       "gloss": "Resident In The Marrow",
       "translation": "Among the bodily constituents she occupies marrow, the innermost of them.",
       "aksaras": [
@@ -1018,8 +1042,16 @@
       "index": 525,
       "deva": "हंसवतीमुख्यशक्तिसमन्विता",
       "iast": "haṃsavatīmukhyaśaktisamanvitā",
+      "hyphenated": {
+        "deva": "हंसवती-मुख्य-शक्ति-समन्विता",
+        "iast": "haṃsavatī-mukhya-śakti-samanvitā"
+      },
       "namavaliDeva": "हंसवतीमुख्यशक्तिसमन्वितायै",
       "namavaliIast": "haṃsavatīmukhyaśaktisamanvitāyai",
+      "namavaliHyphenated": {
+        "deva": "हंसवती-मुख्य-शक्ति-समन्वितायै",
+        "iast": "haṃsavatī-mukhya-śakti-samanvitāyai"
+      },
       "gloss": "Attended By Haṃsavatī And Her Peers",
       "translation": "The two petals of the brow wheel are śaktis, and Haṃsavatī is named as the foremost of the pair.",
       "aksaras": [
@@ -1377,8 +1409,16 @@
       "index": 526,
       "deva": "हरिद्रान्नैकरसिका",
       "iast": "haridrānnaikarasikā",
+      "hyphenated": {
+        "deva": "हरिद्रान्नैक-रसिका",
+        "iast": "haridrānnaika-rasikā"
+      },
       "namavaliDeva": "हरिद्रान्नैकरसिकायै",
       "namavaliIast": "haridrānnaikarasikāyai",
+      "namavaliHyphenated": {
+        "deva": "हरिद्रान्नैक-रसिकायै",
+        "iast": "haridrānnaika-rasikāyai"
+      },
       "gloss": "Relishing Only Turmeric-Rice",
       "translation": "Rice tinted with turmeric is the single dish for which she shows a taste at this wheel.",
       "aksaras": [
@@ -1646,8 +1686,16 @@
       "index": 527,
       "deva": "हाकिनीरूपधारिणी",
       "iast": "hākinīrūpadhāriṇī",
+      "hyphenated": {
+        "deva": "हाकिनी-रूप-धारिणी",
+        "iast": "hākinī-rūpa-dhāriṇī"
+      },
       "namavaliDeva": "हाकिनीरूपधारिण्यै",
       "namavaliIast": "hākinīrūpadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "हाकिनी-रूप-धारिण्यै",
+        "iast": "hākinī-rūpa-dhāriṇyai"
+      },
       "gloss": "Wearing The Shape Of Hākinī",
       "translation": "At the command wheel the form she puts on is that of the goddess Hākinī.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सुवासिन्यर्चनप्रीताऽऽशोभना",
           "iast": "suvāsinyarcanaprītā''śobhanā",
+          "hyphenated": {
+            "deva": "सुवासिन्यर्चन-प्रीताऽऽशोभना",
+            "iast": "suvāsinyarcana-prītā''śobhanā"
+          },
           "namaIndices": [
             971,
             972
@@ -331,6 +335,10 @@
           "id": "l0-t1",
           "deva": "शुद्धमानसा",
           "iast": "śuddhamānasā",
+          "hyphenated": {
+            "deva": "शुद्ध-मानसा",
+            "iast": "śuddha-mānasā"
+          },
           "namaIndices": [
             973
           ],
@@ -468,6 +476,10 @@
           "id": "l1-t0",
           "deva": "बिन्दुतर्पणसन्तुष्टा",
           "iast": "bindutarpaṇasantuṣṭā",
+          "hyphenated": {
+            "deva": "बिन्दु-तर्पण-सन्तुष्टा",
+            "iast": "bindu-tarpaṇa-santuṣṭā"
+          },
           "namaIndices": [
             974
           ],
@@ -792,6 +804,10 @@
           "id": "l1-t2",
           "deva": "त्रिपुराम्बिका",
           "iast": "tripurāmbikā",
+          "hyphenated": {
+            "deva": "त्रि-पुराम्बिका",
+            "iast": "tri-purāmbikā"
+          },
           "namaIndices": [
             976
           ],
@@ -956,8 +972,16 @@
       "index": 971,
       "deva": "सुवासिन्यर्चनप्रीता",
       "iast": "suvāsinyarcanaprītā",
+      "hyphenated": {
+        "deva": "सुवासिन्यर्चन-प्रीता",
+        "iast": "suvāsinyarcana-prītā"
+      },
       "namavaliDeva": "सुवासिन्यर्चनप्रीतायै",
       "namavaliIast": "suvāsinyarcanaprītāyai",
+      "namavaliHyphenated": {
+        "deva": "सुवासिन्यर्चन-प्रीतायै",
+        "iast": "suvāsinyarcana-prītāyai"
+      },
       "gloss": "Pleased By Honouring Suvāsinīs",
       "translation": "Worship offered to living suvāsinīs reaches her and gives her pleasure.",
       "aksaras": [
@@ -1361,8 +1385,16 @@
       "index": 973,
       "deva": "शुद्धमानसा",
       "iast": "śuddhamānasā",
+      "hyphenated": {
+        "deva": "शुद्ध-मानसा",
+        "iast": "śuddha-mānasā"
+      },
       "namavaliDeva": "शुद्धमानसायै",
       "namavaliIast": "śuddhamānasāyai",
+      "namavaliHyphenated": {
+        "deva": "शुद्ध-मानसायै",
+        "iast": "śuddha-mānasāyai"
+      },
       "gloss": "Of Spotless Mind",
       "translation": "Nothing turbid sits in her mind, and she clears the minds of those who fix on her.",
       "aksaras": [
@@ -1522,8 +1554,16 @@
       "index": 974,
       "deva": "बिन्दुतर्पणसन्तुष्टा",
       "iast": "bindutarpaṇasantuṣṭā",
+      "hyphenated": {
+        "deva": "बिन्दु-तर्पण-सन्तुष्टा",
+        "iast": "bindu-tarpaṇa-santuṣṭā"
+      },
       "namavaliDeva": "बिन्दुतर्पणसन्तुष्टायै",
       "namavaliIast": "bindutarpaṇasantuṣṭāyai",
+      "namavaliHyphenated": {
+        "deva": "बिन्दु-तर्पण-सन्तुष्टायै",
+        "iast": "bindu-tarpaṇa-santuṣṭāyai"
+      },
       "gloss": "Gladdened By Bindu Libation",
       "translation": "The libation poured at the central point of the Śrīcakra leaves her entirely satisfied.",
       "aksaras": [
@@ -1920,8 +1960,16 @@
       "index": 976,
       "deva": "त्रिपुराम्बिका",
       "iast": "tripurāmbikā",
+      "hyphenated": {
+        "deva": "त्रि-पुराम्बिका",
+        "iast": "tri-purāmbikā"
+      },
       "namavaliDeva": "त्रिपुराम्बिकायै",
       "namavaliIast": "tripurāmbikāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-पुराम्बिकायै",
+        "iast": "tri-purāmbikāyai"
+      },
       "gloss": "Mother Tripurā",
       "translation": "She is Tripurā, who presides over the threefold city, and she is mother to whoever calls on her.",
       "aksaras": [

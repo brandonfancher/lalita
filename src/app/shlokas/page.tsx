@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { HyphenatedText } from "@/components/hyphenated-text";
 import { getModuleSummaries } from "@/lib/content";
 import type { ModuleSummary } from "@/lib/types";
 import { toDevanagariDigits } from "@/lib/utils";
@@ -62,7 +63,7 @@ function Entry({ summary }: { summary: ModuleSummary }) {
       <span className="min-w-0">
         <span className="sr-only">{summary.title}: </span>
         <span className="deva block truncate text-[1.3rem] leading-snug text-ink">
-          {summary.previewDeva}
+          <HyphenatedText text={summary.previewDeva} hyphenated={summary.previewHyphenated?.deva} />
         </span>
         {summary.subtitle && (
           <span className="display mt-0.5 block truncate text-[1.02rem] italic text-ink-muted group-hover:text-sindura">

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "ताम्बूलपूरितमुखी",
           "iast": "tāmbūlapūritamukhī",
+          "hyphenated": {
+            "deva": "ताम्बूल-पूरित-मुखी",
+            "iast": "tāmbūla-pūrita-mukhī"
+          },
           "namaIndices": [
             559
           ],
@@ -216,6 +220,10 @@
           "id": "l0-t1",
           "deva": "दाडिमीकुसुमप्रभा",
           "iast": "dāḍimīkusumaprabhā",
+          "hyphenated": {
+            "deva": "दाडिमी-कुसुम-प्रभा",
+            "iast": "dāḍimī-kusuma-prabhā"
+          },
           "namaIndices": [
             560
           ],
@@ -759,6 +767,10 @@
           "id": "l1-t4",
           "deva": "मित्ररूपिणी",
           "iast": "mitrarūpiṇī",
+          "hyphenated": {
+            "deva": "मित्र-रूपिणी",
+            "iast": "mitra-rūpiṇī"
+          },
           "namaIndices": [
             565
           ],
@@ -901,8 +913,16 @@
       "index": 559,
       "deva": "ताम्बूलपूरितमुखी",
       "iast": "tāmbūlapūritamukhī",
+      "hyphenated": {
+        "deva": "ताम्बूल-पूरित-मुखी",
+        "iast": "tāmbūla-pūrita-mukhī"
+      },
       "namavaliDeva": "ताम्बूलपूरितमुख्यै",
       "namavaliIast": "tāmbūlapūritamukhyai",
+      "namavaliHyphenated": {
+        "deva": "ताम्बूल-पूरित-मुख्यै",
+        "iast": "tāmbūla-pūrita-mukhyai"
+      },
       "gloss": "Her Mouth Full Of Betel",
       "translation": "She is pictured with the aromatic betel leaf in her mouth, the courtly refreshment of a queen at ease.",
       "aksaras": [
@@ -1148,8 +1168,16 @@
       "index": 560,
       "deva": "दाडिमीकुसुमप्रभा",
       "iast": "dāḍimīkusumaprabhā",
+      "hyphenated": {
+        "deva": "दाडिमी-कुसुम-प्रभा",
+        "iast": "dāḍimī-kusuma-prabhā"
+      },
       "namavaliDeva": "दाडिमीकुसुमप्रभायै",
       "namavaliIast": "dāḍimīkusumaprabhāyai",
+      "namavaliHyphenated": {
+        "deva": "दाडिमी-कुसुम-प्रभायै",
+        "iast": "dāḍimī-kusuma-prabhāyai"
+      },
       "gloss": "Bright As Pomegranate Blossom",
       "translation": "Her glow is the deep red of the pomegranate flower rather than any pallid light.",
       "aksaras": [
@@ -1793,8 +1821,16 @@
       "index": 565,
       "deva": "मित्ररूपिणी",
       "iast": "mitrarūpiṇī",
+      "hyphenated": {
+        "deva": "मित्र-रूपिणी",
+        "iast": "mitra-rūpiṇī"
+      },
       "namavaliDeva": "मित्ररूपिण्यै",
       "namavaliIast": "mitrarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "मित्र-रूपिण्यै",
+        "iast": "mitra-rūpiṇyai"
+      },
       "gloss": "Appearing As The Friend",
       "translation": "She wears the shape of friendship itself, and with it the shape of the Vedic Mitra who calls creatures to their work.",
       "aksaras": [

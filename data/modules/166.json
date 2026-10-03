@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विश्वग्रासा",
           "iast": "viśvagrāsā",
+          "hyphenated": {
+            "deva": "विश्व-ग्रासा",
+            "iast": "viśva-grāsā"
+          },
           "namaIndices": [
             890
           ],
@@ -353,6 +357,10 @@
           "id": "l0-t3",
           "deva": "विष्णुरूपिणी",
           "iast": "viṣṇurūpiṇī",
+          "hyphenated": {
+            "deva": "विष्णु-रूपिणी",
+            "iast": "viṣṇu-rūpiṇī"
+          },
           "namaIndices": [
             893
           ],
@@ -504,6 +512,10 @@
           "id": "l1-t0",
           "deva": "अयोनिर्योनिनिलया",
           "iast": "ayoniryoninilayā",
+          "hyphenated": {
+            "deva": "अयोनिर्-योनि-निलया",
+            "iast": "ayonir-yoni-nilayā"
+          },
           "namaIndices": [
             894,
             895
@@ -796,6 +808,10 @@
           "id": "l1-t2",
           "deva": "कुलरूपिणी",
           "iast": "kularūpiṇī",
+          "hyphenated": {
+            "deva": "कुल-रूपिणी",
+            "iast": "kula-rūpiṇī"
+          },
           "namaIndices": [
             897
           ],
@@ -923,8 +939,16 @@
       "index": 890,
       "deva": "विश्वग्रासा",
       "iast": "viśvagrāsā",
+      "hyphenated": {
+        "deva": "विश्व-ग्रासा",
+        "iast": "viśva-grāsā"
+      },
       "namavaliDeva": "विश्वग्रासायै",
       "namavaliIast": "viśvagrāsāyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-ग्रासायै",
+        "iast": "viśva-grāsāyai"
+      },
       "gloss": "For Whom The Universe Is One Mouthful",
       "translation": "When a cycle closes she swallows the whole world as easily as a single lump of food.",
       "aksaras": [
@@ -1334,8 +1358,16 @@
       "index": 893,
       "deva": "विष्णुरूपिणी",
       "iast": "viṣṇurūpiṇī",
+      "hyphenated": {
+        "deva": "विष्णु-रूपिणी",
+        "iast": "viṣṇu-rūpiṇī"
+      },
       "namavaliDeva": "विष्णुरूपिण्यै",
       "namavaliIast": "viṣṇurūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "विष्णु-रूपिण्यै",
+        "iast": "viṣṇu-rūpiṇyai"
+      },
       "gloss": "Embodied As Viṣṇu",
       "translation": "The preserving god is a shape she takes rather than a separate person she deals with.",
       "aksaras": [
@@ -1620,8 +1652,16 @@
       "index": 895,
       "deva": "योनिनिलया",
       "iast": "yoninilayā",
+      "hyphenated": {
+        "deva": "योनि-निलया",
+        "iast": "yoni-nilayā"
+      },
       "namavaliDeva": "योनिनिलयायै",
       "namavaliIast": "yoninilayāyai",
+      "namavaliHyphenated": {
+        "deva": "योनि-निलयायै",
+        "iast": "yoni-nilayāyai"
+      },
       "gloss": "The Abode Of The Source",
       "translation": "Having no origin of her own, she is nonetheless where every origin has its seat.",
       "aksaras": [
@@ -1893,8 +1933,16 @@
       "index": 897,
       "deva": "कुलरूपिणी",
       "iast": "kularūpiṇī",
+      "hyphenated": {
+        "deva": "कुल-रूपिणी",
+        "iast": "kula-rūpiṇī"
+      },
       "namavaliDeva": "कुलरूपिण्यै",
       "namavaliIast": "kularūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "कुल-रूपिण्यै",
+        "iast": "kula-rūpiṇyai"
+      },
       "gloss": "Embodied As The Kula",
       "translation": "She takes the form of the Kaula lineage and of everything its word kula gathers up, the whole family of knower, knowing and known.",
       "aksaras": [

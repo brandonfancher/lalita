@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "उन्मेषनिमिषोत्पन्नविपन्नभुवनावली",
           "iast": "unmeṣanimiṣotpannavipannabhuvanāvalī",
+          "hyphenated": {
+            "deva": "उन्मेष-निमिषोत्पन्न-विपन्न-भुवनावली",
+            "iast": "unmeṣa-nimiṣotpanna-vipanna-bhuvanāvalī"
+          },
           "namaIndices": [
             281
           ],
@@ -415,6 +419,10 @@
           "id": "l1-t0",
           "deva": "सहस्रशीर्षवदना",
           "iast": "sahasraśīrṣavadanā",
+          "hyphenated": {
+            "deva": "सहस्र-शीर्ष-वदना",
+            "iast": "sahasra-śīrṣa-vadanā"
+          },
           "namaIndices": [
             282
           ],
@@ -727,6 +735,10 @@
           "id": "l1-t2",
           "deva": "सहस्रपात्",
           "iast": "sahasrapāt",
+          "hyphenated": {
+            "deva": "सहस्र-पात्",
+            "iast": "sahasra-pāt"
+          },
           "namaIndices": [
             284
           ],
@@ -853,8 +865,16 @@
       "index": 281,
       "deva": "उन्मेषनिमिषोत्पन्नविपन्नभुवनावली",
       "iast": "unmeṣanimiṣotpannavipannabhuvanāvalī",
+      "hyphenated": {
+        "deva": "उन्मेष-निमिषोत्पन्न-विपन्न-भुवनावली",
+        "iast": "unmeṣa-nimiṣotpanna-vipanna-bhuvanāvalī"
+      },
       "namavaliDeva": "उन्मेषनिमिषोत्पन्नविपन्नभुवनावल्यै",
       "namavaliIast": "unmeṣanimiṣotpannavipannabhuvanāvalyai",
+      "namavaliHyphenated": {
+        "deva": "उन्मेष-निमिषोत्पन्न-विपन्न-भुवनावल्यै",
+        "iast": "unmeṣa-nimiṣotpanna-vipanna-bhuvanāvalyai"
+      },
       "gloss": "Whose Blink Makes And Unmakes Worlds",
       "translation": "Her eyes open and rows of worlds appear; they close and the same rows are gone.",
       "aksaras": [
@@ -1326,8 +1346,16 @@
       "index": 282,
       "deva": "सहस्रशीर्षवदना",
       "iast": "sahasraśīrṣavadanā",
+      "hyphenated": {
+        "deva": "सहस्र-शीर्ष-वदना",
+        "iast": "sahasra-śīrṣa-vadanā"
+      },
       "namavaliDeva": "सहस्रशीर्षवदनायै",
       "namavaliIast": "sahasraśīrṣavadanāyai",
+      "namavaliHyphenated": {
+        "deva": "सहस्र-शीर्ष-वदनायै",
+        "iast": "sahasra-śīrṣa-vadanāyai"
+      },
       "gloss": "Thousand-Headed And Thousand-Faced",
       "translation": "Like the cosmic person of the Vedic hymn she looks out of a thousand heads at once.",
       "aksaras": [
@@ -1712,8 +1740,16 @@
       "index": 284,
       "deva": "सहस्रपात्",
       "iast": "sahasrapāt",
+      "hyphenated": {
+        "deva": "सहस्र-पात्",
+        "iast": "sahasra-pāt"
+      },
       "namavaliDeva": "सहस्रपदे",
       "namavaliIast": "sahasrapade",
+      "namavaliHyphenated": {
+        "deva": "सहस्र-पदे",
+        "iast": "sahasra-pade"
+      },
       "gloss": "Thousand-Footed",
       "translation": "She stands everywhere at once, the whole earth being no wider than her stride.",
       "aksaras": [

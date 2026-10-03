@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "नवचम्पकपुष्पाभनासादण्डविराजिता",
           "iast": "navacampakapuṣpābhanāsādaṇḍavirājitā",
+          "hyphenated": {
+            "deva": "नव-चम्पक-पुष्पाभ-नासा-दण्ड-विराजिता",
+            "iast": "nava-campaka-puṣpābha-nāsā-daṇḍa-virājitā"
+          },
           "namaIndices": [
             19
           ],
@@ -402,6 +406,10 @@
           "id": "l1-t0",
           "deva": "ताराकान्तितिरस्कारिनासाभरणभासुरा",
           "iast": "tārākāntitiraskārināsābharaṇabhāsurā",
+          "hyphenated": {
+            "deva": "तारा-कान्ति-तिरस्कारि-नासाभरण-भासुरा",
+            "iast": "tārā-kānti-tiraskāri-nāsābharaṇa-bhāsurā"
+          },
           "namaIndices": [
             20
           ],
@@ -802,8 +810,16 @@
       "index": 19,
       "deva": "नवचम्पकपुष्पाभनासादण्डविराजिता",
       "iast": "navacampakapuṣpābhanāsādaṇḍavirājitā",
+      "hyphenated": {
+        "deva": "नव-चम्पक-पुष्पाभ-नासा-दण्ड-विराजिता",
+        "iast": "nava-campaka-puṣpābha-nāsā-daṇḍa-virājitā"
+      },
       "namavaliDeva": "नवचम्पकपुष्पाभनासादण्डविराजितायै",
       "namavaliIast": "navacampakapuṣpābhanāsādaṇḍavirājitāyai",
+      "namavaliHyphenated": {
+        "deva": "नव-चम्पक-पुष्पाभ-नासा-दण्ड-विराजितायै",
+        "iast": "nava-campaka-puṣpābha-nāsā-daṇḍa-virājitāyai"
+      },
       "gloss": "Whose Nose Is A Fresh Campaka Bud",
       "translation": "The straight ridge of her nose has the pale gold colour and slender line of a campaka flower newly opened.",
       "aksaras": [
@@ -1285,8 +1301,16 @@
       "index": 20,
       "deva": "ताराकान्तितिरस्कारिनासाभरणभासुरा",
       "iast": "tārākāntitiraskārināsābharaṇabhāsurā",
+      "hyphenated": {
+        "deva": "तारा-कान्ति-तिरस्कारि-नासाभरण-भासुरा",
+        "iast": "tārā-kānti-tiraskāri-nāsābharaṇa-bhāsurā"
+      },
       "namavaliDeva": "ताराकान्तितिरस्कारिनासाभरणभासुरायै",
       "namavaliIast": "tārākāntitiraskārināsābharaṇabhāsurāyai",
+      "namavaliHyphenated": {
+        "deva": "तारा-कान्ति-तिरस्कारि-नासाभरण-भासुरायै",
+        "iast": "tārā-kānti-tiraskāri-nāsābharaṇa-bhāsurāyai"
+      },
       "gloss": "Radiant With A Star-Shaming Nose Jewel",
       "translation": "The jewel in her nose burns so clearly that the light of the stars is put out of countenance beside it.",
       "aksaras": [

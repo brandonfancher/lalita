@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "देवर्षिगणसङ्घातस्तूयमानात्मवैभवा",
           "iast": "devarṣigaṇasaṅghātastūyamānātmavaibhavā",
+          "hyphenated": {
+            "deva": "देवर्षिगण-सङ्घात-स्तूयमानात्म-वैभवा",
+            "iast": "devarṣigaṇa-saṅghāta-stūyamānātma-vaibhavā"
+          },
           "namaIndices": [
             64
           ],
@@ -417,6 +421,10 @@
           "id": "l1-t0",
           "deva": "भण्डासुरवधोद्युक्तशक्तिसेनासमन्विता",
           "iast": "bhaṇḍāsuravadhodyuktaśaktisenāsamanvitā",
+          "hyphenated": {
+            "deva": "भण्डासुर-वधोद्युक्त-शक्ति-सेना-समन्विता",
+            "iast": "bhaṇḍāsura-vadhodyukta-śakti-senā-samanvitā"
+          },
           "namaIndices": [
             65
           ],
@@ -841,8 +849,16 @@
       "index": 64,
       "deva": "देवर्षिगणसङ्घातस्तूयमानात्मवैभवा",
       "iast": "devarṣigaṇasaṅghātastūyamānātmavaibhavā",
+      "hyphenated": {
+        "deva": "देवर्षिगण-सङ्घात-स्तूयमानात्म-वैभवा",
+        "iast": "devarṣigaṇa-saṅghāta-stūyamānātma-vaibhavā"
+      },
       "namavaliDeva": "देवर्षिगणसङ्घातस्तूयमानात्मवैभायै",
       "namavaliIast": "devarṣigaṇasaṅghātastūyamānātmavaibhāyai",
+      "namavaliHyphenated": {
+        "deva": "देवर्षिगण-सङ्घात-स्तूयमानात्म-वैभायै",
+        "iast": "devarṣigaṇa-saṅghāta-stūyamānātma-vaibhāyai"
+      },
       "gloss": "Whose Glory Assembled Gods And Sages Praise",
       "translation": "Crowd upon crowd of gods and seers gather to sing the greatness that belongs to her alone.",
       "aksaras": [
@@ -1340,8 +1356,16 @@
       "index": 65,
       "deva": "भण्डासुरवधोद्युक्तशक्तिसेनासमन्विता",
       "iast": "bhaṇḍāsuravadhodyuktaśaktisenāsamanvitā",
+      "hyphenated": {
+        "deva": "भण्डासुर-वधोद्युक्त-शक्ति-सेना-समन्विता",
+        "iast": "bhaṇḍāsura-vadhodyukta-śakti-senā-samanvitā"
+      },
       "namavaliDeva": "भण्डासुरवधोद्युक्तशक्तिसेनासमन्वितायै",
       "namavaliIast": "bhaṇḍāsuravadhodyuktaśaktisenāsamanvitāyai",
+      "namavaliHyphenated": {
+        "deva": "भण्डासुर-वधोद्युक्त-शक्ति-सेना-समन्वितायै",
+        "iast": "bhaṇḍāsura-vadhodyukta-śakti-senā-samanvitāyai"
+      },
       "gloss": "Attended By The Army Of Śaktis",
       "translation": "When Bhaṇḍa had to be destroyed she came surrounded by an army of her own powers, each of them ready for the killing.",
       "aksaras": [

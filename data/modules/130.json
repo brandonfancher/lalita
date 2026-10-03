@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी",
           "iast": "icchāśaktijñānaśaktikriyāśaktisvarūpiṇī",
+          "hyphenated": {
+            "deva": "इच्छा-शक्ति-ज्ञान-शक्ति-क्रिया-शक्ति-स्वरूपिणी",
+            "iast": "icchā-śakti-jñāna-śakti-kriyā-śakti-svarūpiṇī"
+          },
           "namaIndices": [
             658
           ],
@@ -717,6 +721,10 @@
           "id": "l1-t2",
           "deva": "सदसद्रूपधारिणी",
           "iast": "sadasadrūpadhāriṇī",
+          "hyphenated": {
+            "deva": "सदसद्-रूप-धारिणी",
+            "iast": "sadasad-rūpa-dhāriṇī"
+          },
           "namaIndices": [
             661
           ],
@@ -910,8 +918,16 @@
       "index": 658,
       "deva": "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी",
       "iast": "icchāśaktijñānaśaktikriyāśaktisvarūpiṇī",
+      "hyphenated": {
+        "deva": "इच्छा-शक्ति-ज्ञान-शक्ति-क्रिया-शक्ति-स्वरूपिणी",
+        "iast": "icchā-śakti-jñāna-śakti-kriyā-śakti-svarūpiṇī"
+      },
       "namavaliDeva": "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिण्यै",
       "namavaliIast": "icchāśaktijñānaśaktikriyāśaktisvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "इच्छा-शक्ति-ज्ञान-शक्ति-क्रिया-शक्ति-स्वरूपिण्यै",
+        "iast": "icchā-śakti-jñāna-śakti-kriyā-śakti-svarūpiṇyai"
+      },
       "gloss": "Whose Form Is The Powers Of Will, Knowledge And Action",
       "translation": "She appears as three energies at once: the wanting that starts a thing, the knowing that shapes it, and the doing that carries it out.",
       "aksaras": [
@@ -1751,8 +1767,16 @@
       "index": 661,
       "deva": "सदसद्रूपधारिणी",
       "iast": "sadasadrūpadhāriṇī",
+      "hyphenated": {
+        "deva": "सदसद्-रूप-धारिणी",
+        "iast": "sadasad-rūpa-dhāriṇī"
+      },
       "namavaliDeva": "सदसद्रूपधारिण्यै",
       "namavaliIast": "sadasadrūpadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "सदसद्-रूप-धारिण्यै",
+        "iast": "sadasad-rūpa-dhāriṇyai"
+      },
       "gloss": "Wearing The Form Of Being And Non-Being",
       "translation": "She takes on the shape of what is and equally of what is not, so neither category leaves her out.",
       "aksaras": [

@@ -266,6 +266,10 @@
           "id": "l0-t3",
           "deva": "शरच्चन्द्रनिभानना",
           "iast": "śaraccandranibhānanā",
+          "hyphenated": {
+            "deva": "शरच्-चन्द्र-निभानना",
+            "iast": "śarac-candra-nibhānanā"
+          },
           "namaIndices": [
             129
           ],
@@ -1221,8 +1225,16 @@
       "index": 129,
       "deva": "शरच्चन्द्रनिभानना",
       "iast": "śaraccandranibhānanā",
+      "hyphenated": {
+        "deva": "शरच्-चन्द्र-निभानना",
+        "iast": "śarac-candra-nibhānanā"
+      },
       "namavaliDeva": "शरच्चन्द्रनिभाननायै",
       "namavaliIast": "śaraccandranibhānanāyai",
+      "namavaliHyphenated": {
+        "deva": "शरच्-चन्द्र-निभाननायै",
+        "iast": "śarac-candra-nibhānanāyai"
+      },
       "gloss": "Face Like The Autumn Moon",
       "translation": "Her face holds the clean cool light of the moon in autumn, once the rains have scrubbed the sky.",
       "aksaras": [

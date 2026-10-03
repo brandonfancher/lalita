@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मिथ्याजगदधिष्ठाना",
           "iast": "mithyājagadadhiṣṭhānā",
+          "hyphenated": {
+            "deva": "मिथ्या-जगदधिष्ठाना",
+            "iast": "mithyā-jagadadhiṣṭhānā"
+          },
           "namaIndices": [
             735
           ],
@@ -321,6 +325,10 @@
           "id": "l0-t2",
           "deva": "मुक्तिरूपिणी",
           "iast": "muktirūpiṇī",
+          "hyphenated": {
+            "deva": "मुक्ति-रूपिणी",
+            "iast": "mukti-rūpiṇī"
+          },
           "namaIndices": [
             737
           ],
@@ -472,6 +480,10 @@
           "id": "l1-t0",
           "deva": "लास्यप्रिया",
           "iast": "lāsyapriyā",
+          "hyphenated": {
+            "deva": "लास्य-प्रिया",
+            "iast": "lāsya-priyā"
+          },
           "namaIndices": [
             738
           ],
@@ -752,6 +764,10 @@
           "id": "l1-t3",
           "deva": "रम्भादिवन्दिता",
           "iast": "rambhādivanditā",
+          "hyphenated": {
+            "deva": "रम्भादि-वन्दिता",
+            "iast": "rambhādi-vanditā"
+          },
           "namaIndices": [
             741
           ],
@@ -926,8 +942,16 @@
       "index": 735,
       "deva": "मिथ्याजगदधिष्ठाना",
       "iast": "mithyājagadadhiṣṭhānā",
+      "hyphenated": {
+        "deva": "मिथ्या-जगदधिष्ठाना",
+        "iast": "mithyā-jagadadhiṣṭhānā"
+      },
       "namavaliDeva": "मिथ्याजगदधिष्ठानायै",
       "namavaliIast": "mithyājagadadhiṣṭhānāyai",
+      "namavaliHyphenated": {
+        "deva": "मिथ्या-जगदधिष्ठानायै",
+        "iast": "mithyā-jagadadhiṣṭhānāyai"
+      },
       "gloss": "Ground Of The Illusory World",
       "translation": "The world is false the way a snake seen in a rope is false, and she is the rope it is laid over.",
       "aksaras": [
@@ -1309,8 +1333,16 @@
       "index": 737,
       "deva": "मुक्तिरूपिणी",
       "iast": "muktirūpiṇī",
+      "hyphenated": {
+        "deva": "मुक्ति-रूपिणी",
+        "iast": "mukti-rūpiṇī"
+      },
       "namavaliDeva": "मुक्तिरूपिण्यै",
       "namavaliIast": "muktirūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "मुक्ति-रूपिण्यै",
+        "iast": "mukti-rūpiṇyai"
+      },
       "gloss": "Embodied As Liberation",
       "translation": "Liberation is not a state she confers from outside; it is the shape she herself wears.",
       "aksaras": [
@@ -1485,8 +1517,16 @@
       "index": 738,
       "deva": "लास्यप्रिया",
       "iast": "lāsyapriyā",
+      "hyphenated": {
+        "deva": "लास्य-प्रिया",
+        "iast": "lāsya-priyā"
+      },
       "namavaliDeva": "लास्यप्रियायै",
       "namavaliIast": "lāsyapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "लास्य-प्रियायै",
+        "iast": "lāsya-priyāyai"
+      },
       "gloss": "Fond Of The Lāsya Dance",
       "translation": "She loves the lāsya, the graceful dance of feeling that answers Śiva's thunderous tāṇḍava.",
       "aksaras": [
@@ -1836,8 +1876,16 @@
       "index": 741,
       "deva": "रम्भादिवन्दिता",
       "iast": "rambhādivanditā",
+      "hyphenated": {
+        "deva": "रम्भादि-वन्दिता",
+        "iast": "rambhādi-vanditā"
+      },
       "namavaliDeva": "रम्भादिवन्दितायै",
       "namavaliIast": "rambhādivanditāyai",
+      "namavaliHyphenated": {
+        "deva": "रम्भादि-वन्दितायै",
+        "iast": "rambhādi-vanditāyai"
+      },
       "gloss": "Praised By Rambhā And The Apsarases",
       "translation": "Rambhā and the other dancers of Indra's court bow before a beauty they cannot match.",
       "aksaras": [

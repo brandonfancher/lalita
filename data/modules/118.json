@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "आत्मविद्या",
           "iast": "ātmavidyā",
+          "hyphenated": {
+            "deva": "आत्म-विद्या",
+            "iast": "ātma-vidyā"
+          },
           "namaIndices": [
             583
           ],
@@ -133,6 +137,10 @@
           "id": "l0-t1",
           "deva": "महाविद्या",
           "iast": "mahāvidyā",
+          "hyphenated": {
+            "deva": "महा-विद्या",
+            "iast": "mahā-vidyā"
+          },
           "namaIndices": [
             584
           ],
@@ -247,6 +255,10 @@
           "id": "l0-t2",
           "deva": "श्रीविद्या",
           "iast": "śrīvidyā",
+          "hyphenated": {
+            "deva": "श्री-विद्या",
+            "iast": "śrī-vidyā"
+          },
           "namaIndices": [
             585
           ],
@@ -359,6 +371,10 @@
           "id": "l0-t3",
           "deva": "कामसेविता",
           "iast": "kāmasevitā",
+          "hyphenated": {
+            "deva": "काम-सेविता",
+            "iast": "kāma-sevitā"
+          },
           "namaIndices": [
             586
           ],
@@ -488,6 +504,10 @@
           "id": "l1-t0",
           "deva": "श्रीषोडशाक्षरीविद्या",
           "iast": "śrīṣoḍaśākṣarīvidyā",
+          "hyphenated": {
+            "deva": "श्री-षोडशाक्षरी-विद्या",
+            "iast": "śrī-ṣoḍaśākṣarī-vidyā"
+          },
           "namaIndices": [
             587
           ],
@@ -721,6 +741,10 @@
           "id": "l1-t1",
           "deva": "त्रिकूटा",
           "iast": "trikūṭā",
+          "hyphenated": {
+            "deva": "त्रि-कूटा",
+            "iast": "tri-kūṭā"
+          },
           "namaIndices": [
             588
           ],
@@ -818,6 +842,10 @@
           "id": "l1-t2",
           "deva": "कामकोटिका",
           "iast": "kāmakoṭikā",
+          "hyphenated": {
+            "deva": "काम-कोटिका",
+            "iast": "kāma-koṭikā"
+          },
           "namaIndices": [
             589
           ],
@@ -945,8 +973,16 @@
       "index": 583,
       "deva": "आत्मविद्या",
       "iast": "ātmavidyā",
+      "hyphenated": {
+        "deva": "आत्म-विद्या",
+        "iast": "ātma-vidyā"
+      },
       "namavaliDeva": "आत्मविद्यायै",
       "namavaliIast": "ātmavidyāyai",
+      "namavaliHyphenated": {
+        "deva": "आत्म-विद्यायै",
+        "iast": "ātma-vidyāyai"
+      },
       "gloss": "Knowledge Of The Self",
       "translation": "The learning that has the innermost self for its object, and not any outward thing, is she.",
       "aksaras": [
@@ -1095,8 +1131,16 @@
       "index": 584,
       "deva": "महाविद्या",
       "iast": "mahāvidyā",
+      "hyphenated": {
+        "deva": "महा-विद्या",
+        "iast": "mahā-vidyā"
+      },
       "namavaliDeva": "महाविद्यायै",
       "namavaliIast": "mahāvidyāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-विद्यायै",
+        "iast": "mahā-vidyāyai"
+      },
       "gloss": "The Great Learning",
       "translation": "Among the sciences hers is the one called great, since the rest end where it begins.",
       "aksaras": [
@@ -1239,8 +1283,16 @@
       "index": 585,
       "deva": "श्रीविद्या",
       "iast": "śrīvidyā",
+      "hyphenated": {
+        "deva": "श्री-विद्या",
+        "iast": "śrī-vidyā"
+      },
       "namavaliDeva": "श्रीविद्यायै",
       "namavaliIast": "śrīvidyāyai",
+      "namavaliHyphenated": {
+        "deva": "श्री-विद्यायै",
+        "iast": "śrī-vidyāyai"
+      },
       "gloss": "The Auspicious Vidyā",
       "translation": "This is the mantra-science named for śrī, the splendour and prosperity it confers on the one who holds it.",
       "aksaras": [
@@ -1381,8 +1433,16 @@
       "index": 586,
       "deva": "कामसेविता",
       "iast": "kāmasevitā",
+      "hyphenated": {
+        "deva": "काम-सेविता",
+        "iast": "kāma-sevitā"
+      },
       "namavaliDeva": "कामसेवितायै",
       "namavaliIast": "kāmasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "काम-सेवितायै",
+        "iast": "kāma-sevitāyai"
+      },
       "gloss": "Attended By Kāma",
       "translation": "Desire, personified as the god who bends the flower-bow, is found in the posture of a servant before her.",
       "aksaras": [
@@ -1534,8 +1594,16 @@
       "index": 587,
       "deva": "श्रीषोडशाक्षरीविद्या",
       "iast": "śrīṣoḍaśākṣarīvidyā",
+      "hyphenated": {
+        "deva": "श्री-षोडशाक्षरी-विद्या",
+        "iast": "śrī-ṣoḍaśākṣarī-vidyā"
+      },
       "namavaliDeva": "श्रीषोडशाक्षरीविद्यायै",
       "namavaliIast": "śrīṣoḍaśākṣarīvidyāyai",
+      "namavaliHyphenated": {
+        "deva": "श्री-षोडशाक्षरी-विद्यायै",
+        "iast": "śrī-ṣoḍaśākṣarī-vidyāyai"
+      },
       "gloss": "The Holy Sixteen-Syllabled Vidyā",
       "translation": "Beyond the fifteen-syllable formula stands its sixteen-syllable completion, and that mantra is her own body of sound.",
       "aksaras": [
@@ -1816,8 +1884,16 @@
       "index": 588,
       "deva": "त्रिकूटा",
       "iast": "trikūṭā",
+      "hyphenated": {
+        "deva": "त्रि-कूटा",
+        "iast": "tri-kūṭā"
+      },
       "namavaliDeva": "त्रिकूटायै",
       "namavaliIast": "trikūṭāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-कूटायै",
+        "iast": "tri-kūṭāyai"
+      },
       "gloss": "Of Three Peaks",
       "translation": "The root mantra falls into three clusters, and she is described by that threefold summit.",
       "aksaras": [
@@ -1943,8 +2019,16 @@
       "index": 589,
       "deva": "कामकोटिका",
       "iast": "kāmakoṭikā",
+      "hyphenated": {
+        "deva": "काम-कोटिका",
+        "iast": "kāma-koṭikā"
+      },
       "namavaliDeva": "कामकोटिकायै",
       "namavaliIast": "kāmakoṭikāyai",
+      "namavaliHyphenated": {
+        "deva": "काम-कोटिकायै",
+        "iast": "kāma-koṭikāyai"
+      },
       "gloss": "The Utmost Point Of Desire",
       "translation": "She is where longing arrives and stops, a name also borne by the shrine at Kāñcī that carries the word Kāmakoṭi.",
       "aksaras": [

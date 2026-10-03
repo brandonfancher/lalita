@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "आदिशक्तिरमेयाऽऽत्मा",
           "iast": "ādiśaktirameyā''tmā",
+          "hyphenated": {
+            "deva": "आदि-शक्तिरमेयाऽऽत्मा",
+            "iast": "ādi-śaktirameyā''tmā"
+          },
           "namaIndices": [
             615,
             616,
@@ -454,6 +458,10 @@
           "id": "l1-t0",
           "deva": "अनेककोटिब्रह्माण्डजननी",
           "iast": "anekakoṭibrahmāṇḍajananī",
+          "hyphenated": {
+            "deva": "अनेक-कोटि-ब्रह्माण्ड-जननी",
+            "iast": "aneka-koṭi-brahmāṇḍa-jananī"
+          },
           "namaIndices": [
             620
           ],
@@ -729,6 +737,10 @@
           "id": "l1-t1",
           "deva": "दिव्यविग्रहा",
           "iast": "divyavigrahā",
+          "hyphenated": {
+            "deva": "दिव्य-विग्रहा",
+            "iast": "divya-vigrahā"
+          },
           "namaIndices": [
             621
           ],
@@ -879,8 +891,16 @@
       "index": 615,
       "deva": "आदिशक्तिः",
       "iast": "ādiśaktiḥ",
+      "hyphenated": {
+        "deva": "आदि-शक्तिः",
+        "iast": "ādi-śaktiḥ"
+      },
       "namavaliDeva": "आदिशक्तयै",
       "namavaliIast": "ādiśaktayai",
+      "namavaliHyphenated": {
+        "deva": "आदि-शक्तयै",
+        "iast": "ādi-śaktayai"
+      },
       "gloss": "The Primal Power",
       "translation": "She is the power that stands first, before which no other force has anything to work with.",
       "aksaras": [
@@ -1439,8 +1459,16 @@
       "index": 620,
       "deva": "अनेककोटिब्रह्माण्डजननी",
       "iast": "anekakoṭibrahmāṇḍajananī",
+      "hyphenated": {
+        "deva": "अनेक-कोटि-ब्रह्माण्ड-जननी",
+        "iast": "aneka-koṭi-brahmāṇḍa-jananī"
+      },
       "namavaliDeva": "अनेककोटिब्रह्माण्डजनन्यै",
       "namavaliIast": "anekakoṭibrahmāṇḍajananyai",
+      "namavaliHyphenated": {
+        "deva": "अनेक-कोटि-ब्रह्माण्ड-जनन्यै",
+        "iast": "aneka-koṭi-brahmāṇḍa-jananyai"
+      },
       "gloss": "Mother Of Countless Millions Of World-Eggs",
       "translation": "Not one universe but many millions of them have her for their mother.",
       "aksaras": [
@@ -1777,8 +1805,16 @@
       "index": 621,
       "deva": "दिव्यविग्रहा",
       "iast": "divyavigrahā",
+      "hyphenated": {
+        "deva": "दिव्य-विग्रहा",
+        "iast": "divya-vigrahā"
+      },
       "namavaliDeva": "दिव्यविग्रहायै",
       "namavaliIast": "divyavigrahāyai",
+      "namavaliHyphenated": {
+        "deva": "दिव्य-विग्रहायै",
+        "iast": "divya-vigrahāyai"
+      },
       "gloss": "Of Divine Body",
       "translation": "The body she wears is of heavenly make, not assembled out of flesh and element.",
       "aksaras": [

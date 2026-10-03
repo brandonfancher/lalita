@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सव्यापसव्यमार्गस्था",
           "iast": "savyāpasavyamārgasthā",
+          "hyphenated": {
+            "deva": "सव्यापसव्य-मार्गस्था",
+            "iast": "savyāpasavya-mārgasthā"
+          },
           "namaIndices": [
             912
           ],
@@ -240,6 +244,10 @@
           "id": "l0-t1",
           "deva": "सर्वापद्विनिवारिणी",
           "iast": "sarvāpadvinivāriṇī",
+          "hyphenated": {
+            "deva": "सर्वापद्-विनिवारिणी",
+            "iast": "sarvāpad-vinivāriṇī"
+          },
           "namaIndices": [
             913
           ],
@@ -545,6 +553,10 @@
           "id": "l1-t1",
           "deva": "स्वभावमधुरा",
           "iast": "svabhāvamadhurā",
+          "hyphenated": {
+            "deva": "स्वभाव-मधुरा",
+            "iast": "svabhāva-madhurā"
+          },
           "namaIndices": [
             915
           ],
@@ -751,6 +763,10 @@
           "id": "l1-t3",
           "deva": "धीरसमर्चिता",
           "iast": "dhīrasamarcitā",
+          "hyphenated": {
+            "deva": "धीर-समर्चिता",
+            "iast": "dhīra-samarcitā"
+          },
           "namaIndices": [
             917
           ],
@@ -903,8 +919,16 @@
       "index": 912,
       "deva": "सव्यापसव्यमार्गस्था",
       "iast": "savyāpasavyamārgasthā",
+      "hyphenated": {
+        "deva": "सव्यापसव्य-मार्गस्था",
+        "iast": "savyāpasavya-mārgasthā"
+      },
       "namavaliDeva": "सव्यापसव्यमार्गस्थायै",
       "namavaliIast": "savyāpasavyamārgasthāyai",
+      "namavaliHyphenated": {
+        "deva": "सव्यापसव्य-मार्गस्थायै",
+        "iast": "savyāpasavya-mārgasthāyai"
+      },
       "gloss": "Present In Both Paths",
       "translation": "She is found equally on the right-hand and the left-hand routes of practice, preferring neither.",
       "aksaras": [
@@ -1188,8 +1212,16 @@
       "index": 913,
       "deva": "सर्वापद्विनिवारिणी",
       "iast": "sarvāpadvinivāriṇī",
+      "hyphenated": {
+        "deva": "सर्वापद्-विनिवारिणी",
+        "iast": "sarvāpad-vinivāriṇī"
+      },
       "namavaliDeva": "सर्वापद्विनिवारिण्यै",
       "namavaliIast": "sarvāpadvinivāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वापद्-विनिवारिण्यै",
+        "iast": "sarvāpad-vinivāriṇyai"
+      },
       "gloss": "Averter Of Every Calamity",
       "translation": "She turns aside each misfortune that threatens those who take shelter with her.",
       "aksaras": [
@@ -1561,8 +1593,16 @@
       "index": 915,
       "deva": "स्वभावमधुरा",
       "iast": "svabhāvamadhurā",
+      "hyphenated": {
+        "deva": "स्वभाव-मधुरा",
+        "iast": "svabhāva-madhurā"
+      },
       "namavaliDeva": "स्वभावमधुरायै",
       "namavaliIast": "svabhāvamadhurāyai",
+      "namavaliHyphenated": {
+        "deva": "स्वभाव-मधुरायै",
+        "iast": "svabhāva-madhurāyai"
+      },
       "gloss": "Sweet By Nature",
       "translation": "Her sweetness is not put on for an occasion but belongs to her constitution.",
       "aksaras": [
@@ -1822,8 +1862,16 @@
       "index": 917,
       "deva": "धीरसमर्चिता",
       "iast": "dhīrasamarcitā",
+      "hyphenated": {
+        "deva": "धीर-समर्चिता",
+        "iast": "dhīra-samarcitā"
+      },
       "namavaliDeva": "धीरसमर्चितायै",
       "namavaliIast": "dhīrasamarcitāyai",
+      "namavaliHyphenated": {
+        "deva": "धीर-समर्चितायै",
+        "iast": "dhīra-samarcitāyai"
+      },
       "gloss": "Worshipped By The Steadfast",
       "translation": "It is the composed and the discerning who worship her thoroughly.",
       "aksaras": [

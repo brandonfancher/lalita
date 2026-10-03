@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कामेश्वरास्त्रनिर्दग्धसभण्डासुरशून्यका",
           "iast": "kāmeśvarāstranirdagdhasabhaṇḍāsuraśūnyakā",
+          "hyphenated": {
+            "deva": "कामेश्वरास्त्र-निर्दग्ध-सभण्डासुर-शून्यका",
+            "iast": "kāmeśvarāstra-nirdagdha-sabhaṇḍāsura-śūnyakā"
+          },
           "namaIndices": [
             82
           ],
@@ -462,6 +466,10 @@
           "id": "l1-t0",
           "deva": "ब्रह्मोपेन्द्रमहेन्द्रादिदेवसंस्तुतवैभवा",
           "iast": "brahmopendramahendrādidevasaṃstutavaibhavā",
+          "hyphenated": {
+            "deva": "ब्रह्मोपेन्द्र-महेन्द्रादि-देव-संस्तुत-वैभवा",
+            "iast": "brahmopendra-mahendrādi-deva-saṃstuta-vaibhavā"
+          },
           "namaIndices": [
             83
           ],
@@ -923,8 +931,16 @@
       "index": 82,
       "deva": "कामेश्वरास्त्रनिर्दग्धसभाण्डासुरशून्यका",
       "iast": "kāmeśvarāstranirdagdhasabhāṇḍāsuraśūnyakā",
+      "hyphenated": {
+        "deva": "कामेश्वरास्त्र-निर्दग्ध-सभाण्डासुर-शून्यका",
+        "iast": "kāmeśvarāstra-nirdagdha-sabhāṇḍāsura-śūnyakā"
+      },
       "namavaliDeva": "कामेश्वरास्त्रनिर्दग्धसभाण्डासुरशून्यकायै",
       "namavaliIast": "kāmeśvarāstranirdagdhasabhāṇḍāsuraśūnyakāyai",
+      "namavaliHyphenated": {
+        "deva": "कामेश्वरास्त्र-निर्दग्ध-सभाण्डासुर-शून्यकायै",
+        "iast": "kāmeśvarāstra-nirdagdha-sabhāṇḍāsura-śūnyakāyai"
+      },
       "gloss": "Who Emptied Śūnyaka With Kāmeśvara's Weapon",
       "translation": "The weapon named after her consort burned the city of Śūnyaka and Bhaṇḍa within it to nothing at once.",
       "aksaras": [
@@ -1459,8 +1475,16 @@
       "index": 83,
       "deva": "ब्रह्मोपेन्द्रमहेन्द्रादिदेवसंस्तुतवैभवा",
       "iast": "brahmopendramahendrādidevasaṃstutavaibhavā",
+      "hyphenated": {
+        "deva": "ब्रह्मोपेन्द्र-महेन्द्रादि-देव-संस्तुत-वैभवा",
+        "iast": "brahmopendra-mahendrādi-deva-saṃstuta-vaibhavā"
+      },
       "namavaliDeva": "ब्रह्मोपेन्द्रमहेन्द्रादिदेवसंस्तुतवैभवायै",
       "namavaliIast": "brahmopendramahendrādidevasaṃstutavaibhavāyai",
+      "namavaliHyphenated": {
+        "deva": "ब्रह्मोपेन्द्र-महेन्द्रादि-देव-संस्तुत-वैभवायै",
+        "iast": "brahmopendra-mahendrādi-deva-saṃstuta-vaibhavāyai"
+      },
       "gloss": "Whose Greatness The High Gods Hymn",
       "translation": "Brahmā, Viṣṇu, Indra and the gods who follow them join in praising the extent of her power.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "कलानिधिः",
           "iast": "kalānidhiḥ",
+          "hyphenated": {
+            "deva": "कला-निधिः",
+            "iast": "kalā-nidhiḥ"
+          },
           "namaIndices": [
             797
           ],
@@ -119,6 +123,10 @@
           "id": "l0-t1",
           "deva": "काव्यकला",
           "iast": "kāvyakalā",
+          "hyphenated": {
+            "deva": "काव्य-कला",
+            "iast": "kāvya-kalā"
+          },
           "namaIndices": [
             798
           ],
@@ -309,6 +317,10 @@
           "id": "l0-t3",
           "deva": "रसशेवधिः",
           "iast": "rasaśevadhiḥ",
+          "hyphenated": {
+            "deva": "रस-शेवधिः",
+            "iast": "rasa-śevadhiḥ"
+          },
           "namaIndices": [
             800
           ],
@@ -916,8 +928,16 @@
       "index": 797,
       "deva": "कलानिधिः",
       "iast": "kalānidhiḥ",
+      "hyphenated": {
+        "deva": "कला-निधिः",
+        "iast": "kalā-nidhiḥ"
+      },
       "namavaliDeva": "कलानिधये",
       "namavaliIast": "kalānidhaye",
+      "namavaliHyphenated": {
+        "deva": "कला-निधये",
+        "iast": "kalā-nidhaye"
+      },
       "gloss": "Treasury Of The Arts",
       "translation": "Every skill and every digit of the moon is stored in her, which is why the same word names the moon.",
       "aksaras": [
@@ -1053,8 +1073,16 @@
       "index": 798,
       "deva": "काव्यकला",
       "iast": "kāvyakalā",
+      "hyphenated": {
+        "deva": "काव्य-कला",
+        "iast": "kāvya-kalā"
+      },
       "namavaliDeva": "काव्यकलायै",
       "namavaliIast": "kāvyakalāyai",
+      "namavaliHyphenated": {
+        "deva": "काव्य-कलायै",
+        "iast": "kāvya-kalāyai"
+      },
       "gloss": "The Art Of Poetry",
       "translation": "She is the craft by which words are made to carry more than they say.",
       "aksaras": [
@@ -1303,8 +1331,16 @@
       "index": 800,
       "deva": "रसशेवधिः",
       "iast": "rasaśevadhiḥ",
+      "hyphenated": {
+        "deva": "रस-शेवधिः",
+        "iast": "rasa-śevadhiḥ"
+      },
       "namavaliDeva": "रसशेवधये",
       "namavaliIast": "rasaśevadhaye",
+      "namavaliHyphenated": {
+        "deva": "रस-शेवधये",
+        "iast": "rasa-śevadhaye"
+      },
       "gloss": "Hoard Of Savour",
       "translation": "She is where all savour is stored, an inexhaustible treasury of the essence of things.",
       "aksaras": [

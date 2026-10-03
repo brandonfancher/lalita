@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "महारूपा",
           "iast": "mahārūpā",
+          "hyphenated": {
+            "deva": "महा-रूपा",
+            "iast": "mahā-rūpā"
+          },
           "namaIndices": [
             212
           ],
@@ -112,6 +116,10 @@
           "id": "l0-t1",
           "deva": "महापूज्या",
           "iast": "mahāpūjyā",
+          "hyphenated": {
+            "deva": "महा-पूज्या",
+            "iast": "mahā-pūjyā"
+          },
           "namaIndices": [
             213
           ],
@@ -226,6 +234,10 @@
           "id": "l0-t2",
           "deva": "महापातकनाशिनी",
           "iast": "mahāpātakanāśinī",
+          "hyphenated": {
+            "deva": "महा-पातक-नाशिनी",
+            "iast": "mahā-pātaka-nāśinī"
+          },
           "namaIndices": [
             214
           ],
@@ -413,6 +425,10 @@
           "id": "l1-t0",
           "deva": "महामाया",
           "iast": "mahāmāyā",
+          "hyphenated": {
+            "deva": "महा-माया",
+            "iast": "mahā-māyā"
+          },
           "namaIndices": [
             215
           ],
@@ -512,6 +528,10 @@
           "id": "l1-t1",
           "deva": "महासत्त्वा",
           "iast": "mahāsattvā",
+          "hyphenated": {
+            "deva": "महा-सत्त्वा",
+            "iast": "mahā-sattvā"
+          },
           "namaIndices": [
             216
           ],
@@ -634,6 +654,10 @@
           "id": "l1-t2",
           "deva": "महाशक्तिर्महारतिः",
           "iast": "mahāśaktirmahāratiḥ",
+          "hyphenated": {
+            "deva": "महा-शक्तिर्-महा-रतिः",
+            "iast": "mahā-śaktir-mahā-ratiḥ"
+          },
           "namaIndices": [
             217,
             218
@@ -850,8 +874,16 @@
       "index": 212,
       "deva": "महारूपा",
       "iast": "mahārūpā",
+      "hyphenated": {
+        "deva": "महा-रूपा",
+        "iast": "mahā-rūpā"
+      },
       "namavaliDeva": "महारूपायै",
       "namavaliIast": "mahārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-रूपायै",
+        "iast": "mahā-rūpāyai"
+      },
       "gloss": "Of Vast Form",
       "translation": "Her body is measured only by the extent of what exists.",
       "aksaras": [
@@ -979,8 +1011,16 @@
       "index": 213,
       "deva": "महापूज्या",
       "iast": "mahāpūjyā",
+      "hyphenated": {
+        "deva": "महा-पूज्या",
+        "iast": "mahā-pūjyā"
+      },
       "namavaliDeva": "महापूज्यायै",
       "namavaliIast": "mahāpūjyāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-पूज्यायै",
+        "iast": "mahā-pūjyāyai"
+      },
       "gloss": "Supremely Worshipful",
       "translation": "Worship offered anywhere else reaches its proper object only in her.",
       "aksaras": [
@@ -1123,8 +1163,16 @@
       "index": 214,
       "deva": "महापातकनाशिनी",
       "iast": "mahāpātakanāśinī",
+      "hyphenated": {
+        "deva": "महा-पातक-नाशिनी",
+        "iast": "mahā-pātaka-nāśinī"
+      },
       "namavaliDeva": "महापातकनाशिन्यै",
       "namavaliIast": "mahāpātakanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "महा-पातक-नाशिन्यै",
+        "iast": "mahā-pātaka-nāśinyai"
+      },
       "gloss": "Destroyer Of Great Sins",
       "translation": "Even the crimes that no expiation covers are burned away in her presence.",
       "aksaras": [
@@ -1348,8 +1396,16 @@
       "index": 215,
       "deva": "महामाया",
       "iast": "mahāmāyā",
+      "hyphenated": {
+        "deva": "महा-माया",
+        "iast": "mahā-māyā"
+      },
       "namavaliDeva": "महामायायै",
       "namavaliIast": "mahāmāyāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-मायायै",
+        "iast": "mahā-māyāyai"
+      },
       "gloss": "The Great Illusion",
       "translation": "The power that makes one appear as many is not a defect in the world but her deliberate art.",
       "aksaras": [
@@ -1477,8 +1533,16 @@
       "index": 216,
       "deva": "महासत्त्वा",
       "iast": "mahāsattvā",
+      "hyphenated": {
+        "deva": "महा-सत्त्वा",
+        "iast": "mahā-sattvā"
+      },
       "namavaliDeva": "महासत्वायै",
       "namavaliIast": "mahāsatvāyai",
+      "namavaliHyphenated": {
+        "deva": "महा-सत्वायै",
+        "iast": "mahā-satvāyai"
+      },
       "gloss": "Of Great Being",
       "translation": "Purity, courage and sheer existence are in her without measure.",
       "aksaras": [
@@ -1629,8 +1693,16 @@
       "index": 217,
       "deva": "महाशक्तिः",
       "iast": "mahāśaktiḥ",
+      "hyphenated": {
+        "deva": "महा-शक्तिः",
+        "iast": "mahā-śaktiḥ"
+      },
       "namavaliDeva": "महाशक्त्यै",
       "namavaliIast": "mahāśaktyai",
+      "namavaliHyphenated": {
+        "deva": "महा-शक्त्यै",
+        "iast": "mahā-śaktyai"
+      },
       "gloss": "The Great Power",
       "translation": "Every capacity that anything has to act is a fragment lent out of her.",
       "aksaras": [
@@ -1773,8 +1845,16 @@
       "index": 218,
       "deva": "महारतिः",
       "iast": "mahāratiḥ",
+      "hyphenated": {
+        "deva": "महा-रतिः",
+        "iast": "mahā-ratiḥ"
+      },
       "namavaliDeva": "महारत्यै",
       "namavaliIast": "mahāratyai",
+      "namavaliHyphenated": {
+        "deva": "महा-रत्यै",
+        "iast": "mahā-ratyai"
+      },
       "gloss": "The Great Delight",
       "translation": "The pleasure in which lover and beloved forget the difference between them is hers.",
       "aksaras": [

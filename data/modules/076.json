@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "क्षेत्रस्वरूपा",
           "iast": "kṣetrasvarūpā",
+          "hyphenated": {
+            "deva": "क्षेत्र-स्वरूपा",
+            "iast": "kṣetra-svarūpā"
+          },
           "namaIndices": [
             341
           ],
@@ -286,6 +290,10 @@
           "id": "l0-t2",
           "deva": "क्षेत्रक्षेत्रज्ञपालिनी",
           "iast": "kṣetrakṣetrajñapālinī",
+          "hyphenated": {
+            "deva": "क्षेत्र-क्षेत्रज्ञ-पालिनी",
+            "iast": "kṣetra-kṣetrajña-pālinī"
+          },
           "namaIndices": [
             343
           ],
@@ -548,6 +556,10 @@
           "id": "l1-t0",
           "deva": "क्षयवृद्धिविनिर्मुक्ता",
           "iast": "kṣayavṛddhivinirmuktā",
+          "hyphenated": {
+            "deva": "क्षय-वृद्धि-विनिर्मुक्ता",
+            "iast": "kṣaya-vṛddhi-vinirmuktā"
+          },
           "namaIndices": [
             344
           ],
@@ -796,6 +808,10 @@
           "id": "l1-t1",
           "deva": "क्षेत्रपालसमर्चिता",
           "iast": "kṣetrapālasamarcitā",
+          "hyphenated": {
+            "deva": "क्षेत्र-पाल-समर्चिता",
+            "iast": "kṣetra-pāla-samarcitā"
+          },
           "namaIndices": [
             345
           ],
@@ -1019,8 +1035,16 @@
       "index": 341,
       "deva": "क्षेत्रस्वरूपा",
       "iast": "kṣetrasvarūpā",
+      "hyphenated": {
+        "deva": "क्षेत्र-स्वरूपा",
+        "iast": "kṣetra-svarūpā"
+      },
       "namavaliDeva": "क्षेत्रस्वरूपायै",
       "namavaliIast": "kṣetrasvarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "क्षेत्र-स्वरूपायै",
+        "iast": "kṣetra-svarūpāyai"
+      },
       "gloss": "The Field Itself",
       "translation": "She is the field — the body and the whole spread of nature worked upon by the one who knows it.",
       "aksaras": [
@@ -1366,8 +1390,16 @@
       "index": 343,
       "deva": "क्षेत्रक्षेत्रज्ञपालिनी",
       "iast": "kṣetrakṣetrajñapālinī",
+      "hyphenated": {
+        "deva": "क्षेत्र-क्षेत्रज्ञ-पालिनी",
+        "iast": "kṣetra-kṣetrajña-pālinī"
+      },
       "namavaliDeva": "क्षेत्रक्षेत्रज्ञपालिन्यै",
       "namavaliIast": "kṣetrakṣetrajñapālinyai",
+      "namavaliHyphenated": {
+        "deva": "क्षेत्र-क्षेत्रज्ञ-पालिन्यै",
+        "iast": "kṣetra-kṣetrajña-pālinyai"
+      },
       "gloss": "Guardian Of Field And Knower",
       "translation": "She keeps both halves of the pair safe: the field that is acted on and the knower who watches it.",
       "aksaras": [
@@ -1680,8 +1712,16 @@
       "index": 344,
       "deva": "क्षयवृद्धिविनिर्मुक्ता",
       "iast": "kṣayavṛddhivinirmuktā",
+      "hyphenated": {
+        "deva": "क्षय-वृद्धि-विनिर्मुक्ता",
+        "iast": "kṣaya-vṛddhi-vinirmuktā"
+      },
       "namavaliDeva": "क्षयवृद्धिविनिर्मुक्तायै",
       "namavaliIast": "kṣayavṛddhivinirmuktāyai",
+      "namavaliHyphenated": {
+        "deva": "क्षय-वृद्धि-विनिर्मुक्तायै",
+        "iast": "kṣaya-vṛddhi-vinirmuktāyai"
+      },
       "gloss": "Free Of Waning And Waxing",
       "translation": "She neither shrinks nor swells; what she is at any moment is the whole of what she is.",
       "aksaras": [
@@ -1972,8 +2012,16 @@
       "index": 345,
       "deva": "क्षेत्रपालसमर्चिता",
       "iast": "kṣetrapālasamarcitā",
+      "hyphenated": {
+        "deva": "क्षेत्र-पाल-समर्चिता",
+        "iast": "kṣetra-pāla-samarcitā"
+      },
       "namavaliDeva": "क्षेत्रपालसमर्चितायै",
       "namavaliIast": "kṣetrapālasamarcitāyai",
+      "namavaliHyphenated": {
+        "deva": "क्षेत्र-पाल-समर्चितायै",
+        "iast": "kṣetra-pāla-samarcitāyai"
+      },
       "gloss": "Worshipped By The Field-Guardians",
       "translation": "The kṣetrapālas who stand watch over holy ground turn inward and worship her.",
       "aksaras": [

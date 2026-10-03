@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मनोरूपेक्षुकोदण्डा",
           "iast": "manorūpekṣukodaṇḍā",
+          "hyphenated": {
+            "deva": "मनो-रूपेक्षु-कोदण्डा",
+            "iast": "mano-rūpekṣu-kodaṇḍā"
+          },
           "namaIndices": [
             10
           ],
@@ -231,6 +235,10 @@
           "id": "l0-t1",
           "deva": "पञ्चतन्मात्रसायका",
           "iast": "pañcatanmātrasāyakā",
+          "hyphenated": {
+            "deva": "पञ्च-तन्मात्र-सायका",
+            "iast": "pañca-tanmātra-sāyakā"
+          },
           "namaIndices": [
             11
           ],
@@ -449,6 +457,10 @@
           "id": "l1-t0",
           "deva": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
           "iast": "nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+          "hyphenated": {
+            "deva": "निजारुण-प्रभा-पूर-मज्जद्-ब्रह्माण्ड-मण्डला",
+            "iast": "nijāruṇa-prabhā-pūra-majjad-brahmāṇḍa-maṇḍalā"
+          },
           "namaIndices": [
             12
           ],
@@ -889,8 +901,16 @@
       "index": 10,
       "deva": "मनोरूपेक्षुकोदण्डा",
       "iast": "manorūpekṣukodaṇḍā",
+      "hyphenated": {
+        "deva": "मनो-रूपेक्षु-कोदण्डा",
+        "iast": "mano-rūpekṣu-kodaṇḍā"
+      },
       "namavaliDeva": "मनोरूपेक्षुकोदण्डायै",
       "namavaliIast": "manorūpekṣukodaṇḍāyai",
+      "namavaliHyphenated": {
+        "deva": "मनो-रूपेक्षु-कोदण्डायै",
+        "iast": "mano-rūpekṣu-kodaṇḍāyai"
+      },
       "gloss": "Bearer Of The Sugarcane Bow",
       "translation": "The bow she draws is made of sugarcane and is nothing other than the mind, sweet to the taste and bent by her hand.",
       "aksaras": [
@@ -1165,8 +1185,16 @@
       "index": 11,
       "deva": "पञ्चतन्मात्रसायका",
       "iast": "pañcatanmātrasāyakā",
+      "hyphenated": {
+        "deva": "पञ्च-तन्मात्र-सायका",
+        "iast": "pañca-tanmātra-sāyakā"
+      },
       "namavaliDeva": "पञ्चतन्मात्रसायकायै",
       "namavaliIast": "pañcatanmātrasāyakāyai",
+      "namavaliHyphenated": {
+        "deva": "पञ्च-तन्मात्र-सायकायै",
+        "iast": "pañca-tanmātra-sāyakāyai"
+      },
       "gloss": "Whose Arrows Are The Subtle Elements",
       "translation": "Her five arrows are the bare sense-qualities themselves, so that every sight, sound, touch, taste and smell is a shaft loosed from her bow.",
       "aksaras": [
@@ -1421,8 +1449,16 @@
       "index": 12,
       "deva": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
       "iast": "nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+      "hyphenated": {
+        "deva": "निजारुण-प्रभा-पूर-मज्जद्-ब्रह्माण्ड-मण्डला",
+        "iast": "nijāruṇa-prabhā-pūra-majjad-brahmāṇḍa-maṇḍalā"
+      },
       "namavaliDeva": "निजारुणप्रभापूरमज्जद् ब्रह्माण्डमण्डलायै",
       "namavaliIast": "nijāruṇaprabhāpūramajjad brahmāṇḍamaṇḍalāyai",
+      "namavaliHyphenated": {
+        "deva": "निजारुण-प्रभा-पूर-मज्जद् ब्रह्माण्ड-मण्डलायै",
+        "iast": "nijāruṇa-prabhā-pūra-majjad brahmāṇḍa-maṇḍalāyai"
+      },
       "gloss": "In Whose Red Flood The Worlds Are Drowned",
       "translation": "The rosy light that streams from her own body rises like a tide until every world-egg floats submerged in it.",
       "aksaras": [

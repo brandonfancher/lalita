@@ -452,6 +452,10 @@
           "id": "l1-t0",
           "deva": "कुलकुण्डालया",
           "iast": "kulakuṇḍālayā",
+          "hyphenated": {
+            "deva": "कुल-कुण्डालया",
+            "iast": "kula-kuṇḍālayā"
+          },
           "namaIndices": [
             440
           ],
@@ -607,6 +611,10 @@
           "id": "l1-t1",
           "deva": "कौलमार्गतत्परसेविता",
           "iast": "kaulamārgatatparasevitā",
+          "hyphenated": {
+            "deva": "कौल-मार्ग-तत्पर-सेविता",
+            "iast": "kaula-mārga-tatpara-sevitā"
+          },
           "namaIndices": [
             441
           ],
@@ -1372,8 +1380,16 @@
       "index": 440,
       "deva": "कुलकुण्डालया",
       "iast": "kulakuṇḍālayā",
+      "hyphenated": {
+        "deva": "कुल-कुण्डालया",
+        "iast": "kula-kuṇḍālayā"
+      },
       "namavaliDeva": "कुलकुण्डालयायै",
       "namavaliIast": "kulakuṇḍālayāyai",
+      "namavaliHyphenated": {
+        "deva": "कुल-कुण्डालयायै",
+        "iast": "kula-kuṇḍālayāyai"
+      },
       "gloss": "Dwelling In The Kula Hollow",
       "translation": "Her home is the pit at the root of the body where the coiled power lies asleep.",
       "aksaras": [
@@ -1571,8 +1587,16 @@
       "index": 441,
       "deva": "कौलमार्गतत्परसेविता",
       "iast": "kaulamārgatatparasevitā",
+      "hyphenated": {
+        "deva": "कौल-मार्ग-तत्पर-सेविता",
+        "iast": "kaula-mārga-tatpara-sevitā"
+      },
       "namavaliDeva": "कौलमार्गतत्परसेवितायै",
       "namavaliIast": "kaulamārgatatparasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "कौल-मार्ग-तत्पर-सेवितायै",
+        "iast": "kaula-mārga-tatpara-sevitāyai"
+      },
       "gloss": "Served By Those Set On The Kaula Path",
       "translation": "Those who have given themselves wholly to the Kaula road are the ones who attend her.",
       "aksaras": [

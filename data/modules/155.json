@@ -118,6 +118,10 @@
           "id": "l0-t1",
           "deva": "ब्रह्मजननी",
           "iast": "brahmajananī",
+          "hyphenated": {
+            "deva": "ब्रह्म-जननी",
+            "iast": "brahma-jananī"
+          },
           "namaIndices": [
             822,
             823
@@ -251,6 +255,10 @@
           "id": "l0-t2",
           "deva": "बहुरूपा",
           "iast": "bahurūpā",
+          "hyphenated": {
+            "deva": "बहु-रूपा",
+            "iast": "bahu-rūpā"
+          },
           "namaIndices": [
             824
           ],
@@ -1291,8 +1299,16 @@
       "index": 824,
       "deva": "बहुरूपा",
       "iast": "bahurūpā",
+      "hyphenated": {
+        "deva": "बहु-रूपा",
+        "iast": "bahu-rūpā"
+      },
       "namavaliDeva": "बहुरूपायै",
       "namavaliIast": "bahurūpāyai",
+      "namavaliHyphenated": {
+        "deva": "बहु-रूपायै",
+        "iast": "bahu-rūpāyai"
+      },
       "gloss": "Of Many Forms",
       "translation": "She wears shape after shape without spending herself, and no one of them is more truly hers than the rest.",
       "aksaras": [

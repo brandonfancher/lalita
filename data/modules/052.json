@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सर्वशक्तिमयी",
           "iast": "sarvaśaktimayī",
+          "hyphenated": {
+            "deva": "सर्व-शक्तिमयी",
+            "iast": "sarva-śaktimayī"
+          },
           "namaIndices": [
             199
           ],
@@ -169,6 +173,10 @@
           "id": "l0-t1",
           "deva": "सर्वमङ्गला",
           "iast": "sarvamaṅgalā",
+          "hyphenated": {
+            "deva": "सर्व-मङ्गला",
+            "iast": "sarva-maṅgalā"
+          },
           "namaIndices": [
             200
           ],
@@ -301,6 +309,10 @@
           "id": "l0-t2",
           "deva": "सद्गतिप्रदा",
           "iast": "sadgatipradā",
+          "hyphenated": {
+            "deva": "सद्-गति-प्रदा",
+            "iast": "sad-gati-pradā"
+          },
           "namaIndices": [
             201
           ],
@@ -668,6 +680,10 @@
           "id": "l1-t2",
           "deva": "सर्वमन्त्रस्वरूपिणी",
           "iast": "sarvamantrasvarūpiṇī",
+          "hyphenated": {
+            "deva": "सर्व-मन्त्र-स्वरूपिणी",
+            "iast": "sarva-mantra-svarūpiṇī"
+          },
           "namaIndices": [
             204
           ],
@@ -899,8 +915,16 @@
       "index": 199,
       "deva": "सर्वशक्तिमयी",
       "iast": "sarvaśaktimayī",
+      "hyphenated": {
+        "deva": "सर्व-शक्तिमयी",
+        "iast": "sarva-śaktimayī"
+      },
       "namavaliDeva": "सर्वशक्तिमय्यै",
       "namavaliIast": "sarvaśaktimayyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-शक्तिमय्यै",
+        "iast": "sarva-śaktimayyai"
+      },
       "gloss": "Made Of All Powers",
       "translation": "Every power there is belongs to her substance rather than being an instrument she picks up.",
       "aksaras": [
@@ -1100,8 +1124,16 @@
       "index": 200,
       "deva": "सर्वमङ्गला",
       "iast": "sarvamaṅgalā",
+      "hyphenated": {
+        "deva": "सर्व-मङ्गला",
+        "iast": "sarva-maṅgalā"
+      },
       "namavaliDeva": "सर्वमङ्गलायै",
       "namavaliIast": "sarvamaṅgalāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-मङ्गलायै",
+        "iast": "sarva-maṅgalāyai"
+      },
       "gloss": "Wholly Auspicious",
       "translation": "She is auspicious the whole way through, and every good thing that happens is a piece of her.",
       "aksaras": [
@@ -1262,8 +1294,16 @@
       "index": 201,
       "deva": "सद्गतिप्रदा",
       "iast": "sadgatipradā",
+      "hyphenated": {
+        "deva": "सद्-गति-प्रदा",
+        "iast": "sad-gati-pradā"
+      },
       "namavaliDeva": "सद्गतिप्रदायै",
       "namavaliIast": "sadgatipradāyai",
+      "namavaliHyphenated": {
+        "deva": "सद्-गति-प्रदायै",
+        "iast": "sad-gati-pradāyai"
+      },
       "gloss": "Giver Of The Good Path",
       "translation": "She hands the worshipper the good destiny that no effort of his own could reach.",
       "aksaras": [
@@ -1727,8 +1767,16 @@
       "index": 204,
       "deva": "सर्वमन्त्रस्वरूपिणी",
       "iast": "sarvamantrasvarūpiṇī",
+      "hyphenated": {
+        "deva": "सर्व-मन्त्र-स्वरूपिणी",
+        "iast": "sarva-mantra-svarūpiṇī"
+      },
       "namavaliDeva": "सर्वमन्त्रस्वरूपिण्यै",
       "namavaliIast": "sarvamantrasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-मन्त्र-स्वरूपिण्यै",
+        "iast": "sarva-mantra-svarūpiṇyai"
+      },
       "gloss": "Very Form Of All Mantras",
       "translation": "Every syllable uttered as a mantra is her own body of sound, whatever deity it names.",
       "aksaras": [

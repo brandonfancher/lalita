@@ -86,6 +86,10 @@
           "id": "l0-t1",
           "deva": "कामकलारूपा",
           "iast": "kāmakalārūpā",
+          "hyphenated": {
+            "deva": "काम-कला-रूपा",
+            "iast": "kāma-kalā-rūpā"
+          },
           "namaIndices": [
             322
           ],
@@ -226,6 +230,10 @@
           "id": "l0-t2",
           "deva": "कदम्बकुसुमप्रिया",
           "iast": "kadambakusumapriyā",
+          "hyphenated": {
+            "deva": "कदम्ब-कुसुम-प्रिया",
+            "iast": "kadamba-kusuma-priyā"
+          },
           "namaIndices": [
             323
           ],
@@ -526,6 +534,10 @@
           "id": "l1-t1",
           "deva": "जगतीकन्दा",
           "iast": "jagatīkandā",
+          "hyphenated": {
+            "deva": "जगती-कन्दा",
+            "iast": "jagatī-kandā"
+          },
           "namaIndices": [
             325
           ],
@@ -650,6 +662,10 @@
           "id": "l1-t2",
           "deva": "करुणारससागरा",
           "iast": "karuṇārasasāgarā",
+          "hyphenated": {
+            "deva": "करुणा-रस-सागरा",
+            "iast": "karuṇā-rasa-sāgarā"
+          },
           "namaIndices": [
             326
           ],
@@ -912,8 +928,16 @@
       "index": 322,
       "deva": "कामकलारूपा",
       "iast": "kāmakalārūpā",
+      "hyphenated": {
+        "deva": "काम-कला-रूपा",
+        "iast": "kāma-kalā-rūpā"
+      },
       "namavaliDeva": "कामकलारूपायै",
       "namavaliIast": "kāmakalārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "काम-कला-रूपायै",
+        "iast": "kāma-kalā-rūpāyai"
+      },
       "gloss": "Formed Of The Kāmakalā",
       "translation": "Her body is the kāmakalā, the small figure of points and letters in which desire and the shape it takes are drawn together.",
       "aksaras": [
@@ -1096,8 +1120,16 @@
       "index": 323,
       "deva": "कदम्बकुसुमप्रिया",
       "iast": "kadambakusumapriyā",
+      "hyphenated": {
+        "deva": "कदम्ब-कुसुम-प्रिया",
+        "iast": "kadamba-kusuma-priyā"
+      },
       "namavaliDeva": "कदम्बकुसुमप्रियायै",
       "namavaliIast": "kadambakusumapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "कदम्ब-कुसुम-प्रियायै",
+        "iast": "kadamba-kusuma-priyāyai"
+      },
       "gloss": "Lover Of Kadamba Blossoms",
       "translation": "The heavy orange flowers of the kadamba tree are the offering she likes best.",
       "aksaras": [
@@ -1445,8 +1477,16 @@
       "index": 325,
       "deva": "जगतीकन्दा",
       "iast": "jagatīkandā",
+      "hyphenated": {
+        "deva": "जगती-कन्दा",
+        "iast": "jagatī-kandā"
+      },
       "namavaliDeva": "जगतीकन्दायै",
       "namavaliIast": "jagatīkandāyai",
+      "namavaliHyphenated": {
+        "deva": "जगती-कन्दायै",
+        "iast": "jagatī-kandāyai"
+      },
       "gloss": "Root Of The World",
       "translation": "The world grows out of her the way a plant grows out of the bulb hidden under the soil.",
       "aksaras": [
@@ -1600,8 +1640,16 @@
       "index": 326,
       "deva": "करुणारससागरा",
       "iast": "karuṇārasasāgarā",
+      "hyphenated": {
+        "deva": "करुणा-रस-सागरा",
+        "iast": "karuṇā-rasa-sāgarā"
+      },
       "namavaliDeva": "करुणारससागरायै",
       "namavaliIast": "karuṇārasasāgarāyai",
+      "namavaliHyphenated": {
+        "deva": "करुणा-रस-सागरायै",
+        "iast": "karuṇā-rasa-sāgarāyai"
+      },
       "gloss": "Ocean Of Compassion",
       "translation": "Pity is a taste she holds in such quantity that the only measure for it is the sea.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मार्ताण्डभैरवाराध्या",
           "iast": "mārtāṇḍabhairavārādhyā",
+          "hyphenated": {
+            "deva": "मार्ताण्ड-भैरवाराध्या",
+            "iast": "mārtāṇḍa-bhairavārādhyā"
+          },
           "namaIndices": [
             785
           ],
@@ -246,6 +250,10 @@
           "id": "l0-t1",
           "deva": "मन्त्रिणीन्यस्तराज्यधूः",
           "iast": "mantriṇīnyastarājyadhūḥ",
+          "hyphenated": {
+            "deva": "मन्त्रिणी-न्यस्त-राज्य-धूः",
+            "iast": "mantriṇī-nyasta-rājya-dhūḥ"
+          },
           "namaIndices": [
             786
           ],
@@ -629,6 +637,10 @@
           "id": "l1-t1",
           "deva": "जयत्सेना",
           "iast": "jayatsenā",
+          "hyphenated": {
+            "deva": "जयत्-सेना",
+            "iast": "jayat-senā"
+          },
           "namaIndices": [
             788
           ],
@@ -983,8 +995,16 @@
       "index": 785,
       "deva": "मार्ताण्डभैरवाराध्या",
       "iast": "mārtāṇḍabhairavārādhyā",
+      "hyphenated": {
+        "deva": "मार्ताण्ड-भैरवाराध्या",
+        "iast": "mārtāṇḍa-bhairavārādhyā"
+      },
       "namavaliDeva": "मार्ताण्डभैरवाराध्यायै",
       "namavaliIast": "mārtāṇḍabhairavārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "मार्ताण्ड-भैरवाराध्यायै",
+        "iast": "mārtāṇḍa-bhairavārādhyāyai"
+      },
       "gloss": "Worshipped By Mārtāṇḍa-Bhairava",
       "translation": "Bhairava in his solar form, Mārtāṇḍa-Bhairava, is among her worshippers and is counted her consort in that rite.",
       "aksaras": [
@@ -1260,8 +1280,16 @@
       "index": 786,
       "deva": "मन्त्रिणीन्यस्तराज्यधूः",
       "iast": "mantriṇīnyastarājyadhūḥ",
+      "hyphenated": {
+        "deva": "मन्त्रिणी-न्यस्त-राज्य-धूः",
+        "iast": "mantriṇī-nyasta-rājya-dhūḥ"
+      },
       "namavaliDeva": "मन्त्रिणीन्यस्तराज्यधुरे",
       "namavaliIast": "mantriṇīnyastarājyadhure",
+      "namavaliHyphenated": {
+        "deva": "मन्त्रिणी-न्यस्त-राज्य-धुरे",
+        "iast": "mantriṇī-nyasta-rājya-dhure"
+      },
       "gloss": "Who Set The Realm's Burden On Her Minister",
       "translation": "She handed the whole yoke of government to Mantriṇī and kept none of the labour of ruling for herself.",
       "aksaras": [
@@ -1726,8 +1754,16 @@
       "index": 788,
       "deva": "जयत्सेना",
       "iast": "jayatsenā",
+      "hyphenated": {
+        "deva": "जयत्-सेना",
+        "iast": "jayat-senā"
+      },
       "namavaliDeva": "जयत्सेनायै",
       "namavaliIast": "jayatsenāyai",
+      "namavaliHyphenated": {
+        "deva": "जयत्-सेनायै",
+        "iast": "jayat-senāyai"
+      },
       "gloss": "Whose Army Conquers",
       "translation": "The forces she sends out have never yet come back beaten.",
       "aksaras": [

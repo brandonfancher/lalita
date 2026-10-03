@@ -249,6 +249,10 @@
           "id": "l0-t2",
           "deva": "धनधान्यविवर्धिनी",
           "iast": "dhanadhānyavivardhinī",
+          "hyphenated": {
+            "deva": "धन-धान्य-विवर्धिनी",
+            "iast": "dhana-dhānya-vivardhinī"
+          },
           "namaIndices": [
             886
           ],
@@ -459,6 +463,10 @@
           "id": "l1-t0",
           "deva": "विप्रप्रिया",
           "iast": "viprapriyā",
+          "hyphenated": {
+            "deva": "विप्र-प्रिया",
+            "iast": "vipra-priyā"
+          },
           "namaIndices": [
             887
           ],
@@ -588,6 +596,10 @@
           "id": "l1-t1",
           "deva": "विप्ररूपा",
           "iast": "viprarūpā",
+          "hyphenated": {
+            "deva": "विप्र-रूपा",
+            "iast": "vipra-rūpā"
+          },
           "namaIndices": [
             888
           ],
@@ -702,6 +714,10 @@
           "id": "l1-t2",
           "deva": "विश्वभ्रमणकारिणी",
           "iast": "viśvabhramaṇakāriṇī",
+          "hyphenated": {
+            "deva": "विश्व-भ्रमण-कारिणी",
+            "iast": "viśva-bhramaṇa-kāriṇī"
+          },
           "namaIndices": [
             889
           ],
@@ -1206,8 +1222,16 @@
       "index": 886,
       "deva": "धनधान्यविवर्धिनी",
       "iast": "dhanadhānyavivardhinī",
+      "hyphenated": {
+        "deva": "धन-धान्य-विवर्धिनी",
+        "iast": "dhana-dhānya-vivardhinī"
+      },
       "namavaliDeva": "धनधान्यविवर्धिन्यै",
       "namavaliIast": "dhanadhānyavivardhinyai",
+      "namavaliHyphenated": {
+        "deva": "धन-धान्य-विवर्धिन्यै",
+        "iast": "dhana-dhānya-vivardhinyai"
+      },
       "gloss": "Increaser Of Wealth And Grain",
       "translation": "Money in the box and grain in the store both swell under her hand, which is the plain prosperity householders ask her for.",
       "aksaras": [
@@ -1454,8 +1478,16 @@
       "index": 887,
       "deva": "विप्रप्रिया",
       "iast": "viprapriyā",
+      "hyphenated": {
+        "deva": "विप्र-प्रिया",
+        "iast": "vipra-priyā"
+      },
       "namavaliDeva": "विप्रप्रियायै",
       "namavaliIast": "viprapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "विप्र-प्रियायै",
+        "iast": "vipra-priyāyai"
+      },
       "gloss": "To Whom Brahmins Are Dear",
       "translation": "The inspired and the learned stand close to her, and she favours those who keep the sacred word in use.",
       "aksaras": [
@@ -1613,8 +1645,16 @@
       "index": 888,
       "deva": "विप्ररूपा",
       "iast": "viprarūpā",
+      "hyphenated": {
+        "deva": "विप्र-रूपा",
+        "iast": "vipra-rūpā"
+      },
       "namavaliDeva": "विप्ररूपायै",
       "namavaliIast": "viprarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "विप्र-रूपायै",
+        "iast": "vipra-rūpāyai"
+      },
       "gloss": "Whose Form Is The Brahmin",
       "translation": "She appears as the brahmin himself, so respect paid to him is not a substitute for worship of her but the thing itself.",
       "aksaras": [
@@ -1757,8 +1797,16 @@
       "index": 889,
       "deva": "विश्वभ्रमणकारिणी",
       "iast": "viśvabhramaṇakāriṇī",
+      "hyphenated": {
+        "deva": "विश्व-भ्रमण-कारिणी",
+        "iast": "viśva-bhramaṇa-kāriṇī"
+      },
       "namavaliDeva": "विश्वभ्रमणकारिण्यै",
       "namavaliIast": "viśvabhramaṇakāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-भ्रमण-कारिण्यै",
+        "iast": "viśva-bhramaṇa-kāriṇyai"
+      },
       "gloss": "She Who Makes The Universe Revolve",
       "translation": "Planets, seasons and lifetimes all come round again, and the turning happens because she keeps causing it.",
       "aksaras": [

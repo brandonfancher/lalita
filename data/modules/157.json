@@ -110,6 +110,10 @@
           "id": "l0-t1",
           "deva": "मुक्तिनिलया",
           "iast": "muktinilayā",
+          "hyphenated": {
+            "deva": "मुक्ति-निलया",
+            "iast": "mukti-nilayā"
+          },
           "namaIndices": [
             839
           ],
@@ -248,6 +252,10 @@
           "id": "l0-t2",
           "deva": "मूलविग्रहरूपिणी",
           "iast": "mūlavigraharūpiṇī",
+          "hyphenated": {
+            "deva": "मूल-विग्रह-रूपिणी",
+            "iast": "mūla-vigraha-rūpiṇī"
+          },
           "namaIndices": [
             840
           ],
@@ -540,6 +548,10 @@
           "id": "l1-t1",
           "deva": "भवरोगघ्नी",
           "iast": "bhavarogaghnī",
+          "hyphenated": {
+            "deva": "भव-रोगघ्नी",
+            "iast": "bhava-rogaghnī"
+          },
           "namaIndices": [
             842
           ],
@@ -664,6 +676,10 @@
           "id": "l1-t2",
           "deva": "भवचक्रप्रवर्तिनी",
           "iast": "bhavacakrapravartinī",
+          "hyphenated": {
+            "deva": "भव-चक्र-प्रवर्तिनी",
+            "iast": "bhava-cakra-pravartinī"
+          },
           "namaIndices": [
             843
           ],
@@ -981,8 +997,16 @@
       "index": 839,
       "deva": "मुक्तिनिलया",
       "iast": "muktinilayā",
+      "hyphenated": {
+        "deva": "मुक्ति-निलया",
+        "iast": "mukti-nilayā"
+      },
       "namavaliDeva": "मुक्तिनिलयायै",
       "namavaliIast": "muktinilayāyai",
+      "namavaliHyphenated": {
+        "deva": "मुक्ति-निलयायै",
+        "iast": "mukti-nilayāyai"
+      },
       "gloss": "The Abode Of Liberation",
       "translation": "Freedom is not a country one travels to but a coming to rest in her, and she is that resting place.",
       "aksaras": [
@@ -1149,8 +1173,16 @@
       "index": 840,
       "deva": "मूलविग्रहरूपिणी",
       "iast": "mūlavigraharūpiṇī",
+      "hyphenated": {
+        "deva": "मूल-विग्रह-रूपिणी",
+        "iast": "mūla-vigraha-rūpiṇī"
+      },
       "namavaliDeva": "मूलविग्रहरूपिण्यै",
       "namavaliIast": "mūlavigraharūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "मूल-विग्रह-रूपिण्यै",
+        "iast": "mūla-vigraha-rūpiṇyai"
+      },
       "gloss": "Embodied As The Root Form",
       "translation": "Every image made of her copies one original body, and she is that root form from which the copies take their likeness.",
       "aksaras": [
@@ -1510,8 +1542,16 @@
       "index": 842,
       "deva": "भवरोगघ्नी",
       "iast": "bhavarogaghnī",
+      "hyphenated": {
+        "deva": "भव-रोगघ्नी",
+        "iast": "bhava-rogaghnī"
+      },
       "namavaliDeva": "भवरोगघ्न्यै",
       "namavaliIast": "bhavarogaghnyai",
+      "namavaliHyphenated": {
+        "deva": "भव-रोगघ्न्यै",
+        "iast": "bhava-rogaghnyai"
+      },
       "gloss": "Curer Of The Sickness Of Existence",
       "translation": "Being caught in birth after birth is counted here as an illness, and she is the physician who kills the disease outright.",
       "aksaras": [
@@ -1678,8 +1718,16 @@
       "index": 843,
       "deva": "भवचक्रप्रवर्तिनी",
       "iast": "bhavacakrapravartinī",
+      "hyphenated": {
+        "deva": "भव-चक्र-प्रवर्तिनी",
+        "iast": "bhava-cakra-pravartinī"
+      },
       "namavaliDeva": "भवचक्रप्रवर्तिन्यै",
       "namavaliIast": "bhavacakrapravartinyai",
+      "namavaliHyphenated": {
+        "deva": "भव-चक्र-प्रवर्तिन्यै",
+        "iast": "bhava-cakra-pravartinyai"
+      },
       "gloss": "Turner Of The Wheel Of Becoming",
       "translation": "The round of birth and death revolves because she keeps it revolving, and it would halt the instant she let go.",
       "aksaras": [

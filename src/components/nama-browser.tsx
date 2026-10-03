@@ -5,13 +5,19 @@ import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
+import { HyphenatedText } from "@/components/hyphenated-text";
+import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { NamaIndexEntry } from "@/lib/content";
 
-/** Fold text for diacritic-insensitive search, so "sri" finds "śrī". */
+/**
+ * Fold text for diacritic-insensitive search, so "sri" finds "śrī", and
+ * "padma-raga" finds the name however word breaks are set.
+ */
 const fold = (s: string) =>
   s
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/-/g, "")
     .toLowerCase();
 
 export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
@@ -49,11 +55,14 @@ export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
             className="w-full rounded-sm border border-line-strong bg-surface-1/70 py-2.5 pl-10 pr-4 font-sans text-[15px] text-ink outline-none transition-colors placeholder:text-ink-faint focus:border-sindura/60"
           />
         </div>
-        <p className="eyebrow mt-2 text-ink-faint">
-          {results.length === namas.length
-            ? `${namas.length} names`
-            : `${results.length} of ${namas.length}`}
-        </p>
+        <div className="mt-2 flex items-center justify-between gap-3">
+          <p className="eyebrow text-ink-faint">
+            {results.length === namas.length
+              ? `${namas.length} names`
+              : `${results.length} of ${namas.length}`}
+          </p>
+          <WordBreakToggle />
+        </div>
       </div>
 
       <ul className="grid grid-cols-1 border-t border-line-strong sm:grid-cols-2 sm:gap-x-12">
@@ -67,10 +76,12 @@ export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
                 {n.index}
               </span>
               <span className="min-w-0 flex-1">
-                <FitText className="deva block text-[1.3rem] leading-snug text-ink">
-                  {n.deva}
+                <FitText fitKey={n.deva} className="deva block text-[1.3rem] leading-snug text-ink">
+                  <HyphenatedText text={n.deva} hyphenated={n.hyphenated?.deva} />
                 </FitText>
-                <FitText className="iast block text-[1rem] text-gold-soft">{n.iast}</FitText>
+                <FitText fitKey={n.iast} className="iast block text-[1rem] text-gold-soft">
+                  <HyphenatedText text={n.iast} hyphenated={n.hyphenated?.iast} />
+                </FitText>
                 {n.gloss && (
                   <span className="mt-0.5 block text-[1rem] text-ink-muted group-hover:text-ink">{n.gloss}</span>
                 )}

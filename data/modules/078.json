@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भक्तिमत्कल्पलतिका",
           "iast": "bhaktimatkalpalatikā",
+          "hyphenated": {
+            "deva": "भक्तिमत्-कल्प-लतिका",
+            "iast": "bhaktimat-kalpa-latikā"
+          },
           "namaIndices": [
             353
           ],
@@ -225,6 +229,10 @@
           "id": "l0-t1",
           "deva": "पशुपाशविमोचिनी",
           "iast": "paśupāśavimocinī",
+          "hyphenated": {
+            "deva": "पशु-पाश-विमोचिनी",
+            "iast": "paśu-pāśa-vimocinī"
+          },
           "namaIndices": [
             354
           ],
@@ -419,6 +427,10 @@
           "id": "l1-t0",
           "deva": "संहृताशेषपाषण्डा",
           "iast": "saṃhṛtāśeṣapāṣaṇḍā",
+          "hyphenated": {
+            "deva": "संहृताशेष-पाषण्डा",
+            "iast": "saṃhṛtāśeṣa-pāṣaṇḍā"
+          },
           "namaIndices": [
             355
           ],
@@ -622,6 +634,10 @@
           "id": "l1-t1",
           "deva": "सदाचारप्रवर्तिका",
           "iast": "sadācārapravartikā",
+          "hyphenated": {
+            "deva": "सदाचार-प्रवर्तिका",
+            "iast": "sadācāra-pravartikā"
+          },
           "namaIndices": [
             356
           ],
@@ -830,8 +846,16 @@
       "index": 353,
       "deva": "भक्तिमत्कल्पलतिका",
       "iast": "bhaktimatkalpalatikā",
+      "hyphenated": {
+        "deva": "भक्तिमत्-कल्प-लतिका",
+        "iast": "bhaktimat-kalpa-latikā"
+      },
       "namavaliDeva": "भक्तिमत्कल्पलतिकायै",
       "namavaliIast": "bhaktimatkalpalatikāyai",
+      "namavaliHyphenated": {
+        "deva": "भक्तिमत्-कल्प-लतिकायै",
+        "iast": "bhaktimat-kalpa-latikāyai"
+      },
       "gloss": "Wish-Granting Vine Of The Devout",
       "translation": "For those who hold to her she is the slender celestial creeper that yields whatever is asked of it.",
       "aksaras": [
@@ -1086,8 +1110,16 @@
       "index": 354,
       "deva": "पशुपाशविमोचिनी",
       "iast": "paśupāśavimocinī",
+      "hyphenated": {
+        "deva": "पशु-पाश-विमोचिनी",
+        "iast": "paśu-pāśa-vimocinī"
+      },
       "namavaliDeva": "पशुपाशविमोचिन्यै",
       "namavaliIast": "paśupāśavimocinyai",
+      "namavaliHyphenated": {
+        "deva": "पशु-पाश-विमोचिन्यै",
+        "iast": "paśu-pāśa-vimocinyai"
+      },
       "gloss": "Loosener Of The Beast's Bonds",
       "translation": "The soul is tethered like a beast; she is the one who unties the rope.",
       "aksaras": [
@@ -1318,8 +1350,16 @@
       "index": 355,
       "deva": "संहृताशेषपाषण्डा",
       "iast": "saṃhṛtāśeṣapāṣaṇḍā",
+      "hyphenated": {
+        "deva": "संहृताशेष-पाषण्डा",
+        "iast": "saṃhṛtāśeṣa-pāṣaṇḍā"
+      },
       "namavaliDeva": "संहृताशेषपाषण्डायै",
       "namavaliIast": "saṃhṛtāśeṣapāṣaṇḍāyai",
+      "namavaliHyphenated": {
+        "deva": "संहृताशेष-पाषण्डायै",
+        "iast": "saṃhṛtāśeṣa-pāṣaṇḍāyai"
+      },
       "gloss": "Destroyer Of Every Heresy",
       "translation": "Every false teaching is gathered up and put away by her, with nothing left over.",
       "aksaras": [
@@ -1565,8 +1605,16 @@
       "index": 356,
       "deva": "सदाचारप्रवर्तिका",
       "iast": "sadācārapravartikā",
+      "hyphenated": {
+        "deva": "सदाचार-प्रवर्तिका",
+        "iast": "sadācāra-pravartikā"
+      },
       "namavaliDeva": "सदाचारप्रवर्तिकायै",
       "namavaliIast": "sadācārapravartikāyai",
+      "namavaliHyphenated": {
+        "deva": "सदाचार-प्रवर्तिकायै",
+        "iast": "sadācāra-pravartikāyai"
+      },
       "gloss": "Promoter Of Right Conduct",
       "translation": "She starts good behaviour moving in the world and keeps it going once it has begun.",
       "aksaras": [

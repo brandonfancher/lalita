@@ -110,6 +110,10 @@
           "id": "l0-t1",
           "deva": "दैत्यशमनी",
           "iast": "daityaśamanī",
+          "hyphenated": {
+            "deva": "दैत्य-शमनी",
+            "iast": "daitya-śamanī"
+          },
           "namaIndices": [
             696
           ],
@@ -234,6 +238,10 @@
           "id": "l0-t2",
           "deva": "सर्वलोकवशङ्करी",
           "iast": "sarvalokavaśaṅkarī",
+          "hyphenated": {
+            "deva": "सर्व-लोक-वशङ्करी",
+            "iast": "sarva-loka-vaśaṅkarī"
+          },
           "namaIndices": [
             697
           ],
@@ -430,6 +438,10 @@
           "id": "l1-t0",
           "deva": "सर्वार्थदात्री",
           "iast": "sarvārthadātrī",
+          "hyphenated": {
+            "deva": "सर्वार्थ-दात्री",
+            "iast": "sarvārtha-dātrī"
+          },
           "namaIndices": [
             698
           ],
@@ -688,6 +700,10 @@
           "id": "l1-t2",
           "deva": "सच्चिदानन्दरूपिणी",
           "iast": "saccidānandarūpiṇī",
+          "hyphenated": {
+            "deva": "सच्-चिदानन्द-रूपिणी",
+            "iast": "sac-cidānanda-rūpiṇī"
+          },
           "namaIndices": [
             700
           ],
@@ -1011,8 +1027,16 @@
       "index": 696,
       "deva": "दैत्यशमनी",
       "iast": "daityaśamanī",
+      "hyphenated": {
+        "deva": "दैत्य-शमनी",
+        "iast": "daitya-śamanī"
+      },
       "namavaliDeva": "दैत्यशमन्यै",
       "namavaliIast": "daityaśamanyai",
+      "namavaliHyphenated": {
+        "deva": "दैत्य-शमन्यै",
+        "iast": "daitya-śamanyai"
+      },
       "gloss": "Queller Of The Demons",
       "translation": "The sons of Diti are put down by her whenever they press too far.",
       "aksaras": [
@@ -1165,8 +1189,16 @@
       "index": 697,
       "deva": "सर्वलोकवशङ्करी",
       "iast": "sarvalokavaśaṅkarī",
+      "hyphenated": {
+        "deva": "सर्व-लोक-वशङ्करी",
+        "iast": "sarva-loka-vaśaṅkarī"
+      },
       "namavaliDeva": "सर्वलोकवंशकर्यै",
       "namavaliIast": "sarvalokavaṃśakaryai",
+      "namavaliHyphenated": {
+        "deva": "सर्व-लोक-वंशकर्यै",
+        "iast": "sarva-loka-vaṃśakaryai"
+      },
       "gloss": "Bringing All Worlds Under Her Sway",
       "translation": "Every region there is falls under her control.",
       "aksaras": [
@@ -1413,8 +1445,16 @@
       "index": 698,
       "deva": "सर्वार्थदात्री",
       "iast": "sarvārthadātrī",
+      "hyphenated": {
+        "deva": "सर्वार्थ-दात्री",
+        "iast": "sarvārtha-dātrī"
+      },
       "namavaliDeva": "सर्वार्थदात्र्यै",
       "namavaliIast": "sarvārthadātryai",
+      "namavaliHyphenated": {
+        "deva": "सर्वार्थ-दात्र्यै",
+        "iast": "sarvārtha-dātryai"
+      },
       "gloss": "Giver Of Every Object Sought",
       "translation": "Whatever anyone is after, she is the one who supplies it.",
       "aksaras": [
@@ -1726,8 +1766,16 @@
       "index": 700,
       "deva": "सच्चिदानन्दरूपिणी",
       "iast": "saccidānandarūpiṇī",
+      "hyphenated": {
+        "deva": "सच्-चिदानन्द-रूपिणी",
+        "iast": "sac-cidānanda-rūpiṇī"
+      },
       "namavaliDeva": "सच्चिदानन्दरूपिण्यै",
       "namavaliIast": "saccidānandarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "सच्-चिदानन्द-रूपिण्यै",
+        "iast": "sac-cidānanda-rūpiṇyai"
+      },
       "gloss": "Whose Form Is Being, Consciousness And Bliss",
       "translation": "She is made of three things that turn out to be one: that she is, that she knows, and that she is glad.",
       "aksaras": [

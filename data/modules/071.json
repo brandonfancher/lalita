@@ -314,6 +314,10 @@
           "id": "l0-t3",
           "deva": "राजीवलोचना",
           "iast": "rājīvalocanā",
+          "hyphenated": {
+            "deva": "राजीव-लोचना",
+            "iast": "rājīva-locanā"
+          },
           "namaIndices": [
             308
           ],
@@ -677,6 +681,10 @@
           "id": "l1-t3",
           "deva": "रणत्किङ्किणिमेखला",
           "iast": "raṇatkiṅkiṇimekhalā",
+          "hyphenated": {
+            "deva": "रणत्-किङ्किणि-मेखला",
+            "iast": "raṇat-kiṅkiṇi-mekhalā"
+          },
           "namaIndices": [
             312
           ],
@@ -1259,8 +1267,16 @@
       "index": 308,
       "deva": "राजीवलोचना",
       "iast": "rājīvalocanā",
+      "hyphenated": {
+        "deva": "राजीव-लोचना",
+        "iast": "rājīva-locanā"
+      },
       "namavaliDeva": "राजीवलोचनायै",
       "namavaliIast": "rājīvalocanāyai",
+      "namavaliHyphenated": {
+        "deva": "राजीव-लोचनायै",
+        "iast": "rājīva-locanāyai"
+      },
       "gloss": "Lotus-Eyed",
       "translation": "Her eyes have the long cool shape of blue lotus petals.",
       "aksaras": [
@@ -1679,8 +1695,16 @@
       "index": 312,
       "deva": "रणत्किङ्किणिमेखला",
       "iast": "raṇatkiṅkiṇimekhalā",
+      "hyphenated": {
+        "deva": "रणत्-किङ्किणि-मेखला",
+        "iast": "raṇat-kiṅkiṇi-mekhalā"
+      },
       "namavaliDeva": "रणत्किङ्किणिमेखलायै",
       "namavaliIast": "raṇatkiṅkiṇimekhalāyai",
+      "namavaliHyphenated": {
+        "deva": "रणत्-किङ्किणि-मेखलायै",
+        "iast": "raṇat-kiṅkiṇi-mekhalāyai"
+      },
       "gloss": "Girdled With Ringing Bells",
       "translation": "Little bells chime along the belt at her waist whenever she moves.",
       "aksaras": [

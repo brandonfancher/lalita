@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "ओड्याणपीठनिलया",
           "iast": "oḍyāṇapīṭhanilayā",
+          "hyphenated": {
+            "deva": "ओड्याण-पीठ-निलया",
+            "iast": "oḍyāṇa-pīṭha-nilayā"
+          },
           "namaIndices": [
             379
           ],
@@ -200,6 +204,10 @@
           "id": "l0-t1",
           "deva": "बिन्दुमण्डलवासिनी",
           "iast": "bindumaṇḍalavāsinī",
+          "hyphenated": {
+            "deva": "बिन्दु-मण्डल-वासिनी",
+            "iast": "bindu-maṇḍala-vāsinī"
+          },
           "namaIndices": [
             380
           ],
@@ -417,6 +425,10 @@
           "id": "l1-t0",
           "deva": "रहोयागक्रमाराध्या",
           "iast": "rahoyāgakramārādhyā",
+          "hyphenated": {
+            "deva": "रहो-याग-क्रमाराध्या",
+            "iast": "raho-yāga-kramārādhyā"
+          },
           "namaIndices": [
             381
           ],
@@ -628,6 +640,10 @@
           "id": "l1-t1",
           "deva": "रहस्तर्पणतर्पिता",
           "iast": "rahastarpaṇatarpitā",
+          "hyphenated": {
+            "deva": "रहस्-तर्पण-तर्पिता",
+            "iast": "rahas-tarpaṇa-tarpitā"
+          },
           "namaIndices": [
             382
           ],
@@ -837,8 +853,16 @@
       "index": 379,
       "deva": "ओड्याणपीठनिलया",
       "iast": "oḍyāṇapīṭhanilayā",
+      "hyphenated": {
+        "deva": "ओड्याण-पीठ-निलया",
+        "iast": "oḍyāṇa-pīṭha-nilayā"
+      },
       "namavaliDeva": "ओड्याणपीठनिलयायै",
       "namavaliIast": "oḍyāṇapīṭhanilayāyai",
+      "namavaliHyphenated": {
+        "deva": "ओड्याण-पीठ-निलयायै",
+        "iast": "oḍyāṇa-pīṭha-nilayāyai"
+      },
       "gloss": "Dwelling At The Oḍyāṇa Seat",
       "translation": "Her home is the pīṭha of Oḍyāṇa, another of the places where her presence is fixed to the ground.",
       "aksaras": [
@@ -1068,8 +1092,16 @@
       "index": 380,
       "deva": "बिन्दुमण्डलवासिनी",
       "iast": "bindumaṇḍalavāsinī",
+      "hyphenated": {
+        "deva": "बिन्दु-मण्डल-वासिनी",
+        "iast": "bindu-maṇḍala-vāsinī"
+      },
       "namavaliDeva": "बिन्दुमण्डलवासिन्यै",
       "namavaliIast": "bindumaṇḍalavāsinyai",
+      "namavaliHyphenated": {
+        "deva": "बिन्दु-मण्डल-वासिन्यै",
+        "iast": "bindu-maṇḍala-vāsinyai"
+      },
       "gloss": "Dwelling In The Circle Of The Bindu",
       "translation": "She lives at the point at the centre of the diagram, where the whole figure gathers to a single dot.",
       "aksaras": [
@@ -1323,8 +1355,16 @@
       "index": 381,
       "deva": "रहोयागक्रमाराध्या",
       "iast": "rahoyāgakramārādhyā",
+      "hyphenated": {
+        "deva": "रहो-याग-क्रमाराध्या",
+        "iast": "raho-yāga-kramārādhyā"
+      },
       "namavaliDeva": "रहोयागक्रमाराध्यायै",
       "namavaliIast": "rahoyāgakramārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "रहो-याग-क्रमाराध्यायै",
+        "iast": "raho-yāga-kramārādhyāyai"
+      },
       "gloss": "Worshipped By The Secret Rite",
       "translation": "She is approached through the ordered steps of a rite performed out of sight, not in public assembly.",
       "aksaras": [
@@ -1592,8 +1632,16 @@
       "index": 382,
       "deva": "रहस्तर्पणतर्पिता",
       "iast": "rahastarpaṇatarpitā",
+      "hyphenated": {
+        "deva": "रहस्-तर्पण-तर्पिता",
+        "iast": "rahas-tarpaṇa-tarpitā"
+      },
       "namavaliDeva": "रहस्तर्पणतर्पितायै",
       "namavaliIast": "rahastarpaṇatarpitāyai",
+      "namavaliHyphenated": {
+        "deva": "रहस्-तर्पण-तर्पितायै",
+        "iast": "rahas-tarpaṇa-tarpitāyai"
+      },
       "gloss": "Satisfied By Secret Libation",
       "translation": "The offering poured for her in private is what actually reaches her and contents her.",
       "aksaras": [

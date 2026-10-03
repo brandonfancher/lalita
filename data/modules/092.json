@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मदघूर्णितरक्ताक्षी",
           "iast": "madaghūrṇitaraktākṣī",
+          "hyphenated": {
+            "deva": "मद-घूर्णित-रक्ताक्षी",
+            "iast": "mada-ghūrṇita-raktākṣī"
+          },
           "namaIndices": [
             432
           ],
@@ -232,6 +236,10 @@
           "id": "l0-t1",
           "deva": "मदपाटलगण्डभूः",
           "iast": "madapāṭalagaṇḍabhūḥ",
+          "hyphenated": {
+            "deva": "मद-पाटल-गण्डभूः",
+            "iast": "mada-pāṭala-gaṇḍabhūḥ"
+          },
           "namaIndices": [
             433
           ],
@@ -420,6 +428,10 @@
           "id": "l1-t0",
           "deva": "चन्दनद्रवदिग्धाङ्गी",
           "iast": "candanadravadigdhāṅgī",
+          "hyphenated": {
+            "deva": "चन्दन-द्रव-दिग्धाङ्गी",
+            "iast": "candana-drava-digdhāṅgī"
+          },
           "namaIndices": [
             434
           ],
@@ -647,6 +659,10 @@
           "id": "l1-t1",
           "deva": "चाम्पेयकुसुमप्रिया",
           "iast": "cāmpeyakusumapriyā",
+          "hyphenated": {
+            "deva": "चाम्पेय-कुसुम-प्रिया",
+            "iast": "cāmpeya-kusuma-priyā"
+          },
           "namaIndices": [
             435
           ],
@@ -869,8 +885,16 @@
       "index": 432,
       "deva": "मदघूर्णितरक्ताक्षी",
       "iast": "madaghūrṇitaraktākṣī",
+      "hyphenated": {
+        "deva": "मद-घूर्णित-रक्ताक्षी",
+        "iast": "mada-ghūrṇita-raktākṣī"
+      },
       "namavaliDeva": "मदघूर्णितरक्ताक्ष्यै",
       "namavaliIast": "madaghūrṇitaraktākṣyai",
+      "namavaliHyphenated": {
+        "deva": "मद-घूर्णित-रक्ताक्ष्यै",
+        "iast": "mada-ghūrṇita-raktākṣyai"
+      },
       "gloss": "Whose Reddened Eyes Roll With Rapture",
       "translation": "Her eyes, flushed red, sway and wander with the intoxication that has taken hold of her.",
       "aksaras": [
@@ -1146,8 +1170,16 @@
       "index": 433,
       "deva": "मदपाटलगण्डभूः",
       "iast": "madapāṭalagaṇḍabhūḥ",
+      "hyphenated": {
+        "deva": "मद-पाटल-गण्डभूः",
+        "iast": "mada-pāṭala-gaṇḍabhūḥ"
+      },
       "namavaliDeva": "मदपाटलगण्डभुवे",
       "namavaliIast": "madapāṭalagaṇḍabhuve",
+      "namavaliHyphenated": {
+        "deva": "मद-पाटल-गण्डभुवे",
+        "iast": "mada-pāṭala-gaṇḍabhuve"
+      },
       "gloss": "Whose Cheeks Are Flushed Rose With Rapture",
       "translation": "Rapture has spread a pale rose across the broad surface of her cheeks.",
       "aksaras": [
@@ -1386,8 +1418,16 @@
       "index": 434,
       "deva": "चन्दनद्रवदिग्धाङ्गी",
       "iast": "candanadravadigdhāṅgī",
+      "hyphenated": {
+        "deva": "चन्दन-द्रव-दिग्धाङ्गी",
+        "iast": "candana-drava-digdhāṅgī"
+      },
       "namavaliDeva": "चन्दनद्रवदिग्धाङ्ग्यै",
       "namavaliIast": "candanadravadigdhāṅgyai",
+      "namavaliHyphenated": {
+        "deva": "चन्दन-द्रव-दिग्धाङ्ग्यै",
+        "iast": "candana-drava-digdhāṅgyai"
+      },
       "gloss": "Limbs Anointed With Liquid Sandal",
       "translation": "Sandal worked into a paste has been smeared the length of her limbs.",
       "aksaras": [
@@ -1662,8 +1702,16 @@
       "index": 435,
       "deva": "चाम्पेयकुसुमप्रिया",
       "iast": "cāmpeyakusumapriyā",
+      "hyphenated": {
+        "deva": "चाम्पेय-कुसुम-प्रिया",
+        "iast": "cāmpeya-kusuma-priyā"
+      },
       "namavaliDeva": "चाम्पेयकुसुमप्रियायै",
       "namavaliIast": "cāmpeyakusumapriyāyai",
+      "namavaliHyphenated": {
+        "deva": "चाम्पेय-कुसुम-प्रियायै",
+        "iast": "cāmpeya-kusuma-priyāyai"
+      },
       "gloss": "Fond Of Campaka Blossoms",
       "translation": "Of all flowers it is the campaka blossom she cares for.",
       "aksaras": [

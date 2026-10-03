@@ -242,6 +242,10 @@
           "id": "l0-t3",
           "deva": "ब्रह्मात्मैक्यस्वरूपिणी",
           "iast": "brahmātmaikyasvarūpiṇī",
+          "hyphenated": {
+            "deva": "ब्रह्मात्मैक्य-स्वरूपिणी",
+            "iast": "brahmātmaikya-svarūpiṇī"
+          },
           "namaIndices": [
             672
           ],
@@ -909,6 +913,10 @@
           "id": "l1-t4",
           "deva": "बलिप्रिया",
           "iast": "balipriyā",
+          "hyphenated": {
+            "deva": "बलि-प्रिया",
+            "iast": "bali-priyā"
+          },
           "namaIndices": [
             677
           ],
@@ -1327,8 +1335,16 @@
       "index": 672,
       "deva": "ब्रह्मात्मैक्यस्वरूपिणी",
       "iast": "brahmātmaikyasvarūpiṇī",
+      "hyphenated": {
+        "deva": "ब्रह्मात्मैक्य-स्वरूपिणी",
+        "iast": "brahmātmaikya-svarūpiṇī"
+      },
       "namavaliDeva": "ब्रह्मात्मैक्यस्वरूपिण्यै",
       "namavaliIast": "brahmātmaikyasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "ब्रह्मात्मैक्य-स्वरूपिण्यै",
+        "iast": "brahmātmaikya-svarūpiṇyai"
+      },
       "gloss": "Whose Nature Is The Oneness Of Brahman And Self",
       "translation": "What she is, is the very identity of the absolute with the self that each person already is.",
       "aksaras": [
@@ -2110,8 +2126,16 @@
       "index": 677,
       "deva": "बलिप्रिया",
       "iast": "balipriyā",
+      "hyphenated": {
+        "deva": "बलि-प्रिया",
+        "iast": "bali-priyā"
+      },
       "namavaliDeva": "बलिप्रियायै",
       "namavaliIast": "balipriyāyai",
+      "namavaliHyphenated": {
+        "deva": "बलि-प्रियायै",
+        "iast": "bali-priyāyai"
+      },
       "gloss": "To Whom Offerings Are Dear",
       "translation": "The portion set aside and given away is what pleases her.",
       "aksaras": [

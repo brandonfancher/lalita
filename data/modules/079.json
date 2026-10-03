@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "तापत्रयाग्निसन्तप्तसमाह्लादनचन्द्रिका",
           "iast": "tāpatrayāgnisantaptasamāhlādanacandrikā",
+          "hyphenated": {
+            "deva": "ताप-त्रयाग्नि-सन्तप्त-समाह्लादन-चन्द्रिका",
+            "iast": "tāpa-trayāgni-santapta-samāhlādana-candrikā"
+          },
           "namaIndices": [
             357
           ],
@@ -668,6 +672,10 @@
           "id": "l1-t2",
           "deva": "तनुमध्या",
           "iast": "tanumadhyā",
+          "hyphenated": {
+            "deva": "तनु-मध्या",
+            "iast": "tanu-madhyā"
+          },
           "namaIndices": [
             360
           ],
@@ -884,8 +892,16 @@
       "index": 357,
       "deva": "तापत्रयाग्निसन्तप्तसमाह्लादनचन्द्रिका",
       "iast": "tāpatrayāgnisantaptasamāhlādanacandrikā",
+      "hyphenated": {
+        "deva": "ताप-त्रयाग्नि-सन्तप्त-समाह्लादन-चन्द्रिका",
+        "iast": "tāpa-trayāgni-santapta-samāhlādana-candrikā"
+      },
       "namavaliDeva": "तापत्रयाग्निसन्तप्तसमाह्लादनचन्द्रिकायै",
       "namavaliIast": "tāpatrayāgnisantaptasamāhlādanacandrikāyai",
+      "namavaliHyphenated": {
+        "deva": "ताप-त्रयाग्नि-सन्तप्त-समाह्लादन-चन्द्रिकायै",
+        "iast": "tāpa-trayāgni-santapta-samāhlādana-candrikāyai"
+      },
       "gloss": "Moonlight To The Threefold-Scorched",
       "translation": "Those burnt by the three fires of affliction feel her fall on them as moonlight falls on hot ground.",
       "aksaras": [
@@ -1651,8 +1667,16 @@
       "index": 360,
       "deva": "तनुमध्या",
       "iast": "tanumadhyā",
+      "hyphenated": {
+        "deva": "तनु-मध्या",
+        "iast": "tanu-madhyā"
+      },
       "namavaliDeva": "तनुमध्यायै",
       "namavaliIast": "tanumadhyāyai",
+      "namavaliHyphenated": {
+        "deva": "तनु-मध्यायै",
+        "iast": "tanu-madhyāyai"
+      },
       "gloss": "Slender-Waisted",
       "translation": "Her waist is narrow enough to be spanned by a hand.",
       "aksaras": [

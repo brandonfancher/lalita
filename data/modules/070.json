@@ -112,6 +112,10 @@
           "id": "l0-t1",
           "deva": "नादरूपा",
           "iast": "nādarūpā",
+          "hyphenated": {
+            "deva": "नाद-रूपा",
+            "iast": "nāda-rūpā"
+          },
           "namaIndices": [
             299
           ],
@@ -211,6 +215,10 @@
           "id": "l0-t2",
           "deva": "नामरूपविवर्जिता",
           "iast": "nāmarūpavivarjitā",
+          "hyphenated": {
+            "deva": "नाम-रूप-विवर्जिता",
+            "iast": "nāma-rūpa-vivarjitā"
+          },
           "namaIndices": [
             300
           ],
@@ -688,6 +696,10 @@
           "id": "l1-t3",
           "deva": "हेयोपादेयवर्जिता",
           "iast": "heyopādeyavarjitā",
+          "hyphenated": {
+            "deva": "हेयोपादेय-वर्जिता",
+            "iast": "heyopādeya-varjitā"
+          },
           "namaIndices": [
             304
           ],
@@ -1006,8 +1018,16 @@
       "index": 299,
       "deva": "नादरूपा",
       "iast": "nādarūpā",
+      "hyphenated": {
+        "deva": "नाद-रूपा",
+        "iast": "nāda-rūpā"
+      },
       "namavaliDeva": "नादरूपायै",
       "namavaliIast": "nādarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "नाद-रूपायै",
+        "iast": "nāda-rūpāyai"
+      },
       "gloss": "Whose Form Is Primal Sound",
       "translation": "Before speech divides into syllables it is a single undivided resonance, and that resonance is her body.",
       "aksaras": [
@@ -1135,8 +1155,16 @@
       "index": 300,
       "deva": "नामरूपविवर्जिता",
       "iast": "nāmarūpavivarjitā",
+      "hyphenated": {
+        "deva": "नाम-रूप-विवर्जिता",
+        "iast": "nāma-rūpa-vivarjitā"
+      },
       "namavaliDeva": "नामरूपविवर्जितायै",
       "namavaliIast": "nāmarūpavivarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "नाम-रूप-विवर्जितायै",
+        "iast": "nāma-rūpa-vivarjitāyai"
+      },
       "gloss": "Free Of Name And Form",
       "translation": "Having just been called sound itself, she is at once declared to be beyond every name a worshipper could fasten on her.",
       "aksaras": [
@@ -1704,8 +1732,16 @@
       "index": 304,
       "deva": "हेयोपादेयवर्जिता",
       "iast": "heyopādeyavarjitā",
+      "hyphenated": {
+        "deva": "हेयोपादेय-वर्जिता",
+        "iast": "heyopādeya-varjitā"
+      },
       "namavaliDeva": "हेयोपादेयवर्जितायै",
       "namavaliIast": "heyopādeyavarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "हेयोपादेय-वर्जितायै",
+        "iast": "heyopādeya-varjitāyai"
+      },
       "gloss": "Beyond Rejection And Acceptance",
       "translation": "Nothing in her is to be thrown away and nothing is to be added, so the whole labour of choosing falls silent before her.",
       "aksaras": [

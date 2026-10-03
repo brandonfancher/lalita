@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "सद्यःप्रसादिनी",
           "iast": "sadyaḥprasādinī",
+          "hyphenated": {
+            "deva": "सद्यः-प्रसादिनी",
+            "iast": "sadyaḥ-prasādinī"
+          },
           "namaIndices": [
             383
           ],
@@ -183,6 +187,10 @@
           "id": "l0-t1",
           "deva": "विश्वसाक्षिणी",
           "iast": "viśvasākṣiṇī",
+          "hyphenated": {
+            "deva": "विश्व-साक्षिणी",
+            "iast": "viśva-sākṣiṇī"
+          },
           "namaIndices": [
             384
           ],
@@ -336,6 +344,10 @@
           "id": "l0-t2",
           "deva": "साक्षिवर्जिता",
           "iast": "sākṣivarjitā",
+          "hyphenated": {
+            "deva": "साक्षि-वर्जिता",
+            "iast": "sākṣi-varjitā"
+          },
           "namaIndices": [
             385
           ],
@@ -495,6 +507,10 @@
           "id": "l1-t0",
           "deva": "षडङ्गदेवतायुक्ता",
           "iast": "ṣaḍaṅgadevatāyuktā",
+          "hyphenated": {
+            "deva": "षडङ्ग-देवता-युक्ता",
+            "iast": "ṣaḍaṅga-devatā-yuktā"
+          },
           "namaIndices": [
             386
           ],
@@ -699,6 +715,10 @@
           "id": "l1-t1",
           "deva": "षाड्गुण्यपरिपूरिता",
           "iast": "ṣāḍguṇyaparipūritā",
+          "hyphenated": {
+            "deva": "षाड्गुण्य-परिपूरिता",
+            "iast": "ṣāḍguṇya-paripūritā"
+          },
           "namaIndices": [
             387
           ],
@@ -921,6 +941,10 @@
       "index": 383,
       "deva": "सद्यःप्रसादिनी",
       "iast": "sadyaḥprasādinī",
+      "hyphenated": {
+        "deva": "सद्यः-प्रसादिनी",
+        "iast": "sadyaḥ-prasādinī"
+      },
       "namavaliDeva": "सद्यः प्रसादिन्यै",
       "namavaliIast": "sadyaḥ prasādinyai",
       "gloss": "Swift To Be Pleased",
@@ -1122,8 +1146,16 @@
       "index": 384,
       "deva": "विश्वसाक्षिणी",
       "iast": "viśvasākṣiṇī",
+      "hyphenated": {
+        "deva": "विश्व-साक्षिणी",
+        "iast": "viśva-sākṣiṇī"
+      },
       "namavaliDeva": "विश्वसाक्षिण्यै",
       "namavaliIast": "viśvasākṣiṇyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-साक्षिण्यै",
+        "iast": "viśva-sākṣiṇyai"
+      },
       "gloss": "Witness Of All",
       "translation": "Everything that happens happens in her sight, and she is present to it without taking part.",
       "aksaras": [
@@ -1305,8 +1337,16 @@
       "index": 385,
       "deva": "साक्षिवर्जिता",
       "iast": "sākṣivarjitā",
+      "hyphenated": {
+        "deva": "साक्षि-वर्जिता",
+        "iast": "sākṣi-varjitā"
+      },
       "namavaliDeva": "साक्षिवर्जितायै",
       "namavaliIast": "sākṣivarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "साक्षि-वर्जितायै",
+        "iast": "sākṣi-varjitāyai"
+      },
       "gloss": "Having No Witness",
       "translation": "She watches everything and nothing watches her; there is no second party who could stand outside her and look on.",
       "aksaras": [
@@ -1488,8 +1528,16 @@
       "index": 386,
       "deva": "षडङ्गदेवतायुक्ता",
       "iast": "ṣaḍaṅgadevatāyuktā",
+      "hyphenated": {
+        "deva": "षडङ्ग-देवता-युक्ता",
+        "iast": "ṣaḍaṅga-devatā-yuktā"
+      },
       "namavaliDeva": "षडङ्गदेवतायुक्तायै",
       "namavaliIast": "ṣaḍaṅgadevatāyuktāyai",
+      "namavaliHyphenated": {
+        "deva": "षडङ्ग-देवता-युक्तायै",
+        "iast": "ṣaḍaṅga-devatā-yuktāyai"
+      },
       "gloss": "Joined By The Six Limb-Deities",
       "translation": "The six deities assigned to the limbs of her mantra stand with her as a body stands with its parts.",
       "aksaras": [
@@ -1750,8 +1798,16 @@
       "index": 387,
       "deva": "षाड्गुण्यपरिपूरिता",
       "iast": "ṣāḍguṇyaparipūritā",
+      "hyphenated": {
+        "deva": "षाड्गुण्य-परिपूरिता",
+        "iast": "ṣāḍguṇya-paripūritā"
+      },
       "namavaliDeva": "षाड्गुण्यपरिपूरितायै",
       "namavaliIast": "ṣāḍguṇyaparipūritāyai",
+      "namavaliHyphenated": {
+        "deva": "षाड्गुण्य-परिपूरितायै",
+        "iast": "ṣāḍguṇya-paripūritāyai"
+      },
       "gloss": "Filled With The Six Excellences",
       "translation": "The six lordly qualities are not distributed among her in parts; she has each of them entire.",
       "aksaras": [

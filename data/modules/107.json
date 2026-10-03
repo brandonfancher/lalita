@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मुद्गौदनासक्तचित्ता",
           "iast": "mudgaudanāsaktacittā",
+          "hyphenated": {
+            "deva": "मुद्गौदनासक्त-चित्ता",
+            "iast": "mudgaudanāsakta-cittā"
+          },
           "namaIndices": [
             519
           ],
@@ -239,6 +243,10 @@
           "id": "l0-t1",
           "deva": "साकिन्यम्बास्वरूपिणी",
           "iast": "sākinyambāsvarūpiṇī",
+          "hyphenated": {
+            "deva": "साकिन्यम्बा-स्वरूपिणी",
+            "iast": "sākinyambā-svarūpiṇī"
+          },
           "namaIndices": [
             520
           ],
@@ -478,6 +486,10 @@
           "id": "l1-t0",
           "deva": "आज्ञाचक्राब्जनिलया",
           "iast": "ājñācakrābjanilayā",
+          "hyphenated": {
+            "deva": "आज्ञा-चक्राब्ज-निलया",
+            "iast": "ājñā-cakrābja-nilayā"
+          },
           "namaIndices": [
             521
           ],
@@ -695,6 +707,10 @@
           "id": "l1-t1",
           "deva": "शुक्लवर्णा",
           "iast": "śuklavarṇā",
+          "hyphenated": {
+            "deva": "शुक्ल-वर्णा",
+            "iast": "śukla-varṇā"
+          },
           "namaIndices": [
             522
           ],
@@ -913,8 +929,16 @@
       "index": 519,
       "deva": "मुद्गौदनासक्तचित्ता",
       "iast": "mudgaudanāsaktacittā",
+      "hyphenated": {
+        "deva": "मुद्गौदनासक्त-चित्ता",
+        "iast": "mudgaudanāsakta-cittā"
+      },
       "namavaliDeva": "मुद्गौदनासक्तचित्तायै",
       "namavaliIast": "mudgaudanāsaktacittāyai",
+      "namavaliHyphenated": {
+        "deva": "मुद्गौदनासक्त-चित्तायै",
+        "iast": "mudgaudanāsakta-cittāyai"
+      },
       "gloss": "Fond Of Mudga-Rice",
       "translation": "Rice boiled together with mung beans holds her thought at this station.",
       "aksaras": [
@@ -1197,8 +1221,16 @@
       "index": 520,
       "deva": "साकिन्यम्बास्वरूपिणी",
       "iast": "sākinyambāsvarūpiṇī",
+      "hyphenated": {
+        "deva": "साकिन्यम्बा-स्वरूपिणी",
+        "iast": "sākinyambā-svarūpiṇī"
+      },
       "namavaliDeva": "साकिन्यम्बास्वरूपिण्यै",
       "namavaliIast": "sākinyambāsvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "साकिन्यम्बा-स्वरूपिण्यै",
+        "iast": "sākinyambā-svarūpiṇyai"
+      },
       "gloss": "Embodied As Mother Sākinī",
       "translation": "The śakti of the mūlādhāra wheel is no other than herself, honoured under the maternal name Sākinī.",
       "aksaras": [
@@ -1475,8 +1507,16 @@
       "index": 521,
       "deva": "आज्ञाचक्राब्जनिला",
       "iast": "ājñācakrābjanilā",
+      "hyphenated": {
+        "deva": "आज्ञा-चक्राब्ज-निला",
+        "iast": "ājñā-cakrābja-nilā"
+      },
       "namavaliDeva": "आज्ञाचक्राब्जनिलायै",
       "namavaliIast": "ājñācakrābjanilāyai",
+      "namavaliHyphenated": {
+        "deva": "आज्ञा-चक्राब्ज-निलायै",
+        "iast": "ājñā-cakrābja-nilāyai"
+      },
       "gloss": "Dwelling In The Ājñā Lotus",
       "translation": "Between the brows lies the wheel of command, and its lotus is the house she keeps.",
       "aksaras": [
@@ -1734,8 +1774,16 @@
       "index": 522,
       "deva": "शुक्लवर्णा",
       "iast": "śuklavarṇā",
+      "hyphenated": {
+        "deva": "शुक्ल-वर्णा",
+        "iast": "śukla-varṇā"
+      },
       "namavaliDeva": "शुक्लवर्णायै",
       "namavaliIast": "śuklavarṇāyai",
+      "namavaliHyphenated": {
+        "deva": "शुक्ल-वर्णायै",
+        "iast": "śukla-varṇāyai"
+      },
       "gloss": "White In Hue",
       "translation": "Hākinī's complexion is unclouded white, the colour of what is spotless.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "मेदोनिष्ठा",
           "iast": "medoniṣṭhā",
+          "hyphenated": {
+            "deva": "मेदो-निष्ठा",
+            "iast": "medo-niṣṭhā"
+          },
           "namaIndices": [
             509
           ],
@@ -134,6 +138,10 @@
           "id": "l0-t1",
           "deva": "मधुप्रीता",
           "iast": "madhuprītā",
+          "hyphenated": {
+            "deva": "मधु-प्रीता",
+            "iast": "madhu-prītā"
+          },
           "namaIndices": [
             510
           ],
@@ -248,6 +256,10 @@
           "id": "l0-t2",
           "deva": "बन्धिन्यादिसमन्विता",
           "iast": "bandhinyādisamanvitā",
+          "hyphenated": {
+            "deva": "बन्धिन्यादि-समन्विता",
+            "iast": "bandhinyādi-samanvitā"
+          },
           "namaIndices": [
             511
           ],
@@ -480,6 +492,10 @@
           "id": "l1-t0",
           "deva": "दध्यन्नासक्तहृदया",
           "iast": "dadhyannāsaktahṛdayā",
+          "hyphenated": {
+            "deva": "दध्यन्नासक्त-हृदया",
+            "iast": "dadhyannāsakta-hṛdayā"
+          },
           "namaIndices": [
             512
           ],
@@ -692,6 +708,10 @@
           "id": "l1-t1",
           "deva": "काकिनीरूपधारिणी",
           "iast": "kākinīrūpadhāriṇī",
+          "hyphenated": {
+            "deva": "काकिनी-रूप-धारिणी",
+            "iast": "kākinī-rūpa-dhāriṇī"
+          },
           "namaIndices": [
             513
           ],
@@ -891,8 +911,16 @@
       "index": 509,
       "deva": "मेदोनिष्ठा",
       "iast": "medoniṣṭhā",
+      "hyphenated": {
+        "deva": "मेदो-निष्ठा",
+        "iast": "medo-niṣṭhā"
+      },
       "namavaliDeva": "मेदोनिष्ठायै",
       "namavaliIast": "medoniṣṭhāyai",
+      "namavaliHyphenated": {
+        "deva": "मेदो-निष्ठायै",
+        "iast": "medo-niṣṭhāyai"
+      },
       "gloss": "Established In The Fat",
       "translation": "Of the seven bodily constituents she governs medas, the fatty tissue that the medical texts seat in the abdomen.",
       "aksaras": [
@@ -1042,8 +1070,16 @@
       "index": 510,
       "deva": "मधुप्रीता",
       "iast": "madhuprītā",
+      "hyphenated": {
+        "deva": "मधु-प्रीता",
+        "iast": "madhu-prītā"
+      },
       "namavaliDeva": "मधुप्रीतायै",
       "namavaliIast": "madhuprītāyai",
+      "namavaliHyphenated": {
+        "deva": "मधु-प्रीतायै",
+        "iast": "madhu-prītāyai"
+      },
       "gloss": "Delighted By Honeyed Drink",
       "translation": "What is sweet pleases her, and the sweet draught offered in worship is received with gladness.",
       "aksaras": [
@@ -1186,8 +1222,16 @@
       "index": 511,
       "deva": "बन्धिन्यादिसमन्विता",
       "iast": "bandhinyādisamanvitā",
+      "hyphenated": {
+        "deva": "बन्धिन्यादि-समन्विता",
+        "iast": "bandhinyādi-samanvitā"
+      },
       "namavaliDeva": "बन्दिन्यादिसमन्वितायै",
       "namavaliIast": "bandinyādisamanvitāyai",
+      "namavaliHyphenated": {
+        "deva": "बन्दिन्यादि-समन्वितायै",
+        "iast": "bandinyādi-samanvitāyai"
+      },
       "gloss": "Attended By Bandhinī And The Rest",
       "translation": "The six petals of her wheel are the six śaktis whose company she keeps, Bandhinī named first among them.",
       "aksaras": [
@@ -1456,8 +1500,16 @@
       "index": 512,
       "deva": "दध्यन्नासक्तहृदया",
       "iast": "dadhyannāsaktahṛdayā",
+      "hyphenated": {
+        "deva": "दध्यन्नासक्त-हृदया",
+        "iast": "dadhyannāsakta-hṛdayā"
+      },
       "namavaliDeva": "दध्यन्नासक्तहृदयायै",
       "namavaliIast": "dadhyannāsaktahṛdayāyai",
+      "namavaliHyphenated": {
+        "deva": "दध्यन्नासक्त-हृदयायै",
+        "iast": "dadhyannāsakta-hṛdayāyai"
+      },
       "gloss": "Her Heart Set On Curd-Rice",
       "translation": "Rice mixed with thick sour milk is the food she favours, and her affection settles on it.",
       "aksaras": [
@@ -1726,8 +1778,16 @@
       "index": 513,
       "deva": "काकिनीरूपधारिणी",
       "iast": "kākinīrūpadhāriṇī",
+      "hyphenated": {
+        "deva": "काकिनी-रूप-धारिणी",
+        "iast": "kākinī-rūpa-dhāriṇī"
+      },
       "namavaliDeva": "काकिनीरूपधारिण्यै",
       "namavaliIast": "kākinīrūpadhāriṇyai",
+      "namavaliHyphenated": {
+        "deva": "काकिनी-रूप-धारिण्यै",
+        "iast": "kākinī-rūpa-dhāriṇyai"
+      },
       "gloss": "Wearing The Shape Of Kākinī",
       "translation": "At the svādhiṣṭhāna wheel she assumes the person of the goddess Kākinī and carries that form as her own.",
       "aksaras": [

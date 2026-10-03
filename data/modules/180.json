@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "योनिमुद्रा",
           "iast": "yonimudrā",
+          "hyphenated": {
+            "deva": "योनि-मुद्रा",
+            "iast": "yoni-mudrā"
+          },
           "namaIndices": [
             982
           ],
@@ -134,6 +138,10 @@
           "id": "l0-t1",
           "deva": "त्रिखण्डेशी",
           "iast": "trikhaṇḍeśī",
+          "hyphenated": {
+            "deva": "त्रि-खण्डेशी",
+            "iast": "tri-khaṇḍeśī"
+          },
           "namaIndices": [
             983
           ],
@@ -263,6 +271,10 @@
           "id": "l0-t2",
           "deva": "त्रिगुणाम्बा",
           "iast": "triguṇāmbā",
+          "hyphenated": {
+            "deva": "त्रि-गुणाम्बा",
+            "iast": "tri-guṇāmbā"
+          },
           "namaIndices": [
             984,
             985
@@ -400,6 +412,10 @@
           "id": "l0-t3",
           "deva": "त्रिकोणगा",
           "iast": "trikoṇagā",
+          "hyphenated": {
+            "deva": "त्रि-कोणगा",
+            "iast": "tri-koṇagā"
+          },
           "namaIndices": [
             986
           ],
@@ -520,6 +536,10 @@
           "id": "l1-t0",
           "deva": "अनघाऽद्भुतचारित्रा",
           "iast": "anaghā'dbhutacāritrā",
+          "hyphenated": {
+            "deva": "अनघाऽद्भुत-चारित्रा",
+            "iast": "anaghā'dbhuta-cāritrā"
+          },
           "namaIndices": [
             987,
             988
@@ -743,6 +763,10 @@
           "id": "l1-t1",
           "deva": "वाञ्छितार्थप्रदायिनी",
           "iast": "vāñchitārthapradāyinī",
+          "hyphenated": {
+            "deva": "वाञ्छितार्थ-प्रदायिनी",
+            "iast": "vāñchitārtha-pradāyinī"
+          },
           "namaIndices": [
             989
           ],
@@ -980,8 +1004,16 @@
       "index": 982,
       "deva": "योनिमुद्रा",
       "iast": "yonimudrā",
+      "hyphenated": {
+        "deva": "योनि-मुद्रा",
+        "iast": "yoni-mudrā"
+      },
       "namavaliDeva": "योनिमुद्रायै",
       "namavaliIast": "yonimudrāyai",
+      "namavaliHyphenated": {
+        "deva": "योनि-मुद्रायै",
+        "iast": "yoni-mudrāyai"
+      },
       "gloss": "The Yoni Seal",
       "translation": "She is the yonimudrā, the gesture that shapes with the fingers the source from which everything issues.",
       "aksaras": [
@@ -1131,8 +1163,16 @@
       "index": 983,
       "deva": "त्रिखण्डेशी",
       "iast": "trikhaṇḍeśī",
+      "hyphenated": {
+        "deva": "त्रि-खण्डेशी",
+        "iast": "tri-khaṇḍeśī"
+      },
       "namavaliDeva": "त्रिखण्डेश्यै",
       "namavaliIast": "trikhaṇḍeśyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-खण्डेश्यै",
+        "iast": "tri-khaṇḍeśyai"
+      },
       "gloss": "Mistress Of The Threefold Seal",
       "translation": "She commands the trikhaṇḍā, the seal in three sections with which the worship is closed.",
       "aksaras": [
@@ -1304,8 +1344,16 @@
       "index": 984,
       "deva": "त्रिगुणा",
       "iast": "triguṇā",
+      "hyphenated": {
+        "deva": "त्रि-गुणा",
+        "iast": "tri-guṇā"
+      },
       "namavaliDeva": "त्रिगुणायै",
       "namavaliIast": "triguṇāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-गुणायै",
+        "iast": "tri-guṇāyai"
+      },
       "gloss": "Holder Of The Three Strands",
       "translation": "Sattva, rajas and tamas are hers to hold, although a few names earlier she was declared free of them.",
       "aksaras": [
@@ -1506,8 +1554,16 @@
       "index": 986,
       "deva": "त्रिकोणगा",
       "iast": "trikoṇagā",
+      "hyphenated": {
+        "deva": "त्रि-कोणगा",
+        "iast": "tri-koṇagā"
+      },
       "namavaliDeva": "त्रिकोणगायै",
       "namavaliIast": "trikoṇagāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-कोणगायै",
+        "iast": "tri-koṇagāyai"
+      },
       "gloss": "Dwelling In The Triangle",
       "translation": "She occupies the innermost triangle of the Śrīcakra, the enclosure immediately around the point.",
       "aksaras": [
@@ -1760,8 +1816,16 @@
       "index": 988,
       "deva": "अद्भुतचारित्रा",
       "iast": "adbhutacāritrā",
+      "hyphenated": {
+        "deva": "अद्भुत-चारित्रा",
+        "iast": "adbhuta-cāritrā"
+      },
       "namavaliDeva": "अद्भुतचारित्रायै",
       "namavaliIast": "adbhutacāritrāyai",
+      "namavaliHyphenated": {
+        "deva": "अद्भुत-चारित्रायै",
+        "iast": "adbhuta-cāritrāyai"
+      },
       "gloss": "Of Wondrous Deeds",
       "translation": "The record of what she has done exceeds anything ordinary causes could produce.",
       "aksaras": [
@@ -1958,8 +2022,16 @@
       "index": 989,
       "deva": "वाञ्छितार्थप्रदायिनी",
       "iast": "vāñchitārthapradāyinī",
+      "hyphenated": {
+        "deva": "वाञ्छितार्थ-प्रदायिनी",
+        "iast": "vāñchitārtha-pradāyinī"
+      },
       "namavaliDeva": "वाञ्छितार्थप्रदायिन्यै",
       "namavaliIast": "vāñchitārthapradāyinyai",
+      "namavaliHyphenated": {
+        "deva": "वाञ्छितार्थ-प्रदायिन्यै",
+        "iast": "vāñchitārtha-pradāyinyai"
+      },
       "gloss": "Bestower Of Desired Ends",
       "translation": "What is genuinely wanted she supplies.",
       "aksaras": [

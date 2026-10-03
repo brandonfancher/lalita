@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "श्रीमाता",
           "iast": "śrīmātā",
+          "hyphenated": {
+            "deva": "श्री-माता",
+            "iast": "śrī-mātā"
+          },
           "namaIndices": [
             1
           ],
@@ -110,6 +114,10 @@
           "id": "l0-t1",
           "deva": "श्रीमहाराज्ञी",
           "iast": "śrīmahārājñī",
+          "hyphenated": {
+            "deva": "श्री-महा-राज्ञी",
+            "iast": "śrī-mahā-rājñī"
+          },
           "namaIndices": [
             2
           ],
@@ -263,6 +271,10 @@
           "id": "l0-t2",
           "deva": "श्रीमत्सिंहासनेश्वरी",
           "iast": "śrīmatsiṃhāsaneśvarī",
+          "hyphenated": {
+            "deva": "श्रीमत्-सिंहासनेश्वरी",
+            "iast": "śrīmat-siṃhāsaneśvarī"
+          },
           "namaIndices": [
             3
           ],
@@ -502,6 +514,10 @@
           "id": "l1-t0",
           "deva": "चिदग्निकुण्डसम्भूता",
           "iast": "cidagnikuṇḍasambhūtā",
+          "hyphenated": {
+            "deva": "चिदग्नि-कुण्ड-सम्भूता",
+            "iast": "cidagni-kuṇḍa-sambhūtā"
+          },
           "namaIndices": [
             4
           ],
@@ -728,6 +744,10 @@
           "id": "l1-t1",
           "deva": "देवकार्यसमुद्यता",
           "iast": "devakāryasamudyatā",
+          "hyphenated": {
+            "deva": "देव-कार्य-समुद्यता",
+            "iast": "deva-kārya-samudyatā"
+          },
           "namaIndices": [
             5
           ],
@@ -936,8 +956,16 @@
       "index": 1,
       "deva": "श्रीमाता",
       "iast": "śrīmātā",
+      "hyphenated": {
+        "deva": "श्री-माता",
+        "iast": "śrī-mātā"
+      },
       "namavaliDeva": "ऐं ह्रीं श्रीं श्रीमात्रे",
       "namavaliIast": "aiṃ hrīṃ śrīṃ śrīmātre",
+      "namavaliHyphenated": {
+        "deva": "ऐं ह्रीं श्रीं श्री-मात्रे",
+        "iast": "aiṃ hrīṃ śrīṃ śrī-mātre"
+      },
       "gloss": "The Resplendent Mother",
       "translation": "She is the mother of everything that is, and majesty belongs to her as naturally as warmth belongs to fire.",
       "aksaras": [
@@ -1063,8 +1091,16 @@
       "index": 2,
       "deva": "श्रीमहाराज्ञी",
       "iast": "śrīmahārājñī",
+      "hyphenated": {
+        "deva": "श्री-महा-राज्ञी",
+        "iast": "śrī-mahā-rājñī"
+      },
       "namavaliDeva": "श्रीमहाराज्ञै",
       "namavaliIast": "śrīmahārājñai",
+      "namavaliHyphenated": {
+        "deva": "श्री-महा-राज्ञै",
+        "iast": "śrī-mahā-rājñai"
+      },
       "gloss": "The Great Empress",
       "translation": "She reigns over the whole of creation as its sovereign, holding an authority no other power can limit.",
       "aksaras": [
@@ -1260,8 +1296,16 @@
       "index": 3,
       "deva": "श्रीमत्सिंहासनेश्वरी",
       "iast": "śrīmatsiṃhāsaneśvarī",
+      "hyphenated": {
+        "deva": "श्रीमत्-सिंहासनेश्वरी",
+        "iast": "śrīmat-siṃhāsaneśvarī"
+      },
       "namavaliDeva": "श्रीमत्सिंहासनेश्वर्यै",
       "namavaliIast": "śrīmatsiṃhāsaneśvaryai",
+      "namavaliHyphenated": {
+        "deva": "श्रीमत्-सिंहासनेश्वर्यै",
+        "iast": "śrīmat-siṃhāsaneśvaryai"
+      },
       "gloss": "Mistress Of The Lion Throne",
       "translation": "She is the one seated in command upon the splendid lion-throne, the seat from which the universe is governed.",
       "aksaras": [
@@ -1551,8 +1595,16 @@
       "index": 4,
       "deva": "चिदग्निकुण्डसम्भूता",
       "iast": "cidagnikuṇḍasambhūtā",
+      "hyphenated": {
+        "deva": "चिदग्नि-कुण्ड-सम्भूता",
+        "iast": "cidagni-kuṇḍa-sambhūtā"
+      },
       "namavaliDeva": "चिदग्निकुण्डसम्भूतायै",
       "namavaliIast": "cidagnikuṇḍasambhūtāyai",
+      "namavaliHyphenated": {
+        "deva": "चिदग्नि-कुण्ड-सम्भूतायै",
+        "iast": "cidagni-kuṇḍa-sambhūtāyai"
+      },
       "gloss": "Risen From The Fire Of Awareness",
       "translation": "She rose out of the sacrificial pit whose fire is pure consciousness, the fire that burns away ignorance, so that her origin is awareness itself rather than any element.",
       "aksaras": [
@@ -1835,8 +1887,16 @@
       "index": 5,
       "deva": "देवकार्यसमुद्यता",
       "iast": "devakāryasamudyatā",
+      "hyphenated": {
+        "deva": "देव-कार्य-समुद्यता",
+        "iast": "deva-kārya-samudyatā"
+      },
       "namavaliDeva": "देवकार्यसमुद्यतायै",
       "namavaliIast": "devakāryasamudyatāyai",
+      "namavaliHyphenated": {
+        "deva": "देव-कार्य-समुद्यतायै",
+        "iast": "deva-kārya-samudyatāyai"
+      },
       "gloss": "Risen For The Gods' Cause",
       "translation": "She took form fully intent on the errand of the gods, appearing precisely when the powers of heaven had no other recourse.",
       "aksaras": [

@@ -53,6 +53,7 @@ function toPracticeVerse(mod: StudyModule): PracticeVerse {
           id: token.id,
           deva: token.deva,
           iast: token.iast,
+          ...(token.hyphenated ? { hyphenated: token.hyphenated } : {}),
           ...(glosses.length > 0 ? { glosses } : {}),
         };
       }),

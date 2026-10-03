@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा",
           "iast": "campakāśokapunnāgasaugandhikalasatkacā",
+          "hyphenated": {
+            "deva": "चम्पकाशोक-पुन्नाग-सौगन्धिक-लसत्-कचा",
+            "iast": "campakāśoka-punnāga-saugandhika-lasat-kacā"
+          },
           "namaIndices": [
             13
           ],
@@ -410,6 +414,10 @@
           "id": "l1-t0",
           "deva": "कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डिता",
           "iast": "kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitā",
+          "hyphenated": {
+            "deva": "कुरुविन्द-मणि-श्रेणी-कनत्-कोटीर-मण्डिता",
+            "iast": "kuruvinda-maṇi-śreṇī-kanat-koṭīra-maṇḍitā"
+          },
           "namaIndices": [
             14
           ],
@@ -826,8 +834,16 @@
       "index": 13,
       "deva": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा",
       "iast": "campakāśokapunnāgasaugandhikalasatkacā",
+      "hyphenated": {
+        "deva": "चम्पकाशोक-पुन्नाग-सौगन्धिक-लसत्-कचा",
+        "iast": "campakāśoka-punnāga-saugandhika-lasat-kacā"
+      },
       "namavaliDeva": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचायै",
       "namavaliIast": "campakāśokapunnāgasaugandhikalasatkacāyai",
+      "namavaliHyphenated": {
+        "deva": "चम्पकाशोक-पुन्नाग-सौगन्धिक-लसत्-कचायै",
+        "iast": "campakāśoka-punnāga-saugandhika-lasat-kacāyai"
+      },
       "gloss": "Whose Hair Shines With Flowers",
       "translation": "Campaka, aśoka, punnāga and fragrant water-lily blossoms are woven through her hair and make it glisten.",
       "aksaras": [
@@ -1285,8 +1301,16 @@
       "index": 14,
       "deva": "कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डिता",
       "iast": "kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitā",
+      "hyphenated": {
+        "deva": "कुरुविन्द-मणि-श्रेणी-कनत्-कोटीर-मण्डिता",
+        "iast": "kuruvinda-maṇi-śreṇī-kanat-koṭīra-maṇḍitā"
+      },
       "namavaliDeva": "कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डितायै",
       "namavaliIast": "kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitāyai",
+      "namavaliHyphenated": {
+        "deva": "कुरुविन्द-मणि-श्रेणी-कनत्-कोटीर-मण्डितायै",
+        "iast": "kuruvinda-maṇi-śreṇī-kanat-koṭīra-maṇḍitāyai"
+      },
       "gloss": "Crowned With Rows Of Rubies",
       "translation": "A diadem set with tier upon tier of rubies flashes above her, and that flashing is itself her ornament.",
       "aksaras": [

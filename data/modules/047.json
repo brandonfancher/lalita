@@ -353,6 +353,10 @@
           "id": "l0-t3",
           "deva": "मोहनाशिनी",
           "iast": "mohanāśinī",
+          "hyphenated": {
+            "deva": "मोह-नाशिनी",
+            "iast": "moha-nāśinī"
+          },
           "namaIndices": [
             163
           ],
@@ -572,6 +576,10 @@
           "id": "l1-t1",
           "deva": "ममताहन्त्री",
           "iast": "mamatāhantrī",
+          "hyphenated": {
+            "deva": "ममता-हन्त्री",
+            "iast": "mamatā-hantrī"
+          },
           "namaIndices": [
             165
           ],
@@ -808,6 +816,10 @@
           "id": "l1-t3",
           "deva": "पापनाशिनी",
           "iast": "pāpanāśinī",
+          "hyphenated": {
+            "deva": "पाप-नाशिनी",
+            "iast": "pāpa-nāśinī"
+          },
           "namaIndices": [
             167
           ],
@@ -1379,8 +1391,16 @@
       "index": 163,
       "deva": "मोहनाशिनी",
       "iast": "mohanāśinī",
+      "hyphenated": {
+        "deva": "मोह-नाशिनी",
+        "iast": "moha-nāśinī"
+      },
       "namavaliDeva": "मोहनाशिन्यै",
       "namavaliIast": "mohanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "मोह-नाशिन्यै",
+        "iast": "moha-nāśinyai"
+      },
       "gloss": "Destroyer Of Delusion",
       "translation": "She burns the fog off those who turn toward her and leaves them able to see.",
       "aksaras": [
@@ -1653,8 +1673,16 @@
       "index": 165,
       "deva": "ममताहन्त्री",
       "iast": "mamatāhantrī",
+      "hyphenated": {
+        "deva": "ममता-हन्त्री",
+        "iast": "mamatā-hantrī"
+      },
       "namavaliDeva": "ममताहन्त्र्यै",
       "namavaliIast": "mamatāhantryai",
+      "namavaliHyphenated": {
+        "deva": "ममता-हन्त्र्यै",
+        "iast": "mamatā-hantryai"
+      },
       "gloss": "Slayer Of Possessiveness",
       "translation": "She kills the sense of ownership outright rather than arguing anyone out of it.",
       "aksaras": [
@@ -1950,8 +1978,16 @@
       "index": 167,
       "deva": "पापनाशिनी",
       "iast": "pāpanāśinī",
+      "hyphenated": {
+        "deva": "पाप-नाशिनी",
+        "iast": "pāpa-nāśinī"
+      },
       "namavaliDeva": "पापनाशिन्यै",
       "namavaliIast": "pāpanāśinyai",
+      "namavaliHyphenated": {
+        "deva": "पाप-नाशिन्यै",
+        "iast": "pāpa-nāśinyai"
+      },
       "gloss": "Destroyer Of Sin",
       "translation": "She wipes out accumulated wrongdoing, which is why the guilty come to her first.",
       "aksaras": [

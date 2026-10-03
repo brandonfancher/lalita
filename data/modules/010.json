@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला",
           "iast": "śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā",
+          "hyphenated": {
+            "deva": "शुद्ध-विद्याङ्कुराकार-द्विज-पङ्क्ति-द्वयोज्ज्वला",
+            "iast": "śuddha-vidyāṅkurākāra-dvija-paṅkti-dvayojjvalā"
+          },
           "namaIndices": [
             25
           ],
@@ -506,6 +510,10 @@
           "id": "l1-t0",
           "deva": "कर्पूरवीटिकामोदसमाकर्षिदिगन्तरा",
           "iast": "karpūravīṭikāmodasamākarṣidigantarā",
+          "hyphenated": {
+            "deva": "कर्पूर-वीटिकामोद-समाकर्षि-दिगन्तरा",
+            "iast": "karpūra-vīṭikāmoda-samākarṣi-digantarā"
+          },
           "namaIndices": [
             26
           ],
@@ -900,8 +908,16 @@
       "index": 25,
       "deva": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला",
       "iast": "śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā",
+      "hyphenated": {
+        "deva": "शुद्ध-विद्याङ्कुराकार-द्विज-पङ्क्ति-द्वयोज्ज्वला",
+        "iast": "śuddha-vidyāṅkurākāra-dvija-paṅkti-dvayojjvalā"
+      },
       "namavaliDeva": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वलायै",
       "namavaliIast": "śuddhavidyāṅkurākāradvijapaṅktidvayojjvalāyai",
+      "namavaliHyphenated": {
+        "deva": "शुद्ध-विद्याङ्कुराकार-द्विज-पङ्क्ति-द्वयोज्ज्वलायै",
+        "iast": "śuddha-vidyāṅkurākāra-dvija-paṅkti-dvayojjvalāyai"
+      },
       "gloss": "Whose Teeth Are Sprouts Of Pure Knowledge",
       "translation": "Her two rows of teeth gleam like the first shoots of the pure knowledge that her own mantra plants in a seeker.",
       "aksaras": [
@@ -1501,8 +1517,16 @@
       "index": 26,
       "deva": "कर्पूरवीटिकामोदसमाकर्षिदिगन्तरा",
       "iast": "karpūravīṭikāmodasamākarṣidigantarā",
+      "hyphenated": {
+        "deva": "कर्पूर-वीटिकामोद-समाकर्षि-दिगन्तरा",
+        "iast": "karpūra-vīṭikāmoda-samākarṣi-digantarā"
+      },
       "namavaliDeva": "कर्पूरवीटिकामोदसमाकर्षि दिगन्तरायै",
       "namavaliIast": "karpūravīṭikāmodasamākarṣi digantarāyai",
+      "namavaliHyphenated": {
+        "deva": "कर्पूर-वीटिकामोद-समाकर्षि दिगन्तरायै",
+        "iast": "karpūra-vīṭikāmoda-samākarṣi digantarāyai"
+      },
       "gloss": "Whose Camphor Betel Scents The Quarters",
       "translation": "The perfume of the camphor-sweetened betel she chews travels outward until the whole space between the directions is full of it.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतटी",
           "iast": "aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭī",
+          "hyphenated": {
+            "deva": "अरुणारुण-कौसुम्भ-वस्त्र-भास्वत्-कटी-तटी",
+            "iast": "aruṇāruṇa-kausumbha-vastra-bhāsvat-kaṭī-taṭī"
+          },
           "namaIndices": [
             37
           ],
@@ -430,6 +434,10 @@
           "id": "l1-t0",
           "deva": "रत्नकिङ्किणिकारम्यरशनादामभूषिता",
           "iast": "ratnakiṅkiṇikāramyaraśanādāmabhūṣitā",
+          "hyphenated": {
+            "deva": "रत्न-किङ्किणिका-रम्य-रशना-दाम-भूषिता",
+            "iast": "ratna-kiṅkiṇikā-ramya-raśanā-dāma-bhūṣitā"
+          },
           "namaIndices": [
             38
           ],
@@ -824,8 +832,16 @@
       "index": 37,
       "deva": "अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतटी",
       "iast": "aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭī",
+      "hyphenated": {
+        "deva": "अरुणारुण-कौसुम्भ-वस्त्र-भास्वत्-कटी-तटी",
+        "iast": "aruṇāruṇa-kausumbha-vastra-bhāsvat-kaṭī-taṭī"
+      },
       "namavaliDeva": "अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतट्यै",
       "namavaliIast": "aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭyai",
+      "namavaliHyphenated": {
+        "deva": "अरुणारुण-कौसुम्भ-वस्त्र-भास्वत्-कटी-तट्यै",
+        "iast": "aruṇāruṇa-kausumbha-vastra-bhāsvat-kaṭī-taṭyai"
+      },
       "gloss": "Whose Hips Blaze In Safflower Red",
       "translation": "A cloth dyed with safflower, red as the sky at sunrise, catches the light along the slope of her hips.",
       "aksaras": [
@@ -1336,8 +1352,16 @@
       "index": 38,
       "deva": "रत्नकिङ्किणिकारम्यरशनादामभूषिता",
       "iast": "ratnakiṅkiṇikāramyaraśanādāmabhūṣitā",
+      "hyphenated": {
+        "deva": "रत्न-किङ्किणिका-रम्य-रशना-दाम-भूषिता",
+        "iast": "ratna-kiṅkiṇikā-ramya-raśanā-dāma-bhūṣitā"
+      },
       "namavaliDeva": "रत्नकिङ्किणिकारम्यरशनादामभूषितायै",
       "namavaliIast": "ratnakiṅkiṇikāramyaraśanādāmabhūṣitāyai",
+      "namavaliHyphenated": {
+        "deva": "रत्न-किङ्किणिका-रम्य-रशना-दाम-भूषितायै",
+        "iast": "ratna-kiṅkiṇikā-ramya-raśanā-dāma-bhūṣitāyai"
+      },
       "gloss": "Adorned With A Belt Of Jewelled Bells",
       "translation": "The cord about her waist carries small bells set with gems, so that her every movement is announced before it is seen.",
       "aksaras": [

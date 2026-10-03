@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "नखदीधितिसञ्छन्ननमज्जनतमोगुणा",
           "iast": "nakhadīdhitisañchannanamajjanatamoguṇā",
+          "hyphenated": {
+            "deva": "नख-दीधिति-सञ्छन्न-नमज्-जन-तमो-गुणा",
+            "iast": "nakha-dīdhiti-sañchanna-namaj-jana-tamo-guṇā"
+          },
           "namaIndices": [
             44
           ],
@@ -388,6 +392,10 @@
           "id": "l1-t0",
           "deva": "पदद्वयप्रभाजालपराकृतसरोरुहा",
           "iast": "padadvayaprabhājālaparākṛtasaroruhā",
+          "hyphenated": {
+            "deva": "पद-द्वय-प्रभा-जाल-पराकृत-सरो-रुहा",
+            "iast": "pada-dvaya-prabhā-jāla-parākṛta-saro-ruhā"
+          },
           "namaIndices": [
             45
           ],
@@ -753,8 +761,16 @@
       "index": 44,
       "deva": "नखदीधितिसञ्छन्ननमज्जनतमोगुणा",
       "iast": "nakhadīdhitisañchannanamajjanatamoguṇā",
+      "hyphenated": {
+        "deva": "नख-दीधिति-सञ्छन्न-नमज्-जन-तमो-गुणा",
+        "iast": "nakha-dīdhiti-sañchanna-namaj-jana-tamo-guṇā"
+      },
       "namavaliDeva": "नखदीधितिसञ्छन्ननमज्जनतमोगुणायै",
       "namavaliIast": "nakhadīdhitisañchannanamajjanatamoguṇāyai",
+      "namavaliHyphenated": {
+        "deva": "नख-दीधिति-सञ्छन्न-नमज्-जन-तमो-गुणायै",
+        "iast": "nakha-dīdhiti-sañchanna-namaj-jana-tamo-guṇāyai"
+      },
       "gloss": "Whose Toenails Dispel The Dark In Us",
       "translation": "The light thrown off by her toenails falls over those who bow at her feet and buries the dullness in them out of sight.",
       "aksaras": [
@@ -1222,8 +1238,16 @@
       "index": 45,
       "deva": "पदद्वयप्रभाजालपराकृतसरोरुहा",
       "iast": "padadvayaprabhājālaparākṛtasaroruhā",
+      "hyphenated": {
+        "deva": "पद-द्वय-प्रभा-जाल-पराकृत-सरो-रुहा",
+        "iast": "pada-dvaya-prabhā-jāla-parākṛta-saro-ruhā"
+      },
       "namavaliDeva": "पदद्वयप्रभाजालपराकृतसरोरुहायै",
       "namavaliIast": "padadvayaprabhājālaparākṛtasaroruhāyai",
+      "namavaliHyphenated": {
+        "deva": "पद-द्वय-प्रभा-जाल-पराकृत-सरो-रुहायै",
+        "iast": "pada-dvaya-prabhā-jāla-parākṛta-saro-ruhāyai"
+      },
       "gloss": "Whose Feet Put Lotuses To Flight",
       "translation": "So much light comes off her two feet that the lotus, the usual measure of a beautiful foot, is simply set aside.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "दशमुद्रासमाराध्या",
           "iast": "daśamudrāsamārādhyā",
+          "hyphenated": {
+            "deva": "दश-मुद्रा-समाराध्या",
+            "iast": "daśa-mudrā-samārādhyā"
+          },
           "namaIndices": [
             977
           ],
@@ -224,6 +228,10 @@
           "id": "l0-t1",
           "deva": "त्रिपुराश्रीवशङ्करी",
           "iast": "tripurāśrīvaśaṅkarī",
+          "hyphenated": {
+            "deva": "त्रि-पुरा-श्री-वशङ्करी",
+            "iast": "tri-purā-śrī-vaśaṅkarī"
+          },
           "namaIndices": [
             978
           ],
@@ -456,6 +464,10 @@
           "id": "l1-t0",
           "deva": "ज्ञानमुद्रा",
           "iast": "jñānamudrā",
+          "hyphenated": {
+            "deva": "ज्ञान-मुद्रा",
+            "iast": "jñāna-mudrā"
+          },
           "namaIndices": [
             979
           ],
@@ -585,6 +597,10 @@
           "id": "l1-t1",
           "deva": "ज्ञानगम्या",
           "iast": "jñānagamyā",
+          "hyphenated": {
+            "deva": "ज्ञान-गम्या",
+            "iast": "jñāna-gamyā"
+          },
           "namaIndices": [
             980
           ],
@@ -707,6 +723,10 @@
           "id": "l1-t2",
           "deva": "ज्ञानज्ञेयस्वरूपिणी",
           "iast": "jñānajñeyasvarūpiṇī",
+          "hyphenated": {
+            "deva": "ज्ञान-ज्ञेय-स्वरूपिणी",
+            "iast": "jñāna-jñeya-svarūpiṇī"
+          },
           "namaIndices": [
             981
           ],
@@ -937,8 +957,16 @@
       "index": 977,
       "deva": "दशमुद्रासमाराध्या",
       "iast": "daśamudrāsamārādhyā",
+      "hyphenated": {
+        "deva": "दश-मुद्रा-समाराध्या",
+        "iast": "daśa-mudrā-samārādhyā"
+      },
       "namavaliDeva": "दशमुद्रासमाराध्यायै",
       "namavaliIast": "daśamudrāsamārādhyāyai",
+      "namavaliHyphenated": {
+        "deva": "दश-मुद्रा-समाराध्यायै",
+        "iast": "daśa-mudrā-samārādhyāyai"
+      },
       "gloss": "Worshipped With Ten Seals",
       "translation": "The ten mudrās shown with the hands bring her worship to completion.",
       "aksaras": [
@@ -1192,8 +1220,16 @@
       "index": 978,
       "deva": "त्रिपुराश्रीवशङ्करी",
       "iast": "tripurāśrīvaśaṅkarī",
+      "hyphenated": {
+        "deva": "त्रि-पुरा-श्री-वशङ्करी",
+        "iast": "tri-purā-śrī-vaśaṅkarī"
+      },
       "namavaliDeva": "त्रिपुराश्रीवशङ्कर्यै",
       "namavaliIast": "tripurāśrīvaśaṅkaryai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-पुरा-श्री-वशङ्कर्यै",
+        "iast": "tri-purā-śrī-vaśaṅkaryai"
+      },
       "gloss": "Wielding Tripurā's Splendour",
       "translation": "She brings the sovereign splendour of Tripurā under her control, and confers that same mastery on those who worship her.",
       "aksaras": [
@@ -1491,8 +1527,16 @@
       "index": 979,
       "deva": "ज्ञानमुद्रा",
       "iast": "jñānamudrā",
+      "hyphenated": {
+        "deva": "ज्ञान-मुद्रा",
+        "iast": "jñāna-mudrā"
+      },
       "namavaliDeva": "ज्ञानमुद्रायै",
       "namavaliIast": "jñānamudrāyai",
+      "namavaliHyphenated": {
+        "deva": "ज्ञान-मुद्रायै",
+        "iast": "jñāna-mudrāyai"
+      },
       "gloss": "The Seal Of Knowledge",
       "translation": "She is the jñānamudrā, the gesture in which the hand alone says what is understood.",
       "aksaras": [
@@ -1650,8 +1694,16 @@
       "index": 980,
       "deva": "ज्ञानगम्या",
       "iast": "jñānagamyā",
+      "hyphenated": {
+        "deva": "ज्ञान-गम्या",
+        "iast": "jñāna-gamyā"
+      },
       "namavaliDeva": "ज्ञानगम्यायै",
       "namavaliIast": "jñānagamyāyai",
+      "namavaliHyphenated": {
+        "deva": "ज्ञान-गम्यायै",
+        "iast": "jñāna-gamyāyai"
+      },
       "gloss": "Reached Through Knowledge",
       "translation": "No approach except knowing arrives at her.",
       "aksaras": [
@@ -1802,8 +1854,16 @@
       "index": 981,
       "deva": "ज्ञानज्ञेयस्वरूपिणी",
       "iast": "jñānajñeyasvarūpiṇī",
+      "hyphenated": {
+        "deva": "ज्ञान-ज्ञेय-स्वरूपिणी",
+        "iast": "jñāna-jñeya-svarūpiṇī"
+      },
       "namavaliDeva": "ज्ञानज्ञेयस्वरूपिण्यै",
       "namavaliIast": "jñānajñeyasvarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "ज्ञान-ज्ञेय-स्वरूपिण्यै",
+        "iast": "jñāna-jñeya-svarūpiṇyai"
+      },
       "gloss": "Both Knowing And Known",
       "translation": "She is at once the act of knowledge and the thing it knows, so that in her the two never stand apart.",
       "aksaras": [

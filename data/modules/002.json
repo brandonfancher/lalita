@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "उद्यद्भानुसहस्राभा",
           "iast": "udyadbhānusahasrābhā",
+          "hyphenated": {
+            "deva": "उद्यद्-भानु-सहस्राभा",
+            "iast": "udyad-bhānu-sahasrābhā"
+          },
           "namaIndices": [
             6
           ],
@@ -230,6 +234,10 @@
           "id": "l0-t1",
           "deva": "चतुर्बाहुसमन्विता",
           "iast": "caturbāhusamanvitā",
+          "hyphenated": {
+            "deva": "चतुर्-बाहु-समन्विता",
+            "iast": "catur-bāhu-samanvitā"
+          },
           "namaIndices": [
             7
           ],
@@ -447,6 +455,10 @@
           "id": "l1-t0",
           "deva": "रागस्वरूपपाशाढ्या",
           "iast": "rāgasvarūpapāśāḍhyā",
+          "hyphenated": {
+            "deva": "राग-स्वरूप-पाशाढ्या",
+            "iast": "rāga-svarūpa-pāśāḍhyā"
+          },
           "namaIndices": [
             8
           ],
@@ -917,8 +929,16 @@
       "index": 6,
       "deva": "उद्यद्भानुसहस्राभा",
       "iast": "udyadbhānusahasrābhā",
+      "hyphenated": {
+        "deva": "उद्यद्-भानु-सहस्राभा",
+        "iast": "udyad-bhānu-sahasrābhā"
+      },
       "namavaliDeva": "उद्यद्भानुसहस्राभायै",
       "namavaliIast": "udyadbhānusahasrābhāyai",
+      "namavaliHyphenated": {
+        "deva": "उद्यद्-भानु-सहस्राभायै",
+        "iast": "udyad-bhānu-sahasrābhāyai"
+      },
       "gloss": "Bright As A Thousand Dawns",
       "translation": "Her body gives off the light of a thousand suns climbing at once over the horizon.",
       "aksaras": [
@@ -1193,8 +1213,16 @@
       "index": 7,
       "deva": "चतुर्बाहुसमन्विता",
       "iast": "caturbāhusamanvitā",
+      "hyphenated": {
+        "deva": "चतुर्-बाहु-समन्विता",
+        "iast": "catur-bāhu-samanvitā"
+      },
       "namavaliDeva": "चतुर्बाहुसमन्वितायै",
       "namavaliIast": "caturbāhusamanvitāyai",
+      "namavaliHyphenated": {
+        "deva": "चतुर्-बाहु-समन्वितायै",
+        "iast": "catur-bāhu-samanvitāyai"
+      },
       "gloss": "Endowed With Four Arms",
       "translation": "She appears with four arms, each one carrying an instrument by which she governs the movements of desire.",
       "aksaras": [
@@ -1448,8 +1476,16 @@
       "index": 8,
       "deva": "रागस्वरूपपाशाढ्या",
       "iast": "rāgasvarūpapāśāḍhyā",
+      "hyphenated": {
+        "deva": "राग-स्वरूप-पाशाढ्या",
+        "iast": "rāga-svarūpa-pāśāḍhyā"
+      },
       "namavaliDeva": "रागस्वरूपपाशाढ्यायै",
       "namavaliIast": "rāgasvarūpapāśāḍhyāyai",
+      "namavaliHyphenated": {
+        "deva": "राग-स्वरूप-पाशाढ्यायै",
+        "iast": "rāga-svarūpa-pāśāḍhyāyai"
+      },
       "gloss": "Rich With The Noose Of Longing",
       "translation": "In one hand she carries the noose whose very substance is attachment, the cord by which every creature is drawn toward what it loves.",
       "aksaras": [
@@ -2033,7 +2069,7 @@
   ],
   "chant": {
     "startSec": 151.6,
-    "endSec": 163.0,
+    "endSec": 163,
     "confidence": "detected"
   },
   "commentary": {

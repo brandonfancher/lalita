@@ -126,6 +126,10 @@
           "id": "l0-t1",
           "deva": "दिव्यगन्धाढ्या",
           "iast": "divyagandhāḍhyā",
+          "hyphenated": {
+            "deva": "दिव्य-गन्धाढ्या",
+            "iast": "divya-gandhāḍhyā"
+          },
           "namaIndices": [
             631
           ],
@@ -287,6 +291,10 @@
           "id": "l0-t2",
           "deva": "सिन्दूरतिलकाञ्चिता",
           "iast": "sindūratilakāñcitā",
+          "hyphenated": {
+            "deva": "सिन्दूर-तिलकाञ्चिता",
+            "iast": "sindūra-tilakāñcitā"
+          },
           "namaIndices": [
             632
           ],
@@ -560,6 +568,10 @@
           "id": "l1-t1",
           "deva": "शैलेन्द्रतनया",
           "iast": "śailendratanayā",
+          "hyphenated": {
+            "deva": "शैलेन्द्र-तनया",
+            "iast": "śailendra-tanayā"
+          },
           "namaIndices": [
             634
           ],
@@ -781,6 +793,10 @@
           "id": "l1-t3",
           "deva": "गन्धर्वसेविता",
           "iast": "gandharvasevitā",
+          "hyphenated": {
+            "deva": "गन्धर्व-सेविता",
+            "iast": "gandharva-sevitā"
+          },
           "namaIndices": [
             636
           ],
@@ -1091,8 +1107,16 @@
       "index": 631,
       "deva": "दिव्यगन्धाढ्या",
       "iast": "divyagandhāḍhyā",
+      "hyphenated": {
+        "deva": "दिव्य-गन्धाढ्या",
+        "iast": "divya-gandhāḍhyā"
+      },
       "namavaliDeva": "दिव्यगन्धाढ्यायै",
       "namavaliIast": "divyagandhāḍhyāyai",
+      "namavaliHyphenated": {
+        "deva": "दिव्य-गन्धाढ्यायै",
+        "iast": "divya-gandhāḍhyāyai"
+      },
       "gloss": "Rich In Divine Fragrance",
       "translation": "A scent not of this world hangs about her in abundance.",
       "aksaras": [
@@ -1296,8 +1320,16 @@
       "index": 632,
       "deva": "सिन्दूरतिलकाञ्चिता",
       "iast": "sindūratilakāñcitā",
+      "hyphenated": {
+        "deva": "सिन्दूर-तिलकाञ्चिता",
+        "iast": "sindūra-tilakāñcitā"
+      },
       "namavaliDeva": "सिन्दूरतिलकाञ्चितायै",
       "namavaliIast": "sindūratilakāñcitāyai",
+      "namavaliHyphenated": {
+        "deva": "सिन्दूर-तिलकाञ्चितायै",
+        "iast": "sindūra-tilakāñcitāyai"
+      },
       "gloss": "Adorned With A Vermilion Mark",
       "translation": "A stroke of red lead on her brow completes her beauty.",
       "aksaras": [
@@ -1618,8 +1650,16 @@
       "index": 634,
       "deva": "शैलेन्द्रतनया",
       "iast": "śailendratanayā",
+      "hyphenated": {
+        "deva": "शैलेन्द्र-तनया",
+        "iast": "śailendra-tanayā"
+      },
       "namavaliDeva": "शैलेन्द्रतनयायै",
       "namavaliIast": "śailendratanayāyai",
+      "namavaliHyphenated": {
+        "deva": "शैलेन्द्र-तनयायै",
+        "iast": "śailendra-tanayāyai"
+      },
       "gloss": "Daughter Of The Mountain Lord",
       "translation": "Himavat, chief among mountains, is her father.",
       "aksaras": [
@@ -1894,8 +1934,16 @@
       "index": 636,
       "deva": "गन्धर्वसेविता",
       "iast": "gandharvasevitā",
+      "hyphenated": {
+        "deva": "गन्धर्व-सेविता",
+        "iast": "gandharva-sevitā"
+      },
       "namavaliDeva": "गन्धर्वसेवितायै",
       "namavaliIast": "gandharvasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "गन्धर्व-सेवितायै",
+        "iast": "gandharva-sevitāyai"
+      },
       "gloss": "Attended By Gandharvas",
       "translation": "The gandharvas, musicians of the sky, wait on her with their singing.",
       "aksaras": [

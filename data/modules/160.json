@@ -332,6 +332,10 @@
           "id": "l0-t3",
           "deva": "गानलोलुपा",
           "iast": "gānalolupā",
+          "hyphenated": {
+            "deva": "गान-लोलुपा",
+            "iast": "gāna-lolupā"
+          },
           "namaIndices": [
             857
           ],
@@ -461,6 +465,10 @@
           "id": "l1-t0",
           "deva": "कल्पनारहिता",
           "iast": "kalpanārahitā",
+          "hyphenated": {
+            "deva": "कल्पना-रहिता",
+            "iast": "kalpanā-rahitā"
+          },
           "namaIndices": [
             858
           ],
@@ -759,6 +767,10 @@
           "id": "l1-t2",
           "deva": "कान्तार्धविग्रहा",
           "iast": "kāntārdhavigrahā",
+          "hyphenated": {
+            "deva": "कान्तार्ध-विग्रहा",
+            "iast": "kāntārdha-vigrahā"
+          },
           "namaIndices": [
             861
           ],
@@ -1333,8 +1345,16 @@
       "index": 857,
       "deva": "गानलोलुपा",
       "iast": "gānalolupā",
+      "hyphenated": {
+        "deva": "गान-लोलुपा",
+        "iast": "gāna-lolupā"
+      },
       "namavaliDeva": "गानलोलुपायै",
       "namavaliIast": "gānalolupāyai",
+      "namavaliHyphenated": {
+        "deva": "गान-लोलुपायै",
+        "iast": "gāna-lolupāyai"
+      },
       "gloss": "Greedy For Song",
       "translation": "Singing draws her the way a scent draws a bee, and she is eager enough for it to come where it is.",
       "aksaras": [
@@ -1486,8 +1506,16 @@
       "index": 858,
       "deva": "कल्पनारहिता",
       "iast": "kalpanārahitā",
+      "hyphenated": {
+        "deva": "कल्पना-रहिता",
+        "iast": "kalpanā-rahitā"
+      },
       "namavaliDeva": "कल्पनारहितायै",
       "namavaliIast": "kalpanārahitāyai",
+      "namavaliHyphenated": {
+        "deva": "कल्पना-रहितायै",
+        "iast": "kalpanā-rahitāyai"
+      },
       "gloss": "Free Of Mental Construction",
       "translation": "Nothing about her is assembled by imagining; she is what stays once the mind stops fabricating.",
       "aksaras": [
@@ -1866,8 +1894,16 @@
       "index": 861,
       "deva": "कान्तार्धविग्रहा",
       "iast": "kāntārdhavigrahā",
+      "hyphenated": {
+        "deva": "कान्तार्ध-विग्रहा",
+        "iast": "kāntārdha-vigrahā"
+      },
       "namavaliDeva": "कान्तार्धविग्रहायै",
       "namavaliIast": "kāntārdhavigrahāyai",
+      "namavaliHyphenated": {
+        "deva": "कान्तार्ध-विग्रहायै",
+        "iast": "kāntārdha-vigrahāyai"
+      },
       "gloss": "Half Her Beloved's Body",
       "translation": "In the Ardhanārī form a single body is shared, and the half that is hers cannot be pulled away from the half that is his.",
       "aksaras": [
@@ -2098,7 +2134,7 @@
   ],
   "chant": {
     "startSec": 1694.31,
-    "endSec": 1705.0,
+    "endSec": 1705,
     "confidence": "detected"
   },
   "commentary": {

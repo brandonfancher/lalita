@@ -310,6 +310,10 @@
           "id": "l0-t3",
           "deva": "सर्वावस्थाविवर्जिता",
           "iast": "sarvāvasthāvivarjitā",
+          "hyphenated": {
+            "deva": "सर्वावस्था-विवर्जिता",
+            "iast": "sarvāvasthā-vivarjitā"
+          },
           "namaIndices": [
             263
           ],
@@ -542,6 +546,10 @@
           "id": "l1-t0",
           "deva": "सृष्टिकर्त्री",
           "iast": "sṛṣṭikartrī",
+          "hyphenated": {
+            "deva": "सृष्टि-कर्त्री",
+            "iast": "sṛṣṭi-kartrī"
+          },
           "namaIndices": [
             264
           ],
@@ -686,6 +694,10 @@
           "id": "l1-t1",
           "deva": "ब्रह्मरूपा",
           "iast": "brahmarūpā",
+          "hyphenated": {
+            "deva": "ब्रह्म-रूपा",
+            "iast": "brahma-rūpā"
+          },
           "namaIndices": [
             265
           ],
@@ -896,6 +908,10 @@
           "id": "l1-t3",
           "deva": "गोविन्दरूपिणी",
           "iast": "govindarūpiṇī",
+          "hyphenated": {
+            "deva": "गोविन्द-रूपिणी",
+            "iast": "govinda-rūpiṇī"
+          },
           "namaIndices": [
             267
           ],
@@ -1414,8 +1430,16 @@
       "index": 263,
       "deva": "सर्वावस्थाविवर्जिता",
       "iast": "sarvāvasthāvivarjitā",
+      "hyphenated": {
+        "deva": "सर्वावस्था-विवर्जिता",
+        "iast": "sarvāvasthā-vivarjitā"
+      },
       "namavaliDeva": "सर्वावस्थाविवर्जितायै",
       "namavaliIast": "sarvāvasthāvivarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "सर्वावस्था-विवर्जितायै",
+        "iast": "sarvāvasthā-vivarjitāyai"
+      },
       "gloss": "Free Of Every State",
       "translation": "Counting her as the fourth is a concession; strictly no condition at all can be laid over her.",
       "aksaras": [
@@ -1684,8 +1708,16 @@
       "index": 264,
       "deva": "सृष्टिकर्त्री",
       "iast": "sṛṣṭikartrī",
+      "hyphenated": {
+        "deva": "सृष्टि-कर्त्री",
+        "iast": "sṛṣṭi-kartrī"
+      },
       "namavaliDeva": "सृष्टिकर्त्र्यै",
       "namavaliIast": "sṛṣṭikartryai",
+      "namavaliHyphenated": {
+        "deva": "सृष्टि-कर्त्र्यै",
+        "iast": "sṛṣṭi-kartryai"
+      },
       "gloss": "Maker Of Creation",
       "translation": "The first of the five cosmic acts is hers: she lets the worlds out of herself.",
       "aksaras": [
@@ -1858,8 +1890,16 @@
       "index": 265,
       "deva": "ब्रह्मरूपा",
       "iast": "brahmarūpā",
+      "hyphenated": {
+        "deva": "ब्रह्म-रूपा",
+        "iast": "brahma-rūpā"
+      },
       "namavaliDeva": "ब्रह्मरूपायै",
       "namavaliIast": "brahmarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "ब्रह्म-रूपायै",
+        "iast": "brahma-rūpāyai"
+      },
       "gloss": "Whose Form Is Brahmā",
       "translation": "When that creating is given a face and a name, the face is Brahmā's and the power behind it is hers.",
       "aksaras": [
@@ -2110,8 +2150,16 @@
       "index": 267,
       "deva": "गोविन्दरूपिणी",
       "iast": "govindarūpiṇī",
+      "hyphenated": {
+        "deva": "गोविन्द-रूपिणी",
+        "iast": "govinda-rūpiṇī"
+      },
       "namavaliDeva": "गोविन्दरूपिण्यै",
       "namavaliIast": "govindarūpiṇyai",
+      "namavaliHyphenated": {
+        "deva": "गोविन्द-रूपिण्यै",
+        "iast": "govinda-rūpiṇyai"
+      },
       "gloss": "Whose Form Is Govinda",
       "translation": "That guarding wears the form of Viṣṇu, who goes after the worlds as a cowherd after his cattle.",
       "aksaras": [

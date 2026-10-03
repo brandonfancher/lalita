@@ -79,6 +79,10 @@
           "id": "l0-t1",
           "deva": "त्रिवर्गनिलया",
           "iast": "trivarganilayā",
+          "hyphenated": {
+            "deva": "त्रि-वर्ग-निलया",
+            "iast": "tri-varga-nilayā"
+          },
           "namaIndices": [
             873
           ],
@@ -330,6 +334,10 @@
           "id": "l0-t3",
           "deva": "त्रिपुरमालिनी",
           "iast": "tripuramālinī",
+          "hyphenated": {
+            "deva": "त्रि-पुर-मालिनी",
+            "iast": "tri-pura-mālinī"
+          },
           "namaIndices": [
             875
           ],
@@ -847,6 +855,10 @@
           "id": "l1-t3",
           "deva": "सुधासृतिः",
           "iast": "sudhāsṛtiḥ",
+          "hyphenated": {
+            "deva": "सुधा-सृतिः",
+            "iast": "sudhā-sṛtiḥ"
+          },
           "namaIndices": [
             879
           ],
@@ -1041,8 +1053,16 @@
       "index": 873,
       "deva": "त्रिवर्गनिलया",
       "iast": "trivarganilayā",
+      "hyphenated": {
+        "deva": "त्रि-वर्ग-निलया",
+        "iast": "tri-varga-nilayā"
+      },
       "namavaliDeva": "त्रिवर्गनिलयायै",
       "namavaliIast": "trivarganilayāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-वर्ग-निलयायै",
+        "iast": "tri-varga-nilayāyai"
+      },
       "gloss": "Abode Of The Three Aims",
       "translation": "Duty, wealth and pleasure, the three ordinary goods a human life pursues, all have their seat in her.",
       "aksaras": [
@@ -1366,8 +1386,16 @@
       "index": 875,
       "deva": "त्रिपुरमालिनी",
       "iast": "tripuramālinī",
+      "hyphenated": {
+        "deva": "त्रि-पुर-मालिनी",
+        "iast": "tri-pura-mālinī"
+      },
       "namavaliDeva": "त्रिपुरमालिन्यै",
       "namavaliIast": "tripuramālinyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-पुर-मालिन्यै",
+        "iast": "tri-pura-mālinyai"
+      },
       "gloss": "Garlanded With The Three Cities",
       "translation": "The three cities hang about her like a wreath, worn as an ornament rather than defended as a fortress.",
       "aksaras": [
@@ -2025,8 +2053,16 @@
       "index": 879,
       "deva": "सुधासृतिः",
       "iast": "sudhāsṛtiḥ",
+      "hyphenated": {
+        "deva": "सुधा-सृतिः",
+        "iast": "sudhā-sṛtiḥ"
+      },
       "namavaliDeva": "सुधासृत्यै",
       "namavaliIast": "sudhāsṛtyai",
+      "namavaliHyphenated": {
+        "deva": "सुधा-सृत्यै",
+        "iast": "sudhā-sṛtyai"
+      },
       "gloss": "The Flowing Of Nectar",
       "translation": "She is the course along which the deathless drink runs, the stream itself and not a cup drawn from it.",
       "aksaras": [

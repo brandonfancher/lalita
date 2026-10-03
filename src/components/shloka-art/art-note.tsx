@@ -4,12 +4,14 @@ import { createContext, useContext, useRef, useState, type KeyboardEvent, type R
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
 
+import { HyphenatedText } from "@/components/hyphenated-text";
 import { Lotus } from "@/components/ornament";
+import type { Hyphenated, Nama } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { ARTWORK } from "./registry";
 import type { ArtPart, Artwork, NoteEntry } from "./types";
 
-export type NoteNama = { index: number; deva: string; iast: string; gloss: string };
+export type NoteNama = Pick<Nama, "index" | "deva" | "iast" | "hyphenated" | "gloss">;
 
 /**
  * The way into an artwork's story: a plate caption beneath it on wide
@@ -139,10 +141,12 @@ function Plate({ id, artwork, namas }: { id: string; artwork: Artwork; namas: No
   ];
   const noun = artwork.entries.every((e) => "nama" in e) ? "name" : "phrase";
 
-  const heading = (entry: NoteEntry) => {
+  const heading = (
+    entry: NoteEntry,
+  ): { label: string; deva: string; iast: string; hyphenated?: Hyphenated; gloss: string } | undefined => {
     if (!("nama" in entry)) return entry.phrase;
     const n = namas.find((x) => x.index === entry.nama);
-    return n && { label: `Nāma ${n.index}`, deva: n.deva, iast: n.iast, gloss: n.gloss };
+    return n && { label: `Nāma ${n.index}`, deva: n.deva, iast: n.iast, hyphenated: n.hyphenated, gloss: n.gloss };
   };
 
   // ← and → walk the entries. Handling them here also keeps them from turning the page.
@@ -201,8 +205,12 @@ function Plate({ id, artwork, namas }: { id: string; artwork: Artwork; namas: No
                   >
                     <span className="flex flex-wrap items-baseline gap-x-2.5">
                       <span className="eyebrow text-sindura">{n.label}</span>
-                      <span className="deva text-[1.3rem] leading-snug text-ink">{n.deva}</span>
-                      <span className="iast text-[1rem] italic text-gold-soft">{n.iast}</span>
+                      <span className="deva text-[1.3rem] leading-snug text-ink">
+                        <HyphenatedText text={n.deva} hyphenated={n.hyphenated?.deva} />
+                      </span>
+                      <span className="iast text-[1rem] italic text-gold-soft">
+                        <HyphenatedText text={n.iast} hyphenated={n.hyphenated?.iast} />
+                      </span>
                     </span>
                     <span className="mt-0.5 block text-[0.95rem] italic text-ink-faint">{n.gloss}</span>
                     <span className="mt-1.5 block text-[1.02rem] leading-relaxed text-ink-muted">{depicts}</span>

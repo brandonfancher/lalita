@@ -127,6 +127,10 @@
           "id": "l0-t1",
           "deva": "कलानाथा",
           "iast": "kalānāthā",
+          "hyphenated": {
+            "deva": "कला-नाथा",
+            "iast": "kalā-nāthā"
+          },
           "namaIndices": [
             612
           ],
@@ -226,6 +230,10 @@
           "id": "l0-t2",
           "deva": "काव्यालापविनोदिनी",
           "iast": "kāvyālāpavinodinī",
+          "hyphenated": {
+            "deva": "काव्यालाप-विनोदिनी",
+            "iast": "kāvyālāpa-vinodinī"
+          },
           "namaIndices": [
             613
           ],
@@ -442,6 +450,10 @@
           "id": "l1-t0",
           "deva": "सचामररमावाणीसव्यदक्षिणसेविता",
           "iast": "sacāmararamāvāṇīsavyadakṣiṇasevitā",
+          "hyphenated": {
+            "deva": "सचामर-रमा-वाणी-सव्य-दक्षिण-सेविता",
+            "iast": "sacāmara-ramā-vāṇī-savya-dakṣiṇa-sevitā"
+          },
           "namaIndices": [
             614
           ],
@@ -959,8 +971,16 @@
       "index": 612,
       "deva": "कलानाथा",
       "iast": "kalānāthā",
+      "hyphenated": {
+        "deva": "कला-नाथा",
+        "iast": "kalā-nāthā"
+      },
       "namavaliDeva": "कलानाथायै",
       "namavaliIast": "kalānāthāyai",
+      "namavaliHyphenated": {
+        "deva": "कला-नाथायै",
+        "iast": "kalā-nāthāyai"
+      },
       "gloss": "Mistress Of The Digits",
       "translation": "She holds sway over the moon's waxing and waning portions and over the arts that share their name.",
       "aksaras": [
@@ -1088,8 +1108,16 @@
       "index": 613,
       "deva": "काव्यालापविनोदिनी",
       "iast": "kāvyālāpavinodinī",
+      "hyphenated": {
+        "deva": "काव्यालाप-विनोदिनी",
+        "iast": "kāvyālāpa-vinodinī"
+      },
       "namavaliDeva": "काव्यालापविनोदिन्यै",
       "namavaliIast": "kāvyālāpavinodinyai",
+      "namavaliHyphenated": {
+        "deva": "काव्यालाप-विनोदिन्यै",
+        "iast": "kāvyālāpa-vinodinyai"
+      },
       "gloss": "Delighting In Poetic Discourse",
       "translation": "Poetry spoken aloud is her recreation, and she is drawn to wherever fine words are being made.",
       "aksaras": [
@@ -1342,8 +1370,16 @@
       "index": 614,
       "deva": "सचामररमावाणीसव्यदक्षिणसेविता",
       "iast": "sacāmararamāvāṇīsavyadakṣiṇasevitā",
+      "hyphenated": {
+        "deva": "सचामर-रमा-वाणी-सव्य-दक्षिण-सेविता",
+        "iast": "sacāmara-ramā-vāṇī-savya-dakṣiṇa-sevitā"
+      },
       "namavaliDeva": "सचामररमावाणीसव्यदक्षिणसेवितायै",
       "namavaliIast": "sacāmararamāvāṇīsavyadakṣiṇasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "सचामर-रमा-वाणी-सव्य-दक्षिण-सेवितायै",
+        "iast": "sacāmara-ramā-vāṇī-savya-dakṣiṇa-sevitāyai"
+      },
       "gloss": "Served On Left And Right By Ramā And Vāṇī With Chowries",
       "translation": "Lakṣmī stands at her left and Sarasvatī at her right, each waving a yak-tail whisk over her.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "किरिचक्ररथारूढदण्डनाथापुरस्कृता",
           "iast": "kiricakrarathārūḍhadaṇḍanāthāpuraskṛtā",
+          "hyphenated": {
+            "deva": "किरि-चक्र-रथारूढ-दण्ड-नाथा-पुरस्कृता",
+            "iast": "kiri-cakra-rathārūḍha-daṇḍa-nāthā-puraskṛtā"
+          },
           "namaIndices": [
             70
           ],
@@ -409,6 +413,10 @@
           "id": "l1-t0",
           "deva": "ज्वालामालिनिकाक्षिप्तवह्निप्राकारमध्यगा",
           "iast": "jvālāmālinikākṣiptavahniprākāramadhyagā",
+          "hyphenated": {
+            "deva": "ज्वाला-मालिनिकाक्षिप्त-वह्नि-प्राकार-मध्यगा",
+            "iast": "jvālā-mālinikākṣipta-vahni-prākāra-madhyagā"
+          },
           "namaIndices": [
             71
           ],
@@ -862,8 +870,16 @@
       "index": 70,
       "deva": "किरिचक्ररथारूढदण्डनाथापुरस्कृता",
       "iast": "kiricakrarathārūḍhadaṇḍanāthāpuraskṛtā",
+      "hyphenated": {
+        "deva": "किरि-चक्र-रथारूढ-दण्ड-नाथा-पुरस्कृता",
+        "iast": "kiri-cakra-rathārūḍha-daṇḍa-nāthā-puraskṛtā"
+      },
       "namavaliDeva": "किरिचक्ररथारूढदण्डनाथापुरस्कृतायै",
       "namavaliIast": "kiricakrarathārūḍhadaṇḍanāthāpuraskṛtāyai",
+      "namavaliHyphenated": {
+        "deva": "किरि-चक्र-रथारूढ-दण्ड-नाथा-पुरस्कृतायै",
+        "iast": "kiri-cakra-rathārūḍha-daṇḍa-nāthā-puraskṛtāyai"
+      },
       "gloss": "Preceded By Daṇḍanāthā",
       "translation": "The commander who wields the rod of punishment goes before her on the boar-wheel chariot, clearing the road.",
       "aksaras": [
@@ -1352,8 +1368,16 @@
       "index": 71,
       "deva": "ज्वालामालिनिकाक्षिप्तवह्निप्राकारमध्यगा",
       "iast": "jvālāmālinikākṣiptavahniprākāramadhyagā",
+      "hyphenated": {
+        "deva": "ज्वाला-मालिनिकाक्षिप्त-वह्नि-प्राकार-मध्यगा",
+        "iast": "jvālā-mālinikākṣipta-vahni-prākāra-madhyagā"
+      },
       "namavaliDeva": "ज्वालामालिनिकाक्षिप्तवह्निप्राकारमध्यगायै",
       "namavaliIast": "jvālāmālinikākṣiptavahniprākāramadhyagāyai",
+      "namavaliHyphenated": {
+        "deva": "ज्वाला-मालिनिकाक्षिप्त-वह्नि-प्राकार-मध्यगायै",
+        "iast": "jvālā-mālinikākṣipta-vahni-prākāra-madhyagāyai"
+      },
       "gloss": "Moving Within The Wall Of Flame",
       "translation": "Jvālāmālinī threw up a rampart of fire around the army, and she moves freely inside it.",
       "aksaras": [

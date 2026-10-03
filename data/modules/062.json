@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "ध्यानध्यातृध्येयरूपा",
           "iast": "dhyānadhyātṛdhyeyarūpā",
+          "hyphenated": {
+            "deva": "ध्यान-ध्यातृ-ध्येय-रूपा",
+            "iast": "dhyāna-dhyātṛ-dhyeya-rūpā"
+          },
           "namaIndices": [
             254
           ],
@@ -246,6 +250,10 @@
           "id": "l0-t1",
           "deva": "धर्माधर्मविवर्जिता",
           "iast": "dharmādharmavivarjitā",
+          "hyphenated": {
+            "deva": "धर्माधर्म-विवर्जिता",
+            "iast": "dharmādharma-vivarjitā"
+          },
           "namaIndices": [
             255
           ],
@@ -471,6 +479,10 @@
           "id": "l1-t0",
           "deva": "विश्वरूपा",
           "iast": "viśvarūpā",
+          "hyphenated": {
+            "deva": "विश्व-रूपा",
+            "iast": "viśva-rūpā"
+          },
           "namaIndices": [
             256
           ],
@@ -924,8 +936,16 @@
       "index": 254,
       "deva": "ध्यानध्यातृध्येयरूपा",
       "iast": "dhyānadhyātṛdhyeyarūpā",
+      "hyphenated": {
+        "deva": "ध्यान-ध्यातृ-ध्येय-रूपा",
+        "iast": "dhyāna-dhyātṛ-dhyeya-rūpā"
+      },
       "namavaliDeva": "ध्यानध्यातृध्येयरूपायै",
       "namavaliIast": "dhyānadhyātṛdhyeyarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "ध्यान-ध्यातृ-ध्येय-रूपायै",
+        "iast": "dhyāna-dhyātṛ-dhyeya-rūpāyai"
+      },
       "gloss": "Meditation, Meditator And Object",
       "translation": "In her the three terms of contemplation collapse, since the one who meditates, the act and its object are the same.",
       "aksaras": [
@@ -1206,8 +1226,16 @@
       "index": 255,
       "deva": "धर्माधर्मविवर्जिता",
       "iast": "dharmādharmavivarjitā",
+      "hyphenated": {
+        "deva": "धर्माधर्म-विवर्जिता",
+        "iast": "dharmādharma-vivarjitā"
+      },
       "namavaliDeva": "धर्माधर्मविवर्जितायै",
       "namavaliIast": "dharmādharmavivarjitāyai",
+      "namavaliHyphenated": {
+        "deva": "धर्माधर्म-विवर्जितायै",
+        "iast": "dharmādharma-vivarjitāyai"
+      },
       "gloss": "Beyond Merit And Demerit",
       "translation": "The moral ledger that binds everyone else has no entry for her, since she is what the ledger is kept in.",
       "aksaras": [
@@ -1469,8 +1497,16 @@
       "index": 256,
       "deva": "विश्वरूपा",
       "iast": "viśvarūpā",
+      "hyphenated": {
+        "deva": "विश्व-रूपा",
+        "iast": "viśva-rūpā"
+      },
       "namavaliDeva": "विश्वरूपायै",
       "namavaliIast": "viśvarūpāyai",
+      "namavaliHyphenated": {
+        "deva": "विश्व-रूपायै",
+        "iast": "viśva-rūpāyai"
+      },
       "gloss": "Whose Form Is The Universe",
       "translation": "Looked at rightly, the universe is not her handiwork but her body.",
       "aksaras": [

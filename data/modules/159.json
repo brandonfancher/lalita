@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "जन्ममृत्युजरातप्तजनविश्रान्तिदायिनी",
           "iast": "janmamṛtyujarātaptajanaviśrāntidāyinī",
+          "hyphenated": {
+            "deva": "जन्म-मृत्यु-जरा-तप्त-जन-विश्रान्ति-दायिनी",
+            "iast": "janma-mṛtyu-jarā-tapta-jana-viśrānti-dāyinī"
+          },
           "namaIndices": [
             851
           ],
@@ -665,6 +669,10 @@
           "id": "l1-t1",
           "deva": "शान्त्यतीतकलात्मिका",
           "iast": "śāntyatītakalātmikā",
+          "hyphenated": {
+            "deva": "शान्त्यतीत-कलात्मिका",
+            "iast": "śāntyatīta-kalātmikā"
+          },
           "namaIndices": [
             853
           ],
@@ -895,8 +903,16 @@
       "index": 851,
       "deva": "जन्ममृत्युजरातप्तजनविश्रान्तिदायिनी",
       "iast": "janmamṛtyujarātaptajanaviśrāntidāyinī",
+      "hyphenated": {
+        "deva": "जन्म-मृत्यु-जरा-तप्त-जन-विश्रान्ति-दायिनी",
+        "iast": "janma-mṛtyu-jarā-tapta-jana-viśrānti-dāyinī"
+      },
       "namavaliDeva": "विश्रान्तिदायिन्यै",
       "namavaliIast": "viśrāntidāyinyai",
+      "namavaliHyphenated": {
+        "deva": "विश्रान्ति-दायिन्यै",
+        "iast": "viśrānti-dāyinyai"
+      },
       "gloss": "Giver Of Rest To People Scorched By Birth, Death And Old Age",
       "translation": "The rest she grants ends effort instead of interrupting it, a stopping that does not have to be started again. The name says who needs it: people burnt by being born, growing old and dying, over and over.",
       "aksaras": [
@@ -1641,8 +1657,16 @@
       "index": 853,
       "deva": "शान्त्यतीतकलात्मिका",
       "iast": "śāntyatītakalātmikā",
+      "hyphenated": {
+        "deva": "शान्त्यतीत-कलात्मिका",
+        "iast": "śāntyatīta-kalātmikā"
+      },
       "namavaliDeva": "शान्त्यतीतकलात्मिकायै",
       "namavaliIast": "śāntyatītakalātmikāyai",
+      "namavaliHyphenated": {
+        "deva": "शान्त्यतीत-कलात्मिकायै",
+        "iast": "śāntyatīta-kalātmikāyai"
+      },
       "gloss": "Whose Nature Is The Phase Beyond Peace",
       "translation": "Of the five kalās the last is Śāntyatītā, the one that has gone past even stillness, and that is what she is made of.",
       "aksaras": [

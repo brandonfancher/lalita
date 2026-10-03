@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "विशुद्धिचक्रनिलयाऽऽरक्तवर्णा",
           "iast": "viśuddhicakranilayā''raktavarṇā",
+          "hyphenated": {
+            "deva": "विशुद्धि-चक्र-निलयाऽऽरक्त-वर्णा",
+            "iast": "viśuddhi-cakra-nilayā''rakta-varṇā"
+          },
           "namaIndices": [
             475,
             476
@@ -356,6 +360,10 @@
           "id": "l0-t1",
           "deva": "त्रिलोचना",
           "iast": "trilocanā",
+          "hyphenated": {
+            "deva": "त्रि-लोचना",
+            "iast": "tri-locanā"
+          },
           "namaIndices": [
             477
           ],
@@ -476,6 +484,10 @@
           "id": "l1-t0",
           "deva": "खट्वाङ्गादिप्रहरणा",
           "iast": "khaṭvāṅgādipraharaṇā",
+          "hyphenated": {
+            "deva": "खट्वाङ्गादि-प्रहरणा",
+            "iast": "khaṭvāṅgādi-praharaṇā"
+          },
           "namaIndices": [
             478
           ],
@@ -695,6 +707,10 @@
           "id": "l1-t1",
           "deva": "वदनैकसमन्विता",
           "iast": "vadanaikasamanvitā",
+          "hyphenated": {
+            "deva": "वदनैक-समन्विता",
+            "iast": "vadanaika-samanvitā"
+          },
           "namaIndices": [
             479
           ],
@@ -881,8 +897,16 @@
       "index": 475,
       "deva": "विशुद्धिचक्रनिलया",
       "iast": "viśuddhicakranilayā",
+      "hyphenated": {
+        "deva": "विशुद्धि-चक्र-निलया",
+        "iast": "viśuddhi-cakra-nilayā"
+      },
       "namavaliDeva": "विशुद्धिचक्रनिलयायै",
       "namavaliIast": "viśuddhicakranilayāyai",
+      "namavaliHyphenated": {
+        "deva": "विशुद्धि-चक्र-निलयायै",
+        "iast": "viśuddhi-cakra-nilayāyai"
+      },
       "gloss": "Seated In The Viśuddhi Wheel",
       "translation": "Her station is the wheel at the throat, where whatever passes through is made clean.",
       "aksaras": [
@@ -1137,8 +1161,16 @@
       "index": 476,
       "deva": "आरक्तवर्णा",
       "iast": "āraktavarṇā",
+      "hyphenated": {
+        "deva": "आरक्त-वर्णा",
+        "iast": "ārakta-varṇā"
+      },
       "namavaliDeva": "आरक्तवर्णायै",
       "namavaliIast": "āraktavarṇāyai",
+      "namavaliHyphenated": {
+        "deva": "आरक्त-वर्णायै",
+        "iast": "ārakta-varṇāyai"
+      },
       "gloss": "Of Ruddy Hue",
       "translation": "Her colour is a light red, the tint that shows through just beneath the surface.",
       "aksaras": [
@@ -1297,8 +1329,16 @@
       "index": 477,
       "deva": "त्रिलोचना",
       "iast": "trilocanā",
+      "hyphenated": {
+        "deva": "त्रि-लोचना",
+        "iast": "tri-locanā"
+      },
       "namavaliDeva": "त्रिलोचनायै",
       "namavaliIast": "trilocanāyai",
+      "namavaliHyphenated": {
+        "deva": "त्रि-लोचनायै",
+        "iast": "tri-locanāyai"
+      },
       "gloss": "Three-Eyed",
       "translation": "Ḍākinī, who holds the throat wheel, looks out through three eyes.",
       "aksaras": [
@@ -1441,8 +1481,16 @@
       "index": 478,
       "deva": "खट्वाङ्गादिप्रहरणा",
       "iast": "khaṭvāṅgādipraharaṇā",
+      "hyphenated": {
+        "deva": "खट्वाङ्गादि-प्रहरणा",
+        "iast": "khaṭvāṅgādi-praharaṇā"
+      },
       "namavaliDeva": "खट्वाङ्गादिप्रहरणायै",
       "namavaliIast": "khaṭvāṅgādipraharaṇāyai",
+      "namavaliHyphenated": {
+        "deva": "खट्वाङ्गादि-प्रहरणायै",
+        "iast": "khaṭvāṅgādi-praharaṇāyai"
+      },
       "gloss": "Armed With The Skull-Staff And More",
       "translation": "She carries the skull-topped club and the other weapons that belong with it.",
       "aksaras": [
@@ -1718,8 +1766,16 @@
       "index": 479,
       "deva": "वदनैकसमन्विता",
       "iast": "vadanaikasamanvitā",
+      "hyphenated": {
+        "deva": "वदनैक-समन्विता",
+        "iast": "vadanaika-samanvitā"
+      },
       "namavaliDeva": "वदनैकसमन्वितायै",
       "namavaliIast": "vadanaikasamanvitāyai",
+      "namavaliHyphenated": {
+        "deva": "वदनैक-समन्वितायै",
+        "iast": "vadanaika-samanvitāyai"
+      },
       "gloss": "Having But One Face",
       "translation": "Among the many-faced powers of the wheels she is furnished with a single face.",
       "aksaras": [

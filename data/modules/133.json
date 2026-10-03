@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "भाषारूपा",
           "iast": "bhāṣārūpā",
+          "hyphenated": {
+            "deva": "भाषा-रूपा",
+            "iast": "bhāṣā-rūpā"
+          },
           "namaIndices": [
             678
           ],
@@ -119,6 +123,10 @@
           "id": "l0-t1",
           "deva": "बृहत्सेना",
           "iast": "bṛhatsenā",
+          "hyphenated": {
+            "deva": "बृहत्-सेना",
+            "iast": "bṛhat-senā"
+          },
           "namaIndices": [
             679
           ],
@@ -233,6 +241,10 @@
           "id": "l0-t2",
           "deva": "भावाभावविवर्जिता",
           "iast": "bhāvābhāvavivarjitā",
+          "hyphenated": {
+            "deva": "भावाभाव-विवर्जिता",
+            "iast": "bhāvābhāva-vivarjitā"
+          },
           "namaIndices": [
             680
           ],
@@ -867,8 +879,16 @@
       "index": 678,
       "deva": "भाषारूपा",
       "iast": "bhāṣārūpā",
+      "hyphenated": {
+        "deva": "भाषा-रूपा",
+        "iast": "bhāṣā-rūpā"
+      },
       "namavaliDeva": "भाषारूपायै",
       "namavaliIast": "bhāṣārūpāyai",
+      "namavaliHyphenated": {
+        "deva": "भाषा-रूपायै",
+        "iast": "bhāṣā-rūpāyai"
+      },
       "gloss": "Whose Form Is Language",
       "translation": "Every spoken tongue is a shape she has taken.",
       "aksaras": [
@@ -1003,8 +1023,16 @@
       "index": 679,
       "deva": "बृहत्सेना",
       "iast": "bṛhatsenā",
+      "hyphenated": {
+        "deva": "बृहत्-सेना",
+        "iast": "bṛhat-senā"
+      },
       "namavaliDeva": "बृहत्सेनायै",
       "namavaliIast": "bṛhatsenāyai",
+      "namavaliHyphenated": {
+        "deva": "बृहत्-सेनायै",
+        "iast": "bṛhat-senāyai"
+      },
       "gloss": "Whose Army Is Vast",
       "translation": "The force at her command is enormous, and no adversary has yet counted the whole of it.",
       "aksaras": [
@@ -1147,8 +1175,16 @@
       "index": 680,
       "deva": "भावाभावविवर्जिता",
       "iast": "bhāvābhāvavivarjitā",
+      "hyphenated": {
+        "deva": "भावाभाव-विवर्जिता",
+        "iast": "bhāvābhāva-vivarjitā"
+      },
       "namavaliDeva": "भावाभावविर्जितायै",
       "namavaliIast": "bhāvābhāvavirjitāyai",
+      "namavaliHyphenated": {
+        "deva": "भावाभाव-विर्जितायै",
+        "iast": "bhāvābhāva-virjitāyai"
+      },
       "gloss": "Free Of Being And Non-Being",
       "translation": "She stands clear of both terms, neither counted among the things that are nor among the things that are not.",
       "aksaras": [
@@ -1667,8 +1703,16 @@
       "index": 683,
       "deva": "शोभनासुलभागतिः",
       "iast": "śobhanāsulabhāgatiḥ",
+      "hyphenated": {
+        "deva": "शोभना-सुलभा-गतिः",
+        "iast": "śobhanā-sulabhā-gatiḥ"
+      },
       "namavaliDeva": "शोभनासुलभागत्यै",
       "namavaliIast": "śobhanāsulabhāgatyai",
+      "namavaliHyphenated": {
+        "deva": "शोभना-सुलभा-गत्यै",
+        "iast": "śobhanā-sulabhā-gatyai"
+      },
       "gloss": "The Lovely And Easily Reached Refuge",
       "translation": "She is the resort that is both beautiful to arrive at and near enough that anyone may arrive.",
       "aksaras": [

@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "पुरुषार्थप्रदा",
           "iast": "puruṣārthapradā",
+          "hyphenated": {
+            "deva": "पुरुषार्थ-प्रदा",
+            "iast": "puruṣārtha-pradā"
+          },
           "namaIndices": [
             291
           ],
@@ -475,6 +479,10 @@
           "id": "l1-t0",
           "deva": "अम्बिकाऽनादिनिधना",
           "iast": "ambikā'nādinidhanā",
+          "hyphenated": {
+            "deva": "अम्बिकाऽनादि-निधना",
+            "iast": "ambikā'nādi-nidhanā"
+          },
           "namaIndices": [
             295,
             296
@@ -690,6 +698,10 @@
           "id": "l1-t1",
           "deva": "हरिब्रह्मेन्द्रसेविता",
           "iast": "haribrahmendrasevitā",
+          "hyphenated": {
+            "deva": "हरि-ब्रह्मेन्द्र-सेविता",
+            "iast": "hari-brahmendra-sevitā"
+          },
           "namaIndices": [
             297
           ],
@@ -935,8 +947,16 @@
       "index": 291,
       "deva": "पुरुषार्थप्रदा",
       "iast": "puruṣārthapradā",
+      "hyphenated": {
+        "deva": "पुरुषार्थ-प्रदा",
+        "iast": "puruṣārtha-pradā"
+      },
       "namavaliDeva": "पुरुषार्थप्रदायै",
       "namavaliIast": "puruṣārthapradāyai",
+      "namavaliHyphenated": {
+        "deva": "पुरुषार्थ-प्रदायै",
+        "iast": "puruṣārtha-pradāyai"
+      },
       "gloss": "Granter Of The Human Goals",
       "translation": "Pleasure, wealth, duty and release are all in her gift, and she withholds none of the four from those who ask rightly.",
       "aksaras": [
@@ -1589,8 +1609,16 @@
       "index": 296,
       "deva": "अनादिनिधना",
       "iast": "anādinidhanā",
+      "hyphenated": {
+        "deva": "अनादि-निधना",
+        "iast": "anādi-nidhanā"
+      },
       "namavaliDeva": "अनादिनिधनायै",
       "namavaliIast": "anādinidhanāyai",
+      "namavaliHyphenated": {
+        "deva": "अनादि-निधनायै",
+        "iast": "anādi-nidhanāyai"
+      },
       "gloss": "Without Beginning Or End",
       "translation": "She did not start and will not stop, so no date can be put on either side of her.",
       "aksaras": [
@@ -1771,8 +1799,16 @@
       "index": 297,
       "deva": "हरिब्रह्मेन्द्रसेविता",
       "iast": "haribrahmendrasevitā",
+      "hyphenated": {
+        "deva": "हरि-ब्रह्मेन्द्र-सेविता",
+        "iast": "hari-brahmendra-sevitā"
+      },
       "namavaliDeva": "हरिब्रह्मेन्द्रसेवितायै",
       "namavaliIast": "haribrahmendrasevitāyai",
+      "namavaliHyphenated": {
+        "deva": "हरि-ब्रह्मेन्द्र-सेवितायै",
+        "iast": "hari-brahmendra-sevitāyai"
+      },
       "gloss": "Served By Viṣṇu, Brahmā And Indra",
       "translation": "The three great gods take their turn in attendance on her, each set aside his own sovereignty at her door.",
       "aksaras": [

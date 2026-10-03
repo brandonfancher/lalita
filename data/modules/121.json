@@ -13,6 +13,10 @@
           "id": "l0-t0",
           "deva": "दरान्दोलितदीर्घाक्षी",
           "iast": "darāndolitadīrghākṣī",
+          "hyphenated": {
+            "deva": "दरान्दोलित-दीर्घाक्षी",
+            "iast": "darāndolita-dīrghākṣī"
+          },
           "namaIndices": [
             601
           ],
@@ -246,6 +250,10 @@
           "id": "l0-t1",
           "deva": "दरहासोज्ज्वलन्मुखी",
           "iast": "darahāsojjvalanmukhī",
+          "hyphenated": {
+            "deva": "दर-हासोज्ज्वलन्-मुखी",
+            "iast": "dara-hāsojjvalan-mukhī"
+          },
           "namaIndices": [
             602
           ],
@@ -471,6 +479,10 @@
           "id": "l1-t0",
           "deva": "गुरुमूर्तिर्गुणनिधिर्गोमाता",
           "iast": "gurumūrtirguṇanidhirgomātā",
+          "hyphenated": {
+            "deva": "गुरु-मूर्तिर्-गुण-निधिर्-गोमाता",
+            "iast": "guru-mūrtir-guṇa-nidhir-gomātā"
+          },
           "namaIndices": [
             603,
             604,
@@ -785,6 +797,10 @@
           "id": "l1-t1",
           "deva": "गुहजन्मभूः",
           "iast": "guhajanmabhūḥ",
+          "hyphenated": {
+            "deva": "गुह-जन्मभूः",
+            "iast": "guha-janmabhūḥ"
+          },
           "namaIndices": [
             606
           ],
@@ -920,8 +936,16 @@
       "index": 601,
       "deva": "दरान्दोलितदीर्घाक्षी",
       "iast": "darāndolitadīrghākṣī",
+      "hyphenated": {
+        "deva": "दरान्दोलित-दीर्घाक्षी",
+        "iast": "darāndolita-dīrghākṣī"
+      },
       "namavaliDeva": "दरान्दोलितदीर्घाक्ष्यै",
       "namavaliIast": "darāndolitadīrghākṣyai",
+      "namavaliHyphenated": {
+        "deva": "दरान्दोलित-दीर्घाक्ष्यै",
+        "iast": "darāndolita-dīrghākṣyai"
+      },
       "gloss": "Whose Long Eyes Sway A Little",
       "translation": "Her long eyes rock very slightly from side to side, the small restless motion of a gaze that misses nothing.",
       "aksaras": [
@@ -1202,8 +1226,16 @@
       "index": 602,
       "deva": "दरहासोज्ज्वलन्मुखी",
       "iast": "darahāsojjvalanmukhī",
+      "hyphenated": {
+        "deva": "दर-हासोज्ज्वलन्-मुखी",
+        "iast": "dara-hāsojjvalan-mukhī"
+      },
       "namavaliDeva": "दरहासोज्ज्वलन्मुख्यै",
       "namavaliIast": "darahāsojjvalanmukhyai",
+      "namavaliHyphenated": {
+        "deva": "दर-हासोज्ज्वलन्-मुख्यै",
+        "iast": "dara-hāsojjvalan-mukhyai"
+      },
       "gloss": "Whose Face Shines With A Faint Smile",
       "translation": "The barest trace of a smile breaks on her lips and lights her whole face from within.",
       "aksaras": [
@@ -1470,8 +1502,16 @@
       "index": 603,
       "deva": "गुरुमूर्तिः",
       "iast": "gurumūrtiḥ",
+      "hyphenated": {
+        "deva": "गुरु-मूर्तिः",
+        "iast": "guru-mūrtiḥ"
+      },
       "namavaliDeva": "गुरुमूर्तये",
       "namavaliIast": "gurumūrtaye",
+      "namavaliHyphenated": {
+        "deva": "गुरु-मूर्तये",
+        "iast": "guru-mūrtaye"
+      },
       "gloss": "The Form Of The Teacher",
       "translation": "She takes shape as the teacher, so that whoever gives genuine instruction is wearing her form for the moment.",
       "aksaras": [
@@ -1628,8 +1668,16 @@
       "index": 604,
       "deva": "गुणनिधिः",
       "iast": "guṇanidhiḥ",
+      "hyphenated": {
+        "deva": "गुण-निधिः",
+        "iast": "guṇa-nidhiḥ"
+      },
       "namavaliDeva": "गुणनिधये",
       "namavaliIast": "guṇanidhaye",
+      "namavaliHyphenated": {
+        "deva": "गुण-निधये",
+        "iast": "guṇa-nidhaye"
+      },
       "gloss": "Treasury Of Virtues",
       "translation": "Every good quality is laid up in her the way coin is laid up in a strongroom.",
       "aksaras": [
@@ -1876,8 +1924,16 @@
       "index": 606,
       "deva": "गुहजन्मभूः",
       "iast": "guhajanmabhūḥ",
+      "hyphenated": {
+        "deva": "गुह-जन्मभूः",
+        "iast": "guha-janmabhūḥ"
+      },
       "namavaliDeva": "गुहजन्मभुवे",
       "namavaliIast": "guhajanmabhuve",
+      "namavaliHyphenated": {
+        "deva": "गुह-जन्मभुवे",
+        "iast": "guha-janmabhuve"
+      },
       "gloss": "Birthplace Of Guha",
       "translation": "Guha, the war-god reared in secret, has his origin in her.",
       "aksaras": [
