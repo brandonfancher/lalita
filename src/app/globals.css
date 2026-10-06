@@ -396,6 +396,17 @@ body:has([data-art-trigger]:hover) .shloka-art {
   animation: art-dart 9s ease-in-out infinite;
 }
 
+/*
+ * Shrinks toward a point and fades as it arrives, then starts again from
+ * full size: a horizon drawn in. Set `transform-origin` to the point (in
+ * artwork units, px) and stagger neighbours with `--delay`; a static
+ * `transform: scale()` inline is where it rests when motion is reduced.
+ */
+.adornment .m-gather {
+  transform-box: view-box;
+  animation: art-gather var(--dur, 24s) cubic-bezier(0.5, 0, 0.85, 0.6) var(--delay, 0s) infinite;
+}
+
 /* Offsets any of the above so neighbours don't move in lockstep. */
 .adornment .m-late {
   animation-delay: -1.7s;
@@ -543,6 +554,23 @@ body:has([data-art-trigger]:hover) .shloka-art {
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes art-gather {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.12);
+    opacity: 0;
   }
 }
 

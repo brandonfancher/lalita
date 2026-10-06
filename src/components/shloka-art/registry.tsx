@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { SproutingSeed } from "./sprouting-seed";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
@@ -402,6 +403,40 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: on the pool of light that fills her pan float two
           reflections, a sun and a moon. They are the earrings of the verse before, reflected in her cheek, which is how
           Śaṅkara explains why a cheek is compared to a mirror at all.
+        </>
+      ),
+    },
+  },
+  "010": {
+    Art: SproutingSeed,
+    intro: (Spot) => (
+      <>
+        The verse ends the first ten with her mouth, and the artwork draws neither mouth nor teeth. She is the{" "}
+        <Spot part="light">light</Spot> in a seed that has split open, and every element around it comes from one of
+        the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 25,
+        part: "sprout",
+        depicts:
+          "One sprout rises from the seed of her light and opens two seed-leaves, each a row of sixteen points of white light. They are the two rows of her teeth, and the mantra called Śuddhavidyā, sown in her and come up.",
+      },
+      {
+        nama: 26,
+        part: "fragrance",
+        depicts:
+          "The fragrance of her camphor betel is not drawn as smoke, only as what it does. The horizon, pinned at the eight quarters of the sky, is drawn in toward her ring after ring, and turns camphor-white as it nears her.",
+      },
+    ],
+    detail: {
+      part: "seed",
+      body: (
+        <>
+          There is also a small detail for the attentive: the split husk is engraved with the syllable{" "}
+          <span className="deva not-italic">ह्रीं</span>, which closes each of the three parts of the mantra. A
+          mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
         </>
       ),
     },
