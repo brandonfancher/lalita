@@ -91,7 +91,7 @@ export function ChantBar({
 }: {
   timing?: ChantTiming;
   label: string;
-  /** When true, loop starts on (used by the practice range page). */
+  /** When true, loop starts on (used by the chant range page). */
   defaultLoop?: boolean;
 }) {
   const holderRef = useRef<HTMLDivElement>(null);

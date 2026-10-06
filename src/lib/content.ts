@@ -52,7 +52,7 @@ export function getNeighbours(id: string): {
   };
 }
 
-/** Inclusive practice range: 0 = dhyāna (`000`), 1–182 = stotra shlokas. */
+/** Inclusive chant range: 0 = dhyāna (`000`), 1–182 = stotra shlokas. */
 export function getModulesInRange(from: number, to: number): StudyModule[] {
   const start = Math.min(from, to);
   const end = Math.max(from, to);

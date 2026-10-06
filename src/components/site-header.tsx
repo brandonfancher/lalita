@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 
 const LINKS = [
   { href: "/shlokas", label: "Shlokas", match: ["/shlokas", "/shloka"] },
-  { href: "/practice", label: "Practice", match: ["/practice"] },
-  { href: "/namas", label: "Names", match: ["/namas"] },
+  { href: "/chant", label: "Chant", match: ["/chant"] },
+  { href: "/namas/list", label: "Names", match: ["/namas"] },
   { href: "/learn", label: "Learn", match: ["/learn"] },
 ];
 

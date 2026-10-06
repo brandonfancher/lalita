@@ -426,7 +426,7 @@ One entry per finished artwork, in the order they were made.
   kept quiet on purpose: only the upper part of her face's light and the faint far rays and rings
   reach it. This was the second use of the sun's rays, the moon's halo, and the deer, so `sunRays`,
   `MoonHalo`, and `MoonDeer` moved into `primitives.tsx`; Shlokas 2 and 5 render byte-for-byte as
-  before. On phones the pendants sit behind the chant bar, and in the practice miniature on phones
+  before. On phones the pendants sit behind the chant bar, and in the chant miniature on phones
   the sun lies under the last syllables of the second line, which stay legible in both themes.
 
 ### Shloka 9: The tipped scales
@@ -467,7 +467,7 @@ One entry per finished artwork, in the order they were made.
   A pool with a rising glow made it light, but the glow first had a visible edge (a second sun) and
   was softened. The radiance first started 30 units out, which left a dark disc round the bindu by
   lamplight; it now fades in from the bindu. On phones by lamplight the bindu's glow sits under
-  the last syllables of the second line in the practice miniature; they stay legible.
+  the last syllables of the second line in the chant miniature; they stay legible.
 
 ## Open questions
 

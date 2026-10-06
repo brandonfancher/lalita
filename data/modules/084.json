@@ -945,8 +945,12 @@
         "deva": "सद्यः-प्रसादिनी",
         "iast": "sadyaḥ-prasādinī"
       },
-      "namavaliDeva": "सद्यः प्रसादिन्यै",
-      "namavaliIast": "sadyaḥ prasādinyai",
+      "namavaliDeva": "सद्यःप्रसादिन्यै",
+      "namavaliIast": "sadyaḥprasādinyai",
+      "namavaliHyphenated": {
+        "deva": "सद्यः-प्रसादिन्यै",
+        "iast": "sadyaḥ-prasādinyai"
+      },
       "gloss": "Swift To Be Pleased",
       "translation": "She does not keep anyone waiting for her favour.",
       "aksaras": [

@@ -28,7 +28,7 @@ Copy this checklist and keep it updated as you go:
 - [ ] 4. Draw the artwork
 - [ ] 5. Write the note and register it
 - [ ] 6. Preview, review, iterate (at least twice)
-- [ ] 7. Check the miniature on the practice page
+- [ ] 7. Check the miniature on the chant page
 - [ ] 8. Verify: types, lint, preview script passes
 - [ ] 9. Update the ledger
 - [ ] 10. Commit
@@ -156,21 +156,21 @@ The first render always reveals something. Iterate at least twice. Lessons from 
 - In this repo, Tailwind border-colour utilities have no effect: a global rule in `globals.css`
   outranks them. Use inset `box-shadow` for coloured edges.
 
-### 7. Check the miniature on the practice page
+### 7. Check the miniature on the chant page
 
-On the practice page, each verse card shows its shloka's artwork as a small miniature, a
+On the chant page, each verse card shows its shloka's artwork as a small miniature, a
 reminder while chanting of what the verse depicts. Registering the artwork in step 5 is what puts
 it there: `ShlokaMiniature` in `shloka-art/index.tsx` renders any shloka in `ARTWORK`, so there
 is no other code to add. Don't change the miniature's size or placement for one shloka; they are
 set so a card never grows taller.
 
-Open `/practice?from=<n-1>&to=<n+1>` and look at the new card beside its neighbours, in both
+Open `/chant?from=<n-1>&to=<n+1>` and look at the new card beside its neighbours, in both
 themes, at desktop width and at phone width (390px), and in each script mode (Both, देवनागरी,
 Romanized). Hold it to this bar:
 
 - **Beside the verse** (tablet and desktop): recognisable at a glance from its silhouette and
   focal glow, and nothing important is cut off by the crop or lost in its feathered edge (see
-  [composition.md](composition.md#the-practice-miniature)).
+  [composition.md](composition.md#the-chant-miniature)).
 - **Behind the verse** (phones): recognisable through the text, and every word over it stays
   easy to read in both themes. Watch for bright glows under light text by lamplight, and dark
   detail under dark text by day.
@@ -199,8 +199,8 @@ together, e.g. `Adorn Shloka 12 with <concept>`. Push and open a pull request wh
 
 ## Additional resources
 
-- [composition.md](composition.md): measured zones, the practice miniature's crop, palette
+- [composition.md](composition.md): measured zones, the chant miniature's crop, palette
   variables, motion vocabulary
 - `docs/artwork-ledger.md`: series principles, motif canon, composition log
 - `src/components/shloka-art/`: `types.ts`, `primitives.tsx`, `registry.tsx`, the plate in
-  `art-note.tsx`, and the backdrop and the practice miniature in `index.tsx`
+  `art-note.tsx`, and the backdrop and the chant miniature in `index.tsx`
