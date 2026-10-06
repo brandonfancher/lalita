@@ -396,6 +396,15 @@ body:has([data-art-trigger]:hover) .shloka-art {
   animation: art-dart 9s ease-in-out infinite;
 }
 
+/*
+ * Motes travelling along a stroke toward the end of its path: fragrance
+ * drawn in. Give the path a dot pattern (`stroke-dasharray: 0 <gap>`, round
+ * caps) and set `--period` to the gap, and draw it in the direction of travel.
+ */
+.adornment .m-flow {
+  animation: art-flow 3.6s linear infinite;
+}
+
 /* Offsets any of the above so neighbours don't move in lockstep. */
 .adornment .m-late {
   animation-delay: -1.7s;
@@ -543,6 +552,12 @@ body:has([data-art-trigger]:hover) .shloka-art {
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes art-flow {
+  to {
+    stroke-dashoffset: calc(-1 * var(--period, 20px));
   }
 }
 

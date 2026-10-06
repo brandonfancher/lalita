@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { SproutsAndScent } from "./sprouts-and-scent";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
@@ -402,6 +403,40 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: on the pool of light that fills her pan float two
           reflections, a sun and a moon. They are the earrings of the verse before, reflected in her cheek, which is how
           Śaṅkara explains why a cheek is compared to a mirror at all.
+        </>
+      ),
+    },
+  },
+  "010": {
+    Art: SproutsAndScent,
+    intro: (Spot) => (
+      <>
+        The verse ends the first ten with her mouth, and she is only the <Spot part="light">light</Spot> at its centre.
+        One name sows something there and the other draws everything toward it. Every element comes from one of the two
+        names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 25,
+        part: "sprouts",
+        depicts:
+          "Two rows of white sprouts, sixteen in each, come up from a bed of red earth beneath her light and lean toward it. The mantra called Śuddhavidyā was sown here, and her teeth are what came up.",
+      },
+      {
+        nama: 26,
+        part: "betel",
+        depicts:
+          "In her light lies a betel roll pinned with a clove, with flakes of camphor pale as the moon. Its fragrance comes in from all eight quarters of the sky, and the horizon dips inward between them, drawn toward her.",
+      },
+    ],
+    detail: {
+      part: "seeds",
+      body: (
+        <>
+          There is also a small detail for the attentive: three seeds in the earth are the syllable{" "}
+          <span className="deva not-italic">ह्रीं</span>, which closes each of the three parts of the mantra. A
+          mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
         </>
       ),
     },
