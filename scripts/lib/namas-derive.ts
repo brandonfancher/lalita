@@ -200,6 +200,7 @@ function joinWrapped(index: number, itrans: string): string {
  */
 export const RECITATION_OVERRIDES: Record<number, Override> = {
   1: { itrans: "shrImAtre", why: "the name alone, without the bīja syllables aiṃ hrīṃ śrīṃ" },
+  2: { itrans: "shrImahArAj~nyai", why: "the common spelling -rājñyai, for nāmāvalī -rājñai" },
 
   // Scribal slips, corrected as in the citation form.
   21: { itrans: "kadambama~njarIkL^iptakarNapUramanoharAyai", why: "kḷpta, for nāmāvalī klṛpta" },
