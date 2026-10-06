@@ -6,6 +6,7 @@ import { Search } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
+import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { NamaIndexEntry } from "@/lib/content";
 
@@ -55,13 +56,16 @@ export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
             className="w-full rounded-sm border border-line-strong bg-surface-1/70 py-2.5 pl-10 pr-4 font-sans text-[15px] text-ink outline-none transition-colors placeholder:text-ink-faint focus:border-sindura/60"
           />
         </div>
-        <div className="mt-2 flex items-center justify-between gap-3">
+        <div className="mt-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
           <p className="eyebrow text-ink-faint">
             {results.length === namas.length
               ? `${namas.length} names`
               : `${results.length} of ${namas.length}`}
           </p>
-          <WordBreakToggle />
+          <div className="flex flex-wrap items-center gap-2">
+            <ScriptToggle />
+            <WordBreakToggle />
+          </div>
         </div>
       </div>
 
@@ -76,10 +80,16 @@ export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
                 {n.index}
               </span>
               <span className="min-w-0 flex-1">
-                <FitText fitKey={n.deva} className="deva block text-[1.3rem] leading-snug text-ink">
+                <FitText
+                  fitKey={n.deva}
+                  className="deva block text-[1.3rem] leading-snug text-ink script-iast:hidden"
+                >
                   <HyphenatedText text={n.deva} hyphenated={n.hyphenated?.deva} />
                 </FitText>
-                <FitText fitKey={n.iast} className="iast block text-[1rem] text-gold-soft">
+                <FitText
+                  fitKey={n.iast}
+                  className="iast block text-[1rem] text-gold-soft script-deva:hidden script-iast:text-[1.2rem] script-iast:text-ink"
+                >
                   <HyphenatedText text={n.iast} hyphenated={n.hyphenated?.iast} />
                 </FitText>
                 {n.gloss && (

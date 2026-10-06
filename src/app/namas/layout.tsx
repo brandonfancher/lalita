@@ -1,11 +1,6 @@
-import { NamaBrowser } from "@/components/nama-browser";
-import { getNamaIndex } from "@/lib/content";
+import { NamaTabs } from "@/components/nama-tabs";
 
-export const metadata = { title: "All thousand names" };
-
-export default function NamasPage() {
-  const namas = getNamaIndex();
-
+export default function NamasLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
       <header className="mb-6 max-w-2xl">
@@ -14,11 +9,12 @@ export default function NamasPage() {
           The thousand names
         </h1>
         <p className="mt-3 text-[1.1rem] leading-relaxed text-ink-muted">
-          Every name in order, each linked to the shloka it belongs to. Search in either script or
-          by meaning.
+          Every name in order. Look one up in the list, in either script or by meaning, or recite
+          them as offerings, each one opened with oṃ and closed with namaḥ.
         </p>
       </header>
-      <NamaBrowser namas={namas} />
+      <NamaTabs />
+      {children}
     </div>
   );
 }

@@ -18,8 +18,8 @@ export function toDevanagariDigits(n: number): string {
   return String(n).replace(/\d/g, (d) => DEVA_DIGITS[Number(d)]);
 }
 
-/** Practice-page label: dhyāna is “Shloka 0”. */
-export function practiceLabel(number: number): string {
+/** Chant-page label: dhyāna is “Shloka 0”. */
+export function chantLabel(number: number): string {
   return `Shloka ${number}`;
 }
 

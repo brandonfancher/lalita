@@ -32,6 +32,7 @@ export interface DerivedNama {
   index: number;
   /** Dative form in ITRANS, exactly as the nāmāvalī has it. */
   namavaliItrans: string;
+  /** Dative form as it is recited, after `recitationOf`. */
   namavaliIast: string;
   namavaliDeva: string;
   /** Nominative citation form in ITRANS. */
@@ -192,6 +193,42 @@ function joinWrapped(index: number, itrans: string): string {
   return itrans.replace(/\s+/g, "");
 }
 
+/**
+ * Dative forms for the recitation, in ITRANS, where the nāmāvalī's own reading
+ * should not be chanted. Each one agrees with the citation form settled in
+ * `NOMINATIVE_OVERRIDES`, so the salutation and the stotra say the same name.
+ */
+export const RECITATION_OVERRIDES: Record<number, Override> = {
+  1: { itrans: "shrImAtre", why: "the name alone, without the bīja syllables aiṃ hrīṃ śrīṃ" },
+  2: { itrans: "shrImahArAj~nyai", why: "the common spelling -rājñyai, for nāmāvalī -rājñai" },
+
+  // Scribal slips, corrected as in the citation form.
+  21: { itrans: "kadambama~njarIkL^iptakarNapUramanoharAyai", why: "kḷpta, for nāmāvalī klṛpta" },
+  27: { itrans: "nijasallApamAdhuryavinirbhartsitakachChapyai", why: "vinirbhartsita, for nāmāvalī vinirbhatsita" },
+  31: { itrans: "kanakA~NgadakeyUrakamanIyabhujAnvitAyai", why: "bhujā, for nāmāvalī mujā" },
+  64: { itrans: "devarShigaNasa~NghAtastUyamAnAtmavaibhavAyai", why: "vaibhava, for nāmāvalī vaibhā" },
+  66: { itrans: "sampatkarIsamArUDhasindhuravrajasevitAyai", why: "sindhura, for nāmāvalī sindura" },
+  107: { itrans: "taDillatAsamaruchyai", why: "taḍit, for nāmāvalī taṭit" },
+  216: { itrans: "mahAsattvAyai", why: "sattva, for nāmāvalī satva" },
+  258: { itrans: "svapantyai", why: "svapantī, for nāmāvalī svapatnī" },
+  488: { itrans: "daMShTrojjvalAyai", why: "ujjvalā, for nāmāvalī ujvalā" },
+  497: { itrans: "vajrAdikAyudhopetAyai", why: "vajrādika, for nāmāvalī vajrādhika" },
+  511: { itrans: "bandhinyAdisamanvitAyai", why: "bandhinī, for nāmāvalī bandinī" },
+  648: { itrans: "lIlAkL^iptabrahmANDamaNDalAyai", why: "kḷpta, for nāmāvalī klṛpta" },
+  667: { itrans: "nirdvaitAyai", why: "nirdvaitā, for nāmāvalī nidvaitā" },
+  680: { itrans: "bhAvAbhAvavivarjitAyai", why: "vivarjitā, for nāmāvalī virjitā" },
+  697: { itrans: "sarvalokavasha~Nkaryai", why: "vaśaṅkarī, for nāmāvalī vaṃśakarī" },
+
+  // The full compound of the stotra, which the nāmāvalī abbreviates.
+  851: { itrans: "janmamR^ityujarAtaptajanavishrAntidAyinyai", why: "the stotra's full compound" },
+  880: { itrans: "saMsArapa~NkanirmagnasamuddharaNapaNDitAyai", why: "the stotra's full compound" },
+};
+
+/** The dative as it is recited: corrected where needed, with wrapped compounds rejoined. */
+export function recitationOf(index: number, dativeItrans: string): string {
+  return RECITATION_OVERRIDES[index]?.itrans ?? joinWrapped(index, dativeItrans);
+}
+
 /** Apply the dative→nominative rules, consulting the override table first. */
 export function nominativeOf(index: number, dativeItrans: string): { itrans: string; rule: string } {
   const override = NOMINATIVE_OVERRIDES[index];
@@ -212,11 +249,12 @@ export function deriveAll(path: string = NAMAVALI_PATH): DerivedNama[] {
   return readNamavali(path).map((namavaliItrans, i) => {
     const index = i + 1;
     const { itrans, rule } = nominativeOf(index, namavaliItrans);
+    const recited = recitationOf(index, namavaliItrans);
     return {
       index,
       namavaliItrans,
-      namavaliIast: toIast(namavaliItrans),
-      namavaliDeva: toDevanagari(namavaliItrans),
+      namavaliIast: toIast(recited),
+      namavaliDeva: toDevanagari(recited),
       itransNominative: itrans,
       iast: toIast(itrans),
       deva: toDevanagari(itrans),

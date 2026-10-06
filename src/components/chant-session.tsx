@@ -9,14 +9,14 @@ import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
-import { rememberPracticeRange } from "@/lib/practice-range";
+import { rememberChantRange } from "@/lib/chant-range";
 import type { ChantTiming, Hyphenated } from "@/lib/types";
-import { cn, practiceLabel } from "@/lib/utils";
+import { chantLabel, cn } from "@/lib/utils";
 
 const MIN = 0;
 const MAX = 182;
 
-export type PracticeToken = {
+export type ChantToken = {
   id: string;
   deva: string;
   iast: string;
@@ -25,12 +25,12 @@ export type PracticeToken = {
   glosses?: string[];
 };
 
-export type PracticeVerse = {
+export type ChantVerse = {
   id: string;
   number: number;
   /** A miniature of the shloka's artwork, when it has one. */
   art?: ReactNode;
-  lines: { tokens: PracticeToken[] }[];
+  lines: { tokens: ChantToken[] }[];
 };
 
 /**
@@ -41,7 +41,7 @@ export type PracticeVerse = {
 const ART_WIDTH =
   "sm:script-both:w-[5.5rem] md:script-both:w-[7.5rem] sm:script-deva:w-[5.375rem] sm:script-iast:w-[3.75rem]";
 
-export function PracticeSession({
+export function ChantSession({
   from,
   to,
   verses,
@@ -50,7 +50,7 @@ export function PracticeSession({
 }: {
   from: number;
   to: number;
-  verses: PracticeVerse[];
+  verses: ChantVerse[];
   timing?: ChantTiming;
   playerLabel: string;
 }) {
@@ -70,7 +70,7 @@ export function PracticeSession({
   }, [from, to]);
 
   useEffect(() => {
-    rememberPracticeRange(from, to);
+    rememberChantRange(from, to);
   }, [from, to]);
 
   const submit = (e: FormEvent) => {
@@ -81,7 +81,7 @@ export function PracticeSession({
     const end = Math.max(nextFrom, nextTo);
     setFromInput(String(start));
     setToInput(String(end));
-    router.push(`/practice?from=${start}&to=${end}`);
+    router.push(`/chant?from=${start}&to=${end}`);
   };
 
   return (
@@ -116,7 +116,7 @@ export function PracticeSession({
           type="submit"
           className="rounded-sm bg-sindura px-4 py-2 text-sm font-medium tracking-wide text-on-sindura shadow-sm transition-transform active:scale-95"
         >
-          Practice
+          Chant
         </button>
         <p className="w-full font-serif text-[15px] italic text-ink-faint sm:ml-auto sm:w-auto sm:self-center">
           0 is the dhyāna (Shloka 0). Range is inclusive, up to 182.
@@ -138,7 +138,7 @@ export function PracticeSession({
 
         <div className="space-y-3">
           {verses.map((verse) => (
-            <PracticeVerseCard
+            <ChantVerseCard
               key={verse.id}
               verse={verse}
               activeTokenId={activeToken?.verseId === verse.id ? activeToken.tokenId : null}
@@ -151,16 +151,16 @@ export function PracticeSession({
   );
 }
 
-function PracticeVerseCard({
+function ChantVerseCard({
   verse,
   activeTokenId,
   onToggleToken,
 }: {
-  verse: PracticeVerse;
+  verse: ChantVerse;
   activeTokenId: string | null;
   onToggleToken: (id: string | null) => void;
 }) {
-  const title = practiceLabel(verse.number);
+  const title = chantLabel(verse.number);
   const activeGlosses = useMemo(() => {
     if (!activeTokenId) return null;
     for (const line of verse.lines) {
@@ -258,7 +258,7 @@ function GlossToken({
   active,
   onToggle,
 }: {
-  token: PracticeToken;
+  token: ChantToken;
   kind: "deva" | "iast";
   active: boolean;
   onToggle: (id: string | null) => void;

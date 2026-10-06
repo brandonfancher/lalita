@@ -1,14 +1,14 @@
 import { cookies } from "next/headers";
 
-import { PracticeSession, type PracticeVerse } from "@/components/practice-session";
+import { ChantSession, type ChantVerse } from "@/components/chant-session";
 import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
 import { getModulesInRange } from "@/lib/content";
-import { PRACTICE_RANGE_COOKIE, parsePracticeRange } from "@/lib/practice-range";
+import { CHANT_RANGE_COOKIE, parseChantRange } from "@/lib/chant-range";
 import type { ChantTiming, StudyModule } from "@/lib/types";
-import { practiceLabel } from "@/lib/utils";
+import { chantLabel } from "@/lib/utils";
 
 export const metadata = {
-  title: "Practice",
+  title: "Chant",
   description: "Chant a contiguous range of shlokas, including the dhyāna as Shloka 0.",
 };
 
@@ -31,7 +31,7 @@ function rangeTiming(modules: StudyModule[]): ChantTiming | undefined {
   return { startSec: first.startSec, endSec: last.endSec };
 }
 
-function toPracticeVerse(mod: StudyModule): PracticeVerse {
+function toChantVerse(mod: StudyModule): ChantVerse {
   const namasByIndex = new Map(mod.namas.map((n) => [n.index, n.gloss]));
 
   return {
@@ -61,7 +61,7 @@ function toPracticeVerse(mod: StudyModule): PracticeVerse {
   };
 }
 
-export default async function PracticePage({
+export default async function ChantPage({
   searchParams,
 }: {
   searchParams: Promise<{ from?: string | string[]; to?: string | string[] }>;
@@ -69,7 +69,7 @@ export default async function PracticePage({
   const params = await searchParams;
   const remembered =
     params.from === undefined && params.to === undefined
-      ? parsePracticeRange((await cookies()).get(PRACTICE_RANGE_COOKIE)?.value)
+      ? parseChantRange((await cookies()).get(CHANT_RANGE_COOKIE)?.value)
       : null;
   const fromRaw = parseBound(remembered?.from ?? params.from, DEFAULT_FROM);
   const toRaw = parseBound(remembered?.to ?? params.to, DEFAULT_TO);
@@ -78,16 +78,16 @@ export default async function PracticePage({
 
   const modules = getModulesInRange(from, to);
   const timing = rangeTiming(modules);
-  const verses = modules.map(toPracticeVerse);
+  const verses = modules.map(toChantVerse);
   const playerLabel =
-    from === to ? practiceLabel(from) : `${practiceLabel(from)} – ${practiceLabel(to)}`;
+    from === to ? chantLabel(from) : `${chantLabel(from)} – ${chantLabel(to)}`;
 
   return (
     <div className="mx-auto max-w-3xl px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
       <header className="mb-8">
-        <p className="eyebrow text-sindura">Abhyāsa</p>
+        <p className="eyebrow text-sindura">Pārāyaṇa</p>
         <h1 className="display mt-2 text-[2.6rem] leading-tight text-ink sm:text-[3.25rem]">
-          Practice
+          Chant
         </h1>
         <p className="mt-3 max-w-2xl text-[1.1rem] leading-relaxed text-ink-muted">
           Choose an inclusive range, play the chant on loop, and keep the text in view. Open any
@@ -95,7 +95,7 @@ export default async function PracticePage({
         </p>
       </header>
 
-      <PracticeSession
+      <ChantSession
         from={from}
         to={to}
         verses={verses}

@@ -66,7 +66,7 @@ export function setWordBreaks(on: boolean) {
   remember(WORD_BREAKS_STORAGE_KEY, on ? "on" : "off");
 }
 
-// Keeps other open tabs in step, e.g. shlokas opened from the practice page.
+// Keeps other open tabs in step, e.g. shlokas opened from the chant page.
 function onStorage(e: StorageEvent) {
   if (e.key === SCRIPT_STORAGE_KEY) applyScript(parse(e.newValue));
   if (e.key === WORD_BREAKS_STORAGE_KEY) applyWordBreaks(e.newValue === "on");
