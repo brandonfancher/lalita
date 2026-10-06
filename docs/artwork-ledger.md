@@ -90,14 +90,12 @@ second time it is needed.
 | Coral (vidruma) | A branching sprig of round-capped `--art-vermilion` strokes over slightly wider `--art-crimson` ones, knobbed tips, a few tiny `--art-ivory` polyps (fresh coral is alive; `m-twinkle`), in a small gold mount | Inline (`tipped-scales.tsx`) | Shloka 9 |
 | Bimba (ivy gourd) | A `--leaf` creeper with five-lobed, heart-based leaves veined in `--gold-soft`, coiling tendrils, and small oval gourds on short stalks. Each gourd is scarlet only on the side facing her light and `--leaf` on the far side, with pale stripes there and a core sheen on the red side: Śaṅkara's bimba is red only by reflecting her | Inline (`tipped-scales.tsx`) | Shloka 9 |
 | Water in a channel | Filled with the miniature painters' pattern of small arcs, each row set half an arc along (a `<pattern>`, `--gold-soft`), over a soft saffron glow, between gold banks with a fainter outer kerb. Rounded, organic banks: straight banks and square corners read as a pipe, a band of constant width as a snake. Dashed flow lines read as road markings by lamplight | Inline (`wedding-doorway.tsx`) | Shloka 6 |
-| Sprout (aṅkura) | A slim `--art-ivory` stem outlined in hair-fine gold, tapering and bending a little toward her light, with two small pointed seed-leaves opened at the top (ivory with a faint `--leaf` tint, gold edges) and a split `--gold-soft` seed husk at its foot. A few are still hooked: the stem arches over and the closed seed-leaves hang from the crook. Glints of `--art-core` on some tips (`m-twinkle`, three groups). Drawn as filled outlines, the stems read as candles; tapered, with open seed-leaves, as seedlings | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| Seed bed | A mound of earth curving like a smile, its crest slightly uneven: a gradient from `--art-saffron` at the crest through faint `--art-crimson` to nothing below, a thin vermilion crest line, `--art-crimson` clods, and `--gold-soft` furrow lines under each row. Vermilion or crimson alone at the crest turned it pink by day | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| Betel leaf (tāmbūla) | Heart-shaped, tip down, in `--leaf` with a hair-fine gold edge, five `--gold-soft` veins arching from the notch to the drawn-out tip, and a short stalk curving aside (pointed at the bindu, it made the leaf a fruit on a stem). Set at an angle beside the roll, a leaf read as a second, olive roll; centred behind it, tip down, it frames the roll and says "betel" | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| Betel roll (vīṭikā) | A triangle of folded leaf, apex down, its top flap folded over: `--leaf` washed with `--art-ivory` (the flap paler, as the leaf's underside), gold edges and fold lines, `--leaf` veins on the flap, pinned through the flap with an `--art-crimson` clove (a round head with four sepals). Camphor flakes in the fold and fallen beside it | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| Camphor (karpūra) | Small six-sided `--art-moon` flakes with a hair-fine gold edge, each with a small `--art-core` `glint` (`m-twinkle`). Camphor shares the moon's names (śaśāṅka, mṛgāṅka), so it takes the moon's colour | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| Fragrance | Wisps, never ribbons: three tapering `--gold` wisps per stream, waving and braided round a spiral, the main one widest and carrying a line of `--art-core` motes (`m-flow`). Each ends at its outer end in a small curl turned outward, as smoke curls, over a faint `--art-saffron` haze that fades out before her light. As flat filled ribbons they read as paper strips; a haze in `--art-moon` turned grey by lamplight | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| The eight quarters (diś) | A faint 0.9-unit `--gold` horizon ring with a four-pointed gold `glint` at each of the eight quarters (every 45°, north at the top). Where the quarters are drawn toward her, the ring dips between the pinned points, about a tenth of its radius, into an eight-cusped shape | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
-| The seed-syllable ह्रीं | Tiny ह्रीं in Tiro Devanagari, `--art-core`, sown in the earth. It closes each of the three parts of the Śuddhavidyā mantra; the mantra itself is not written out | Inline (`sprouts-and-scent.tsx`) | Shloka 10 |
+| Sprout (aṅkura) | One seedling: a short tapered `--art-core` stem with gold edges rising from the split seed to two broad, pointed seed-leaves opened in an upright V (about 50 units wide at the widest, the left a little taller). Each leaf is filled with a faint `--art-core` to `--art-saffron` gradient under a 1-unit `--gold` edge, with a hair-fine gold midrib. Opened wide and near level, the leaves read as wings or a moustache; upright, as a seedling | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| The rows of light (dvija-paṅkti) | Sixteen beads along each seed-leaf's midrib, base to tip, shrinking from r 3.7 to 1.7: `--art-ivory` with a fine gold edge and an `--art-core` glint (`m-twinkle`, three groups). A row of light, never a row of shapes: drawn as teeth or as sprouts in earth they read as a mouth (see Shloka 10's notes) | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| Seed (bīja) | A `--gold` husk split open at the top like a pistachio shell, its two lips parting round her bindu and whole below, with an `--art-carve` edge, an `--art-core` sheen on each lip, and a hair-fine gold root curling down from its foot. Her light sits in the split; the whole lower part carries ह्रीं | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| The eight quarters (diś) | A 1.1-unit `--gold` horizon ring with a four-pointed gold `glint` at each of the eight quarters (every 45°, north at the top). Where the quarters are drawn toward her, the ring dips between the pinned points, about a tenth of its radius, into an eight-cusped shape. Shloka 10's is egg-shaped, taller above her than below, so its north quarter clears the card | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| Fragrance (āmoda) | Never smoke or wisps: only what it does. Copies of the horizon ring travel in toward her (`m-gather`), gold far off and `--art-moon` (camphor-white) near her, by drawing every ring twice under two radial masks | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| The seed-syllable ह्रीं | ह्रीं in Tiro Devanagari, 17 units, `--art-carve`, engraved centred on the whole lower part of the husk, directly under her light. `--art-carve` (paper by day, dark by lamplight) is the strongest contrast on gold in both themes; `--art-crimson` was too faint by day. It closes each of the three parts of the Śuddhavidyā mantra; the mantra itself is not written out | Inline (`sprouting-seed.tsx`) | Shloka 10 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -158,11 +156,12 @@ would pivot at different points. Give each group the same classes and an inline
 `style={{ transformBox: "view-box", transformOrigin: "<x>px <y>px" }}` naming the one point they
 hang from (in artwork units), and they move as one.
 
-- **`m-flow`** (Shloka 10): motes travelling along a stroke toward the end of its path, by
-  animating `stroke-dashoffset` over 3.6s. For fragrance drawn in, and anything that should be
-  seen to travel along a line. Give the path round caps and `stroke-dasharray: 0 <gap>`, set
-  `--period` to the gap, and draw it in the direction of travel. Use dots, never dashes (dashes
-  read as road markings, see Shloka 6).
+- **`m-gather`** (Shloka 10): shrinks to an eighth of its size toward a point while fading in and
+  out, over `--dur` (24s by default), accelerating as it nears, then starts again from full size.
+  For things drawn in: the horizon pulled toward her. Set `transform-origin` to the point (in
+  artwork units, px), stagger copies with negative `--delay`s so the flow is already under way, and
+  give each an inline `transform: scale()` for where it rests when motion is reduced (animations
+  override inline styles). Strokes thin as they shrink, which suits a flow that vanishes into her.
 
 ## Composition log
 
@@ -483,42 +482,38 @@ One entry per finished artwork, in the order they were made.
   lamplight; it now fades in from the bindu. On phones by lamplight the bindu's glow sits under
   the last syllables of the second line in the practice miniature; they stay legible.
 
-### Shloka 10: Sprouts of the mantra, and a scent that gathers the quarters
+### Shloka 10: One seed, sprouting
 
-- **Component:** `sprouts-and-scent.tsx` (defs prefix `sa10`)
-- **Composition:** a convergence. Her mouth is only her light, a bindu just below the card. Eight
-  streams of fragrance spiral in to it clockwise, as one walks round a shrine, from the eight
-  quarters of a faint horizon ring. The ring is pinned at the quarters and dips inward between
-  them, drawn toward her. In her light, a betel roll pinned with a clove lies on a heart-shaped
-  betel leaf, with flakes of camphor. Beneath it, a seed bed curved like a smile holds two
-  staggered rows of sixteen white sprouts, leaning toward her. The first composition whose force
-  runs inward (Shloka 1's rays and Shloka 3's aim run outward), the first fragrance, and the first
-  thing growing from the ground.
+- **Component:** `sprouting-seed.tsx` (defs prefix `sa10`)
+- **Composition:** a convergence on a seed. Her light is a bindu in a gold seed split open low in
+  the focal zone, and from it one seedling rises, two seed-leaves in an upright V, each a row of
+  sixteen beads of light. Around it, a horizon pinned at the eight quarters is drawn in toward her
+  ring after ring, turning camphor-white as it nears. Neither mouth nor teeth is drawn: the names
+  describe her mouth, and the artwork draws only their images, abstracted. The first composition
+  whose force runs inward (Shloka 1's rays and Shloka 3's aim run outward), the first fragrance,
+  and the first thing growing.
 - **Name → part:**
-  - Śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā → `sprouts`: the seed bed, its furrows, and the two
-    rows of sprouts, with glints on some tips
-  - Karpūravīṭikāmodasamākarṣidigantarā → `betel`: the betel leaf, the roll, the clove and the
-    camphor, the wisps of fragrance and their motes, and the gathered horizon with its eight
-    quarters
-  - Intro, *light* → `light`: the glow and the bindu where the streams meet
-  - Detail → `seeds`: three tiny ह्रीं sown in the earth, the syllable that closes each of the
-    mantra's three parts (a mantra's syllables are *bīja*, seeds)
-- **Palette:** gold for the fragrance and the horizon, `--art-ivory` for the sprouts, `--leaf` for
-  the betel, `--art-moon` for the camphor, `--art-crimson` for the clove and the earth's shading,
-  and saffron for the earth and her glow. Vermilion only in the bed's crest line. No additions.
-- **Motion:** the new `m-flow` (motes travelling in along the main wisps), `m-twinkle` (the glints
-  on the sprouts and the camphor, in three groups), and `m-shimmer` (her glow).
-- **Notes:** The title stays on one line and reaches x ≈ 214 of the artwork at y ≈ 90–130 on
-  1440px screens, well clear of the north quarter at the top of the ring (x 320, y 144). The
-  fragrance first had eight flat filled ribbons, which read as paper strips or pipes. Thin braided
-  wisps with outward curls made them smoke, and a gradient that dies out before her light kept the
-  haze from turning into grey bands round the bindu by lamplight. The horizon first dipped with
-  the wrong period, so only four quarters were pinned and it read as a diamond. The betel leaf
-  first lay at an angle beside the roll and read as a second roll; centred behind it, tip down, it
-  frames the roll. The first sprouts were filled outlines and read as candles or a comb. Day
-  renders were faint until the wisps were widened and her glow raised. In the practice miniature on
-  phones, the sprouts sit under the last syllables of the second line, which stay legible in both
-  themes.
+  - Śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā → `sprout`: the split husk, the root, the stem, and
+    the two seed-leaves with their rows of sixteen beads
+  - Karpūravīṭikāmodasamākarṣidigantarā → `fragrance`: the horizon with its eight quarters and the
+    rings drawn in from it
+  - Intro, *light* → `light`: the glow and the bindu in the split seed
+  - Detail → `seed`: ह्रीं engraved on the husk, the syllable that closes each of the mantra's three
+    parts (a mantra's syllables are *bīja*, seeds)
+- **Palette:** gold for the horizon, the rings, and the husk; `--art-moon` for the rings near her;
+  `--art-ivory` for the beads; saffron and `--art-core` for the leaves and her glow. No additions.
+- **Motion:** the new `m-gather` (seven rings drawn in, staggered over 24s), `m-twinkle` (the beads,
+  in three groups), and `m-shimmer` (her glow).
+- **Notes:** The first version was literal: two staggered rows of sixteen white sprouts in a seed
+  bed curved like a smile, a betel roll pinned with a clove on a betel leaf in her light, camphor
+  flakes, and eight braided wisps of fragrance spiralling in. Its sprouts rising out of a curved red
+  bed read as teeth coming up through gums, and it was set aside for this one (it stays in git
+  history). In this version the seed-leaves first opened wide and near level, and read as wings or a
+  moustache; stood upright in a V, they read as a seedling. The ring is egg-shaped (1.28 times taller
+  above her than wide, 0.88 below) so its north quarter shows above the card and its south quarter
+  stays on the plate. ह्रीं first sat small on one tilted half of a husk split in two, and could
+  hardly be seen; the husk was made whole below, like a pistachio shell, so the syllable could sit
+  centred and larger. On phones the artwork sits behind the chant bar.
 
 ## Open questions
 
@@ -526,7 +521,8 @@ One entry per finished artwork, in the order they were made.
   little differently (start, lengths, fade). If a fourth artwork needs it, consider a `radiance()`
   helper in `primitives.tsx`, kept byte-for-byte for the existing three.
 - Shloka 10 has a local `taper(points, width)` that fills a centre line of varying width, for
-  wisps and stems that thin out. If a second artwork needs tapering strokes (tendrils, smoke,
+  stems and leaves that thin out. If a second artwork needs tapering strokes (tendrils, smoke,
   hair-fine flames), promote it to `primitives.tsx`.
-- Name 559, *tāmbūlapūritamukhī* ("her mouth full of betel"), returns to the betel. Draw it with
-  Shloka 10's canon.
+- Name 559, *tāmbūlapūritamukhī* ("her mouth full of betel"), returns to the betel, which Shloka 10
+  now draws only as fragrance. The betel leaf, roll, clove, and camphor of Shloka 10's first version
+  (in git history) are a starting point, kept away from anything that reads as a mouth.

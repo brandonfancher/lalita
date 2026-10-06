@@ -3,7 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
-import { SproutsAndScent } from "./sprouts-and-scent";
+import { SproutingSeed } from "./sprouting-seed";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
@@ -408,33 +408,33 @@ export const ARTWORK: Record<string, Artwork> = {
     },
   },
   "010": {
-    Art: SproutsAndScent,
+    Art: SproutingSeed,
     intro: (Spot) => (
       <>
-        The verse ends the first ten with her mouth, and she is only the <Spot part="light">light</Spot> at its centre.
-        One name sows something there and the other draws everything toward it. Every element comes from one of the two
-        names.
+        The verse ends the first ten with her mouth, and the artwork draws neither mouth nor teeth. She is the{" "}
+        <Spot part="light">light</Spot> in a seed that has split open, and every element around it comes from one of
+        the two names.
       </>
     ),
     entries: [
       {
         nama: 25,
-        part: "sprouts",
+        part: "sprout",
         depicts:
-          "Two rows of white sprouts, sixteen in each, come up from a bed of red earth beneath her light and lean toward it. The mantra called Śuddhavidyā was sown here, and her teeth are what came up.",
+          "One sprout rises from the seed of her light and opens two seed-leaves, each a row of sixteen points of white light. They are the two rows of her teeth, and the mantra called Śuddhavidyā, sown in her and come up.",
       },
       {
         nama: 26,
-        part: "betel",
+        part: "fragrance",
         depicts:
-          "In her light lies a betel roll pinned with a clove, with flakes of camphor pale as the moon. Its fragrance comes in from all eight quarters of the sky, and the horizon dips inward between them, drawn toward her.",
+          "The fragrance of her camphor betel is not drawn as smoke, only as what it does. The horizon, pinned at the eight quarters of the sky, is drawn in toward her ring after ring, and turns camphor-white as it nears her.",
       },
     ],
     detail: {
-      part: "seeds",
+      part: "seed",
       body: (
         <>
-          There is also a small detail for the attentive: three seeds in the earth are the syllable{" "}
+          There is also a small detail for the attentive: the split husk is engraved with the syllable{" "}
           <span className="deva not-italic">ह्रीं</span>, which closes each of the three parts of the mantra. A
           mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
         </>
