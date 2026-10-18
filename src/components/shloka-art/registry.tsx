@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
@@ -437,6 +438,40 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: the split husk is engraved with the syllable{" "}
           <span className="deva not-italic">ह्रीं</span>, which closes each of the three parts of the mantra. A
           mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
+        </>
+      ),
+    },
+  },
+  "011": {
+    Art: SilencedLute,
+    intro: (Spot) => (
+      <>
+        Here the verse stops describing her and records two casualties: an instrument shamed into silence, and a mind
+        under water. Between them is <Spot part="light">her light</Spot>, small and soft, because the smile is only a
+        faint one. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 27,
+        part: "lute",
+        depicts:
+          "Above lies the kacchapī, Sarasvatī's own lute, named for the tortoise its bowl is shaped like. As Śaṅkara tells it, she has quietly slipped its cloth cover back on, and its strings are still.",
+      },
+      {
+        nama: 28,
+        part: "flood",
+        depicts:
+          "Below, the light of her smile has become a flood, and in it sinks the crescent Kāmeśa wears, for his mind: the Veda says the moon was born from mind. Pearls of light rise from it, and it does not come back up.",
+      },
+    ],
+    detail: {
+      part: "manasa",
+      body: (
+        <>
+          There is also a small detail for the attentive: Kailāsa, Śiva&rsquo;s mountain, stands on the far shore, and
+          haṃsas are flying down to the water. <i>Mānasa</i> means the mind, and it is also the lake at Kailāsa&rsquo;s
+          foot that the haṃsas fly to, so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
         </>
       ),
     },

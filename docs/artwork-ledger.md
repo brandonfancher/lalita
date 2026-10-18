@@ -96,6 +96,12 @@ second time it is needed.
 | The eight quarters (diś) | A 1.1-unit `--gold` horizon ring with a four-pointed gold `glint` at each of the eight quarters (every 45°, north at the top). Where the quarters are drawn toward her, the ring dips between the pinned points, about a tenth of its radius, into an eight-cusped shape. Shloka 10's is egg-shaped, taller above her than below, so its north quarter clears the card | Inline (`sprouting-seed.tsx`) | Shloka 10 |
 | Fragrance (āmoda) | Never smoke or wisps: only what it does. Copies of the horizon ring travel in toward her (`m-gather`), gold far off and `--art-moon` (camphor-white) near her, by drawing every ring twice under two radial masks | Inline (`sprouting-seed.tsx`) | Shloka 10 |
 | The seed-syllable ह्रीं | ह्रीं in Tiro Devanagari, 17 units, `--art-carve`, engraved centred on the whole lower part of the husk, directly under her light. `--art-carve` (paper by day, dark by lamplight) is the strongest contrast on gold in both themes; `--art-crimson` was too faint by day. It closes each of the three parts of the Śuddhavidyā mantra; the mantra itself is not written out | Inline (`sprouting-seed.tsx`) | Shloka 10 |
+| Sarasvatī's lute (kacchapī) | Lying on its back, seen from the side, bowl on the right: a `--gold` bowl hanging below a `--gold-soft` soundboard ellipse, its bare part tiled with hexagonal tortoise plates in `--art-carve` (the plates are what make it a kacchapī, not any vīṇā); a long gold neck with sixteen gold frets on a dark ridge, closing up toward the bowl; a pegbox with four pegs, alternately up and down; a gold scroll curling down at the end; a small gold gourd hanging under the neck near the pegs; two hair-fine `--gold-soft` strings, straight and still. About 370 units long | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| Its cloth cover (cola) | An `--art-vermilion` cloth thrown over the bowl from the bridge end: it falls past the bowl in parallel `--art-crimson` pleats with a scalloped, fringed lower edge, and its hem slants back across the shell. A woven border inside the hem and lower edge (a `--gold-soft` band, a vermilion line, a dashed gold line, a solid gold edge), scattered `--gold-soft` dots, and a gold tassel at the corner. Pleats fanning from one point made it a red fan | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| The flood of her light (prabhāpūra), seen from the side | A level surface: a 1.3-unit `--gold` line with a 3-unit `--art-core` line just under it, a flat `--art-core` glow where her light meets it. Below, a vertical gradient from `--art-core` through `--art-saffron` to `--art-glow` (never `--art-vermilion` in the depths: diluted, it went pink by day), faded at the sides; wavering dashed gold currents, fainter with depth; and nine shafts of her light fanning down from under her, each a tapered wedge drawn twice, in `--art-core` and `--art-ivory` (the ivory is what shows them by day). A swelling, convex surface read as a sand dune. Shloka 3's flood is the same light seen at a slant | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| Kāmeśa's mind | His crescent, drawn as her crest is (Dhyāna), radius 32, sunk deep in the flood and turned well onto its side (244°): turned nearly horns up and set under her bindu, it would make a face. A faint saffron tint over it puts it under the light; `m-sink`; small `--art-moon` pearls of light rise from it on `m-ember` and break at the surface (clipped to the flood) | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| Kailāsa | A small broad dome with steep faces, on the far shore of the flood with low gold ridges either side: snow (`--art-moon`) on its upper part, a snow-filled gully down the south face, short gold strokes for the bands of rock that cross it, the rest `--gold-soft` at low opacity. Clipped to above the surface. A pointed white cap read as Mount Fuji, and a big white triangle as a tent | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| Haṃsas in flight | Wild geese, about 20 units long: an `--art-moon` body, neck and head outlined in hair-fine gold, a saffron beak, wings by turns raised and lowered with a `--gold-soft` far wing. Flown as a small skein, heading down to water. Never a single bird by Sarasvatī's lute, where it would read as her mount | Inline (`silenced-lute.tsx`) | Shloka 11 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -514,6 +520,45 @@ One entry per finished artwork, in the order they were made.
   stays on the plate. ह्रीं first sat small on one tilted half of a husk split in two, and could
   hardly be seen; the husk was made whole below, like a pistachio shell, so the syllable could sit
   centred and larger. On phones the artwork sits behind the chant bar.
+
+### Shloka 11: The lute silenced, and a mind gone under
+
+- **Component:** `silenced-lute.tsx` (defs prefix `sa11`)
+- **Composition:** an aftermath, the verse's two casualties set one above the other with her light
+  between. Above the card, Sarasvatī's kacchapī lies put away under its cloth cover (Saundaryalaharī
+  66). Below it, her faint light hangs a little above a flood that fills the lower plate, seen from
+  the side: a level surface, shafts of her light going down into the depth, and Kāmeśa's crescent
+  sinking through it on its side, pearls of light rising from it. On the far shore stand Kailāsa and
+  its ridges, and a skein of haṃsas comes down to the water. The first still life (a thing put away,
+  not held or worn), the first water seen in section, the first thing to go fully under, and the
+  first appearance of her consort, as an emblem. The flood deliberately answers Shloka 3's, as nāma 28
+  repeats nāma 12's words: one mind instead of sixteen world-eggs.
+- **Name → part:**
+  - Nijasallāpamādhuryavinirbhartsitakacchapī → `lute`: the kacchapī, its tortoise-plated bowl, neck,
+    frets, pegs, scroll and gourd, its still strings, and its cloth cover
+  - Mandasmitaprabhāpūramajjatkāmeśamānasā → `flood`: the surface, the depth and its currents, the
+    shafts of light, the sinking crescent, and the rising pearls of light
+  - Intro, *her light* → `light`: the bindu, small and soft (*manda*), its glow, and the glow where it
+    meets the flood
+  - Detail → `manasa`: Kailāsa and the haṃsas, so the flood is also Lake Mānasa (*mānasa*, the mind,
+    is also the lake at Kailāsa's foot that the haṃsas fly to)
+- **Palette:** gold, `--art-vermilion` and `--art-crimson` for the lute and its cover; `--art-core`,
+  `--art-saffron`, `--art-glow` and `--art-ivory` for the flood and its shafts; `--art-moon` for the
+  crescent, the pearls of light, Kailāsa's snow and the haṃsas. No additions.
+- **Motion:** `m-sink` (the crescent, 32s), `m-ember` (the pearls of light, clipped at the surface),
+  and `m-shimmer` (her glows, the shafts, the currents). The lute is still: the silence is the point.
+- **Notes:** This title stays on one line at every desktop width but reaches x ≈ 324 of the artwork
+  (x ≈ 376 at 1100px) at y ≈ 74–141, so the lute lies almost level in the band between the title and
+  the card (y ≈ 141–184), its bowl on the right where the title doesn't reach. Tilted more, its neck
+  ran into the title's last word. The first flood had a swelling surface (meant as *pūra*, a swelling
+  stream) and read as a sand dune, brown by lamplight; a level surface, currents, and shafts of light
+  made it water. Its depths were first vermilion and went pink by day. The first crescent sat nearly
+  horns up under the bindu, which made a face; it was moved aside, sunk deeper, and turned on its side.
+  The first cloth cover was a teardrop and read as a red leaf, then, with pleats fanning from one
+  point, as a fan. A haṃsa was first set aside as Kāmeśa's mind because beside Sarasvatī's lute it
+  would read as her mount; a skein in flight on the far shore reads as wild geese. In the chant
+  miniature beside the verse the lute is only a thin line with its red cover; the lit horizon carries
+  it. On phones the text stays legible over it in both themes.
 
 ## Open questions
 

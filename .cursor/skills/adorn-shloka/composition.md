@@ -45,7 +45,8 @@ compose within it.
   long one (Shloka 2, "Four arms, and the noose of desire") reaches x ≈ 140 of the artwork at
   y ≈ 105–150 on screens 1280–1440px wide. Shloka 6's ("Love's archway and the darting fish")
   reaches x ≈ 175 at y ≈ 85–140. Shloka 7's ("A campaka bud, and a jewel that shames the stars")
-  reaches x ≈ 360 at y ≈ 110–150 at 1440px. Check the subtitle's length and keep crown-zone
+  reaches x ≈ 360 at y ≈ 110–150 at 1440px. Shloka 11's ("The lute silenced, and a mind gone under")
+  reaches x ≈ 324 at y ≈ 74–141, and x ≈ 376 at 1100px. Check the subtitle's length and keep crown-zone
   elements on the left clear of it. A title that wraps to two lines moves the whole card down
   instead: Shloka 8's ("Kadamba flowers, and the sun and moon for earrings") wraps at every desktop
   width, stays left of the artwork, and pushes the card window to y ≈ 225–438, which leaves only
