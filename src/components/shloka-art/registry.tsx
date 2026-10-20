@@ -470,8 +470,9 @@ export const ARTWORK: Record<string, Artwork> = {
       body: (
         <>
           There is also a small detail for the attentive: Kailāsa, Śiva&rsquo;s mountain, stands on the far shore, and
-          haṃsas are flying down to the water. <i>Mānasa</i> means the mind, and it is also the lake at Kailāsa&rsquo;s
-          foot that the haṃsas fly to, so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
+          a flight of haṃsas, the swans of the old poems, is coming down to the water. The word <i>mānasa</i>{" "}
+          means &ldquo;the mind&rdquo;, and it is also the name of the lake at Kailāsa&rsquo;s foot that the haṃsas fly to,
+          so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
         </>
       ),
     },
