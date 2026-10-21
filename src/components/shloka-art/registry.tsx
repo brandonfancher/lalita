@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { MirrorAndKnot } from "./mirror-and-knot";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
 import { SunMoonEarrings } from "./sun-moon-earrings";
@@ -473,6 +474,40 @@ export const ARTWORK: Record<string, Artwork> = {
           a flight of haṃsas, the swans of the old poems, is coming down to the water. The word <i>mānasa</i>{" "}
           means &ldquo;the mind&rdquo;, and it is also the name of the lake at Kailāsa&rsquo;s foot that the haṃsas fly to,
           so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
+        </>
+      ),
+    },
+  },
+  "012": {
+    Art: MirrorAndKnot,
+    intro: (Spot) => (
+      <>
+        After three verses of ruby, coral, and bimba brought in to be outdone, this one brings in nothing: no likeness
+        for her chin was ever found. So nothing is compared here, and <Spot part="light">her light</Spot> shines on its
+        own. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 29,
+        part: "mirror",
+        depicts:
+          "Śaṅkara calls her chin the stem of the mirror that is her face, the mirror Śambhu takes in his hand. Here it is a mirror of polished metal, and it holds no likeness, only her light.",
+      },
+      {
+        nama: 30,
+        part: "thread",
+        depicts:
+          "Just below, a turmeric cord is wound round the stem and knotted three times, with a gold tāli marked with kumkum hanging from it. It is the one thing she wears that came from someone else.",
+      },
+    ],
+    detail: {
+      part: "three-lines",
+      body: (
+        <>
+          There is also a small detail for the attentive: three fine lines run across the plate under the knot.
+          Śaṅkara (Saundaryalaharī 69) sees three lines on her throat and calls them sureties for the strands that were
+          tied there at her wedding, and then, in the same breath, the boundary stones of music&rsquo;s three scales.
         </>
       ),
     },
