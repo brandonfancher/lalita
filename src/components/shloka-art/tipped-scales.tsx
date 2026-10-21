@@ -12,7 +12,7 @@
 
 import type { CSSProperties } from "react";
 
-import { artIds, cubicAt, partProps, polar, round } from "./primitives";
+import { artIds, cubicAt, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -91,12 +91,7 @@ const LY = LEFT_PAN.y;
 const BINDU = { x: LX, y: LY - 22 };
 
 /** Her radiance: 108 gold hairlines from the bindu, alternating long and short, fading in from it so no dark ring is left round it. */
-const RADIANCE = Array.from({ length: 108 }, (_, k) => {
-  const deg = k * (360 / 108) + 1.7;
-  const a = polar(BINDU.x, BINDU.y, 9, deg);
-  const b = polar(BINDU.x, BINDU.y, k % 2 ? 300 : 440, deg);
-  return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
-}).join(" ");
+const RADIANCE = radiance({ cx: BINDU.x, cy: BINDU.y, from: 9, long: 440, short: 300 });
 
 /** The earrings of the verse before, reflected in the pool: the sun on her right, the moon on her left. */
 const REFLECTED_SUN = { x: round(LX - 21), y: LY + 1.5 };

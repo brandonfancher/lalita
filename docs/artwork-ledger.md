@@ -36,7 +36,7 @@ second time it is needed.
 | Lion (siṃha) | `Lion`: seated, gold, flame-tongue mane; paired lions face inward toward the centre | `primitives.tsx` | Shloka 1 |
 | Rising sparks | `Embers`, filled with `--art-ember` | `primitives.tsx` | Shloka 1 |
 | The syllable śrī | श्री in Tiro Devanagari, `--sindura` | Inline | Shloka 1 |
-| Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | Inline | Shloka 1 |
+| Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | `radiance` in `primitives.tsx` (promoted at Shloka 12, used by Shlokas 8, 9 and 12); Shloka 1's, built differently, stays inline | Shloka 1 |
 | Royal parasol (chattra) | Vermilion dome with gold ribs, scalloped fringe, beaded tassels, bud finial | Inline | Shloka 1 |
 | Lotus pedestal | `lotusPetals`: a row of pointed, upturned gold petals. A lotus seat stacks a taller back row (`--art-saffron`), a front row (`--art-core`, so it reads as gold by day, not khaki), a beaded band, and a row turned down (negative `height`) | `primitives.tsx` | Shloka 1 |
 | Round arch | `archPath` and `alongArch` | `primitives.tsx` | Shloka 1 |
@@ -102,6 +102,10 @@ second time it is needed.
 | Kāmeśa's mind | His crescent, drawn as her crest is (Dhyāna), radius 32, sunk deep in the flood and turned well onto its side (244°): turned nearly horns up and set under her bindu, it would make a face. A faint saffron tint over it puts it under the light; `m-sink`; small `--art-moon` pearls of light rise from it on `m-ember` and break at the surface (clipped to the flood) | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Kailāsa | A small broad dome with steep faces, on the far shore of the flood with low gold ridges either side: snow (`--art-moon`) on its upper part, a snow-filled gully down the south face, short gold strokes for the bands of rock that cross it, the rest `--gold-soft` at low opacity. Clipped to above the surface. A pointed white cap read as Mount Fuji, and a big white triangle as a tent | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Haṃsas in flight | Wild geese, about 20 units long: an `--art-moon` body, neck and head outlined in hair-fine gold, a saffron beak, wings by turns raised and lowered with a `--gold-soft` far wing. Flown as a small skein, heading down to water. Never a single bird by Sarasvatī's lute, where it would read as her mount | Inline (`silenced-lute.tsx`) | Shloka 11 |
+| Her face as a mirror (mukha-mukura) | A hand mirror of polished metal, upright, face radius 76: an `--art-ivory` face under a faint `--gold-soft` diagonal shading and a soft bevel, two diagonal `--art-moon` sheen streaks (one broad, one thin, lower left to upper right), an `--art-carve` setting line, a 10-unit gold frame with 44 `--gold-soft` beads. It rests in a small lotus cup (the lotus seat's rows, at about a quarter of the size) on a gold stem, her chin, with a pale sheen line, two banded rings, and a collar, knob and bud at the foot. Nothing is reflected in it but her light. Kept distinct from Shloka 9's ruby mirror, which is a red standard she outdoes | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
+| The marriage thread (māṅgalyasūtra) | A 5-unit `--art-turmeric` cord edged in `--gold`, its twist a dashed `--art-saffron` hairline. Wound once round what it is tied to (the back arc hidden behind it) and closed with three knots across the front, each a turmeric oval with a saffron crease. Both loose ends hang together to one side, ending in gold beads and turmeric tassels; ends spread to both sides of a stem read as a trident | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
+| The tāli | A gold pīpal leaf hung from the middle knot on a small gold bail: broad base up, long drip tip down, about 48 by 81 units, with an `--art-carve` midrib, four pairs of carved veins, an `--art-core` sheen on the left shoulder, and a `--sindura` kumkum dot near the top. Kept generic, without any one community's emblem. With a short tip and no veins it read as a heart pendant | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
+| The three lines of her throat (Saundaryalaharī 69) | Three hair-fine (0.75) `--gold-soft` arcs 13 units apart, sagging gently across the plate from x 130 to 510 under the knot, faded out at both ends. Never darker: stronger, with the stem through them, they would turn the mirror into a head on a neck | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -141,6 +145,10 @@ The starting set is `--art-glow`, `--art-vermilion`, `--art-saffron`, `--art-cor
 - **`--art-crimson`** (Dhyāna): day `#7e1d14`, lamplight `#9c3024`. The dark eye of a red flower,
   and its veins. By lamplight `--art-vermilion` and `--sindura` are the same colour, so neither can
   darken a red flower's centre.
+- **`--art-turmeric`** (Shloka 12): day `#d99a06`, lamplight `#f0bf3f`. Turmeric-dyed cord. It
+  is yellower than `--art-saffron`, and it stays yellow by lamplight, where `--art-core` turns
+  cream. A lighter day value (`#e0a516`) washed out to pale khaki on the paper. Edge it in `--gold`
+  so it holds its line by day.
 
 ## Motion additions
 
@@ -560,11 +568,49 @@ One entry per finished artwork, in the order they were made.
   miniature beside the verse the lute is only a thin line with its red cover; the lit horizon carries
   it. On phones the text stays legible over it in both themes.
 
+### Shloka 12: The mirror's stem, and the knot
+
+- **Component:** `mirror-and-knot.tsx` (defs prefix `sa12`)
+- **Composition:** one object, dressed for a rite. Her face is a polished metal hand mirror
+  (Saundaryalaharī 67: her chin is the stem of the mirror that is her face, which Śambhu takes in
+  his hand). Its upper part stands behind the card, and its lower half shows below it with her
+  point of light in the face. Nothing else is reflected there. The mirror rests in a small lotus
+  cup on a long gold stem, her chin. Just under the cup, where the neck would be, the turmeric
+  marriage cord is wound round the stem and knotted three times. The gold tāli hangs from the
+  middle knot, and both loose ends hang to the right in tassels. Her radiance fills the plate. The
+  first ornament that is neither a jewel nor a flower, the first knot, the first object dressed for
+  a rite, and the first image of her as something another person holds. It answers Shloka 9 on
+  purpose: that verse brought a ruby mirror to be outdone, and this one brings no comparison at all.
+- **Name → part:**
+  - Anākalitasādṛśyacibukaśrīvirājitā → `mirror`: the frame, the face and its sheen, the flashes,
+    the lotus cup, and the stem with its foot
+  - Kāmeśabaddhamāṅgalyasūtraśobhitakandharā → `thread`: the cord's loop, the three knots, the
+    tāli, and the two tasselled ends
+  - Intro, *her light* → `light`: the point of light in the face, the light reflected round it,
+    the glow beyond the frame, and the radiance
+  - Detail → `three-lines`: three hair-fine lines under the knot, Śaṅkara's three lines on her
+    throat (Saundaryalaharī 69), sureties for the wedding strands and the bounds of the three
+    musical scales
+- **Palette:** gold; `--art-ivory` and `--art-moon` for the mirror's face and sheen; `--art-core`
+  and `--art-saffron` for her light and the lotus cup; `--sindura` for the kumkum; the new
+  `--art-turmeric` for the cord.
+- **Motion:** `m-sway` (the tāli and the cord's ends, from the middle knot, a beat apart), `m-shimmer`
+  (her glows and radiance), and `m-lick` (two flashes on the face, for *virājitā*).
+- **Notes:** This title wraps to two lines at desktop widths, as Shloka 8's does, so the card sits at
+  about y 225–438. The mirror was first centred at y 430, which hid her light behind the card; it
+  was lowered to y 472 and made smaller so the light sits about 34 units under the card's edge.
+  The cord's two ends first curled out on both sides of the stem and made a trident; both now
+  hang to the right. The first tāli, a short heart-shaped leaf with a central red dot, read as a
+  heart pendant; a long drip tip, a midrib and veins, and the dot moved up made it a pīpal leaf.
+  The face was first `--art-moon` and went cold grey by lamplight, then khaki under heavier gold
+  shading; `--art-ivory` with light shading and a saffron ring of reflected light warms it. The
+  crown zone holds only the radiance, to keep clear of the title. The radiance was the fourth
+  inline copy, so `radiance()` moved into `primitives.tsx`; Shlokas 8 and 9 use it and render
+  byte-for-byte as before. In the chant miniature the mirror's disc and glow carry it, and the
+  text stays legible over it on phones in both themes.
+
 ## Open questions
 
-- The radiance of 108 hairlines is now drawn inline three times (Shlokas 1, 8, and 9), each a
-  little differently (start, lengths, fade). If a fourth artwork needs it, consider a `radiance()`
-  helper in `primitives.tsx`, kept byte-for-byte for the existing three.
 - Shloka 10 has a local `taper(points, width)` that fills a centre line of varying width, for
   stems and leaves that thin out. If a second artwork needs tapering strokes (tendrils, smoke,
   hair-fine flames), promote it to `primitives.tsx`.

@@ -265,6 +265,8 @@ body::after {
   --art-musk: #3b2518;
   /* The dark eye at the heart of a red flower; darker than the petals in both themes. */
   --art-crimson: #7e1d14;
+  /* Turmeric-dyed cord: yellower than saffron, and still yellow by lamplight, where --art-core turns cream. */
+  --art-turmeric: #d99a06;
 }
 
 [data-theme="dark"] .adornment {
@@ -278,6 +280,7 @@ body::after {
   --art-moon: #e9edf3;
   --art-musk: #34221a;
   --art-crimson: #9c3024;
+  --art-turmeric: #f0bf3f;
 }
 
 .shloka-art {

@@ -614,6 +614,20 @@ export function sunRays({ cx, cy, r, long, short, count = 16, span = 180 }: { cx
   });
 }
 
+/**
+ * Radiance: 108 gold hairlines round (cx, cy), starting `from` units out and
+ * alternating `long` and `short`, starting long. Stroke it 0.7 wide with a
+ * radial gradient that fades in from `from` and out toward `long`.
+ */
+export function radiance({ cx, cy, from, long, short }: { cx: number; cy: number; from: number; long: number; short: number }) {
+  return Array.from({ length: 108 }, (_, k) => {
+    const deg = k * (360 / 108) + 1.7;
+    const a = polar(cx, cy, from, deg);
+    const b = polar(cx, cy, k % 2 ? short : long, deg);
+    return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
+  }).join(" ");
+}
+
 /* ── The moon ──────────────────────────────────────────────────────────── */
 
 /** An arc of the circle round (cx, cy), from `from` to `to` degrees (0 = east, counter-clockwise). */
