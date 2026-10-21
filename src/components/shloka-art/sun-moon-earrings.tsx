@@ -13,7 +13,7 @@
 
 import type { CSSProperties } from "react";
 
-import { artIds, MoonDeer, MoonHalo, partProps, polar, round, Ruby, sunRays } from "./primitives";
+import { artIds, MoonDeer, MoonHalo, partProps, polar, radiance, round, Ruby, sunRays } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -42,12 +42,7 @@ const SUN_RAYS = sunRays({ cx: SUN_X, cy: DISC_Y, r: R, long: 80, short: 69, cou
 const SUN_BEADS = Array.from({ length: 40 }, (_, k) => polar(SUN_X, DISC_Y, R + 2.8, k * 9));
 
 /** The sun's radiance across the day half of the sky: 108 gold hairlines, alternating long and short. */
-const RADIANCE = Array.from({ length: 108 }, (_, k) => {
-  const deg = k * (360 / 108) + 1.7;
-  const a = polar(SUN_X, DISC_Y, R + 6, deg);
-  const b = polar(SUN_X, DISC_Y, k % 2 ? 330 : 560, deg);
-  return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
-}).join(" ");
+const RADIANCE = radiance({ cx: SUN_X, cy: DISC_Y, from: R + 6, long: 560, short: 330 });
 
 /** The moon's light across the night half: fine rings, fading outward. */
 const MOONLIGHT_RINGS = Array.from({ length: 17 }, (_, k) => ({ r: R + 62 + k * 26, opacity: round(0.46 - k * 0.022) }));
