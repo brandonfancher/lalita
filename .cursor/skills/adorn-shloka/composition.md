@@ -51,7 +51,9 @@ compose within it.
   instead: Shloka 8's ("Kadamba flowers, and the sun and moon for earrings") wraps at every desktop
   width, stays left of the artwork, and pushes the card window to y ≈ 225–438, which leaves only
   y ≈ 440–564 clear above the fade. Shloka 12's ("The chin no one has matched, and a knotted
-  thread") wraps the same way. Look at the first render to see where the card really sits.
+  thread") wraps the same way. Shloka 13's ("Gold on the arms, pearls at the throat") stays on one
+  line and reaches x ≈ 244 (x ≈ 296 at 1100px) at y ≈ 73–140. Look at the first render to see
+  where the card really sits.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.
 - **Plate caption:** a button centred beneath the artwork at y ≈ 824 on screens ≥ 1280px.

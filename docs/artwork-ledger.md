@@ -36,14 +36,14 @@ second time it is needed.
 | Lion (siṃha) | `Lion`: seated, gold, flame-tongue mane; paired lions face inward toward the centre | `primitives.tsx` | Shloka 1 |
 | Rising sparks | `Embers`, filled with `--art-ember` | `primitives.tsx` | Shloka 1 |
 | The syllable śrī | श्री in Tiro Devanagari, `--sindura` | Inline | Shloka 1 |
-| Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | `radiance` in `primitives.tsx` (promoted at Shloka 12, used by Shlokas 8, 9 and 12); Shloka 1's, built differently, stays inline | Shloka 1 |
+| Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | `radiance` in `primitives.tsx` (promoted at Shloka 12, used by Shlokas 8, 9, 12 and 13); Shloka 1's, built differently, stays inline | Shloka 1 |
 | Royal parasol (chattra) | Vermilion dome with gold ribs, scalloped fringe, beaded tassels, bud finial | Inline | Shloka 1 |
 | Lotus pedestal | `lotusPetals`: a row of pointed, upturned gold petals. A lotus seat stacks a taller back row (`--art-saffron`), a front row (`--art-core`, so it reads as gold by day, not khaki), a beaded band, and a row turned down (negative `height`) | `primitives.tsx` | Shloka 1 |
 | Round arch | `archPath` and `alongArch` | `primitives.tsx` | Shloka 1 |
 | Her noose (pāśa) | `Noose`: a loop of twisted `--art-vermilion` cord (red because *rāga* is colouring), gold binding where it closes, four gold beads, a tail ending in a gold tassel. Held at the origin, loop up | `primitives.tsx` | Shloka 2 |
 | Her goad (aṅkuśa) | `Goad`: a banded gold shaft with a bud-shaped butt, a lotus collar, a leaf-shaped spear point, and a hook curving out to the right. Held at the origin, pointing up | `primitives.tsx` | Shloka 2 |
 | Glint | `glint(s)`: a four-pointed flash of `--art-core`, for blazing metal and jewels | `primitives.tsx` | Shloka 2 |
-| Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs: `armBeam` (and `wrist` for where the bangle sits), painted with `ArmLight` and a gradient from `--art-saffron` to `--art-core` | `primitives.tsx` | Shloka 2 |
+| Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs: `armBeam` (and `wrist` for where the bangle sits), painted with `ArmLight` and a gradient from `--art-saffron` to `--art-core`. Empty-handed (Shloka 13) they leave her light in an X, like the points of a flash, and fade out at their tips; the wrists stay bare, as the bangle marks where a weapon is held | `primitives.tsx` | Shloka 2 |
 | Bangle (kaṅkaṇa) | `Bangle`: a gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | `primitives.tsx` | Shloka 2 |
 | The rising sun | Half a disc on the horizon (saffron centre, vermilion rim, gold rim line), sixteen alternating vermilion and saffron rays | `sunRays` in `primitives.tsx` (promoted at Shloka 8); the disc inline | Shloka 2 |
 | The sun's full disc | A radial gradient from `--art-saffron` (a quarter out) to `--art-vermilion` at the rim, a 1.3-unit `--gold` rim line and a fainter gold ring 9 units inside, and 32 rays, at the half-risen sun's spacing, alternating vermilion (long) and saffron. As a jewel it adds a ring of small `--gold-soft` beads just outside the rim, and its rays stop short of the fittings above and below. Its radiance is the 108 gold hairlines of Shloka 1, starting at the disc | `sunRays` in `primitives.tsx`; the disc inline (`sun-moon-earrings.tsx`) | Shloka 8 |
@@ -80,7 +80,7 @@ second time it is needed.
 | Campaka, newly opened | Seen from the side as a slim torch: eleven `campakaPetal`s from one calyx, most nearly closed (within 9° of upright), only the outer pair parting, tips curling a little outward. Filled with a gradient from `--art-saffron` at the base through `--art-core` to `--art-ivory` at the tips (the palest, first-day flower), edged in `--art-saffron`. A small three-sepal `--leaf` calyx; a straight `--leaf` stem with a `--gold-soft` line; lance-shaped `--leaf` leaves with a gold midrib. Splayed wider, it read as a daisy or an agave | `campakaPetal` in `primitives.tsx`; the flower inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | Inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Her nose stud (mūkkutti) | Seven diamonds in a gold rosette (one in the middle, six round it, one straight up), beaded at the rim, outlined in `--art-carve`. A small `--art-moon` glow just round it makes it white-hot against gold by day; behind that a larger `--art-core` glow, a four- and an eight-pointed `glint`, and sixteen hair-fine rays, the upward one longest. Flashes on three stones | Inline (`campaka-jewel.tsx`) | Shloka 7 |
-| Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap | Inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap. Too heavy below a radius of about 4: see "Strings of pearls" for small ones | `Pearl` in `primitives.tsx` (promoted at Shloka 13) | Shloka 7 |
 | Kadamba | A head is a ball of radius 9–14: a radial gradient from `--art-core` (upper left) through `--art-saffron` to `--art-vermilion`, stippled with tiny `--art-ivory` florets in a sunflower spiral, and ringed by short `--art-saffron` hairline styles that stand out to about 1.3 times its radius, each tipped with an `--art-ivory` dot edged in gold (`m-twinkle`, three groups). The pale tips make it a kadamba and not an orange or a berry. Heads come in sprays (mañjarī) of four or five on short `--leaf` stalks, among broad, pointed, glossy `--leaf` leaves with a `--gold-soft` midrib and curved veins, long enough to show beyond the heads | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | Ear pendant (tāṭaṅka) | Hung from a gold stud in the lobe (a ruby in it on the sun's side, a pearl on the moon's), a short gold link with gold beads, a bail, the disc, and a drop beneath (a `Ruby` under the sun, a pearl under the moon). Viewer's left is her right ear: the sun there, the moon on the other side. Each pendant swings from its lobe (`m-sway`, see Motion additions) | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | The moon as a little boat (uḍupa) | A small gold crescent, horns up, radius 13, riding the top of the moon's disc as its bail, with three `--art-vermilion` beads along the hull and the ring for the link between its horns | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
@@ -102,10 +102,15 @@ second time it is needed.
 | Kāmeśa's mind | His crescent, drawn as her crest is (Dhyāna), radius 32, sunk deep in the flood and turned well onto its side (244°): turned nearly horns up and set under her bindu, it would make a face. A faint saffron tint over it puts it under the light; `m-sink`; small `--art-moon` pearls of light rise from it on `m-ember` and break at the surface (clipped to the flood) | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Kailāsa | A small broad dome with steep faces, on the far shore of the flood with low gold ridges either side: snow (`--art-moon`) on its upper part, a snow-filled gully down the south face, short gold strokes for the bands of rock that cross it, the rest `--gold-soft` at low opacity. Clipped to above the surface. A pointed white cap read as Mount Fuji, and a big white triangle as a tent | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Haṃsas in flight | Wild geese, about 20 units long: an `--art-moon` body, neck and head outlined in hair-fine gold, a saffron beak, wings by turns raised and lowered with a `--gold-soft` far wing. Flown as a small skein, heading down to water. Never a single bird by Sarasvatī's lute, where it would read as her mount | Inline (`silenced-lute.tsx`) | Shloka 11 |
-| Her face as a mirror (mukha-mukura) | A hand mirror of polished metal, upright, face radius 76: an `--art-ivory` face under a faint `--gold-soft` diagonal shading and a soft bevel, two diagonal `--art-moon` sheen streaks (one broad, one thin, lower left to upper right), an `--art-carve` setting line, a 10-unit gold frame with 44 `--gold-soft` beads. It rests in a small lotus cup (the lotus seat's rows, at about a quarter of the size) on a gold stem, her chin, with a pale sheen line, two banded rings, and a collar, knob and bud at the foot. Nothing is reflected in it but her light. Kept distinct from Shloka 9's ruby mirror, which is a red standard she outdoes | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
-| The marriage thread (māṅgalyasūtra) | A 5-unit `--art-turmeric` cord edged in `--gold`, its twist a dashed `--art-saffron` hairline. Wound once round what it is tied to (the back arc hidden behind it) and closed with three knots across the front, each a turmeric oval with a saffron crease. Both loose ends hang together to one side, ending in gold beads and turmeric tassels; ends spread to both sides of a stem read as a trident | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
-| The tāli | A gold pīpal leaf hung from the middle knot on a small gold bail: broad base up, long drip tip down, about 48 by 81 units, with an `--art-carve` midrib, four pairs of carved veins, an `--art-core` sheen on the left shoulder, and a `--sindura` kumkum dot near the top. Kept generic, without any one community's emblem. With a short tip and no veins it read as a heart pendant | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
+| Her face as a mirror (mukha-mukura) | A hand mirror of polished metal, upright, face radius 76: an `--art-ivory` face under a faint `--gold-soft` diagonal shading and a soft bevel, two diagonal `--art-moon` sheen streaks (one broad, one thin, lower left to upper right), an `--art-carve` setting line, a 10-unit gold frame with 44 `--gold-soft` beads. It rests in a small lotus cup (the lotus seat's rows, at about a quarter of the size) on a gold stem, her chin, with a pale sheen line, two banded rings, and a collar, knob and bud at the foot. Nothing is reflected in it but her light. Kept distinct from Shloka 9's ruby mirror, which is a red standard she outdoes. Wherever it returns, her face is this mirror, and the marriage thread stays tied on its stem | `handMirror`, `HandMirror` (with `MirrorShading` and `MirrorFaceClip` in the defs) in `primitives.tsx` (promoted at Shloka 13) | Shloka 12 |
+| The marriage thread (māṅgalyasūtra) | A 5-unit `--art-turmeric` cord edged in `--gold`, its twist a dashed `--art-saffron` hairline. Wound once round what it is tied to (the back arc hidden behind it) and closed with three knots across the front, each a turmeric oval with a saffron crease. Both loose ends hang together to one side, ending in gold beads and turmeric tassels; ends spread to both sides of a stem read as a trident | `marriageThread`, `MarriageThread` (with `ThreadMask` in the defs) in `primitives.tsx` (promoted at Shloka 13) | Shloka 12 |
+| The tāli | A gold pīpal leaf hung from the middle knot on a small gold bail: broad base up, long drip tip down, about 48 by 81 units, with an `--art-carve` midrib, four pairs of carved veins, an `--art-core` sheen on the left shoulder, and a `--sindura` kumkum dot near the top. Kept generic, without any one community's emblem. With a short tip and no veins it read as a heart pendant. A tāli once tied is never left off | Part of `MarriageThread` in `primitives.tsx` | Shloka 12 |
 | The three lines of her throat (Saundaryalaharī 69) | Three hair-fine (0.75) `--gold-soft` arcs 13 units apart, sagging gently across the plate from x 130 to 510 under the knot, faded out at both ends. Never darker: stronger, with the stem through them, they would turn the mirror into a head on a neck | Inline (`mirror-and-knot.tsx`) | Shloka 12 |
+| Armlet (keyūra) | Worn high on the arm, nearer her light. A broad gold band across the beam (an ellipse, rx 15 and ry 5, stroked 6 wide over an `--art-carve` edge, with an `--art-core` line along its front) and a pointed gold crest standing up from it toward her light, as on Chola bronzes: two `--leaf` emeralds and a `Ruby` on the crest, a gold bead at its point. Drawn at 1.25× on Shloka 13's arms | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
+| Arm band (aṅgada) | Worn further out on the arm than the keyūra: two thin gold rings (rx 13, ry 4.2, stroked 1.8) close together, with seven `--gold-soft` beads between them along the front. Drawn at 1.2×. Kept plainer than the keyūra so the pair reads as two different ornaments | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
+| Jewelled collar (ratna-graiveya) | A 14-unit `--gold` band over an `--art-carve` edge, its plaques parted by carved joints, set with sixteen stones, rubies (`Ruby`) and `--leaf` emeralds by turns (the Dhyāna vessel's belt), between an outer row of `--art-moon` pearls and a smaller inner row. On the mirror's stem it hangs from just under the lotus cup as a broad U, about 150 units wide, outside the marriage thread. Narrower, its ends closed up under the cup and it read as a ring round the stem | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
+| Its pendant (cintāka) | A round gold medallion (radius 14) on a small bail at the collar's lowest point: an `--art-carve` rim, an `--art-core` sheen arc, twelve small pearls in a ring round a central `Ruby`, a `Flash`, and a `Pearl` drop beneath. Kept round: an almond shape with a bright stone would read as an eye | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
+| Strings of pearls (lola-muktāphala) | Loose strings hung straight down from the collar's outer edge, a hair-fine gold thread through pearls of radius 2.5 spaced 5.7 apart (each `--art-moon` with a 0.5 gold edge and a tiny `--art-core` highlight), ending in a gold bead. Of unequal lengths and placed unevenly, so they never make a fringe or a beard. Each swings from its own top (`m-sway`, three groups). The pearls nearest her light blush with a faint `--sindura` arc on top (Saundaryalaharī 74) | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -608,6 +613,52 @@ One entry per finished artwork, in the order they were made.
   inline copy, so `radiance()` moved into `primitives.tsx`; Shlokas 8 and 9 use it and render
   byte-for-byte as before. In the chant miniature the mirror's disc and glow carry it, and the
   text stays legible over it on phones in both themes.
+
+### Shloka 13: Gold on the flash, pearls on the stem
+
+- **Component:** `gold-and-pearls.tsx` (defs prefix `sa13`)
+- **Composition:** a continuation, the same object dressed further, as the commentary puts it ("the
+  throat again, one layer out from the thread that was tied there in the previous verse"). Shloka
+  12's mirror returns unchanged, centred at y 431, its light about 35 units under the card. Her four
+  arms leave that light as beams in an X, like the points of a flash on polished metal: the upper
+  pair climbs behind the card and out above it, the lower pair reaches down and out. Each wears a
+  crested keyūra nearer her light and a beaded aṅgada further out, eight bands of gold. The
+  marriage thread is still tied on the stem, and one layer outside it a jewelled collar hangs from
+  under the lotus cup in a broad U, its round pendant at the bottom, five loose strings of pearls
+  swinging beneath. A faint radiance fills the plate. It is the first plate to carry on from the one
+  before, the first where gold is the subject (*kanaka* is the first metal named in the
+  description), the first verse drawn with no comparison in it, the first necklace and strings of
+  pearls, and the first time her arms are drawn empty-handed, for their own sake.
+- **Name → part:**
+  - Kanakāṅgadakeyūrakamanīyabhujānvitā → `arms`: the four beams of light, the four keyūras with
+    their flashes, and the four aṅgadas
+  - Ratnagraiveyacintākalolamuktāphalānvitā → `necklace`: the collar and its sixteen stones (one
+    for each syllable of the name), the pendant, and the strings of pearls, the nearest blushing red
+    (Saundaryalaharī 74)
+  - Intro, *the mirror of the last verse* → `mirror`: the mirror, cup, and stem, her point of light,
+    its glow, and the radiance
+  - Detail → `thread`: Shloka 12's cord, knots, and tāli, still tied inside the collar, because a
+    tāli once tied is not taken off
+- **Palette:** gold; `--art-ivory` and `--art-moon` for the mirror; `--art-saffron` and
+  `--art-core` for her light and the arms; `--art-vermilion` rubies and `--leaf` emeralds;
+  `--art-moon` pearls; `--art-turmeric` for the thread; a faint `--sindura` blush. No additions.
+- **Motion:** `m-sway` (each pearl string from its own top, in three groups, and the thread's tāli
+  and ends as in Shloka 12), `m-lick` (flashes on the keyūras, the pendant, and the mirror), and
+  `m-shimmer` (the glow, the radiance, and the arms' light).
+- **Notes:** This title stays on one line at every desktop width, reaching x ≈ 244 of the artwork
+  (x ≈ 296 at 1100px) at y ≈ 73–140, so the card is in its usual window, 41 units higher than on
+  Shloka 12's page, and the mirror moved up by as much. The upper-left aṅgada sits just under the
+  title's last word. The first collar, about 110 units wide with its ends closed up under the cup,
+  read as a ring round the stem; widened into a U it reads as a necklace. The first arms were short
+  and the plate was a thin column; lengthened, they reached the plate's sides but on their own
+  looked like crossed staves. The brief had rested the radiance, but a faint one (about 60% of Shloka
+  12's) makes the arms read as the four strongest rays of her light and fills the plate. The detail was
+  first planned as the tāli's tip showing under the pendant; once the collar was in place, the
+  tāli's top and kumkum showed inside it, which says the same more plainly. The mirror, the thread,
+  and the pearl each became a second use here, so they moved into `primitives.tsx`
+  (`HandMirror`, `MarriageThread`, `Pearl`); Shlokas 7 and 12 render byte-for-byte as before. In
+  the chant miniature the X of arms tells it apart from Shloka 12 at a glance, and on phones the
+  verse stays legible over it in both themes.
 
 ## Open questions
 

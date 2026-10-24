@@ -10,7 +10,7 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, campakaPetal, Flash, glint, partProps, polar, round, Star } from "./primitives";
+import { artIds, campakaPetal, Flash, glint, partProps, Pearl, polar, round, Star } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -287,15 +287,7 @@ export function CampakaJewel({ idPrefix = "sa7", active = null }: ArtProps) {
       {/* A pearl hanging from the stud, breathed out as Śaṅkara says */}
       <g {...part("pearl")}>
         <circle cx={PEARL.x} cy={JEWEL.y + SETTING_R + 2.4} r={2.4} stroke="var(--gold)" strokeWidth={1} />
-        <path d={`M ${PEARL.x - 2.6} ${PEARL.y - PEARL.r + 0.6} Q ${PEARL.x} ${PEARL.y - PEARL.r - 2.4} ${PEARL.x + 2.6} ${PEARL.y - PEARL.r + 0.6} Z`} fill="var(--gold)" />
-        <circle cx={PEARL.x} cy={PEARL.y} r={PEARL.r} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.7} />
-        <path
-          d={`M ${round(PEARL.x + PEARL.r * 0.75)} ${round(PEARL.y - PEARL.r * 0.2)} A ${PEARL.r * 0.8} ${PEARL.r * 0.8} 0 0 1 ${round(PEARL.x - PEARL.r * 0.2)} ${round(PEARL.y + PEARL.r * 0.75)}`}
-          stroke="var(--gold-soft)"
-          strokeWidth={0.9}
-          strokeOpacity={0.7}
-        />
-        <circle cx={round(PEARL.x - PEARL.r * 0.32)} cy={round(PEARL.y - PEARL.r * 0.32)} r={1.3} fill="var(--art-core)" />
+        <Pearl x={PEARL.x} y={PEARL.y} r={PEARL.r} cap />
       </g>
     </svg>
   );
