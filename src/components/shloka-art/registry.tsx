@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
+import { GoldAndPearls } from "./gold-and-pearls";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -508,6 +509,40 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: three fine lines run across the plate under the knot.
           Śaṅkara (Saundaryalaharī 69) sees three lines on her throat and calls them sureties for the strands that were
           tied there at her wedding, and then, in the same breath, the boundary stones of music&rsquo;s three scales.
+        </>
+      ),
+    },
+  },
+  "013": {
+    Art: GoldAndPearls,
+    intro: (Spot) => (
+      <>
+        Nothing is outdone in this verse. It simply lists what she wears, and counting is a form of attention. Her face
+        is still <Spot part="mirror">the mirror of the last verse</Spot>, holding only her light, and the two names dress
+        what lies beside and below it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 31,
+        part: "arms",
+        depicts:
+          "Her four arms leave her light as four beams, set like the points of a flash on polished metal. Each wears a crested keyūra nearer her light and a beaded aṅgada further out: eight bands of gold to count.",
+      },
+      {
+        nama: 32,
+        part: "necklace",
+        depicts:
+          "A collar of sixteen stones, rubies and emeralds by turns, hangs on the stem with a round pendant at its lowest point, and loose strings of pearls swing beneath it. The pearls nearest her light are faintly red, as Śaṅkara says her lips colour them (Saundaryalaharī 74).",
+      },
+    ],
+    detail: {
+      part: "thread",
+      body: (
+        <>
+          There is also a small detail for the attentive: the marriage thread of the last verse is still tied, one layer
+          in. Inside the collar you can see the turmeric cord&rsquo;s three knots and the top of the tāli with its
+          kumkum, because a tāli, once tied, is not taken off.
         </>
       ),
     },
