@@ -967,3 +967,260 @@ export function RubyCrown({ cx, rays: keep }: { cx: number; rays?: (ray: CrownRa
     </>
   );
 }
+
+/* ── Pearls ────────────────────────────────────────────────────────────── */
+
+/** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */
+export function Pearl({ x, y, r, cap = false }: { x: number; y: number; r: number; cap?: boolean }) {
+  return (
+    <>
+      {cap && <path d={`M ${x - 2.6} ${y - r + 0.6} Q ${x} ${y - r - 2.4} ${x + 2.6} ${y - r + 0.6} Z`} fill="var(--gold)" />}
+      <circle cx={x} cy={y} r={r} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.7} />
+      <path
+        d={`M ${round(x + r * 0.75)} ${round(y - r * 0.2)} A ${r * 0.8} ${r * 0.8} 0 0 1 ${round(x - r * 0.2)} ${round(y + r * 0.75)}`}
+        stroke="var(--gold-soft)"
+        strokeWidth={0.9}
+        strokeOpacity={0.7}
+      />
+      <circle cx={round(x - r * 0.32)} cy={round(y - r * 0.32)} r={1.3} fill="var(--art-core)" />
+    </>
+  );
+}
+
+/* ── Her face as a mirror ──────────────────────────────────────────────── */
+
+/** For `m-sway` on a group that must swing from one fixed point (x, y), in artwork units. */
+export const swingFrom = (p: Pt): CSSProperties => ({ transformBox: "view-box", transformOrigin: `${p.x}px ${p.y}px` });
+
+export type MirrorShape = ReturnType<typeof handMirror>;
+
+/**
+ * Her face as a hand mirror of polished metal (Saundaryalaharī 67), centred
+ * on `c`, resting in a small lotus cup on a gold stem, her chin, that ends at
+ * `stemFoot`.
+ */
+export function handMirror(c: Pt, stemFoot: number) {
+  const cx = c.x;
+  const faceR = 76;
+  const frameR = 86;
+  const cupBase = round(c.y + frameR + 6);
+  const stemTop = cupBase + 12;
+  const stemW = { top: 8, foot: 6 };
+  return {
+    c,
+    faceR,
+    frameR,
+    frameBeads: Array.from({ length: 44 }, (_, k) => polar(c.x, c.y, frameR - 5, k * (360 / 44) + 4)),
+    cupBase,
+    cupBack: lotusPetals({ x: cx - 34, width: 68, count: 4, base: cupBase, height: 28 }),
+    cupFront: lotusPetals({ x: cx - 28, width: 56, count: 5, base: cupBase, height: 18 }),
+    cupBeads: Array.from({ length: 8 }, (_, k) => ({ x: cx - 21 + k * 6, y: cupBase + 3 })),
+    cupDown: lotusPetals({ x: cx - 22, width: 44, count: 5, base: cupBase + 6, height: -9 }),
+    stemTop,
+    stemFoot,
+    stemPath: `M ${cx - stemW.top} ${stemTop} L ${cx - stemW.foot} ${stemFoot} L ${cx + stemW.foot} ${stemFoot} L ${cx + stemW.top} ${stemTop} Z`,
+    stemBands: [stemFoot - 52, stemFoot - 22],
+    /** The stem's half-width at height y. */
+    stemHalf: (y: number) => round(stemW.top - ((stemW.top - stemW.foot) * (y - stemTop)) / (stemFoot - stemTop)),
+  };
+}
+
+/** The faint diagonal shading on the mirror's face, as `id("face")`. */
+export function MirrorShading({ m, id }: { m: MirrorShape; id: (name: string) => string }) {
+  const { c, faceR } = m;
+  return (
+    <linearGradient id={id("face")} x1={c.x - faceR} y1={c.y - faceR} x2={c.x + faceR} y2={c.y + faceR} gradientUnits="userSpaceOnUse">
+      <stop offset="0" style={{ stopColor: "var(--gold-soft)", stopOpacity: 0.04 }} />
+      <stop offset="1" style={{ stopColor: "var(--gold-soft)", stopOpacity: 0.26 }} />
+    </linearGradient>
+  );
+}
+
+/** The mirror's face, as `id("face-clip")`. */
+export function MirrorFaceClip({ m, id }: { m: MirrorShape; id: (name: string) => string }) {
+  return (
+    <clipPath id={id("face-clip")}>
+      <circle cx={m.c.x} cy={m.c.y} r={m.faceR} />
+    </clipPath>
+  );
+}
+
+/**
+ * The mirror: its beaded frame, its ivory face with two sheen streaks, the
+ * stem with its bands and bud foot, the lotus cup, and two passing flashes.
+ * Needs `MirrorShading` and `MirrorFaceClip` in the artwork's defs.
+ */
+export function HandMirror({ m, url }: { m: MirrorShape; url: (name: string) => string }) {
+  const { c, faceR, frameR, cupBase, stemTop, stemFoot, stemHalf } = m;
+  const cx = c.x;
+  return (
+    <>
+      <circle cx={c.x} cy={c.y} r={frameR} fill="var(--gold)" />
+      <circle cx={c.x} cy={c.y} r={frameR - 0.8} stroke="var(--art-carve)" strokeWidth={0.6} />
+      <g fill="var(--gold-soft)">
+        {m.frameBeads.map((b, k) => (
+          <circle key={k} cx={b.x} cy={b.y} r={1.6} />
+        ))}
+      </g>
+      <circle cx={c.x} cy={c.y} r={faceR + 1.4} fill="var(--art-carve)" />
+      <circle cx={c.x} cy={c.y} r={faceR} fill="var(--art-ivory)" />
+      <circle cx={c.x} cy={c.y} r={faceR} fill={url("face")} />
+      <g clipPath={url("face-clip")}>
+        <circle cx={c.x} cy={c.y} r={faceR - 2} stroke="var(--gold-soft)" strokeWidth={5} strokeOpacity={0.3} />
+        <g stroke="var(--art-moon)" strokeLinecap="round">
+          <path d={`M ${c.x - 60} ${c.y + 48} L ${c.x + 14} ${c.y - 64}`} strokeWidth={10} strokeOpacity={0.85} />
+          <path d={`M ${c.x - 36} ${c.y + 62} L ${c.x + 32} ${c.y - 44}`} strokeWidth={3.5} strokeOpacity={0.8} />
+        </g>
+      </g>
+
+      <path d={m.stemPath} fill="var(--gold)" />
+      <path d={`M ${cx - 3.4} ${stemTop + 4} L ${cx - 2.6} ${stemFoot - 4}`} stroke="var(--art-core)" strokeWidth={1.3} strokeOpacity={0.55} strokeLinecap="round" />
+      <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.5}>
+        {m.stemBands.map((y) => (
+          <rect key={y} x={cx - stemHalf(y) - 1.5} y={y - 3} width={2 * stemHalf(y) + 3} height={6} rx={2} />
+        ))}
+      </g>
+      <g fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5}>
+        <rect x={cx - 10} y={stemFoot - 2} width={20} height={6} rx={2.5} />
+        <circle cx={cx} cy={stemFoot + 10} r={6.5} />
+        <path d={`M ${cx - 4} ${stemFoot + 15} Q ${cx - 3} ${stemFoot + 25} ${cx} ${stemFoot + 32} Q ${cx + 3} ${stemFoot + 25} ${cx + 4} ${stemFoot + 15} Z`} />
+      </g>
+
+      <g fill="var(--art-saffron)">
+        {m.cupBack.map((d) => (
+          <path key={d} d={d} />
+        ))}
+      </g>
+      <g fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.6}>
+        {m.cupFront.map((d) => (
+          <path key={d} d={d} />
+        ))}
+      </g>
+      <rect x={cx - 25} y={cupBase} width={50} height={6} rx={2} fill="var(--gold)" />
+      <g fill="var(--gold-soft)">
+        {m.cupBeads.map((b) => (
+          <circle key={b.x} cx={b.x} cy={b.y} r={1.3} />
+        ))}
+      </g>
+      <g fill="var(--gold)">
+        {m.cupDown.map((d) => (
+          <path key={d} d={d} />
+        ))}
+      </g>
+
+      <g fill="var(--art-core)">
+        <path className="m-lick" d={glint(8)} transform={`translate(${c.x - 34} ${c.y + 32})`} />
+        <path className="m-lick m-late" d={glint(4.5)} transform={`translate(${c.x + 34} ${c.y + 50})`} />
+      </g>
+    </>
+  );
+}
+
+/* ── The marriage thread ───────────────────────────────────────────────── */
+
+const CORD = 5;
+const TASSEL = [-5, -2.5, 0, 2.5, 5].map((dx) => `M 0 2 Q ${round(dx * 0.4)} 9 ${dx} 18`).join(" ");
+const TALI_SCALE = 1.45;
+/** The tāli: a gold pīpal leaf, its broad base up and its long drip tip down. */
+const TALI =
+  "M 0 1.5 C -3 0 -9 -0.5 -12.5 3 C -16.5 7.5 -16 16 -11.5 23 C -7.5 29 -3 33 -1.3 41 C -0.7 45 -0.4 50 0 56 C 0.4 50 0.7 45 1.3 41 C 3 33 7.5 29 11.5 23 C 16 16 16.5 7.5 12.5 3 C 9 -0.5 3 0 0 1.5 Z";
+const TALI_VEINS = [8, 16, 24, 32]
+  .map((y, i) => {
+    const w = [10, 12.5, 10, 6][i];
+    const rise = [3, 5, 5, 4][i];
+    return `M 0 ${y} Q ${round(-w * 0.5)} ${y - 1} ${-w} ${y - rise} M 0 ${y} Q ${round(w * 0.5)} ${y - 1} ${w} ${y - rise}`;
+  })
+  .join(" ");
+
+export type ThreadShape = ReturnType<typeof marriageThread>;
+
+/**
+ * The marriage thread (māṅgalyasūtra) tied on the mirror's stem just under
+ * its lotus cup: a loop of turmeric cord seen a little from above, three
+ * knots across the front, the tāli hung from the middle one, and both loose
+ * ends hanging to the right.
+ */
+export function marriageThread(m: MirrorShape) {
+  const loop = { cx: m.c.x, cy: m.stemTop + 14, rx: 23, ry: 6.5 };
+  const onLoop = (deg: number): Pt => {
+    const t = (deg * Math.PI) / 180;
+    return { x: round(loop.cx + loop.rx * Math.cos(t)), y: round(loop.cy + loop.ry * Math.sin(t)) };
+  };
+  const knots = [120, 90, 60].map(onLoop);
+  const knotAt = knots[1];
+  const f = knots[2];
+  return {
+    loop,
+    back: `M ${loop.cx - loop.rx} ${loop.cy} A ${loop.rx} ${loop.ry} 0 0 1 ${loop.cx + loop.rx} ${loop.cy}`,
+    front: `M ${loop.cx - loop.rx} ${loop.cy} A ${loop.rx} ${loop.ry} 0 0 0 ${loop.cx + loop.rx} ${loop.cy}`,
+    knots,
+    knotAt,
+    tailFrom: f,
+    tails: [
+      { d: `C ${f.x + 20} ${f.y + 8} ${f.x + 38} ${f.y + 20} ${f.x + 40} ${f.y + 46} C ${f.x + 42} ${f.y + 70} ${f.x + 32} ${f.y + 84} ${f.x + 38} ${f.y + 106}`, end: { x: f.x + 38, y: f.y + 106 } },
+      { d: `C ${f.x + 14} ${f.y + 10} ${f.x + 26} ${f.y + 26} ${f.x + 26} ${f.y + 52} C ${f.x + 26} ${f.y + 72} ${f.x + 20} ${f.y + 80} ${f.x + 23} ${f.y + 92}`, end: { x: f.x + 23, y: f.y + 92 } },
+    ],
+    taliAt: { x: knotAt.x, y: round(knotAt.y + 8) },
+    /** How far below `taliAt` the tāli's drip tip reaches. */
+    taliLength: round(56 * TALI_SCALE),
+    stemHalfAtLoop: m.stemHalf(loop.cy),
+  };
+}
+
+/** Hides the back of the cord's loop where it passes behind the stem, as `id("behind-stem")`. */
+export function ThreadMask({ t, id }: { t: ThreadShape; id: (name: string) => string }) {
+  const { loop, stemHalfAtLoop: h } = t;
+  return (
+    <mask id={id("behind-stem")} maskUnits="userSpaceOnUse" x={0} y={loop.cy - 20} width={640} height={40}>
+      <rect x={0} y={loop.cy - 20} width={640} height={40} fill="#fff" />
+      <rect x={loop.cx - h - 0.5} y={loop.cy - 20} width={2 * h + 1} height={40} fill="#000" />
+    </mask>
+  );
+}
+
+/** The thread itself. The tāli and the loose ends swing from the middle knot. Needs `ThreadMask` in the defs. */
+export function MarriageThread({ t, url }: { t: ThreadShape; url: (name: string) => string }) {
+  const { tailFrom: f, knotAt, taliAt } = t;
+  return (
+    <>
+      <g mask={url("behind-stem")}>
+        <path d={t.back} stroke="var(--gold)" strokeWidth={CORD + 1.4} />
+        <path d={t.back} stroke="var(--art-turmeric)" strokeWidth={CORD} />
+      </g>
+      <g className="m-sway m-late" style={swingFrom(knotAt)}>
+        {t.tails.map((tail, i) => (
+          <g key={i}>
+            <path d={`M ${f.x} ${f.y} ${tail.d}`} stroke="var(--gold)" strokeWidth={CORD + 1.4} strokeLinecap="round" />
+            <path d={`M ${f.x} ${f.y} ${tail.d}`} stroke="var(--art-turmeric)" strokeWidth={CORD} strokeLinecap="round" />
+            <path d={`M ${f.x} ${f.y} ${tail.d}`} stroke="var(--art-saffron)" strokeWidth={0.9} strokeDasharray="1.6 3" />
+            <g transform={`translate(${tail.end.x} ${tail.end.y})`}>
+              <path d={TASSEL} stroke="var(--art-turmeric)" strokeWidth={1.5} strokeLinecap="round" />
+              <circle r={3.6} fill="var(--gold)" />
+            </g>
+          </g>
+        ))}
+      </g>
+      <path d={t.front} stroke="var(--gold)" strokeWidth={CORD + 1.4} />
+      <path d={t.front} stroke="var(--art-turmeric)" strokeWidth={CORD} />
+      <path d={t.front} stroke="var(--art-saffron)" strokeWidth={0.9} strokeDasharray="1.6 3" />
+
+      <g className="m-sway" style={swingFrom(knotAt)}>
+        <g transform={`translate(${taliAt.x} ${taliAt.y}) scale(${TALI_SCALE})`}>
+          <rect x={-3.5} y={-5} width={7} height={7} rx={2} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+          <path d={TALI} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+          <path d="M 0 3 L 0 50" stroke="var(--art-carve)" strokeWidth={0.7} strokeOpacity={0.85} />
+          <path d={TALI_VEINS} stroke="var(--art-carve)" strokeWidth={0.5} strokeOpacity={0.75} strokeLinecap="round" />
+          <path d="M -13 13 Q -13.5 6 -8 3.5" stroke="var(--art-core)" strokeWidth={1.4} strokeOpacity={0.75} strokeLinecap="round" />
+          <circle cy={14} r={3.4} fill="var(--sindura)" stroke="var(--art-carve)" strokeWidth={0.4} />
+        </g>
+      </g>
+
+      {t.knots.map((k) => (
+        <g key={k.x} transform={`translate(${k.x} ${k.y})`}>
+          <ellipse rx={6.2} ry={5.2} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.9} />
+          <path d="M -3.8 -2 Q 0 2.4 3.8 -2" stroke="var(--art-saffron)" strokeWidth={0.8} strokeLinecap="round" />
+        </g>
+      ))}
+    </>
+  );
+}
