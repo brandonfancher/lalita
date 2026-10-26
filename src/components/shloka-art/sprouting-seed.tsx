@@ -14,7 +14,7 @@
 
 import type { CSSProperties } from "react";
 
-import { artIds, cubicAt, glint, partProps, round } from "./primitives";
+import { artIds, cubicAt, glint, partProps, round, taper } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -65,24 +65,6 @@ const ringStyle = (r: (typeof RINGS)[number]): CSSProperties =>
   }) as CSSProperties;
 
 /* ── The sprout ─────────────────────────────────────────────────────────── */
-
-/** A filled shape of varying width along a centre line, so a stroke can taper. */
-function taper(pts: Pt[], width: (t: number) => number) {
-  const n = pts.length - 1;
-  const left: Pt[] = [];
-  const right: Pt[] = [];
-  pts.forEach((p, i) => {
-    const a = pts[Math.max(0, i - 1)];
-    const b = pts[Math.min(n, i + 1)];
-    const len = Math.hypot(b.x - a.x, b.y - a.y) || 1;
-    const nx = -(b.y - a.y) / len;
-    const ny = (b.x - a.x) / len;
-    const w = width(i / n) / 2;
-    left.push({ x: round(p.x + nx * w), y: round(p.y + ny * w) });
-    right.push({ x: round(p.x - nx * w), y: round(p.y - ny * w) });
-  });
-  return line(left) + " " + line([...right].reverse()).replace(/^M/, "L") + " Z";
-}
 
 /** Where the seed-leaves part, at the top of the short stem. */
 const NODE = { x: CX, y: 526 };

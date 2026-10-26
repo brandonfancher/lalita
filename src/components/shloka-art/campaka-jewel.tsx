@@ -10,10 +10,8 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, campakaPetal, Flash, glint, partProps, Pearl, polar, round, Star } from "./primitives";
+import { artIds, campakaPetal, diamond, Flash, glint, partProps, Pearl, polar, round, Star } from "./primitives";
 import type { ArtProps } from "./types";
-
-type Pt = { x: number; y: number };
 
 const CX = 320;
 
@@ -80,18 +78,6 @@ const STONES = [
 ];
 const SETTING_BEADS = Array.from({ length: 12 }, (_, k) => polar(JEWEL.x, JEWEL.y, 17.4, 60 + k * 30));
 
-/** A diamond seen face-on: an eight-sided girdle, the table, and the facets between them. */
-function diamond({ x, y, r }: Pt & { r: number }) {
-  const ring = (rr: number) => Array.from({ length: 8 }, (_, k) => polar(x, y, rr, 22.5 + k * 45));
-  const girdle = ring(r);
-  const table = ring(r * 0.48);
-  const poly = (ps: Pt[]) => `M ${ps.map((p) => `${p.x} ${p.y}`).join(" L ")} Z`;
-  return {
-    girdle: poly(girdle),
-    table: poly(table),
-    facets: girdle.map((g, k) => `M ${table[k].x} ${table[k].y} L ${g.x} ${g.y}`).join(" "),
-  };
-}
 const DIAMONDS = STONES.map((s) => ({ ...s, ...diamond(s) }));
 const FLASHING = [
   { stone: 0, group: 0 },
