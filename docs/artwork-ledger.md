@@ -78,7 +78,7 @@ second time it is needed.
 | Fish (mīna) | Seen from above, as fish are seen in shallow water: a slim body about 70 units long, bent a little as if turning, with a forked tail, two pairs of side fins in `--art-saffron`, a gold spine line, gold scale arcs, and two small eyes (`--art-musk` in an `--art-core` ring). The body is vermilion down the spine, shading to saffron at the sides. A faint `--art-crimson` shadow falls on the bed beneath. A pair circles one centre, one turned 180° from the other. `m-dart` | Inline (`wedding-doorway.tsx`) | Shloka 6 |
 | Star | `Star`: a four-pointed `glint` in `--gold-soft` (`m-twinkle`, three groups). A bright star adds a faint `--gold-soft` disc behind it. A star put out by a greater light is a still `--gold-soft` dot, or at most a hair-fine ring | `primitives.tsx` | Shloka 4 (promoted at Shloka 7) |
 | Campaka, newly opened | Seen from the side as a slim torch: eleven `campakaPetal`s from one calyx, most nearly closed (within 9° of upright), only the outer pair parting, tips curling a little outward. Filled with a gradient from `--art-saffron` at the base through `--art-core` to `--art-ivory` at the tips (the palest, first-day flower), edged in `--art-saffron`. A small three-sepal `--leaf` calyx; a straight `--leaf` stem with a `--gold-soft` line; lance-shaped `--leaf` leaves with a gold midrib. Splayed wider, it read as a daisy or an agave | `campakaPetal` in `primitives.tsx`; the flower inline (`campaka-jewel.tsx`) | Shloka 7 |
-| Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | Inline (`campaka-jewel.tsx`) | Shloka 7 |
+| Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | `diamond` in `primitives.tsx` (promoted at Shloka 14) | Shloka 7 |
 | Her nose stud (mūkkutti) | Seven diamonds in a gold rosette (one in the middle, six round it, one straight up), beaded at the rim, outlined in `--art-carve`. A small `--art-moon` glow just round it makes it white-hot against gold by day; behind that a larger `--art-core` glow, a four- and an eight-pointed `glint`, and sixteen hair-fine rays, the upward one longest. Flashes on three stones | Inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap. Too heavy below a radius of about 4: see "Strings of pearls" for small ones | `Pearl` in `primitives.tsx` (promoted at Shloka 13) | Shloka 7 |
 | Kadamba | A head is a ball of radius 9–14: a radial gradient from `--art-core` (upper left) through `--art-saffron` to `--art-vermilion`, stippled with tiny `--art-ivory` florets in a sunflower spiral, and ringed by short `--art-saffron` hairline styles that stand out to about 1.3 times its radius, each tipped with an `--art-ivory` dot edged in gold (`m-twinkle`, three groups). The pale tips make it a kadamba and not an orange or a berry. Heads come in sprays (mañjarī) of four or five on short `--leaf` stalks, among broad, pointed, glossy `--leaf` leaves with a `--gold-soft` midrib and curved veins, long enough to show beyond the heads | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
@@ -111,6 +111,13 @@ second time it is needed.
 | Jewelled collar (ratna-graiveya) | A 14-unit `--gold` band over an `--art-carve` edge, its plaques parted by carved joints, set with sixteen stones, rubies (`Ruby`) and `--leaf` emeralds by turns (the Dhyāna vessel's belt), between an outer row of `--art-moon` pearls and a smaller inner row. On the mirror's stem it hangs from just under the lotus cup as a broad U, about 150 units wide, outside the marriage thread. Narrower, its ends closed up under the cup and it read as a ring round the stem | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
 | Its pendant (cintāka) | A round gold medallion (radius 14) on a small bail at the collar's lowest point: an `--art-carve` rim, an `--art-core` sheen arc, twelve small pearls in a ring round a central `Ruby`, a `Flash`, and a `Pearl` drop beneath. Kept round: an almond shape with a bright stone would read as an eye | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
 | Strings of pearls (lola-muktāphala) | Loose strings hung straight down from the collar's outer edge, a hair-fine gold thread through pearls of radius 2.5 spaced 5.7 apart (each `--art-moon` with a 0.5 gold edge and a tiny `--art-core` highlight), ending in a gold bead. Of unequal lengths and placed unevenly, so they never make a fringe or a beard. Each swings from its own top (`m-sway`, three groups). The pearls nearest her light blush with a faint `--sindura` arc on top (Saundaryalaharī 74) | Inline (`gold-and-pearls.tsx`) | Shloka 13 |
+| Gaming board (aṣṭāpada) | Eight squares by eight, seen at a slant from the front: a `--gold` frame with a 7-unit gold front edge (a dashed `--art-carve` line along it) on two small gold feet, a field of `--art-stone` tinted with saffron inside a thin `--art-vermilion` line, a gold grid, and the old board's marked squares (the four corners and the four at the centre) crossed in vermilion. A vermilion border band went salmon-pink by day | Inline (`grown-stake.tsx`) | Shloka 14 |
+| Dice (pāśaka) | Oblong four-sided dice, about 22 by 7.6 units, foreshortened to 0.72 of their height: `--art-ivory` with a fine gold edge and a row of `--art-crimson` pips, thrown at slight angles | Inline (`grown-stake.tsx`) | Shloka 14 |
+| His jewel (Kāmeśvara's love) | A face-on `diamond` (radius 17), white for Śiva, held upright in his crescent (the fourth night's `litPart`, radius 25, turned horns up, drawn as her crest is in the Dhyāna, with its two soft `--art-moon` strokes), the crescent's foot resting on the board with a faint `--art-crimson` shadow. A `Flash` passes over it. On a gold stand, it read as a little globe | Inline (`grown-stake.tsx`) | Shloka 14 |
+| The watering basin (ālavāla) | A low ring of raked earth seen at a slant (radius 124 by 33): `--art-stone` tinted with saffron and a little `--art-musk`, a gold rim, crumbs of musk earth along its top, and a soft musk shade at its foot instead of an outlined base. Inside, a pool of her light (a radial gradient from `--art-core` to `--art-saffron`) with hair-fine `--art-ivory` ripple rings round the point where the creeper leaves the water. It lies in a bed of shallow furrows running across, closer toward the far side, with clods along the near ones. The painters' scale pattern of water, inside a rim, made a lattice pie; a pale water fill and an outlined base made a dish; a runnel joined to it made a ladle; rings round it read as a pond | Inline (`grown-stake.tsx`) | Shloka 14 |
+| The creeper of down (romāli-latā) | A single dark stem in `--art-hair`, filled with `taper` from 6.2 units at the root to 2.6 at the tip, with a hair-fine `--gold-soft` sheen along it. Heart-based pointed `--leaf` leaves on short stalks every 23 units, alternately each side, with a `--gold-soft` midrib and four veins, smaller toward the tip, and tendrils in `--art-hair` coiling off it. It springs from her light and never rises straight up from it: a straight line with a pair above and a point below would draw the body the series never draws. It returns at Shloka 15, where her waist is known only as what this creeper grows on | Inline (`grown-stake.tsx`) | Shloka 14 |
+| The pair of fruit (phala-kuca-dvayī) | Two round fruit (radius 15, slightly squat) on one forked `--art-hair` stalk with a leaf at the fork and one on each stalk: a radial gradient from `--art-core` through `--art-turmeric` to `--art-saffron` and a vermilion rim, a vermilion blush on the lower right, an `--art-ivory` sheen arc, a small saffron dimple where the stalk goes in. Orange, with a star-shaped calyx, they read as tomatoes; without leaves, as marbles | Inline (`grown-stake.tsx`) | Shloka 14 |
+| Bud (mukula) | A closed bud on a short `--art-hair` stalk: an `--art-turmeric` teardrop edged in gold, a saffron seam, a small `--leaf` cap, swinging from its stalk (`m-sway`) | Inline (`grown-stake.tsx`) | Shloka 14 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -660,11 +667,50 @@ One entry per finished artwork, in the order they were made.
   the chant miniature the X of arms tells it apart from Shloka 12 at a glance, and on phones the
   verse stays legible over it in both themes.
 
+### Shloka 14: What grew is what she stakes
+
+- **Component:** `grown-stake.tsx` (defs prefix `sa14`)
+- **Composition:** one thing looked at twice, as the verse does, with the two looks joined by a
+  single growing line. Below the card, her light lies in the water of a gardener's basin dug in a
+  raked bed. From it a slender dark creeper, the line of down, sweeps left under the card, climbs
+  its left side, and runs over onto a gaming board that lies in the band between the title and the
+  card. There it lays its two fruit on her side as the counter-stake. On his side, level with them
+  and lit the same, the jewel of his love rests in his crescent, with two dice thrown between. The
+  first wager, the first exchange between equals (it answers Shloka 9, where a balance tipped: here
+  there are no scales, and parity shows only in matched placement and matched light), the first
+  cultivated ground, the first fruit, and the first composition whose two halves are joined by
+  something growing from one to the other. The commentary advises against reconciling the two
+  names; the artwork joins them anyway, because both names describe the same pair.
+- **Name → part:**
+  - Kāmeśvarapremaratnamaṇipratipaṇastanī → `stake`: the board, its marked squares, the dice, and his
+    jewel in its crescent with its flash and glow
+  - Nābhyālavālaromālilatāphalakucadvayī → `creeper`: her light in the basin, the water and its
+    ripples, the bank, the raked bed, and the creeper with its leaves and tendrils
+  - Intro, *a single pair* → `fruit`: the two fruit on the board, their stalks and leaves, their
+    flash and glow
+  - Detail → `bud`: one bud on the creeper below the card, Saundaryalaharī 78's *mukula* where this
+    hymn says *phala*, the same plant a season apart
+- **Palette:** gold for the board and its frame; `--art-moon` for the jewel and the crescent;
+  `--art-core`, `--art-turmeric`, and `--art-saffron` for the fruit and her light; `--art-hair` and
+  `--leaf` for the creeper; `--art-musk` (faint) for the earth; `--art-ivory` for the dice and the
+  ripples; `--art-crimson` for the pips and shadows. No additions.
+- **Motion:** `m-shimmer` (her glow, the ripples, and the stakes' glows), `m-lick` (a flash on the
+  jewel and one on the fruit, a beat apart, so neither outshines the other), and `m-sway` (the bud).
+- **Notes:** The brief first kept the two names apart (two rubies against his diamond on the board,
+  the fruit left on the vine in the garden); the user chose to join them, since the two names
+  describe the same pair. This title stays on one line at every desktop width and reaches x ≈ 418
+  of the artwork at y ≈ 73–142 at 1280–1440px, and x ≈ 470 at 1100px, so the board lies in the
+  band above the card, its near edge just behind the card's top, and the creeper reaches it from
+  the left, under the title's last word. The first board, a thin sliver, and a thin vine left the
+  plate nearly empty; both were enlarged, and the bed of furrows grounds the lower plate. The
+  basin went through four looks before it read as watered earth (see its canon entry). The plate's
+  upper left stays empty, as the title covers it on the page. Shloka 10's `taper` and Shloka 7's
+  `diamond` moved into `primitives.tsx`; Shlokas 7 and 10 render byte-for-byte as before. In the
+  chant miniature the creeper's curve and the glowing basin carry it, and on phones the verse stays
+  legible over it in both themes.
+
 ## Open questions
 
-- Shloka 10 has a local `taper(points, width)` that fills a centre line of varying width, for
-  stems and leaves that thin out. If a second artwork needs tapering strokes (tendrils, smoke,
-  hair-fine flames), promote it to `primitives.tsx`.
 - Name 559, *tāmbūlapūritamukhī* ("her mouth full of betel"), returns to the betel, which Shloka 10
   now draws only as fragrance. The betel leaf, roll, clove, and camphor of Shloka 10's first version
   (in git history) are a starting point, kept away from anything that reads as a mouth.
