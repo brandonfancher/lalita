@@ -39,7 +39,13 @@ export type JamSection =
   | { kind: "verse"; label: string; startSec: number; stanzas: JamStanza[] }
   | { kind: "chorus" | "tag"; label: string; startSec: number; words: JamToken[] };
 
-export type JamVideo = { youtubeId: string; title: string };
+export type JamVideo = {
+  youtubeId: string;
+  title: string;
+  artist: string;
+  artistUrl: string;
+  occasion: string;
+};
 
 type Align = "start" | "center" | "end";
 type Seek = (sec: number) => void;
@@ -61,15 +67,7 @@ const VERSE_IAST = cn(
   "script-iast:text-lg script-iast:text-ink sm:script-iast:text-xl",
 );
 
-export function JamSession({
-  video,
-  caption,
-  sections,
-}: {
-  video: JamVideo;
-  caption: ReactNode;
-  sections: JamSection[];
-}) {
+export function JamSession({ video, sections }: { video: JamVideo; sections: JamSection[] }) {
   /** Token whose gloss is pinned open by a tap. */
   const [activeId, setActiveId] = useState<string | null>(null);
   const [meanings, setMeanings] = useState(true);
@@ -101,7 +99,30 @@ export function JamSession({
             />
           </div>
         </div>
-        {caption}
+        <figcaption className="mt-3 flex flex-wrap items-baseline gap-x-2 text-[15px] italic text-ink-faint">
+          <span>
+            Sung by{" "}
+            <a
+              href={video.artistUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-ink-muted underline decoration-line-strong underline-offset-4 transition-colors hover:text-ink hover:decoration-sindura"
+            >
+              {video.artist}
+            </a>{" "}
+            on {video.occasion}.
+          </span>
+          <a
+            href={`https://youtu.be/${video.youtubeId}`}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 not-italic text-sindura transition-colors hover:text-sindura-soft"
+          >
+            <span className="eyebrow text-inherit">Watch on YouTube</span>
+            <ExternalLink size={12} aria-hidden />
+            <span className="sr-only">(opens in a new tab)</span>
+          </a>
+        </figcaption>
       </figure>
 
       <div className="z-30 -mx-4 mb-6 border-b border-line bg-surface-0/85 px-4 py-3 backdrop-blur-xl sm:sticky sm:top-0 sm:-mx-6 sm:px-6">

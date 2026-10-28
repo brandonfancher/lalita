@@ -20,6 +20,7 @@ export const JAM_VIDEO = {
   title: "The Kirtan Everyone Asked For — Mahagauri Night, Navaratri 2026",
   artist: "Swami Aniruddha",
   artistUrl: "https://www.youtube.com/@SwamiAniruddha",
+  occasion: "Mahāgaurī night, Navarātri 2026",
 };
 
 export const JAM_SONG: SongSection[] = [

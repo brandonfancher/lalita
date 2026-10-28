@@ -1,5 +1,3 @@
-import { ExternalLink } from "lucide-react";
-
 import {
   JamSession,
   type JamNama,
@@ -94,36 +92,7 @@ export default function JamPage() {
         </p>
       </header>
 
-      <JamSession
-        video={JAM_VIDEO}
-        sections={sections}
-        caption={
-          <figcaption className="mt-3 flex flex-wrap items-baseline gap-x-2 text-[15px] italic text-ink-faint">
-            <span>
-              Sung by{" "}
-              <a
-                href={JAM_VIDEO.artistUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-ink-muted underline decoration-line-strong underline-offset-4 transition-colors hover:text-ink hover:decoration-sindura"
-              >
-                {JAM_VIDEO.artist}
-              </a>{" "}
-              on Mahāgaurī night, Navarātri 2026.
-            </span>
-            <a
-              href={`https://youtu.be/${JAM_VIDEO.youtubeId}`}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 not-italic text-sindura transition-colors hover:text-sindura-soft"
-            >
-              <span className="eyebrow text-inherit">Watch on YouTube</span>
-              <ExternalLink size={12} aria-hidden />
-              <span className="sr-only">(opens in a new tab)</span>
-            </a>
-          </figcaption>
-        }
-      />
+      <JamSession video={JAM_VIDEO} sections={sections} />
     </div>
   );
 }
