@@ -987,6 +987,41 @@ export function Pearl({ x, y, r, cap = false }: { x: number; y: number; r: numbe
   );
 }
 
+/** A diamond (vajra) seen face-on, centred on (x, y): an eight-sided girdle, the table, and the facets between them. */
+export function diamond({ x, y, r }: Pt & { r: number }) {
+  const ring = (rr: number) => Array.from({ length: 8 }, (_, k) => polar(x, y, rr, 22.5 + k * 45));
+  const girdle = ring(r);
+  const table = ring(r * 0.48);
+  const poly = (ps: Pt[]) => `M ${ps.map((p) => `${p.x} ${p.y}`).join(" L ")} Z`;
+  return {
+    girdle: poly(girdle),
+    table: poly(table),
+    facets: girdle.map((g, k) => `M ${table[k].x} ${table[k].y} L ${g.x} ${g.y}`).join(" "),
+  };
+}
+
+/* ── Growing things ────────────────────────────────────────────────────── */
+
+const polyline = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
+
+/** A filled shape of varying width along a centre line, so a stroke can taper. */
+export function taper(pts: Pt[], width: (t: number) => number) {
+  const n = pts.length - 1;
+  const left: Pt[] = [];
+  const right: Pt[] = [];
+  pts.forEach((p, i) => {
+    const a = pts[Math.max(0, i - 1)];
+    const b = pts[Math.min(n, i + 1)];
+    const len = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+    const nx = -(b.y - a.y) / len;
+    const ny = (b.x - a.x) / len;
+    const w = width(i / n) / 2;
+    left.push({ x: round(p.x + nx * w), y: round(p.y + ny * w) });
+    right.push({ x: round(p.x - nx * w), y: round(p.y - ny * w) });
+  });
+  return polyline(left) + " " + polyline([...right].reverse()).replace(/^M/, "L") + " Z";
+}
+
 /* ── Her face as a mirror ──────────────────────────────────────────────── */
 
 /** For `m-sway` on a group that must swing from one fixed point (x, y), in artwork units. */

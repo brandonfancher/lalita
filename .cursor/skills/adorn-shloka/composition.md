@@ -52,7 +52,9 @@ compose within it.
   width, stays left of the artwork, and pushes the card window to y ≈ 225–438, which leaves only
   y ≈ 440–564 clear above the fade. Shloka 12's ("The chin no one has matched, and a knotted
   thread") wraps the same way. Shloka 13's ("Gold on the arms, pearls at the throat") stays on one
-  line and reaches x ≈ 244 (x ≈ 296 at 1100px) at y ≈ 73–140. Look at the first render to see
+  line and reaches x ≈ 244 (x ≈ 296 at 1100px) at y ≈ 73–140. Shloka 14's ("A stake laid down, and
+  a creeper in the garden") stays on one line but reaches x ≈ 418 at y ≈ 73–142, and x ≈ 470 at
+  1100px, which leaves only the band y ≈ 142–184 above the card. Look at the first render to see
   where the card really sits.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.

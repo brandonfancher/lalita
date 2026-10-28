@@ -4,6 +4,7 @@ import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
+import { GrownStake } from "./grown-stake";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -543,6 +544,39 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: the marriage thread of the last verse is still tied, one layer
           in. Inside the collar you can see the turmeric cord&rsquo;s three knots and the top of the tāli with its
           kumkum, because a tāli, once tied, is not taken off.
+        </>
+      ),
+    },
+  },
+  "014": {
+    Art: GrownStake,
+    intro: (Spot) => (
+      <>
+        The verse looks twice at one thing, first as a market and then as a garden, and the artwork lets the two looks
+        meet in <Spot part="fruit">a single pair</Spot>: what grew in the garden is what she lays down. Every element
+        comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 33,
+        part: "stake",
+        depicts:
+          "On a gaming board above the card, Kāmeśvara's love lies on his side as a diamond held in his crescent. On her side, level with it and lit the same, lies her counter-stake.",
+      },
+      {
+        nama: 34,
+        part: "creeper",
+        depicts:
+          "Below the card, her light lies in the water of a gardener's basin, dug in a raked bed. From it rises a slender dark creeper, the line of down, which climbs past the card and up onto the board to lay its two fruit there.",
+      },
+    ],
+    detail: {
+      part: "bud",
+      body: (
+        <>
+          There is also a small detail for the attentive: one bud hangs from the creeper just below the card. Śaṅkara (Saundaryalaharī 78) sees the same creeper and calls the pair its buds; this hymn calls them its
+          fruit. It is the same plant, a season apart.
         </>
       ),
     },
