@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
@@ -18,6 +18,21 @@ import { caseInfo, cn } from "@/lib/utils";
 export function NamaList({ namas }: { namas: Nama[] }) {
   const [open, setOpen] = useState<number | null>(null);
 
+  // A link to `#nama-457` opens that name's analysis.
+  useEffect(() => {
+    const openFromHash = () => {
+      const index = Number(/^#nama-(\d+)$/.exec(window.location.hash)?.[1]);
+      if (!namas.some((n) => n.index === index)) return;
+      setOpen(index);
+      requestAnimationFrame(() =>
+        document.getElementById(`nama-${index}`)?.scrollIntoView({ block: "start" }),
+      );
+    };
+    openFromHash();
+    window.addEventListener("hashchange", openFromHash);
+    return () => window.removeEventListener("hashchange", openFromHash);
+  }, [namas]);
+
   return (
     <ul className="border-t border-line-strong">
       {namas.map((nama) => {
@@ -28,8 +43,9 @@ export function NamaList({ namas }: { namas: Nama[] }) {
         return (
           <li
             key={nama.index}
+            id={`nama-${nama.index}`}
             className={cn(
-              "border-b border-line transition-colors",
+              "scroll-mt-20 border-b border-line transition-colors",
               expanded && "bg-surface-1/70",
             )}
           >
