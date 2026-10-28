@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
-import { ExternalLink, X } from "lucide-react";
+import { useRef, useState, type ReactNode } from "react";
+import { ExternalLink, Play, X } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { Hyphenated } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import { cn, formatTime } from "@/lib/utils";
 
 export type JamNama = { index: number; deva: string; iast: string; gloss: string; moduleId: string };
 
@@ -34,11 +34,17 @@ export type JamStanza = {
   lines: { tokens: JamToken[] }[];
 };
 
+/** `startSec` is where the section begins in the video. */
 export type JamSection =
-  | { kind: "verse"; label: string; stanzas: JamStanza[] }
-  | { kind: "chorus" | "tag"; label: string; words: JamToken[] };
+  | { kind: "verse"; label: string; startSec: number; stanzas: JamStanza[] }
+  | { kind: "chorus" | "tag"; label: string; startSec: number; words: JamToken[] };
+
+export type JamVideo = { youtubeId: string; title: string };
 
 type Align = "start" | "center" | "end";
+type Seek = (sec: number) => void;
+
+const PLAYER_ORIGIN = "https://www.youtube-nocookie.com";
 
 const namaHref = (n: JamNama) => `/shloka/${n.moduleId}#nama-${n.index}`;
 
@@ -55,13 +61,49 @@ const VERSE_IAST = cn(
   "script-iast:text-lg script-iast:text-ink sm:script-iast:text-xl",
 );
 
-export function JamLyrics({ sections }: { sections: JamSection[] }) {
+export function JamSession({
+  video,
+  caption,
+  sections,
+}: {
+  video: JamVideo;
+  caption: ReactNode;
+  sections: JamSection[];
+}) {
   /** Token whose gloss is pinned open by a tap. */
   const [activeId, setActiveId] = useState<string | null>(null);
   const [meanings, setMeanings] = useState(true);
+  const playerRef = useRef<HTMLIFrameElement>(null);
+
+  // The embed's own message protocol (enabled by `enablejsapi=1`), which spares
+  // loading YouTube's iframe API script.
+  const seek: Seek = (sec) => {
+    const player = playerRef.current?.contentWindow;
+    const send = (func: string, args: unknown[] = []) =>
+      player?.postMessage(JSON.stringify({ event: "command", func, args }), PLAYER_ORIGIN);
+    send("seekTo", [sec, true]);
+    send("playVideo");
+  };
 
   return (
     <div>
+      <figure className="mb-10">
+        <div className="folio rounded-sm p-2 sm:p-2.5">
+          <div className="relative aspect-video overflow-hidden rounded-[1px] bg-surface-3">
+            <iframe
+              ref={playerRef}
+              src={`${PLAYER_ORIGIN}/embed/${video.youtubeId}?rel=0&enablejsapi=1`}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+        {caption}
+      </figure>
+
       <div className="z-30 -mx-4 mb-6 border-b border-line bg-surface-0/85 px-4 py-3 backdrop-blur-xl sm:sticky sm:top-0 sm:-mx-6 sm:px-6">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
           <div className="flex flex-wrap items-center gap-2">
@@ -83,7 +125,7 @@ export function JamLyrics({ sections }: { sections: JamSection[] }) {
               aria-label={section.label}
               className="folio rounded-sm px-5 py-4 sm:px-7 sm:py-5"
             >
-              <SectionLabel>{section.label}</SectionLabel>
+              <SectionHeader section={section} youtubeId={video.youtubeId} seek={seek} />
               <div className="divide-y divide-line">
                 {section.stanzas.map((stanza) => (
                   <Stanza
@@ -100,6 +142,9 @@ export function JamLyrics({ sections }: { sections: JamSection[] }) {
             <Refrain
               key={section.label}
               section={section}
+              header={
+                <SectionHeader section={section} youtubeId={video.youtubeId} seek={seek} centered />
+              }
               meanings={meanings}
               activeId={activeId}
               onToggle={setActiveId}
@@ -111,13 +156,55 @@ export function JamLyrics({ sections }: { sections: JamSection[] }) {
   );
 }
 
-function SectionLabel({ children, centered = false }: { children: ReactNode; centered?: boolean }) {
+function SectionHeader({
+  section,
+  youtubeId,
+  seek,
+  centered = false,
+}: {
+  section: JamSection;
+  youtubeId: string;
+  seek: Seek;
+  centered?: boolean;
+}) {
+  const time = formatTime(section.startSec);
+  const pill =
+    "inline-flex shrink-0 items-center gap-1.5 rounded-full border py-1 pl-2 pr-2.5 font-sans text-xs tabular-nums";
+
   return (
-    <h2 className="mb-3 flex items-center gap-3">
-      {centered && <span aria-hidden className="h-px flex-1 bg-gold/40" />}
-      <span className="display text-[1.35rem] italic leading-none text-ink">{children}</span>
+    <div className="mb-3 flex items-center gap-3">
+      {centered && (
+        <>
+          {/* Balances the play button so the label stays centred. */}
+          <span aria-hidden className={cn(pill, "invisible")}>
+            <Play size={10} />
+            {time}
+          </span>
+          <span aria-hidden className="h-px flex-1 bg-gold/40" />
+        </>
+      )}
+      <h2 className="display text-[1.35rem] italic leading-none text-ink">{section.label}</h2>
       <span aria-hidden className="h-px flex-1 bg-gold/40" />
-    </h2>
+      <a
+        href={`https://youtu.be/${youtubeId}?t=${section.startSec}`}
+        target="_blank"
+        rel="noreferrer"
+        onClick={(e) => {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          seek(section.startSec);
+        }}
+        aria-label={`Play the ${section.label.toLowerCase()} from ${time}`}
+        title={`Play from ${time} in the video`}
+        className={cn(
+          pill,
+          "border-line-strong bg-surface-0/70 text-ink-muted transition-colors hover:border-sindura/50 hover:text-sindura",
+        )}
+      >
+        <Play size={10} className="fill-current" aria-hidden />
+        {time}
+      </a>
+    </div>
   );
 }
 
@@ -210,11 +297,13 @@ function Stanza({
 
 function Refrain({
   section,
+  header,
   meanings,
   activeId,
   onToggle,
 }: {
   section: Extract<JamSection, { kind: "chorus" | "tag" }>;
+  header: ReactNode;
   meanings: boolean;
   activeId: string | null;
   onToggle: (id: string | null) => void;
@@ -231,7 +320,7 @@ function Refrain({
           : "border-gold/35 bg-gold/[0.05]",
       )}
     >
-      <SectionLabel centered>{section.label}</SectionLabel>
+      {header}
 
       <div className="space-y-3">
         {section.words.map((word) => {
