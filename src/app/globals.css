@@ -435,6 +435,28 @@ body:has([data-art-trigger]:hover) .shloka-art {
   animation: art-rise-in 200ms ease-in reverse forwards;
 }
 
+.nav-overlay[data-state="open"] {
+  animation: art-fade-in 250ms ease-out;
+}
+
+.nav-overlay[data-state="closed"] {
+  animation: art-fade-in 180ms ease-in reverse forwards;
+}
+
+.nav-drawer[data-state="open"] {
+  animation: nav-slide-in 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.nav-drawer[data-state="closed"] {
+  animation: nav-slide-in 180ms ease-in reverse forwards;
+}
+
+@keyframes nav-slide-in {
+  from {
+    transform: translateX(100%);
+  }
+}
+
 @keyframes art-fade-in {
   from {
     opacity: 0;
