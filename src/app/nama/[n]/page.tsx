@@ -9,7 +9,7 @@ import { HyphenatedText } from "@/components/hyphenated-text";
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
 import { Divider, SectionHeading } from "@/components/ornament";
 import { ShareBar } from "@/components/share-bar";
-import { ShlokaMiniature } from "@/components/shloka-art";
+import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
 import { getNama, getNamaIndex, type NamaIndexEntry } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 import { namaShare } from "@/lib/share";
@@ -308,14 +308,16 @@ export default async function NamaPage({ params }: { params: Promise<{ n: string
           </nav>
         </article>
 
-        <aside className="hidden lg:block">
-          <Link href={shlokaPath(mod.id)} className="sticky top-20 block">
-            <ShlokaMiniature id={mod.id} className="w-full" />
-            <p className="mt-3 text-center text-sm italic text-ink-faint">
-              {mod.subtitle ? `Shloka ${mod.number}: ${mod.subtitle}` : `Shloka ${mod.number}`}
-            </p>
-          </Link>
-        </aside>
+        {hasArtwork(mod.id) && (
+          <aside className="hidden lg:block">
+            <Link href={shlokaPath(mod.id)} className="sticky top-20 block">
+              <ShlokaMiniature id={mod.id} className="w-full" />
+              <p className="mt-3 text-center text-sm italic text-ink-faint">
+                {mod.subtitle ? `Shloka ${mod.number}: ${mod.subtitle}` : `Shloka ${mod.number}`}
+              </p>
+            </Link>
+          </aside>
+        )}
       </div>
     </div>
   );
