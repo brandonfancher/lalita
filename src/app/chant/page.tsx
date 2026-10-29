@@ -4,13 +4,16 @@ import { ChantSession, type ChantVerse } from "@/components/chant-session";
 import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
 import { getModulesInRange } from "@/lib/content";
 import { CHANT_RANGE_COOKIE, parseChantRange } from "@/lib/chant-range";
+import { pageMetadata } from "@/lib/metadata";
 import type { ChantTiming, StudyModule } from "@/lib/types";
 import { chantLabel } from "@/lib/utils";
 
-export const metadata = {
-  title: "Chant",
-  description: "Chant a contiguous range of shlokas, including the dhyāna as Shloka 0.",
-};
+export const metadata = pageMetadata({
+  title: "Chant Along with Audio, Shloka by Shloka",
+  description:
+    "Chant the Lalita Sahasranama with the recording: choose any range of shlokas, from the dhyānam onward, and follow the text as it plays, on loop, until you know it by heart.",
+  path: "/chant",
+});
 
 const MIN = 0;
 const MAX = 182;

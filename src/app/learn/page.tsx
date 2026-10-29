@@ -1,8 +1,14 @@
 import Link from "next/link";
 
 import { AlphabetSounds } from "@/components/alphabet-sounds";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = { title: "Learn Sanskrit" };
+export const metadata = pageMetadata({
+  title: "Sanskrit Pronunciation & Grammar for Chanting",
+  description:
+    "Learn the Sanskrit you need to chant the Lalita Sahasranama: the sound of every letter, with audio, and the grammar of the names, from the eight cases to compounds.",
+  path: "/learn",
+});
 
 export default function LearnPage() {
   return (

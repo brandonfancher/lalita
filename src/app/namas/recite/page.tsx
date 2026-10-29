@@ -6,13 +6,16 @@ import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import { getNamaIndex, type NamaIndexEntry } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
 import { namaPath } from "@/lib/site";
 import { chantLabel, cn } from "@/lib/utils";
 
-export const metadata = {
-  title: "Recite the thousand names",
-  description: "The thousand names as they are offered in worship: oṃ, the name, namaḥ.",
-};
+export const metadata = pageMetadata({
+  absoluteTitle: "Lalitha Sahasranama Namavali: All 1000 Names, Om … Namah, for Archana",
+  description:
+    "The Lalita Sahasranama nāmāvalī for pūjā and archana: all thousand names as they are offered in worship, each opened with oṃ and closed with namaḥ, in Devanagari and transliteration.",
+  path: "/namas/recite",
+});
 
 function byShloka(namas: NamaIndexEntry[]): { moduleId: string; namas: NamaIndexEntry[] }[] {
   const groups: { moduleId: string; namas: NamaIndexEntry[] }[] = [];
