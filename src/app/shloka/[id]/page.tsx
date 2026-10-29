@@ -65,6 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       description: `${mod.lines[0].deva} — the meditation verses (dhyāna ślokas) chanted before the Lalitha Sahasranamam, with audio, word-by-word meaning, and grammar.`,
       path: shlokaPath(id),
       type: "article",
+      ownCard: true,
     });
   }
 
@@ -74,6 +75,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     description: `${mod.lines[0].deva} (${plainSpelling(mod.lines[0].iast)}) — ${range ?? "the names"} of the Lalitha Sahasranamam, with chant audio, word-by-word meaning, grammar, and commentary.`,
     path: shlokaPath(id),
     type: "article",
+    ownCard: true,
   });
 }
 
