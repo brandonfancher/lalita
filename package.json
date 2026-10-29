@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "art:preview": "tsx scripts/art-preview.ts",
-    "scripts:check": "tsx scripts/check-scripts.ts"
+    "scripts:check": "tsx scripts/check-scripts.ts",
+    "icons:build": "tsx scripts/build-icons.ts"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",
