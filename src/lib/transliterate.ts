@@ -135,18 +135,22 @@ export type SpelledText = Spelling & { text: string; native?: string };
  */
 export function verseSpellings(lines: { deva: string; iast: string }[], number: number | null): SpelledText[] {
   const ids: SpellingId[] = ["deva", "iast", ...OTHER_SPELLINGS];
-  return ids.map((id) => {
-    const latin = SPELLINGS[id].lang === "sa-Latn";
-    const text = lines
-      .map((line, i) => {
-        const body = spell(id, line.deva, line.iast);
-        if (number === null) return body;
-        const last = i === lines.length - 1;
-        if (latin) return `${body} ${last ? `|| ${number} ||` : "|"}`;
-        return `${body} ${last ? `॥ ${spell(id, toDevanagariDigits(number), String(number))} ॥` : "।"}`;
-      })
-      .join("\n");
-    return { ...SPELLINGS[id], text, native: NATIVE_LABELS[id] };
+  return ids.map((id) => ({
+    ...SPELLINGS[id],
+    text: spellVerse(id, lines, number).join("\n"),
+    native: NATIVE_LABELS[id],
+  }));
+}
+
+/** A verse's lines in one spelling, each closed with its daṇḍa; null for the unnumbered dhyāna. */
+export function spellVerse(id: SpellingId, lines: { deva: string; iast: string }[], number: number | null): string[] {
+  const latin = SPELLINGS[id].lang === "sa-Latn";
+  return lines.map((line, i) => {
+    const body = spell(id, line.deva, line.iast);
+    if (number === null) return body;
+    const last = i === lines.length - 1;
+    if (latin) return `${body} ${last ? `|| ${number} ||` : "|"}`;
+    return `${body} ${last ? `॥ ${spell(id, toDevanagariDigits(number), String(number))} ॥` : "।"}`;
   });
 }
 
