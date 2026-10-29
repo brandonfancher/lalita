@@ -7,6 +7,7 @@
 
 import Sanscript from "@indic-transliteration/sanscript";
 
+import { bengaliConventions, devanagariToTamil, MEMBER_START, odiaConventions } from "./print-conventions";
 import { toDevanagariDigits } from "./utils";
 
 export type SpellingId =
@@ -20,7 +21,8 @@ export type SpellingId =
   | "malayalam"
   | "tamil"
   | "gujarati"
-  | "bengali";
+  | "bengali"
+  | "odia";
 
 export type Spelling = {
   id: SpellingId;
@@ -49,10 +51,21 @@ export const SPELLINGS: Record<SpellingId, Spelling> = {
     id: "tamil",
     label: "Tamil",
     lang: "sa-Taml",
-    note: "Tamil script has no letters for the aspirated and voiced stops, so several Sanskrit sounds share one letter here.",
+    note: "Tamil has one letter for each set of four stops, so the small numbers after a letter mark the aspirated and voiced sounds, as stotra books print them: க ka, க² kha, க³ ga, க⁴ gha.",
   },
   gujarati: { id: "gujarati", label: "Gujarati", lang: "sa-Gujr" },
-  bengali: { id: "bengali", label: "Bengali", lang: "sa-Beng" },
+  bengali: {
+    id: "bengali",
+    label: "Bengali",
+    lang: "sa-Beng",
+    note: "Bengali writes b and v with the same letter, ব, so check the IAST or the audio for which is meant.",
+  },
+  odia: {
+    id: "odia",
+    label: "Odia",
+    lang: "sa-Orya",
+    note: "Odia writes b and v with the same letter, ବ, except after a consonant, so check the IAST or the audio for which is meant.",
+  },
 };
 
 /** The order spellings are offered in, after Devanagari and IAST. */
@@ -66,6 +79,7 @@ export const OTHER_SPELLINGS: SpellingId[] = [
   "tamil",
   "gujarati",
   "bengali",
+  "odia",
 ];
 
 const PLAIN: Record<string, string> = {
@@ -100,8 +114,21 @@ export function plainSpelling(iast: string): string {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-/** Text in the given spelling, from its Devanagari and IAST forms. */
-export function spell(id: SpellingId, deva: string, iast: string): string {
+/**
+ * Text in the given spelling, from its Devanagari and IAST forms.
+ *
+ * `members` is the Devanagari with its compounds hyphenated. Some scripts
+ * spell a sound differently at the start of a word, and a compound member
+ * counts as one, so where it is given it marks those starts.
+ */
+export function spell(id: SpellingId, deva: string, iast: string, members?: string): string {
+  if (members && members.replaceAll("-", "") === deva) {
+    return convert(id, members.replaceAll("-", MEMBER_START), iast).replaceAll(MEMBER_START, "");
+  }
+  return convert(id, deva, iast);
+}
+
+function convert(id: SpellingId, deva: string, iast: string): string {
   switch (id) {
     case "deva":
       return deva;
@@ -111,7 +138,14 @@ export function spell(id: SpellingId, deva: string, iast: string): string {
       return plainSpelling(iast);
     case "tamil":
       // Tamil sources write śrī with ஸ, and searches follow them.
-      return Sanscript.t(deva, "devanagari", "tamil").replaceAll("ஶ்ரீ", "ஸ்ரீ");
+      return devanagariToTamil(deva).replaceAll("ஶ்ரீ", "ஸ்ரீ");
+    case "malayalam":
+      // Malayalam numerals have fallen out of use.
+      return Sanscript.t(deva, "devanagari", "malayalam").replace(/[൦-൯]/g, (d) => String(d.charCodeAt(0) - 0x0d66));
+    case "bengali":
+      return bengaliConventions(Sanscript.t(deva, "devanagari", "bengali"));
+    case "odia":
+      return odiaConventions(Sanscript.t(deva, "devanagari", "oriya"));
     default:
       return Sanscript.t(deva, "devanagari", id);
   }
@@ -125,6 +159,7 @@ export const NATIVE_LABELS: Partial<Record<SpellingId, string>> = {
   tamil: "தமிழ்",
   gujarati: "ગુજરાતી",
   bengali: "বাংলা",
+  odia: "ଓଡ଼ିଆ",
 };
 
 export type SpelledText = Spelling & { text: string; native?: string };
@@ -133,7 +168,7 @@ export type SpelledText = Spelling & { text: string; native?: string };
  * A verse in every spelling, line by line, closed with daṇḍas and the verse
  * number as printed editions do. Devanagari and IAST come first.
  */
-export function verseSpellings(lines: { deva: string; iast: string }[], number: number | null): SpelledText[] {
+export function verseSpellings(lines: VerseLine[], number: number | null): SpelledText[] {
   const ids: SpellingId[] = ["deva", "iast", ...OTHER_SPELLINGS];
   return ids.map((id) => ({
     ...SPELLINGS[id],
@@ -142,11 +177,16 @@ export function verseSpellings(lines: { deva: string; iast: string }[], number: 
   }));
 }
 
+type VerseLine = { deva: string; iast: string; tokens?: { deva: string; hyphenated?: { deva: string } }[] };
+
+/** A line's Devanagari with its compounds hyphenated, when the tokens say where they divide. */
+const lineMembers = (line: VerseLine) => line.tokens?.map((t) => t.hyphenated?.deva ?? t.deva).join(" ");
+
 /** A verse's lines in one spelling, each closed with its daṇḍa; null for the unnumbered dhyāna. */
-export function spellVerse(id: SpellingId, lines: { deva: string; iast: string }[], number: number | null): string[] {
+export function spellVerse(id: SpellingId, lines: VerseLine[], number: number | null): string[] {
   const latin = SPELLINGS[id].lang === "sa-Latn";
   return lines.map((line, i) => {
-    const body = spell(id, line.deva, line.iast);
+    const body = spell(id, line.deva, line.iast, lineMembers(line));
     if (number === null) return body;
     const last = i === lines.length - 1;
     if (latin) return `${body} ${last ? `|| ${number} ||` : "|"}`;

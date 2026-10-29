@@ -124,7 +124,7 @@ const QUESTIONS: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         Whichever you read most easily. The whole text is here in Devanagari, in transliteration, and in Telugu,
-        Kannada, Tamil, Malayalam, Gujarati and Bengali, and every shloka page lets you switch between them.
+        Kannada, Tamil, Malayalam, Gujarati, Bengali and Odia, and every shloka page lets you switch between them.
       </>
     ),
   },

@@ -12,7 +12,7 @@ const SHORT_NAMES: Record<string, string> = {
 /** A chip for each full-text page, labelled in the script itself. */
 export function ScriptLinks({ className }: { className?: string }) {
   return (
-    <ul className={cn("grid grid-cols-2 gap-2 sm:grid-cols-4", className)}>
+    <ul className={cn("grid grid-cols-3 gap-2", className)}>
       {SCRIPT_PAGES.map((s) => (
         <li key={s.slug}>
           <Link

@@ -121,7 +121,7 @@ export default function HomePage() {
         <SectionHeading eyebrow="Lipi">Read the whole stotram in your script</SectionHeading>
         <p className="mb-5 text-[1.075rem] leading-relaxed text-ink-muted">
           All 182 shlokas on one page, in Devanagari, English transliteration, Telugu, Kannada,
-          Tamil, Malayalam, Gujarati, or Bengali, each verse linked to its study page.
+          Tamil, Malayalam, Gujarati, Bengali, or Odia, each verse linked to its study page.
         </p>
         <ScriptLinks />
       </section>

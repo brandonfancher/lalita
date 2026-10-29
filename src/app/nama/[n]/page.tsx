@@ -32,7 +32,11 @@ function load(raw: string) {
 /** The form chanted in worship, with its frame: ॐ श्रीमात्रे नमः. */
 function mantra(nama: Nama) {
   if (!nama.namavaliDeva || !nama.namavaliIast) return null;
-  return { deva: `ॐ ${nama.namavaliDeva} नमः`, iast: `oṃ ${nama.namavaliIast} namaḥ` };
+  return {
+    deva: `ॐ ${nama.namavaliDeva} नमः`,
+    iast: `oṃ ${nama.namavaliIast} namaḥ`,
+    members: nama.namavaliHyphenated && `ॐ ${nama.namavaliHyphenated.deva} नमः`,
+  };
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ n: string }> }) {
@@ -288,9 +292,9 @@ export default async function NamaPage({ params }: { params: Promise<{ n: string
                         {s.label}
                       </dt>
                       <dd lang={s.lang} className={cn("min-w-0 text-[1.15rem] text-ink [overflow-wrap:anywhere]", s.lang === "sa-Latn" && "iast")}>
-                        {spell(id, nama.deva, nama.iast)}
+                        {spell(id, nama.deva, nama.iast, nama.hyphenated?.deva)}
                         {m && (
-                          <span className="block text-[0.9rem] text-ink-faint">{spell(id, m.deva, m.iast)}</span>
+                          <span className="block text-[0.9rem] text-ink-faint">{spell(id, m.deva, m.iast, m.members)}</span>
                         )}
                       </dd>
                     </div>

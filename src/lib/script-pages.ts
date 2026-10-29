@@ -82,6 +82,14 @@ export const SCRIPT_PAGES: ScriptPage[] = [
     stotraTitle: "শ্রী ললিতা সহস্রনাম স্তোত্রম্",
     searchTitle: "Lalita Sahasranama in Bengali",
   },
+  {
+    slug: "odia",
+    spelling: "odia",
+    name: "Odia",
+    native: "ଓଡ଼ିଆ",
+    stotraTitle: "ଶ୍ରୀ ଲଲିତା ସହସ୍ରନାମ ସ୍ତୋତ୍ରମ୍",
+    searchTitle: "Lalitha Sahasranamam in Odia (Oriya)",
+  },
 ];
 
 export const scriptPage = (slug: string) => SCRIPT_PAGES.find((s) => s.slug === slug);
