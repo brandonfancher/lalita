@@ -9,6 +9,7 @@ import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { NamaIndexEntry } from "@/lib/content";
+import { namaPath } from "@/lib/site";
 
 /**
  * Fold text for diacritic-insensitive search, so "sri" finds "śrī", and
@@ -73,7 +74,7 @@ export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
         {results.map((n) => (
           <li key={n.index} className="min-w-0 border-b border-line">
             <Link
-              href={`/shloka/${n.moduleId}`}
+              href={namaPath(n.index)}
               className="group flex gap-4 px-1 py-3.5 transition-colors hover:bg-surface-1/60 sm:px-2"
             >
               <span className="numerals w-10 shrink-0 pt-1 text-right text-lg text-sindura">

@@ -18,11 +18,13 @@
     "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "harfbuzzjs": "^1.6.4",
     "lucide-react": "^1.26.0",
     "motion": "^12.42.2",
     "next": "16.2.12",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

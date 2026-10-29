@@ -3,14 +3,21 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
+import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
 import { NamaList } from "@/components/nama-list";
 import { Divider, SectionHeading } from "@/components/ornament";
 import { ReferenceList } from "@/components/reference-list";
 import { ShlokaArt } from "@/components/shloka-art";
+import { ShareBar } from "@/components/share-bar";
 import { ShlokaNav, type NavEntry } from "@/components/shloka-nav";
 import { VerseReader } from "@/components/verse-reader";
+import { VerseText } from "@/components/verse-text";
 import { getAllModuleIds, getModule, getModuleSummaries, getNeighbours } from "@/lib/content";
-import type { ModuleSummary } from "@/lib/types";
+import { pageMetadata } from "@/lib/metadata";
+import { shlokaName, shlokaShare } from "@/lib/share";
+import { absoluteUrl, namaRangeLabel, shlokaPath } from "@/lib/site";
+import { plainSpelling, titleCase, verseSpellings } from "@/lib/transliterate";
+import type { ModuleSummary, StudyModule } from "@/lib/types";
 import { cn, toDevanagariDigits } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -41,15 +48,65 @@ const toEntry = (s: ModuleSummary): NavEntry => ({
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  let mod: StudyModule;
   try {
-    const mod = getModule(id);
-    return {
-      title: mod.subtitle ? `${mod.title} — ${mod.subtitle}` : mod.title,
-      description: mod.commentary.meaning?.slice(0, 160) || undefined,
-    };
+    mod = getModule(id);
   } catch {
     return { title: "Not found" };
   }
+
+  const firstLine = titleCase(mod.lines[0].iast);
+  const range = namaRangeLabel(mod.namaRange);
+
+  if (mod.number === null) {
+    return pageMetadata({
+      absoluteTitle: `Lalita Sahasranama Dhyanam: ${firstLine} — Meaning & Chant`,
+      shareTitle: `The dhyāna verses of the Lalitā Sahasranāma`,
+      description: `${mod.lines[0].deva} — the meditation verses (dhyāna ślokas) chanted before the Lalitha Sahasranamam, with audio, word-by-word meaning, and grammar.`,
+      path: shlokaPath(id),
+      type: "article",
+    });
+  }
+
+  return pageMetadata({
+    absoluteTitle: `Lalita Sahasranama Shloka ${mod.number}: ${firstLine} — Meaning & Chant`,
+    shareTitle: `Shloka ${mod.number} of the Lalitā Sahasranāma${mod.subtitle ? `: ${mod.subtitle}` : ""}`,
+    description: `${mod.lines[0].deva} (${plainSpelling(mod.lines[0].iast)}) — ${range ?? "the names"} of the Lalitha Sahasranamam, with chant audio, word-by-word meaning, grammar, and commentary.`,
+    path: shlokaPath(id),
+    type: "article",
+  });
+}
+
+/** What search engines read about the verse: its text in both scripts, its names, and where it sits. */
+function shlokaJsonLd(mod: StudyModule) {
+  const name = mod.number === null ? "Lalitā Sahasranāma: the dhyāna verses" : `Lalitā Sahasranāma, Shloka ${mod.number}`;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "@id": `${absoluteUrl(shlokaPath(mod.id))}#verse`,
+      name,
+      alternateName: mod.subtitle,
+      headline: mod.subtitle ?? name,
+      description: mod.commentary.meaning,
+      url: absoluteUrl(shlokaPath(mod.id)),
+      inLanguage: ["sa", "en"],
+      learningResourceType: ["verse", "translation", "commentary"],
+      educationalUse: ["chanting", "memorization", "study"],
+      text: `${mod.lines.map((l) => l.deva).join("\n")}\n\n${mod.lines.map((l) => l.iast).join("\n")}`,
+      position: mod.number ?? 0,
+      isPartOf: STOTRA,
+      teaches: mod.namas.map((n) => `${n.iast} (${n.deva}): ${n.gloss}`),
+    },
+    {
+      "@context": "https://schema.org",
+      ...breadcrumbs([
+        ["Lalitā Sahasranāma", "/"],
+        ["Shlokas", "/shlokas"],
+        [mod.number === null ? "Dhyāna" : `Shloka ${mod.number}`, shlokaPath(mod.id)],
+      ]),
+    },
+  ];
 }
 
 export default async function ShlokaPage({ params }: { params: Promise<{ id: string }> }) {
@@ -64,9 +121,12 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
 
   const { prev, next } = getNeighbours(id);
   const entries = getModuleSummaries().map(toEntry);
+  const share = shlokaShare(mod);
+  const spellings = verseSpellings(mod.lines, mod.number);
 
   return (
     <>
+      <JsonLd data={shlokaJsonLd(mod)} />
       <ShlokaNav currentId={mod.id} entries={entries} />
 
       <div className="relative">
@@ -81,22 +141,24 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
               {mod.number === null ? "ॐ" : toDevanagariDigits(mod.number)}
             </span>
             <span aria-hidden className="h-16 w-px shrink-0 bg-line-strong sm:h-20" />
-            <div className="min-w-0">
-              <p className="eyebrow text-ink-faint">
+            <h1 className="min-w-0">
+              <span className="eyebrow block text-ink-faint">
                 <span className="whitespace-nowrap">{mod.title}</span>
                 {mod.namaRange && (
                   <>
-                    <span className="mx-2 text-gold">◆</span>
+                    <span aria-hidden className="mx-2 text-gold">◆</span>
+                    <span className="sr-only">, </span>
                     <span className="whitespace-nowrap">
                       Names {mod.namaRange[0]}&ndash;{mod.namaRange[1]}
                     </span>
                   </>
                 )}
-              </p>
-              <h1 className="display mt-2 text-balance text-[2.1rem] italic leading-[1.08] text-ink sm:text-[3.25rem]">
+                <span className="sr-only">: </span>
+              </span>
+              <span className="display mt-2 block text-balance text-[2.1rem] italic leading-[1.08] text-ink sm:text-[3.25rem]">
                 {mod.subtitle ?? mod.title}
-              </h1>
-            </div>
+              </span>
+            </h1>
           </header>
 
           <VerseReader module={mod} chant={<ChantBar timing={mod.chant} label={mod.title} />} />
@@ -108,8 +170,23 @@ export default async function ShlokaPage({ params }: { params: Promise<{ id: str
                 <p className="text-[1.2rem] leading-[1.7] text-ink first-letter:float-left first-letter:mr-2.5 first-letter:mt-1 first-letter:font-serif first-letter:text-[3.6rem] first-letter:leading-[0.8] first-letter:text-sindura">
                   {mod.commentary.meaning}
                 </p>
+                <ShareBar share={share} label={`Share ${mod.number === null ? "the dhyāna" : "this shloka"}`} className="mt-7" />
               </section>
             )}
+
+            <section aria-labelledby="verse-text">
+              <SectionHeading eyebrow="Pāṭha" id="verse-text">
+                The verse as text
+              </SectionHeading>
+              <p className="mb-5 text-[1.05rem] leading-relaxed text-ink-muted">
+                To copy into your notes, print, or read in the script you grew up with. Every copy carries
+                a link back here.
+              </p>
+              <VerseText
+                spellings={spellings}
+                source={`${shlokaName(mod)} of the Lalitā Sahasranāma · ${absoluteUrl(shlokaPath(mod.id))}`}
+              />
+            </section>
 
             {mod.namas.length > 0 && (
               <section>

@@ -75,3 +75,12 @@ export function getNamaIndex(): NamaIndexEntry[] {
   }
   return namaIndexCache;
 }
+
+/** One of the thousand names in full, with the shloka it is chanted in. */
+export function getNama(index: number): { nama: Nama; module: StudyModule } | null {
+  const entry = getNamaIndex().find((n) => n.index === index);
+  if (!entry) return null;
+  const mod = getModule(entry.moduleId);
+  const nama = mod.namas.find((n) => n.index === index);
+  return nama ? { nama, module: mod } : null;
+}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
@@ -5,6 +6,7 @@ import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import { getNamaIndex, type NamaIndexEntry } from "@/lib/content";
+import { namaPath } from "@/lib/site";
 import { chantLabel, cn } from "@/lib/utils";
 
 export const metadata = {
@@ -69,10 +71,13 @@ function RecitedName({ nama }: { nama: NamaIndexEntry }) {
   const hyphenated = nama.namavaliIast ? nama.namavaliHyphenated : nama.hyphenated;
 
   return (
-    <li className="flex items-baseline gap-4 border-b border-line py-2.5">
-      <span className="numerals w-10 shrink-0 text-right text-lg text-sindura">
+    <li id={`nama-${nama.index}`} className="flex scroll-mt-20 items-baseline gap-4 border-b border-line py-2.5">
+      <Link
+        href={namaPath(nama.index)}
+        className="numerals w-10 shrink-0 text-right text-lg text-sindura hover:underline hover:decoration-sindura/50 hover:underline-offset-4"
+      >
         {nama.index}
-      </span>
+      </Link>
       <span className="min-w-0 flex-1">
         <FitText
           fitKey={deva}

@@ -4,6 +4,7 @@ import { EB_Garamond, Instrument_Sans, Tiro_Devanagari_Sanskrit } from "next/fon
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_NAME_PLAIN, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 /** EB Garamond covers the full IAST diacritic range (ṛ ṝ ḷ ṃ ḥ ś ṣ ñ ṅ ṭ ḍ ṇ). */
@@ -30,12 +31,15 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Lalitā Sahasranāma — a study",
-    template: "%s · Lalitā Sahasranāma",
+    default: `${SITE_NAME_PLAIN}: Learn, Study & Chant with Meaning`,
+    template: `%s · ${SITE_NAME_PLAIN}`,
   },
-  description:
-    "An interactive study of the Lalitā Sahasranāma: chant, translation, grammar, and background for all 182 shlokas.",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: { type: "website", siteName: SITE_NAME },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
