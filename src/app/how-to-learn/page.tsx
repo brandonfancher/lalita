@@ -3,12 +3,11 @@ import { ArrowRight } from "lucide-react";
 
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
 import { Divider, SectionHeading } from "@/components/ornament";
+import { ScriptLinks } from "@/components/script-links";
 import { ShareBar } from "@/components/share-bar";
 import { pageMetadata } from "@/lib/metadata";
-import { SCRIPT_PAGES } from "@/lib/script-pages";
 import { pageShare } from "@/lib/share";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
-import { SPELLINGS } from "@/lib/transliterate";
 
 const PATH = "/how-to-learn";
 const TITLE = "How to Learn and Chant the Lalita Sahasranama, Step by Step";
@@ -210,25 +209,7 @@ export default function HowToLearnPage() {
         <p className="mb-5 text-[1.075rem] leading-relaxed text-ink-muted">
           The complete stotram on one page, every verse linked to its study page.
         </p>
-        <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          {SCRIPT_PAGES.map((s) => (
-            <li key={s.slug}>
-              <Link
-                href={`/text/${s.slug}`}
-                className="block rounded-sm border border-line-strong px-3 py-2.5 text-center transition-colors hover:border-sindura/60 hover:bg-surface-1"
-              >
-                {s.native && (
-                  <span lang={SPELLINGS[s.spelling].lang} className={s.spelling === "deva" ? "deva block text-lg text-ink" : "block text-lg text-ink"}>
-                    {s.native}
-                  </span>
-                )}
-                <span className="block font-sans text-[13px] text-ink-muted">
-                  {s.slug === "english" ? "English" : s.slug === "sanskrit" ? "Sanskrit / Hindi" : s.name}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <ScriptLinks />
       </section>
 
       <Divider className="my-14" />
