@@ -2,8 +2,22 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { HyphenatedText } from "@/components/hyphenated-text";
-import { Divider, YantraMark } from "@/components/ornament";
+import { JsonLd, STOTRA, WEBSITE } from "@/components/json-ld";
+import { Divider, SectionHeading, YantraMark } from "@/components/ornament";
+import { ScriptLinks } from "@/components/script-links";
+import { ShareBar } from "@/components/share-bar";
 import { getModuleSummaries } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
+import { pageShare } from "@/lib/share";
+import { SITE_DESCRIPTION, SITE_NAME_PLAIN } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  absoluteTitle: `${SITE_NAME_PLAIN} (Lalitha Sahasranamam): Learn, Study & Chant`,
+  shareTitle: "Lalitā Sahasranāma: learn, study, and chant the thousand names",
+  description: SITE_DESCRIPTION,
+  path: "/",
+  ownCard: true,
+});
 
 export default function HomePage() {
   const all = getModuleSummaries();
@@ -13,21 +27,26 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
+      <JsonLd data={[WEBSITE, STOTRA]} />
       <section className="text-center">
         <YantraMark size={56} className="mx-auto mb-6 text-sindura" />
         <p className="deva text-[1.6rem] text-ink sm:text-[2.1rem]">
           श्रीललितासहस्रनामस्तोत्रम्
         </p>
         <p className="eyebrow mt-4 text-sindura">The thousand names of the Divine Mother</p>
-        <h1 className="display mx-auto mt-3 max-w-3xl text-[3.25rem] leading-[1] text-ink sm:text-[5.5rem]">
-          Lalitā Sahasranāma
+        <h1 className="mx-auto mt-3 max-w-3xl">
+          <span className="display block text-[3.25rem] leading-[1] text-ink sm:text-[5.5rem]">
+            Lalitā Sahasranāma
+          </span>
+          <span className="sr-only">: </span>
+          <span className="display mt-3 block text-balance text-2xl italic text-ink-muted sm:text-[1.9rem]">
+            learned, studied, and chanted one shloka at a time
+          </span>
         </h1>
-        <p className="display mt-3 text-2xl italic text-ink-muted sm:text-[1.9rem]">
-          studied one shloka at a time
-        </p>
         <p className="mx-auto mt-6 max-w-xl text-[1.1rem] leading-relaxed text-ink-muted">
-          Chant each verse with the recording, read it in both scripts, take apart every
-          name, and learn Sanskrit through the text itself.
+          The hymn of the thousand names of the Divine Mother, often written Lalitha
+          Sahasranamam. Chant each verse with the recording, read it in both scripts, take apart
+          every name, and learn Sanskrit through the text itself.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3 font-sans">
@@ -47,6 +66,13 @@ export default function HomePage() {
             Browse all {shlokas.length} shlokas
           </Link>
         </div>
+        <Link
+          href="/how-to-learn"
+          className="group mt-6 inline-flex items-center gap-1.5 text-[1.05rem] italic text-ink-muted underline decoration-line-strong underline-offset-4 transition-colors hover:text-sindura"
+        >
+          New to it? How to learn it, step by step
+          <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+        </Link>
       </section>
 
       <Divider className="mx-auto my-16 max-w-md" />
@@ -90,6 +116,26 @@ export default function HomePage() {
           )}
         </Link>
       )}
+
+      <section className="mx-auto mt-20 max-w-3xl">
+        <SectionHeading eyebrow="Lipi">Read the whole stotram in your script</SectionHeading>
+        <p className="mb-5 text-[1.075rem] leading-relaxed text-ink-muted">
+          All 182 shlokas on one page, in Devanagari, English transliteration, Telugu, Kannada,
+          Tamil, Malayalam, Gujarati, Bengali, or Odia, each verse linked to its study page.
+        </p>
+        <ScriptLinks />
+      </section>
+
+      <ShareBar
+        className="mx-auto mt-16 max-w-3xl justify-center"
+        label="Share this site"
+        share={pageShare(
+          "home",
+          "/",
+          "Lalitā Sahasranāma",
+          "Learn to chant the thousand names of the Divine Mother one shloka at a time, with the recording, the meaning of every name, and the text in your own script:",
+        )}
+      />
     </div>
   );
 }

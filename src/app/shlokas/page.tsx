@@ -1,11 +1,19 @@
 import Link from "next/link";
 
 import { HyphenatedText } from "@/components/hyphenated-text";
+import { ShareBar } from "@/components/share-bar";
 import { getModuleSummaries } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
+import { pageShare } from "@/lib/share";
 import type { ModuleSummary } from "@/lib/types";
 import { toDevanagariDigits } from "@/lib/utils";
 
-export const metadata = { title: "All shlokas" };
+export const metadata = pageMetadata({
+  absoluteTitle: "Lalitha Sahasranamam Lyrics: All 182 Shlokas with Meaning",
+  description:
+    "Every shloka of the Lalita Sahasranama in order, from the dhyānam to verse 182, in Devanagari and English transliteration. Each opens to its own page with chant audio, word-by-word meaning, and commentary.",
+  path: "/shlokas",
+});
 
 export default function ShlokasPage() {
   const all = getModuleSummaries();
@@ -17,12 +25,22 @@ export default function ShlokasPage() {
       <header className="mb-10 max-w-2xl">
         <p className="eyebrow text-sindura">Sūcī &middot; Contents</p>
         <h1 className="display mt-2 text-[2.6rem] leading-tight text-ink sm:text-[3.25rem]">
-          The shlokas
+          The shlokas of the Lalitā Sahasranāma
         </h1>
         <p className="mt-3 text-[1.1rem] leading-relaxed text-ink-muted">
           The meditation verses first, then each of the 182 shlokas of the stotra, in the order they
-          are chanted.
+          are chanted. Every verse opens to its own page, with the recording, the meaning of each
+          word and name, and its grammar.
         </p>
+        <ShareBar
+          className="mt-5"
+          share={pageShare(
+            "contents",
+            "/shlokas",
+            "The shlokas of the Lalitā Sahasranāma",
+            "All 182 verses in order, each with the recording, its meaning, and its grammar:",
+          )}
+        />
       </header>
 
       {dhyana.length > 0 && (

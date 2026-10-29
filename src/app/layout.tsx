@@ -1,9 +1,10 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { EB_Garamond, Instrument_Sans, Tiro_Devanagari_Sanskrit } from "next/font/google";
+import { EB_Garamond, Instrument_Sans, Noto_Sans_Oriya, Tiro_Devanagari_Sanskrit } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_NAME_PLAIN, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 /** EB Garamond covers the full IAST diacritic range (ṛ ṝ ḷ ṃ ḥ ś ṣ ñ ṅ ṭ ḍ ṇ). */
@@ -23,6 +24,18 @@ const tiro = Tiro_Devanagari_Sanskrit({
   display: "swap",
 });
 
+/**
+ * Older system fonts misdraw Odia conjuncts like ର୍ତି, so Odia brings its
+ * own. Not preloaded: browsers fetch it only when Odia text is on screen.
+ */
+const odia = Noto_Sans_Oriya({
+  variable: "--font-odia",
+  subsets: ["oriya"],
+  weight: "400",
+  preload: false,
+  display: "swap",
+});
+
 const instrumentSans = Instrument_Sans({
   variable: "--font-ui",
   subsets: ["latin", "latin-ext"],
@@ -30,12 +43,15 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Lalitā Sahasranāma — a study",
-    template: "%s · Lalitā Sahasranāma",
+    default: `${SITE_NAME_PLAIN}: Learn, Study & Chant with Meaning`,
+    template: `%s · ${SITE_NAME_PLAIN}`,
   },
-  description:
-    "An interactive study of the Lalitā Sahasranāma: chant, translation, grammar, and background for all 182 shlokas.",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: { type: "website", siteName: SITE_NAME },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
@@ -66,7 +82,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${garamond.variable} ${tiro.variable} ${instrumentSans.variable} antialiased`}
+        className={`${garamond.variable} ${tiro.variable} ${instrumentSans.variable} ${odia.variable} antialiased`}
       >
         <div className="relative z-10 flex min-h-dvh flex-col">
           <SiteHeader />

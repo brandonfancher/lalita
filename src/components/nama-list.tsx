@@ -1,12 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
+import { namaPath } from "@/lib/site";
 import type { Nama } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";
 
@@ -50,9 +52,13 @@ export function NamaList({ namas }: { namas: Nama[] }) {
             )}
           >
             <div className="group relative flex w-full items-start gap-4 px-2 py-4 transition-colors hover:bg-surface-1/60 sm:px-3">
-              <span className="numerals w-10 shrink-0 pt-1.5 text-right font-serif text-lg text-sindura">
+              <Link
+                href={namaPath(nama.index)}
+                aria-label={`Name ${nama.index}, ${nama.iast}: its own page`}
+                className="numerals relative z-10 w-10 shrink-0 pt-1.5 text-right font-serif text-lg text-sindura underline decoration-transparent underline-offset-4 transition-colors hover:decoration-sindura/60"
+              >
                 {nama.index}
-              </span>
+              </Link>
               <span className="min-w-0 flex-1">
                 <span
                   data-fit-container
@@ -121,6 +127,14 @@ export function NamaList({ namas }: { namas: Nama[] }) {
                   <h4 className="eyebrow mb-2 text-ink-faint">Syllables</h4>
                   <AksaraStrip aksaras={nama.aksaras} />
                 </div>
+
+                <Link
+                  href={namaPath(nama.index)}
+                  className="group/link inline-flex items-center gap-1.5 font-sans text-[13px] font-medium tracking-wide text-sindura hover:text-sindura-soft"
+                >
+                  The page for {nama.iast}, to study or share
+                  <ArrowRight size={14} className="transition-transform group-hover/link:translate-x-0.5" />
+                </Link>
 
                 {nama.namavaliIast && (
                   <p className="border-t border-line pt-3 text-[15px] text-ink-faint">

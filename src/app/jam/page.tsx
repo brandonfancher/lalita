@@ -7,13 +7,15 @@ import {
 } from "@/components/jam-session";
 import { getModule, getNamaIndex, type NamaIndexEntry } from "@/lib/content";
 import { JAM_SONG, JAM_VIDEO, type SungShloka, type SungWord } from "@/lib/jam-song";
+import { pageMetadata } from "@/lib/metadata";
 import type { Token } from "@/lib/types";
 
-export const metadata = {
-  title: "Jam",
+export const metadata = pageMetadata({
+  title: "Sing the Names: a Kirtan to Lalitā",
   description:
     "Learn a kīrtan to Lalitā built from the Sahasranāma: sing along with the video, with every name glossed and linked to its shloka.",
-};
+  path: "/jam",
+});
 
 function toJamNama(entry: NamaIndexEntry): JamNama {
   return { index: entry.index, deva: entry.deva, iast: entry.iast, gloss: entry.gloss, moduleId: entry.moduleId };
