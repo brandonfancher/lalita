@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { EB_Garamond, Instrument_Sans, Tiro_Devanagari_Sanskrit } from "next/font/google";
+import { EB_Garamond, Instrument_Sans, Noto_Sans_Oriya, Tiro_Devanagari_Sanskrit } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -21,6 +21,18 @@ const tiro = Tiro_Devanagari_Sanskrit({
   subsets: ["devanagari", "latin"],
   weight: "400",
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+/**
+ * Older system fonts misdraw Odia conjuncts like ର୍ତି, so Odia brings its
+ * own. Not preloaded: browsers fetch it only when Odia text is on screen.
+ */
+const odia = Noto_Sans_Oriya({
+  variable: "--font-odia",
+  subsets: ["oriya"],
+  weight: "400",
+  preload: false,
   display: "swap",
 });
 
@@ -70,7 +82,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${garamond.variable} ${tiro.variable} ${instrumentSans.variable} antialiased`}
+        className={`${garamond.variable} ${tiro.variable} ${instrumentSans.variable} ${odia.variable} antialiased`}
       >
         <div className="relative z-10 flex min-h-dvh flex-col">
           <SiteHeader />

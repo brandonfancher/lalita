@@ -147,6 +147,34 @@ body::after {
   overflow-wrap: anywhere;
 }
 
+/*
+ * Sanskrit in the regional scripts uses the reader's own system fonts, named
+ * outright: left to fall back from Garamond, some browsers settle on a font
+ * that claims a script but cannot draw it. Noto covers Android and Linux,
+ * the Sangam fonts Apple, Nirmala UI Windows.
+ */
+[lang="sa-Telu"] {
+  font-family: "Noto Sans Telugu", "Telugu Sangam MN", "Nirmala UI", Gautami, sans-serif;
+}
+[lang="sa-Knda"] {
+  font-family: "Noto Sans Kannada", "Kannada Sangam MN", "Nirmala UI", Tunga, sans-serif;
+}
+[lang="sa-Mlym"] {
+  font-family: "Noto Sans Malayalam", "Malayalam Sangam MN", "Nirmala UI", Kartika, sans-serif;
+}
+[lang="sa-Taml"] {
+  font-family: "Noto Serif Tamil", "Noto Sans Tamil", "Tamil Sangam MN", "Nirmala UI", Latha, sans-serif;
+}
+[lang="sa-Gujr"] {
+  font-family: "Noto Sans Gujarati", "Gujarati Sangam MN", "Nirmala UI", Shruti, sans-serif;
+}
+[lang="sa-Beng"] {
+  font-family: "Noto Sans Bengali", "Bangla Sangam MN", "Nirmala UI", Vrinda, sans-serif;
+}
+[lang="sa-Orya"] {
+  font-family: var(--font-odia), "Noto Sans Oriya", "Oriya Sangam MN", "Nirmala UI", Kalinga, sans-serif;
+}
+
 .iast {
   font-family: var(--font-garamond), Georgia, serif;
   font-variant-ligatures: none;
