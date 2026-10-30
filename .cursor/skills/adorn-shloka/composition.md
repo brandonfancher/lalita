@@ -54,8 +54,9 @@ compose within it.
   thread") wraps the same way. Shloka 13's ("Gold on the arms, pearls at the throat") stays on one
   line and reaches x ≈ 244 (x ≈ 296 at 1100px) at y ≈ 73–140. Shloka 14's ("A stake laid down, and
   a creeper in the garden") stays on one line but reaches x ≈ 418 at y ≈ 73–142, and x ≈ 470 at
-  1100px, which leaves only the band y ≈ 142–184 above the card. Look at the first render to see
-  where the card really sits.
+  1100px, which leaves only the band y ≈ 142–184 above the card. Shloka 15's ("A waist arrived at
+  by argument") stays on one line and reaches only x ≈ 143 at y ≈ 81–137. Look at the first render
+  to see where the card really sits.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.
 - **Plate caption:** a button centred beneath the artwork at y ≈ 824 on screens ≥ 1280px.

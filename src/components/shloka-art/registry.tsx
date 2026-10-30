@@ -13,6 +13,7 @@ import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
+import { WhatItHoldsUp } from "./what-it-holds-up";
 import { WholeImage } from "./whole-image";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -577,6 +578,41 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           There is also a small detail for the attentive: one bud hangs from the creeper just below the card. Śaṅkara (Saundaryalaharī 78) sees the same creeper and calls the pair its buds; this hymn calls them its
           fruit. It is the same plant, a season apart.
+        </>
+      ),
+    },
+  },
+  "015": {
+    Art: WhatItHoldsUp,
+    intro: (Spot) => (
+      <>
+        The first name is an argument, not a description, and the artwork is built the same way: her waist is never
+        drawn. Everything here is wrapped round it, and wherever anything passes behind it, it disappears. Inside
+        there is only <Spot part="support">her light</Spot>, and above is the <Spot part="weight">weight it carries</Spot>.
+        Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 35,
+        part: "creeper",
+        depicts:
+          "The creeper of down from the last verse climbs in a spiral round an upright that isn't there. Its turns vanish wherever they would pass behind it, so the eye can tell exactly where it must stand.",
+      },
+      {
+        nama: 36,
+        part: "splint",
+        depicts:
+          "Three bands of red silk are tied round the same emptiness, as a splint is tied round a break, and the turns of the creeper crowd together between them. Their gold borders are a royal band's, because paṭṭa means both the bandage and the cloth tied on at a coronation.",
+      },
+    ],
+    detail: {
+      part: "sky-thread",
+      body: (
+        <>
+          There is also a small detail for the attentive: a hair-fine dark ripple runs down the middle of the hollow.
+          Śaṅkara (Saundaryalaharī 77) says the faint something that discerning eyes make out at her waist is the sky,
+          squeezed to a thread as thin as the smallest ripple on the Yamunā.
         </>
       ),
     },

@@ -1002,7 +1002,7 @@ export function diamond({ x, y, r }: Pt & { r: number }) {
 
 /* ── Growing things ────────────────────────────────────────────────────── */
 
-const polyline = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
+export const polyline = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
 
 /** A filled shape of varying width along a centre line, so a stroke can taper. */
 export function taper(pts: Pt[], width: (t: number) => number) {
@@ -1020,6 +1020,124 @@ export function taper(pts: Pt[], width: (t: number) => number) {
     right.push({ x: round(p.x - nx * w), y: round(p.y - ny * w) });
   });
   return polyline(left) + " " + polyline([...right].reverse()).replace(/^M/, "L") + " Z";
+}
+
+/** A smooth curve through `pts` (Catmull-Rom), sampled `per` times between each pair. */
+export function through(pts: Pt[], per = 16): Pt[] {
+  const out: Pt[] = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)];
+    const p1 = pts[i];
+    const p2 = pts[i + 1];
+    const p3 = pts[Math.min(pts.length - 1, i + 2)];
+    for (let k = 0; k < per; k++) {
+      const t = k / per;
+      const f = (a: number, b: number, c: number, d: number) =>
+        0.5 * (2 * b + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t * t + (-a + 3 * b - 3 * c + d) * t * t * t);
+      out.push({ x: round(f(p0.x, p1.x, p2.x, p3.x)), y: round(f(p0.y, p1.y, p2.y, p3.y)) });
+    }
+  }
+  out.push(pts[pts.length - 1]);
+  return out;
+}
+
+/** A point on a curve, with the direction of travel there (degrees, SVG) and how far along it lies. */
+export type Mark = Pt & { angle: number; s: number };
+
+/** Points every `step` units along a sampled curve, starting `from` units in. */
+export function along(pts: Pt[], step: number, from = 0): Mark[] {
+  const out: Mark[] = [];
+  let s = 0;
+  let next = from;
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1];
+    const b = pts[i];
+    const d = Math.hypot(b.x - a.x, b.y - a.y);
+    while (next <= s + d) {
+      const t = d ? (next - s) / d : 0;
+      out.push({
+        x: round(a.x + (b.x - a.x) * t),
+        y: round(a.y + (b.y - a.y) * t),
+        angle: round((Math.atan2(b.y - a.y, b.x - a.x) * 180) / Math.PI),
+        s: next,
+      });
+      next += step;
+    }
+    s += d;
+  }
+  return out;
+}
+
+/* ── The creeper of down (romāli-latā) ─────────────────────────────────── */
+
+const CREEPER_LEAF = "M 4 0 C 4 -6 9 -10 15 -8.5 C 20 -7 23 -3 27 0 C 23 3 20 7 15 8.5 C 9 10 4 6 4 0 Z";
+const CREEPER_LEAF_RIB = "M 0 0 L 4 0 Q 14 -0.6 25 0";
+const CREEPER_LEAF_VEINS = "M 10 -0.3 L 14 -5 M 16 -0.3 L 20 -4 M 10 0.3 L 14 5 M 16 0.3 L 20 4";
+
+/** One of the creeper's heart-based pointed leaves, on a short stalk from (x, y), pointing `turn` degrees. */
+export function CreeperLeaf({ x, y, turn, scale }: Pt & { turn: number; scale: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${turn}) scale(${scale})`}>
+      <path d={CREEPER_LEAF} fill="var(--leaf)" />
+      <path d={CREEPER_LEAF_RIB} stroke="var(--gold-soft)" strokeWidth={0.6} />
+      <path d={CREEPER_LEAF_VEINS} stroke="var(--gold-soft)" strokeWidth={0.4} strokeOpacity={0.8} />
+    </g>
+  );
+}
+
+/** A tendril leaving the creeper at `p` and coiling to one side. Stroke it 1 wide in `--art-hair`. */
+export function creeperTendril(p: Mark, side: 1 | -1, r0: number, turns: number) {
+  const out = ((p.angle + side * 55) * Math.PI) / 180;
+  const c = { x: p.x + Math.cos(out) * r0 * 1.6, y: p.y + Math.sin(out) * r0 * 1.6 };
+  const start = Math.atan2(p.y - c.y, p.x - c.x);
+  const n = 48;
+  return polyline(
+    Array.from({ length: n + 1 }, (_, i) => {
+      const t = i / n;
+      const r = r0 * 1.6 * (1 - 0.82 * t ** 0.7);
+      const a = start + side * t * turns * 2 * Math.PI;
+      return { x: round(c.x + Math.cos(a) * r), y: round(c.y + Math.sin(a) * r) };
+    }),
+  );
+}
+
+/** The radius of each of the creeper's pair of fruit (phala-kuca-dvayī). */
+export const FRUIT_R = 15;
+
+/** The fruit's colour and its blush, as `id("fruit")` and `id("blush")`. */
+export function FruitGradients({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <radialGradient id={id("fruit")} cx="0.36" cy="0.3" r="0.78">
+        <stop offset="0" style={{ stopColor: "var(--art-core)" }} />
+        <stop offset="0.55" style={{ stopColor: "var(--art-turmeric)" }} />
+        <stop offset="0.9" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
+      </radialGradient>
+      <radialGradient id={id("blush")} cx="0.78" cy="0.7" r="0.55">
+        <stop offset="0" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.7 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+/** One of the pair of fruit, centred on (x, y), its stalk going in at `stalkTop`. Needs `FruitGradients` in the defs. */
+export function Fruit({ x, y, stalkTop, url }: Pt & { stalkTop: Pt; url: (name: string) => string }) {
+  return (
+    <g>
+      <ellipse cx={x} cy={y + 0.5} rx={FRUIT_R + 0.8} ry={FRUIT_R - 0.5} fill={url("fruit")} stroke="var(--gold)" strokeWidth={1} />
+      <ellipse cx={x} cy={y + 0.5} rx={FRUIT_R + 0.8} ry={FRUIT_R - 0.5} fill={url("blush")} />
+      <path
+        d={`M ${round(x - 9)} ${round(y - 3)} A 11 11 0 0 1 ${round(x - 2)} ${round(y - 10.5)}`}
+        stroke="var(--art-ivory)"
+        strokeWidth={1.4}
+        strokeLinecap="round"
+        strokeOpacity={0.75}
+      />
+      <ellipse cx={stalkTop.x} cy={stalkTop.y + 0.6} rx={2.2} ry={1} fill="var(--art-saffron)" />
+    </g>
+  );
 }
 
 /* ── Her face as a mirror ──────────────────────────────────────────────── */
