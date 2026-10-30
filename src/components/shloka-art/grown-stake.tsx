@@ -11,58 +11,32 @@
  * written up for readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, diamond, Flash, glint, litPart, partProps, round, swingFrom, taper } from "./primitives";
+import {
+  along,
+  artIds,
+  CreeperLeaf,
+  creeperTendril,
+  diamond,
+  Flash,
+  Fruit,
+  FRUIT_R,
+  FruitGradients,
+  glint,
+  litPart,
+  partProps,
+  polyline,
+  round,
+  swingFrom,
+  taper,
+  through,
+} from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
-type Mark = Pt & { angle: number; s: number };
 
 const CX = 320;
 
-/** A smooth curve through `pts` (Catmull-Rom), sampled `per` times between each pair. */
-function through(pts: Pt[], per = 16): Pt[] {
-  const out: Pt[] = [];
-  for (let i = 0; i < pts.length - 1; i++) {
-    const p0 = pts[Math.max(0, i - 1)];
-    const p1 = pts[i];
-    const p2 = pts[i + 1];
-    const p3 = pts[Math.min(pts.length - 1, i + 2)];
-    for (let k = 0; k < per; k++) {
-      const t = k / per;
-      const f = (a: number, b: number, c: number, d: number) =>
-        0.5 * (2 * b + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t * t + (-a + 3 * b - 3 * c + d) * t * t * t);
-      out.push({ x: round(f(p0.x, p1.x, p2.x, p3.x)), y: round(f(p0.y, p1.y, p2.y, p3.y)) });
-    }
-  }
-  out.push(pts[pts.length - 1]);
-  return out;
-}
-
-const line = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
-
-/** Points every `step` units along a sampled curve, with the direction of travel there (degrees, SVG). */
-function along(pts: Pt[], step: number, from = 0): Mark[] {
-  const out: Mark[] = [];
-  let s = 0;
-  let next = from;
-  for (let i = 1; i < pts.length; i++) {
-    const a = pts[i - 1];
-    const b = pts[i];
-    const d = Math.hypot(b.x - a.x, b.y - a.y);
-    while (next <= s + d) {
-      const t = d ? (next - s) / d : 0;
-      out.push({
-        x: round(a.x + (b.x - a.x) * t),
-        y: round(a.y + (b.y - a.y) * t),
-        angle: round((Math.atan2(b.y - a.y, b.x - a.x) * 180) / Math.PI),
-        s: next,
-      });
-      next += step;
-    }
-    s += d;
-  }
-  return out;
-}
+const line = polyline;
 
 /* ── The garden: the basin, its water, and her light ───────────────────── */
 
@@ -126,35 +100,16 @@ const MARKS = along(VINE, 1);
 const at = (s: number) => MARKS[Math.min(MARKS.length - 1, Math.round(s))];
 const VINE_LEN = MARKS.length - 1;
 
-/** A heart-based pointed leaf on a short stalk, from the origin along +x. */
-const LEAF = "M 4 0 C 4 -6 9 -10 15 -8.5 C 20 -7 23 -3 27 0 C 23 3 20 7 15 8.5 C 9 10 4 6 4 0 Z";
-const LEAF_RIB = "M 0 0 L 4 0 Q 14 -0.6 25 0";
-const LEAF_VEINS = "M 10 -0.3 L 14 -5 M 16 -0.3 L 20 -4 M 10 0.3 L 14 5 M 16 0.3 L 20 4";
 const LEAVES = along(VINE, 23, 26)
   .filter((p) => p.s < VINE_LEN - 30 && (p.s < 180 || p.s > 232))
   .map((p, k) => ({ ...p, turn: round(p.angle + (k % 2 ? 62 : -62)), scale: round(1.25 - (p.s / VINE_LEN) * 0.4) }));
 
-/** A tendril leaving the vine at `p` and coiling to one side. */
-function tendril(p: Mark, side: 1 | -1, r0: number, turns: number) {
-  const out = ((p.angle + side * 55) * Math.PI) / 180;
-  const c = { x: p.x + Math.cos(out) * r0 * 1.6, y: p.y + Math.sin(out) * r0 * 1.6 };
-  const start = Math.atan2(p.y - c.y, p.x - c.x);
-  const n = 48;
-  return line(
-    Array.from({ length: n + 1 }, (_, i) => {
-      const t = i / n;
-      const r = r0 * 1.6 * (1 - 0.82 * t ** 0.7);
-      const a = start + side * t * turns * 2 * Math.PI;
-      return { x: round(c.x + Math.cos(a) * r), y: round(c.y + Math.sin(a) * r) };
-    }),
-  );
-}
 const TENDRILS = [
-  tendril(at(64), 1, 6, 1.7),
-  tendril(at(150), -1, 5.5, 1.6),
-  tendril(at(300), 1, 5, 1.8),
-  tendril(at(420), -1, 5, 1.6),
-  tendril(at(520), -1, 4.5, 1.5),
+  creeperTendril(at(64), 1, 6, 1.7),
+  creeperTendril(at(150), -1, 5.5, 1.6),
+  creeperTendril(at(300), 1, 5, 1.8),
+  creeperTendril(at(420), -1, 5, 1.6),
+  creeperTendril(at(520), -1, 4.5, 1.5),
 ];
 
 /** Śaṅkara's bud (mukula), hanging on a short stalk where the vine climbs the card's side. */
@@ -223,7 +178,6 @@ const DICE = [
 ];
 
 /** Her side: the two fruit, where the creeper lays them down. */
-const FRUIT_R = 15;
 const FRUITS = [
   { x: 306, y: 161 },
   { x: 340, y: 166 },
@@ -294,16 +248,7 @@ export function GrownStake({ idPrefix = "sa14", active = null }: ArtProps) {
           <stop offset="0.55" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.18 }} />
           <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("fruit")} cx="0.36" cy="0.3" r="0.78">
-          <stop offset="0" style={{ stopColor: "var(--art-core)" }} />
-          <stop offset="0.55" style={{ stopColor: "var(--art-turmeric)" }} />
-          <stop offset="0.9" style={{ stopColor: "var(--art-saffron)" }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
-        </radialGradient>
-        <radialGradient id={id("blush")} cx="0.78" cy="0.7" r="0.55">
-          <stop offset="0" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.7 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
-        </radialGradient>
+        <FruitGradients id={id} />
         <linearGradient id={id("furrow-fade")} x1={BASIN.x - 280} y1={0} x2={BASIN.x + 280} y2={0} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--gold-soft)", stopOpacity: 0 }} />
           <stop offset="0.3" style={{ stopColor: "var(--gold-soft)", stopOpacity: 1 }} />
@@ -397,11 +342,7 @@ export function GrownStake({ idPrefix = "sa14", active = null }: ArtProps) {
           ))}
         </g>
         {LEAVES.map((l, i) => (
-          <g key={i} transform={`translate(${l.x} ${l.y}) rotate(${l.turn}) scale(${l.scale})`}>
-            <path d={LEAF} fill="var(--leaf)" />
-            <path d={LEAF_RIB} stroke="var(--gold-soft)" strokeWidth={0.6} />
-            <path d={LEAF_VEINS} stroke="var(--gold-soft)" strokeWidth={0.4} strokeOpacity={0.8} />
-          </g>
+          <CreeperLeaf key={i} {...l} />
         ))}
         <path d={VINE_SHAPE} fill="var(--art-hair)" />
         <path d={line(VINE.slice(2, -4))} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.6} transform="translate(-1 -0.8)" />
@@ -443,25 +384,10 @@ export function GrownStake({ idPrefix = "sa14", active = null }: ArtProps) {
           />
         ))}
         {FRUITS.map((f, i) => (
-          <g key={i}>
-            <ellipse cx={f.x} cy={f.y + 0.5} rx={FRUIT_R + 0.8} ry={FRUIT_R - 0.5} fill={url("fruit")} stroke="var(--gold)" strokeWidth={1} />
-            <ellipse cx={f.x} cy={f.y + 0.5} rx={FRUIT_R + 0.8} ry={FRUIT_R - 0.5} fill={url("blush")} />
-            <path
-              d={`M ${round(f.x - 9)} ${round(f.y - 3)} A 11 11 0 0 1 ${round(f.x - 2)} ${round(f.y - 10.5)}`}
-              stroke="var(--art-ivory)"
-              strokeWidth={1.4}
-              strokeLinecap="round"
-              strokeOpacity={0.75}
-            />
-            <ellipse cx={STALK_TOPS[i].x} cy={STALK_TOPS[i].y + 0.6} rx={2.2} ry={1} fill="var(--art-saffron)" />
-          </g>
+          <Fruit key={i} {...f} stalkTop={STALK_TOPS[i]} url={url} />
         ))}
         {FRUIT_LEAVES.map((l, i) => (
-          <g key={i} transform={`translate(${l.x} ${l.y}) rotate(${l.turn}) scale(${l.scale})`}>
-            <path d={LEAF} fill="var(--leaf)" />
-            <path d={LEAF_RIB} stroke="var(--gold-soft)" strokeWidth={0.6} />
-            <path d={LEAF_VEINS} stroke="var(--gold-soft)" strokeWidth={0.4} strokeOpacity={0.8} />
-          </g>
+          <CreeperLeaf key={i} {...l} />
         ))}
         <Flash x={FRUITS[1].x - 5} y={FRUITS[1].y - 6} s={12} group={1} />
       </g>

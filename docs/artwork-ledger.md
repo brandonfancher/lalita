@@ -115,8 +115,11 @@ second time it is needed.
 | Dice (pāśaka) | Oblong four-sided dice, about 22 by 7.6 units, foreshortened to 0.72 of their height: `--art-ivory` with a fine gold edge and a row of `--art-crimson` pips, thrown at slight angles | Inline (`grown-stake.tsx`) | Shloka 14 |
 | His jewel (Kāmeśvara's love) | A face-on `diamond` (radius 17), white for Śiva, held upright in his crescent (the fourth night's `litPart`, radius 25, turned horns up, drawn as her crest is in the Dhyāna, with its two soft `--art-moon` strokes), the crescent's foot resting on the board with a faint `--art-crimson` shadow. A `Flash` passes over it. On a gold stand, it read as a little globe | Inline (`grown-stake.tsx`) | Shloka 14 |
 | The watering basin (ālavāla) | A low ring of raked earth seen at a slant (radius 124 by 33): `--art-stone` tinted with saffron and a little `--art-musk`, a gold rim, crumbs of musk earth along its top, and a soft musk shade at its foot instead of an outlined base. Inside, a pool of her light (a radial gradient from `--art-core` to `--art-saffron`) with hair-fine `--art-ivory` ripple rings round the point where the creeper leaves the water. It lies in a bed of shallow furrows running across, closer toward the far side, with clods along the near ones. The painters' scale pattern of water, inside a rim, made a lattice pie; a pale water fill and an outlined base made a dish; a runnel joined to it made a ladle; rings round it read as a pond | Inline (`grown-stake.tsx`) | Shloka 14 |
-| The creeper of down (romāli-latā) | A single dark stem in `--art-hair`, filled with `taper` from 6.2 units at the root to 2.6 at the tip, with a hair-fine `--gold-soft` sheen along it. Heart-based pointed `--leaf` leaves on short stalks every 23 units, alternately each side, with a `--gold-soft` midrib and four veins, smaller toward the tip, and tendrils in `--art-hair` coiling off it. It springs from her light and never rises straight up from it: a straight line with a pair above and a point below would draw the body the series never draws. It returns at Shloka 15, where her waist is known only as what this creeper grows on | Inline (`grown-stake.tsx`) | Shloka 14 |
-| The pair of fruit (phala-kuca-dvayī) | Two round fruit (radius 15, slightly squat) on one forked `--art-hair` stalk with a leaf at the fork and one on each stalk: a radial gradient from `--art-core` through `--art-turmeric` to `--art-saffron` and a vermilion rim, a vermilion blush on the lower right, an `--art-ivory` sheen arc, a small saffron dimple where the stalk goes in. Orange, with a star-shaped calyx, they read as tomatoes; without leaves, as marbles | Inline (`grown-stake.tsx`) | Shloka 14 |
+| The creeper of down (romāli-latā) | A single dark stem in `--art-hair`, filled with `taper` from 6.2 units at the root to 2.6 at the tip, with a hair-fine `--gold-soft` sheen along it. Heart-based pointed `--leaf` leaves on short stalks every 23 units, alternately each side, with a `--gold-soft` midrib and four veins, smaller toward the tip, and tendrils in `--art-hair` coiling off it. It springs from her light and never rises straight up from it: a straight line with a pair above and a point below would draw the body the series never draws. At Shloka 15 it climbs her unseen waist in a spiral (see "The unseen upright"), with a leaf or a tendril at the side of each half-turn, and leaves it at the top to bow over under the fruit | `CreeperLeaf`, `creeperTendril`, `taper`, `through`, and `along` in `primitives.tsx` (promoted at Shloka 15); the stem inline | Shloka 14 |
+| The pair of fruit (phala-kuca-dvayī) | Two round fruit (radius 15, slightly squat) on one forked `--art-hair` stalk with a leaf at the fork and one on each stalk: a radial gradient from `--art-core` through `--art-turmeric` to `--art-saffron` and a vermilion rim, a vermilion blush on the lower right, an `--art-ivory` sheen arc, a small saffron dimple where the stalk goes in. Orange, with a star-shaped calyx, they read as tomatoes; without leaves, as marbles. Hanging (Shloka 15), they are scaled 1.3 about the fork and swing from it (`m-sway`) | `Fruit`, `FruitGradients`, `FRUIT_R` in `primitives.tsx` (promoted at Shloka 15) | Shloka 14 |
+| The unseen upright (her waist, inferred) | Never drawn: shown only by what wraps round it. A slender upright (half-width 33, narrowing to 25 at the middle) leaning slightly right as it rises, whose outline is used only as a mask: everything that passes behind it (the back turns of the creeper, the back of each band, tendrils gripping it) is drawn under that mask and vanishes there, while the front halves are drawn over it. Seen a little from above, so a ring round it is an ellipse 0.32 as tall as wide. Inside it, only a soft column of her light. With wide-spaced turns the creeper read as scattered strokes; a pitch of 60 (44 at the middle) and a coil just outside the outline made it read as a coil round a pole | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
+| Silk band (paṭṭa) | A 12-unit band of `--art-vermilion` silk tied round something: its front a strip between two front half-ellipses, its back (in `--art-crimson` over vermilion) hidden where it passes behind; slanting `--art-crimson` pleats, a dashed `--gold-soft` weave line inside each edge, and a `--gold` line on each edge, the border of a royal band. Knotted at the front with a small vermilion knot and a crimson crease. Loose ends are tapered ribbons edged in gold, with two gold stripes and a gold fringe at the tip; both hang to one side, as two ends spread either side of an upright read as a pair of legs | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
+| The thread of sky (Saundaryalaharī 77) | A hair-fine (0.9) wavy line of `--art-hair` down the middle of her unseen waist, faded out at both ends: the sky squeezed to "the very thinnest ripple on the Yamunā". Kept faint, so the hollow still reads as empty | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
 | Bud (mukula) | A closed bud on a short `--art-hair` stalk: an `--art-turmeric` teardrop edged in gold, a saffron seam, a small `--leaf` cap, swinging from its stalk (`m-sway`) | Inline (`grown-stake.tsx`) | Shloka 14 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -708,6 +711,47 @@ One entry per finished artwork, in the order they were made.
   `diamond` moved into `primitives.tsx`; Shlokas 7 and 10 render byte-for-byte as before. In the
   chant miniature the creeper's curve and the glowing basin carry it, and on phones the verse stays
   legible over it in both themes.
+
+### Shloka 15: What it holds up
+
+- **Component:** `what-it-holds-up.tsx` (defs prefix `sa15`)
+- **Composition:** a picture of an inference. The subject, her waist, is never drawn. Shloka 14's
+  creeper rises from a pool of her light on raked ground and climbs in a tight spiral round an
+  upright that isn't there, from below the card to above it; three bands of red silk are tied round
+  the same emptiness below the card, the middle one knotted with both its ends hanging to the right.
+  Wherever the creeper or a band passes behind the upright it vanishes, so the eye works out the
+  slender shape that must stand there, narrowest at the middle. Between the ties the turns crowd
+  together. Above the card the creeper leaves the upright and bows over to the right under its pair
+  of fruit, hanging heavy. Nothing is in the hollow but a column of her light and a faint radiance
+  whose source is never drawn. The first composition whose subject is an absence, shown only by
+  what wraps round it and what it hides; the first with no point of light for her; the first binding
+  of something in danger; and the first where weight is the subject (the bowed crook, the crowded
+  turns, the ties). It carries on from Shloka 14, as Shloka 13 did from 12, but changes the view: one
+  plant, close up and upright, instead of a garden laid out across the plate.
+- **Name → part:**
+  - Lakṣyaromalatādhāratāsamunneyamadhyamā → `creeper`: the spiral of the creeper, its leaves and
+    tendrils, the tendrils gripping nothing, and the ground it roots in
+  - Stanabhāradalanmadhyapaṭṭabandhavalitrayā → `splint`: the three silk bands, their knots, and the
+    middle band's hanging ends
+  - Intro, *her light* → `support`: the column of light in the hollow, the radiance, and the pool at
+    the root
+  - Intro, *the weight it carries* → `weight`: the bowed crook, its leaves, and the pair of fruit
+  - Detail → `sky-thread`: Śaṅkara's thread of sky down the middle of the hollow (Saundaryalaharī 77)
+- **Palette:** `--art-hair` and `--leaf` for the creeper; `--art-vermilion`, `--art-crimson`, `--gold`,
+  and `--gold-soft` for the silk; `--art-core`, `--art-turmeric`, and `--art-saffron` for the fruit and
+  her light; `--art-hair` for the thread of sky. No additions.
+- **Motion:** `m-sway` (the fruit from the fork, and the band's ends from the knot), `m-shimmer` (her
+  light, the radiance, and the fruit's glow), and `m-lick` (one passing flash on the fruit).
+- **Notes:** This title stays on one line at every desktop width and reaches only x ≈ 143 of the
+  artwork at y ≈ 81–137 at 1440px, so the crown zone is clear on the right for the crook and the fruit.
+  The first render was a thin column about 40 units wide, and the middle band's two ends splayed into
+  an inverted V that read as a pair of legs; the upright was widened to about 66 units and both ends
+  now hang to the right. With the turns wide apart (a pitch of 92), and their backs hidden, the
+  creeper read as scattered dark strokes; a pitch of 60, tightening to 44 between the ties, made the
+  front arcs stack into a coil round a pole. The creeper's leaf, tendril and curve helpers and the pair
+  of fruit moved into `primitives.tsx`; Shloka 14 renders byte-for-byte as before. In the chant
+  miniature the coil, the red bands and the column of light carry it, and on phones the verse stays
+  legible over it in both themes. The share card shows the whole climb clearly.
 
 ## Open questions
 
