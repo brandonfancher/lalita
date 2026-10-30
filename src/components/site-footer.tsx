@@ -28,6 +28,10 @@ export function SiteFooter() {
               </Link>
             </span>
           ))}
+          <span aria-hidden className="mx-2 text-ink-faint">·</span>
+          <Link href="/contact" className="hover:text-sindura">
+            Contact
+          </Link>
         </nav>
         <p className="mt-1 text-sm italic text-ink-faint">
           Chant recording by Ranjani &amp; Gayatri. Letter sounds from learnsanskrit.org.
