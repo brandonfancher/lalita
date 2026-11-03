@@ -161,6 +161,9 @@ second time it is needed.
 | Lamp (dīpa) | A small `--gold` bowl edged faintly in `--art-musk`, with a flame drawn as a pointed drop and a smaller core inside it, `m-flicker` in three groups: `--art-saffron` round `--art-core` for the gods, `--art-moon` round `--art-ivory` for the seers. Many held up in arcs round her light, in companies of five with a gap between, read as an assembly at worship | Inline (`court-and-army.tsx`) | Shloka 24 |
 | Spear (śakti) | A shaft fading out downward from `--gold`, gold lugs at its head, a long leaf-shaped `--art-moon` blade edged in gold with a gold midrib, and a swallow-tailed pennant just below the head streaming back (`--art-vermilion`, `--art-saffron` or `--lotus`, `m-flicker`). Leaning 16° forward, in ranks that grow nearer and larger toward the lower right, it reads as an army marching. A rounded blade read as a candle flame | Inline (`court-and-army.tsx`) | Shloka 24 |
 | Ash (Bhaṇḍa's substance) | Overlapping soft clouds, each an `--art-musk` radial gradient with an `--art-moon` one over it so it reads grey by day and by lamplight, with drifting flecks of both (`m-ember`). Musk alone vanishes by lamplight | Inline (`court-and-army.tsx`) | Shloka 24 |
+| Elephant (gaja) | In profile, about 110 long and 88 to the top of its back: a slate-grey body in `--art-hair` (a gradient from 0.78 to 0.95), edged in `--gold`, on four straight legs (the far pair paler) with `--art-ivory` toenails, a darker ear, an `--art-ivory` tusk, a dotted gold chain across the brow, and a `--art-vermilion` caparison with a gold border and fringe. Lead elephants raise the trunk in a curl holding a gold pot; the herd's trunks hang. Raised trunks behind a lead read as poles | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
+| Water poured (abhiṣeka) | From each tipped pot, three dashed `--art-moon` strands falling in a curve onto her light (`m-shimmer`), with a few droplets edged in `--gold-soft` round it (`m-twinkle`). Solid strands read as a second pair of tusks, and a splash ring under the light read as a saucer | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
+| Horse (aśva) | In the flying gallop, about 66 long: one silhouette for body, neck and head, forelegs stretched forward and hind legs back as round-capped strokes, a streaming tail, an `--art-vermilion` mane and saddle cloth. `--gold`, or `--art-turmeric` for a nearer circuit. Upright whichever way it runs, rocking with `m-sway` in three groups | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1075,6 +1078,34 @@ One entry per finished artwork, in the order they were made.
   lamplight; a faint `--art-moon` cloud over each musk one holds it in both themes. The lower left
   of the plate is left empty on purpose, so the army has somewhere to have come from. In the chant
   miniature her glow, the arcs of lamps, and the pennants carry it, faintly by day.
+
+### Shloka 25: Elephants that attend her, cavalry that encircles her
+
+- **Component:** `elephants-and-horses.tsx` (defs prefix `sa25`)
+- **Composition:** two matched names that part in their last words, the elephants attending her and
+  the horses enclosing her, drawn as a retinue and a ring. Just below the card her light sits
+  between two lead elephants facing in, their herds behind them, trunks raised to pour water over
+  her from gold pots, as Śrī's elephants do (Sampatkarī's name is the maker of prosperity). Round
+  everything, two circuits of galloping horses run clockwise, one inside the other, their tops in
+  the crown above the card, their sides beside it, and their lower arcs in the ground zone, so that
+  on the page they close round her and in the plate they are whole.
+- **Name → part:**
+  - Sampatkarīsamārūḍhasindhuravrajasevitā → `elephants`: the two lead elephants and their herds,
+    the pots, and the water poured
+  - Aśvārūḍhādhiṣṭhitāśvakoṭikoṭibhirāvṛtā → `cavalry`: the two circuits of horses
+  - Intro, *her light* → `light`: her bindu, glow and radiance
+- **Palette:** `--art-hair`, `--gold`, `--art-ivory` and `--art-vermilion` for the elephants;
+  `--art-moon` and `--gold-soft` for the water; `--gold`, `--art-turmeric` and `--art-vermilion`
+  for the horses. No additions.
+- **Motion:** `m-sway` (each horse rocking in its gallop, three groups), `m-shimmer` (her glow,
+  radiance and the pouring water), `m-twinkle` (the droplets), and `m-breathe` (the bindu's glow).
+- **Notes:** This title wraps at every desktop width, its second line reaching x ≈ 13, and the card
+  sits at y ≈ 225–437. The riders, Sampatkarī and Aśvārūḍhā, are left undrawn, as the goddess
+  herself has been throughout; the corps they lead carry the names. The water first fell in solid
+  white strands and read as a second pair of tusks; dashed, with droplets, it reads as water. The
+  herd behind each lead first raised its trunks too, and they read as poles; hung, they let the
+  leads' raised trunks carry the pour. In the chant miniature the two slate elephants and the gold
+  ring carry it.
 
 ## Open questions
 

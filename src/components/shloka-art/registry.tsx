@@ -3,6 +3,7 @@ import { CourtAndArmy } from "./court-and-army";
 import { DrawnBow } from "./drawn-bow";
 import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
+import { ElephantsAndHorses } from "./elephants-and-horses";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
@@ -951,6 +952,30 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "army",
         depicts:
           "Below, the army of her powers issues from her light and moves out. Śakti means a power and also a spear, so it is drawn as ranks of spears under pennants, levelled forward toward a bank of ash on the right, the ash of burnt Desire that Bhaṇḍa was shaped from.",
+      },
+    ],
+  },
+  "025": {
+    Art: ElephantsAndHorses,
+    intro: (Spot) => (
+      <>
+        The two names are built alike and part in their last words: the elephants attend her, the horses enclose her.
+        The artwork keeps the difference, one a retinue beside <Spot part="light">her light</Spot> and the other a ring
+        round all of it. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 66,
+        part: "elephants",
+        depicts:
+          "Her elephant corps, the division Sampatkarī, the maker of prosperity, leads. A lead elephant stands either side of her light with its herd behind it, caparisoned in red and gold, trunks raised to pour water over her from golden pots, as Śrī's elephants do: service, and the wealth that comes with it.",
+      },
+      {
+        nama: 67,
+        part: "cavalry",
+        depicts:
+          "The cavalry Aśvārūḍhā marshals rides round everything in two circuits of galloping horses, all one way, closing on her from every side, far too many to count.",
       },
     ],
   },
