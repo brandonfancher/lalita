@@ -8,6 +8,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { NailMoons } from "./nail-moons";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -723,6 +724,39 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: ten bright points show through the grass at the quivers&rsquo;
           feet. Śaṅkara (Saundaryalaharī 83) says Love loaded her two quivers with twice his five arrows, and that
           their ten heads, whetted on the crowns of the gods, are the nails of her feet.
+        </>
+      ),
+    },
+  },
+  "019": {
+    Art: NailMoons,
+    intro: () => (
+      <>
+        The verse looks no higher than her feet, which is where a person&rsquo;s eyes are after bowing, so nothing of
+        her is shown but her two footprints and what their light does. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 44,
+        part: "nail-light",
+        depicts:
+          "On the ten toes of her footprints the ten nails are small moons, and their light falls over the dark lying before her feet, where those who bow are. It covers the dark like a cloth rather than burning it away, as the name has it: the dullness is buried out of sight.",
+      },
+      {
+        nama: 45,
+        part: "net",
+        depicts:
+          "The light of her two feet runs out across the floor in rays, each foot's rays crossing the other's and knotting into a net. The lotus, the usual measure of a lovely foot, has been left outside it at the edge, open and unregarded.",
+      },
+    ],
+    detail: {
+      part: "hands",
+      body: (
+        <>
+          There is also a small detail for the attentive: the hands folded in the bowing are closed like buds. Śaṅkara
+          (Saundaryalaharī 89) calls her nails moons, and lotuses close when the moon is up, so the hands of the women
+          of heaven, which are lotuses, can only fold before them.
         </>
       ),
     },

@@ -67,7 +67,7 @@ second time it is needed.
 | The deer in the moon (mṛgāṅka) | A small leaping blackbuck facing right, in `--art-musk`, with short spiralled horns, a flicked tail, legs out fore and aft, and a pale eye. Soft musk smudge behind it. About 50 units long, so it reads as a dab from afar; on a smaller moon, scale it with the disc (0.66 on a moon of radius 56) | `MoonDeer` in `primitives.tsx` (promoted at Shloka 8) | Shloka 5 |
 | Her crescent crest (śekhara) | The fourth night's `litPart` turned over, horns up, radius 22, cradled on the crown's finial: an `--art-moon` fill with a 1.3-unit `--gold` edge, and its glow drawn as two soft `--art-moon` strokes round the crescent itself. Unlike a half moon, a crescent shows only its lit part: with its ashen disc, and with a round glow, it read as a ball in a cup. Clear the crown's rays from under it | Inline (`whole-image.tsx`) | Dhyāna |
 | Hibiscus (japā) | Face-on: five broad, slightly ruffled petals (radius 64) turned in a pinwheel, `--art-vermilion` round an `--art-crimson` eye, `--art-crimson` veins and edges, and an `--art-saffron` sheen down each petal. The staminal column is what makes it a hibiscus: a `--gold-soft` stalk from the centre leaning up and out past the petals, pollen dots of `--art-core` on its outer third, five `--art-crimson` stigma pads at the tip. The bindu sits in the eye. Darkening the petals' rim by day made it a brick-red blob | Inline (`whole-image.tsx`) | Dhyāna |
-| Her footprints (śrīpāda) | A pair of `--art-vermilion` footprints, toes up, big toes inward, laid on a surface and foreshortened to about 0.7 of their height: a sole with a narrow inner arch and five separate toes. Without the arch and the gap before the toes they read as mittens | Inline (`whole-image.tsx`) | Dhyāna |
+| Her footprints (śrīpāda) | A pair of `--art-vermilion` footprints, toes up, big toes inward, laid on a surface and foreshortened to about 0.7 of their height: a sole with a narrow inner arch and five separate toes. Without the arch and the gap before the toes they read as mittens | `Footprint` and `FOOTPRINT_TOES` in `primitives.tsx` (promoted at Shloka 19); `edge` adds a hair-fine gold rim that keeps its width under scaling | Dhyāna |
 | Jewelled vessel (ratna-ghaṭa) | A round-bellied `--gold` pot: a tilted `--gold-soft` lid, a collar line at the neck, a belt of rubies and `--leaf` emeralds by turns between two rows of pearls, a soft `--art-core` sheen on the left of the belly, and upturned petals round the foot. Downturned petals at the shoulder read as fangs | Inline (`whole-image.tsx`) | Dhyāna |
 | The eight powers (aṇimādi siddhis) | Eight short `--art-saffron` rays round her source, 76–92 units out, each tipped with an `--art-core` `glint` and a gold dot (`m-twinkle`, three groups). Set them at 0°, 45°, … so her four arms pass between them | Inline (`whole-image.tsx`) | Dhyāna |
 | The innermost triangle (trikoṇa) | A hair-fine `--gold-soft` downward triangle round the bindu, circumradius 22 so the bindu's ring sits inside it. Kept faint: bright, with the bindu's glow inside it, it read as an eye in a triangle | Inline (`whole-image.tsx`) | Dhyāna |
@@ -134,6 +134,11 @@ second time it is needed.
 | Rain | About 150 hairlines (0.7) of `--gold-soft`, slanting slightly, faded at top and bottom, spread evenly enough not to clump into hatching, in three groups with one shimmering | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
 | New grass | Tufts of tapered `--leaf` blades in two shades, fanned from a point | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
 | Tortoise (kūrma) | From the side, about 90 units long: a domed `--art-stone` shell with a gold outline, a saffron tint, gold plates and a gold rim, over a `--gold-soft` head, legs and tail, a small carve eye, and a faint `--art-musk` shadow | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| Her toenails as moons | On each toe of her footprints, a full moon 0.78 the toe's radius: a radial gradient from `--art-core` to `--art-moon`, a hair-fine gold rim, a moon glow 3.2 times its radius, `m-twinkle` in three groups, and a glint on each big toe. Ten pale discs without the feet read as a string of pearls | Inline (`nail-moons.tsx`) | Shloka 19 |
+| The net of her light (prabhā-jāla) | From each foot, 23 rays of light across the floor (foreshortened to 0.7), ten degrees apart through the lower half, starting just outside the foot; where a ray of one foot crosses a ray of the other, a small knot. All in a `--gold` radial gradient that fades out. One centre with spokes and rings read as a cobweb | Inline (`nail-moons.tsx`) | Shloka 19 |
+| Darkness covered (tamas) | A soft pool of `--art-hair` (a radial gradient, never a hard edge) with a veil of her light (`--art-core` to `--art-moon`) laid over all but its fringe. With hard edges the two read as a dish | Inline (`nail-moons.tsx`) | Shloka 19 |
+| Open lotus (padma) | Seen at a slant: five back and six front pointed `--lotus` petals edged in gold, an `--art-turmeric` seed head, and a `--leaf` pad beneath | Inline (`nail-moons.tsx`) | Shloka 19 |
+| Folded hands as lotus buds (añjali) | Closed buds about 44 tall, `--art-core` to `--art-saffron` to `--art-vermilion` and edged in gold, with an `--art-crimson` shade on one side, a seam, `--leaf` sepals and a short stalk, standing in ranks | Inline (`nail-moons.tsx`) | Shloka 19 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -854,6 +859,37 @@ One entry per finished artwork, in the order they were made.
   now splay out from each mouth. The rain first clumped into hatching and was spread more evenly.
   Without straps the quivers read as crossed batons. The tortoises first sat under the verse panel and
   moved out to x ≈ 172 and 478. In the chant miniature the gold cross and its green tufts carry it.
+
+### Shloka 19: Light off the toenails, and the lotus sent away
+
+- **Component:** `nail-moons.tsx` (defs prefix `sa19`)
+- **Composition:** the verse looks no higher than her feet, where the eyes of someone bowing are, so
+  nothing of her is shown but her two footprints (the Dhyāna's śrīpāda, scaled to 3.7 and laid on the
+  floor) just below the card. On each toe the nail is a small full moon with its own glow. Rays of
+  light run out across the floor from each foot, and where one foot's rays cross the other's they
+  knot into a net. Before her feet lies a pool of dark, and a veil of her light is laid over it, so it
+  shows only at the fringe. Two ranks of closed buds stand in it, the folded hands of those bowing. At
+  the lower right, outside the net, an open lotus is left unregarded. The first return of her
+  footprints since the Dhyāna, and the first composition about what her light does to a person.
+- **Name → part:**
+  - Nakhadīdhitisañchannanamajjanatamoguṇā → `nail-light`: the footprints and their ten moons, the
+    glow and fall of their light, and the dark it covers
+  - Padadvayaprabhājālaparākṛtasaroruhā → `net`: the rays and knots of the net, and the lotus left
+    outside it
+  - Detail → `hands`: the folded hands, closed like lotus buds under the moons (Saundaryalaharī 89)
+- **Palette:** `--art-vermilion` to `--sindura` for the soles, `--art-core` and `--art-moon` for the
+  nails and the veil, `--art-hair` for the dark, `--gold` for the net, `--lotus`, `--leaf` and
+  `--art-turmeric` for the lotus, and the buds in `--art-core`, `--art-saffron` and `--art-vermilion`.
+  No additions.
+- **Motion:** `m-twinkle` (the nails, in three groups), `m-lick` (the big toes), `m-shimmer` (the
+  glow, the fall of light and the net), and `m-breathe` (the veil).
+- **Notes:** This title stays on one line and reaches x ≈ 382 at y ≈ 74–141 (434 at 1100px), so the
+  card sits at y ≈ 184–396. The first version drew no feet: ten pale discs in an arc read as a string
+  of pearls, a net of spokes and sagging rings round one centre read as a cobweb, and a hard-edged
+  veil with a row of buds on it read as a cake with candles. The footprints made the nails read at
+  once, two crossing fans of rays read as a net, and the dark and its veil became soft gradients. The
+  footprint moved into `primitives.tsx`; the Dhyāna renders byte-for-byte as before. In the chant
+  miniature the red feet over the lit pool carry it, and the share card shows the whole.
 
 ## Open questions
 

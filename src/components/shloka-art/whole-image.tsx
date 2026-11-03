@@ -18,6 +18,7 @@ import {
   BeeString,
   bowTips,
   FlowerArrow,
+  Footprint,
   glint,
   Goad,
   litPart,
@@ -162,25 +163,6 @@ const pearlsAbove = vesselPearls(708, 64, 17);
 const footPetals = lotusPetals({ x: CX - 46, width: 92, count: 8, base: 772, height: 14 });
 const pearlsBelow = vesselPearls(744, 62, 17);
 
-/** A right footprint, toes at the top, big toe to the left: about 15 wide and 38 tall, centred on the origin. */
-const SOLE = [
-  "M 0.5 15",
-  "C -4.5 15 -5.5 11 -5 7",
-  "C -4.6 3.5 -2.6 1 -2.8 -3",
-  "C -3 -7 -7 -9 -7 -12.5",
-  "C -7 -15.5 -3.5 -16.2 0.5 -16",
-  "C 4.5 -15.8 7 -14 6.6 -10",
-  "C 6.2 -5 5.2 -1 5 3.5",
-  "C 4.8 9 5.2 15 0.5 15",
-  "Z",
-].join(" ");
-const TOES = [
-  { x: -4, y: -20.6, r: 2.5 },
-  { x: 0.6, y: -22.4, r: 1.7 },
-  { x: 3.6, y: -21.8, r: 1.5 },
-  { x: 6, y: -20.2, r: 1.25 },
-  { x: 7.8, y: -17.8, r: 1.05 },
-];
 const FEET = [
   { x: CX - 15, mirror: true },
   { x: CX + 15, mirror: false },
@@ -332,10 +314,7 @@ export function WholeImage({ idPrefix = "sa0", active = null }: ArtProps) {
         <ellipse cx={CX} cy={LID.y} rx={LID.rx - 6} ry={LID.ry - 4} stroke="var(--art-carve)" strokeWidth={0.7} />
         {FEET.map((f) => (
           <g key={f.x} transform={`translate(${f.x} ${LID.y + 3}) scale(${f.mirror ? -1.3 : 1.3} 0.7)`} fill="var(--art-vermilion)">
-            <path d={SOLE} />
-            {TOES.map((t, i) => (
-              <circle key={i} cx={t.x} cy={t.y} r={t.r} />
-            ))}
+            <Footprint />
           </g>
         ))}
       </g>

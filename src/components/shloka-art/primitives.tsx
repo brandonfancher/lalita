@@ -968,6 +968,49 @@ export function RubyCrown({ cx, rays: keep }: { cx: number; rays?: (ray: CrownRa
   );
 }
 
+/* ── Her footprints ────────────────────────────────────────────────────── */
+
+/** A right footprint's sole, toes at the top, big toe to the left: about 15 wide and 38 tall with its toes, centred on the origin. */
+const FOOTPRINT_SOLE = [
+  "M 0.5 15",
+  "C -4.5 15 -5.5 11 -5 7",
+  "C -4.6 3.5 -2.6 1 -2.8 -3",
+  "C -3 -7 -7 -9 -7 -12.5",
+  "C -7 -15.5 -3.5 -16.2 0.5 -16",
+  "C 4.5 -15.8 7 -14 6.6 -10",
+  "C 6.2 -5 5.2 -1 5 3.5",
+  "C 4.8 9 5.2 15 0.5 15",
+  "Z",
+].join(" ");
+/** Its five toes, big toe first. */
+export const FOOTPRINT_TOES = [
+  { x: -4, y: -20.6, r: 2.5 },
+  { x: 0.6, y: -22.4, r: 1.7 },
+  { x: 3.6, y: -21.8, r: 1.5 },
+  { x: 6, y: -20.2, r: 1.25 },
+  { x: 7.8, y: -17.8, r: 1.05 },
+];
+
+/**
+ * A right footprint (śrīpāda), filled by the enclosing group, which places it and scales it: a negative
+ * x scale makes the left foot, and about 0.7 in y lays it on a surface. With `edge`, a hair-fine gold rim
+ * round the sole that keeps its width under the scaling.
+ */
+export function Footprint({ edge = false }: { edge?: boolean }) {
+  return (
+    <>
+      {edge ? (
+        <path d={FOOTPRINT_SOLE} stroke="var(--gold)" strokeWidth={1} strokeOpacity={0.7} vectorEffect="non-scaling-stroke" />
+      ) : (
+        <path d={FOOTPRINT_SOLE} />
+      )}
+      {FOOTPRINT_TOES.map((t, i) => (
+        <circle key={i} cx={t.x} cy={t.y} r={t.r} />
+      ))}
+    </>
+  );
+}
+
 /* ── Pearls ────────────────────────────────────────────────────────────── */
 
 /** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */
