@@ -3,6 +3,7 @@ import { DrawnBow } from "./drawn-bow";
 import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
+import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
@@ -684,6 +685,44 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: the curtain&rsquo;s border is woven with elephants&rsquo;
           trunks and plantain stems. Śaṅkara (Saundaryalaharī 82) says her thighs defeated both, the two stock similes
           for a smooth tapering limb, so here they are, reduced to a hem.
+        </>
+      ),
+    },
+  },
+  "018": {
+    Art: FirstRainQuivers,
+    intro: (Spot) => (
+      <>
+        The verse is set in <Spot part="rain">the first rain</Spot> of the monsoon, which is when its scarlet insects
+        come up out of the ground. Every element comes from one of the three names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 41,
+        part: "quivers",
+        depicts:
+          "Love's two quivers, crossed as weapons are hung, each tapering from a wide mouth to a narrow foot with five fletched arrows standing out of it. Scarlet velvet mites are strewn all over them.",
+      },
+      {
+        nama: 42,
+        part: "grass",
+        depicts: "Where each quiver narrows to its foot, it disappears into the new grass, so that nothing of the joint shows.",
+      },
+      {
+        nama: 43,
+        part: "tortoises",
+        depicts:
+          "Two tortoises have come out in the rain, and over each domed shell runs a single curve of light, higher and smoother than the shell, outdoing it at its own shape.",
+      },
+    ],
+    detail: {
+      part: "arrowheads",
+      body: (
+        <>
+          There is also a small detail for the attentive: ten bright points show through the grass at the quivers&rsquo;
+          feet. Śaṅkara (Saundaryalaharī 83) says Love loaded her two quivers with twice his five arrows, and that
+          their ten heads, whetted on the crowns of the gods, are the nails of her feet.
         </>
       ),
     },

@@ -129,6 +129,11 @@ second time it is needed.
 | Safflower (kusumbha) | A thistle head on a `--leaf` stem with spiny leaves: a cup of pointed bracts with a bristle of `--art-saffron` and `--art-vermilion` florets out of its top | Inline (`safflower-slope.tsx`) | Shloka 16 |
 | Curtain (javanikā) | Two `--art-ivory` panels at 0.5 opacity, gathered in scallops under gold rings on a gold rod with bud finials, gold fold lines from each ring to a hem that dips a little where the panels meet. Light behind it shows through as a glow. A gold tie-cord runs down the seam to a tassel below the hem, swinging from the rod. Hung from Kāmeśa's crescent (the fourth night's `litPart`, horns up) at the top centre of the rod | Inline (`drawn-curtain.tsx`) | Shloka 17 |
 | Elephant-trunk and plantain border | A woven band along a hem: curled elephants' trunks in `--art-vermilion` alternating with `--leaf` plantain stems, each with its long leaf, about 20 units apart. The two stock similes for a tapering thigh (Saundaryalaharī 82) | Inline (`drawn-curtain.tsx`) | Shloka 17 |
+| Quiver (tūṇa) | A tapering body, half-width 19 at the mouth and 7 at the foot, filled across its width from `--gold` through `--art-turmeric` to gold, with an `--art-carve` outline, an `--art-core` sheen, three `--art-vermilion` bands with `--gold-soft` edges, a gold rim at the mouth, and a vermilion strap with dashed gold-soft stitching. Five arrows stand out of the mouth, fanned 8° apart, with `--art-saffron` fletching barred in carve. Without the strap two crossed quivers read as batons. A pair is crossed as weapons are hung | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| Velvet mites (indragopa) | The scarlet insects of the first rain: tiny `--art-vermilion` ovals (radius about 2) with an `--art-crimson` edge and an `--art-core` highlight, strewn at random angles; one in five twinkles | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| Rain | About 150 hairlines (0.7) of `--gold-soft`, slanting slightly, faded at top and bottom, spread evenly enough not to clump into hatching, in three groups with one shimmering | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| New grass | Tufts of tapered `--leaf` blades in two shades, fanned from a point | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| Tortoise (kūrma) | From the side, about 90 units long: a domed `--art-stone` shell with a gold outline, a saffron tint, gold plates and a gold rim, over a `--gold-soft` head, legs and tail, a small carve eye, and a faint `--art-musk` shadow | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -820,6 +825,35 @@ One entry per finished artwork, in the order they were made.
   y 112 so its ends stay clear of the title. At 0.42 and then 0.62 the crowns read as beehives; at
   0.8 their tiers and stones show. Each crown keeps only its outward rays, so the two sets don't cross
   between them. In the chant miniature the pale curtain and the two red-gold crowns carry it.
+
+### Shloka 18: Quivers strewn with rain-insects, and the arch of the foot
+
+- **Component:** `first-rain-quivers.tsx` (defs prefix `sa18`)
+- **Composition:** Kāma's two quivers, crossed as weapons are hung, their mouths at the upper corners
+  of the card and their feet below it in a tuft of new grass. Each is gold and turmeric, banded and
+  strapped in vermilion, with five fletched arrows standing out of its mouth, and strewn with the
+  scarlet velvet mites that come up out of the ground with the first rain. The rain falls over all of
+  it. Ten arrowheads glint in the grass at the feet. At either side of the ground a tortoise has come
+  out in the rain, and over each shell runs a single arc of light, higher and smoother than the shell.
+  The first weather in the series, and the first animal drawn as a foil that is outdone rather than as
+  an emblem.
+- **Name → part:**
+  - Indragopaparikṣiptasmaratūṇābhajaṅghikā → `quivers`: the two quivers, their arrows and straps,
+    and the mites
+  - Gūḍhagulphā → `grass`: the tufts that hide the quivers' feet
+  - Kūrmapṛṣṭhajayiṣṇuprapadānvitā → `tortoises`: the two tortoises and the arcs of light over them
+  - Intro, *the first rain* → `rain`: the rain, the glow, and the wet ground
+  - Detail → `arrowheads`: the ten points at the feet, her nails (Saundaryalaharī 83)
+- **Palette:** `--gold` and `--art-turmeric` for the quivers, `--art-vermilion` and `--art-crimson`
+  for the mites, `--gold-soft` for the rain, `--leaf` for the grass, `--art-stone`, `--gold-soft` and
+  `--art-musk` for the tortoises, and `--art-core` for the arcs. No additions.
+- **Motion:** `m-twinkle` (one mite in five, in three groups), `m-lick` (the arrowheads), and
+  `m-shimmer` (the rain, the glow, and the light over the shells).
+- **Notes:** This title wraps at every desktop width (second line to x ≈ 103 at 1280px), and the card
+  sits at y ≈ 225–437. The arrows first converged into a cone, from a sign error in their fan; they
+  now splay out from each mouth. The rain first clumped into hatching and was spread more evenly.
+  Without straps the quivers read as crossed batons. The tortoises first sat under the verse panel and
+  moved out to x ≈ 172 and 478. In the chant miniature the gold cross and its green tufts carry it.
 
 ## Open questions
 
