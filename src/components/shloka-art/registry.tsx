@@ -1,4 +1,5 @@
 import { CampakaJewel } from "./campaka-jewel";
+import { CourtAndArmy } from "./court-and-army";
 import { DrawnBow } from "./drawn-bow";
 import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
@@ -8,9 +9,9 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { MeruInward } from "./meru-inward";
-import { NectarIsland } from "./nectar-island";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
+import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
@@ -926,6 +927,30 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "gift",
         depicts:
           "From her eyes a path of light runs over the water to the viewer, the way the moon's path runs to whoever stands on the shore, and on it a lotus floats out to be handed over: what is wished for, given.",
+      },
+    ],
+  },
+  "024": {
+    Art: CourtAndArmy,
+    intro: (Spot) => (
+      <>
+        Two names a line long, and the hymn turns from describing her to telling a story. The artwork splits the same
+        way, above and below <Spot part="light">her glory</Spot>, the light everything here is gathered round. Every
+        element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 64,
+        part: "court",
+        depicts:
+          "Above, the gods and the seers are gathered company after company, row behind row, each holding up a lamp in praise of her: gold flames for the gods in front, white flames for the seers behind them.",
+      },
+      {
+        nama: 65,
+        part: "army",
+        depicts:
+          "Below, the army of her powers issues from her light and moves out. Śakti means a power and also a spear, so it is drawn as ranks of spears under pennants, levelled forward toward a bank of ash on the right, the ash of burnt Desire that Bhaṇḍa was shaped from.",
       },
     ],
   },

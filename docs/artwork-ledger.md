@@ -158,6 +158,9 @@ second time it is needed.
 | Lotus forest (padmāṭavī) | `OpenLotus`es without pads in `--lotus` with `--art-crimson` veins, at scales 0.48 to 0.82, on tall `--leaf` stalks from one pool, so that the blooms stand as high as the trees round them, with leaves held up on their own stalks (tilted `--leaf` ellipses with radiating `--gold-soft` veins) and closed `--lotus` buds. Five blooms read as a bouquet; seven, with buds and raised leaves behind, as a forest | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Sea of nectar (sudhāsāgara) | Milk-white water filling the plate below the card: an `--art-moon` to `--gold-soft` gradient fading in at the top, with `WavePattern` over it at 0.7, faded in by a mask so it has no hard horizon. The island in it is a flat ellipse, `--art-turmeric` to `--gold`, with a faint `--art-musk` bank beneath, an `--art-moon` surf line, and a dashed `--gold-soft` ring of swell | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Her glance (kaṭākṣa) on water | A widening band of `--art-core` light running from her eyes toward the viewer like the moon's path on the sea, fading out, scattered with small twinkling glints, carrying an `OpenLotus` on its pad as what is given | Inline (`nectar-island.tsx`) | Shloka 23 |
+| Lamp (dīpa) | A small `--gold` bowl edged faintly in `--art-musk`, with a flame drawn as a pointed drop and a smaller core inside it, `m-flicker` in three groups: `--art-saffron` round `--art-core` for the gods, `--art-moon` round `--art-ivory` for the seers. Many held up in arcs round her light, in companies of five with a gap between, read as an assembly at worship | Inline (`court-and-army.tsx`) | Shloka 24 |
+| Spear (śakti) | A shaft fading out downward from `--gold`, gold lugs at its head, a long leaf-shaped `--art-moon` blade edged in gold with a gold midrib, and a swallow-tailed pennant just below the head streaming back (`--art-vermilion`, `--art-saffron` or `--lotus`, `m-flicker`). Leaning 16° forward, in ranks that grow nearer and larger toward the lower right, it reads as an army marching. A rounded blade read as a candle flame | Inline (`court-and-army.tsx`) | Shloka 24 |
+| Ash (Bhaṇḍa's substance) | Overlapping soft clouds, each an `--art-musk` radial gradient with an `--art-moon` one over it so it reads grey by day and by lamplight, with drifting flecks of both (`m-ember`). Musk alone vanishes by lamplight | Inline (`court-and-army.tsx`) | Shloka 24 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1042,6 +1045,36 @@ One entry per finished artwork, in the order they were made.
   turned along it, they read as a pair circling. The trees' first `--art-carve` trunks vanished in
   light mode, as did their shadows; `--art-musk` holds in both. In the chant miniature the gold
   island with its ring of trees carries it.
+
+### Shloka 24: The court assembles in praise, and the army moves out
+
+- **Component:** `court-and-army.tsx` (defs prefix `sa24`)
+- **Composition:** the hymn turns from description to story, and the artwork splits above and below
+  her light, set just below the card. Above, in the crown and round the sides of the card, the
+  assembled gods and seers hold up lamps in four arcs round her, broken into companies, gold flames
+  for the gods in the two inner rows and white for the seers behind; her radiance reaches up to the
+  first row. Below, the army of her powers issues from her light and moves out to the lower right:
+  six ranks of spears under pennants, each nearer and wider than the last, leaning forward toward a
+  bank of ash at the right edge, the ash of burnt Kāma that Bhaṇḍa was shaped from. The first
+  composition in the series with a direction of travel.
+- **Name → part:**
+  - Devarṣigaṇasaṅghātastūyamānātmavaibhavā → `court`: the four arcs of lamps
+  - Bhaṇḍāsuravadhodyuktaśaktisenāsamanvitā → `army`: the spears, their pennants, and the ash they
+    are levelled at
+  - Intro, *her glory* → `light`: her bindu, glow and radiance
+- **Palette:** `--gold`, `--art-saffron`, `--art-core`, `--art-moon` and `--art-ivory` for the
+  lamps; `--art-moon` and `--gold` for the spears, with `--art-vermilion`, `--art-saffron` and
+  `--lotus` pennants; `--art-musk` and `--art-moon` for the ash. No additions.
+- **Motion:** `m-flicker` (the lamp flames and the pennants), `m-shimmer` (her glow and radiance),
+  `m-breathe` (the bindu's glow), `m-lick` (glints on a third of the spear points), and `m-ember`
+  (the ash flecks).
+- **Notes:** This title wraps at every desktop width and stays left of the artwork (its second line
+  reaches only x ≈ −4), so the card sits at y ≈ 225–437 and the whole crown above it is free for the
+  court. The spear blades were first rounded and read as candle flames beside the lamps; a long
+  pointed blade with a midrib and lugs made them spears. The ash, in `--art-musk` alone, vanished by
+  lamplight; a faint `--art-moon` cloud over each musk one holds it in both themes. The lower left
+  of the plate is left empty on purpose, so the army has somewhere to have come from. In the chant
+  miniature her glow, the arcs of lamps, and the pennants carry it, faintly by day.
 
 ## Open questions
 
