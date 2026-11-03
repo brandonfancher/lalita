@@ -9,6 +9,7 @@ import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
+import { OnHisLap } from "./on-his-lap";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -801,5 +802,51 @@ export const ARTWORK: Record<string, Artwork> = {
         </>
       ),
     },
+  },
+  "021": {
+    Art: OnHisLap,
+    intro: () => (
+      <>
+        The portrait that began at her crown has reached her feet, and this verse sums it up in three names before
+        naming, at last, the one whose lap she sits on. Every element comes from one of the six names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 49,
+        part: "red",
+        depicts: "She is shown as a single flame of light in one flat red, with no shading anywhere, because every part of her is the same colour.",
+      },
+      {
+        nama: 50,
+        part: "outline",
+        depicts:
+          "Its outline is one unbroken gold line, closed in a single stroke and symmetrical, with nothing added and nothing to correct.",
+      },
+      {
+        nama: 51,
+        part: "gems",
+        depicts:
+          "Round her, on a gold chain, are the gems of the navaratna, the setting that holds all nine precious stones. Eight are there: pearl, coral, emerald, topaz, diamond, sapphire, hessonite and cat's-eye. The ruby belongs at the centre, and the centre is her.",
+      },
+      {
+        nama: 52,
+        part: "lap",
+        depicts:
+          "Kāmeśvara appears as his crescent, laid horns up as a lap, and she is seated on it to the right as you look, which is his left, the consort's side.",
+      },
+      {
+        nama: 53,
+        part: "bindu",
+        depicts:
+          "Where she rests on him is one point of light, half his white and half her red. Her name Śivā is his name made feminine, and here the two make one point.",
+      },
+      {
+        nama: 54,
+        part: "thread",
+        depicts:
+          "They are tied together by a single lotus fibre, looped loosely round his horn. It is the weakest bond there is, and it holds, because he has no wish to break it.",
+      },
+    ],
   },
 };

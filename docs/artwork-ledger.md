@@ -145,6 +145,11 @@ second time it is needed.
 | Swan on the water (marālī) | Seen from the side, about 100 long: an `--art-moon` body with a full breast low on the water and a raised tail, the wing arched up off the back with three gold feather lines, an S-curved neck (a 7-unit moon stroke over a 9-unit gold one), a small head with an `--art-saffron` beak and a carve eye, and a faint reflection. A flat back and a lowered wing read as a gravy boat. Her wake is a few flat arcs trailing close behind, far apart, because she is slow; two long parting lines read as a pole | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Treasury (śevadhi) | An open gold casket seen from the front: a box with a vermilion band set with pearl and emerald studs, small feet, a lid raised behind with a lit inner face, a heap of rubies, pearls, emeralds and gold above the rim with passing glints, two pearl strings spilling over the front, an `--art-core` glow over the hoard, and a soft column of her light pouring down from it with falling points of light. A hard-edged beam read as a spotlight | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Salt (lavaṇa) | A little heap of `--art-ivory` crystals edged in gold, each a small rhomb with one facet line | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Her light as a flame (sarvāruṇā) | A tall flame-shaped aureole, symmetrical, its sides drawn in near the tip so it reads as a flame and not a drop: one flat `--art-vermilion` fill at 0.92 with no shading, over a soft `--art-glow`. Its outline is one closed `--gold` line (1.6) over a wider faint `--art-core` one | Inline (`on-his-lap.tsx`) | Shloka 21 |
+| The nine gems (navaratna) | Eight gems round her on a beaded gold chain, each 10.5 in a gold collet: pearl (`Pearl`), coral (`--sindura`), emerald (`--leaf`), topaz (`--art-turmeric`), diamond (`diamond`), sapphire (`--art-hair`), hessonite (`--art-ember`), and cat's-eye (`--gold-soft` with an `--art-core` slit), each with an `--art-core` highlight. The ruby's place at the centre is hers | Inline (`on-his-lap.tsx`) | Shloka 21 |
+| Kāmeśa's crescent as a lap | The fourth night's `litPart`, radius 124, turned horns up: `--art-moon` with a 1.6 `--gold` rim and an inner `--gold-soft` line, and a low moon glow beneath. She sits on it to the viewer's right, his left | Inline (`on-his-lap.tsx`) | Shloka 21 |
+| Red and white bindu | A bindu (radius 8) half `--art-moon` and half `--art-vermilion`, his side and hers, with a gold rim and an `--art-core` glow, where she rests on him | Inline (`on-his-lap.tsx`) | Shloka 21 |
+| Lotus fibre (bisa-tantu) | A single `--art-ivory` thread (1.4) over a faint gold one, looped round his horn and tied at her side, slack | Inline (`on-his-lap.tsx`) | Shloka 21 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -929,6 +934,38 @@ One entry per finished artwork, in the order they were made.
   read as a spotlight and became a soft column. The bell (Shloka 16) and the open lotus (Shloka 19)
   moved into `primitives.tsx`; both render byte-for-byte as before. In the chant miniature the gold
   casket and the two red lotuses carry it.
+
+### Shloka 21: The body totalled up, and the consort finally named
+
+- **Component:** `on-his-lap.tsx` (defs prefix `sa21`)
+- **Composition:** the portrait summed up and its subject joined to her consort. She is a tall flame
+  of light in one flat red, rising from the focal zone through the card to a tip above it, closed in
+  one gold line. Round her, on a beaded chain, are eight of the nine gems of a navaratna, set as that
+  jewel is set, with the ruby's place at the centre hers. Kāmeśa is named at last and appears as his
+  crescent, laid horns up as a lap, and she sits in it to the viewer's right, his left. Where she
+  rests on him is one bindu, half white and half red, and a single lotus fibre is looped round his
+  horn and tied at her side. The first composition in which he and she are both present, and the
+  first to show her as one flat colour.
+- **Name → part:**
+  - Sarvāruṇā → `red`: the flat red of the flame and its glow
+  - Anavadyāṅgī → `outline`: the one unbroken line round it
+  - Sarvābharaṇabhūṣitā → `gems`: the eight gems and their chain
+  - Śivakāmeśvarāṅkasthā → `lap`: his crescent and its glow
+  - Śivā → `bindu`: the red and white point where they meet
+  - Svādhīnavallabhā → `thread`: the lotus fibre that ties them
+- **Palette:** `--art-vermilion` for her, `--art-moon` and `--gold` for him, and the gems in
+  `--sindura`, `--leaf`, `--art-turmeric`, `--art-hair`, `--art-ember`, `--gold-soft` and
+  `--art-moon`. `--art-ivory` for the fibre. No additions.
+- **Motion:** `m-shimmer` (her glow and his), `m-twinkle` (passing glints on four gems), and
+  `m-breathe` (the bindu's glow).
+- **Notes:** This title wraps at every desktop width, its second line reaching only x ≈ 23 at
+  1280px, and the card sits at y ≈ 225–437. The gems sit where the card leaves them visible: four
+  above it, one at each side, two below. The first flame, its sides convex to the tip, read as a
+  drop; drawing the sides in near the tip made it a flame. His moon glow first lay over her lower half
+  and washed the red out, so his crescent is now drawn behind her, and the glow, which by lamplight
+  read as a grey platter, is smaller. Kāmeśa's crescent, first drawn small at Shloka 11, is the fourth
+  night's `litPart` already in `primitives.tsx`. In the chant miniature the red flame on the white
+  crescent carries it.
 
 ## Open questions
 
