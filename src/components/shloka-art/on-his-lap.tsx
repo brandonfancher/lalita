@@ -15,8 +15,6 @@
 import { artIds, diamond, glint, litPart, partProps, Pearl, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
-const CX = 320;
-
 /* ── Her: one red, one line ────────────────────────────────────────────── */
 
 const AX = 372;
