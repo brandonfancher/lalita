@@ -11,7 +11,7 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, Footprint, FOOTPRINT_TOES, glint, partProps, round } from "./primitives";
+import { artIds, Footprint, FOOTPRINT_TOES, glint, OpenLotus, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -87,11 +87,6 @@ const SEPALS = "M 0 0 C -6 -2 -11 -6 -12 -12 C -7 -8 -3 -6 0 -4 C 3 -6 7 -8 12 -
 /* ── The lotus, left outside ───────────────────────────────────────────── */
 
 const LOTUS = { x: 562, y: 694, turn: 12 };
-const LOTUS_BACK = [-60, -30, 0, 30, 60].map((deg) => ({ deg, l: 40 }));
-const LOTUS_FRONT = [-75, -40, -12, 12, 40, 75].map((deg) => ({ deg, l: 30 }));
-const PETAL = (l: number) =>
-  `M 0 0 C ${round(-l * 0.36)} ${round(-l * 0.3)} ${round(-l * 0.28)} ${round(-l * 0.8)} 0 ${-l} C ${round(l * 0.28)} ${round(-l * 0.8)} ${round(l * 0.36)} ${round(-l * 0.3)} 0 0 Z`;
-
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
 export function NailMoons({ idPrefix = "sa19", active = null }: ArtProps) {
@@ -156,14 +151,7 @@ export function NailMoons({ idPrefix = "sa19", active = null }: ArtProps) {
           ))}
         </g>
         <g transform={`translate(${LOTUS.x} ${LOTUS.y}) rotate(${LOTUS.turn})`}>
-          <ellipse cy={4} rx={44} ry={8} fill="var(--leaf)" fillOpacity={0.55} />
-          {LOTUS_BACK.map((p) => (
-            <path key={p.deg} d={PETAL(p.l)} transform={`rotate(${p.deg})`} fill="var(--lotus)" fillOpacity={0.6} stroke="var(--gold)" strokeWidth={0.6} />
-          ))}
-          {LOTUS_FRONT.map((p) => (
-            <path key={p.deg} d={PETAL(p.l)} transform={`rotate(${p.deg})`} fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.6} />
-          ))}
-          <ellipse cy={-6} rx={9} ry={5} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.6} />
+          <OpenLotus />
         </g>
       </g>
 

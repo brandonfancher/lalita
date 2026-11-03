@@ -1011,6 +1011,51 @@ export function Footprint({ edge = false }: { edge?: boolean }) {
   );
 }
 
+/* ── Bells ─────────────────────────────────────────────────────────────── */
+
+/** One jewelled bell (kiṅkiṇī) hanging from a cord at the origin: a gold ball with a slit and a gem, about 19 across. */
+export function Bell({ gem, s = 1 }: { gem: string; s?: number }) {
+  return (
+    <g transform={s === 1 ? undefined : `scale(${s})`}>
+      <path d="M 0 0 L 0 6" stroke="var(--gold)" strokeWidth={1.1} />
+      <circle cy={5} r={2.3} stroke="var(--gold)" strokeWidth={1} />
+      <circle cy={16} r={9.2} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.7} />
+      <path d="M -8.2 19 Q 0 22.8 8.2 19" stroke="var(--art-carve)" strokeWidth={1.6} strokeLinecap="round" />
+      <circle cy={22} r={1.9} fill="var(--art-carve)" />
+      <circle cy={12.6} r={3} fill={gem} stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d="M -5.8 12 Q -5.6 8.2 -2.4 7.4" stroke="var(--art-core)" strokeWidth={1.2} strokeLinecap="round" />
+    </g>
+  );
+}
+
+/* ── The open lotus ────────────────────────────────────────────────────── */
+
+const LOTUS_BACK = [-60, -30, 0, 30, 60];
+const LOTUS_FRONT = [-75, -40, -12, 12, 40, 75];
+const lotusPetal = (l: number) =>
+  `M 0 0 C ${round(-l * 0.36)} ${round(-l * 0.3)} ${round(-l * 0.28)} ${round(-l * 0.8)} 0 ${-l} C ${round(l * 0.28)} ${round(-l * 0.8)} ${round(l * 0.36)} ${round(-l * 0.3)} 0 0 Z`;
+
+/**
+ * An open lotus (padma) seen at a slant, centred on the origin where it sits on its pad: five back
+ * petals 40 long and six front petals 30 long, edged in gold, round a turmeric seed head. About 90 across.
+ * `shade` draws a vein down each front petal; `pad={false}` leaves out the leaf it floats on.
+ */
+export function OpenLotus({ fill = "var(--lotus)", shade, pad = true }: { fill?: string; shade?: string; pad?: boolean }) {
+  return (
+    <>
+      {pad && <ellipse cy={4} rx={44} ry={8} fill="var(--leaf)" fillOpacity={0.55} />}
+      {LOTUS_BACK.map((deg) => (
+        <path key={deg} d={lotusPetal(40)} transform={`rotate(${deg})`} fill={fill} fillOpacity={0.6} stroke="var(--gold)" strokeWidth={0.6} />
+      ))}
+      {LOTUS_FRONT.map((deg) => (
+        <path key={deg} d={lotusPetal(30)} transform={`rotate(${deg})`} fill={fill} stroke="var(--gold)" strokeWidth={0.6} />
+      ))}
+      {shade && LOTUS_FRONT.map((deg) => <path key={deg} d={`M 0 -2 L 0 -26`} transform={`rotate(${deg})`} stroke={shade} strokeWidth={0.7} strokeOpacity={0.6} />)}
+      <ellipse cy={-6} rx={9} ry={5} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.6} />
+    </>
+  );
+}
+
 /* ── Pearls ────────────────────────────────────────────────────────────── */
 
 /** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */

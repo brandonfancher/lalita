@@ -12,6 +12,7 @@ import { NailMoons } from "./nail-moons";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
+import { StillWaterSteps } from "./still-water-steps";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
@@ -757,6 +758,46 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: the hands folded in the bowing are closed like buds. Śaṅkara
           (Saundaryalaharī 89) calls her nails moons, and lotuses close when the moon is up, so the hands of the women
           of heaven, which are lotuses, can only fold before them.
+        </>
+      ),
+    },
+  },
+  "020": {
+    Art: StillWaterSteps,
+    intro: (Spot) => (
+      <>
+        The hymn&rsquo;s portrait of her reaches her feet in this verse, and closes by naming where all of it comes
+        from. It is set on <Spot part="water">still water</Spot>, because of the swan. Every element comes from one
+        of the three names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 46,
+        part: "anklets",
+        depicts:
+          "Her feet are two red lotuses standing on the water a step apart, each ringed by a jewelled anklet hung with small bells. Their ringing spreads across the surface in broken rings.",
+      },
+      {
+        nama: 47,
+        part: "swan",
+        depicts:
+          "A female swan keeps pace with her feet, so slowly that her wake hardly opens behind her and its ripples lie far apart.",
+      },
+      {
+        nama: 48,
+        part: "treasury",
+        depicts:
+          "Above, the treasury the name calls her stands open, heaped with rubies, emeralds and pearls, and its light pours down over everything below, as if the loveliness of the scene had been drawn out of it.",
+      },
+    ],
+    detail: {
+      part: "salt",
+      body: (
+        <>
+          There is also a small detail for the attentive: on the rim of the treasury lies a little heap of salt. The
+          word for loveliness, <i>lāvaṇya</i>, is made from <i>lavaṇa</i>, salt: it is the quality that makes a face
+          worth looking at, as salt makes food worth eating.
         </>
       ),
     },

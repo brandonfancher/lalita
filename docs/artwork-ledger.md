@@ -122,7 +122,7 @@ second time it is needed.
 | The thread of sky (Saundaryalaharī 77) | A hair-fine (0.9) wavy line of `--art-hair` down the middle of her unseen waist, faded out at both ends: the sky squeezed to "the very thinnest ripple on the Yamunā". Kept faint, so the hollow still reads as empty | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
 | Bud (mukula) | A closed bud on a short `--art-hair` stalk: an `--art-turmeric` teardrop edged in gold, a saffron seam, a small `--leaf` cap, swinging from its stalk (`m-sway`) | Inline (`grown-stake.tsx`) | Shloka 14 |
 | The mountain (Himavat) | One skyline drawn with `through`, rising from the lower left to a single peak at the upper right and falling off the right edge. An `--art-stone` face tinted with `--art-saffron` toward the dawn, bands of strata across its upper face in hair-fine `--art-carve` (short separate marks read as scratches), and a snow cap in `--art-moon` blushing to `--art-saffron` at the tip, the first light on the peak. A vermilion blush on the snow turned pink | Inline (`safflower-slope.tsx`) | Shloka 16 |
-| Bell (kiṅkiṇī) | A gold ball (radius 9.2) with an `--art-carve` edge, a carve slit and clapper below, a ruby or emerald (`--art-vermilion` or `--leaf`) set in its shoulder, and an `--art-core` highlight, hung from a short gold cord and ring. Bells on one cord swing (`m-sway`) in three groups | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Bell (kiṅkiṇī) | A gold ball (radius 9.2) with an `--art-carve` edge, a carve slit and clapper below, a ruby or emerald (`--art-vermilion` or `--leaf`) set in its shoulder, and an `--art-core` highlight, hung from a short gold cord and ring. Bells on one cord swing (`m-sway`) in three groups | `Bell` in `primitives.tsx` (promoted at Shloka 20) | Shloka 16 |
 | Girdle (raśanā) | A 6-unit `--gold` cord with a dashed `--art-carve` weave and an `--art-core` sheen, bells every 28 units, and a front knot (a gold oval set with a ruby) from which two larger bells hang on cords and swing together from the knot (`swingFrom`) | Inline (`safflower-slope.tsx`) | Shloka 16 |
 | The sound of bells | Never waves or notes: broken `--gold` arcs, dashed like a chime, rising from the source in widening rings that fade as they go (`m-shimmer`) | Inline (`safflower-slope.tsx`) | Shloka 16 |
 | Safflower cloth (kausumbha-vastra) | Hangs from a girdle in vertical folds 26 units apart to a hem of soft lobes, one per fold: an `--art-vermilion` to `--art-saffron` field, `--art-crimson` shade beside each fold, `--art-core` sheen along the crests, a woven border and a fringe at the hem, and a fan of seven pleats falling from the knot (narrower pleats read as a necktie) | Inline (`safflower-slope.tsx`) | Shloka 16 |
@@ -137,8 +137,14 @@ second time it is needed.
 | Her toenails as moons | On each toe of her footprints, a full moon 0.78 the toe's radius: a radial gradient from `--art-core` to `--art-moon`, a hair-fine gold rim, a moon glow 3.2 times its radius, `m-twinkle` in three groups, and a glint on each big toe. Ten pale discs without the feet read as a string of pearls | Inline (`nail-moons.tsx`) | Shloka 19 |
 | The net of her light (prabhā-jāla) | From each foot, 23 rays of light across the floor (foreshortened to 0.7), ten degrees apart through the lower half, starting just outside the foot; where a ray of one foot crosses a ray of the other, a small knot. All in a `--gold` radial gradient that fades out. One centre with spokes and rings read as a cobweb | Inline (`nail-moons.tsx`) | Shloka 19 |
 | Darkness covered (tamas) | A soft pool of `--art-hair` (a radial gradient, never a hard edge) with a veil of her light (`--art-core` to `--art-moon`) laid over all but its fringe. With hard edges the two read as a dish | Inline (`nail-moons.tsx`) | Shloka 19 |
-| Open lotus (padma) | Seen at a slant: five back and six front pointed `--lotus` petals edged in gold, an `--art-turmeric` seed head, and a `--leaf` pad beneath | Inline (`nail-moons.tsx`) | Shloka 19 |
+| Open lotus (padma) | Seen at a slant: five back and six front pointed `--lotus` petals edged in gold, an `--art-turmeric` seed head, and a `--leaf` pad beneath (`pad={false}` leaves it out; `shade` veins the front petals) | `OpenLotus` in `primitives.tsx` (promoted at Shloka 20) | Shloka 19 |
 | Folded hands as lotus buds (añjali) | Closed buds about 44 tall, `--art-core` to `--art-saffron` to `--art-vermilion` and edged in gold, with an `--art-crimson` shade on one side, a seam, `--leaf` sepals and a short stalk, standing in ranks | Inline (`nail-moons.tsx`) | Shloka 19 |
+| Her feet as lotuses (śrīpadāmbuja) | Two `OpenLotus`es in `--art-vermilion` with `--art-crimson` veins and no pad, standing on still water a step apart, the nearer a little larger. With the pad, the anklet round them read as a saucer | `OpenLotus` in `primitives.tsx` | Shloka 20 |
+| Anklet (mañjīra) | A ring round the lotus's base, 72 by 20, seen from a little above: its far half drawn behind the petals and its near half in front, a 5-unit `--gold` band with an `--art-core` sheen, five `Bell`s at 0.62 hanging from the near half and swinging in two groups, and small ruby and pearl studs between them. Its ringing is broken `--gold` rings spreading flat across the water, as the girdle's sound is broken rings | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Still water | Long level `--gold-soft` hairlines, closer together toward the far edge and broken where light lies on them, faded at both sides; a firmer line for the far edge. Calmer than the sea's ripple arcs | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Swan on the water (marālī) | Seen from the side, about 100 long: an `--art-moon` body with a full breast low on the water and a raised tail, the wing arched up off the back with three gold feather lines, an S-curved neck (a 7-unit moon stroke over a 9-unit gold one), a small head with an `--art-saffron` beak and a carve eye, and a faint reflection. A flat back and a lowered wing read as a gravy boat. Her wake is a few flat arcs trailing close behind, far apart, because she is slow; two long parting lines read as a pole | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Treasury (śevadhi) | An open gold casket seen from the front: a box with a vermilion band set with pearl and emerald studs, small feet, a lid raised behind with a lit inner face, a heap of rubies, pearls, emeralds and gold above the rim with passing glints, two pearl strings spilling over the front, an `--art-core` glow over the hoard, and a soft column of her light pouring down from it with falling points of light. A hard-edged beam read as a spotlight | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Salt (lavaṇa) | A little heap of `--art-ivory` crystals edged in gold, each a small rhomb with one facet line | Inline (`still-water-steps.tsx`) | Shloka 20 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -890,6 +896,39 @@ One entry per finished artwork, in the order they were made.
   once, two crossing fans of rays read as a net, and the dark and its veil became soft gradients. The
   footprint moved into `primitives.tsx`; the Dhyāna renders byte-for-byte as before. In the chant
   miniature the red feet over the lit pool carry it, and the share card shows the whole.
+
+### Shloka 20: The portrait reaches the feet, and beauty is named at its source
+
+- **Component:** `still-water-steps.tsx` (defs prefix `sa20`)
+- **Composition:** still water fills the plate below the card. On it stand her feet as two red
+  lotuses a step apart, each ringed by a jewelled anklet whose bells sound in broken rings across the
+  surface. A female swan keeps pace below them at the right, her wake a few flat arcs that hardly
+  open. Above the card, in the crown zone, the treasury the third name calls her stands open, heaped
+  with gems, and a soft column of light pours down from it over the water with points of light
+  falling through it. The first composition that ends the portrait: its source is shown above and its
+  last step below.
+- **Name → part:**
+  - Śiñjānamaṇimañjīramaṇḍitaśrīpadāmbujā → `anklets`: the two lotuses, their anklets and bells, and
+    the rings of their ringing
+  - Marālīmandagamanā → `swan`: the swan, her reflection and her wake
+  - Mahālāvaṇyaśevadhiḥ → `treasury`: the casket, its hoard and glow, and the light pouring from it
+  - Intro, *still water* → `water`: the level lines of the surface and the glow on it
+  - Detail → `salt`: the heap of salt on the rim, because *lāvaṇya* is made from *lavaṇa*
+- **Palette:** `--art-vermilion` and `--art-crimson` for the lotuses, `--gold` for the anklets and
+  casket, `--art-moon` and `--art-saffron` for the swan, `--gold-soft` for the water, and
+  `--art-ivory` for the salt. No additions.
+- **Motion:** `m-sway` (the anklet bells, in two groups), `m-shimmer` (the water's glow, the column
+  of light, and the ringing), `m-twinkle` (the falling points), `m-lick` (the hoard), and `m-breathe`
+  (the hoard's glow).
+- **Notes:** This title wraps at every desktop width, its second line reaching x ≈ 78 at 1280px, and
+  the card sits at y ≈ 225–437, which leaves the crown zone clear for the casket. The first swan, with
+  a flat back and a lowered grey wing, read as a gravy boat; an arched wing, a full breast and a raised
+  tail made it a swan. Its first wake, two long parting lines, read as a pole and then, as chevrons,
+  as stray brackets; flat arcs trailing close behind match the rings on the water. The lotuses first
+  kept their leaf pads, and the anklets round them read as saucers. A hard-edged beam from the casket
+  read as a spotlight and became a soft column. The bell (Shloka 16) and the open lotus (Shloka 19)
+  moved into `primitives.tsx`; both render byte-for-byte as before. In the chant miniature the gold
+  casket and the two red lotuses carry it.
 
 ## Open questions
 

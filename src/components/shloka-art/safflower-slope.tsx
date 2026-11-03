@@ -11,7 +11,7 @@
  * artwork's entry.
  */
 
-import { artIds, glint, partProps, polyline, round, swingFrom, through } from "./primitives";
+import { artIds, Bell, glint, partProps, polyline, round, swingFrom, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -76,21 +76,6 @@ const BELLS = Array.from({ length: 13 }, (_, k) => {
   const x = 286 + k * 28;
   return { x, y: yAt(GIRDLE, x), gem: k % 2 ? "var(--leaf)" : "var(--art-vermilion)", group: k % 3 };
 }).filter((b) => Math.abs(b.x - KNOT.x) > 16 && b.x < 640);
-
-/** One jewelled bell (kiṅkiṇī) hanging from the cord at the origin. */
-function Bell({ gem, s = 1 }: { gem: string; s?: number }) {
-  return (
-    <g transform={s === 1 ? undefined : `scale(${s})`}>
-      <path d="M 0 0 L 0 6" stroke="var(--gold)" strokeWidth={1.1} />
-      <circle cy={5} r={2.3} stroke="var(--gold)" strokeWidth={1} />
-      <circle cy={16} r={9.2} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.7} />
-      <path d="M -8.2 19 Q 0 22.8 8.2 19" stroke="var(--art-carve)" strokeWidth={1.6} strokeLinecap="round" />
-      <circle cy={22} r={1.9} fill="var(--art-carve)" />
-      <circle cy={12.6} r={3} fill={gem} stroke="var(--art-carve)" strokeWidth={0.5} />
-      <path d="M -5.8 12 Q -5.6 8.2 -2.4 7.4" stroke="var(--art-core)" strokeWidth={1.2} strokeLinecap="round" />
-    </g>
-  );
-}
 
 /** Rings of sound, broken like a chime, spreading out from the knot. */
 const SOUND = [52, 92, 138, 190, 248].map((r, k) => {
