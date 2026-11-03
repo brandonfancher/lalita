@@ -8,6 +8,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { MeruInward } from "./meru-inward";
+import { NectarIsland } from "./nectar-island";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
 import { OnHisLap } from "./on-his-lap";
@@ -883,6 +884,48 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "couch",
         depicts:
           "Inside it is her couch. Its four legs are four gods, each marked with his work: Brahmā's lotus for making, Viṣṇu's discus for keeping, Rudra's trident for ending, and Īśvara's veil for hiding. Its white plank is Sadāśiva, the fifth, whose work is grace, and her presence is seated on him.",
+      },
+    ],
+  },
+  "023": {
+    Art: NectarIsland,
+    intro: (Spot) => (
+      <>
+        The first three names are frames, each wider than the last, and the artwork draws them as rings round{" "}
+        <Spot part="light">her light</Spot>. Then the verse turns from where she lives to her eyes, and the artwork turns
+        with it, into the water nearest the viewer. Every element comes from one of the five names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 59,
+        part: "lotuses",
+        depicts:
+          "At the centre, lotuses grown as tall as the trees round them, a forest of them rising from a pool, with their leaves held up on stalks and their buds still closed. Her light is seated in the tallest.",
+      },
+      {
+        nama: 60,
+        part: "grove",
+        depicts:
+          "Round the lotuses stands a grove of kadamba trees, glossy-leaved and hung with the orange, pale-whiskered balls that open at the first rain.",
+      },
+      {
+        nama: 61,
+        part: "sea",
+        depicts:
+          "The grove and the lotuses stand on an island, and the island lies in a sea of nectar, the drink that keeps the gods from dying, drawn milk-white and patterned with small waves out to the edges of the plate.",
+      },
+      {
+        nama: 62,
+        part: "eyes",
+        depicts:
+          "In the near water two fish circle each other, sending out rings. They are her eyes, drawn as fish because the poets' word for a long, lovely eye is a fish-shaped one, and desire is in them.",
+      },
+      {
+        nama: 63,
+        part: "gift",
+        depicts:
+          "From her eyes a path of light runs over the water to the viewer, the way the moon's path runs to whoever stands on the shore, and on it a lotus floats out to be handed over: what is wished for, given.",
       },
     ],
   },

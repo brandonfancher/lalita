@@ -13,7 +13,21 @@
 
 import type { CSSProperties } from "react";
 
-import { artIds, MoonDeer, MoonHalo, partProps, polar, radiance, round, Ruby, sunRays } from "./primitives";
+import {
+  artIds,
+  kadambaHead,
+  KadambaHead,
+  kadambaLeaf,
+  KadambaLeaf,
+  MoonDeer,
+  MoonHalo,
+  partProps,
+  polar,
+  radiance,
+  round,
+  Ruby,
+  sunRays,
+} from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -30,8 +44,6 @@ const BAIL_Y = LOBE_Y + 32;
 const DISC_Y = BAIL_Y + R;
 
 const swingFrom = (x: number): CSSProperties => ({ transformBox: "view-box", transformOrigin: `${x}px ${LOBE_Y}px` });
-
-const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
 /* ── The sun ────────────────────────────────────────────────────────────── */
 
@@ -107,50 +119,6 @@ const SPRAYS: Spray[] = [
     ],
   },
 ];
-
-/** A kadamba leaf: broad, pointed, glossy, base at the origin, pointing along +x. */
-function kadambaLeaf(l: number, w: number) {
-  const blade = `M 0 0 C ${round(l * 0.2)} ${-w} ${round(l * 0.72)} ${round(-w * 0.9)} ${l} 0 C ${round(l * 0.72)} ${round(w * 0.9)} ${round(l * 0.2)} ${w} 0 0 Z`;
-  const rib = `M 2 0 L ${round(l * 0.95)} 0`;
-  const veins = [0.22, 0.38, 0.54, 0.7]
-    .map((u) => {
-      const x = round(u * l);
-      const h = round(w * 0.62 * (1 - u * 0.55));
-      const x2 = round(x + l * 0.14);
-      return `M ${x} 0 Q ${round(x + l * 0.04)} ${round(-h * 0.7)} ${x2} ${-h} M ${x} 0 Q ${round(x + l * 0.04)} ${round(h * 0.7)} ${x2} ${h}`;
-    })
-    .join(" ");
-  return { blade, rib, veins };
-}
-
-const GOLDEN = Math.PI * (3 - Math.sqrt(5));
-
-const dot = (x: number, y: number, r: number) =>
-  `M ${round(x - r)} ${round(y)} a ${r} ${r} 0 1 0 ${round(2 * r)} 0 a ${r} ${r} 0 1 0 ${round(-2 * r)} 0 `;
-
-/**
- * One kadamba head: an orange ball of tiny florets whose pale styles stand
- * out all over it, so it looks like a pincushion with a fuzzy corona.
- */
-function kadambaHead({ x, y, r }: Head, seed: number) {
-  const n = Math.round(r * 2.6);
-  const styles: string[] = [];
-  const tips = ["", "", ""];
-  for (let k = 0; k < n; k++) {
-    const deg = (k * 360) / n + ((seed * 37 + k * 53) % 11) - 5;
-    const reach = r * (1.24 + ((seed + k * 7) % 5) * 0.03);
-    const a = polar(x, y, r * 0.78, deg);
-    const b = polar(x, y, reach, deg);
-    styles.push(`M ${a.x} ${a.y} L ${b.x} ${b.y}`);
-    tips[(k + seed) % 3] += dot(b.x, b.y, 1.05);
-  }
-  const florets = Array.from({ length: Math.round(r * r * 0.11) }, (_, i) => {
-    const rr = r * 0.84 * Math.sqrt((i + 0.5) / Math.round(r * r * 0.11));
-    const t = i * GOLDEN + seed;
-    return { x: round(x + rr * Math.cos(t)), y: round(y + rr * Math.sin(t)) };
-  });
-  return { x, y, r, styles: styles.join(" "), tips, florets };
-}
 
 const KADAMBA = SPRAYS.map((s, si) => ({
   ...s,
@@ -331,26 +299,13 @@ export function SunMoonEarrings({ idPrefix = "sa8", active = null }: ArtProps) {
           <g key={si}>
             {s.leafShapes.map((l, i) => (
               <g key={i} transform={l.at}>
-                <path d={l.blade} fill="var(--leaf)" fillOpacity={0.78} stroke="var(--leaf)" strokeWidth={0.8} />
-                <path d={l.veins} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.55} />
-                <path d={l.rib} stroke="var(--gold-soft)" strokeWidth={0.9} strokeOpacity={0.85} />
+                <KadambaLeaf {...l} />
               </g>
             ))}
             <path d={s.stalks} stroke="var(--leaf)" strokeWidth={1.6} strokeLinecap="round" />
             {s.headShapes.map((h, hi) => (
               <g key={hi}>
-                <path d={h.styles} stroke="var(--art-saffron)" strokeWidth={0.6} strokeLinecap="round" />
-                <circle cx={h.x} cy={h.y} r={h.r} fill={url("kadamba")} />
-                <g fill="var(--art-ivory)" fillOpacity={0.85}>
-                  {h.florets.map((f, k) => (
-                    <circle key={k} cx={f.x} cy={f.y} r={0.7} />
-                  ))}
-                </g>
-                <g fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.35}>
-                  {h.tips.map((d, k) => (
-                    <path key={k} className={TWINKLE[k]} d={d} />
-                  ))}
-                </g>
+                <KadambaHead head={h} fill={url("kadamba")} />
               </g>
             ))}
           </g>

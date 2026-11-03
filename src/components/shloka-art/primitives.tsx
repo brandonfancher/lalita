@@ -1056,6 +1056,156 @@ export function OpenLotus({ fill = "var(--lotus)", shade, pad = true }: { fill?:
   );
 }
 
+/* ── Fish ──────────────────────────────────────────────────────────────── */
+
+/**
+ * A fish seen from above, as fish are seen in shallow water, nose at +x,
+ * about 70 units long. Its body is bent a little, as a fish is when it turns.
+ */
+const FISH_BEND = 0.004;
+const bend = (d: string) =>
+  d.replace(/(-?\d+(?:\.\d+)?) (-?\d+(?:\.\d+)?)/g, (_, x: string, y: string) => `${x} ${round(Number(y) + FISH_BEND * Number(x) ** 2)}`);
+const bent = (x: number, y: number): Pt => ({ x, y: round(y + FISH_BEND * x * x) });
+
+export const FISH_BODY = bend(
+  "M 32 0 C 30 -6 20 -9 8 -9 C -6 -9 -16 -5 -24 -1.6 Q -30 -4 -38 -10 Q -33 -4 -32 0 Q -33 4 -38 10 Q -30 4 -24 1.6 C -16 5 -6 9 8 9 C 20 9 30 6 32 0 Z",
+);
+const FISH_FINS = bend(
+  "M 16 -7.5 Q 10 -18 1 -16 Q 7 -11 10 -8 Z M 16 7.5 Q 10 18 1 16 Q 7 11 10 8 Z M -6 -7 Q -11 -13 -16 -11 Q -12 -8 -10 -5.5 Z M -6 7 Q -11 13 -16 11 Q -12 8 -10 5.5 Z",
+);
+const FISH_SPINE = bend("M 22 0 C 10 0 -8 0 -22 0");
+const FISH_EYES = [bent(24, -4.6), bent(24, 4.6)];
+const FISH_SCALES = [-4.5, 0, 4.5]
+  .flatMap((y, row) => Array.from({ length: 6 }, (_, k) => bent(-16 + k * 6 + (row === 1 ? 3 : 0), y)))
+  .map((c) => `M ${c.x} ${round(c.y - 2.6)} A 2.6 2.6 0 0 0 ${c.x} ${round(c.y + 2.6)}`)
+  .join(" ");
+
+/** The fish's gradient and its clip, for the `<defs>` of an artwork that draws `Fish`. */
+export function FishDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <linearGradient id={id("fish")} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="0.5" style={{ stopColor: "var(--art-vermilion)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-saffron)" }} />
+      </linearGradient>
+      <clipPath id={id("fish-clip")}>
+        <path d={FISH_BODY} />
+      </clipPath>
+    </>
+  );
+}
+
+/** One fish (mīna) at the origin, heading +x; its shadow is `FISH_BODY` filled faintly beneath it. */
+export function Fish({ url }: { url: (name: string) => string }) {
+  return (
+    <>
+      <path d={FISH_FINS} fill="var(--art-saffron)" fillOpacity={0.75} stroke="var(--gold)" strokeWidth={0.5} />
+      <path d={FISH_BODY} fill={url("fish")} />
+      <path d={FISH_SCALES} clipPath={url("fish-clip")} stroke="var(--gold)" strokeWidth={0.5} strokeOpacity={0.7} />
+      <path d={FISH_SPINE} stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.8} />
+      <path d={FISH_BODY} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      {FISH_EYES.map((e) => (
+        <g key={e.y}>
+          <circle cx={e.x} cy={e.y} r={2.3} fill="var(--art-core)" />
+          <circle cx={e.x} cy={e.y} r={1.3} fill="var(--art-musk)" />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** Water in the miniature painters' pattern: rows of small arcs, each row set half an arc along. */
+export function WavePattern({ id }: { id: string }) {
+  return (
+    <pattern id={id} width={14} height={9} patternUnits="userSpaceOnUse">
+      <path
+        d="M 0 9 A 9 9 0 0 1 14 9 M -7 4.5 A 9 9 0 0 1 7 4.5 M 7 4.5 A 9 9 0 0 1 21 4.5"
+        stroke="var(--gold-soft)"
+        strokeWidth={0.6}
+        strokeOpacity={0.55}
+      />
+    </pattern>
+  );
+}
+
+/* ── Kadamba ───────────────────────────────────────────────────────────── */
+
+/** A kadamba leaf: broad, pointed, glossy, base at the origin, pointing along +x. */
+export function kadambaLeaf(l: number, w: number) {
+  const blade = `M 0 0 C ${round(l * 0.2)} ${-w} ${round(l * 0.72)} ${round(-w * 0.9)} ${l} 0 C ${round(l * 0.72)} ${round(w * 0.9)} ${round(l * 0.2)} ${w} 0 0 Z`;
+  const rib = `M 2 0 L ${round(l * 0.95)} 0`;
+  const veins = [0.22, 0.38, 0.54, 0.7]
+    .map((u) => {
+      const x = round(u * l);
+      const h = round(w * 0.62 * (1 - u * 0.55));
+      const x2 = round(x + l * 0.14);
+      return `M ${x} 0 Q ${round(x + l * 0.04)} ${round(-h * 0.7)} ${x2} ${-h} M ${x} 0 Q ${round(x + l * 0.04)} ${round(h * 0.7)} ${x2} ${h}`;
+    })
+    .join(" ");
+  return { blade, rib, veins };
+}
+
+const GOLDEN = Math.PI * (3 - Math.sqrt(5));
+
+const dot = (x: number, y: number, r: number) =>
+  `M ${round(x - r)} ${round(y)} a ${r} ${r} 0 1 0 ${round(2 * r)} 0 a ${r} ${r} 0 1 0 ${round(-2 * r)} 0 `;
+
+/**
+ * One kadamba head: an orange ball of tiny florets whose pale styles stand
+ * out all over it, so it looks like a pincushion with a fuzzy corona.
+ */
+export function kadambaHead({ x, y, r }: { x: number; y: number; r: number }, seed: number) {
+  const n = Math.round(r * 2.6);
+  const styles: string[] = [];
+  const tips = ["", "", ""];
+  for (let k = 0; k < n; k++) {
+    const deg = (k * 360) / n + ((seed * 37 + k * 53) % 11) - 5;
+    const reach = r * (1.24 + ((seed + k * 7) % 5) * 0.03);
+    const a = polar(x, y, r * 0.78, deg);
+    const b = polar(x, y, reach, deg);
+    styles.push(`M ${a.x} ${a.y} L ${b.x} ${b.y}`);
+    tips[(k + seed) % 3] += dot(b.x, b.y, 1.05);
+  }
+  const florets = Array.from({ length: Math.round(r * r * 0.11) }, (_, i) => {
+    const rr = r * 0.84 * Math.sqrt((i + 0.5) / Math.round(r * r * 0.11));
+    const t = i * GOLDEN + seed;
+    return { x: round(x + rr * Math.cos(t)), y: round(y + rr * Math.sin(t)) };
+  });
+  return { x, y, r, styles: styles.join(" "), tips, florets };
+}
+
+/** A kadamba leaf from `kadambaLeaf`, drawn at the origin; place and turn it in the enclosing group. */
+export function KadambaLeaf({ blade, rib, veins }: ReturnType<typeof kadambaLeaf>) {
+  return (
+    <>
+      <path d={blade} fill="var(--leaf)" fillOpacity={0.78} stroke="var(--leaf)" strokeWidth={0.8} />
+      <path d={veins} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.55} />
+      <path d={rib} stroke="var(--gold-soft)" strokeWidth={0.9} strokeOpacity={0.85} />
+    </>
+  );
+}
+
+/** A kadamba head from `kadambaHead`, filled with the caller's radial gradient (core, saffron, vermilion). */
+export function KadambaHead({ head, fill }: { head: ReturnType<typeof kadambaHead>; fill: string }) {
+  return (
+    <>
+      <path d={head.styles} stroke="var(--art-saffron)" strokeWidth={0.6} strokeLinecap="round" />
+      <circle cx={head.x} cy={head.y} r={head.r} fill={fill} />
+      <g fill="var(--art-ivory)" fillOpacity={0.85}>
+        {head.florets.map((f, k) => (
+          <circle key={k} cx={f.x} cy={f.y} r={0.7} />
+        ))}
+      </g>
+      <g fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.35}>
+        {head.tips.map((d, k) => (
+          <path key={k} className={TWINKLE[k]} d={d} />
+        ))}
+      </g>
+    </>
+  );
+}
+
 /* ── Pearls ────────────────────────────────────────────────────────────── */
 
 /** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */
