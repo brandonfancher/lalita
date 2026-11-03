@@ -7,6 +7,7 @@ import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
+import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
 import { OnHisLap } from "./on-his-lap";
@@ -846,6 +847,42 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "thread",
         depicts:
           "They are tied together by a single lotus fibre, looped loosely round his horn. It is the weakest bond there is, and it holds, because he has no wish to break it.",
+      },
+    ],
+  },
+  "022": {
+    Art: MeruInward,
+    intro: (Spot) => (
+      <>
+        The verse moves inward, from the mountain at the centre of the world to the one seat at the centre of
+        everything, and the artwork climbs with it to <Spot part="light">her presence</Spot>, which is the light the
+        whole of it is lit by. Every element comes from one of the four names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 55,
+        part: "meru",
+        depicts:
+          "Meru, the golden world-mountain, rises from the foot of the plate with three summits, and everything else stands on the middle one.",
+      },
+      {
+        nama: 56,
+        part: "city",
+        depicts:
+          "Her city climbs the middle summit in walls of different metals, each inside the last and higher than it: iron, copper, silver, gold, then ruby and emerald, entered by one gate at the front.",
+      },
+      {
+        nama: 57,
+        part: "house",
+        depicts:
+          "On the innermost terrace stands a pavilion of the wish-granting gem, open between its pillars and roofed with the gem itself, cut in facets.",
+      },
+      {
+        nama: 58,
+        part: "couch",
+        depicts:
+          "Inside it is her couch. Its four legs are four gods, each marked with his work: Brahmā's lotus for making, Viṣṇu's discus for keeping, Rudra's trident for ending, and Īśvara's veil for hiding. Its white plank is Sadāśiva, the fifth, whose work is grace, and her presence is seated on him.",
       },
     ],
   },

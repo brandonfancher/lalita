@@ -150,6 +150,10 @@ second time it is needed.
 | Kāmeśa's crescent as a lap | The fourth night's `litPart`, radius 124, turned horns up: `--art-moon` with a 1.6 `--gold` rim and an inner `--gold-soft` line, and a low moon glow beneath. She sits on it to the viewer's right, his left | Inline (`on-his-lap.tsx`) | Shloka 21 |
 | Red and white bindu | A bindu (radius 8) half `--art-moon` and half `--art-vermilion`, his side and hers, with a gold rim and an `--art-core` glow, where she rests on him | Inline (`on-his-lap.tsx`) | Shloka 21 |
 | Lotus fibre (bisa-tantu) | A single `--art-ivory` thread (1.4) over a faint gold one, looped round his horn and tied at her side, slack | Inline (`on-his-lap.tsx`) | Shloka 21 |
+| Meru, the world-mountain | Golden: an `--art-turmeric` to `--gold` to faded `--gold-soft` gradient with a `--gold` skyline and hair-fine `--art-carve` ridges running down from each summit. Three summits, the middle one a broad flat top that carries what stands on it, the two outer ones pointed and lower, with deep saddles between (shallow saddles read as one hill with two bumps) | Inline (`meru-inward.tsx`) | Shloka 22 |
+| City walls (prākāra) | Seen from the front as terraces, each wall inside and above the last: a band 14 tall in its own metal or gem (`--art-hair` iron, `--sindura` copper, `--art-moon` silver, `--gold`, `--art-vermilion` ruby, `--leaf` emerald) edged in gold, with 5-unit merlons along the top, a pointed tower at each end, and an `--art-core` sheen. One arched gate between two towers in the outermost wall. Without the end towers the walls read as steps | Inline (`meru-inward.tsx`) | Shloka 22 |
+| Pavilion of the wish-gem (cintāmaṇi-gṛha) | Four `--art-moon` pillars with gold capitals and bases on a gold floor, a gold lintel, and a roof that is the gem itself: a faceted outline filled across with `--art-saffron`, `--art-core`, `--art-moon` and `--lotus`, gold facet lines, two passing glints, and a gold pot finial. A pale roof read as a house's | Inline (`meru-inward.tsx`) | Shloka 22 |
+| Couch of the five Brahmās (pañcabrahmāsana) | A white plank (Sadāśiva) on four gold legs, each leg with a medallion in its god's colour bearing his work: Brahmā's lotus rosette on `--art-vermilion`, Viṣṇu's discus on `--art-hair`, Rudra's trident on `--art-moon`, Īśvara's veil on `--gold`. Her bindu sits just above the plank | Inline (`meru-inward.tsx`) | Shloka 22 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -966,6 +970,35 @@ One entry per finished artwork, in the order they were made.
   read as a grey platter, is smaller. Kāmeśa's crescent, first drawn small at Shloka 11, is the fourth
   night's `litPart` already in `primitives.tsx`. In the chant miniature the red flame on the white
   crescent carries it.
+
+### Shloka 22: From the world-mountain inward to the couch of the five gods
+
+- **Component:** `meru-inward.tsx` (defs prefix `sa22`)
+- **Composition:** one elevation that climbs as the verse moves inward. Meru, golden, fills the
+  ground with its three summits. On the broad middle one the city rises in six walls of different
+  metals and gems, each inside and above the last, entered by one gate. On the innermost terrace
+  stands an open pavilion roofed with the wish-granting gem, and inside it, just below the card, the
+  couch of the five Brahmās with her bindu seated on its plank. Her radiance spreads from the bindu
+  over everything, up past the card. The first architecture in the series, and the first composition
+  built as a nest of enclosures, each inside the last.
+- **Name → part:**
+  - Sumerumadhyaśṛṅgasthā → `meru`: the mountain and its three summits
+  - Śrīmannagaranāyikā → `city`: the six walls, their towers, and the gate
+  - Cintāmaṇigṛhāntasthā → `house`: the pavilion, its pillars, and its gem roof
+  - Pañcabrahmāsanasthitā → `couch`: the plank, the four legs and their emblems, and her bindu
+  - Intro, *her presence* → `light`: her glow and radiance
+- **Palette:** `--art-turmeric` and `--gold` for Meru; `--art-hair`, `--sindura`, `--art-moon`,
+  `--gold`, `--art-vermilion` and `--leaf` for the walls; `--art-saffron`, `--art-core`,
+  `--art-moon` and `--lotus` for the gem roof. No additions.
+- **Motion:** `m-shimmer` (her glow, radiance, and the gem roof), `m-lick` (glints on the roof and
+  the two outer summits), and `m-breathe` (the bindu's glow).
+- **Notes:** This title wraps at every desktop width, its second line reaching x ≈ 191 at 1280px
+  (243 at 1100px), and the card sits at y ≈ 225–437, so the gem roof is mostly behind the card and
+  the couch sits just below it, where the eye lands. The first Meru had shallow saddles and read as
+  one hill with two bumps; deeper saddles and pointed outer summits made three. The walls first read
+  as a stepped platform, and towers at their ends and taller merlons made them walls. The first roof,
+  pale, read as a house roof; filled with the gem's colours and glints it reads as a gem. In the chant
+  miniature the pavilion on its coloured terraces and the gold mountain carry it.
 
 ## Open questions
 
