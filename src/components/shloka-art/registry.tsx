@@ -6,6 +6,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
 import { SunMoonEarrings } from "./sun-moon-earrings";
@@ -613,6 +614,41 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: a hair-fine dark ripple runs down the middle of the hollow.
           Śaṅkara (Saundaryalaharī 77) says the faint something that discerning eyes make out at her waist is the sky,
           squeezed to a thread as thin as the smallest ripple on the Yamunā.
+        </>
+      ),
+    },
+  },
+  "016": {
+    Art: SafflowerSlope,
+    intro: (Spot) => (
+      <>
+        The verse calls the place her cloth lies a <i>taṭī</i>, the word for a mountainside, and Śaṅkara takes it at
+        its word: the lord of mountains gave her his own slope as a wedding gift. So the cloth lies along{" "}
+        <Spot part="slope">a hillside at dawn</Spot>, before the sun is up. Every element comes from one of the two
+        names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 37,
+        part: "cloth",
+        depicts:
+          "A cloth dyed with safflower covers the slope from the ridge down, its folds gathered toward the knot and catching the dawn along their crests. It is the first garment the hymn names.",
+      },
+      {
+        nama: 38,
+        part: "girdle",
+        depicts:
+          "Along the ridge runs a gold cord hung with bells, each set with a ruby or an emerald. Their sound spreads up from the knot in broken rings, further than anything else reaches, because she is heard before she is seen.",
+      },
+    ],
+    detail: {
+      part: "safflower",
+      body: (
+        <>
+          There is also a small detail for the attentive: below the hem grow three safflower heads, the thistle the dye
+          is made from. Of every red there is, safflower fades fastest in the light, and the poem chose it for a goddess
+          whose colour is the few minutes before sunrise.
         </>
       ),
     },

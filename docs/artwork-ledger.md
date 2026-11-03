@@ -121,6 +121,12 @@ second time it is needed.
 | Silk band (paṭṭa) | A 12-unit band of `--art-vermilion` silk tied round something: its front a strip between two front half-ellipses, its back (in `--art-crimson` over vermilion) hidden where it passes behind; slanting `--art-crimson` pleats, a dashed `--gold-soft` weave line inside each edge, and a `--gold` line on each edge, the border of a royal band. Knotted at the front with a small vermilion knot and a crimson crease. Loose ends are tapered ribbons edged in gold, with two gold stripes and a gold fringe at the tip; both hang to one side, as two ends spread either side of an upright read as a pair of legs | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
 | The thread of sky (Saundaryalaharī 77) | A hair-fine (0.9) wavy line of `--art-hair` down the middle of her unseen waist, faded out at both ends: the sky squeezed to "the very thinnest ripple on the Yamunā". Kept faint, so the hollow still reads as empty | Inline (`what-it-holds-up.tsx`) | Shloka 15 |
 | Bud (mukula) | A closed bud on a short `--art-hair` stalk: an `--art-turmeric` teardrop edged in gold, a saffron seam, a small `--leaf` cap, swinging from its stalk (`m-sway`) | Inline (`grown-stake.tsx`) | Shloka 14 |
+| The mountain (Himavat) | One skyline drawn with `through`, rising from the lower left to a single peak at the upper right and falling off the right edge. An `--art-stone` face tinted with `--art-saffron` toward the dawn, bands of strata across its upper face in hair-fine `--art-carve` (short separate marks read as scratches), and a snow cap in `--art-moon` blushing to `--art-saffron` at the tip, the first light on the peak. A vermilion blush on the snow turned pink | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Bell (kiṅkiṇī) | A gold ball (radius 9.2) with an `--art-carve` edge, a carve slit and clapper below, a ruby or emerald (`--art-vermilion` or `--leaf`) set in its shoulder, and an `--art-core` highlight, hung from a short gold cord and ring. Bells on one cord swing (`m-sway`) in three groups | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Girdle (raśanā) | A 6-unit `--gold` cord with a dashed `--art-carve` weave and an `--art-core` sheen, bells every 28 units, and a front knot (a gold oval set with a ruby) from which two larger bells hang on cords and swing together from the knot (`swingFrom`) | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| The sound of bells | Never waves or notes: broken `--gold` arcs, dashed like a chime, rising from the source in widening rings that fade as they go (`m-shimmer`) | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Safflower cloth (kausumbha-vastra) | Hangs from a girdle in vertical folds 26 units apart to a hem of soft lobes, one per fold: an `--art-vermilion` to `--art-saffron` field, `--art-crimson` shade beside each fold, `--art-core` sheen along the crests, a woven border and a fringe at the hem, and a fan of seven pleats falling from the knot (narrower pleats read as a necktie) | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Safflower (kusumbha) | A thistle head on a `--leaf` stem with spiny leaves: a cup of pointed bracts with a bristle of `--art-saffron` and `--art-vermilion` florets out of its top | Inline (`safflower-slope.tsx`) | Shloka 16 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -752,6 +758,39 @@ One entry per finished artwork, in the order they were made.
   of fruit moved into `primitives.tsx`; Shloka 14 renders byte-for-byte as before. In the chant
   miniature the coil, the red bands and the column of light carry it, and on phones the verse stays
   legible over it in both themes. The share card shows the whole climb clearly.
+
+### Shloka 16: Safflower on the slope, and a belt that speaks first
+
+- **Component:** `safflower-slope.tsx` (defs prefix `sa16`)
+- **Composition:** the verse's *taṭī*, a mountainside, taken at its word, as Śaṅkara does: the lord
+  of mountains gave her his own slope. A mountain fills the plate, rising from the lower left to a
+  snow peak at the upper right that has just caught the dawn. Round its middle slopes, which Sanskrit
+  already calls a mountain's girdle (*mekhalā*), runs a gold cord hung with jewelled bells, knotted
+  at the front with two larger bells swinging from the knot, and above the knot broken rings of their
+  sound spread up the face. Below the girdle the safflower cloth hangs in folds to a lobed hem, with
+  a fan of pleats under the knot, its crests catching the dawn glow from the lower left. Three
+  safflower plants grow below the hem. The first landscape that is also worn, and the first sound
+  drawn.
+- **Name → part:**
+  - Aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭī → `cloth`: the cloth from the girdle to the hem, its
+    folds, pleats, border and fringe
+  - Ratnakiṅkiṇikāramyaraśanādāmabhūṣitā → `girdle`: the cord, its bells, the knot and its two
+    bells, and the rings of sound
+  - Intro, *a hillside at dawn* → `slope`: the mountain, its snow, and the dawn glow
+  - Detail → `safflower`: the three plants the dye is made from
+- **Palette:** `--art-vermilion`, `--art-saffron`, and `--art-crimson` for the cloth; `--art-stone`
+  with saffron for the mountain and `--art-moon` for its snow; `--gold`, with `--art-vermilion` and
+  `--leaf` gems, for the girdle. No additions.
+- **Motion:** `m-sway` (the bells in three groups, and the knot's two bells together from the knot),
+  `m-lick` (passing glints on the bells), and `m-shimmer` (the rings of sound and the dawn glow).
+- **Notes:** This title stays on one line at 1280–1440px and reaches x ≈ 461 at y ≈ 74–141; at
+  1100px it wraps and the card moves down to y ≈ 225–437. The first render, a red band arched over a
+  dome, read as a rainbow; it became a mountain with the girdle round its middle and the cloth falling
+  from it. The front pleats were first a narrow pair that read as a necktie and are now a fan.
+  Scattered rock marks read as scratches and became strata; the snow's vermilion blush turned pink and
+  is saffron now; and the dawn glow's core dropped to saffron at 0.5, because by lamplight it read as
+  a sun. In the chant miniature the red cloth on the slope and its row of bells carry it, and the
+  share card shows the peak, the girdle and the pleats.
 
 ## Open questions
 
