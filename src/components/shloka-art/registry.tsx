@@ -1,5 +1,6 @@
 import { CampakaJewel } from "./campaka-jewel";
 import { DrawnBow } from "./drawn-bow";
+import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FloweringHair } from "./flowering-hair";
@@ -649,6 +650,40 @@ export const ARTWORK: Record<string, Artwork> = {
           There is also a small detail for the attentive: below the hem grow three safflower heads, the thistle the dye
           is made from. Of every red there is, safflower fades fastest in the light, and the poem chose it for a goddess
           whose colour is the few minutes before sunrise.
+        </>
+      ),
+    },
+  },
+  "017": {
+    Art: DrawnCurtain,
+    intro: (Spot) => (
+      <>
+        One name of this verse withholds and the other displays, and the artwork is divided the same way, at a hem.
+        Above it nothing is shown but <Spot part="light">her light</Spot>, coming through the cloth. Every element
+        comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 39,
+        part: "curtain",
+        depicts:
+          "A curtain is drawn closed and hung from his crescent, so that the one person it is not closed to is named at the top of it. The hymn describes by stepping back, and the artwork steps back with it.",
+      },
+      {
+        nama: 40,
+        part: "crowns",
+        depicts:
+          "Below the hem the reticence stops, and two small crowns cut from ruby sit side by side in full colour, tier on tier, their stones flashing.",
+      },
+    ],
+    detail: {
+      part: "border",
+      body: (
+        <>
+          There is also a small detail for the attentive: the curtain&rsquo;s border is woven with elephants&rsquo;
+          trunks and plantain stems. Śaṅkara (Saundaryalaharī 82) says her thighs defeated both, the two stock similes
+          for a smooth tapering limb, so here they are, reduced to a hem.
         </>
       ),
     },

@@ -127,6 +127,8 @@ second time it is needed.
 | The sound of bells | Never waves or notes: broken `--gold` arcs, dashed like a chime, rising from the source in widening rings that fade as they go (`m-shimmer`) | Inline (`safflower-slope.tsx`) | Shloka 16 |
 | Safflower cloth (kausumbha-vastra) | Hangs from a girdle in vertical folds 26 units apart to a hem of soft lobes, one per fold: an `--art-vermilion` to `--art-saffron` field, `--art-crimson` shade beside each fold, `--art-core` sheen along the crests, a woven border and a fringe at the hem, and a fan of seven pleats falling from the knot (narrower pleats read as a necktie) | Inline (`safflower-slope.tsx`) | Shloka 16 |
 | Safflower (kusumbha) | A thistle head on a `--leaf` stem with spiny leaves: a cup of pointed bracts with a bristle of `--art-saffron` and `--art-vermilion` florets out of its top | Inline (`safflower-slope.tsx`) | Shloka 16 |
+| Curtain (javanikā) | Two `--art-ivory` panels at 0.5 opacity, gathered in scallops under gold rings on a gold rod with bud finials, gold fold lines from each ring to a hem that dips a little where the panels meet. Light behind it shows through as a glow. A gold tie-cord runs down the seam to a tassel below the hem, swinging from the rod. Hung from Kāmeśa's crescent (the fourth night's `litPart`, horns up) at the top centre of the rod | Inline (`drawn-curtain.tsx`) | Shloka 17 |
+| Elephant-trunk and plantain border | A woven band along a hem: curled elephants' trunks in `--art-vermilion` alternating with `--leaf` plantain stems, each with its long leaf, about 20 units apart. The two stock similes for a tapering thigh (Saundaryalaharī 82) | Inline (`drawn-curtain.tsx`) | Shloka 17 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -791,6 +793,33 @@ One entry per finished artwork, in the order they were made.
   is saffron now; and the dawn glow's core dropped to saffron at 0.5, because by lamplight it read as
   a sun. In the chant miniature the red cloth on the slope and its row of bells carry it, and the
   share card shows the peak, the girdle and the pleats.
+
+### Shloka 17: What only her husband knows, and two crowns of ruby
+
+- **Component:** `drawn-curtain.tsx` (defs prefix `sa17`)
+- **Composition:** the plate is divided at a hem, as the verse is divided between a name that
+  withholds and one that displays. Above, a curtain of two pale panels hangs closed from a gold rod
+  over the card window, and only her light shows through it, as a glow. Kāmeśa's crescent is the
+  ornament at the top of the rod, so the curtain names the one person it is not closed to, and a
+  tie-cord with a tassel runs down the seam. The hem is a woven border of elephants' trunks and
+  plantain stems. Below it the reticence stops: two ruby crowns (the Shloka 4 crown, scaled to 0.8)
+  sit side by side in full colour, flashing. The first composition built on concealment, and the
+  first to set its names against each other as hidden and shown.
+- **Name → part:**
+  - Kāmeśajñātasaubhāgyamārdavorudvayānvitā → `curtain`: the two panels, the rod and its rings,
+    his crescent, and the tie-cord
+  - Māṇikyamukuṭākārajānudvayavirājitā → `crowns`: the two crowns, their glows and flashes
+  - Intro, *her light* → `light`: the glow behind the curtain
+  - Detail → `border`: the trunks and plantains of the hem (Saundaryalaharī 82)
+- **Palette:** `--art-ivory` and `--gold` for the curtain, `--art-moon` for the crescent,
+  `--art-vermilion` and `--leaf` for the border, and the crown's own colours. No additions.
+- **Motion:** `m-shimmer` (her light through the cloth and the crowns' glows) and `m-sway` (the
+  tie-cord and tassel, from the rod).
+- **Notes:** This title wraps at every desktop width, its second line reaching x ≈ 120 at 1280px
+  (172 at 1100px), and the card sits at y ≈ 225–437. The rod was narrowed to x 142–498 and raised to
+  y 112 so its ends stay clear of the title. At 0.42 and then 0.62 the crowns read as beehives; at
+  0.8 their tiers and stones show. Each crown keeps only its outward rays, so the two sets don't cross
+  between them. In the chant miniature the pale curtain and the two red-gold crowns carry it.
 
 ## Open questions
 
