@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Mail, Menu, Moon, Sun, X } from "lucide-react";
 
 import { YantraMark } from "@/components/ornament";
 import { cn } from "@/lib/utils";
@@ -47,11 +47,20 @@ const LINKS = [
   },
 ];
 
+const CONTACT = {
+  href: "/contact",
+  label: "Contact",
+  sanskrit: "Saṃvāda",
+  blurb: "Questions, suggestions, or support for this work",
+  match: ["/contact"],
+};
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const isActive = (match: string[]) =>
     match.some((m) => pathname === m || pathname.startsWith(`${m}/`));
+  const contactActive = isActive(CONTACT.match);
 
   // Read from the DOM rather than React state: the pre-paint script owns the
   // initial theme, and CSS picks the icon from the same attribute.
@@ -90,7 +99,7 @@ export function SiteHeader() {
                   href={href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "relative px-3 py-2 text-sm font-medium tracking-wide transition-colors",
+                    "relative px-2.5 py-2 text-sm font-medium tracking-wide transition-colors min-[880px]:px-3",
                     active ? "text-ink" : "text-ink-muted hover:text-ink",
                   )}
                 >
@@ -98,13 +107,43 @@ export function SiteHeader() {
                   <span
                     aria-hidden
                     className={cn(
-                      "absolute inset-x-3 -bottom-px h-px bg-sindura transition-opacity",
+                      "absolute inset-x-2.5 -bottom-px h-px bg-sindura transition-opacity min-[880px]:inset-x-3",
                       active ? "opacity-100" : "opacity-0",
                     )}
                   />
                 </Link>
               );
             })}
+            {/* Below 880px the text link no longer fits beside the title, so it becomes an envelope. */}
+            <Link
+              href={CONTACT.href}
+              aria-current={contactActive ? "page" : undefined}
+              className={cn(
+                "relative hidden px-3 py-2 text-sm font-medium tracking-wide transition-colors min-[880px]:block",
+                contactActive ? "text-ink" : "text-ink-muted hover:text-ink",
+              )}
+            >
+              {CONTACT.label}
+              <span
+                aria-hidden
+                className={cn(
+                  "absolute inset-x-3 -bottom-px h-px bg-sindura transition-opacity",
+                  contactActive ? "opacity-100" : "opacity-0",
+                )}
+              />
+            </Link>
+            <Link
+              href={CONTACT.href}
+              aria-label={CONTACT.label}
+              title={CONTACT.label}
+              aria-current={contactActive ? "page" : undefined}
+              className={cn(
+                "grid h-9 w-9 place-items-center rounded-full transition-colors hover:bg-surface-2 min-[880px]:hidden",
+                contactActive ? "text-sindura" : "text-ink-muted hover:text-ink",
+              )}
+            >
+              <Mail size={16} />
+            </Link>
           </div>
 
           <button
@@ -144,7 +183,7 @@ export function SiteHeader() {
                 </div>
 
                 <ul className="flex-1 overflow-y-auto px-3 py-3">
-                  {LINKS.map(({ href, label, sanskrit, blurb, match }) => {
+                  {[...LINKS, CONTACT].map(({ href, label, sanskrit, blurb, match }) => {
                     const active = isActive(match);
                     return (
                       <li key={href}>
