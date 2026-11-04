@@ -10,7 +10,7 @@
  * artwork's entry.
  */
 
-import { artIds, cubicAt, glint, partProps, round } from "./primitives";
+import { artIds, cubicAt, Fish, FISH_BODY, FishDefs, glint, partProps, round, WavePattern } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -186,28 +186,6 @@ const WATER_GLINTS = [
 
 /* ── The fish ───────────────────────────────────────────────────────────── */
 
-/**
- * A fish seen from above, as fish are seen in shallow water, nose at +x,
- * about 70 units long. Its body is bent a little, as a fish is when it turns.
- */
-const FISH_BEND = 0.004;
-const bend = (d: string) =>
-  d.replace(/(-?\d+(?:\.\d+)?) (-?\d+(?:\.\d+)?)/g, (_, x: string, y: string) => `${x} ${round(Number(y) + FISH_BEND * Number(x) ** 2)}`);
-const bent = (x: number, y: number): Pt => ({ x, y: round(y + FISH_BEND * x * x) });
-
-const FISH_BODY = bend(
-  "M 32 0 C 30 -6 20 -9 8 -9 C -6 -9 -16 -5 -24 -1.6 Q -30 -4 -38 -10 Q -33 -4 -32 0 Q -33 4 -38 10 Q -30 4 -24 1.6 C -16 5 -6 9 8 9 C 20 9 30 6 32 0 Z",
-);
-const FISH_FINS = bend(
-  "M 16 -7.5 Q 10 -18 1 -16 Q 7 -11 10 -8 Z M 16 7.5 Q 10 18 1 16 Q 7 11 10 8 Z M -6 -7 Q -11 -13 -16 -11 Q -12 -8 -10 -5.5 Z M -6 7 Q -11 13 -16 11 Q -12 8 -10 5.5 Z",
-);
-const FISH_SPINE = bend("M 22 0 C 10 0 -8 0 -22 0");
-const FISH_EYES = [bent(24, -4.6), bent(24, 4.6)];
-const FISH_SCALES = [-4.5, 0, 4.5]
-  .flatMap((y, row) => Array.from({ length: 6 }, (_, k) => bent(-16 + k * 6 + (row === 1 ? 3 : 0), y)))
-  .map((c) => `M ${c.x} ${round(c.y - 2.6)} A 2.6 2.6 0 0 0 ${c.x} ${round(c.y + 2.6)}`)
-  .join(" ");
-
 /** The two fish circle one centre in the basin, one above it heading right and one below heading left. */
 const FISH_CENTRE = { x: 322, y: 521 };
 const FISH_A = `translate(${FISH_CENTRE.x - 8} ${FISH_CENTRE.y - 16}) rotate(-4)`;
@@ -247,28 +225,14 @@ export function WeddingDoorway({ idPrefix = "sa6", active = null }: ArtProps) {
           <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.08 }} />
         </radialGradient>
         {/* Water as the old painters drew it: rows of small arcs, each row set half an arc along */}
-        <pattern id={id("waves")} width={14} height={9} patternUnits="userSpaceOnUse">
-          <path
-            d="M 0 9 A 9 9 0 0 1 14 9 M -7 4.5 A 9 9 0 0 1 7 4.5 M 7 4.5 A 9 9 0 0 1 21 4.5"
-            stroke="var(--gold-soft)"
-            strokeWidth={0.6}
-            strokeOpacity={0.55}
-          />
-        </pattern>
+        <WavePattern id={id("waves")} />
         <clipPath id={id("doorway-clip")}>
           <rect x={POSTS[0] + 3} y={BEAM_BOTTOM} width={POSTS[1] - POSTS[0] - 6} height={SILL_Y - BEAM_BOTTOM} />
         </clipPath>
         <clipPath id={id("channel-clip")}>
           <path d={CHANNEL} />
         </clipPath>
-        <linearGradient id={id("fish")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" style={{ stopColor: "var(--art-saffron)" }} />
-          <stop offset="0.5" style={{ stopColor: "var(--art-vermilion)" }} />
-          <stop offset="1" style={{ stopColor: "var(--art-saffron)" }} />
-        </linearGradient>
-        <clipPath id={id("fish-clip")}>
-          <path d={FISH_BODY} />
-        </clipPath>
+        <FishDefs id={id} />
         <radialGradient id={id("ajna")} cx={AJNA.x} cy={AJNA.y} r={30} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 0.95 }} />
           <stop offset="0.35" style={{ stopColor: "var(--art-core)", stopOpacity: 0.5 }} />
@@ -390,17 +354,7 @@ export function WeddingDoorway({ idPrefix = "sa6", active = null }: ArtProps) {
             </g>
             <g transform={transform}>
               <g className={i ? "m-dart m-late" : "m-dart"}>
-                <path d={FISH_FINS} fill="var(--art-saffron)" fillOpacity={0.75} stroke="var(--gold)" strokeWidth={0.5} />
-                <path d={FISH_BODY} fill={url("fish")} />
-                <path d={FISH_SCALES} clipPath={url("fish-clip")} stroke="var(--gold)" strokeWidth={0.5} strokeOpacity={0.7} />
-                <path d={FISH_SPINE} stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.8} />
-                <path d={FISH_BODY} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-                {FISH_EYES.map((e) => (
-                  <g key={e.y}>
-                    <circle cx={e.x} cy={e.y} r={2.3} fill="var(--art-core)" />
-                    <circle cx={e.x} cy={e.y} r={1.3} fill="var(--art-musk)" />
-                  </g>
-                ))}
+                <Fish url={url} />
               </g>
             </g>
           </g>

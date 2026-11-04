@@ -55,8 +55,11 @@ compose within it.
   line and reaches x ≈ 244 (x ≈ 296 at 1100px) at y ≈ 73–140. Shloka 14's ("A stake laid down, and
   a creeper in the garden") stays on one line but reaches x ≈ 418 at y ≈ 73–142, and x ≈ 470 at
   1100px, which leaves only the band y ≈ 142–184 above the card. Shloka 15's ("A waist arrived at
-  by argument") stays on one line and reaches only x ≈ 143 at y ≈ 81–137. Look at the first render
-  to see where the card really sits.
+  by argument") stays on one line and reaches only x ≈ 143 at y ≈ 81–137. Shloka 16's stays on one
+  line at 1280–1440px, reaching x ≈ 461 at y ≈ 74–141, but wraps at 1100px; Shloka 19's stays on one
+  line and reaches x ≈ 382 (434 at 1100px). The titles of Shlokas 17, 18 and 20–25 wrap at every
+  desktop width, with second lines that reach anywhere from x ≈ −4 (Shloka 24) to x ≈ 191 (Shloka
+  22, 243 at 1100px). Look at the first render to see where the card really sits.
 - **Commentary:** from y ≈ 720 the Meaning paragraph reaches x ≈ 160 (1440px) to 212 (1100px).
   Another reason the lower left stays quiet.
 - **Plate caption:** a button centred beneath the artwork at y ≈ 824 on screens ≥ 1280px.

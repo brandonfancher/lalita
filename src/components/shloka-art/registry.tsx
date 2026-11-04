@@ -1,13 +1,23 @@
 import { CampakaJewel } from "./campaka-jewel";
+import { CourtAndArmy } from "./court-and-army";
 import { DrawnBow } from "./drawn-bow";
+import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
+import { ElephantsAndHorses } from "./elephants-and-horses";
 import { FireOfAwareness } from "./fire-of-awareness";
+import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
+import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { NailMoons } from "./nail-moons";
+import { NectarIsland } from "./nectar-island";
+import { OnHisLap } from "./on-his-lap";
+import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
+import { StillWaterSteps } from "./still-water-steps";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
@@ -616,5 +626,357 @@ export const ARTWORK: Record<string, Artwork> = {
         </>
       ),
     },
+  },
+  "016": {
+    Art: SafflowerSlope,
+    intro: (Spot) => (
+      <>
+        The verse calls the place her cloth lies a <i>taṭī</i>, the word for a mountainside, and Śaṅkara takes it at
+        its word: the lord of mountains gave her his own slope as a wedding gift. So the cloth lies along{" "}
+        <Spot part="slope">a hillside at dawn</Spot>, before the sun is up. Every element comes from one of the two
+        names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 37,
+        part: "cloth",
+        depicts:
+          "A cloth dyed with safflower covers the slope from the ridge down, its folds gathered toward the knot and catching the dawn along their crests. It is the first garment the hymn names.",
+      },
+      {
+        nama: 38,
+        part: "girdle",
+        depicts:
+          "Along the ridge runs a gold cord hung with bells, each set with a ruby or an emerald. Their sound spreads up from the knot in broken rings, further than anything else reaches, because she is heard before she is seen.",
+      },
+    ],
+    detail: {
+      part: "safflower",
+      body: (
+        <>
+          There is also a small detail for the attentive: below the hem grow three safflower heads, the thistle the dye
+          is made from. Of every red there is, safflower fades fastest in the light, and the poem chose it for a goddess
+          whose colour is the few minutes before sunrise.
+        </>
+      ),
+    },
+  },
+  "017": {
+    Art: DrawnCurtain,
+    intro: (Spot) => (
+      <>
+        One name of this verse withholds and the other displays, and the artwork is divided the same way, at a hem.
+        Above it nothing is shown but <Spot part="light">her light</Spot>, coming through the cloth. Every element
+        comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 39,
+        part: "curtain",
+        depicts:
+          "A curtain is drawn closed and hung from his crescent, so that the one person it is not closed to is named at the top of it. The hymn describes by stepping back, and the artwork steps back with it.",
+      },
+      {
+        nama: 40,
+        part: "crowns",
+        depicts:
+          "Below the hem the reticence stops, and two small crowns cut from ruby sit side by side in full colour, tier on tier, their stones flashing.",
+      },
+    ],
+    detail: {
+      part: "border",
+      body: (
+        <>
+          There is also a small detail for the attentive: the curtain&rsquo;s border is woven with elephants&rsquo;
+          trunks and plantain stems. Śaṅkara (Saundaryalaharī 82) says her thighs defeated both, the two stock similes
+          for a smooth tapering limb, so here they are, reduced to a hem.
+        </>
+      ),
+    },
+  },
+  "018": {
+    Art: FirstRainQuivers,
+    intro: (Spot) => (
+      <>
+        The verse is set in <Spot part="rain">the first rain</Spot> of the monsoon, which is when its scarlet insects
+        come up out of the ground. Every element comes from one of the three names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 41,
+        part: "quivers",
+        depicts:
+          "Love's two quivers, crossed as weapons are hung, each tapering from a wide mouth to a narrow foot with five fletched arrows standing out of it. Scarlet velvet mites are strewn all over them.",
+      },
+      {
+        nama: 42,
+        part: "grass",
+        depicts: "Where each quiver narrows to its foot, it disappears into the new grass, so that nothing of the joint shows.",
+      },
+      {
+        nama: 43,
+        part: "tortoises",
+        depicts:
+          "Two tortoises have come out in the rain, and over each domed shell runs a single curve of light, higher and smoother than the shell, outdoing it at its own shape.",
+      },
+    ],
+    detail: {
+      part: "arrowheads",
+      body: (
+        <>
+          There is also a small detail for the attentive: ten bright points show through the grass at the quivers&rsquo;
+          feet. Śaṅkara (Saundaryalaharī 83) says Love loaded her two quivers with twice his five arrows, and that
+          their ten heads, whetted on the crowns of the gods, are the nails of her feet.
+        </>
+      ),
+    },
+  },
+  "019": {
+    Art: NailMoons,
+    intro: () => (
+      <>
+        The verse looks no higher than her feet, which is where a person&rsquo;s eyes are after bowing, so nothing of
+        her is shown but her two footprints and what their light does. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 44,
+        part: "nail-light",
+        depicts:
+          "On the ten toes of her footprints the ten nails are small moons, and their light falls over the dark lying before her feet, where those who bow are. It covers the dark like a cloth rather than burning it away, as the name has it: the dullness is buried out of sight.",
+      },
+      {
+        nama: 45,
+        part: "net",
+        depicts:
+          "The light of her two feet runs out across the floor in rays, each foot's rays crossing the other's and knotting into a net. The lotus, the usual measure of a lovely foot, has been left outside it at the edge, open and unregarded.",
+      },
+    ],
+    detail: {
+      part: "hands",
+      body: (
+        <>
+          There is also a small detail for the attentive: the hands folded in the bowing are closed like buds. Śaṅkara
+          (Saundaryalaharī 89) calls her nails moons, and lotuses close when the moon is up, so the hands of the women
+          of heaven, which are lotuses, can only fold before them.
+        </>
+      ),
+    },
+  },
+  "020": {
+    Art: StillWaterSteps,
+    intro: (Spot) => (
+      <>
+        The hymn&rsquo;s portrait of her reaches her feet in this verse, and closes by naming where all of it comes
+        from. It is set on <Spot part="water">still water</Spot>, because of the swan. Every element comes from one
+        of the three names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 46,
+        part: "anklets",
+        depicts:
+          "Her feet are two red lotuses standing on the water a step apart, each ringed by a jewelled anklet hung with small bells. Their ringing spreads across the surface in broken rings.",
+      },
+      {
+        nama: 47,
+        part: "swan",
+        depicts:
+          "A female swan keeps pace with her feet, so slowly that her wake hardly opens behind her and its ripples lie far apart.",
+      },
+      {
+        nama: 48,
+        part: "treasury",
+        depicts:
+          "Above, the treasury the name calls her stands open, heaped with rubies, emeralds and pearls, and its light pours down over everything below, as if the loveliness of the scene had been drawn out of it.",
+      },
+    ],
+    detail: {
+      part: "salt",
+      body: (
+        <>
+          There is also a small detail for the attentive: on the rim of the treasury lies a little heap of salt. The
+          word for loveliness, <i>lāvaṇya</i>, is made from <i>lavaṇa</i>, salt: it is the quality that makes a face
+          worth looking at, as salt makes food worth eating.
+        </>
+      ),
+    },
+  },
+  "021": {
+    Art: OnHisLap,
+    intro: () => (
+      <>
+        The portrait that began at her crown has reached her feet, and this verse sums it up in three names before
+        naming, at last, the one whose lap she sits on. Every element comes from one of the six names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 49,
+        part: "red",
+        depicts: "She is shown as a single flame of light in one flat red, with no shading anywhere, because every part of her is the same colour.",
+      },
+      {
+        nama: 50,
+        part: "outline",
+        depicts:
+          "Its outline is one unbroken gold line, closed in a single stroke and symmetrical, with nothing added and nothing to correct.",
+      },
+      {
+        nama: 51,
+        part: "gems",
+        depicts:
+          "Round her, on a gold chain, are the gems of the navaratna, the setting that holds all nine precious stones. Eight are there: pearl, coral, emerald, topaz, diamond, sapphire, hessonite and cat's-eye. The ruby belongs at the centre, and the centre is her.",
+      },
+      {
+        nama: 52,
+        part: "lap",
+        depicts:
+          "Kāmeśvara appears as his crescent, laid horns up as a lap, and she is seated on it to the right as you look, which is his left, the consort's side.",
+      },
+      {
+        nama: 53,
+        part: "bindu",
+        depicts:
+          "Where she rests on him is one point of light, half his white and half her red. Her name Śivā is his name made feminine, and here the two make one point.",
+      },
+      {
+        nama: 54,
+        part: "thread",
+        depicts:
+          "They are tied together by a single lotus fibre, looped loosely round his horn. It is the weakest bond there is, and it holds, because he has no wish to break it.",
+      },
+    ],
+  },
+  "022": {
+    Art: MeruInward,
+    intro: (Spot) => (
+      <>
+        The verse moves inward, from the mountain at the centre of the world to the one seat at the centre of
+        everything, and the artwork climbs with it to <Spot part="light">her presence</Spot>, which is the light the
+        whole of it is lit by. Every element comes from one of the four names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 55,
+        part: "meru",
+        depicts:
+          "Meru, the golden world-mountain, rises from the foot of the plate with three summits, and everything else stands on the middle one.",
+      },
+      {
+        nama: 56,
+        part: "city",
+        depicts:
+          "Her city climbs the middle summit in walls of different metals, each inside the last and higher than it: iron, copper, silver, gold, then ruby and emerald, entered by one gate at the front.",
+      },
+      {
+        nama: 57,
+        part: "house",
+        depicts:
+          "On the innermost terrace stands a pavilion of the wish-granting gem, open between its pillars and roofed with the gem itself, cut in facets.",
+      },
+      {
+        nama: 58,
+        part: "couch",
+        depicts:
+          "Inside it is her couch. Its four legs are four gods, each marked with his work: Brahmā's lotus for making, Viṣṇu's discus for keeping, Rudra's trident for ending, and Īśvara's veil for hiding. Its white plank is Sadāśiva, the fifth, whose work is grace, and her presence is seated on him.",
+      },
+    ],
+  },
+  "023": {
+    Art: NectarIsland,
+    intro: (Spot) => (
+      <>
+        The first three names are frames, each wider than the last, and the artwork draws them as rings round{" "}
+        <Spot part="light">her light</Spot>. Then the verse turns from where she lives to her eyes, and the artwork turns
+        with it, into the water nearest the viewer. Every element comes from one of the five names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 59,
+        part: "lotuses",
+        depicts:
+          "At the centre, lotuses grown as tall as the trees round them, a forest of them rising from a pool, with their leaves held up on stalks and their buds still closed. Her light is seated in the tallest.",
+      },
+      {
+        nama: 60,
+        part: "grove",
+        depicts:
+          "Round the lotuses stands a grove of kadamba trees, glossy-leaved and hung with the orange, pale-whiskered balls that open at the first rain.",
+      },
+      {
+        nama: 61,
+        part: "sea",
+        depicts:
+          "The grove and the lotuses stand on an island, and the island lies in a sea of nectar, the drink that keeps the gods from dying, drawn milk-white and patterned with small waves out to the edges of the plate.",
+      },
+      {
+        nama: 62,
+        part: "eyes",
+        depicts:
+          "In the near water two fish circle each other, sending out rings. They are her eyes, drawn as fish because the poets' word for a long, lovely eye is a fish-shaped one, and desire is in them.",
+      },
+      {
+        nama: 63,
+        part: "gift",
+        depicts:
+          "From her eyes a path of light runs over the water to the viewer, the way the moon's path runs to whoever stands on the shore, and on it a lotus floats out to be handed over: what is wished for, given.",
+      },
+    ],
+  },
+  "024": {
+    Art: CourtAndArmy,
+    intro: (Spot) => (
+      <>
+        Two names a line long, and the hymn turns from describing her to telling a story. The artwork splits the same
+        way, above and below <Spot part="light">her glory</Spot>, the light everything here is gathered round. Every
+        element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 64,
+        part: "court",
+        depicts:
+          "Above, the gods and the seers are gathered company after company, row behind row, each holding up a lamp in praise of her: gold flames for the gods in front, white flames for the seers behind them.",
+      },
+      {
+        nama: 65,
+        part: "army",
+        depicts:
+          "Below, the army of her powers issues from her light and moves out. Śakti means a power and also a spear, so it is drawn as ranks of spears under pennants, levelled forward toward a bank of ash on the right, the ash of burnt Desire that Bhaṇḍa was shaped from.",
+      },
+    ],
+  },
+  "025": {
+    Art: ElephantsAndHorses,
+    intro: (Spot) => (
+      <>
+        The two names are built alike and part in their last words: the elephants attend her, the horses enclose her.
+        The artwork keeps the difference, one a retinue beside <Spot part="light">her light</Spot> and the other a ring
+        round all of it. Every element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 66,
+        part: "elephants",
+        depicts:
+          "Her elephant corps, the division Sampatkarī, the maker of prosperity, leads. A lead elephant stands either side of her light with its herd behind it, caparisoned in red and gold, trunks raised to pour water over her from golden pots, as Śrī's elephants do: service, and the wealth that comes with it.",
+      },
+      {
+        nama: 67,
+        part: "cavalry",
+        depicts:
+          "The cavalry Aśvārūḍhā marshals rides round everything in two circuits of galloping horses, all one way, closing on her from every side, far too many to count.",
+      },
+    ],
   },
 };
