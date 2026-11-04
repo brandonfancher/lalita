@@ -164,12 +164,16 @@ second time it is needed.
 | Elephant (gaja) | In profile, about 110 long and 88 to the top of its back: a slate-grey body in `--art-hair` (a gradient from 0.78 to 0.95), edged in `--gold`, on four straight legs (the far pair paler) with `--art-ivory` toenails, a darker ear, an `--art-ivory` tusk, a dotted gold chain across the brow, and a `--art-vermilion` caparison with a gold border and fringe. Lead elephants raise the trunk in a curl holding a gold pot; the herd's trunks hang. Raised trunks behind a lead read as poles | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Water poured (abhiṣeka) | From each tipped pot, three dashed `--art-moon` strands falling in a curve onto her light (`m-shimmer`), with a few droplets edged in `--gold-soft` round it (`m-twinkle`). Solid strands read as a second pair of tusks, and a splash ring under the light read as a saucer | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Horse (aśva) | In the flying gallop, about 66 long: one silhouette for body, neck and head, forelegs stretched forward and hind legs back as round-capped strokes, a streaming tail, an `--art-vermilion` mane and saddle cloth. `--gold`, or `--art-turmeric` for a nearer circuit. Upright whichever way it runs, rocking with `m-sway` in three groups | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
-| The Śrīcakra in tiers (meru-prastāra), her chariot Cakrarāja | The yantra raised as a stepped meru and seen from in front and above (top faces foreshortened to 0.5, 3.2 plate units to a yantra unit): a square plinth of gates (bhūpura, three nested gate-square lines, gold over vermilion over gold, on an `--art-stone` face), then four round drums, each with a gold-to-`--art-turmeric` riser carved with upright pilasters and a line under its rim: the three circles, the sixteen petals (`--art-core`), the eight petals (`--art-saffron`), and the nine triangles on the top face. Smooth risers made it a tiered cake | Inline (`king-of-wheels.tsx`) | Shloka 26 |
-| The nine triangles (the Śrīcakra's centre) | From the traditional construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and 42 units down a 48-unit diameter, half-widths 12.87, 15.78, 22.96, 7.66, 5.98, 7.81, 23.24, 16.78 and 12.87, each joined to an apex on the axis (27, 42, 48, 36, 30, 12, 0, 6, 17), five pointing toward the viewer and four away. Gold hairlines over a field of her light (`--art-core` to `--art-saffron` to `--art-vermilion`), each triangle tinted faintly so the overlaps build up; her bindu sits just over the innermost | Inline (`king-of-wheels.tsx`) | Shloka 26 |
-| Chariot wheel (cakra) | Face-on: a thick `--gold` rim between two `--art-carve` lines, sixteen gold spokes, a gold hub with a small `--art-vermilion` boss. Drawn under a chariot's front corners, as the miniature painters show a chariot's wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
-| Weapons on a tier (sarvāyudha) | Small gold weapons about 22 tall standing round a tier's rim, by turns a spear with an `--art-moon` blade, a trident, an arrow, and a goad, one in five tipped with a twinkling point of light. On a stepped form only the front of each lower rim shows | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| The Śrīcakra in tiers (meru-prastāra), her chariot Cakrarāja | The yantra raised as a stepped meru and seen from in front and above (top faces foreshortened to 0.5, 3.2 plate units to a yantra unit): a square plinth of gates (bhūpura, three nested gate-square lines, gold over vermilion over gold, on an `--art-stone` face), then four round drums, each with a gold-to-`--art-turmeric` riser carved with upright pilasters and a line under its rim: the three circles, the sixteen petals (`--art-core`), the eight petals (`--art-saffron`), and the nine triangles on the top face. Smooth risers made it a tiered cake | `sriCakraRatha(cx, cy, s)` (the geometry, at any scale) with `RathaDefs`, `RathaTiers`, `RathaTriangles` and `RathaWeapons` in `primitives.tsx` (promoted at Shloka 27, used by Shlokas 26 and 27) | Shloka 26 |
+| The nine triangles (the Śrīcakra's centre) | From the traditional construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and 42 units down a 48-unit diameter, half-widths 12.87, 15.78, 22.96, 7.66, 5.98, 7.81, 23.24, 16.78 and 12.87, each joined to an apex on the axis (27, 42, 48, 36, 30, 12, 0, 6, 17), five pointing toward the viewer and four away. Gold hairlines over a field of her light (`--art-core` to `--art-saffron` to `--art-vermilion`), each triangle tinted faintly so the overlaps build up; her bindu sits just over the innermost | `SRI_TRIANGLES` and `RathaTriangles` in `primitives.tsx` | Shloka 26 |
+| Chariot wheel (cakra) | Face-on: a thick `--gold` rim between two `--art-carve` lines, sixteen gold spokes, a gold hub with a small `--art-vermilion` boss. Drawn under a chariot's front corners, as the miniature painters show a chariot's wheels | `ChariotWheel` in `primitives.tsx` | Shloka 26 |
+| Weapons on a tier (sarvāyudha) | Small gold weapons about 22 tall standing round a tier's rim, by turns a spear with an `--art-moon` blade, a trident, an arrow, and a goad, one in five tipped with a twinkling point of light. On a stepped form only the front of each lower rim shows | `RathaWeapons` in `primitives.tsx` | Shloka 26 |
 | Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | Inline (`king-of-wheels.tsx`) | Shloka 26 |
 | The Geyacakra | Mantriṇī's chariot: seven square steps of `--art-hair` edged in gold, in the Cakrarāja's projection, on two wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| The Kiricakra | Daṇḍanāthā's chariot: five square steps of `--art-crimson` with `--art-vermilion` tops, edged in gold, in the Cakrarāja's projection, on two wheels, her rod for a flagstaff, the boar banner on it | Inline (`wall-of-fire.tsx`) | Shloka 27 |
+| Daṇḍanāthā's rod (daṇḍa) | A straight gold staff with three `--gold-soft` bands and a gold knob | Inline (`wall-of-fire.tsx`) | Shloka 27 |
+| Boar (kiri, varāha) | In profile facing right, about 76 long: a high bristled shoulder hump sloping to the rump, a long snout with a flat nose, an `--art-ivory` tusk curving up, a pointed ear, short legs as round-capped strokes, a curled tail. `--gold`, on a vermilion banner | Inline (`wall-of-fire.tsx`) | Shloka 27 |
+| Rampart of fire (vahni-prākāra) | A ring of flame seen from outside and low: an ellipse (330 by 240) of `tongue` flames, each a gradient from `--art-vermilion` to `--art-saffron` to `--art-core` with a smaller `--art-core` tongue inside, taller, wider and more opaque toward the front, breathing in three groups, on a faint saffron band, with faint firelight on the ground inside. Open at one place only, the south | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1147,6 +1151,33 @@ One entry per finished artwork, in the order they were made.
   architecture. The sixteen and eight petals were diluted saffron and vermilion at first and went pink
   by day; they are now nearly solid. In the chant miniature the stepped gold mass on its wheels
   carries it.
+
+### Shloka 27: The boar-wheel chariot and the wall of fire
+
+- **Component:** `wall-of-fire.tsx` (defs prefix `sa27`)
+- **Composition:** the verse pulls back to the shape of the field, so the camp is seen from outside
+  and low. Jvālāmālinī's rampart of fire rings it, the far side a horizon of flame above the card and
+  the near side across the foot, open at one place only, the south gap facing Śūnyaka. Through the
+  gap Daṇḍanāthā's Kiricakra goes out first: five crimson steps on two wheels, her rod for a
+  flagstaff, a gold boar on the banner, the road ahead of it clear, and the lion Caṇḍocchaṇḍa before
+  it. Behind, inside the ring, her own chariot of the last verse, at half size, is moving, its
+  tracks behind it.
+- **Name → part:**
+  - Kiricakrarathārūḍhadaṇḍanāthāpuraskṛtā → `kiricakra`: the five-step chariot, the rod, the boar
+    banner, and the road
+  - Jvālāmālinikākṣiptavahniprākāramadhyagā → `rampart`: the ring of flame, its band, the gap, and
+    the firelight inside
+  - Intro, *her own chariot* → `chariot`: the Cakrarāja, its tracks, and her light on it
+  - Detail → `lion`: Caṇḍocchaṇḍa, before the chariot (the `Lion` of Shloka 1, small)
+- **Palette:** `--art-vermilion`, `--art-saffron` and `--art-core` for the fire, `--art-crimson`
+  and `--art-vermilion` for the Kiricakra. No additions.
+- **Motion:** `m-breathe` (the flames, in three groups, and her bindu's glow).
+- **Notes:** This title stays on one line, so the card is in its usual window and the far wall's
+  flames show above it and at its sides. The Cakrarāja was promoted into `primitives.tsx` as
+  `sriCakraRatha` with its pieces, which Shloka 26 now uses with byte-identical markup. The flames
+  are one part drawn first, so the near wall is kept low enough not to reach her chariot's wheels.
+  The firelight inside the ring was a heavy maroon by night at first and is now faint. In the chant
+  miniature the ring of fire with the two chariots inside carries it.
 
 ## Open questions
 

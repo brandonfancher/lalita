@@ -10,6 +10,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
+import { WallOfFire } from "./wall-of-fire";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1010,6 +1011,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           On the top tier, the nine interlocking triangles, four pointing away and five toward you, laid out by the old
           rule of a diameter cut into forty-eight. Saundaryalaharī 11 counts the same figure standing still.
+        </>
+      ),
+    },
+  },
+  "027": {
+    Art: WallOfFire,
+    intro: (Spot) => (
+      <>
+        The verse pulls back to the shape of the whole field, so the camp is seen from outside and low, the way a
+        besieger would see it, with <Spot part="chariot">her own chariot</Spot> still moving in the middle of it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 70,
+        part: "kiricakra",
+        depicts:
+          "Daṇḍanāthā's Kiricakra, the boar-wheel chariot, goes out first through the gap: five crimson steps on their own wheels, her rod of command for a flagstaff, a gold boar on the banner, and the road ahead of it clear.",
+      },
+      {
+        nama: 71,
+        part: "rampart",
+        depicts:
+          "Jvālāmālinī's wall of fire rings the whole camp, its far side a horizon of flame above the card and its near side across the foot, lighting the ground inside. It is open in only one place, the south, toward Śūnyaka.",
+      },
+    ],
+    detail: {
+      part: "lion",
+      body: (
+        <>
+          Before the Kiricakra stands a small gold lion. The Lalitopākhyāna gives Daṇḍanāthā a lion, Caṇḍocchaṇḍa,
+          as well as her boar, and it goes ahead of her chariot.
         </>
       ),
     },
