@@ -9,6 +9,7 @@ import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
+import { KingOfWheels } from "./king-of-wheels";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -978,5 +979,39 @@ export const ARTWORK: Record<string, Artwork> = {
           "The cavalry Aśvārūḍhā marshals rides round everything in two circuits of galloping horses, all one way, closing on her from every side, far too many to count.",
       },
     ],
+  },
+  "026": {
+    Art: KingOfWheels,
+    intro: (Spot) => (
+      <>
+        <i>Cakrarāja</i>, King of Wheels, is one of the ordinary names of the Śrīcakra, and the tradition reads the
+        nine tiers of her <Spot part="chariot">chariot</Spot> as its nine enclosures. So the chariot is drawn as the
+        diagram raised in steps and set on wheels, with <Spot part="light">her light</Spot> at the summit. Every
+        element comes from one of the two names.
+      </>
+    ),
+    entries: [
+      {
+        nama: 68,
+        part: "weapons",
+        depicts:
+          "Spears, tridents, arrows and goads stand ready round the rim of every tier, from the square of gates to the top, because on this chariot the weapons are the goddesses stationed on its steps.",
+      },
+      {
+        nama: 69,
+        part: "geyacakra",
+        depicts:
+          "Beside it, a little behind, rides Mantriṇī's Wheel of Song, seven dark steps on its own wheels, with her ruby-set vīṇā on top, her sapphire light above it, and rings of song rising.",
+      },
+    ],
+    detail: {
+      part: "triangles",
+      body: (
+        <>
+          On the top tier, the nine interlocking triangles, four pointing away and five toward you, laid out by the old
+          rule of a diameter cut into forty-eight. Saundaryalaharī 11 counts the same figure standing still.
+        </>
+      ),
+    },
   },
 };

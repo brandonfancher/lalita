@@ -164,6 +164,12 @@ second time it is needed.
 | Elephant (gaja) | In profile, about 110 long and 88 to the top of its back: a slate-grey body in `--art-hair` (a gradient from 0.78 to 0.95), edged in `--gold`, on four straight legs (the far pair paler) with `--art-ivory` toenails, a darker ear, an `--art-ivory` tusk, a dotted gold chain across the brow, and a `--art-vermilion` caparison with a gold border and fringe. Lead elephants raise the trunk in a curl holding a gold pot; the herd's trunks hang. Raised trunks behind a lead read as poles | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Water poured (abhiṣeka) | From each tipped pot, three dashed `--art-moon` strands falling in a curve onto her light (`m-shimmer`), with a few droplets edged in `--gold-soft` round it (`m-twinkle`). Solid strands read as a second pair of tusks, and a splash ring under the light read as a saucer | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Horse (aśva) | In the flying gallop, about 66 long: one silhouette for body, neck and head, forelegs stretched forward and hind legs back as round-capped strokes, a streaming tail, an `--art-vermilion` mane and saddle cloth. `--gold`, or `--art-turmeric` for a nearer circuit. Upright whichever way it runs, rocking with `m-sway` in three groups | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
+| The Śrīcakra in tiers (meru-prastāra), her chariot Cakrarāja | The yantra raised as a stepped meru and seen from in front and above (top faces foreshortened to 0.5, 3.2 plate units to a yantra unit): a square plinth of gates (bhūpura, three nested gate-square lines, gold over vermilion over gold, on an `--art-stone` face), then four round drums, each with a gold-to-`--art-turmeric` riser carved with upright pilasters and a line under its rim: the three circles, the sixteen petals (`--art-core`), the eight petals (`--art-saffron`), and the nine triangles on the top face. Smooth risers made it a tiered cake | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| The nine triangles (the Śrīcakra's centre) | From the traditional construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and 42 units down a 48-unit diameter, half-widths 12.87, 15.78, 22.96, 7.66, 5.98, 7.81, 23.24, 16.78 and 12.87, each joined to an apex on the axis (27, 42, 48, 36, 30, 12, 0, 6, 17), five pointing toward the viewer and four away. Gold hairlines over a field of her light (`--art-core` to `--art-saffron` to `--art-vermilion`), each triangle tinted faintly so the overlaps build up; her bindu sits just over the innermost | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| Chariot wheel (cakra) | Face-on: a thick `--gold` rim between two `--art-carve` lines, sixteen gold spokes, a gold hub with a small `--art-vermilion` boss. Drawn under a chariot's front corners, as the miniature painters show a chariot's wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| Weapons on a tier (sarvāyudha) | Small gold weapons about 22 tall standing round a tier's rim, by turns a spear with an `--art-moon` blade, a trident, an arrow, and a goad, one in five tipped with a twinkling point of light. On a stepped form only the front of each lower rim shows | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| The Geyacakra | Mantriṇī's chariot: seven square steps of `--art-hair` edged in gold, in the Cakrarāja's projection, on two wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -172,9 +178,10 @@ When all four weapons appear together, the upper hands hold the noose (left) and
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **The Śrīcakra entire.** The Dhyāna draws only its innermost triangle round the bindu. The site's
-  own `YantraMark` in `src/components/ornament.tsx` is that enclosure in a circle. When the names
-  reach the cakra and its nine enclosures, build the whole yantra from that triangle outward.
+- **The Śrīcakra laid flat.** Shloka 26 draws the whole yantra as a chariot in tiers, seen at a
+  slant. When it is needed flat and face-on, draw it with the same nine triangles, the eight and
+  sixteen petals, three circles and the square of gates, and keep the Dhyāna's faint trikoṇa canon
+  for the innermost triangle alone.
 - **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
   fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
 - **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
@@ -1106,6 +1113,40 @@ One entry per finished artwork, in the order they were made.
   herd behind each lead first raised its trunks too, and they read as poles; hung, they let the
   leads' raised trunks carry the pour. In the chant miniature the two slate elephants and the gold
   ring carry it.
+
+### Shloka 26: The chariot called King of Wheels
+
+- **Component:** `king-of-wheels.tsx` (defs prefix `sa26`)
+- **Composition:** the war begins with its vehicles. Her chariot, the Cakrarāja, is the Śrīcakra
+  raised in tiers and seen from in front and a little above: the square plinth of gates, the three
+  circles, the sixteen and the eight petals, each a carved drum, and on the top face the nine
+  triangles with her bindu over the innermost. It stands on two great wheels, with wheel tracks
+  behind it, and a flagstaff rises from behind her light to a vermilion pennant with a wheel on it,
+  streaming the way the march is going. Weapons stand round every rim. Beside it, a little behind,
+  Mantriṇī's Geyacakra rides on its own wheels: seven dark steps, her vīṇā on top, her sapphire light
+  over it, and rings of song. The first vehicles in the series, and the first full Śrīcakra.
+- **Name → part:**
+  - Cakrarājarathārūḍhasarvāyudhapariṣkṛtā → `weapons`: the spears, tridents, arrows and goads
+    round every tier
+  - Geyacakrarathārūḍhamantriṇīparisevitā → `geyacakra`: the seven-step chariot, the vīṇā, her
+    sapphire light, and the song
+  - Intro, *her chariot* → `chariot`: the tiers, the wheels, the tracks, the staff and pennant
+  - Intro, *her light* → `light`: the bindu, its glow and radiance
+  - Detail → `triangles`: the nine triangles of the top tier, by the traditional 48-unit
+    construction (Saundaryalaharī 11)
+- **Palette:** `--gold` and `--art-turmeric` for the tiers, `--art-stone` faces, `--art-core` and
+  `--art-saffron` petals, the triangles over her light, `--art-hair` for the Geyacakra and
+  Mantriṇī. No additions.
+- **Motion:** `m-shimmer` (her glow and radiance, the song), `m-breathe` (the bindu's glow), and
+  `m-twinkle` (points of light on the weapons).
+- **Notes:** This title stays on one line and left of the artwork, so the card is in its usual
+  window and the crown zone is free for the pennant. Her glow and radiance are drawn last and masked
+  off the two chariots, so her light can be one part over the tiers without washing them. The first
+  tiers were shallow, and the square plinth read as a box; with taller drums and a lower view they
+  step up, but smooth gold risers made it a tiered cake with a candle, and carved pilasters made it
+  architecture. The sixteen and eight petals were diluted saffron and vermilion at first and went pink
+  by day; they are now nearly solid. In the chant miniature the stepped gold mass on its wheels
+  carries it.
 
 ## Open questions
 
