@@ -1615,3 +1615,345 @@ export function MarriageThread({ t, url }: { t: ThreadShape; url: (name: string)
     </>
   );
 }
+
+/* ── Her chariot, the Śrīcakra in tiers ────────────────────────────────── */
+
+/** Plate units per yantra unit at full size; the yantra's vertical diameter is 48 units, as in the traditional construction. */
+const RATHA_S = 3.2;
+/** How much the tiers' top faces are foreshortened, seen from in front and above. */
+const RATHA_K = 0.5;
+/** The plinth (bhūpura) and four drums, each a step of the meru: radius in yantra units, and its top height at full size. */
+const RATHA_PLINTH = { half: 48, gate: 8, jut: 5, z: 22 };
+const RATHA_DRUMS = [
+  { r: 42.2, z: 30 },
+  { r: 38.4, z: 48 },
+  { r: 31.2, z: 64 },
+  { r: 24, z: 78 },
+];
+/** Upright carved lines across the front of each drum, every `n`th of the way round, so the tiers read as built, not moulded. */
+const RATHA_PILASTERS = [28, 26, 22, 18];
+
+/** The square of gates, as a closed outline in yantra units, half-side h, its four gates jutting out. */
+export function gateSquare(h: number, g: number, j: number) {
+  const side = (x: number, y: number) => [x, y];
+  const pts: number[][] = [];
+  // Clockwise from the far left corner, with a gate in the middle of each side.
+  pts.push(side(-h, -h), side(-g, -h), side(-g, -h - j), side(g, -h - j), side(g, -h));
+  pts.push(side(h, -h), side(h, -g), side(h + j, -g), side(h + j, g), side(h, g));
+  pts.push(side(h, h), side(g, h), side(g, h + j), side(-g, h + j), side(-g, h));
+  pts.push(side(-h, h), side(-h, g), side(-h - j, g), side(-h - j, -g), side(-h, -g));
+  return `M ${pts.map(([x, y]) => `${round(x)} ${round(y)}`).join(" L ")} Z`;
+}
+
+/** A ring of petals between radii r0 and r1, in yantra units. */
+export function yantraPetals(n: number, r0: number, r1: number, turn = 0) {
+  const half = 180 / n;
+  return Array.from({ length: n }, (_, k) => {
+    const deg = 90 + turn + (k * 360) / n;
+    const a = polar(0, 0, r0, deg - half);
+    const b = polar(0, 0, r0, deg + half);
+    const tip = polar(0, 0, r1, deg);
+    const ca = polar(0, 0, r0 + (r1 - r0) * 0.62, deg - half * 0.92);
+    const cb = polar(0, 0, r0 + (r1 - r0) * 0.62, deg + half * 0.92);
+    return `M ${a.x} ${a.y} Q ${ca.x} ${ca.y} ${tip.x} ${tip.y} Q ${cb.x} ${cb.y} ${b.x} ${b.y}`;
+  }).join(" ");
+}
+
+/**
+ * The Śrīcakra's nine interlocking triangles, from the traditional
+ * construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and
+ * 42 units down a 48-unit diameter, each shortened at its ends, joined to an
+ * apex on the axis. Centred on the origin; five point down (+y), four up.
+ */
+const SRI_BASES = [
+  { d: 6, hw: 12.87, apex: 27 },
+  { d: 12, hw: 15.78, apex: 42 },
+  { d: 17, hw: 22.96, apex: 48 },
+  { d: 20, hw: 7.66, apex: 36 },
+  { d: 23, hw: 5.98, apex: 30 },
+  { d: 27, hw: 7.81, apex: 12 },
+  { d: 30, hw: 23.24, apex: 0 },
+  { d: 36, hw: 16.78, apex: 6 },
+  { d: 42, hw: 12.87, apex: 17 },
+];
+export const SRI_TRIANGLES = SRI_BASES.map(({ d, hw, apex }) => ({
+  d: `M ${-hw} ${d - 24} L ${hw} ${d - 24} L 0 ${apex - 24} Z`,
+  down: apex > d,
+}));
+/** Where the bindu sits, inside the innermost triangle, in yantra units below the centre. */
+export const SRI_BINDU_V = 1.2;
+
+type RathaWeapon = { x: number; y: number; kind: number; back: boolean; s: number };
+
+function rathaGeometry(cx: number, cy: number, s: number) {
+  const S = RATHA_S * s;
+  const K = RATHA_K;
+  const P = RATHA_PLINTH;
+  const zP = P.z * s;
+  const drums = RATHA_DRUMS.map((d) => ({ r: d.r, z: d.z * s }));
+  const face = (z: number) => `translate(${cx} ${cy - z}) scale(${S} ${round(S * K)})`;
+  const riser = (r: number, z0: number, z1: number) => {
+    const rx = round(r * S);
+    const ry = round(r * S * K);
+    const yt = cy - z1;
+    const yb = cy - z0;
+    return `M ${cx - rx} ${yt} A ${rx} ${ry} 0 0 0 ${cx + rx} ${yt} L ${cx + rx} ${yb} A ${rx} ${ry} 0 0 1 ${cx - rx} ${yb} Z`;
+  };
+  const frieze = (r: number, z: number) => {
+    const rx = round(r * S - 2 * s);
+    const ry = round((r * S - 2 * s) * K);
+    return `M ${cx - rx} ${cy - z} A ${rx} ${ry} 0 0 0 ${cx + rx} ${cy - z}`;
+  };
+  const pilasters = (r: number, z0: number, z1: number, n: number) =>
+    Array.from({ length: n / 2 - 1 }, (_, k) => {
+      const t = ((k + 1) / (n / 2)) * Math.PI;
+      const x = round(cx + r * S * Math.cos(t));
+      const y = round(cy + r * S * K * Math.sin(t));
+      return `M ${x} ${y - z0 - 1 * s} V ${y - z1 + 4 * s}`;
+    }).join(" ");
+  const plinthFront = (() => {
+    const { half: h, gate: g, jut: j } = P;
+    const y = (v: number, zz: number) => round(cy + v * S * K - zz);
+    const x = (u: number) => round(cx + u * S);
+    return [
+      `M ${x(-h)} ${y(h, zP)} L ${x(-g)} ${y(h, zP)} L ${x(-g)} ${y(h + j, zP)} L ${x(g)} ${y(h + j, zP)} L ${x(g)} ${y(h, zP)} L ${x(h)} ${y(h, zP)}`,
+      `L ${x(h)} ${y(h, 0)} L ${x(g)} ${y(h, 0)} L ${x(g)} ${y(h + j, 0)} L ${x(-g)} ${y(h + j, 0)} L ${x(-g)} ${y(h, 0)} L ${x(-h)} ${y(h, 0)} Z`,
+    ].join(" ");
+  })();
+  const rim = (r: number, z: number, n: number, ws: number, offset: number): RathaWeapon[] =>
+    Array.from({ length: n }, (_, k) => {
+      const t = ((k + 0.5) / n) * 2 * Math.PI;
+      return {
+        x: round(cx + r * S * Math.cos(t)),
+        y: round(cy - z + r * S * K * Math.sin(t)),
+        kind: (k + offset) % 4,
+        back: Math.sin(t) < 0,
+        s: ws * s,
+      };
+    });
+  return {
+    cx,
+    cy,
+    S,
+    K,
+    face,
+    plinth: {
+      ...P,
+      z: zP,
+      front: plinthFront,
+      mid: `M ${cx - P.half * S + 4 * s} ${round(cy + P.half * S * K - zP / 2)} H ${cx + P.half * S - 4 * s}`,
+    },
+    drums: drums.map((d, i) => {
+      const z0 = i ? drums[i - 1].z : zP;
+      return { ...d, z0, riser: riser(d.r, z0, d.z), pilasters: pilasters(d.r, z0, d.z, RATHA_PILASTERS[i]), frieze: frieze(d.r, d.z - 3 * s) };
+    }),
+    /** Her bindu, raised over the innermost triangle. */
+    bindu: { x: cx, y: round(cy + SRI_BINDU_V * S * K - drums[3].z - 8 * s) },
+    wheels: [-118, 118].map((dx) => ({ x: cx + dx * s, y: cy + 88 * s, r: 46 * s })),
+    /** On the lower tiers only the front and sides of each rim show; the top tier's stand all round. */
+    weapons: [
+      ...[-44, -36, -28, -20, -12, 12, 20, 28, 36, 44].map((u, k) => ({
+        x: cx + u * S,
+        y: round(cy + P.half * S * K - zP),
+        kind: k % 4,
+        back: false,
+        s: 0.85 * s,
+      })),
+      ...[
+        ...rim(41, drums[0].z, 26, 0.85, 0),
+        ...rim(37.4, drums[1].z, 20, 0.95, 1),
+        ...rim(30.4, drums[2].z, 16, 1.05, 2),
+      ].filter((w) => !w.back),
+    ],
+    topWeapons: rim(23.2, drums[3].z, 12, 1.15, 3),
+  };
+}
+
+const rathas = new Map<string, ReturnType<typeof rathaGeometry>>();
+
+export type RathaShape = ReturnType<typeof rathaGeometry>;
+
+/**
+ * Her chariot, the Cakrarāja, as the Śrīcakra raised in tiers: the geometry
+ * for a chariot whose yantra centre would stand on the ground at (cx, cy),
+ * at scale s (1 is its size in Shloka 26).
+ */
+export function sriCakraRatha(cx: number, cy: number, s = 1) {
+  const key = `${cx} ${cy} ${s}`;
+  let g = rathas.get(key);
+  if (!g) {
+    g = rathaGeometry(cx, cy, s);
+    rathas.set(key, g);
+  }
+  return g;
+}
+
+/** The yantra's field of light and the tiers' gold, as `id("field")` and `id("riser")`. */
+export function RathaDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <radialGradient id={id("field")} cx={0} cy={SRI_BINDU_V} r={24} gradientUnits="userSpaceOnUse">
+        <stop offset="0" style={{ stopColor: "var(--art-core)" }} />
+        <stop offset="0.55" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
+      </radialGradient>
+      <linearGradient id={id("riser")} x1={0} y1={0} x2={1} y2={0}>
+        <stop offset="0" style={{ stopColor: "var(--gold)", stopOpacity: 0.75 }} />
+        <stop offset="0.45" style={{ stopColor: "var(--art-turmeric)" }} />
+        <stop offset="1" style={{ stopColor: "var(--gold)", stopOpacity: 0.75 }} />
+      </linearGradient>
+    </>
+  );
+}
+
+/** A chariot wheel face-on at the origin, radius r: a double rim, sixteen spokes, a hub with a ruby. */
+export function ChariotWheel({ r }: { r: number }) {
+  const spokes = Array.from({ length: 16 }, (_, k) => {
+    const deg = k * 22.5 + 11.25;
+    const a = polar(0, 0, r * 0.2, deg);
+    const b = polar(0, 0, r * 0.86, deg);
+    return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
+  }).join(" ");
+  return (
+    <>
+      <circle r={r} stroke="var(--gold)" strokeWidth={round(r * 0.13)} />
+      <circle r={round(r * 0.86)} stroke="var(--art-carve)" strokeWidth={0.7} />
+      <circle r={round(r * 1.065)} stroke="var(--art-carve)" strokeWidth={0.7} />
+      <path d={spokes} stroke="var(--gold)" strokeWidth={round(r * 0.05)} />
+      <circle r={round(r * 0.22)} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.7} />
+      <circle r={round(r * 0.09)} fill="var(--art-vermilion)" />
+    </>
+  );
+}
+
+const nonScaling = { vectorEffect: "non-scaling-stroke" as const };
+
+/** The chariot's wheels, plinth of gates and four drums with their petals. Needs `RathaDefs`. */
+export function RathaTiers({ g, url }: { g: RathaShape; url: (name: string) => string }) {
+  const { plinth: P } = g;
+  return (
+    <>
+      {g.wheels.map((w) => (
+        <g key={w.x} transform={`translate(${w.x} ${w.y})`}>
+          <ChariotWheel r={w.r} />
+        </g>
+      ))}
+      <path d={P.front} fill={url("riser")} stroke="var(--gold)" strokeWidth={0.8} />
+      <path d={P.mid} stroke="var(--art-carve)" strokeWidth={0.9} strokeDasharray="6 2.4" />
+      <g transform={g.face(P.z)}>
+        <path d={gateSquare(P.half, P.gate, P.jut)} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.4} {...nonScaling} />
+        <path d={gateSquare(P.half - 2.4, P.gate - 1.6, P.jut)} stroke="var(--art-vermilion)" strokeWidth={1} {...nonScaling} />
+        <path d={gateSquare(P.half - 4.8, P.gate - 3.2, P.jut)} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      </g>
+      {g.drums.map((drum, i) => (
+        <g key={i}>
+          <path d={drum.riser} fill={url("riser")} stroke="var(--gold)" strokeWidth={0.8} />
+          <path d={drum.pilasters} stroke="var(--art-carve)" strokeWidth={0.8} />
+          <path d={drum.frieze} stroke="var(--art-carve)" strokeWidth={0.8} />
+          <g transform={g.face(drum.z)}>
+            <circle r={drum.r} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.2} {...nonScaling} />
+            {i === 0 && (
+              <g stroke="var(--gold)" {...nonScaling}>
+                <circle r={40.8} strokeWidth={0.8} {...nonScaling} />
+                <circle r={39.4} strokeWidth={0.8} {...nonScaling} />
+              </g>
+            )}
+            {i === 1 && <path d={yantraPetals(16, 31.2, 38, 0)} fill="var(--art-core)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />}
+            {i === 2 && <path d={yantraPetals(8, 24, 30.8, 0)} fill="var(--art-saffron)" fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />}
+          </g>
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** The nine triangles on the chariot's top tier, over a field of her light. Needs `RathaDefs`. */
+export function RathaTriangles({ g, url }: { g: RathaShape; url: (name: string) => string }) {
+  return (
+    <g transform={g.face(g.drums[3].z)}>
+      <circle r={23.4} fill={url("field")} fillOpacity={0.9} />
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} fill={t.down ? "var(--art-vermilion)" : "var(--art-core)"} fillOpacity={0.16} />
+      ))}
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" {...nonScaling} />
+      ))}
+    </g>
+  );
+}
+
+/** A spear, a trident, an arrow and a goad, each standing up from the origin, about 22 tall. */
+function WeaponGlyph({ kind }: { kind: number }) {
+  const shaft = <path d="M 0 0 V -14" stroke="var(--gold)" strokeWidth={1.1} />;
+  switch (kind) {
+    case 0:
+      return (
+        <>
+          {shaft}
+          <path d="M 0 -24 C 2.6 -20 2.6 -16 0 -13.4 C -2.6 -16 -2.6 -20 0 -24 Z" fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.6} />
+        </>
+      );
+    case 1:
+      return (
+        <>
+          {shaft}
+          <path d="M -4 -21 Q -4.4 -15 0 -14 Q 4.4 -15 4 -21 M 0 -14 V -23" stroke="var(--gold)" strokeWidth={1.1} strokeLinecap="round" />
+        </>
+      );
+    case 2:
+      return (
+        <>
+          <path d="M 0 0 V -18" stroke="var(--gold)" strokeWidth={1} />
+          <path d="M -2.2 -18 L 0 -23.5 L 2.2 -18 Z" fill="var(--gold)" />
+          <path d="M -2.4 -1 L 0 -5 L 2.4 -1" stroke="var(--art-saffron)" strokeWidth={1} />
+        </>
+      );
+    default:
+      return (
+        <>
+          <path d="M 0 0 V -20" stroke="var(--gold)" strokeWidth={1.1} />
+          <path d="M 0 -20 L 0 -24 M 0 -17 C 4 -19 6.4 -16 5 -13" stroke="var(--gold)" strokeWidth={1.1} strokeLinecap="round" />
+        </>
+      );
+  }
+}
+
+function RathaWeaponList({ list }: { list: RathaWeapon[] }) {
+  return (
+    <>
+      {list.map((w, i) => (
+        <g key={i} transform={`translate(${w.x} ${w.y}) scale(${w.s})`} opacity={w.back ? 0.75 : 1}>
+          <WeaponGlyph kind={w.kind} />
+          {i % 5 === 2 && <circle className={TWINKLE[i % 3]} cy={-22} r={1.6} fill="var(--art-core)" />}
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** Spears, tridents, arrows and goads standing ready round every tier. */
+export function RathaWeapons({ g }: { g: RathaShape }) {
+  return (
+    <>
+      <RathaWeaponList list={g.weapons} />
+      <RathaWeaponList list={g.topWeapons} />
+    </>
+  );
+}
+
+/** The chariot's outline in black, for a mask that keeps a light off it. */
+export function RathaSilhouette({ g }: { g: RathaShape }) {
+  const { plinth: P } = g;
+  return (
+    <>
+      <path d={P.front} />
+      <path d={gateSquare(P.half, P.gate, P.jut)} transform={g.face(P.z)} />
+      {g.drums.map((drum, i) => (
+        <g key={i}>
+          <path d={drum.riser} />
+          <circle r={drum.r} transform={g.face(drum.z)} />
+        </g>
+      ))}
+    </>
+  );
+}
