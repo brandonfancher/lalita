@@ -2893,6 +2893,24 @@ export function BrahmaLotus({ url }: { url: (name: string) => string }) {
   );
 }
 
+/* ── Kolam ─────────────────────────────────────────────────────────────── */
+
+/**
+ * A kolam in rice flour: the line `d` in `--art-ivory` over a faint musk line so it shows by day,
+ * and its dots (pulli) in ivory touched with gold. Its shape is the artwork's own.
+ */
+export function Kolam({ d, dots, line = 1.1, dot = 1.6 }: { d: string; dots: Pt[]; line?: number; dot?: number }) {
+  return (
+    <>
+      <path d={d} stroke="var(--art-musk)" strokeWidth={round(line + 0.9)} strokeOpacity={0.3} strokeLinejoin="round" />
+      <path d={d} stroke="var(--art-ivory)" strokeWidth={line} strokeOpacity={0.9} strokeLinejoin="round" />
+      {dots.map((p, i) => (
+        <circle key={i} cx={p.x} cy={p.y} r={dot} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.3} />
+      ))}
+    </>
+  );
+}
+
 /* ── Elephant (gaja) ───────────────────────────────────────────────────── */
 
 /** An elephant facing right, standing on the origin, about 110 long and 88 to the top of its back. */

@@ -13,7 +13,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { Lamp, NectarCup, OpenLotus, archPath, artIds, partProps, polar, round } from "./primitives";
+import { Kolam, Lamp, NectarCup, OpenLotus, archPath, artIds, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -39,7 +39,7 @@ const MANGO_LEAF = "M 0 0 C -3.6 4 -3.4 11 0 16 C 3.4 11 3.6 4 0 0 Z";
 const THRESHOLD = { x: DOOR.cx - DOOR_R - 10, y: DOOR.bottom, w: DOOR_R * 2 + 20, h: 7 };
 /** The kolam on the threshold: a row of rice-flour dots, a loop drawn round each pair. */
 const KOLAM_Y = DOOR.bottom + 18;
-const KOLAM_DOTS = Array.from({ length: 7 }, (_, k) => ({ x: DOOR.cx - 42 + k * 14, k }));
+const KOLAM_DOTS = Array.from({ length: 7 }, (_, k) => ({ x: DOOR.cx - 42 + k * 14, y: KOLAM_Y }));
 const KOLAM_LOOP = (() => {
   const xs = KOLAM_DOTS.map((d) => d.x);
   const up = xs.map((x, i) => `${i ? "" : `M ${x - 7} ${KOLAM_Y}`} C ${x - 7} ${KOLAM_Y - 9} ${x + 7} ${KOLAM_Y - 9} ${x + 7} ${KOLAM_Y}`).join(" ");
@@ -123,11 +123,7 @@ export function KulaAndSamaya({ idPrefix = "sa37", active = null }: ArtProps) {
 
       {/* The kolam on its threshold */}
       <g {...part("threshold")}>
-        <path d={KOLAM_LOOP} stroke="var(--art-musk)" strokeWidth={2} strokeOpacity={0.3} strokeLinejoin="round" />
-        <path d={KOLAM_LOOP} stroke="var(--art-ivory)" strokeWidth={1.1} strokeOpacity={0.9} strokeLinejoin="round" />
-        {KOLAM_DOTS.map((d) => (
-          <circle key={d.k} cx={d.x} cy={KOLAM_Y} r={1.6} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.3} />
-        ))}
+        <Kolam d={KOLAM_LOOP} dots={KOLAM_DOTS} />
       </g>
 
       {/* The assembly of powers, each joined to her and to the next */}
