@@ -60,7 +60,7 @@ second time it is needed.
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
-| The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`, `autumn-moon-turn.tsx`) | Shloka 5 |
+| The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`, `autumn-moon-turn.tsx`, `ten-taken-away.tsx`) | Shloka 5 |
 | The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | `MoonHalo` in `primitives.tsx` (promoted at Shloka 8) | Shloka 5 |
 | Moonlight | Fine `--gold-soft` rings round the moon, about 0.6 units wide, 22–26 units apart, fading outward from about 0.45 opacity. Where a second light shares the sky, they cross (two moons) or fade out against it (the sun's radiance) | Inline (`eighth-night-moon.tsx`, `sun-moon-earrings.tsx`) | Shloka 5 |
 | The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | `primitives.tsx` | Shloka 5 |
@@ -228,6 +228,13 @@ second time it is needed.
 | The moon in still water | Level `--gold-soft` hairlines, closer toward the far edge, broken round an `--art-moon` ellipse of the moon (with its deer, flattened) in a soft moon glow | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43 and 44) | Shloka 43 |
 | The empty seat (nirādhāra) | A lotus pedestal drawn only in dotted gold, six petals over two base lines, with her light hanging well above it and nothing between | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
+| Rāhu's shadow (upaplava) | Never a figure: a soft dark disc, a radial gradient from `--art-hair` to `--art-musk`, with a faint musk rim, sinking (`m-sink`), and its way past the moon as a dotted musk arc that goes over the moon and never across it | Inline (`ten-taken-away.tsx`) | Shloka 44 |
+| Her light without outline (nirākāra) | Only a glow: a radial gradient from `--art-core` through `--art-glow` to nothing, no disc and no rim (`m-breathe`), with one unbroken gold ring and a `--gold-soft` echo round it (`m-shimmer`) for nityā | Inline (`ten-taken-away.tsx`) | Shloka 44 |
+| A lamp in a windless niche (nivātastha dīpa) | The `StillLamp` at 2.2 in a round-topped gold niche (`archPath`) shaded faintly in `--art-musk` on a gold sill, in a small glow | Inline (`ten-taken-away.tsx`, using `StillLamp`) | Shloka 44 |
+| Crystal (sphaṭika) | An upright hexagonal prism with pointed ends, a gradient of `--art-ivory` and `--art-moon`, gold edges, `--gold-soft` facet lines and a twinkling ivory glint, in a soft moon glow | Inline (`ten-taken-away.tsx`) | Shloka 44 |
+| The three strands (guṇa) | Three 2.2 strands, `--art-ivory` (edged in gold so it shows by day), `--art-vermilion` and `--art-musk`, twisted into one rope that comes in from the edge and comes undone, the strands curling apart, short of her | Inline (`ten-taken-away.tsx`) | Shloka 44 |
+| A fire burnt down (śānta) | A low mound of ash (`--art-moon` to `--art-musk`) with five `--art-saffron` and `--art-vermilion` embers breathing slowly, in a faint saffron glow, and one thin musk thread of smoke going straight up | Inline (`ten-taken-away.tsx`) | Shloka 44 |
+| Desire's arrow, fallen | Kāma's `FlowerArrow` at 0.8 lying on the ground, head to the right and a little askew, over a soft musk shadow; without the shadow it reads as flying | Inline (`ten-taken-away.tsx`, using `FlowerArrow`) | Shloka 44 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1651,6 +1658,38 @@ One entry per finished artwork, in the order they were made.
   sides and stopping at its edge; as thin strokes it read as rays, and as brush strokes as wings.
   The lotus leaf is the Gītā's own image (5.10) for the same thing, and it reads at once. The drum
   first lay on its side and read as a bow tie. In the chant miniature the moon and her light carry it.
+
+### Shloka 44: Ten things taken away
+
+- **Component:** `ten-taken-away.tsx` (defs prefix `sa44`)
+- **Composition:** ten names, eight of them removals. In the crown the moon, whole, with its deer,
+  and Rāhu's shadow gone past it over the top and going off. Below the card her light as a glow
+  with no outline, and one unbroken ring round it. At the left, the things that cannot touch her
+  or move her: a lamp in a windless niche, a clear crystal, a lotus leaf with the water running off
+  it. At the right a rope of three strands coming undone short of her, a fire burnt down to embers,
+  and Kāma's flower arrow lying where it fell.
+- **Name → part:**
+  - Nirlepā → `untainted`: the lotus leaf and the water running off it
+  - Nirmalā → `stainless`: the crystal and its glow
+  - Nityā → `eternal`: the ring and its echo
+  - Nirākārā → `formless`: her light
+  - Nirākulā → `unperturbed`: the lamp, the niche and its glow
+  - Nirguṇā → `strands`: the rope of three strands
+  - Niṣkalā → `partless`: the moon, its glow and the deer
+  - Śāntā → `tranquil`: the ash, the embers, the glow and the smoke
+  - Niṣkāmā → `desireless`: the fallen arrow and its shadow
+  - Nirupaplavā → `calamity`: Rāhu's shadow and its way past
+  - Intro, *her light* → `formless`
+  - Detail → `strands`: what a guṇa is, and the three colours
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the embers), `m-shimmer` (the ring, the crystal's glow),
+  `m-twinkle` (the beads, the run-off, the glint), `m-sink` (Rāhu). The lamp is still on purpose.
+- **Notes:** This title stays left of the artwork. The still lamp of Shloka 41 and the lotus leaf of
+  Shloka 43 were promoted into `primitives.tsx` (`StillLamp`, `LotusLeaf`), and both shlokas render
+  byte-for-byte as before. Niṣkalā is drawn as the whole moon because kalā is a digit of the moon,
+  and it lets nirupaplavā be Rāhu, the eclipse that never reaches it. The arrow first lay in the air
+  and read as flying; it now has a shadow on the ground. In the chant miniature her light and the
+  moon carry it.
 
 ## Open questions
 

@@ -21,6 +21,7 @@ import { MantraBody } from "./mantra-body";
 import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
 import { SummitAndRain } from "./summit-and-rain";
+import { TenTakenAway } from "./ten-taken-away";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
@@ -1747,6 +1748,82 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           At the edges of the crown the last clouds of the rains are going off. Śarat is the season after the monsoon,
           when the sky has been washed, and that is why the autumn moon is the one faces are compared to.
+        </>
+      ),
+    },
+  },
+  "044": {
+    Art: TenTakenAway,
+    intro: (Spot) => (
+      <>
+        Ten names, eight of them taken away. At the centre is <Spot part="formless">her light</Spot>, and round it
+        the things that have no hold on her.
+      </>
+    ),
+    entries: [
+      {
+        nama: 134,
+        part: "untainted",
+        depicts: "At the lower left a lotus leaf, with the water running off its edge and leaving no film behind.",
+      },
+      {
+        nama: 135,
+        part: "stainless",
+        depicts: "Beside it a clear crystal, with nothing clouding it inside or out.",
+      },
+      {
+        nama: 136,
+        part: "eternal",
+        depicts: "Round her light runs one gold ring, with nowhere it starts and nowhere it stops.",
+      },
+      {
+        nama: 137,
+        part: "formless",
+        depicts:
+          "Her light itself is only a glow, with no rim and no disc: there is no outline of her that could be drawn.",
+      },
+      {
+        nama: 138,
+        part: "unperturbed",
+        depicts:
+          "At the left a lamp burns in a niche out of the wind and its flame does not flicker, the Gītā's image of a mind that nothing scatters.",
+      },
+      {
+        nama: 139,
+        part: "strands",
+        depicts:
+          "From the right comes a rope of three strands, white, red and dark, the three that nature is twisted out of. Before it reaches her it comes undone.",
+      },
+      {
+        nama: 140,
+        part: "partless",
+        depicts:
+          "In the crown the moon is whole. A kalā is a digit of the moon, and none of hers has been taken away.",
+      },
+      {
+        nama: 141,
+        part: "tranquil",
+        depicts:
+          "At the lower right a fire has burnt down to embers in its ash, and its smoke goes straight up: every disturbance spent.",
+      },
+      {
+        nama: 142,
+        part: "desireless",
+        depicts: "Beside the fire the flower arrow of desire lies where it fell, with no one to aim it at.",
+      },
+      {
+        nama: 143,
+        part: "calamity",
+        depicts:
+          "Rāhu, the shadow that swallows the moon at an eclipse, has gone past it in the crown without touching it, and is going off.",
+      },
+    ],
+    detail: {
+      part: "strands",
+      body: (
+        <>
+          A guṇa is literally a strand of a rope. Sattva, rajas and tamas, clarity, motion and heaviness, are
+          traditionally white, red and dark, and everything in nature is twisted out of the three.
         </>
       ),
     },
