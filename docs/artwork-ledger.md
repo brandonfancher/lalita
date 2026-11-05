@@ -223,7 +223,7 @@ second time it is needed.
 | Śambhu and Śarva | Never a figure: Śambhu as a small `--art-moon` crescent in a moon glow; Śarva as a gold recurve bow upright with an `--art-vermilion`-tipped arrow on the string | Inline (`devotion-governs.tsx`) | Shloka 42 |
 | Śāradā | Never a figure: an `--art-ivory` light in a soft moon glow over the `Vina`, shown smaller | Inline (`devotion-governs.tsx`, using `Vina`) | Shloka 42 |
 | The autumn moon (śarac-candra) | The full moon as in Shloka 5, with its deer, but without a halo: a halo means haze, and the autumn sky is washed. Fine `--gold-soft` moonlight rings and a moon glow only. Off at the edges of the crown, the last clouds of the rains: three overlapping soft puffs each, a radial gradient from faint `--art-musk` to `--art-moon`, swaying | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
-| Śaṅkara's trident and drum (triśūla, ḍamaru) | A gold three-pronged head with `--art-moon` tips on an `--art-turmeric` shaft. From a `--art-vermilion` cord tied under the prongs hangs the drum, upright: two `--art-turmeric` cones meeting at a narrow waist bound in vermilion, `--art-ivory` heads, a bead on a cord. Lying on its side it read as a bow tie | `trident(x, top, foot, s)` with `Trident` and `Damaru` in `primitives.tsx` (promoted at Shloka 56, used by Shlokas 43 and 56) | Shloka 43 |
+| Śaṅkara's trident and drum (triśūla, ḍamaru) | A gold three-pronged head with `--art-moon` tips on an `--art-turmeric` shaft. From a `--art-vermilion` cord tied under the prongs hangs the drum, upright: two `--art-turmeric` cones meeting at a narrow waist bound in vermilion, `--art-ivory` heads, a bead on a cord. Lying on its side it read as a bow tie. Being shaken (Shloka 57) it comes off its cord (`hung={false}`), tilted about 24°, with two bead cords flung out to strike the heads and broken dashed gold arcs of sound from each head | `trident(x, top, foot, s)` with `Trident` and `Damaru` in `primitives.tsx` (promoted at Shloka 56, used by Shlokas 43 and 56) | Shloka 43 |
 | Plumb line (sādhvī) | A gold peg, a hair-fine gold thread hanging dead straight, and a gold teardrop bob with an `--art-moon` sheen. Still on purpose | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | The moon in still water | Level `--gold-soft` hairlines, closer toward the far edge, broken round an `--art-moon` ellipse of the moon (with its deer, flattened) in a soft moon glow | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43, 44 and 47) | Shloka 43 |
@@ -323,6 +323,11 @@ second time it is needed.
 | The five offerings (pañcopacāra), in order | Small gold vessels on the ground in a row, left to right as they are offered: sandal paste (a footed bowl with a turmeric mound and a musk stick), flowers (a tray of crimson flowers and jasmine), incense (a bowl with two sticks, ember tips `m-breathe`, two curls of gold-soft smoke), the lamp (a `StillLamp` at 2 on a foot in a shimmering glow), food (a bowl of ivory rice with a turmeric drop of ghee on a leaf) | Inline (`great-yantra.tsx`, using `StillLamp`) | Shloka 56 |
 | Bhairava's skull-bowl (kapāla) | An `--art-ivory` cranium-cup about 44 across, gold-edged, a zigzag `--art-carve` suture across it, on a three-legged gold stand, heaped with crimson and vermilion hibiscus, jasmine buds and three `--leaf` leaves, two flowers fallen beside it. With the planted trident and drum it stands for Bhairava, who is never drawn | Inline (`great-yantra.tsx`, with `Trident` and `Damaru` at 1.2) | Shloka 56 |
 | Bhairava's dog | About 100 long, lying in profile facing right with its head on its forepaws, asleep: `--art-hair` with a `--gold-soft` edge, the whole at 0.8 so it stays a detail; a short ear, a closed eye, a tail curled round its haunch. A tall straight ear read as a horn | Inline (`great-yantra.tsx`) | Shloka 56 |
+| The ring of fire of the dance (prabhāmaṇḍala), wheeling | A tilted ellipse (238 by 208, turned −6°) of fire drawn as three closed bands, `--art-vermilion`, `--art-saffron` and `--art-core`, one inside the other, each with ninety crests on its outer edge whose tips are thrown back against the turn. The crests run tall, short, middling, so the edge flickers; evenly spaced separate tongues read as a laurel wreath, and a single long crest shape as saw teeth or feathers. A gold hoop and hairline on the inner edge, `m-lick` licks off every sixth crest, `m-ember` sparks at both sides, a soft saffron glow inside. Crests drop to about half height under the title and to 0.72 at the ground | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
+| The worlds going into the fire | Nine things caught along the band, each on a small `--art-core`-to-vermilion burn glow: world-eggs (`eggPath`, stone with a vermilion scorch from below, an `--art-crimson` crack and a saffron tongue coming out of it) and the high gods' emblems as in Shloka 33, Brahmā's lotus, Viṣṇu's discus and Indra's `Vajra`, all turned along the ring. Keep them out of the card window and from behind the verse panel, or they are lost | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
+| A field of ash (after the fire) | A broad flat ellipse of ash under the scene (236 by 62), an `--art-musk` gradient with an `--art-moon` one over it as `Ash` does, a low saffron firelight where it meets the fire, five long faint drift lines, six low heaps, and cinders: musk flecks, and one in three `--art-ember` with a small glow. The `Ash` clouds alone, spread as a ground, read as grey smudges | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
+| A throne for two (his seat and hers) | One broad seat: a stone back with a scalloped top and two inset panels (his `--gold-soft`, hers `--art-saffron`), a scroll rolled out at each top corner, a gold centre post with a bud finial between the seats, turmeric-and-gold armrests rolled into volutes, two vermilion cushions, a riser slab, a stone base with vermilion lozenges and gold feet. His seat is marked by his crescent (the fourth night's `litPart`, horns up) on a stalk above his panel. Two separate arched backs read as doorways, or as a sun and moon | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
+| The three cities (tripura) | Three small walled towns seen from the front, 68 wide: four domed towers behind a wall with merlons and an arched gate lit from within. Gold (`--art-turmeric` wall, gold towers), silver (`--art-moon`) and iron (`--art-hair`), joined by a dotted gold triangle | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2196,6 +2201,41 @@ One entry per finished artwork, in the order they were made.
   were promoted into `primitives.tsx` (`trident`, `Trident`, `Damaru`), and Shloka 43 renders
   byte-for-byte as before. In the chant miniature the red canopy and the lit plate under it carry
   it.
+
+### Shloka 57: Witness of the dance at the end of the world
+
+- **Component:** `witness-of-the-dance.tsx` (defs prefix `sa57`)
+- **Composition:** the great dissolution as Śiva's dance, with no dancer drawn. A ring of fire,
+  tilted a little, wheels round the card, its crests thrown back against the turn, carrying world-eggs
+  and the lotus, discus and thunderbolt of the gods who ran them into the fire. At the upper right,
+  clear of the title, the drum of the dance is being shaken, its beads flung against both heads, and
+  above it hang the beats it has sounded. Below the card, inside the ring and untouched by it, one
+  throne for two: his seat empty under his crescent, because he is the one dancing, and on hers her
+  light, perfectly still. Cities of gold and silver stand either side of the throne, and the iron
+  city below the ring on a field of ash, all that the fire leaves. The first ring of fire to frame
+  the whole card, the first scene with an empty seat, and the first ground of ash.
+- **Name → part:**
+  - Maheśvaramahākalpamahātāṇḍavasākṣiṇī → `dance`: the ring of fire, its licks and sparks, the
+    drum, its bead cords and its sound
+  - Mahākāmeśamahiṣī → `throne`: the throne for two, his crescent, the cushions
+  - Mahātripurasundarī → `cities`: the cities of gold, silver and iron and the triangle between them
+  - Intro, *worlds* → `worlds`: the eggs and emblems in the fire, and the field of ash;
+    *light* → `light`: her light on her seat and its glow
+  - Detail → `beats`: nine beats and then five, the fourteen strokes of the drum at the end of the
+    dance from which the fourteen Māheśvara sūtras that open Pāṇini came (Nandikeśvara's Kāśikā 1)
+- **Palette:** no additions.
+- **Motion:** `m-lick` (the licks off the crests), `m-twinkle` (the beats and the drum's sound),
+  `m-ember` (sparks off the fire). Her light does not move, on purpose: it is the one still thing.
+- **Notes:** This title stays on one line, reaching x ≈ 374 (426 at 1100px) at y ≈ 74–141, so the
+  drum sits at x ≈ 490, y ≈ 106, and the beats arc above y ≈ 66, right of the title's end; the
+  ring's top crests are cut to half height to stay below it. The first fire was 64 separate raked
+  tongues with gaps, which read as a laurel wreath; then continuous bands with one long crest shape,
+  which read as saw teeth or feathers, until the tall-short-middling rhythm. The throne was first two
+  arched panels, which read as doorways. The `Ash` clouds as a ground read as smudges, so the ash is
+  a field with drifts, heaps and cinders. The world-egg (`eggPath`) and Indra's thunderbolt (`Vajra`)
+  were promoted into `primitives.tsx`, and `Damaru` gained `hung={false}`; Shlokas 3, 33, 43 and 56
+  render byte-for-byte as before. In the chant miniature the ring of fire and the lit throne inside
+  it carry it.
 
 ## Open questions
 

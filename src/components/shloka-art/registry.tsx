@@ -56,6 +56,7 @@ import { WeddingDoorway } from "./wedding-doorway";
 import { WhatItHoldsUp } from "./what-it-holds-up";
 import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
+import { WitnessOfTheDance } from "./witness-of-the-dance";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -2610,6 +2611,48 @@ export const ARTWORK: Record<string, Artwork> = {
           Bhairava&apos;s black dog, his mount, lies asleep at the foot of the trident with its nose on its paws. At his
           temples people feed the dogs as a way of feeding him; here, with its master at worship, it has nothing to
           guard.
+        </>
+      ),
+    },
+  },
+  "057": {
+    Art: WitnessOfTheDance,
+    intro: (Spot) => (
+      <>
+        At the end of a world-age Śiva dances the <Spot part="worlds">worlds</Spot> into the fire, their eggs and the
+        lotus, discus and thunderbolt of the gods who ran them, until there is only a field of ash. The picture draws
+        the dance without the dancer. What it keeps still is her <Spot part="light">light</Spot>, the one thing the
+        dance happens in front of.
+      </>
+    ),
+    entries: [
+      {
+        nama: 232,
+        part: "dance",
+        depicts:
+          "A ring of fire wheels round the card, its flames thrown back by the turn, and at the upper right the drum that keeps the dance's time is being shaken, its beads striking both heads. The tāṇḍava at the close of a kalpa is not a picture of the destruction but the destruction itself; she is its sākṣiṇī, the one who sees it with her own eyes.",
+      },
+      {
+        nama: 233,
+        part: "throne",
+        depicts:
+          "Below it stands one throne with two seats, his marked with his crescent and empty, because he is the one dancing, and hers with her light on it. A mahiṣī is the anointed chief queen, who shares the king's throne rather than attending at it.",
+      },
+      {
+        nama: 234,
+        part: "cities",
+        depicts:
+          "Three small cities, of gold, silver and iron, stand round the throne at the points of a triangle, the iron one on the ash, each lit at its gate by her. They are the three cities of the old myth, and every later reading of them, waking, dream and sleep among them; she is the beauty of the set, not of any one.",
+      },
+    ],
+    detail: {
+      part: "beats",
+      body: (
+        <>
+          Above the drum hang the beats it has sounded, nine and then five. The grammarians say that when the king of
+          dancers finished his dance he beat his drum nine times and five, and the fourteen sounds became the fourteen
+          sūtras with which Pāṇini begins: they are called the Māheśvara sūtras, after the same Maheśvara as this
+          name.
         </>
       ),
     },

@@ -3074,19 +3074,26 @@ export function Trident({ t }: { t: TridentShape }) {
   );
 }
 
-/** The drum hanging upright from its cord, drawn in at the waist. Wants round joins. */
-export function Damaru({ t }: { t: TridentShape }) {
+/**
+ * The drum hanging upright from its cord, drawn in at the waist. Wants round joins.
+ * `hung={false}` takes it off its cord and leaves out its hanging bead, for a drum in the hand.
+ */
+export function Damaru({ t, hung = true }: { t: TridentShape; hung?: boolean }) {
   const { drum: d } = t;
   const w = (n: number) => round(n * t.s);
   return (
     <>
-      <path d={t.cord} stroke="var(--art-vermilion)" strokeWidth={w(0.9)} strokeLinecap="round" />
+      {hung && <path d={t.cord} stroke="var(--art-vermilion)" strokeWidth={w(0.9)} strokeLinecap="round" />}
       <path d={t.body} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={w(1)} />
       <ellipse cx={d.x} cy={round(d.y - d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
       <ellipse cx={d.x} cy={round(d.y + d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
       <path d={`M ${d.x - d.waist - w(1.4)} ${d.y} L ${d.x + d.waist + w(1.4)} ${d.y}`} stroke="var(--art-vermilion)" strokeWidth={w(2.2)} strokeLinecap="round" />
-      <path d={t.beads} stroke="var(--art-vermilion)" strokeWidth={w(0.8)} strokeLinecap="round" />
-      <circle cx={t.bead.x} cy={t.bead.y} r={w(2)} fill="var(--gold)" />
+      {hung && (
+        <>
+          <path d={t.beads} stroke="var(--art-vermilion)" strokeWidth={w(0.8)} strokeLinecap="round" />
+          <circle cx={t.bead.x} cy={t.bead.y} r={w(2)} fill="var(--gold)" />
+        </>
+      )}
     </>
   );
 }
