@@ -3090,3 +3090,17 @@ export function Damaru({ t }: { t: TridentShape }) {
     </>
   );
 }
+
+/* ── A world-egg ───────────────────────────────────────────────────────── */
+
+/** A world-egg (brahmāṇḍa), broad end down, centred on (x, y), half-width w and half-height h. */
+export function eggPath(x: number, y: number, w: number, h: number) {
+  const p = round;
+  return [
+    `M ${p(x)} ${p(y - h)}`,
+    `C ${p(x + 0.62 * w)} ${p(y - h)} ${p(x + w)} ${p(y - 0.25 * h)} ${p(x + w)} ${p(y + 0.2 * h)}`,
+    `C ${p(x + w)} ${p(y + 0.72 * h)} ${p(x + 0.55 * w)} ${p(y + h)} ${p(x)} ${p(y + h)}`,
+    `C ${p(x - 0.55 * w)} ${p(y + h)} ${p(x - w)} ${p(y + 0.72 * h)} ${p(x - w)} ${p(y + 0.2 * h)}`,
+    `C ${p(x - w)} ${p(y - 0.25 * h)} ${p(x - 0.62 * w)} ${p(y - h)} ${p(x)} ${p(y - h)} Z`,
+  ].join(" ");
+}
