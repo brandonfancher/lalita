@@ -18,6 +18,7 @@ import { KingOfWheels } from "./king-of-wheels";
 import { KulaAndSamaya } from "./kula-and-samaya";
 import { LightningVine } from "./lightning-vine";
 import { MantraBody } from "./mantra-body";
+import { PotAndSpace } from "./pot-and-space";
 import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
 import { SummitAndRain } from "./summit-and-rain";
@@ -1824,6 +1825,73 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           A guṇa is literally a strand of a rope. Sattva, rajas and tamas, clarity, motion and heaviness, are
           traditionally white, red and dark, and everything in nature is twisted out of the three.
+        </>
+      ),
+    },
+  },
+  "045": {
+    Art: PotAndSpace,
+    intro: (Spot) => (
+      <>
+        Eight names saying that nothing about her ever happened. Her light is drawn twice: once as{" "}
+        <Spot part="awake">the pole star</Spot>, and once as <Spot part="space">the one space</Spot> that the pots
+        stand in.
+      </>
+    ),
+    entries: [
+      {
+        nama: 144,
+        part: "free",
+        depicts:
+          "One of the pots has broken, and its shards lie on the ground. The space it held is just as it was. It was never shut in, so nothing was set free.",
+      },
+      {
+        nama: 145,
+        part: "clay",
+        depicts:
+          "At the left lies the lump of clay that every pot is made of. Whatever shape it is turned into, it is still clay, as in the Chāndogya's lesson.",
+      },
+      {
+        nama: 146,
+        part: "pots",
+        depicts:
+          "The pots stand in a row, every one a different shape. They are the world's manifold, and their shapes stop at their rims.",
+      },
+      {
+        nama: 147,
+        part: "held",
+        depicts:
+          "Round the pole star the other stars wheel on their trails. In the Purāṇas they are all tied to it, and it is tied to nothing.",
+      },
+      {
+        nama: 148,
+        part: "pure",
+        depicts: "Smoke drifts in from the right and thins away before it reaches the middle. Smoke cannot dirty space.",
+      },
+      {
+        nama: 149,
+        part: "awake",
+        depicts: "In the crown her light is the pole star, the one star that never sets. It is awake all night, every night.",
+      },
+      {
+        nama: 150,
+        part: "blameless",
+        depicts:
+          "At the right lies a palm leaf with its stylus, and nothing is written on it. Avadya means literally what is not to be said, and there is nothing to say against her.",
+      },
+      {
+        nama: 151,
+        part: "space",
+        depicts:
+          "One band of her light runs through the pots and between them, inside and outside alike, without a gap anywhere.",
+      },
+    ],
+    detail: {
+      part: "free",
+      body: (
+        <>
+          This is the Vedāntins&apos; pot and space. The space in a pot seems to be a space of its own, and when the
+          pot breaks it seems to be freed. It was the one space all along.
         </>
       ),
     },

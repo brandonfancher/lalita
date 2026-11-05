@@ -235,6 +235,11 @@ second time it is needed.
 | The three strands (guṇa) | Three 2.2 strands, `--art-ivory` (edged in gold so it shows by day), `--art-vermilion` and `--art-musk`, twisted into one rope that comes in from the edge and comes undone, the strands curling apart, short of her | Inline (`ten-taken-away.tsx`) | Shloka 44 |
 | A fire burnt down (śānta) | A low mound of ash (`--art-moon` to `--art-musk`) with five `--art-saffron` and `--art-vermilion` embers breathing slowly, in a faint saffron glow, and one thin musk thread of smoke going straight up | Inline (`ten-taken-away.tsx`) | Shloka 44 |
 | Desire's arrow, fallen | Kāma's `FlowerArrow` at 0.8 lying on the ground, head to the right and a little askew, over a soft musk shadow; without the shadow it reads as flying | Inline (`ten-taken-away.tsx`, using `FlowerArrow`) | Shloka 44 |
+| The pole star and the wheeling stars (dhruva) | Her light as the pole star: an `--art-ivory` four-pointed `Star` (s 12) on an `--art-core` dot in a breathing glow. Round it seven `--gold-soft` star trails, arcs of 70–120° on circles 26–68 out, each with a small twinkling `Star` at its leading end | Inline (`pot-and-space.tsx`) | Shloka 45 |
+| Pot and space (ghaṭākāśa) | Earthen pots of different shapes standing on a ground line, drawn as `--art-turmeric` outlines over a faint turmeric fill with a musk hairline, an oval mouth and an `--art-vermilion` belly band, so that one soft band of her light (`--art-core` to `--art-glow`, `m-shimmer`) shows through them and between them alike. A broken pot is four `--art-turmeric` shards on the ground where it stood, the light there unchanged | Inline (`pot-and-space.tsx`) | Shloka 45 |
+| Lump of clay | A soft irregular lump in `--art-vermilion` at 0.55 with a musk edge and one thumb crease, on a faint musk shadow. On a potter's wheel it read as a hat, and with turmeric and two scores as a loaf | Inline (`pot-and-space.tsx`) | Shloka 45 |
+| A blank palm leaf | One `--art-turmeric` leaf edged in gold with its two binding holes and nothing written on it, the gold stylus laid above it | Inline (`pot-and-space.tsx`) | Shloka 45 |
+| Smoke that does not soil space | A wavering ribbon of `--art-musk` drifting in from the edge, a broad faint stroke with a fine one inside, fading to nothing before the middle (`m-sway`) | Inline (`pot-and-space.tsx`) | Shloka 45 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1690,6 +1695,33 @@ One entry per finished artwork, in the order they were made.
   and it lets nirupaplavā be Rāhu, the eclipse that never reaches it. The arrow first lay in the air
   and read as flying; it now has a shadow on the ground. In the chant miniature her light and the
   moon carry it.
+
+### Shloka 45: Forever pure, forever awake, forever free
+
+- **Component:** `pot-and-space.tsx` (defs prefix `sa45`)
+- **Composition:** eight names saying that nothing about her ever happened. In the crown, right of
+  the title, her light as the pole star with the other stars wheeling round it on their trails.
+  Below the card the Vedāntins' pot and space: a row of earthen pots of different shapes on a
+  ground line with one band of her light running through and between them, the shards of a broken
+  pot where the light is just as it was, the lump of clay at the left, a blank palm leaf and stylus
+  at the right, and smoke drifting in that thins away before the middle.
+- **Name → part:**
+  - Nityamuktā → `free`: the shards of the broken pot
+  - Nirvikārā → `clay`: the lump of clay and its shadow
+  - Niṣprapañcā → `pots`: the three whole pots
+  - Nirāśrayā → `held`: the star trails and their stars
+  - Nityaśuddhā → `pure`: the smoke
+  - Nityabuddhā → `awake`: the pole star and its glow
+  - Niravadyā → `blameless`: the blank palm leaf and the stylus
+  - Nirantarā → `space`: the band of light and the ground line
+  - Intro, *the pole star* → `awake`; *the one space* → `space`
+  - Detail → `free`: the pot and space, and why nothing was freed
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the pole star), `m-twinkle` (the wheeling stars), `m-shimmer` (the band of
+  light), `m-sway` (the smoke).
+- **Notes:** This title stays on one line and reaches x ≈ 311 at y ≈ 84–147, so the pole star sits at
+  x ≈ 384, high, with its trails clear of the title. The pots are drawn as outlines on purpose, so
+  the one light can be seen inside and outside them. In the chant miniature the band of light and the pots carry it.
 
 ## Open questions
 
