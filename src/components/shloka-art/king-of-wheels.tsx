@@ -20,6 +20,9 @@ import {
   RathaTiers,
   RathaTriangles,
   RathaWeapons,
+  Sapphire,
+  SapphireDefs,
+  Vina,
   artIds,
   partProps,
   polar,
@@ -87,10 +90,7 @@ export function KingOfWheels({ idPrefix = "sa26", active = null }: ArtProps) {
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
         <RathaDefs id={id} />
-        <radialGradient id={id("sapphire")}>
-          <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.55 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0 }} />
-        </radialGradient>
+        <SapphireDefs id={id} />
         <radialGradient id={id("shadow")}>
           <stop offset="0" style={{ stopColor: "var(--art-musk)", stopOpacity: 0.3 }} />
           <stop offset="1" style={{ stopColor: "var(--art-musk)", stopOpacity: 0 }} />
@@ -131,22 +131,9 @@ export function KingOfWheels({ idPrefix = "sa26", active = null }: ArtProps) {
         </g>
         {/* The vīṇā, its two gourds hanging under a straight neck, studded with rubies */}
         <g transform={`translate(${G_TOP.x} ${G_TOP.y - 4}) rotate(-8)`}>
-          {[-26, 26].map((x) => (
-            <g key={x}>
-              <path d={`M ${x} 0 V 4`} stroke="var(--gold)" strokeWidth={1.2} />
-              <circle cx={x} cy={11} r={8.5} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
-              <path d={`M ${x - 5} ${8} Q ${x - 4.5} ${5} ${x - 1.5} ${4.4}`} stroke="var(--art-core)" strokeWidth={1.1} strokeLinecap="round" />
-            </g>
-          ))}
-          <rect x={-38} y={-3} width={76} height={5} rx={2.5} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <path d="M 38 -1 C 44 -2 46 -8 43 -12" stroke="var(--gold)" strokeWidth={2.4} strokeLinecap="round" />
-          <path d="M -36 -3.6 L 36 -3.6" stroke="var(--gold-soft)" strokeWidth={0.4} />
-          {[-18, -6, 6, 18].map((x) => (
-            <circle key={x} cx={x} cy={-0.5} r={1.5} fill="var(--art-vermilion)" />
-          ))}
+          <Vina />
         </g>
-        <circle cx={SAPPHIRE.x} cy={SAPPHIRE.y} r={9} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={1} />
-        <circle cx={SAPPHIRE.x - 2.6} cy={SAPPHIRE.y - 2.6} r={2.4} fill="var(--art-moon)" fillOpacity={0.85} />
+        <Sapphire x={SAPPHIRE.x} y={SAPPHIRE.y} />
       </g>
 
       {/* The Cakrarāja: the Śrīcakra in nine tiers, on wheels */}
