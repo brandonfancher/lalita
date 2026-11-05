@@ -16,16 +16,14 @@
 
 import {
   AshDefs,
-  ChariotWheel,
-  SugarcaneBow,
+  DawnDefs,
+  GanesaEmblem,
+  Mahaganapati,
   artIds,
-  bowTips,
+  ganesaPlaces,
   glint,
   litPart,
   partProps,
-  polar,
-  round,
-  tongue,
 } from "./primitives";
 import type { ArtProps } from "./types";
 
@@ -48,137 +46,7 @@ const CRESCENT = litPart(4, 30);
 const GANESA = { x: 320, y: 540 };
 const RING_R = 82;
 const EMBLEM_S = 1.4;
-const EMBLEMS = [
-  "mace",
-  "trident",
-  "conch",
-  "lotus",
-  "tusk",
-  "citron",
-  "bow",
-  "discus",
-  "rice",
-  "pot",
-] as const;
-type Emblem = (typeof EMBLEMS)[number];
-/** Ten places round him, leaving the top open toward the look he came from. */
-const PLACES = EMBLEMS.map((name, k) => ({ name, ...polar(GANESA.x, GANESA.y, RING_R, 90 - 18 - 36 * k) }));
-const BOW = { half: 76, grip: 0, bend: 36 };
-const [BOW_L, BOW_R] = bowTips(BOW);
-const DISCUS_FLAMES = Array.from({ length: 8 }, (_, k) => `rotate(${k * 45}) translate(0 -9)`);
-const RICE = Array.from({ length: 7 }, (_, k) => {
-  const t = k / 6;
-  return { x: round(1 + 7 * t * t), y: round(-12 + 14 * t), side: k % 2 ? 1 : -1 };
-});
-
-function EmblemGlyph({ name }: { name: Emblem }) {
-  switch (name) {
-    case "mace":
-      return (
-        <>
-          <path d="M 0 12 V -4" stroke="var(--gold)" strokeWidth={1.8} strokeLinecap="round" />
-          <circle cy={-8} r={5.6} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
-          <path d="M -5.4 -8 H 5.4 M 0 -13.4 V -2.6" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <circle cy={-14.6} r={1.4} fill="var(--gold)" />
-        </>
-      );
-    case "trident":
-      return (
-        <>
-          <path d="M 0 12 V -12" stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
-          <path d="M -6 -12 C -6 -5 -3 -3 0 -3 C 3 -3 6 -5 6 -12" stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
-          <path d="M 0 -15 L -1.6 -11 L 1.6 -11 Z M -6 -14.6 L -7.4 -11 L -4.6 -11 Z M 6 -14.6 L 4.6 -11 L 7.4 -11 Z" fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.4} />
-        </>
-      );
-    case "conch":
-      return (
-        <>
-          <path
-            d="M 0 -12 C 6 -10 8.4 -3 6.6 3 C 5 8 2 10.6 0 12 C -1.4 10 -3.6 8.4 -6 5 C -8.6 0 -6.4 -9 0 -12 Z"
-            fill="var(--art-ivory)"
-            stroke="var(--gold)"
-            strokeWidth={0.8}
-          />
-          <path d="M -2.6 -6 C 2 -8 4.4 -3 1.6 -0.6 C -0.4 1 -2 -0.8 -0.4 -2.2" stroke="var(--gold)" strokeWidth={0.6} strokeLinecap="round" />
-          <path d="M 4.6 2 C 2 5 0 7 -3.6 6.4" stroke="var(--gold-soft)" strokeWidth={0.6} strokeLinecap="round" />
-        </>
-      );
-    case "lotus":
-      return (
-        <>
-          <path d="M 0 12 V 4" stroke="var(--leaf)" strokeWidth={1.3} strokeLinecap="round" />
-          {[-34, 34].map((a) => (
-            <path key={a} d="M 0 4 C -4 0 -3.6 -6 0 -9 C 3.6 -6 4 0 0 4 Z" transform={`rotate(${a} 0 4)`} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.5} />
-          ))}
-          <path d="M 0 4 C -4.4 -1 -4 -8 0 -12 C 4 -8 4.4 -1 0 4 Z" fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.6} />
-        </>
-      );
-    case "tusk":
-      return <path d="M -4 11 C -5 1 -1.6 -7 6 -12 C 2 -5 1.4 2 2.6 11 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />;
-    case "citron":
-      return (
-        <>
-          <path d="M 1 -8 C 4 -12 8 -12 10 -10 C 7 -8 4 -7 1 -8 Z" fill="var(--leaf)" />
-          <path
-            d="M 0 -8 C 6 -8 9 -3 8.4 2 C 7.8 8 3.6 11 0 11 C -3.6 11 -7.8 8 -8.4 2 C -9 -3 -6 -8 0 -8 Z"
-            fill="var(--art-turmeric)"
-            stroke="var(--gold)"
-            strokeWidth={0.8}
-          />
-          <path d="M -4.6 -2 C -4 -4.6 -2 -5.6 0 -5.8" stroke="var(--art-core)" strokeWidth={1} strokeLinecap="round" />
-        </>
-      );
-    case "bow":
-      return (
-        <g transform="rotate(-90) scale(0.2)">
-          <path d={`M ${BOW_L.x} ${BOW_L.y} L ${BOW_R.x} ${BOW_R.y}`} stroke="var(--gold-soft)" strokeWidth={4} />
-          <SugarcaneBow shape={BOW} />
-        </g>
-      );
-    case "discus":
-      return (
-        <>
-          <g className="m-flicker">
-            {DISCUS_FLAMES.map((t, i) => (
-              <path key={i} d={tongue(6, 4, 1)} transform={t} fill="var(--art-saffron)" />
-            ))}
-          </g>
-          <ChariotWheel r={8} />
-        </>
-      );
-    case "rice":
-      return (
-        <>
-          <path d="M -2 12 C -1 2 0 -6 1 -12 C 4 -6 7 -2 8 2" stroke="var(--leaf)" strokeWidth={1} strokeLinecap="round" />
-          {RICE.map((g, i) => (
-            <ellipse
-              key={i}
-              cx={g.x + g.side * 1.8}
-              cy={g.y}
-              rx={1.4}
-              ry={2.6}
-              transform={`rotate(${g.side * 30} ${g.x + g.side * 1.8} ${g.y})`}
-              fill="var(--art-turmeric)"
-              stroke="var(--gold)"
-              strokeWidth={0.3}
-            />
-          ))}
-        </>
-      );
-    case "pot":
-      return (
-        <>
-          <path d="M -8 -2 C -11 6 -6 12 0 12 C 6 12 11 6 8 -2 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
-          <path d="M -6 -2 L 6 -2 L 4.4 -6 L -4.4 -6 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
-          <path d="M -8.4 4 Q 0 6.4 8.4 4" stroke="var(--art-vermilion)" strokeWidth={1.2} />
-          <circle cx={0} cy={5.4} r={1.6} fill="var(--art-vermilion)" />
-          {[-3.4, 0, 3.4].map((x, i) => (
-            <circle key={x} cx={x} cy={-8 - (i === 1 ? 1.6 : 0)} r={2} fill={i === 1 ? "var(--art-vermilion)" : "var(--leaf)"} stroke="var(--gold)" strokeWidth={0.4} />
-          ))}
-        </>
-      );
-  }
-}
+const BOW_PLACE = ganesaPlaces(GANESA.x, GANESA.y, RING_R).find((p) => p.name === "bow")!;
 
 /* ── Vārāhī and Viśukra ────────────────────────────────────────────────── */
 
@@ -222,11 +90,7 @@ export function GlanceAndASon({ idPrefix = "sa30", active = null }: ArtProps) {
           <stop offset="0.4" style={{ stopColor: "var(--art-core)", stopOpacity: 0.45 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("dawn")}>
-          <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.85 }} />
-          <stop offset="0.45" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.3 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
-        </radialGradient>
+        <DawnDefs id={id} />
         <radialGradient id={id("crimson-glow")}>
           <stop offset="0" style={{ stopColor: "var(--art-crimson)", stopOpacity: 0.5 }} />
           <stop offset="1" style={{ stopColor: "var(--art-crimson)", stopOpacity: 0 }} />
@@ -259,25 +123,14 @@ export function GlanceAndASon({ idPrefix = "sa30", active = null }: ArtProps) {
       {/* Mahāgaṇapati, risen where the look met, ringed by the ten things he holds */}
       <g {...part("ganesa")}>
         <path className="m-lick" d={glint(8)} transform={`translate(${MEET.x} ${MEET.y})`} fill="var(--art-core)" />
-        <circle className="m-breathe" cx={GANESA.x} cy={GANESA.y} r={64} fill={url("dawn")} />
-        <circle cx={GANESA.x} cy={GANESA.y} r={RING_R} stroke="var(--gold-soft)" strokeWidth={0.6} strokeOpacity={0.6} strokeDasharray="1 3.4" strokeLinecap="round" />
-        {PLACES.filter((p) => p.name !== "bow").map((p, i) => (
-          <g key={p.name} transform={`translate(${p.x} ${p.y}) scale(${EMBLEM_S})`} className={i % 4 === 1 ? TWINKLE[i % 3] : undefined}>
-            <EmblemGlyph name={p.name} />
-          </g>
-        ))}
-        <circle cx={GANESA.x} cy={GANESA.y} r={14} stroke="var(--gold)" strokeWidth={1} />
-        <circle cx={GANESA.x} cy={GANESA.y} r={8.6} fill="var(--art-vermilion)" />
-        <circle cx={GANESA.x - 2} cy={GANESA.y - 2} r={2.4} fill="var(--art-saffron)" />
+        <Mahaganapati x={GANESA.x} y={GANESA.y} url={url} skip="bow" />
       </g>
 
       {/* Among them, his mother's own weapon: the sugarcane bow */}
       <g {...part("bow")}>
-        {PLACES.filter((p) => p.name === "bow").map((p) => (
-          <g key={p.name} transform={`translate(${p.x} ${p.y}) scale(${EMBLEM_S})`}>
-            <EmblemGlyph name={p.name} />
-          </g>
-        ))}
+        <g transform={`translate(${BOW_PLACE.x} ${BOW_PLACE.y}) scale(${EMBLEM_S})`}>
+          <GanesaEmblem name="bow" />
+        </g>
       </g>
 
       {/* Vārāhī drawing the breath out of Viśukra */}
