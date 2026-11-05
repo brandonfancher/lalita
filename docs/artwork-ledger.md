@@ -360,6 +360,11 @@ second time it is needed.
 | The fourteen worlds let out | Shloka 3's world-egg, fourteen of them in two chains from the lotus, growing as they go: seven up the left beside the card and seven sinking into the water on the right, those at 0.78 with a hair tint in place of saffron. Two rising arcs either side put the right one under the card's corner, since the hoods fill the space beside it | Inline (`ocean-of-sleep.tsx`, with `eggPath`) | Shloka 63 |
 | The three measures and the half-measure (a u m, ardhamātrā) | अ उ म in Tiro Devanagari, 16, `--sindura`, on `--art-moon` discs (13.5, a gold rim and a `--gold-soft` inner ring) strung on a gold string tied off at both ends. Apart from them, her light as the candrabindu: the fourth night's `litPart` turned horns up with a soft moon stroke, her bindu (core in saffron in a core ring) set in its cup, a `--gold-soft` ring and a wide core glow (`m-shimmer`). A bindu above the crescent with rays read as a smiling sun | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
 | The infant on a banyan leaf (vaṭapatraśāyī) | A small `--leaf` leaf with `--gold-soft` veins floating on a core shadow, a speck of `--art-hair` on it in a hair glow (`m-breathe`) | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| A sanctum door with its screen half drawn (tirai) | Drawn at 1.1 from its cornice down, below the card: a `--gold-soft` cornice, an `--art-stone` lintel with a row of `--art-vermilion` rosettes, `--gold-soft` scallops and a gold boss, stone jambs with inset panels and a gold creeper, a dark inside (`--art-musk` at 0.82 under a vermilion-to-crimson radial from her light), a threshold and three widening steps with gold nosings. The screen is `--art-vermilion` at 0.9 with `--art-crimson` folds, a `--gold-soft` leading edge, a woven band of gold-soft lozenges between gold lines and a gold fringe: the left half hangs straight, its edge bowed where it was tugged; the right half is swagged from the rod to a gold tie and hangs down by the jamb, a vermilion tassel off the tie. Its rod is gold with rings, a small crowned gold finial at each end, and the gold cord (a dashed vermilion line in it) runs from the tie up inside the jamb, over the finial and up behind the card. Compare Shloka 17's closed ivory curtain and Shloka 55's sanctum door | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
+| The couch at work | `BrahmaCouch` at 1.4 inside the door, its gold bright and each medallion in a ring of core light (`m-shimmer`); the plank drawn again over it as Sadāśiva, white as crystal: `--art-moon` with a 1.4 gold edge, slanting `--gold-soft` facets, an ivory sheen, in an `--art-glow` glow (`m-shimmer`). A moon-coloured glow vanished by day. Compare Shloka 61's inert couch | Inline (`the-drawn-screen.tsx`, with `BrahmaCouch`) | Shloka 64 |
+| Rudra's trident, from the ground into the crown | `trident` at 1.2, mirrored so the drum hangs toward the card, standing on a stone foot at x 504 right of the door and rising past the card's edge to its head at y 78 in the crown, a `tongue(15, 6.4)` flame with a core heart on each point (`m-flicker`), the middle one larger, in a saffron-to-vermilion glow (`m-shimmer`). At 1100px its right prong is cut by a couple of units | Inline (`the-drawn-screen.tsx`, with `Trident` and `Damaru`) | Shloka 64 |
+| The worlds drawn in (saṃhāra) | Fourteen world-eggs (`eggPath`) on a spiral of a turn and a quarter round the trident's middle flame, from 12.5 high at the outside to 4 at the fire, on a dashed `--gold-soft` line, their saffron glints twinkling. Copies drawn in by `m-gather` doubled every egg into clusters like grapes in a still; the spiral alone carries it | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
+| A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2492,6 +2497,46 @@ One entry per finished artwork, in the order they were made.
   hoods, so the worlds split into seven above and seven below. The water's rect showed as a grey
   slab in the plate until it was faded at the sides and foot. In the chant miniature the white
   coils and the lotus carry it by day, and the hoods and her light by lamplight.
+
+### Shloka 64: The five acts, and the last of them is grace
+
+- **Component:** `the-drawn-screen.tsx` (defs prefix `sa64`)
+- **Composition:** the five acts as a temple keeps them, at the moment of darśana. Below the card
+  stands the door of a sanctum, brought up a tenth, with a vermilion screen hung before it: the left
+  half still drawn across, the right half swagged aside to a tie, on a rod whose cord runs up the
+  doorpost and out of sight behind the card. Inside, her light rests on the couch of the five
+  Brahmās, the same five who lay inert under her in Shloka 61, now bright, their medallions lit,
+  the plank glowing white as crystal; Brahmā's leg is behind the screen. Through the opening her
+  light spills over the threshold and down the steps. At the right, Rudra's trident rises from the
+  ground past the card's edge into the crown, fire on its three points and the drum tied under
+  them, and in the crown the fourteen worlds are drawn in a spiral into its fire. A spider hangs
+  under the lintel's right end. The first screen half drawn, the first spiral, the first plate
+  joined from ground to crown by one upright.
+- **Name → part:**
+  - Saṃhāriṇī → `gather`: the spiral of worlds and its dashed line
+  - Rudrarūpā → `rudra`: the trident, its drum, its flames and their glow (Śvetāśvatara 3.2)
+  - Tirodhānakarī → `screen`: both halves of the screen, the tie and the tassel
+  - Īśvarī → `cord`: the rod, its rings and crowned finials, and the cord
+  - Sadāśivā → `sadasiva`: the plank drawn as crystal and its glow
+  - Anugrahadā → `grace`: her light, its glow, and the spill over the threshold and steps (Gītā 7.14)
+  - Pañcakṛtyaparāyaṇā → `couch`: the couch and the rings of light round its medallions
+  - Intro, *the door of a sanctum* → `sanctum`: the door, its inside, the threshold and steps
+  - Detail → `spider`: the spider on its thread from its web; "as a spider sends out its thread and
+    draws it in again" (Muṇḍaka 1.1.7)
+- **Palette:** no additions. `BrahmaCouch`'s Rudra trident changed from `--art-carve` to
+  `--art-hair` in its own commit first, since it all but vanished by day (Shlokas 22, 46 and 61
+  change slightly).
+- **Motion:** `m-flicker` (the trident's flames), `m-shimmer` (her glow, the trident's fire, the
+  plank's glow, the medallions' rings), `m-twinkle` (the worlds' glints).
+- **Notes:** This title stays on one line and reaches x ≈ 320 (372 at 1100px), so the trident's head
+  and the spiral fill the crown right of it. The first render had the trident beside the door and
+  fourteen eggs scattered over the plate under `m-gather`, which read as confetti, and a faceted
+  full moon in the crown for Sadāśiva, which read as a cracked plate; a ring of worlds round the
+  door would have fallen behind the card or in the faded ground. Standing the trident up into the
+  crown gave the worlds somewhere to be drawn into, and Sadāśiva went to his own place in the
+  couch. Two `m-gather` copies of the spiral then doubled every egg into clusters, so it is still.
+  The plank's moon-white glow vanished by day; it glows in `--art-glow` now. In the chant miniature
+  the red door and its lit couch carry it in both themes.
 
 ## Open questions
 

@@ -29,6 +29,7 @@ import { BalasArrows } from "./balas-arrows";
 import { GlanceAndASon } from "./glance-and-a-son";
 import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
+import { TheDrawnScreen } from "./the-drawn-screen";
 import { MeruInward } from "./meru-inward";
 import { MiddleOfTheMoon } from "./middle-of-the-moon";
 import { MountainsDaughter } from "./mountains-daughter";
@@ -2984,6 +2985,70 @@ export const ARTWORK: Record<string, Artwork> = {
           telling the sleeper of the one ocean is an infant lying on a banyan leaf, wondering who he is, and in the
           Devī Bhāgavata it is she who answers him with half a verse: &ldquo;All this is I alone; there is nothing else
           eternal.&rdquo;
+        </>
+      ),
+    },
+  },
+  "064": {
+    Art: TheDrawnScreen,
+    intro: (Spot) => (
+      <>
+        The five acts are drawn as a temple keeps them, at <Spot part="sanctum">the door of a sanctum</Spot> at the
+        moment the screen is drawn aside. Inside rest the same five gods who lay inert under her three verses back, now
+        at work.
+      </>
+    ),
+    entries: [
+      {
+        nama: 268,
+        part: "gather",
+        depicts:
+          "In the crown the fourteen worlds are drawn in a spiral into the fire, shrinking as they go, the way a breath is taken in.",
+      },
+      {
+        nama: 269,
+        part: "rudra",
+        depicts:
+          "Beside the door Rudra's trident rises from the ground into the crown, fire on its three points and his drum tied under them: the fire at the end of a world, which is only her gathering it back.",
+      },
+      {
+        nama: 270,
+        part: "screen",
+        depicts:
+          "A vermilion screen hangs before the door, and one half of it is still drawn across. Tirodhāna is a curtain put across a thing; what it hides is her own nature, so that a world of separate beings can stand.",
+      },
+      {
+        nama: 271,
+        part: "cord",
+        depicts:
+          "The screen hangs from a rod with crowned finials, and the cord that draws it runs up the doorpost and out of sight: a rule the worlds live under and cannot see.",
+      },
+      {
+        nama: 272,
+        part: "sadasiva",
+        depicts:
+          "The plank she rests on is Sadāśiva, the fifth of the couch's gods, white as crystal and lit along its length: grace as a disposition that never lapses.",
+      },
+      {
+        nama: 273,
+        part: "grace",
+        depicts:
+          "Where the screen is pulled aside her light is open to view, and it spills over the threshold and down the steps toward whoever stands there. Grace is the curtain's other half, given, not earned (Gītā 7.14).",
+      },
+      {
+        nama: 274,
+        part: "couch",
+        depicts:
+          "She rests on the couch of the five Brahmās, the gods of the five acts, every leg bright and every medallion lit. The five are what she rests on and what she is wholly given over to.",
+      },
+    ],
+    detail: {
+      part: "spider",
+      body: (
+        <>
+          Under the right end of the lintel a spider hangs on its thread from its web. &ldquo;As a spider sends out its
+          thread and draws it in again, so from the imperishable this world comes forth&rdquo; (Muṇḍaka 1.1.7): the
+          Upaniṣad&rsquo;s own picture for making and withdrawing as one act of one maker.
         </>
       ),
     },
