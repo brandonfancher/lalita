@@ -32,6 +32,7 @@ import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
+import { OneInManyPots } from "./one-in-many-pots";
 import { LetterRosary } from "./letter-rosary";
 import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
@@ -2424,6 +2425,69 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           At Nandī&apos;s left ear a jasmine flower is tucked, and three small arcs go in. In Śiva temples people still
           lean down and whisper their prayers into the bull&apos;s ear, so that he will carry them in.
+        </>
+      ),
+    },
+  },
+  "054": {
+    Art: OneInManyPots,
+    intro: (Spot) => (
+      <>
+        Seven great-names make a night lake under the Milky Way. Her <Spot part="light">light</Spot> stands on a lotus in
+        the still water, everything on the lake moves toward her or away from her, and on the steps of the near bank nine{" "}
+        <Spot part="pots">vessels</Spot> each hold all of it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 212,
+        part: "sky",
+        depicts:
+          "The Milky Way rises from the far shore and arches across the whole sky. Nothing smaller would do for a form measured only by everything there is, and even this is only the part of it that shows at night.",
+      },
+      {
+        nama: 213,
+        part: "offerings",
+        depicts:
+          "Marigolds, jasmine, lotus petals and little leaf-cup lamps, let go from every shore, are all drifting across the water to her lotus. Wherever the worship was offered, this is where it arrives.",
+      },
+      {
+        nama: 214,
+        part: "reed",
+        depicts:
+          "At the right a tuft of reed has caught fire from her and is burning away to ash. The Chāndogya says that as the fluff of reed thrown in a fire is burned up, so are all the sins of one who knows (5.24.3).",
+      },
+      {
+        nama: 215,
+        part: "pots",
+        depicts:
+          "Each of the nine vessels on the ghat steps, clay pots and brass lotas, holds her whole light, not a ninth of it. That is māyā in its old sense, the craft by which one is made to appear as many, and the pots are her doing as much as the light is.",
+      },
+      {
+        nama: 216,
+        part: "lotus",
+        depicts:
+          "She stands on a white lotus among its pads, a flower that rises clean out of the mud: sattva, the clear and buoyant strand, and plain being, both without limit.",
+      },
+      {
+        nama: 217,
+        part: "ripples",
+        depicts:
+          "Every ring on the water spreads out from her, out to both banks. Without her, says the Saundaryalaharī, Śiva himself could not so much as stir (1); not a ripple moves except from her.",
+      },
+      {
+        nama: 218,
+        part: "birds",
+        depicts:
+          "A pair of cakravākas float side by side near her, with a small red heart between them. The poets' ruddy geese are parted every night and call to each other till dawn; in her light they are together, and the night does not part them.",
+      },
+    ],
+    detail: {
+      part: "siva",
+      body: (
+        <>
+          On the nearest pot is painted शिव, Śiva, with its i-sign lit. The old saying goes that the i is Śakti, and without
+          it śiva is only śava, a corpse.
         </>
       ),
     },

@@ -299,6 +299,15 @@ second time it is needed.
 | A palm-leaf book on its stand (tantra) | On a folding X-stand of `--art-musk` edged in gold, over a crimson shelf: a bundle of `--art-ivory` leaves with `--art-turmeric` edges between two musk boards, two vermilion cords through it, and the top leaf laid open on it with `--art-carve` writing and its two holes; the cord trails off to a gold bead. Filled in turmeric it read as gold bars | Inline (`gracious-one.tsx`) | Shloka 53 |
 | Rudra's bow, unstrung (Mṛḍa) | Lying belly up on the floor, about 160 long: a musk stave tapering from 7.6 to 3 with a gold-soft highlight, gold horn tips, a vermilion-bound grip, its ivory string slipped from one tip and lying slack in a coil; a jasmine garland of ivory buds on a leaf cord laid over the grip, a vermilion knot. Short and turmeric it read as a banana | Inline (`gracious-one.tsx`) | Shloka 53 |
 | Bilva bough (śrīphala) | A tapering `--art-musk` bough from the top corner with trifoliate `--leaf` leaves (a long middle leaflet and two shorter, gold-edged, gold-soft veins) and round fruit in a gradient from `--art-turmeric` to `--leaf` with a core highlight, each on its stalk | Inline (`gracious-one.tsx`) | Shloka 53 |
+| The Milky Way (ākāśagaṅgā) | A band rising from the far shore at the right and arching up through the crown and out of the top, broadening as it climbs: ten `taper`ed widths of `--gold-soft` laid one over another (a gradient from 0.01 at the horizon to 0.06, then to nothing at its end, so it has no edge), knots of `--art-core` star cloud with the brightest, the galaxy's centre, over the crown (`m-shimmer`), a dark rift down one side in three broken `--art-carve` wisps, and some 360 `--gold-soft` stars scattered across it, the bright ones with core centres (`m-twinkle`). Five widths stepped like a rainbow, and a solid rift made it a quill | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| Rings spreading from her (on still water) | Seven `--gold` ellipses (ry 0.17 of rx) round the point under her light, out to both banks, fainter as they go, every other one `m-shimmer`, clipped to the water | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| White lotus afloat | `OpenLotus` in `--art-ivory` with `--gold-soft` veins and its pad, at 0.8 on the water, her light just over its seed head, among plain lotus pads (a `--leaf` ellipse at a slant with a gold edge and an `--art-carve` notch to the centre). Compare Shloka 47's, standing clear on its stalk | `OpenLotus` in `primitives.tsx` | Shloka 54 |
+| Offerings drifting on water | Small flowers at 0.8 to 1.25, larger toward the near bank, each on a faint core shadow: a marigold (ten saffron beads round a turmeric eye), a jasmine (three ivory petals), four `--lotus` petals; and leaf-cup lamps (a `--leaf` cup, a saffron `tongue` with a core one inside, a core glint on the water). In four lines from the corners of the lake, converging on her (`m-twinkle`, `m-flicker`, `m-lick`) | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| A reed tuft burning (iṣīkātūla, Chāndogya 5.24.3) | Seven `--leaf` reeds from one root with four blades, three seed heads of `--gold-soft` hairlines, and the tallest's plume half `--art-ivory`, half `--art-ember` wisps, alight at the top: three `tongue` flames (vermilion, saffron `m-flicker`, a core heart) in a saffron glow, and `--art-ember` ash rising (`m-ember`) | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| Cakravākas, the pair (ruddy shelducks) | Two on the water facing each other, about 48 long at 1.1: a saffron body under vermilion at 0.4 with a gold edge, an `--art-ivory` head with a dark `--art-hair` collar, bill and eye, an ivory wing patch, a dark wing tip; a small `--art-vermilion` heart between them (`m-breathe`). With a small head on a flat body they read as slippers | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| Vessels holding her reflection | Clay pots (`--art-vermilion` to saffron to crimson, ivory bands, a core sheen, a vermilion rim) and brass lotas (a round belly in a `--gold` to `--art-turmeric` gradient edged in `--art-ember`, a short neck and a flared turmeric lip, an ivory highlight), each with dark water in its mouth and her light in it as a core point in a breathing glow (`m-breathe`). Drawn as one piece, the lota read as a sack | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| Ghat steps | Below the water's gold edge, two treads in a saffron wash fading downward, each lip a gold line over an `--art-carve` riser at 0.3 with `--gold-soft` stone joints, faded at both sides | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| शिव with its i lit | श and व in Tiro Devanagari, 15, `--art-hair`, painted on a pot, with the ि drawn by hand (a stem and its hook over श) in `--art-core` over a wider core stroke at 0.35, in a small breathing glow. In ivory the lit i was lost among the letters, and saffron vanished on the clay | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2066,6 +2075,45 @@ One entry per finished artwork, in the order they were made.
   shawl, then in profile with tall horns and read as a goat. The bow was first short and turmeric
   and read as a banana; the book in turmeric read as gold bars. In the chant miniature her light
   over the yantra carries it.
+
+### Shloka 54: Seven great-names, from mortal sin to the great delight
+
+- **Component:** `one-in-many-pots.tsx` (defs prefix `sa54`)
+- **Composition:** a lake at night, everything on it moving toward her or out from her. Her light
+  stands on a white lotus among its pads in the middle of the still water, just under the card,
+  with rings spreading from it to both banks and her light lying on the water in a column to the
+  near bank. Flowers and leaf-cup lamps drift to her from every corner of the lake. At the left a
+  pair of cakravākas float together, a small red heart between them; at the right a reed tuft
+  burns at its plume. On the near bank, ghat steps carry nine vessels, six small clay pots on the
+  upper tread and two brass lotas and a large pot on the lower, each holding her whole light. The
+  Milky Way rises from the far shore beside the card and arches through the crown, its bright
+  centre over the card, and out of the top. The first night sky with the galaxy in it, and the
+  first ghat.
+- **Name → part:**
+  - Mahārūpā → `sky`: the Milky Way, its stars, the open sky's stars and their glints in the water
+  - Mahāpūjyā → `offerings`: the drifting flowers and lamps
+  - Mahāpātakanāśinī → `reed`: the burning reed tuft, its flames and ash
+  - Mahāmāyā → `pots`: the nine vessels and the steps they stand on
+  - Mahāsattvā → `lotus`: the white lotus and the pads round it
+  - Mahāśaktiḥ → `ripples`: the lake itself, its far shore, level lines, the rings and her light
+    on the water
+  - Mahāratiḥ → `birds`: the cakravāka pair and the heart
+  - Intro, *light* → `light`: her glow and bindu; *vessels* → `pots`
+  - Detail → `siva`: on the nearest pot शिव, with its i-sign lit: without the i, which is Śakti,
+    śiva is śava, a corpse
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow, the galaxy's centre, every other ring), `m-breathe` (her
+  light, the vessels' lights, the heart, the lit i), `m-twinkle` (stars, her light on the water,
+  the flowers), `m-flicker` and `m-lick` (the reed's flames, the lamps), `m-ember` (the ash).
+- **Notes:** This title wraps to two lines, like 53's, but its second line reaches only x ≈ 104
+  (156 at 1100px), so the galaxy is free to come in from the right; its end fades out by x ≈ 370,
+  and the card sits at y ≈ 225–438, leaving only y ≈ 440–564 for the lake. The first draft put the
+  lake and pots in a thin band with nothing below and a straight smear of galaxy along the top;
+  the steps and the arch fill it now. The galaxy was first five widths and a solid rift and read
+  as a rainbow by day and a quill by lamplight. The cakravākas were first flat and small-headed and
+  read as slippers. The pads are plain, not `LotusLeaf`, whose standing beads belong to the leaf
+  that water does not wet. The still-water lines are drawn inline as in Shlokas 20, 43 and 51. In the chant
+  miniature the glow on the lotus and the bright row of pots carry it.
 
 ## Open questions
 
