@@ -9,6 +9,7 @@ import { FireOfAwareness } from "./fire-of-awareness";
 import { FirstRainQuivers } from "./first-rain-quivers";
 import { FirstTwoKnots } from "./first-two-knots";
 import { FloweringHair } from "./flowering-hair";
+import { ForestOfBecoming } from "./forest-of-becoming";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
@@ -1557,6 +1558,61 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           The lightning goes straight through the centre of each of the six wheels, root, svādhiṣṭhāna, navel, heart,
           throat and brow, and zigzags only between them.
+        </>
+      ),
+    },
+  },
+  "041": {
+    Art: ForestOfBecoming,
+    intro: (Spot) => (
+      <>
+        From here the hymn sorts her names by sound, and this verse turns one syllable, bha-, three ways.{" "}
+        <Spot part="form">Her light</Spot> is in the crown.
+      </>
+    ),
+    entries: [
+      {
+        nama: 112,
+        part: "bhava",
+        depicts:
+          "Beside her light is the crescent of Bhava, Rudra as the source of becoming, one of his oldest names; Bhavānī is his wife.",
+      },
+      {
+        nama: 113,
+        part: "contemplation",
+        depicts:
+          "Below, a lamp whose flame does not flicker sends one straight line of light up to her: bhāvanā, the mind holding a thing steadily until it is present.",
+      },
+      {
+        nama: 114,
+        part: "axe",
+        depicts:
+          "Below the card stands the forest of becoming, the world one is born into over and over, trunk behind trunk. A small axe has been taken to it and a clearing cut through the middle, the felled trunks lying in it, and the line of light rises through the clearing.",
+      },
+      {
+        nama: 115,
+        part: "auspicious",
+        depicts:
+          "At the left stands a full pot crowned with mango leaves and a coconut, the most auspicious of things, which she is fond of.",
+      },
+      {
+        nama: 116,
+        part: "form",
+        depicts: "Her light is drawn as it always is, because her shape is the good itself and needs no other sign.",
+      },
+      {
+        nama: 117,
+        part: "fortune",
+        depicts:
+          "At the right is a tray of kumkum, turmeric and bangles, the married woman's good fortune, with gold motes falling on it: saubhāgya is not earned by those who get it, it is handed to them.",
+      },
+    ],
+    detail: {
+      part: "chips",
+      body: (
+        <>
+          The name says kuṭhārikā, a little axe, not kuṭhāra. It is the one from Paraśurāma&apos;s hand in Shloka 32, and the
+          chips are still flying from the trunk it is in.
         </>
       ),
     },

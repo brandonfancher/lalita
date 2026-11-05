@@ -212,6 +212,10 @@ second time it is needed.
 | Lightning drawn out like a vine (taḍil-latā) | A sharp zigzag up the axis, meeting it at the centre of each wheel and swinging 11 units out between them, three strokes deep: a soft `--art-core` glow 7 wide, a 2.6 gold line and a 1.1 `--art-ivory` core (`m-flicker`). Gold `creeperTendril`s curl off alternate corners (`m-sway`): the clinging | Inline (`lightning-vine.tsx`) | Shloka 40 |
 | Kuṇḍalinī, coiled | Three and a half turns round the root centre, seen a little from above (radius 48 narrowing to 36, 0.3 as tall as wide, rising 12), drawn as an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside, in a breathing saffron glow, its upper end straightening into the lightning. Taller and thicker, it read as a spring | Inline (`lightning-vine.tsx`) | Shloka 40 |
 | Lotus fibre (bisa-tantu) | A `--leaf` lotus stalk broken in two, a pad at one end and a small bud at the other, the broken ends `--art-ivory`, and five hair-fine ivory and gold fibres sagging between them | Inline (`lightning-vine.tsx`) | Shloka 40 |
+| The forest of becoming (bhavāraṇya) | Twelve trees in two rows along a ground line, the back row at 55%: a tapering `--art-musk` trunk under a crown of four overlapping discs, three `--leaf` and one musk shadow, edged faintly in musk, swaying in groups, over a faint musk shade. Cleared, it has a gap through the middle with two `--art-turmeric` stumps and two felled musk trunks, and the `Axe` in a stump, blade down, chips of turmeric still flying | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
+| Full pot (pūrṇa-kumbha) | A round gold pot with a narrow neck and rim, a vermilion band and dot, five `--leaf` mango leaves fanned from its mouth and an `--art-turmeric` coconut on top | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
+| Good fortune (saubhāgya) | A small gold tray holding a mound of `--art-vermilion` kumkum, one of `--art-turmeric` and a pair of bangles (`--leaf` and vermilion), gold motes twinkling down onto it in a saffron glow | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
+| A still lamp (contemplation) | The `Lamp`'s bowl with a narrower flame and no flicker, its one straight dotted gold line of light running to her | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1550,6 +1554,33 @@ One entry per finished artwork, in the order they were made.
   the clear crown. The verse counts six wheels and puts her past them, so the top has no
   thousand-petalled lotus this time. The stalk first reached x ≈ 537 and was cut off at 1100px. In
   the chant miniature the bolt, its light and the coil carry it.
+
+### Shloka 41: The axe laid to the forest of becoming
+
+- **Component:** `forest-of-becoming.tsx` (defs prefix `sa41`)
+- **Composition:** one syllable turned three ways, then the good twice. In the crown, right of the
+  title, her light beside Bhava's crescent. Below the card the forest of becoming, two rows of
+  trees, with a clearing cut through the middle by a small axe (Paraśurāma's, from Shloka 32), its
+  felled trunks and stumps, chips flying. Through the clearing one straight line of light rises
+  from a lamp that does not flicker to her. In front, at the left, a full pot; at the right, a tray
+  of good fortune.
+- **Name → part:**
+  - Bhavānī → `bhava`: Bhava's crescent and its glow
+  - Bhāvanāgamyā → `contemplation`: the still lamp and its line of light
+  - Bhavāraṇyakuṭhārikā → `axe`: the forest, the clearing, the stumps, the felled trunks and the axe
+  - Bhadrapriyā → `auspicious`: the full pot
+  - Bhadramūrtiḥ → `form`: her light
+  - Bhaktasaubhāgyadāyinī → `fortune`: the tray, its glow and the motes
+  - Intro, *her light* → `form`
+  - Detail → `chips`: the chips flying from the stump
+- **Palette:** no additions.
+- **Motion:** `m-sway` (the trees), `m-twinkle` (the chips, the motes), `m-breathe` (her light,
+  the clearing), `m-shimmer` (the glows). The lamp is still on purpose.
+- **Notes:** This title stays on one line, reaching x ≈ 238 at y ≈ 61–118, so her light and Bhava's
+  crescent sit at x ≈ 392 and 478. The axe first lay at a slant across the clearing with its blade
+  up, where the blade read as a white bird; it now stands in the stump, blade down. The axe was
+  promoted into `primitives.tsx` (`Axe`), and Shloka 32 renders byte-for-byte as before. In the
+  chant miniature the forest, the clearing and her light carry it.
 
 ## Open questions
 
