@@ -1,3 +1,4 @@
+import { AutumnMoonTurn } from "./autumn-moon-turn";
 import { CampakaJewel } from "./campaka-jewel";
 import { CourtAndArmy } from "./court-and-army";
 import { DevotionGoverns } from "./devotion-governs";
@@ -1680,6 +1681,72 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Beside the garland two other roads set out, one from a palm-leaf book and one from a fire altar, knowledge and
           rite. Both stop short, under the dome.
+        </>
+      ),
+    },
+  },
+  "043": {
+    Art: AutumnMoonTurn,
+    intro: (Spot) => (
+      <>
+        The verse starts with <Spot part="face">the moon</Spot> and ends by taking every comparison back. Six names
+        of praise are drawn in the crown and at the left, and the turn comes <Spot part="unsupported">at the lower
+        right</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 126,
+        part: "sankara",
+        depicts: "At the left of the crown stands Śaṅkara's trident: she is his own.",
+      },
+      {
+        nama: 127,
+        part: "sri",
+        depicts:
+          "At the right of the crown a lotus, Śrī's flower, and gold falling from it: she makes splendour and fortune wherever she turns.",
+      },
+      {
+        nama: 128,
+        part: "true",
+        depicts: "In the middle below the card a plumb line hangs dead straight, the standard that other things are measured by.",
+      },
+      {
+        nama: 129,
+        part: "face",
+        depicts:
+          "In the crown is the full autumn moon, deer and all, clear and without a halo: autumn is when the moon is clearest, and it is what faces are measured against.",
+      },
+      {
+        nama: 130,
+        part: "waist",
+        depicts:
+          "Tied to the trident is Śiva's drum, drawn in to almost nothing at its waist, the one narrow line in a full shape.",
+      },
+      {
+        nama: 131,
+        part: "peace",
+        depicts: "At the lower left a pool lies so still that the moon's reflection in it is whole, with not one ripple through it.",
+      },
+      {
+        nama: 132,
+        part: "unsupported",
+        depicts:
+          "At the lower right her light hangs over an empty seat, and there is nothing at all under it: she is the ground, so she stands on nothing.",
+      },
+      {
+        nama: 133,
+        part: "unstained",
+        depicts:
+          "On the pool floats a lotus leaf with water standing on it in beads, one about to roll off: the Gītā's image of what is in the world and not smeared by it.",
+      },
+    ],
+    detail: {
+      part: "clouds",
+      body: (
+        <>
+          At the edges of the crown the last clouds of the rains are going off. Śarat is the season after the monsoon,
+          when the sky has been washed, and that is why the autumn moon is the one faces are compared to.
         </>
       ),
     },
