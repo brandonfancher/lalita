@@ -32,6 +32,7 @@ import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
+import { OtherEndOfTheRope } from "./other-end-of-the-rope";
 import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
 import { SafflowerSlope } from "./safflower-slope";
@@ -1892,6 +1893,74 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           This is the Vedāntins&apos; pot and space. The space in a pot seems to be a space of its own, and when the
           pot breaks it seems to be freed. It was the one space all along.
+        </>
+      ),
+    },
+  },
+  "046": {
+    Art: OtherEndOfTheRope,
+    intro: (Spot) => (
+      <>
+        Four names that take something away from her, then two pairs that turn outward, where what she is free of
+        she takes away from others too. <Spot part="light">Her light</Spot> sits on her couch below the card, and
+        nothing in the picture lit it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 152,
+        part: "lamps",
+        depicts:
+          "A line of lamps runs out toward us from her seat, each lit from the one before. Follow them back and the first was lit from her light, which nothing lit.",
+      },
+      {
+        nama: 153,
+        part: "moon",
+        depicts: "In the crown the full moon shines with no mark on it at all, as the moon would look with its dark patch wiped away.",
+      },
+      {
+        nama: 154,
+        part: "crystal",
+        depicts:
+          "On her seat a clear crystal stands with a red hibiscus held up beside it. In the old example the flower makes the crystal look red; here it stays clear.",
+      },
+      {
+        nama: 155,
+        part: "couch",
+        depicts:
+          "She sits on the couch whose legs are four gods and whose plank is a fifth. The leg at the right is Īśvara, the Lord himself, holding up a corner of her seat.",
+      },
+      {
+        nama: 156,
+        part: "undyed",
+        depicts: "Her end of the noose is undyed: the red of the cord never reaches the part of it that is hers.",
+      },
+      {
+        nama: 157,
+        part: "noose",
+        depicts:
+          "The far end, the red loop of Shloka 2's noose, is held by the elephant. The red is wearing off the cord as it runs toward her and drifts away in flecks.",
+      },
+      {
+        nama: 158,
+        part: "bees",
+        depicts:
+          "Bees drink the rut that runs from an elephant's temples. These are leaving it, and none of them turn toward her, because there is nothing in her to drink.",
+      },
+      {
+        nama: 159,
+        part: "elephant",
+        depicts:
+          "The elephant has come close enough to take her cord in its trunk, and the rut on its temple has dried to a faint trace.",
+      },
+    ],
+    detail: {
+      part: "deer",
+      body: (
+        <>
+          The moon&apos;s mark is the deer of Shloka 5, and here it has leapt clear of the moon, at the top right.
+          Kalaṅka, a mark, is a different word from Shloka 44&apos;s kalā, a digit; that moon kept its deer, and this
+          one has none.
         </>
       ),
     },

@@ -60,7 +60,7 @@ second time it is needed.
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
-| The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`, `autumn-moon-turn.tsx`, `ten-taken-away.tsx`) | Shloka 5 |
+| The moon | An `--art-moon` disc with a 1.6-unit `--gold` rim, faintly shaded toward the limb with `--gold-soft`, and a soft `--art-moon` glow just beyond. Any unlit part is `--art-hair` at about 0.16 opacity with a faint gold outline, so a part-lit moon still shows its whole disc. Never rays: rays make it the sun. Show the ashen half of a half moon, or it reads as Shloka 2's half-risen sun | Inline (`eighth-night-moon.tsx`, `autumn-moon-turn.tsx`, `ten-taken-away.tsx`, `other-end-of-the-rope.tsx`) | Shloka 5 |
 | The moon's halo (pariveṣa) | Rings, never rays. Like a real lunar halo, red on the inner edge: a 2-unit `--sindura` ring 10 units out, then `--art-saffron`, then `--gold`, a ring of alternately large and small gold pearls 28 units out (`m-twinkle`, three groups), and a faint outer ring 40 units out. `--art-vermilion` as a thin ring turned pink by day | `MoonHalo` in `primitives.tsx` (promoted at Shloka 8) | Shloka 5 |
 | Moonlight | Fine `--gold-soft` rings round the moon, about 0.6 units wide, 22–26 units apart, fading outward from about 0.45 opacity. Where a second light shares the sky, they cross (two moons) or fade out against it (the sun's radiance) | Inline (`eighth-night-moon.tsx`, `sun-moon-earrings.tsx`) | Shloka 5 |
 | The moon's phases | `litPart(night, r)`: the lit part of a waxing moon, lit from above, for nights 1–15 of the bright fortnight. The eighth is exactly half, flat edge down | `primitives.tsx` | Shloka 5 |
@@ -240,6 +240,12 @@ second time it is needed.
 | Lump of clay | A soft irregular lump in `--art-vermilion` at 0.55 with a musk edge and one thumb crease, on a faint musk shadow. On a potter's wheel it read as a hat, and with turmeric and two scores as a loaf | Inline (`pot-and-space.tsx`) | Shloka 45 |
 | A blank palm leaf | One `--art-turmeric` leaf edged in gold with its two binding holes and nothing written on it, the gold stylus laid above it | Inline (`pot-and-space.tsx`) | Shloka 45 |
 | Smoke that does not soil space | A wavering ribbon of `--art-musk` drifting in from the edge, a broad faint stroke with a fine one inside, fading to nothing before the middle (`m-sway`) | Inline (`pot-and-space.tsx`) | Shloka 45 |
+| Her noose from the other end (rāga) | Shloka 2's loop of twisted cord, its `--art-vermilion` loop held in an elephant's trunk, the cord a 5-unit stroke over a 6.4 `--gold` under-stroke with a dotted `--art-carve` twist, a gold binding at the loop and four gold beads. Along its length a gradient from `--art-vermilion` through `--art-saffron` to `--art-ivory`, the red wearing off toward her, with vermilion flecks falling from the red half (`m-ember`). Her end is undyed: ivory with a `--gold-soft` twist and a gold tassel | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| Bees in free flight | Single bees drawn as `BeeString`'s are (an `--gold-soft` body with two `--art-carve` stripes and two carve wings), at 1.5, each turned along a dotted `--gold-soft` path, further apart as they go (`m-twinkle`, three groups) | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| The moon without its mark (niṣkalaṅka) | Shloka 5's moon with fine `--gold-soft` moonlight rings and no deer on its face; the `MoonDeer` (0.6, turned −18°) leaping clear above it at the right | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| Lamps lit one from another | `Lamp`s in a line running out toward the viewer, larger as they come (2.2 to 4.2), each joined to the flame before by a dotted `--art-core` thread (`m-twinkle`), the first thread from her light | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| A stone dais | Two `--art-stone` steps edged in `--gold`, the upper with a row of small `--sindura` triangles at 0.55, and a faint musk floor shadow | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| Rut, dried (mada) | On the elephant's temple, a short `--art-musk` streak at half opacity, drawn as a child of `Elephant` | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1722,6 +1728,42 @@ One entry per finished artwork, in the order they were made.
 - **Notes:** This title stays on one line and reaches x ≈ 311 at y ≈ 84–147, so the pole star sits at
   x ≈ 384, high, with its trails clear of the title. The pots are drawn as outlines on purpose, so
   the one light can be seen inside and outside them. In the chant miniature the band of light and the pots carry it.
+
+### Shloka 46: Without a cause, without a master
+
+- **Component:** `other-end-of-the-rope.tsx` (defs prefix `sa46`)
+- **Composition:** four removals, then two pairs that turn outward: what she is free of, she takes
+  away from others. Below the card, left of centre, her light seated on Shloka 22's couch of the
+  five Brahmās, brought up to twice its size on a stone dais, with Īśvara as its right front leg.
+  On the plank beside her a clear crystal with a red hibiscus held up to it. In front of the dais a
+  line of lamps runs out toward us down the lower left, each lit from the one before, the first from
+  her. At the right an elephant faces her and holds the far end of her noose in its raised trunk:
+  red at its end, the dye wearing off along the cord, undyed where it reaches her. The rut on its
+  temple has dried, and the bees that drank it are leaving up the right margin. In the crown, right
+  of the title, the full moon with no mark on it, its deer leaping clear.
+- **Name → part:**
+  - Niṣkāraṇā → `lamps`: the lamps and the threads of flame between them
+  - Niṣkalaṅkā → `moon`: the moon, its rings and glow
+  - Nirupādhi → `crystal`: the crystal, the hibiscus and its stalk
+  - Nirīśvarā → `couch`: the dais, the couch and her seat's glow
+  - Nīrāgā → `undyed`: her end of the cord and its tassel
+  - Rāgamathanī → `noose`: the red loop, the red half of the cord and its flecks
+  - Nirmadā → `bees`: the bees and their path
+  - Madanāśinī → `elephant`: the elephant and its dried rut
+  - Intro, *her light* → `light`
+  - Detail → `deer`: the moon's deer leapt clear, and why kalaṅka is not Shloka 44's kalā
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her radiance, the moon's rings), `m-breathe` (her seat's glow),
+  `m-twinkle` (the threads of flame, the bees, the crystal's glint), `m-flicker` (the lamps),
+  `m-ember` (the flecks of red), `m-lick` (the glint at the tassel).
+- **Notes:** This title stays on one line and reaches x ≈ 198 (250 at 1100px) at y ≈ 74–141, so the
+  moon sits well to its right. The hibiscus, the crystal, the couch of the five Brahmās and the
+  elephant were promoted into `primitives.tsx`, and the Dhyāna and Shlokas 22, 25 and 44 render
+  byte-for-byte as before. The first version kept everything in a strip under the card at Shloka
+  22's size and read as sparse; the couch went up to twice its size on a dais. The elephant's trunk
+  first crowded Īśvara's leg and its head hid the end of the dais; it moved right and the couch
+  left. The first lamp stood behind the dais; the lamps are now drawn in front of it. In the chant
+  miniature the glowing couch, the cord and the elephant's red caparison carry it.
 
 ## Open questions
 
