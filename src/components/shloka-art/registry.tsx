@@ -46,6 +46,7 @@ import { TwoBirds } from "./two-birds";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
 import { WhatItHoldsUp } from "./what-it-holds-up";
+import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -2030,6 +2031,74 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           In a crack of the kerb a pippala seedling has come up. Nobody plants a pippala: its seeds are sown by
           birds, which drop the figs they were eating, as the bird in the mist has just done.
+        </>
+      ),
+    },
+  },
+  "048": {
+    Art: WheelStopped,
+    intro: (Spot) => (
+      <>
+        The most symmetrical verse in the hymn: four pairs, each naming a thing she is free of and then the same
+        thing she destroys, so the picture is symmetrical about her light. The <Spot part="sword">sword</Spot> and
+        the <Spot part="wheel">wheel</Spot> come from the Muṇḍaka Upaniṣad (2.2.8): when she is seen, the knot of the heart is split, doubts are cut, and the works
+        that keep the round going are used up.
+      </>
+    ),
+    entries: [
+      {
+        nama: 168,
+        part: "goad",
+        depicts:
+          "Shloka 2 gave her a goad in the shape of anger. Here it stands point down, plain gold, nothing in it hot.",
+      },
+      {
+        nama: 169,
+        part: "steam",
+        depicts:
+          "Its point rests in a basin of water, and the last red is leaving it as steam, cooled rather than answered.",
+      },
+      {
+        nama: 170,
+        part: "pot",
+        depicts: "At the right a pot is full to the brim and runs over: it wants no more than it holds.",
+      },
+      {
+        nama: 171,
+        part: "box",
+        depicts:
+          "The water running from it has burst the lock of a strongbox at its foot and is carrying the coins away.",
+      },
+      {
+        nama: 172,
+        part: "sword",
+        depicts: "From just below her hangs the sword of knowledge, straight and double-edged, point down.",
+      },
+      {
+        nama: 173,
+        part: "knot",
+        depicts:
+          "The knot of the heart lies cut on its blade, and the two halves are falling away. The Gītā tells Arjuna to cut doubt with this sword rather than answer it.",
+      },
+      {
+        nama: 174,
+        part: "light",
+        depicts: "Her light is at the hub of the wheel, the one point of a wheel that never goes round.",
+      },
+      {
+        nama: 175,
+        part: "wheel",
+        depicts:
+          "Where the sword passed, the rim of the wheel of becoming is split. Two spokes have dropped out onto the floor, and the round can't turn again.",
+      },
+    ],
+    detail: {
+      part: "strands",
+      body: (
+        <>
+          The rim is bound in three bands, ivory, red and dark: the three strands, the guṇas, that Shloka 44 drew
+          as a rope coming undone. The Śvetāśvatara Upaniṣad calls the wheel of becoming threefold for the same
+          reason.
         </>
       ),
     },

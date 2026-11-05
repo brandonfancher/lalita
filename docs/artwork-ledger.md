@@ -41,7 +41,7 @@ second time it is needed.
 | Lotus pedestal | `lotusPetals`: a row of pointed, upturned gold petals. A lotus seat stacks a taller back row (`--art-saffron`), a front row (`--art-core`, so it reads as gold by day, not khaki), a beaded band, and a row turned down (negative `height`) | `primitives.tsx` | Shloka 1 |
 | Round arch | `archPath` and `alongArch` | `primitives.tsx` | Shloka 1 |
 | Her noose (pāśa) | `Noose`: a loop of twisted `--art-vermilion` cord (red because *rāga* is colouring), gold binding where it closes, four gold beads, a tail ending in a gold tassel. Held at the origin, loop up | `primitives.tsx` | Shloka 2 |
-| Her goad (aṅkuśa) | `Goad`: a banded gold shaft with a bud-shaped butt, a lotus collar, a leaf-shaped spear point, and a hook curving out to the right. Held at the origin, pointing up | `primitives.tsx` | Shloka 2 |
+| Her goad (aṅkuśa) | `Goad`: a banded gold shaft with a bud-shaped butt, a lotus collar, a leaf-shaped spear point, and a hook curving out to the right. Held at the origin, pointing up. Shloka 48 turns it point down, cooling in a basin | `primitives.tsx` | Shloka 2 |
 | Glint | `glint(s)`: a four-pointed flash of `--art-core`, for blazing metal and jewels | `primitives.tsx` | Shloka 2 |
 | Her arms | Beams of light from her source, drawn as three nested tapering layers that fade in from the source, never as limbs: `armBeam` (and `wrist` for where the bangle sits), painted with `ArmLight` and a gradient from `--art-saffron` to `--art-core`. Empty-handed (Shloka 13) they leave her light in an X, like the points of a flash, and fade out at their tips; the wrists stay bare, as the bangle marks where a weapon is held | `primitives.tsx` | Shloka 2 |
 | Bangle (kaṅkaṇa) | `Bangle`: a gold ellipse across the arm, a paper-coloured inner line, three vermilion jewels on the front | `primitives.tsx` | Shloka 2 |
@@ -254,6 +254,14 @@ second time it is needed.
 | Temple tank | An `--art-stone` kerb edged in `--gold` above a band of water (`--art-hair` from 0.2 to 0.04) with dashed `--gold-soft` lines, both faded out at the ends with a mask so it isn't a box | Inline (`two-birds.tsx`) | Shloka 47 |
 | White lotus standing clear | `OpenLotus` in `--art-ivory` with `--gold-soft` veins and no pad, on a `--leaf` stalk standing above the water, a `LotusLeaf` beside it | Inline (`two-birds.tsx`) | Shloka 47 |
 | Dark motes, shaken off | Small `--art-hair` motes (radius 1.2–2.4) with a `--gold-soft` rim, each sinking and fading (`m-sink`) on its own `--dur` and negative `--delay`. Musk vanished by lamplight | Inline (`two-birds.tsx`) | Shloka 47 |
+| The wheel of becoming (saṃsāra-cakra) | Her light at the hub. A gold hub ring with carve hairlines, fourteen tapered gold spokes, and a rim of three 6-unit bands, `--art-ivory` outside, `--art-vermilion`, then `--art-hair` (the three guṇas), between gold hairlines. Broken at the foot: the rim is cut through, its ends splintered in carve, and the two spokes there lie on the floor | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| The sword of knowledge (jñāna-khaḍga) | Straight and double-edged, point down: a blade with a linear gradient from `--art-moon` through `--art-ivory` and a hard step to `--gold-soft` (a ridge), gold edge and `--gold-soft` fuller; a gold crossguard with curled quillons, an `--art-vermilion` grip with gold binding, a gold pommel with a vermilion centre, and a glint on the edge (`m-lick`) | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| The knot of the heart, cut (hṛdaya-granthi) | Two halves of a loop of cord, mirrored about the blade, each with a looped end and a tail falling outward: `--art-ivory` at 3.6 over a 6.2 `--gold` under-stroke with a dotted gold twist and frayed gold ends (`m-sway`). In gold alone it read as scrollwork | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| The goad, cooled | Shloka 2's `Goad` at 0.86, turned 165° so it leans point down into a basin with its butt up and to the left. Straight down it read as a candlestick. A gradient from `--art-vermilion` to clear saffron over the point, fading upward | Inline (`wheel-stopped.tsx`, using `Goad`) | Shloka 48 |
+| A basin of water, steaming | A shallow gold bowl on a foot, its water an ellipse from `--art-moon` to `--art-hair`, a faint `--art-ember` glow under it (`m-breathe`), and three wisps of steam, `--art-moon` at 0.55 with a `--gold-soft` line inside (`m-sway`) | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| A full pot brimming over | A round-bellied gold water pot with a neck, a lip, a double `--art-vermilion` belly band and a moon-coloured brim. Water runs over as one broad sheet down the front of the belly (`m-shimmer`) with a fine ivory highlight, and one thin stream at the back, to a puddle with ivory drops (`m-twinkle`). Thin streams alone read as wires | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| An iron strongbox, burst | A box of `--art-hair` at 0.7 with gold straps and edge, its lid thrown back at 0.45, gold coins on the rim, the lock hanging open and askew. Coins carried off along the floor (`m-twinkle`) | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| Water running along the floor | A filled, tapering rivulet in the water gradient with a `--gold-soft` edge (`m-shimmer`). A stroked line read as a stick | Inline (`wheel-stopped.tsx`) | Shloka 48 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1806,6 +1814,42 @@ One entry per finished artwork, in the order they were made.
   over soft canopy masses they read as a tree. The bark was musk and vanished by lamplight. The motes
   were musk too and couldn't be seen; they are slate now. In the chant miniature the tree's
   silhouette, her glow and the bird carry it.
+
+### Shloka 48: Anger, greed, doubt, and becoming
+
+- **Component:** `wheel-stopped.tsx` (defs prefix `sa48`)
+- **Composition:** four pairs, each a thing she is free of and then the same thing she destroys,
+  drawn symmetrical about her light, after the Muṇḍaka Upaniṣad (2.2.8: the knot of the heart split,
+  doubts cut, works used up). Below the card, centred, the wheel of becoming with her light at the
+  hub, its rim in three bands. From just below her hangs the sword of knowledge, point down; on its
+  blade the knot of the heart lies cut, its halves falling to either side, and where it passed the
+  rim is split at the foot and two spokes have dropped to the floor. At the left Shloka 2's goad
+  leans point down into a steaming basin. At the right a full pot brims over, and the water from it
+  has burst a strongbox and carries its coins away along the floor.
+- **Name → part:**
+  - Niṣkrodhā → `goad`: the goad
+  - Krodhaśamanī → `steam`: the basin, its water, the heat leaving the point and the steam
+  - Nirlobhā → `pot`: the pot, its overflow and the puddle
+  - Lobhanāśinī → `box`: the strongbox, the coins and the water running along the floor
+  - Niḥsaṃśayā → `sword`: the sword and its glint
+  - Saṃśayaghnī → `knot`: the two halves of the cut knot
+  - Nirbhavā → `light`: her light at the hub, its glow and radiance
+  - Bhavanāśinī → `wheel`: the hub, spokes, rim lines, the split, the fallen spokes and the floor
+  - Intro, *sword* → `sword`; *wheel* → `wheel`
+  - Detail → `strands`: the rim's three bands are the three guṇas, Shloka 44's three strands, and
+    the Śvetāśvatara's wheel with its threefold tire (1.4)
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow and radiance, the overflow, the run of water), `m-breathe` (her
+  light, the ember glow under the basin), `m-sway` (the knot's halves, the steam), `m-twinkle` (the
+  drops and coins), `m-lick` (the glint on the blade).
+- **Notes:** This title stays on one line and reaches x ≈ 198 (250 at 1100px) at y ≈ 74–141. The
+  crown is left almost empty and the upper wheel lies behind the card: the wheel is centred on her
+  and the verse has nothing that belongs above. `polar` was first misread as clockwise, and the
+  rim drew as a rainbow arching over the card; the split belongs at 270°, the foot. The knot was
+  gold and read as scrollwork; it is an ivory cord now. The goad stood straight down and read as a
+  candlestick; it leans. The overflow was three thin streams that read as wires, and the run along
+  the floor a stroked line that read as a stick; both are filled shapes now. The box first stood in
+  front of the pot and was moved left. In the chant miniature the wheel and the sword carry it.
 
 ## Open questions
 
