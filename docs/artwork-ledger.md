@@ -308,6 +308,13 @@ second time it is needed.
 | Vessels holding her reflection | Clay pots (`--art-vermilion` to saffron to crimson, ivory bands, a core sheen, a vermilion rim) and brass lotas (a round belly in a `--gold` to `--art-turmeric` gradient edged in `--art-ember`, a short neck and a flared turmeric lip, an ivory highlight), each with dark water in its mouth and her light in it as a core point in a breathing glow (`m-breathe`). Drawn as one piece, the lota read as a sack | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
 | Ghat steps | Below the water's gold edge, two treads in a saffron wash fading downward, each lip a gold line over an `--art-carve` riser at 0.3 with `--gold-soft` stone joints, faded at both sides | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
 | शिव with its i lit | श and व in Tiro Devanagari, 15, `--art-hair`, painted on a pot, with the ि drawn by hand (a stem and its hook over श) in `--art-core` over a wider core stroke at 0.35, in a small breathing glow. In ivory the lit i was lost among the letters, and saffron vanished on the clay | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
+| Royal fly-whisks (cāmara), crossed | Two whisks crossed at ±34° in the crown, bound where they cross by an `--art-vermilion` clasp ringed with eight `--art-moon` pearls (`m-twinkle`): each a gold-to-turmeric handle with turmeric rings and a gold knob, a flared gold collar set with a vermilion jewel and a row of pearls, and a plume of `--art-ivory` yak hair, widest a third of the way and tapering to a soft drooping point, with `--gold-soft` strands down it and ivory wisps past its tip. Blunt-ended plumes read as racquets and then as brooms; a strong droop made them wings | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| A temple stair, from the front | A landing and eight steps narrowing toward her, each a lit tread (`--art-stone` under a gradient from `--art-core` at the top to faint saffron) with a gold front edge over a riser darkened with `--art-carve`; sloping `--art-stone` parapets with a 2.2 gold coping, a `StillLamp` beside each step on both sides; square plinths at its foot with a scalloped `--gold-soft` moulding; behind the landing, a sanctum door (two stone jambs with inset panels and a lintel with a scalloped band) round a carve-dark doorway | Inline (`stair-of-attainment.tsx`, using `StillLamp`) | Shloka 55 |
+| A lion and an elephant at a stair's foot | `Lion` at 0.76 in gold, facing in, on the left plinth; `Elephant` at 0.74 with its trunk down, facing in, on the right, the larger of the two | `Lion`, `Elephant` in `primitives.tsx` | Shloka 55 |
+| A clear crystal (sphaṭika) | A quartz point about 38 tall: a six-sided prism seen across two faces in `--art-moon` at 0.45 with `--art-ivory` edges and facet lines, a core glint and a breathing core glow inside, on a small gold base, throwing a short fan of six coloured strokes (vermilion, saffron, turmeric, leaf, hair, lotus) across the floor beside it | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| A banana-leaf feast (bhoga) | A `--leaf` banana leaf laid flat at a slant, about 74 long, with a `--gold-soft` midrib and veins, spread with an ivory mound of rice with ghee, three saffron laddus, a white modaka, a turmeric banana, a gold cup of payasam, and a betel leaf with its areca nut | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| Sandals left at the door (pādukā) | Pairs of toe-knob sandals seen from above at a slant, each pair about 36 across at 1.55, toes in a little: a sole with a thickness under it, an instep line, a peg and knob; gold with a vermilion knob, `--art-moon` silver with gold, `--art-musk` wood with turmeric, side by side on the ground at the stair's foot | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| Gaṇeśa's mouse (mūṣaka) | About 26 long at 1.15, in profile: an `--art-musk` body with a gold edge, a round `--lotus` ear, an ivory eye, a curled tail, a white modaka in its mouth | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2114,6 +2121,39 @@ One entry per finished artwork, in the order they were made.
   read as slippers. The pads are plain, not `LotusLeaf`, whose standing beads belong to the leaf
   that water does not wet. The still-water lines are drawn inline as in Shlokas 20, 43 and 51. In the chant
   miniature the glow on the lotus and the bright row of pots carry it.
+
+### Shloka 55: Six goods of practice, and the sovereign of those who obtain them
+
+- **Component:** `stair-of-attainment.tsx` (defs prefix `sa55`)
+- **Composition:** a temple stair seen from the front, the verse's list of prizes laid out on
+  the way up to her. Eight steps, each with a steady lamp on the parapet at its sides, narrow to a
+  landing at a sanctum door, and her light stands on the landing with its radiance, a clear
+  crystal on her left and a banana leaf of food offered to her on her right. A lion and an
+  elephant sit on the plinths at the stair's foot, and on the ground before it three pairs of
+  sandals have been left. In the crown, right of the title, two royal fly-whisks cross over the
+  door, bound by a clasp of eight pearls. The first stair climbed toward her, and the first
+  insignia without a throne.
+- **Name → part:**
+  - Mahābhogā → `feast`: the banana leaf and what is on it
+  - Mahaiśvaryā → `camaras`: the crossed whisks, the clasp and its eight pearls, the glow behind
+  - Mahāvīryā → `lion`: the lion
+  - Mahābalā → `elephant`: the elephant (Yoga Sūtra 3.24)
+  - Mahābuddhiḥ → `crystal`: the crystal and the colours it throws (Yoga Sūtra 1.41)
+  - Mahāsiddhiḥ → `stair`: the steps, landing, parapets, lamps, plinths, door and ground
+  - Mahāyogeśvareśvarī → `sandals`: the three pairs of sandals of the three lineages of masters
+  - Intro, *temple stair* → `stair`; *light* → `light`: her light, its glow and radiance
+  - Detail → `mouse`: Gaṇeśa's mouse coming down with a sweet, since Siddhi and Buddhi, side by
+    side in this verse, are his two wives
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow and radiance, the crown's glow), `m-breathe` (her light, the
+  crystal's glow), `m-twinkle` (the pearls and the collars' jewels).
+- **Notes:** This title wraps to two lines, the second reaching x ≈ 187 (239 at 1100px) at
+  y ≈ 122–189, so the whisks cross at x 320 with their plumes kept above y ≈ 120 on the left. The
+  whisks were first blunt ovals and read as racquets, then broad at the end and read as brooms,
+  then drooped too far and read as wings (the left one reaching the title at 1100px). The sanctum
+  door, under the card on the page, was added so the plate does not fall into two pieces. The lamps
+  are `StillLamp`s, so the stair adds no flicker. In the chant miniature the crossed whisks and the
+  lit stair carry it.
 
 ## Open questions
 

@@ -33,6 +33,7 @@ import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
 import { OneInManyPots } from "./one-in-many-pots";
+import { StairOfAttainment } from "./stair-of-attainment";
 import { LetterRosary } from "./letter-rosary";
 import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
@@ -2488,6 +2489,68 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           On the nearest pot is painted शिव, Śiva, with its i-sign lit. The old saying goes that the i is Śakti, and without
           it śiva is only śava, a corpse.
+        </>
+      ),
+    },
+  },
+  "055": {
+    Art: StairOfAttainment,
+    intro: (Spot) => (
+      <>
+        Six names list the goods that practice was thought to win, and the picture lays them out on a{" "}
+        <Spot part="stair">temple stair</Spot> whose last step is her <Spot part="light">light</Spot>; the seventh
+        name is for the people who climb it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 219,
+        part: "feast",
+        depicts:
+          "On the landing a banana leaf is spread with rice, sweets, a banana, a cup of payasam and betel, the food that temples still call her bhoga. What is set before her she takes and enjoys.",
+      },
+      {
+        nama: 220,
+        part: "camaras",
+        depicts:
+          "Two royal fly-whisks of white yak hair cross in the crown, the insignia of a sovereign, bound by a clasp of eight pearls for the eight powers of a lord. They are only the fittings of her court.",
+      },
+      {
+        nama: 221,
+        part: "lion",
+        depicts: "A lion sits on the plinth at the left of the stair's foot, the old emblem of a hero's valour, and hers.",
+      },
+      {
+        nama: 222,
+        part: "elephant",
+        depicts:
+          "An elephant stands on the plinth at the right. The Yoga Sūtra promises the strength of an elephant to those who meditate on strength (3.24); in her it is not won but simply there.",
+      },
+      {
+        nama: 223,
+        part: "crystal",
+        depicts:
+          "A clear crystal on the landing takes her light and breaks it into colours. The Yoga Sūtra likens the clarified mind to a flawless jewel that takes the colour of whatever it rests on (1.41); understanding is her light in it.",
+      },
+      {
+        nama: 224,
+        part: "stair",
+        depicts:
+          "The stair has eight steps, the lesser attainments, with a steady lamp beside each, and every one of them leads to the landing at the sanctum door where her light stands. She is not one more step but where the steps arrive.",
+      },
+      {
+        nama: 225,
+        part: "sandals",
+        depicts:
+          "At the foot of the stair three pairs of sandals have been left, of gold, silver and wood, for the masters of the divine, the perfected and the human lineages of teachers. Even they go up to her barefoot.",
+      },
+    ],
+    detail: {
+      part: "mouse",
+      body: (
+        <>
+          A mouse is coming down the steps with a sweet from her leaf. Siddhi and Buddhi stand side by side in this
+          verse as they do beside Gaṇeśa, whose two wives they are, and this is his mouse.
         </>
       ),
     },
