@@ -2392,3 +2392,22 @@ export function Summit({ s, glow }: { s: SummitShape; glow: string }) {
     </>
   );
 }
+
+/* ── A cup of nectar ───────────────────────────────────────────────────── */
+
+const CUP_BOWL = `M -20 -12 C -20 4 -10 10 0 10 C 10 10 20 4 20 -12 Z`;
+const CUP_FOOT = "M -4 10 L -6 18 L 6 18 L 4 10 Z M -12 18 L 12 18 L 12 21 L -12 21 Z";
+
+/** A small footed gold cup brimming with nectar, the brim 12 above the origin, in its moon glow. */
+export function NectarCup({ glow }: { glow: string }) {
+  return (
+    <>
+      <circle className="m-shimmer" cy={-12} r={34} fill={glow} />
+      <path d={CUP_FOOT} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d={CUP_BOWL} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+      <path d="M -15 -2 C -8 3 8 3 15 -2" stroke="var(--gold-soft)" strokeWidth={1} />
+      <ellipse cy={-12} rx={20} ry={4.4} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} />
+      <ellipse cy={-12} rx={11} ry={2.2} fill="var(--art-moon)" fillOpacity={0.6} />
+    </>
+  );
+}

@@ -14,7 +14,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { Summit, artIds, partProps, polar, round, summit } from "./primitives";
+import { NectarCup, Summit, artIds, partProps, polar, round, summit } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -46,8 +46,6 @@ const FALL_FROM = { x: HER.x + 16, y: HER.y + RING_R + 2 };
 const FALL = `M ${FALL_FROM.x} ${FALL_FROM.y} C ${FALL_FROM.x + 16} ${FALL_FROM.y + 120} ${CUP.x + 4} ${CUP.y - 220} ${CUP.x} ${CUP.y - 18}`;
 const DROPS = [0, 1, 2].map((k) => ({ y: round(CUP.y - 34 - k * 26), k }));
 const DROP = "M 0 -4.4 C 1.6 -1.6 2.6 0 2.6 1.4 A 2.6 2.6 0 0 1 -2.6 1.4 C -2.6 0 -1.6 -1.6 0 -4.4 Z";
-const BOWL = `M -20 -12 C -20 4 -10 10 0 10 C 10 10 20 4 20 -12 Z`;
-const FOOT = "M -4 10 L -6 18 L 6 18 L 4 10 Z M -12 18 L 12 18 L 12 21 L -12 21 Z";
 
 /* ── The compact, bound and sealed ─────────────────────────────────────── */
 
@@ -156,12 +154,7 @@ export function RootMantra({ idPrefix = "sa36", active = null }: ArtProps) {
           <path key={d.k} className={TWINKLE[d.k]} d={DROP} transform={`translate(${CUP.x} ${d.y})`} fill="var(--art-ivory)" stroke="var(--art-moon)" strokeWidth={0.5} />
         ))}
         <g transform={`translate(${CUP.x} ${CUP.y}) scale(1.1)`}>
-          <circle className="m-shimmer" cy={-12} r={34} fill={url("nectar-glow")} />
-          <path d={FOOT} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <path d={BOWL} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
-          <path d="M -15 -2 C -8 3 8 3 15 -2" stroke="var(--gold-soft)" strokeWidth={1} />
-          <ellipse cy={-12} rx={20} ry={4.4} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} />
-          <ellipse cy={-12} rx={11} ry={2.2} fill="var(--art-moon)" fillOpacity={0.6} />
+          <NectarCup glow={url("nectar-glow")} />
         </g>
       </g>
 
