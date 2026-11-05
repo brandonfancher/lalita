@@ -16,6 +16,7 @@ import { KulaAndSamaya } from "./kula-and-samaya";
 import { MantraBody } from "./mantra-body";
 import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
+import { SummitAndRain } from "./summit-and-rain";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
@@ -1463,6 +1464,48 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           The verse names only two of the centres it passes. The others are drawn faint and unlit, and so is the
           thousand-petalled lotus at the top: the third knot is still tied, and the next verse finishes the climb.
+        </>
+      ),
+    },
+  },
+  "039": {
+    Art: SummitAndRain,
+    intro: (Spot) => (
+      <>
+        The climb of the last verse is finished: <Spot part="channel">the channel</Spot> is lit now from the root to the
+        crown.
+      </>
+    ),
+    entries: [
+      {
+        nama: 103,
+        part: "ajna",
+        depicts: "At the brow is the wheel of command, two white petals like wings, and her light is inside it.",
+      },
+      {
+        nama: 104,
+        part: "rudra",
+        depicts: "Just above it the knot of Rudra, the last and the hardest of the three cords, is split.",
+      },
+      {
+        nama: 105,
+        part: "summit",
+        depicts:
+          "At the top the thousand-petalled lotus is lit, ring on ring of fine petals, and her light is mounted on it, as on a seat or a vehicle.",
+      },
+      {
+        nama: 106,
+        part: "rain",
+        depicts:
+          "From the lotus's rim the nectar comes back down over the whole body, in two falls of drops past the centres to the root and a fine rain under the lotus.",
+      },
+    ],
+    detail: {
+      part: "passed",
+      body: (
+        <>
+          Below, the centres of the last verse are all lit now, the ones it passed over in silence too, and the knots of
+          Brahmā and Viṣṇu hang open between them.
         </>
       ),
     },

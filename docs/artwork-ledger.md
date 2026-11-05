@@ -207,6 +207,8 @@ second time it is needed.
 | A centre of the subtle body (cakra) | A small lotus seen face on (`yantraPetals`), its petals filled in the centre's colour (75% lit, 18% unlit) with a gold outline (35% unlit), round a gold circle holding its element's sign (`tattvaSign`): the root centre four `--art-crimson` petals round the `--art-turmeric` square of earth; the svādhiṣṭhāna six `--art-vermilion`; the navel wheel ten `--art-hair` (the traditional dark blue) round the downward `--art-vermilion` triangle of fire; the heart twelve `--art-vermilion`; the throat sixteen `--lotus`; the brow two `--art-ivory` petals as wings. Lit, it has a glow in its own colour. The thousand-petalled lotus is three rings of 40, 52 and 64 fine petals | `CakraLotus` and `Cakra` in `primitives.tsx` (promoted at Shloka 39, used by Shlokas 38 and 39); the signs are `tattvaSign` | Shloka 38 |
 | The channel (suṣumnā) | A vertical line on the axis: lit, a 2.2-unit gradient from `--art-core` at the root to gold, fading out above the highest centre reached, in a tall soft `--art-glow` glow; unlit, a dotted gold hairline at 35% | Inline (`first-two-knots.tsx`) | Shloka 38 |
 | A knot (granthi), split | A cord wound round the channel, seen a little from above (an ellipse 52 by 14), `--art-musk` 2.4 wide with an `--art-moon` hairline, cut through at the front, its two halves pushed 6 apart with a few frayed strands at each cut end, a soft core glow and a `glint` between them. Drawn as loops with trailing ends, a split knot over a lotus made a moustache over a face | `SplitKnot` in `primitives.tsx` (promoted at Shloka 39, used by Shlokas 38 and 39) | Shloka 38 |
+| The thousand-petalled lotus, lit (sahasrāra) | Four rings of 40, 56, 72 and 90 fine petals (`yantraPetals`), `--art-ivory` and `--lotus` by turns, fading outward, with gold hairline edges, in a wide `--art-glow` glow, her light mounted at its heart | Inline (`summit-and-rain.tsx`) | Shloka 39 |
+| The rain of nectar (sudhā-sāra) | From the crown's rim, two dotted `--art-moon` falls curving out and down past the body to the root, each with fourteen `--art-ivory` drops edged in gold in small moon glows (`m-twinkle` in three groups), and a fine rain of smaller drops under the lotus. The signs of water, air and space inside a centre's circle made faces (a smile, an eye), so only earth and fire are drawn | Inline (`summit-and-rain.tsx`) | Shloka 39 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1499,6 +1501,28 @@ One entry per finished artwork, in the order they were made.
   thousand-petalled lotus sits under it (y ≈ 126–198), and nothing else is in the crown. At their
   first size the centres were too small to read and the channel's glow was a capsule with hard
   ends. In the chant miniature the lit channel and the two lit centres carry it.
+
+### Shloka 39: The last knot, the summit, and the rain that comes back down
+
+- **Component:** `summit-and-rain.tsx` (defs prefix `sa39`)
+- **Composition:** Shloka 38's climb finished. The channel is lit from the root to the crown, and
+  the centres below glow quietly with the two split knots between them. At the brow the wheel of
+  command, two white petals, with her light inside it; just above, the knot of Rudra, split. At the
+  top the thousand-petalled lotus is lit and her light is mounted on it, and from its rim the
+  nectar comes back down over the whole body in two falls of drops, with a fine rain under it.
+- **Name → part:**
+  - Ājñācakrāntarālasthā → `ajna`: the brow wheel, its glow and her light inside it
+  - Rudragranthivibhedinī → `rudra`: the third knot, split
+  - Sahasrārāmbujārūḍhā → `summit`: the thousand-petalled lotus, its glow and her light on it
+  - Sudhāsārābhivarṣiṇī → `rain`: the two falls and the fine rain
+  - Intro, *the channel* → `channel`: the channel, lit, and its glow
+  - Detail → `passed`: the five lower centres and the knots of Brahmā and Viṣṇu
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the drops), `m-breathe` (her lights, the cut), `m-shimmer` (the
+  glows), `m-lick` (the glint).
+- **Notes:** This title wraps at every desktop width, so the card comes down to y ≈ 225 and the
+  crown is clear for the lotus. The brow wheel sits right at the card's upper edge. In the chant
+  miniature the lit lotus, the column and the oval of falling drops carry it.
 
 ## Open questions
 
