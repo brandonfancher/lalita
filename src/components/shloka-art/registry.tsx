@@ -31,6 +31,7 @@ import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MiddleOfTheMoon } from "./middle-of-the-moon";
+import { MountainsDaughter } from "./mountains-daughter";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
 import { GreatYantra } from "./great-yantra";
@@ -2750,6 +2751,57 @@ export const ARTWORK: Record<string, Artwork> = {
           A third cakora has flown off to the moon in the sky and is drinking that instead. Śaṅkara says her smile
           was so sweet that it numbed their beaks, so now they take the cold-rayed moon for sour gruel, to clear the
           palate (Saundaryalaharī 63).
+        </>
+      ),
+    },
+  },
+  "060": {
+    Art: MountainsDaughter,
+    intro: (Spot) => (
+      <>
+        The verse starts very far away and comes close enough to see her eyes, and so does the picture:{" "}
+        <Spot part="mountain">Himavat</Spot> fills the plate, snow peaks in the crown, and at his foot a cave opens in
+        the rock with her house on its back wall.
+      </>
+    ),
+    entries: [
+      {
+        nama: 244,
+        part: "world",
+        depicts:
+          "On his flanks the deodars stand still and the wild geese come in over the snows: the unmoving world and the moving one, both under her rule.",
+      },
+      {
+        nama: 245,
+        part: "cakra",
+        depicts:
+          "On the back wall of the cave stands the Śrīcakra, the king of diagrams. It does not stand for her; it is the house she lives in.",
+      },
+      {
+        nama: 246,
+        part: "mountain",
+        depicts:
+          "The mountain is her father, Himavat, and the rock she is named from. Pārvatī is simply what any daughter of that house would be called (Kumārasambhava 1.26).",
+      },
+      {
+        nama: 247,
+        part: "lotuses",
+        depicts: "Before the cave's mouth, in a still pool, two lotuses have opened wide: her eyes, broad and fresh as they are.",
+      },
+      {
+        nama: 248,
+        part: "ruby",
+        depicts:
+          "Her light at the bindu fills the cave red as a ruby, padmarāga, the lotus-coloured stone, so the one word gives her eyes and her complexion. For once the thing compared is not put to shame; she simply shines as much.",
+      },
+    ],
+    detail: {
+      part: "yak",
+      body: (
+        <>
+          On a ledge to the right a yak stands with its white tail lifted. Kālidāsa says the yaks of the Himālaya, flicking
+          tails as white as moonbeams, fan him as servants fan a king, and so make his title &ldquo;king of
+          mountains&rdquo; true (Kumārasambhava 1.13). The verse has a king of diagrams; the mountain has his whisks.
         </>
       ),
     },
