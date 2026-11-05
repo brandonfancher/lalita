@@ -13,6 +13,7 @@ import { KingOfWheels } from "./king-of-wheels";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
+import { GlanceAndASon } from "./glance-and-a-son";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1111,6 +1112,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Under Bālā, her three syllables, aiṃ klīṃ sauḥ. They are often the first mantra a student is given, and the
           nyāsa before the stotra has already set them on the reciter&rsquo;s fingers.
+        </>
+      ),
+    },
+  },
+  "030": {
+    Art: GlanceAndASon,
+    intro: (Spot) => (
+      <>
+        The verse breaks in two, and so does the picture. Below the card the war stops for a look: her light at the
+        left and Kāmeśvara&rsquo;s crescent at the right, and <Spot part="glance">the look that passes between
+        them</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 76,
+        part: "varahi",
+        depicts:
+          "Across the top, Vārāhī, a crimson light behind her crossed plough and pestle, draws the breath out of Viśukra, a bank of Bhaṇḍa's ash, and it streams back to her.",
+      },
+      {
+        nama: 77,
+        part: "ganesa",
+        depicts:
+          "Where the look meets, Mahāgaṇapati arises: a light ruddy as the dawn, ringed by the things his ten hands hold, the mace, trident, conch, lotus, tusk, citron, bow, discus, ear of rice and jewelled pot.",
+      },
+    ],
+    detail: {
+      part: "bow",
+      body: (
+        <>
+          One of the ten things in his ring is his mother&rsquo;s own: the sugarcane bow, drawn as hers is in Shloka 3.
         </>
       ),
     },

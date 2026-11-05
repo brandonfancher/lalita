@@ -179,6 +179,10 @@ second time it is needed.
 | Bālā | Never a figure: a small light the colour of the rising sun (an `--art-vermilion` disc with an `--art-saffron` highlight, a thin gold ring, a soft saffron-to-vermilion glow), ringed by fourteen gold scales, the armour her mother put on her. Joined to her mother's bindu by a dotted `--art-core` thread of breath. Her syllables ऐं क्लीं सौः in `--sindura` beneath | Inline (`balas-arrows.tsx`) | Shloka 29 |
 | Crescent-headed arrow (ardhacandra) | A gold shaft with `--art-vermilion` fletching and an `--art-moon` crescent head edged in gold, its horns forward | Inline (`balas-arrows.tsx`) | Shloka 29 |
 | Bhaṇḍa's sons, his brothers | His sons are small puffs of his ash (as in Shloka 24), each with a small `--gold-soft` coronet knocked off and tumbling; his brothers are larger banks of the same ash | Inline (`balas-arrows.tsx`) | Shloka 29 |
+| Vārāhī (Daṇḍanāthā) | Never a figure: an `--art-crimson` light with a `--art-vermilion` highlight and a gold ring, in a soft crimson glow, over her crossed plough (a curved gold beam with an `--art-moon` share) and pestle (a banded gold club). Her chariot is the Kiricakra | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
+| Breath drawn out (prāṇa-haraṇa) | Three dashed `--art-moon` strands drawn out of the one who dies and curving back to the one who takes it, twinkling in three groups | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
+| The look between them | Her bindu and his crescent (the fourth night's `litPart`, radius 30, horns up, over a faint saffron tint so it shows by day) on one level, with three gold hairlines each way between them, a little spread, and a `glint` where they meet. A wedge of light hanging from the meeting point made the look and what came of it a necklace and pendant | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
+| Mahāgaṇapati | Never a figure: a light ruddy as the dawn (an `--art-vermilion` disc with a saffron highlight and gold ring, in a saffron-to-vermilion glow, Bālā's light grown larger), ringed on a dotted gold circle by the ten things his hands hold, upright, open at the top: jewelled pot, ear of rice, discus (a small `ChariotWheel` in saffron tongues), sugarcane bow (`SugarcaneBow`), citron, tusk, lotus, conch, trident, mace. A crescent on his light made it a horned face | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1238,6 +1242,33 @@ One entry per finished artwork, in the order they were made.
   `primitives.tsx` (`Sapphire`, `Vina`), and Shloka 26 renders byte-for-byte as before. Plain puffs
   of ash didn't read as thirty princes; the tumbling coronets do. In the chant miniature the chariot
   and the fan of arrows carry it.
+
+### Shloka 30: A glance between them, and a son
+
+- **Component:** `glance-and-a-son.tsx` (defs prefix `sa30`)
+- **Composition:** the verse breaks in two, and so does the plate. Across the crown, the last name of
+  watching: Vārāhī, a crimson light over her crossed plough and pestle, draws the breath out of
+  Viśukra, a bank of Bhaṇḍa's ash, in pale strands that curve back to her. Below the card, the war
+  stops for a look: her light at the left and Kāmeśvara's crescent at the right, three hairlines
+  each way between them, and where they meet, Mahāgaṇapati arises beneath, a dawn-red light ringed by
+  the ten things his ten hands hold. Nobody is drawn.
+- **Name → part:**
+  - Viśukraprāṇaharaṇavārāhīvīryananditā → `varahi`: Vārāhī, her plough and pestle, Viśukra's ash,
+    and his breath drawn out
+  - Kāmeśvaramukhālokakalpitaśrīgaṇeśvarā → `ganesa`: his light, the glint where the look meets,
+    and nine of the ten things he holds
+  - Intro, *the look that passes between them* → `glance`: her light, his crescent, and the
+    hairlines between them
+  - Detail → `bow`: the sugarcane bow among his ten, his mother's own
+- **Palette:** `--art-crimson` for Vārāhī. No additions.
+- **Motion:** `m-shimmer` (the glows and the look), `m-breathe` (her bindu and his light),
+  `m-twinkle` (the breath, two of his emblems), `m-lick` (the meeting), `m-flicker` (the discus).
+- **Notes:** This title stays on one line but reaches x ≈ 176 at y ≈ 61–118, so Vārāhī sits to the
+  right of it, at x ≈ 296, and Viśukra in the crown's right corner. The first version hung a wedge of light from the meeting point down to his light, and with the
+  level look above it the two read as a necklace and pendant; the wedge is gone, and the ring opens
+  at the top toward the look. A crescent on his light (his crown's) made a horned face and was
+  dropped. His crescent vanished by day until it got a faint saffron tint behind it. In the chant
+  miniature the two glows and the ring of emblems carry it.
 
 ## Open questions
 
