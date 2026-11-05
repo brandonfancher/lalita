@@ -13,7 +13,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { GanesaEmblem, Lamp, OpenLotus, artIds, litPart, partProps, polar, radiance, round, tongue } from "./primitives";
+import { GanesaEmblem, Lamp, OpenLotus, Vajra, artIds, litPart, partProps, polar, radiance, round, tongue } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -96,8 +96,6 @@ const BURST = Array.from({ length: 12 }, (_, k) => {
 const BRAHMA = { x: 318, y: 80 };
 const VISNU = { x: 420, y: 58 };
 const INDRA = { x: 522, y: 84 };
-/** Indra's thunderbolt (vajra), upright: a banded grip and a cage of prongs at each end. */
-const VAJRA_END = "M 0 -7 L 0 -25 M -1.6 -8 C -9 -11 -9 -19 0 -24 M 1.6 -8 C 9 -11 9 -19 0 -24 M -3 -7.4 C -14 -9 -15 -18 -8 -21 M 3 -7.4 C 14 -9 15 -18 8 -21";
 const LAMP_ROWS = [
   { r: 330, s: 0.9 },
   { r: 364, s: 1 },
@@ -215,12 +213,7 @@ export function EmptyCity({ idPrefix = "sa33", active = null }: ArtProps) {
           <GanesaEmblem name="conch" />
         </g>
         <g transform={`translate(${INDRA.x} ${INDRA.y}) rotate(-20)`} stroke="var(--gold)" strokeLinecap="round">
-          <path d={VAJRA_END} strokeWidth={1.8} />
-          <path d={VAJRA_END} transform="scale(1 -1)" strokeWidth={1.8} />
-          <rect x={-2.6} y={-7} width={5.2} height={14} rx={2} fill="var(--gold)" strokeWidth={0} />
-          <ellipse cx={0} cy={-7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <ellipse cx={0} cy={7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <circle r={1.6} fill="var(--art-vermilion)" strokeWidth={0} />
+          <Vajra />
         </g>
         {LAMPS.map((l, i) => (
           <g key={i} transform={`translate(${l.x} ${l.y}) scale(${l.s})`}>

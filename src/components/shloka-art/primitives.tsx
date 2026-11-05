@@ -3104,3 +3104,21 @@ export function eggPath(x: number, y: number, w: number, h: number) {
     `C ${p(x - w)} ${p(y - 0.25 * h)} ${p(x - 0.62 * w)} ${p(y - h)} ${p(x)} ${p(y - h)} Z`,
   ].join(" ");
 }
+
+/* ── Indra's thunderbolt ───────────────────────────────────────────────── */
+
+const VAJRA_END = "M 0 -7 L 0 -25 M -1.6 -8 C -9 -11 -9 -19 0 -24 M 1.6 -8 C 9 -11 9 -19 0 -24 M -3 -7.4 C -14 -9 -15 -18 -8 -21 M 3 -7.4 C 14 -9 15 -18 8 -21";
+
+/** Indra's thunderbolt (vajra), upright: a banded grip and a cage of prongs at each end. Wants a gold stroke and round caps. */
+export function Vajra() {
+  return (
+    <>
+      <path d={VAJRA_END} strokeWidth={1.8} />
+      <path d={VAJRA_END} transform="scale(1 -1)" strokeWidth={1.8} />
+      <rect x={-2.6} y={-7} width={5.2} height={14} rx={2} fill="var(--gold)" strokeWidth={0} />
+      <ellipse cx={0} cy={-7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <ellipse cx={0} cy={7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <circle r={1.6} fill="var(--art-vermilion)" strokeWidth={0} />
+    </>
+  );
+}
