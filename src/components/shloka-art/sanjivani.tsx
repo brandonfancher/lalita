@@ -13,10 +13,8 @@
  * the registry, next to this artwork's entry.
  */
 
-import { Ash, AshDefs, BeeString, FlowerArrow, OpenLotus, artIds, glint, partProps, polar, round } from "./primitives";
+import { Ash, AshDefs, BeeString, FlowerArrow, OpenLotus, Summit, artIds, glint, partProps, polar, round, summit } from "./primitives";
 import type { ArtProps } from "./types";
-
-type Pt = { x: number; y: number };
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
@@ -24,22 +22,6 @@ const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
 const FACE = { x: 372, y: 150 };
 const SUMMIT = { foot: 64, rise: 74 };
-/** A summit (kūṭa) of the mantra: `n` syllables up the flanks of a peak, the last at its top. */
-function summit(at: Pt, n: number, foot: number, rise: number) {
-  const top = { x: at.x, y: at.y - rise };
-  const others = n - 1;
-  const left = Math.ceil(others / 2);
-  const flank = (side: number, count: number) =>
-    Array.from({ length: count }, (_, i) => {
-      const s = count === 1 ? 0.45 : 0.14 + (0.56 * i) / (count - 1);
-      return { x: round(at.x + side * foot * (1 - s)), y: round(at.y - rise * s) };
-    });
-  return {
-    path: `M ${at.x - foot} ${at.y} L ${top.x} ${top.y} L ${at.x + foot} ${at.y}`,
-    lights: [...flank(-1, left), ...flank(1, others - left).reverse()],
-    top,
-  };
-}
 const SPEECH = summit({ x: FACE.x, y: FACE.y - 46 }, 5, SUMMIT.foot, SUMMIT.rise);
 
 /* ── The ash, and the herb that grows out of it ────────────────────────── */
@@ -143,26 +125,7 @@ export function Sanjivani({ idPrefix = "sa34", active = null }: ArtProps) {
         <g transform={`translate(${FACE.x} ${FACE.y}) scale(1.45)`}>
           <OpenLotus />
         </g>
-        <path d={SPEECH.path} stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.6} strokeDasharray="1.5 3" strokeLinecap="round" strokeLinejoin="round" />
-        {SPEECH.lights.map((l, i) => (
-          <g key={i} className={TWINKLE[i % 3]}>
-            <circle cx={l.x} cy={l.y} r={14} fill={url("syllable")} />
-            <circle cx={l.x} cy={l.y} r={4.2} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.8} />
-          </g>
-        ))}
-        <circle className="m-breathe" cx={SPEECH.top.x} cy={SPEECH.top.y} r={30} fill={url("syllable")} />
-        <circle cx={SPEECH.top.x} cy={SPEECH.top.y} r={13} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1.2} />
-        <text
-          x={SPEECH.top.x}
-          y={SPEECH.top.y + 1}
-          fontSize={13}
-          textAnchor="middle"
-          dominantBaseline="central"
-          fill="var(--art-carve)"
-          style={{ fontFamily: "var(--font-tiro), serif" }}
-        >
-          ह्रीं
-        </text>
+        <Summit s={SPEECH} glow={url("syllable")} />
       </g>
 
       {/* Her sidelong look, falling from the lotus onto the ash */}

@@ -2342,3 +2342,53 @@ export function Lamp({ k, seer = false }: { k: number; seer?: boolean }) {
     </>
   );
 }
+
+/* ── A cluster of the mantra (kūṭa) ────────────────────────────────────── */
+
+/** A summit (kūṭa) of the mantra: `n` syllables up the flanks of a peak, the last at its top. */
+export function summit(at: Pt, n: number, foot: number, rise: number) {
+  const top = { x: at.x, y: at.y - rise };
+  const others = n - 1;
+  const left = Math.ceil(others / 2);
+  const flank = (side: number, count: number) =>
+    Array.from({ length: count }, (_, i) => {
+      const s = count === 1 ? 0.45 : 0.14 + (0.56 * i) / (count - 1);
+      return { x: round(at.x + side * foot * (1 - s)), y: round(at.y - rise * s) };
+    });
+  return {
+    path: `M ${at.x - foot} ${at.y} L ${top.x} ${top.y} L ${at.x + foot} ${at.y}`,
+    lights: [...flank(-1, left), ...flank(1, others - left).reverse()],
+    top,
+  };
+}
+export type SummitShape = ReturnType<typeof summit>;
+
+const SUMMIT_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** A cluster as its peak: the syllables as lights on the flanks, and ह्रीं, which closes every cluster, on a gold disc at the top. */
+export function Summit({ s, glow }: { s: SummitShape; glow: string }) {
+  return (
+    <>
+      <path d={s.path} stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.6} strokeDasharray="1.5 3" strokeLinecap="round" strokeLinejoin="round" />
+      {s.lights.map((l, i) => (
+        <g key={i} className={SUMMIT_TWINKLE[i % 3]}>
+          <circle cx={l.x} cy={l.y} r={14} fill={glow} />
+          <circle cx={l.x} cy={l.y} r={4.2} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.8} />
+        </g>
+      ))}
+      <circle className="m-breathe" cx={s.top.x} cy={s.top.y} r={30} fill={glow} />
+      <circle cx={s.top.x} cy={s.top.y} r={13} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1.2} />
+      <text
+        x={s.top.x}
+        y={s.top.y + 1}
+        fontSize={13}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fill="var(--art-carve)"
+        style={{ fontFamily: "var(--font-tiro), serif" }}
+      >
+        ह्रीं
+      </text>
+    </>
+  );
+}
