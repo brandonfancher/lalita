@@ -688,6 +688,31 @@ export function rainGroups({ x, y, w, h, count }: { x: number; y: number; w: num
   return [0, 1, 2].map((g) => lines.filter((_, k) => k % 3 === g).join(" "));
 }
 
+/* ── Haṃsas in flight ───────────────────────────────────────────────────── */
+
+const GOOSE_BODY = "M -5.5 0 C -4 -2.6 3 -2.8 5.5 -0.8 L 9 -2 L 8 1.2 C 4 2.6 -3 2.6 -5.5 0 Z";
+const GOOSE_NECK = "M -4.5 -0.6 Q -8.5 -1.8 -11 -1.6";
+const GOOSE_BEAK = "M -13.2 -2.1 L -16 -1.4 L -13.2 -0.9 Z";
+const WING_UP = "M -1.5 -1.6 C 0 -7 3 -11 7.5 -12.5 C 6.2 -8.4 4.6 -4.4 3 -1.4 Z";
+const WING_UP_FAR = "M 0.5 -1.8 C 1.5 -5.5 3.4 -8.4 6 -10 C 5.6 -6.8 4.6 -4 3.6 -1.8 Z";
+const WING_DOWN = "M -1.5 0.8 C 0 5.4 3 8.6 7 9.6 C 5.8 6.4 4.4 3.4 3 0.8 Z";
+const WING_DOWN_FAR = "M -2 -1.4 C -0.6 -4.2 1.2 -6 3.4 -7 C 3.4 -4.8 3 -3 2.4 -1.6 Z";
+
+/** A wild goose in flight, about 25 long, heading left with its beak at (−16, −1.4); `up` raises the wings. */
+export function Goose({ up }: { up: boolean }) {
+  return (
+    <>
+      <path d={up ? WING_UP_FAR : WING_DOWN_FAR} fill="var(--gold-soft)" />
+      <path d={GOOSE_BODY} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.5} strokeLinejoin="round" />
+      <path d={GOOSE_NECK} stroke="var(--art-moon)" strokeWidth={1.5} strokeLinecap="round" />
+      <path d={GOOSE_NECK} stroke="var(--gold)" strokeWidth={0.35} strokeOpacity={0.8} />
+      <circle cx={-12} cy={-1.6} r={1.6} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={GOOSE_BEAK} fill="var(--art-saffron)" />
+      <path d={up ? WING_UP : WING_DOWN} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.5} strokeLinejoin="round" />
+    </>
+  );
+}
+
 /* ── Rain cloud (megha) ────────────────────────────────────────────────── */
 
 export type Lobe = { x: number; y: number; r: number };
