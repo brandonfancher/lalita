@@ -36,6 +36,7 @@ import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
 import { OtherEndOfTheRope } from "./other-end-of-the-rope";
 import { RiversToTheSea } from "./rivers-to-the-sea";
+import { HillFort } from "./hill-fort";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -2170,6 +2171,77 @@ export const ARTWORK: Record<string, Artwork> = {
           Beside the cloud is a flower drawn only in dots, on no stalk: the sky-flower. Patañjali&apos;s commentators
           give it as their example of a <i>vikalpa</i>, a word with nothing behind it, which is exactly what she is
           said not to be.
+        </>
+      ),
+    },
+  },
+  "050": {
+    Art: HillFort,
+    intro: (Spot) => (
+      <>
+        Durgā means a stronghold, and of all strongholds the law books put first a fort on a hill, the{" "}
+        <i>giri-durga</i> (Manu 7.70–71). So this is one: <Spot part="walls">walls</Spot> on a sheer{" "}
+        <Spot part="crag">crag</Spot>, with her inside.
+      </>
+    ),
+    entries: [
+      {
+        nama: 184,
+        part: "scales",
+        depicts: "In the crown a balance hangs dead level with both pans empty, because nothing can go in the other pan.",
+      },
+      {
+        nama: 185,
+        part: "garland",
+        depicts:
+          "A garland of blue lotuses hangs over the gate, dark among all that gold. The Saundaryalaharī likens her hair to blue lotuses, and says the flowers of Indra's garden move into it for its scent; they are coming down into it from the bough at the top left.",
+      },
+      {
+        nama: 186,
+        part: "walls",
+        depicts: "Her walls stand whole, every course laid and every merlon in its place, with nothing worn away.",
+      },
+      {
+        nama: 187,
+        part: "gate",
+        depicts:
+          "The gate stands open, its spiked doors folded back and its bar laid on the ground. No danger comes that it would have to be shut against.",
+      },
+      {
+        nama: 188,
+        part: "light",
+        depicts: "Her light is inside the gate, at the top of the climb and at the heart of the fort, and nowhere nearer.",
+      },
+      {
+        nama: 189,
+        part: "path",
+        depicts:
+          "The way up goes back and forth across the cliff, broad and worn at the foot and narrowing as it climbs, because few walk it to the end.",
+      },
+      {
+        nama: 190,
+        part: "crag",
+        depicts: "The fort stands on a crag with sheer, fissured sides: a place no one could take by storm.",
+      },
+      {
+        nama: 191,
+        part: "spear",
+        depicts:
+          "Her spear, flung from the gate, has struck into a dark cleft in the rock, and the dark is breaking away from it in pieces and falling.",
+      },
+      {
+        nama: 192,
+        part: "spring",
+        depicts:
+          "From the place it struck a spring gushes out and falls to a pool at the foot, so that where the dark was there is water.",
+      },
+    ],
+    detail: {
+      part: "lion",
+      body: (
+        <>
+          Beside the gate a small gold lion has sat down. Under this one name she is the Durgā of the Devī
+          Māhātmya, who rides a lion into battle, and here, with nothing left to fight, it waits at her door.
         </>
       ),
     },

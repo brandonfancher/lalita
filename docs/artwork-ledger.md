@@ -33,7 +33,7 @@ second time it is needed.
 |---|---|---|---|
 | Her presence (the bindu) | Small `--art-core` disc, a thin ring, a soft radial glow of `--art-core`. Set it against saffron, not `--art-core`, or it vanishes by day | Inline | Shloka 1 |
 | Tongue of flame | `tongue(h, w, lean)`: an S-curved tongue, tip leaning | `primitives.tsx` | Shloka 1 |
-| Lion (siṃha) | `Lion`: seated, gold, flame-tongue mane; paired lions face inward toward the centre | `primitives.tsx` | Shloka 1 |
+| Lion (siṃha) | `Lion`: seated, gold, flame-tongue mane; paired lions face inward toward the centre. Shloka 50 seats one alone and small at a gate, facing it | `primitives.tsx` | Shloka 1 |
 | Rising sparks | `Embers`, filled with `--art-ember` | `primitives.tsx` | Shloka 1 |
 | The syllable śrī | श्री in Tiro Devanagari, `--sindura` | Inline | Shloka 1 |
 | Rays of radiance | 108 gold hairlines from the source, alternating long and short, fading outward | `radiance` in `primitives.tsx` (promoted at Shloka 12, used by Shlokas 8, 9, 12 and 13); Shloka 1's, built differently, stays inline | Shloka 1 |
@@ -270,6 +270,15 @@ second time it is needed.
 | Offering lamps on leaf boats (dīpa-dāna) | A small `--leaf` hull edged in gold carrying an `--art-vermilion` flower and a `Lamp`, a saffron glint on the water under it (`m-twinkle`), set afloat in a line that grows as it comes toward us | Inline (`rivers-to-the-sea.tsx`, using `Lamp`) | Shloka 49 |
 | Cucumber vine (urvāruka) | A `--leaf` runner with angular five-lobed, heart-based leaves on long stalks, gold-edged with `--gold-soft` veins, coiled tendrils, an `--art-turmeric` flower and a young green fruit. The ripe one is long (44 by 13), a gradient from `--art-turmeric` to `--art-saffron` with fine `--art-carve` lengthwise lines, lying on the bank below an empty stalk. Cross-ticks on it read as a corn cob | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
 | The sky-flower (khapuṣpa) | Five petals and a centre drawn only in dots (gold, a `--sindura` centre), with no stalk, beside a cloud | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
+| A hill fort (giri-durga) | Seen from the front on the rim of its rock: a curtain wall of `--art-stone` under an `--art-turmeric`-to-`--art-saffron` wash, laid in ashlar courses whose joints are broken by the course above (`--gold-soft`), edged in `--gold` with a gold coping. Bud-shaped merlons (kaṅgūra) along every top, each with an `--art-hair` slit. A round bastion at each end, wider at the foot, its courses drawn as arcs and shaded at both flanks, carrying a domed kiosk (chatrī) on four gold posts. Two gate towers and a taller gatehouse with a pointed arch in a double gold frame, three vermilion bosses over it | Inline (`hill-fort.tsx`) | Shloka 50 |
+| An open gate | Two `--art-crimson` door leaves folded flat back against the wall either side of the opening, so their arched heads turn outward, with gold straps and rows of `--gold-soft` spikes (the gate-spikes set against elephants); two stone threshold steps, and the bar laid on the ground beside it | Inline (`hill-fort.tsx`) | Shloka 50 |
+| A crag (sheer scarp over a talus slope) | A sheer upper face, its sides stepped out and in like buttresses, broken by jagged `--art-hair` cracks each with a narrowing facet of shade along its right and a few broken `--gold-soft` bedding lines; below it a talus flaring to the ground with level bands and lit stones. Evenly spaced columns read as a colonnade or organ pipes, and a flat trapezoid as a table | Inline (`hill-fort.tsx`) | Shloka 50 |
+| A path up a cliff (durgama) | Switchbacks across the talus, an `--art-carve` tread between `--gold` edges with `--gold-soft` step ticks and a faint shadow, narrowing from 6.4 to 4 as it climbs; then a stair cut slantwise up the sheer face, treads across a carve band. Eight even legs across the whole face read as a zigzag ribbon | Inline (`hill-fort.tsx`) | Shloka 50 |
+| Blue lotus (nīlotpala, indīvara) | Face on: eight narrow pointed `--art-hair` petals edged in `--gold` over eight more edged in `--gold-soft`, a gold heart. Strung on a gold cord as a garland, between white flowers | Inline (`hill-fort.tsx`) | Shloka 50 |
+| Night jasmine (pārijāta) | Six `--art-ivory` petals edged in gold, turned like a pinwheel, round an `--art-saffron` tube ringed in vermilion. Grows on a bough of Indra's garden: an `--art-hair` stem with a gold line, twigs, and pointed `--leaf` leaves with a gold-soft midrib; the fallen flowers drift down from it (`m-sway`) | Inline (`hill-fort.tsx`) | Shloka 50 |
+| Her spear struck home | Shloka 24's `Spear` at 2.2, its blade buried in a dark cleft and its shaft fading back toward her. The cleft is a jagged `--art-hair` gash with cracks running off it and a faint `--art-core` glow where it was struck; the dark breaks off it as angular `--art-hair` shards with a `--gold-soft` edge, falling (`m-sink`) | Inline (`hill-fort.tsx`, using `Spear`) | Shloka 50 |
+| A spring and its pool | Three jets from the rock, each a `taper` widening as it falls, `--art-moon` with a gold edge and an ivory line (`m-shimmer`), ivory spray; a pool with an uneven rim, `--art-moon` shading to `--art-hair` at its edge, level gold-soft lines, ripple rings where the jets land, lit stones round it, and a runnel running on down the slope. One broad sheet read as a tap, and the wave pattern on falling water as scales | Inline (`hill-fort.tsx`) | Shloka 50 |
+| Loose stones | Ellipses of `--art-stone` under a faint saffron wash, gold-edged, with a `--gold-soft` arc lit on top. Plain stone-filled stones read as holes by lamplight | `Stones` inline (`hill-fort.tsx`) | Shloka 50 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1895,6 +1904,48 @@ One entry per finished artwork, in the order they were made.
   the miniature painters' water. The peak's fill first ended in a hard block at the right; it fades
   out below the card's top now. In the chant miniature the two rivers, the peak and her light on
   the sea carry it.
+
+### Shloka 50: The end of the negations, and Durgā
+
+- **Component:** `hill-fort.tsx` (defs prefix `sa50`)
+- **Composition:** a hill fort, the stronghold Manu ranks first of six (7.70–71), drawn whole on
+  its rock. The walls run across the picture just below the card, a round bastion with a kiosk at
+  each end, and her light is inside the open gate at their centre, its rays rising only above the
+  walls. Under them a sheer, cracked scarp stands on a talus slope; the way up crosses the slope in
+  switchbacks that narrow as they climb and then takes a stair cut slantwise up the face to the
+  gate. To the right her spear has struck into a dark cleft in the scarp, the dark breaking away
+  in shards, and three jets of a spring burst from the place it struck into a pool at the foot of
+  the face, running on down the slope. Over the gate hangs a garland of blue lotuses, and the
+  night jasmine of Indra's garden comes down into it from a bough in the crown (Saundaryalaharī
+  43). Beside the fall of flowers a balance hangs level with both pans empty. The first artwork to
+  set her in a building, and the first since Shloka 22 to draw walls.
+- **Name → part:**
+  - Nistulā → `scales`: the balance (`Balance` at 0.4, level, with both insides drawn and no sway)
+  - Nīlacikurā → `garland`: the blue-lotus garland and its ends, the bough and its falling flowers
+  - Nirapāyā → `walls`: curtain, bastions with their kiosks, towers and gatehouse
+  - Niratyayā → `gate`: the folded doors, the threshold and the bar laid down
+  - Durlabhā → `light`: her glow, the doorway, the rays above the walls and the light on the
+    threshold
+  - Durgamā → `path`: the switchbacks and the stair
+  - Durgā → `crag`: scarp, talus, cracks and stones
+  - Duḥkhahantrī → `spear`: the spear, the cleft and the falling shards
+  - Sukhapradā → `spring`: the jets, the pool and the runnel
+  - Intro, *walls* → `walls`; *crag* → `crag`
+  - Detail → `lion`: the Durgā of the Devī Māhātmya rides a lion; Shloka 1's `Lion` at 0.36,
+    mirrored, has sat down beside her gate
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow and rays, the struck place, the jets and spray), `m-breathe`
+  (her light in the doorway), `m-sway` (the falling flowers), `m-sink` (the shards), and the
+  spear's own `m-flicker` and `m-lick`.
+- **Notes:** This title stays on one line and reaches x ≈ 240 (292 at 1100px) at y ≈ 74–141, so
+  the bough stays above y ≈ 70 and the flowers fall right of x ≈ 300. The balance was promoted into
+  `primitives.tsx` (`balance`, `Balance`, `BALANCE_PAN`, `balanceSwing`), and Shloka 9 renders
+  byte-for-byte as before. The first crag was a flat trapezoid with eight even switchbacks across
+  it, and read as a table with a zigzag ribbon on it; then its face was even columns, which read as
+  organ pipes. It is now a stepped scarp of cracks and facets over a talus, the switchbacks on the
+  talus only. The spring was first one sheet under the wave pattern into an oval pool, and read as
+  a tap over a sink. The falling flowers first crossed the end of the title. In the chant miniature
+  the walls and the lit gate carry it.
 
 ## Open questions
 
