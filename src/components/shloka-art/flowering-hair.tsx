@@ -9,7 +9,7 @@
  * next to this artwork's entry.
  */
 
-import { artIds, campakaPetal, cubicAt, partProps, round, Ruby, RubyCrown, Star } from "./primitives";
+import { PlaitLobes, PlaitTip, artIds, campakaPetal, downAlong, partProps, plait, round, Ruby, RubyCrown, Star } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -45,61 +45,18 @@ const PLAIT: [Pt, Pt, Pt, Pt] = [
   { x: 300, y: 712 },
 ];
 
-const samples = (() => {
-  const out: { p: Pt; s: number }[] = [];
-  let s = 0;
-  let prev = PLAIT[0];
-  for (let i = 0; i <= 300; i++) {
-    const p = cubicAt(...PLAIT, i / 300);
-    s += Math.hypot(p.x - prev.x, p.y - prev.y);
-    out.push({ p, s });
-    prev = p;
-  }
-  return out;
-})();
-const PLAIT_LENGTH = samples[samples.length - 1].s;
-
-/** The point `s` units down the plait, its unit tangent (pointing down the plait), and its unit normal. */
-function alongPlait(s: number) {
-  const found = samples.findIndex((e) => e.s >= s);
-  const i = Math.max(1, found < 0 ? samples.length - 1 : found);
-  const a = samples[i - 1].p;
-  const b = samples[i].p;
-  const len = Math.hypot(b.x - a.x, b.y - a.y);
-  const t = { x: (b.x - a.x) / len, y: (b.y - a.y) / len };
-  return { p: b, t, n: { x: -t.y, y: t.x } };
-}
-
-const plaitWidth = (s: number) => 48 - 18 * (s / PLAIT_LENGTH);
-/** Rotation (degrees) that turns a local "down" (+y) along the tangent t. */
-const downAlong = (t: Pt) => round((Math.atan2(-t.x, t.y) * 180) / Math.PI);
-
 type Species = "campaka" | "asoka" | "punnaga" | "saugandhika";
 const SPECIES: Species[] = ["campaka", "asoka", "punnaga", "saugandhika"];
-const LOBE_STEP = 15;
 
 /**
  * The plait: lobes of hair laid alternately from each side, each with a
  * flower worked into it, the four kinds in the order the name gives them.
  */
-const lobes = Array.from({ length: Math.floor((PLAIT_LENGTH - 12) / LOBE_STEP) + 1 }, (_, i) => {
-  const s = 6 + i * LOBE_STEP;
-  const { p, n, t } = alongPlait(s);
-  const side = i % 2 ? 1 : -1;
-  const w = plaitWidth(s);
-  const c = { x: round(p.x + n.x * side * w * 0.2), y: round(p.y + n.y * side * w * 0.2) };
-  const len = round(w * 0.5);
-  return {
-    lobe: `M 0 ${-len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${-len} Z`,
-    sheen: `M ${round(len * 0.12)} ${round(-len * 0.72)} Q ${round(len * 0.46)} 0 ${round(len * 0.12)} ${round(len * 0.72)}`,
-    at: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) - side * 36)})`,
-    flower: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) + side * 20)}) scale(${round(1.06 - 0.3 * (s / PLAIT_LENGTH))})`,
-    species: SPECIES[i % 4],
-  };
-});
-
-const tip = alongPlait(PLAIT_LENGTH);
-const TIP_STRANDS = [-6, -4, -2, 0, 2, 4, 6];
+const HAIR = plait(PLAIT, (s, length) => 48 - 18 * (s / length));
+const flowers = HAIR.lobes.map((l, i) => ({
+  transform: `translate(${l.c.x} ${l.c.y}) rotate(${round(downAlong(l.t) + l.side * 20)}) scale(${round(1.06 - 0.3 * (l.s / HAIR.length))})`,
+  species: SPECIES[i % 4],
+}));
 
 const rosette = Array.from({ length: 12 }, (_, k) => {
   const deg = -90 + k * 30;
@@ -254,33 +211,16 @@ export function FloweringHair({ idPrefix = "sa4", active = null }: ArtProps) {
       {/* Her hair, gathered from under the crown into a rosette and a plait of the four flowers */}
       <g {...part("flower-plait")}>
         <g className="m-sway">
-          <g fill="var(--art-hair)">
-            {lobes.map((l, i) => (
-              <path key={i} d={l.lobe} transform={l.at} />
-            ))}
-          </g>
-          <g stroke="var(--gold-soft)" strokeWidth={0.7} strokeOpacity={0.6} strokeLinecap="round">
-            {lobes.map((l, i) => (
-              <path key={i} d={l.sheen} transform={l.at} />
-            ))}
-          </g>
-          {lobes.map((l, i) => {
-            const Flower = FLOWER[l.species];
+          <PlaitLobes p={HAIR} />
+          {flowers.map((f, i) => {
+            const Flower = FLOWER[f.species];
             return (
-              <g key={i} transform={l.flower}>
+              <g key={i} transform={f.transform}>
                 <Flower />
               </g>
             );
           })}
-          <g transform={`translate(${round(tip.p.x)} ${round(tip.p.y)}) rotate(${downAlong(tip.t)})`}>
-            <g stroke="var(--art-hair)" strokeWidth={1.1} strokeLinecap="round">
-              {TIP_STRANDS.map((x) => (
-                <path key={x} d={`M ${x} 2 Q ${round(x * 1.3)} 16 ${round(x * 1.7 + 3)} ${round(30 - Math.abs(x) * 0.8)}`} />
-              ))}
-            </g>
-            <rect x={-10} y={-3} width={20} height={7} rx={1.5} fill="var(--gold)" />
-            <path d="M -10 0.5 H 10" stroke="var(--art-carve)" strokeWidth={0.6} />
-          </g>
+          <PlaitTip p={HAIR} />
         </g>
         <circle cx={KNOT.x} cy={KNOT.y} r={ROSETTE_R + 4} fill="var(--art-hair)" />
         {rosette.map((f, i) => {

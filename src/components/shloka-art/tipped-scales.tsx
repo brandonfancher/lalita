@@ -10,78 +10,20 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import type { CSSProperties } from "react";
-
-import { artIds, cubicAt, partProps, polar, radiance, round } from "./primitives";
+import { artIds, Balance, BALANCE_PAN, balance, balanceSwing, cubicAt, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
 type Cubic = [Pt, Pt, Pt, Pt];
 
-const CX = 320;
-const PIVOT = { x: CX, y: 150 };
-const HALF = 150;
-/** How far the beam has tipped toward her side, in degrees. */
+/** How far the beam has tipped toward her side, in degrees; each pan hangs 352 below its ring. */
 const TILT = 10;
-const T = (TILT * Math.PI) / 180;
-
-const beamEnd = (side: -1 | 1): Pt => ({
-  x: round(CX + side * HALF * Math.cos(T)),
-  y: round(PIVOT.y - side * HALF * Math.sin(T)),
-});
-const LEFT_END = beamEnd(-1);
-const RIGHT_END = beamEnd(1);
-
-/** Each pan hangs from a ring under its end of the beam, and swings from the hook above it. */
-const RING_DROP = 11;
-const CORD = 352;
-const PAN = { rx: 60, ry: 12, depth: 24 };
-const LEFT_PAN = { x: LEFT_END.x, y: round(LEFT_END.y + RING_DROP + CORD) };
-const RIGHT_PAN = { x: RIGHT_END.x, y: round(RIGHT_END.y + RING_DROP + CORD) };
-
-const swingFrom = (end: Pt): CSSProperties => ({ transformBox: "view-box", transformOrigin: `${end.x}px ${end.y + 4}px` });
+const SCALES = balance(TILT, 352);
+const [{ end: LEFT_END, at: LEFT_PAN }, { end: RIGHT_END, at: RIGHT_PAN }] = SCALES.pans;
+const PAN = BALANCE_PAN;
+const swingFrom = balanceSwing;
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
-
-/* ── The balance ────────────────────────────────────────────────────────── */
-
-function panShapes(end: Pt, { x, y }: Pt) {
-  const { rx, ry, depth } = PAN;
-  const ringY = end.y + RING_DROP;
-  const top = round(ringY + 4);
-  return {
-    hook: `M ${end.x} ${end.y + 3} V ${round(ringY - 4)}`,
-    ring: { x: end.x, y: ringY },
-    cords: `M ${x} ${top} L ${x - rx + 1} ${y} M ${x} ${top} L ${x + rx - 1} ${y}`,
-    backCord: `M ${x} ${top} L ${x} ${y - ry}`,
-    bowl: `M ${x - rx} ${y} A ${rx} ${ry} 0 0 0 ${x + rx} ${y} C ${x + rx - 2} ${y + 16} ${round(x + 30)} ${y + depth} ${x} ${y + depth} C ${round(x - 30)} ${y + depth} ${x - rx + 2} ${y + 16} ${x - rx} ${y} Z`,
-    band: `M ${x - rx + 4} ${y + 6} A ${rx - 4} ${ry} 0 0 0 ${x + rx - 4} ${y + 6}`,
-    sheen: `M ${x - rx + 10} ${y + 8} Q ${x - rx + 16} ${y + 18} ${x - 26} ${y + 21}`,
-    beads: Array.from({ length: 17 }, (_, k) => {
-      const phi = ((10 + k * 10) * Math.PI) / 180;
-      return { x: round(x + rx * Math.cos(phi)), y: round(y + ry * Math.sin(phi)) };
-    }),
-    finial: { x, y: y + depth + 3 },
-  };
-}
-
-const PANS = [
-  /* Her pan is filled with light, so its inside is not drawn */
-  { end: LEFT_END, at: LEFT_PAN, shapes: panShapes(LEFT_END, LEFT_PAN), sway: "m-sway", inside: false },
-  { end: RIGHT_END, at: RIGHT_PAN, shapes: panShapes(RIGHT_END, RIGHT_PAN), sway: "m-sway m-late", inside: true },
-];
-
-/** The beam, drawn level about the pivot and then turned: thickest at the middle, tapering to bud finials. */
-const BEAM = "M -144 -3.4 L -16 -6.2 Q 0 -8.4 16 -6.2 L 144 -3.4 L 144 3.4 L 16 6.2 Q 0 8.4 -16 6.2 L -144 3.4 Z";
-const BEAM_BANDS = [-100, -54, 54, 100];
-const BUD = "M 0 -5.6 C 6 -5.6 12 -3.6 18 0 C 12 3.6 6 5.6 0 5.6 Z";
-
-/** The tongue of the balance stands at right angles to the beam, so it leans with it toward the heavier pan. */
-const TONGUE_LEN = 84;
-
-/** The fork the tongue swings in, hung from the chain; level, the tongue would sit under the red mark at its top. */
-const FORK = { top: 56, half: 18, bar: 5 };
-const CHAIN_LINKS = Array.from({ length: 4 }, (_, k) => ({ y: 3 + k * 9.6, flat: k % 2 === 1 }));
 
 /* ── Her light, in the sunk pan ─────────────────────────────────────────── */
 
@@ -312,73 +254,8 @@ export function TippedScales({ idPrefix = "sa9", active = null }: ArtProps) {
 
       {/* The balance itself: chain, fork and tongue, the tipped beam, and the two pans */}
       <g {...part("scales")}>
-        <g stroke="var(--gold)" strokeWidth={2}>
-          {CHAIN_LINKS.map((l, k) =>
-            l.flat ? (
-              <line key={k} x1={CX} y1={l.y - 5} x2={CX} y2={l.y + 5} />
-            ) : (
-              <ellipse key={k} cx={CX} cy={l.y} rx={3.2} ry={6} />
-            ),
-          )}
-        </g>
-        <circle cx={CX} cy={37} r={5.6} stroke="var(--gold)" strokeWidth={2.2} />
-        <g fill="var(--gold)">
-          <path d={`M ${CX} 42 C ${CX + 8} 45 ${CX + 9} 51 ${CX + 6} ${FORK.top} L ${CX - 6} ${FORK.top} C ${CX - 9} 51 ${CX - 8} 45 ${CX} 42 Z`} />
-          <rect x={CX - FORK.half - 8} y={FORK.top} width={2 * FORK.half + 16} height={7} rx={3} />
-          <circle cx={CX - FORK.half - 8} cy={FORK.top + 3.5} r={4} />
-          <circle cx={CX + FORK.half + 8} cy={FORK.top + 3.5} r={4} />
-        </g>
-        <path d={`M ${CX - 3.6} ${FORK.top + 7} L ${CX + 3.6} ${FORK.top + 7} L ${CX} ${FORK.top + 15} Z`} fill="var(--art-vermilion)" />
-
-        <g transform={`rotate(${-TILT} ${PIVOT.x} ${PIVOT.y})`}>
-          <path
-            d={`M ${CX - 2.8} ${PIVOT.y} L ${CX - 0.9} ${PIVOT.y - TONGUE_LEN + 6} L ${CX} ${PIVOT.y - TONGUE_LEN} L ${CX + 0.9} ${PIVOT.y - TONGUE_LEN + 6} L ${CX + 2.8} ${PIVOT.y} Z`}
-            fill="var(--gold)"
-            stroke="var(--art-carve)"
-            strokeWidth={0.4}
-          />
-          <g transform={`translate(${PIVOT.x} ${PIVOT.y})`}>
-            <path d={BEAM} fill="var(--gold)" />
-            <path d="M -138 0 L 138 0" stroke="var(--art-carve)" strokeWidth={0.7} strokeOpacity={0.8} />
-            <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.4}>
-              {BEAM_BANDS.map((x) => (
-                <rect key={x} x={x - 3} y={-7} width={6} height={14} rx={2} />
-              ))}
-            </g>
-            <path d={BUD} transform="translate(142 0)" fill="var(--gold)" />
-            <path d={BUD} transform="translate(-142 0) scale(-1 1)" fill="var(--gold)" />
-            <circle r={12.5} fill="var(--gold)" />
-            <circle r={9} stroke="var(--art-carve)" strokeWidth={0.8} />
-          </g>
-        </g>
-        <g fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5}>
-          <rect x={CX - FORK.half - FORK.bar} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
-          <rect x={CX + FORK.half} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
-        </g>
-        <circle cx={PIVOT.x} cy={PIVOT.y} r={4} fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.8} />
-
-        {PANS.map(({ end, at, shapes: s, sway, inside }, i) => (
-          <g key={i}>
-            <path d={s.hook} stroke="var(--gold)" strokeWidth={2} strokeLinecap="round" />
-            <g className={sway} style={swingFrom(end)}>
-              <circle cx={s.ring.x} cy={s.ring.y} r={4} stroke="var(--gold)" strokeWidth={1.6} />
-              <path d={s.backCord} stroke="var(--gold-soft)" strokeWidth={0.9} strokeOpacity={0.7} />
-              <path d={s.cords} stroke="var(--gold)" strokeWidth={1.3} />
-              {inside && <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} fill="var(--gold-soft)" fillOpacity={0.55} />}
-              <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} stroke="var(--gold)" strokeWidth={1.6} />
-              <path d={s.bowl} fill="var(--gold)" />
-              <path d={s.band} stroke="var(--art-carve)" strokeWidth={0.7} />
-              <path d={s.sheen} stroke="var(--art-core)" strokeWidth={1.4} strokeOpacity={0.6} strokeLinecap="round" />
-              <g fill="var(--gold-soft)">
-                {s.beads.map((b, k) => (
-                  <circle key={k} cx={b.x} cy={b.y} r={1.5} />
-                ))}
-              </g>
-              <circle cx={s.finial.x} cy={s.finial.y} r={3.6} fill="var(--gold)" />
-              <path d={`M ${s.finial.x - 2.4} ${s.finial.y + 2.8} L ${s.finial.x} ${s.finial.y + 10} L ${s.finial.x + 2.4} ${s.finial.y + 2.8} Z`} fill="var(--gold)" />
-            </g>
-          </g>
-        ))}
+        {/* Her pan is filled with light, so its inside is not drawn */}
+        <Balance b={SCALES} sway={["m-sway", "m-sway m-late"]} inside={[false, true]} />
       </g>
 
       {/* The coral on the lifted pan, and the bimba on the ground, too ashamed to climb on */}

@@ -29,11 +29,27 @@ import { BalasArrows } from "./balas-arrows";
 import { GlanceAndASon } from "./glance-and-a-son";
 import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
+import { TheDrawnScreen } from "./the-drawn-screen";
 import { MeruInward } from "./meru-inward";
+import { MiddleOfTheMoon } from "./middle-of-the-moon";
+import { MiddleOfTheSun } from "./middle-of-the-sun";
+import { MountainsDaughter } from "./mountains-daughter";
+import { SaltAndTheCouch } from "./salt-and-the-couch";
+import { WakingAndDream } from "./waking-and-dream";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { GraciousOne } from "./gracious-one";
+import { GreatYantra } from "./great-yantra";
+import { OneInManyPots } from "./one-in-many-pots";
+import { StairOfAttainment } from "./stair-of-attainment";
+import { LetterRosary } from "./letter-rosary";
+import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
 import { NectarIsland } from "./nectar-island";
+import { OceanOfSleep } from "./ocean-of-sleep";
 import { OnHisLap } from "./on-his-lap";
+import { OtherEndOfTheRope } from "./other-end-of-the-rope";
+import { RiversToTheSea } from "./rivers-to-the-sea";
+import { HillFort } from "./hill-fort";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -41,10 +57,17 @@ import { StillWaterSteps } from "./still-water-steps";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
+import { TwoBirds } from "./two-birds";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
 import { WhatItHoldsUp } from "./what-it-holds-up";
+import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
+import { WitnessOfTheDance } from "./witness-of-the-dance";
+import { WorldsInABlink } from "./worlds-in-a-blink";
+import { TheHouseholdLamp } from "./the-household-lamp";
+import { VermilionAndPearl } from "./vermilion-and-pearl";
+import { YoginiTemple } from "./yogini-temple";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -1892,6 +1915,1323 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           This is the Vedāntins&apos; pot and space. The space in a pot seems to be a space of its own, and when the
           pot breaks it seems to be freed. It was the one space all along.
+        </>
+      ),
+    },
+  },
+  "046": {
+    Art: OtherEndOfTheRope,
+    intro: (Spot) => (
+      <>
+        Four names that take something away from her, then two pairs that turn outward, where what she is free of
+        she takes away from others too. <Spot part="light">Her light</Spot> sits on her couch below the card, and
+        nothing in the picture lit it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 152,
+        part: "lamps",
+        depicts:
+          "A line of lamps runs out toward us from her seat, each lit from the one before. Follow them back and the first was lit from her light, which nothing lit.",
+      },
+      {
+        nama: 153,
+        part: "moon",
+        depicts: "In the crown the full moon shines with no mark on it at all, as the moon would look with its dark patch wiped away.",
+      },
+      {
+        nama: 154,
+        part: "crystal",
+        depicts:
+          "On her seat a clear crystal stands with a red hibiscus held up beside it. In the old example the flower makes the crystal look red; here it stays clear.",
+      },
+      {
+        nama: 155,
+        part: "couch",
+        depicts:
+          "She sits on the couch whose legs are four gods and whose plank is a fifth. The leg at the right is Īśvara, the Lord himself, holding up a corner of her seat.",
+      },
+      {
+        nama: 156,
+        part: "undyed",
+        depicts: "Her end of the noose is undyed: the red of the cord never reaches the part of it that is hers.",
+      },
+      {
+        nama: 157,
+        part: "noose",
+        depicts:
+          "The far end, the red loop of Shloka 2's noose, is held by the elephant. The red is wearing off the cord as it runs toward her and drifts away in flecks.",
+      },
+      {
+        nama: 158,
+        part: "bees",
+        depicts:
+          "Bees drink the rut that runs from an elephant's temples. These are leaving it, and none of them turn toward her, because there is nothing in her to drink.",
+      },
+      {
+        nama: 159,
+        part: "elephant",
+        depicts:
+          "The elephant has come close enough to take her cord in its trunk, and the rut on its temple has dried to a faint trace.",
+      },
+    ],
+    detail: {
+      part: "deer",
+      body: (
+        <>
+          The moon&apos;s mark is the deer of Shloka 5, and here it has leapt clear of the moon, at the top right.
+          Kalaṅka, a mark, is a different word from Shloka 44&apos;s kalā, a digit; that moon kept its deer, and this
+          one has none.
+        </>
+      ),
+    },
+  },
+  "047": {
+    Art: TwoBirds,
+    intro: (Spot) => (
+      <>
+        Two names alone, then three pairs, each said once of her and once of what she does for whoever comes
+        near. The verse is the Muṇḍaka Upaniṣad&apos;s two birds on one <Spot part="tree">tree</Spot>: one eats
+        its fruit, sunk, grieving and deluded; the other only looks on, and when the first sees it, its grief
+        goes. The tree grows from the kerb of a <Spot part="tank">temple tank</Spot>, as pippalas do.
+      </>
+    ),
+    entries: [
+      {
+        nama: 160,
+        part: "still-leaves",
+        depicts:
+          "A pippala's leaves hang on long stalks and tremble in the least air, all over the tree. Round her they hang still.",
+      },
+      {
+        nama: 161,
+        part: "light",
+        depicts:
+          "On the bough where the second bird should sit there is only her light: nobody there to say I.",
+      },
+      {
+        nama: 162,
+        part: "mist",
+        depicts: "Mist lies over the lower tree and the water, and stops well below her bough.",
+      },
+      {
+        nama: 163,
+        part: "bird",
+        depicts:
+          "The other bird, low in the mist, has turned its head up to her, and the mist has cleared in a lane between them.",
+      },
+      {
+        nama: 164,
+        part: "figs",
+        depicts: "The figs on her bough are ripe and nobody has eaten them; she calls none of them hers.",
+      },
+      {
+        nama: 165,
+        part: "dropped",
+        depicts:
+          "The fig the other bird was eating has fallen from its beak as it looked up, and is dropping into the water.",
+      },
+      {
+        nama: 166,
+        part: "lotus",
+        depicts:
+          "In the tank a white lotus stands clear of the water, and its leaf beads the water off: the Gītā's image (5.10) for one whom sin does not stick to.",
+      },
+      {
+        nama: 167,
+        part: "shaken",
+        depicts:
+          "The bird shakes dark motes from its wings, and they go out as they fall. The Upaniṣad says that whoever sees her shakes off good and evil.",
+      },
+    ],
+    detail: {
+      part: "seedling",
+      body: (
+        <>
+          In a crack of the kerb a pippala seedling has come up. Nobody plants a pippala: its seeds are sown by
+          birds, which drop the figs they were eating, as the bird in the mist has just done.
+        </>
+      ),
+    },
+  },
+  "048": {
+    Art: WheelStopped,
+    intro: (Spot) => (
+      <>
+        The most symmetrical verse in the hymn: four pairs, each naming a thing she is free of and then the same
+        thing she destroys, so the picture is symmetrical about her light. The <Spot part="sword">sword</Spot> and
+        the <Spot part="wheel">wheel</Spot> come from the Muṇḍaka Upaniṣad (2.2.8): when she is seen, the knot of the heart is split, doubts are cut, and the works
+        that keep the round going are used up.
+      </>
+    ),
+    entries: [
+      {
+        nama: 168,
+        part: "goad",
+        depicts:
+          "Shloka 2 gave her a goad in the shape of anger. Here it stands point down, plain gold, nothing in it hot.",
+      },
+      {
+        nama: 169,
+        part: "steam",
+        depicts:
+          "Its point rests in a basin of water, and the last red is leaving it as steam, cooled rather than answered.",
+      },
+      {
+        nama: 170,
+        part: "pot",
+        depicts: "At the right a pot is full to the brim and runs over: it wants no more than it holds.",
+      },
+      {
+        nama: 171,
+        part: "box",
+        depicts:
+          "The water running from it has burst the lock of a strongbox at its foot and is carrying the coins away.",
+      },
+      {
+        nama: 172,
+        part: "sword",
+        depicts: "From just below her hangs the sword of knowledge, straight and double-edged, point down.",
+      },
+      {
+        nama: 173,
+        part: "knot",
+        depicts:
+          "The knot of the heart lies cut on its blade, and the two halves are falling away. The Gītā tells Arjuna to cut doubt with this sword rather than answer it.",
+      },
+      {
+        nama: 174,
+        part: "light",
+        depicts: "Her light is at the hub of the wheel, the one point of a wheel that never goes round.",
+      },
+      {
+        nama: 175,
+        part: "wheel",
+        depicts:
+          "Where the sword passed, the rim of the wheel of becoming is split. Two spokes have dropped out onto the floor, and the round can't turn again.",
+      },
+    ],
+    detail: {
+      part: "strands",
+      body: (
+        <>
+          The rim is bound in three bands, ivory, red and dark: the three strands, the guṇas, that Shloka 44 drew
+          as a rope coming undone. The Śvetāśvatara Upaniṣad calls the wheel of becoming threefold for the same
+          reason.
+        </>
+      ),
+    },
+  },
+  "049": {
+    Art: RiversToTheSea,
+    intro: (Spot) => (
+      <>
+        The Kaṭha Upaniṣad, in the passage this verse stands on, says that rain falling on a{" "}
+        <Spot part="peak">peak</Spot> runs off it every way, as a mind that sees division runs after things, and
+        that water poured into water becomes just that water. So one rain runs off one peak as two{" "}
+        <Spot part="rivers">rivers</Spot>, a white one and a dark one, and they come down either side of the
+        picture to one sea.
+      </>
+    ),
+    entries: [
+      {
+        nama: 176,
+        part: "calm",
+        depicts:
+          "Round her reflection the far sea lies without a ripple. Yoga calls the mind's movements waves, and she is where they have stopped.",
+      },
+      {
+        nama: 177,
+        part: "light",
+        depicts: "Her light hangs low over the sea, and the rivers rushing down on either side stop short of it.",
+      },
+      {
+        nama: 178,
+        part: "sea",
+        depicts: "The sea is one water, its ripples running unbroken from side to side, with no seam where the rivers came in.",
+      },
+      {
+        nama: 179,
+        part: "mouths",
+        depicts:
+          "Each river carries its name, Gaṅgā on the white and Yamunā on the dark, until it nears the sea. There the names fade out and the colours spread and are lost, as the Chāndogya says rivers in the sea no longer know which one they were.",
+      },
+      {
+        nama: 180,
+        part: "cloud",
+        depicts:
+          "The cloud over the peak is the sea's own water risen again, and its rain is where the rivers begin. None of it is ever lost.",
+      },
+      {
+        nama: 181,
+        part: "vine",
+        depicts:
+          "On the bank of the white river a ripe cucumber has come away from its stalk. The oldest prayer against death asks to be loosed from it in just that way.",
+      },
+      {
+        nama: 182,
+        part: "reflection",
+        depicts:
+          "Her light lies on the water in a column of broken gold that trembles with every ripple, while she herself does not move.",
+      },
+      {
+        nama: 183,
+        part: "boats",
+        depicts:
+          "Offering lamps on leaf boats ride the dark river out to sea and go on past her. Nothing is taken from them.",
+      },
+    ],
+    detail: {
+      part: "sky-flower",
+      body: (
+        <>
+          Beside the cloud is a flower drawn only in dots, on no stalk: the sky-flower. Patañjali&apos;s commentators
+          give it as their example of a <i>vikalpa</i>, a word with nothing behind it, which is exactly what she is
+          said not to be.
+        </>
+      ),
+    },
+  },
+  "050": {
+    Art: HillFort,
+    intro: (Spot) => (
+      <>
+        Durgā means a stronghold, and of all strongholds the law books put first a fort on a hill, the{" "}
+        <i>giri-durga</i> (Manu 7.70–71). So this is one: <Spot part="walls">walls</Spot> on a sheer{" "}
+        <Spot part="crag">crag</Spot>, with her inside.
+      </>
+    ),
+    entries: [
+      {
+        nama: 184,
+        part: "scales",
+        depicts: "In the crown a balance hangs dead level with both pans empty, because nothing can go in the other pan.",
+      },
+      {
+        nama: 185,
+        part: "garland",
+        depicts:
+          "A garland of blue lotuses hangs over the gate, dark among all that gold. The Saundaryalaharī likens her hair to blue lotuses, and says the flowers of Indra's garden move into it for its scent; they are coming down into it from the bough at the top left.",
+      },
+      {
+        nama: 186,
+        part: "walls",
+        depicts: "Her walls stand whole, every course laid and every merlon in its place, with nothing worn away.",
+      },
+      {
+        nama: 187,
+        part: "gate",
+        depicts:
+          "The gate stands open, its spiked doors folded back and its bar laid on the ground. No danger comes that it would have to be shut against.",
+      },
+      {
+        nama: 188,
+        part: "light",
+        depicts: "Her light is inside the gate, at the top of the climb and at the heart of the fort, and nowhere nearer.",
+      },
+      {
+        nama: 189,
+        part: "path",
+        depicts:
+          "The way up goes back and forth across the cliff, broad and worn at the foot and narrowing as it climbs, because few walk it to the end.",
+      },
+      {
+        nama: 190,
+        part: "crag",
+        depicts: "The fort stands on a crag with sheer, fissured sides: a place no one could take by storm.",
+      },
+      {
+        nama: 191,
+        part: "spear",
+        depicts:
+          "Her spear, flung from the gate, has struck into a dark cleft in the rock, and the dark is breaking away from it in pieces and falling.",
+      },
+      {
+        nama: 192,
+        part: "spring",
+        depicts:
+          "From the place it struck a spring gushes out and falls to a pool at the foot, so that where the dark was there is water.",
+      },
+    ],
+    detail: {
+      part: "lion",
+      body: (
+        <>
+          Beside the gate a small gold lion has sat down. Under this one name she is the Durgā of the Devī
+          Māhātmya, who rides a lion into battle, and here, with nothing left to fight, it waits at her door.
+        </>
+      ),
+    },
+  },
+  "051": {
+    Art: MonsoonPool,
+    intro: (Spot) => (
+      <>
+        <i>Sāndra</i>, thick, is a word used of clouds, and <i>ghana</i>, dense, is simply another name for one. So
+        her compassion is drawn as the rains: one cloud over the whole sky, and under it a forest{" "}
+        <Spot part="pool">pool</Spot> with her <Spot part="light">light</Spot> hanging low over the water.
+      </>
+    ),
+    entries: [
+      {
+        nama: 193,
+        part: "owl",
+        depicts:
+          "On a dead branch at the left an owl sits nearer her light than anything else in the picture, with its eyes shut tight. Bhartṛhari asks whether it is the sun's fault that the owl can't see by day.",
+      },
+      {
+        nama: 194,
+        part: "drinking",
+        depicts:
+          "A tiger and a deer drink side by side from the one pool, their heads bowed together under her light. The Yoga Sūtra says that near one who is settled in harmlessness, enmity is given up (2.35): nothing is punished, it simply stops.",
+      },
+      {
+        nama: 195,
+        part: "pearl",
+        depicts:
+          "In the shallows under her a shell lies open on a pearl: the old story's raindrop that falls into a shell and hardens there without a flaw, with nothing on it for the eye to catch.",
+      },
+      {
+        nama: 196,
+        part: "lightning",
+        depicts:
+          "In the cloud a single flash lights everything at once. The Kena Upaniṣad teaches brahman this way, as the lightning flashes (4.4): all of it known in an instant, with no one bringing word.",
+      },
+      {
+        nama: 197,
+        part: "cloud",
+        depicts:
+          "The cloud is heaped across the whole sky, dark and heavy in the belly, and its rain comes down in sheets rather than drops: poured, not sprinkled.",
+      },
+      {
+        nama: 198,
+        part: "veiled",
+        depicts:
+          "The sun and the moon are behind the cloud, and neither shows as more than a faint disc. The Śvetāśvatara says of the highest that no one equal to it, and no one greater, is seen.",
+      },
+    ],
+    detail: {
+      part: "cataka",
+      body: (
+        <>
+          On a reed at the right a cātaka holds its beak open to the rain. It is said to drink nothing but rain from
+          the cloud, and Bhartṛhari puts it in the same verse as the owl: if no rain falls into its beak, is that the
+          cloud&apos;s fault? Here a drop is falling straight in.
+        </>
+      ),
+    },
+  },
+  "052": {
+    Art: LetterRosary,
+    intro: (Spot) => (
+      <>
+        Every name in this verse begins with <i>sarva</i>, all. After the long run of names that took things away, the
+        hymn now adds, so the picture is full: a <Spot part="mantra">rosary</Spot> strung round all of it, and inside
+        it everything turned toward her <Spot part="light">light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 199,
+        part: "sparks",
+        depicts:
+          "Sparks fly up out of her light, and each one is a small light of the same form. The Muṇḍaka Upaniṣad says that as sparks of like form leap by thousands from a blazing fire, so all things come from the imperishable (2.1.1). The powers are not things she holds: they are her own fire.",
+      },
+      {
+        nama: 200,
+        part: "conch",
+        depicts:
+          "A conch sounds toward her, as one is blown to open every wedding, festival and rite. The Devī Māhātmya's best-loved verse calls her the auspiciousness of everything auspicious (11.10).",
+      },
+      {
+        nama: 201,
+        part: "hamsa",
+        depicts:
+          "A single haṃsa flies home to her. The Śvetāśvatara pictures the soul as a haṃsa wandering in the great wheel, and says it reaches the deathless only when it is favoured (1.6): the good going is given, not earned.",
+      },
+      {
+        nama: 202,
+        part: "crowns",
+        depicts:
+          "Before her footstool lie the crowns of Brahmā, Viṣṇu and Indra, bowed to the floor. In the Saundaryalaharī her attendants call out as she rises to greet Śiva: mind Brahmā's crown, you will trip on Viṣṇu's, step round Indra's (29).",
+      },
+      {
+        nama: 203,
+        part: "gold",
+        depicts:
+          "A nugget of gold lies among a necklace, a bangle, a ring and an earring. The Chāndogya says that by one nugget everything made of gold is known: the change is only a name, and what is real is the gold (6.1.5). She is the gold of everything.",
+      },
+      {
+        nama: 204,
+        part: "mantra",
+        depicts:
+          "Round the whole picture runs a rosary of the fifty letters, from अ over the crown to क्ष. Every mantra is made of these letters, and in the tantras the letters are the little mothers, her own body of sound.",
+      },
+    ],
+    detail: {
+      part: "meru",
+      body: (
+        <>
+          At the foot of the rosary, where the loop closes, the gold meru bead sits between अ, the first letter, and
+          क्ष, the last. A rosary is called an <i>akṣamālā</i>, and the tradition hears the word as the garland that runs
+          from <i>a</i> to <i>kṣa</i>.
+        </>
+      ),
+    },
+  },
+  "053": {
+    Art: GraciousOne,
+    intro: (Spot) => (
+      <>
+        The verse goes from everything to kindness, and the picture is a sanctum floor where all of it meets: a{" "}
+        <Spot part="yantra">diagram</Spot> drawn on the floor, a book, a bull, a bow, a bough, and over them a sound
+        going up into silence.
+      </>
+    ),
+    entries: [
+      {
+        nama: 205,
+        part: "yantra",
+        depicts:
+          "A yantra is drawn in rice flour on the floor, square, circle, petals and star, and her light stands at its bindu. The lines are only lines; what is in them is her.",
+      },
+      {
+        nama: 206,
+        part: "tantra",
+        depicts:
+          "A palm-leaf tantra lies open on its stand, its cord hanging loose. Tantra first meant the warp stretched on a loom: the scriptures are the stretched threads, and the whole cloth of them is her outward form.",
+      },
+      {
+        nama: 207,
+        part: "nada",
+        depicts:
+          "Over the card a bindu, a half-moon and a short bar stand one above another, and from them a fine thread of resonance rises, thinner and fainter, past three last points of light into nothing. This is the old ladder of a mantra's sound fading into silence, and at its top, where mind goes past itself, is manonmanī.",
+      },
+      {
+        nama: 208,
+        part: "nandi",
+        depicts:
+          "Nandī, Śiva's bull, lies before her with his back to us, looking in, as he faces the shrine in every Śiva temple. Māheśvarī is the great lord's own power, and among the mothers she rides this bull.",
+      },
+      {
+        nama: 209,
+        part: "light",
+        depicts:
+          "Devī means the shining one, from the root div, to shine, and the great goddess is drawn simply as the light at the centre, the one every other goddess takes the title from.",
+      },
+      {
+        nama: 210,
+        part: "bilva",
+        depicts:
+          "A bilva bough reaches into the crown with its round fruit, which is called śrīphala, Śrī's fruit. The Śrī Sūkta says the bilva was born of Lakṣmī's tapas (6), and its three-part leaves are what Śiva is offered: one tree for both.",
+      },
+      {
+        nama: 211,
+        part: "bow",
+        depicts:
+          "Rudra's bow lies unstrung on the floor with a jasmine garland over it. The Vedic hymns beg the archer god to unstring it and be gracious, mṛḍa; this is him when he has, and the verse ends on the word for his kindness.",
+      },
+    ],
+    detail: {
+      part: "ear",
+      body: (
+        <>
+          At Nandī&apos;s left ear a jasmine flower is tucked, and three small arcs go in. In Śiva temples people still
+          lean down and whisper their prayers into the bull&apos;s ear, so that he will carry them in.
+        </>
+      ),
+    },
+  },
+  "054": {
+    Art: OneInManyPots,
+    intro: (Spot) => (
+      <>
+        Seven great-names make a night lake under the Milky Way. Her <Spot part="light">light</Spot> stands on a lotus in
+        the still water, everything on the lake moves toward her or away from her, and on the steps of the near bank nine{" "}
+        <Spot part="pots">vessels</Spot> each hold all of it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 212,
+        part: "sky",
+        depicts:
+          "The Milky Way rises from the far shore and arches across the whole sky. Nothing smaller would do for a form measured only by everything there is, and even this is only the part of it that shows at night.",
+      },
+      {
+        nama: 213,
+        part: "offerings",
+        depicts:
+          "Marigolds, jasmine, lotus petals and little leaf-cup lamps, let go from every shore, are all drifting across the water to her lotus. Wherever the worship was offered, this is where it arrives.",
+      },
+      {
+        nama: 214,
+        part: "reed",
+        depicts:
+          "At the right a tuft of reed has caught fire from her and is burning away to ash. The Chāndogya says that as the fluff of reed thrown in a fire is burned up, so are all the sins of one who knows (5.24.3).",
+      },
+      {
+        nama: 215,
+        part: "pots",
+        depicts:
+          "Each of the nine vessels on the ghat steps, clay pots and brass lotas, holds her whole light, not a ninth of it. That is māyā in its old sense, the craft by which one is made to appear as many, and the pots are her doing as much as the light is.",
+      },
+      {
+        nama: 216,
+        part: "lotus",
+        depicts:
+          "She stands on a white lotus among its pads, a flower that rises clean out of the mud: sattva, the clear and buoyant strand, and plain being, both without limit.",
+      },
+      {
+        nama: 217,
+        part: "ripples",
+        depicts:
+          "Every ring on the water spreads out from her, out to both banks. Without her, says the Saundaryalaharī, Śiva himself could not so much as stir (1); not a ripple moves except from her.",
+      },
+      {
+        nama: 218,
+        part: "birds",
+        depicts:
+          "A pair of cakravākas float side by side near her, with a small red heart between them. The poets' ruddy geese are parted every night and call to each other till dawn; in her light they are together, and the night does not part them.",
+      },
+    ],
+    detail: {
+      part: "siva",
+      body: (
+        <>
+          On the nearest pot is painted शिव, Śiva, with its i-sign lit. The old saying goes that the i is Śakti, and without
+          it śiva is only śava, a corpse.
+        </>
+      ),
+    },
+  },
+  "055": {
+    Art: StairOfAttainment,
+    intro: (Spot) => (
+      <>
+        Six names list the goods that practice was thought to win, and the picture lays them out on a{" "}
+        <Spot part="stair">temple stair</Spot> whose last step is her <Spot part="light">light</Spot>; the seventh
+        name is for the people who climb it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 219,
+        part: "feast",
+        depicts:
+          "On the landing a banana leaf is spread with rice, sweets, a banana, a cup of payasam and betel, the food that temples still call her bhoga. What is set before her she takes and enjoys.",
+      },
+      {
+        nama: 220,
+        part: "camaras",
+        depicts:
+          "Two royal fly-whisks of white yak hair cross in the crown, the insignia of a sovereign, bound by a clasp of eight pearls for the eight powers of a lord. They are only the fittings of her court.",
+      },
+      {
+        nama: 221,
+        part: "lion",
+        depicts: "A lion sits on the plinth at the left of the stair's foot, the old emblem of a hero's valour, and hers.",
+      },
+      {
+        nama: 222,
+        part: "elephant",
+        depicts:
+          "An elephant stands on the plinth at the right. The Yoga Sūtra promises the strength of an elephant to those who meditate on strength (3.24); in her it is not won but simply there.",
+      },
+      {
+        nama: 223,
+        part: "crystal",
+        depicts:
+          "A clear crystal on the landing takes her light and breaks it into colours. The Yoga Sūtra likens the clarified mind to a flawless jewel that takes the colour of whatever it rests on (1.41); understanding is her light in it.",
+      },
+      {
+        nama: 224,
+        part: "stair",
+        depicts:
+          "The stair has eight steps, the lesser attainments, with a steady lamp beside each, and every one of them leads to the landing at the sanctum door where her light stands. She is not one more step but where the steps arrive.",
+      },
+      {
+        nama: 225,
+        part: "sandals",
+        depicts:
+          "At the foot of the stair three pairs of sandals have been left, of gold, silver and wood, for the masters of the divine, the perfected and the human lineages of teachers. Even they go up to her barefoot.",
+      },
+    ],
+    detail: {
+      part: "mouse",
+      body: (
+        <>
+          A mouse is coming down the steps with a sweet from her leaf. Siddhi and Buddhi stand side by side in this
+          verse as they do beside Gaṇeśa, whose two wives they are, and this is his mouse.
+        </>
+      ),
+    },
+  },
+  "056": {
+    Art: GreatYantra,
+    intro: (Spot) => (
+      <>
+        Every name here begins with <i>mahā</i>, great, and the picture lays out the apparatus of her worship in the
+        verse&apos;s own order, from the cloth overhead to the <Spot part="yantra">diagram</Spot> where her{" "}
+        <Spot part="light">light</Spot> is invoked to sit. Each piece is drawn as hers, not the worshipper&apos;s.
+      </>
+    ),
+    entries: [
+      {
+        nama: 226,
+        part: "tantra",
+        depicts:
+          "Overhead a red canopy is stretched on four posts, its warp running through the cloth in plain sight and hanging from the rod as sixty-four threads. Tantra comes from tan, to stretch, as the warp is stretched on a loom; the sixty-four tantras of the Saundaryalaharī (31) hang loose, and hers is the cloth they come out of, whole.",
+      },
+      {
+        nama: 227,
+        part: "mantra",
+        depicts:
+          "From the canopy's edge hang three festoons, fifteen lights in all, the syllables of her mantra in their clusters of five, six and four. Each cluster ends in a gold disc engraved ह्रीं, the one syllable written out; the rest are given at initiation.",
+      },
+      {
+        nama: 228,
+        part: "yantra",
+        depicts:
+          "Below, face-on, the Śrīcakra is cut in a gold plate: the square of gates, three circles, sixteen petals and eight, and the nine interlocking triangles. Yantra is a device for holding something in place, and what it holds is her.",
+      },
+      {
+        nama: 229,
+        part: "seat",
+        depicts:
+          "The plate stands on a low throne with lions on its face and a jewelled arch for its back, raised on a dais. In the rite a plate is treated as the furniture of a throne room, and her light at the bindu is the one seated on it.",
+      },
+      {
+        nama: 230,
+        part: "krama",
+        depicts:
+          "Red flowers lie one in each enclosure, from the front gate inward, on a thread of light that winds through them to the bindu, and on the ground five offerings stand in the order they are made: sandal paste, flowers, incense, lamp and food. The order is part of what is offered.",
+      },
+      {
+        nama: 231,
+        part: "bhairava",
+        depicts:
+          "At the left Bhairava has planted his trident with his drum hanging from it, and at the right his skull-bowl stands heaped with red hibiscus and jasmine. The most terrible form of Śiva has set his terror down and filled his hands with flowers.",
+      },
+    ],
+    detail: {
+      part: "dog",
+      body: (
+        <>
+          Bhairava&apos;s black dog, his mount, lies asleep at the foot of the trident with its nose on its paws. At his
+          temples people feed the dogs as a way of feeding him; here, with its master at worship, it has nothing to
+          guard.
+        </>
+      ),
+    },
+  },
+  "057": {
+    Art: WitnessOfTheDance,
+    intro: (Spot) => (
+      <>
+        At the end of a world-age Śiva dances the <Spot part="worlds">worlds</Spot> into the fire, their eggs and the
+        lotus, discus and thunderbolt of the gods who ran them, until there is only a field of ash. The picture draws
+        the dance without the dancer. What it keeps still is her <Spot part="light">light</Spot>, the one thing the
+        dance happens in front of.
+      </>
+    ),
+    entries: [
+      {
+        nama: 232,
+        part: "dance",
+        depicts:
+          "A ring of fire wheels round the card, its flames thrown back by the turn, and at the upper right the drum that keeps the dance's time is being shaken, its beads striking both heads. The tāṇḍava at the close of a kalpa is not a picture of the destruction but the destruction itself; she is its sākṣiṇī, the one who sees it with her own eyes.",
+      },
+      {
+        nama: 233,
+        part: "throne",
+        depicts:
+          "Below it stands one throne with two seats, his marked with his crescent and empty, because he is the one dancing, and hers with her light on it. A mahiṣī is the anointed chief queen, who shares the king's throne rather than attending at it.",
+      },
+      {
+        nama: 234,
+        part: "cities",
+        depicts:
+          "Three small cities, of gold, silver and iron, stand round the throne at the points of a triangle, the iron one on the ash, each lit at its gate by her. They are the three cities of the old myth, and every later reading of them, waking, dream and sleep among them; she is the beauty of the set, not of any one.",
+      },
+    ],
+    detail: {
+      part: "beats",
+      body: (
+        <>
+          Above the drum hang the beats it has sounded, nine and then five. The grammarians say that when the king of
+          dancers finished his dance he beat his drum nine times and five, and the fourteen sounds became the fourteen
+          sūtras with which Pāṇini begins: they are called the Māheśvara sūtras, after the same Maheśvara as this
+          name.
+        </>
+      ),
+    },
+  },
+  "058": {
+    Art: YoginiTemple,
+    intro: (Spot) => (
+      <>
+        Sixty-four is said three times, and the picture is drawn where the third sixty-four was worshipped: a{" "}
+        <Spot part="temple">yoginī temple</Spot>, round, roofless, and lined inside with niches, as the ones at
+        Hirapur and Bheraghat still are. In the middle stands her <Spot part="light">light</Spot> on a round seat.
+      </>
+    ),
+    entries: [
+      {
+        nama: 235,
+        part: "services",
+        depicts:
+          "Over her are the parasol, the mirror and the fan, which come near the end of the sixty-four services. The whole rite is one long morning of hospitality, from taking off her old ornaments to the bath, the silks, the jewels and the weapons, and it closes with the five offerings with which an ordinary worship begins.",
+      },
+      {
+        nama: 236,
+        part: "arts",
+        depicts:
+          "Round her on the floor lie eight of the sixty-four arts: a vīṇā, a drum, anklet bells for dance, a brush and colours, a garland, a gem on its touchstone, a palm-leaf book, and a parrot being taught to talk. She is not served by them but made of them, the household knack as much as the high art.",
+      },
+      {
+        nama: 237,
+        part: "yoginis",
+        depicts:
+          "In every niche of the wall a yoginī burns as a small flame facing the centre, and more come down out of the open sky in flocks, eight to a flock: a gaṇa is a troop and a flock alike, and sixty-four crores is a number meant to be beyond counting.",
+      },
+    ],
+    detail: {
+      part: "moon",
+      body: (
+        <>
+          Inside the wheel of flocks the moon shows one thin digit. That digit is a kalā too, the same word as
+          the arts of the second name: a part of something larger, a sixteenth of the moon, a skill that can be taught.
+        </>
+      ),
+    },
+  },
+  "059": {
+    Art: MiddleOfTheMoon,
+    intro: (Spot) => (
+      <>
+        The verse turns on the moon, and so does the picture: below the card the{" "}
+        <Spot part="orb">moon&rsquo;s full disc</Spot> stands upright, being filled, and round it the moon waxes and
+        wanes in fifteen small moons, each lit from her side. Their sixteenth is at the centre and never changes.
+      </>
+    ),
+    entries: [
+      {
+        nama: 238,
+        part: "manu",
+        depicts:
+          "From the left a gold jug pours into the disc: the vidyā as it came down Manu's line. He heads most lists of the twelve teachers through whom it was handed on.",
+      },
+      {
+        nama: 239,
+        part: "candra",
+        depicts:
+          "From the right a silver jug, marked with a crescent, pours the same water: Candra's recension. Once in the disc the two streams are one water, as she is one vidyā however it is spoken.",
+      },
+      {
+        nama: 240,
+        part: "orb",
+        depicts:
+          "She stands at the very centre of the moon's disc, which here is the cool, full orb the streams pour into, ringed by the fifteen digits that wax and wane; she is the one that does not.",
+      },
+      {
+        nama: 241,
+        part: "form",
+        depicts: "Her light at the centre takes a form, slender and pointed like a lamp flame, full below: lovely in the plain sense.",
+      },
+      {
+        nama: 242,
+        part: "smile",
+        depicts:
+          "Her smile is the net of moonlight spreading from her across the ground (Saundaryalaharī 63), and the two cakoras on the rocks, birds that live on moonlight, have come to drink it.",
+      },
+      {
+        nama: 243,
+        part: "crescent",
+        depicts: "On the tip of her form she wears a crescent, horns up. On Śiva it is the trace of an old ordeal; on her it is an ornament.",
+      },
+    ],
+    detail: {
+      part: "sour-gruel",
+      body: (
+        <>
+          A third cakora has flown off to the moon in the sky and is drinking that instead. Śaṅkara says her smile
+          was so sweet that it numbed their beaks, so now they take the cold-rayed moon for sour gruel, to clear the
+          palate (Saundaryalaharī 63).
+        </>
+      ),
+    },
+  },
+  "060": {
+    Art: MountainsDaughter,
+    intro: (Spot) => (
+      <>
+        The verse starts very far away and comes close enough to see her eyes, and so does the picture:{" "}
+        <Spot part="mountain">Himavat</Spot> fills the plate, snow peaks in the crown, and at his foot a cave opens in
+        the rock with her house on its back wall.
+      </>
+    ),
+    entries: [
+      {
+        nama: 244,
+        part: "world",
+        depicts:
+          "On his flanks the deodars stand still and the wild geese come in over the snows: the unmoving world and the moving one, both under her rule.",
+      },
+      {
+        nama: 245,
+        part: "cakra",
+        depicts:
+          "On the back wall of the cave stands the Śrīcakra, the king of diagrams. It does not stand for her; it is the house she lives in.",
+      },
+      {
+        nama: 246,
+        part: "mountain",
+        depicts:
+          "The mountain is her father, Himavat, and the rock she is named from. Pārvatī is simply what any daughter of that house would be called (Kumārasambhava 1.26).",
+      },
+      {
+        nama: 247,
+        part: "lotuses",
+        depicts: "Before the cave's mouth, in a still pool, two lotuses have opened wide: her eyes, broad and fresh as they are.",
+      },
+      {
+        nama: 248,
+        part: "ruby",
+        depicts:
+          "Her light at the bindu fills the cave red as a ruby, padmarāga, the lotus-coloured stone, so the one word gives her eyes and her complexion. For once the thing compared is not put to shame; she simply shines as much.",
+      },
+    ],
+    detail: {
+      part: "yak",
+      body: (
+        <>
+          On a ledge to the right a yak stands with its white tail lifted. Kālidāsa says the yaks of the Himālaya, flicking
+          tails as white as moonbeams, fan him as servants fan a king, and so make his title &ldquo;king of
+          mountains&rdquo; true (Kumārasambhava 1.13). The verse has a king of diagrams; the mountain has his whisks.
+        </>
+      ),
+    },
+  },
+  "061": {
+    Art: SaltAndTheCouch,
+    intro: (Spot) => (
+      <>
+        The verse&rsquo;s second line is the reason for its first, and the picture keeps them together: below the card{" "}
+        <Spot part="light">her light</Spot> is seated on the couch of the five gods, and all the life they have runs into
+        them from her.
+      </>
+    ),
+    entries: [
+      {
+        nama: 249,
+        part: "couch",
+        depicts:
+          "The couch of the five Brahmās on its dais: Brahmā, Viṣṇu, Rudra and Īśvara its legs, Sadāśiva its plank. The gold of the legs has gone dull. Without her they cannot so much as stir (Saundaryalaharī 1).",
+      },
+      {
+        nama: 250,
+        part: "five",
+        depicts:
+          "In the crown the five Brahmās shine as the five faces of Sadāśiva, Īśāna upward at the centre and the other four toward the quarters, each in its own colour and each a flame of the same light. Below, she sits above them; here, she is them.",
+      },
+      {
+        nama: 251,
+        part: "light",
+        depicts:
+          "She is a light made of nothing but awareness. A thread of it runs down into each of the four legs and lights its medallion; that is all the life they have.",
+      },
+      {
+        nama: 252,
+        part: "bliss",
+        depicts:
+          "Her bliss widens round her ring beyond ring, each wider than the last by the same measure, like the Taittirīya's ladder of joys, each a hundred times the one below, up to the bliss that words turn back from.",
+      },
+      {
+        nama: 253,
+        part: "salt",
+        depicts:
+          "In a brass bowl before the dais a lump of rock salt is dissolving. No one could pick it out of the water again, yet the water is salt wherever it is touched: so is she a mass of knowing, with no inside and no outside (Bṛhadāraṇyaka 2.4.12).",
+      },
+    ],
+    detail: {
+      part: "blush",
+      body: (
+        <>
+          The plank is white except where she sits, and there it is red. Śaṅkara says Sadāśiva, white as crystal, contrived
+          to become the coverlet of her couch, and reflecting her red light he looks like love itself made flesh, a
+          delight to her eyes (Saundaryalaharī 92).
+        </>
+      ),
+    },
+  },
+  "062": {
+    Art: WakingAndDream,
+    intro: (Spot) => (
+      <>
+        The Māṇḍūkya says the dreamer has the same limbs and the same mouths as the waker, only turned inward, and the
+        picture takes it at its word: the waking world stands along the far bank, and{" "}
+        <Spot part="dream">the dream</Spot> is the same world turned over in the water.
+      </>
+    ),
+    entries: [
+      {
+        nama: 254,
+        part: "lamp",
+        depicts:
+          "On the water between them floats a lamp in a windless place, its flame quite still (Gītā 6.19). It rises toward the one world and its reflection goes down into the other: what sees, the seeing, and what is seen, one light.",
+      },
+      {
+        nama: 255,
+        part: "leaf",
+        depicts:
+          "Beside it a lotus leaf, which the water stands on in beads and never wets (Gītā 5.10): no deed, good or bad, leaves a mark on her.",
+      },
+      {
+        nama: 256,
+        part: "world",
+        depicts:
+          "The whole world along the bank, hills and palms, the village and its road, the temple and its trees, the birds overhead: her body, not her handiwork. Viśva is also the Māṇḍūkya's name for the waking self.",
+      },
+      {
+        nama: 257,
+        part: "sun",
+        depicts: "The sun is up and the world is awake in its light, aware of what is outside it.",
+      },
+      {
+        nama: 258,
+        part: "dream",
+        depicts: "Below the bank the same world lies turned over in the water, every house and tree of it, aware of what is inside.",
+      },
+      {
+        nama: 259,
+        part: "taijasa",
+        depicts:
+          "There is no sun in the water; the dream is lit from within, its windows and the temple door alight. Taijasa, the dreaming self, is the luminous one, its own light (Bṛhadāraṇyaka 4.3.9).",
+      },
+    ],
+    detail: {
+      part: "chariot",
+      body: (
+        <>
+          On the road along the bank there is nothing; on the same road in the water a chariot is driving. &ldquo;There are
+          no chariots there, no teams, no roads; but he makes chariots, teams and roads,&rdquo; says Yājñavalkya of the
+          dreamer (Bṛhadāraṇyaka 4.3.10).
+        </>
+      ),
+    },
+  },
+  "063": {
+    Art: OceanOfSleep,
+    intro: (Spot) => (
+      <>
+        The verse is a hinge between sleep and making, and the picture draws the scene the Purāṇas hang the two on:{" "}
+        <Spot part="ocean">the one ocean</Spot> of the night between worlds, Viṣṇu asleep on the serpent, and a lotus
+        rising from his navel with Brahmā on it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 260,
+        part: "sleep",
+        depicts:
+          "A veil of night is drawn over the sleeper and stars stand in the dark round him. The sleep that holds Viṣṇu at the end of a world is she, the goddess who dwells in all beings as sleep (Devī Māhātmya 1, 5).",
+      },
+      {
+        nama: 261,
+        part: "ocean",
+        depicts:
+          "The one ocean, without shore or horizon: every water has become one water, as the sleeper's mind becomes one, a solid mass of knowing (Māṇḍūkya 5). It is dark, yet lit faintly from within.",
+      },
+      {
+        nama: 262,
+        part: "fourth",
+        depicts:
+          "Apart from all of it, in the crown, her light stands over a crescent, the half-measure that sits above ॐ and is never sounded: the fourth, beyond waking, dream and sleep (Māṇḍūkya 12).",
+      },
+      {
+        nama: 263,
+        part: "measures",
+        depicts:
+          "Below it hang the three measures, a, u and m, which the Upaniṣad makes waking, dream and sleep. They are strung together; she is not on the string, and even being the fourth is no state of hers.",
+      },
+      {
+        nama: 264,
+        part: "worlds",
+        depicts:
+          "Out of the lotus the fourteen worlds are let go as eggs, growing as they go: seven rise past the card into the night and seven sink into the water below. Creation as emission, the word sṛṣṭi.",
+      },
+      {
+        nama: 265,
+        part: "brahma",
+        depicts:
+          "From the sleeper's navel a lotus rises, and on it Brahmā's four faces are lit as four flames turned to the quarters. The face of making is his; the power in it is hers.",
+      },
+      {
+        nama: 266,
+        part: "guard",
+        depicts:
+          "Śeṣa lies coiled under the sleeper as his bed, and his seven hoods, each with its jewel, are spread over the sleeper's head. Goptrī is from √gup, which means to guard and also to hide.",
+      },
+      {
+        nama: 267,
+        part: "govinda",
+        depicts:
+          "On the coils lies a dark light, Viṣṇu, his conch and discus set down beside him: Govinda, who goes after the worlds as a cowherd after his cattle, resting between one round and the next.",
+      },
+    ],
+    detail: {
+      part: "banyan",
+      body: (
+        <>
+          On the water below the serpent&rsquo;s tail floats a single banyan leaf with a speck of the same dark light on it. In another
+          telling the sleeper of the one ocean is an infant lying on a banyan leaf, wondering who he is, and in the
+          Devī Bhāgavata it is she who answers him with half a verse: &ldquo;All this is I alone; there is nothing else
+          eternal.&rdquo;
+        </>
+      ),
+    },
+  },
+  "064": {
+    Art: TheDrawnScreen,
+    intro: (Spot) => (
+      <>
+        The five acts are drawn as a temple keeps them, at <Spot part="sanctum">the door of a sanctum</Spot> at the
+        moment the screen is drawn aside. Inside rest the same five gods who lay inert under her three verses back, now
+        at work.
+      </>
+    ),
+    entries: [
+      {
+        nama: 268,
+        part: "gather",
+        depicts:
+          "In the crown the fourteen worlds are drawn in a spiral into the fire, shrinking as they go, the way a breath is taken in.",
+      },
+      {
+        nama: 269,
+        part: "rudra",
+        depicts:
+          "Beside the door Rudra's trident rises from the ground into the crown, fire on its three points and his drum tied under them: the fire at the end of a world, which is only her gathering it back.",
+      },
+      {
+        nama: 270,
+        part: "screen",
+        depicts:
+          "A vermilion screen hangs before the door, and one half of it is still drawn across. Tirodhāna is a curtain put across a thing; what it hides is her own nature, so that a world of separate beings can stand.",
+      },
+      {
+        nama: 271,
+        part: "cord",
+        depicts:
+          "The screen hangs from a rod with crowned finials, and the cord that draws it runs up the doorpost and out of sight: a rule the worlds live under and cannot see.",
+      },
+      {
+        nama: 272,
+        part: "sadasiva",
+        depicts:
+          "The plank she rests on is Sadāśiva, the fifth of the couch's gods, white as crystal and lit along its length: grace as a disposition that never lapses.",
+      },
+      {
+        nama: 273,
+        part: "grace",
+        depicts:
+          "Where the screen is pulled aside her light is open to view, and it spills over the threshold and down the steps toward whoever stands there. Grace is the curtain's other half, given, not earned (Gītā 7.14).",
+      },
+      {
+        nama: 274,
+        part: "couch",
+        depicts:
+          "She rests on the couch of the five Brahmās, the gods of the five acts, every leg bright and every medallion lit. The five are what she rests on and what she is wholly given over to.",
+      },
+    ],
+    detail: {
+      part: "spider",
+      body: (
+        <>
+          Under the right end of the lintel a spider hangs on its thread from its web. &ldquo;As a spider sends out its
+          thread and draws it in again, so from the imperishable this world comes forth&rdquo; (Muṇḍaka 1.1.7): the
+          Upaniṣad&rsquo;s own picture for making and withdrawing as one act of one maker.
+        </>
+      ),
+    },
+  },
+  "065": {
+    Art: MiddleOfTheSun,
+    intro: (Spot) => (
+      <>
+        Six verses ago she stood in the middle of the moon; here she stands in{" "}
+        <Spot part="light">the middle of the sun</Spot>, and the verse settles on her, one name after another, what
+        usually belongs to Lakṣmī.
+      </>
+    ),
+    entries: [
+      {
+        nama: 275,
+        part: "sun",
+        depicts:
+          "Below the card the sun's full disc stands over still water, rayed and ringed in gold, and its centre is hers: the seat of the golden person the Chāndogya says is seen within the sun (1.6.6).",
+      },
+      {
+        nama: 276,
+        part: "blaze",
+        depicts:
+          "Out of the same disc sharp rays climb past the card into the crown, the sun as tigmāṃśu, the fierce-rayed: its terrible face, belonging to the one power as surely as its light does.",
+      },
+      {
+        nama: 277,
+        part: "garland",
+        depicts:
+          "A garland of six blossoms hangs on the disc, one for each of the six excellences that make a lord: sovereignty in gold, power in red, fame in white, beauty in rose, knowledge in saffron, and detachment in blue.",
+      },
+      {
+        nama: 278,
+        part: "lotus",
+        depicts: "In the middle of the sun her light sits on an open red lotus, the seat Lakṣmī is known by.",
+      },
+      {
+        nama: 279,
+        part: "shares",
+        depicts:
+          "Gold falls on either side of the sun, each piece to its own place on the water. Bhaga is from √bhaj, to apportion: fortune is first of all a share given out.",
+      },
+      {
+        nama: 280,
+        part: "twins",
+        depicts:
+          "In the water before the sun a red lotus and a blue one, Viṣṇu's colour, rise on two stems from a single root: sahodarī, born of one womb.",
+      },
+    ],
+    detail: {
+      part: "horse",
+      body: (
+        <>
+          Far off on the water at the right, a small golden horse is wading in. Every spring at Madurai, Viṣṇu as
+          Aḻagar rides down on a golden horse and into the river Vaigai, on his way to give his sister Mīnākṣī to
+          Sundareśvara, and arrives, as the story goes, too late for the wedding.
+        </>
+      ),
+    },
+  },
+  "066": {
+    Art: WorldsInABlink,
+    intro: (Spot) => (
+      <>
+        The second line is the opening of the Puruṣa Sūkta, so the picture is the hymn&apos;s person of a thousand
+        heads, eyes and feet, with no figure at all: each is drawn the way this series always draws her, round{" "}
+        <Spot part="light">her light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 281,
+        part: "worlds",
+        depicts:
+          "Across the crown hang rows of world-eggs that open and shut along their length like eyes: sealed, parting at the seam, wide open with light inside, closing again, and here and there only a dashed outline, already gone.",
+      },
+      {
+        nama: 282,
+        part: "faces",
+        depicts:
+          "Her face is always this hand mirror. Here it is turned to a second mirror, so it holds its own frame again and again, each smaller than the last: faces inside faces, past counting.",
+      },
+      {
+        nama: 283,
+        part: "eyes",
+        depicts:
+          "Round the mirror runs the stream of its beauty, and in it a shoal of fish, her eyes since the sixth verse. Fish are animiṣa, the ones that never blink.",
+      },
+      {
+        nama: 284,
+        part: "feet",
+        depicts:
+          "On the earth below, pairs of her footprints stand all round its rim, each facing outward, as the hymn's person covers the earth on every side.",
+      },
+    ],
+    detail: {
+      part: "fingers",
+      body: (
+        <>
+          The mirror&apos;s foot does not touch the earth, and the gap is marked off in ten small gold ticks. The
+          second half of the Vedic line, which the stotra leaves out, says the person stood out beyond the earth by
+          ten fingers&apos; breadth.
+        </>
+      ),
+    },
+  },
+  "067": {
+    Art: TheHouseholdLamp,
+    intro: (Spot) => (
+      <>
+        Nothing in this verse describes her: each name is a relation between her and everything else. So the picture
+        is a house at lamp-lighting, and she is <Spot part="light">the lamp&apos;s one lit wick</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 285,
+        part: "span",
+        depicts:
+          "The name is a span with both its ends named: Brahmā on his lotus in the crown, and an inchworm on the ground by a tuft of grass, each in the same ring of her light, neither ring the larger.",
+      },
+      {
+        nama: 286,
+        part: "order",
+        depicts:
+          "Before the lamp lies a kolam of four dots by four, with a loop along every row and every column: the four classes along one axis and the four stages of a life along the other, so that each dot is placed by both.",
+      },
+      {
+        nama: 287,
+        part: "vedas",
+        depicts:
+          "The lamp's smoke rises in four streams to Brahmā's four faces. The Bṛhadāraṇyaka says the Vedas were breathed out like smoke from a fire of damp fuel (2.4.10), and the Śvetāśvatara that the one who made Brahmā sent them to him (6.18).",
+      },
+      {
+        nama: 288,
+        part: "fruits",
+        depicts:
+          "On either side a plantain leaf is served, one with ripe mangoes and one with bitter gourds: what each has earned, sweet or bitter, from the same hand.",
+      },
+    ],
+    detail: {
+      part: "ants",
+      body: (
+        <>
+          A kolam is drawn in rice flour so that ants can eat it, the first meal of the day for the smallest of her
+          children. At its right corner a file of ants is already carrying it off, grain by grain.
+        </>
+      ),
+    },
+  },
+  "068": {
+    Art: VermilionAndPearl,
+    intro: (Spot) => (
+      <>
+        Two names, one to a line, and each a single picture: <Spot part="feet">her feet</Spot> as two red lotuses
+        in the crown, and <Spot part="light">her light</Spot> as a pearl below.
+      </>
+    ),
+    entries: [
+      {
+        nama: 289,
+        part: "partings",
+        depicts:
+          "Under her feet the four Vedas bow so low that the red dust of the lotuses settles in the parting of their hair, and lies there as a married woman's vermilion. Of each only the hair is drawn: a plait with jasmine, and the red streak at its head.",
+      },
+      {
+        nama: 290,
+        part: "shell",
+        depicts:
+          "Below the card the whole of scripture is one pearl oyster, its two valves shut. Its growth lines are written over like the lines of a manuscript, and only along the seam does the pearl inside show.",
+      },
+    ],
+    detail: {
+      part: "svati",
+      body: (
+        <>
+          High in the crown, one star with a drop of rain falling under it: Svāti. The poets held that rain falling
+          into an open oyster while the moon is in Svāti becomes a pearl.
         </>
       ),
     },

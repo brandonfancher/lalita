@@ -7,7 +7,7 @@
  * this artwork's entry.
  */
 
-import { ArmLight, armBeam, artIds, Bangle, glint, Goad, Noose, partProps, round, sunRays, wrist } from "./primitives";
+import { ArmLight, armBeam, artIds, Bangle, glint, Goad, Noose, partProps, round, seaSurface, sunRays, wrist } from "./primitives";
 import type { ArtProps } from "./types";
 
 const SX = 320;
@@ -16,15 +16,6 @@ const HY = 548;
 const SR = 66;
 /** The bindu, where she appears, at the heart of the sun. */
 const BY = 516;
-
-/** Deterministic noise in [0, 1). */
-function hash(a: number, b: number) {
-  let h = Math.imul(a ^ 0x9e3779b9, 0x85ebca6b) ^ Math.imul(b + 0x632be5ab, 0xc2b2ae35);
-  h ^= h >>> 15;
-  h = Math.imul(h, 0x2c1b3c6d);
-  h ^= h >>> 12;
-  return (h >>> 0) / 4294967296;
-}
 
 const dot = (x: number, y: number, r: number) =>
   `M ${round(x - r)} ${round(y)} a ${r} ${r} 0 1 0 ${round(2 * r)} 0 a ${r} ${r} 0 1 0 ${round(-2 * r)} 0`;
@@ -57,40 +48,7 @@ const SUN = { x: SX, y: HY };
 const upperBeams = [armBeam(SUN, wrist(SUN, NOOSE_AT), 40, 14), armBeam(SUN, wrist(SUN, GOAD_AT), 40, 14)];
 const lowerBeams = [armBeam(SUN, { x: 112, y: 522 }, 34, 4), armBeam(SUN, { x: 528, y: 522 }, 34, 4)];
 
-/** Rows of ripples on the sea, closer together near the horizon. */
-const seaRows = Array.from({ length: 16 }, (_, k) => HY + 8 + 6 * k + 0.7 * k * k).filter((y) => y < 800);
-
-const ripples: string[] = [];
-const reflection = ["", "", ""];
-seaRows.forEach((y, k) => {
-  const depth = y - HY;
-  const half = 290;
-  const column = SR * 0.9 + 0.35 * depth;
-  const lift = 1.2 + 0.03 * depth;
-  let x = SX - half + hash(k, 0) * 20;
-  let j = 0;
-  while (x < SX + half) {
-    const len = 12 + (20 + depth * 0.12) * hash(k, j * 3 + 1);
-    const end = Math.min(x + len, SX + half);
-    const inColumn = end > SX - column && x < SX + column;
-    if (!inColumn && hash(k, j * 3 + 3) > 0.3) {
-      ripples.push(`M ${round(x)} ${round(y)} Q ${round((x + end) / 2)} ${round(y - lift)} ${round(end)} ${round(y)}`);
-    }
-    x = end + 8 + 18 * hash(k, j * 3 + 2);
-    j++;
-  }
-  let g = SX - column + hash(k, 99) * 8;
-  let n = 0;
-  while (g < SX + column) {
-    const l = 5 + 13 * hash(k, 200 + n) * (1 - Math.abs(g - SX) / (column * 1.4));
-    const h = 1.6 + 0.08 * k;
-    const cx = g + l;
-    reflection[(k + n) % 3] +=
-      `M ${round(g)} ${round(y)} Q ${round(cx)} ${round(y - h)} ${round(g + 2 * l)} ${round(y)} Q ${round(cx)} ${round(y + h)} ${round(g)} ${round(y)} Z `;
-    g += 2 * l + 4 + 9 * hash(k, 300 + n);
-    n++;
-  }
-});
+const { ripples, reflection } = seaSurface({ cx: SX, horizon: HY, column: SR * 0.9 });
 
 export function ThousandDawns({ idPrefix = "sa2", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);

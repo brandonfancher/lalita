@@ -14,6 +14,7 @@ import {
   artIds,
   BeeString,
   bowTips,
+  eggPath,
   FlowerArrow,
   glint,
   partProps,
@@ -43,18 +44,6 @@ const ARROW_LENGTH = 398;
 const C = { x: 310, y: 568 };
 const RX = 205;
 const RY = 56;
-
-/** An egg, broad end down, centred on (x, y). */
-function eggPath(x: number, y: number, w: number, h: number) {
-  const p = round;
-  return [
-    `M ${p(x)} ${p(y - h)}`,
-    `C ${p(x + 0.62 * w)} ${p(y - h)} ${p(x + w)} ${p(y - 0.25 * h)} ${p(x + w)} ${p(y + 0.2 * h)}`,
-    `C ${p(x + w)} ${p(y + 0.72 * h)} ${p(x + 0.55 * w)} ${p(y + h)} ${p(x)} ${p(y + h)}`,
-    `C ${p(x - 0.55 * w)} ${p(y + h)} ${p(x - w)} ${p(y + 0.72 * h)} ${p(x - w)} ${p(y + 0.2 * h)}`,
-    `C ${p(x - w)} ${p(y - 0.25 * h)} ${p(x - 0.62 * w)} ${p(y - h)} ${p(x)} ${p(y - h)} Z`,
-  ].join(" ");
-}
 
 /** The few that are going under as we watch, by ring position, with their own pace. */
 const SINKING: Record<number, { dur: number; delay: number }> = {

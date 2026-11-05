@@ -21,6 +21,9 @@ import {
   Footprint,
   glint,
   Goad,
+  Hibiscus,
+  HibiscusGradient,
+  hibiscus,
   litPart,
   lotusPetals,
   Noose,
@@ -91,39 +94,7 @@ const siddhis = Array.from({ length: 8 }, (_, k) => {
 
 /* ── The hibiscus ──────────────────────────────────────────────────────── */
 
-const HIBISCUS_R = 64;
-
-/** One broad petal of the hibiscus, base at the origin, pointing up, its rim a little ruffled. */
-const HIBISCUS_PETAL = [
-  "M 0 0",
-  "C -10 -10 -34 -26 -38 -44",
-  "C -41 -58 -26 -67 -12 -64",
-  "C -6 -66 -2 -62 1 -65",
-  "C 5 -68 10 -66 15 -65",
-  "C 30 -64 41 -54 37 -40",
-  "C 34 -26 10 -8 0 0",
-  "Z",
-].join(" ");
-const HIBISCUS_VEINS = [-24, -12, 0, 12, 24]
-  .map((x) => `M ${round(x * 0.15)} -14 Q ${round(x * 0.7)} -34 ${x} ${-52 + Math.abs(x) * 0.25}`)
-  .join(" ");
-/** The sheen down the middle of each petal, where it catches the light. */
-const HIBISCUS_SHEEN = "M 1 -20 C 2 -32 3 -44 1 -56";
-const hibiscusPetals = Array.from({ length: 5 }, (_, k) => `translate(${B.x} ${B.y}) rotate(${8 + k * 72})`);
-
-/** The staminal column, springing from her and leaning up and out, dusted with pollen. */
-const COLUMN_TIP = polar(B.x, B.y, 76, 24);
-const COLUMN = `M ${B.x} ${B.y} C ${B.x + 18} ${B.y - 2} ${B.x + 44} ${B.y - 14} ${COLUMN_TIP.x} ${COLUMN_TIP.y}`;
-/** Pollen on short stalks along the column's outer third. */
-const POLLEN = [0.62, 0.68, 0.74, 0.8, 0.86].flatMap((t, i) => {
-  const x = B.x + (COLUMN_TIP.x - B.x) * t;
-  const y = B.y + (COLUMN_TIP.y - B.y) * t;
-  return [
-    { x: round(x - 2), y: round(y - 4 - (i % 2)) },
-    { x: round(x + 2), y: round(y + 3 + (i % 2)) },
-  ];
-});
-const STIGMA = Array.from({ length: 5 }, (_, k) => polar(COLUMN_TIP.x + 2, COLUMN_TIP.y - 1, 4, 18 + k * 72));
+const HIBISCUS = hibiscus(B);
 
 /** The innermost enclosure of the Śrīcakra: a downward triangle round the bindu. */
 const TRIANGLE = [270, 30, 150].map((deg) => polar(B.x, B.y, 22, deg));
@@ -184,12 +155,7 @@ export function WholeImage({ idPrefix = "sa0", active = null }: ArtProps) {
           <stop offset="0" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.5 }} />
           <stop offset="1" style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("hibiscus")} cx={B.x} cy={B.y} r={HIBISCUS_R} gradientUnits="userSpaceOnUse">
-          <stop offset="0" style={{ stopColor: "var(--art-crimson)" }} />
-          <stop offset="0.28" style={{ stopColor: "var(--art-crimson)" }} />
-          <stop offset="0.46" style={{ stopColor: "var(--art-vermilion)" }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
-        </radialGradient>
+        <HibiscusGradient h={HIBISCUS} id={id} />
         <radialGradient id={id("bindu")} cx={B.x} cy={B.y} r={30} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 1 }} />
           <stop offset="0.35" style={{ stopColor: "var(--art-core)", stopOpacity: 0.6 }} />
@@ -321,32 +287,7 @@ export function WholeImage({ idPrefix = "sa0", active = null }: ArtProps) {
 
       {/* Bright as the hibiscus: the flower of her light */}
       <g {...part("hibiscus")}>
-        <g fill={url("hibiscus")} stroke="var(--art-crimson)" strokeWidth={0.8} strokeOpacity={0.7} strokeLinejoin="round">
-          {hibiscusPetals.map((t, i) => (
-            <path key={i} d={HIBISCUS_PETAL} transform={t} />
-          ))}
-        </g>
-        <g stroke="var(--art-crimson)" strokeWidth={0.6} strokeOpacity={0.5} strokeLinecap="round">
-          {hibiscusPetals.map((t, i) => (
-            <path key={i} d={HIBISCUS_VEINS} transform={t} />
-          ))}
-        </g>
-        <g stroke="var(--art-saffron)" strokeWidth={2.4} strokeOpacity={0.55} strokeLinecap="round">
-          {hibiscusPetals.map((t, i) => (
-            <path key={i} d={HIBISCUS_SHEEN} transform={t} />
-          ))}
-        </g>
-        <path d={COLUMN} stroke="var(--gold-soft)" strokeWidth={2.6} strokeLinecap="round" />
-        <g fill="var(--art-core)">
-          {POLLEN.map((p, i) => (
-            <circle key={i} cx={p.x} cy={p.y} r={1.7} />
-          ))}
-        </g>
-        <g fill="var(--art-crimson)">
-          {STIGMA.map((p, i) => (
-            <circle key={i} cx={p.x} cy={p.y} r={2.4} />
-          ))}
-        </g>
+        <Hibiscus h={HIBISCUS} url={url} />
       </g>
 
       {/* The bindu: she herself, and, the second verse says, "I" */}

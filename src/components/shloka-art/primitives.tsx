@@ -10,7 +10,7 @@
  * backdrop and again on the client inside the plate, and must match.
  */
 
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 import type { ArtPart } from "./types";
 
@@ -612,6 +612,132 @@ export function sunRays({ cx, cy, r, long, short, count = 16, span = 180 }: { cx
     };
     return { d: `M ${at(r + 5, -4)} L ${at(isLong ? long : short, 0)} L ${at(r + 5, 4)} Z`, long: isLong, deg };
   });
+}
+
+/* ── The sea ───────────────────────────────────────────────────────────── */
+
+/** Deterministic noise in [0, 1). */
+export function hash(a: number, b: number) {
+  let h = Math.imul(a ^ 0x9e3779b9, 0x85ebca6b) ^ Math.imul(b + 0x632be5ab, 0xc2b2ae35);
+  h ^= h >>> 15;
+  h = Math.imul(h, 0x2c1b3c6d);
+  h ^= h >>> 12;
+  return (h >>> 0) / 4294967296;
+}
+
+/**
+ * The sea below a horizon at y = `horizon`: rows of shallow ripple arcs,
+ * closer together near the horizon, spanning `half` either side of `cx`, and
+ * the light on it as a column of lozenges under `cx`, `column` wide (half
+ * width) at the horizon and widening toward the viewer. The ripples stop short
+ * of the column. The lozenges come in three groups, to twinkle out of step.
+ * Stroke the ripples in `--gold` under a mask that fades them at the sides,
+ * and fill the lozenges `--art-saffron` (the last group `--art-core`).
+ */
+export function seaSurface({ cx, horizon, column, half = 290 }: { cx: number; horizon: number; column: number; half?: number }) {
+  const rows = Array.from({ length: 16 }, (_, k) => horizon + 8 + 6 * k + 0.7 * k * k).filter((y) => y < 800);
+  const ripples: string[] = [];
+  const reflection = ["", "", ""];
+  rows.forEach((y, k) => {
+    const depth = y - horizon;
+    const width = column + 0.35 * depth;
+    const lift = 1.2 + 0.03 * depth;
+    let x = cx - half + hash(k, 0) * 20;
+    let j = 0;
+    while (x < cx + half) {
+      const len = 12 + (20 + depth * 0.12) * hash(k, j * 3 + 1);
+      const end = Math.min(x + len, cx + half);
+      const inColumn = end > cx - width && x < cx + width;
+      if (!inColumn && hash(k, j * 3 + 3) > 0.3) {
+        ripples.push(`M ${round(x)} ${round(y)} Q ${round((x + end) / 2)} ${round(y - lift)} ${round(end)} ${round(y)}`);
+      }
+      x = end + 8 + 18 * hash(k, j * 3 + 2);
+      j++;
+    }
+    let g = cx - width + hash(k, 99) * 8;
+    let n = 0;
+    while (g < cx + width) {
+      const l = 5 + 13 * hash(k, 200 + n) * (1 - Math.abs(g - cx) / (width * 1.4));
+      const h = 1.6 + 0.08 * k;
+      const mid = g + l;
+      reflection[(k + n) % 3] +=
+        `M ${round(g)} ${round(y)} Q ${round(mid)} ${round(y - h)} ${round(g + 2 * l)} ${round(y)} Q ${round(mid)} ${round(y + h)} ${round(g)} ${round(y)} Z `;
+      g += 2 * l + 4 + 9 * hash(k, 300 + n);
+      n++;
+    }
+  });
+  return { ripples, reflection };
+}
+
+/* ── Rain ──────────────────────────────────────────────────────────────── */
+
+/**
+ * Rain over the box from (x, y), w wide and h high: `count` hairlines, 20 to
+ * 44 long and slanting a little to the left as they fall, spread evenly
+ * enough not to clump into hatching. Returned in three groups, so one can
+ * shimmer. Stroke them 0.7 wide in a `--gold-soft` gradient faded at top and
+ * bottom.
+ */
+export function rainGroups({ x, y, w, h, count }: { x: number; y: number; w: number; h: number; count: number }) {
+  const lines = Array.from({ length: count }, (_, k) => {
+    const px = round(x + ((k * 0.6180339 + 0.13) % 1) * w);
+    const py = round(y + ((k * 0.7548777 + 0.5) % 1) * h);
+    const l = 20 + (k % 5) * 6;
+    return `M ${px} ${py} L ${round(px - l * 0.2)} ${py + l}`;
+  });
+  return [0, 1, 2].map((g) => lines.filter((_, k) => k % 3 === g).join(" "));
+}
+
+/* ── Haṃsas in flight ───────────────────────────────────────────────────── */
+
+const GOOSE_BODY = "M -5.5 0 C -4 -2.6 3 -2.8 5.5 -0.8 L 9 -2 L 8 1.2 C 4 2.6 -3 2.6 -5.5 0 Z";
+const GOOSE_NECK = "M -4.5 -0.6 Q -8.5 -1.8 -11 -1.6";
+const GOOSE_BEAK = "M -13.2 -2.1 L -16 -1.4 L -13.2 -0.9 Z";
+const WING_UP = "M -1.5 -1.6 C 0 -7 3 -11 7.5 -12.5 C 6.2 -8.4 4.6 -4.4 3 -1.4 Z";
+const WING_UP_FAR = "M 0.5 -1.8 C 1.5 -5.5 3.4 -8.4 6 -10 C 5.6 -6.8 4.6 -4 3.6 -1.8 Z";
+const WING_DOWN = "M -1.5 0.8 C 0 5.4 3 8.6 7 9.6 C 5.8 6.4 4.4 3.4 3 0.8 Z";
+const WING_DOWN_FAR = "M -2 -1.4 C -0.6 -4.2 1.2 -6 3.4 -7 C 3.4 -4.8 3 -3 2.4 -1.6 Z";
+
+/** A wild goose in flight, about 25 long, heading left with its beak at (−16, −1.4); `up` raises the wings. */
+export function Goose({ up }: { up: boolean }) {
+  return (
+    <>
+      <path d={up ? WING_UP_FAR : WING_DOWN_FAR} fill="var(--gold-soft)" />
+      <path d={GOOSE_BODY} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.5} strokeLinejoin="round" />
+      <path d={GOOSE_NECK} stroke="var(--art-moon)" strokeWidth={1.5} strokeLinecap="round" />
+      <path d={GOOSE_NECK} stroke="var(--gold)" strokeWidth={0.35} strokeOpacity={0.8} />
+      <circle cx={-12} cy={-1.6} r={1.6} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={GOOSE_BEAK} fill="var(--art-saffron)" />
+      <path d={up ? WING_UP : WING_DOWN} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.5} strokeLinejoin="round" />
+    </>
+  );
+}
+
+/* ── Rain cloud (megha) ────────────────────────────────────────────────── */
+
+export type Lobe = { x: number; y: number; r: number };
+
+/**
+ * A rain cloud's body: its lobes as circles, `--art-moon` over a 2.4 `--gold`
+ * stroke, so only the outline of their union shows. Cut its foot flat with a
+ * clip, darken it with `--art-hair` there, and lay a gold line along the cut.
+ */
+export function CloudLobes({ lobes }: { lobes: Lobe[] }) {
+  return (
+    <>
+      {lobes.map((l, i) => (
+        <circle key={i} cx={l.x} cy={l.y} r={l.r} stroke="var(--gold)" strokeWidth={2.4} />
+      ))}
+      {lobes.map((l, i) => (
+        <circle key={i} cx={l.x} cy={l.y} r={l.r} fill="var(--art-moon)" />
+      ))}
+    </>
+  );
+}
+
+/** A hair-fine arc over the top of an inner lobe, so the cloud reads as heaped. Stroke it `--gold-soft`, 0.7 wide. */
+export function cloudArc(l: Lobe) {
+  return `M ${round(l.x - l.r * 0.6)} ${round(l.y - l.r * 0.35)} A ${round(l.r * 0.8)} ${round(l.r * 0.8)} 0 0 1 ${round(l.x + l.r * 0.5)} ${round(l.y - l.r * 0.55)}`;
 }
 
 /**
@@ -1882,6 +2008,35 @@ export function RathaTriangles({ g, url }: { g: RathaShape; url: (name: string) 
   );
 }
 
+/**
+ * The Śrīcakra face-on, in yantra units round the origin: the square of gates
+ * (three lines), three circles, the sixteen and the eight petals, and the nine
+ * triangles over the field of her light. Place and scale it with a transform
+ * on a parent group; it needs `RathaDefs` for the field.
+ */
+export function SriCakraFace({ url }: { url: (name: string) => string }) {
+  return (
+    <>
+      <path d={gateSquare(48, 8, 5)} fill="var(--art-stone)" fillOpacity={0.7} stroke="var(--gold)" strokeWidth={1.6} {...nonScaling} />
+      <path d={gateSquare(45.6, 6.4, 5)} stroke="var(--art-vermilion)" strokeWidth={1.1} {...nonScaling} />
+      <path d={gateSquare(43.2, 4.8, 5)} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={41.6} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={40.2} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <circle r={38.8} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <path d={yantraPetals(16, 31.2, 38)} fill="var(--art-core)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={31.2} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <path d={yantraPetals(8, 24, 30.8)} fill="var(--art-saffron)" fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={24} fill={url("field")} fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} fill={t.down ? "var(--art-vermilion)" : "var(--art-core)"} fillOpacity={0.16} />
+      ))}
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" {...nonScaling} />
+      ))}
+    </>
+  );
+}
+
 /** A spear, a trident, an arrow and a goad, each standing up from the origin, about 22 tall. */
 function WeaponGlyph({ kind }: { kind: number }) {
   const shaft = <path d="M 0 0 V -14" stroke="var(--gold)" strokeWidth={1.1} />;
@@ -2507,6 +2662,686 @@ export function LotusLeaf() {
           <circle cx={round(b.x - b.r * 0.35)} cy={round(b.y - b.r)} r={round(b.r * 0.3)} fill="var(--art-moon)" />
         </g>
       ))}
+    </>
+  );
+}
+
+/* ── Hibiscus (japā) ───────────────────────────────────────────────────── */
+
+export const HIBISCUS_R = 64;
+
+/** One broad petal of the hibiscus, base at the origin, pointing up, its rim a little ruffled. */
+const HIBISCUS_PETAL = [
+  "M 0 0",
+  "C -10 -10 -34 -26 -38 -44",
+  "C -41 -58 -26 -67 -12 -64",
+  "C -6 -66 -2 -62 1 -65",
+  "C 5 -68 10 -66 15 -65",
+  "C 30 -64 41 -54 37 -40",
+  "C 34 -26 10 -8 0 0",
+  "Z",
+].join(" ");
+const HIBISCUS_VEINS = [-24, -12, 0, 12, 24]
+  .map((x) => `M ${round(x * 0.15)} -14 Q ${round(x * 0.7)} -34 ${x} ${-52 + Math.abs(x) * 0.25}`)
+  .join(" ");
+/** The sheen down the middle of each petal, where it catches the light. */
+const HIBISCUS_SHEEN = "M 1 -20 C 2 -32 3 -44 1 -56";
+
+/**
+ * A hibiscus seen face on, centred on `c` (petals of radius 64): five petals
+ * turned in a pinwheel, and the staminal column leaning up and out to the
+ * right, dusted with pollen and tipped with five stigma pads.
+ */
+export function hibiscus(c: Pt) {
+  const petals = Array.from({ length: 5 }, (_, k) => `translate(${c.x} ${c.y}) rotate(${8 + k * 72})`);
+  const tip = polar(c.x, c.y, 76, 24);
+  const column = `M ${c.x} ${c.y} C ${c.x + 18} ${c.y - 2} ${c.x + 44} ${c.y - 14} ${tip.x} ${tip.y}`;
+  const pollen = [0.62, 0.68, 0.74, 0.8, 0.86].flatMap((t, i) => {
+    const x = c.x + (tip.x - c.x) * t;
+    const y = c.y + (tip.y - c.y) * t;
+    return [
+      { x: round(x - 2), y: round(y - 4 - (i % 2)) },
+      { x: round(x + 2), y: round(y + 3 + (i % 2)) },
+    ];
+  });
+  const stigma = Array.from({ length: 5 }, (_, k) => polar(tip.x + 2, tip.y - 1, 4, 18 + k * 72));
+  return { c, petals, column, pollen, stigma };
+}
+
+export type HibiscusShape = ReturnType<typeof hibiscus>;
+
+/** The petals' fill, `--art-crimson` at the eye to `--art-vermilion`; its id is `hibiscus`. */
+export function HibiscusGradient({ h, id }: { h: HibiscusShape; id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("hibiscus")} cx={h.c.x} cy={h.c.y} r={HIBISCUS_R} gradientUnits="userSpaceOnUse">
+      <stop offset="0" style={{ stopColor: "var(--art-crimson)" }} />
+      <stop offset="0.28" style={{ stopColor: "var(--art-crimson)" }} />
+      <stop offset="0.46" style={{ stopColor: "var(--art-vermilion)" }} />
+      <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
+    </radialGradient>
+  );
+}
+
+export function Hibiscus({ h, url }: { h: HibiscusShape; url: (name: string) => string }) {
+  return (
+    <>
+      <g fill={url("hibiscus")} stroke="var(--art-crimson)" strokeWidth={0.8} strokeOpacity={0.7} strokeLinejoin="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_PETAL} transform={t} />
+        ))}
+      </g>
+      <g stroke="var(--art-crimson)" strokeWidth={0.6} strokeOpacity={0.5} strokeLinecap="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_VEINS} transform={t} />
+        ))}
+      </g>
+      <g stroke="var(--art-saffron)" strokeWidth={2.4} strokeOpacity={0.55} strokeLinecap="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_SHEEN} transform={t} />
+        ))}
+      </g>
+      <path d={h.column} stroke="var(--gold-soft)" strokeWidth={2.6} strokeLinecap="round" />
+      <g fill="var(--art-core)">
+        {h.pollen.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={1.7} />
+        ))}
+      </g>
+      <g fill="var(--art-crimson)">
+        {h.stigma.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={2.4} />
+        ))}
+      </g>
+    </>
+  );
+}
+
+/* ── Crystal (sphaṭika) ────────────────────────────────────────────────── */
+
+const CRYSTAL_BODY = "M 0 -26 L 7 -16 L 7 14 L 0 22 L -7 14 L -7 -16 Z";
+const CRYSTAL_FACETS = "M 0 -26 L 0 22 M -7 -16 L 7 -16 M -7 14 L 7 14 M -7 -16 L 0 -10 L 7 -16 M -7 14 L 0 8 L 7 14";
+
+/** The crystal's fill (`crystal`) and its soft glow (`clear`). */
+export function CrystalDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <linearGradient id={id("crystal")} x1={0} y1={0} x2={1} y2={1}>
+        <stop offset="0" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.95 }} />
+        <stop offset="0.5" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.9 }} />
+      </linearGradient>
+      <radialGradient id={id("clear")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.45 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+/** A clear crystal, an upright hexagonal prism with pointed ends, 14 wide and 48 tall, centred on (x, y), in a soft moon glow. */
+export function Crystal({ x, y, url }: Pt & { url: (name: string) => string }) {
+  return (
+    <>
+      <ellipse className="m-shimmer" cx={x} cy={y} rx={22} ry={32} fill={url("clear")} />
+      <g transform={`translate(${x} ${y})`} strokeLinejoin="round">
+        <path d={CRYSTAL_BODY} fill={url("crystal")} stroke="var(--gold)" strokeWidth={0.9} />
+        <path d={CRYSTAL_FACETS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.8} />
+        <path className="m-twinkle" d={glint(5)} transform="translate(-3 -14)" fill="var(--art-ivory)" />
+      </g>
+    </>
+  );
+}
+
+/* ── The couch of the five Brahmās (pañcabrahmāsana) ───────────────────── */
+
+const BRAHMAS = [
+  { dx: -48, god: "brahma", fill: "var(--art-vermilion)" },
+  { dx: -16, god: "visnu", fill: "var(--art-hair)" },
+  { dx: 16, god: "rudra", fill: "var(--art-moon)" },
+  { dx: 48, god: "isvara", fill: "var(--gold)" },
+];
+
+/** The four gods' emblems, each drawn round the origin within a radius of about 5. */
+function BrahmaEmblem({ god }: { god: string }) {
+  if (god === "brahma")
+    return (
+      <g fill="var(--art-core)">
+        {[0, 60, 120, 180, 240, 300].map((deg) => (
+          <ellipse key={deg} cy={-2.6} rx={1.3} ry={2.6} transform={`rotate(${deg})`} />
+        ))}
+      </g>
+    );
+  if (god === "visnu")
+    return (
+      <g stroke="var(--art-core)" strokeWidth={0.8}>
+        <circle r={4.2} />
+        <path d="M -4.2 0 H 4.2 M 0 -4.2 V 4.2 M -3 -3 L 3 3 M 3 -3 L -3 3" strokeWidth={0.5} />
+      </g>
+    );
+  if (god === "rudra")
+    return <path d="M 0 5 V -4 M -3.4 -4.6 C -3.4 -1 -1.5 0 0 0 C 1.5 0 3.4 -1 3.4 -4.6 M 0 -4 L -1 -2.4 M 0 -4 L 1 -2.4" stroke="var(--art-hair)" strokeWidth={0.9} strokeLinecap="round" />;
+  return <path d="M -4.4 -3.4 Q 0 -5 4.4 -3.4 L 3.6 4 Q 1.6 2.4 0 4 Q -1.6 2.4 -3.6 4 Z" fill="var(--art-core)" fillOpacity={0.85} />;
+}
+
+/**
+ * The couch of the five Brahmās, centred on `cx`: a white plank (Sadāśiva),
+ * 112 wide, its top at `plank`, on four gold legs standing on `floor`, each
+ * with a medallion of its god, from the left Brahmā, Viṣṇu, Rudra and Īśvara.
+ */
+export function BrahmaCouch({ cx, plank, floor }: { cx: number; plank: number; floor: number }) {
+  const legTop = plank + 7;
+  const medal = legTop + 9;
+  return (
+    <>
+      {BRAHMAS.map(({ dx, god, fill }) => {
+        const x = cx + dx;
+        return (
+          <g key={god}>
+            <path d={`M ${x - 3} ${legTop} L ${x + 3} ${legTop} L ${x + 2} ${floor} L ${x - 2} ${floor} Z`} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+            <circle cx={x} cy={medal} r={6.4} fill={fill} stroke="var(--gold)" strokeWidth={1} />
+            <g transform={`translate(${x} ${medal}) scale(0.95)`}>
+              <BrahmaEmblem god={god} />
+            </g>
+          </g>
+        );
+      })}
+      <rect x={cx - 56} y={plank} width={112} height={7} rx={2} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} />
+      <path d={`M ${cx - 52} ${plank + 2.2} H ${cx + 52}`} stroke="var(--gold-soft)" strokeWidth={0.7} />
+    </>
+  );
+}
+
+/* ── A plait (veṇī) ────────────────────────────────────────────────────── */
+
+/** Rotation (degrees) that turns a local "down" (+y) along the tangent t. */
+export const downAlong = (t: Pt) => round((Math.atan2(-t.x, t.y) * 180) / Math.PI);
+
+/**
+ * A plait along a cubic centreline: lobes of hair laid alternately from each side, `step` apart
+ * from `start` units down, `width(s, length)` wide `s` units down it. Each lobe gives its shape, its
+ * gold sheen and its placement (`at`), and where a flower goes on it (`c`, `t`, `side`, `s`); `tip`
+ * is the end of the centreline and its direction, for `PlaitTip`.
+ */
+export function plait(curve: [Pt, Pt, Pt, Pt], width: (s: number, length: number) => number, step = 15, start = 6) {
+  const samples: { p: Pt; s: number }[] = [];
+  let s = 0;
+  let prev = curve[0];
+  for (let i = 0; i <= 300; i++) {
+    const p = cubicAt(...curve, i / 300);
+    s += Math.hypot(p.x - prev.x, p.y - prev.y);
+    samples.push({ p, s });
+    prev = p;
+  }
+  const length = samples[samples.length - 1].s;
+  const along = (at: number) => {
+    const found = samples.findIndex((e) => e.s >= at);
+    const i = Math.max(1, found < 0 ? samples.length - 1 : found);
+    const a = samples[i - 1].p;
+    const b = samples[i].p;
+    const len = Math.hypot(b.x - a.x, b.y - a.y);
+    const t = { x: (b.x - a.x) / len, y: (b.y - a.y) / len };
+    return { p: b, t, n: { x: -t.y, y: t.x } };
+  };
+  const lobes = Array.from({ length: Math.floor((length - 2 * start) / step) + 1 }, (_, i) => {
+    const at = start + i * step;
+    const { p, n, t } = along(at);
+    const side = i % 2 ? 1 : -1;
+    const w = width(at, length);
+    const c = { x: round(p.x + n.x * side * w * 0.2), y: round(p.y + n.y * side * w * 0.2) };
+    const len = round(w * 0.5);
+    return {
+      s: at,
+      side,
+      c,
+      t,
+      lobe: `M 0 ${-len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${-len} Z`,
+      sheen: `M ${round(len * 0.12)} ${round(-len * 0.72)} Q ${round(len * 0.46)} 0 ${round(len * 0.12)} ${round(len * 0.72)}`,
+      at: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) - side * 36)})`,
+    };
+  });
+  return { length, lobes, tip: along(length) };
+}
+
+export type PlaitShape = ReturnType<typeof plait>;
+
+/** The plait's lobes in `--art-hair`, each with its `--gold-soft` sheen. */
+export function PlaitLobes({ p }: { p: PlaitShape }) {
+  return (
+    <>
+      <g fill="var(--art-hair)">
+        {p.lobes.map((l, i) => (
+          <path key={i} d={l.lobe} transform={l.at} />
+        ))}
+      </g>
+      <g stroke="var(--gold-soft)" strokeWidth={0.7} strokeOpacity={0.6} strokeLinecap="round">
+        {p.lobes.map((l, i) => (
+          <path key={i} d={l.sheen} transform={l.at} />
+        ))}
+      </g>
+    </>
+  );
+}
+
+const PLAIT_TIP_STRANDS = [-6, -4, -2, 0, 2, 4, 6];
+
+/** The plait's end: a gold binding and a small tuft of loose hair below it. */
+export function PlaitTip({ p }: { p: PlaitShape }) {
+  return (
+    <g transform={`translate(${round(p.tip.p.x)} ${round(p.tip.p.y)}) rotate(${downAlong(p.tip.t)})`}>
+      <g stroke="var(--art-hair)" strokeWidth={1.1} strokeLinecap="round">
+        {PLAIT_TIP_STRANDS.map((x) => (
+          <path key={x} d={`M ${x} 2 Q ${round(x * 1.3)} 16 ${round(x * 1.7 + 3)} ${round(30 - Math.abs(x) * 0.8)}`} />
+        ))}
+      </g>
+      <rect x={-10} y={-3} width={20} height={7} rx={1.5} fill="var(--gold)" />
+      <path d="M -10 0.5 H 10" stroke="var(--art-carve)" strokeWidth={0.6} />
+    </g>
+  );
+}
+
+/* ── Brahmā on his lotus ───────────────────────────────────────────────── */
+
+/** His four faces as four flames toward the quarters: left, back, right, and front. */
+const BRAHMA_FACES = [
+  { x: -14, y: -11, lean: -3, s: 0.8, rot: -16 },
+  { x: 0, y: -16, lean: 0, s: 0.66, rot: 0 },
+  { x: 14, y: -11, lean: 3, s: 0.8, rot: 16 },
+  { x: 0, y: -7, lean: 0, s: 1, rot: 0 },
+];
+
+/** The saffron glow round Brahmā (`brahma`), for the `<defs>` of an artwork that draws `BrahmaLotus`. */
+export function BrahmaLotusDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("brahma")}>
+      <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.75 }} />
+      <stop offset="0.5" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.22 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+    </radialGradient>
+  );
+}
+
+/**
+ * Brahmā on his lotus, never as a figure: a crimson-veined open lotus 126 across, centred on the
+ * origin, with his four faces as four small vermilion flames on its seed head, in a shimmering
+ * saffron glow of radius 58 centred 10 above the origin.
+ */
+export function BrahmaLotus({ url }: { url: (name: string) => string }) {
+  return (
+    <>
+      <circle className="m-shimmer" cy={-10} r={58} fill={url("brahma")} />
+      <g transform="scale(1.4)">
+        <OpenLotus pad={false} shade="var(--art-crimson)" />
+      </g>
+      {BRAHMA_FACES.map((f, i) => (
+        <g key={i} transform={`translate(${f.x} ${f.y}) rotate(${f.rot}) scale(${f.s * 1.25})`}>
+          <path d={tongue(17, 8, f.lean)} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+          <path d={tongue(8, 3.6, f.lean * 0.5)} fill="var(--art-core)" fillOpacity={0.9} />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── Kolam ─────────────────────────────────────────────────────────────── */
+
+/**
+ * A kolam in rice flour: the line `d` in `--art-ivory` over a faint musk line so it shows by day,
+ * and its dots (pulli) in ivory touched with gold. Its shape is the artwork's own.
+ */
+export function Kolam({ d, dots, line = 1.1, dot = 1.6 }: { d: string; dots: Pt[]; line?: number; dot?: number }) {
+  return (
+    <>
+      <path d={d} stroke="var(--art-musk)" strokeWidth={round(line + 0.9)} strokeOpacity={0.3} strokeLinejoin="round" />
+      <path d={d} stroke="var(--art-ivory)" strokeWidth={line} strokeOpacity={0.9} strokeLinejoin="round" />
+      {dots.map((p, i) => (
+        <circle key={i} cx={p.x} cy={p.y} r={dot} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.3} />
+      ))}
+    </>
+  );
+}
+
+/* ── Elephant (gaja) ───────────────────────────────────────────────────── */
+
+/** An elephant facing right, standing on the origin, about 110 long and 88 to the top of its back. */
+const ELEPHANT_BODY =
+  "M -52 -58 C -50 -80 -30 -88 -6 -86 C 14 -84 22 -92 36 -90 C 50 -88 58 -78 56 -64 L 52 -50 C 50 -46 47 -44 44 -42 L 46 0 L 30 0 L 30 -34 C 10 -30 -14 -30 -32 -34 L -32 0 L -50 0 L -52 -40 C -54 -46 -54 -52 -52 -58 Z";
+const ELEPHANT_FAR_LEGS = "M 38 -36 L 38 -2 L 52 -2 L 50 -40 Z M -42 -36 L -42 -2 L -28 -2 L -26 -36 Z";
+/** Trunks: raised in a curl to hold up a pot, or hanging, curled at the tip. */
+export const ELEPHANT_TRUNK = {
+  raised: "M 50 -70 C 66 -76 76 -96 70 -116 C 68 -124 60 -126 57 -120 C 56 -116 60 -114 62 -116 C 64 -100 58 -80 48 -56 Z",
+  down: "M 50 -70 C 60 -66 62 -50 60 -30 C 60 -22 62 -16 66 -14 C 64 -11 58 -13 56 -20 C 54 -34 54 -50 46 -56 Z",
+};
+const ELEPHANT_TOES = [34, 39, 44, -48, -43, -38].map((x) => `M ${x - 1.6} -0.8 A 1.6 1.6 0 0 1 ${x + 1.6} -0.8`).join(" ");
+const ELEPHANT_BROW_CHAIN = "M 30 -88 Q 44 -82 54 -70";
+const ELEPHANT_EAR = "M 24 -80 C 8 -80 4 -56 12 -46 C 20 -40 30 -48 32 -58 C 32 -68 30 -76 24 -80 Z";
+const ELEPHANT_TUSK = "M 46 -50 C 54 -46 62 -46 66 -54";
+const ELEPHANT_CLOTH = "M -38 -80 C -22 -88 2 -88 14 -84 L 12 -50 C -6 -46 -24 -46 -40 -50 Z";
+const ELEPHANT_CLOTH_FRINGE = Array.from({ length: 9 }, (_, k) => {
+  const x = round(-38 + k * 6.2);
+  return `M ${x} -49 L ${x} -45`;
+}).join(" ");
+const ELEPHANT_TAIL = "M -52 -56 C -58 -46 -58 -36 -55 -26";
+
+/** The elephant's slate hide (`hide`), a little paler toward its back. */
+export function ElephantDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <linearGradient id={id("hide")} x1={0} y1={-90} x2={0} y2={0} gradientUnits="userSpaceOnUse">
+      <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.78 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.95 }} />
+    </linearGradient>
+  );
+}
+
+/**
+ * An elephant in profile facing right, standing on the origin: slate hide
+ * edged in gold, ivory toenails and tusk, a dotted gold chain across the
+ * brow, a red caparison. `children` are drawn over it, in its frame.
+ */
+export function Elephant({ trunk, url, children }: { trunk: string; url: (name: string) => string; children?: ReactNode }) {
+  return (
+    <>
+      <path d={ELEPHANT_FAR_LEGS} fill="var(--art-hair)" fillOpacity={0.6} />
+      <path d={ELEPHANT_TAIL} stroke="var(--art-hair)" strokeWidth={2} strokeLinecap="round" />
+      <path d={ELEPHANT_BODY} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d={trunk} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d={ELEPHANT_TOES} stroke="var(--art-ivory)" strokeWidth={1} />
+      <path d={ELEPHANT_BROW_CHAIN} stroke="var(--gold)" strokeWidth={1.6} strokeDasharray="0.1 3.4" strokeLinecap="round" />
+      <path d={ELEPHANT_EAR} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={0.7} />
+      <path d={ELEPHANT_CLOTH} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
+      <path d={ELEPHANT_CLOTH_FRINGE} stroke="var(--gold)" strokeWidth={1} strokeLinecap="round" />
+      <path d={ELEPHANT_TUSK} stroke="var(--art-ivory)" strokeWidth={3} strokeLinecap="round" />
+      <circle cx={42} cy={-74} r={1.6} fill="var(--art-core)" />
+      {children}
+    </>
+  );
+}
+
+/* ── Balance (tulā) ────────────────────────────────────────────────────── */
+
+const BALANCE_CX = 320;
+const BALANCE_PIVOT = { x: BALANCE_CX, y: 150 };
+const BALANCE_HALF = 150;
+const BALANCE_RING_DROP = 11;
+/** Each pan of a balance: a shallow bowl, `rx` across, `ry` deep at its rim, `depth` to its foot. */
+export const BALANCE_PAN = { rx: 60, ry: 12, depth: 24 };
+
+function balancePanShapes(end: Pt, { x, y }: Pt) {
+  const { rx, ry, depth } = BALANCE_PAN;
+  const ringY = end.y + BALANCE_RING_DROP;
+  const top = round(ringY + 4);
+  return {
+    hook: `M ${end.x} ${end.y + 3} V ${round(ringY - 4)}`,
+    ring: { x: end.x, y: ringY },
+    cords: `M ${x} ${top} L ${x - rx + 1} ${y} M ${x} ${top} L ${x + rx - 1} ${y}`,
+    backCord: `M ${x} ${top} L ${x} ${y - ry}`,
+    bowl: `M ${x - rx} ${y} A ${rx} ${ry} 0 0 0 ${x + rx} ${y} C ${x + rx - 2} ${y + 16} ${round(x + 30)} ${y + depth} ${x} ${y + depth} C ${round(x - 30)} ${y + depth} ${x - rx + 2} ${y + 16} ${x - rx} ${y} Z`,
+    band: `M ${x - rx + 4} ${y + 6} A ${rx - 4} ${ry} 0 0 0 ${x + rx - 4} ${y + 6}`,
+    sheen: `M ${x - rx + 10} ${y + 8} Q ${x - rx + 16} ${y + 18} ${x - 26} ${y + 21}`,
+    beads: Array.from({ length: 17 }, (_, k) => {
+      const phi = ((10 + k * 10) * Math.PI) / 180;
+      return { x: round(x + rx * Math.cos(phi)), y: round(y + ry * Math.sin(phi)) };
+    }),
+    finial: { x, y: y + depth + 3 },
+  };
+}
+
+export type BalancePan = { end: Pt; at: Pt; shapes: ReturnType<typeof balancePanShapes> };
+export type BalanceGeometry = { tilt: number; pans: [BalancePan, BalancePan] };
+
+/**
+ * A balance hung from a chain at x 320, y 0, its pivot at y 150, the beam
+ * tipped `tilt` degrees down to the left and each pan hung `cord` below the
+ * ring at its end of the beam. Draw it with `Balance`; put things in a pan at
+ * `pans[i].at`, swinging with it from `balanceSwing(pans[i].end)`.
+ */
+export function balance(tilt: number, cord: number): BalanceGeometry {
+  const t = (tilt * Math.PI) / 180;
+  const pan = (side: -1 | 1): BalancePan => {
+    const end = { x: round(BALANCE_CX + side * BALANCE_HALF * Math.cos(t)), y: round(BALANCE_PIVOT.y - side * BALANCE_HALF * Math.sin(t)) };
+    const at = { x: end.x, y: round(end.y + BALANCE_RING_DROP + cord) };
+    return { end, at, shapes: balancePanShapes(end, at) };
+  };
+  return { tilt, pans: [pan(-1), pan(1)] };
+}
+
+/** Where a pan swings from: the hook under its end of the beam. */
+export const balanceSwing = (end: Pt) => swingFrom({ x: end.x, y: end.y + 4 });
+
+/** The beam, drawn level about the pivot and then turned: thickest at the middle, tapering to bud finials. */
+const BALANCE_BEAM = "M -144 -3.4 L -16 -6.2 Q 0 -8.4 16 -6.2 L 144 -3.4 L 144 3.4 L 16 6.2 Q 0 8.4 -16 6.2 L -144 3.4 Z";
+const BALANCE_BEAM_BANDS = [-100, -54, 54, 100];
+const BALANCE_BUD = "M 0 -5.6 C 6 -5.6 12 -3.6 18 0 C 12 3.6 6 5.6 0 5.6 Z";
+/** The tongue stands at right angles to the beam, so it leans with it toward the heavier pan. */
+const BALANCE_TONGUE = 84;
+/** The fork the tongue swings in, hung from the chain; level, the tongue sits under the red mark at its top. */
+const BALANCE_FORK = { top: 56, half: 18, bar: 5 };
+const BALANCE_CHAIN = Array.from({ length: 4 }, (_, k) => ({ y: 3 + k * 9.6, flat: k % 2 === 1 }));
+
+/**
+ * The gold balance of `balance()`: chain, fork, tongue, beam, and both pans.
+ * `sway` gives each pan's motion class; `inside` whether its gold-soft inside
+ * is drawn (leave it out where the pan is filled).
+ */
+export function Balance({ b, sway = [undefined, undefined], inside = [true, true] }: { b: BalanceGeometry; sway?: [string | undefined, string | undefined]; inside?: [boolean, boolean] }) {
+  const CX = BALANCE_CX;
+  const PIVOT = BALANCE_PIVOT;
+  const FORK = BALANCE_FORK;
+  const PAN = BALANCE_PAN;
+  return (
+    <>
+      <g stroke="var(--gold)" strokeWidth={2}>
+        {BALANCE_CHAIN.map((l, k) =>
+          l.flat ? (
+            <line key={k} x1={CX} y1={l.y - 5} x2={CX} y2={l.y + 5} />
+          ) : (
+            <ellipse key={k} cx={CX} cy={l.y} rx={3.2} ry={6} />
+          ),
+        )}
+      </g>
+      <circle cx={CX} cy={37} r={5.6} stroke="var(--gold)" strokeWidth={2.2} />
+      <g fill="var(--gold)">
+        <path d={`M ${CX} 42 C ${CX + 8} 45 ${CX + 9} 51 ${CX + 6} ${FORK.top} L ${CX - 6} ${FORK.top} C ${CX - 9} 51 ${CX - 8} 45 ${CX} 42 Z`} />
+        <rect x={CX - FORK.half - 8} y={FORK.top} width={2 * FORK.half + 16} height={7} rx={3} />
+        <circle cx={CX - FORK.half - 8} cy={FORK.top + 3.5} r={4} />
+        <circle cx={CX + FORK.half + 8} cy={FORK.top + 3.5} r={4} />
+      </g>
+      <path d={`M ${CX - 3.6} ${FORK.top + 7} L ${CX + 3.6} ${FORK.top + 7} L ${CX} ${FORK.top + 15} Z`} fill="var(--art-vermilion)" />
+
+      <g transform={`rotate(${-b.tilt} ${PIVOT.x} ${PIVOT.y})`}>
+        <path
+          d={`M ${CX - 2.8} ${PIVOT.y} L ${CX - 0.9} ${PIVOT.y - BALANCE_TONGUE + 6} L ${CX} ${PIVOT.y - BALANCE_TONGUE} L ${CX + 0.9} ${PIVOT.y - BALANCE_TONGUE + 6} L ${CX + 2.8} ${PIVOT.y} Z`}
+          fill="var(--gold)"
+          stroke="var(--art-carve)"
+          strokeWidth={0.4}
+        />
+        <g transform={`translate(${PIVOT.x} ${PIVOT.y})`}>
+          <path d={BALANCE_BEAM} fill="var(--gold)" />
+          <path d="M -138 0 L 138 0" stroke="var(--art-carve)" strokeWidth={0.7} strokeOpacity={0.8} />
+          <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.4}>
+            {BALANCE_BEAM_BANDS.map((x) => (
+              <rect key={x} x={x - 3} y={-7} width={6} height={14} rx={2} />
+            ))}
+          </g>
+          <path d={BALANCE_BUD} transform="translate(142 0)" fill="var(--gold)" />
+          <path d={BALANCE_BUD} transform="translate(-142 0) scale(-1 1)" fill="var(--gold)" />
+          <circle r={12.5} fill="var(--gold)" />
+          <circle r={9} stroke="var(--art-carve)" strokeWidth={0.8} />
+        </g>
+      </g>
+      <g fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5}>
+        <rect x={CX - FORK.half - FORK.bar} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
+        <rect x={CX + FORK.half} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
+      </g>
+      <circle cx={PIVOT.x} cy={PIVOT.y} r={4} fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.8} />
+
+      {b.pans.map(({ end, at, shapes: s }, i) => (
+        <g key={i}>
+          <path d={s.hook} stroke="var(--gold)" strokeWidth={2} strokeLinecap="round" />
+          <g className={sway[i]} style={balanceSwing(end)}>
+            <circle cx={s.ring.x} cy={s.ring.y} r={4} stroke="var(--gold)" strokeWidth={1.6} />
+            <path d={s.backCord} stroke="var(--gold-soft)" strokeWidth={0.9} strokeOpacity={0.7} />
+            <path d={s.cords} stroke="var(--gold)" strokeWidth={1.3} />
+            {inside[i] && <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} fill="var(--gold-soft)" fillOpacity={0.55} />}
+            <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} stroke="var(--gold)" strokeWidth={1.6} />
+            <path d={s.bowl} fill="var(--gold)" />
+            <path d={s.band} stroke="var(--art-carve)" strokeWidth={0.7} />
+            <path d={s.sheen} stroke="var(--art-core)" strokeWidth={1.4} strokeOpacity={0.6} strokeLinecap="round" />
+            <g fill="var(--gold-soft)">
+              {s.beads.map((p, k) => (
+                <circle key={k} cx={p.x} cy={p.y} r={1.5} />
+              ))}
+            </g>
+            <circle cx={s.finial.x} cy={s.finial.y} r={3.6} fill="var(--gold)" />
+            <path d={`M ${s.finial.x - 2.4} ${s.finial.y + 2.8} L ${s.finial.x} ${s.finial.y + 10} L ${s.finial.x + 2.4} ${s.finial.y + 2.8} Z`} fill="var(--gold)" />
+          </g>
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── Śaṅkara's trident, and the drum tied to it ────────────────────────── */
+
+/**
+ * Śaṅkara's trident standing on the axis x from its top to its foot, at scale s (1 is its size
+ * in Shloka 43), with the drum's place on a cord tied under the prongs.
+ */
+export function trident(x: number, top: number, foot: number, s = 1) {
+  const at = (n: number) => round(n * s);
+  const head = [
+    `M ${x} ${round(top + at(2))} L ${x} ${round(top + at(44))}`,
+    `M ${round(x - at(15))} ${round(top + at(14))} C ${round(x - at(16))} ${round(top + at(34))} ${round(x - at(8))} ${round(top + at(42))} ${x} ${round(top + at(42))}`,
+    `M ${round(x + at(15))} ${round(top + at(14))} C ${round(x + at(16))} ${round(top + at(34))} ${round(x + at(8))} ${round(top + at(42))} ${x} ${round(top + at(42))}`,
+  ].join(" ");
+  const tips = [
+    { x, y: round(top - at(4)) },
+    { x: round(x - at(15)), y: round(top + at(8)) },
+    { x: round(x + at(15)), y: round(top + at(8)) },
+  ];
+  const tie = { x, y: round(top + at(48)) };
+  const drum = { x: round(x + at(20)), y: round(top + at(64)), half: at(12), face: at(8), waist: at(1.8) };
+  const d = drum;
+  return {
+    s,
+    shaft: `M ${x} ${round(top + at(40))} L ${x} ${foot}`,
+    head,
+    guard: `M ${round(x - at(8))} ${round(top + at(44))} L ${round(x + at(8))} ${round(top + at(44))}`,
+    tips: tips.map((p) => `M ${p.x} ${p.y} L ${round(p.x + at(3.4))} ${round(p.y + at(9))} L ${round(p.x - at(3.4))} ${round(p.y + at(9))} Z`),
+    drum,
+    body: `M ${round(d.x - d.face)} ${round(d.y - d.half)} L ${d.x} ${round(d.y - d.waist)} L ${round(d.x + d.face)} ${round(d.y - d.half)} Z M ${round(d.x - d.face)} ${round(d.y + d.half)} L ${d.x} ${round(d.y + d.waist)} L ${round(d.x + d.face)} ${round(d.y + d.half)} Z`,
+    cord: `M ${tie.x} ${tie.y} C ${round(tie.x + at(10))} ${round(tie.y + at(2))} ${d.x} ${round(d.y - d.half - at(12))} ${d.x} ${round(d.y - d.half)}`,
+    beads: `M ${d.x} ${d.y} C ${round(d.x + at(10))} ${round(d.y + at(2))} ${round(d.x + at(14))} ${round(d.y + at(8))} ${round(d.x + at(15))} ${round(d.y + at(16))}`,
+    bead: { x: round(d.x + at(15)), y: round(d.y + at(17)) },
+  };
+}
+
+export type TridentShape = ReturnType<typeof trident>;
+
+/** The trident: a gold three-pronged head with moon-white tips on a turmeric shaft. Wants round caps. */
+export function Trident({ t }: { t: TridentShape }) {
+  const w = (n: number) => round(n * t.s);
+  return (
+    <>
+      <path d={t.shaft} stroke="var(--art-turmeric)" strokeWidth={w(3)} />
+      <path d={t.shaft} stroke="var(--gold)" strokeWidth={w(0.7)} strokeOpacity={0.8} />
+      <path d={t.head} stroke="var(--gold)" strokeWidth={w(2.4)} />
+      <path d={t.guard} stroke="var(--gold)" strokeWidth={w(2.4)} />
+      {t.tips.map((d, i) => (
+        <path key={i} d={d} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={w(0.8)} strokeLinejoin="round" />
+      ))}
+    </>
+  );
+}
+
+/**
+ * The drum hanging upright from its cord, drawn in at the waist. Wants round joins.
+ * `hung={false}` takes it off its cord and leaves out its hanging bead, for a drum in the hand.
+ */
+export function Damaru({ t, hung = true }: { t: TridentShape; hung?: boolean }) {
+  const { drum: d } = t;
+  const w = (n: number) => round(n * t.s);
+  return (
+    <>
+      {hung && <path d={t.cord} stroke="var(--art-vermilion)" strokeWidth={w(0.9)} strokeLinecap="round" />}
+      <path d={t.body} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={w(1)} />
+      <ellipse cx={d.x} cy={round(d.y - d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
+      <ellipse cx={d.x} cy={round(d.y + d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
+      <path d={`M ${d.x - d.waist - w(1.4)} ${d.y} L ${d.x + d.waist + w(1.4)} ${d.y}`} stroke="var(--art-vermilion)" strokeWidth={w(2.2)} strokeLinecap="round" />
+      {hung && (
+        <>
+          <path d={t.beads} stroke="var(--art-vermilion)" strokeWidth={w(0.8)} strokeLinecap="round" />
+          <circle cx={t.bead.x} cy={t.bead.y} r={w(2)} fill="var(--gold)" />
+        </>
+      )}
+    </>
+  );
+}
+
+/* ── A world-egg ───────────────────────────────────────────────────────── */
+
+/** A world-egg (brahmāṇḍa), broad end down, centred on (x, y), half-width w and half-height h. */
+export function eggPath(x: number, y: number, w: number, h: number) {
+  const p = round;
+  return [
+    `M ${p(x)} ${p(y - h)}`,
+    `C ${p(x + 0.62 * w)} ${p(y - h)} ${p(x + w)} ${p(y - 0.25 * h)} ${p(x + w)} ${p(y + 0.2 * h)}`,
+    `C ${p(x + w)} ${p(y + 0.72 * h)} ${p(x + 0.55 * w)} ${p(y + h)} ${p(x)} ${p(y + h)}`,
+    `C ${p(x - 0.55 * w)} ${p(y + h)} ${p(x - w)} ${p(y + 0.72 * h)} ${p(x - w)} ${p(y + 0.2 * h)}`,
+    `C ${p(x - w)} ${p(y - 0.25 * h)} ${p(x - 0.62 * w)} ${p(y - h)} ${p(x)} ${p(y - h)} Z`,
+  ].join(" ");
+}
+
+/* ── Indra's thunderbolt ───────────────────────────────────────────────── */
+
+const VAJRA_END = "M 0 -7 L 0 -25 M -1.6 -8 C -9 -11 -9 -19 0 -24 M 1.6 -8 C 9 -11 9 -19 0 -24 M -3 -7.4 C -14 -9 -15 -18 -8 -21 M 3 -7.4 C 14 -9 15 -18 8 -21";
+
+/** Indra's thunderbolt (vajra), upright: a banded grip and a cage of prongs at each end. Wants a gold stroke and round caps. */
+export function Vajra() {
+  return (
+    <>
+      <path d={VAJRA_END} strokeWidth={1.8} />
+      <path d={VAJRA_END} transform="scale(1 -1)" strokeWidth={1.8} />
+      <rect x={-2.6} y={-7} width={5.2} height={14} rx={2} fill="var(--gold)" strokeWidth={0} />
+      <ellipse cx={0} cy={-7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <ellipse cx={0} cy={7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <circle r={1.6} fill="var(--art-vermilion)" strokeWidth={0} />
+    </>
+  );
+}
+
+/* ── The royal parasol ─────────────────────────────────────────────────── */
+
+/**
+ * A royal parasol (chattra), the middle of its rim at (cx, rim), 124 wide at s = 1: a vermilion
+ * dome with gold ribs, a scalloped fringe, beaded tassels and a bud finial. Wants a gold stroke 1
+ * wide with round joins. Its staff is drawn by the caller.
+ */
+export function Parasol({ cx, rim, s = 1 }: { cx: number; rim: number; s?: number }) {
+  const x = (d: number) => round(cx + d * s);
+  const y = (d: number) => round(rim + d * s);
+  const fringe = Array.from({ length: 11 }, (_, i) => x(-62 + i * 12.4));
+  return (
+    <>
+      <path
+        d={`M ${x(-62)} ${y(0)} C ${x(-54)} ${y(-34)} ${x(-24)} ${y(-48)} ${x(0)} ${y(-50)} C ${x(24)} ${y(-48)} ${x(54)} ${y(-34)} ${x(62)} ${y(0)} Z`}
+        fill="var(--art-vermilion)"
+        fillOpacity={0.6}
+      />
+      {[-50, -25, 25, 50].map((d) => (
+        <line key={d} x1={x(0)} y1={y(-48)} x2={x(d)} y2={y(0)} strokeOpacity={0.7} strokeWidth={0.7} />
+      ))}
+      <path
+        d={fringe.slice(0, 10).map((fx) => `M ${fx} ${y(0)} a ${round(6.2 * s)} ${round(6.2 * s)} 0 0 0 ${round(12.4 * s)} 0`).join(" ")}
+        fill="var(--gold)"
+        fillOpacity={0.45}
+      />
+      {fringe.map((fx, i) => (
+        <g key={i} strokeOpacity={0.7} strokeWidth={0.7}>
+          <line x1={fx} y1={y(0)} x2={fx} y2={y(i % 2 ? 14 : 20)} />
+          <circle cx={fx} cy={y(i % 2 ? 16 : 22)} r={round(1.8 * s)} fill="var(--gold)" stroke="none" />
+        </g>
+      ))}
+      <circle cx={x(0)} cy={y(-57)} r={round(6 * s)} fill="var(--gold)" fillOpacity={0.7} />
+      <path d={`M ${x(0)} ${y(-63)} C ${x(-4)} ${y(-68)} ${x(-2)} ${y(-74)} ${x(0)} ${y(-78)} C ${x(2)} ${y(-74)} ${x(4)} ${y(-68)} ${x(0)} ${y(-63)} Z`} fill="var(--gold)" />
     </>
   );
 }

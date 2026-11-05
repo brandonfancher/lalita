@@ -13,7 +13,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { FlowerArrow, LotusLeaf, MoonDeer, StillLamp, archPath, artIds, glint, partProps, round } from "./primitives";
+import { Crystal, CrystalDefs, FlowerArrow, LotusLeaf, MoonDeer, StillLamp, archPath, artIds, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -37,8 +37,6 @@ const NICHE_R = 24;
 const LAMP = { x: NICHE.cx, y: 494 };
 
 const CRYSTAL = { x: 232, y: 584 };
-const CRYSTAL_BODY = "M 0 -26 L 7 -16 L 7 14 L 0 22 L -7 14 L -7 -16 Z";
-const CRYSTAL_FACETS = "M 0 -26 L 0 22 M -7 -16 L 7 -16 M -7 14 L 7 14 M -7 -16 L 0 -10 L 7 -16 M -7 14 L 0 8 L 7 14";
 
 const LEAF = { x: 148, y: 604, turn: -6 };
 /** Water running off the leaf's edge, leaving nothing on it. */
@@ -115,15 +113,7 @@ export function TenTakenAway({ idPrefix = "sa44", active = null }: ArtProps) {
           <stop offset="0" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.4 }} />
           <stop offset="1" style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }} />
         </radialGradient>
-        <linearGradient id={id("crystal")} x1={0} y1={0} x2={1} y2={1}>
-          <stop offset="0" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.95 }} />
-          <stop offset="0.5" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.9 }} />
-        </linearGradient>
-        <radialGradient id={id("clear")}>
-          <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.45 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
-        </radialGradient>
+        <CrystalDefs id={id} />
         <radialGradient id={id("hearth")}>
           <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.34 }} />
           <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0 }} />
@@ -181,12 +171,7 @@ export function TenTakenAway({ idPrefix = "sa44", active = null }: ArtProps) {
 
       {/* A clear crystal */}
       <g {...part("stainless")}>
-        <ellipse className="m-shimmer" cx={CRYSTAL.x} cy={CRYSTAL.y} rx={22} ry={32} fill={url("clear")} />
-        <g transform={`translate(${CRYSTAL.x} ${CRYSTAL.y})`} strokeLinejoin="round">
-          <path d={CRYSTAL_BODY} fill={url("crystal")} stroke="var(--gold)" strokeWidth={0.9} />
-          <path d={CRYSTAL_FACETS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.8} />
-          <path className="m-twinkle" d={glint(5)} transform="translate(-3 -14)" fill="var(--art-ivory)" />
-        </g>
+        <Crystal x={CRYSTAL.x} y={CRYSTAL.y} url={url} />
       </g>
 
       {/* A lotus leaf, and the water running off it */}

@@ -11,7 +11,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { Horse, artIds, partProps, radiance, round } from "./primitives";
+import { ELEPHANT_TRUNK, Elephant, ElephantDefs, Horse, artIds, partProps, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -21,34 +21,17 @@ const RADIANCE = radiance({ cx: BINDU.x, cy: BINDU.y, from: 14, long: 240, short
 
 /* ── The elephants ─────────────────────────────────────────────────────── */
 
-/** An elephant facing right, standing on the origin, about 110 long and 88 to the top of its back. */
-const ELEPHANT_BODY =
-  "M -52 -58 C -50 -80 -30 -88 -6 -86 C 14 -84 22 -92 36 -90 C 50 -88 58 -78 56 -64 L 52 -50 C 50 -46 47 -44 44 -42 L 46 0 L 30 0 L 30 -34 C 10 -30 -14 -30 -32 -34 L -32 0 L -50 0 L -52 -40 C -54 -46 -54 -52 -52 -58 Z";
-const ELEPHANT_FAR_LEGS = "M 38 -36 L 38 -2 L 52 -2 L 50 -40 Z M -42 -36 L -42 -2 L -28 -2 L -26 -36 Z";
-const TRUNK = "M 50 -70 C 66 -76 76 -96 70 -116 C 68 -124 60 -126 57 -120 C 56 -116 60 -114 62 -116 C 64 -100 58 -80 48 -56 Z";
-/** The herd's trunks hang, curled at the tip; only the two leads raise theirs. */
-const TRUNK_DOWN = "M 50 -70 C 60 -66 62 -50 60 -30 C 60 -22 62 -16 66 -14 C 64 -11 58 -13 56 -20 C 54 -34 54 -50 46 -56 Z";
-const TOES = [34, 39, 44, -48, -43, -38].map((x) => `M ${x - 1.6} -0.8 A 1.6 1.6 0 0 1 ${x + 1.6} -0.8`).join(" ");
-const BROW_CHAIN = "M 30 -88 Q 44 -82 54 -70";
-const EAR = "M 24 -80 C 8 -80 4 -56 12 -46 C 20 -40 30 -48 32 -58 C 32 -68 30 -76 24 -80 Z";
-const TUSK = "M 46 -50 C 54 -46 62 -46 66 -54";
-const CLOTH = "M -38 -80 C -22 -88 2 -88 14 -84 L 12 -50 C -6 -46 -24 -46 -40 -50 Z";
-const CLOTH_FRINGE = Array.from({ length: 9 }, (_, k) => {
-  const x = round(-38 + k * 6.2);
-  return `M ${x} -49 L ${x} -45`;
-}).join(" ");
-const TAIL = "M -52 -56 C -58 -46 -58 -36 -55 -26";
 /** The pot held up in the trunk's curl, tipped toward her. */
 const POT = { x: 60, y: -126 };
 
-type Elephant = { x: number; y: number; s: number; lead: boolean; flip: boolean };
+type Placed = { x: number; y: number; s: number; lead: boolean; flip: boolean };
 
 const LEAD_S = 1.1;
 const HERD = [
   { dx: -56, dy: -30, s: 0.78 },
   { dx: -30, dy: -16, s: 0.9 },
 ];
-const ELEPHANTS: Elephant[] = [false, true].flatMap((flip) => {
+const ELEPHANTS: Placed[] = [false, true].flatMap((flip) => {
   const lead = { x: flip ? 2 * CX - 204 : 204, y: 604 };
   return [
     ...HERD.map((h) => ({ x: flip ? lead.x - h.dx : lead.x + h.dx, y: lead.y + h.dy, s: h.s, lead: false, flip })),
@@ -56,7 +39,7 @@ const ELEPHANTS: Elephant[] = [false, true].flatMap((flip) => {
   ];
 });
 
-const at = (e: Elephant) => `translate(${e.x} ${e.y}) scale(${e.flip ? -e.s : e.s} ${e.s})`;
+const at = (e: Placed) => `translate(${e.x} ${e.y}) scale(${e.flip ? -e.s : e.s} ${e.s})`;
 
 /** Where each lead elephant's pot pours, in plate units, and the water's fall from it onto her light. */
 const POURS = [false, true].map((flip) => {
@@ -120,10 +103,7 @@ export function ElephantsAndHorses({ idPrefix = "sa25", active = null }: ArtProp
           <stop offset="0.4" style={{ stopColor: "var(--art-core)", stopOpacity: 0.45 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
-        <linearGradient id={id("hide")} x1={0} y1={-90} x2={0} y2={0} gradientUnits="userSpaceOnUse">
-          <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.78 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.95 }} />
-        </linearGradient>
+        <ElephantDefs id={id} />
       </defs>
 
       {/* The cavalry, two circuits of horses closing round her on every side */}
@@ -152,24 +132,15 @@ export function ElephantsAndHorses({ idPrefix = "sa25", active = null }: ArtProp
       <g {...part("elephants")}>
         {ELEPHANTS.map((e, i) => (
           <g key={i} transform={at(e)} opacity={e.lead ? 1 : 0.72}>
-            <path d={ELEPHANT_FAR_LEGS} fill="var(--art-hair)" fillOpacity={0.6} />
-            <path d={TAIL} stroke="var(--art-hair)" strokeWidth={2} strokeLinecap="round" />
-            <path d={ELEPHANT_BODY} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-            <path d={e.lead ? TRUNK : TRUNK_DOWN} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-            <path d={TOES} stroke="var(--art-ivory)" strokeWidth={1} />
-            <path d={BROW_CHAIN} stroke="var(--gold)" strokeWidth={1.6} strokeDasharray="0.1 3.4" strokeLinecap="round" />
-            <path d={EAR} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={0.7} />
-            <path d={CLOTH} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
-            <path d={CLOTH_FRINGE} stroke="var(--gold)" strokeWidth={1} strokeLinecap="round" />
-            <path d={TUSK} stroke="var(--art-ivory)" strokeWidth={3} strokeLinecap="round" />
-            <circle cx={42} cy={-74} r={1.6} fill="var(--art-core)" />
-            {e.lead && (
-              <g transform={`translate(${POT.x} ${POT.y}) rotate(28)`}>
-                <path d="M -8 0 C -10 8 -6 13 0 13 C 6 13 10 8 8 0 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
-                <path d="M -6 0 L 6 0 L 4.4 -4 L -4.4 -4 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
-                <path d="M -7 6 Q 0 8 7 6" stroke="var(--art-vermilion)" strokeWidth={1.2} />
-              </g>
-            )}
+            <Elephant trunk={e.lead ? ELEPHANT_TRUNK.raised : ELEPHANT_TRUNK.down} url={url}>
+              {e.lead && (
+                <g transform={`translate(${POT.x} ${POT.y}) rotate(28)`}>
+                  <path d="M -8 0 C -10 8 -6 13 0 13 C 6 13 10 8 8 0 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
+                  <path d="M -6 0 L 6 0 L 4.4 -4 L -4.4 -4 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
+                  <path d="M -7 6 Q 0 8 7 6" stroke="var(--art-vermilion)" strokeWidth={1.2} />
+                </g>
+              )}
+            </Elephant>
           </g>
         ))}
         <g stroke="var(--art-moon)" strokeLinecap="round" strokeDasharray="7 3.4">
