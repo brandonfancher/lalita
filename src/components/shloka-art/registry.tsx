@@ -66,6 +66,7 @@ import { WholeImage } from "./whole-image";
 import { WitnessOfTheDance } from "./witness-of-the-dance";
 import { WorldsInABlink } from "./worlds-in-a-blink";
 import { TheHouseholdLamp } from "./the-household-lamp";
+import { VermilionAndPearl } from "./vermilion-and-pearl";
 import { YoginiTemple } from "./yogini-temple";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -3199,6 +3200,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           A kolam is drawn in rice flour so that ants can eat it, the first meal of the day for the smallest of her
           children. At its right corner a file of ants is already carrying it off, grain by grain.
+        </>
+      ),
+    },
+  },
+  "068": {
+    Art: VermilionAndPearl,
+    intro: (Spot) => (
+      <>
+        Two names, one to a line, and each a single picture: <Spot part="feet">her feet</Spot> as two red lotuses
+        in the crown, and <Spot part="light">her light</Spot> as a pearl below.
+      </>
+    ),
+    entries: [
+      {
+        nama: 289,
+        part: "partings",
+        depicts:
+          "Under her feet the four Vedas bow so low that the red dust of the lotuses settles in the parting of their hair, and lies there as a married woman's vermilion. Of each only the hair is drawn: a plait with jasmine, and the red streak at its head.",
+      },
+      {
+        nama: 290,
+        part: "shell",
+        depicts:
+          "Below the card the whole of scripture is one pearl oyster, its two valves shut. Its growth lines are written over like the lines of a manuscript, and only along the seam does the pearl inside show.",
+      },
+    ],
+    detail: {
+      part: "svati",
+      body: (
+        <>
+          High in the crown, one star with a drop of rain falling under it: Svāti. The poets held that rain falling
+          into an open oyster while the moon is in Svāti becomes a pearl.
         </>
       ),
     },

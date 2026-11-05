@@ -80,7 +80,7 @@ second time it is needed.
 | Campaka, newly opened | Seen from the side as a slim torch: eleven `campakaPetal`s from one calyx, most nearly closed (within 9° of upright), only the outer pair parting, tips curling a little outward. Filled with a gradient from `--art-saffron` at the base through `--art-core` to `--art-ivory` at the tips (the palest, first-day flower), edged in `--art-saffron`. A small three-sepal `--leaf` calyx; a straight `--leaf` stem with a `--gold-soft` line; lance-shaped `--leaf` leaves with a gold midrib. Splayed wider, it read as a daisy or an agave | `campakaPetal` in `primitives.tsx`; the flower inline (`campaka-jewel.tsx`) | Shloka 7 |
 | Diamond (vajra) | Face-on: an eight-sided `--art-moon` girdle with a `--gold` edge, the table an octagon half its size, `--gold-soft` facet lines from the table's corners to the girdle's, a small `--art-core` `glint` at the upper left, in a gold cup. The facets keep it from reading as a pearl | `diamond` in `primitives.tsx` (promoted at Shloka 14) | Shloka 7 |
 | Her nose stud (mūkkutti) | Seven diamonds in a gold rosette (one in the middle, six round it, one straight up), beaded at the rim, outlined in `--art-carve`. A small `--art-moon` glow just round it makes it white-hot against gold by day; behind that a larger `--art-core` glow, a four- and an eight-pointed `glint`, and sixteen hair-fine rays, the upward one longest. Flashes on three stones | Inline (`campaka-jewel.tsx`) | Shloka 7 |
-| Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap. Too heavy below a radius of about 4: see "Strings of pearls" for small ones | `Pearl` in `primitives.tsx` (promoted at Shloka 13) | Shloka 7 |
+| Pearl (muktā) | An `--art-moon` disc with a hair-fine gold edge, a `--gold-soft` shading arc on the lower right, an `--art-core` highlight at the upper left; hung from a small gold ring under a gold cap. Too heavy below a radius of about 4: see "Strings of pearls" for small ones | `Pearl` in `primitives.tsx` (promoted at Shloka 13) | Shloka 7, 68 |
 | Kadamba | A head is a ball of radius 9–14: a radial gradient from `--art-core` (upper left) through `--art-saffron` to `--art-vermilion`, stippled with tiny `--art-ivory` florets in a sunflower spiral, and ringed by short `--art-saffron` hairline styles that stand out to about 1.3 times its radius, each tipped with an `--art-ivory` dot edged in gold (`m-twinkle`, three groups). The pale tips make it a kadamba and not an orange or a berry. Heads come in sprays (mañjarī) of four or five on short `--leaf` stalks, among broad, pointed, glossy `--leaf` leaves with a `--gold-soft` midrib and curved veins, long enough to show beyond the heads | `kadambaLeaf`, `kadambaHead`, `KadambaLeaf` and `KadambaHead` in `primitives.tsx` (promoted at Shloka 23) | Shloka 8 |
 | Ear pendant (tāṭaṅka) | Hung from a gold stud in the lobe (a ruby in it on the sun's side, a pearl on the moon's), a short gold link with gold beads, a bail, the disc, and a drop beneath (a `Ruby` under the sun, a pearl under the moon). Viewer's left is her right ear: the sun there, the moon on the other side. Each pendant swings from its lobe (`m-sway`, see Motion additions) | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
 | The moon as a little boat (uḍupa) | A small gold crescent, horns up, radius 13, riding the top of the moon's disc as its bail, with three `--art-vermilion` beads along the hull and the ring for the link between its horns | Inline (`sun-moon-earrings.tsx`) | Shloka 8 |
@@ -139,9 +139,9 @@ second time it is needed.
 | Darkness covered (tamas) | A soft pool of `--art-hair` (a radial gradient, never a hard edge) with a veil of her light (`--art-core` to `--art-moon`) laid over all but its fringe. With hard edges the two read as a dish | Inline (`nail-moons.tsx`) | Shloka 19 |
 | Open lotus (padma) | Seen at a slant: five back and six front pointed `--lotus` petals edged in gold, an `--art-turmeric` seed head, and a `--leaf` pad beneath (`pad={false}` leaves it out; `shade` veins the front petals) | `OpenLotus` in `primitives.tsx` (promoted at Shloka 20) | Shloka 19 |
 | Folded hands as lotus buds (añjali) | Closed buds about 44 tall, `--art-core` to `--art-saffron` to `--art-vermilion` and edged in gold, with an `--art-crimson` shade on one side, a seam, `--leaf` sepals and a short stalk, standing in ranks | Inline (`nail-moons.tsx`) | Shloka 19 |
-| Her feet as lotuses (śrīpadāmbuja) | Two `OpenLotus`es in `--art-vermilion` with `--art-crimson` veins and no pad, standing on still water a step apart, the nearer a little larger. With the pad, the anklet round them read as a saucer | `OpenLotus` in `primitives.tsx` | Shloka 20 |
+| Her feet as lotuses (śrīpadāmbuja) | Two `OpenLotus`es in `--art-vermilion` with `--art-crimson` veins and no pad, standing on still water a step apart, the nearer a little larger. With the pad, the anklet round them read as a saucer. In a crown, without the water, give each a saffron-to-vermilion glow (`m-shimmer`) | `OpenLotus` in `primitives.tsx` | Shloka 20, 68 |
 | Anklet (mañjīra) | A ring round the lotus's base, 72 by 20, seen from a little above: its far half drawn behind the petals and its near half in front, a 5-unit `--gold` band with an `--art-core` sheen, five `Bell`s at 0.62 hanging from the near half and swinging in two groups, and small ruby and pearl studs between them. Its ringing is broken `--gold` rings spreading flat across the water, as the girdle's sound is broken rings | Inline (`still-water-steps.tsx`) | Shloka 20 |
-| Still water | Long level `--gold-soft` hairlines, closer together toward the far edge and broken where light lies on them, faded at both sides; a firmer line for the far edge. Calmer than the sea's ripple arcs | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Still water | Long level `--gold-soft` hairlines, closer together toward the far edge and broken where light lies on them, faded at both sides; a firmer line for the far edge. Calmer than the sea's ripple arcs | Inline (`still-water-steps.tsx`) | Shloka 20, 68 |
 | Swan on the water (marālī) | Seen from the side, about 100 long: an `--art-moon` body with a full breast low on the water and a raised tail, the wing arched up off the back with three gold feather lines, an S-curved neck (a 7-unit moon stroke over a 9-unit gold one), a small head with an `--art-saffron` beak and a carve eye, and a faint reflection. A flat back and a lowered wing read as a gravy boat. Her wake is a few flat arcs trailing close behind, far apart, because she is slow; two long parting lines read as a pole | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Treasury (śevadhi) | An open gold casket seen from the front: a box with a vermilion band set with pearl and emerald studs, small feet, a lid raised behind with a lit inner face, a heap of rubies, pearls, emeralds and gold above the rim with passing glints, two pearl strings spilling over the front, an `--art-core` glow over the hoard, and a soft column of her light pouring down from it with falling points of light. A hard-edged beam read as a spotlight | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Salt (lavaṇa) | A little heap of `--art-ivory` crystals edged in gold, each a small rhomb with one facet line | Inline (`still-water-steps.tsx`) | Shloka 20 |
@@ -382,6 +382,10 @@ second time it is needed.
 | A kolam on two axes (varṇāśrama) | `Kolam` laid on the ground at a slant (0.4) and turned an eighth of a turn: four dots by four, 22 apart, with a long round-ended loop round every row and every column, so each dot sits where its row and its column cross; on a swept patch of `--art-musk` (0.42 fading out) so the rice flour shows by day. Scalloped loops round each dot were chain mail | `Kolam` in `primitives.tsx` | Shloka 67 |
 | Sweet and bitter served (phala) | Two plantain leaves on the floor either side of the lamp, at 1.25, `--leaf` at 0.5 with a gold edge, gold-soft midrib and veins: two ripe mangoes (a turmeric-saffron-vermilion gradient, a vermilion blush, an ivory sheen, a hair stalk) on one, two bitter gourds (a pointed spindle knobbled along its edge, `--leaf` under hair at 0.12, two hair grooves, gold-soft warts, an ivory sheen) on the other. Ivory dashes on the gourds read as corncobs | Inline (`the-household-lamp.tsx`) | Shloka 67 |
 | Ants carrying off the kolam | Five `--art-hair` ants (three body segments, six hairline legs, antennae), four of them carrying a grain of `--art-ivory` rice flour, in a file from the kolam's right corner, with crumbs where they start | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| The four Vedas bowed, as hair with vermilion in the parting | Four bowed heads of hair and nothing else, in a row under her feet, each leaning a little toward them: an `--art-hair` crown with a small peak at the brow, gold-edged, its hair combed out and down from the parting in six fine `--gold-soft` lines a side; a `--sindura` `taper` streak down the parting, widest at the crown; a spray of five jasmine buds where the plait begins (alternate heads on alternate sides); and a `plait` (24 wide narrowing to 15, lobes every 11, an ivory jasmine bud on each lobe) falling a little inward toward the shell, behind the card under a window mask at 0.62. An ellipse crown with a ring of jasmine round its foot read as jellyfish | Inline (`vermilion-and-pearl.tsx`, using `plait`, `PlaitLobes` and `PlaitTip`) | Shloka 68 |
+| Red dust from her feet | Fine `--sindura` motes (r 0.7–1.5) between the lotuses and the partings, each on `m-sink` with its own `--dur` (5–10s) and negative `--delay`, so the dust is always falling | Inline (`vermilion-and-pearl.tsx`) | Shloka 68 |
+| The shell of all scripture, shut on its pearl | A scallop shut in still water: a straight hinge with two small ears (gold-soft ear ribs, gold lines from the umbo, a saffron bead at the umbo), an upper valve in moon to ivory to saffron, gold-edged, with eleven gold-soft ribs and a crenellated lip; six growth lines, each the lip it once had, in gold with `--art-musk` ticks under them like a line of written letters; a narrow seam of `--art-core` along the lip, and a `Pearl` (r 9) showing in it; a darker ivory lower valve, a musk shadow, and a core reflection on the water (`m-shimmer`). Ticks in `--art-carve` vanished by day. Compare Shloka 51's open shell in the shallows | Inline (`vermilion-and-pearl.tsx`, using `Pearl`) | Shloka 68 |
+| Svāti and its raindrop | One `Star` (s 7, `m-twinkle`) in a faint gold-soft halo high in the crown, and under it a `--art-moon` drop, gold-edged, falling on `m-sink` (9s). The drop is inside a group that places it, so the motion doesn't override the placement | Inline (`vermilion-and-pearl.tsx`) | Shloka 68 |
 | A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -2658,6 +2662,38 @@ One entry per finished artwork, in the order they were made.
   was chain mail by lamplight and invisible by day; long loops on a swept musk patch read in both.
   In the chant miniature the lit lamp and its rising smoke carry it, and the verse stays clear on
   phones.
+
+### Shloka 68: Vermilion in the parting of the Vedas, and the pearl in the shell of scripture
+
+- **Component:** `vermilion-and-pearl.tsx` (defs prefix `sa68`)
+- **Composition:** two names, each one picture, set one above the other. In the crown at the
+  right her feet as two red lotuses, and in a row under them the four Vedas bowed so low that
+  only their hair shows, the red dust of the lotuses falling into their partings as vermilion;
+  their plaits fall behind the card and lean in toward the shell. Below the card all of
+  scripture as one shut scallop on still water, its growth lines written over like manuscript
+  lines, the pearl that is her light showing only in the seam. High in the crown, alone, Svāti
+  and a falling drop. The first bowed figures drawn as hair alone, and the first shut shell.
+- **Name → part:**
+  - Śrutisīmantasindūrīkṛtapādābjadhūlikā → `partings`: the four heads of hair, their
+    vermilion streaks, jasmine and plaits, and the falling red dust
+  - Sakalāgamasandohaśuktisampuṭamauktikā → `shell`: the shell, its ribs, ears and written
+    growth lines, its shadow and the still water
+  - Intro, *her feet* → `feet`: the two lotuses and their glows
+  - Intro, *her light* → `light`: the pearl, the lit seam, its glow and its reflection on the water
+  - Detail → `svati`: the star and its raindrop (rain falling into an open oyster while the moon
+    is in Svāti becomes a pearl)
+- **Palette:** no additions.
+- **Motion:** `m-sink` (the red dust and the raindrop), `m-shimmer` (the feet's glows, the
+  pearl's glow and its reflection), `m-twinkle` (Svāti).
+- **Notes:** the plait was promoted into `plait`, `PlaitLobes` and `PlaitTip` (the commit before
+  this one), and Shloka 4 renders pixel for pixel as before. This title stays on one line and
+  reaches x ≈ 244 (296 at 1100px), so the feet and heads sit at x ≈ 330–508. The first render
+  had small feet, the heads as ellipses ringed with jasmine (jellyfish), the right plait out past
+  the card, and a hinge with ears pointing up like a bow tie. The heads are now a crown of
+  combed hair with a peak at the brow, leaning toward her feet, with a spray of jasmine; the
+  plaits lean inward; the hinge is straight with ears sloping into the shell. The script ticks
+  were `--art-carve` and vanished by day; they are `--art-musk`. In the chant miniature the
+  glowing shell carries it by day and by lamplight, and the plaits read as a small fringe.
 
 ## Open questions
 
