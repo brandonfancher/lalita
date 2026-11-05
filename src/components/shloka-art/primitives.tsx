@@ -614,6 +614,61 @@ export function sunRays({ cx, cy, r, long, short, count = 16, span = 180 }: { cx
   });
 }
 
+/* ── The sea ───────────────────────────────────────────────────────────── */
+
+/** Deterministic noise in [0, 1). */
+export function hash(a: number, b: number) {
+  let h = Math.imul(a ^ 0x9e3779b9, 0x85ebca6b) ^ Math.imul(b + 0x632be5ab, 0xc2b2ae35);
+  h ^= h >>> 15;
+  h = Math.imul(h, 0x2c1b3c6d);
+  h ^= h >>> 12;
+  return (h >>> 0) / 4294967296;
+}
+
+/**
+ * The sea below a horizon at y = `horizon`: rows of shallow ripple arcs,
+ * closer together near the horizon, spanning `half` either side of `cx`, and
+ * the light on it as a column of lozenges under `cx`, `column` wide (half
+ * width) at the horizon and widening toward the viewer. The ripples stop short
+ * of the column. The lozenges come in three groups, to twinkle out of step.
+ * Stroke the ripples in `--gold` under a mask that fades them at the sides,
+ * and fill the lozenges `--art-saffron` (the last group `--art-core`).
+ */
+export function seaSurface({ cx, horizon, column, half = 290 }: { cx: number; horizon: number; column: number; half?: number }) {
+  const rows = Array.from({ length: 16 }, (_, k) => horizon + 8 + 6 * k + 0.7 * k * k).filter((y) => y < 800);
+  const ripples: string[] = [];
+  const reflection = ["", "", ""];
+  rows.forEach((y, k) => {
+    const depth = y - horizon;
+    const width = column + 0.35 * depth;
+    const lift = 1.2 + 0.03 * depth;
+    let x = cx - half + hash(k, 0) * 20;
+    let j = 0;
+    while (x < cx + half) {
+      const len = 12 + (20 + depth * 0.12) * hash(k, j * 3 + 1);
+      const end = Math.min(x + len, cx + half);
+      const inColumn = end > cx - width && x < cx + width;
+      if (!inColumn && hash(k, j * 3 + 3) > 0.3) {
+        ripples.push(`M ${round(x)} ${round(y)} Q ${round((x + end) / 2)} ${round(y - lift)} ${round(end)} ${round(y)}`);
+      }
+      x = end + 8 + 18 * hash(k, j * 3 + 2);
+      j++;
+    }
+    let g = cx - width + hash(k, 99) * 8;
+    let n = 0;
+    while (g < cx + width) {
+      const l = 5 + 13 * hash(k, 200 + n) * (1 - Math.abs(g - cx) / (width * 1.4));
+      const h = 1.6 + 0.08 * k;
+      const mid = g + l;
+      reflection[(k + n) % 3] +=
+        `M ${round(g)} ${round(y)} Q ${round(mid)} ${round(y - h)} ${round(g + 2 * l)} ${round(y)} Q ${round(mid)} ${round(y + h)} ${round(g)} ${round(y)} Z `;
+      g += 2 * l + 4 + 9 * hash(k, 300 + n);
+      n++;
+    }
+  });
+  return { ripples, reflection };
+}
+
 /**
  * Radiance: 108 gold hairlines round (cx, cy), starting `from` units out and
  * alternating `long` and `short`, starting long. Stroke it 0.7 wide with a
