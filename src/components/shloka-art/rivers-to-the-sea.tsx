@@ -14,7 +14,7 @@
  * written up for readers in the registry, next to this artwork's entry.
  */
 
-import { Lamp, WavePattern, along, artIds, partProps, polar, radiance, rainGroups, round, seaSurface, taper, through } from "./primitives";
+import { CloudLobes, Lamp, WavePattern, along, artIds, cloudArc, partProps, polar, radiance, rainGroups, round, seaSurface, taper, through, type Lobe } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -57,7 +57,7 @@ const STRATA = [
 
 const CLOUD = { x: 400, y: 50 };
 /** The cloud's lobes, as circles whose union is its outline; its foot is cut flat. */
-const LOBES = [
+const LOBES: Lobe[] = [
   { x: -78, y: -4, r: 14 },
   { x: -56, y: -14, r: 20 },
   { x: -26, y: -24, r: 26 },
@@ -378,15 +378,10 @@ export function RiversToTheSea({ idPrefix = "sa49", active = null }: ArtProps) {
         ))}
         <g clipPath={url("cloud-cut")}>
           <g transform={`translate(${CLOUD.x} ${CLOUD.y})`}>
-            {LOBES.map((l, i) => (
-              <circle key={i} cx={l.x} cy={l.y} r={l.r} stroke="var(--gold)" strokeWidth={2.4} />
-            ))}
-            {LOBES.map((l, i) => (
-              <circle key={i} cx={l.x} cy={l.y} r={l.r} fill="var(--art-moon)" />
-            ))}
+            <CloudLobes lobes={LOBES} />
             <rect x={-94} y={-30} width={190} height={30} fill={url("cloud-foot")} />
             {LOBES.slice(1, 5).map((l, i) => (
-              <path key={i} d={`M ${round(l.x - l.r * 0.6)} ${round(l.y - l.r * 0.35)} A ${round(l.r * 0.8)} ${round(l.r * 0.8)} 0 0 1 ${round(l.x + l.r * 0.5)} ${round(l.y - l.r * 0.55)}`} stroke="var(--gold-soft)" strokeWidth={0.7} />
+              <path key={i} d={cloudArc(l)} stroke="var(--gold-soft)" strokeWidth={0.7} />
             ))}
           </g>
         </g>

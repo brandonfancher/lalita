@@ -688,6 +688,33 @@ export function rainGroups({ x, y, w, h, count }: { x: number; y: number; w: num
   return [0, 1, 2].map((g) => lines.filter((_, k) => k % 3 === g).join(" "));
 }
 
+/* ── Rain cloud (megha) ────────────────────────────────────────────────── */
+
+export type Lobe = { x: number; y: number; r: number };
+
+/**
+ * A rain cloud's body: its lobes as circles, `--art-moon` over a 2.4 `--gold`
+ * stroke, so only the outline of their union shows. Cut its foot flat with a
+ * clip, darken it with `--art-hair` there, and lay a gold line along the cut.
+ */
+export function CloudLobes({ lobes }: { lobes: Lobe[] }) {
+  return (
+    <>
+      {lobes.map((l, i) => (
+        <circle key={i} cx={l.x} cy={l.y} r={l.r} stroke="var(--gold)" strokeWidth={2.4} />
+      ))}
+      {lobes.map((l, i) => (
+        <circle key={i} cx={l.x} cy={l.y} r={l.r} fill="var(--art-moon)" />
+      ))}
+    </>
+  );
+}
+
+/** A hair-fine arc over the top of an inner lobe, so the cloud reads as heaped. Stroke it `--gold-soft`, 0.7 wide. */
+export function cloudArc(l: Lobe) {
+  return `M ${round(l.x - l.r * 0.6)} ${round(l.y - l.r * 0.35)} A ${round(l.r * 0.8)} ${round(l.r * 0.8)} 0 0 1 ${round(l.x + l.r * 0.5)} ${round(l.y - l.r * 0.55)}`;
+}
+
 /**
  * Radiance: 108 gold hairlines round (cx, cy), starting `from` units out and
  * alternating `long` and `short`, starting long. Stroke it 0.7 wide with a
