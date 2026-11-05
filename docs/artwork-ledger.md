@@ -209,6 +209,9 @@ second time it is needed.
 | A knot (granthi), split | A cord wound round the channel, seen a little from above (an ellipse 52 by 14), `--art-musk` 2.4 wide with an `--art-moon` hairline, cut through at the front, its two halves pushed 6 apart with a few frayed strands at each cut end, a soft core glow and a `glint` between them. Drawn as loops with trailing ends, a split knot over a lotus made a moustache over a face | `SplitKnot` in `primitives.tsx` (promoted at Shloka 39, used by Shlokas 38 and 39) | Shloka 38 |
 | The thousand-petalled lotus, lit (sahasrāra) | Four rings of 40, 56, 72 and 90 fine petals (`yantraPetals`), `--art-ivory` and `--lotus` by turns, fading outward, with gold hairline edges, in a wide `--art-glow` glow, her light mounted at its heart | Inline (`summit-and-rain.tsx`) | Shloka 39 |
 | The rain of nectar (sudhā-sāra) | From the crown's rim, two dotted `--art-moon` falls curving out and down past the body to the root, each with fourteen `--art-ivory` drops edged in gold in small moon glows (`m-twinkle` in three groups), and a fine rain of smaller drops under the lotus. The signs of water, air and space inside a centre's circle made faces (a smile, an eye), so only earth and fire are drawn | Inline (`summit-and-rain.tsx`) | Shloka 39 |
+| Lightning drawn out like a vine (taḍil-latā) | A sharp zigzag up the axis, meeting it at the centre of each wheel and swinging 11 units out between them, three strokes deep: a soft `--art-core` glow 7 wide, a 2.6 gold line and a 1.1 `--art-ivory` core (`m-flicker`). Gold `creeperTendril`s curl off alternate corners (`m-sway`): the clinging | Inline (`lightning-vine.tsx`) | Shloka 40 |
+| Kuṇḍalinī, coiled | Three and a half turns round the root centre, seen a little from above (radius 48 narrowing to 36, 0.3 as tall as wide, rising 12), drawn as an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside, in a breathing saffron glow, its upper end straightening into the lightning. Taller and thicker, it read as a spring | Inline (`lightning-vine.tsx`) | Shloka 40 |
+| Lotus fibre (bisa-tantu) | A `--leaf` lotus stalk broken in two, a pad at one end and a small bud at the other, the broken ends `--art-ivory`, and five hair-fine ivory and gold fibres sagging between them | Inline (`lightning-vine.tsx`) | Shloka 40 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1523,6 +1526,30 @@ One entry per finished artwork, in the order they were made.
 - **Notes:** This title wraps at every desktop width, so the card comes down to y ≈ 225 and the
   crown is clear for the lotus. The brow wheel sits right at the card's upper edge. In the chant
   miniature the lit lotus, the column and the oval of falling drops carry it.
+
+### Shloka 40: Lightning above the six wheels, and the name at last
+
+- **Component:** `lightning-vine.tsx` (defs prefix `sa40`)
+- **Composition:** what has been climbing for two verses, named. Up the middle runs a streak of
+  lightning drawn out like a vine, through the six wheels (`CakraLotus`, all lit), its tendrils
+  curling and gripping off its corners. At its foot it is still coiled three and a half times round
+  the root centre. Above the six wheels it ends in her light, with no lotus under it. At the right a
+  broken lotus stalk with its fibres drawn out.
+- **Name → part:**
+  - Taḍillatāsamaruciḥ → `lightning`: the bolt
+  - Ṣaṭcakroparisaṃsthitā → `above`: her light above the wheels
+  - Mahāsaktiḥ → `clinging`: the tendrils
+  - Kuṇḍalinī → `kundalini`: the coil and its glow
+  - Bisatantutanīyasī → `fibre`: the broken stalk and its fibres
+  - Intro, *the coiled one* → `kundalini`
+  - Detail → `wheels`: the six wheels and the column's glow
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the bolt's core), `m-shimmer` (its glow), `m-sway` (the tendrils),
+  `m-breathe` (the coil's glow, her light), `m-lick` (the glint).
+- **Notes:** This title wraps at every desktop width, so the card comes down and her light sits in
+  the clear crown. The verse counts six wheels and puts her past them, so the top has no
+  thousand-petalled lotus this time. The stalk first reached x ≈ 537 and was cut off at 1100px. In
+  the chant miniature the bolt, its light and the coil carry it.
 
 ## Open questions
 

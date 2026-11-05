@@ -13,6 +13,7 @@ import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
 import { KulaAndSamaya } from "./kula-and-samaya";
+import { LightningVine } from "./lightning-vine";
 import { MantraBody } from "./mantra-body";
 import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
@@ -1506,6 +1507,56 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Below, the centres of the last verse are all lit now, the ones it passed over in silence too, and the knots of
           Brahmā and Viṣṇu hang open between them.
+        </>
+      ),
+    },
+  },
+  "040": {
+    Art: LightningVine,
+    intro: (Spot) => (
+      <>
+        Two verses have described a climb without naming what climbs. Here it is named:{" "}
+        <Spot part="kundalini">the coiled one</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 107,
+        part: "lightning",
+        depicts:
+          "Up the middle of the plate runs a streak of lightning drawn out like a climbing vine, thin, sharp-angled and gone before the eye settles on it.",
+      },
+      {
+        nama: 108,
+        part: "above",
+        depicts:
+          "It ends above the six wheels, in her light. The verse counts six and puts her past them, so the crown here is not a seventh wheel but a light with no lotus under it.",
+      },
+      {
+        nama: 109,
+        part: "clinging",
+        depicts:
+          "From the corners of the lightning, tendrils curl and grip, as a creeper's do: a great clinging, which holds however far she rises.",
+      },
+      {
+        nama: 110,
+        part: "kundalini",
+        depicts:
+          "At its foot, round the root centre, it is still coiled three and a half times, as the coiled one is said to lie before she straightens and climbs.",
+      },
+      {
+        nama: 111,
+        part: "fibre",
+        depicts:
+          "At the right a lotus stalk has been broken and the fine fibres inside it drawn out between the two pieces. She is finer than these, so nothing in the picture is fine enough to be her.",
+      },
+    ],
+    detail: {
+      part: "wheels",
+      body: (
+        <>
+          The lightning goes straight through the centre of each of the six wheels, root, svādhiṣṭhāna, navel, heart,
+          throat and brow, and zigzags only between them.
         </>
       ),
     },
