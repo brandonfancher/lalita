@@ -31,6 +31,7 @@ import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
 import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
@@ -2242,6 +2243,64 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Beside the gate a small gold lion has sat down. Under this one name she is the Durgā of the Devī
           Māhātmya, who rides a lion into battle, and here, with nothing left to fight, it waits at her door.
+        </>
+      ),
+    },
+  },
+  "051": {
+    Art: MonsoonPool,
+    intro: (Spot) => (
+      <>
+        <i>Sāndra</i>, thick, is a word used of clouds, and <i>ghana</i>, dense, is simply another name for one. So
+        her compassion is drawn as the rains: one cloud over the whole sky, and under it a forest{" "}
+        <Spot part="pool">pool</Spot> with her <Spot part="light">light</Spot> hanging low over the water.
+      </>
+    ),
+    entries: [
+      {
+        nama: 193,
+        part: "owl",
+        depicts:
+          "On a dead branch at the left an owl sits nearer her light than anything else in the picture, with its eyes shut tight. Bhartṛhari asks whether it is the sun's fault that the owl can't see by day.",
+      },
+      {
+        nama: 194,
+        part: "drinking",
+        depicts:
+          "A tiger and a deer drink side by side from the one pool, their heads bowed together under her light. The Yoga Sūtra says that near one who is settled in harmlessness, enmity is given up (2.35): nothing is punished, it simply stops.",
+      },
+      {
+        nama: 195,
+        part: "pearl",
+        depicts:
+          "In the shallows under her a shell lies open on a pearl: the old story's raindrop that falls into a shell and hardens there without a flaw, with nothing on it for the eye to catch.",
+      },
+      {
+        nama: 196,
+        part: "lightning",
+        depicts:
+          "In the cloud a single flash lights everything at once. The Kena Upaniṣad teaches brahman this way, as the lightning flashes (4.4): all of it known in an instant, with no one bringing word.",
+      },
+      {
+        nama: 197,
+        part: "cloud",
+        depicts:
+          "The cloud is heaped across the whole sky, dark and heavy in the belly, and its rain comes down in sheets rather than drops: poured, not sprinkled.",
+      },
+      {
+        nama: 198,
+        part: "veiled",
+        depicts:
+          "The sun and the moon are behind the cloud, and neither shows as more than a faint disc. The Śvetāśvatara says of the highest that no one equal to it, and no one greater, is seen.",
+      },
+    ],
+    detail: {
+      part: "cataka",
+      body: (
+        <>
+          On a reed at the right a cātaka holds its beak open to the rain. It is said to drink nothing but rain from
+          the cloud, and Bhartṛhari puts it in the same verse as the owl: if no rain falls into its beak, is that the
+          cloud&apos;s fault? Here a drop is falling straight in.
         </>
       ),
     },

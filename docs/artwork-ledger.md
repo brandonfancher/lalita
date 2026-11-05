@@ -263,7 +263,7 @@ second time it is needed.
 | An iron strongbox, burst | A box of `--art-hair` at 0.7 with gold straps and edge, its lid thrown back at 0.45, gold coins on the rim, the lock hanging open and askew. Coins carried off along the floor (`m-twinkle`) | Inline (`wheel-stopped.tsx`) | Shloka 48 |
 | Water running along the floor | A filled, tapering rivulet in the water gradient with a `--gold-soft` edge (`m-shimmer`). A stroked line read as a stick | Inline (`wheel-stopped.tsx`) | Shloka 48 |
 | A peak in the rain | A broad skyline through one summit, `--art-stone` with a faint `--art-saffron` tint, its far face shaded in `--art-hair` at 0.1, a 1.5 `--gold` skyline and three short `--art-carve` bands of rock, faded out below. Rills run off the summit every way, `--art-moon` over a `--gold` edge, fading as they go | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
-| Rain cloud (megha) | Seven lobes as overlapping circles, `--art-moon` over a 2.4 `--gold` stroke so only the union's outline shows, `--gold-soft` arcs for the inner lobes, its foot cut flat on a gold line and darkened with `--art-hair`. Its rain is `rainGroups` under it, faded before it reaches the ground | `CloudLobes`, `cloudArc` and `Lobe` in `primitives.tsx` (promoted at Shloka 51, used by Shloka 49); the clip, the foot and the rain inline | Shloka 49 |
+| Rain cloud (megha) | Seven lobes as overlapping circles, `--art-moon` over a 2.4 `--gold` stroke so only the union's outline shows, `--gold-soft` arcs for the inner lobes, its foot cut flat on a gold line and darkened with `--art-hair`. Its rain is `rainGroups` under it, faded before it reaches the ground | `CloudLobes`, `cloudArc` and `Lobe` in `primitives.tsx` (promoted at Shloka 51, used by Shlokas 49 and 51); the clip, the foot and the rain inline. Heaped over the whole sky (Shloka 51), it is about thirty lobes round a broad body behind the card, highest left of centre, with greyer lobes behind the crest; an `--art-carve` wash at 0.3 over it keeps it a storm grey by lamplight | Shloka 49 |
 | A river (nadī) | A meandering band from a rill to the full stream, its width swelling and narrowing a little (constant width reads as a snake), filled with its own colour under `WavePattern`, between 1.1 `--gold` banks with a fainter outer bank. White: `--art-moon`. Dark: `--art-hair` at 0.6. As a smooth band without the pattern it read as a tusk | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
 | A river's name, lost at the sea | Its name in Tiro Devanagari (12), turned along its course, three times toward the mouth at 0.95, 0.7 and 0.3; the river itself masked out over its last stretch, and its colour spread in the sea as a soft radial fan | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
 | The far sea, still | Round her reflection near the horizon, the sea's ripples masked out under a soft oval, and in their place four long level `--gold` lines over a faint `--art-core` sheen | Inline (`rivers-to-the-sea.tsx`, over `seaSurface`) | Shloka 49 |
@@ -279,6 +279,14 @@ second time it is needed.
 | Her spear struck home | Shloka 24's `Spear` at 2.2, its blade buried in a dark cleft and its shaft fading back toward her. The cleft is a jagged `--art-hair` gash with cracks running off it and a faint `--art-core` glow where it was struck; the dark breaks off it as angular `--art-hair` shards with a `--gold-soft` edge, falling (`m-sink`) | Inline (`hill-fort.tsx`, using `Spear`) | Shloka 50 |
 | A spring and its pool | Three jets from the rock, each a `taper` widening as it falls, `--art-moon` with a gold edge and an ivory line (`m-shimmer`), ivory spray; a pool with an uneven rim, `--art-moon` shading to `--art-hair` at its edge, level gold-soft lines, ripple rings where the jets land, lit stones round it, and a runnel running on down the slope. One broad sheet read as a tap, and the wave pattern on falling water as scales | Inline (`hill-fort.tsx`) | Shloka 50 |
 | Loose stones | Ellipses of `--art-stone` under a faint saffron wash, gold-edged, with a `--gold-soft` arc lit on top. Plain stone-filled stones read as holes by lamplight | `Stones` inline (`hill-fort.tsx`) | Shloka 50 |
+| A tiger (vyāghra) | In profile facing right, head down to drink, about 200 long at 1.04: a gradient from `--art-saffron` to `--art-turmeric`, gold edge, an ivory belly, muzzle and ruff, tapered `--art-hair` stripes clipped to the body (closer and shorter toward the shoulder, curving round the haunch), far legs shaded, a ringed tail (`--art-hair` dashes over saffron), a crimson nose. Too much turmeric reads as a lioness | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| A spotted deer (chital) | A stag in profile, head down to drink, about 130 long: a gradient from `--art-crimson` to `--sindura`, ivory belly and throat, rows of ivory spots and a crimson dorsal line clipped to the body, crimson far legs, lyre-shaped gold antlers with a brow tine (a fainter far antler behind), an ivory tail flash | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| An owl (ulūka), eyes shut | Upright on a bough, about 60 tall: ear tufts, a gradient from `--art-turmeric` to `--gold`, `--art-carve` wing lines and breast chevrons, two ivory facial discs with closed `--art-hair` arcs for eyes, a dark beak and talons. The bough is a `taper` of `--art-hair` at 0.55 with a gold edge and twigs | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| The cātaka (pied cuckoo) | Perched on a reed tip, its head thrown back and its beak open to the sky: an ivory breast edged in gold, an `--art-hair` back, head, crest and long tail, an ivory wing patch and eye; one `--art-core` raindrop falling into its beak (`m-twinkle`). It drinks only rain | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| A pearl in its shell | Two ivory valves, gold-edged with `--gold-soft` ribs, open in the shallows, `Pearl` at radius 4.8 between them and a glint (`m-twinkle`), all at 1.4 | Inline (`monsoon-pool.tsx`, using `Pearl`) | Shloka 51 |
+| Lightning in a cloud | Shloka 40's three strokes (`--art-core` glow 7, 2.6 gold, 1.1 ivory, `m-flicker`) as a zigzag with a short fork down the cloud's flank, faded in at the top under a mask | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| The sun and the moon behind the cloud | The sun as a soft `--art-saffron` glow with the full disc's two gold rings and no rays; the moon as an `--art-moon` disc with a gold rim, a `--gold-soft` shade at the lower right, one moonlight ring and `MoonDeer` at 0.42 and 0.4 opacity. Small brighter cloud lobes roll across the lower half of each, so both are behind the cloud | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| A forest pool | An uneven ellipse, `--art-core` at its centre shading to `--art-hair` at its edge, a gold rim, level `--gold-soft` lines closer toward the far bank, rain rings (`m-twinkle`), her light as a column of saffron and core lozenges, a saffron bank behind, `--leaf` reeds at its ends | Inline (`monsoon-pool.tsx`) | Shloka 51 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1946,6 +1954,41 @@ One entry per finished artwork, in the order they were made.
   talus only. The spring was first one sheet under the wave pattern into an oval pool, and read as
   a tap over a sink. The falling flowers first crossed the end of the title. In the chant miniature
   the walls and the lit gate carry it.
+
+### Shloka 51: Thick compassion
+
+- **Component:** `monsoon-pool.tsx` (defs prefix `sa51`)
+- **Composition:** a monsoon. One dense rain cloud is heaped over the whole sky, down both flanks
+  to a flat foot just under the card, its belly darkening toward the foot and lit gold where her
+  light shines up into it, and rain falls in sheets from it to the ground. Her light hangs low
+  over a forest pool beneath, and on its far bank a tiger and a spotted deer drink head to head,
+  their muzzles either side of her reflection. An owl sits on a bough nearest her with its eyes
+  shut, and a pearl lies in an open shell in the shallows. One flash of lightning runs down the
+  cloud's right flank, and in the crown the sun and the moon are behind the cloud, small lobes
+  rolling across both. The first artwork to make a cloud the whole sky, and the first to draw
+  animals of prey and predator side by side.
+- **Name → part:**
+  - Duṣṭadūrā → `owl`: the owl with its eyes shut, its bough and twigs
+  - Durācāraśamanī → `drinking`: the tiger and the deer
+  - Doṣavarjitā → `pearl`: the open shell and the pearl
+  - Sarvajñā → `lightning`: the bolt and its fork
+  - Sāndrakaruṇā → `cloud`: the cloud and its rain
+  - Samānādhikavarjitā → `veiled`: the sun, the moon and the lobes in front of them
+  - Intro, *pool* → `pool`; *light* → `light`
+  - Detail → `cataka`: the cātaka drinks only rain, and is in the same Bhartṛhari verse as the
+    owl; a drop is falling straight into its beak
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow, one group of rain), `m-breathe` (her light), `m-flicker`
+  (the lightning), `m-twinkle` (the rain rings, her reflection, the pearl's glint and the drop).
+- **Notes:** This title stays on one line and stays left of the artwork. The rain cloud was
+  promoted into `primitives.tsx` (`CloudLobes`, `cloudArc`, `Lobe`), and Shloka 49 renders
+  byte-for-byte as before. The first cloud was a symmetric arch of `--art-moon` that glared white
+  by lamplight; it is heaped off-centre now, with an `--art-carve` wash and a belly gradient over
+  it. The first tiger was too yellow and read as a lioness. The sun and the moon first had only
+  their veiling lobes and read as two little puffs of cloud; they have their rims, the sun's glow,
+  the moon's ring and its deer now. The first cātaka was a tilted muddle; it is upright on the reed
+  with its head back. The pearl was too small to find and is at 1.4 now. In the chant miniature
+  the cloud's arch and the two animals under her light carry it.
 
 ## Open questions
 
