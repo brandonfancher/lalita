@@ -315,6 +315,14 @@ second time it is needed.
 | A banana-leaf feast (bhoga) | A `--leaf` banana leaf laid flat at a slant, about 74 long, with a `--gold-soft` midrib and veins, spread with an ivory mound of rice with ghee, three saffron laddus, a white modaka, a turmeric banana, a gold cup of payasam, and a betel leaf with its areca nut | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
 | Sandals left at the door (pādukā) | Pairs of toe-knob sandals seen from above at a slant, each pair about 36 across at 1.55, toes in a little: a sole with a thickness under it, an instep line, a peg and knob; gold with a vermilion knob, `--art-moon` silver with gold, `--art-musk` wood with turmeric, side by side on the ground at the stair's foot | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
 | Gaṇeśa's mouse (mūṣaka) | About 26 long at 1.15, in profile: an `--art-musk` body with a gold edge, a round `--lotus` ear, an ivory eye, a curled tail, a white modaka in its mouth | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| A canopy stretched on posts (vitāna) | A cloth seen from below, its far edge higher and narrower, sagging a little between four posts: `--art-vermilion` at 0.78 to 0.95 over `--art-stone`, lit from below by a shimmering core glow; `--art-saffron` borders at both edges, a woven temple border of vermilion triangles along the near one, two pairs of `--gold-soft` stripes and rows of gold-soft buta, and the warp, 64 `--gold-soft` hairlines, running front to back through all of it. At the near edge a turmeric rod with gold knobs, and below it the warp's ends hanging free, knotted four by four in gold. Turned `--art-turmeric` posts with gold bands, bud finials and gold foot blocks, the far pair fainter. Hung from cords with no posts, steep, it read as a lampshade; in turmeric at low opacity it went khaki by lamplight | Inline (`great-yantra.tsx`) | Shloka 56 |
+| The mantra in festoons | Three `--gold` swags from the canopy's rod, their widths in proportion to their syllables (five, six, four), each carrying its syllables but the last as `--art-core` lights in gold rings with saffron glows (`m-twinkle`, `m-shimmer`), and ending at a gold disc engraved ह्रीं in `--art-carve`, hung on a short gold cord. A different hanging of the kūṭas from Shloka 34's summits | Inline (`great-yantra.tsx`) | Shloka 56 |
+| The Śrīcakra face-on, in a plate | The anticipated flat yantra, at 2.2 plate units to a yantra unit: a square plate (`--art-stone` under a `--gold-soft` wash, a 2.2 gold edge and an inner hairline, a carve shadow), and on it with non-scaling strokes the square of gates (`gateSquare(48, 8, 5)` gold over `(45.6, 6.4, 5)` vermilion over `(43.2, 4.8, 5)` gold, as on the chariot), three gold circles (41.6, 40.2, 38.8), the sixteen petals in `--art-core` and the eight in `--art-saffron` (each ring on a stone disc so the plate doesn't show through), and the nine triangles over the field of her light, tinted as in `RathaTriangles`. Her bindu sits at `SRI_BINDU_V`. The innermost triangle drawn alone keeps the Dhyāna's faint trikoṇa canon | Inline (`great-yantra.tsx`, using `gateSquare`, `yantraPetals`, `SRI_TRIANGLES` and `RathaDefs`) | Shloka 56 |
+| The order of the rite (krama) through the yantra | Eight small five-petalled `--art-crimson` flowers with core centres, from the front gate inward, one to each enclosure, on a spiral round the bindu that turns clockwise (radii 50.5 down to 3.4 yantra units), each on a faint stone disc; a dotted gold thread over a faint core stroke joins them and ends at the bindu, the ninth | Inline (`great-yantra.tsx`) | Shloka 56 |
+| A throne with lions, and its arch | Under the plate a turmeric-and-gold slab (`RathaDefs`' riser) with a row of down-turned saffron lotus petals, a stone face with an inset panel, two `Lion`s at 0.25 facing a vermilion rosette, and a gold foot. Behind the plate, a jewelled ogee arch rising to a point (a 9-wide riser band with gold edges, core pearls along it, a faint panel inside), crowned by a gold pot with a saffron bud and two leaf sprays. The whole on a stone dais with a gold front | Inline (`great-yantra.tsx`, using `Lion`) | Shloka 56 |
+| The five offerings (pañcopacāra), in order | Small gold vessels on the ground in a row, left to right as they are offered: sandal paste (a footed bowl with a turmeric mound and a musk stick), flowers (a tray of crimson flowers and jasmine), incense (a bowl with two sticks, ember tips `m-breathe`, two curls of gold-soft smoke), the lamp (a `StillLamp` at 2 on a foot in a shimmering glow), food (a bowl of ivory rice with a turmeric drop of ghee on a leaf) | Inline (`great-yantra.tsx`, using `StillLamp`) | Shloka 56 |
+| Bhairava's skull-bowl (kapāla) | An `--art-ivory` cranium-cup about 44 across, gold-edged, a zigzag `--art-carve` suture across it, on a three-legged gold stand, heaped with crimson and vermilion hibiscus, jasmine buds and three `--leaf` leaves, two flowers fallen beside it. With the planted trident and drum it stands for Bhairava, who is never drawn | Inline (`great-yantra.tsx`, with `Trident` and `Damaru` at 1.2) | Shloka 56 |
+| Bhairava's dog | About 100 long, lying in profile facing right with its head on its forepaws, asleep: `--art-hair` with a `--gold-soft` edge, the whole at 0.8 so it stays a detail; a short ear, a closed eye, a tail curled round its haunch. A tall straight ear read as a horn | Inline (`great-yantra.tsx`) | Shloka 56 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -323,10 +331,6 @@ When all four weapons appear together, the upper hands hold the noose (left) and
 
 Not yet drawn. Whoever draws one first sets its canon here.
 
-- **The Śrīcakra laid flat.** Shloka 26 draws the whole yantra as a chariot in tiers, seen at a
-  slant. When it is needed flat and face-on, draw it with the same nine triangles, the eight and
-  sixteen petals, three circles and the square of gates, and keep the Dhyāna's faint trikoṇa canon
-  for the innermost triangle alone.
 - **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
   fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
 - **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
@@ -2154,6 +2158,44 @@ One entry per finished artwork, in the order they were made.
   door, under the card on the page, was added so the plate does not fall into two pieces. The lamps
   are `StillLamp`s, so the stair adds no flicker. In the chant miniature the crossed whisks and the
   lit stair carry it.
+
+### Shloka 56: The great tantra, the great mantra, the great diagram
+
+- **Component:** `great-yantra.tsx` (defs prefix `sa56`)
+- **Composition:** the apparatus of her worship in the verse's order, every piece of it hers: a
+  shrine pavilion seen from the front. In the crown a red canopy is stretched on four posts, its
+  warp running through the cloth in plain sight and hanging from the rod as a knotted fringe, and
+  three festoons of lights hang from its edge. Below the card the Śrīcakra stands face-on in a gold
+  plate on a low lion throne with a jewelled arch behind it, all on a dais, and her light sits in
+  its bindu. Red flowers lie one in each enclosure on a thread of light winding in from the front
+  gate. At the left Bhairava's trident is planted with his drum hanging from it, his dog asleep at
+  its foot; at the right his skull-bowl is heaped with flowers. On the ground before the dais the
+  five offerings stand in their order. The first Śrīcakra drawn flat and face-on, the first
+  canopy, and the first shrine seen whole.
+- **Name → part:**
+  - Mahātantrā → `tantra`: the canopy, its warp and fringe, rod and posts (Saundaryalaharī 31)
+  - Mahāmantrā → `mantra`: the three festoons, their fifteen lights and the three ह्रीं discs
+  - Mahāyantrā → `yantra`: the plate and the Śrīcakra cut in it
+  - Mahāsanā → `seat`: the throne, its lions and arch, and the dais
+  - Mahāyāgakramārādhyā → `krama`: the flowers in the enclosures, their thread, and the five
+    offerings in a row
+  - Mahābhairavapūjitā → `bhairava`: the planted trident and drum, the skull-bowl of flowers
+  - Intro, *diagram* → `yantra`; *light* → `light`: her bindu, its glow and the great glow
+  - Detail → `dog`: Bhairava's dog asleep at the trident's foot, with nothing to guard while its
+    master worships
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the glows, the canopy's under-light, the lamp), `m-breathe` (her
+  bindu, the incense's embers), `m-twinkle` (the mantra's lights).
+- **Notes:** This title wraps to two lines, but its second line reaches only x ≈ 65 (117 at
+  1100px), so the canopy takes the whole crown; its left rod knob is kept at x ≈ 132. The yantra is
+  drawn at 2.2 so its triangles clear the card's lower edge with the bindu at y ≈ 503; the upper
+  plate and the arch are behind the card on the page and are seen on the plate. The canopy was
+  first hung on cords alone, steep, and read as a lampshade; it stands on posts now, flatter and
+  sagging. Its cloth in turmeric went khaki by lamplight and diluted vermilion went salmon by day.
+  Without the arch the plate fell into two pieces, canopy and shrine. Śaṅkara's trident and drum
+  were promoted into `primitives.tsx` (`trident`, `Trident`, `Damaru`), and Shloka 43 renders
+  byte-for-byte as before. In the chant miniature the red canopy and the lit plate under it carry
+  it.
 
 ## Open questions
 

@@ -32,6 +32,7 @@ import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
+import { GreatYantra } from "./great-yantra";
 import { OneInManyPots } from "./one-in-many-pots";
 import { StairOfAttainment } from "./stair-of-attainment";
 import { LetterRosary } from "./letter-rosary";
@@ -2551,6 +2552,64 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           A mouse is coming down the steps with a sweet from her leaf. Siddhi and Buddhi stand side by side in this
           verse as they do beside Gaṇeśa, whose two wives they are, and this is his mouse.
+        </>
+      ),
+    },
+  },
+  "056": {
+    Art: GreatYantra,
+    intro: (Spot) => (
+      <>
+        Every name here begins with <i>mahā</i>, great, and the picture lays out the apparatus of her worship in the
+        verse&apos;s own order, from the cloth overhead to the <Spot part="yantra">diagram</Spot> where her{" "}
+        <Spot part="light">light</Spot> is invoked to sit. Each piece is drawn as hers, not the worshipper&apos;s.
+      </>
+    ),
+    entries: [
+      {
+        nama: 226,
+        part: "tantra",
+        depicts:
+          "Overhead a red canopy is stretched on four posts, its warp running through the cloth in plain sight and hanging from the rod as sixty-four threads. Tantra comes from tan, to stretch, as the warp is stretched on a loom; the sixty-four tantras of the Saundaryalaharī (31) hang loose, and hers is the cloth they come out of, whole.",
+      },
+      {
+        nama: 227,
+        part: "mantra",
+        depicts:
+          "From the canopy's edge hang three festoons, fifteen lights in all, the syllables of her mantra in their clusters of five, six and four. Each cluster ends in a gold disc engraved ह्रीं, the one syllable written out; the rest are given at initiation.",
+      },
+      {
+        nama: 228,
+        part: "yantra",
+        depicts:
+          "Below, face-on, the Śrīcakra is cut in a gold plate: the square of gates, three circles, sixteen petals and eight, and the nine interlocking triangles. Yantra is a device for holding something in place, and what it holds is her.",
+      },
+      {
+        nama: 229,
+        part: "seat",
+        depicts:
+          "The plate stands on a low throne with lions on its face and a jewelled arch for its back, raised on a dais. In the rite a plate is treated as the furniture of a throne room, and her light at the bindu is the one seated on it.",
+      },
+      {
+        nama: 230,
+        part: "krama",
+        depicts:
+          "Red flowers lie one in each enclosure, from the front gate inward, on a thread of light that winds through them to the bindu, and on the ground five offerings stand in the order they are made: sandal paste, flowers, incense, lamp and food. The order is part of what is offered.",
+      },
+      {
+        nama: 231,
+        part: "bhairava",
+        depicts:
+          "At the left Bhairava has planted his trident with his drum hanging from it, and at the right his skull-bowl stands heaped with red hibiscus and jasmine. The most terrible form of Śiva has set his terror down and filled his hands with flowers.",
+      },
+    ],
+    detail: {
+      part: "dog",
+      body: (
+        <>
+          Bhairava&apos;s black dog, his mount, lies asleep at the foot of the trident with its nose on its paws. At his
+          temples people feed the dogs as a way of feeding him; here, with its master at worship, it has nothing to
+          guard.
         </>
       ),
     },
