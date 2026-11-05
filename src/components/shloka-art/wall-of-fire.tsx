@@ -15,6 +15,7 @@
  */
 
 import {
+  Boar,
   Lion,
   RathaDefs,
   RathaTiers,
@@ -77,16 +78,6 @@ const ROD_TOP = K_TOP - 112;
 const BANNER = `M ${KX} ${ROD_TOP + 6} C ${KX + 34} ${ROD_TOP} ${KX + 66} ${ROD_TOP + 12} ${KX + 104} ${ROD_TOP + 6} L ${KX + 90} ${ROD_TOP + 22} L ${KX + 106} ${ROD_TOP + 40} C ${KX + 68} ${ROD_TOP + 46} ${KX + 34} ${ROD_TOP + 32} ${KX} ${ROD_TOP + 42} Z`;
 /** Ahead of it, the road it clears, out through the gap toward Śūnyaka. */
 const ROAD = [-1, 1].map((side) => `M ${KX + side * 46} ${KY + 30} C ${KX + side * 52} ${KY + 70} ${KX + side * 70 + 40} ${KY + 120} ${KX + side * 96 + 70} ${KY + 168}`);
-
-/** A boar (kiri, varāha) facing right, feet on the origin's line, about 76 long. */
-const BOAR =
-  "M -31 -9 C -37 -15 -37 -27 -29 -31 C -19 -37 -3 -41 9 -41 C 18 -41 24 -35 28 -29 L 37 -22 C 39 -20 39 -17 37.5 -15.5 C 33 -14.5 29 -14.5 26 -15 C 22 -14 18 -12 16 -9 C 10 -7 -4 -7 -14 -8 C -20 -8 -26 -8 -31 -9 Z";
-const BOAR_LEGS = "M 11 -10 L 11 0 M 16.5 -10 L 17 0 M -24 -10 L -25 0 M -17 -9 L -17 0";
-const BOAR_BRISTLES = Array.from({ length: 9 }, (_, k) => {
-  const x = -14 + k * 4;
-  const y = round(-37.5 - 3.5 * Math.sin(((k + 1) / 10) * Math.PI));
-  return `M ${x} ${y + 3} L ${x + 1.5} ${y - 2}`;
-}).join(" ");
 
 export function WallOfFire({ idPrefix = "sa27", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
@@ -179,13 +170,7 @@ export function WallOfFire({ idPrefix = "sa27", active = null }: ArtProps) {
         <circle cx={KX} cy={ROD_TOP - 5} r={5.5} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
         <path d={BANNER} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
         <g transform={`translate(${KX + 46} ${ROD_TOP + 34}) scale(0.62)`}>
-          <path d={BOAR} fill="var(--gold)" />
-          <path d={BOAR_LEGS} stroke="var(--gold)" strokeWidth={4} strokeLinecap="round" />
-          <path d={BOAR_BRISTLES} stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
-          <path d="M 28 -17.5 C 31 -21 32 -23.5 30 -27" stroke="var(--art-ivory)" strokeWidth={2.2} strokeLinecap="round" />
-          <path d="M 21 -35 L 19.5 -44 L 25.5 -37.5 Z" fill="var(--gold)" />
-          <circle cx={26} cy={-28} r={1.4} fill="var(--art-carve)" />
-          <path d="M -31 -26 C -36 -26 -38 -22 -36 -18" stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
+          <Boar />
         </g>
       </g>
 

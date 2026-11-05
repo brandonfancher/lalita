@@ -11,7 +11,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, partProps, radiance, round } from "./primitives";
+import { Horse, artIds, partProps, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -78,14 +78,6 @@ const DROPS = [
 
 /* ── The cavalry ───────────────────────────────────────────────────────── */
 
-/** A horse in the flying gallop, facing right, centred on its body: about 66 long. */
-const HORSE =
-  "M -15 -2 C -15 -8 -8 -9 0 -8.4 C 6 -8 10 -9 13 -10 L 19 -20 C 21 -24 25 -26 28 -24 L 33 -17 C 34 -15 32 -13.6 30.4 -14.6 L 25 -17 C 23 -12 19 -6 15 -2 C 12 3 6 5 -2 5 C -9 5 -15 3 -15 -2 Z";
-const HORSE_LEGS = "M 12 1 L 22 4 L 30 1.6 M 8 3 L 17 8.6 L 25 9 M -11 2 L -20 6.6 L -29 5 M -8 4 L -15 10.6 L -24 12";
-const HORSE_TAIL = "M -14 -3 C -20 -7 -27 -4 -33 -9";
-const HORSE_MANE = "M 13 -11.6 C 15 -15.4 17 -19 20.4 -22.6";
-const SADDLE = "M -6 -8.2 C -2 -8.8 3 -8.6 6.4 -8.4 L 5.4 1.6 L -5 1.8 Z";
-
 /** Two circuits round her, all galloping the same way, clockwise; the far side of each runs left to right. */
 const RINGS = [
   { rx: 258, ry: 300, n: 34, s: 0.8, fill: "var(--art-turmeric)" },
@@ -140,12 +132,7 @@ export function ElephantsAndHorses({ idPrefix = "sa25", active = null }: ArtProp
           ring.horses.map((h, k) => (
             <g key={`${ring.rx}-${k}`} transform={h.transform}>
               <g className={SWAY[h.k]}>
-                <path d={HORSE_TAIL} stroke={ring.fill} strokeWidth={2.4} strokeLinecap="round" />
-                <path d={HORSE_LEGS} stroke={ring.fill} strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" />
-                <path d={HORSE} fill={ring.fill} stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
-                <path d={HORSE_MANE} stroke="var(--art-vermilion)" strokeWidth={2} strokeLinecap="round" />
-                <path d={SADDLE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.5} />
-                <circle cx={27} cy={-21} r={0.9} fill="var(--art-musk)" />
+                <Horse fill={ring.fill} />
               </g>
             </g>
           )),

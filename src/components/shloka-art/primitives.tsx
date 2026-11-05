@@ -2250,3 +2250,75 @@ export function Mahaganapati({ x, y, k = 1, url, skip }: Pt & { k?: number; url:
     </>
   );
 }
+
+/* ── Tortoise (kūrma) ──────────────────────────────────────────────────── */
+
+const TORTOISE_SHELL = "M -34 0 C -33 -20 -18 -31 0 -31 C 18 -31 33 -20 34 0 Z";
+const TORTOISE_PLATES =
+  "M -10 -30 L -12 -16 L 0 -10 L 12 -16 L 10 -30 M -12 -16 L -26 -14 M 12 -16 L 26 -14 M 0 -10 L 0 0 M -12 -16 L -18 0 M 12 -16 L 18 0 M -26 -14 L -32 -6 M 26 -14 L 32 -6";
+const TORTOISE_RIM = "M -36 0 Q 0 6 36 0";
+const TORTOISE_BODY =
+  "M 32 -3 C 40 -6 46 -10 52 -9 C 57 -8 58 -3 54 -1 C 50 1 44 1 36 2 Z M -32 0 L -40 4 L -33 4 Z M -24 1 L -27 9 L -19 9 L -18 2 Z M 18 1 L 20 9 L 27 9 L 25 2 Z M -6 2 L -8 8 L -2 8 L -1 2 Z";
+
+/** A tortoise in profile facing right, its shell's rim on the origin's line, about 100 long. */
+export function Tortoise() {
+  return (
+    <>
+      <path d={TORTOISE_BODY} fill="var(--gold-soft)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <circle cx={50} cy={-6} r={1.2} fill="var(--art-carve)" />
+      <path d={TORTOISE_SHELL} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.2} />
+      <path d={TORTOISE_SHELL} fill="var(--art-saffron)" fillOpacity={0.18} />
+      <path d={TORTOISE_PLATES} stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d={TORTOISE_RIM} stroke="var(--gold)" strokeWidth={1.6} />
+    </>
+  );
+}
+
+/* ── Horse (aśva) ──────────────────────────────────────────────────────── */
+
+/** A horse in the flying gallop, facing right, centred on its body: about 66 long. */
+const HORSE_BODY =
+  "M -15 -2 C -15 -8 -8 -9 0 -8.4 C 6 -8 10 -9 13 -10 L 19 -20 C 21 -24 25 -26 28 -24 L 33 -17 C 34 -15 32 -13.6 30.4 -14.6 L 25 -17 C 23 -12 19 -6 15 -2 C 12 3 6 5 -2 5 C -9 5 -15 3 -15 -2 Z";
+const HORSE_LEGS = "M 12 1 L 22 4 L 30 1.6 M 8 3 L 17 8.6 L 25 9 M -11 2 L -20 6.6 L -29 5 M -8 4 L -15 10.6 L -24 12";
+const HORSE_TAIL = "M -14 -3 C -20 -7 -27 -4 -33 -9";
+const HORSE_MANE = "M 13 -11.6 C 15 -15.4 17 -19 20.4 -22.6";
+const HORSE_SADDLE = "M -6 -8.2 C -2 -8.8 3 -8.6 6.4 -8.4 L 5.4 1.6 L -5 1.8 Z";
+
+export function Horse({ fill }: { fill: string }) {
+  return (
+    <>
+      <path d={HORSE_TAIL} stroke={fill} strokeWidth={2.4} strokeLinecap="round" />
+      <path d={HORSE_LEGS} stroke={fill} strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" />
+      <path d={HORSE_BODY} fill={fill} stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <path d={HORSE_MANE} stroke="var(--art-vermilion)" strokeWidth={2} strokeLinecap="round" />
+      <path d={HORSE_SADDLE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={27} cy={-21} r={0.9} fill="var(--art-musk)" />
+    </>
+  );
+}
+
+/* ── Boar (kiri, varāha) ───────────────────────────────────────────────── */
+
+/** A boar (kiri, varāha) facing right, feet on the origin's line, about 76 long. */
+const BOAR_BODY =
+  "M -31 -9 C -37 -15 -37 -27 -29 -31 C -19 -37 -3 -41 9 -41 C 18 -41 24 -35 28 -29 L 37 -22 C 39 -20 39 -17 37.5 -15.5 C 33 -14.5 29 -14.5 26 -15 C 22 -14 18 -12 16 -9 C 10 -7 -4 -7 -14 -8 C -20 -8 -26 -8 -31 -9 Z";
+const BOAR_LEGS = "M 11 -10 L 11 0 M 16.5 -10 L 17 0 M -24 -10 L -25 0 M -17 -9 L -17 0";
+const BOAR_BRISTLES = Array.from({ length: 9 }, (_, k) => {
+  const x = -14 + k * 4;
+  const y = round(-37.5 - 3.5 * Math.sin(((k + 1) / 10) * Math.PI));
+  return `M ${x} ${y + 3} L ${x + 1.5} ${y - 2}`;
+}).join(" ");
+
+export function Boar() {
+  return (
+    <>
+      <path d={BOAR_BODY} fill="var(--gold)" />
+      <path d={BOAR_LEGS} stroke="var(--gold)" strokeWidth={4} strokeLinecap="round" />
+      <path d={BOAR_BRISTLES} stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
+      <path d="M 28 -17.5 C 31 -21 32 -23.5 30 -27" stroke="var(--art-ivory)" strokeWidth={2.2} strokeLinecap="round" />
+      <path d="M 21 -35 L 19.5 -44 L 25.5 -37.5 Z" fill="var(--gold)" />
+      <circle cx={26} cy={-28} r={1.4} fill="var(--art-carve)" />
+      <path d="M -31 -26 C -36 -26 -38 -22 -36 -18" stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
+    </>
+  );
+}
