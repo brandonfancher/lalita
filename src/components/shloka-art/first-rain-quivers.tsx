@@ -10,7 +10,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { Tortoise, artIds, glint, partProps, polyline, round } from "./primitives";
+import { Tortoise, artIds, glint, partProps, polyline, rainGroups, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -81,13 +81,7 @@ const ARROW_ENDS = Q.flatMap((q, qi) =>
 
 /* ── The first rain ────────────────────────────────────────────────────── */
 
-const RAIN = Array.from({ length: 150 }, (_, k) => {
-  const x = round(30 + ((k * 0.6180339 + 0.13) % 1) * 610);
-  const y = round(10 + ((k * 0.7548777 + 0.5) % 1) * 580);
-  const l = 20 + (k % 5) * 6;
-  return `M ${x} ${y} L ${round(x - l * 0.2)} ${y + l}`;
-});
-const RAIN_GROUPS = [0, 1, 2].map((g) => RAIN.filter((_, k) => k % 3 === g).join(" "));
+const RAIN_GROUPS = rainGroups({ x: 30, y: 10, w: 610, h: 580, count: 150 });
 
 /* ── The grass that hides their feet ───────────────────────────────────── */
 

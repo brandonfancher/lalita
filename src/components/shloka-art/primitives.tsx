@@ -669,6 +669,25 @@ export function seaSurface({ cx, horizon, column, half = 290 }: { cx: number; ho
   return { ripples, reflection };
 }
 
+/* ── Rain ──────────────────────────────────────────────────────────────── */
+
+/**
+ * Rain over the box from (x, y), w wide and h high: `count` hairlines, 20 to
+ * 44 long and slanting a little to the left as they fall, spread evenly
+ * enough not to clump into hatching. Returned in three groups, so one can
+ * shimmer. Stroke them 0.7 wide in a `--gold-soft` gradient faded at top and
+ * bottom.
+ */
+export function rainGroups({ x, y, w, h, count }: { x: number; y: number; w: number; h: number; count: number }) {
+  const lines = Array.from({ length: count }, (_, k) => {
+    const px = round(x + ((k * 0.6180339 + 0.13) % 1) * w);
+    const py = round(y + ((k * 0.7548777 + 0.5) % 1) * h);
+    const l = 20 + (k % 5) * 6;
+    return `M ${px} ${py} L ${round(px - l * 0.2)} ${py + l}`;
+  });
+  return [0, 1, 2].map((g) => lines.filter((_, k) => k % 3 === g).join(" "));
+}
+
 /**
  * Radiance: 108 gold hairlines round (cx, cy), starting `from` units out and
  * alternating `long` and `short`, starting long. Stroke it 0.7 wide with a
