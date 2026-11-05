@@ -159,8 +159,8 @@ second time it is needed.
 | Sea of nectar (sudhāsāgara) | Milk-white water filling the plate below the card: an `--art-moon` to `--gold-soft` gradient fading in at the top, with `WavePattern` over it at 0.7, faded in by a mask so it has no hard horizon. The island in it is a flat ellipse, `--art-turmeric` to `--gold`, with a faint `--art-musk` bank beneath, an `--art-moon` surf line, and a dashed `--gold-soft` ring of swell | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Her glance (kaṭākṣa) on water | A widening band of `--art-core` light running from her eyes toward the viewer like the moon's path on the sea, fading out, scattered with small twinkling glints, carrying an `OpenLotus` on its pad as what is given | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Lamp (dīpa) | A small `--gold` bowl edged faintly in `--art-musk`, with a flame drawn as a pointed drop and a smaller core inside it, `m-flicker` in three groups: `--art-saffron` round `--art-core` for the gods, `--art-moon` round `--art-ivory` for the seers. Many held up in arcs round her light, in companies of five with a gap between, read as an assembly at worship | Inline (`court-and-army.tsx`) | Shloka 24 |
-| Spear (śakti) | A shaft fading out downward from `--gold`, gold lugs at its head, a long leaf-shaped `--art-moon` blade edged in gold with a gold midrib, and a swallow-tailed pennant just below the head streaming back (`--art-vermilion`, `--art-saffron` or `--lotus`, `m-flicker`). Leaning 16° forward, in ranks that grow nearer and larger toward the lower right, it reads as an army marching. A rounded blade read as a candle flame | Inline (`court-and-army.tsx`) | Shloka 24 |
-| Ash (Bhaṇḍa's substance) | Overlapping soft clouds, each an `--art-musk` radial gradient with an `--art-moon` one over it so it reads grey by day and by lamplight, with drifting flecks of both (`m-ember`). Musk alone vanishes by lamplight | Inline (`court-and-army.tsx`) | Shloka 24 |
+| Spear (śakti) | A shaft fading out downward from `--gold`, gold lugs at its head, a long leaf-shaped `--art-moon` blade edged in gold with a gold midrib, and a swallow-tailed pennant just below the head streaming back (`--art-vermilion`, `--art-saffron` or `--lotus`, `m-flicker`). Leaning 16° forward, in ranks that grow nearer and larger toward the lower right, it reads as an army marching. A rounded blade read as a candle flame | `Spear`, `SpearDefs` and `SPEAR_LEAN` in `primitives.tsx` (promoted at Shloka 28, used by Shlokas 24 and 28) | Shloka 24 |
+| Ash (Bhaṇḍa's substance) | Overlapping soft clouds, each an `--art-musk` radial gradient with an `--art-moon` one over it so it reads grey by day and by lamplight, with drifting flecks of both (`m-ember`). Musk alone vanishes by lamplight | `Ash` and `AshDefs` in `primitives.tsx` (promoted at Shloka 28, used by Shlokas 24 and 28) | Shloka 24 |
 | Elephant (gaja) | In profile, about 110 long and 88 to the top of its back: a slate-grey body in `--art-hair` (a gradient from 0.78 to 0.95), edged in `--gold`, on four straight legs (the far pair paler) with `--art-ivory` toenails, a darker ear, an `--art-ivory` tusk, a dotted gold chain across the brow, and a `--art-vermilion` caparison with a gold border and fringe. Lead elephants raise the trunk in a curl holding a gold pot; the herd's trunks hang. Raised trunks behind a lead read as poles | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Water poured (abhiṣeka) | From each tipped pot, three dashed `--art-moon` strands falling in a curve onto her light (`m-shimmer`), with a few droplets edged in `--gold-soft` round it (`m-twinkle`). Solid strands read as a second pair of tusks, and a splash ring under the light read as a saucer | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
 | Horse (aśva) | In the flying gallop, about 66 long: one silhouette for body, neck and head, forelegs stretched forward and hind legs back as round-capped strokes, a streaming tail, an `--art-vermilion` mane and saddle cloth. `--gold`, or `--art-turmeric` for a nearer circuit. Upright whichever way it runs, rocking with `m-sway` in three groups | Inline (`elephants-and-horses.tsx`) | Shloka 25 |
@@ -174,6 +174,8 @@ second time it is needed.
 | Daṇḍanāthā's rod (daṇḍa) | A straight gold staff with three `--gold-soft` bands and a gold knob | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 | Boar (kiri, varāha) | In profile facing right, about 76 long: a high bristled shoulder hump sloping to the rump, a long snout with a flat nose, an `--art-ivory` tusk curving up, a pointed ear, short legs as round-capped strokes, a curled tail. `--gold`, on a vermilion banner | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 | Rampart of fire (vahni-prākāra) | A ring of flame seen from outside and low: an ellipse (330 by 240) of `tongue` flames, each a gradient from `--art-vermilion` to `--art-saffron` to `--art-core` with a smaller `--art-core` tongue inside, taller, wider and more opaque toward the front, breathing in three groups, on a faint saffron band, with faint firelight on the ground inside. Open at one place only, the south | Inline (`wall-of-fire.tsx`) | Shloka 27 |
+| The Nityās (the fifteen nights) | The fifteen nights of the bright fortnight drawn as in Shloka 5 (an `--art-hair` disc at 0.2, the `litPart` in `--art-moon`, a gold rim, `m-twinkle` in three groups), here growing from radius 6 to 16.5 as they wax, each with a faint tapering `--gold-soft` trail behind it. Jvālāmālinī, the fourteenth, wears a ring of twelve small `--art-saffron` tongues and a vermilion rim. She is the sixteenth, the full moon | Inline (`nityas-onslaught.tsx`) | Shloka 28 |
+| Her gaze | Gold hairlines from her bindu in a fan toward what she watches, alternating long and short, fading out, over a glow of `--art-glow` stretched forward of her light | Inline (`nityas-onslaught.tsx`) | Shloka 28 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1178,6 +1180,33 @@ One entry per finished artwork, in the order they were made.
   are one part drawn first, so the near wall is kept low enough not to reach her chariot's wheels.
   The firelight inside the ring was a heavy maroon by night at first and is now faint. In the chant
   miniature the ring of fire with the two chariots inside carries it.
+
+### Shloka 28: Watching her own powers fight
+
+- **Component:** `nityas-onslaught.tsx` (defs prefix `sa28`)
+- **Composition:** both names are about her face while she watches, so she stays out of the fight.
+  Her chariot of Shloka 26, at half size, stands at the left with her light on it, its glow and a fan
+  of gaze-rays thrown forward over the field. Before her the spears of Shloka 24 press rank on rank
+  into the ash of Bhaṇḍa's host at the right. Over them the fifteen Nityās come down out of the sky as
+  the bright fortnight's moons, in an arc from the upper left over the crown and down the right side,
+  swelling as they wax, and the fullest strikes the ash in a small burst. She is the sixteenth, the
+  full moon, watching.
+- **Name → part:**
+  - Bhaṇḍasainyavadhodyuktaśaktivikramaharṣitā → `army`: the spears and the ash they press into
+  - Nityāparākramāṭopanirīkṣaṇasamutsukā → `nityas`: the fifteen waxing moons, their trails, and
+    the strike
+  - Intro, *her chariot* → `chariot`: the Cakrarāja and her bindu
+  - Intro, *her light leans toward it* → `gaze`: the forward glow and the fan of rays
+  - Detail → `jvalamalini`: the fourteenth moon's ring of flames
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the moons), `m-shimmer` (the gaze), `m-breathe` (her bindu's glow and
+  Jvālāmālinī's flames), `m-lick` (the strike), and the spears' and ash's own `m-flicker` and
+  `m-ember`.
+- **Notes:** This title stays on one line, so the card is in its usual window; the moons' arc runs
+  over it in the crown and down the right margin beside it. The śakti spear and Bhaṇḍa's ash were
+  promoted into `primitives.tsx` (`Spear`, `Ash`), and Shloka 24 renders byte-for-byte as before. The
+  moons' trails were wide cones at first and read as ice-cream cones; they are now thin and faint. In
+  the chant miniature the chariot and the spears carry it, and the moons are faint.
 
 ## Open questions
 

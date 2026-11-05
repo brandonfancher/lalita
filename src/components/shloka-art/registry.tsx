@@ -11,6 +11,7 @@ import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
 import { WallOfFire } from "./wall-of-fire";
+import { NityasOnslaught } from "./nityas-onslaught";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1043,6 +1044,39 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Before the Kiricakra stands a small gold lion. The Lalitopākhyāna gives Daṇḍanāthā a lion, Caṇḍocchaṇḍa,
           as well as her boar, and it goes ahead of her chariot.
+        </>
+      ),
+    },
+  },
+  "028": {
+    Art: NityasOnslaught,
+    intro: (Spot) => (
+      <>
+        Both names are about her face while she watches, and neither has her strike a blow. So she stays out of the
+        fight, on <Spot part="chariot">her chariot</Spot> at the left, and <Spot part="gaze">her light leans
+        toward it</Spot>, its glow and its gaze thrown forward over the field.
+      </>
+    ),
+    entries: [
+      {
+        nama: 72,
+        part: "army",
+        depicts:
+          "The army of her powers, the spears of Shloka 24, presses rank on rank into the ash of Bhaṇḍa's host at the right, nearer and larger as it goes.",
+      },
+      {
+        nama: 73,
+        part: "nityas",
+        depicts:
+          "The fifteen Nityās, goddesses of the bright fortnight's nights, come down out of the sky one after another as waxing moons, swelling as they come, as the verse's āṭopa swells, and the fullest strikes the ash. She is the sixteenth, the full moon, watching.",
+      },
+    ],
+    detail: {
+      part: "jvalamalini",
+      body: (
+        <>
+          The fourteenth moon wears a ring of small flames. That night belongs to Jvālāmālinī, the Nityā who raised the
+          wall of fire in the last verse.
         </>
       ),
     },
