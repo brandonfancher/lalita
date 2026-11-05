@@ -2850,6 +2850,94 @@ export function BrahmaCouch({ cx, plank, floor }: { cx: number; plank: number; f
   );
 }
 
+/* ── A plait (veṇī) ────────────────────────────────────────────────────── */
+
+/** Rotation (degrees) that turns a local "down" (+y) along the tangent t. */
+export const downAlong = (t: Pt) => round((Math.atan2(-t.x, t.y) * 180) / Math.PI);
+
+/**
+ * A plait along a cubic centreline: lobes of hair laid alternately from each side, `step` apart
+ * from `start` units down, `width(s, length)` wide `s` units down it. Each lobe gives its shape, its
+ * gold sheen and its placement (`at`), and where a flower goes on it (`c`, `t`, `side`, `s`); `tip`
+ * is the end of the centreline and its direction, for `PlaitTip`.
+ */
+export function plait(curve: [Pt, Pt, Pt, Pt], width: (s: number, length: number) => number, step = 15, start = 6) {
+  const samples: { p: Pt; s: number }[] = [];
+  let s = 0;
+  let prev = curve[0];
+  for (let i = 0; i <= 300; i++) {
+    const p = cubicAt(...curve, i / 300);
+    s += Math.hypot(p.x - prev.x, p.y - prev.y);
+    samples.push({ p, s });
+    prev = p;
+  }
+  const length = samples[samples.length - 1].s;
+  const along = (at: number) => {
+    const found = samples.findIndex((e) => e.s >= at);
+    const i = Math.max(1, found < 0 ? samples.length - 1 : found);
+    const a = samples[i - 1].p;
+    const b = samples[i].p;
+    const len = Math.hypot(b.x - a.x, b.y - a.y);
+    const t = { x: (b.x - a.x) / len, y: (b.y - a.y) / len };
+    return { p: b, t, n: { x: -t.y, y: t.x } };
+  };
+  const lobes = Array.from({ length: Math.floor((length - 2 * start) / step) + 1 }, (_, i) => {
+    const at = start + i * step;
+    const { p, n, t } = along(at);
+    const side = i % 2 ? 1 : -1;
+    const w = width(at, length);
+    const c = { x: round(p.x + n.x * side * w * 0.2), y: round(p.y + n.y * side * w * 0.2) };
+    const len = round(w * 0.5);
+    return {
+      s: at,
+      side,
+      c,
+      t,
+      lobe: `M 0 ${-len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${len} A ${round(len * 0.44)} ${len} 0 1 1 0 ${-len} Z`,
+      sheen: `M ${round(len * 0.12)} ${round(-len * 0.72)} Q ${round(len * 0.46)} 0 ${round(len * 0.12)} ${round(len * 0.72)}`,
+      at: `translate(${c.x} ${c.y}) rotate(${round(downAlong(t) - side * 36)})`,
+    };
+  });
+  return { length, lobes, tip: along(length) };
+}
+
+export type PlaitShape = ReturnType<typeof plait>;
+
+/** The plait's lobes in `--art-hair`, each with its `--gold-soft` sheen. */
+export function PlaitLobes({ p }: { p: PlaitShape }) {
+  return (
+    <>
+      <g fill="var(--art-hair)">
+        {p.lobes.map((l, i) => (
+          <path key={i} d={l.lobe} transform={l.at} />
+        ))}
+      </g>
+      <g stroke="var(--gold-soft)" strokeWidth={0.7} strokeOpacity={0.6} strokeLinecap="round">
+        {p.lobes.map((l, i) => (
+          <path key={i} d={l.sheen} transform={l.at} />
+        ))}
+      </g>
+    </>
+  );
+}
+
+const PLAIT_TIP_STRANDS = [-6, -4, -2, 0, 2, 4, 6];
+
+/** The plait's end: a gold binding and a small tuft of loose hair below it. */
+export function PlaitTip({ p }: { p: PlaitShape }) {
+  return (
+    <g transform={`translate(${round(p.tip.p.x)} ${round(p.tip.p.y)}) rotate(${downAlong(p.tip.t)})`}>
+      <g stroke="var(--art-hair)" strokeWidth={1.1} strokeLinecap="round">
+        {PLAIT_TIP_STRANDS.map((x) => (
+          <path key={x} d={`M ${x} 2 Q ${round(x * 1.3)} 16 ${round(x * 1.7 + 3)} ${round(30 - Math.abs(x) * 0.8)}`} />
+        ))}
+      </g>
+      <rect x={-10} y={-3} width={20} height={7} rx={1.5} fill="var(--gold)" />
+      <path d="M -10 0.5 H 10" stroke="var(--art-carve)" strokeWidth={0.6} />
+    </g>
+  );
+}
+
 /* ── Brahmā on his lotus ───────────────────────────────────────────────── */
 
 /** His four faces as four flames toward the quarters: left, back, right, and front. */
