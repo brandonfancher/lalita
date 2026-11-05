@@ -188,6 +188,10 @@ second time it is needed.
 | Her fingernails | Never a hand: at the tip of an arm-beam, five small moons fanned on round its end (the toenail moons of Shloka 19: `--art-core` to `--art-moon`, a gold rim, a moon glow 3.2 times the radius, `m-twinkle`), each with a gold hairline of light running on out. With both hands at one height over a band of fire, the two clusters and the fire made a face; the arms reach to different heights | Inline (`ten-descents.tsx`) | Shloka 32 |
 | The ten descents (daśākṛti) | Each form as its emblem in a small soft glow, never a figure: the fish (`Fish`), the tortoise (`Tortoise`), the boar (`Boar`), the man-lion (`Lion` with `--art-ivory` claws), the dwarf's `--art-turmeric` umbrella and gold water pot, Paraśurāma's axe (a turmeric haft with a broad `--art-moon` crescent blade), Rāma's bow (a turmeric recurve with an arrow on the string), the fourfold Vāsudeva as four small lights (`--art-hair`, `--art-moon`, `--art-vermilion`, `--art-saffron`) on a gold ring, and Kalki's horse (`Horse` in `--art-moon`) under a raised sword | Inline (`ten-descents.tsx`) | Shloka 32 |
 | The Pāśupata | A gold trident-headed shaft with an `--art-saffron` flame at its point and a glint, flying low, a trail of light behind it; behind that, the host burnt out: a field of `tongue` flames (vermilion to saffron to core) dwindling back toward where it came from, with rising `--art-ember` sparks and a low saffron glow, and only a little ash left ahead of it | Inline (`ten-descents.tsx`) | Shloka 32 |
+| Kāmeśvara's weapon (kāmeśvarāstra) | A long shaft of pale light, tapering from nothing at her light to 3 units wide, a gradient from transparent `--art-moon` to `--art-ivory`, bowed up between her and its mark, with his crescent (the fourth night's `litPart`, radius 11, `--art-moon` edged in gold) for its head, horns forward. Where it strikes, an `--art-ivory`-to-moon glow and twelve short ivory rays (`m-lick`) | Inline (`empty-city.tsx`) | Shloka 33 |
+| Śūnyaka burnt (the Empty Place) | Never ruins or rubble: only the city's skyline, a crenellated wall between three towers, two domed and the middle one spired over an arched gate, drawn as a dashed outline in `--art-musk` with an `--art-moon` line over it, round nothing, in a faint musk hollow. A few small dying `tongue` flames (vermilion to saffron) at its foot and drifting flecks of smoke (`m-ember`) | Inline (`empty-city.tsx`) | Shloka 33 |
+| Indra's thunderbolt (vajra) | Upright, turned a little: a banded `--gold` grip with an `--art-vermilion` stud at its middle, and at each end a cage of five gold prongs closing to a point | Inline (`empty-city.tsx`) | Shloka 33 |
+| The high gods, praising | Never figures: each is his emblem in a soft `--art-core`-to-saffron glow above her, in order of precedence from the left: Brahmā's lotus (`OpenLotus` in `--art-vermilion`), Viṣṇu's discus and conch (`GanesaEmblem`), Indra's thunderbolt. The gods behind them are their lamps (`Lamp`), in two arcs round her light | Inline (`empty-city.tsx`) | Shloka 33 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1328,6 +1332,33 @@ One entry per finished artwork, in the order they were made.
   and the fire runs off to the lower right. The tortoise, horse and boar were promoted into
   `primitives.tsx`, and Shlokas 18, 25 and 27 render byte-for-byte as before. In the chant miniature
   the glow, the arms and the band of fire carry it.
+
+### Shloka 33: The empty city burned to nothing
+
+- **Component:** `empty-city.tsx` (defs prefix `sa33`)
+- **Composition:** the war ends and the praise begins. Her light at the left is all radiance now,
+  as it was before the war (Shloka 1's 108 hairlines). From it the weapon named for her consort, a
+  long bowed shaft of pale light with his crescent for a head, has come to rest at the heart of
+  Śūnyaka at the lower right, and of the city with Bhaṇḍa in it only an outline in ash is left round
+  nothing, the last flames going out at its foot. Above, in the crown, the high gods praise her in
+  order of precedence, as their emblems, and the gods behind them hold up their lamps in two arcs
+  round her light, as the court did in Shloka 24. In the ash, one green shoot.
+- **Name → part:**
+  - Kāmeśvarāstranirdagdhasabhaṇḍāsuraśūnyakā → `city`: the weapon, the burnt outline, its dying
+    flames and smoke
+  - Brahmopendramahendrādidevasaṃstutavaibhavā → `praise`: the lotus, discus and conch,
+    thunderbolt, their glows, and the lamps
+  - Intro, *her light* → `light`: her bindu, its glow and the radiance
+  - Detail → `shoot`: the green shoot in the ash, for Kāma, whose ash Bhaṇḍa was made from and who
+    is brought back in the next verse
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the radiance and the gods' glows), `m-breathe` (her bindu, the strike),
+  `m-lick` (the strike's rays), `m-flicker` (the lamps, the dying flames), `m-ember` (the smoke).
+- **Notes:** This title stays on one line, reaching x ≈ 160 at y ≈ 61–118, so the gods sit right of
+  it. The city is left as an outline because the name says what was burnt was already empty; ruins
+  or rubble would have said something was left. The lamp was promoted into `primitives.tsx`
+  (`Lamp`), and Shloka 24 renders byte-for-byte as before. In the chant miniature her radiance, the
+  shaft and the strike carry it.
 
 ## Open questions
 

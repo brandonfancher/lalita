@@ -4,6 +4,7 @@ import { DrawnBow } from "./drawn-bow";
 import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
 import { ElephantsAndHorses } from "./elephants-and-horses";
+import { EmptyCity } from "./empty-city";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FirstRainQuivers } from "./first-rain-quivers";
 import { FloweringHair } from "./flowering-hair";
@@ -1211,6 +1212,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           The man-lion is drawn with his claws showing. Narasiṃha killed with his nails because no weapon was allowed
           against the demon, so the form that comes out of her nails is itself a form about nails.
+        </>
+      ),
+    },
+  },
+  "033": {
+    Art: EmptyCity,
+    intro: (Spot) => (
+      <>
+        <Spot part="light">Her light</Spot>, at the left, has nothing left to send out and is all radiance now, as it
+        was before the war began.
+      </>
+    ),
+    entries: [
+      {
+        nama: 82,
+        part: "city",
+        depicts:
+          "At the right the weapon named for her consort, a long shaft of pale light with Kāmeśvara's crescent for its head, has come to rest at the heart of Śūnyaka, the Empty Place. Of the city and Bhaṇḍa inside it only an outline is left: walls, domes and a spire drawn in ash round nothing, the last flames going out at its foot and smoke rising.",
+      },
+      {
+        nama: 83,
+        part: "praise",
+        depicts:
+          "Above, the gods praise her: Brahmā's lotus, Viṣṇu's conch and discus, Indra's thunderbolt, and below them the lamps of the gods behind them, held up in companies along an arc round her light.",
+      },
+    ],
+    detail: {
+      part: "shoot",
+      body: (
+        <>
+          In the ash at the foot of the burnt city there is one green shoot. The demon was made from the ashes of
+          Kāma, and the gods are about to ask her to bring the god of love back to life; that is the next verse.
         </>
       ),
     },
