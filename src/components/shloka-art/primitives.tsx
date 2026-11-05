@@ -2850,6 +2850,49 @@ export function BrahmaCouch({ cx, plank, floor }: { cx: number; plank: number; f
   );
 }
 
+/* ── Brahmā on his lotus ───────────────────────────────────────────────── */
+
+/** His four faces as four flames toward the quarters: left, back, right, and front. */
+const BRAHMA_FACES = [
+  { x: -14, y: -11, lean: -3, s: 0.8, rot: -16 },
+  { x: 0, y: -16, lean: 0, s: 0.66, rot: 0 },
+  { x: 14, y: -11, lean: 3, s: 0.8, rot: 16 },
+  { x: 0, y: -7, lean: 0, s: 1, rot: 0 },
+];
+
+/** The saffron glow round Brahmā (`brahma`), for the `<defs>` of an artwork that draws `BrahmaLotus`. */
+export function BrahmaLotusDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("brahma")}>
+      <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.75 }} />
+      <stop offset="0.5" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.22 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+    </radialGradient>
+  );
+}
+
+/**
+ * Brahmā on his lotus, never as a figure: a crimson-veined open lotus 126 across, centred on the
+ * origin, with his four faces as four small vermilion flames on its seed head, in a shimmering
+ * saffron glow of radius 58 centred 10 above the origin.
+ */
+export function BrahmaLotus({ url }: { url: (name: string) => string }) {
+  return (
+    <>
+      <circle className="m-shimmer" cy={-10} r={58} fill={url("brahma")} />
+      <g transform="scale(1.4)">
+        <OpenLotus pad={false} shade="var(--art-crimson)" />
+      </g>
+      {BRAHMA_FACES.map((f, i) => (
+        <g key={i} transform={`translate(${f.x} ${f.y}) rotate(${f.rot}) scale(${f.s * 1.25})`}>
+          <path d={tongue(17, 8, f.lean)} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+          <path d={tongue(8, 3.6, f.lean * 0.5)} fill="var(--art-core)" fillOpacity={0.9} />
+        </g>
+      ))}
+    </>
+  );
+}
+
 /* ── Elephant (gaja) ───────────────────────────────────────────────────── */
 
 /** An elephant facing right, standing on the origin, about 110 long and 88 to the top of its back. */

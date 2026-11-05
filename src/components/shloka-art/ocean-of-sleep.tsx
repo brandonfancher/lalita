@@ -14,7 +14,7 @@
  * this artwork's entry.
  */
 
-import { GanesaEmblem, OpenLotus, Star, artIds, cubicAt, eggPath, glint, hash, litPart, partProps, round, taper, through, tongue } from "./primitives";
+import { BrahmaLotus, BrahmaLotusDefs, GanesaEmblem, Star, artIds, cubicAt, eggPath, glint, hash, litPart, partProps, round, taper, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -119,7 +119,7 @@ const VEIL_STARS = Array.from({ length: 26 }, (_, i) => {
 
 /* ── The lotus from his navel, and Brahmā on it ────────────────────────── */
 
-const LOTUS = { x: 290, y: 458, s: 1.4 };
+const LOTUS = { x: 290, y: 458 };
 const STALK = taper(
   through(
     [
@@ -134,14 +134,6 @@ const STALK = taper(
   (t) => 4.4 - t * 1.4,
 );
 const STALK_LINE = "M 329 508 C 330 496 312 484 296 476";
-/** His four faces as four flames toward the quarters: left, back, right, and front. */
-const FACES = [
-  { x: -14, y: -1, lean: -3, s: 0.8, rot: -16 },
-  { x: 0, y: -6, lean: 0, s: 0.66, rot: 0 },
-  { x: 14, y: -1, lean: 3, s: 0.8, rot: 16 },
-  { x: 0, y: 3, lean: 0, s: 1, rot: 0 },
-];
-const BRAHMA_AT = { x: LOTUS.x, y: LOTUS.y - 10 };
 
 /* ── The worlds let out ────────────────────────────────────────────────── */
 
@@ -263,11 +255,7 @@ export function OceanOfSleep({ idPrefix = "sa63", active = null }: ArtProps) {
           <stop offset="0.3" style={{ stopColor: "var(--art-core)", stopOpacity: 0.4 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("brahma")}>
-          <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.75 }} />
-          <stop offset="0.5" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.22 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
-        </radialGradient>
+        <BrahmaLotusDefs id={id} />
         <clipPath id={id("above-water")}>
           <rect x={0} y={0} width={640} height={WATERLINE} />
         </clipPath>
@@ -362,16 +350,9 @@ export function OceanOfSleep({ idPrefix = "sa63", active = null }: ArtProps) {
         <path d={STALK} fill="var(--leaf)" stroke="var(--gold)" strokeWidth={0.5} />
         <path d={STALK_LINE} stroke="var(--gold-soft)" strokeWidth={0.6} />
         <circle cx={NAVEL.x} cy={NAVEL.y - 1} r={2.8} fill="var(--gold)" />
-        <circle className="m-shimmer" cx={BRAHMA_AT.x} cy={BRAHMA_AT.y} r={58} fill={url("brahma")} />
-        <g transform={`translate(${LOTUS.x} ${LOTUS.y}) scale(${LOTUS.s})`}>
-          <OpenLotus pad={false} shade="var(--art-crimson)" />
+        <g transform={`translate(${LOTUS.x} ${LOTUS.y})`}>
+          <BrahmaLotus url={url} />
         </g>
-        {FACES.map((f, i) => (
-          <g key={i} transform={`translate(${BRAHMA_AT.x + f.x} ${BRAHMA_AT.y + f.y}) rotate(${f.rot}) scale(${f.s * 1.25})`}>
-            <path d={tongue(17, 8, f.lean)} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
-            <path d={tongue(8, 3.6, f.lean * 0.5)} fill="var(--art-core)" fillOpacity={0.9} />
-          </g>
-        ))}
       </g>
 
       {/* The worlds let out, rising in two arcs */}
