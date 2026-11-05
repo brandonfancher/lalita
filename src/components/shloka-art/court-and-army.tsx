@@ -11,7 +11,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { Ash, AshDefs, Spear, SpearDefs, SPEAR_LEAN, artIds, partProps, polar, radiance, round } from "./primitives";
+import { Ash, AshDefs, Lamp, Spear, SpearDefs, SPEAR_LEAN, artIds, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -22,7 +22,7 @@ const RADIANCE = radiance({ cx: BINDU.x, cy: BINDU.y, from: 14, long: 262, short
 
 /* ── The court: company after company of lamps ─────────────────────────── */
 
-type Lamp = { x: number; y: number; s: number; k: number };
+type LampAt = { x: number; y: number; s: number; k: number };
 
 /** Inner rows are the gods, outer rows the seers; each row is broken into companies of five. */
 const ROWS = [
@@ -37,7 +37,7 @@ const COURT = ROWS.map((row, ri) => {
   const from = Math.max((20 * Math.PI) / 180, Math.acos(Math.min(1, 296 / row.r)));
   const n = Math.floor((Math.PI - 2 * from) / step);
   const start = (Math.PI - n * step) / 2;
-  const lamps: Lamp[] = [];
+  const lamps: LampAt[] = [];
   for (let i = 0; i <= n; i++) {
     if ((i + ri * 3) % 7 >= 5) continue;
     const p = polar(BINDU.x, BINDU.y, row.r, ((start + i * step) * 180) / Math.PI);
@@ -46,10 +46,6 @@ const COURT = ROWS.map((row, ri) => {
   return { ...row, lamps };
 });
 
-const BOWL = "M -4.4 0 Q 0 4 4.4 0 Z";
-const FLAME = "M 0 -0.6 C -2.8 -2.6 -2.2 -7.4 0 -11.6 C 2.2 -7.4 2.8 -2.6 0 -0.6 Z";
-const FLAME_CORE = "M 0 -1.4 C -1.3 -2.6 -1 -5 0 -7 C 1 -5 1.3 -2.6 0 -1.4 Z";
-const FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
 
 /* ── The army of śaktis ────────────────────────────────────────────────── */
 
@@ -125,11 +121,7 @@ export function CourtAndArmy({ idPrefix = "sa24", active = null }: ArtProps) {
           <g key={row.r}>
             {row.lamps.map((l, i) => (
               <g key={i} transform={`translate(${l.x} ${l.y}) scale(${l.s})`}>
-                <path d={BOWL} fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
-                <g className={FLICKER[l.k]}>
-                  <path d={FLAME} fill={row.seer ? "var(--art-moon)" : "var(--art-saffron)"} />
-                  <path d={FLAME_CORE} fill={row.seer ? "var(--art-ivory)" : "var(--art-core)"} />
-                </g>
+                <Lamp k={l.k} seer={row.seer} />
               </g>
             ))}
           </g>

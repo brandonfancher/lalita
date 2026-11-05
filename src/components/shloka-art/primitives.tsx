@@ -2322,3 +2322,23 @@ export function Boar() {
     </>
   );
 }
+
+/* ── Lamp (dīpa) ───────────────────────────────────────────────────────── */
+
+const LAMP_BOWL = "M -4.4 0 Q 0 4 4.4 0 Z";
+const LAMP_FLAME = "M 0 -0.6 C -2.8 -2.6 -2.2 -7.4 0 -11.6 C 2.2 -7.4 2.8 -2.6 0 -0.6 Z";
+const LAMP_FLAME_CORE = "M 0 -1.4 C -1.3 -2.6 -1 -5 0 -7 C 1 -5 1.3 -2.6 0 -1.4 Z";
+const LAMP_FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
+
+/** A small lamp held up in praise, bowl on the origin; `seer` gives the seers' pale flame instead of the gods'. */
+export function Lamp({ k, seer = false }: { k: number; seer?: boolean }) {
+  return (
+    <>
+      <path d={LAMP_BOWL} fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <g className={LAMP_FLICKER[k]}>
+        <path d={LAMP_FLAME} fill={seer ? "var(--art-moon)" : "var(--art-saffron)"} />
+        <path d={LAMP_FLAME_CORE} fill={seer ? "var(--art-ivory)" : "var(--art-core)"} />
+      </g>
+    </>
+  );
+}
