@@ -14,25 +14,7 @@
  * to is written up for readers in the registry, next to this artwork's entry.
  */
 
-import {
-  ArmLight,
-  Ash,
-  AshDefs,
-  Boar,
-  Embers,
-  Fish,
-  FishDefs,
-  Horse,
-  Lion,
-  Tortoise,
-  armBeam,
-  artIds,
-  glint,
-  partProps,
-  polar,
-  round,
-  tongue,
-} from "./primitives";
+import { ArmLight, Ash, AshDefs, Axe, Boar, Embers, Fish, FishDefs, Horse, Lion, Tortoise, armBeam, artIds, glint, partProps, polar, round, tongue } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -78,8 +60,6 @@ const VYUHA = [90, 0, 270, 180].map((deg, k) => ({
 /** Rāma's bow, upright, with an arrow on the string. */
 const RAMA_BOW = "M 0 -26 C 9 -20 12 -8 12 0 C 12 8 9 20 0 26";
 const RAMA_TIPS = "M 0 -26 C -2 -28 -4 -28 -5 -27 M 0 26 C -2 28 -4 28 -5 27";
-/** Paraśurāma's axe: a broad crescent blade on one side of the haft. */
-const AXE_BLADE = "M 2 -22 C 12 -26 20 -20 22 -12 C 18 -12 13 -11 9 -8 C 8 -12 5 -15 2 -14 Z";
 /** Vāmana's umbrella and water pot. */
 const UMBRELLA = "M -18 -8 C -16 -20 -6 -26 0 -26 C 6 -26 16 -20 18 -8 C 12 -10 6 -10 0 -8 C -6 -10 -12 -10 -18 -8 Z";
 const POT = "M 10 18 C 6 18 4 14 5 10 C 6 7 9 6 12 6 C 15 6 18 7 19 10 C 20 14 18 18 14 18 Z";
@@ -242,10 +222,7 @@ export function TenDescents({ idPrefix = "sa32", active = null }: ArtProps) {
           <path d="M 9 6 C 9 2 15 2 15 6" stroke="var(--gold)" strokeWidth={0.9} />
         </g>
         <g transform={`translate(${FORMS.axe.x} ${FORMS.axe.y}) rotate(14)`}>
-          <path d="M 0 -24 V 24" stroke="var(--art-turmeric)" strokeWidth={2.6} strokeLinecap="round" />
-          <path d="M 0 -24 V 24" stroke="var(--gold)" strokeWidth={0.6} />
-          <path d={AXE_BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-          <path d="M -1.6 -20 H 3 M -1.6 -12 H 3" stroke="var(--gold)" strokeWidth={1.2} />
+          <Axe />
         </g>
         <g transform={`translate(${FORMS.bow.x} ${FORMS.bow.y}) rotate(-12)`}>
           <path d="M 0 -26 L 0 26" stroke="var(--gold-soft)" strokeWidth={0.6} />

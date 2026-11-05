@@ -2444,3 +2444,19 @@ export function CakraLotus({ x, c, lit, petal, glow }: { x: number; c: Cakra; li
     </g>
   );
 }
+
+/* ── The axe (paraśu, kuṭhāra) ─────────────────────────────────────────── */
+
+const AXE_BLADE = "M 2 -22 C 12 -26 20 -20 22 -12 C 18 -12 13 -11 9 -8 C 8 -12 5 -15 2 -14 Z";
+
+/** A small axe, upright, centred on the origin: a turmeric haft 48 long and a broad moon crescent blade on one side near its top. */
+export function Axe() {
+  return (
+    <>
+      <path d="M 0 -24 V 24" stroke="var(--art-turmeric)" strokeWidth={2.6} strokeLinecap="round" />
+      <path d="M 0 -24 V 24" stroke="var(--gold)" strokeWidth={0.6} />
+      <path d={AXE_BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -1.6 -20 H 3 M -1.6 -12 H 3" stroke="var(--gold)" strokeWidth={1.2} />
+    </>
+  );
+}
