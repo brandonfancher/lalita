@@ -10,7 +10,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, glint, partProps, polyline, round } from "./primitives";
+import { Tortoise, artIds, glint, partProps, polyline, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -125,12 +125,6 @@ const TORTOISES = [
   { x: 172, y: 632, flip: false, s: 1 },
   { x: 478, y: 636, flip: true, s: 0.92 },
 ];
-const SHELL = "M -34 0 C -33 -20 -18 -31 0 -31 C 18 -31 33 -20 34 0 Z";
-const PLATES =
-  "M -10 -30 L -12 -16 L 0 -10 L 12 -16 L 10 -30 M -12 -16 L -26 -14 M 12 -16 L 26 -14 M 0 -10 L 0 0 M -12 -16 L -18 0 M 12 -16 L 18 0 M -26 -14 L -32 -6 M 26 -14 L 32 -6";
-const RIM = "M -36 0 Q 0 6 36 0";
-const BODY =
-  "M 32 -3 C 40 -6 46 -10 52 -9 C 57 -8 58 -3 54 -1 C 50 1 44 1 36 2 Z M -32 0 L -40 4 L -33 4 Z M -24 1 L -27 9 L -19 9 L -18 2 Z M 18 1 L 20 9 L 27 9 L 25 2 Z M -6 2 L -8 8 L -2 8 L -1 2 Z";
 /** The curve of the instep, smoother and higher than the shell it outdoes. */
 const ARC = (() => {
   const pts = Array.from({ length: 49 }, (_, k) => {
@@ -270,12 +264,7 @@ export function FirstRainQuivers({ idPrefix = "sa18", active = null }: ArtProps)
         {TORTOISES.map((t, i) => (
           <g key={i} transform={`translate(${t.x} ${t.y}) scale(${t.flip ? -t.s : t.s} ${t.s})`}>
             <ellipse cx={0} cy={4} rx={44} ry={5} fill="var(--art-musk)" fillOpacity={0.18} />
-            <path d={BODY} fill="var(--gold-soft)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-            <circle cx={50} cy={-6} r={1.2} fill="var(--art-carve)" />
-            <path d={SHELL} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.2} />
-            <path d={SHELL} fill="var(--art-saffron)" fillOpacity={0.18} />
-            <path d={PLATES} stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-            <path d={RIM} stroke="var(--gold)" strokeWidth={1.6} />
+            <Tortoise />
             <path d={`${ARC} L 46 0 L -46 0 Z`} className="m-shimmer" fill={url("arc-glow")} />
             <path d={ARC} stroke="var(--art-core)" strokeWidth={3.6} strokeOpacity={0.4} strokeLinecap="round" />
             <path d={ARC} stroke="var(--gold)" strokeWidth={1.3} strokeLinecap="round" />

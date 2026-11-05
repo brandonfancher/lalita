@@ -470,7 +470,7 @@ export function BeeString({ from, to, spacing = 8 }: { from: Pt; to: Pt; spacing
 export type Tattva = "space" | "air" | "fire" | "water" | "earth";
 
 /** The traditional sign of each element, centred on the origin, about 2s across. */
-function tattvaSign(t: Tattva, s: number) {
+export function tattvaSign(t: Tattva, s: number) {
   const p = round;
   switch (t) {
     case "space":
@@ -1610,6 +1610,901 @@ export function MarriageThread({ t, url }: { t: ThreadShape; url: (name: string)
         <g key={k.x} transform={`translate(${k.x} ${k.y})`}>
           <ellipse rx={6.2} ry={5.2} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.9} />
           <path d="M -3.8 -2 Q 0 2.4 3.8 -2" stroke="var(--art-saffron)" strokeWidth={0.8} strokeLinecap="round" />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── Her chariot, the Śrīcakra in tiers ────────────────────────────────── */
+
+/** Plate units per yantra unit at full size; the yantra's vertical diameter is 48 units, as in the traditional construction. */
+const RATHA_S = 3.2;
+/** How much the tiers' top faces are foreshortened, seen from in front and above. */
+const RATHA_K = 0.5;
+/** The plinth (bhūpura) and four drums, each a step of the meru: radius in yantra units, and its top height at full size. */
+const RATHA_PLINTH = { half: 48, gate: 8, jut: 5, z: 22 };
+const RATHA_DRUMS = [
+  { r: 42.2, z: 30 },
+  { r: 38.4, z: 48 },
+  { r: 31.2, z: 64 },
+  { r: 24, z: 78 },
+];
+/** Upright carved lines across the front of each drum, every `n`th of the way round, so the tiers read as built, not moulded. */
+const RATHA_PILASTERS = [28, 26, 22, 18];
+
+/** The square of gates, as a closed outline in yantra units, half-side h, its four gates jutting out. */
+export function gateSquare(h: number, g: number, j: number) {
+  const side = (x: number, y: number) => [x, y];
+  const pts: number[][] = [];
+  // Clockwise from the far left corner, with a gate in the middle of each side.
+  pts.push(side(-h, -h), side(-g, -h), side(-g, -h - j), side(g, -h - j), side(g, -h));
+  pts.push(side(h, -h), side(h, -g), side(h + j, -g), side(h + j, g), side(h, g));
+  pts.push(side(h, h), side(g, h), side(g, h + j), side(-g, h + j), side(-g, h));
+  pts.push(side(-h, h), side(-h, g), side(-h - j, g), side(-h - j, -g), side(-h, -g));
+  return `M ${pts.map(([x, y]) => `${round(x)} ${round(y)}`).join(" L ")} Z`;
+}
+
+/** A ring of petals between radii r0 and r1, in yantra units. */
+export function yantraPetals(n: number, r0: number, r1: number, turn = 0) {
+  const half = 180 / n;
+  return Array.from({ length: n }, (_, k) => {
+    const deg = 90 + turn + (k * 360) / n;
+    const a = polar(0, 0, r0, deg - half);
+    const b = polar(0, 0, r0, deg + half);
+    const tip = polar(0, 0, r1, deg);
+    const ca = polar(0, 0, r0 + (r1 - r0) * 0.62, deg - half * 0.92);
+    const cb = polar(0, 0, r0 + (r1 - r0) * 0.62, deg + half * 0.92);
+    return `M ${a.x} ${a.y} Q ${ca.x} ${ca.y} ${tip.x} ${tip.y} Q ${cb.x} ${cb.y} ${b.x} ${b.y}`;
+  }).join(" ");
+}
+
+/**
+ * The Śrīcakra's nine interlocking triangles, from the traditional
+ * construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and
+ * 42 units down a 48-unit diameter, each shortened at its ends, joined to an
+ * apex on the axis. Centred on the origin; five point down (+y), four up.
+ */
+const SRI_BASES = [
+  { d: 6, hw: 12.87, apex: 27 },
+  { d: 12, hw: 15.78, apex: 42 },
+  { d: 17, hw: 22.96, apex: 48 },
+  { d: 20, hw: 7.66, apex: 36 },
+  { d: 23, hw: 5.98, apex: 30 },
+  { d: 27, hw: 7.81, apex: 12 },
+  { d: 30, hw: 23.24, apex: 0 },
+  { d: 36, hw: 16.78, apex: 6 },
+  { d: 42, hw: 12.87, apex: 17 },
+];
+export const SRI_TRIANGLES = SRI_BASES.map(({ d, hw, apex }) => ({
+  d: `M ${-hw} ${d - 24} L ${hw} ${d - 24} L 0 ${apex - 24} Z`,
+  down: apex > d,
+}));
+/** Where the bindu sits, inside the innermost triangle, in yantra units below the centre. */
+export const SRI_BINDU_V = 1.2;
+
+type RathaWeapon = { x: number; y: number; kind: number; back: boolean; s: number };
+
+function rathaGeometry(cx: number, cy: number, s: number) {
+  const S = RATHA_S * s;
+  const K = RATHA_K;
+  const P = RATHA_PLINTH;
+  const zP = P.z * s;
+  const drums = RATHA_DRUMS.map((d) => ({ r: d.r, z: d.z * s }));
+  const face = (z: number) => `translate(${cx} ${cy - z}) scale(${S} ${round(S * K)})`;
+  const riser = (r: number, z0: number, z1: number) => {
+    const rx = round(r * S);
+    const ry = round(r * S * K);
+    const yt = cy - z1;
+    const yb = cy - z0;
+    return `M ${cx - rx} ${yt} A ${rx} ${ry} 0 0 0 ${cx + rx} ${yt} L ${cx + rx} ${yb} A ${rx} ${ry} 0 0 1 ${cx - rx} ${yb} Z`;
+  };
+  const frieze = (r: number, z: number) => {
+    const rx = round(r * S - 2 * s);
+    const ry = round((r * S - 2 * s) * K);
+    return `M ${cx - rx} ${cy - z} A ${rx} ${ry} 0 0 0 ${cx + rx} ${cy - z}`;
+  };
+  const pilasters = (r: number, z0: number, z1: number, n: number) =>
+    Array.from({ length: n / 2 - 1 }, (_, k) => {
+      const t = ((k + 1) / (n / 2)) * Math.PI;
+      const x = round(cx + r * S * Math.cos(t));
+      const y = round(cy + r * S * K * Math.sin(t));
+      return `M ${x} ${y - z0 - 1 * s} V ${y - z1 + 4 * s}`;
+    }).join(" ");
+  const plinthFront = (() => {
+    const { half: h, gate: g, jut: j } = P;
+    const y = (v: number, zz: number) => round(cy + v * S * K - zz);
+    const x = (u: number) => round(cx + u * S);
+    return [
+      `M ${x(-h)} ${y(h, zP)} L ${x(-g)} ${y(h, zP)} L ${x(-g)} ${y(h + j, zP)} L ${x(g)} ${y(h + j, zP)} L ${x(g)} ${y(h, zP)} L ${x(h)} ${y(h, zP)}`,
+      `L ${x(h)} ${y(h, 0)} L ${x(g)} ${y(h, 0)} L ${x(g)} ${y(h + j, 0)} L ${x(-g)} ${y(h + j, 0)} L ${x(-g)} ${y(h, 0)} L ${x(-h)} ${y(h, 0)} Z`,
+    ].join(" ");
+  })();
+  const rim = (r: number, z: number, n: number, ws: number, offset: number): RathaWeapon[] =>
+    Array.from({ length: n }, (_, k) => {
+      const t = ((k + 0.5) / n) * 2 * Math.PI;
+      return {
+        x: round(cx + r * S * Math.cos(t)),
+        y: round(cy - z + r * S * K * Math.sin(t)),
+        kind: (k + offset) % 4,
+        back: Math.sin(t) < 0,
+        s: ws * s,
+      };
+    });
+  return {
+    cx,
+    cy,
+    S,
+    K,
+    face,
+    plinth: {
+      ...P,
+      z: zP,
+      front: plinthFront,
+      mid: `M ${cx - P.half * S + 4 * s} ${round(cy + P.half * S * K - zP / 2)} H ${cx + P.half * S - 4 * s}`,
+    },
+    drums: drums.map((d, i) => {
+      const z0 = i ? drums[i - 1].z : zP;
+      return { ...d, z0, riser: riser(d.r, z0, d.z), pilasters: pilasters(d.r, z0, d.z, RATHA_PILASTERS[i]), frieze: frieze(d.r, d.z - 3 * s) };
+    }),
+    /** Her bindu, raised over the innermost triangle. */
+    bindu: { x: cx, y: round(cy + SRI_BINDU_V * S * K - drums[3].z - 8 * s) },
+    wheels: [-118, 118].map((dx) => ({ x: cx + dx * s, y: cy + 88 * s, r: 46 * s })),
+    /** On the lower tiers only the front and sides of each rim show; the top tier's stand all round. */
+    weapons: [
+      ...[-44, -36, -28, -20, -12, 12, 20, 28, 36, 44].map((u, k) => ({
+        x: cx + u * S,
+        y: round(cy + P.half * S * K - zP),
+        kind: k % 4,
+        back: false,
+        s: 0.85 * s,
+      })),
+      ...[
+        ...rim(41, drums[0].z, 26, 0.85, 0),
+        ...rim(37.4, drums[1].z, 20, 0.95, 1),
+        ...rim(30.4, drums[2].z, 16, 1.05, 2),
+      ].filter((w) => !w.back),
+    ],
+    topWeapons: rim(23.2, drums[3].z, 12, 1.15, 3),
+  };
+}
+
+const rathas = new Map<string, ReturnType<typeof rathaGeometry>>();
+
+export type RathaShape = ReturnType<typeof rathaGeometry>;
+
+/**
+ * Her chariot, the Cakrarāja, as the Śrīcakra raised in tiers: the geometry
+ * for a chariot whose yantra centre would stand on the ground at (cx, cy),
+ * at scale s (1 is its size in Shloka 26).
+ */
+export function sriCakraRatha(cx: number, cy: number, s = 1) {
+  const key = `${cx} ${cy} ${s}`;
+  let g = rathas.get(key);
+  if (!g) {
+    g = rathaGeometry(cx, cy, s);
+    rathas.set(key, g);
+  }
+  return g;
+}
+
+/** The yantra's field of light and the tiers' gold, as `id("field")` and `id("riser")`. */
+export function RathaDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <radialGradient id={id("field")} cx={0} cy={SRI_BINDU_V} r={24} gradientUnits="userSpaceOnUse">
+        <stop offset="0" style={{ stopColor: "var(--art-core)" }} />
+        <stop offset="0.55" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
+      </radialGradient>
+      <linearGradient id={id("riser")} x1={0} y1={0} x2={1} y2={0}>
+        <stop offset="0" style={{ stopColor: "var(--gold)", stopOpacity: 0.75 }} />
+        <stop offset="0.45" style={{ stopColor: "var(--art-turmeric)" }} />
+        <stop offset="1" style={{ stopColor: "var(--gold)", stopOpacity: 0.75 }} />
+      </linearGradient>
+    </>
+  );
+}
+
+/** A chariot wheel face-on at the origin, radius r: a double rim, sixteen spokes, a hub with a ruby. */
+export function ChariotWheel({ r }: { r: number }) {
+  const spokes = Array.from({ length: 16 }, (_, k) => {
+    const deg = k * 22.5 + 11.25;
+    const a = polar(0, 0, r * 0.2, deg);
+    const b = polar(0, 0, r * 0.86, deg);
+    return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
+  }).join(" ");
+  return (
+    <>
+      <circle r={r} stroke="var(--gold)" strokeWidth={round(r * 0.13)} />
+      <circle r={round(r * 0.86)} stroke="var(--art-carve)" strokeWidth={0.7} />
+      <circle r={round(r * 1.065)} stroke="var(--art-carve)" strokeWidth={0.7} />
+      <path d={spokes} stroke="var(--gold)" strokeWidth={round(r * 0.05)} />
+      <circle r={round(r * 0.22)} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.7} />
+      <circle r={round(r * 0.09)} fill="var(--art-vermilion)" />
+    </>
+  );
+}
+
+const nonScaling = { vectorEffect: "non-scaling-stroke" as const };
+
+/** The chariot's wheels, plinth of gates and four drums with their petals. Needs `RathaDefs`. */
+export function RathaTiers({ g, url }: { g: RathaShape; url: (name: string) => string }) {
+  const { plinth: P } = g;
+  return (
+    <>
+      {g.wheels.map((w) => (
+        <g key={w.x} transform={`translate(${w.x} ${w.y})`}>
+          <ChariotWheel r={w.r} />
+        </g>
+      ))}
+      <path d={P.front} fill={url("riser")} stroke="var(--gold)" strokeWidth={0.8} />
+      <path d={P.mid} stroke="var(--art-carve)" strokeWidth={0.9} strokeDasharray="6 2.4" />
+      <g transform={g.face(P.z)}>
+        <path d={gateSquare(P.half, P.gate, P.jut)} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.4} {...nonScaling} />
+        <path d={gateSquare(P.half - 2.4, P.gate - 1.6, P.jut)} stroke="var(--art-vermilion)" strokeWidth={1} {...nonScaling} />
+        <path d={gateSquare(P.half - 4.8, P.gate - 3.2, P.jut)} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      </g>
+      {g.drums.map((drum, i) => (
+        <g key={i}>
+          <path d={drum.riser} fill={url("riser")} stroke="var(--gold)" strokeWidth={0.8} />
+          <path d={drum.pilasters} stroke="var(--art-carve)" strokeWidth={0.8} />
+          <path d={drum.frieze} stroke="var(--art-carve)" strokeWidth={0.8} />
+          <g transform={g.face(drum.z)}>
+            <circle r={drum.r} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.2} {...nonScaling} />
+            {i === 0 && (
+              <g stroke="var(--gold)" {...nonScaling}>
+                <circle r={40.8} strokeWidth={0.8} {...nonScaling} />
+                <circle r={39.4} strokeWidth={0.8} {...nonScaling} />
+              </g>
+            )}
+            {i === 1 && <path d={yantraPetals(16, 31.2, 38, 0)} fill="var(--art-core)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />}
+            {i === 2 && <path d={yantraPetals(8, 24, 30.8, 0)} fill="var(--art-saffron)" fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />}
+          </g>
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** The nine triangles on the chariot's top tier, over a field of her light. Needs `RathaDefs`. */
+export function RathaTriangles({ g, url }: { g: RathaShape; url: (name: string) => string }) {
+  return (
+    <g transform={g.face(g.drums[3].z)}>
+      <circle r={23.4} fill={url("field")} fillOpacity={0.9} />
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} fill={t.down ? "var(--art-vermilion)" : "var(--art-core)"} fillOpacity={0.16} />
+      ))}
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" {...nonScaling} />
+      ))}
+    </g>
+  );
+}
+
+/** A spear, a trident, an arrow and a goad, each standing up from the origin, about 22 tall. */
+function WeaponGlyph({ kind }: { kind: number }) {
+  const shaft = <path d="M 0 0 V -14" stroke="var(--gold)" strokeWidth={1.1} />;
+  switch (kind) {
+    case 0:
+      return (
+        <>
+          {shaft}
+          <path d="M 0 -24 C 2.6 -20 2.6 -16 0 -13.4 C -2.6 -16 -2.6 -20 0 -24 Z" fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.6} />
+        </>
+      );
+    case 1:
+      return (
+        <>
+          {shaft}
+          <path d="M -4 -21 Q -4.4 -15 0 -14 Q 4.4 -15 4 -21 M 0 -14 V -23" stroke="var(--gold)" strokeWidth={1.1} strokeLinecap="round" />
+        </>
+      );
+    case 2:
+      return (
+        <>
+          <path d="M 0 0 V -18" stroke="var(--gold)" strokeWidth={1} />
+          <path d="M -2.2 -18 L 0 -23.5 L 2.2 -18 Z" fill="var(--gold)" />
+          <path d="M -2.4 -1 L 0 -5 L 2.4 -1" stroke="var(--art-saffron)" strokeWidth={1} />
+        </>
+      );
+    default:
+      return (
+        <>
+          <path d="M 0 0 V -20" stroke="var(--gold)" strokeWidth={1.1} />
+          <path d="M 0 -20 L 0 -24 M 0 -17 C 4 -19 6.4 -16 5 -13" stroke="var(--gold)" strokeWidth={1.1} strokeLinecap="round" />
+        </>
+      );
+  }
+}
+
+function RathaWeaponList({ list }: { list: RathaWeapon[] }) {
+  return (
+    <>
+      {list.map((w, i) => (
+        <g key={i} transform={`translate(${w.x} ${w.y}) scale(${w.s})`} opacity={w.back ? 0.75 : 1}>
+          <WeaponGlyph kind={w.kind} />
+          {i % 5 === 2 && <circle className={TWINKLE[i % 3]} cy={-22} r={1.6} fill="var(--art-core)" />}
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** Spears, tridents, arrows and goads standing ready round every tier. */
+export function RathaWeapons({ g }: { g: RathaShape }) {
+  return (
+    <>
+      <RathaWeaponList list={g.weapons} />
+      <RathaWeaponList list={g.topWeapons} />
+    </>
+  );
+}
+
+/** The chariot's outline in black, for a mask that keeps a light off it. */
+export function RathaSilhouette({ g }: { g: RathaShape }) {
+  const { plinth: P } = g;
+  return (
+    <>
+      <path d={P.front} />
+      <path d={gateSquare(P.half, P.gate, P.jut)} transform={g.face(P.z)} />
+      {g.drums.map((drum, i) => (
+        <g key={i}>
+          <path d={drum.riser} />
+          <circle r={drum.r} transform={g.face(drum.z)} />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── The army of her powers, and Bhaṇḍa's ash ──────────────────────────── */
+
+/** The spears lean forward as they march, toward the lower right. */
+export const SPEAR_LEAN = 16;
+const SPEAR_BLADE = "M 0 0 C 2.4 -2.4 3.6 -8 3.4 -12 L 0 -27 L -3.4 -12 C -3.6 -8 -2.4 -2.4 0 0 Z";
+const SPEAR_LUGS = "M -5 -0.6 L 5 -0.6";
+const SPEAR_PENNANT = "M 0 3 L -17 4.4 L -12.6 8 L -17 11.6 L 0 13 Z";
+const SPEAR_PENNANTS = ["var(--art-vermilion)", "var(--art-saffron)", "var(--lotus)"];
+const SPEAR_FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
+
+/** The fading shaft gradient a `Spear` takes as `shaft`. */
+export function SpearDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <linearGradient id={id("shaft")} x1={0} y1={0} x2={0} y2={1}>
+      <stop offset="0" style={{ stopColor: "var(--gold)" }} />
+      <stop offset="1" style={{ stopColor: "var(--gold)", stopOpacity: 0 }} />
+    </linearGradient>
+  );
+}
+
+/**
+ * A śakti, a power that is also a spear: blade up from the origin, the shaft
+ * fading out 74 below it, a pennant in one of three colours (k).
+ */
+export function Spear({ k, shaft }: { k: number; shaft: string }) {
+  return (
+    <>
+      <rect x={-0.8} y={0} width={1.6} height={74} fill={shaft} />
+      <g className={SPEAR_FLICKER[k]}>
+        <path d={SPEAR_PENNANT} fill={SPEAR_PENNANTS[k]} stroke="var(--gold)" strokeWidth={0.5} />
+      </g>
+      <path d={SPEAR_LUGS} stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
+      <path d={SPEAR_BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d="M 0 -1.5 L 0 -24" stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.85} />
+      {k === 0 && <path className="m-lick" d={glint(4)} transform="translate(0 -27)" fill="var(--art-core)" />}
+    </>
+  );
+}
+
+export function AshDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <radialGradient id={id("ash")}>
+        <stop offset="0" style={{ stopColor: "var(--art-musk)", stopOpacity: 0.34 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-musk)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("ash-pale")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.16 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+type Disc = { x: number; y: number; r: number };
+
+/** Bhaṇḍa's substance: soft clouds of ash, grey by day and by lamplight, with drifting flecks. */
+export function Ash({ clouds, flecks, url }: { clouds: Disc[]; flecks: Disc[]; url: (name: string) => string }) {
+  return (
+    <>
+      {clouds.map((a, i) => (
+        <g key={i}>
+          <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash")} />
+          <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash-pale")} />
+        </g>
+      ))}
+      {flecks.map((f, i) => (
+        <circle
+          key={i}
+          className={i % 2 ? "m-ember m-late" : "m-ember"}
+          cx={f.x}
+          cy={f.y}
+          r={f.r}
+          fill={i % 3 ? "var(--art-musk)" : "var(--art-moon)"}
+          fillOpacity={i % 3 ? 0.4 : 0.3}
+        />
+      ))}
+    </>
+  );
+}
+
+/* ── Mantriṇī ──────────────────────────────────────────────────────────── */
+
+export function SapphireDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("sapphire")}>
+      <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.55 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0 }} />
+    </radialGradient>
+  );
+}
+
+/** Her ruby-set vīṇā at the origin: two gourds hanging under a straight neck, a curled end at the right. */
+export function Vina() {
+  return (
+    <>
+      {[-26, 26].map((x) => (
+        <g key={x}>
+          <path d={`M ${x} 0 V 4`} stroke="var(--gold)" strokeWidth={1.2} />
+          <circle cx={x} cy={11} r={8.5} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+          <path d={`M ${x - 5} ${8} Q ${x - 4.5} ${5} ${x - 1.5} ${4.4}`} stroke="var(--art-core)" strokeWidth={1.1} strokeLinecap="round" />
+        </g>
+      ))}
+      <rect x={-38} y={-3} width={76} height={5} rx={2.5} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d="M 38 -1 C 44 -2 46 -8 43 -12" stroke="var(--gold)" strokeWidth={2.4} strokeLinecap="round" />
+      <path d="M -36 -3.6 L 36 -3.6" stroke="var(--gold-soft)" strokeWidth={0.4} />
+      {[-18, -6, 6, 18].map((x) => (
+        <circle key={x} cx={x} cy={-0.5} r={1.5} fill="var(--art-vermilion)" />
+      ))}
+    </>
+  );
+}
+
+/** Mantriṇī's sapphire light (its soft glow, from `SapphireDefs`, is drawn separately, behind). */
+export function Sapphire({ x, y }: Pt) {
+  return (
+    <>
+      <circle cx={x} cy={y} r={9} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={1} />
+      <circle cx={x - 2.6} cy={y - 2.6} r={2.4} fill="var(--art-moon)" fillOpacity={0.85} />
+    </>
+  );
+}
+
+/* ── Mahāgaṇapati ──────────────────────────────────────────────────────── */
+
+export const GANESA_EMBLEMS = [
+  "mace",
+  "trident",
+  "conch",
+  "lotus",
+  "tusk",
+  "citron",
+  "bow",
+  "discus",
+  "rice",
+  "pot",
+] as const;
+export type GanesaEmblemName = (typeof GANESA_EMBLEMS)[number];
+/** Ten places round him on a ring of radius r, leaving the top open. */
+export const ganesaPlaces = (cx: number, cy: number, r: number) =>
+  GANESA_EMBLEMS.map((name, k) => ({ name, ...polar(cx, cy, r, 90 - 18 - 36 * k) }));
+const GANESA_BOW = { half: 76, grip: 0, bend: 36 };
+const [GANESA_BOW_L, GANESA_BOW_R] = bowTips(GANESA_BOW);
+const GANESA_DISCUS_FLAMES = Array.from({ length: 8 }, (_, k) => `rotate(${k * 45}) translate(0 -9)`);
+const GANESA_RICE = Array.from({ length: 7 }, (_, k) => {
+  const t = k / 6;
+  return { x: round(1 + 7 * t * t), y: round(-12 + 14 * t), side: k % 2 ? 1 : -1 };
+});
+
+/** One of the ten things in Mahāgaṇapati's hands, upright at the origin, about 24 tall. */
+export function GanesaEmblem({ name }: { name: GanesaEmblemName }) {
+  switch (name) {
+    case "mace":
+      return (
+        <>
+          <path d="M 0 12 V -4" stroke="var(--gold)" strokeWidth={1.8} strokeLinecap="round" />
+          <circle cy={-8} r={5.6} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+          <path d="M -5.4 -8 H 5.4 M 0 -13.4 V -2.6" stroke="var(--art-carve)" strokeWidth={0.5} />
+          <circle cy={-14.6} r={1.4} fill="var(--gold)" />
+        </>
+      );
+    case "trident":
+      return (
+        <>
+          <path d="M 0 12 V -12" stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
+          <path d="M -6 -12 C -6 -5 -3 -3 0 -3 C 3 -3 6 -5 6 -12" stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
+          <path d="M 0 -15 L -1.6 -11 L 1.6 -11 Z M -6 -14.6 L -7.4 -11 L -4.6 -11 Z M 6 -14.6 L 4.6 -11 L 7.4 -11 Z" fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.4} />
+        </>
+      );
+    case "conch":
+      return (
+        <>
+          <path
+            d="M 0 -12 C 6 -10 8.4 -3 6.6 3 C 5 8 2 10.6 0 12 C -1.4 10 -3.6 8.4 -6 5 C -8.6 0 -6.4 -9 0 -12 Z"
+            fill="var(--art-ivory)"
+            stroke="var(--gold)"
+            strokeWidth={0.8}
+          />
+          <path d="M -2.6 -6 C 2 -8 4.4 -3 1.6 -0.6 C -0.4 1 -2 -0.8 -0.4 -2.2" stroke="var(--gold)" strokeWidth={0.6} strokeLinecap="round" />
+          <path d="M 4.6 2 C 2 5 0 7 -3.6 6.4" stroke="var(--gold-soft)" strokeWidth={0.6} strokeLinecap="round" />
+        </>
+      );
+    case "lotus":
+      return (
+        <>
+          <path d="M 0 12 V 4" stroke="var(--leaf)" strokeWidth={1.3} strokeLinecap="round" />
+          {[-34, 34].map((a) => (
+            <path key={a} d="M 0 4 C -4 0 -3.6 -6 0 -9 C 3.6 -6 4 0 0 4 Z" transform={`rotate(${a} 0 4)`} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.5} />
+          ))}
+          <path d="M 0 4 C -4.4 -1 -4 -8 0 -12 C 4 -8 4.4 -1 0 4 Z" fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.6} />
+        </>
+      );
+    case "tusk":
+      return <path d="M -4 11 C -5 1 -1.6 -7 6 -12 C 2 -5 1.4 2 2.6 11 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />;
+    case "citron":
+      return (
+        <>
+          <path d="M 1 -8 C 4 -12 8 -12 10 -10 C 7 -8 4 -7 1 -8 Z" fill="var(--leaf)" />
+          <path
+            d="M 0 -8 C 6 -8 9 -3 8.4 2 C 7.8 8 3.6 11 0 11 C -3.6 11 -7.8 8 -8.4 2 C -9 -3 -6 -8 0 -8 Z"
+            fill="var(--art-turmeric)"
+            stroke="var(--gold)"
+            strokeWidth={0.8}
+          />
+          <path d="M -4.6 -2 C -4 -4.6 -2 -5.6 0 -5.8" stroke="var(--art-core)" strokeWidth={1} strokeLinecap="round" />
+        </>
+      );
+    case "bow":
+      return (
+        <g transform="rotate(-90) scale(0.2)">
+          <path d={`M ${GANESA_BOW_L.x} ${GANESA_BOW_L.y} L ${GANESA_BOW_R.x} ${GANESA_BOW_R.y}`} stroke="var(--gold-soft)" strokeWidth={4} />
+          <SugarcaneBow shape={GANESA_BOW} />
+        </g>
+      );
+    case "discus":
+      return (
+        <>
+          <g className="m-flicker">
+            {GANESA_DISCUS_FLAMES.map((t, i) => (
+              <path key={i} d={tongue(6, 4, 1)} transform={t} fill="var(--art-saffron)" />
+            ))}
+          </g>
+          <ChariotWheel r={8} />
+        </>
+      );
+    case "rice":
+      return (
+        <>
+          <path d="M -2 12 C -1 2 0 -6 1 -12 C 4 -6 7 -2 8 2" stroke="var(--leaf)" strokeWidth={1} strokeLinecap="round" />
+          {GANESA_RICE.map((g, i) => (
+            <ellipse
+              key={i}
+              cx={g.x + g.side * 1.8}
+              cy={g.y}
+              rx={1.4}
+              ry={2.6}
+              transform={`rotate(${g.side * 30} ${g.x + g.side * 1.8} ${g.y})`}
+              fill="var(--art-turmeric)"
+              stroke="var(--gold)"
+              strokeWidth={0.3}
+            />
+          ))}
+        </>
+      );
+    case "pot":
+      return (
+        <>
+          <path d="M -8 -2 C -11 6 -6 12 0 12 C 6 12 11 6 8 -2 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
+          <path d="M -6 -2 L 6 -2 L 4.4 -6 L -4.4 -6 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.5} strokeOpacity={0.6} />
+          <path d="M -8.4 4 Q 0 6.4 8.4 4" stroke="var(--art-vermilion)" strokeWidth={1.2} />
+          <circle cx={0} cy={5.4} r={1.6} fill="var(--art-vermilion)" />
+          {[-3.4, 0, 3.4].map((x, i) => (
+            <circle key={x} cx={x} cy={-8 - (i === 1 ? 1.6 : 0)} r={2} fill={i === 1 ? "var(--art-vermilion)" : "var(--leaf)"} stroke="var(--gold)" strokeWidth={0.4} />
+          ))}
+        </>
+      );
+  }
+}
+
+export function DawnDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("dawn")}>
+      <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.85 }} />
+      <stop offset="0.45" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.3 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+    </radialGradient>
+  );
+}
+
+/**
+ * Mahāgaṇapati: a light ruddy as the dawn ringed by nine of his ten things
+ * (all but `skip`, drawn separately when it is a part of its own), at scale k.
+ */
+export function Mahaganapati({ x, y, k = 1, url, skip }: Pt & { k?: number; url: (name: string) => string; skip?: GanesaEmblemName }) {
+  const ring = round(82 * k);
+  return (
+    <>
+      <circle className="m-breathe" cx={x} cy={y} r={round(64 * k)} fill={url("dawn")} />
+      <circle cx={x} cy={y} r={ring} stroke="var(--gold-soft)" strokeWidth={0.6} strokeOpacity={0.6} strokeDasharray="1 3.4" strokeLinecap="round" />
+      {ganesaPlaces(x, y, ring)
+        .filter((p) => p.name !== skip)
+        .map((p, i) => (
+          <g key={p.name} transform={`translate(${p.x} ${p.y}) scale(${round(1.4 * k)})`} className={i % 4 === 1 ? TWINKLE[i % 3] : undefined}>
+            <GanesaEmblem name={p.name} />
+          </g>
+        ))}
+      <circle cx={x} cy={y} r={round(14 * k)} stroke="var(--gold)" strokeWidth={1} />
+      <circle cx={x} cy={y} r={round(8.6 * k)} fill="var(--art-vermilion)" />
+      <circle cx={round(x - 2 * k)} cy={round(y - 2 * k)} r={round(2.4 * k)} fill="var(--art-saffron)" />
+    </>
+  );
+}
+
+/* ── Tortoise (kūrma) ──────────────────────────────────────────────────── */
+
+const TORTOISE_SHELL = "M -34 0 C -33 -20 -18 -31 0 -31 C 18 -31 33 -20 34 0 Z";
+const TORTOISE_PLATES =
+  "M -10 -30 L -12 -16 L 0 -10 L 12 -16 L 10 -30 M -12 -16 L -26 -14 M 12 -16 L 26 -14 M 0 -10 L 0 0 M -12 -16 L -18 0 M 12 -16 L 18 0 M -26 -14 L -32 -6 M 26 -14 L 32 -6";
+const TORTOISE_RIM = "M -36 0 Q 0 6 36 0";
+const TORTOISE_BODY =
+  "M 32 -3 C 40 -6 46 -10 52 -9 C 57 -8 58 -3 54 -1 C 50 1 44 1 36 2 Z M -32 0 L -40 4 L -33 4 Z M -24 1 L -27 9 L -19 9 L -18 2 Z M 18 1 L 20 9 L 27 9 L 25 2 Z M -6 2 L -8 8 L -2 8 L -1 2 Z";
+
+/** A tortoise in profile facing right, its shell's rim on the origin's line, about 100 long. */
+export function Tortoise() {
+  return (
+    <>
+      <path d={TORTOISE_BODY} fill="var(--gold-soft)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <circle cx={50} cy={-6} r={1.2} fill="var(--art-carve)" />
+      <path d={TORTOISE_SHELL} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={1.2} />
+      <path d={TORTOISE_SHELL} fill="var(--art-saffron)" fillOpacity={0.18} />
+      <path d={TORTOISE_PLATES} stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d={TORTOISE_RIM} stroke="var(--gold)" strokeWidth={1.6} />
+    </>
+  );
+}
+
+/* ── Horse (aśva) ──────────────────────────────────────────────────────── */
+
+/** A horse in the flying gallop, facing right, centred on its body: about 66 long. */
+const HORSE_BODY =
+  "M -15 -2 C -15 -8 -8 -9 0 -8.4 C 6 -8 10 -9 13 -10 L 19 -20 C 21 -24 25 -26 28 -24 L 33 -17 C 34 -15 32 -13.6 30.4 -14.6 L 25 -17 C 23 -12 19 -6 15 -2 C 12 3 6 5 -2 5 C -9 5 -15 3 -15 -2 Z";
+const HORSE_LEGS = "M 12 1 L 22 4 L 30 1.6 M 8 3 L 17 8.6 L 25 9 M -11 2 L -20 6.6 L -29 5 M -8 4 L -15 10.6 L -24 12";
+const HORSE_TAIL = "M -14 -3 C -20 -7 -27 -4 -33 -9";
+const HORSE_MANE = "M 13 -11.6 C 15 -15.4 17 -19 20.4 -22.6";
+const HORSE_SADDLE = "M -6 -8.2 C -2 -8.8 3 -8.6 6.4 -8.4 L 5.4 1.6 L -5 1.8 Z";
+
+export function Horse({ fill }: { fill: string }) {
+  return (
+    <>
+      <path d={HORSE_TAIL} stroke={fill} strokeWidth={2.4} strokeLinecap="round" />
+      <path d={HORSE_LEGS} stroke={fill} strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" />
+      <path d={HORSE_BODY} fill={fill} stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <path d={HORSE_MANE} stroke="var(--art-vermilion)" strokeWidth={2} strokeLinecap="round" />
+      <path d={HORSE_SADDLE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={27} cy={-21} r={0.9} fill="var(--art-musk)" />
+    </>
+  );
+}
+
+/* ── Boar (kiri, varāha) ───────────────────────────────────────────────── */
+
+/** A boar (kiri, varāha) facing right, feet on the origin's line, about 76 long. */
+const BOAR_BODY =
+  "M -31 -9 C -37 -15 -37 -27 -29 -31 C -19 -37 -3 -41 9 -41 C 18 -41 24 -35 28 -29 L 37 -22 C 39 -20 39 -17 37.5 -15.5 C 33 -14.5 29 -14.5 26 -15 C 22 -14 18 -12 16 -9 C 10 -7 -4 -7 -14 -8 C -20 -8 -26 -8 -31 -9 Z";
+const BOAR_LEGS = "M 11 -10 L 11 0 M 16.5 -10 L 17 0 M -24 -10 L -25 0 M -17 -9 L -17 0";
+const BOAR_BRISTLES = Array.from({ length: 9 }, (_, k) => {
+  const x = -14 + k * 4;
+  const y = round(-37.5 - 3.5 * Math.sin(((k + 1) / 10) * Math.PI));
+  return `M ${x} ${y + 3} L ${x + 1.5} ${y - 2}`;
+}).join(" ");
+
+export function Boar() {
+  return (
+    <>
+      <path d={BOAR_BODY} fill="var(--gold)" />
+      <path d={BOAR_LEGS} stroke="var(--gold)" strokeWidth={4} strokeLinecap="round" />
+      <path d={BOAR_BRISTLES} stroke="var(--gold)" strokeWidth={1.4} strokeLinecap="round" />
+      <path d="M 28 -17.5 C 31 -21 32 -23.5 30 -27" stroke="var(--art-ivory)" strokeWidth={2.2} strokeLinecap="round" />
+      <path d="M 21 -35 L 19.5 -44 L 25.5 -37.5 Z" fill="var(--gold)" />
+      <circle cx={26} cy={-28} r={1.4} fill="var(--art-carve)" />
+      <path d="M -31 -26 C -36 -26 -38 -22 -36 -18" stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
+    </>
+  );
+}
+
+/* ── Lamp (dīpa) ───────────────────────────────────────────────────────── */
+
+const LAMP_BOWL = "M -4.4 0 Q 0 4 4.4 0 Z";
+const LAMP_FLAME = "M 0 -0.6 C -2.8 -2.6 -2.2 -7.4 0 -11.6 C 2.2 -7.4 2.8 -2.6 0 -0.6 Z";
+const LAMP_FLAME_CORE = "M 0 -1.4 C -1.3 -2.6 -1 -5 0 -7 C 1 -5 1.3 -2.6 0 -1.4 Z";
+const LAMP_FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
+
+/** A small lamp held up in praise, bowl on the origin; `seer` gives the seers' pale flame instead of the gods'. */
+export function Lamp({ k, seer = false }: { k: number; seer?: boolean }) {
+  return (
+    <>
+      <path d={LAMP_BOWL} fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <g className={LAMP_FLICKER[k]}>
+        <path d={LAMP_FLAME} fill={seer ? "var(--art-moon)" : "var(--art-saffron)"} />
+        <path d={LAMP_FLAME_CORE} fill={seer ? "var(--art-ivory)" : "var(--art-core)"} />
+      </g>
+    </>
+  );
+}
+
+/* ── A cluster of the mantra (kūṭa) ────────────────────────────────────── */
+
+/** A summit (kūṭa) of the mantra: `n` syllables up the flanks of a peak, the last at its top. */
+export function summit(at: Pt, n: number, foot: number, rise: number) {
+  const top = { x: at.x, y: at.y - rise };
+  const others = n - 1;
+  const left = Math.ceil(others / 2);
+  const flank = (side: number, count: number) =>
+    Array.from({ length: count }, (_, i) => {
+      const s = count === 1 ? 0.45 : 0.14 + (0.56 * i) / (count - 1);
+      return { x: round(at.x + side * foot * (1 - s)), y: round(at.y - rise * s) };
+    });
+  return {
+    path: `M ${at.x - foot} ${at.y} L ${top.x} ${top.y} L ${at.x + foot} ${at.y}`,
+    lights: [...flank(-1, left), ...flank(1, others - left).reverse()],
+    top,
+  };
+}
+export type SummitShape = ReturnType<typeof summit>;
+
+const SUMMIT_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** A cluster as its peak: the syllables as lights on the flanks, and ह्रीं, which closes every cluster, on a gold disc at the top. */
+export function Summit({ s, glow }: { s: SummitShape; glow: string }) {
+  return (
+    <>
+      <path d={s.path} stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.6} strokeDasharray="1.5 3" strokeLinecap="round" strokeLinejoin="round" />
+      {s.lights.map((l, i) => (
+        <g key={i} className={SUMMIT_TWINKLE[i % 3]}>
+          <circle cx={l.x} cy={l.y} r={14} fill={glow} />
+          <circle cx={l.x} cy={l.y} r={4.2} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.8} />
+        </g>
+      ))}
+      <circle className="m-breathe" cx={s.top.x} cy={s.top.y} r={30} fill={glow} />
+      <circle cx={s.top.x} cy={s.top.y} r={13} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1.2} />
+      <text
+        x={s.top.x}
+        y={s.top.y + 1}
+        fontSize={13}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fill="var(--art-carve)"
+        style={{ fontFamily: "var(--font-tiro), serif" }}
+      >
+        ह्रीं
+      </text>
+    </>
+  );
+}
+
+/* ── A cup of nectar ───────────────────────────────────────────────────── */
+
+const CUP_BOWL = `M -20 -12 C -20 4 -10 10 0 10 C 10 10 20 4 20 -12 Z`;
+const CUP_FOOT = "M -4 10 L -6 18 L 6 18 L 4 10 Z M -12 18 L 12 18 L 12 21 L -12 21 Z";
+
+/** A small footed gold cup brimming with nectar, the brim 12 above the origin, in its moon glow. */
+export function NectarCup({ glow }: { glow: string }) {
+  return (
+    <>
+      <circle className="m-shimmer" cy={-12} r={34} fill={glow} />
+      <path d={CUP_FOOT} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d={CUP_BOWL} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+      <path d="M -15 -2 C -8 3 8 3 15 -2" stroke="var(--gold-soft)" strokeWidth={1} />
+      <ellipse cy={-12} rx={20} ry={4.4} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} />
+      <ellipse cy={-12} rx={11} ry={2.2} fill="var(--art-moon)" fillOpacity={0.6} />
+    </>
+  );
+}
+
+/* ── The subtle body: its centres and knots ────────────────────────────── */
+
+/** A centre (cakra) on the channel: its height, petal count, element and the radii of its petals. */
+export type Cakra = { y: number; petals: number; sign: Tattva; r0: number; r1: number };
+
+/** A knot as a cord wound round the channel, seen a little from above, cut through at the front; one half of it. */
+const KNOT_HALF = "M 0 -7 A 26 7 0 0 0 -26 0 A 26 7 0 0 0 -7 6.7 M -7 6.7 L -4 11 M -7 6.7 L -2.6 8.4 M -7 6.7 L -5.6 11.6";
+
+/** A knot (granthi) across the channel, split: its two halves pushed apart, musk with a moon hairline. */
+export function SplitKnot({ x, y }: { x: number; y: number }) {
+  return (
+    <>
+      {[-1, 1].map((side) => (
+        <g key={side} transform={`translate(${x + side * 6} ${y}) scale(${-side} 1)`}>
+          <path d={KNOT_HALF} stroke="var(--art-musk)" strokeWidth={2.4} strokeLinecap="round" />
+          <path d={KNOT_HALF} stroke="var(--art-moon)" strokeWidth={0.5} strokeOpacity={0.7} strokeLinecap="round" />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** A centre as a small lotus seen face on, its petals in its colour round a gold circle; dimmed when unlit. */
+export function CakraLotus({ x, c, lit, petal, glow }: { x: number; c: Cakra; lit: boolean; petal: string; glow?: string }) {
+  return (
+    <g transform={`translate(${x} ${c.y})`}>
+      {glow && <circle r={c.r1 + 16} fill={glow} />}
+      <path d={yantraPetals(c.petals, c.r0, c.r1)} fill={petal} fillOpacity={lit ? 0.75 : 0.18} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
+      <circle r={c.r0} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
+    </g>
+  );
+}
+
+/* ── The axe (paraśu, kuṭhāra) ─────────────────────────────────────────── */
+
+const AXE_BLADE = "M 2 -22 C 12 -26 20 -20 22 -12 C 18 -12 13 -11 9 -8 C 8 -12 5 -15 2 -14 Z";
+
+/** A small axe, upright, centred on the origin: a turmeric haft 48 long and a broad moon crescent blade on one side near its top. */
+export function Axe() {
+  return (
+    <>
+      <path d="M 0 -24 V 24" stroke="var(--art-turmeric)" strokeWidth={2.6} strokeLinecap="round" />
+      <path d="M 0 -24 V 24" stroke="var(--gold)" strokeWidth={0.6} />
+      <path d={AXE_BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -1.6 -20 H 3 M -1.6 -12 H 3" stroke="var(--gold)" strokeWidth={1.2} />
+    </>
+  );
+}
+
+/* ── A lamp in a windless place ────────────────────────────────────────── */
+
+/** The `Lamp`'s bowl on the origin with a narrower flame that does not flicker: the mind held still (Gītā 6.19). */
+export function StillLamp() {
+  return (
+    <>
+      <path d={LAMP_BOWL} fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <path d="M 0 -0.6 C -1.6 -3 -1.4 -7 0 -11.6 C 1.4 -7 1.6 -3 0 -0.6 Z" fill="var(--art-saffron)" />
+      <path d="M 0 -1.4 C -0.8 -3 -0.6 -5 0 -7.4 C 0.6 -5 0.8 -3 0 -1.4 Z" fill="var(--art-core)" />
+    </>
+  );
+}
+
+/* ── A lotus leaf that water does not wet ──────────────────────────────── */
+
+const PAD = { rx: 34, ry: 10 };
+const PAD_D = `M 0 0 L ${-PAD.rx * 0.2} ${-PAD.ry} A ${PAD.rx} ${PAD.ry} 0 1 0 ${PAD.rx * 0.2} ${-PAD.ry} Z`;
+const PAD_VEINS = Array.from({ length: 9 }, (_, k) => {
+  const a = (Math.PI * 2 * (k + 0.5)) / 9 + Math.PI / 2 + 0.35;
+  return `M 0 0 L ${round(Math.cos(a) * PAD.rx * 0.82)} ${round(Math.sin(a) * PAD.ry * 0.82)}`;
+}).join(" ");
+const PAD_BEADS = [
+  { x: -14, y: -1, r: 3.4 },
+  { x: 2, y: 3, r: 2.6 },
+  { x: 16, y: -2, r: 2.2 },
+  { x: 33, y: 2, r: 1.8 },
+];
+
+const PAD_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/**
+ * A lotus leaf floating flat, seen at a slant, centred on the origin (about 68
+ * by 20), with water standing on it in beads and one at the very edge: what is
+ * in the world and not smeared by it (padmapatram ivāmbhasā, Gītā 5.10).
+ */
+export function LotusLeaf() {
+  return (
+    <>
+      <path d={PAD_D} fill="var(--leaf)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
+      <path d={PAD_VEINS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.55} />
+      {PAD_BEADS.map((b, i) => (
+        <g key={i} className={PAD_TWINKLE[i % 3]}>
+          <circle cx={b.x} cy={b.y - b.r * 0.6} r={b.r} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+          <circle cx={round(b.x - b.r * 0.35)} cy={round(b.y - b.r)} r={round(b.r * 0.3)} fill="var(--art-moon)" />
         </g>
       ))}
     </>
