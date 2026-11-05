@@ -2008,6 +2008,35 @@ export function RathaTriangles({ g, url }: { g: RathaShape; url: (name: string) 
   );
 }
 
+/**
+ * The Śrīcakra face-on, in yantra units round the origin: the square of gates
+ * (three lines), three circles, the sixteen and the eight petals, and the nine
+ * triangles over the field of her light. Place and scale it with a transform
+ * on a parent group; it needs `RathaDefs` for the field.
+ */
+export function SriCakraFace({ url }: { url: (name: string) => string }) {
+  return (
+    <>
+      <path d={gateSquare(48, 8, 5)} fill="var(--art-stone)" fillOpacity={0.7} stroke="var(--gold)" strokeWidth={1.6} {...nonScaling} />
+      <path d={gateSquare(45.6, 6.4, 5)} stroke="var(--art-vermilion)" strokeWidth={1.1} {...nonScaling} />
+      <path d={gateSquare(43.2, 4.8, 5)} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={41.6} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={40.2} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <circle r={38.8} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <path d={yantraPetals(16, 31.2, 38)} fill="var(--art-core)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={31.2} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
+      <path d={yantraPetals(8, 24, 30.8)} fill="var(--art-saffron)" fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      <circle r={24} fill={url("field")} fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} fill={t.down ? "var(--art-vermilion)" : "var(--art-core)"} fillOpacity={0.16} />
+      ))}
+      {SRI_TRIANGLES.map((t, i) => (
+        <path key={i} d={t.d} stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" {...nonScaling} />
+      ))}
+    </>
+  );
+}
+
 /** A spear, a trident, an arrow and a goad, each standing up from the origin, about 22 tall. */
 function WeaponGlyph({ kind }: { kind: number }) {
   const shaft = <path d="M 0 0 V -14" stroke="var(--gold)" strokeWidth={1.1} />;

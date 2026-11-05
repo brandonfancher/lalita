@@ -19,18 +19,16 @@ import {
   RathaDefs,
   StillLamp,
   SRI_BINDU_V,
-  SRI_TRIANGLES,
+  SriCakraFace,
   Trident,
   artIds,
   cubicAt,
-  gateSquare,
   lotusPetals,
   partProps,
   polar,
   round,
   through,
   trident,
-  yantraPetals,
 } from "./primitives";
 import type { ArtProps } from "./types";
 
@@ -38,7 +36,6 @@ type Pt = { x: number; y: number };
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 const CX = 320;
-const nonScaling = { vectorEffect: "non-scaling-stroke" as const };
 
 /* ── The canopy: a stretched cloth, its warp in plain sight ────────────── */
 
@@ -450,22 +447,7 @@ export function GreatYantra({ idPrefix = "sa56", active = null }: ArtProps) {
           strokeOpacity={0.8}
         />
         <g transform={yantra}>
-          <path d={gateSquare(48, 8, 5)} fill="var(--art-stone)" fillOpacity={0.7} stroke="var(--gold)" strokeWidth={1.6} {...nonScaling} />
-          <path d={gateSquare(45.6, 6.4, 5)} stroke="var(--art-vermilion)" strokeWidth={1.1} {...nonScaling} />
-          <path d={gateSquare(43.2, 4.8, 5)} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
-          <circle r={41.6} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
-          <circle r={40.2} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
-          <circle r={38.8} stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
-          <path d={yantraPetals(16, 31.2, 38)} fill="var(--art-core)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
-          <circle r={31.2} fill="var(--art-stone)" stroke="var(--gold)" strokeWidth={0.8} {...nonScaling} />
-          <path d={yantraPetals(8, 24, 30.8)} fill="var(--art-saffron)" fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
-          <circle r={24} fill={url("field")} fillOpacity={0.9} stroke="var(--gold)" strokeWidth={0.9} {...nonScaling} />
-          {SRI_TRIANGLES.map((t, i) => (
-            <path key={i} d={t.d} fill={t.down ? "var(--art-vermilion)" : "var(--art-core)"} fillOpacity={0.16} />
-          ))}
-          {SRI_TRIANGLES.map((t, i) => (
-            <path key={i} d={t.d} stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" {...nonScaling} />
-          ))}
+          <SriCakraFace url={url} />
         </g>
       </g>
 
