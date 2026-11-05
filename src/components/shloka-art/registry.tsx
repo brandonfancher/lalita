@@ -65,6 +65,7 @@ import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
 import { WitnessOfTheDance } from "./witness-of-the-dance";
 import { WorldsInABlink } from "./worlds-in-a-blink";
+import { TheHouseholdLamp } from "./the-household-lamp";
 import { YoginiTemple } from "./yogini-temple";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -3154,6 +3155,50 @@ export const ARTWORK: Record<string, Artwork> = {
           The mirror&apos;s foot does not touch the earth, and the gap is marked off in ten small gold ticks. The
           second half of the Vedic line, which the stotra leaves out, says the person stood out beyond the earth by
           ten fingers&apos; breadth.
+        </>
+      ),
+    },
+  },
+  "067": {
+    Art: TheHouseholdLamp,
+    intro: (Spot) => (
+      <>
+        Nothing in this verse describes her: each name is a relation between her and everything else. So the picture
+        is a house at lamp-lighting, and she is <Spot part="light">the lamp&apos;s one lit wick</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 285,
+        part: "span",
+        depicts:
+          "The name is a span with both its ends named: Brahmā on his lotus in the crown, and an inchworm on the ground by a tuft of grass, each in the same ring of her light, neither ring the larger.",
+      },
+      {
+        nama: 286,
+        part: "order",
+        depicts:
+          "Before the lamp lies a kolam of four dots by four, with a loop along every row and every column: the four classes along one axis and the four stages of a life along the other, so that each dot is placed by both.",
+      },
+      {
+        nama: 287,
+        part: "vedas",
+        depicts:
+          "The lamp's smoke rises in four streams to Brahmā's four faces. The Bṛhadāraṇyaka says the Vedas were breathed out like smoke from a fire of damp fuel (2.4.10), and the Śvetāśvatara that the one who made Brahmā sent them to him (6.18).",
+      },
+      {
+        nama: 288,
+        part: "fruits",
+        depicts:
+          "On either side a plantain leaf is served, one with ripe mangoes and one with bitter gourds: what each has earned, sweet or bitter, from the same hand.",
+      },
+    ],
+    detail: {
+      part: "ants",
+      body: (
+        <>
+          A kolam is drawn in rice flour so that ants can eat it, the first meal of the day for the smallest of her
+          children. At its right corner a file of ants is already carrying it off, grain by grain.
         </>
       ),
     },

@@ -375,6 +375,13 @@ second time it is needed.
 | The earth as the purāṇas map it (bhū-maṇḍala) | A flat round disc seen at a slant (150 by 32): a saffron island at the centre, then rings of sea (`--art-hair` at about 0.24) and island (`--leaf` at about 0.35) by turns, each edged in hair-fine gold, over a saffron-to-stone wash, with a 1.2 gold rim | Inline (`worlds-in-a-blink.tsx`) | Shloka 66 |
 | Her feet on every side | Twelve pairs of `Footprint`s (with the gold `edge`) on a ring just outside the earth's rim, each pair turned to face outward, laid on the ground at 0.55 and a little larger toward the viewer | Inline (`worlds-in-a-blink.tsx`, with `Footprint`) | Shloka 66 |
 | Ten fingers' breadth (daśāṅgula) | Under the mirror's bud foot, a hair-fine gold line down to the earth with eleven ticks 2.4 apart marking off ten fingers (every fifth longer), and a faint crimson shadow on the earth beneath | Inline (`worlds-in-a-blink.tsx`) | Shloka 66 |
+| A standing household lamp (kuthuvilakku) | Brass in `--gold` edged in `--art-carve`, at 1.15 about its foot: a domed foot on a round plinth, a slender stem with three knops, a shallow bowl of `--art-turmeric` oil with five beaked spouts (the back two behind the bowl, ivory wick ends in the unlit ones), a short stem and bud finial above. One wick lit, in the front-right spout: a `tongue(38, 10)` flame in saffron edged in vermilion with a core heart (`m-flicker`), in a core glow and a wide saffron room glow (`m-shimmer`) over a lamplit floor. A vermilion kumkum dot on the foot and stem, and a jasmine string swagged under the bowl, its ends falling free. Lighting the front spout hid the finial | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| Smoke as the Vedas breathed out (Bṛhadāraṇyaka 2.4.10) | Four streams from the one flame, each a `taper` ribbon in `--gold-soft` (`m-lick`, three groups) inside a wide faint haze of moon and gold-soft, swelling and thinning along its length, with three small saffron `glint`s along the upper part; they open out behind the card (a window mask at 0.62) and come in to Brahmā's lotus from left, below, right, and over the top. Moon haze at 0.2 read as grey tubes by lamplight, so it is 0.1. Compare Shloka 45's musk smoke, which soils nothing, and Shloka 44's single thread | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| A ring of her light, the same for all | A saffron circle (r 58) inside a dashed `--gold-soft` one, over a faint core halo at the rim (`m-shimmer`), drawn identically round Brahmā's lotus at 0.8 in the crown and round an inchworm on the ground: neither ring the larger | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| An inchworm (kīṭa), by a tuft of grass | A `taper` body in `--leaf` with a gold edge, its middle drawn up in an arch, its tail and front feet down (gold prolegs), `--gold-soft` segment dots, a turmeric head; a seven-bladed `--leaf` grass tuft just ahead of it (the *stamba* of *ābrahmastamba*), on a musk shadow | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| A kolam on two axes (varṇāśrama) | `Kolam` laid on the ground at a slant (0.4) and turned an eighth of a turn: four dots by four, 22 apart, with a long round-ended loop round every row and every column, so each dot sits where its row and its column cross; on a swept patch of `--art-musk` (0.42 fading out) so the rice flour shows by day. Scalloped loops round each dot were chain mail | `Kolam` in `primitives.tsx` | Shloka 67 |
+| Sweet and bitter served (phala) | Two plantain leaves on the floor either side of the lamp, at 1.25, `--leaf` at 0.5 with a gold edge, gold-soft midrib and veins: two ripe mangoes (a turmeric-saffron-vermilion gradient, a vermilion blush, an ivory sheen, a hair stalk) on one, two bitter gourds (a pointed spindle knobbled along its edge, `--leaf` under hair at 0.12, two hair grooves, gold-soft warts, an ivory sheen) on the other. Ivory dashes on the gourds read as corncobs | Inline (`the-household-lamp.tsx`) | Shloka 67 |
+| Ants carrying off the kolam | Five `--art-hair` ants (three body segments, six hairline legs, antennae), four of them carrying a grain of `--art-ivory` rice flour, in a file from the kolam's right corner, with crumbs where they start | Inline (`the-household-lamp.tsx`) | Shloka 67 |
 | A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -2615,6 +2622,42 @@ One entry per finished artwork, in the order they were made.
   to the mirror; the two far rows behind the card fill it and dress both sides of the card. The
   stream was a bright grey ring by lamplight at 0.7; it is 0.4 with a saffron wash. In the chant
   miniature the mirror in its ring of fish reads as one bright emblem in both themes.
+
+### Shloka 67: A house at lamp-lighting, and the smoke that carries the Vedas
+
+- **Component:** `the-household-lamp.tsx` (defs prefix `sa67`)
+- **Composition:** four names of relation, none of form, drawn as a mother's house at
+  lamp-lighting. Below the card a standing brass lamp with one wick lit, her light, on a lamplit
+  floor. Its smoke rises in four streams that open out behind the card and come in to Brahmā's
+  four faces on his lotus in the crown. On the ground at the left an inchworm by a tuft of grass,
+  in the same ring of light as Brahmā, so the diagonal from the crown's right to the ground's left
+  is the span. Before the lamp a kolam of four dots by four on a swept patch, either side of it a
+  plantain leaf served with mangoes or bitter gourds, and ants carrying the kolam away. The first
+  household scene since Shloka 37's doorway, the first standing lamp, and the first composition
+  on a diagonal between two matched rings.
+- **Name → part:**
+  - Ābrahmakīṭajananī → `span`: the two rings, Brahmā's lotus, and the inchworm with its grass
+  - Varṇāśramavidhāyinī → `order`: the kolam and its swept patch
+  - Nijājñārūpanigamā → `vedas`: the four streams of smoke and their sparks (Bṛhadāraṇyaka 2.4.10,
+    Śvetāśvatara 6.18)
+  - Puṇyāpuṇyaphalapradā → `fruits`: the two leaves, the mangoes and the bitter gourds
+  - Intro, *the lamp's one lit wick* → `light`: the lamp, its flame, its glows and the lamplit
+    floor
+  - Detail → `ants`: the file of ants and the crumbs (a kolam is drawn in rice flour to feed them)
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the flame's heart), `m-shimmer` (the lamp's glows and the two rings),
+  `m-lick` (the smoke and its sparks); `BrahmaLotus` keeps its own `m-shimmer`.
+- **Notes:** Brahmā's lotus and faces were promoted into `BrahmaLotus` and the kolam into `Kolam`
+  (two commits before this one), and Shlokas 63 and 37 render pixel for pixel as before. This
+  title stays on one line and reaches x ≈ 326 (378 at 1100px), so Brahmā's ring sits at x ≈
+  394–510 beside its end. The first render was small and sparse: the lamp is now 1.15 about its
+  foot, with jasmine, kumkum and a lamplit floor, and the worm has its grass. The first smoke was
+  moon tubes with a gold centre line and vanished by day; it is now gold-soft ribbons in a faint
+  haze, and the stream for the back face goes over the top from the left rather than up behind
+  the lotus, where it showed through the petals. The first kolam, scalloped round every dot,
+  was chain mail by lamplight and invisible by day; long loops on a swept musk patch read in both.
+  In the chant miniature the lit lamp and its rising smoke carry it, and the verse stays clear on
+  phones.
 
 ## Open questions
 
