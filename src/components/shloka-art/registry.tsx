@@ -31,6 +31,7 @@ import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { GraciousOne } from "./gracious-one";
 import { LetterRosary } from "./letter-rosary";
 import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
@@ -2360,6 +2361,69 @@ export const ARTWORK: Record<string, Artwork> = {
           At the foot of the rosary, where the loop closes, the gold meru bead sits between अ, the first letter, and
           क्ष, the last. A rosary is called an <i>akṣamālā</i>, and the tradition hears the word as the garland that runs
           from <i>a</i> to <i>kṣa</i>.
+        </>
+      ),
+    },
+  },
+  "053": {
+    Art: GraciousOne,
+    intro: (Spot) => (
+      <>
+        The verse goes from everything to kindness, and the picture is a sanctum floor where all of it meets: a{" "}
+        <Spot part="yantra">diagram</Spot> drawn on the floor, a book, a bull, a bow, a bough, and over them a sound
+        going up into silence.
+      </>
+    ),
+    entries: [
+      {
+        nama: 205,
+        part: "yantra",
+        depicts:
+          "A yantra is drawn in rice flour on the floor, square, circle, petals and star, and her light stands at its bindu. The lines are only lines; what is in them is her.",
+      },
+      {
+        nama: 206,
+        part: "tantra",
+        depicts:
+          "A palm-leaf tantra lies open on its stand, its cord hanging loose. Tantra first meant the warp stretched on a loom: the scriptures are the stretched threads, and the whole cloth of them is her outward form.",
+      },
+      {
+        nama: 207,
+        part: "nada",
+        depicts:
+          "Over the card a bindu, a half-moon and a short bar stand one above another, and from them a fine thread of resonance rises, thinner and fainter, past three last points of light into nothing. This is the old ladder of a mantra's sound fading into silence, and at its top, where mind goes past itself, is manonmanī.",
+      },
+      {
+        nama: 208,
+        part: "nandi",
+        depicts:
+          "Nandī, Śiva's bull, lies before her with his back to us, looking in, as he faces the shrine in every Śiva temple. Māheśvarī is the great lord's own power, and among the mothers she rides this bull.",
+      },
+      {
+        nama: 209,
+        part: "light",
+        depicts:
+          "Devī means the shining one, from the root div, to shine, and the great goddess is drawn simply as the light at the centre, the one every other goddess takes the title from.",
+      },
+      {
+        nama: 210,
+        part: "bilva",
+        depicts:
+          "A bilva bough reaches into the crown with its round fruit, which is called śrīphala, Śrī's fruit. The Śrī Sūkta says the bilva was born of Lakṣmī's tapas (6), and its three-part leaves are what Śiva is offered: one tree for both.",
+      },
+      {
+        nama: 211,
+        part: "bow",
+        depicts:
+          "Rudra's bow lies unstrung on the floor with a jasmine garland over it. The Vedic hymns beg the archer god to unstring it and be gracious, mṛḍa; this is him when he has, and the verse ends on the word for his kindness.",
+      },
+    ],
+    detail: {
+      part: "ear",
+      body: (
+        <>
+          At Nandī&apos;s left ear a jasmine flower is tucked, and three small arcs go in. In Śiva temples people still
+          lean down and whisper their prayers into the bull&apos;s ear, so that he will carry them in.
         </>
       ),
     },

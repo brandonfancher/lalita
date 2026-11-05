@@ -293,6 +293,12 @@ second time it is needed.
 | The gods' crowns, bowed (Saundaryalaharī 29) | Three crowns in a gradient from `--art-turmeric` to `--gold` with `--art-carve` lines, at 1.18, on the floor before her footstool, the outer two tipped toward her: Brahmā's karaṇḍa-mukuṭa (three tiers and a bud, a vermilion lotus on the front), Viṣṇu's tall kirīṭa (bands, a vermilion jewel, leaf gems, a pearl rim and a vermilion finial), Indra's makuṭa (five pointed leaves on a band, `--art-hair` gems, vermilion beads) | Inline (`letter-rosary.tsx`) | Shloka 52 |
 | Her footstool | A low `--art-crimson` slab at 0.8, gold-edged, under a broad gold top line, with gold-soft studs and two short gold feet, just under her light | Inline (`letter-rosary.tsx`) | Shloka 52 |
 | Gold and the things made of it | A faceted gold nugget with a glint (`m-twinkle`) among a `Bangle`, a ring with a vermilion stone, an earring with a drop, and a beaded gold necklace laid in a loop with a pendant, in a faint core glow | Inline (`letter-rosary.tsx`, using `Bangle`) | Shloka 52 |
+| ॐ and the stages of its sound (nāda) | ॐ in Tiro Devanagari, 46, `--gold` over a thin `--art-carve` outline, just above the card; from its top one straight gold thread rises, tapering from 2 to 0.3 and fading out under a mask, with six stages marked on it as `--art-core` points in small glows, each smaller and fainter, and then nothing. In a soft core glow, with a few gold-soft stars. A wavering thread over a crescent read as incense smoke | Inline (`gracious-one.tsx`) | Shloka 53 |
+| A yantra drawn on the floor | A face-on yantra (a double square of gates, three circles, eight petals, a `--sindura` hexagram) laid flat by squashing it to 0.34, its lines `--art-ivory` 1.4 over a `--art-musk` 3 underline at 0.35 (`vector-effect: non-scaling-stroke`), with ivory dots at the gates. Her light stands over its bindu on a fine core thread | Inline (`gracious-one.tsx`) | Shloka 53 |
+| Nandī (Śiva's bull), couchant | In profile facing her, about 145 long at 1.16: an `--art-moon`-to-`--art-ivory` body with a gold edge, a steep hump over the shoulders, the head raised, short gold-and-turmeric horns, an ear laid back, a vermilion caparison with a dotted gold hem and ivory beads, a crimson neck cord with a gold bell, the forelegs folded, the tail curled on the ground. With tall horns and a low hump it read as a goat; seen from behind, as a person in a shawl | Inline (`gracious-one.tsx`) | Shloka 53 |
+| A palm-leaf book on its stand (tantra) | On a folding X-stand of `--art-musk` edged in gold, over a crimson shelf: a bundle of `--art-ivory` leaves with `--art-turmeric` edges between two musk boards, two vermilion cords through it, and the top leaf laid open on it with `--art-carve` writing and its two holes; the cord trails off to a gold bead. Filled in turmeric it read as gold bars | Inline (`gracious-one.tsx`) | Shloka 53 |
+| Rudra's bow, unstrung (Mṛḍa) | Lying belly up on the floor, about 160 long: a musk stave tapering from 7.6 to 3 with a gold-soft highlight, gold horn tips, a vermilion-bound grip, its ivory string slipped from one tip and lying slack in a coil; a jasmine garland of ivory buds on a leaf cord laid over the grip, a vermilion knot. Short and turmeric it read as a banana | Inline (`gracious-one.tsx`) | Shloka 53 |
+| Bilva bough (śrīphala) | A tapering `--art-musk` bough from the top corner with trifoliate `--leaf` leaves (a long middle leaflet and two shorter, gold-edged, gold-soft veins) and round fruit in a gradient from `--art-turmeric` to `--leaf` with a core highlight, each on its stalk | Inline (`gracious-one.tsx`) | Shloka 53 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2026,6 +2032,40 @@ One entry per finished artwork, in the order they were made.
   conch is drawn in its own right. The footstool first sat behind the crowns and read as a table
   they stood on; it is under her light now, with feet. The gold first crowded the beads at the
   lower right. In the chant miniature the ring of beads and her light carry it.
+
+### Shloka 53: From all the diagrams and all the scriptures to the beloved of the gracious one
+
+- **Component:** `gracious-one.tsx` (defs prefix `sa53`)
+- **Composition:** a sanctum floor, the verse's descent from everything to kindness. Her light
+  stands over the bindu of a yantra drawn in rice flour on the floor, its radiance above it and
+  flagstone lines going back. Nandī lies at the left in profile, facing her; at the right a
+  palm-leaf tantra lies open on its stand; in front, Rudra's bow lies unstrung under a jasmine
+  garland. In the crown, right of the title, ॐ stands over the card with the stages of its sound
+  rising from it and fading into nothing, and a bilva bough with its fruit comes down from the top
+  corner. The first floor drawn in perspective with a yantra laid on it, and the first ॐ.
+- **Name → part:**
+  - Sarvayantrātmikā → `yantra`: the yantra on the floor and its bindu
+  - Sarvatantrarūpā → `tantra`: the palm-leaf book and its stand
+  - Manonmanī → `nada`: ॐ, the thread of its sound and its fading stages, the stars
+  - Māheśvarī → `nandi`: the bull
+  - Mahādevī → `light`: her light, radiance, glow and floor
+  - Mahālakṣmīḥ → `bilva`: the bilva bough, its leaves and fruit
+  - Mṛḍapriyā → `bow`: the unstrung bow, its string and the garland
+  - Intro, *diagram* → `yantra`
+  - Detail → `ear`: a jasmine at Nandī's ear and three small arcs going in: people whisper their
+    prayers into the bull's ear for him to carry in
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow and radiance, the thread of sound), `m-breathe` (her light),
+  `m-twinkle` (the stars and the whisper).
+- **Notes:** This title wraps to two lines at y ≈ 40–137, the second reaching x ≈ 332, so the
+  ladder of sound stands at x ≈ 430 and the bough is kept to the top right corner. Shloka 25 had
+  already drawn Śrī's elephants pouring over her, so Mahālakṣmī is the bilva instead, the tree the
+  Śrī Sūkta says was born of her tapas (6) and whose leaves are Śiva's. The ladder was first a
+  bindu, a crescent and a wavering thread at x ≈ 320, under the title, and read as incense smoke;
+  it is ॐ and a straight thread now. Nandī was first drawn from behind and read as a person in a
+  shawl, then in profile with tall horns and read as a goat. The bow was first short and turmeric
+  and read as a banana; the book in turmeric read as gold bars. In the chant miniature her light
+  over the yantra carries it.
 
 ## Open questions
 
