@@ -14,6 +14,7 @@ import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
 import { GlanceAndASon } from "./glance-and-a-son";
+import { AnsweringRain } from "./answering-rain";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1144,6 +1145,38 @@ export const ARTWORK: Record<string, Artwork> = {
       body: (
         <>
           One of the ten things in his ring is his mother&rsquo;s own: the sugarcane bow, drawn as hers is in Shloka 3.
+        </>
+      ),
+    },
+  },
+  "031": {
+    Art: AnsweringRain,
+    intro: (Spot) => (
+      <>
+        Four verses of watching end here, and from the second name on she fights. So{" "}
+        <Spot part="light">her light</Spot> at the left is no longer only looking: the rain goes up from it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 78,
+        part: "yantra",
+        depicts:
+          "Below the card, Mahāgaṇapati, the ring of ten from the last verse, has found Viśukra's stone slab inside the wall and split it with his tusk. The pieces fly apart and its powder blows away on the wind.",
+      },
+      {
+        nama: 79,
+        part: "rain",
+        depicts:
+          "Above, her answering missiles, gold shafts with heads of flame, go up in a rain, and each meets one of Bhaṇḍa's dark weapons coming in from the upper right, and the two go out together in a burst.",
+      },
+    ],
+    detail: {
+      part: "figure",
+      body: (
+        <>
+          On the broken pieces you can still see what Viśukra cut into the slab: an eight-angled figure with a trident
+          at each of its eight points, where the eight powers of obstruction, led by Alasā, Sloth, were posted.
         </>
       ),
     },

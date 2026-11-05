@@ -182,7 +182,9 @@ second time it is needed.
 | Vārāhī (Daṇḍanāthā) | Never a figure: an `--art-crimson` light with a `--art-vermilion` highlight and a gold ring, in a soft crimson glow, over her crossed plough (a curved gold beam with an `--art-moon` share) and pestle (a banded gold club). Her chariot is the Kiricakra | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
 | Breath drawn out (prāṇa-haraṇa) | Three dashed `--art-moon` strands drawn out of the one who dies and curving back to the one who takes it, twinkling in three groups | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
 | The look between them | Her bindu and his crescent (the fourth night's `litPart`, radius 30, horns up, over a faint saffron tint so it shows by day) on one level, with three gold hairlines each way between them, a little spread, and a `glint` where they meet. A wedge of light hanging from the meeting point made the look and what came of it a necklace and pendant | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
-| Mahāgaṇapati | Never a figure: a light ruddy as the dawn (an `--art-vermilion` disc with a saffron highlight and gold ring, in a saffron-to-vermilion glow, Bālā's light grown larger), ringed on a dotted gold circle by the ten things his hands hold, upright, open at the top: jewelled pot, ear of rice, discus (a small `ChariotWheel` in saffron tongues), sugarcane bow (`SugarcaneBow`), citron, tusk, lotus, conch, trident, mace. A crescent on his light made it a horned face | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
+| Mahāgaṇapati | Never a figure: a light ruddy as the dawn (an `--art-vermilion` disc with a saffron highlight and gold ring, in a saffron-to-vermilion glow, Bālā's light grown larger), ringed on a dotted gold circle by the ten things his hands hold, upright, open at the top: jewelled pot, ear of rice, discus (a small `ChariotWheel` in saffron tongues), sugarcane bow (`SugarcaneBow`), citron, tusk, lotus, conch, trident, mace. A crescent on his light made it a horned face | `Mahaganapati`, `GanesaEmblem`, `ganesaPlaces` and `DawnDefs` in `primitives.tsx` (promoted at Shloka 31, used by Shlokas 30 and 31; pass `skip` to draw one emblem as a part of its own) | Shloka 30 |
+| Missile and counter-missile (astra, pratyastra) | Hers: a gold shaft with a head of flame (an `--art-saffron` `tongue`), its trail a gold gradient back toward her light. Bhaṇḍa's: a dark barbed `--art-hair` head on an `--art-musk` shaft, with a hair-fine `--art-moon` line along it so it shows by lamplight, its trail coming from off the upper right. Where they meet, a soft `--art-core` burst, eight short rays and a `glint` (`m-lick`) | Inline (`answering-rain.tsx`) | Shloka 31 |
+| The obstruction-engine (vighna-yantra, Jayavighna) | A square stone slab seen from above at a slant (half 64 by 26, 7 deep), `--art-stone` with `--art-carve` sides and a `--gold-soft` edge, cut with an eight-angled figure (two squares, one turned 45°) and a trident at each point in `--art-crimson`. Broken, it is five wedge pieces from the centre, pushed apart and turned a little, the figure clipped to each, with powder blowing off on `m-ember` | Inline (`answering-rain.tsx`) | Shloka 31 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1269,6 +1271,32 @@ One entry per finished artwork, in the order they were made.
   at the top toward the look. A crescent on his light (his crown's) made a horned face and was
   dropped. His crescent vanished by day until it got a faint saffron tint behind it. In the chant
   miniature the two glows and the ring of emblems carry it.
+
+### Shloka 31: The engine of obstruction, and the answering rain
+
+- **Component:** `answering-rain.tsx` (defs prefix `sa31`)
+- **Composition:** the first name ends the Gaṇeśa episode and the second is where she starts to
+  fight. Below the card, Mahāgaṇapati (the ring of Shloka 30, at 0.62) has found Viśukra's slab
+  inside the wall and split it with his tusk: five stone pieces fly apart, the eight-angled figure
+  and its tridents broken with them, and the powder blows off to the right on the wind. Above the
+  card, from her light at the left, her answering missiles go up in a rain, and each meets one of
+  Bhaṇḍa's dark weapons coming in from the upper right; the two go out together in a burst.
+- **Name → part:**
+  - Mahāgaṇeśanirbhinnavighnayantrapraharṣitā → `yantra`: Gaṇeśa, his tusk, the broken slab, and
+    the dust
+  - Bhaṇḍāsurendranirmuktaśastrapratyastravarṣiṇī → `rain`: her missiles, his, and the bursts where
+    they meet
+  - Intro, *her light* → `light`: her bindu and its glow
+  - Detail → `figure`: the eight-angled figure and eight tridents on the pieces
+- **Palette:** `--art-crimson` for the figure on the slab. No additions.
+- **Motion:** `m-twinkle` and `m-lick` (the bursts), `m-ember` (the dust), and Gaṇeśa's own
+  `m-breathe` and `m-flicker`.
+- **Notes:** This title stays on one line at 1280–1440px and runs across the crown, reaching
+  x ≈ 474 at y ≈ 61–118, so the meetings sit in the band under it and down the right margin; at
+  first they were spread through the crown and the bursts sat on the words. Bhaṇḍa's weapons, musk
+  and hair, vanished by lamplight until each got a fine moon-coloured line. Gaṇeśa was promoted into
+  `primitives.tsx` (`Mahaganapati`), and Shloka 30 renders byte-for-byte as before. In the chant
+  miniature her glow, the ring and the broken slab carry it.
 
 ## Open questions
 
