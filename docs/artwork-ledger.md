@@ -196,6 +196,7 @@ second time it is needed.
 | Kāma, reborn | Never a figure: a small `--lotus` light with a gold ring in a rosy glow, his bow of flowers upright beside it (a `--leaf` recurve stave with small five-petalled blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString`), and his five flower arrows (`FlowerArrow`) in a narrow fan behind the light. Rati is a smaller `--art-moon` light with an ivory heart; the two look at each other as her light and Kāmeśvara's did (Shloka 30), three gold hairlines each way and a `glint` where they meet | Inline (`sanjivani.tsx`) | Shloka 34 |
 | A cluster of the mantra (kūṭa) | A summit, as the word says: a dotted gold peak whose flanks carry its syllables as small `--art-core` lights with gold rims in their own glows (`m-twinkle`), shared out between the two flanks, and at the top a gold disc engraved in `--art-carve` with ह्रीं (Tiro Devanagari), the hṛllekhā that closes every cluster. The other syllables are given at initiation and are never written. The speech cluster (vāgbhava) has five syllables in all, the middle (kāmarāja) six, the śakti cluster four | `summit` and `Summit` in `primitives.tsx` (promoted at Shloka 35, used by Shlokas 34 and 35) | Shloka 34 |
 | Her face (mukha-paṅkaja) | A lotus (`OpenLotus`, 1.45 times), in her glow, with the speech cluster rising over it | Inline (`sanjivani.tsx`) | Shloka 34 |
+| Her mantra-body | Never a figure: her light as a tall column (an elliptical `--art-glow` glow, 320 by 640), crossed by two seams at the throat and the waist, each a gold line with slanting gold stitches and a gold knot at each end. Above the throat, her face as in Shloka 34 (a lotus and the speech cluster, its lights in `--art-core` glows); between the seams the middle cluster in `--lotus` glows over a faint rosy region; below the waist the śakti cluster in `--art-vermilion` glows, standing on a lotus | Inline (`mantra-body.tsx`) | Shloka 35 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1387,6 +1388,31 @@ One entry per finished artwork, in the order they were made.
   straight flanks space them evenly and say kūṭa. The five arrows fanned wide read as a crest on
   the bow; a narrow fan behind his light reads as a sheaf. Shlokas 35 and 36 carry the clusters on
   down her body. In the chant miniature the lotus, the herb's glow and the two lights carry it.
+
+### Shloka 35: A body divided into three mantras
+
+- **Component:** `mantra-body.tsx` (defs prefix `sa35`)
+- **Composition:** the same body a second time, spelled instead of painted. Her light stands as a
+  tall column down the middle of the plate, crossed by two seams, at the throat and the waist, as
+  the seams of a garment of syllables. Above the throat her face from Shloka 34, smaller: the lotus
+  and the speech cluster. Between the seams the middle cluster, the sovereignty of desire: six
+  syllables, five lights up a wide low peak and ह्रीं at its top, in rosy light. Below the waist the
+  śakti cluster, four syllables in vermilion light, standing on a lotus.
+- **Name → part:**
+  - Kaṇṭhādhaḥkaṭiparyantamadhyakūṭasvarūpiṇī → `middle`: the middle cluster and its rosy region
+  - Śaktikūṭaikatāpannakaṭyadhobhāgadhāriṇī → `sakti`: the śakti cluster, its region and the
+    lotus under it
+  - Intro, *her face* → `face`: the column of her light, the upper lotus and the speech cluster
+  - Detail → `seams`: the two seams
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the column and the regions), and the summit's own `m-twinkle` and
+  `m-breathe`.
+- **Notes:** This title stays on one line, reaching x ≈ 190 at y ≈ 61–118, clear of the face at
+  the axis. The trunk between the seams is mostly behind the card, so the middle cluster is a wide,
+  low peak whose top sits just under the card's edge (y ≈ 406), and the waist and the śakti cluster
+  are in the band above the fade. At its first heights the peaks stood close and tall, like three
+  trees. The summit was promoted into `primitives.tsx` (`summit`, `Summit`), and Shloka 34 renders
+  byte-for-byte as before. In the chant miniature the column and the three clusters carry it.
 
 ## Open questions
 

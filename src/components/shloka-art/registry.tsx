@@ -11,6 +11,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
+import { MantraBody } from "./mantra-body";
 import { Sanjivani } from "./sanjivani";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
@@ -1277,6 +1278,39 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Kāma comes back as a rosy light with his bow and arrows made of flowers, and he and Rati look at each other.
           The purāṇa gives him two arms now where he had four: what comes back is not quite what was lost.
+        </>
+      ),
+    },
+  },
+  "035": {
+    Art: MantraBody,
+    intro: (Spot) => (
+      <>
+        Her light stands as a tall column, her body spelled instead of painted. At the top is{" "}
+        <Spot part="face">her face</Spot> from the last verse: the lotus, and the cluster of speech rising over it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 86,
+        part: "middle",
+        depicts:
+          "Between the throat and the waist rises the middle cluster, the sovereignty of desire, in a rosy light: six syllables up the flanks of its peak, the last of them ह्रीं.",
+      },
+      {
+        nama: 87,
+        part: "sakti",
+        depicts:
+          "Below the waist the śakti cluster, four syllables in a vermilion light, stands on the lotus she stands on: she is this cluster, and she carries it.",
+      },
+    ],
+    detail: {
+      part: "seams",
+      body: (
+        <>
+          The two seams are at the throat and the waist, where the names divide her. Before the hymn is recited the
+          three clusters are placed on the reciter&apos;s own body at the same places, so in the nyāsa the reciter builds
+          this body on his own.
         </>
       ),
     },
