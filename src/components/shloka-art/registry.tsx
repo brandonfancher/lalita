@@ -11,6 +11,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
+import { Sanjivani } from "./sanjivani";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
@@ -1244,6 +1245,38 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           In the ash at the foot of the burnt city there is one green shoot. The demon was made from the ashes of
           Kāma, and the gods are about to ask her to bring the god of love back to life; that is the next verse.
+        </>
+      ),
+    },
+  },
+  "034": {
+    Art: Sanjivani,
+    intro: (Spot) => (
+      <>
+        Her <Spot part="glance">sidelong look</Spot> falls from the lotus at the top onto the ash below. The
+        purāṇa says Kāma was born again out of her look, as Gaṇeśa was four verses earlier.
+      </>
+    ),
+    entries: [
+      {
+        nama: 84,
+        part: "herb",
+        depicts:
+          "Below the card lies the ash of Kāma, burnt by the fire of Hara's eye, and out of it grows the herb that brings the dead back, alight, as the herbs were on the mountain Hanumān carried. She is not the one who gives the herb; she is the herb.",
+      },
+      {
+        nama: 85,
+        part: "face",
+        depicts:
+          "Above the card her face is a lotus, and over it rises the first summit of her mantra, the cluster of speech: five lights up a peak. The syllables are given at initiation and are not written here, except the last, ह्रीं, which closes all three clusters.",
+      },
+    ],
+    detail: {
+      part: "kama",
+      body: (
+        <>
+          Kāma comes back as a rosy light with his bow and arrows made of flowers, and he and Rati look at each other.
+          The purāṇa gives him two arms now where he had four: what comes back is not quite what was lost.
         </>
       ),
     },

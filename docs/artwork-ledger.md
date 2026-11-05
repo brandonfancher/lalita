@@ -192,6 +192,10 @@ second time it is needed.
 | Śūnyaka burnt (the Empty Place) | Never ruins or rubble: only the city's skyline, a crenellated wall between three towers, two domed and the middle one spired over an arched gate, drawn as a dashed outline in `--art-musk` with an `--art-moon` line over it, round nothing, in a faint musk hollow. A few small dying `tongue` flames (vermilion to saffron) at its foot and drifting flecks of smoke (`m-ember`) | Inline (`empty-city.tsx`) | Shloka 33 |
 | Indra's thunderbolt (vajra) | Upright, turned a little: a banded `--gold` grip with an `--art-vermilion` stud at its middle, and at each end a cage of five gold prongs closing to a point | Inline (`empty-city.tsx`) | Shloka 33 |
 | The high gods, praising | Never figures: each is his emblem in a soft `--art-core`-to-saffron glow above her, in order of precedence from the left: Brahmā's lotus (`OpenLotus` in `--art-vermilion`), Viṣṇu's discus and conch (`GanesaEmblem`), Indra's thunderbolt. The gods behind them are their lamps (`Lamp`), in two arcs round her light | Inline (`empty-city.tsx`) | Shloka 33 |
+| The herb that revives (sañjīvanī) | A slender `--leaf` stem with a fine `--art-core` line, five pairs of `--leaf` leaves edged and veined in `--art-core`, shrinking upward, and three small five-petalled `--art-ivory` blossoms at the top (`m-twinkle`) with a `glint` over them, in a breathing core-to-saffron glow: alight, as the herbs on Hanumān's mountain were. It grows out of ash (`Ash`) | Inline (`sanjivani.tsx`) | Shloka 34 |
+| Kāma, reborn | Never a figure: a small `--lotus` light with a gold ring in a rosy glow, his bow of flowers upright beside it (a `--leaf` recurve stave with small five-petalled blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString`), and his five flower arrows (`FlowerArrow`) in a narrow fan behind the light. Rati is a smaller `--art-moon` light with an ivory heart; the two look at each other as her light and Kāmeśvara's did (Shloka 30), three gold hairlines each way and a `glint` where they meet | Inline (`sanjivani.tsx`) | Shloka 34 |
+| A cluster of the mantra (kūṭa) | A summit, as the word says: a dotted gold peak whose flanks carry its syllables as small `--art-core` lights with gold rims in their own glows (`m-twinkle`), shared out between the two flanks, and at the top a gold disc engraved in `--art-carve` with ह्रीं (Tiro Devanagari), the hṛllekhā that closes every cluster. The other syllables are given at initiation and are never written. The speech cluster (vāgbhava) has five syllables in all, the middle (kāmarāja) six, the śakti cluster four | `summit` inline (`sanjivani.tsx`) | Shloka 34 |
+| Her face (mukha-paṅkaja) | A lotus (`OpenLotus`, 1.45 times), in her glow, with the speech cluster rising over it | Inline (`sanjivani.tsx`) | Shloka 34 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1359,6 +1363,30 @@ One entry per finished artwork, in the order they were made.
   or rubble would have said something was left. The lamp was promoted into `primitives.tsx`
   (`Lamp`), and Shloka 24 renders byte-for-byte as before. In the chant miniature her radiance, the
   shaft and the strike carry it.
+
+### Shloka 34: The herb that brought desire back
+
+- **Component:** `sanjivani.tsx` (defs prefix `sa34`)
+- **Composition:** the war's last act and the mantra's first, one above the other. Below the card,
+  the ash of Kāma (`Ash`), and out of it the herb that brings the dead back, alight; beside it Kāma
+  is back as a rosy light with his bow and arrows of flowers, and he and Rati look at each other.
+  In the crown her face is a lotus, and over it rises the first summit of her mantra, the cluster
+  of speech: four lights up the flanks of a dotted peak and ह्रीं at the top. Her sidelong look falls
+  from the lotus onto the herb.
+- **Name → part:**
+  - Haranetrāgnisandagdhakāmasañjīvanauṣadhiḥ → `herb`: the ash, the herb and its glow
+  - Śrīmadvāgbhavakūṭaikasvarūpamukhapaṅkajā → `face`: the lotus, its glow and the speech cluster
+  - Intro, *sidelong look* → `glance`: the three hairlines from the lotus to the herb
+  - Detail → `kama`: Kāma's light, bow and arrows, Rati, and the look between them
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the syllables, the herb's blossoms, the arrows' flowers), `m-breathe`
+  (the herb's glow, the top syllable), `m-shimmer` (the glows and looks), `m-lick` (the glints),
+  `m-ember` (the ash).
+- **Notes:** This title stays on one line, reaching x ≈ 170 at y ≈ 61–118, so the lotus sits right
+  of it at x ≈ 372. On a smooth arch the syllables nearest the top hid behind its disc; the peak's
+  straight flanks space them evenly and say kūṭa. The five arrows fanned wide read as a crest on
+  the bow; a narrow fan behind his light reads as a sheaf. Shlokas 35 and 36 carry the clusters on
+  down her body. In the chant miniature the lotus, the herb's glow and the two lights carry it.
 
 ## Open questions
 
