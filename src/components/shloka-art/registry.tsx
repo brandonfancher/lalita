@@ -35,6 +35,7 @@ import { NailMoons } from "./nail-moons";
 import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
 import { OtherEndOfTheRope } from "./other-end-of-the-rope";
+import { RiversToTheSea } from "./rivers-to-the-sea";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -2099,6 +2100,76 @@ export const ARTWORK: Record<string, Artwork> = {
           The rim is bound in three bands, ivory, red and dark: the three strands, the guṇas, that Shloka 44 drew
           as a rope coming undone. The Śvetāśvatara Upaniṣad calls the wheel of becoming threefold for the same
           reason.
+        </>
+      ),
+    },
+  },
+  "049": {
+    Art: RiversToTheSea,
+    intro: (Spot) => (
+      <>
+        The Kaṭha Upaniṣad, in the passage this verse stands on, says that rain falling on a{" "}
+        <Spot part="peak">peak</Spot> runs off it every way, as a mind that sees division runs after things, and
+        that water poured into water becomes just that water. So one rain runs off one peak as two{" "}
+        <Spot part="rivers">rivers</Spot>, a white one and a dark one, and they come down either side of the
+        picture to one sea.
+      </>
+    ),
+    entries: [
+      {
+        nama: 176,
+        part: "calm",
+        depicts:
+          "Round her reflection the far sea lies without a ripple. Yoga calls the mind's movements waves, and she is where they have stopped.",
+      },
+      {
+        nama: 177,
+        part: "light",
+        depicts: "Her light hangs low over the sea, and the rivers rushing down on either side stop short of it.",
+      },
+      {
+        nama: 178,
+        part: "sea",
+        depicts: "The sea is one water, its ripples running unbroken from side to side, with no seam where the rivers came in.",
+      },
+      {
+        nama: 179,
+        part: "mouths",
+        depicts:
+          "Each river carries its name, Gaṅgā on the white and Yamunā on the dark, until it nears the sea. There the names fade out and the colours spread and are lost, as the Chāndogya says rivers in the sea no longer know which one they were.",
+      },
+      {
+        nama: 180,
+        part: "cloud",
+        depicts:
+          "The cloud over the peak is the sea's own water risen again, and its rain is where the rivers begin. None of it is ever lost.",
+      },
+      {
+        nama: 181,
+        part: "vine",
+        depicts:
+          "On the bank of the white river a ripe cucumber has come away from its stalk. The oldest prayer against death asks to be loosed from it in just that way.",
+      },
+      {
+        nama: 182,
+        part: "reflection",
+        depicts:
+          "Her light lies on the water in a column of broken gold that trembles with every ripple, while she herself does not move.",
+      },
+      {
+        nama: 183,
+        part: "boats",
+        depicts:
+          "Offering lamps on leaf boats ride the dark river out to sea and go on past her. Nothing is taken from them.",
+      },
+    ],
+    detail: {
+      part: "sky-flower",
+      body: (
+        <>
+          Beside the cloud is a flower drawn only in dots, on no stalk: the sky-flower. Patañjali&apos;s commentators
+          give it as their example of a <i>vikalpa</i>, a word with nothing behind it, which is exactly what she is
+          said not to be.
         </>
       ),
     },

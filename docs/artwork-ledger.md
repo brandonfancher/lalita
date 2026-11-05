@@ -131,7 +131,7 @@ second time it is needed.
 | Elephant-trunk and plantain border | A woven band along a hem: curled elephants' trunks in `--art-vermilion` alternating with `--leaf` plantain stems, each with its long leaf, about 20 units apart. The two stock similes for a tapering thigh (Saundaryalaharī 82) | Inline (`drawn-curtain.tsx`) | Shloka 17 |
 | Quiver (tūṇa) | A tapering body, half-width 19 at the mouth and 7 at the foot, filled across its width from `--gold` through `--art-turmeric` to gold, with an `--art-carve` outline, an `--art-core` sheen, three `--art-vermilion` bands with `--gold-soft` edges, a gold rim at the mouth, and a vermilion strap with dashed gold-soft stitching. Five arrows stand out of the mouth, fanned 8° apart, with `--art-saffron` fletching barred in carve. Without the strap two crossed quivers read as batons. A pair is crossed as weapons are hung | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
 | Velvet mites (indragopa) | The scarlet insects of the first rain: tiny `--art-vermilion` ovals (radius about 2) with an `--art-crimson` edge and an `--art-core` highlight, strewn at random angles; one in five twinkles | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
-| Rain | About 150 hairlines (0.7) of `--gold-soft`, slanting slightly, faded at top and bottom, spread evenly enough not to clump into hatching, in three groups with one shimmering | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
+| Rain | About 150 hairlines (0.7) of `--gold-soft`, slanting slightly, faded at top and bottom, spread evenly enough not to clump into hatching, in three groups with one shimmering | `rainGroups` in `primitives.tsx` (promoted at Shloka 49, used by Shloka 18) | Shloka 18 |
 | New grass | Tufts of tapered `--leaf` blades in two shades, fanned from a point | Inline (`first-rain-quivers.tsx`) | Shloka 18 |
 | Tortoise (kūrma) | From the side, about 90 units long: a domed `--art-stone` shell with a gold outline, a saffron tint, gold plates and a gold rim, over a `--gold-soft` head, legs and tail, a small carve eye, and a faint `--art-musk` shadow | `Tortoise` in `primitives.tsx` (promoted at Shloka 32, used by Shlokas 18 and 32) | Shloka 18 |
 | Her toenails as moons | On each toe of her footprints, a full moon 0.78 the toe's radius: a radial gradient from `--art-core` to `--art-moon`, a hair-fine gold rim, a moon glow 3.2 times its radius, `m-twinkle` in three groups, and a glint on each big toe. Ten pale discs without the feet read as a string of pearls | Inline (`nail-moons.tsx`) | Shloka 19 |
@@ -262,6 +262,14 @@ second time it is needed.
 | A full pot brimming over | A round-bellied gold water pot with a neck, a lip, a double `--art-vermilion` belly band and a moon-coloured brim. Water runs over as one broad sheet down the front of the belly (`m-shimmer`) with a fine ivory highlight, and one thin stream at the back, to a puddle with ivory drops (`m-twinkle`). Thin streams alone read as wires | Inline (`wheel-stopped.tsx`) | Shloka 48 |
 | An iron strongbox, burst | A box of `--art-hair` at 0.7 with gold straps and edge, its lid thrown back at 0.45, gold coins on the rim, the lock hanging open and askew. Coins carried off along the floor (`m-twinkle`) | Inline (`wheel-stopped.tsx`) | Shloka 48 |
 | Water running along the floor | A filled, tapering rivulet in the water gradient with a `--gold-soft` edge (`m-shimmer`). A stroked line read as a stick | Inline (`wheel-stopped.tsx`) | Shloka 48 |
+| A peak in the rain | A broad skyline through one summit, `--art-stone` with a faint `--art-saffron` tint, its far face shaded in `--art-hair` at 0.1, a 1.5 `--gold` skyline and three short `--art-carve` bands of rock, faded out below. Rills run off the summit every way, `--art-moon` over a `--gold` edge, fading as they go | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
+| Rain cloud (megha) | Seven lobes as overlapping circles, `--art-moon` over a 2.4 `--gold` stroke so only the union's outline shows, `--gold-soft` arcs for the inner lobes, its foot cut flat on a gold line and darkened with `--art-hair`. Its rain is `rainGroups` under it, faded before it reaches the ground | Inline (`rivers-to-the-sea.tsx`, using `rainGroups`) | Shloka 49 |
+| A river (nadī) | A meandering band from a rill to the full stream, its width swelling and narrowing a little (constant width reads as a snake), filled with its own colour under `WavePattern`, between 1.1 `--gold` banks with a fainter outer bank. White: `--art-moon`. Dark: `--art-hair` at 0.6. As a smooth band without the pattern it read as a tusk | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
+| A river's name, lost at the sea | Its name in Tiro Devanagari (12), turned along its course, three times toward the mouth at 0.95, 0.7 and 0.3; the river itself masked out over its last stretch, and its colour spread in the sea as a soft radial fan | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
+| The far sea, still | Round her reflection near the horizon, the sea's ripples masked out under a soft oval, and in their place four long level `--gold` lines over a faint `--art-core` sheen | Inline (`rivers-to-the-sea.tsx`, over `seaSurface`) | Shloka 49 |
+| Offering lamps on leaf boats (dīpa-dāna) | A small `--leaf` hull edged in gold carrying an `--art-vermilion` flower and a `Lamp`, a saffron glint on the water under it (`m-twinkle`), set afloat in a line that grows as it comes toward us | Inline (`rivers-to-the-sea.tsx`, using `Lamp`) | Shloka 49 |
+| Cucumber vine (urvāruka) | A `--leaf` runner with angular five-lobed, heart-based leaves on long stalks, gold-edged with `--gold-soft` veins, coiled tendrils, an `--art-turmeric` flower and a young green fruit. The ripe one is long (44 by 13), a gradient from `--art-turmeric` to `--art-saffron` with fine `--art-carve` lengthwise lines, lying on the bank below an empty stalk. Cross-ticks on it read as a corn cob | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
+| The sky-flower (khapuṣpa) | Five petals and a centre drawn only in dots (gold, a `--sindura` centre), with no stalk, beside a cloud | Inline (`rivers-to-the-sea.tsx`) | Shloka 49 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1850,6 +1858,43 @@ One entry per finished artwork, in the order they were made.
   candlestick; it leans. The overflow was three thin streams that read as wires, and the run along
   the floor a stroked line that read as a stick; both are filled shapes now. The box first stood in
   front of the pot and was moved left. In the chant miniature the wheel and the sword carry it.
+
+### Shloka 49: No division, no death, no act
+
+- **Component:** `rivers-to-the-sea.tsx` (defs prefix `sa49`)
+- **Composition:** a cycle of water drawn round the card, after the Kaṭha Upaniṣad (4.14–15: rain
+  on a peak runs off every way; water poured into water becomes that water) and the Chāndogya
+  (6.10: rivers in the sea no longer know which they were). In the crown a rain cloud stands over
+  one peak, and the rain runs off it in rills. Two of them become rivers, a white one down the left
+  of the card and a dark one down the right, meandering, each with its name written along it.
+  Below the card they enter one sea, their names breaking off and their colours lost. Her light
+  hangs low over the sea, the far water round it without a ripple and its reflection trembling
+  below. Offering lamps on leaf boats ride the dark river out past her; on the bank of the white
+  one a ripe cucumber lies below the stalk it came away from. Beside the cloud, the sky-flower.
+- **Name → part:**
+  - Nirvikalpā → `calm`: the still band of the far sea
+  - Nirābādhā → `light`: her light, its glow and rays
+  - Nirbhedā → `sea`: the horizon and the ripples
+  - Bhedanāśinī → `mouths`: the rivers' names and the spread of their colours in the sea
+  - Nirnāśā → `cloud`: the cloud and its rain, the sea's water come back
+  - Mṛtyumathanī → `vine`: the cucumber vine and the ripe fruit come away (the *tryambaka* verse,
+    Ṛgveda 7.59.12)
+  - Niṣkriyā → `reflection`: her reflection in the water
+  - Niṣparigrahā → `boats`: the offering lamps going on past her
+  - Intro, *peak* → `peak`; *rivers* → `rivers`
+  - Detail → `sky-flower`: Patañjali's commentators' example of a *vikalpa*, a word with nothing
+    behind it
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow and rays, the rain, the light on the water), `m-breathe` (her
+  light), `m-twinkle` (the reflection, the glints under the boats), `m-flicker` (the lamps).
+- **Notes:** This title stays on one line and reaches only x ≈ 78 (130 at 1100px) at y ≈ 74–141,
+  so the crown is free from x ≈ 140. The sea (`seaSurface`) and the rain (`rainGroups`) were
+  promoted into `primitives.tsx`, and Shlokas 2 and 18 render byte-for-byte as before. The rivers
+  were first smooth bands of constant width without the wave pattern; with the peak too faint to
+  read, the white one looked like a tusk and the pair like a glass bulb. They meander now and carry
+  the miniature painters' water. The peak's fill first ended in a hard block at the right; it fades
+  out below the card's top now. In the chant miniature the two rivers, the peak and her light on
+  the sea carry it.
 
 ## Open questions
 
