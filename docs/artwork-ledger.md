@@ -369,6 +369,12 @@ second time it is needed.
 | Gold apportioned (bhaga) | Twenty-six small `--gold` motes with a saffron edge and a short faint trail, either side of the sun, each falling and fading (`m-sink`) on its own `--dur` and negative `--delay`, with flat `--gold-soft` rings on the water where they land. Long trails read as pins on threads | Inline (`middle-of-the-sun.tsx`) | Shloka 65 |
 | Twin lotuses from one root (sahodara) | A red `OpenLotus` (crimson shade) at 0.52 and one in `--art-hair` (gold-soft shade) at 0.48, on two `--leaf` stems curving up from a single turmeric node on the water, a ring round the node and a lotus leaf behind them | Inline (`middle-of-the-sun.tsx`, with `OpenLotus`) | Shloka 65 |
 | Aḻagar's golden horse | `Horse` at 0.42 in `--gold`, mirrored to run left, its legs at the waterline in a gold-soft ring, far out on the water with a saffron glint | Inline (`middle-of-the-sun.tsx`, with `Horse`) | Shloka 65 |
+| Rows of worlds that open and shut (bhuvanāvalī) | World-eggs (`eggPath`, half-width 7.5 to 11) strung on sagging `--gold` threads, split at a seam just below the middle. How far each is open runs along the row as a wave, so the row reads as a blink: sealed (the cap tinted `--art-hair`), parting, wide open (the cap lifted half the egg's height, an almond of `--art-core` light between the shells pointed at both ends like an opening eye, a core glow, a saffron `glint`), closing again, and, where it is fully shut, only a dashed `--gold-soft` outline: gone. The light and glow lick (`m-lick`, three groups). Two rows in the crown; two smaller, fainter rows behind the card under a window mask | Inline (`worlds-in-a-blink.tsx`) | Shloka 66 |
+| Her face in a facing mirror (thousand-faced) | The hand mirror at 0.76 on a long stem, its face holding the whole mirror again seven times, each 0.7 the last and fainter, drifting up and left: a gold stem, a saffron cup, a carve shadow, a beaded gold frame, an ivory face under the mirror's shading. The canon's sheen streaks are drawn again over all of them, and her light sits at the far end. Plain nested rings read as a target; the stems and cups make each one a mirror | Inline (`worlds-in-a-blink.tsx`, with `HandMirror` and `MarriageThread`) | Shloka 66 |
+| The stream of her face's beauty, round | The river canon bent into a ring round the mirror (radius 112, 26 wide): `--art-moon` at 0.4 with a faint saffron wash under `WavePattern`, 1.1 gold banks and a fainter outer bank, in a saffron aura. A shoal of sixteen `Fish` at about 0.5 swims round it against the clock, each with its faint crimson shadow (`m-dart`, three groups). Compare Shloka 6's channel and Shloka 23's pair | Inline (`worlds-in-a-blink.tsx`, with `Fish` and `WavePattern`) | Shloka 66 |
+| The earth as the purāṇas map it (bhū-maṇḍala) | A flat round disc seen at a slant (150 by 32): a saffron island at the centre, then rings of sea (`--art-hair` at about 0.24) and island (`--leaf` at about 0.35) by turns, each edged in hair-fine gold, over a saffron-to-stone wash, with a 1.2 gold rim | Inline (`worlds-in-a-blink.tsx`) | Shloka 66 |
+| Her feet on every side | Twelve pairs of `Footprint`s (with the gold `edge`) on a ring just outside the earth's rim, each pair turned to face outward, laid on the ground at 0.55 and a little larger toward the viewer | Inline (`worlds-in-a-blink.tsx`, with `Footprint`) | Shloka 66 |
+| Ten fingers' breadth (daśāṅgula) | Under the mirror's bud foot, a hair-fine gold line down to the earth with eleven ticks 2.4 apart marking off ten fingers (every fifth longer), and a faint crimson shadow on the earth beneath | Inline (`worlds-in-a-blink.tsx`) | Shloka 66 |
 | A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -2577,6 +2583,38 @@ One entry per finished artwork, in the order they were made.
   shafts read as torches, until the shafts faded out and became threads. Her light was first
   under the lotus; it is its own part above it. In the chant miniature the disc and its rays
   carry it by day and glow by lamplight without washing out the verse.
+
+### Shloka 66: Rows of worlds, made and unmade in a blink
+
+- **Component:** `worlds-in-a-blink.tsx` (defs prefix `sa66`)
+- **Composition:** the hymn's cosmic person with no figure, built from the series' own images of
+  her. Below the card her face, the hand mirror, stands on a long stem, turned to a second mirror
+  so that it holds itself again and again down to her light; round it runs the stream of its
+  beauty as a ring, with a shoal of fish, her eyes, swimming round. Its foot hangs ten fingers
+  above the earth, a round disc of sea and island rings, and pairs of her footprints stand all
+  round the earth facing outward. Across the whole sky hang rows of world-eggs that open and shut
+  along their length like eyes: two in the crown, two smaller and fainter behind the card. The
+  first mirror in a mirror, the first earth mapped as the purāṇas map it, the first composition
+  in horizontal rows.
+- **Name → part:**
+  - Unmeṣanimiṣotpannavipannabhuvanāvalī → `worlds`: the four rows of world-eggs and their threads
+  - Sahasraśīrṣavadanā → `faces`: the mirror, its reflections and the marriage thread on its stem
+  - Sahasrākṣī → `eyes`: the ring of the stream, its aura and the shoal of fish
+  - Sahasrapāt → `feet`: the earth disc and the footprints round it
+  - Intro, *her light* → `light`: her light at the far end of the reflections
+  - Detail → `fingers`: the measure of ten ticks between the mirror's foot and the earth, and its
+    shadow (Ṛgveda 10.90.1, *atyatiṣṭhad daśāṅgulam*)
+- **Palette:** no additions.
+- **Motion:** `m-lick` (the light in the worlds), `m-dart` (the fish), `m-twinkle` (her glow); the
+  mirror and thread keep their own `m-lick` and `m-sway`.
+- **Notes:** This title stays on one line and reaches x ≈ 411 (463 at 1100px), so the crown's rows
+  hang above it and to its right. The first reflections were plain rings shrinking almost in
+  place and read as a target; drifting them further and giving each its cup and stem made them
+  mirrors. At 0.8 on its canon stem the mirror's tāli hid the bud and the ten-finger gap, so the
+  stem is longer and the mirror 0.76. With only the crown rows the plate was empty from the title
+  to the mirror; the two far rows behind the card fill it and dress both sides of the card. The
+  stream was a bright grey ring by lamplight at 0.7; it is 0.4 with a saffron wash. In the chant
+  miniature the mirror in its ring of fish reads as one bright emblem in both themes.
 
 ## Open questions
 

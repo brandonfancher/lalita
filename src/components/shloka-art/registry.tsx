@@ -64,6 +64,7 @@ import { WhatItHoldsUp } from "./what-it-holds-up";
 import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
 import { WitnessOfTheDance } from "./witness-of-the-dance";
+import { WorldsInABlink } from "./worlds-in-a-blink";
 import { YoginiTemple } from "./yogini-temple";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
@@ -3107,6 +3108,52 @@ export const ARTWORK: Record<string, Artwork> = {
           Far off on the water at the right, a small golden horse is wading in. Every spring at Madurai, Viṣṇu as
           Aḻagar rides down on a golden horse and into the river Vaigai, on his way to give his sister Mīnākṣī to
           Sundareśvara, and arrives, as the story goes, too late for the wedding.
+        </>
+      ),
+    },
+  },
+  "066": {
+    Art: WorldsInABlink,
+    intro: (Spot) => (
+      <>
+        The second line is the opening of the Puruṣa Sūkta, so the picture is the hymn&apos;s person of a thousand
+        heads, eyes and feet, with no figure at all: each is drawn the way this series always draws her, round{" "}
+        <Spot part="light">her light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 281,
+        part: "worlds",
+        depicts:
+          "Across the crown hang rows of world-eggs that open and shut along their length like eyes: sealed, parting at the seam, wide open with light inside, closing again, and here and there only a dashed outline, already gone.",
+      },
+      {
+        nama: 282,
+        part: "faces",
+        depicts:
+          "Her face is always this hand mirror. Here it is turned to a second mirror, so it holds its own frame again and again, each smaller than the last: faces inside faces, past counting.",
+      },
+      {
+        nama: 283,
+        part: "eyes",
+        depicts:
+          "Round the mirror runs the stream of its beauty, and in it a shoal of fish, her eyes since the sixth verse. Fish are animiṣa, the ones that never blink.",
+      },
+      {
+        nama: 284,
+        part: "feet",
+        depicts:
+          "On the earth below, pairs of her footprints stand all round its rim, each facing outward, as the hymn's person covers the earth on every side.",
+      },
+    ],
+    detail: {
+      part: "fingers",
+      body: (
+        <>
+          The mirror&apos;s foot does not touch the earth, and the gap is marked off in ten small gold ticks. The
+          second half of the Vedic line, which the stotra leaves out, says the person stood out beyond the earth by
+          ten fingers&apos; breadth.
         </>
       ),
     },
