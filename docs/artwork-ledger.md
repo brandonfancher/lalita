@@ -200,6 +200,10 @@ second time it is needed.
 | The root mantra whole (mūlamantra) | Fifteen syllables on a dotted gold ring round her bindu, clockwise from the top, each in its cluster's colour (`--art-core`, `--lotus`, `--art-vermilion` glows, as in Shloka 35), the 5th, 11th and 15th the three ह्रीं on small gold discs. The three clusters standing side by side on one gold ground line, the middle highest, are her frame (kalevara) | Inline (`root-mantra.tsx`) | Shloka 36 |
 | Nectar (amṛta) of the kula | A thin fall, a gradient from transparent `--art-moon` to `--art-ivory`, with three `--art-ivory` drops (`m-twinkle`), into a small footed gold cup brimming with an ivory surface, in a moon glow. Falling from the crown or poured in the rite: the picture keeps both readings | `NectarCup` in `primitives.tsx` (promoted at Shloka 37, used by Shlokas 36 and 37); the fall inline (`root-mantra.tsx`) | Shloka 36 |
 | The kula's compact (saṅketa) | A palm-leaf book (pothi), `--art-turmeric` leaves between gold boards, bound shut with an `--art-vermilion` cord through two holes, knotted at an `--art-vermilion` seal with a gold rim engraved with a small downward triangle. Nothing inside it is drawn | Inline (`root-mantra.tsx`) | Shloka 36 |
+| The kula as a household | A round-topped doorway (`archPath`), a 2.4-unit gold line with a `--gold-soft` line inside, on a gold threshold step, hung along the arch with nine `--leaf` mango leaves (toraṇa) swaying in two groups; a kolam before it (a row of `--art-ivory` rice-flour dots inside an ivory loop, over a faint musk line so it shows by day). Before the door, the outward rite: a `Lamp` and a `NectarCup` | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
+| The kula as the assembly of powers | Eight small `--art-vermilion` lights with gold rims in vermilion glows, on a ring round her light, each joined to the next by a gold hairline bowed a little inward. Spokes from her to each made a wheel | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
+| The centres of the body (inward worship) | A slender gold column (a gradient fading at both ends) through six small `OpenLotus`es without pads, the fourth, the heart, larger, with her light in it | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
+| Akula, beyond the kula | A pale still light with nothing round it and no motion: an `--art-moon` disc with a gold rim and an ivory heart, one faint gold ring, a wide moon glow and a faint saffron tint so it shows by day. Joined to nothing | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1439,6 +1443,34 @@ One entry per finished artwork, in the order they were made.
   ring sits at the right, its left edge at x ≈ 416; at 58 units' radius beside the title the gap
   was too small for 1100px. The range's glow first had a hard edge where its ellipse cut the
   gradient. In the chant miniature the ring, the range and the cup carry it.
+
+### Shloka 37: Kula, and what lies outside it
+
+- **Component:** `kula-and-samaya.tsx` (defs prefix `sa37`)
+- **Composition:** both of the tradition's ways, side by side below the card, and between them in
+  the crown a name that belongs to neither. At the left the kula: a household doorway hung with
+  mango leaves, a kolam on the threshold, and inside it her light ringed by the assembly of powers,
+  the outward rite's lamp and cup before the door. At the right the samaya: a slender column
+  through six small lotuses, her light in the heart. Above, at the middle, a pale still light joined
+  to nothing.
+- **Name → part:**
+  - Kulāṅganā → `household`: the doorway, its leaves and threshold, and the glow inside it
+  - Kulāntasthā → `within`: her light inside the doorway
+  - Kaulinī → `kaula`: the lamp and the cup before the door
+  - Kulayoginī → `yogini`: the eight powers and the hairlines joining them
+  - Akulā → `akula`: the still light in the crown
+  - Samayāntasthā → `samaya`: her light in the heart, and its glow
+  - Samayācāratatparā → `practice`: the column and the six lotuses
+  - Intro, *once in the kula*, *once in the samaya* → `within`, `samaya`
+  - Detail → `threshold`: the kolam
+- **Palette:** no additions.
+- **Motion:** `m-sway` (the mango leaves), `m-twinkle` (the powers), `m-breathe` (her two lights),
+  `m-shimmer` (the glows and the joins), and the lamp's `m-flicker`. The still light has none.
+- **Notes:** This title stays on one line, reaching x ≈ 150 at y ≈ 61–118, so the still light sits
+  at the middle of the crown. Lines from it to either side would have put it inside something, so
+  there are none. The doorway first stood with its top behind the card's lower edge. The cup was
+  promoted into `primitives.tsx` (`NectarCup`), and Shloka 36 renders byte-for-byte as before. In
+  the chant miniature the doorway, the column and the two lights carry it.
 
 ## Open questions
 

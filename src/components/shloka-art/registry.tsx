@@ -11,6 +11,7 @@ import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
+import { KulaAndSamaya } from "./kula-and-samaya";
 import { MantraBody } from "./mantra-body";
 import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
@@ -1357,6 +1358,67 @@ export const ARTWORK: Record<string, Artwork> = {
           The seal on the book carries only a small downward triangle, the sign of the goddess. Whatever is written
           inside is not drawn: the fifteen syllables themselves are given at initiation, and this plate, like the
           printed manuals, leaves them out.
+        </>
+      ),
+    },
+  },
+  "037": {
+    Art: KulaAndSamaya,
+    intro: (Spot) => (
+      <>
+        The verse names both of the tradition&apos;s ways of worshipping her and puts her inside each, so her light is
+        drawn twice: <Spot part="within">once in the kula</Spot> at the left, and{" "}
+        <Spot part="samaya">once in the samaya</Spot> at the right.
+      </>
+    ),
+    entries: [
+      {
+        nama: 92,
+        part: "household",
+        depicts:
+          "At the left is the kula as a household: a doorway hung with mango leaves, as a house is for a festival. Kulāṅganā is ordinary Sanskrit for the mistress of such a house.",
+      },
+      {
+        nama: 93,
+        part: "within",
+        depicts: "Her light is inside the doorway, at the centre of the household, not outside it looking in.",
+      },
+      {
+        nama: 94,
+        part: "kaula",
+        depicts:
+          "Before the door stand the outward rite's lamp and cup: the Kaula way worships her with the full apparatus of an external rite.",
+      },
+      {
+        nama: 95,
+        part: "yogini",
+        depicts:
+          "Round her light is the kula in its other sense, the assembly of powers: eight small lights, each joined to her and to the next, so that her practice makes them one.",
+      },
+      {
+        nama: 96,
+        part: "akula",
+        depicts:
+          "Above, between the two ways and joined to neither, is a pale still light with nothing round it: akulā, not the kula. In the Kashmirian usage akula is also Śiva, the unmoving ground, and the light is his colour.",
+      },
+      {
+        nama: 97,
+        part: "samaya",
+        depicts: "At the right her light is within the samaya, in the lotus of the heart.",
+      },
+      {
+        nama: 98,
+        part: "practice",
+        depicts:
+          "The samaya is the inward worship, done in the centres of the body rather than before a diagram: a slender column of light through six small lotuses.",
+      },
+    ],
+    detail: {
+      part: "threshold",
+      body: (
+        <>
+          On the household&apos;s threshold is a kolam, the line of rice-flour dots and loops the woman of the house draws at
+          her door each morning.
         </>
       ),
     },
