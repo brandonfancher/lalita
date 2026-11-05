@@ -1957,3 +1957,84 @@ export function RathaSilhouette({ g }: { g: RathaShape }) {
     </>
   );
 }
+
+/* ── The army of her powers, and Bhaṇḍa's ash ──────────────────────────── */
+
+/** The spears lean forward as they march, toward the lower right. */
+export const SPEAR_LEAN = 16;
+const SPEAR_BLADE = "M 0 0 C 2.4 -2.4 3.6 -8 3.4 -12 L 0 -27 L -3.4 -12 C -3.6 -8 -2.4 -2.4 0 0 Z";
+const SPEAR_LUGS = "M -5 -0.6 L 5 -0.6";
+const SPEAR_PENNANT = "M 0 3 L -17 4.4 L -12.6 8 L -17 11.6 L 0 13 Z";
+const SPEAR_PENNANTS = ["var(--art-vermilion)", "var(--art-saffron)", "var(--lotus)"];
+const SPEAR_FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
+
+/** The fading shaft gradient a `Spear` takes as `shaft`. */
+export function SpearDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <linearGradient id={id("shaft")} x1={0} y1={0} x2={0} y2={1}>
+      <stop offset="0" style={{ stopColor: "var(--gold)" }} />
+      <stop offset="1" style={{ stopColor: "var(--gold)", stopOpacity: 0 }} />
+    </linearGradient>
+  );
+}
+
+/**
+ * A śakti, a power that is also a spear: blade up from the origin, the shaft
+ * fading out 74 below it, a pennant in one of three colours (k).
+ */
+export function Spear({ k, shaft }: { k: number; shaft: string }) {
+  return (
+    <>
+      <rect x={-0.8} y={0} width={1.6} height={74} fill={shaft} />
+      <g className={SPEAR_FLICKER[k]}>
+        <path d={SPEAR_PENNANT} fill={SPEAR_PENNANTS[k]} stroke="var(--gold)" strokeWidth={0.5} />
+      </g>
+      <path d={SPEAR_LUGS} stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
+      <path d={SPEAR_BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d="M 0 -1.5 L 0 -24" stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.85} />
+      {k === 0 && <path className="m-lick" d={glint(4)} transform="translate(0 -27)" fill="var(--art-core)" />}
+    </>
+  );
+}
+
+export function AshDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <radialGradient id={id("ash")}>
+        <stop offset="0" style={{ stopColor: "var(--art-musk)", stopOpacity: 0.34 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-musk)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("ash-pale")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.16 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+type Disc = { x: number; y: number; r: number };
+
+/** Bhaṇḍa's substance: soft clouds of ash, grey by day and by lamplight, with drifting flecks. */
+export function Ash({ clouds, flecks, url }: { clouds: Disc[]; flecks: Disc[]; url: (name: string) => string }) {
+  return (
+    <>
+      {clouds.map((a, i) => (
+        <g key={i}>
+          <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash")} />
+          <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash-pale")} />
+        </g>
+      ))}
+      {flecks.map((f, i) => (
+        <circle
+          key={i}
+          className={i % 2 ? "m-ember m-late" : "m-ember"}
+          cx={f.x}
+          cy={f.y}
+          r={f.r}
+          fill={i % 3 ? "var(--art-musk)" : "var(--art-moon)"}
+          fillOpacity={i % 3 ? 0.4 : 0.3}
+        />
+      ))}
+    </>
+  );
+}

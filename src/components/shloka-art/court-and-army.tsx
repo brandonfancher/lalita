@@ -11,7 +11,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { artIds, glint, partProps, polar, radiance, round } from "./primitives";
+import { Ash, AshDefs, Spear, SpearDefs, SPEAR_LEAN, artIds, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -53,17 +53,10 @@ const FLICKER = ["m-flicker", "m-flicker m-late", "m-flicker m-later"];
 
 /* ── The army of śaktis ────────────────────────────────────────────────── */
 
-/** The spears lean forward as they march, toward the lower right. */
-const LEAN = 16;
-const BLADE = "M 0 0 C 2.4 -2.4 3.6 -8 3.4 -12 L 0 -27 L -3.4 -12 C -3.6 -8 -2.4 -2.4 0 0 Z";
-const LUGS = "M -5 -0.6 L 5 -0.6";
-const PENNANT = "M 0 3 L -17 4.4 L -12.6 8 L -17 11.6 L 0 13 Z";
-const PENNANTS = ["var(--art-vermilion)", "var(--art-saffron)", "var(--lotus)"];
-
-type Spear = { x: number; y: number; s: number; k: number };
+type Rank = { x: number; y: number; s: number; k: number };
 
 /** Rank after rank, each nearer, larger and further right than the one before, widening as it comes. */
-const ARMY: Spear[] = Array.from({ length: 6 }, (_, r) => {
+const ARMY: Rank[] = Array.from({ length: 6 }, (_, r) => {
   const cx = 334 + r * 16;
   const y = 516 + r * 30;
   const count = 3 + r;
@@ -113,18 +106,8 @@ export function CourtAndArmy({ idPrefix = "sa24", active = null }: ArtProps) {
           <stop offset="0.4" style={{ stopColor: "var(--art-core)", stopOpacity: 0.45 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("ash")}>
-          <stop offset="0" style={{ stopColor: "var(--art-musk)", stopOpacity: 0.34 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-musk)", stopOpacity: 0 }} />
-        </radialGradient>
-        <radialGradient id={id("ash-pale")}>
-          <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.16 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
-        </radialGradient>
-        <linearGradient id={id("shaft")} x1={0} y1={0} x2={0} y2={1}>
-          <stop offset="0" style={{ stopColor: "var(--gold)" }} />
-          <stop offset="1" style={{ stopColor: "var(--gold)", stopOpacity: 0 }} />
-        </linearGradient>
+        <AshDefs id={id} />
+        <SpearDefs id={id} />
       </defs>
 
       {/* Her glory, the light the whole court is gathered round */}
@@ -155,33 +138,10 @@ export function CourtAndArmy({ idPrefix = "sa24", active = null }: ArtProps) {
 
       {/* The army of her powers, spears under pennants, moving out toward the ash of Bhaṇḍa */}
       <g {...part("army")}>
-        {ASH.map((a, i) => (
-          <g key={i}>
-            <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash")} />
-            <circle cx={a.x} cy={a.y} r={a.r} fill={url("ash-pale")} />
-          </g>
-        ))}
-        {FLECKS.map((f, i) => (
-          <circle
-            key={i}
-            className={i % 2 ? "m-ember m-late" : "m-ember"}
-            cx={f.x}
-            cy={f.y}
-            r={f.r}
-            fill={i % 3 ? "var(--art-musk)" : "var(--art-moon)"}
-            fillOpacity={i % 3 ? 0.4 : 0.3}
-          />
-        ))}
+        <Ash clouds={ASH} flecks={FLECKS} url={url} />
         {ARMY.map((sp, i) => (
-          <g key={i} transform={`translate(${sp.x} ${sp.y}) rotate(${LEAN}) scale(${sp.s})`}>
-            <rect x={-0.8} y={0} width={1.6} height={74} fill={url("shaft")} />
-            <g className={FLICKER[sp.k]}>
-              <path d={PENNANT} fill={PENNANTS[sp.k]} stroke="var(--gold)" strokeWidth={0.5} />
-            </g>
-            <path d={LUGS} stroke="var(--gold)" strokeWidth={1.6} strokeLinecap="round" />
-            <path d={BLADE} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-            <path d="M 0 -1.5 L 0 -24" stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.85} />
-            {sp.k === 0 && <path className="m-lick" d={glint(4)} transform="translate(0 -27)" fill="var(--art-core)" />}
+          <g key={i} transform={`translate(${sp.x} ${sp.y}) rotate(${SPEAR_LEAN}) scale(${sp.s})`}>
+            <Spear k={sp.k} shaft={url("shaft")} />
           </g>
         ))}
       </g>
