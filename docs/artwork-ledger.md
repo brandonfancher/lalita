@@ -1293,7 +1293,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-breathe` (both lights), `m-shimmer` (her glow and Mantriṇī's), `m-lick` (the
   break), `m-sink` (Viṣaṅga's ash falling), `m-twinkle` (glints in the sons' ash).
-- **Notes:** This title stays on one line but reaches x ≈ 292 at y ≈ 61–118, and Mantriṇī was first
+- **Notes:** This title stays on one line but reaches x ≈ 292 at y ≈ 84–147, and Mantriṇī was first
   drawn at the upper left, under it; she now sits at the top right of the crown, with Viṣaṅga in the
   right margin beside the card. Bālā and the sons sit below the card. Mantriṇī was promoted into
   `primitives.tsx` (`Sapphire`, `Vina`), and Shloka 26 renders byte-for-byte as before. Plain puffs
@@ -1320,7 +1320,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** `--art-crimson` for Vārāhī. No additions.
 - **Motion:** `m-shimmer` (the glows and the look), `m-breathe` (her bindu and his light),
   `m-twinkle` (the breath, two of his emblems), `m-lick` (the meeting), `m-flicker` (the discus).
-- **Notes:** This title stays on one line but reaches x ≈ 176 at y ≈ 61–118, so Vārāhī sits to the
+- **Notes:** This title stays on one line but reaches x ≈ 176 at y ≈ 84–147, so Vārāhī sits to the
   right of it, at x ≈ 296, and Viśukra in the crown's right corner. The first version hung a wedge of light from the meeting point down to his light, and with the
   level look above it the two read as a necklace and pendant; the wedge is gone, and the ring opens
   at the top toward the look. A crescent on his light (his crown's) made a horned face and was
@@ -1347,7 +1347,7 @@ One entry per finished artwork, in the order they were made.
 - **Motion:** `m-twinkle` and `m-lick` (the bursts), `m-ember` (the dust), and Gaṇeśa's own
   `m-breathe` and `m-flicker`.
 - **Notes:** This title stays on one line at 1280–1440px and runs across the crown, reaching
-  x ≈ 474 at y ≈ 61–118, so the meetings sit in the band under it and down the right margin; at
+  x ≈ 474 at y ≈ 84–147, so the meetings sit in the band under it and down the right margin; at
   first they were spread through the crown and the bursts sat on the words. Bhaṇḍa's weapons, musk
   and hair, vanished by lamplight until each got a fine moon-coloured line. Gaṇeśa was promoted into
   `primitives.tsx` (`Mahaganapati`), and Shloka 30 renders byte-for-byte as before. In the chant
@@ -1374,7 +1374,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-twinkle` (the nails and their light), `m-shimmer` (the glows), `m-breathe` (the
   fire), `m-ember` (the sparks), `m-flicker` and `m-lick` (the missile's point).
-- **Notes:** This title stays on one line, reaching x ≈ 180 at y ≈ 61–118, so the forms start right
+- **Notes:** This title stays on one line, reaching x ≈ 180 at y ≈ 84–147, so the forms start right
   of it and below it. The first version had both hands at one height above a central band of fire,
   and the two clusters of nails and the fire made a face; the hands now reach to different heights
   and the fire runs off to the lower right. The tortoise, horse and boar were promoted into
@@ -1402,7 +1402,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-shimmer` (the radiance and the gods' glows), `m-breathe` (her bindu, the strike),
   `m-lick` (the strike's rays), `m-flicker` (the lamps, the dying flames), `m-ember` (the smoke).
-- **Notes:** This title stays on one line, reaching x ≈ 160 at y ≈ 61–118, so the gods sit right of
+- **Notes:** This title stays on one line, reaching x ≈ 160 at y ≈ 84–147, so the gods sit right of
   it. The city is left as an outline because the name says what was burnt was already empty; ruins
   or rubble would have said something was left. The lamp was promoted into `primitives.tsx`
   (`Lamp`), and Shloka 24 renders byte-for-byte as before. In the chant miniature her radiance, the
@@ -1426,7 +1426,7 @@ One entry per finished artwork, in the order they were made.
 - **Motion:** `m-twinkle` (the syllables, the herb's blossoms, the arrows' flowers), `m-breathe`
   (the herb's glow, the top syllable), `m-shimmer` (the glows and looks), `m-lick` (the glints),
   `m-ember` (the ash).
-- **Notes:** This title stays on one line, reaching x ≈ 170 at y ≈ 61–118, so the lotus sits right
+- **Notes:** This title stays on one line, reaching x ≈ 170 at y ≈ 84–147, so the lotus sits right
   of it at x ≈ 372. On a smooth arch the syllables nearest the top hid behind its disc; the peak's
   straight flanks space them evenly and say kūṭa. The five arrows fanned wide read as a crest on
   the bow; a narrow fan behind his light reads as a sheaf. Shlokas 35 and 36 carry the clusters on
@@ -1450,7 +1450,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-shimmer` (the column and the regions), and the summit's own `m-twinkle` and
   `m-breathe`.
-- **Notes:** This title stays on one line, reaching x ≈ 190 at y ≈ 61–118, clear of the face at
+- **Notes:** This title stays on one line, reaching x ≈ 190 at y ≈ 84–147, clear of the face at
   the axis. The trunk between the seams is mostly behind the card, so the middle cluster is a wide,
   low peak whose top sits just under the card's edge (y ≈ 406), and the waist and the śakti cluster
   are in the band above the fade. At its first heights the peaks stood close and tall, like three
@@ -1475,7 +1475,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-twinkle` (the syllables, the drops), `m-breathe` (her bindu, the ह्रीं),
   `m-shimmer` (the glows), and the summits' own.
-- **Notes:** This title stays on one line at 1280–1440px and reaches x ≈ 370 at y ≈ 61–118, so the
+- **Notes:** This title stays on one line at 1280–1440px and reaches x ≈ 370 at y ≈ 84–147, so the
   ring sits at the right, its left edge at x ≈ 416; at 58 units' radius beside the title the gap
   was too small for 1100px. The range's glow first had a hard edge where its ellipse cut the
   gradient. In the chant miniature the ring, the range and the cup carry it.
@@ -1502,7 +1502,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-sway` (the mango leaves), `m-twinkle` (the powers), `m-breathe` (her two lights),
   `m-shimmer` (the glows and the joins), and the lamp's `m-flicker`. The still light has none.
-- **Notes:** This title stays on one line, reaching x ≈ 150 at y ≈ 61–118, so the still light sits
+- **Notes:** This title stays on one line, reaching x ≈ 150 at y ≈ 84–147, so the still light sits
   at the middle of the crown. Lines from it to either side would have put it inside something, so
   there are none. The doorway first stood with its top behind the card's lower edge. The cup was
   promoted into `primitives.tsx` (`NectarCup`), and Shloka 36 renders byte-for-byte as before. In
@@ -1528,7 +1528,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-shimmer` (the channel's glow, the sun's rays), `m-breathe` (her two lights, the
   cuts), `m-lick` (the glints).
-- **Notes:** This title stays on one line at 1280px and reaches x ≈ 472 at y ≈ 61–118, so the
+- **Notes:** This title stays on one line at 1280px and reaches x ≈ 472 at y ≈ 84–147, so the
   thousand-petalled lotus sits under it (y ≈ 126–198), and nothing else is in the crown. At their
   first size the centres were too small to read and the channel's glow was a capsule with hard
   ends. In the chant miniature the lit channel and the two lit centres carry it.
@@ -1600,7 +1600,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-sway` (the trees), `m-twinkle` (the chips, the motes), `m-breathe` (her light,
   the clearing), `m-shimmer` (the glows). The lamp is still on purpose.
-- **Notes:** This title stays on one line, reaching x ≈ 238 at y ≈ 61–118, so her light and Bhava's
+- **Notes:** This title stays on one line, reaching x ≈ 238 at y ≈ 84–147, so her light and Bhava's
   crescent sit at x ≈ 392 and 478. The axe first lay at a slant across the clearing with its blade
   up, where the blade read as a white bird; it now stands in the stump, blade down. The axe was
   promoted into `primitives.tsx` (`Axe`), and Shloka 32 renders byte-for-byte as before. In the
