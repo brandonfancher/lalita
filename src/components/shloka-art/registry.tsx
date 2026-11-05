@@ -12,6 +12,7 @@ import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
 import { MantraBody } from "./mantra-body";
+import { RootMantra } from "./root-mantra";
 import { Sanjivani } from "./sanjivani";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
@@ -1311,6 +1312,51 @@ export const ARTWORK: Record<string, Artwork> = {
           The two seams are at the throat and the waist, where the names divide her. Before the hymn is recited the
           three clusters are placed on the reciter&apos;s own body at the same places, so in the nyāsa the reciter builds
           this body on his own.
+        </>
+      ),
+    },
+  },
+  "036": {
+    Art: RootMantra,
+    intro: (Spot) => (
+      <>
+        <Spot part="light">Her light</Spot> is in the crown, at the right, and everything else in the picture comes
+        from it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 88,
+        part: "mantra",
+        depicts:
+          "In the crown her light is ringed by the whole root mantra, fifteen syllables round her in the colours of their three clusters, with the three ह्रीं that close the clusters set into the ring. The mantra is not round her as a frame is round a picture; it is what she is made of.",
+      },
+      {
+        nama: 89,
+        part: "range",
+        depicts:
+          "Below the card the three clusters stand together on one ground line as a single range of three peaks, speech, desire and power, the middle one highest: her frame.",
+      },
+      {
+        nama: 90,
+        part: "nectar",
+        depicts:
+          "From the ring a thin fall of nectar comes down at the right into a brimming cup. Whether it falls from the crown of the head or is poured in the rite, the two readings the commentators give, the picture does not say.",
+      },
+      {
+        nama: 91,
+        part: "compact",
+        depicts:
+          "Under the range lies the kula's compact, a palm-leaf book bound shut with a vermilion cord and sealed. She keeps it, which here means she decides who is told.",
+      },
+    ],
+    detail: {
+      part: "seal",
+      body: (
+        <>
+          The seal on the book carries only a small downward triangle, the sign of the goddess. Whatever is written
+          inside is not drawn: the fifteen syllables themselves are given at initiation, and this plate, like the
+          printed manuals, leaves them out.
         </>
       ),
     },

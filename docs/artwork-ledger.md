@@ -197,6 +197,9 @@ second time it is needed.
 | A cluster of the mantra (kūṭa) | A summit, as the word says: a dotted gold peak whose flanks carry its syllables as small `--art-core` lights with gold rims in their own glows (`m-twinkle`), shared out between the two flanks, and at the top a gold disc engraved in `--art-carve` with ह्रीं (Tiro Devanagari), the hṛllekhā that closes every cluster. The other syllables are given at initiation and are never written. The speech cluster (vāgbhava) has five syllables in all, the middle (kāmarāja) six, the śakti cluster four | `summit` and `Summit` in `primitives.tsx` (promoted at Shloka 35, used by Shlokas 34 and 35) | Shloka 34 |
 | Her face (mukha-paṅkaja) | A lotus (`OpenLotus`, 1.45 times), in her glow, with the speech cluster rising over it | Inline (`sanjivani.tsx`) | Shloka 34 |
 | Her mantra-body | Never a figure: her light as a tall column (an elliptical `--art-glow` glow, 320 by 640), crossed by two seams at the throat and the waist, each a gold line with slanting gold stitches and a gold knot at each end. Above the throat, her face as in Shloka 34 (a lotus and the speech cluster, its lights in `--art-core` glows); between the seams the middle cluster in `--lotus` glows over a faint rosy region; below the waist the śakti cluster in `--art-vermilion` glows, standing on a lotus | Inline (`mantra-body.tsx`) | Shloka 35 |
+| The root mantra whole (mūlamantra) | Fifteen syllables on a dotted gold ring round her bindu, clockwise from the top, each in its cluster's colour (`--art-core`, `--lotus`, `--art-vermilion` glows, as in Shloka 35), the 5th, 11th and 15th the three ह्रीं on small gold discs. The three clusters standing side by side on one gold ground line, the middle highest, are her frame (kalevara) | Inline (`root-mantra.tsx`) | Shloka 36 |
+| Nectar (amṛta) of the kula | A thin fall, a gradient from transparent `--art-moon` to `--art-ivory`, with three `--art-ivory` drops (`m-twinkle`), into a small footed gold cup brimming with an ivory surface, in a moon glow. Falling from the crown or poured in the rite: the picture keeps both readings | Inline (`root-mantra.tsx`) | Shloka 36 |
+| The kula's compact (saṅketa) | A palm-leaf book (pothi), `--art-turmeric` leaves between gold boards, bound shut with an `--art-vermilion` cord through two holes, knotted at an `--art-vermilion` seal with a gold rim engraved with a small downward triangle. Nothing inside it is drawn | Inline (`root-mantra.tsx`) | Shloka 36 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1413,6 +1416,29 @@ One entry per finished artwork, in the order they were made.
   are in the band above the fade. At its first heights the peaks stood close and tall, like three
   trees. The summit was promoted into `primitives.tsx` (`summit`, `Summit`), and Shloka 34 renders
   byte-for-byte as before. In the chant miniature the column and the three clusters carry it.
+
+### Shloka 36: Made of the root mantra, sworn to the kula
+
+- **Component:** `root-mantra.tsx` (defs prefix `sa36`)
+- **Composition:** the last two verses' argument stated flatly, and then the kula. In the crown at
+  the right her light is ringed by the whole root mantra, fifteen syllables with the three ह्रीं in
+  the ring. Below the card the three clusters stand together on one ground line as a range of three
+  peaks, her frame. From the ring a thin fall of nectar comes down the right margin into a brimming
+  cup. Under the range lies the kula's compact, a palm-leaf book bound and sealed.
+- **Name → part:**
+  - Mūlamantrātmikā → `mantra`: the ring of fifteen syllables
+  - Mūlakūṭatrayakalevarā → `range`: the three peaks, their ground line and glow
+  - Kulāmṛtaikarasikā → `nectar`: the fall, the drops and the cup
+  - Kulasaṅketapālinī → `compact`: the bound book and its cord
+  - Intro, *her light* → `light`: her bindu and its glow
+  - Detail → `seal`: the seal and its triangle
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the syllables, the drops), `m-breathe` (her bindu, the ह्रीं),
+  `m-shimmer` (the glows), and the summits' own.
+- **Notes:** This title stays on one line at 1280–1440px and reaches x ≈ 370 at y ≈ 61–118, so the
+  ring sits at the right, its left edge at x ≈ 416; at 58 units' radius beside the title the gap
+  was too small for 1100px. The range's glow first had a hard edge where its ellipse cut the
+  gradient. In the chant miniature the ring, the range and the cup carry it.
 
 ## Open questions
 
