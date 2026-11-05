@@ -57,6 +57,7 @@ import { WhatItHoldsUp } from "./what-it-holds-up";
 import { WheelStopped } from "./wheel-stopped";
 import { WholeImage } from "./whole-image";
 import { WitnessOfTheDance } from "./witness-of-the-dance";
+import { YoginiTemple } from "./yogini-temple";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -2653,6 +2654,45 @@ export const ARTWORK: Record<string, Artwork> = {
           dancers finished his dance he beat his drum nine times and five, and the fourteen sounds became the fourteen
           sūtras with which Pāṇini begins: they are called the Māheśvara sūtras, after the same Maheśvara as this
           name.
+        </>
+      ),
+    },
+  },
+  "058": {
+    Art: YoginiTemple,
+    intro: (Spot) => (
+      <>
+        Sixty-four is said three times, and the picture is drawn where the third sixty-four was worshipped: a{" "}
+        <Spot part="temple">yoginī temple</Spot>, round, roofless, and lined inside with niches, as the ones at
+        Hirapur and Bheraghat still are. In the middle stands her <Spot part="light">light</Spot> on a round seat.
+      </>
+    ),
+    entries: [
+      {
+        nama: 235,
+        part: "services",
+        depicts:
+          "Over her are the parasol, the mirror and the fan, which come near the end of the sixty-four services. The whole rite is one long morning of hospitality, from taking off her old ornaments to the bath, the silks, the jewels and the weapons, and it closes with the five offerings with which an ordinary worship begins.",
+      },
+      {
+        nama: 236,
+        part: "arts",
+        depicts:
+          "Round her on the floor lie eight of the sixty-four arts: a vīṇā, a drum, anklet bells for dance, a brush and colours, a garland, a gem on its touchstone, a palm-leaf book, and a parrot being taught to talk. She is not served by them but made of them, the household knack as much as the high art.",
+      },
+      {
+        nama: 237,
+        part: "yoginis",
+        depicts:
+          "In every niche of the wall a yoginī burns as a small flame facing the centre, and more come down out of the open sky in flocks, eight to a flock: a gaṇa is a troop and a flock alike, and sixty-four crores is a number meant to be beyond counting.",
+      },
+    ],
+    detail: {
+      part: "moon",
+      body: (
+        <>
+          Inside the wheel of flocks the moon shows one thin digit. That digit is a kalā too, the same word as
+          the arts of the second name: a part of something larger, a sixteenth of the moon, a skill that can be taught.
         </>
       ),
     },

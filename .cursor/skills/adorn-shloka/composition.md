@@ -59,7 +59,7 @@ compose within it.
   line at 1280–1440px, reaching x ≈ 461 at y ≈ 74–141, but wraps at 1100px; Shloka 19's stays on one
   line and reaches x ≈ 382 (434 at 1100px). The titles of Shlokas 17, 18 and 20–25 wrap at every
   desktop width, with second lines that reach anywhere from x ≈ −4 (Shloka 24) to x ≈ 191 (Shloka
-  22, 243 at 1100px). Of Shlokas 26–52, only 39's and 40's wrap. Shloka 53's wraps to two lines at y ≈ 40–137, its second line reaching x ≈ 332 (about 384 at 1100px). Shloka 54's wraps too, but its second line reaches only x ≈ 104 (156 at 1100px). Shloka 55's wraps, its second line reaching x ≈ 187 (239 at 1100px) at y ≈ 122–189. Shloka 56's wraps, its second line reaching only x ≈ 65 (117 at 1100px). Shloka 57's stays on one line and reaches x ≈ 374 (426 at 1100px) at y ≈ 74–141. The rest stay on one line, at
+  22, 243 at 1100px). Of Shlokas 26–52, only 39's and 40's wrap. Shloka 53's wraps to two lines at y ≈ 40–137, its second line reaching x ≈ 332 (about 384 at 1100px). Shloka 54's wraps too, but its second line reaches only x ≈ 104 (156 at 1100px). Shloka 55's wraps, its second line reaching x ≈ 187 (239 at 1100px) at y ≈ 122–189. Shloka 56's wraps, its second line reaching only x ≈ 65 (117 at 1100px). Shloka 57's stays on one line and reaches x ≈ 374 (426 at 1100px) at y ≈ 74–141. Shloka 58's stays on one line and reaches only x ≈ 162 (214 at 1100px). The rest stay on one line, at
   y ≈ 84–147, and reach x ≈ 24 to 480. Shlokas 26–28, 44, 51 and 52 stay left of the artwork. Shloka 47
   reaches only x ≈ 24 (76 at 1100px), 42 reaches x ≈ 58, 49 reaches 78 (130 at 1100px), 37 reaches 150, 33 reaches 160, 34
   reaches 170, 30 reaches 176, 32 reaches 180, 35 reaches 190, 46 and 48 reach 198 (250 at

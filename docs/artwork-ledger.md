@@ -328,6 +328,12 @@ second time it is needed.
 | A field of ash (after the fire) | A broad flat ellipse of ash under the scene (236 by 62), an `--art-musk` gradient with an `--art-moon` one over it as `Ash` does, a low saffron firelight where it meets the fire, five long faint drift lines, six low heaps, and cinders: musk flecks, and one in three `--art-ember` with a small glow. The `Ash` clouds alone, spread as a ground, read as grey smudges | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
 | A throne for two (his seat and hers) | One broad seat: a stone back with a scalloped top and two inset panels (his `--gold-soft`, hers `--art-saffron`), a scroll rolled out at each top corner, a gold centre post with a bud finial between the seats, turmeric-and-gold armrests rolled into volutes, two vermilion cushions, a riser slab, a stone base with vermilion lozenges and gold feet. His seat is marked by his crescent (the fourth night's `litPart`, horns up) on a stalk above his panel. Two separate arched backs read as doorways, or as a sun and moon | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
 | The three cities (tripura) | Three small walled towns seen from the front, 68 wide: four domed towers behind a wall with merlons and an arched gate lit from within. Gold (`--art-turmeric` wall, gold towers), silver (`--art-moon`) and iron (`--art-hair`), joined by a dotted gold triangle | Inline (`witness-of-the-dance.tsx`) | Shloka 57 |
+| A round yoginī temple (catuḥṣaṣṭi-yoginī mandira), roofless | Seen from in front and a little above, below the card: a stone floor ellipse (206 by 92) under a saffron court glow, a wall 46 high whose far half shows its inside face lined with round-headed `--art-carve` niches (one per sixty-fourth of the ring, narrowed as the wall turns away), a rim drawn as one evenodd ring, and a near outer face with a `--gold-soft` plinth and coping and a blind niche in every other bay. One gabled porch at the front with an arched door lit from within, three steps. A low wall with no thickness read as a tray, and pilasters on the outer face as a fence | Inline (`yogini-temple.tsx`) | Shloka 58 |
+| A yoginī as a flame in her niche | A `tongue(13, 5.6, 0.6)` on a vermilion-to-core gradient at the foot of each far niche, facing the centre, scaled with the niche, on a small core glow (`m-breathe`, staggered) | Inline (`yogini-temple.tsx`) | Shloka 58 |
+| A flock of lights (gaṇa) | Eight `--art-core` points in rings of glow, flying as a wide V (each arm about 58° off the heading, four lights to an arm, the arms bowed a little) with its point leading (`m-twinkle`, staggered). Acute V's read as the letter V, and a trail behind each light as tadpoles. Six wheel on a faint dashed gold ellipse in the sky, the near ones larger, and two peel off down dashed paths for the open roof | Inline (`yogini-temple.tsx`) | Shloka 58 |
+| A palm-leaf fan and a service mirror (vyajana, darpaṇa), offered | Crossed behind her parasol's staff on long handles. The fan: eleven pleats fanned round a disc, `--art-turmeric` and `--gold-soft` by turns, a `--art-vermilion` binding at the edge, on a turmeric handle; a round head with no pleats read as a paddle. The mirror: a small gold disc with an `--art-moon` face and one core sheen stroke on a gold handle, kept plain so it is a thing offered, not her face (Shloka 12) or the ruby standard (Shloka 9) | Inline (`yogini-temple.tsx`, with `Parasol`) | Shloka 58 |
+| Emblems of the sixty-four arts | Eight small things laid on a ring round her seat, each about 34 across at 1.15 on a faint shadow: a `Vina` at 0.4, a turmeric drum with vermilion lacing and ivory heads, an anklet ring with seven `Bell`s at 0.3, a brush on an ivory palette with three colours, a garland of ivory and vermilion flowers, a `Ruby` on a dark touchstone with a gold streak, a palm-leaf book between turmeric boards with a vermilion cord, a `--leaf` parrot on a perch | Inline (`yogini-temple.tsx`) | Shloka 58 |
+| Young paddy | Rows of three-blade `--leaf` tufts at 0.6, larger and wider apart toward the viewer, kept off the path to the door and clear of the temple's foot | Inline (`yogini-temple.tsx`) | Shloka 58 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2236,6 +2242,40 @@ One entry per finished artwork, in the order they were made.
   were promoted into `primitives.tsx`, and `Damaru` gained `hung={false}`; Shlokas 3, 33, 43 and 56
   render byte-for-byte as before. In the chant miniature the ring of fire and the lit throne inside
   it carry it.
+
+### Shloka 58: The yoginī temple
+
+- **Component:** `yogini-temple.tsx` (defs prefix `sa58`)
+- **Composition:** one number said three times, drawn where the third sixty-four was worshipped. Below
+  the card a round yoginī temple, roofless as at Hirapur and Bheraghat, seen from in front and a
+  little above, with its one door at the front and young paddy round it. Every niche of its far wall
+  holds a yoginī as a small flame facing the centre. In the middle her light stands on a round seat
+  under the royal parasol, with the mirror and the fan held up either side, the last of the
+  services; round her on the floor lie eight of the sixty-four arts. In the crown, right of the
+  title, flocks of lights wheel in a ring in the sky, and two peel off and come down for the open
+  roof, while a soft glow rises out of the court to meet them. The first temple seen whole from
+  outside, and the first flocks.
+- **Name → part:**
+  - Catuḥṣaṣṭyupacārāḍhyā → `services`: the parasol and its staff, the mirror, the fan
+  - Catuḥṣaṣṭikalāmayī → `arts`: the eight emblems on the floor
+  - Mahācatuḥṣaṣṭikoṭiyoginīgaṇasevitā → `yoginis`: the flames in the niches, the flocks, the wheel
+    and the ways down
+  - Intro, *yoginī temple* → `temple`: the wall, floor, niches, porch, steps and paddy;
+    *light* → `light`: her light, its seat and cushion, her glow and the glow rising from the court
+  - Detail → `moon`: one thin digit of the moon inside the wheel of flocks, a kalā like the arts of
+    the second name
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the flames in the niches), `m-twinkle` (the flocks), `m-shimmer` (her
+  glow).
+- **Notes:** This title stays on one line, reaching x ≈ 162 (214 at 1100px) at y ≈ 74–141, so the
+  wheel of flocks sits right of it (x ≈ 238–570, y ≈ 44–148). The temple was first a low wall with
+  pilasters and read as a tray behind a fence; it has a thick rim, a plinth and coping and blind
+  niches now. The flocks were first acute V's and read as the letter V, then each light had a trail
+  and they read as tadpoles. A trapezoid path from the door read as a spotlight beam and went. The
+  plate fell into a sky piece and a temple piece until two flocks came down dashed paths and the
+  glow rose from the court. The royal parasol was promoted into `primitives.tsx` (`Parasol`), and
+  Shloka 1 renders byte-for-byte as before. In the chant miniature the glowing round of the temple
+  carries it.
 
 ## Open questions
 
