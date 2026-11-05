@@ -434,7 +434,7 @@ export function OneInManyPots({ idPrefix = "sa54", active = null }: ArtProps) {
           <g key={`l${i}`} transform={`translate(${l.x} ${l.y}) scale(${l.s})`}>
             <path d="M -8 4 L 8 4" stroke="var(--art-core)" strokeWidth={1.2} strokeOpacity={0.5} strokeLinecap="round" />
             <path d="M -9 -1 C -6 4 6 4 9 -1 C 4 0 -4 0 -9 -1 Z" fill="var(--leaf)" stroke="var(--gold)" strokeWidth={0.5} />
-            <path className={i === 1 ? "m-lick" : "m-flicker"} d={tongue(8, 3, 0.4)} transform="translate(0 -0.5)" fill="var(--art-saffron)" />
+            <path className={i === 1 ? "m-flicker m-late" : "m-flicker"} d={tongue(8, 3, 0.4)} transform="translate(0 -0.5)" fill="var(--art-saffron)" />
             <path d={tongue(4, 1.4, 0.2)} transform="translate(0 -0.5)" fill="var(--art-core)" />
           </g>
         ))}
@@ -469,12 +469,12 @@ export function OneInManyPots({ idPrefix = "sa54", active = null }: ArtProps) {
           ))}
         </g>
         {FLAMES.map((f, i) => (
-          <path key={i} className={i === 1 ? "m-flicker" : "m-lick"} d={tongue(f.h, f.w, f.lean)} transform={`translate(${f.x} ${f.y})`} fill={i === 1 ? "var(--art-saffron)" : "var(--art-vermilion)"} />
+          <path key={i} className={i === 1 ? "m-flicker" : "m-flicker m-late"} d={tongue(f.h, f.w, f.lean)} transform={`translate(${f.x} ${f.y})`} fill={i === 1 ? "var(--art-saffron)" : "var(--art-vermilion)"} />
         ))}
         <path d={tongue(14, 4.6, 0.6)} transform="translate(495 459)" fill="var(--art-core)" />
         <g fill="var(--art-ember)">
           {ASH.map((a, i) => (
-            <circle key={i} className={["m-ember", "m-ember m-late", "m-ember m-later"][a.g]} cx={a.x} cy={a.y} r={a.r} />
+            <circle key={i} className={TWINKLE[a.g]} cx={a.x} cy={a.y} r={a.r} />
           ))}
         </g>
       </g>
