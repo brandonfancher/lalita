@@ -15,6 +15,7 @@ import { NityasOnslaught } from "./nityas-onslaught";
 import { BalasArrows } from "./balas-arrows";
 import { GlanceAndASon } from "./glance-and-a-son";
 import { AnsweringRain } from "./answering-rain";
+import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1177,6 +1178,39 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           On the broken pieces you can still see what Viśukra cut into the slab: an eight-angled figure with a trident
           at each of its eight points, where the eight powers of obstruction, led by Alasā, Sloth, were posted.
+        </>
+      ),
+    },
+  },
+  "032": {
+    Art: TenDescents,
+    intro: (Spot) => (
+      <>
+        Her two arms rise from <Spot part="light">her light</Spot> as beams, empty-handed, and the hands are drawn
+        only as <Spot part="nails">their nails</Spot>: five small moons at the end of each beam, as her toenails were
+        in Shloka 19, with light coming off them.
+      </>
+    ),
+    entries: [
+      {
+        nama: 80,
+        part: "forms",
+        depicts:
+          "Round the card, out of that light, come the forms of the purāṇa's table, each with a little light of its own: the fish, the tortoise, the boar, the man-lion, the dwarf's umbrella and water pot, Paraśurāma's axe, Rāma's bow, the four lights of the fourfold Vāsudeva, and Kalki's white horse under a raised sword.",
+      },
+      {
+        nama: 81,
+        part: "pasupata",
+        depicts:
+          "Below, the great Pāśupata, a trident-headed shaft of fire, flies low across the plate. Behind it the demon host is nothing but flame and rising embers, and ahead of it is the last of their ash.",
+      },
+    ],
+    detail: {
+      part: "narasimha",
+      body: (
+        <>
+          The man-lion is drawn with his claws showing. Narasiṃha killed with his nails because no weapon was allowed
+          against the demon, so the form that comes out of her nails is itself a form about nails.
         </>
       ),
     },
