@@ -204,6 +204,9 @@ second time it is needed.
 | The kula as the assembly of powers | Eight small `--art-vermilion` lights with gold rims in vermilion glows, on a ring round her light, each joined to the next by a gold hairline bowed a little inward. Spokes from her to each made a wheel | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
 | The centres of the body (inward worship) | A slender gold column (a gradient fading at both ends) through six small `OpenLotus`es without pads, the fourth, the heart, larger, with her light in it | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
 | Akula, beyond the kula | A pale still light with nothing round it and no motion: an `--art-moon` disc with a gold rim and an ivory heart, one faint gold ring, a wide moon glow and a faint saffron tint so it shows by day. Joined to nothing | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
+| A centre of the subtle body (cakra) | A small lotus seen face on (`yantraPetals`), its petals filled in the centre's colour (75% lit, 18% unlit) with a gold outline (35% unlit), round a gold circle holding its element's sign (`tattvaSign`): the root centre four `--art-crimson` petals round the `--art-turmeric` square of earth; the svādhiṣṭhāna six `--art-vermilion`; the navel wheel ten `--art-hair` (the traditional dark blue) round the downward `--art-vermilion` triangle of fire; the heart twelve `--art-vermilion`; the throat sixteen `--lotus`; the brow two `--art-ivory` petals as wings. Lit, it has a glow in its own colour. The thousand-petalled lotus is three rings of 40, 52 and 64 fine petals | Inline (`first-two-knots.tsx`) | Shloka 38 |
+| The channel (suṣumnā) | A vertical line on the axis: lit, a 2.2-unit gradient from `--art-core` at the root to gold, fading out above the highest centre reached, in a tall soft `--art-glow` glow; unlit, a dotted gold hairline at 35% | Inline (`first-two-knots.tsx`) | Shloka 38 |
+| A knot (granthi), split | A cord wound round the channel, seen a little from above (an ellipse 52 by 14), `--art-musk` 2.4 wide with an `--art-moon` hairline, cut through at the front, its two halves pushed 6 apart with a few frayed strands at each cut end, a soft core glow and a `glint` between them. Drawn as loops with trailing ends, a split knot over a lotus made a moustache over a face | Inline (`first-two-knots.tsx`) | Shloka 38 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1471,6 +1474,31 @@ One entry per finished artwork, in the order they were made.
   there are none. The doorway first stood with its top behind the card's lower edge. The cup was
   promoted into `primitives.tsx` (`NectarCup`), and Shloka 36 renders byte-for-byte as before. In
   the chant miniature the doorway, the column and the two lights carry it.
+
+### Shloka 38: The root centre, the navel, and the first two knots
+
+- **Component:** `first-two-knots.tsx` (defs prefix `sa38`)
+- **Composition:** the hymn turns inward. A channel of light runs up the middle of the plate
+  through the six centres. At the foot the root centre, with her light seated in its square of
+  earth; above it the knot of Brahmā, split; then the navel wheel with her light coming up inside
+  it like the sun over the horizon (`sunRays`, half-risen); above that the knot of Viṣṇu, split.
+  The channel is lit that far. Above, behind the card, the centres the verse passes over are faint
+  and unlit, and so is the thousand-petalled lotus under the title.
+- **Name → part:**
+  - Mūlādhāraikanilayā → `root`: the root centre, its glow, the square of earth and her light in it
+  - Brahmagranthivibhedinī → `brahma`: the first knot, split
+  - Maṇipūrāntaruditā → `manipura`: the navel wheel, the triangle and her light rising in it
+  - Viṣṇugranthivibhedinī → `visnu`: the second knot, split
+  - Intro, *a channel of light* → `channel`: the channel, lit and unlit, and its glow
+  - Detail → `silent`: the svādhiṣṭhāna, heart, throat and brow centres, and the unlit
+    thousand-petalled lotus
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the channel's glow, the sun's rays), `m-breathe` (her two lights, the
+  cuts), `m-lick` (the glints).
+- **Notes:** This title stays on one line at 1280px and reaches x ≈ 472 at y ≈ 61–118, so the
+  thousand-petalled lotus sits under it (y ≈ 126–198), and nothing else is in the crown. At their
+  first size the centres were too small to read and the channel's glow was a capsule with hard
+  ends. In the chant miniature the lit channel and the two lit centres carry it.
 
 ## Open questions
 

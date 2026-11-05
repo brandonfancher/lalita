@@ -7,6 +7,7 @@ import { ElephantsAndHorses } from "./elephants-and-horses";
 import { EmptyCity } from "./empty-city";
 import { FireOfAwareness } from "./fire-of-awareness";
 import { FirstRainQuivers } from "./first-rain-quivers";
+import { FirstTwoKnots } from "./first-two-knots";
 import { FloweringHair } from "./flowering-hair";
 import { GoldAndPearls } from "./gold-and-pearls";
 import { GrownStake } from "./grown-stake";
@@ -1419,6 +1420,49 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           On the household&apos;s threshold is a kolam, the line of rice-flour dots and loops the woman of the house draws at
           her door each morning.
+        </>
+      ),
+    },
+  },
+  "038": {
+    Art: FirstTwoKnots,
+    intro: (Spot) => (
+      <>
+        The hymn turns inward here, to the body of whoever is chanting. <Spot part="channel">A channel of light</Spot>{" "}
+        runs up the middle of the plate through the centres, lit from the root as far as the second knot.
+      </>
+    ),
+    entries: [
+      {
+        nama: 99,
+        part: "root",
+        depicts:
+          "At the foot is the root centre, a lotus of four petals round the yellow square of earth, and her light is seated in it.",
+      },
+      {
+        nama: 100,
+        part: "brahma",
+        depicts:
+          "Just above it the knot of Brahmā, the first of the three cords tied across the channel, is split, its two halves pushed apart and the light going up between them.",
+      },
+      {
+        nama: 101,
+        part: "manipura",
+        depicts:
+          "Higher up is the navel wheel, ten petals round the downward triangle of fire, and inside it her light comes up into view like the sun on the horizon: uditā is the word for a sunrise.",
+      },
+      {
+        nama: 102,
+        part: "visnu",
+        depicts: "Above the navel the knot of Viṣṇu, the second cord, is split in the same way.",
+      },
+    ],
+    detail: {
+      part: "silent",
+      body: (
+        <>
+          The verse names only two of the centres it passes. The others are drawn faint and unlit, and so is the
+          thousand-petalled lotus at the top: the third knot is still tied, and the next verse finishes the climb.
         </>
       ),
     },

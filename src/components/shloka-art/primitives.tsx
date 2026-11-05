@@ -470,7 +470,7 @@ export function BeeString({ from, to, spacing = 8 }: { from: Pt; to: Pt; spacing
 export type Tattva = "space" | "air" | "fire" | "water" | "earth";
 
 /** The traditional sign of each element, centred on the origin, about 2s across. */
-function tattvaSign(t: Tattva, s: number) {
+export function tattvaSign(t: Tattva, s: number) {
   const p = round;
   switch (t) {
     case "space":
