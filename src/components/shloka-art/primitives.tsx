@@ -2824,3 +2824,147 @@ export function Elephant({ trunk, url, children }: { trunk: string; url: (name: 
     </>
   );
 }
+
+/* ── Balance (tulā) ────────────────────────────────────────────────────── */
+
+const BALANCE_CX = 320;
+const BALANCE_PIVOT = { x: BALANCE_CX, y: 150 };
+const BALANCE_HALF = 150;
+const BALANCE_RING_DROP = 11;
+/** Each pan of a balance: a shallow bowl, `rx` across, `ry` deep at its rim, `depth` to its foot. */
+export const BALANCE_PAN = { rx: 60, ry: 12, depth: 24 };
+
+function balancePanShapes(end: Pt, { x, y }: Pt) {
+  const { rx, ry, depth } = BALANCE_PAN;
+  const ringY = end.y + BALANCE_RING_DROP;
+  const top = round(ringY + 4);
+  return {
+    hook: `M ${end.x} ${end.y + 3} V ${round(ringY - 4)}`,
+    ring: { x: end.x, y: ringY },
+    cords: `M ${x} ${top} L ${x - rx + 1} ${y} M ${x} ${top} L ${x + rx - 1} ${y}`,
+    backCord: `M ${x} ${top} L ${x} ${y - ry}`,
+    bowl: `M ${x - rx} ${y} A ${rx} ${ry} 0 0 0 ${x + rx} ${y} C ${x + rx - 2} ${y + 16} ${round(x + 30)} ${y + depth} ${x} ${y + depth} C ${round(x - 30)} ${y + depth} ${x - rx + 2} ${y + 16} ${x - rx} ${y} Z`,
+    band: `M ${x - rx + 4} ${y + 6} A ${rx - 4} ${ry} 0 0 0 ${x + rx - 4} ${y + 6}`,
+    sheen: `M ${x - rx + 10} ${y + 8} Q ${x - rx + 16} ${y + 18} ${x - 26} ${y + 21}`,
+    beads: Array.from({ length: 17 }, (_, k) => {
+      const phi = ((10 + k * 10) * Math.PI) / 180;
+      return { x: round(x + rx * Math.cos(phi)), y: round(y + ry * Math.sin(phi)) };
+    }),
+    finial: { x, y: y + depth + 3 },
+  };
+}
+
+export type BalancePan = { end: Pt; at: Pt; shapes: ReturnType<typeof balancePanShapes> };
+export type BalanceGeometry = { tilt: number; pans: [BalancePan, BalancePan] };
+
+/**
+ * A balance hung from a chain at x 320, y 0, its pivot at y 150, the beam
+ * tipped `tilt` degrees down to the left and each pan hung `cord` below the
+ * ring at its end of the beam. Draw it with `Balance`; put things in a pan at
+ * `pans[i].at`, swinging with it from `balanceSwing(pans[i].end)`.
+ */
+export function balance(tilt: number, cord: number): BalanceGeometry {
+  const t = (tilt * Math.PI) / 180;
+  const pan = (side: -1 | 1): BalancePan => {
+    const end = { x: round(BALANCE_CX + side * BALANCE_HALF * Math.cos(t)), y: round(BALANCE_PIVOT.y - side * BALANCE_HALF * Math.sin(t)) };
+    const at = { x: end.x, y: round(end.y + BALANCE_RING_DROP + cord) };
+    return { end, at, shapes: balancePanShapes(end, at) };
+  };
+  return { tilt, pans: [pan(-1), pan(1)] };
+}
+
+/** Where a pan swings from: the hook under its end of the beam. */
+export const balanceSwing = (end: Pt) => swingFrom({ x: end.x, y: end.y + 4 });
+
+/** The beam, drawn level about the pivot and then turned: thickest at the middle, tapering to bud finials. */
+const BALANCE_BEAM = "M -144 -3.4 L -16 -6.2 Q 0 -8.4 16 -6.2 L 144 -3.4 L 144 3.4 L 16 6.2 Q 0 8.4 -16 6.2 L -144 3.4 Z";
+const BALANCE_BEAM_BANDS = [-100, -54, 54, 100];
+const BALANCE_BUD = "M 0 -5.6 C 6 -5.6 12 -3.6 18 0 C 12 3.6 6 5.6 0 5.6 Z";
+/** The tongue stands at right angles to the beam, so it leans with it toward the heavier pan. */
+const BALANCE_TONGUE = 84;
+/** The fork the tongue swings in, hung from the chain; level, the tongue sits under the red mark at its top. */
+const BALANCE_FORK = { top: 56, half: 18, bar: 5 };
+const BALANCE_CHAIN = Array.from({ length: 4 }, (_, k) => ({ y: 3 + k * 9.6, flat: k % 2 === 1 }));
+
+/**
+ * The gold balance of `balance()`: chain, fork, tongue, beam, and both pans.
+ * `sway` gives each pan's motion class; `inside` whether its gold-soft inside
+ * is drawn (leave it out where the pan is filled).
+ */
+export function Balance({ b, sway = [undefined, undefined], inside = [true, true] }: { b: BalanceGeometry; sway?: [string | undefined, string | undefined]; inside?: [boolean, boolean] }) {
+  const CX = BALANCE_CX;
+  const PIVOT = BALANCE_PIVOT;
+  const FORK = BALANCE_FORK;
+  const PAN = BALANCE_PAN;
+  return (
+    <>
+      <g stroke="var(--gold)" strokeWidth={2}>
+        {BALANCE_CHAIN.map((l, k) =>
+          l.flat ? (
+            <line key={k} x1={CX} y1={l.y - 5} x2={CX} y2={l.y + 5} />
+          ) : (
+            <ellipse key={k} cx={CX} cy={l.y} rx={3.2} ry={6} />
+          ),
+        )}
+      </g>
+      <circle cx={CX} cy={37} r={5.6} stroke="var(--gold)" strokeWidth={2.2} />
+      <g fill="var(--gold)">
+        <path d={`M ${CX} 42 C ${CX + 8} 45 ${CX + 9} 51 ${CX + 6} ${FORK.top} L ${CX - 6} ${FORK.top} C ${CX - 9} 51 ${CX - 8} 45 ${CX} 42 Z`} />
+        <rect x={CX - FORK.half - 8} y={FORK.top} width={2 * FORK.half + 16} height={7} rx={3} />
+        <circle cx={CX - FORK.half - 8} cy={FORK.top + 3.5} r={4} />
+        <circle cx={CX + FORK.half + 8} cy={FORK.top + 3.5} r={4} />
+      </g>
+      <path d={`M ${CX - 3.6} ${FORK.top + 7} L ${CX + 3.6} ${FORK.top + 7} L ${CX} ${FORK.top + 15} Z`} fill="var(--art-vermilion)" />
+
+      <g transform={`rotate(${-b.tilt} ${PIVOT.x} ${PIVOT.y})`}>
+        <path
+          d={`M ${CX - 2.8} ${PIVOT.y} L ${CX - 0.9} ${PIVOT.y - BALANCE_TONGUE + 6} L ${CX} ${PIVOT.y - BALANCE_TONGUE} L ${CX + 0.9} ${PIVOT.y - BALANCE_TONGUE + 6} L ${CX + 2.8} ${PIVOT.y} Z`}
+          fill="var(--gold)"
+          stroke="var(--art-carve)"
+          strokeWidth={0.4}
+        />
+        <g transform={`translate(${PIVOT.x} ${PIVOT.y})`}>
+          <path d={BALANCE_BEAM} fill="var(--gold)" />
+          <path d="M -138 0 L 138 0" stroke="var(--art-carve)" strokeWidth={0.7} strokeOpacity={0.8} />
+          <g fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.4}>
+            {BALANCE_BEAM_BANDS.map((x) => (
+              <rect key={x} x={x - 3} y={-7} width={6} height={14} rx={2} />
+            ))}
+          </g>
+          <path d={BALANCE_BUD} transform="translate(142 0)" fill="var(--gold)" />
+          <path d={BALANCE_BUD} transform="translate(-142 0) scale(-1 1)" fill="var(--gold)" />
+          <circle r={12.5} fill="var(--gold)" />
+          <circle r={9} stroke="var(--art-carve)" strokeWidth={0.8} />
+        </g>
+      </g>
+      <g fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5}>
+        <rect x={CX - FORK.half - FORK.bar} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
+        <rect x={CX + FORK.half} y={FORK.top + 6} width={FORK.bar} height={PIVOT.y - FORK.top} rx={2} />
+      </g>
+      <circle cx={PIVOT.x} cy={PIVOT.y} r={4} fill="var(--gold-soft)" stroke="var(--art-carve)" strokeWidth={0.8} />
+
+      {b.pans.map(({ end, at, shapes: s }, i) => (
+        <g key={i}>
+          <path d={s.hook} stroke="var(--gold)" strokeWidth={2} strokeLinecap="round" />
+          <g className={sway[i]} style={balanceSwing(end)}>
+            <circle cx={s.ring.x} cy={s.ring.y} r={4} stroke="var(--gold)" strokeWidth={1.6} />
+            <path d={s.backCord} stroke="var(--gold-soft)" strokeWidth={0.9} strokeOpacity={0.7} />
+            <path d={s.cords} stroke="var(--gold)" strokeWidth={1.3} />
+            {inside[i] && <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} fill="var(--gold-soft)" fillOpacity={0.55} />}
+            <ellipse cx={at.x} cy={at.y} rx={PAN.rx} ry={PAN.ry} stroke="var(--gold)" strokeWidth={1.6} />
+            <path d={s.bowl} fill="var(--gold)" />
+            <path d={s.band} stroke="var(--art-carve)" strokeWidth={0.7} />
+            <path d={s.sheen} stroke="var(--art-core)" strokeWidth={1.4} strokeOpacity={0.6} strokeLinecap="round" />
+            <g fill="var(--gold-soft)">
+              {s.beads.map((p, k) => (
+                <circle key={k} cx={p.x} cy={p.y} r={1.5} />
+              ))}
+            </g>
+            <circle cx={s.finial.x} cy={s.finial.y} r={3.6} fill="var(--gold)" />
+            <path d={`M ${s.finial.x - 2.4} ${s.finial.y + 2.8} L ${s.finial.x} ${s.finial.y + 10} L ${s.finial.x + 2.4} ${s.finial.y + 2.8} Z`} fill="var(--gold)" />
+          </g>
+        </g>
+      ))}
+    </>
+  );
+}
