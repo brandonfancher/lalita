@@ -32,6 +32,7 @@ import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MiddleOfTheMoon } from "./middle-of-the-moon";
 import { MountainsDaughter } from "./mountains-daughter";
+import { SaltAndTheCouch } from "./salt-and-the-couch";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
 import { GreatYantra } from "./great-yantra";
@@ -2802,6 +2803,58 @@ export const ARTWORK: Record<string, Artwork> = {
           On a ledge to the right a yak stands with its white tail lifted. Kālidāsa says the yaks of the Himālaya, flicking
           tails as white as moonbeams, fan him as servants fan a king, and so make his title &ldquo;king of
           mountains&rdquo; true (Kumārasambhava 1.13). The verse has a king of diagrams; the mountain has his whisks.
+        </>
+      ),
+    },
+  },
+  "061": {
+    Art: SaltAndTheCouch,
+    intro: (Spot) => (
+      <>
+        The verse&rsquo;s second line is the reason for its first, and the picture keeps them together: below the card{" "}
+        <Spot part="light">her light</Spot> is seated on the couch of the five gods, and all the life they have runs into
+        them from her.
+      </>
+    ),
+    entries: [
+      {
+        nama: 249,
+        part: "couch",
+        depicts:
+          "The couch of the five Brahmās on its dais: Brahmā, Viṣṇu, Rudra and Īśvara its legs, Sadāśiva its plank. The gold of the legs has gone dull. Without her they cannot so much as stir (Saundaryalaharī 1).",
+      },
+      {
+        nama: 250,
+        part: "five",
+        depicts:
+          "In the crown the five Brahmās shine as the five faces of Sadāśiva, Īśāna upward at the centre and the other four toward the quarters, each in its own colour and each a flame of the same light. Below, she sits above them; here, she is them.",
+      },
+      {
+        nama: 251,
+        part: "light",
+        depicts:
+          "She is a light made of nothing but awareness. A thread of it runs down into each of the four legs and lights its medallion; that is all the life they have.",
+      },
+      {
+        nama: 252,
+        part: "bliss",
+        depicts:
+          "Her bliss widens round her ring beyond ring, each wider than the last by the same measure, like the Taittirīya's ladder of joys, each a hundred times the one below, up to the bliss that words turn back from.",
+      },
+      {
+        nama: 253,
+        part: "salt",
+        depicts:
+          "In a brass bowl before the dais a lump of rock salt is dissolving. No one could pick it out of the water again, yet the water is salt wherever it is touched: so is she a mass of knowing, with no inside and no outside (Bṛhadāraṇyaka 2.4.12).",
+      },
+    ],
+    detail: {
+      part: "blush",
+      body: (
+        <>
+          The plank is white except where she sits, and there it is red. Śaṅkara says Sadāśiva, white as crystal, contrived
+          to become the coverlet of her couch, and reflecting her red light he looks like love itself made flesh, a
+          delight to her eyes (Saundaryalaharī 92).
         </>
       ),
     },

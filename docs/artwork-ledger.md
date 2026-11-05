@@ -153,7 +153,7 @@ second time it is needed.
 | Meru, the world-mountain | Golden: an `--art-turmeric` to `--gold` to faded `--gold-soft` gradient with a `--gold` skyline and hair-fine `--art-carve` ridges running down from each summit. Three summits, the middle one a broad flat top that carries what stands on it, the two outer ones pointed and lower, with deep saddles between (shallow saddles read as one hill with two bumps) | Inline (`meru-inward.tsx`) | Shloka 22 |
 | City walls (prākāra) | Seen from the front as terraces, each wall inside and above the last: a band 14 tall in its own metal or gem (`--art-hair` iron, `--sindura` copper, `--art-moon` silver, `--gold`, `--art-vermilion` ruby, `--leaf` emerald) edged in gold, with 5-unit merlons along the top, a pointed tower at each end, and an `--art-core` sheen. One arched gate between two towers in the outermost wall. Without the end towers the walls read as steps | Inline (`meru-inward.tsx`) | Shloka 22 |
 | Pavilion of the wish-gem (cintāmaṇi-gṛha) | Four `--art-moon` pillars with gold capitals and bases on a gold floor, a gold lintel, and a roof that is the gem itself: a faceted outline filled across with `--art-saffron`, `--art-core`, `--art-moon` and `--lotus`, gold facet lines, two passing glints, and a gold pot finial. A pale roof read as a house's | Inline (`meru-inward.tsx`) | Shloka 22 |
-| Couch of the five Brahmās (pañcabrahmāsana) | A white plank (Sadāśiva) on four gold legs, each leg with a medallion in its god's colour bearing his work: Brahmā's lotus rosette on `--art-vermilion`, Viṣṇu's discus on `--art-hair`, Rudra's trident on `--art-moon`, Īśvara's veil on `--gold`. Her bindu sits just above the plank | `BrahmaCouch` in `primitives.tsx` (promoted at Shloka 46, used by Shlokas 22 and 46) | Shloka 22 |
+| Couch of the five Brahmās (pañcabrahmāsana) | A white plank (Sadāśiva) on four gold legs, each leg with a medallion in its god's colour bearing his work: Brahmā's lotus rosette on `--art-vermilion`, Viṣṇu's discus on `--art-hair`, Rudra's trident on `--art-moon`, Īśvara's veil on `--gold`. Her bindu sits just above the plank | `BrahmaCouch` in `primitives.tsx` (promoted at Shloka 46, used by Shlokas 22, 46 and 61) | Shloka 22 |
 | Kadamba tree | A grove tree built from the kadamba spray's parts: a forked `--art-musk` trunk with two boughs, a canopy of five overlapping `--leaf` circles at 0.62 opacity (as one mass), nine `KadambaLeaf`s round its rim, and four to six `KadambaHead`s of radius 3–4 on it. Smallest at the back of a ring, largest at its front corners. `--art-carve` trunks vanish in light mode | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Lotus forest (padmāṭavī) | `OpenLotus`es without pads in `--lotus` with `--art-crimson` veins, at scales 0.48 to 0.82, on tall `--leaf` stalks from one pool, so that the blooms stand as high as the trees round them, with leaves held up on their own stalks (tilted `--leaf` ellipses with radiating `--gold-soft` veins) and closed `--lotus` buds. Five blooms read as a bouquet; seven, with buds and raised leaves behind, as a forest | Inline (`nectar-island.tsx`) | Shloka 23 |
 | Sea of nectar (sudhāsāgara) | Milk-white water filling the plate below the card: an `--art-moon` to `--gold-soft` gradient fading in at the top, with `WavePattern` over it at 0.7, faded in by a mask so it has no hard horizon. The island in it is a flat ellipse, `--art-turmeric` to `--gold`, with a faint `--art-musk` bank beneath, an `--art-moon` surf line, and a dashed `--gold-soft` ring of swell | Inline (`nectar-island.tsx`) | Shloka 23 |
@@ -344,6 +344,11 @@ second time it is needed.
 | A cave shrine in the rock | An arched mouth under the card with a gold lip, its inside `--art-musk` at 0.5 under a radial from `--art-vermilion` at her bindu through `--art-crimson` to `--art-musk` at the walls, and on its back wall the `SriCakraFace` at 0.86 without its plate, her light at its bindu (a core-to-vermilion-to-crimson radial over the whole cave and beyond, `m-shimmer`), cast as a red glimmer on the pool at its mouth | Inline (`mountains-daughter.tsx`) | Shloka 60 |
 | Deodar | A straight `--art-musk` trunk under six tiers of drooping branches, widest near the foot (`--leaf` at 0.9 with a hair-fine gold edge), 48 to 92 tall, in groves on the foothills, kept clear of the card | Inline (`mountains-daughter.tsx`) | Shloka 60 |
 | Yak (camarī) | In profile, about 75 long at 1.1: a great hump, the head carried low, `--art-ivory` horns curving up, a ragged skirt of hair nearly to the ground, short legs with gold hooves; `--art-musk` under a `--gold` wash at 0.14 (musk alone was lost by lamplight) with a 0.8 gold edge, `--gold-soft` hair strands, and its face and chest rimmed in `--art-core` where the shrine's light falls. Its tail is a long `--art-moon` plume thrown up and back like a whisk, swinging from its root (`m-sway`). The plume of the royal fly-whisk is the same hair | Inline (`mountains-daughter.tsx`) | Shloka 60 |
+| The five faces of Sadāśiva (pañcabrahma) | Five flames (`tongue(22, 9)` with a core tongue inside, a gold edge, each on a soft glow of its own colour, `m-twinkle`) laid out as the faces turn: Īśāna upward at the centre, larger (1.45), in `--art-ivory`, and on a `--gold-soft` ring of radius 54 round it Vāmadeva north in `--art-vermilion`, Tatpuruṣa east in `--art-turmeric`, Aghora south in `--art-hair`, Sadyojāta west in `--art-moon`. Dashed spokes from the centre made it a crosshair | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| Her bliss as a widening lotus (the Taittirīya's ladder of joys) | Six rings of sixteen petals (`yantraPetals`) round her, each ring the last scaled by 1.42 and turned half a petal, from radius 40 to about 460, each a `--art-core` line over a wider faint `--gold` line (core alone was lost by day), fainter outward (`m-shimmer`, three groups), over a breathing `--art-glow` radiance (`m-breathe`, Taittirīya 2.7: who could breathe if this bliss did not fill the sky). Plain rings read as a target; motes of light as a starfield, or confetti by day | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| The couch's gods, inert (preta) | `BrahmaCouch` at 2.5 with each leg's shaft, above and below its medallion, under an `--art-hair` wash at 0.42, so the gold goes dull; a vein of her light (`--art-core`, a 3.6 soft stroke under a 1.1 line, `m-shimmer`) runs along the plank and down each leg into its medallion, which keeps its colour inside a core halo (a radial clear to 0.62, `m-twinkle`). A halo filled to the centre washed the emblems out | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| Sadāśiva blushing (Saundaryalaharī 92) | Over the white plank, a `--art-vermilion` radial centred under her (0.85 at the centre to nothing at 90), with a short core line along the plank's top, so the plank is red only where she sits | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| Rock salt dissolving (saindhava-khilya, Bṛhadāraṇyaka 2.4.12) | A shallow brass bowl (a `--gold`-to-`--art-turmeric` body, turmeric rim and foot, a vermilion band) before the dais, its water `--art-stone` under `--art-hair` at 0.16 and `--art-core` at 0.22 (`m-shimmer`); at the centre a faceted lump of `--art-moon` under `--lotus` at 0.3 with `--gold-soft` facets, curls of `--art-core` spreading from its foot through the water (ivory curls vanished by day), and fourteen small ivory glints all over the water (`m-twinkle`) | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2361,6 +2366,42 @@ One entry per finished artwork, in the order they were made.
   foothill itself. The inner deodars were first behind the card's lower corners. Without its own
   fade the mountain ended in a hard edge on the plate. In the chant miniature the snow peaks over
   the glowing cave carry it in both themes.
+
+### Shloka 61: The couch of five corpses
+
+- **Component:** `salt-and-the-couch.tsx` (defs prefix `sa61`)
+- **Composition:** the verse's second line is the reason for its first, and the picture keeps them
+  together on one axis. Just below the card her light is seated on the couch of the five Brahmās,
+  brought up to 2.5 and centred on a two-step dais; the gold of the four legs has gone dull, and the
+  only life in them is a vein of her light running along the plank and down each leg into its
+  medallion. The white plank is red only where she sits. Round her, her bliss opens as a lotus of six
+  rings of petals, each the last scaled up, that spreads behind the card and out over the whole
+  plate. Before the dais a brass bowl of water with a lump of rock salt dissolving in it, the water
+  lit and glinting all over. In the crown, the same five shine as Sadāśiva's five faces, five flames
+  in their colours, Īśāna at the centre. The first couch whose gods are shown as inert, the first
+  ladder of bliss, the first salt.
+- **Name → part:**
+  - Pañcapretāsanāsīnā → `couch`: the dais, the couch and the dull wash on its legs (Saundaryalaharī 1)
+  - Pañcabrahmasvarūpiṇī → `five`: the five faces in the crown and their ring
+  - Cinmayī → `light`: her light, its glow and glint, the veins of it in the plank and legs, and the
+    medallions' halos
+  - Paramānandā → `bliss`: the six rings of petals and the breathing radiance (Taittirīya 2.7, 2.8)
+  - Vijñānaghanarūpiṇī → `salt`: the bowl, the water, the lump of salt, its curls and the glints
+    (Bṛhadāraṇyaka 2.4.12)
+  - Intro, *her light* → `light`
+  - Detail → `blush`: Sadāśiva, white as crystal, turned coverlet to her couch, red where her light
+    falls on him, like love made flesh to her eyes (Saundaryalaharī 92)
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the petals, the veins, her glow, the water), `m-twinkle` (the five
+  faces, the medallions' halos, the glints on the water), `m-breathe` (the radiance of her bliss).
+- **Notes:** This title stays on one line and reaches only x ≈ −20 (32 at 1100px), so the five
+  faces stand centred in the crown. The first render was a clean diagram and read as one: threads
+  arcing from her to the medallions made a basket handle over the plank (they are veins inside
+  the legs now), plain rings of bliss read as a target, and the light was a button. Motes of
+  bliss through the space read as a starfield by lamplight and confetti by day; the lotus of
+  petals replaced them and carries the plate. Halos filled to the centre washed out the gods'
+  emblems. In the chant miniature the glowing couch over its bowl carries it by day, the lotus
+  by lamplight.
 
 ## Open questions
 
