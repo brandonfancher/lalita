@@ -14,7 +14,7 @@
  * artwork's entry.
  */
 
-import { MoonDeer, OpenLotus, artIds, lotusPetals, partProps, round } from "./primitives";
+import { LotusLeaf, MoonDeer, OpenLotus, artIds, lotusPetals, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -92,20 +92,6 @@ const LIGHT = { x: 438, y: 478 };
 const SEAT = { x: LIGHT.x, y: 592 };
 const SEAT_PETALS = lotusPetals({ x: SEAT.x - 42, width: 84, count: 6, base: SEAT.y, height: 22 });
 const SEAT_BASE = `M ${SEAT.x - 48} ${SEAT.y} L ${SEAT.x + 48} ${SEAT.y} M ${SEAT.x - 40} ${SEAT.y + 8} L ${SEAT.x + 40} ${SEAT.y + 8}`;
-/** On the pool, a lotus leaf that water stands on in beads and does not wet. */
-const LEAF = { x: 0, y: 0, rx: 34, ry: 10 };
-const LEAF_D = `M 0 0 L ${-LEAF.rx * 0.2} ${-LEAF.ry} A ${LEAF.rx} ${LEAF.ry} 0 1 0 ${LEAF.rx * 0.2} ${-LEAF.ry} Z`;
-const LEAF_VEINS = Array.from({ length: 9 }, (_, k) => {
-  const a = (Math.PI * 2 * (k + 0.5)) / 9 + Math.PI / 2 + 0.35;
-  return `M 0 0 L ${round(Math.cos(a) * LEAF.rx * 0.82)} ${round(Math.sin(a) * LEAF.ry * 0.82)}`;
-}).join(" ");
-const BEADS = [
-  { x: -14, y: -1, r: 3.4 },
-  { x: 2, y: 3, r: 2.6 },
-  { x: 16, y: -2, r: 2.2 },
-  { x: 33, y: 2, r: 1.8 },
-];
-
 export function AutumnMoonTurn({ idPrefix = "sa43", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
   const part = partProps(active);
@@ -259,14 +245,7 @@ export function AutumnMoonTurn({ idPrefix = "sa43", active = null }: ArtProps) {
 
       {/* A lotus leaf the water does not wet */}
       <g {...part("unstained")} transform={`translate(${LEAF_AT.x} ${LEAF_AT.y})`}>
-        <path d={LEAF_D} fill="var(--leaf)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
-        <path d={LEAF_VEINS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.55} />
-        {BEADS.map((b, i) => (
-          <g key={i} className={TWINKLE[i % 3]}>
-            <circle cx={b.x} cy={b.y - b.r * 0.6} r={b.r} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
-            <circle cx={round(b.x - b.r * 0.35)} cy={round(b.y - b.r)} r={round(b.r * 0.3)} fill="var(--art-moon)" />
-          </g>
-        ))}
+        <LotusLeaf />
       </g>
     </svg>
   );

@@ -2473,3 +2473,40 @@ export function StillLamp() {
     </>
   );
 }
+
+/* ── A lotus leaf that water does not wet ──────────────────────────────── */
+
+const PAD = { rx: 34, ry: 10 };
+const PAD_D = `M 0 0 L ${-PAD.rx * 0.2} ${-PAD.ry} A ${PAD.rx} ${PAD.ry} 0 1 0 ${PAD.rx * 0.2} ${-PAD.ry} Z`;
+const PAD_VEINS = Array.from({ length: 9 }, (_, k) => {
+  const a = (Math.PI * 2 * (k + 0.5)) / 9 + Math.PI / 2 + 0.35;
+  return `M 0 0 L ${round(Math.cos(a) * PAD.rx * 0.82)} ${round(Math.sin(a) * PAD.ry * 0.82)}`;
+}).join(" ");
+const PAD_BEADS = [
+  { x: -14, y: -1, r: 3.4 },
+  { x: 2, y: 3, r: 2.6 },
+  { x: 16, y: -2, r: 2.2 },
+  { x: 33, y: 2, r: 1.8 },
+];
+
+const PAD_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/**
+ * A lotus leaf floating flat, seen at a slant, centred on the origin (about 68
+ * by 20), with water standing on it in beads and one at the very edge: what is
+ * in the world and not smeared by it (padmapatram ivāmbhasā, Gītā 5.10).
+ */
+export function LotusLeaf() {
+  return (
+    <>
+      <path d={PAD_D} fill="var(--leaf)" fillOpacity={0.85} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
+      <path d={PAD_VEINS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.55} />
+      {PAD_BEADS.map((b, i) => (
+        <g key={i} className={PAD_TWINKLE[i % 3]}>
+          <circle cx={b.x} cy={b.y - b.r * 0.6} r={b.r} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+          <circle cx={round(b.x - b.r * 0.35)} cy={round(b.y - b.r)} r={round(b.r * 0.3)} fill="var(--art-moon)" />
+        </g>
+      ))}
+    </>
+  );
+}
