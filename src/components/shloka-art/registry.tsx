@@ -32,9 +32,9 @@ import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
-import { OtherEndOfTheRope } from "./other-end-of-the-rope";
 import { NectarIsland } from "./nectar-island";
 import { OnHisLap } from "./on-his-lap";
+import { OtherEndOfTheRope } from "./other-end-of-the-rope";
 import { SafflowerSlope } from "./safflower-slope";
 import { SilencedLute } from "./silenced-lute";
 import { SproutingSeed } from "./sprouting-seed";
@@ -42,6 +42,7 @@ import { StillWaterSteps } from "./still-water-steps";
 import { SunMoonEarrings } from "./sun-moon-earrings";
 import { ThousandDawns } from "./thousand-dawns";
 import { TippedScales } from "./tipped-scales";
+import { TwoBirds } from "./two-birds";
 import type { Artwork } from "./types";
 import { WeddingDoorway } from "./wedding-doorway";
 import { WhatItHoldsUp } from "./what-it-holds-up";
@@ -1961,6 +1962,74 @@ export const ARTWORK: Record<string, Artwork> = {
           The moon&apos;s mark is the deer of Shloka 5, and here it has leapt clear of the moon, at the top right.
           Kalaṅka, a mark, is a different word from Shloka 44&apos;s kalā, a digit; that moon kept its deer, and this
           one has none.
+        </>
+      ),
+    },
+  },
+  "047": {
+    Art: TwoBirds,
+    intro: (Spot) => (
+      <>
+        Two names alone, then three pairs, each said once of her and once of what she does for whoever comes
+        near. The verse is the Muṇḍaka Upaniṣad&apos;s two birds on one <Spot part="tree">tree</Spot>: one eats
+        its fruit, sunk, grieving and deluded; the other only looks on, and when the first sees it, its grief
+        goes. The tree grows from the kerb of a <Spot part="tank">temple tank</Spot>, as pippalas do.
+      </>
+    ),
+    entries: [
+      {
+        nama: 160,
+        part: "still-leaves",
+        depicts:
+          "A pippala's leaves hang on long stalks and tremble in the least air, all over the tree. Round her they hang still.",
+      },
+      {
+        nama: 161,
+        part: "light",
+        depicts:
+          "On the bough where the second bird should sit there is only her light: nobody there to say I.",
+      },
+      {
+        nama: 162,
+        part: "mist",
+        depicts: "Mist lies over the lower tree and the water, and stops well below her bough.",
+      },
+      {
+        nama: 163,
+        part: "bird",
+        depicts:
+          "The other bird, low in the mist, has turned its head up to her, and the mist has cleared in a lane between them.",
+      },
+      {
+        nama: 164,
+        part: "figs",
+        depicts: "The figs on her bough are ripe and nobody has eaten them; she calls none of them hers.",
+      },
+      {
+        nama: 165,
+        part: "dropped",
+        depicts:
+          "The fig the other bird was eating has fallen from its beak as it looked up, and is dropping into the water.",
+      },
+      {
+        nama: 166,
+        part: "lotus",
+        depicts:
+          "In the tank a white lotus stands clear of the water, and its leaf beads the water off: the Gītā's image (5.10) for one whom sin does not stick to.",
+      },
+      {
+        nama: 167,
+        part: "shaken",
+        depicts:
+          "The bird shakes dark motes from its wings, and they go out as they fall. The Upaniṣad says that whoever sees her shakes off good and evil.",
+      },
+    ],
+    detail: {
+      part: "seedling",
+      body: (
+        <>
+          In a crack of the kerb a pippala seedling has come up. Nobody plants a pippala: its seeds are sown by
+          birds, which drop the figs they were eating, as the bird in the mist has just done.
         </>
       ),
     },

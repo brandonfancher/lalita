@@ -226,7 +226,7 @@ second time it is needed.
 | Śaṅkara's trident and drum (triśūla, ḍamaru) | A gold three-pronged head with `--art-moon` tips on an `--art-turmeric` shaft. From a `--art-vermilion` cord tied under the prongs hangs the drum, upright: two `--art-turmeric` cones meeting at a narrow waist bound in vermilion, `--art-ivory` heads, a bead on a cord. Lying on its side it read as a bow tie | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | Plumb line (sādhvī) | A gold peg, a hair-fine gold thread hanging dead straight, and a gold teardrop bob with an `--art-moon` sheen. Still on purpose | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | The moon in still water | Level `--gold-soft` hairlines, closer toward the far edge, broken round an `--art-moon` ellipse of the moon (with its deer, flattened) in a soft moon glow | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
-| Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43 and 44) | Shloka 43 |
+| Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43, 44 and 47) | Shloka 43 |
 | The empty seat (nirādhāra) | A lotus pedestal drawn only in dotted gold, six petals over two base lines, with her light hanging well above it and nothing between | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | Rāhu's shadow (upaplava) | Never a figure: a soft dark disc, a radial gradient from `--art-hair` to `--art-musk`, with a faint musk rim, sinking (`m-sink`), and its way past the moon as a dotted musk arc that goes over the moon and never across it | Inline (`ten-taken-away.tsx`) | Shloka 44 |
 | Her light without outline (nirākāra) | Only a glow: a radial gradient from `--art-core` through `--art-glow` to nothing, no disc and no rim (`m-breathe`), with one unbroken gold ring and a `--gold-soft` echo round it (`m-shimmer`) for nityā | Inline (`ten-taken-away.tsx`) | Shloka 44 |
@@ -246,6 +246,14 @@ second time it is needed.
 | Lamps lit one from another | `Lamp`s in a line running out toward the viewer, larger as they come (2.2 to 4.2), each joined to the flame before by a dotted `--art-core` thread (`m-twinkle`), the first thread from her light | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
 | A stone dais | Two `--art-stone` steps edged in `--gold`, the upper with a row of small `--sindura` triangles at 0.55, and a faint musk floor shadow | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
 | Rut, dried (mada) | On the elephant's temple, a short `--art-musk` streak at half opacity, drawn as a child of `Elephant` | Inline (`other-end-of-the-rope.tsx`) | Shloka 46 |
+| Pippala (aśvattha) | A great tree: a tapering trunk and boughs (`taper`) in `--art-hair` at 0.55 edged in `--gold`, read as grey bark in both themes (musk vanished by lamplight). Leaves on long stalks, heart-based with a long drawn-out tip, `--leaf` with a faint gold edge and `--gold-soft` midrib and veins, hung in drooping sprays of three or four at the ends of short twigs on alternate sides, over soft `--leaf` canopy masses. Leaves strung along the boughs read as spiky caterpillars. Every leaf trembles (`m-sway`, three groups), as a pippala's do | Inline (`two-birds.tsx`) | Shloka 47 |
+| Pippala figs | Small round figs (radius 4–5.6) in pairs under the leaf joints, a radial gradient from `--lotus` to `--art-crimson`, gold rim, an ivory highlight | Inline (`two-birds.tsx`) | Shloka 47 |
+| A perched bird | In profile facing left, about 50 long at 1.8: `--art-hair` body, wing and wedge tail edged in `--gold`, `--gold-soft` feather lines, an `--art-saffron` breast and beak, an ivory eye ring; the head can turn so the beak points anywhere | Inline (`two-birds.tsx`) | Shloka 47 |
+| Mist (moha) | Overlapping flat ellipses, a radial gradient from `--art-musk` at 0.2 through `--art-moon` at 0.24 to nothing (`m-shimmer`), with long `--gold-soft` wisps so it shows by day | Inline (`two-birds.tsx`) | Shloka 47 |
+| A lane of clear air | A tapered band from her light to what it reaches, a linear gradient of `--art-core` from 0.55 to almost nothing (`m-shimmer`), with the mist left open round it | Inline (`two-birds.tsx`) | Shloka 47 |
+| Temple tank | An `--art-stone` kerb edged in `--gold` above a band of water (`--art-hair` from 0.2 to 0.04) with dashed `--gold-soft` lines, both faded out at the ends with a mask so it isn't a box | Inline (`two-birds.tsx`) | Shloka 47 |
+| White lotus standing clear | `OpenLotus` in `--art-ivory` with `--gold-soft` veins and no pad, on a `--leaf` stalk standing above the water, a `LotusLeaf` beside it | Inline (`two-birds.tsx`) | Shloka 47 |
+| Dark motes, shaken off | Small `--art-hair` motes (radius 1.2–2.4) with a `--gold-soft` rim, each sinking and fading (`m-sink`) on its own `--dur` and negative `--delay`. Musk vanished by lamplight | Inline (`two-birds.tsx`) | Shloka 47 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1764,6 +1772,40 @@ One entry per finished artwork, in the order they were made.
   first crowded Īśvara's leg and its head hid the end of the dais; it moved right and the couch
   left. The first lamp stood behind the dais; the lamps are now drawn in front of it. In the chant
   miniature the glowing couch, the cord and the elephant's red caparison carry it.
+
+### Shloka 47: Without I, without mine
+
+- **Component:** `two-birds.tsx` (defs prefix `sa47`)
+- **Composition:** two solitary names and three pairs, each said once of her and once of what she
+  does to others, drawn as the Muṇḍaka Upaniṣad's two birds on one tree (3.1.1–3). A great pippala
+  fills the plate, rising from the kerb of a temple tank at the lower left, its trunk passing behind
+  the card and its crown spreading across the crown zone. On a bough just below the card, where the
+  second bird should sit, is only her light, with still leaves round it and ripe figs along it.
+  Mist lies over the lower tree. In it, on a low bough at the right, the other bird has turned its
+  head up to her through a lane of clear air, the fig falling from its beak toward the water, dark
+  motes shaken from its wings. In the tank a white lotus stands clear of the water.
+- **Name → part:**
+  - Niścintā → `still-leaves`: the twigs and leaves on her bough, which do not tremble
+  - Nirahaṅkārā → `light`: her light, its glow, radiance and ring
+  - Nirmohā → `mist`: the mist and its wisps
+  - Mohanāśinī → `bird`: the bird and the lane of clear air
+  - Nirmamā → `figs`: the figs along her bough
+  - Mamatāhantrī → `dropped`: the falling fig, its path and the ripple below
+  - Niṣpāpā → `lotus`: the white lotus, its stalk and the lotus leaf
+  - Pāpanāśinī → `shaken`: the dark motes
+  - Intro, *tree* → `tree`; *temple tank* → `tank`
+  - Detail → `seedling`: the pippala seedling in the kerb, sown as birds sow them
+- **Palette:** no additions.
+- **Motion:** `m-sway` (every leaf but hers, three groups), `m-shimmer` (her glow and radiance, the
+  mist, the lane), `m-breathe` (her light), `m-twinkle` (the ripple, the beads on the lotus leaf),
+  `m-sink` (the motes).
+- **Notes:** This title stays on one line and reaches x ≈ 24 (76 at 1100px) at y ≈ 74–141, so the
+  crown spreads freely from x ≈ 190. The Muṇḍaka passage names grief, delusion, the Lord and the
+  shaking off of good and evil, so one image carries all three pairs. The leaves were first strung
+  two to a point along the boughs and read as spiky green caterpillars; hung in sprays at twig ends
+  over soft canopy masses they read as a tree. The bark was musk and vanished by lamplight. The motes
+  were musk too and couldn't be seen; they are slate now. In the chant miniature the tree's
+  silhouette, her glow and the bird carry it.
 
 ## Open questions
 
