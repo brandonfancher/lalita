@@ -6,7 +6,7 @@
  * for readers in the registry, next to this artwork's entry.
  */
 
-import { alongArch, archPath, artIds, Embers, Lion, lotusPetals, partProps, round, tongue, type Arch } from "./primitives";
+import { alongArch, archPath, artIds, Embers, Lion, lotusPetals, Parasol, partProps, round, tongue, type Arch } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -157,27 +157,7 @@ export function FireOfAwareness({ idPrefix = "sa1", active = null }: ArtProps) {
       {/* The royal parasol: she is the great empress */}
       <g {...part("parasol")} stroke="var(--gold)" strokeWidth={1} strokeLinejoin="round">
         <line x1={CX} y1={104} x2={CX} y2={CY - R} strokeOpacity={0.8} />
-        <path
-          d={`M 258 104 C 266 70 296 56 ${CX} 54 C 344 56 374 70 382 104 Z`}
-          fill="var(--art-vermilion)"
-          fillOpacity={0.6}
-        />
-        {[270, 295, 345, 370].map((x) => (
-          <line key={x} x1={CX} y1={56} x2={x} y2={104} strokeOpacity={0.7} strokeWidth={0.7} />
-        ))}
-        <path
-          d={Array.from({ length: 10 }, (_, i) => `M ${258 + i * 12.4} 104 a 6.2 6.2 0 0 0 12.4 0`).join(" ")}
-          fill="var(--gold)"
-          fillOpacity={0.45}
-        />
-        {Array.from({ length: 11 }, (_, i) => 258 + i * 12.4).map((x, i) => (
-          <g key={i} strokeOpacity={0.7} strokeWidth={0.7}>
-            <line x1={round(x)} y1={104} x2={round(x)} y2={i % 2 ? 118 : 124} />
-            <circle cx={round(x)} cy={i % 2 ? 120 : 126} r={1.8} fill="var(--gold)" stroke="none" />
-          </g>
-        ))}
-        <circle cx={CX} cy={47} r={6} fill="var(--gold)" fillOpacity={0.7} />
-        <path d={`M ${CX} 41 C ${CX - 4} 36 ${CX - 2} 30 ${CX} 26 C ${CX + 2} 30 ${CX + 4} 36 ${CX} 41 Z`} fill="var(--gold)" />
+        <Parasol cx={CX} rim={104} />
       </g>
 
       {/* The fire of awareness, rising from its kuṇḍa */}

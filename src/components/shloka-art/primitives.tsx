@@ -3129,3 +3129,41 @@ export function Vajra() {
     </>
   );
 }
+
+/* ── The royal parasol ─────────────────────────────────────────────────── */
+
+/**
+ * A royal parasol (chattra), the middle of its rim at (cx, rim), 124 wide at s = 1: a vermilion
+ * dome with gold ribs, a scalloped fringe, beaded tassels and a bud finial. Wants a gold stroke 1
+ * wide with round joins. Its staff is drawn by the caller.
+ */
+export function Parasol({ cx, rim, s = 1 }: { cx: number; rim: number; s?: number }) {
+  const x = (d: number) => round(cx + d * s);
+  const y = (d: number) => round(rim + d * s);
+  const fringe = Array.from({ length: 11 }, (_, i) => x(-62 + i * 12.4));
+  return (
+    <>
+      <path
+        d={`M ${x(-62)} ${y(0)} C ${x(-54)} ${y(-34)} ${x(-24)} ${y(-48)} ${x(0)} ${y(-50)} C ${x(24)} ${y(-48)} ${x(54)} ${y(-34)} ${x(62)} ${y(0)} Z`}
+        fill="var(--art-vermilion)"
+        fillOpacity={0.6}
+      />
+      {[-50, -25, 25, 50].map((d) => (
+        <line key={d} x1={x(0)} y1={y(-48)} x2={x(d)} y2={y(0)} strokeOpacity={0.7} strokeWidth={0.7} />
+      ))}
+      <path
+        d={fringe.slice(0, 10).map((fx) => `M ${fx} ${y(0)} a ${round(6.2 * s)} ${round(6.2 * s)} 0 0 0 ${round(12.4 * s)} 0`).join(" ")}
+        fill="var(--gold)"
+        fillOpacity={0.45}
+      />
+      {fringe.map((fx, i) => (
+        <g key={i} strokeOpacity={0.7} strokeWidth={0.7}>
+          <line x1={fx} y1={y(0)} x2={fx} y2={y(i % 2 ? 14 : 20)} />
+          <circle cx={fx} cy={y(i % 2 ? 16 : 22)} r={round(1.8 * s)} fill="var(--gold)" stroke="none" />
+        </g>
+      ))}
+      <circle cx={x(0)} cy={y(-57)} r={round(6 * s)} fill="var(--gold)" fillOpacity={0.7} />
+      <path d={`M ${x(0)} ${y(-63)} C ${x(-4)} ${y(-68)} ${x(-2)} ${y(-74)} ${x(0)} ${y(-78)} C ${x(2)} ${y(-74)} ${x(4)} ${y(-68)} ${x(0)} ${y(-63)} Z`} fill="var(--gold)" />
+    </>
+  );
+}
