@@ -168,7 +168,7 @@ second time it is needed.
 | The nine triangles (the Śrīcakra's centre) | From the traditional construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and 42 units down a 48-unit diameter, half-widths 12.87, 15.78, 22.96, 7.66, 5.98, 7.81, 23.24, 16.78 and 12.87, each joined to an apex on the axis (27, 42, 48, 36, 30, 12, 0, 6, 17), five pointing toward the viewer and four away. Gold hairlines over a field of her light (`--art-core` to `--art-saffron` to `--art-vermilion`), each triangle tinted faintly so the overlaps build up; her bindu sits just over the innermost | `SRI_TRIANGLES` and `RathaTriangles` in `primitives.tsx` | Shloka 26 |
 | Chariot wheel (cakra) | Face-on: a thick `--gold` rim between two `--art-carve` lines, sixteen gold spokes, a gold hub with a small `--art-vermilion` boss. Drawn under a chariot's front corners, as the miniature painters show a chariot's wheels | `ChariotWheel` in `primitives.tsx` | Shloka 26 |
 | Weapons on a tier (sarvāyudha) | Small gold weapons about 22 tall standing round a tier's rim, by turns a spear with an `--art-moon` blade, a trident, an arrow, and a goad, one in five tipped with a twinkling point of light. On a stepped form only the front of each lower rim shows | `RathaWeapons` in `primitives.tsx` | Shloka 26 |
-| Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | `Sapphire`, `SapphireDefs` and `Vina` in `primitives.tsx` (promoted at Shloka 29, used by Shlokas 26 and 29) | Shloka 26 |
+| Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | `Sapphire`, `SapphireDefs` and `Vina` in `primitives.tsx` (promoted at Shloka 29, used by Shlokas 26 and 29; `Vina` alone also by Shloka 42, for Śāradā) | Shloka 26 |
 | The Geyacakra | Mantriṇī's chariot: seven square steps of `--art-hair` edged in gold, in the Cakrarāja's projection, on two wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
 | The Kiricakra | Daṇḍanāthā's chariot: five square steps of `--art-crimson` with `--art-vermilion` tops, edged in gold, in the Cakrarāja's projection, on two wheels, her rod for a flagstaff, the boar banner on it | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 | Daṇḍanāthā's rod (daṇḍa) | A straight gold staff with three `--gold-soft` bands and a gold knob | Inline (`wall-of-fire.tsx`) | Shloka 27 |
@@ -216,6 +216,12 @@ second time it is needed.
 | Full pot (pūrṇa-kumbha) | A round gold pot with a narrow neck and rim, a vermilion band and dot, five `--leaf` mango leaves fanned from its mouth and an `--art-turmeric` coconut on top | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 | Good fortune (saubhāgya) | A small gold tray holding a mound of `--art-vermilion` kumkum, one of `--art-turmeric` and a pair of bangles (`--leaf` and vermilion), gold motes twinkling down onto it in a saffron glow | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 | A still lamp (contemplation) | The `Lamp`'s bowl with a narrower flame and no flicker, its one straight dotted gold line of light running to her | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
+| Devotee's offering (patraṁ puṣpaṁ phalaṁ toyam) | A `--leaf` leaf plate holding a leaf, a five-petalled `--art-vermilion` blossom, an `--art-turmeric` fruit and a small gold bowl of water, in a saffron glow | Inline (`devotion-governs.tsx`) | Shloka 42 |
+| Garland that binds her (bhakti-vaśyā) | A hair-fine gold thread climbing from the offering's flower to her light, swaying a little at the bottom and straightening as it rises, strung with small blossoms alternately `--art-vermilion` and `--art-ivory` (`m-twinkle`), closing at the top in a ring of sixteen blossoms round her light | Inline (`devotion-governs.tsx`) | Shloka 42 |
+| Roads that stop short | A palm-leaf book (`--art-turmeric` leaves between gold boards) and a stepped gold fire altar with a flickering flame, each sending a dotted `--gold-soft` road up that curls in and stops well below her | Inline (`devotion-governs.tsx`) | Shloka 42 |
+| Shelter (śarman) | A half-dome of her light over the lower scene: a gold hairline arc with a soft gold-soft echo, a ground line, and an `--art-glow` fill brightest at the base (`m-shimmer`). The shadows of fear (`--art-musk` glows, `m-sink`) lie outside it | Inline (`devotion-governs.tsx`) | Shloka 42 |
+| Śambhu and Śarva | Never a figure: Śambhu as a small `--art-moon` crescent in a moon glow; Śarva as a gold recurve bow upright with an `--art-vermilion`-tipped arrow on the string | Inline (`devotion-governs.tsx`) | Shloka 42 |
+| Śāradā | Never a figure: an `--art-ivory` light in a soft moon glow over the `Vina`, shown smaller | Inline (`devotion-governs.tsx`, using `Vina`) | Shloka 42 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1581,6 +1587,35 @@ One entry per finished artwork, in the order they were made.
   up, where the blade read as a white bird; it now stands in the stump, blade down. The axe was
   promoted into `primitives.tsx` (`Axe`), and Shloka 32 renders byte-for-byte as before. In the
   chant miniature the forest, the clearing and her light carry it.
+
+### Shloka 42: Devotion has power over her
+
+- **Component:** `devotion-governs.tsx` (defs prefix `sa42`)
+- **Composition:** a ladder of three, then the husband's names. In the crown, right of the title,
+  her light with Śambhu's crescent on one side and Śarva's bow on the other. Below the card a
+  devotee's offering lies on a leaf (the leaf, flower, fruit and water of Gītā 9.26), and from its
+  flower a garland of blossoms climbs all the way up to her light and closes in a ring round it.
+  Beside it a palm-leaf book and a fire altar send roads up that stop short. A half-dome of her
+  light covers the whole lower scene, and the shadows of fear lie outside it, going under. At the
+  right, inside the dome, Śāradā's white light over her vīṇā.
+- **Name → part:**
+  - Bhaktipriyā → `offering`: the leaf plate and what is on it
+  - Bhaktigamyā → `road`: the garland, as far as her light
+  - Bhaktivaśyā → `bound`: the ring of blossoms round her light
+  - Bhayāpahā → `fear`: the shadows outside the dome
+  - Śāmbhavī → `sambhu`: the crescent and its glow
+  - Śāradārādhyā → `sarada`: Śāradā's light and vīṇā
+  - Śarvāṇī → `sarva`: the bow and arrow
+  - Śarmadāyinī → `shelter`: the dome, its glow and the ground line
+  - Intro, *her light* → `light`
+  - Detail → `short`: the book, the altar and their roads
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the blossoms), `m-breathe` (her light), `m-flicker` (the altar flame),
+  `m-shimmer` (the glows, the dome), `m-sink` (the fears).
+- **Notes:** This title stays on one line, so the crown is clear from x ≈ 230. The shelter was first
+  a straight scalloped awning with tassels across the scene, but with the garland running through it
+  the whole picture read as a hanging lamp or a balance; it is now a dome of light. `Vina` is
+  reused from `primitives.tsx` for Śāradā. In the chant miniature the garland and the dome carry it.
 
 ## Open questions
 

@@ -1,5 +1,6 @@
 import { CampakaJewel } from "./campaka-jewel";
 import { CourtAndArmy } from "./court-and-army";
+import { DevotionGoverns } from "./devotion-governs";
 import { DrawnBow } from "./drawn-bow";
 import { DrawnCurtain } from "./drawn-curtain";
 import { EighthNightMoon } from "./eighth-night-moon";
@@ -1613,6 +1614,72 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           The name says kuṭhārikā, a little axe, not kuṭhāra. It is the one from Paraśurāma&apos;s hand in Shloka 32, and the
           chips are still flying from the trunk it is in.
+        </>
+      ),
+    },
+  },
+  "042": {
+    Art: DevotionGoverns,
+    intro: (Spot) => (
+      <>
+        The first three names are a ladder, and each rung concedes more. <Spot part="light">Her light</Spot> is in the
+        crown, and everything below is reaching for it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 118,
+        part: "offering",
+        depicts:
+          "Below the card a devotee's offering lies on a leaf: a leaf, a flower, a fruit and a little water, the four things the Gītā says are enough when given with love.",
+      },
+      {
+        nama: 119,
+        part: "road",
+        depicts:
+          "From the flower a garland climbs all the way to her light. It is the one road that arrives.",
+      },
+      {
+        nama: 120,
+        part: "bound",
+        depicts:
+          "At the top the garland closes in a ring round her light: devotion does not only reach her, it holds her, as vaśya is said of a thing brought under control.",
+      },
+      {
+        nama: 121,
+        part: "fear",
+        depicts: "At the edges of the plate the shadows of fear are going under.",
+      },
+      {
+        nama: 122,
+        part: "sambhu",
+        depicts:
+          "On one side of her light is the crescent of Śambhu, the gentlest of Śiva's names, the one used when the terrible aspect is set aside.",
+      },
+      {
+        nama: 123,
+        part: "sarada",
+        depicts:
+          "At the right Śāradā, the goddess of speech, a white light with her vīṇā, is worshipping her too.",
+      },
+      {
+        nama: 124,
+        part: "sarva",
+        depicts: "On the other side of her light is the bow of Śarva, Śiva as the archer, with an arrow on its string.",
+      },
+      {
+        nama: 125,
+        part: "shelter",
+        depicts:
+          "Over the whole scene below is a dome of her light, and the shadows of fear are outside it: śarman means shelter first, and the ease of being sheltered second.",
+      },
+    ],
+    detail: {
+      part: "short",
+      body: (
+        <>
+          Beside the garland two other roads set out, one from a palm-leaf book and one from a fire altar, knowledge and
+          rite. Both stop short, under the dome.
         </>
       ),
     },
