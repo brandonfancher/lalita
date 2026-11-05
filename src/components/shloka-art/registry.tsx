@@ -32,6 +32,7 @@ import { TenDescents } from "./ten-descents";
 import { TheDrawnScreen } from "./the-drawn-screen";
 import { MeruInward } from "./meru-inward";
 import { MiddleOfTheMoon } from "./middle-of-the-moon";
+import { MiddleOfTheSun } from "./middle-of-the-sun";
 import { MountainsDaughter } from "./mountains-daughter";
 import { SaltAndTheCouch } from "./salt-and-the-couch";
 import { WakingAndDream } from "./waking-and-dream";
@@ -3049,6 +3050,63 @@ export const ARTWORK: Record<string, Artwork> = {
           Under the right end of the lintel a spider hangs on its thread from its web. &ldquo;As a spider sends out its
           thread and draws it in again, so from the imperishable this world comes forth&rdquo; (Muṇḍaka 1.1.7): the
           Upaniṣad&rsquo;s own picture for making and withdrawing as one act of one maker.
+        </>
+      ),
+    },
+  },
+  "065": {
+    Art: MiddleOfTheSun,
+    intro: (Spot) => (
+      <>
+        Six verses ago she stood in the middle of the moon; here she stands in{" "}
+        <Spot part="light">the middle of the sun</Spot>, and the verse settles on her, one name after another, what
+        usually belongs to Lakṣmī.
+      </>
+    ),
+    entries: [
+      {
+        nama: 275,
+        part: "sun",
+        depicts:
+          "Below the card the sun's full disc stands over still water, rayed and ringed in gold, and its centre is hers: the seat of the golden person the Chāndogya says is seen within the sun (1.6.6).",
+      },
+      {
+        nama: 276,
+        part: "blaze",
+        depicts:
+          "Out of the same disc sharp rays climb past the card into the crown, the sun as tigmāṃśu, the fierce-rayed: its terrible face, belonging to the one power as surely as its light does.",
+      },
+      {
+        nama: 277,
+        part: "garland",
+        depicts:
+          "A garland of six blossoms hangs on the disc, one for each of the six excellences that make a lord: sovereignty in gold, power in red, fame in white, beauty in rose, knowledge in saffron, and detachment in blue.",
+      },
+      {
+        nama: 278,
+        part: "lotus",
+        depicts: "In the middle of the sun her light sits on an open red lotus, the seat Lakṣmī is known by.",
+      },
+      {
+        nama: 279,
+        part: "shares",
+        depicts:
+          "Gold falls on either side of the sun, each piece to its own place on the water. Bhaga is from √bhaj, to apportion: fortune is first of all a share given out.",
+      },
+      {
+        nama: 280,
+        part: "twins",
+        depicts:
+          "In the water before the sun a red lotus and a blue one, Viṣṇu's colour, rise on two stems from a single root: sahodarī, born of one womb.",
+      },
+    ],
+    detail: {
+      part: "horse",
+      body: (
+        <>
+          Far off on the water at the right, a small golden horse is wading in. Every spring at Madurai, Viṣṇu as
+          Aḻagar rides down on a golden horse and into the river Vaigai, on his way to give his sister Mīnākṣī to
+          Sundareśvara, and arrives, as the story goes, too late for the wedding.
         </>
       ),
     },

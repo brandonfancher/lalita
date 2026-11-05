@@ -364,6 +364,11 @@ second time it is needed.
 | The couch at work | `BrahmaCouch` at 1.4 inside the door, its gold bright and each medallion in a ring of core light (`m-shimmer`); the plank drawn again over it as Sadāśiva, white as crystal: `--art-moon` with a 1.4 gold edge, slanting `--gold-soft` facets, an ivory sheen, in an `--art-glow` glow (`m-shimmer`). A moon-coloured glow vanished by day. Compare Shloka 61's inert couch | Inline (`the-drawn-screen.tsx`, with `BrahmaCouch`) | Shloka 64 |
 | Rudra's trident, from the ground into the crown | `trident` at 1.2, mirrored so the drum hangs toward the card, standing on a stone foot at x 504 right of the door and rising past the card's edge to its head at y 78 in the crown, a `tongue(15, 6.4)` flame with a core heart on each point (`m-flicker`), the middle one larger, in a saffron-to-vermilion glow (`m-shimmer`). At 1100px its right prong is cut by a couple of units | Inline (`the-drawn-screen.tsx`, with `Trident` and `Damaru`) | Shloka 64 |
 | The worlds drawn in (saṃhāra) | Fourteen world-eggs (`eggPath`) on a spiral of a turn and a quarter round the trident's middle flame, from 12.5 high at the outside to 4 at the fire, on a dashed `--gold-soft` line, their saffron glints twinkling. Copies drawn in by `m-gather` doubled every egg into clusters like grapes in a still; the spiral alone carries it | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
+| The sun's fierce rays (tigmāṃśu) | Thirteen sharp wedge rays out of the full disc between 30° and 150°, alternately short (170, on a vermilion gradient fading outward) and long. The long ones fade out behind the card (a vermilion radial to nothing at 300 from the sun, the gold edge with it) and go on as a dashed `--gold-soft` thread to a `tongue(40, 19)` flame at their ends, standing on an arch in the crown, each with a core heart (`m-lick`) and a soft saffron glow; the cores of all the rays lick too. The whole is dimmed to 0.28 behind the card window by a mask. Long wavy tongues read as tentacles, thin needles with star tips as a dandelion, and solid shafts under the flames as torches | Inline (`middle-of-the-sun.tsx`) | Shloka 65 |
+| A garland of the six excellences (bhagamālā) | A gold strand hung round the lower half of the sun's disc (an ellipse 95 by 103 from 158° round to 22°) with small `--leaf` leaves along it, tied at both shoulders with a gold bead and a vermilion tassel, and six eight-petalled blossoms (r 11, on a faint core halo, a turmeric heart) in the six colours: sovereignty `--gold`, power `--art-vermilion`, fame `--art-ivory` (fame is white in the poets), beauty `--lotus`, knowledge `--art-saffron`, detachment `--art-hair` | Inline (`middle-of-the-sun.tsx`) | Shloka 65 |
+| Gold apportioned (bhaga) | Twenty-six small `--gold` motes with a saffron edge and a short faint trail, either side of the sun, each falling and fading (`m-sink`) on its own `--dur` and negative `--delay`, with flat `--gold-soft` rings on the water where they land. Long trails read as pins on threads | Inline (`middle-of-the-sun.tsx`) | Shloka 65 |
+| Twin lotuses from one root (sahodara) | A red `OpenLotus` (crimson shade) at 0.52 and one in `--art-hair` (gold-soft shade) at 0.48, on two `--leaf` stems curving up from a single turmeric node on the water, a ring round the node and a lotus leaf behind them | Inline (`middle-of-the-sun.tsx`, with `OpenLotus`) | Shloka 65 |
+| Aḻagar's golden horse | `Horse` at 0.42 in `--gold`, mirrored to run left, its legs at the waterline in a gold-soft ring, far out on the water with a saffron glint | Inline (`middle-of-the-sun.tsx`, with `Horse`) | Shloka 65 |
 | A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
@@ -2537,6 +2542,41 @@ One entry per finished artwork, in the order they were made.
   couch. Two `m-gather` copies of the spiral then doubled every egg into clusters, so it is still.
   The plank's moon-white glow vanished by day; it glows in `--art-glow` now. In the chant miniature
   the red door and its lit couch carry it in both themes.
+
+### Shloka 65: In the middle of the sun's disc
+
+- **Component:** `middle-of-the-sun.tsx` (defs prefix `sa65`)
+- **Composition:** the answer to Shloka 59's moon, laid out differently. Below the card the sun's
+  full disc (the canon disc, its 32 rays, r 80) stands over still water with its reflection broken
+  into bars, and in its middle her light sits on an open red lotus. A garland of six blossoms, one
+  per excellence, hangs round its lower half like the garland on an image. Out of the disc sharp
+  rays climb past the card, the long ones fading and going on as threads to flames standing on an
+  arch in the crown. Gold falls on either side into the water, ringing where it lands. In the
+  water at the left a red lotus and a blue one rise from one root; far out on the right a small
+  golden horse wades in. The first sun with her in its centre, the first garland of six, the first
+  rays ending in fire.
+- **Name → part:**
+  - Bhānumaṇḍalamadhyasthā → `sun`: the disc, its canon rays and rims, the dawn glow, the water and
+    the reflection (Chāndogya 1.6.6)
+  - Bhairavī → `blaze`: the sharp rays, their threads and the flames in the crown
+  - Bhagamālinī → `garland`: the strand, its leaves and ties, and the six blossoms (Viṣṇu Purāṇa
+    6.5.74)
+  - Padmāsanā → `lotus`: the red lotus in the disc
+  - Bhagavatī → `shares`: the falling gold and the rings where it lands
+  - Padmanābhasahodarī → `twins`: the red and blue lotuses on their one root, and the leaf
+  - Intro, *the middle of the sun* → `light`: her light on the lotus and its glow
+  - Detail → `horse`: Aḻagar riding his golden horse into the Vaigai to give Mīnākṣī away, and
+    arriving too late for the wedding
+- **Palette:** no additions.
+- **Motion:** `m-lick` (the rays' cores and the flames' hearts), `m-sink` (the gold), `m-shimmer`
+  (the dawn glow, the reflection, her glow).
+- **Notes:** This title stays on one line and reaches only x ≈ 96 (148 at 1100px), so the crown is
+  open and the arch of flames fills it. The blaze took four tries: thin rays with star tips read
+  as a dandelion and streaked pink through the card (now dimmed behind the card window by a
+  mask); long wavy tongues read as tentacles; sharp rays alone left the crown empty; flames on solid
+  shafts read as torches, until the shafts faded out and became threads. Her light was first
+  under the lotus; it is its own part above it. In the chant miniature the disc and its rays
+  carry it by day and glow by lamplight without washing out the verse.
 
 ## Open questions
 
