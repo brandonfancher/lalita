@@ -215,7 +215,7 @@ second time it is needed.
 | The forest of becoming (bhavāraṇya) | Twelve trees in two rows along a ground line, the back row at 55%: a tapering `--art-musk` trunk under a crown of four overlapping discs, three `--leaf` and one musk shadow, edged faintly in musk, swaying in groups, over a faint musk shade. Cleared, it has a gap through the middle with two `--art-turmeric` stumps and two felled musk trunks, and the `Axe` in a stump, blade down, chips of turmeric still flying | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 | Full pot (pūrṇa-kumbha) | A round gold pot with a narrow neck and rim, a vermilion band and dot, five `--leaf` mango leaves fanned from its mouth and an `--art-turmeric` coconut on top | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 | Good fortune (saubhāgya) | A small gold tray holding a mound of `--art-vermilion` kumkum, one of `--art-turmeric` and a pair of bangles (`--leaf` and vermilion), gold motes twinkling down onto it in a saffron glow | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
-| A still lamp (contemplation) | The `Lamp`'s bowl with a narrower flame and no flicker, its one straight dotted gold line of light running to her | `StillLamp` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 41 and 44) | Shloka 41 |
+| A still lamp (contemplation) | The `Lamp`'s bowl with a narrower flame and no flicker, its one straight dotted gold line of light running to her | `StillLamp` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 41, 44 and 62) | Shloka 41 |
 | Devotee's offering (patraṁ puṣpaṁ phalaṁ toyam) | A `--leaf` leaf plate holding a leaf, a five-petalled `--art-vermilion` blossom, an `--art-turmeric` fruit and a small gold bowl of water, in a saffron glow | Inline (`devotion-governs.tsx`) | Shloka 42 |
 | Garland that binds her (bhakti-vaśyā) | A hair-fine gold thread climbing from the offering's flower to her light, swaying a little at the bottom and straightening as it rises, strung with small blossoms alternately `--art-vermilion` and `--art-ivory` (`m-twinkle`), closing at the top in a ring of sixteen blossoms round her light | Inline (`devotion-governs.tsx`) | Shloka 42 |
 | Roads that stop short | A palm-leaf book (`--art-turmeric` leaves between gold boards) and a stepped gold fire altar with a flickering flame, each sending a dotted `--gold-soft` road up that curls in and stops well below her | Inline (`devotion-governs.tsx`) | Shloka 42 |
@@ -226,7 +226,7 @@ second time it is needed.
 | Śaṅkara's trident and drum (triśūla, ḍamaru) | A gold three-pronged head with `--art-moon` tips on an `--art-turmeric` shaft. From a `--art-vermilion` cord tied under the prongs hangs the drum, upright: two `--art-turmeric` cones meeting at a narrow waist bound in vermilion, `--art-ivory` heads, a bead on a cord. Lying on its side it read as a bow tie. Being shaken (Shloka 57) it comes off its cord (`hung={false}`), tilted about 24°, with two bead cords flung out to strike the heads and broken dashed gold arcs of sound from each head | `trident(x, top, foot, s)` with `Trident` and `Damaru` in `primitives.tsx` (promoted at Shloka 56, used by Shlokas 43 and 56) | Shloka 43 |
 | Plumb line (sādhvī) | A gold peg, a hair-fine gold thread hanging dead straight, and a gold teardrop bob with an `--art-moon` sheen. Still on purpose | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | The moon in still water | Level `--gold-soft` hairlines, closer toward the far edge, broken round an `--art-moon` ellipse of the moon (with its deer, flattened) in a soft moon glow | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
-| Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43, 44 and 47) | Shloka 43 |
+| Lotus leaf that water does not wet (padmapatram ivāmbhasā) | A flat `--leaf` pad seen at a slant, notched to its centre, with radiating `--gold-soft` veins, and beads of water standing on it, `--art-ivory` with a gold rim and an `--art-moon` highlight, one at the very edge about to roll off. Pigment flung at her light, stopping at its edge, read as wings | `LotusLeaf` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 43, 44, 47 and 62) | Shloka 43 |
 | The empty seat (nirādhāra) | A lotus pedestal drawn only in dotted gold, six petals over two base lines, with her light hanging well above it and nothing between | Inline (`autumn-moon-turn.tsx`) | Shloka 43 |
 | Rāhu's shadow (upaplava) | Never a figure: a soft dark disc, a radial gradient from `--art-hair` to `--art-musk`, with a faint musk rim, sinking (`m-sink`), and its way past the moon as a dotted musk arc that goes over the moon and never across it | Inline (`ten-taken-away.tsx`) | Shloka 44 |
 | Her light without outline (nirākāra) | Only a glow: a radial gradient from `--art-core` through `--art-glow` to nothing, no disc and no rim (`m-breathe`), with one unbroken gold ring and a `--gold-soft` echo round it (`m-shimmer`) for nityā | Inline (`ten-taken-away.tsx`) | Shloka 44 |
@@ -349,6 +349,10 @@ second time it is needed.
 | The couch's gods, inert (preta) | `BrahmaCouch` at 2.5 with each leg's shaft, above and below its medallion, under an `--art-hair` wash at 0.42, so the gold goes dull; a vein of her light (`--art-core`, a 3.6 soft stroke under a 1.1 line, `m-shimmer`) runs along the plank and down each leg into its medallion, which keeps its colour inside a core halo (a radial clear to 0.62, `m-twinkle`). A halo filled to the centre washed the emblems out | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
 | Sadāśiva blushing (Saundaryalaharī 92) | Over the white plank, a `--art-vermilion` radial centred under her (0.85 at the centre to nothing at 90), with a short core line along the plank's top, so the plank is red only where she sits | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
 | Rock salt dissolving (saindhava-khilya, Bṛhadāraṇyaka 2.4.12) | A shallow brass bowl (a `--gold`-to-`--art-turmeric` body, turmeric rim and foot, a vermilion band) before the dais, its water `--art-stone` under `--art-hair` at 0.16 and `--art-core` at 0.22 (`m-shimmer`); at the centre a faceted lump of `--art-moon` under `--lotus` at 0.3 with `--gold-soft` facets, curls of `--art-core` spreading from its foot through the water (ivory curls vanished by day), and fourteen small ivory glints all over the water (`m-twinkle`) | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| The waking world along a bank (viśva) | A frieze drawn with its bank at y 506 and brought up to 1.25 on the plate's bank at 526: a high far range (`--art-stone` under `--art-hair` at 0.08, a faint gold line) behind nearer hills (hair at 0.14), two banks in `--art-stone` under `--leaf` at 0.22 with gold edges, open water between them; on the left a village of three houses (`--art-ivory` walls, `--art-vermilion` roofs, musk doors, gold lines), two coconut palms (a musk trunk, six `--leaf` fronds) and a pale road down to the water; on the right a small temple (plinth, walls, a curved śikhara banded in `--gold-soft`, a gold āmalaka and finial, a musk door) between a mango and a banyan (round `--leaf` lobes on a musk trunk); and a few musk birds high up. On the left keep it clear of the verse panel (x > 110 on the plate) | Inline (`waking-and-dream.tsx`) | Shloka 62 |
+| The dream: the world turned over in the water (svapna, taijasa) | The same frieze mirrored on the bank line, every fill turned to `--art-core` at about twice the opacity, gold outlines at 0.9, doors, windows and the temple's door lit in core (`m-twinkle`), all broken into level bands 3.6 high every 4.6 by a mask that fades with depth (to 0.25); no sun in it. Over it, a wide flat `--art-core` glow from within (`m-breathe`) and a thin gold bank line fading at both ends. The water itself is `--art-hair` at 0.16 fading down | Inline (`waking-and-dream.tsx`) | Shloka 62 |
+| The dream's chariot (Bṛhadāraṇyaka 4.3.10) | Only in the reflection, on the road at the water's edge: a small car in core with a gold edge on one wheel, its pole to a `Horse` at 0.36 in `--art-core`, mirrored and banded with the rest. On the road above, nothing | Inline (`waking-and-dream.tsx`) | Shloka 62 |
+| A still lamp afloat, with its reflection | `StillLamp` at 4.4 floating on the water before the bank, in a core glow (`m-shimmer`), its reflection turned over on the foot of its bowl (not its rim) at 0.8, banded by the water's mask, in a smaller glow of its own | `StillLamp` in `primitives.tsx` | Shloka 62 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2402,6 +2406,43 @@ One entry per finished artwork, in the order they were made.
   petals replaced them and carries the plate. Halos filled to the centre washed out the gods'
   emblems. In the chant miniature the glowing couch over its bowl carries it by day, the lotus
   by lamplight.
+
+### Shloka 62: Meditation, the meditator, and the thing meditated on
+
+- **Component:** `waking-and-dream.tsx` (defs prefix `sa62`)
+- **Composition:** the Māṇḍūkya gives the dreamer the same seven limbs and nineteen mouths as the
+  waker, turned inward, and the picture takes it at its word. Below the card the waking world
+  stands along a far bank in a long frieze, two ranges of hills, a village with its palms and its
+  road on the left, a small temple between two trees on the right, under the sun in the crown with
+  birds out. Below the bank the same world lies turned over in the water, banded by the water and
+  lit from within, with no sun in it: windows and the temple door alight. On the water between
+  them floats a still lamp, its flame rising toward the one world and its reflection going down
+  into the other; beside it a lotus leaf with the water standing on it in beads. On the road in
+  the water a chariot drives that is not on the road above. The first plate split into a world
+  and its reflection, the first village, palms and temple seen as a landscape.
+- **Name → part:**
+  - Dhyānadhyātṛdhyeyarūpā → `lamp`: the still lamp, its reflection and their glows (Gītā 6.19)
+  - Dharmādharmavivarjitā → `leaf`: the lotus leaf and its beads (Gītā 5.10)
+  - Viśvarūpā → `world`: the frieze above the bank and the birds
+  - Jāgariṇī → `sun`: the sun, its rays and the daylight round it
+  - Svapantī → `dream`: the water and the world turned over in it
+  - Taijasātmikā → `taijasa`: the glow from within the water and the lit windows and door in it
+    (Bṛhadāraṇyaka 4.3.9)
+  - Intro, *the dream* → `dream`
+  - Detail → `chariot`: the chariot on the road in the water only; "there are no chariots there,
+    no teams, no roads; but he makes chariots, teams and roads" (Bṛhadāraṇyaka 4.3.10)
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the daylight, the long rays, the lamp's glows), `m-twinkle` (the lit
+  windows and door in the dream, the leaf's beads), `m-breathe` (the glow from within).
+- **Notes:** This title wraps, its second line reaching only x ≈ 63 (115 at 1100px), so the card
+  sits at y ≈ 225–438, the sun stands at x ≈ 456 right of the title and the bank is at y 526. The
+  first frieze, at 1 on a bank at 506, was too thin to hold the plate and its dream too faint; it
+  was brought up to 1.25 on a lower bank, the reflection's fills doubled, and the far range added
+  behind for depth. Scaling about the centre pushed the village under the verse panel, so it moved
+  right. The chariot first stood among the reflected houses and was lost; it is on the open
+  stretch of road at the water's edge now. The lamp's reflection is turned over on the foot of its
+  bowl, where it meets the water, not on its rim. In the chant miniature the bank, the lamp and the
+  glowing water carry it in both themes.
 
 ## Open questions
 

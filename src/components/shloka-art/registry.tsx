@@ -33,6 +33,7 @@ import { MeruInward } from "./meru-inward";
 import { MiddleOfTheMoon } from "./middle-of-the-moon";
 import { MountainsDaughter } from "./mountains-daughter";
 import { SaltAndTheCouch } from "./salt-and-the-couch";
+import { WakingAndDream } from "./waking-and-dream";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
 import { GreatYantra } from "./great-yantra";
@@ -2855,6 +2856,62 @@ export const ARTWORK: Record<string, Artwork> = {
           The plank is white except where she sits, and there it is red. Śaṅkara says Sadāśiva, white as crystal, contrived
           to become the coverlet of her couch, and reflecting her red light he looks like love itself made flesh, a
           delight to her eyes (Saundaryalaharī 92).
+        </>
+      ),
+    },
+  },
+  "062": {
+    Art: WakingAndDream,
+    intro: (Spot) => (
+      <>
+        The Māṇḍūkya says the dreamer has the same limbs and the same mouths as the waker, only turned inward, and the
+        picture takes it at its word: the waking world stands along the far bank, and{" "}
+        <Spot part="dream">the dream</Spot> is the same world turned over in the water.
+      </>
+    ),
+    entries: [
+      {
+        nama: 254,
+        part: "lamp",
+        depicts:
+          "On the water between them floats a lamp in a windless place, its flame quite still (Gītā 6.19). It rises toward the one world and its reflection goes down into the other: what sees, the seeing, and what is seen, one light.",
+      },
+      {
+        nama: 255,
+        part: "leaf",
+        depicts:
+          "Beside it a lotus leaf, which the water stands on in beads and never wets (Gītā 5.10): no deed, good or bad, leaves a mark on her.",
+      },
+      {
+        nama: 256,
+        part: "world",
+        depicts:
+          "The whole world along the bank, hills and palms, the village and its road, the temple and its trees, the birds overhead: her body, not her handiwork. Viśva is also the Māṇḍūkya's name for the waking self.",
+      },
+      {
+        nama: 257,
+        part: "sun",
+        depicts: "The sun is up and the world is awake in its light, aware of what is outside it.",
+      },
+      {
+        nama: 258,
+        part: "dream",
+        depicts: "Below the bank the same world lies turned over in the water, every house and tree of it, aware of what is inside.",
+      },
+      {
+        nama: 259,
+        part: "taijasa",
+        depicts:
+          "There is no sun in the water; the dream is lit from within, its windows and the temple door alight. Taijasa, the dreaming self, is the luminous one, its own light (Bṛhadāraṇyaka 4.3.9).",
+      },
+    ],
+    detail: {
+      part: "chariot",
+      body: (
+        <>
+          On the road along the bank there is nothing; on the same road in the water a chariot is driving. &ldquo;There are
+          no chariots there, no teams, no roads; but he makes chariots, teams and roads,&rdquo; says Yājñavalkya of the
+          dreamer (Bṛhadāraṇyaka 4.3.10).
         </>
       ),
     },
