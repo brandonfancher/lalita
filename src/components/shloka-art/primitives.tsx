@@ -2411,3 +2411,36 @@ export function NectarCup({ glow }: { glow: string }) {
     </>
   );
 }
+
+/* ── The subtle body: its centres and knots ────────────────────────────── */
+
+/** A centre (cakra) on the channel: its height, petal count, element and the radii of its petals. */
+export type Cakra = { y: number; petals: number; sign: Tattva; r0: number; r1: number };
+
+/** A knot as a cord wound round the channel, seen a little from above, cut through at the front; one half of it. */
+const KNOT_HALF = "M 0 -7 A 26 7 0 0 0 -26 0 A 26 7 0 0 0 -7 6.7 M -7 6.7 L -4 11 M -7 6.7 L -2.6 8.4 M -7 6.7 L -5.6 11.6";
+
+/** A knot (granthi) across the channel, split: its two halves pushed apart, musk with a moon hairline. */
+export function SplitKnot({ x, y }: { x: number; y: number }) {
+  return (
+    <>
+      {[-1, 1].map((side) => (
+        <g key={side} transform={`translate(${x + side * 6} ${y}) scale(${-side} 1)`}>
+          <path d={KNOT_HALF} stroke="var(--art-musk)" strokeWidth={2.4} strokeLinecap="round" />
+          <path d={KNOT_HALF} stroke="var(--art-moon)" strokeWidth={0.5} strokeOpacity={0.7} strokeLinecap="round" />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/** A centre as a small lotus seen face on, its petals in its colour round a gold circle; dimmed when unlit. */
+export function CakraLotus({ x, c, lit, petal, glow }: { x: number; c: Cakra; lit: boolean; petal: string; glow?: string }) {
+  return (
+    <g transform={`translate(${x} ${c.y})`}>
+      {glow && <circle r={c.r1 + 16} fill={glow} />}
+      <path d={yantraPetals(c.petals, c.r0, c.r1)} fill={petal} fillOpacity={lit ? 0.75 : 0.18} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
+      <circle r={c.r0} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
+    </g>
+  );
+}

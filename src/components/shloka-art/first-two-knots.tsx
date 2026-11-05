@@ -14,7 +14,7 @@
  * artwork's entry.
  */
 
-import { artIds, glint, partProps, sunRays, tattvaSign, yantraPetals, type Tattva } from "./primitives";
+import { CakraLotus, SplitKnot, artIds, glint, partProps, sunRays, tattvaSign, yantraPetals, type Cakra } from "./primitives";
 import type { ArtProps } from "./types";
 
 const AXIS = 320;
@@ -23,17 +23,14 @@ const NAVEL_Y = 456;
 const TOP_Y = 162;
 const LIT_TO = 392;
 
-type Centre = { y: number; petals: number; sign: Tattva; r0: number; r1: number };
-const ROOT: Centre = { y: ROOT_Y, petals: 4, sign: "earth", r0: 14, r1: 34 };
-const SVADHISTHANA: Centre = { y: 518, petals: 6, sign: "water", r0: 9, r1: 22 };
-const NAVEL: Centre = { y: NAVEL_Y, petals: 10, sign: "fire", r0: 15, r1: 36 };
-const HEART: Centre = { y: 336, petals: 12, sign: "air", r0: 9, r1: 21 };
-const THROAT: Centre = { y: 270, petals: 16, sign: "space", r0: 9, r1: 21 };
+const ROOT: Cakra = { y: ROOT_Y, petals: 4, sign: "earth", r0: 14, r1: 34 };
+const SVADHISTHANA: Cakra = { y: 518, petals: 6, sign: "water", r0: 9, r1: 22 };
+const NAVEL: Cakra = { y: NAVEL_Y, petals: 10, sign: "fire", r0: 15, r1: 36 };
+const HEART: Cakra = { y: 336, petals: 12, sign: "air", r0: 9, r1: 21 };
+const THROAT: Cakra = { y: 270, petals: 16, sign: "space", r0: 9, r1: 21 };
 const BROW = { y: 220 };
 
 const KNOTS = { brahma: 552, visnu: 408 };
-/** A knot as a cord wound round the channel, seen a little from above, cut through at the front; one half of it. */
-const KNOT_HALF = "M 0 -7 A 26 7 0 0 0 -26 0 A 26 7 0 0 0 -7 6.7 M -7 6.7 L -4 11 M -7 6.7 L -2.6 8.4 M -7 6.7 L -5.6 11.6";
 const SUN = sunRays({ cx: AXIS, cy: NAVEL_Y + 3, r: 8, long: 24, short: 17, count: 10, span: 180 });
 
 /** The thousand-petalled lotus, unlit: three rings of many fine petals. */
@@ -42,30 +39,6 @@ const THOUSAND = [
   { n: 52, r0: 17, r1: 29 },
   { n: 64, r0: 26, r1: 36 },
 ];
-
-/** A knot across the channel, split: its two halves pushed apart, musk with a moon hairline. */
-function SplitKnot({ x, y }: { x: number; y: number }) {
-  return (
-    <>
-      {[-1, 1].map((side) => (
-        <g key={side} transform={`translate(${x + side * 6} ${y}) scale(${-side} 1)`}>
-          <path d={KNOT_HALF} stroke="var(--art-musk)" strokeWidth={2.4} strokeLinecap="round" />
-          <path d={KNOT_HALF} stroke="var(--art-moon)" strokeWidth={0.5} strokeOpacity={0.7} strokeLinecap="round" />
-        </g>
-      ))}
-    </>
-  );
-}
-
-function CentreLotus({ c, lit, petal, glow }: { c: Centre; lit: boolean; petal: string; glow?: string }) {
-  return (
-    <g transform={`translate(${AXIS} ${c.y})`}>
-      {glow && <circle r={c.r1 + 16} fill={glow} />}
-      <path d={yantraPetals(c.petals, c.r0, c.r1)} fill={petal} fillOpacity={lit ? 0.75 : 0.18} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
-      <circle r={c.r0} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={lit ? 0.9 : 0.35} />
-    </g>
-  );
-}
 
 export function FirstTwoKnots({ idPrefix = "sa38", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
@@ -112,9 +85,9 @@ export function FirstTwoKnots({ idPrefix = "sa38", active = null }: ArtProps) {
 
       {/* The centres the verse passes over, and the thousand-petalled lotus not yet reached */}
       <g {...part("silent")}>
-        <CentreLotus c={SVADHISTHANA} lit={false} petal="var(--art-vermilion)" />
-        <CentreLotus c={HEART} lit={false} petal="var(--art-vermilion)" />
-        <CentreLotus c={THROAT} lit={false} petal="var(--lotus)" />
+        <CakraLotus x={AXIS} c={SVADHISTHANA} lit={false} petal="var(--art-vermilion)" />
+        <CakraLotus x={AXIS} c={HEART} lit={false} petal="var(--art-vermilion)" />
+        <CakraLotus x={AXIS} c={THROAT} lit={false} petal="var(--lotus)" />
         <g transform={`translate(${AXIS} ${BROW.y})`} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.35}>
           <path d="M -6 0 C -14 -12 -26 -10 -28 0 C -26 10 -14 12 -6 0 Z M 6 0 C 14 -12 26 -10 28 0 C 26 10 14 12 6 0 Z" fill="var(--art-ivory)" fillOpacity={0.18} />
           <circle r={6} />
@@ -128,7 +101,7 @@ export function FirstTwoKnots({ idPrefix = "sa38", active = null }: ArtProps) {
 
       {/* The root centre, four petals round the square of earth, her light seated in it */}
       <g {...part("root")}>
-        <CentreLotus c={ROOT} lit petal="var(--art-crimson)" glow={url("root-glow")} />
+        <CakraLotus x={AXIS} c={ROOT} lit petal="var(--art-crimson)" glow={url("root-glow")} />
         <path d={tattvaSign("earth", ROOT.r0 * 0.78)} transform={`translate(${AXIS} ${ROOT_Y})`} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.5} />
         <circle className="m-breathe" cx={AXIS} cy={ROOT_Y} r={22} fill={url("bindu-glow")} />
         <circle cx={AXIS} cy={ROOT_Y} r={4} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.6} />
@@ -143,7 +116,7 @@ export function FirstTwoKnots({ idPrefix = "sa38", active = null }: ArtProps) {
 
       {/* The navel wheel, ten petals round the triangle of fire, and her light coming up in it like the sun */}
       <g {...part("manipura")}>
-        <CentreLotus c={NAVEL} lit petal="var(--art-hair)" glow={url("navel-glow")} />
+        <CakraLotus x={AXIS} c={NAVEL} lit petal="var(--art-hair)" glow={url("navel-glow")} />
         <path d={tattvaSign("fire", NAVEL.r0 * 0.9)} transform={`translate(${AXIS} ${NAVEL_Y + 1}) rotate(180)`} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.5} />
         <g className="m-shimmer">
           {SUN.map((ray, i) => (
