@@ -43,6 +43,7 @@ import { LetterRosary } from "./letter-rosary";
 import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
 import { NectarIsland } from "./nectar-island";
+import { OceanOfSleep } from "./ocean-of-sleep";
 import { OnHisLap } from "./on-his-lap";
 import { OtherEndOfTheRope } from "./other-end-of-the-rope";
 import { RiversToTheSea } from "./rivers-to-the-sea";
@@ -2912,6 +2913,77 @@ export const ARTWORK: Record<string, Artwork> = {
           On the road along the bank there is nothing; on the same road in the water a chariot is driving. &ldquo;There are
           no chariots there, no teams, no roads; but he makes chariots, teams and roads,&rdquo; says Yājñavalkya of the
           dreamer (Bṛhadāraṇyaka 4.3.10).
+        </>
+      ),
+    },
+  },
+  "063": {
+    Art: OceanOfSleep,
+    intro: (Spot) => (
+      <>
+        The verse is a hinge between sleep and making, and the picture draws the scene the Purāṇas hang the two on:{" "}
+        <Spot part="ocean">the one ocean</Spot> of the night between worlds, Viṣṇu asleep on the serpent, and a lotus
+        rising from his navel with Brahmā on it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 260,
+        part: "sleep",
+        depicts:
+          "A veil of night is drawn over the sleeper and stars stand in the dark round him. The sleep that holds Viṣṇu at the end of a world is she, the goddess who dwells in all beings as sleep (Devī Māhātmya 1, 5).",
+      },
+      {
+        nama: 261,
+        part: "ocean",
+        depicts:
+          "The one ocean, without shore or horizon: every water has become one water, as the sleeper's mind becomes one, a solid mass of knowing (Māṇḍūkya 5). It is dark, yet lit faintly from within.",
+      },
+      {
+        nama: 262,
+        part: "fourth",
+        depicts:
+          "Apart from all of it, in the crown, her light stands over a crescent, the half-measure that sits above ॐ and is never sounded: the fourth, beyond waking, dream and sleep (Māṇḍūkya 12).",
+      },
+      {
+        nama: 263,
+        part: "measures",
+        depicts:
+          "Below it hang the three measures, a, u and m, which the Upaniṣad makes waking, dream and sleep. They are strung together; she is not on the string, and even being the fourth is no state of hers.",
+      },
+      {
+        nama: 264,
+        part: "worlds",
+        depicts:
+          "Out of the lotus the fourteen worlds are let go as eggs, growing as they go: seven rise past the card into the night and seven sink into the water below. Creation as emission, the word sṛṣṭi.",
+      },
+      {
+        nama: 265,
+        part: "brahma",
+        depicts:
+          "From the sleeper's navel a lotus rises, and on it Brahmā's four faces are lit as four flames turned to the quarters. The face of making is his; the power in it is hers.",
+      },
+      {
+        nama: 266,
+        part: "guard",
+        depicts:
+          "Śeṣa lies coiled under the sleeper as his bed, and his seven hoods, each with its jewel, are spread over the sleeper's head. Goptrī is from √gup, which means to guard and also to hide.",
+      },
+      {
+        nama: 267,
+        part: "govinda",
+        depicts:
+          "On the coils lies a dark light, Viṣṇu, his conch and discus set down beside him: Govinda, who goes after the worlds as a cowherd after his cattle, resting between one round and the next.",
+      },
+    ],
+    detail: {
+      part: "banyan",
+      body: (
+        <>
+          On the water below the serpent&rsquo;s tail floats a single banyan leaf with a speck of the same dark light on it. In another
+          telling the sleeper of the one ocean is an infant lying on a banyan leaf, wondering who he is, and in the
+          Devī Bhāgavata it is she who answers him with half a verse: &ldquo;All this is I alone; there is nothing else
+          eternal.&rdquo;
         </>
       ),
     },

@@ -353,6 +353,13 @@ second time it is needed.
 | The dream: the world turned over in the water (svapna, taijasa) | The same frieze mirrored on the bank line, every fill turned to `--art-core` at about twice the opacity, gold outlines at 0.9, doors, windows and the temple's door lit in core (`m-twinkle`), all broken into level bands 3.6 high every 4.6 by a mask that fades with depth (to 0.25); no sun in it. Over it, a wide flat `--art-core` glow from within (`m-breathe`) and a thin gold bank line fading at both ends. The water itself is `--art-hair` at 0.16 fading down | Inline (`waking-and-dream.tsx`) | Shloka 62 |
 | The dream's chariot (Bṛhadāraṇyaka 4.3.10) | Only in the reflection, on the road at the water's edge: a small car in core with a gold edge on one wheel, its pole to a `Horse` at 0.36 in `--art-core`, mirrored and banded with the rest. On the road above, nothing | Inline (`waking-and-dream.tsx`) | Shloka 62 |
 | A still lamp afloat, with its reflection | `StillLamp` at 4.4 floating on the water before the bank, in a core glow (`m-shimmer`), its reflection turned over on the foot of its bowl (not its rim) at 0.8, banded by the water's mask, in a smaller glow of its own | `StillLamp` in `primitives.tsx` | Shloka 62 |
+| The one ocean (ekārṇava) | No shore and no horizon: an `--art-hair` water from y 420 rising to 0.42 and fading again at the foot, faded at both sides by a mask, sixteen `--gold-soft` level lines closer together upward and faded at the ends, a wide flat `--art-core` glow from within (`m-shimmer`), and a faint echo of what floats on it, mirrored and faded out under a mask. A horizon line made it a sea with a shore, and an unmasked rect a grey slab in the plate | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| Śeṣa coiled as a bed, his seven hoods spread (ananta-śayana) | One stroked path, three straight runs joined by half turns (tube 22 wide, a 2.6 `--gold` edge under `--art-moon` with `--art-hair` at 0.16), up into a neck; a turmeric belly line and `--gold-soft` scale arcs on each run, an ivory sheen along its top, hair shadow lines between runs, and a `taper` tail curling off the lowest run. Seven cobra hoods fanned 21° apart from the neck and leaned toward the sleeper: broad shoulders narrowing to a small snouted head, `--art-moon` under hair at 0.3 with a gold edge, an ivory inner face, a hair spectacle mark, two hair eyes and a twinkling vermilion jewel, drawn outermost first. Round fan petals with no heads read as a cauliflower | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| The veil of sleep over Viṣṇu (yoganidrā) | He is not drawn: a dark `--art-hair` cloth at 0.62 lies over the coils, rising over his head under the hoods, with three folds, small twinkling `--gold-soft` stars in it and a gold hem over a dashed one, and a breathing `--art-hair` glow under it (`m-breathe`). His conch and discus (`GanesaEmblem`) lie at its foot. A dark ball for his head read as a marble | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| Brahmā on the navel lotus, his four faces as flames | A tapered `--leaf` stalk from the sleeper's navel (a gold bead) up to an `OpenLotus` at 1.4 without its pad, crimson shade, in a saffron-to-vermilion glow (`m-shimmer`); on it four `tongue(17, 8)` flames in `--art-vermilion` with core hearts, turned to the quarters (the back one smaller and higher, the front one largest) | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| The fourteen worlds let out | Shloka 3's world-egg, fourteen of them in two chains from the lotus, growing as they go: seven up the left beside the card and seven sinking into the water on the right, those at 0.78 with a hair tint in place of saffron. Two rising arcs either side put the right one under the card's corner, since the hoods fill the space beside it | Inline (`ocean-of-sleep.tsx`, with `eggPath`) | Shloka 63 |
+| The three measures and the half-measure (a u m, ardhamātrā) | अ उ म in Tiro Devanagari, 16, `--sindura`, on `--art-moon` discs (13.5, a gold rim and a `--gold-soft` inner ring) strung on a gold string tied off at both ends. Apart from them, her light as the candrabindu: the fourth night's `litPart` turned horns up with a soft moon stroke, her bindu (core in saffron in a core ring) set in its cup, a `--gold-soft` ring and a wide core glow (`m-shimmer`). A bindu above the crescent with rays read as a smiling sun | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
+| The infant on a banyan leaf (vaṭapatraśāyī) | A small `--leaf` leaf with `--gold-soft` veins floating on a core shadow, a speck of `--art-hair` on it in a hair glow (`m-breathe`) | Inline (`ocean-of-sleep.tsx`) | Shloka 63 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2443,6 +2450,48 @@ One entry per finished artwork, in the order they were made.
   stretch of road at the water's edge now. The lamp's reflection is turned over on the foot of its
   bowl, where it meets the water, not on its rim. In the chant miniature the bank, the lamp and the
   glowing water carry it in both themes.
+
+### Shloka 63: The fourth, and then the first of the five acts
+
+- **Component:** `ocean-of-sleep.tsx` (defs prefix `sa63`)
+- **Composition:** the verse is a hinge between sleep and making, and the picture draws the scene
+  the Purāṇas hang the two on. Below the card, on the one ocean of the night between worlds, with
+  no shore and no horizon, Śeṣa lies coiled as a bed with his seven hoods spread toward the right,
+  and over the coils lies a dark veil of sleep, starred, drawn up over a head under the hoods:
+  Viṣṇu is not drawn, only his sleep and his conch and discus set down at its foot. From his navel
+  a lotus rises with Brahmā's four faces lit on it as four flames, and out of it the fourteen
+  worlds are let go as eggs, seven rising up the left past the card, seven sinking into the water
+  on the right. In the crown, apart from everything, her light is the candrabindu, a bindu in the
+  cup of a crescent, and below it hang the three measures अ उ म on a string of their own. The
+  first sleeping Viṣṇu, the first Śeṣa, the first ॐ broken into its measures.
+- **Name → part:**
+  - Suptā → `sleep`: the veil, its stars and hem, and the stars of the night sky (Devī Māhātmya 1, 5)
+  - Prājñātmikā → `ocean`: the water, its level lines, the glow within and the echo (Māṇḍūkya 5)
+  - Turyā → `fourth`: the crescent, the bindu in it, its ring and glow (Māṇḍūkya 12)
+  - Sarvāvasthāvivarjitā → `measures`: अ उ म on their string
+  - Sṛṣṭikartrī → `worlds`: the fourteen eggs
+  - Brahmarūpā → `brahma`: the stalk, the lotus, its glow and the four flames
+  - Goptrī → `guard`: Śeṣa's coils, tail and hoods (√gup, to guard and to hide)
+  - Govindarūpiṇī → `govinda`: the breathing dark light under the veil, the conch and the discus
+  - Intro, *the one ocean* → `ocean`
+  - Detail → `banyan`: a banyan leaf afloat below the serpent's tail with a speck of the same dark
+    light on it, the infant who asks who he is and is answered by her, "All this is I alone; there
+    is nothing else eternal" (Devī Bhāgavata)
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the glow within the water, Brahmā's glow, her glow), `m-twinkle` (the
+  night's stars, the veil's stars, the hoods' jewels, the eggs' glints), `m-breathe` (the sleeper's
+  dark light and the infant), with the discus's own `m-flicker`.
+- **Notes:** This title stays on one line and reaches x ≈ 365 (417 at 1100px), so her light
+  stands at x 482 right of it and the three measures hang in the band between title and card. The
+  first render was small and sparse: the hood fan read as a cauliflower, the bindu over the
+  crescent with rays as a smiling sun, the veil as a grey cushion, the water as a dull box. The
+  couch was brought up and the hoods given heads, the bindu set in the crescent's cup with no rays,
+  the sky filled with stars, and the water given depth and an echo. The second had a dark ball for
+  the sleeper's head, read as a marble; the veil now rises over his head instead. Its two arcs of
+  worlds both passed under the card's lower corners, and the right one had nowhere to go past the
+  hoods, so the worlds split into seven above and seven below. The water's rect showed as a grey
+  slab in the plate until it was faded at the sides and foot. In the chant miniature the white
+  coils and the lotus carry it by day, and the hoods and her light by lamplight.
 
 ## Open questions
 
