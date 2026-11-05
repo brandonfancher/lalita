@@ -2460,3 +2460,16 @@ export function Axe() {
     </>
   );
 }
+
+/* ── A lamp in a windless place ────────────────────────────────────────── */
+
+/** The `Lamp`'s bowl on the origin with a narrower flame that does not flicker: the mind held still (Gītā 6.19). */
+export function StillLamp() {
+  return (
+    <>
+      <path d={LAMP_BOWL} fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
+      <path d="M 0 -0.6 C -1.6 -3 -1.4 -7 0 -11.6 C 1.4 -7 1.6 -3 0 -0.6 Z" fill="var(--art-saffron)" />
+      <path d="M 0 -1.4 C -0.8 -3 -0.6 -5 0 -7.4 C 0.6 -5 0.8 -3 0 -1.4 Z" fill="var(--art-core)" />
+    </>
+  );
+}

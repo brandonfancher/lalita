@@ -14,7 +14,7 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { Axe, artIds, litPart, partProps, polar, round } from "./primitives";
+import { Axe, StillLamp, artIds, litPart, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -184,9 +184,7 @@ export function ForestOfBecoming({ idPrefix = "sa41", active = null }: ArtProps)
       <g {...part("contemplation")}>
         <path d={THREAD} stroke={url("thread")} strokeWidth={0.9} strokeDasharray="2 3" strokeLinecap="round" />
         <g transform={`translate(${LAMP.x} ${LAMP.y}) scale(2.2)`}>
-          <path d="M -4.4 0 Q 0 4 4.4 0 Z" fill="var(--gold)" stroke="var(--art-musk)" strokeWidth={0.4} strokeOpacity={0.5} />
-          <path d="M 0 -0.6 C -1.6 -3 -1.4 -7 0 -11.6 C 1.4 -7 1.6 -3 0 -0.6 Z" fill="var(--art-saffron)" />
-          <path d="M 0 -1.4 C -0.8 -3 -0.6 -5 0 -7.4 C 0.6 -5 0.8 -3 0 -1.4 Z" fill="var(--art-core)" />
+          <StillLamp />
         </g>
       </g>
 
