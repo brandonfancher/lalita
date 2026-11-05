@@ -10,7 +10,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { artIds, glint, partProps, polyline, radiance, round, through } from "./primitives";
+import { BrahmaCouch, artIds, glint, partProps, polyline, radiance, round, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -103,39 +103,9 @@ const ROOF_FACETS = [
 
 /* ── The couch of the five Brahmās ─────────────────────────────────────── */
 
-const PLANK = { y: 506, h: 7, half: 56 };
-const LEGS = [
-  { x: CX - 48, god: "brahma", fill: "var(--art-vermilion)" },
-  { x: CX - 16, god: "visnu", fill: "var(--art-hair)" },
-  { x: CX + 16, god: "rudra", fill: "var(--art-moon)" },
-  { x: CX + 48, god: "isvara", fill: "var(--gold)" },
-];
-const LEG_TOP = PLANK.y + PLANK.h;
-const MEDAL = { y: LEG_TOP + 9, r: 6.4 };
+const PLANK = { y: 506 };
 const BINDU = { x: CX, y: PLANK.y - 12 };
 const RADIANCE = radiance({ cx: BINDU.x, cy: BINDU.y, from: 16, long: 430, short: 250 });
-
-/** The four emblems, each drawn round the origin within a radius of about 5. */
-function Emblem({ god }: { god: string }) {
-  if (god === "brahma")
-    return (
-      <g fill="var(--art-core)">
-        {[0, 60, 120, 180, 240, 300].map((deg) => (
-          <ellipse key={deg} cy={-2.6} rx={1.3} ry={2.6} transform={`rotate(${deg})`} />
-        ))}
-      </g>
-    );
-  if (god === "visnu")
-    return (
-      <g stroke="var(--art-core)" strokeWidth={0.8}>
-        <circle r={4.2} />
-        <path d="M -4.2 0 H 4.2 M 0 -4.2 V 4.2 M -3 -3 L 3 3 M 3 -3 L -3 3" strokeWidth={0.5} />
-      </g>
-    );
-  if (god === "rudra")
-    return <path d="M 0 5 V -4 M -3.4 -4.6 C -3.4 -1 -1.5 0 0 0 C 1.5 0 3.4 -1 3.4 -4.6 M 0 -4 L -1 -2.4 M 0 -4 L 1 -2.4" stroke="var(--art-carve)" strokeWidth={0.9} strokeLinecap="round" />;
-  return <path d="M -4.4 -3.4 Q 0 -5 4.4 -3.4 L 3.6 4 Q 1.6 2.4 0 4 Q -1.6 2.4 -3.6 4 Z" fill="var(--art-core)" fillOpacity={0.85} />;
-}
 
 const LICK = ["m-lick", "m-lick m-late", "m-lick m-later"];
 
@@ -238,17 +208,7 @@ export function MeruInward({ idPrefix = "sa22", active = null }: ArtProps) {
 
       {/* The couch: four gods as its legs, a fifth as its plank, and her seated on it */}
       <g {...part("couch")}>
-        {LEGS.map((l) => (
-          <g key={l.god}>
-            <path d={`M ${l.x - 3} ${LEG_TOP} L ${l.x + 3} ${LEG_TOP} L ${l.x + 2} ${PAV.floor} L ${l.x - 2} ${PAV.floor} Z`} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-            <circle cx={l.x} cy={MEDAL.y} r={MEDAL.r} fill={l.fill} stroke="var(--gold)" strokeWidth={1} />
-            <g transform={`translate(${l.x} ${MEDAL.y}) scale(0.95)`}>
-              <Emblem god={l.god} />
-            </g>
-          </g>
-        ))}
-        <rect x={CX - PLANK.half} y={PLANK.y} width={PLANK.half * 2} height={PLANK.h} rx={2} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} />
-        <path d={`M ${CX - PLANK.half + 4} ${PLANK.y + 2.2} H ${CX + PLANK.half - 4}`} stroke="var(--gold-soft)" strokeWidth={0.7} />
+        <BrahmaCouch cx={CX} plank={PLANK.y} floor={PAV.floor} />
         <circle className="m-breathe" cx={BINDU.x} cy={BINDU.y} r={30} fill={url("bindu-glow")} />
         <circle cx={BINDU.x} cy={BINDU.y} r={5.4} fill="var(--art-core)" />
         <circle cx={BINDU.x} cy={BINDU.y} r={9} stroke="var(--gold)" strokeWidth={0.8} />

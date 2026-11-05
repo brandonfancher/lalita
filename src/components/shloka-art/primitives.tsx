@@ -10,7 +10,7 @@
  * backdrop and again on the client inside the plate, and must match.
  */
 
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 import type { ArtPart } from "./types";
 
@@ -2507,6 +2507,246 @@ export function LotusLeaf() {
           <circle cx={round(b.x - b.r * 0.35)} cy={round(b.y - b.r)} r={round(b.r * 0.3)} fill="var(--art-moon)" />
         </g>
       ))}
+    </>
+  );
+}
+
+/* ── Hibiscus (japā) ───────────────────────────────────────────────────── */
+
+export const HIBISCUS_R = 64;
+
+/** One broad petal of the hibiscus, base at the origin, pointing up, its rim a little ruffled. */
+const HIBISCUS_PETAL = [
+  "M 0 0",
+  "C -10 -10 -34 -26 -38 -44",
+  "C -41 -58 -26 -67 -12 -64",
+  "C -6 -66 -2 -62 1 -65",
+  "C 5 -68 10 -66 15 -65",
+  "C 30 -64 41 -54 37 -40",
+  "C 34 -26 10 -8 0 0",
+  "Z",
+].join(" ");
+const HIBISCUS_VEINS = [-24, -12, 0, 12, 24]
+  .map((x) => `M ${round(x * 0.15)} -14 Q ${round(x * 0.7)} -34 ${x} ${-52 + Math.abs(x) * 0.25}`)
+  .join(" ");
+/** The sheen down the middle of each petal, where it catches the light. */
+const HIBISCUS_SHEEN = "M 1 -20 C 2 -32 3 -44 1 -56";
+
+/**
+ * A hibiscus seen face on, centred on `c` (petals of radius 64): five petals
+ * turned in a pinwheel, and the staminal column leaning up and out to the
+ * right, dusted with pollen and tipped with five stigma pads.
+ */
+export function hibiscus(c: Pt) {
+  const petals = Array.from({ length: 5 }, (_, k) => `translate(${c.x} ${c.y}) rotate(${8 + k * 72})`);
+  const tip = polar(c.x, c.y, 76, 24);
+  const column = `M ${c.x} ${c.y} C ${c.x + 18} ${c.y - 2} ${c.x + 44} ${c.y - 14} ${tip.x} ${tip.y}`;
+  const pollen = [0.62, 0.68, 0.74, 0.8, 0.86].flatMap((t, i) => {
+    const x = c.x + (tip.x - c.x) * t;
+    const y = c.y + (tip.y - c.y) * t;
+    return [
+      { x: round(x - 2), y: round(y - 4 - (i % 2)) },
+      { x: round(x + 2), y: round(y + 3 + (i % 2)) },
+    ];
+  });
+  const stigma = Array.from({ length: 5 }, (_, k) => polar(tip.x + 2, tip.y - 1, 4, 18 + k * 72));
+  return { c, petals, column, pollen, stigma };
+}
+
+export type HibiscusShape = ReturnType<typeof hibiscus>;
+
+/** The petals' fill, `--art-crimson` at the eye to `--art-vermilion`; its id is `hibiscus`. */
+export function HibiscusGradient({ h, id }: { h: HibiscusShape; id: (name: string) => string }) {
+  return (
+    <radialGradient id={id("hibiscus")} cx={h.c.x} cy={h.c.y} r={HIBISCUS_R} gradientUnits="userSpaceOnUse">
+      <stop offset="0" style={{ stopColor: "var(--art-crimson)" }} />
+      <stop offset="0.28" style={{ stopColor: "var(--art-crimson)" }} />
+      <stop offset="0.46" style={{ stopColor: "var(--art-vermilion)" }} />
+      <stop offset="1" style={{ stopColor: "var(--art-vermilion)" }} />
+    </radialGradient>
+  );
+}
+
+export function Hibiscus({ h, url }: { h: HibiscusShape; url: (name: string) => string }) {
+  return (
+    <>
+      <g fill={url("hibiscus")} stroke="var(--art-crimson)" strokeWidth={0.8} strokeOpacity={0.7} strokeLinejoin="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_PETAL} transform={t} />
+        ))}
+      </g>
+      <g stroke="var(--art-crimson)" strokeWidth={0.6} strokeOpacity={0.5} strokeLinecap="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_VEINS} transform={t} />
+        ))}
+      </g>
+      <g stroke="var(--art-saffron)" strokeWidth={2.4} strokeOpacity={0.55} strokeLinecap="round">
+        {h.petals.map((t, i) => (
+          <path key={i} d={HIBISCUS_SHEEN} transform={t} />
+        ))}
+      </g>
+      <path d={h.column} stroke="var(--gold-soft)" strokeWidth={2.6} strokeLinecap="round" />
+      <g fill="var(--art-core)">
+        {h.pollen.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={1.7} />
+        ))}
+      </g>
+      <g fill="var(--art-crimson)">
+        {h.stigma.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={2.4} />
+        ))}
+      </g>
+    </>
+  );
+}
+
+/* ── Crystal (sphaṭika) ────────────────────────────────────────────────── */
+
+const CRYSTAL_BODY = "M 0 -26 L 7 -16 L 7 14 L 0 22 L -7 14 L -7 -16 Z";
+const CRYSTAL_FACETS = "M 0 -26 L 0 22 M -7 -16 L 7 -16 M -7 14 L 7 14 M -7 -16 L 0 -10 L 7 -16 M -7 14 L 0 8 L 7 14";
+
+/** The crystal's fill (`crystal`) and its soft glow (`clear`). */
+export function CrystalDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <linearGradient id={id("crystal")} x1={0} y1={0} x2={1} y2={1}>
+        <stop offset="0" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.95 }} />
+        <stop offset="0.5" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.9 }} />
+      </linearGradient>
+      <radialGradient id={id("clear")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.45 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+/** A clear crystal, an upright hexagonal prism with pointed ends, 14 wide and 48 tall, centred on (x, y), in a soft moon glow. */
+export function Crystal({ x, y, url }: Pt & { url: (name: string) => string }) {
+  return (
+    <>
+      <ellipse className="m-shimmer" cx={x} cy={y} rx={22} ry={32} fill={url("clear")} />
+      <g transform={`translate(${x} ${y})`} strokeLinejoin="round">
+        <path d={CRYSTAL_BODY} fill={url("crystal")} stroke="var(--gold)" strokeWidth={0.9} />
+        <path d={CRYSTAL_FACETS} stroke="var(--gold-soft)" strokeWidth={0.5} strokeOpacity={0.8} />
+        <path className="m-twinkle" d={glint(5)} transform="translate(-3 -14)" fill="var(--art-ivory)" />
+      </g>
+    </>
+  );
+}
+
+/* ── The couch of the five Brahmās (pañcabrahmāsana) ───────────────────── */
+
+const BRAHMAS = [
+  { dx: -48, god: "brahma", fill: "var(--art-vermilion)" },
+  { dx: -16, god: "visnu", fill: "var(--art-hair)" },
+  { dx: 16, god: "rudra", fill: "var(--art-moon)" },
+  { dx: 48, god: "isvara", fill: "var(--gold)" },
+];
+
+/** The four gods' emblems, each drawn round the origin within a radius of about 5. */
+function BrahmaEmblem({ god }: { god: string }) {
+  if (god === "brahma")
+    return (
+      <g fill="var(--art-core)">
+        {[0, 60, 120, 180, 240, 300].map((deg) => (
+          <ellipse key={deg} cy={-2.6} rx={1.3} ry={2.6} transform={`rotate(${deg})`} />
+        ))}
+      </g>
+    );
+  if (god === "visnu")
+    return (
+      <g stroke="var(--art-core)" strokeWidth={0.8}>
+        <circle r={4.2} />
+        <path d="M -4.2 0 H 4.2 M 0 -4.2 V 4.2 M -3 -3 L 3 3 M 3 -3 L -3 3" strokeWidth={0.5} />
+      </g>
+    );
+  if (god === "rudra")
+    return <path d="M 0 5 V -4 M -3.4 -4.6 C -3.4 -1 -1.5 0 0 0 C 1.5 0 3.4 -1 3.4 -4.6 M 0 -4 L -1 -2.4 M 0 -4 L 1 -2.4" stroke="var(--art-carve)" strokeWidth={0.9} strokeLinecap="round" />;
+  return <path d="M -4.4 -3.4 Q 0 -5 4.4 -3.4 L 3.6 4 Q 1.6 2.4 0 4 Q -1.6 2.4 -3.6 4 Z" fill="var(--art-core)" fillOpacity={0.85} />;
+}
+
+/**
+ * The couch of the five Brahmās, centred on `cx`: a white plank (Sadāśiva),
+ * 112 wide, its top at `plank`, on four gold legs standing on `floor`, each
+ * with a medallion of its god, from the left Brahmā, Viṣṇu, Rudra and Īśvara.
+ */
+export function BrahmaCouch({ cx, plank, floor }: { cx: number; plank: number; floor: number }) {
+  const legTop = plank + 7;
+  const medal = legTop + 9;
+  return (
+    <>
+      {BRAHMAS.map(({ dx, god, fill }) => {
+        const x = cx + dx;
+        return (
+          <g key={god}>
+            <path d={`M ${x - 3} ${legTop} L ${x + 3} ${legTop} L ${x + 2} ${floor} L ${x - 2} ${floor} Z`} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+            <circle cx={x} cy={medal} r={6.4} fill={fill} stroke="var(--gold)" strokeWidth={1} />
+            <g transform={`translate(${x} ${medal}) scale(0.95)`}>
+              <BrahmaEmblem god={god} />
+            </g>
+          </g>
+        );
+      })}
+      <rect x={cx - 56} y={plank} width={112} height={7} rx={2} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} />
+      <path d={`M ${cx - 52} ${plank + 2.2} H ${cx + 52}`} stroke="var(--gold-soft)" strokeWidth={0.7} />
+    </>
+  );
+}
+
+/* ── Elephant (gaja) ───────────────────────────────────────────────────── */
+
+/** An elephant facing right, standing on the origin, about 110 long and 88 to the top of its back. */
+const ELEPHANT_BODY =
+  "M -52 -58 C -50 -80 -30 -88 -6 -86 C 14 -84 22 -92 36 -90 C 50 -88 58 -78 56 -64 L 52 -50 C 50 -46 47 -44 44 -42 L 46 0 L 30 0 L 30 -34 C 10 -30 -14 -30 -32 -34 L -32 0 L -50 0 L -52 -40 C -54 -46 -54 -52 -52 -58 Z";
+const ELEPHANT_FAR_LEGS = "M 38 -36 L 38 -2 L 52 -2 L 50 -40 Z M -42 -36 L -42 -2 L -28 -2 L -26 -36 Z";
+/** Trunks: raised in a curl to hold up a pot, or hanging, curled at the tip. */
+export const ELEPHANT_TRUNK = {
+  raised: "M 50 -70 C 66 -76 76 -96 70 -116 C 68 -124 60 -126 57 -120 C 56 -116 60 -114 62 -116 C 64 -100 58 -80 48 -56 Z",
+  down: "M 50 -70 C 60 -66 62 -50 60 -30 C 60 -22 62 -16 66 -14 C 64 -11 58 -13 56 -20 C 54 -34 54 -50 46 -56 Z",
+};
+const ELEPHANT_TOES = [34, 39, 44, -48, -43, -38].map((x) => `M ${x - 1.6} -0.8 A 1.6 1.6 0 0 1 ${x + 1.6} -0.8`).join(" ");
+const ELEPHANT_BROW_CHAIN = "M 30 -88 Q 44 -82 54 -70";
+const ELEPHANT_EAR = "M 24 -80 C 8 -80 4 -56 12 -46 C 20 -40 30 -48 32 -58 C 32 -68 30 -76 24 -80 Z";
+const ELEPHANT_TUSK = "M 46 -50 C 54 -46 62 -46 66 -54";
+const ELEPHANT_CLOTH = "M -38 -80 C -22 -88 2 -88 14 -84 L 12 -50 C -6 -46 -24 -46 -40 -50 Z";
+const ELEPHANT_CLOTH_FRINGE = Array.from({ length: 9 }, (_, k) => {
+  const x = round(-38 + k * 6.2);
+  return `M ${x} -49 L ${x} -45`;
+}).join(" ");
+const ELEPHANT_TAIL = "M -52 -56 C -58 -46 -58 -36 -55 -26";
+
+/** The elephant's slate hide (`hide`), a little paler toward its back. */
+export function ElephantDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <linearGradient id={id("hide")} x1={0} y1={-90} x2={0} y2={0} gradientUnits="userSpaceOnUse">
+      <stop offset="0" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.78 }} />
+      <stop offset="1" style={{ stopColor: "var(--art-hair)", stopOpacity: 0.95 }} />
+    </linearGradient>
+  );
+}
+
+/**
+ * An elephant in profile facing right, standing on the origin: slate hide
+ * edged in gold, ivory toenails and tusk, a dotted gold chain across the
+ * brow, a red caparison. `children` are drawn over it, in its frame.
+ */
+export function Elephant({ trunk, url, children }: { trunk: string; url: (name: string) => string; children?: ReactNode }) {
+  return (
+    <>
+      <path d={ELEPHANT_FAR_LEGS} fill="var(--art-hair)" fillOpacity={0.6} />
+      <path d={ELEPHANT_TAIL} stroke="var(--art-hair)" strokeWidth={2} strokeLinecap="round" />
+      <path d={ELEPHANT_BODY} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d={trunk} fill={url("hide")} stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d={ELEPHANT_TOES} stroke="var(--art-ivory)" strokeWidth={1} />
+      <path d={ELEPHANT_BROW_CHAIN} stroke="var(--gold)" strokeWidth={1.6} strokeDasharray="0.1 3.4" strokeLinecap="round" />
+      <path d={ELEPHANT_EAR} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={0.7} />
+      <path d={ELEPHANT_CLOTH} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
+      <path d={ELEPHANT_CLOTH_FRINGE} stroke="var(--gold)" strokeWidth={1} strokeLinecap="round" />
+      <path d={ELEPHANT_TUSK} stroke="var(--art-ivory)" strokeWidth={3} strokeLinecap="round" />
+      <circle cx={42} cy={-74} r={1.6} fill="var(--art-core)" />
+      {children}
     </>
   );
 }
