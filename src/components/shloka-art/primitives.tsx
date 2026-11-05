@@ -2818,7 +2818,7 @@ function BrahmaEmblem({ god }: { god: string }) {
       </g>
     );
   if (god === "rudra")
-    return <path d="M 0 5 V -4 M -3.4 -4.6 C -3.4 -1 -1.5 0 0 0 C 1.5 0 3.4 -1 3.4 -4.6 M 0 -4 L -1 -2.4 M 0 -4 L 1 -2.4" stroke="var(--art-carve)" strokeWidth={0.9} strokeLinecap="round" />;
+    return <path d="M 0 5 V -4 M -3.4 -4.6 C -3.4 -1 -1.5 0 0 0 C 1.5 0 3.4 -1 3.4 -4.6 M 0 -4 L -1 -2.4 M 0 -4 L 1 -2.4" stroke="var(--art-hair)" strokeWidth={0.9} strokeLinecap="round" />;
   return <path d="M -4.4 -3.4 Q 0 -5 4.4 -3.4 L 3.6 4 Q 1.6 2.4 0 4 Q -1.6 2.4 -3.6 4 Z" fill="var(--art-core)" fillOpacity={0.85} />;
 }
 
