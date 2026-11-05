@@ -31,6 +31,7 @@ import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
+import { LetterRosary } from "./letter-rosary";
 import { MonsoonPool } from "./monsoon-pool";
 import { NailMoons } from "./nail-moons";
 import { NectarIsland } from "./nectar-island";
@@ -2301,6 +2302,64 @@ export const ARTWORK: Record<string, Artwork> = {
           On a reed at the right a cātaka holds its beak open to the rain. It is said to drink nothing but rain from
           the cloud, and Bhartṛhari puts it in the same verse as the owl: if no rain falls into its beak, is that the
           cloud&apos;s fault? Here a drop is falling straight in.
+        </>
+      ),
+    },
+  },
+  "052": {
+    Art: LetterRosary,
+    intro: (Spot) => (
+      <>
+        Every name in this verse begins with <i>sarva</i>, all. After the long run of names that took things away, the
+        hymn now adds, so the picture is full: a <Spot part="mantra">rosary</Spot> strung round all of it, and inside
+        it everything turned toward her <Spot part="light">light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 199,
+        part: "sparks",
+        depicts:
+          "Sparks fly up out of her light, and each one is a small light of the same form. The Muṇḍaka Upaniṣad says that as sparks of like form leap by thousands from a blazing fire, so all things come from the imperishable (2.1.1). The powers are not things she holds: they are her own fire.",
+      },
+      {
+        nama: 200,
+        part: "conch",
+        depicts:
+          "A conch sounds toward her, as one is blown to open every wedding, festival and rite. The Devī Māhātmya's best-loved verse calls her the auspiciousness of everything auspicious (11.10).",
+      },
+      {
+        nama: 201,
+        part: "hamsa",
+        depicts:
+          "A single haṃsa flies home to her. The Śvetāśvatara pictures the soul as a haṃsa wandering in the great wheel, and says it reaches the deathless only when it is favoured (1.6): the good going is given, not earned.",
+      },
+      {
+        nama: 202,
+        part: "crowns",
+        depicts:
+          "Before her footstool lie the crowns of Brahmā, Viṣṇu and Indra, bowed to the floor. In the Saundaryalaharī her attendants call out as she rises to greet Śiva: mind Brahmā's crown, you will trip on Viṣṇu's, step round Indra's (29).",
+      },
+      {
+        nama: 203,
+        part: "gold",
+        depicts:
+          "A nugget of gold lies among a necklace, a bangle, a ring and an earring. The Chāndogya says that by one nugget everything made of gold is known: the change is only a name, and what is real is the gold (6.1.5). She is the gold of everything.",
+      },
+      {
+        nama: 204,
+        part: "mantra",
+        depicts:
+          "Round the whole picture runs a rosary of the fifty letters, from अ over the crown to क्ष. Every mantra is made of these letters, and in the tantras the letters are the little mothers, her own body of sound.",
+      },
+    ],
+    detail: {
+      part: "meru",
+      body: (
+        <>
+          At the foot of the rosary, where the loop closes, the gold meru bead sits between अ, the first letter, and
+          क्ष, the last. A rosary is called an <i>akṣamālā</i>, and the tradition hears the word as the garland that runs
+          from <i>a</i> to <i>kṣa</i>.
         </>
       ),
     },

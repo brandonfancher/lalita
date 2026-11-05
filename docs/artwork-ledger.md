@@ -101,7 +101,7 @@ second time it is needed.
 | The flood of her light (prabhāpūra), seen from the side | A level surface: a 1.3-unit `--gold` line with a 3-unit `--art-core` line just under it, a flat `--art-core` glow where her light meets it. Below, a vertical gradient from `--art-core` through `--art-saffron` to `--art-glow` (never `--art-vermilion` in the depths: diluted, it went pink by day), faded at the sides; wavering dashed gold currents, fainter with depth; and nine shafts of her light fanning down from under her, each a tapered wedge drawn twice, in `--art-core` and `--art-ivory` (the ivory is what shows them by day). A swelling, convex surface read as a sand dune. Shloka 3's flood is the same light seen at a slant | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Kāmeśa's mind | His crescent, drawn as her crest is (Dhyāna), radius 32, sunk deep in the flood and turned well onto its side (244°): turned nearly horns up and set under her bindu, it would make a face. A faint saffron tint over it puts it under the light; `m-sink`; small `--art-moon` pearls of light rise from it on `m-ember` and break at the surface (clipped to the flood) | Inline (`silenced-lute.tsx`) | Shloka 11 |
 | Kailāsa | A small broad dome with steep faces, on the far shore of the flood with low gold ridges either side: snow (`--art-moon`) on its upper part, a snow-filled gully down the south face, short gold strokes for the bands of rock that cross it, the rest `--gold-soft` at low opacity. Clipped to above the surface. A pointed white cap read as Mount Fuji, and a big white triangle as a tent | Inline (`silenced-lute.tsx`) | Shloka 11 |
-| Haṃsas in flight | Wild geese, about 20 units long: an `--art-moon` body, neck and head outlined in hair-fine gold, a saffron beak, wings by turns raised and lowered with a `--gold-soft` far wing. Flown as a small skein, heading down to water. Never a single bird by Sarasvatī's lute, where it would read as her mount | `Goose` in `primitives.tsx` (promoted at Shloka 52, used by Shlokas 11 and 52) | Shloka 11 |
+| Haṃsas in flight | Wild geese, about 20 units long: an `--art-moon` body, neck and head outlined in hair-fine gold, a saffron beak, wings by turns raised and lowered with a `--gold-soft` far wing. Flown as a small skein, heading down to water. Never a single bird by Sarasvatī's lute, where it would read as her mount. Alone and flying home (Shloka 52), it is one bird at 3.4, wing raised, with gold feather lines and a short tail, its course dotted behind it | `Goose` in `primitives.tsx` (promoted at Shloka 52, used by Shlokas 11 and 52) | Shloka 11 |
 | Her face as a mirror (mukha-mukura) | A hand mirror of polished metal, upright, face radius 76: an `--art-ivory` face under a faint `--gold-soft` diagonal shading and a soft bevel, two diagonal `--art-moon` sheen streaks (one broad, one thin, lower left to upper right), an `--art-carve` setting line, a 10-unit gold frame with 44 `--gold-soft` beads. It rests in a small lotus cup (the lotus seat's rows, at about a quarter of the size) on a gold stem, her chin, with a pale sheen line, two banded rings, and a collar, knob and bud at the foot. Nothing is reflected in it but her light. Kept distinct from Shloka 9's ruby mirror, which is a red standard she outdoes. Wherever it returns, her face is this mirror, and the marriage thread stays tied on its stem | `handMirror`, `HandMirror` (with `MirrorShading` and `MirrorFaceClip` in the defs) in `primitives.tsx` (promoted at Shloka 13) | Shloka 12 |
 | The marriage thread (māṅgalyasūtra) | A 5-unit `--art-turmeric` cord edged in `--gold`, its twist a dashed `--art-saffron` hairline. Wound once round what it is tied to (the back arc hidden behind it) and closed with three knots across the front, each a turmeric oval with a saffron crease. Both loose ends hang together to one side, ending in gold beads and turmeric tassels; ends spread to both sides of a stem read as a trident | `marriageThread`, `MarriageThread` (with `ThreadMask` in the defs) in `primitives.tsx` (promoted at Shloka 13) | Shloka 12 |
 | The tāli | A gold pīpal leaf hung from the middle knot on a small gold bail: broad base up, long drip tip down, about 48 by 81 units, with an `--art-carve` midrib, four pairs of carved veins, an `--art-core` sheen on the left shoulder, and a `--sindura` kumkum dot near the top. Kept generic, without any one community's emblem. With a short tip and no veins it read as a heart pendant. A tāli once tied is never left off | Part of `MarriageThread` in `primitives.tsx` | Shloka 12 |
@@ -287,6 +287,12 @@ second time it is needed.
 | Lightning in a cloud | Shloka 40's three strokes (`--art-core` glow 7, 2.6 gold, 1.1 ivory, `m-flicker`) as a zigzag with a short fork down the cloud's flank, faded in at the top under a mask | Inline (`monsoon-pool.tsx`) | Shloka 51 |
 | The sun and the moon behind the cloud | The sun as a soft `--art-saffron` glow with the full disc's two gold rings and no rays; the moon as an `--art-moon` disc with a gold rim, a `--gold-soft` shade at the lower right, one moonlight ring and `MoonDeer` at 0.42 and 0.4 opacity. Small brighter cloud lobes roll across the lower half of each, so both are behind the cloud | Inline (`monsoon-pool.tsx`) | Shloka 51 |
 | A forest pool | An uneven ellipse, `--art-core` at its centre shading to `--art-hair` at its edge, a gold rim, level `--gold-soft` lines closer toward the far bank, rain rings (`m-twinkle`), her light as a column of saffron and core lozenges, a saffron bank behind, `--leaf` reeds at its ends | Inline (`monsoon-pool.tsx`) | Shloka 51 |
+| The rosary of letters (akṣamālā, varṇamālā) | Fifty `--art-moon` beads (radius 10.5, a `--gold-soft` rim shade, a 0.9 gold edge) on a 1.2 gold thread, each with one letter in Tiro Devanagari, `--sindura`, 12.5 (10.5 for the two-part vowels), upright: अ to अः, क to ह and क्ष, clockwise from the meru. Strung round the whole picture, over the crown and down both sides clear of the card, closing at a gold meru bead (radius 12.5) with a vermilion tassel | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| Sparks of her own form (visphuliṅga) | Small bindus: a soft `--art-core` glow, a fine core ring, a saffron disc and a core dot, thrown up and out from her light along seven arcs, smaller as they fly (`m-twinkle`, three groups). With trails they read as tadpoles | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| A conch sounding (śaṅkha) | Lying on its side, about 66 long: an `--art-ivory` body with a gold edge, gold whorl lines on the stepped spire, `--gold-soft` ridges, a `--lotus` mouth along the underside, a core sheen on the shoulder; three `--gold-soft` sound arcs from its canal (`m-twinkle`). Mahāgaṇapati's 24-unit emblem scaled up read as a lemon | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| The gods' crowns, bowed (Saundaryalaharī 29) | Three crowns in a gradient from `--art-turmeric` to `--gold` with `--art-carve` lines, at 1.18, on the floor before her footstool, the outer two tipped toward her: Brahmā's karaṇḍa-mukuṭa (three tiers and a bud, a vermilion lotus on the front), Viṣṇu's tall kirīṭa (bands, a vermilion jewel, leaf gems, a pearl rim and a vermilion finial), Indra's makuṭa (five pointed leaves on a band, `--art-hair` gems, vermilion beads) | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| Her footstool | A low `--art-crimson` slab at 0.8, gold-edged, under a broad gold top line, with gold-soft studs and two short gold feet, just under her light | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| Gold and the things made of it | A faceted gold nugget with a glint (`m-twinkle`) among a `Bangle`, a ring with a vermilion stone, an earring with a drop, and a beaded gold necklace laid in a loop with a pendant, in a faint core glow | Inline (`letter-rosary.tsx`, using `Bangle`) | Shloka 52 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1989,6 +1995,37 @@ One entry per finished artwork, in the order they were made.
   the moon's ring and its deer now. The first cātaka was a tilted muddle; it is upright on the reed
   with its head back. The pearl was too small to find and is at 1.4 now. In the chant miniature
   the cloud's arch and the two animals under her light carry it.
+
+### Shloka 52: All powers, all mantras
+
+- **Component:** `letter-rosary.tsx` (defs prefix `sa52`)
+- **Composition:** a rosary of the fifty letters, अ to क्ष, strung round the whole picture: up
+  the left side, over the crown and down the right, closing at a gold meru bead and its tassel
+  below the focal zone. Inside it everything is turned toward her light. Sparks of her own form
+  are thrown up out of it in a fountain; a conch at the left sounds toward her; a single haṃsa
+  flies in from the right; under her a footstool, and before it on the floor the crowns of Brahmā,
+  Viṣṇu and Indra; at the lower left a nugget of gold among the ornaments made of it. The first
+  artwork framed whole by one element, and the first to write out the alphabet.
+- **Name → part:**
+  - Sarvaśaktimayī → `sparks`: the sparks
+  - Sarvamaṅgalā → `conch`: the conch and its sound
+  - Sadgatipradā → `hamsa`: the haṃsa and its course
+  - Sarveśvarī → `crowns`: the three crowns and her footstool
+  - Sarvamayī → `gold`: the nugget and the ornaments
+  - Sarvamantrasvarūpiṇī → `mantra`: the fifty lettered beads and their thread
+  - Intro, *rosary* → `mantra`; *light* → `light`
+  - Detail → `meru`: the meru bead sits between अ and क्ष, the first letter and the last, and
+    the tradition hears *akṣamālā* as the garland from *a* to *kṣa*
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (her glow), `m-breathe` (her light), `m-twinkle` (the sparks, the sound
+  arcs, the nugget's and the meru's glints).
+- **Notes:** This title stays on one line and stays left of the artwork. The haṃsa in flight was
+  promoted into `primitives.tsx` (`Goose`), and Shloka 11 renders byte-for-byte as before. The
+  sparks first had trails and read as tadpoles, and then, scattered at random, bunched at her
+  sides; they fly along seven arcs now. Mahāgaṇapati's conch scaled up read as a lemon, so the
+  conch is drawn in its own right. The footstool first sat behind the crowns and read as a table
+  they stood on; it is under her light now, with feet. The gold first crowded the beads at the
+  lower right. In the chant miniature the ring of beads and her light carry it.
 
 ## Open questions
 
