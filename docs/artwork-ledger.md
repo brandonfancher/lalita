@@ -334,6 +334,12 @@ second time it is needed.
 | A palm-leaf fan and a service mirror (vyajana, darpaṇa), offered | Crossed behind her parasol's staff on long handles. The fan: eleven pleats fanned round a disc, `--art-turmeric` and `--gold-soft` by turns, a `--art-vermilion` binding at the edge, on a turmeric handle; a round head with no pleats read as a paddle. The mirror: a small gold disc with an `--art-moon` face and one core sheen stroke on a gold handle, kept plain so it is a thing offered, not her face (Shloka 12) or the ruby standard (Shloka 9) | Inline (`yogini-temple.tsx`, with `Parasol`) | Shloka 58 |
 | Emblems of the sixty-four arts | Eight small things laid on a ring round her seat, each about 34 across at 1.15 on a faint shadow: a `Vina` at 0.4, a turmeric drum with vermilion lacing and ivory heads, an anklet ring with seven `Bell`s at 0.3, a brush on an ivory palette with three colours, a garland of ivory and vermilion flowers, a `Ruby` on a dark touchstone with a gold streak, a palm-leaf book between turmeric boards with a vermilion cord, a `--leaf` parrot on a perch | Inline (`yogini-temple.tsx`) | Shloka 58 |
 | Young paddy | Rows of three-blade `--leaf` tufts at 0.6, larger and wider apart toward the viewer, kept off the path to the door and clear of the temple's foot | Inline (`yogini-temple.tsx`) | Shloka 58 |
+| The moon's orb, upright, being filled (candramaṇḍala) | A full disc of radius 84 just under the card, a radial gradient from `--art-core` at the centre to `--art-moon`, a `--gold-soft` limb shade to 0.55 (weaker, it was lost on paper by day), a 1.6 gold rim, a faint moon glow, and the moon's own moonlight as eight fine `--gold-soft` rings 25 apart spreading over the whole plate. A second ring just inside the rim made it a plate | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
+| The fifteen digits that wax and wane | Fifteen small moons on a ring round the orb (radius 116): full at the foot, thinner up both sides (`litPart` of nights 15, 13 … 1), thinnest at the top under the card, each turned so its lit side faces her at the centre, the unlit part `--art-hair` at 0.16 with a faint gold outline as the moon canon has it (`m-twinkle`, three groups). She is the sixteenth | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
+| Her form of light (rūpa) | A slender shape pointed above and full below, about 85 tall: three nested copies, `--art-saffron` at 0.4 with a gold hairline at 0.5, a core-to-saffron radial at 0.72, and `--art-core` at 0.4 (`m-shimmer`), with a core bindu low in it and her crescent (`litPart(4)` turned horns up, `--art-ivory`, gold edge, a soft moon stroke round it) on its tip. One flat outlined fill with a vermilion foot read as a carrot, then as a seed | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
+| Two jugs pouring (kalaśa) | Round-bellied jugs with a neck and flared lip, about 60 tall at 1.3, tipped 64° toward the orb from either side: gold (a `--gold` to `--art-turmeric` gradient, vermilion bands, a core sheen) and silver (`--art-moon`, gold bands, an ivory crescent engraved). Each stream is a `taper` of `--art-moon` widening as it falls, over a wide soft moon stroke, with a broken ivory line down it (`m-shimmer`) and drops thrown off where it enters (`m-sink`). Thin and outlined, the streams read as wires or hoses | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
+| The net of moonlight of her smile (smita-jyotsnā-jāla) | A cast net fanned out below the orb, between 190° and 350° and from radius 130 to 272: two families of threads spiralling out from her one each way (bases 10° apart, each turning 30° as it goes out), `--art-core` at 0.7, crossing in diamonds that grow outward, with a knot at every crossing (`m-twinkle`), faded out by a radial mask. Straight rays with dotted rings read as a sunburst; if the step does not divide the turn, the knots miss the crossings. Distinct from Shloka 19's net of her light, which is rays from two feet | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
+| Cakora (chukar partridge) | Perched, in profile, about 34 long at 1.5: a round body and head in `--art-moon` under an `--art-hair` wash at 0.16 (grey in both themes; moon alone was a white duck by day), a short raised tail, a `--gold-soft` wing, four `--art-musk` flank bars, an ivory throat ringed by a musk band from the beak through the eye, a vermilion beak, eye ring and legs, on a low stone rock with grass. `--art-carve` marks vanished by day. In flight the same colours with both wings up, the far one `--gold-soft` | Inline (`middle-of-the-moon.tsx`) | Shloka 59 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2276,6 +2282,42 @@ One entry per finished artwork, in the order they were made.
   glow rose from the court. The royal parasol was promoted into `primitives.tsx` (`Parasol`), and
   Shloka 1 renders byte-for-byte as before. In the chant miniature the glowing round of the temple
   carries it.
+
+### Shloka 59: The middle of the moon
+
+- **Component:** `middle-of-the-moon.tsx` (defs prefix `sa59`)
+- **Composition:** two lines built to one measure, a mantra handed down and then a face, hinged on
+  the moon. Below the card the moon's full disc stands upright and is being filled, from the left
+  by Manu's gold jug and from the right by Candra's silver one, the one water from either side.
+  Round it the moon waxes and wanes in fifteen small moons, full at the foot and thinnest under the
+  card, each lit from her side; at its centre stands the sixteenth that never changes, her light as
+  a slender form with the crescent she wears on its tip. From her a cast net of moonlight, her
+  smile, spreads over the ground, and two cakoras on rocks have come to drink it. The orb's
+  moonlight rings out over the whole plate. In the crown the moon in the sky, with its deer, and a
+  third cakora flown up to it. The first moon drawn as a vessel being filled, the first garland of
+  phases, and the first partridges.
+- **Name → part:**
+  - Manuvidyā → `manu`: the gold jug, its stream and drops
+  - Candravidyā → `candra`: the silver jug with its crescent, its stream and drops
+  - Candramaṇḍalamadhyagā → `orb`: the disc, its glow and moonlight rings, the fifteen phases
+  - Cārurūpā → `form`: her form of light, its glow and bindu
+  - Cāruhāsā → `smile`: the net of moonlight, the two cakoras and their rocks (Saundaryalaharī 63)
+  - Cārucandrakalādharā → `crescent`: the crescent on the tip of her form
+  - Intro, *moon's full disc* → `orb`
+  - Detail → `sour-gruel`: the moon in the sky and the third cakora drinking it, as sour gruel
+    to clear a palate numbed by the sweetness of her smile (Saundaryalaharī 63)
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the phases and the net's knots), `m-shimmer` (the glows, the streams,
+  the net, her inner light), `m-sink` (drops off the streams).
+- **Notes:** This title stays on one line, reaching x ≈ 115 (167 at 1100px) at y ≈ 74–141, so the
+  sky moon sits at x ≈ 470, y ≈ 92, with the flying cakora's beak at its lower-left limb. `polar`
+  counts 0° east and anticlockwise, so the foot of the ring is 270°; the first ring came out upside
+  down. The first net was straight rays with dotted rings and read as a sunburst; it is two families
+  of crossing spirals now. Her form was first one flat outlined fill and read as a carrot. The
+  cakoras were first long and flat and read as ducks; in `--art-moon` alone they were white by day.
+  The first render was a small emblem with an empty middle; the orb, ring, jugs and birds were
+  scaled up and the moonlight rings added so the plate holds together. In the chant miniature the
+  lit disc between its two jugs carries it.
 
 ## Open questions
 

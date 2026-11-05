@@ -30,6 +30,7 @@ import { GlanceAndASon } from "./glance-and-a-son";
 import { AnsweringRain } from "./answering-rain";
 import { TenDescents } from "./ten-descents";
 import { MeruInward } from "./meru-inward";
+import { MiddleOfTheMoon } from "./middle-of-the-moon";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { GraciousOne } from "./gracious-one";
 import { GreatYantra } from "./great-yantra";
@@ -2693,6 +2694,62 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           Inside the wheel of flocks the moon shows one thin digit. That digit is a kalā too, the same word as
           the arts of the second name: a part of something larger, a sixteenth of the moon, a skill that can be taught.
+        </>
+      ),
+    },
+  },
+  "059": {
+    Art: MiddleOfTheMoon,
+    intro: (Spot) => (
+      <>
+        The verse turns on the moon, and so does the picture: below the card the{" "}
+        <Spot part="orb">moon&rsquo;s full disc</Spot> stands upright, being filled, and round it the moon waxes and
+        wanes in fifteen small moons, each lit from her side. Their sixteenth is at the centre and never changes.
+      </>
+    ),
+    entries: [
+      {
+        nama: 238,
+        part: "manu",
+        depicts:
+          "From the left a gold jug pours into the disc: the vidyā as it came down Manu's line. He heads most lists of the twelve teachers through whom it was handed on.",
+      },
+      {
+        nama: 239,
+        part: "candra",
+        depicts:
+          "From the right a silver jug, marked with a crescent, pours the same water: Candra's recension. Once in the disc the two streams are one water, as she is one vidyā however it is spoken.",
+      },
+      {
+        nama: 240,
+        part: "orb",
+        depicts:
+          "She stands at the very centre of the moon's disc, which here is the cool, full orb the streams pour into, ringed by the fifteen digits that wax and wane; she is the one that does not.",
+      },
+      {
+        nama: 241,
+        part: "form",
+        depicts: "Her light at the centre takes a form, slender and pointed like a lamp flame, full below: lovely in the plain sense.",
+      },
+      {
+        nama: 242,
+        part: "smile",
+        depicts:
+          "Her smile is the net of moonlight spreading from her across the ground (Saundaryalaharī 63), and the two cakoras on the rocks, birds that live on moonlight, have come to drink it.",
+      },
+      {
+        nama: 243,
+        part: "crescent",
+        depicts: "On the tip of her form she wears a crescent, horns up. On Śiva it is the trace of an old ordeal; on her it is an ornament.",
+      },
+    ],
+    detail: {
+      part: "sour-gruel",
+      body: (
+        <>
+          A third cakora has flown off to the moon in the sky and is drinking that instead. Śaṅkara says her smile
+          was so sweet that it numbed their beaks, so now they take the cold-rayed moon for sour gruel, to clear the
+          palate (Saundaryalaharī 63).
         </>
       ),
     },
