@@ -3020,3 +3020,73 @@ export function Balance({ b, sway = [undefined, undefined], inside = [true, true
     </>
   );
 }
+
+/* ── Śaṅkara's trident, and the drum tied to it ────────────────────────── */
+
+/**
+ * Śaṅkara's trident standing on the axis x from its top to its foot, at scale s (1 is its size
+ * in Shloka 43), with the drum's place on a cord tied under the prongs.
+ */
+export function trident(x: number, top: number, foot: number, s = 1) {
+  const at = (n: number) => round(n * s);
+  const head = [
+    `M ${x} ${round(top + at(2))} L ${x} ${round(top + at(44))}`,
+    `M ${round(x - at(15))} ${round(top + at(14))} C ${round(x - at(16))} ${round(top + at(34))} ${round(x - at(8))} ${round(top + at(42))} ${x} ${round(top + at(42))}`,
+    `M ${round(x + at(15))} ${round(top + at(14))} C ${round(x + at(16))} ${round(top + at(34))} ${round(x + at(8))} ${round(top + at(42))} ${x} ${round(top + at(42))}`,
+  ].join(" ");
+  const tips = [
+    { x, y: round(top - at(4)) },
+    { x: round(x - at(15)), y: round(top + at(8)) },
+    { x: round(x + at(15)), y: round(top + at(8)) },
+  ];
+  const tie = { x, y: round(top + at(48)) };
+  const drum = { x: round(x + at(20)), y: round(top + at(64)), half: at(12), face: at(8), waist: at(1.8) };
+  const d = drum;
+  return {
+    s,
+    shaft: `M ${x} ${round(top + at(40))} L ${x} ${foot}`,
+    head,
+    guard: `M ${round(x - at(8))} ${round(top + at(44))} L ${round(x + at(8))} ${round(top + at(44))}`,
+    tips: tips.map((p) => `M ${p.x} ${p.y} L ${round(p.x + at(3.4))} ${round(p.y + at(9))} L ${round(p.x - at(3.4))} ${round(p.y + at(9))} Z`),
+    drum,
+    body: `M ${round(d.x - d.face)} ${round(d.y - d.half)} L ${d.x} ${round(d.y - d.waist)} L ${round(d.x + d.face)} ${round(d.y - d.half)} Z M ${round(d.x - d.face)} ${round(d.y + d.half)} L ${d.x} ${round(d.y + d.waist)} L ${round(d.x + d.face)} ${round(d.y + d.half)} Z`,
+    cord: `M ${tie.x} ${tie.y} C ${round(tie.x + at(10))} ${round(tie.y + at(2))} ${d.x} ${round(d.y - d.half - at(12))} ${d.x} ${round(d.y - d.half)}`,
+    beads: `M ${d.x} ${d.y} C ${round(d.x + at(10))} ${round(d.y + at(2))} ${round(d.x + at(14))} ${round(d.y + at(8))} ${round(d.x + at(15))} ${round(d.y + at(16))}`,
+    bead: { x: round(d.x + at(15)), y: round(d.y + at(17)) },
+  };
+}
+
+export type TridentShape = ReturnType<typeof trident>;
+
+/** The trident: a gold three-pronged head with moon-white tips on a turmeric shaft. Wants round caps. */
+export function Trident({ t }: { t: TridentShape }) {
+  const w = (n: number) => round(n * t.s);
+  return (
+    <>
+      <path d={t.shaft} stroke="var(--art-turmeric)" strokeWidth={w(3)} />
+      <path d={t.shaft} stroke="var(--gold)" strokeWidth={w(0.7)} strokeOpacity={0.8} />
+      <path d={t.head} stroke="var(--gold)" strokeWidth={w(2.4)} />
+      <path d={t.guard} stroke="var(--gold)" strokeWidth={w(2.4)} />
+      {t.tips.map((d, i) => (
+        <path key={i} d={d} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={w(0.8)} strokeLinejoin="round" />
+      ))}
+    </>
+  );
+}
+
+/** The drum hanging upright from its cord, drawn in at the waist. Wants round joins. */
+export function Damaru({ t }: { t: TridentShape }) {
+  const { drum: d } = t;
+  const w = (n: number) => round(n * t.s);
+  return (
+    <>
+      <path d={t.cord} stroke="var(--art-vermilion)" strokeWidth={w(0.9)} strokeLinecap="round" />
+      <path d={t.body} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={w(1)} />
+      <ellipse cx={d.x} cy={round(d.y - d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
+      <ellipse cx={d.x} cy={round(d.y + d.half)} rx={d.face} ry={w(2.6)} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={w(0.8)} />
+      <path d={`M ${d.x - d.waist - w(1.4)} ${d.y} L ${d.x + d.waist + w(1.4)} ${d.y}`} stroke="var(--art-vermilion)" strokeWidth={w(2.2)} strokeLinecap="round" />
+      <path d={t.beads} stroke="var(--art-vermilion)" strokeWidth={w(0.8)} strokeLinecap="round" />
+      <circle cx={t.bead.x} cy={t.bead.y} r={w(2)} fill="var(--gold)" />
+    </>
+  );
+}

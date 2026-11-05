@@ -14,7 +14,7 @@
  * artwork's entry.
  */
 
-import { LotusLeaf, MoonDeer, OpenLotus, artIds, lotusPetals, partProps, round } from "./primitives";
+import { Damaru, LotusLeaf, MoonDeer, OpenLotus, Trident, artIds, lotusPetals, partProps, round, trident } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -39,23 +39,7 @@ const CLOUD_PUFFS = [
 
 /* ── Śaṅkara's trident, and the drum tied to it ────────────────────────── */
 
-const TRIDENT = { x: 230, top: 8, foot: 84 };
-const TRIDENT_HEAD = [
-  `M ${TRIDENT.x} ${TRIDENT.top + 2} L ${TRIDENT.x} ${TRIDENT.top + 44}`,
-  `M ${TRIDENT.x - 15} ${TRIDENT.top + 14} C ${TRIDENT.x - 16} ${TRIDENT.top + 34} ${TRIDENT.x - 8} ${TRIDENT.top + 42} ${TRIDENT.x} ${TRIDENT.top + 42}`,
-  `M ${TRIDENT.x + 15} ${TRIDENT.top + 14} C ${TRIDENT.x + 16} ${TRIDENT.top + 34} ${TRIDENT.x + 8} ${TRIDENT.top + 42} ${TRIDENT.x} ${TRIDENT.top + 42}`,
-].join(" ");
-const PRONG_TIPS = [
-  { x: TRIDENT.x, y: TRIDENT.top - 4 },
-  { x: TRIDENT.x - 15, y: TRIDENT.top + 8 },
-  { x: TRIDENT.x + 15, y: TRIDENT.top + 8 },
-];
-/** The drum hangs upright from a cord tied under the prongs. */
-const TIE = { x: TRIDENT.x, y: TRIDENT.top + 48 };
-const DRUM = { x: TRIDENT.x + 20, y: TRIDENT.top + 64, half: 12, face: 8, waist: 1.8 };
-const DRUM_BODY = `M ${DRUM.x - DRUM.face} ${DRUM.y - DRUM.half} L ${DRUM.x} ${DRUM.y - DRUM.waist} L ${DRUM.x + DRUM.face} ${DRUM.y - DRUM.half} Z M ${DRUM.x - DRUM.face} ${DRUM.y + DRUM.half} L ${DRUM.x} ${DRUM.y + DRUM.waist} L ${DRUM.x + DRUM.face} ${DRUM.y + DRUM.half} Z`;
-const DRUM_CORD = `M ${TIE.x} ${TIE.y} C ${TIE.x + 10} ${TIE.y + 2} ${DRUM.x} ${DRUM.y - DRUM.half - 12} ${DRUM.x} ${DRUM.y - DRUM.half}`;
-const DRUM_BEADS = `M ${DRUM.x} ${DRUM.y} C ${DRUM.x + 10} ${DRUM.y + 2} ${DRUM.x + 14} ${DRUM.y + 8} ${DRUM.x + 15} ${DRUM.y + 16}`;
+const TRIDENT = trident(230, 8, 84);
 
 /* ── Śrī's lotus, and what falls from it ───────────────────────────────── */
 
@@ -169,24 +153,12 @@ export function AutumnMoonTurn({ idPrefix = "sa43", active = null }: ArtProps) {
 
       {/* Śaṅkara's trident */}
       <g {...part("sankara")} strokeLinecap="round">
-        <path d={`M ${TRIDENT.x} ${TRIDENT.top + 40} L ${TRIDENT.x} ${TRIDENT.foot}`} stroke="var(--art-turmeric)" strokeWidth={3} />
-        <path d={`M ${TRIDENT.x} ${TRIDENT.top + 40} L ${TRIDENT.x} ${TRIDENT.foot}`} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.8} />
-        <path d={TRIDENT_HEAD} stroke="var(--gold)" strokeWidth={2.4} />
-        <path d={`M ${TRIDENT.x - 8} ${TRIDENT.top + 44} L ${TRIDENT.x + 8} ${TRIDENT.top + 44}`} stroke="var(--gold)" strokeWidth={2.4} />
-        {PRONG_TIPS.map((p, i) => (
-          <path key={i} d={`M ${p.x} ${p.y} L ${p.x + 3.4} ${p.y + 9} L ${p.x - 3.4} ${p.y + 9} Z`} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-        ))}
+        <Trident t={TRIDENT} />
       </g>
 
       {/* His drum, tied to it, drawn in at the waist */}
       <g {...part("waist")} strokeLinejoin="round">
-        <path d={DRUM_CORD} stroke="var(--art-vermilion)" strokeWidth={0.9} strokeLinecap="round" />
-        <path d={DRUM_BODY} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={1} />
-        <ellipse cx={DRUM.x} cy={DRUM.y - DRUM.half} rx={DRUM.face} ry={2.6} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} />
-        <ellipse cx={DRUM.x} cy={DRUM.y + DRUM.half} rx={DRUM.face} ry={2.6} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} />
-        <path d={`M ${DRUM.x - DRUM.waist - 1.4} ${DRUM.y} L ${DRUM.x + DRUM.waist + 1.4} ${DRUM.y}`} stroke="var(--art-vermilion)" strokeWidth={2.2} strokeLinecap="round" />
-        <path d={DRUM_BEADS} stroke="var(--art-vermilion)" strokeWidth={0.8} strokeLinecap="round" />
-        <circle cx={DRUM.x + 15} cy={DRUM.y + 17} r={2} fill="var(--gold)" />
+        <Damaru t={TRIDENT} />
       </g>
 
       {/* Śrī's lotus, and the gold that falls from it */}
