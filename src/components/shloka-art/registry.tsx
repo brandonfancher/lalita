@@ -12,6 +12,7 @@ import { GrownStake } from "./grown-stake";
 import { KingOfWheels } from "./king-of-wheels";
 import { WallOfFire } from "./wall-of-fire";
 import { NityasOnslaught } from "./nityas-onslaught";
+import { BalasArrows } from "./balas-arrows";
 import { MeruInward } from "./meru-inward";
 import { MirrorAndKnot } from "./mirror-and-knot";
 import { NailMoons } from "./nail-moons";
@@ -1077,6 +1078,39 @@ export const ARTWORK: Record<string, Artwork> = {
         <>
           The fourteenth moon wears a ring of small flames. That night belongs to Jvālāmālinī, the Nityā who raised the
           wall of fire in the last verse.
+        </>
+      ),
+    },
+  },
+  "029": {
+    Art: BalasArrows,
+    intro: (Spot) => (
+      <>
+        Two more names of a mother&rsquo;s pleasure, and in neither does the sovereign lift a hand. She stays on{" "}
+        <Spot part="chariot">her chariot</Spot> at the left, as in the last verse, and her daughter and her minister
+        do the fighting.
+      </>
+    ),
+    entries: [
+      {
+        nama: 74,
+        part: "bala",
+        depicts:
+          "Bālā, a small light the colour of the rising sun, ringed in the gold of the armour her mother put on her, joined to her by a thread of breath. From her thirty crescent-headed arrows fly out, one to each of Bhaṇḍa's thirty sons, thirty puffs of his ash.",
+      },
+      {
+        nama: 75,
+        part: "mantrini",
+        depicts:
+          "Across the top, Mantriṇī's sapphire light over her vīṇā throws a shaft of its light into the ash of Viṣaṅga, Bhaṇḍa's brother, and it breaks and falls.",
+      },
+    ],
+    detail: {
+      part: "syllables",
+      body: (
+        <>
+          Under Bālā, her three syllables, aiṃ klīṃ sauḥ. They are often the first mantra a student is given, and the
+          nyāsa before the stotra has already set them on the reciter&rsquo;s fingers.
         </>
       ),
     },

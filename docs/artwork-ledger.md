@@ -168,7 +168,7 @@ second time it is needed.
 | The nine triangles (the Śrīcakra's centre) | From the traditional construction: nine horizontal base lines 6, 12, 17, 20, 23, 27, 30, 36 and 42 units down a 48-unit diameter, half-widths 12.87, 15.78, 22.96, 7.66, 5.98, 7.81, 23.24, 16.78 and 12.87, each joined to an apex on the axis (27, 42, 48, 36, 30, 12, 0, 6, 17), five pointing toward the viewer and four away. Gold hairlines over a field of her light (`--art-core` to `--art-saffron` to `--art-vermilion`), each triangle tinted faintly so the overlaps build up; her bindu sits just over the innermost | `SRI_TRIANGLES` and `RathaTriangles` in `primitives.tsx` | Shloka 26 |
 | Chariot wheel (cakra) | Face-on: a thick `--gold` rim between two `--art-carve` lines, sixteen gold spokes, a gold hub with a small `--art-vermilion` boss. Drawn under a chariot's front corners, as the miniature painters show a chariot's wheels | `ChariotWheel` in `primitives.tsx` | Shloka 26 |
 | Weapons on a tier (sarvāyudha) | Small gold weapons about 22 tall standing round a tier's rim, by turns a spear with an `--art-moon` blade, a trident, an arrow, and a goad, one in five tipped with a twinkling point of light. On a stepped form only the front of each lower rim shows | `RathaWeapons` in `primitives.tsx` | Shloka 26 |
-| Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | Inline (`king-of-wheels.tsx`) | Shloka 26 |
+| Mantriṇī (Śyāmalā) | Never a figure: a sapphire light, an `--art-hair` disc with a gold ring, an `--art-moon` highlight and a soft `--art-hair` glow, over her ruby-set vīṇā: a straight gold neck with four rubies, a curled end, and two gold gourds hung beneath. Song rises from it as broken `--gold` arcs, as the girdle's sound does (Shloka 16) | `Sapphire`, `SapphireDefs` and `Vina` in `primitives.tsx` (promoted at Shloka 29, used by Shlokas 26 and 29) | Shloka 26 |
 | The Geyacakra | Mantriṇī's chariot: seven square steps of `--art-hair` edged in gold, in the Cakrarāja's projection, on two wheels | Inline (`king-of-wheels.tsx`) | Shloka 26 |
 | The Kiricakra | Daṇḍanāthā's chariot: five square steps of `--art-crimson` with `--art-vermilion` tops, edged in gold, in the Cakrarāja's projection, on two wheels, her rod for a flagstaff, the boar banner on it | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 | Daṇḍanāthā's rod (daṇḍa) | A straight gold staff with three `--gold-soft` bands and a gold knob | Inline (`wall-of-fire.tsx`) | Shloka 27 |
@@ -176,6 +176,9 @@ second time it is needed.
 | Rampart of fire (vahni-prākāra) | A ring of flame seen from outside and low: an ellipse (330 by 240) of `tongue` flames, each a gradient from `--art-vermilion` to `--art-saffron` to `--art-core` with a smaller `--art-core` tongue inside, taller, wider and more opaque toward the front, breathing in three groups, on a faint saffron band, with faint firelight on the ground inside. Open at one place only, the south | Inline (`wall-of-fire.tsx`) | Shloka 27 |
 | The Nityās (the fifteen nights) | The fifteen nights of the bright fortnight drawn as in Shloka 5 (an `--art-hair` disc at 0.2, the `litPart` in `--art-moon`, a gold rim, `m-twinkle` in three groups), here growing from radius 6 to 16.5 as they wax, each with a faint tapering `--gold-soft` trail behind it. Jvālāmālinī, the fourteenth, wears a ring of twelve small `--art-saffron` tongues and a vermilion rim. She is the sixteenth, the full moon | Inline (`nityas-onslaught.tsx`) | Shloka 28 |
 | Her gaze | Gold hairlines from her bindu in a fan toward what she watches, alternating long and short, fading out, over a glow of `--art-glow` stretched forward of her light | Inline (`nityas-onslaught.tsx`) | Shloka 28 |
+| Bālā | Never a figure: a small light the colour of the rising sun (an `--art-vermilion` disc with an `--art-saffron` highlight, a thin gold ring, a soft saffron-to-vermilion glow), ringed by fourteen gold scales, the armour her mother put on her. Joined to her mother's bindu by a dotted `--art-core` thread of breath. Her syllables ऐं क्लीं सौः in `--sindura` beneath | Inline (`balas-arrows.tsx`) | Shloka 29 |
+| Crescent-headed arrow (ardhacandra) | A gold shaft with `--art-vermilion` fletching and an `--art-moon` crescent head edged in gold, its horns forward | Inline (`balas-arrows.tsx`) | Shloka 29 |
+| Bhaṇḍa's sons, his brothers | His sons are small puffs of his ash (as in Shloka 24), each with a small `--gold-soft` coronet knocked off and tumbling; his brothers are larger banks of the same ash | Inline (`balas-arrows.tsx`) | Shloka 29 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -1207,6 +1210,34 @@ One entry per finished artwork, in the order they were made.
   promoted into `primitives.tsx` (`Spear`, `Ash`), and Shloka 24 renders byte-for-byte as before. The
   moons' trails were wide cones at first and read as ice-cream cones; they are now thin and faint. In
   the chant miniature the chariot and the spears carry it, and the moons are faint.
+
+### Shloka 29: The nine-year-old and the thirty princes
+
+- **Component:** `balas-arrows.tsx` (defs prefix `sa29`)
+- **Composition:** two more names of a mother's pleasure, with the sovereign not lifting a hand. Her
+  chariot stands at the left as in Shloka 28, her light on it. Out in front, joined to her by a
+  dotted thread of breath (the purāṇa calls Bālā her breath walking about outside her), Bālā is a
+  small light the colour of the rising sun, in a ring of gold scales, her mother's armour, with her
+  three syllables under her. Thirty crescent-headed arrows fan out from her into thirty puffs of ash
+  at the right, Bhaṇḍa's thirty sons, each with its coronet knocked off. Across the crown,
+  Mantriṇī's sapphire light over her vīṇā throws a shaft into the bank of ash that is Viṣaṅga,
+  which breaks and falls.
+- **Name → part:**
+  - Bhaṇḍaputravadhodyuktabālāvikramananditā → `bala`: Bālā, her armour, the thread of breath, the
+    thirty arrows and the thirty sons
+  - Mantriṇyambāviracitaviṣaṅgavadhatoṣitā → `mantrini`: Mantriṇī, her vīṇā, the shaft, and
+    Viṣaṅga's ash breaking and falling
+  - Intro, *her chariot* → `chariot`: the Cakrarāja, her light and its glow
+  - Detail → `syllables`: aiṃ klīṃ sauḥ, under Bālā
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (both lights), `m-shimmer` (her glow and Mantriṇī's), `m-lick` (the
+  break), `m-sink` (Viṣaṅga's ash falling), `m-twinkle` (glints in the sons' ash).
+- **Notes:** This title stays on one line but reaches x ≈ 292 at y ≈ 61–118, and Mantriṇī was first
+  drawn at the upper left, under it; she now sits at the top right of the crown, with Viṣaṅga in the
+  right margin beside the card. Bālā and the sons sit below the card. Mantriṇī was promoted into
+  `primitives.tsx` (`Sapphire`, `Vina`), and Shloka 26 renders byte-for-byte as before. Plain puffs
+  of ash didn't read as thirty princes; the tumbling coronets do. In the chant miniature the chariot
+  and the fan of arrows carry it.
 
 ## Open questions
 
