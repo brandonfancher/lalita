@@ -26,7 +26,7 @@ Everything is generated at build time into static files (`output: "export"` in `
 
 ## Contact form
 
-The form at `/contact` posts to `/api/contact`, a Vercel Function (`api/contact.ts`) beside the static site. It checks [Vercel BotID](https://vercel.com/docs/botid), a hidden honeypot field, and the inputs (`src/lib/contact-submit.ts`), then emails the message through [Resend](https://resend.com) with the sender as reply-to. Under `pnpm dev`, `src/app/api/contact/route.dev.ts` answers for the function. BotID's client side is set up in `src/instrumentation-client.ts`; any new protected path has to be listed there as well as checked on the server.
+The form at `/contact` posts to `/api/contact`, a Vercel Function (`api/contact.ts`) beside the static site. It checks [Vercel BotID](https://vercel.com/docs/botid), a hidden honeypot field, and the inputs (`src/lib/contact-submit.ts`), then emails the message through [Resend](https://resend.com) with the sender as reply-to. Under `pnpm dev`, `src/app/api/contact/route.dev.ts` answers for the function. `api/tsconfig.json` makes Vercel compile the function, and the `src/lib` code it imports, to CommonJS, which is how Node loads it. BotID's client side is set up in `src/instrumentation-client.ts`; any new protected path has to be listed there as well as checked on the server.
 
 Set these in the Vercel project (and in `.env.local` to send real email locally):
 
