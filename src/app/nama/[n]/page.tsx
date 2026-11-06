@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -7,6 +6,7 @@ import { ChantBar } from "@/components/chant-bar";
 import { CompoundTree } from "@/components/compound-tree";
 import { HyphenatedText } from "@/components/hyphenated-text";
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
+import Link from "@/components/link";
 import { Divider, SectionHeading } from "@/components/ornament";
 import { ShareBar } from "@/components/share-bar";
 import { hasArtwork, ShlokaMiniature } from "@/components/shloka-art";
@@ -362,6 +362,7 @@ function Neighbour({ entry, direction }: { entry: NamaIndexEntry; direction: "pr
   return (
     <Link
       href={namaPath(entry.index)}
+      prefetch="auto"
       className={cn(
         "group flex min-w-0 items-center gap-4 rounded-sm border border-line bg-surface-1/40 px-5 py-4 transition-colors hover:border-line-strong hover:bg-surface-1",
         !isPrev && "flex-row-reverse text-right",

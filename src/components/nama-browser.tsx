@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
+import Link from "@/components/link";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import type { NamaIndexEntry } from "@/lib/content";
@@ -22,7 +22,12 @@ const fold = (s: string) =>
     .replace(/-/g, "")
     .toLowerCase();
 
-export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
+export type NamaBrowserEntry = Pick<
+  NamaIndexEntry,
+  "index" | "deva" | "iast" | "gloss" | "translation" | "hyphenated"
+>;
+
+export function NamaBrowser({ namas }: { namas: NamaBrowserEntry[] }) {
   const [query, setQuery] = useState("");
 
   const folded = useMemo(

@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import { AlphabetSounds } from "@/components/alphabet-sounds";
+import Link from "@/components/link";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({

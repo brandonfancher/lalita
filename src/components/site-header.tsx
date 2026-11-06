@@ -1,11 +1,11 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Mail, Menu, Moon, Sun, X } from "lucide-react";
 
+import Link from "@/components/link";
 import { YantraMark } from "@/components/ornament";
 import { cn } from "@/lib/utils";
 

@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import Link from "@/components/link";
 import { SCRIPT_PAGES } from "@/lib/script-pages";
 import { SPELLINGS } from "@/lib/transliterate";
 import { cn } from "@/lib/utils";

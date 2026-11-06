@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import Link from "@/components/link";
 import { Divider } from "@/components/ornament";
 import { SCRIPT_PAGES } from "@/lib/script-pages";
 

@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
+import Link from "@/components/link";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
 import { getNamaIndex, type NamaIndexEntry } from "@/lib/content";
