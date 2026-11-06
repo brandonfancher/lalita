@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useActionState, useEffect, useRef } from "react";
 import { ArrowRight, LoaderCircle } from "lucide-react";
 
 import { submitContact } from "@/app/contact/actions";
+import Link from "@/components/link";
 import { Lotus } from "@/components/ornament";
 import {
   CONTACT_LIMITS,

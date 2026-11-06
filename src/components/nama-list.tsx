@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
@@ -8,6 +7,7 @@ import { AksaraStrip } from "@/components/aksara-strip";
 import { CompoundTree } from "@/components/compound-tree";
 import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
+import Link from "@/components/link";
 import { namaPath } from "@/lib/site";
 import type { Nama } from "@/lib/types";
 import { caseInfo, cn } from "@/lib/utils";

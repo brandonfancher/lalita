@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
+import Link from "@/components/link";
 import { Divider, SectionHeading } from "@/components/ornament";
 import { ScriptLinks } from "@/components/script-links";
 import { ShareBar } from "@/components/share-bar";

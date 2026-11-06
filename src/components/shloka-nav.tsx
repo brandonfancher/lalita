@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useEffectEvent, useLayoutEffect, useRef, useState } from "react";
 import * as Popover from "@radix-ui/react-popover";
 import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
+import Link from "@/components/link";
 import { cn, toDevanagariDigits } from "@/lib/utils";
 
 export type NavEntry = {
@@ -179,6 +179,7 @@ function StepLink({
   return (
     <Link
       href={hrefFor(target.id)}
+      prefetch="auto"
       onNavigate={(e) => {
         e.preventDefault();
         onStep();

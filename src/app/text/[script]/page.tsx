@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
+import Link from "@/components/link";
 import { ShareBar } from "@/components/share-bar";
 import { getModulesInRange } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";

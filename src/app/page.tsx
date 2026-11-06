@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { HyphenatedText } from "@/components/hyphenated-text";
 import { JsonLd, STOTRA, WEBSITE } from "@/components/json-ld";
+import Link from "@/components/link";
 import { Divider, SectionHeading, YantraMark } from "@/components/ornament";
 import { ScriptLinks } from "@/components/script-links";
 import { ShareBar } from "@/components/share-bar";

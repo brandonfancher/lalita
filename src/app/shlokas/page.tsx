@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import { HyphenatedText } from "@/components/hyphenated-text";
+import Link from "@/components/link";
 import { ShareBar } from "@/components/share-bar";
 import { getModuleSummaries } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";

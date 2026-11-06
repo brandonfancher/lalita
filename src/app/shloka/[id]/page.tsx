@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
 import { breadcrumbs, JsonLd, STOTRA } from "@/components/json-ld";
+import Link from "@/components/link";
 import { NamaList } from "@/components/nama-list";
 import { Divider, SectionHeading } from "@/components/ornament";
 import { ReferenceList } from "@/components/reference-list";
@@ -276,6 +276,7 @@ function NeighbourLink({
   return (
     <Link
       href={`/shloka/${summary.id}`}
+      prefetch="auto"
       className={cn(
         "group flex min-w-0 items-center gap-4 rounded-sm border border-line bg-surface-1/40 px-5 py-4 transition-colors hover:border-line-strong hover:bg-surface-1",
         !isPrev && "flex-row-reverse text-right",
