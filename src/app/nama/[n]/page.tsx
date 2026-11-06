@@ -52,7 +52,10 @@ export async function generateMetadata({ params }: { params: Promise<{ n: string
     description: `${nama.deva} · ${name} (${plainSpelling(nama.iast)}): “${nama.gloss}”. ${nama.translation} Name ${nama.index} of the Lalitha Sahasranamam${m ? `, chanted as ${m.deva}` : ""}.`,
     path: namaPath(nama.index),
     type: "article",
-    ownCard: true,
+    card: {
+      url: `${namaPath(nama.index)}/card.jpg`,
+      alt: `Name ${nama.index} of the Lalitā Sahasranāma: ${nama.deva}, ${nama.iast}, “${nama.gloss}”`,
+    },
   });
 }
 

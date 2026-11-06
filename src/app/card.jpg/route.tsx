@@ -1,10 +1,9 @@
-import { C, card, CARD_SIZE, CARD_TYPE, Deva, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
+import { C, card, Deva, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
 
-export const alt = "Lalitā Sahasranāma: learn, study, and chant the thousand names of the Divine Mother";
-export const size = CARD_SIZE;
-export const contentType = CARD_TYPE;
+export const dynamic = "force-static";
 
-export default async function Image() {
+/** The site's own share card, for pages without one of their own. */
+export async function GET() {
   return card({
     artId: "000",
     footer: "182 shlokas · 1,000 names · chant along",

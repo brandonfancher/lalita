@@ -181,7 +181,7 @@ loop) rather than adding detail that only shows at full size.
 
 The same registration also puts the artwork on the shloka's share card (the preview shown when
 someone shares the page on WhatsApp, X, and the like), and on the cards of the names in that
-shloka. Open `/shloka/<id>/opengraph-image/card` to see it. The card draws the artwork still,
+shloka. Open `/shloka/<id>/card.jpg` to see it. The card draws the artwork still,
 in the lamplight palette, cropped to the centre of the plate (`ART_CROP` in `src/lib/og/art.tsx`),
 and leaves out any SVG `<text>`, so keep inscriptions decorative rather than essential.
 

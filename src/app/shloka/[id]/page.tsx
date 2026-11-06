@@ -57,6 +57,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   const firstLine = titleCase(mod.lines[0].iast);
   const range = namaRangeLabel(mod.namaRange);
+  const card = {
+    url: `${shlokaPath(id)}/card.jpg`,
+    alt: `${mod.number === null ? "The dhyāna verses" : `Shloka ${mod.number}`} of the Lalitā Sahasranāma: ${mod.lines[0].iast}${mod.subtitle ? ` — ${mod.subtitle}` : ""}`,
+  };
 
   if (mod.number === null) {
     return pageMetadata({
@@ -65,7 +69,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       description: `${mod.lines[0].deva} — the meditation verses (dhyāna ślokas) chanted before the Lalitha Sahasranamam, with audio, word-by-word meaning, and grammar.`,
       path: shlokaPath(id),
       type: "article",
-      ownCard: true,
+      card,
     });
   }
 
@@ -75,7 +79,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     description: `${mod.lines[0].deva} (${plainSpelling(mod.lines[0].iast)}) — ${range ?? "the names"} of the Lalitha Sahasranamam, with chant audio, word-by-word meaning, grammar, and commentary.`,
     path: shlokaPath(id),
     type: "article",
-    ownCard: true,
+    card,
   });
 }
 

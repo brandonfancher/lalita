@@ -16,7 +16,6 @@ export const metadata = pageMetadata({
   shareTitle: "Lalitā Sahasranāma: learn, study, and chant the thousand names",
   description: SITE_DESCRIPTION,
   path: "/",
-  ownCard: true,
 });
 
 export default function HomePage() {
