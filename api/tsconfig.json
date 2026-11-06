@@ -1,0 +1,9 @@
+{
+  "//": "Vercel compiles api/ with the nearest tsconfig. Without a \"type\": \"module\" package.json, Node loads the output as CommonJS, so it must not keep the root config's ES module syntax.",
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  },
+  "include": ["*.ts"]
+}

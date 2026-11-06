@@ -4,6 +4,8 @@ import { getModuleSummaries, getNamaIndex } from "@/lib/content";
 import { absoluteUrl, namaPath, shlokaPath } from "@/lib/site";
 import { SCRIPT_PAGES } from "@/lib/script-pages";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const page = (path: string, priority: number): MetadataRoute.Sitemap[number] => ({
     url: absoluteUrl(path),

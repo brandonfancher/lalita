@@ -1,28 +1,18 @@
-import { getNama } from "@/lib/content";
+import { getNama, getNamaIndex } from "@/lib/content";
 import { hasShareArt } from "@/lib/og/art";
-import { C, card, CARD_SIZE, CARD_TYPE, Deva, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
+import { C, card, Deva, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
 import { capitalize } from "@/lib/transliterate";
 import { toDevanagariDigits } from "@/lib/utils";
 
-export const contentType = CARD_TYPE;
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
-export async function generateImageMetadata({ params }: { params: Promise<{ n: string }> | { n: string } }) {
-  // Also called without the name, only to learn the image ids.
-  const { n } = (await params) ?? {};
-  const found = n ? getNama(Number(n)) : null;
-  if (!found) return [{ id: "card", size: CARD_SIZE, contentType }];
-  const { nama } = found;
-  return [
-    {
-      id: "card",
-      size: CARD_SIZE,
-      contentType,
-      alt: `Name ${nama.index} of the Lalitā Sahasranāma: ${nama.deva}, ${nama.iast}, “${nama.gloss}”`,
-    },
-  ];
+export function generateStaticParams() {
+  return getNamaIndex().map((n) => ({ n: String(n.index) }));
 }
 
-export default async function Image({ params }: { params: Promise<{ n: string }> }) {
+/** A name's share card. Its alt text is set with the page's metadata. */
+export async function GET(_request: Request, { params }: { params: Promise<{ n: string }> }) {
   const found = getNama(Number((await params).n));
   if (!found) return new Response("Not found", { status: 404 });
   const { nama, module: mod } = found;

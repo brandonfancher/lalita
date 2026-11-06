@@ -638,6 +638,15 @@ body:has([data-art-trigger]:hover) .shloka-art {
   }
 }
 
+/*
+ * The chant page is prerendered with one range. While another loads, its
+ * session (or, after a change of range, its text and player) stays hidden.
+ */
+[data-chant-pending] [data-chant-session],
+[data-chant-session] [data-loading] {
+  visibility: hidden;
+}
+
 /* Scrollbars, so panels don't get chrome that fights the palette. */
 * {
   scrollbar-width: thin;

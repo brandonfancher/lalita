@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 
 import { SITE_NAME } from "./site";
 
-/** The site's own card, for pages without an `opengraph-image` file of their own. */
+/** The site's own card, for pages without one of their own. */
 const SITE_CARD = {
-  url: "/opengraph-image",
-  width: 1200,
-  height: 630,
-  type: "image/jpeg",
+  url: "/card.jpg",
   alt: "Lalitā Sahasranāma: learn, study, and chant the thousand names of the Divine Mother",
 };
 
@@ -24,7 +21,7 @@ export function pageMetadata({
   path,
   shareTitle,
   type = "website",
-  ownCard = false,
+  card = SITE_CARD,
 }: {
   /** Filled into the layout's title template. */
   title?: string;
@@ -35,17 +32,16 @@ export function pageMetadata({
   /** The headline on a share preview, if it should differ from the page title. */
   shareTitle?: string;
   type?: "website" | "article";
-  /** Set when the route has its own `opengraph-image`, which naming an image here would override. */
-  ownCard?: boolean;
+  /** The route's own share card (a `card.jpg` route beside the page), if it has one. */
+  card?: { url: string; alt: string };
 }): Metadata {
   const heading = shareTitle ?? absoluteTitle ?? title ?? SITE_NAME;
-  // Even an `images: undefined` here would hide the route's own card.
-  const images = ownCard ? {} : { images: [SITE_CARD] };
+  const images = [{ ...card, width: 1200, height: 630, type: "image/jpeg" }];
   return {
     title: absoluteTitle ? { absolute: absoluteTitle } : title,
     description,
     alternates: { canonical: path },
-    openGraph: { type, siteName: SITE_NAME, url: path, title: heading, description, ...images },
-    twitter: { card: "summary_large_image", title: heading, description, ...images },
+    openGraph: { type, siteName: SITE_NAME, url: path, title: heading, description, images },
+    twitter: { card: "summary_large_image", title: heading, description, images },
   };
 }

@@ -1,28 +1,18 @@
-import { card, C, CARD_SIZE, CARD_TYPE, DevaLine, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
-import { getModule } from "@/lib/content";
+import { card, C, DevaLine, Eyebrow, TEXT_WIDTH } from "@/lib/og/card";
+import { getAllModuleIds, getModule } from "@/lib/content";
 import { hasShareArt } from "@/lib/og/art";
 import { namaRangeLabel } from "@/lib/site";
 import { toDevanagariDigits } from "@/lib/utils";
 
-export const contentType = CARD_TYPE;
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
-export async function generateImageMetadata({ params }: { params: Promise<{ id: string }> | { id: string } }) {
-  // Also called without the shloka, only to learn the image ids.
-  const { id } = (await params) ?? {};
-  if (!id) return [{ id: "card", size: CARD_SIZE, contentType }];
-  const mod = getModule(id);
-  const what = mod.number === null ? "The dhyāna verses" : `Shloka ${mod.number}`;
-  return [
-    {
-      id: "card",
-      size: CARD_SIZE,
-      contentType,
-      alt: `${what} of the Lalitā Sahasranāma: ${mod.lines[0].iast}${mod.subtitle ? ` — ${mod.subtitle}` : ""}`,
-    },
-  ];
+export function generateStaticParams() {
+  return getAllModuleIds().map((id) => ({ id }));
 }
 
-export default async function Image({ params }: { params: Promise<{ id: string }> }) {
+/** A shloka's share card. Its alt text is set with the page's metadata. */
+export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const mod = getModule(id);
   const isDhyana = mod.number === null;

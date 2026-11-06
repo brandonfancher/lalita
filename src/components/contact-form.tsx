@@ -4,7 +4,6 @@ import { useSearchParams } from "next/navigation";
 import { useActionState, useEffect, useRef } from "react";
 import { ArrowRight, LoaderCircle } from "lucide-react";
 
-import { submitContact } from "@/app/contact/actions";
 import Link from "@/components/link";
 import { Lotus } from "@/components/ornament";
 import {
@@ -19,6 +18,26 @@ import {
 import { cn } from "@/lib/utils";
 
 const INITIAL_STATE: ContactState = { status: "idle" };
+
+/** The site is static, so the form posts to `api/contact.ts`, a Vercel Function. */
+async function submitContact(_prev: ContactState, formData: FormData): Promise<ContactState> {
+  const response = await fetch("/api/contact", { method: "POST", body: formData }).catch(() => null);
+  if (response?.ok) return (await response.json()) as ContactState;
+
+  const text = (name: string) => String(formData.get(name) ?? "");
+  const reason = text("reason");
+  return {
+    status: "error",
+    values: {
+      name: text("name"),
+      email: text("email"),
+      reason: isContactReason(reason) ? reason : undefined,
+      message: text("message"),
+    },
+    fieldErrors: {},
+    formError: "Something went wrong sending your message. Please try again in a little while.",
+  };
+}
 
 const inputClass =
   "w-full rounded-sm border border-line-strong bg-surface-1/70 px-3.5 py-2.5 font-sans text-[15px] text-ink outline-none transition-colors placeholder:text-ink-faint focus:border-sindura/60 aria-invalid:border-sindura/70";
