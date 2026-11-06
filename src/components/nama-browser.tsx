@@ -22,7 +22,12 @@ const fold = (s: string) =>
     .replace(/-/g, "")
     .toLowerCase();
 
-export function NamaBrowser({ namas }: { namas: NamaIndexEntry[] }) {
+export type NamaBrowserEntry = Pick<
+  NamaIndexEntry,
+  "index" | "deva" | "iast" | "gloss" | "translation" | "hyphenated"
+>;
+
+export function NamaBrowser({ namas }: { namas: NamaBrowserEntry[] }) {
   const [query, setQuery] = useState("");
 
   const folded = useMemo(
