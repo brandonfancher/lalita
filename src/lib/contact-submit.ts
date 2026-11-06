@@ -1,15 +1,16 @@
-"use server";
+import type { IncomingHttpHeaders } from "node:http";
 
 import { checkBotId } from "botid/server";
 
+// Relative imports: this is also bundled into `api/contact.ts`, which doesn't know the `@/` alias.
 import {
   CONTACT_LIMITS,
   HONEYPOT_FIELD,
   isContactReason,
   type ContactState,
   type ContactValues,
-} from "@/lib/contact";
-import { sendContactMessage } from "@/lib/contact-email";
+} from "./contact";
+import { sendContactMessage } from "./contact-email";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -21,7 +22,11 @@ const field = (formData: FormData, name: string) => {
   return typeof value === "string" ? value.trim() : "";
 };
 
-export async function submitContact(_prev: ContactState, formData: FormData): Promise<ContactState> {
+/**
+ * Checks and sends a message from the contact form. Server-only. `headers`
+ * are the request's, which BotID reads its verdict from.
+ */
+export async function submitContact(formData: FormData, headers: IncomingHttpHeaders): Promise<ContactState> {
   const values = {
     // A name is one line; collapsing whitespace also keeps it safe in a subject line.
     name: field(formData, "name").replace(/\s+/g, " "),
@@ -31,7 +36,10 @@ export async function submitContact(_prev: ContactState, formData: FormData): Pr
   };
   const echo = { ...values, reason: isContactReason(values.reason) ? values.reason : undefined };
 
-  const verification = await checkBotId({ developmentOptions: { bypass: DEV_BYPASS } });
+  const verification = await checkBotId({
+    developmentOptions: { bypass: DEV_BYPASS },
+    advancedOptions: { headers },
+  });
   if (verification.isBot) {
     return {
       status: "error",

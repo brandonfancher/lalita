@@ -20,9 +20,13 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## How the site is built
+
+Everything is generated at build time into static files (`output: "export"` in `next.config.ts`, written to `out/`), so pages are served straight from Vercel's CDN as plain files rather than from the ISR cache. `vercel.json` sets the project up as a static site ("Other" framework), with clean URLs, the redirects, and BotID's proxy rewrites. That means no page can read cookies, headers, or the query string on the server; anything per-visitor happens in the browser, as `/chant` does with its range.
+
 ## Contact form
 
-The form at `/contact` posts to a Server Action (`src/app/contact/actions.ts`) that checks [Vercel BotID](https://vercel.com/docs/botid), a hidden honeypot field, and the inputs, then emails the message through [Resend](https://resend.com) with the sender as reply-to. BotID's client side is set up in `src/instrumentation-client.ts`; any new protected path has to be listed there as well as checked on the server.
+The form at `/contact` posts to `/api/contact`, a Vercel Function (`api/contact.ts`) beside the static site. It checks [Vercel BotID](https://vercel.com/docs/botid), a hidden honeypot field, and the inputs (`src/lib/contact-submit.ts`), then emails the message through [Resend](https://resend.com) with the sender as reply-to. Under `pnpm dev`, `src/app/api/contact/route.dev.ts` answers for the function. BotID's client side is set up in `src/instrumentation-client.ts`; any new protected path has to be listed there as well as checked on the server.
 
 Set these in the Vercel project (and in `.env.local` to send real email locally):
 
