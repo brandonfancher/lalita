@@ -1,7 +1,18 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useMemo, useState, type ReactNode } from "react";
+import dynamic from "next/dynamic";
+import { useRouter, useSearchParams } from "next/navigation";
+import {
+  FormEvent,
+  Suspense,
+  useEffect,
+  useEffectEvent,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import { ExternalLink } from "lucide-react";
 
 import { ChantBar } from "@/components/chant-bar";
@@ -9,12 +20,19 @@ import { FitText } from "@/components/fit-text";
 import { HyphenatedText } from "@/components/hyphenated-text";
 import { ScriptToggle } from "@/components/script-toggle";
 import { WordBreakToggle } from "@/components/word-break-toggle";
-import { rememberChantRange } from "@/lib/chant-range";
+import {
+  CHANT_MAX,
+  CHANT_MIN,
+  clampShloka,
+  rememberChantRange,
+  resolveChantRange,
+  type ChantRange,
+} from "@/lib/chant-range";
 import type { ChantTiming, Hyphenated } from "@/lib/types";
 import { chantLabel, cn } from "@/lib/utils";
 
-const MIN = 0;
-const MAX = 182;
+/** Miniatures for ranges loaded in the browser. The artwork comes in its own chunk, only when needed. */
+const Miniature = dynamic(() => import("@/components/shloka-art").then((m) => m.ShlokaMiniature));
 
 export type ChantToken = {
   id: string;
@@ -28,10 +46,26 @@ export type ChantToken = {
 export type ChantVerse = {
   id: string;
   number: number;
-  /** A miniature of the shloka's artwork, when it has one. */
-  art?: ReactNode;
+  /** Whether the shloka has artwork, shown beside it as a miniature. */
+  hasArt: boolean;
+  /** Where the shloka is in the recording. */
+  timing?: ChantTiming;
   lines: { tokens: ChantToken[] }[];
 };
+
+type Shown = ChantRange & { verses: ChantVerse[] };
+
+/** Each shloka is a static file, written at build time by `app/chant/verses/[file]/route.ts`. */
+async function loadVerses({ from, to }: ChantRange): Promise<ChantVerse[]> {
+  const ids = Array.from({ length: to - from + 1 }, (_, i) => String(from + i).padStart(3, "0"));
+  return Promise.all(
+    ids.map(async (id) => {
+      const res = await fetch(`/chant/verses/${id}.json`);
+      if (!res.ok) throw new Error(`Shloka ${id} could not be loaded (${res.status}).`);
+      return (await res.json()) as ChantVerse;
+    }),
+  );
+}
 
 /**
  * Sized so the art never makes a card taller. On phones the verse fills the
@@ -41,42 +75,52 @@ export type ChantVerse = {
 const ART_WIDTH =
   "sm:script-both:w-[5.5rem] md:script-both:w-[7.5rem] sm:script-deva:w-[5.375rem] sm:script-iast:w-[3.75rem]";
 
-export function ChantSession({
-  from,
-  to,
-  verses,
-  timing,
-  playerLabel,
-}: {
-  from: number;
-  to: number;
-  verses: ChantVerse[];
-  timing?: ChantTiming;
-  playerLabel: string;
-}) {
+/**
+ * The chant page's range, recording, and text. It starts with the range the
+ * page was prerendered with, `initial`, whose miniatures come rendered in
+ * `art`, then shows the range the URL or the remembered cookie asks for.
+ */
+export function ChantSession({ initial, art }: { initial: Shown; art: Record<string, ReactNode> }) {
   const router = useRouter();
-  const [fromInput, setFromInput] = useState(String(from));
-  const [toInput, setToInput] = useState(String(to));
+  const [shown, setShown] = useState(initial);
+  const [status, setStatus] = useState<"starting" | "loading" | "ready" | "error">("starting");
+  const [fromInput, setFromInput] = useState(String(initial.from));
+  const [toInput, setToInput] = useState(String(initial.to));
   /** Token whose gloss is pinned open (tap / keyboard). Token ids are only unique within a verse. */
   const [activeToken, setActiveToken] = useState<{ verseId: string; tokenId: string } | null>(null);
+  const latest = useRef(0);
+
+  const show = (range: ChantRange) => {
+    setFromInput(String(range.from));
+    setToInput(String(range.to));
+    const request = ++latest.current;
+    if (range.from === shown.from && range.to === shown.to) {
+      setStatus("ready");
+      return;
+    }
+    setStatus("loading");
+    loadVerses(range).then(
+      (verses) => {
+        if (request !== latest.current) return;
+        setShown({ ...range, verses });
+        setActiveToken(null);
+        setStatus("ready");
+      },
+      () => {
+        if (request === latest.current) setStatus("error");
+      },
+    );
+  };
 
   useEffect(() => {
-    setFromInput(String(from));
-    setToInput(String(to));
-  }, [from, to]);
-
-  useEffect(() => {
-    setActiveToken(null);
-  }, [from, to]);
-
-  useEffect(() => {
-    rememberChantRange(from, to);
-  }, [from, to]);
+    if (status === "ready") rememberChantRange({ from: shown.from, to: shown.to });
+    if (status === "ready" || status === "error") delete document.documentElement.dataset.chantPending;
+  }, [status, shown.from, shown.to]);
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    const nextFrom = clampNumber(fromInput, MIN, MAX, from);
-    const nextTo = clampNumber(toInput, MIN, MAX, to);
+    const nextFrom = clampShloka(fromInput, shown.from);
+    const nextTo = clampShloka(toInput, shown.to);
     const start = Math.min(nextFrom, nextTo);
     const end = Math.max(nextFrom, nextTo);
     setFromInput(String(start));
@@ -84,8 +128,18 @@ export function ChantSession({
     router.push(`/chant?from=${start}&to=${end}`);
   };
 
+  const { from, to, verses } = shown;
+  const first = verses[0]?.timing;
+  const last = verses[verses.length - 1]?.timing;
+  const timing = first && last ? { startSec: first.startSec, endSec: last.endSec } : undefined;
+  const playerLabel = from === to ? chantLabel(from) : `${chantLabel(from)} – ${chantLabel(to)}`;
+
   return (
-    <div className="space-y-8">
+    <div data-chant-session className="space-y-8">
+      <Suspense fallback={null}>
+        <RangeFromUrl onRange={show} />
+      </Suspense>
+
       <form
         onSubmit={submit}
         className="flex flex-wrap items-end gap-3 rounded-sm border border-line bg-surface-1/60 p-4 font-sans"
@@ -94,8 +148,8 @@ export function ChantSession({
           From
           <input
             type="number"
-            min={MIN}
-            max={MAX}
+            min={CHANT_MIN}
+            max={CHANT_MAX}
             value={fromInput}
             onChange={(e) => setFromInput(e.target.value)}
             className="w-24 rounded-sm border border-line-strong bg-surface-0 px-3 py-2 text-sm font-normal normal-case tracking-normal text-ink outline-none focus:border-sindura/60"
@@ -105,8 +159,8 @@ export function ChantSession({
           To
           <input
             type="number"
-            min={MIN}
-            max={MAX}
+            min={CHANT_MIN}
+            max={CHANT_MAX}
             value={toInput}
             onChange={(e) => setToInput(e.target.value)}
             className="w-24 rounded-sm border border-line-strong bg-surface-0 px-3 py-2 text-sm font-normal normal-case tracking-normal text-ink outline-none focus:border-sindura/60"
@@ -123,40 +177,69 @@ export function ChantSession({
         </p>
       </form>
 
-      <ChantBar timing={timing} label={playerLabel} defaultLoop />
+      {status === "error" && (
+        <p role="alert" className="text-[1.05rem] italic text-sindura">
+          These shlokas could not be loaded. Please check your connection and try again.
+        </p>
+      )}
 
-      <div>
-        <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-          <div className="flex flex-wrap items-center gap-2">
-            <ScriptToggle />
-            <WordBreakToggle />
+      <div data-loading={status === "loading" || undefined} aria-busy={status === "loading"} className="space-y-8">
+        <ChantBar timing={timing} label={playerLabel} defaultLoop />
+
+        <div>
+          <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <ScriptToggle />
+              <WordBreakToggle />
+            </div>
+            <span className="ml-auto text-[15px] italic text-ink-faint">
+              Hover or tap a name for its gloss
+            </span>
           </div>
-          <span className="ml-auto text-[15px] italic text-ink-faint">
-            Hover or tap a name for its gloss
-          </span>
-        </div>
 
-        <div className="space-y-3">
-          {verses.map((verse) => (
-            <ChantVerseCard
-              key={verse.id}
-              verse={verse}
-              activeTokenId={activeToken?.verseId === verse.id ? activeToken.tokenId : null}
-              onToggleToken={(tokenId) => setActiveToken(tokenId ? { verseId: verse.id, tokenId } : null)}
-            />
-          ))}
+          <div className="space-y-3">
+            {verses.map((verse) => (
+              <ChantVerseCard
+                key={verse.id}
+                verse={verse}
+                art={art[verse.id] ?? (verse.hasArt && <Miniature id={verse.id} className="w-full" />)}
+                activeTokenId={activeToken?.verseId === verse.id ? activeToken.tokenId : null}
+                onToggleToken={(tokenId) => setActiveToken(tokenId ? { verseId: verse.id, tokenId } : null)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
+/**
+ * Reports the range asked for, from the URL or else the cookie. The URL isn't
+ * known while prerendering, so this sits in its own Suspense boundary, and it
+ * reports before paint so a page reached by a link never shows the wrong range.
+ */
+function RangeFromUrl({ onRange }: { onRange: (range: ChantRange) => void }) {
+  const params = useSearchParams();
+  const from = params.get("from");
+  const to = params.get("to");
+  const report = useEffectEvent(onRange);
+
+  useLayoutEffect(() => {
+    report(resolveChantRange(from, to, document.cookie));
+  }, [from, to]);
+
+  return null;
+}
+
 function ChantVerseCard({
   verse,
+  art,
   activeTokenId,
   onToggleToken,
 }: {
   verse: ChantVerse;
+  art: ReactNode;
   activeTokenId: string | null;
   onToggleToken: (id: string | null) => void;
 }) {
@@ -172,7 +255,7 @@ function ChantVerseCard({
 
   return (
     <article className="folio isolate flow-root rounded-sm px-5 py-4 sm:px-7 sm:py-5">
-      {verse.art && (
+      {art && (
         <div
           className={cn(
             "pointer-events-none absolute right-2 top-2 -z-10 aspect-[2/3] h-[calc(100%-1rem)] max-h-[18rem] opacity-55",
@@ -180,7 +263,7 @@ function ChantVerseCard({
             ART_WIDTH,
           )}
         >
-          {verse.art}
+          {art}
         </div>
       )}
       <div className="mb-1.5">
@@ -314,10 +397,4 @@ function GlossToken({
       </span>{" "}
     </>
   );
-}
-
-function clampNumber(raw: string, min: number, max: number, fallback: number): number {
-  const n = Number.parseInt(raw, 10);
-  if (!Number.isFinite(n)) return fallback;
-  return Math.min(max, Math.max(min, n));
 }
