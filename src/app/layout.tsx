@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import { EB_Garamond, Instrument_Sans, Noto_Sans_Oriya, Tiro_Devanagari_Sanskrit } from "next/font/google";
 
@@ -90,6 +91,7 @@ export default function RootLayout({
           <SiteFooter />
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
