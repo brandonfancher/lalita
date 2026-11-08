@@ -437,6 +437,13 @@ second time it is needed.
 | A watch platform (machān) and the fence round it all | In a near plot at 1.3: four `--art-hair` poles with cross-bracing, a turmeric deck under a gabled thatch, the watcher's lamp on it (`m-flicker`, a core glow); round the field a fence just outside its edge: a hair rail with a dashed gold weave, a second dashed rail above, gold posts taller toward the viewer | Inline (`the-field.tsx`) | Shloka 76 |
 | A boundary stone with her mark | A round-topped `--art-stone` stone at the field's near left corner, gold-edged, carved with a gold downward triangle and a vermilion point, two carve lines below, a moon sheen | Inline (`the-field.tsx`) | Shloka 76 |
 | The field-guardian (kṣetrapāla) and his dog | Outside the fence at the near right: a rough stone daubed with sindūra (a vermilion-to-crimson gradient), two ivory eyes and a moon mouth-line, a hair trident with a vermilion band, a small lamp before it; Bhairava's black dog (`--art-hair`, gold-edged, a pricked ear, a curled tail, a core eye) sitting by it, both turned inward toward her | Inline (`the-field.tsx`) | Shloka 76 |
+| The fire maṇḍala (vahnimaṇḍala) | An upward triangle 100 wide and 82 tall under the card, a saffron-to-vermilion fill, a 1.4 gold edge and a core inner triangle at 0.76, fringed outward with sixteen small `tongue` flames in a vermilion-saffron-core gradient (`m-flicker` in three groups); her light seated in it. Compare the rampart of fire (Shloka 27) and the wheeling ring of the dance (Shloka 57) | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| The first vowels going out from her (vāgvādinī) | अ आ इ ई उ in Tiro Devanagari at 19, gold with a fine gold stroke, on an arc of radius 76 above her light (`m-twinkle` in three groups). At 15 unstroked they vanished by day | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| A cow licking her calf (vatsalā) | A white zebu about 110 long facing left, head lowered to the calf: an `--art-ivory` body, hump, dewlap and head, all gold-edged, a turmeric belly shade, curved turmeric horns, a vermilion forehead band, a lotus udder, hair hooves and tail tuft; the calf the same drawing flipped at 0.5, facing her | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| A lotus leaf holding a drop (vimalā) | A round `--leaf` pad 68 by 30 on a moon pool, its notch toward the viewer, gold edge and gold-soft veins from the centre; a water drop in a core-moon-gold-soft gradient with a hair shadow and a twinkling core glint. With the notch at the side it read as a fish | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| A victory banner (vijaya-dhvaja) | A turmeric staff with a gold finial and bead, and a swallow-tailed vermilion banner streaming from it with a dashed turmeric inner border (`m-shimmer`) | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| Grass bending toward her (vandyā) | Eight tufts of five `--leaf` blades along the ground on both sides, every blade curving toward her light | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| A plait down the right column (vāmakeśī) | A `plait` from above the crown down the right column to y ≈ 392, 28 wide narrowing to 17, lobes every 13; on its lobes ivory jasmine buds and every third a five-petalled vermilion flower; a `PlaitTip` at the end. Her hair as the canon allows it | Inline (`ring-of-fire.tsx`, using `plait`, `PlaitLobes` and `PlaitTip`) | Shloka 77 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2984,6 +2991,32 @@ One entry per finished artwork, in the order they were made.
   read as a tiled floor; the inner crossings are nudged, the edges faded, and the stage colours
   retuned for lamplight. The platform was first at the far edge and lost; it is in a near plot at
   1.3. In the chant miniature the field carries it.
+
+### Shloka 77: Tender to whoever bows, and seated in the ring of fire
+
+- **Component:** `ring-of-fire.tsx` (defs prefix `sa77`)
+- **Composition:** under the card her light sits low in the fire maṇḍala, an upward red triangle
+  fringed with flame, and the first vowels go out from her in an arc. The grass on either side
+  bends toward her. At the right a cow lowers her head to lick her calf; at the left a lotus leaf
+  on its pool holds a drop it cannot be wetted by, and a victory banner streams behind it. Down
+  the right column from the crown falls a plait of her hair with jasmine and red flowers.
+- **Name → part:**
+  - Vijayā → `banner`: the banner and its staff
+  - Vimalā → `leaf`: the lotus leaf, its drop and pool
+  - Vandyā → `grass`: the bending grass
+  - Vandārujanavatsalā → `cow`: the cow and calf
+  - Vāgvādinī → `letters`: the five vowels
+  - Vāmakeśī → `hair`: the plait
+  - Vahnimaṇḍalavāsinī → `fire`: the triangle and its flames
+  - Intro, *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the flames), `m-twinkle` (the letters, the drop), `m-shimmer` (the
+  banner, the pool), `m-breathe` (her light).
+- **Notes:** this title wraps, its second line reaching only x ≈ 95 (147 at 1100px), so the card
+  sits at y ≈ 225–438 and the scene is a band at y ≈ 450–580; the plait takes the right column.
+  The first lotus leaf had its notch at the side and read as a fish; the letters were too small
+  and pale by day. The share card leaves out the letters, being text. In the chant miniature the
+  fire triangle and the cow carry it.
 
 ## Open questions
 

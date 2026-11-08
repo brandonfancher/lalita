@@ -76,6 +76,7 @@ import { BulbOfTheWorld } from "./bulb-of-the-world";
 import { KadambaWine } from "./kadamba-wine";
 import { VindhyaShrine } from "./vindhya-shrine";
 import { TheField } from "./the-field";
+import { RingOfFire } from "./ring-of-fire";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3647,6 +3648,57 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "guardian",
         depicts:
           "The kṣetrapāla is the guardian of holy ground, usually a form of Bhairava, with his shrine at the boundary: here a stone daubed with vermilion, a trident and a lamp. His black dog sits by it, and both are turned inward, toward her.",
+      },
+    ],
+  },
+  "077": {
+    Art: RingOfFire,
+    intro: (Spot) => (
+      <>
+        Four names about conduct and reverence, then speech, her hair, and a place in the body. Under the card{" "}
+        <Spot part="her-light">her light</Spot> sits low, where the tradition places the fire.
+      </>
+    ),
+    entries: [
+      {
+        nama: 346,
+        part: "banner",
+        depicts: "She wins, and is the winning wherever anyone wins. At the left a victory banner streams from its staff.",
+      },
+      {
+        nama: 347,
+        part: "leaf",
+        depicts:
+          "Like water on a lotus leaf, the Gītā says of the one nothing clings to. On a pool at the left a lotus leaf holds a drop of water that cannot wet it.",
+      },
+      {
+        nama: 348,
+        part: "grass",
+        depicts: "She is the one before whom bowing is the right thing to do. The grass on either side bends toward her.",
+      },
+      {
+        nama: 349,
+        part: "cow",
+        depicts:
+          "Vatsala comes from vatsa, a calf: it is what a cow feels for hers. At the right a cow lowers her head to lick her calf. The tenderness is for the ones who bow.",
+      },
+      {
+        nama: 350,
+        part: "letters",
+        depicts:
+          "Speech does not happen to her; she is the one speaking wherever it is spoken. From her light the first vowels of the alphabet go out in an arc. The goddesses of speech are said to have composed these very names.",
+      },
+      {
+        nama: 351,
+        part: "hair",
+        depicts:
+          "Vāma is lovely, and also left: Vāmakeśvara is the name of this tradition's root tantra. Down the right column a plait of her hair falls from the crown, dark, with jasmine and red flowers worked into it.",
+      },
+      {
+        nama: 352,
+        part: "fire",
+        depicts:
+          "The body is divided into circles of fire, sun and moon, and the fire is lowest, where the coiled power sleeps. Her light is seated in the fire maṇḍala: an upward red triangle fringed with flame.",
       },
     ],
   },
