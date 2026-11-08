@@ -73,6 +73,7 @@ import { SeamOfTheDigits } from "./seam-of-the-digits";
 import { QueenAndGirdle } from "./queen-and-girdle";
 import { FortuneAndTheFullMoon } from "./fortune-and-the-full-moon";
 import { BulbOfTheWorld } from "./bulb-of-the-world";
+import { KadambaWine } from "./kadamba-wine";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3505,6 +3506,56 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "sea",
         depicts:
           "Pity is a taste she holds in such quantity that only the sea can measure it. At the right the ground gives way to a sea, and a drop from her light falls into it.",
+      },
+    ],
+  },
+  "074": {
+    Art: KadambaWine,
+    intro: (Spot) => (
+      <>
+        Mistress of every art, and drunk. Under the card, <Spot part="her-light">her light</Spot>; in the crown, the kadamba of the verse
+        before, turned into wine.
+      </>
+    ),
+    entries: [
+      {
+        nama: 327,
+        part: "vina",
+        depicts:
+          "Kalā is a craft and a sixteenth part, and she has every one of them. Along the foot lies a rudra vīṇā, its two gourds under a long fretted stem, the instrument the arts are usually given in.",
+      },
+      {
+        nama: 328,
+        part: "alapa",
+        depicts:
+          "Kala is soft and not quite articulate, and ālāpa is speech, and birds' twittering, and the unmetred opening of a raga. From the vīṇā's strings a few faint, broken phrases drift up.",
+      },
+      {
+        nama: 329,
+        part: "mirror",
+        depicts: "Kānta is both the beautiful and the loved. At the left a beloved's hand mirror, her light in its glass.",
+      },
+      {
+        nama: 330,
+        part: "kadamba",
+        depicts:
+          "Kādambarī is the liquor of the kadamba flower, or the rainwater sweetened in the tree's hollows. From the bough of the verse before it drips into a gold cup poured out for her.",
+      },
+      {
+        nama: 331,
+        part: "giving",
+        depicts: "Under her light a lotus hangs turned down like a hand that gives, and lets pearls fall into a heap. The asking is enough.",
+      },
+      {
+        nama: 332,
+        part: "wagtails",
+        depicts: "The poets compare restless lovely eyes to wagtails. Two of them dart at the left, glancing at each other: a glance from her is itself a favour.",
+      },
+      {
+        nama: 333,
+        part: "wine",
+        depicts:
+          "Vāruṇī came up at the churning of the ocean and rules over wine. Her jar lies tipped over at the right, and the red pool spilled from it will not lie still: vihvalā is a word for someone unsteady, not in control.",
       },
     ],
   },

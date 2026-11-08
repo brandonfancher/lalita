@@ -419,6 +419,12 @@ second time it is needed.
 | Pots of sprouting grain (pālikā) | Three small ember pots with a turmeric band and vermilion dots, a musk soil top, each with a fan of eight thin `--leaf` sprouts, alternate ones turmeric-tinged. Grain sown at the start of a wedding or a festival | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
 | The bulb under the soil (kanda) | The ground cut away from y ≈ 570: an ember-to-musk soil fading down and in at the left, dashed carve strata, musk pebbles, a gold surface line; in it a bulb about 50 wide (an ivory-turmeric-ember radial gradient, carve skin lines, a core sheen) with ivory roots, and a `--leaf` shoot rising from it above the ground with two leaves, ending just under her light | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
 | A drop falling into the sea (karuṇārasasāgara) | Beyond the bank the sea to the right edge: a moon-to-gold-soft gradient fading down and to the right, rows of short gold ripple arcs; a moon drop falling into it (`m-sink`) and three flat rings where it lands (`m-shimmer`) | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
+| Kādambarī dripping into a cup | The `KadambaBough` at 1.2 in the crown, and from its lowest head four turmeric drops falling down the right column (`m-sink` by turns) into a gold drinking bowl on a short foot, a saffron surface with an ivory glint (`m-shimmer`) | Inline (`kadamba-wine.tsx`, using `KadambaBough`) | Shloka 74 |
+| A lotus turned down like a giving hand (varadā) | Under her light on a `--leaf` stem, five `--lotus` petals hanging open downward with ivory midribs and a leaf-green receptacle, two `Pearl`s falling from it (`m-sink`) to a small heap of six pearls on the floor. A hand in varada mudrā without drawing the hand | Inline (`kadamba-wine.tsx`, using `Pearl`) | Shloka 74 |
+| Vāruṇī's jar tipped over | An ember jar about 50 tall lying on its side with gold and dashed turmeric bands, a crimson mouth, an ivory sheen; a crimson stream from its lip into a vermilion-crimson pool 116 by 18 with three core rings moving on it (`m-shimmer`), the pool that will not lie still | Inline (`kadamba-wine.tsx`) | Shloka 74 |
+| Wagtails (khañjana), the poets' eyes | Two pied wagtails facing each other, about 55 long: an ivory body, an `--art-hair` back and round head with an ivory eyebrow and cheek stripe and an ivory wing bar, a long thin tail, a dark beak, a core eye, carve legs; each on its own `m-dart` inside its placement group. The first ones were long and flat and read as blades | Inline (`kadamba-wine.tsx`) | Shloka 74 |
+| A hand mirror (darpaṇa) | A round gold-framed mirror with a dashed turmeric rim, a gold handle with a vermilion stud, leaning; the glass a core-saffron-moon-gold-soft gradient with her light in it (`m-breathe`) and an ivory glint | Inline (`kadamba-wine.tsx`) | Shloka 74 |
+| A rudra vīṇā, and its ālāpa | A 256-long ember stem with fourteen gold frets closing toward the right, two gold-soft strings, a gold scroll, ivory beads, tilted 5° so it does not read as a bench; two turmeric-gold gourds (r 22 and 20) hung directly under it. Rising from the strings five broken dotted gold phrases and saffron dots, faint and fading (`m-shimmer`). Compare Sarasvatī's kacchapī (Shloka 11) | Inline (`kadamba-wine.tsx`) | Shloka 74 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2884,6 +2890,34 @@ One entry per finished artwork, in the order they were made.
   they are spread into a tall kite with a small triangle. The soil and the sea first ended in hard
   bottom edges; both fills now fade out downward. In the chant miniature the bulb and the soil
   carry it.
+
+### Shloka 74: Wine made from the flower of the previous verse
+
+- **Component:** `kadamba-wine.tsx` (defs prefix `sa74`)
+- **Composition:** the kadamba bough of Shloka 73 leans into the crown again, and from its heads
+  the liquor drips down the right column into a gold cup. Under the card her light, and under it
+  a lotus turned down like a giving hand, letting fall pearls. At the right vāruṇī's jar lies
+  tipped over, its red wine spilled in a pool that will not lie still. At the left two wagtails
+  and a hand mirror with her light in it. Along the foot a rudra vīṇā, and faint phrases of an
+  ālāpa rising from its strings.
+- **Name → part:**
+  - Kalāvatī → `vina`: the vīṇā
+  - Kalālāpā → `alapa`: the phrases rising from it
+  - Kāntā → `mirror`: the hand mirror
+  - Kādambarīpriyā → `kadamba`: the bough, the drops and the cup
+  - Varadā → `giving`: the down-turned lotus and its pearls
+  - Vāmanayanā → `wagtails`: the two wagtails
+  - Vāruṇīmadavihvalā → `wine`: the tipped jar and the spilled pool
+  - Intro, *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-sink` (the drops, the pearls), `m-dart` (the wagtails), `m-shimmer` (the pool,
+  the ālāpa, the cup), `m-breathe` (her light and its reflection).
+- **Notes:** the kadamba bough is promoted to `KadambaBough` in `primitives.tsx` from Shloka 73,
+  with `KADAMBA_BOUGH_HEADS` so the drops can start from a head. This title stays on one line and
+  reaches x ≈ 464 (516 at 1100px) at y ≈ 74–141, so the bough stays at x > 500. Everything under
+  the card is drawn at 1.15 about (320, 470). The first vīṇā, its gourds on struts under a level
+  stem, read as a bench on wheels; the gourds hang straight from the stem and it is tilted. In
+  the chant miniature the vīṇā, the jar and her light carry it.
 
 ## Open questions
 
