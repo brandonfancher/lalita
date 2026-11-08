@@ -399,6 +399,12 @@ second time it is needed.
 | The heart's lotus (anāhata) | Twelve `--art-vermilion` petals in two rings (`yantraPetals`, the outer turned half a petal, at 0.55 and 0.85), laid flat on the water at 0.42, round an ivory pericarp with a smoky `--art-hair` six-pointed star (`tattvaSign` air); her light just above it. Compare the cakra canon of Shloka 37 | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
 | Touch-me-not, its leaves folded (lajjālu, modesty) | A low `--leaf` tuft of six fronds from one point, each a stalk forking into two pinnae with seven pairs of leaflets: four fronds drooped with their leaflets folded flat along the pinnae, two open with their leaflets spread across; two `--lotus` pompom flowers with turmeric tips | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
 | A winnowing fan laid down (śūrpa) | A `--art-turmeric` basket seen from the front: a floor wide at the open front and narrow at the back, a wall rising round the back and dying away along the sides, a 2.6 gold rim, a carve weave; inside a little heap of ivory rice and ember husks left together | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| A seat for one (rājñī) | One narrow seat drawn at 1.2: a tall `--art-stone` back rising to a point, gold-edged, with a saffron inset panel her light shines through, a gold bead and bud finial; one vermilion cushion with a dashed gold-soft border; turmeric armrests rolled into volutes; a turmeric slab with a row of down-turned saffron petals; two gold legs carved as lion's paws with carve claws; a stone base. Nothing beside her. Compare the throne for two (Shloka 57) | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
+| The girdle ringing (raṇatkiṅkiṇimekhalā) | The girdle as a ring round her light at the waist, 100 by 24 at 1.2: its far half behind the light at 0.7, its near half a 4.4 gold cord with a dashed carve weave and a core sheen; four `Bell`s at 0.56 swinging in three groups, a gold knot with a `Ruby` and two larger bells swinging together from it (`swingFrom`); three broken dashed gold arcs of ringing rising off each side (`m-shimmer`). Shloka 16's girdle, seen; this one heard | Inline (`queen-and-girdle.tsx`, using `Bell` and `Ruby`) | Shloka 71 |
+| Kubera's mongoose spitting jewels (nakula) | Never Kubera himself: his mongoose, about 115 long at 1.2, facing her with its head raised: an arched `--art-stone` body under a moon wash at 0.25 and turmeric at 0.15 (stone alone was a lizard by lamplight), a bushy tapering tail, ivory fur ticks, a round ear, a vermilion eye; from its mouth a spill of `Ruby`s, `Pearl`s and moon glints, two still in the air, heaped on the floor before her seat | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
+| Cloth taking the dye (rañjanī) | A length of `--art-ivory` cloth hung over a turmeric pole on a forked hair-coloured post, its front end down into an ember clay pot of crimson dye (a shimmering vermilion surface): a gradient up the cloth from crimson through vermilion and saffron to ivory, the red climbing; carve folds; the short back end white | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
+| A mango bough in spring | A bough coming down from the crown's right edge, `--art-hair` at 0.55 with a gold line: dark `--leaf` mango leaves (lanceolate, gold edge and midrib) and at its tip a drooping flush of young leaves in a crimson-to-ember gradient with core midribs (`m-sway`); a ripe mango (a core-turmeric-saffron-vermilion radial gradient, ivory sheen) hanging on its stalk with a turmeric drop falling (`m-twinkle`); a koel (`--art-hair`, gold-edged, an ivory beak, a vermilion eye, long tail) perched on it, two dashed gold song arcs from its beak | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
+| Blue lotuses in profile (nīlotpala) | Two flowers on `--leaf` stalks in a gold bowl of moon water, at 1.25: five long narrow pointed `--art-hair` petals fanned from a leaf-green calyx, the middle one edged `--gold`, the rest `--gold-soft`. Compare the face-on nīlotpala of Shloka 50 | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2778,6 +2784,36 @@ One entry per finished artwork, in the order they were made.
   trapezoid and read as a box; it has a floor and a back wall now. On phones the row of digits
   shows faintly behind the title. In the chant miniature the row, the seam and the rings carry
   it. ह्रीं is omitted from the share card, as text is.
+
+### Shloka 71: A queen in her own right, and bells at the waist
+
+- **Component:** `queen-and-girdle.tsx` (defs prefix `sa71`)
+- **Composition:** her light alone on a seat made for one, wearing a girdle of bells that rings
+  because she has just moved. At the foot of the seat Kubera's mongoose, the treasurer of the
+  gods, spits out its jewels for her. At the left a white cloth hung into red dye, the red
+  climbing it. From the crown's right edge a mango bough comes down with a koel singing on it, a
+  ripe mango dripping, and a flush of young copper leaves at its tip. In a bowl before the seat
+  two blue lotuses. The first seat for one, the first animal of Kubera's, and the first dyeing.
+- **Name → part:**
+  - Rājarājārcitā → `mongoose`: the mongoose and its jewels
+  - Rājñī → `seat`: the seat for one
+  - Ramyā → `koel`: the koel and its song
+  - Rājīvalocanā → `lotuses`: the two blue lotuses and their bowl
+  - Rañjanī → `dye`: the cloth, the pole and post, and the dye pot
+  - Ramaṇī → `bough`: the bough, its leaves and the young copper flush
+  - Rasyā → `mango`: the mango and its drop
+  - Raṇatkiṅkiṇimekhalā → `bells`: the girdle's near half, its bells, knot and ringing
+  - Intro, *her light* → `her-light`: her light and the girdle's far half behind it
+- **Palette:** no additions.
+- **Motion:** `m-sway` (the bells, the young leaves, the mango), `m-shimmer` (the ringing, the
+  koel's song, the dye), `m-breathe` (her light); the drop keeps `m-twinkle`.
+- **Notes:** this title stays on one line and reaches x ≈ 433 (485 at 1100px) at y ≈ 74–141, so
+  the crown is left to the bough at x > 480. The first render was small: everything in y ≈
+  400–640 and the crown empty. The seat, her light and the girdle are now drawn at 1.2 with their
+  base on the floor, the bough comes in from the crown, and the bowl is at 1.25. The first
+  mongoose was long and low with its head level, in plain stone, and read as a lizard by
+  lamplight; it has an arched back, a raised head, a round ear and a bushy tail, with a moon
+  wash. In the chant miniature the seat, the red cloth and the bough carry it.
 
 ## Open questions
 

@@ -70,6 +70,7 @@ import { VermilionAndPearl } from "./vermilion-and-pearl";
 import { YoginiTemple } from "./yogini-temple";
 import { FullFromFull } from "./full-from-full";
 import { SeamOfTheDigits } from "./seam-of-the-digits";
+import { QueenAndGirdle } from "./queen-and-girdle";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3343,6 +3344,62 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "winnow",
         depicts:
           "A winnowing fan sorts what is kept from what is thrown away. It lies idle on the bank, its rice and husk left together, with nothing to sort.",
+      },
+    ],
+  },
+  "071": {
+    Art: QueenAndGirdle,
+    intro: (Spot) => (
+      <>
+        Eight names on one letter. Power is stated once and dropped, and the rest is pleasure, ending on{" "}
+        <Spot part="her-light">her light</Spot> and a sound.
+      </>
+    ),
+    entries: [
+      {
+        nama: 305,
+        part: "mongoose",
+        depicts:
+          "The king of kings is Kubera, the treasurer of the gods, and here he is the one who worships. His mongoose, which spits jewels, empties itself at the foot of her seat.",
+      },
+      {
+        nama: 306,
+        part: "seat",
+        depicts:
+          "Rājñī is a woman who rules, not a king's wife. Her seat is made for one: a single cushion, armrests on both sides, and no place beside her.",
+      },
+      {
+        nama: 307,
+        part: "koel",
+        depicts: "On the mango bough a koel is singing, the voice of spring, the season made for delight.",
+      },
+      {
+        nama: 308,
+        part: "lotuses",
+        depicts: "In a bowl before her seat stand two blue lotuses, their petals long and cool, the shape the poets give her eyes.",
+      },
+      {
+        nama: 309,
+        part: "dye",
+        depicts:
+          "One root means both to dye and to delight. A length of white cloth hangs into a pot of red dye, and the red is climbing it, as she colours the mind with joy.",
+      },
+      {
+        nama: 310,
+        part: "bough",
+        depicts:
+          "At the tip of the mango bough hangs a flush of young leaves, copper and soft, the freshness that is a pleasure to look at.",
+      },
+      {
+        nama: 311,
+        part: "mango",
+        depicts: "A ripe mango hangs from the bough, so full of juice that a drop is falling from its tip. Rasa is juice, and savour.",
+      },
+      {
+        nama: 312,
+        part: "bells",
+        depicts:
+          "At her waist the girdle of bells is ringing, because she has just moved. Earlier in the hymn this girdle was only seen; now it is heard.",
       },
     ],
   },
