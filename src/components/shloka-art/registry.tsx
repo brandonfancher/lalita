@@ -72,6 +72,7 @@ import { FullFromFull } from "./full-from-full";
 import { SeamOfTheDigits } from "./seam-of-the-digits";
 import { QueenAndGirdle } from "./queen-and-girdle";
 import { FortuneAndTheFullMoon } from "./fortune-and-the-full-moon";
+import { BulbOfTheWorld } from "./bulb-of-the-world";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3457,6 +3458,53 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "cakravakas",
         depicts:
           "Cakravākas are parted every night by a river. On one bank she calls across the water to him on the other, and wants nothing else until he is beside her: lampaṭā, greedy, is not a polite word.",
+      },
+    ],
+  },
+  "073": {
+    Art: BulbOfTheWorld,
+    intro: (Spot) => (
+      <>
+        The verse goes from the most abstract thing it can say to the most concrete and back. Under the card,{" "}
+        <Spot part="her-light">her light</Spot>, and under the ground <Spot part="shoot">a shoot</Spot> coming up into the world.
+      </>
+    ),
+    entries: [
+      {
+        nama: 321,
+        part: "dear",
+        depicts:
+          "Nothing is dear for its own sake, Yājñavalkya told his wife, but for the self. From a heap of coins and a child's anklet fine threads run to her light: whatever is wanted in them is she.",
+      },
+      {
+        nama: 322,
+        part: "points",
+        depicts:
+          "The kāmakalā is restricted knowledge, and is given here only as points: one above, two below it, a half-digit under those, standing in her light with nothing drawn between them.",
+      },
+      {
+        nama: 323,
+        part: "kadamba",
+        depicts:
+          "The kadamba's heavy orange globes are the flower she likes best. A bough of it leans into the crown, and a spray from it is laid on the ground before her.",
+      },
+      {
+        nama: 324,
+        part: "sprouts",
+        depicts:
+          "At a wedding or a festival's start grain is sown in small pots and let sprout, the most auspicious way to begin. Three such pots stand on the ground at the left, marked with turmeric and red.",
+      },
+      {
+        nama: 325,
+        part: "bulb",
+        depicts:
+          "A kanda is a bulb: underground, unimpressive, not the plant you see. The ground is cut away to show it, with its roots, the world coming up out of it as a shoot.",
+      },
+      {
+        nama: 326,
+        part: "sea",
+        depicts:
+          "Pity is a taste she holds in such quantity that only the sea can measure it. At the right the ground gives way to a sea, and a drop from her light falls into it.",
       },
     ],
   },

@@ -413,6 +413,12 @@ second time it is needed.
 | A cane springing from ash (ratipriyā) | The `Ash` heap with a musk mound, and from it one jointed `--leaf` sugarcane with gold nodes and four long leaves, a bee (turmeric, hair-striped, ivory wings) at its top on `m-sway`. Kāma given back, as the stuff of his bow; compare Kāma reborn as a light (Shloka 34) | Inline (`fortune-and-the-full-moon.tsx`, using `Ash`) | Shloka 72 |
 | Two parrots touching beaks | Two `--leaf` parrots, gold-edged, facing each other, vermilion hooked beaks touching, hair and lotus neck-rings, under a small vermilion heart (`m-breathe`). Kāma's mount | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
 | A demon's club broken, and her arrow | An `--art-hair` iron club in two pieces with gold edges, banded haft and pommel, the spiked head turned away; her gold arrow with a vermilion head standing in the ground beside it | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
+| The kāmakalā, as points only | Four marks standing in her light with nothing drawn between them, in a tall kite so they do not make a face: a point above (`--art-core`, a saffron ring), two below it 48 apart (`--art-vermilion`; `--art-moon` with a hair edge), and under those a small downward vermilion triangle for the half-digit, each in a fine gold ring on `m-twinkle` by turns. A crescent for the half-digit, with the points closer, read as a smiling face | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
+| Threads from the dear things (kāmyā) | A heap of gold coins (a stack of five turmeric discs with gold sides, two loose) and a child's silver anklet (a moon ring over a hair shadow, a dashed gold weave, five small bells), each with a dotted gold thread curving to her light (`m-shimmer`) | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
+| A kadamba bough, and a spray laid down | A bough from the crown's right edge at 1.35: an `--art-hair` limb at 0.55 with a gold line and a twig, six `KadambaLeaf`s and three `KadambaHead`s; on the ground before her a small spray of two leaves and two heads laid as an offering | Inline (`bulb-of-the-world.tsx`, using the kadamba primitives) | Shloka 73 |
+| Pots of sprouting grain (pālikā) | Three small ember pots with a turmeric band and vermilion dots, a musk soil top, each with a fan of eight thin `--leaf` sprouts, alternate ones turmeric-tinged. Grain sown at the start of a wedding or a festival | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
+| The bulb under the soil (kanda) | The ground cut away from y ≈ 570: an ember-to-musk soil fading down and in at the left, dashed carve strata, musk pebbles, a gold surface line; in it a bulb about 50 wide (an ivory-turmeric-ember radial gradient, carve skin lines, a core sheen) with ivory roots, and a `--leaf` shoot rising from it above the ground with two leaves, ending just under her light | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
+| A drop falling into the sea (karuṇārasasāgara) | Beyond the bank the sea to the right edge: a moon-to-gold-soft gradient fading down and to the right, rows of short gold ripple arcs; a moon drop falling into it (`m-sink`) and three flat rings where it lands (`m-shimmer`) | Inline (`bulb-of-the-world.tsx`) | Shloka 73 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2851,6 +2857,33 @@ One entry per finished artwork, in the order they were made.
   24, the river to y ≈ 446–470. The first river was a grey slab by lamplight; its moon and shade
   are thinner and it carries ivory currents. In the chant miniature the moon, the river and the
   ring carry it.
+
+### Shloka 73: Desire drawn as a diagram, and a bulb under the soil
+
+- **Component:** `bulb-of-the-world.tsx` (defs prefix `sa73`)
+- **Composition:** her light under the card holds four points and nothing else, the kāmakalā given
+  as points only. From a heap of coins at the left and a child's anklet at the right, dotted
+  threads run to her. Below, the ground is cut away to show a bulb and its roots, and the shoot
+  it puts up into the world. On the ground at the left three pots of sprouting grain and a spray
+  of kadamba laid before her; the bough it came from leans into the crown. At the right the
+  ground gives way to a sea, and a drop from her light falls into it.
+- **Name → part:**
+  - Kāmyā → `dear`: the coins, the anklet and the threads
+  - Kāmakalārūpā → `points`: the four points
+  - Kadambakusumapriyā → `kadamba`: the bough and the laid spray
+  - Kalyāṇī → `sprouts`: the three pots of sprouts
+  - Jagatīkandā → `bulb`: the soil cut away, the bulb and its roots
+  - Karuṇārasasāgarā → `sea`: the sea, the drop and its rings
+  - Intro, *her light* → `her-light`; *a shoot* → `shoot`
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the points), `m-shimmer` (the threads, the rings), `m-sink` (the
+  drop), `m-breathe` (her light).
+- **Notes:** this title wraps, its second line reaching only x ≈ 20 (72 at 1100px), so the card
+  sits at y ≈ 225–438; everything under it is drawn 30 lower, and the crown is free for the bough
+  at 1.35. The first points (a crescent under three dots, close together) made a smiling face;
+  they are spread into a tall kite with a small triangle. The soil and the sea first ended in hard
+  bottom edges; both fills now fade out downward. In the chant miniature the bulb and the soil
+  carry it.
 
 ## Open questions
 
