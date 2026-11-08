@@ -425,6 +425,14 @@ second time it is needed.
 | Wagtails (khañjana), the poets' eyes | Two pied wagtails facing each other, about 55 long: an ivory body, an `--art-hair` back and round head with an ivory eyebrow and cheek stripe and an ivory wing bar, a long thin tail, a dark beak, a core eye, carve legs; each on its own `m-dart` inside its placement group. The first ones were long and flat and read as blades | Inline (`kadamba-wine.tsx`) | Shloka 74 |
 | A hand mirror (darpaṇa) | A round gold-framed mirror with a dashed turmeric rim, a gold handle with a vermilion stud, leaning; the glass a core-saffron-moon-gold-soft gradient with her light in it (`m-breathe`) and an ivory glint | Inline (`kadamba-wine.tsx`) | Shloka 74 |
 | A rudra vīṇā, and its ālāpa | A 256-long ember stem with fourteen gold frets closing toward the right, two gold-soft strings, a gold scroll, ivory beads, tilted 5° so it does not read as a bench; two turmeric-gold gourds (r 22 and 20) hung directly under it. Rising from the strings five broken dotted gold phrases and saffron dots, faint and fading (`m-shimmer`). Compare Sarasvatī's kacchapī (Shloka 11) | Inline (`kadamba-wine.tsx`) | Shloka 74 |
+| The Vindhyas, a wall of tablelands | Not peaks: one `through` skyline of flat tables with steep scarps between (the highest in the middle at y ≈ 484), across the plate under the card. `--art-stone` at 0.5 under a saffron-to-ember wash fading down, level `--gold-soft` sandstone beds clipped to the rock, a 1.4 gold skyline, a row of round `--leaf` tree crowns along the lower slopes (core sheen), faded out at both sides by a mask. Compare Himavat's snow peaks (Shlokas 16, 60) | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| Her hill shrine (Vindhyavāsinī) | On the highest table: a turmeric plinth, an `--art-ivory` curved spire about 40 tall with gold-soft courses, a gold finial, a core-filled door with a vermilion arch and her light round it (`m-breathe`), a small vermilion pennant on a gold staff (`m-shimmer`) | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| A stair up from the river (vedavedyā) | A straight flight from a ghat at the river up the scarp to the shrine: an ivory trapezoid narrowing upward (36 wide at the foot to 12), thirteen gold treads, two ivory ghat steps at the water. A zigzag path read as a lightning bolt | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| The four Vedas as palm-leaf books | Four bundles floating out from her light, two a side and nearly level: ivory leaves with turmeric edges between two musk boards the full length, two vermilion cords. Drawn short with end boards, or tilted steeply, they read as bones and railings. Compare the open book on its stand (Shloka 53) | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| A balance: the world against one point of her | Hung from a gold cord in the right column: a gold beam tilted 12° with a turmeric pivot and pointer, gold-soft cords to two turmeric pans; in the higher pan the world, a moon-to-hair orb with two gold-soft orbit rings and core stars; in the lower one point of her light | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| The nine planets on their platform (navagraha) | An ivory platform in perspective with a musk front edge, nine small stones in three rows (stone, turmeric, musk / leaf, vermilion, ivory / carve, moon, crimson), each with a musk shadow | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| Kaṃsa's stone, and the girl's light going away | A flat `--art-stone` slab with a moon top edge, a dashed `--art-hair` chain from it ending in an open fetter; from it a soft saffron trail widening as it climbs toward the hills, three core `glint`s along it (`m-twinkle`) and at its top a small light with a glint | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| Fireflies | Twelve small turmeric `glint`s with core halos over the forest, `m-twinkle` in three groups | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2918,6 +2926,35 @@ One entry per finished artwork, in the order they were made.
   the card is drawn at 1.15 about (320, 470). The first vīṇā, its gourds on struts under a level
   stem, read as a bench on wheels; the gourds hang straight from the stem and it is tilted. In
   the chant miniature the vīṇā, the jar and her light carry it.
+
+### Shloka 75: Greater than everything, and living in a particular range of hills
+
+- **Component:** `vindhya-shrine.tsx` (defs prefix `sa75`)
+- **Composition:** under the card the Vindhyas run across the plate, a long wall of flat-topped
+  sandstone tables, forest on the slopes and fireflies over it. On the highest table her shrine,
+  her light in its door; four palm-leaf Vedas float out from her light, and a stair climbs to her
+  from the river at the foot. In the right column a balance weighs the world against one point of
+  her light, and her pan is the lower. On the near bank the nine planets on their platform; at
+  the right Kaṃsa's stone with its fetter open, and the light of the girl who slipped from his
+  hands going away to the hills.
+- **Name → part:**
+  - Viśvādhikā → `balance`: the balance
+  - Vedavedyā → `stair`: the stair and the ghat
+  - Vindhyācalanivāsinī → `vindhyas`: the range and its forest
+  - Vidhātrī → `grahas`: the nine planets and their platform
+  - Vedajananī → `vedas`: the four palm-leaf books
+  - Viṣṇumāyā → `escape`: the stone, the fetter and the rising light
+  - Vilāsinī → `fireflies`: the fireflies
+  - Intro, *her light* → `her-light`; *her shrine* → `shrine`; *river* → `river`
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the fireflies, the escaping light), `m-shimmer` (the pennant, the
+  river), `m-breathe` (her light).
+- **Notes:** this title wraps, its second line reaching x ≈ 213 (265 at 1100px), so the card sits
+  at y ≈ 225–438 and the whole scene lives in y ≈ 440–600, with the balance in the right column.
+  The first range was rounded bumps and read as a low mound; it has flat tables and scarps. The
+  first balance tipped the wrong way (`polar` measures up), the stair zigzagged like lightning,
+  the Vedas were short and steep and read as bones, and the escaping light was a hard line like a
+  wand. In the chant miniature the range and the shrine carry it.
 
 ## Open questions
 

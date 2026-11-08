@@ -74,6 +74,7 @@ import { QueenAndGirdle } from "./queen-and-girdle";
 import { FortuneAndTheFullMoon } from "./fortune-and-the-full-moon";
 import { BulbOfTheWorld } from "./bulb-of-the-world";
 import { KadambaWine } from "./kadamba-wine";
+import { VindhyaShrine } from "./vindhya-shrine";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3556,6 +3557,56 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "wine",
         depicts:
           "Vāruṇī came up at the churning of the ocean and rules over wine. Her jar lies tipped over at the right, and the red pool spilled from it will not lie still: vihvalā is a word for someone unsteady, not in control.",
+      },
+    ],
+  },
+  "075": {
+    Art: VindhyaShrine,
+    intro: (Spot) => (
+      <>
+        The verse goes from as large as language allows to a particular address and back. Under the card,{" "}
+        <Spot part="her-light">her light</Spot> in the door of <Spot part="shrine">her shrine</Spot>, and a{" "}
+        <Spot part="river">river</Spot> at the hills&apos; foot.
+      </>
+    ),
+    entries: [
+      {
+        nama: 334,
+        part: "balance",
+        depicts:
+          "Set her beside the whole universe and something of her is left over. In the right column a balance hangs with the world in one pan and one point of her light in the other, and her pan is the lower.",
+      },
+      {
+        nama: 335,
+        part: "stair",
+        depicts: "What the Vedas are for is to make her knowable. A stair climbs to her shrine from the river, the one road to her; four names on, the verse says she built it.",
+      },
+      {
+        nama: 336,
+        part: "vindhyas",
+        depicts:
+          "The Vindhyas are not peaks but a long flat-topped wall of sandstone in level beds across the middle of the land, forest on its slopes. Her shrine stands on its highest table, as Vindhyavāsinī's does at Vindhyachal on the Ganges.",
+      },
+      {
+        nama: 337,
+        part: "grahas",
+        depicts: "She arranges how things will fall out. On the near bank the nine planets stand on their platform in three rows, set where she sets them.",
+      },
+      {
+        nama: 338,
+        part: "vedas",
+        depicts: "The Vedas are born from her, not she from them. Four palm-leaf bundles go out from her light on either side of the shrine.",
+      },
+      {
+        nama: 339,
+        part: "escape",
+        depicts:
+          "The girl exchanged for Kṛṣṇa was dashed against a stone by Kaṃsa, and slipped from his hands into the sky and went to the Vindhyas. Here is the stone with its fetter open, and her light going away to the hills.",
+      },
+      {
+        nama: 340,
+        part: "fireflies",
+        depicts: "Vilāsa is the play of consciousness, shining out for no reason but that it is its nature. Over the forest the fireflies come and go.",
       },
     ],
   },
