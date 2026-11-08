@@ -455,6 +455,10 @@ second time it is needed.
 | An ascetic's empty seat | At 1.6: a kuśa mat (`--leaf` with turmeric stripes and loose blades), a staff leaning on it (turmeric, gold bands), a brass water pot (kamaṇḍalu: round turmeric body, narrow neck, arched gold handle over the top, spout), and a rosary of fourteen ember beads with a vermilion head bead. A first pot with a lid knob read as a teapot | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 | The narrow-waisted altar (vedi) | At 1.55, in plan on the ground: broad at both ends and drawn in at the middle, `--art-turmeric` 0.45 with a gold edge and an inner ivory line, three kuśa blades across it and a vermilion dot at the waist | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 | Bats flying off | Three `--art-hair` bats with gold-soft edges (wings scalloped, small ears) at 1.5–2.2, tilted outward toward the lower corners (`m-dart`, staggered). A dark wash in the corners read as grey smudges by daylight and was dropped | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| Her light, bare (citi) | A soft `--art-core` to `--art-glow` radial (r 58, `m-breathe`), four thin `--gold-soft` rings at 16, 30, 46 and 64 fading outward, and a core dot: no rays, no flame, nothing lit by it | Inline (`one-savour.tsx`) | Shloka 80 |
+| The Great Bear with Arundhatī (arundhatī-darśana) | In the crown at 1.5: the seven sages as `--art-core` stars with gold edges in small core glows (`m-twinkle`), joined by a dotted `--gold-soft` line, bowl at the left; beside Vasiṣṭha (the sixth) the faint Arundhatī, a 1-unit core dot in a `--art-saffron` ring, and a dashed saffron arc to her from the star before Vasiṣṭha: the faint star found by way of the bright | Inline (`one-savour.tsx`) | Shloka 80 |
+| A paring of moon (the gods' cup of soma) | A thin crescent (outer arc r 30, inner arc r 31 between the same points) in `--art-moon` with a gold edge, turned −30°, in a small core glow behind its back. A moon-coloured glow read as a grey disc by lamplight | Inline (`one-savour.tsx`) | Shloka 80 |
+| Bees bringing from many flowers to one comb (Chāndogya 6.9) | Three flowers at 1.5 on `--leaf` stems with a leaf: a five-petalled `--art-vermilion` hibiscus with a crimson staminal column, a six-petalled ivory jasmine, a turmeric kadamba ball with ivory filaments. From each a dotted path in a gradient from the flower's colour to `--gold` runs to a wild comb at the right, and on each a bee at 2.2 (turmeric body with hair bands, ivory wings, a hair head; `m-dart`, staggered) carrying a dot of its flower's colour. The comb hangs from an ember bough out of the right edge: a shield of saffron to turmeric honey with carve hex cells and one drop at its tip (`m-sink`) | Inline (`one-savour.tsx`) | Shloka 80 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3075,6 +3079,30 @@ One entry per finished artwork, in the order they were made.
   artwork; the card sits at y ≈ 225–438. The scene lives in one band, y ≈ 440–630, under the card.
   The cracks were first drawn as long runs across the ground and read as wood grain; they are a
   net of short edges now. The crown and right column are left empty, as night.
+
+### Shloka 80: Consciousness, and what the word 'that' was pointing at
+
+- **Component:** `one-savour.tsx` (defs prefix `sa80`)
+- **Composition:** under the card her light, bare: a point and four faint rings, nothing in it to
+  be lit. In the crown the Great Bear with the faint star Arundhatī beside Vasiṣṭha, ringed and
+  pointed to by a dashed arc, and at the right a thin paring of moon. Below, three different
+  flowers at the left, and bees carrying from each along its own path, under her light, to one
+  comb hanging from a bough at the right.
+- **Name → part:**
+  - Citiḥ → `her-light`: the bare light and its rings
+  - Tatpadalakṣyārthā → `arundhati`: the Great Bear, Arundhatī and the pointing arc
+  - Cidekarasarūpiṇī → `honey`: the comb, its bough and its drop
+  - Svātmānandalavībhūtabrahmādyānandasantatiḥ → `paring`: the crescent
+  - Intro, *different flowers* → `flowers`; detail → `bees`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light), `m-twinkle` (the stars), `m-dart` (the bees), `m-sink`
+  (the honey drop).
+- **Notes:** this title wraps, its second line reaching x ≈ 47 (99 at 1100px), so the card sits
+  at y ≈ 225–438 and the crown carries the sky. The verse's own figures were mostly drawn
+  already: rock salt dissolving and the Taittirīya's ladder of joys at Shloka 61, pot and space at
+  Shloka 45, and a village on a bank (close to the hamlet on the Ganges) at Shloka 62. So 'that' is
+  shown by Arundhatī, the other standard figure of indirect pointing, one savour by honey (the
+  Chāndogya's figure next to the salt), and the gods' bliss by the moon they drink.
 
 ## Open questions
 

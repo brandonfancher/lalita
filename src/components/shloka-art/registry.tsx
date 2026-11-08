@@ -79,6 +79,7 @@ import { TheField } from "./the-field";
 import { RingOfFire } from "./ring-of-fire";
 import { LoosenedTether } from "./loosened-tether";
 import { MoonlightOnScorchedGround } from "./moonlight-on-scorched-ground";
+import { OneSavour } from "./one-savour";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3617,5 +3618,44 @@ export const ARTWORK: Record<string, Artwork> = {
           "Tamas is darkness, and also the dullness that will not see. She drives it off. Toward the lower corners three bats, creatures of the dark, fly off out of her light and take the dark with them.",
       },
     ],
+  },
+  "080": {
+    Art: OneSavour,
+    intro: (Spot) => (
+      <>
+        The hymn sets imagery aside here to make an argument, so the pictures are the ones its teachers used. Below them, three{" "}
+        <Spot part="flowers">different flowers</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 362,
+        part: "her-light",
+        depicts:
+          "Citi is awareness itself, the knowing before there is anything known. Under the card her light is bare: a point and the faint rings it sends out, with nothing in it to be lit.",
+      },
+      {
+        nama: 363,
+        part: "arundhati",
+        depicts:
+          "The great sentence says 'you are that', and 'that' reaches her only indirectly. Teachers explain such pointing with the faint star Arundhatī: first show the bright star Vasiṣṭha among the seven sages, then the small one beside it. In the crown the Great Bear, and a dotted way from it to her.",
+      },
+      {
+        nama: 364,
+        part: "honey",
+        depicts:
+          "One savour throughout, and that savour is awareness. The Upaniṣad's figure is honey: bees gather from many trees, and once made into honey no drop can say which tree it came from. At the right the comb, all one gold.",
+      },
+      {
+        nama: 365,
+        part: "paring",
+        depicts:
+          "The Upaniṣad climbs by hundredfold steps from human joy up to Brahmā's, and sets the whole of it beside her bliss as one shaving. Across the crown a thin paring of moon, the cup of nectar the gods drink from.",
+      },
+    ],
+    detail: {
+      part: "bees",
+      body: <>Each bee carries a dot of its own flower's colour, and each path turns to gold before it reaches the comb.</>,
+    },
   },
 };
