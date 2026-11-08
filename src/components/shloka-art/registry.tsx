@@ -80,6 +80,7 @@ import { RingOfFire } from "./ring-of-fire";
 import { LoosenedTether } from "./loosened-tether";
 import { MoonlightOnScorchedGround } from "./moonlight-on-scorched-ground";
 import { OneSavour } from "./one-savour";
+import { LevelsOfSpeech } from "./levels-of-speech";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3823,5 +3824,56 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "bees",
       body: <>Each bee carries a dot of its own flower's colour, and each path turns to gold before it reaches the comb.</>,
     },
+  },
+  "081": {
+    Art: LevelsOfSpeech,
+    intro: (Spot) => (
+      <>
+        Speech comes out of silence in four stages, and the verse names them in order, from the top down. So the picture descends too, along a{" "}
+        <Spot part="thread">dotted thread</Spot> from the crown down the right column.
+      </>
+    ),
+    entries: [
+      {
+        nama: 366,
+        part: "para",
+        depicts:
+          "Parā is the supreme, and also the first level of speech, the word before it has begun to stir. In the crown a single still point, sending nothing out.",
+      },
+      {
+        nama: 367,
+        part: "inward",
+        depicts:
+          "The last verse called her awareness; this one turns it round, awareness facing inward rather than out at things. Round the point short strokes are all turned toward it.",
+      },
+      {
+        nama: 368,
+        part: "egg",
+        depicts:
+          "Paśyantī, the seeing, is the word present whole and not yet in parts. Bhartṛhari's figure for it is the peacock's egg, which holds all the bird's colours before any of them shows. Down the thread, the egg comes first, its colours only a blush inside the shell.",
+      },
+      {
+        nama: 369,
+        part: "her-light",
+        depicts: "Whatever else is called a god, she is the divinity above them. Under the card, her light.",
+      },
+      {
+        nama: 370,
+        part: "flute",
+        depicts:
+          "Madhyamā, the middle word, is speech in the mind, its parts already in order but not yet on the breath. Next down the thread a bamboo flute, its holes in order and no one playing it.",
+      },
+      {
+        nama: 371,
+        part: "bell",
+        depicts: "Vaikharī is speech come all the way out into the air. At the foot of the thread a bell swings, and its sound goes out both ways.",
+      },
+      {
+        nama: 372,
+        part: "swan",
+        depicts:
+          "The devotee's mind is the lake Mānasa, and she is the swan floating on it. At the foot of the picture a still lake, and a white swan on it, its ripples spreading slowly.",
+      },
+    ],
   },
 };

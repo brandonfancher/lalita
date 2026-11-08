@@ -142,7 +142,7 @@ second time it is needed.
 | Her feet as lotuses (śrīpadāmbuja) | Two `OpenLotus`es in `--art-vermilion` with `--art-crimson` veins and no pad, standing on still water a step apart, the nearer a little larger. With the pad, the anklet round them read as a saucer. In a crown, without the water, give each a saffron-to-vermilion glow (`m-shimmer`) | `OpenLotus` in `primitives.tsx` | Shloka 20, 68 |
 | Anklet (mañjīra) | A ring round the lotus's base, 72 by 20, seen from a little above: its far half drawn behind the petals and its near half in front, a 5-unit `--gold` band with an `--art-core` sheen, five `Bell`s at 0.62 hanging from the near half and swinging in two groups, and small ruby and pearl studs between them. Its ringing is broken `--gold` rings spreading flat across the water, as the girdle's sound is broken rings | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Still water | Long level `--gold-soft` hairlines, closer together toward the far edge and broken where light lies on them, faded at both sides; a firmer line for the far edge. Calmer than the sea's ripple arcs | Inline (`still-water-steps.tsx`) | Shloka 20, 68 |
-| Swan on the water (marālī) | Seen from the side, about 100 long: an `--art-moon` body with a full breast low on the water and a raised tail, the wing arched up off the back with three gold feather lines, an S-curved neck (a 7-unit moon stroke over a 9-unit gold one), a small head with an `--art-saffron` beak and a carve eye, and a faint reflection. A flat back and a lowered wing read as a gravy boat. Her wake is a few flat arcs trailing close behind, far apart, because she is slow; two long parting lines read as a pole | Inline (`still-water-steps.tsx`) | Shloka 20 |
+| Swan on the water (marālī) | Seen from the side, about 100 long: an `--art-moon` body with a full breast low on the water and a raised tail, the wing arched up off the back with three gold feather lines, an S-curved neck (a 7-unit moon stroke over a 9-unit gold one), a small head with an `--art-saffron` beak and a carve eye, and a faint reflection. A flat back and a lowered wing read as a gravy boat. Her wake is a few flat arcs trailing close behind, far apart, because she is slow; two long parting lines read as a pole | `Swan` in `primitives.tsx` (promoted at Shloka 81, used by Shloka 81), its wake inline in `still-water-steps.tsx` | Shloka 20 |
 | Treasury (śevadhi) | An open gold casket seen from the front: a box with a vermilion band set with pearl and emerald studs, small feet, a lid raised behind with a lit inner face, a heap of rubies, pearls, emeralds and gold above the rim with passing glints, two pearl strings spilling over the front, an `--art-core` glow over the hoard, and a soft column of her light pouring down from it with falling points of light. A hard-edged beam read as a spotlight | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Salt (lavaṇa) | A little heap of `--art-ivory` crystals edged in gold, each a small rhomb with one facet line | Inline (`still-water-steps.tsx`) | Shloka 20 |
 | Her light as a flame (sarvāruṇā) | A tall flame-shaped aureole, symmetrical, its sides drawn in near the tip so it reads as a flame and not a drop: one flat `--art-vermilion` fill at 0.92 with no shading, over a soft `--art-glow`. Its outline is one closed `--gold` line (1.6) over a wider faint `--art-core` one | Inline (`on-his-lap.tsx`) | Shloka 21 |
@@ -459,6 +459,11 @@ second time it is needed.
 | The Great Bear with Arundhatī (arundhatī-darśana) | In the crown at 1.5: the seven sages as `--art-core` stars with gold edges in small core glows (`m-twinkle`), joined by a dotted `--gold-soft` line, bowl at the left; beside Vasiṣṭha (the sixth) the faint Arundhatī, a 1-unit core dot in a `--art-saffron` ring, and a dashed saffron arc to her from the star before Vasiṣṭha: the faint star found by way of the bright | Inline (`one-savour.tsx`) | Shloka 80 |
 | A paring of moon (the gods' cup of soma) | A thin crescent (outer arc r 30, inner arc r 31 between the same points) in `--art-moon` with a gold edge, turned −30°, in a small core glow behind its back. A moon-coloured glow read as a grey disc by lamplight | Inline (`one-savour.tsx`) | Shloka 80 |
 | Bees bringing from many flowers to one comb (Chāndogya 6.9) | Three flowers at 1.5 on `--leaf` stems with a leaf: a five-petalled `--art-vermilion` hibiscus with a crimson staminal column, a six-petalled ivory jasmine, a turmeric kadamba ball with ivory filaments. From each a dotted path in a gradient from the flower's colour to `--gold` runs to a wild comb at the right, and on each a bee at 2.2 (turmeric body with hair bands, ivory wings, a hair head; `m-dart`, staggered) carrying a dot of its flower's colour. The comb hangs from an ember bough out of the right edge: a shield of saffron to turmeric honey with carve hex cells and one drop at its tip (`m-sink`) | Inline (`one-savour.tsx`) | Shloka 80 |
+| A still point with chevrons turned in (parā, pratyakciti) | At the top of the right column: a 3.4 `--art-core` point with a gold edge in a small core glow, sending nothing out, and round it two rings of `--gold` chevrons (8 at r 30, 12 at r 50), every one pointing in at it. Tapered strokes round a point read as a sunburst, outward | Inline (`levels-of-speech.tsx`) | Shloka 81 |
+| A peacock's egg (mayūrāṇḍa-rasa, Bhartṛhari) | An `eggPath` (20 by 27) in an ivory-to-moon gradient with a gold edge and a core highlight, and inside it, clipped and at 0.24, soft patches of leaf, hair, turmeric and vermilion: all the bird's colours present and none yet showing. Concentric patches read as a target | Inline (`levels-of-speech.tsx`, using `eggPath`) | Shloka 81 |
+| A flute, unplayed (madhyamā) | A bamboo flute about 112 long lying across the right column, tilted −6°: a turmeric-saffron-ember gradient across its width, gold-edged, two carve nodes, a vermilion binding, a mouth hole and six finger holes in a row, a core sheen. Upright in the column it read as a stick | Inline (`levels-of-speech.tsx`) | Shloka 81 |
+| A bell ringing (vaikharī) | The `Bell` (vermilion gem) at 2.4 on `m-sway`, and three pairs of `--gold-soft` arcs going out both sides from its ball (`m-shimmer`) | Inline (`levels-of-speech.tsx`, using `Bell`) | Shloka 81 |
+| The swan on the lake of the mind (Mānasa) | The `Swan` at 1.22 heading toward her light on a still lake (rx 238, ry 40, an `--art-moon` radial from 0.22 to nothing, a faint gold-soft inner shore), with three slow dashed ripple rings round her | Inline (`levels-of-speech.tsx`, using `Swan`) | Shloka 81 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3103,6 +3108,31 @@ One entry per finished artwork, in the order they were made.
   Shloka 45, and a village on a bank (close to the hamlet on the Ganges) at Shloka 62. So 'that' is
   shown by Arundhatī, the other standard figure of indirect pointing, one savour by honey (the
   Chāndogya's figure next to the salt), and the gods' bliss by the moon they drink.
+
+### Shloka 81: The four levels of speech, and the swan on the mind
+
+- **Component:** `levels-of-speech.tsx` (defs prefix `sa81`)
+- **Composition:** the verse descends, and the picture does too, down a dotted thread in the right
+  column: at the top a still point with chevrons all pointing in at it, then a peacock's egg, then
+  a flute lying across the thread, unplayed, then a bell ringing. Under the card her light, and
+  below it a still lake with a swan on it, its ripples spreading slowly.
+- **Name → part:**
+  - Parā → `para`: the still point
+  - Pratyakcitīrūpā → `inward`: the chevrons
+  - Paśyantī → `egg`: the peacock's egg
+  - Paradevatā → `her-light`: her light
+  - Madhyamā → `flute`: the flute
+  - Vaikharīrūpā → `bell`: the bell and its sound
+  - Bhaktamānasahaṃsikā → `swan`: the lake and the swan
+  - Intro, *dotted thread* → `thread`
+- **Palette:** no additions.
+- **Motion:** `m-sway` (the bell), `m-shimmer` (its sound), `m-breathe` (her light).
+- **Primitives:** Shloka 20's swan promoted to `Swan` (its wake stays with Shloka 20).
+- **Notes:** this title stays on one line at 1440 and reaches x ≈ 488, so the crown is mostly
+  behind it; the first layout put the still point in the middle of the crown, under the title,
+  and the whole descent moved into the right column. At 1100px the title wraps (x ≈ 79). The
+  card sits at y ≈ 184–396. The four stages are sometimes placed in the body (navel, heart,
+  throat), but no figure is drawn here.
 
 ## Open questions
 
