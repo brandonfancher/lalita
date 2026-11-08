@@ -75,6 +75,7 @@ import { FortuneAndTheFullMoon } from "./fortune-and-the-full-moon";
 import { BulbOfTheWorld } from "./bulb-of-the-world";
 import { KadambaWine } from "./kadamba-wine";
 import { VindhyaShrine } from "./vindhya-shrine";
+import { TheField } from "./the-field";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3607,6 +3608,45 @@ export const ARTWORK: Record<string, Artwork> = {
         nama: 340,
         part: "fireflies",
         depicts: "Vilāsa is the play of consciousness, shining out for no reason but that it is its nature. Over the forest the fireflies come and go.",
+      },
+    ],
+  },
+  "076": {
+    Art: TheField,
+    intro: (Spot) => (
+      <>
+        Five names on kṣ, four of them built on kṣetra, a field. Under the card <Spot part="field">the field</Spot> runs back, cut
+        into plots that are sprouting, ripe, reaped and flooded all at once.
+      </>
+    ),
+    entries: [
+      {
+        nama: 341,
+        part: "field",
+        depicts: "This body is called the field, the Gītā says. She is the field itself, the whole spread that is worked on: every plot, at every stage.",
+      },
+      {
+        nama: 342,
+        part: "boundary",
+        depicts: "The field is hers. At its near left corner a boundary stone is carved with her mark, a downward triangle and a red point.",
+      },
+      {
+        nama: 343,
+        part: "fence",
+        depicts:
+          "In the field a watch platform stands on four poles with the watcher's lamp on it, the knower of the field. Round the field and the platform both runs a fence of woven thorn: she guards the pair, and is neither of them.",
+      },
+      {
+        nama: 344,
+        part: "her-light",
+        depicts:
+          "Kṣaya and vṛddhi are the moon's waning and waxing, and a field's loss and gain. Her light stands over plots that grow and are cut, and is the one thing on the field that does neither.",
+      },
+      {
+        nama: 345,
+        part: "guardian",
+        depicts:
+          "The kṣetrapāla is the guardian of holy ground, usually a form of Bhairava, with his shrine at the boundary: here a stone daubed with vermilion, a trident and a lamp. His black dog sits by it, and both are turned inward, toward her.",
       },
     ],
   },

@@ -433,6 +433,10 @@ second time it is needed.
 | The nine planets on their platform (navagraha) | An ivory platform in perspective with a musk front edge, nine small stones in three rows (stone, turmeric, musk / leaf, vermilion, ivory / carve, moon, crimson), each with a musk shadow | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
 | Kaṃsa's stone, and the girl's light going away | A flat `--art-stone` slab with a moon top edge, a dashed `--art-hair` chain from it ending in an open fetter; from it a soft saffron trail widening as it climbs toward the hills, three core `glint`s along it (`m-twinkle`) and at its top a small light with a glint | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
 | Fireflies | Twelve small turmeric `glint`s with core halos over the forest, `m-twinkle` in three groups | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
+| A field in perspective, every stage at once (kṣetra) | A trapezoid running back from y ≈ 598 (x 112–528) to y ≈ 456 (x 222–418), cut by musk-and-gold-soft bunds into twelve plots whose inner crossings are nudged by `hash` so it is not a chessboard; each plot at a stage: sprouting (`--leaf` at 0.3, short green ticks in rows), ripe (turmeric at 0.4, taller gold ticks), reaped (ember at 0.2, turmeric stubble), flooded (moon at 0.3, ivory shimmer, a core reflection of her light). Faded at the far edge and the foot by a mask. Musk for the reaped plots went black by lamplight, and moon at 0.55 for the flooded ones grey | Inline (`the-field.tsx`) | Shloka 76 |
+| A watch platform (machān) and the fence round it all | In a near plot at 1.3: four `--art-hair` poles with cross-bracing, a turmeric deck under a gabled thatch, the watcher's lamp on it (`m-flicker`, a core glow); round the field a fence just outside its edge: a hair rail with a dashed gold weave, a second dashed rail above, gold posts taller toward the viewer | Inline (`the-field.tsx`) | Shloka 76 |
+| A boundary stone with her mark | A round-topped `--art-stone` stone at the field's near left corner, gold-edged, carved with a gold downward triangle and a vermilion point, two carve lines below, a moon sheen | Inline (`the-field.tsx`) | Shloka 76 |
+| The field-guardian (kṣetrapāla) and his dog | Outside the fence at the near right: a rough stone daubed with sindūra (a vermilion-to-crimson gradient), two ivory eyes and a moon mouth-line, a hair trident with a vermilion band, a small lamp before it; Bhairava's black dog (`--art-hair`, gold-edged, a pricked ear, a curled tail, a core eye) sitting by it, both turned inward toward her | Inline (`the-field.tsx`) | Shloka 76 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2955,6 +2959,31 @@ One entry per finished artwork, in the order they were made.
   first balance tipped the wrong way (`polar` measures up), the stair zigzagged like lightning,
   the Vedas were short and steep and read as bones, and the escaping light was a hard line like a
   wand. In the chant miniature the range and the shrine carry it.
+
+### Shloka 76: The field, the knower of the field, and the one who guards both
+
+- **Component:** `the-field.tsx` (defs prefix `sa76`)
+- **Composition:** under the card a field runs back in perspective, its plots sprouting, ripe,
+  reaped and flooded all at once, her light standing over it. In a near plot a watch platform
+  with the watcher's lamp, and round the field and the platform a fence of woven thorn. At the
+  near left a boundary stone carved with her mark; at the near right, outside the fence, a
+  vermilion field-guardian stone with a trident and a lamp, and Bhairava's black dog, both turned
+  inward toward her.
+- **Name → part:**
+  - Kṣetrasvarūpā → `field`: the plots and bunds
+  - Kṣetreśī → `boundary`: the boundary stone
+  - Kṣetrakṣetrajñapālinī → `fence`: the fence and the watch platform
+  - Kṣayavṛddhivinirmuktā → `her-light`: her light
+  - Kṣetrapālasamarcitā → `guardian`: the guardian stone, trident, lamp and dog
+  - Intro, *the field* → `field`
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the two lamps), `m-shimmer` (the flooded plots), `m-breathe` (her
+  light, the lamps' glow).
+- **Notes:** this title wraps, its second line reaching only x ≈ 88 (140 at 1100px), so the card
+  sits at y ≈ 225–438 and the field starts at y ≈ 456. The first field was a regular grid and
+  read as a tiled floor; the inner crossings are nudged, the edges faded, and the stage colours
+  retuned for lamplight. The platform was first at the far edge and lost; it is in a near plot at
+  1.3. In the chant miniature the field carries it.
 
 ## Open questions
 
