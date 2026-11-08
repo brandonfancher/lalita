@@ -87,9 +87,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WholeImage,
     intro: (Spot) => (
       <>
-        A <i>dhyāna</i> builds an image in the mind, and these four verses build four different ones. The artwork gathers them into one, laid out from crest to
-        foot as a temple image is. There is no figure: where she is there is only a <Spot part="bindu">point of light</Spot>, and the second verse says what it
-        is: &ldquo;I&rdquo;.
+        A <i>dhyāna</i> builds an image in the mind, and these four verses build four different ones. The artwork
+        gathers them into one, laid out from crest to foot as a temple image is. There is no figure: where she is there
+        is only a <Spot part="bindu">point of light</Spot>, and the second verse says what it is: &ldquo;I&rdquo;.
       </>
     ),
     entries: [
@@ -111,7 +111,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         phrase: { label: "Line 4", deva: "रत्न घटस्थ रक्तचरणां", iast: "ratna ghaṭastha raktacaraṇāṃ", gloss: "her red feet resting on a jewelled vessel" },
         part: "vessel",
-        depicts: "At the foot, a gold pot set with rubies and emeralds. On its lid are two red footprints, the old way of showing that she stands there.",
+        depicts:
+          "At the foot, a gold pot set with rubies and emeralds. On its lid are two red footprints, the old way of showing that she stands there.",
       },
       {
         phrase: {
@@ -137,15 +138,16 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         phrase: { label: "Line 14", deva: "जपाकुसुमभासुरां", iast: "japākusumabhāsurāṃ", gloss: "shining like a hibiscus flower" },
         part: "hibiscus",
-        depicts: "At her heart a scarlet hibiscus opens: five broad petals round a dark eye, and its column of pollen leaning out.",
+        depicts:
+          "At her heart a scarlet hibiscus opens: five broad petals round a dark eye, and its column of pollen leaning out.",
       },
     ],
     detail: {
       part: "yantra",
       body: (
         <>
-          There is also a small detail for the attentive: a hair-fine downward triangle surrounds the bindu. It is the innermost enclosure of the Śrīcakra, the
-          yantra of Śrīvidyā, and the third verse calls her Śrīvidyā outright.
+          There is also a small detail for the attentive: a hair-fine downward triangle surrounds the bindu. It is the
+          innermost enclosure of the Śrīcakra, the yantra of Śrīvidyā, and the third verse calls her Śrīvidyā outright.
         </>
       ),
     },
@@ -158,7 +160,8 @@ export const ARTWORK: Record<string, Artwork> = {
         <Spot part="frame">
           <i>prabhāvalī</i>
         </Spot>
-        , the ring of fire that frames a temple image of the Goddess. Every element comes from one of the five names.
+        , the ring of fire that frames a temple image of the Goddess. Every element comes from one of
+        the five names.
       </>
     ),
     entries: [
@@ -167,12 +170,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 3,
         part: "throne",
-        depicts: "The whole shrine stands on a lotus-and-jewel throne, flanked by two seated lions facing the flame.",
+        depicts:
+          "The whole shrine stands on a lotus-and-jewel throne, flanked by two seated lions facing the flame.",
       },
       {
         nama: 4,
         part: "flame",
-        depicts: "A flame rising from a stepped fire-pit. At its neck sits a bindu (point) of light: the fire of awareness itself.",
+        depicts:
+          "A flame rising from a stepped fire-pit. At its neck sits a bindu (point) of light: the fire of awareness itself.",
       },
       {
         nama: 5,
@@ -184,8 +189,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "sri",
       body: (
         <>
-          There is also a small detail for the attentive: three tiny <span className="deva not-italic">श्री</span> are set into the arch&rsquo;s band of pearls,
-          one for each <i>śrī</i> that opens the stotra.
+          There is also a small detail for the attentive: three tiny <span className="deva not-italic">श्री</span>{" "}
+          are set into the arch&rsquo;s band of pearls, one for each <i>śrī</i> that opens the stotra.
         </>
       ),
     },
@@ -194,15 +199,16 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: ThousandDawns,
     intro: (Spot) => (
       <>
-        It is sunrise over the <Spot part="sea">eastern sea</Spot>, in the red light of <i>aruṇa</i> that colours the Dhyāna. She is the light itself, and every
-        element comes from one of the four names.
+        It is sunrise over the <Spot part="sea">eastern sea</Spot>, in the red light of <i>aruṇa</i> that
+        colours the Dhyāna. She is the light itself, and every element comes from one of the four names.
       </>
     ),
     entries: [
       {
         nama: 6,
         part: "sunrise",
-        depicts: "A sun caught half over the horizon, still rising, ringed by exactly a thousand points of light. The bindu at its heart is her.",
+        depicts:
+          "A sun caught half over the horizon, still rising, ringed by exactly a thousand points of light. The bindu at its heart is her.",
       },
       {
         nama: 7,
@@ -213,7 +219,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 8,
         part: "noose",
-        depicts: "A noose of twisted cord, bound with gold and strung with beads. It is red because rāga first means colouring, the dye that stains.",
+        depicts:
+          "A noose of twisted cord, bound with gold and strung with beads. It is red because rāga first means colouring, the dye that stains.",
       },
       {
         nama: 9,
@@ -225,8 +232,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "thread",
       body: (
         <>
-          There is also a small detail for the attentive: a hair-fine red thread runs from the noose&rsquo;s tail down to the bindu. Whoever this cord draws is
-          held at the other end by her.
+          There is also a small detail for the attentive: a hair-fine red thread runs from the noose&rsquo;s tail down to
+          the bindu. Whoever this cord draws is held at the other end by her.
         </>
       ),
     },
@@ -235,15 +242,16 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: DrawnBow,
     intro: (Spot) => (
       <>
-        Her bow is drawn to full and aimed at the sky, and the hand that draws it is a <Spot part="bindu">point of light</Spot>, the bindu. Every element comes
-        from one of the three names.
+        Her bow is drawn to full and aimed at the sky, and the hand that draws it is a{" "}
+        <Spot part="bindu">point of light</Spot>, the bindu. Every element comes from one of the three names.
       </>
     ),
     entries: [
       {
         nama: 10,
         part: "bow",
-        depicts: "A bow of sugarcane arched across the top, jointed like the cane and sprouting leaves at both tips, bent as far as it will go.",
+        depicts:
+          "A bow of sugarcane arched across the top, jointed like the cane and sprouting leaves at both tips, bent as far as it will go.",
       },
       {
         nama: 11,
@@ -260,15 +268,21 @@ export const ARTWORK: Record<string, Artwork> = {
     ],
     detail: {
       part: "bees",
-      body: <>There is also a small detail for the attentive: the bowstring is a line of honeybees, as Kāma&rsquo;s is in the old poems.</>,
+      body: (
+        <>
+          There is also a small detail for the attentive: the bowstring is a line of honeybees, as Kāma&rsquo;s is in the
+          old poems.
+        </>
+      ),
     },
   },
   "004": {
     Art: FloweringHair,
     intro: (Spot) => (
       <>
-        Here the stotra begins to describe her from head to foot, so the artwork reads from the top down. She herself is only the{" "}
-        <Spot part="light">point of light</Spot> where a jewel is worn at the head of a plait. Every element comes from one of the two names.
+        Here the stotra begins to describe her from head to foot, so the artwork reads from the top down. She herself is
+        only the <Spot part="light">point of light</Spot> where a jewel is worn at the head of a plait. Every element
+        comes from one of the two names.
       </>
     ),
     entries: [
@@ -281,15 +295,16 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 14,
         part: "crown",
-        depicts: "A domed crown set tier upon tier with rows of rubies. Short rays of gold and red spring from it, because the name dwells on its glittering.",
+        depicts:
+          "A domed crown set tier upon tier with rows of rubies. Short rays of gold and red spring from it, because the name dwells on its glittering.",
       },
     ],
     detail: {
       part: "stars",
       body: (
         <>
-          There is also a small detail for the attentive: above the crown, a few stars are turning red and coming down to it. Śaṅkara says the rubies in her
-          crown were stars that became rubies to be set there.
+          There is also a small detail for the attentive: above the crown, a few stars are turning red and coming down
+          to it. Śaṅkara says the rubies in her crown were stars that became rubies to be set there.
         </>
       ),
     },
@@ -298,8 +313,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: EighthNightMoon,
     intro: (Spot) => (
       <>
-        Both names are moons, so this is a night lit only by them, with their <Spot part="moonlight">light</Spot> filling the space between. The first name
-        gives her a moon; the second makes her one.
+        Both names are moons, so this is a night lit only by them, with their{" "}
+        <Spot part="moonlight">light</Spot> filling the space between. The first name gives her a moon; the second
+        makes her one.
       </>
     ),
     entries: [
@@ -320,8 +336,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "fortnight",
       body: (
         <>
-          There is also a small detail for the attentive: along the foot runs a string of the fifteen nights of the bright fortnight, waxing from left to right.
-          The eighth, ringed in red and gold beneath her face, is the same half as her brow.
+          There is also a small detail for the attentive: along the foot runs a string of the fifteen nights of the
+          bright fortnight, waxing from left to right. The eighth, ringed in red and gold beneath her face, is the same half as
+          her brow.
         </>
       ),
     },
@@ -330,8 +347,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WeddingDoorway,
     intro: (Spot) => (
       <>
-        Both names make her face a place that belongs to Love. Here it is his wedding house, seen only as the light that fills its{" "}
-        <Spot part="doorway">doorway</Spot> and brims at the threshold. Every element comes from one of the two names.
+        Both names make her face a place that belongs to Love. Here it is his wedding house, seen only as the light that
+        fills its <Spot part="doorway">doorway</Spot> and brims at the threshold. Every element comes from one of the two
+        names.
       </>
     ),
     entries: [
@@ -352,8 +370,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "ajna",
       body: (
         <>
-          There is also a small detail for the attentive: a point of light in the space between the two brows. The tradition places the <i>ājñā</i> cakra there,
-          and it gives the attention somewhere to rest while chanting.
+          There is also a small detail for the attentive: a point of light in the space between the two brows. The
+          tradition places the <i>ājñā</i> cakra there, and it gives the attention somewhere to rest while chanting.
         </>
       ),
     },
@@ -362,8 +380,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: CampakaJewel,
     intro: (Spot) => (
       <>
-        The whole verse is about her nose, so the artwork draws what the names liken it to, in a night sky where the <Spot part="stars">stars</Spot> keep their
-        distance. Every element comes from one of the two names.
+        The whole verse is about her nose, so the artwork draws what the names liken it to, in a night sky where the{" "}
+        <Spot part="stars">stars</Spot> keep their distance. Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -384,8 +402,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "pearl",
       body: (
         <>
-          There is also a small detail for the attentive: a pearl hangs from the stud. Śaṅkara says her breath is so cool that it condenses into pearls inside
-          her nose, and she wears one of the surplus outside.
+          There is also a small detail for the attentive: a pearl hangs from the stud. Śaṅkara says her breath is so cool
+          that it condenses into pearls inside her nose, and she wears one of the surplus outside.
         </>
       ),
     },
@@ -394,8 +412,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SunMoonEarrings,
     intro: (Spot) => (
       <>
-        The verse turns to her ears and hangs two things of wildly different size on them, side by side and without comment. Her{" "}
-        <Spot part="face-light">face</Spot> is only the light between them. Every element comes from one of the two names.
+        The verse turns to her ears and hangs two things of wildly different size on them, side by side and without
+        comment. Her <Spot part="face-light">face</Spot> is only the light between them. Every element comes from one of
+        the two names.
       </>
     ),
     entries: [
@@ -416,8 +435,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "boat",
       body: (
         <>
-          There is also a small detail for the attentive: the moon hangs from a clasp shaped like a little boat. The verse&rsquo;s word for the moon is{" "}
-          <i>uḍupa</i>, a raft, for the boat-shaped half moon, and it hides in the <i>o</i> of <i>tapanoḍupa</i>.
+          There is also a small detail for the attentive: the moon hangs from a clasp shaped like a little boat. The
+          verse&rsquo;s word for the moon is <i>uḍupa</i>, a raft, for the boat-shaped half moon, and it hides in the{" "}
+          <i>o</i> of <i>tapanoḍupa</i>.
         </>
       ),
     },
@@ -426,9 +446,10 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TippedScales,
     intro: (Spot) => (
       <>
-        Both names are contests that the thing she is compared to loses, so the artwork stages them as Śaṅkara does, as a weighing. The{" "}
-        <Spot part="scales">balance</Spot> has tipped, and its tongue leans toward the pan that sank, where <Spot part="light">her light</Spot> lies, red by its
-        own nature. Every element comes from one of the two names.
+        Both names are contests that the thing she is compared to loses, so the artwork stages them as Śaṅkara does, as
+        a weighing. The <Spot part="scales">balance</Spot> has tipped, and its tongue leans toward the pan that sank,
+        where <Spot part="light">her light</Spot> lies, red by its own nature. Every element comes from one of the two
+        names.
       </>
     ),
     entries: [
@@ -449,8 +470,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "reflections",
       body: (
         <>
-          There is also a small detail for the attentive: on the pool of light that fills her pan float two reflections, a sun and a moon. They are the earrings
-          of the verse before, reflected in her cheek, which is how Śaṅkara explains why a cheek is compared to a mirror at all.
+          There is also a small detail for the attentive: on the pool of light that fills her pan float two
+          reflections, a sun and a moon. They are the earrings of the verse before, reflected in her cheek, which is how
+          Śaṅkara explains why a cheek is compared to a mirror at all.
         </>
       ),
     },
@@ -459,8 +481,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SproutingSeed,
     intro: (Spot) => (
       <>
-        The verse ends the first ten with her mouth, and the artwork draws neither mouth nor teeth. She is the <Spot part="light">light</Spot> in a seed that
-        has split open, and every element around it comes from one of the two names.
+        The verse ends the first ten with her mouth, and the artwork draws neither mouth nor teeth. She is the{" "}
+        <Spot part="light">light</Spot> in a seed that has split open, and every element around it comes from one of
+        the two names.
       </>
     ),
     entries: [
@@ -481,8 +504,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "seed",
       body: (
         <>
-          There is also a small detail for the attentive: the split husk is engraved with the syllable <span className="deva not-italic">ह्रीं</span>, which
-          closes each of the three parts of the mantra. A mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
+          There is also a small detail for the attentive: the split husk is engraved with the syllable{" "}
+          <span className="deva not-italic">ह्रीं</span>, which closes each of the three parts of the mantra. A
+          mantra&rsquo;s syllables are called <i>bīja</i>, seeds.
         </>
       ),
     },
@@ -491,8 +515,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SilencedLute,
     intro: (Spot) => (
       <>
-        Here the verse stops describing her and records two casualties: an instrument shamed into silence, and a mind under water. Between them is{" "}
-        <Spot part="light">her light</Spot>, small and soft, because the smile is only a faint one. Every element comes from one of the two names.
+        Here the verse stops describing her and records two casualties: an instrument shamed into silence, and a mind
+        under water. Between them is <Spot part="light">her light</Spot>, small and soft, because the smile is only a
+        faint one. Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -513,9 +538,10 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "manasa",
       body: (
         <>
-          There is also a small detail for the attentive: Kailāsa, Śiva&rsquo;s mountain, stands on the far shore, and a flight of haṃsas, the swans of the old
-          poems, is coming down to the water. The word <i>mānasa</i> means &ldquo;the mind&rdquo;, and it is also the name of the lake at Kailāsa&rsquo;s foot
-          that the haṃsas fly to, so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
+          There is also a small detail for the attentive: Kailāsa, Śiva&rsquo;s mountain, stands on the far shore, and
+          a flight of haṃsas, the swans of the old poems, is coming down to the water. The word <i>mānasa</i>{" "}
+          means &ldquo;the mind&rdquo;, and it is also the name of the lake at Kailāsa&rsquo;s foot that the haṃsas fly to,
+          so Kāmeśa&rsquo;s mind can be heard as Kāmeśa&rsquo;s lake.
         </>
       ),
     },
@@ -524,8 +550,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MirrorAndKnot,
     intro: (Spot) => (
       <>
-        After three verses of ruby, coral, and bimba brought in to be outdone, this one brings in nothing: no likeness for her chin was ever found. So nothing
-        is compared here, and <Spot part="light">her light</Spot> shines on its own. Every element comes from one of the two names.
+        After three verses of ruby, coral, and bimba brought in to be outdone, this one brings in nothing: no likeness
+        for her chin was ever found. So nothing is compared here, and <Spot part="light">her light</Spot> shines on its
+        own. Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -546,9 +573,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "three-lines",
       body: (
         <>
-          There is also a small detail for the attentive: three fine lines run across the plate under the knot. Śaṅkara (Saundaryalaharī 69) sees three lines on
-          her throat and calls them sureties for the strands that were tied there at her wedding, and then, in the same breath, the boundary stones of
-          music&rsquo;s three scales.
+          There is also a small detail for the attentive: three fine lines run across the plate under the knot.
+          Śaṅkara (Saundaryalaharī 69) sees three lines on her throat and calls them sureties for the strands that were
+          tied there at her wedding, and then, in the same breath, the boundary stones of music&rsquo;s three scales.
         </>
       ),
     },
@@ -557,8 +584,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: GoldAndPearls,
     intro: (Spot) => (
       <>
-        Nothing is outdone in this verse. It simply lists what she wears, and counting is a form of attention. Her face is still{" "}
-        <Spot part="mirror">the mirror of the last verse</Spot>, holding only her light, and the two names dress what lies beside and below it.
+        Nothing is outdone in this verse. It simply lists what she wears, and counting is a form of attention. Her face
+        is still <Spot part="mirror">the mirror of the last verse</Spot>, holding only her light, and the two names dress
+        what lies beside and below it.
       </>
     ),
     entries: [
@@ -579,8 +607,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "thread",
       body: (
         <>
-          There is also a small detail for the attentive: the marriage thread of the last verse is still tied, one layer in. Inside the collar you can see the
-          turmeric cord&rsquo;s three knots and the top of the tāli with its kumkum, because a tāli, once tied, is not taken off.
+          There is also a small detail for the attentive: the marriage thread of the last verse is still tied, one layer
+          in. Inside the collar you can see the turmeric cord&rsquo;s three knots and the top of the tāli with its
+          kumkum, because a tāli, once tied, is not taken off.
         </>
       ),
     },
@@ -589,8 +618,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: GrownStake,
     intro: (Spot) => (
       <>
-        The verse looks twice at one thing, first as a market and then as a garden, and the artwork lets the two looks meet in{" "}
-        <Spot part="fruit">a single pair</Spot>: what grew in the garden is what she lays down. Every element comes from one of the two names.
+        The verse looks twice at one thing, first as a market and then as a garden, and the artwork lets the two looks
+        meet in <Spot part="fruit">a single pair</Spot>: what grew in the garden is what she lays down. Every element
+        comes from one of the two names.
       </>
     ),
     entries: [
@@ -611,8 +641,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "bud",
       body: (
         <>
-          There is also a small detail for the attentive: one bud hangs from the creeper just below the card. Śaṅkara (Saundaryalaharī 78) sees the same creeper
-          and calls the pair its buds; this hymn calls them its fruit. It is the same plant, a season apart.
+          There is also a small detail for the attentive: one bud hangs from the creeper just below the card. Śaṅkara (Saundaryalaharī 78) sees the same creeper and calls the pair its buds; this hymn calls them its
+          fruit. It is the same plant, a season apart.
         </>
       ),
     },
@@ -621,9 +651,10 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WhatItHoldsUp,
     intro: (Spot) => (
       <>
-        The first name is an argument, not a description, and the artwork is built the same way: her waist is never drawn. Everything here is wrapped round it,
-        and wherever anything passes behind it, it disappears. Inside there is only <Spot part="support">her light</Spot>, and above is the{" "}
-        <Spot part="weight">weight it carries</Spot>. Every element comes from one of the two names.
+        The first name is an argument, not a description, and the artwork is built the same way: her waist is never
+        drawn. Everything here is wrapped round it, and wherever anything passes behind it, it disappears. Inside
+        there is only <Spot part="support">her light</Spot>, and above is the <Spot part="weight">weight it carries</Spot>.
+        Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -644,8 +675,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "sky-thread",
       body: (
         <>
-          There is also a small detail for the attentive: a hair-fine dark ripple runs down the middle of the hollow. Śaṅkara (Saundaryalaharī 77) says the
-          faint something that discerning eyes make out at her waist is the sky, squeezed to a thread as thin as the smallest ripple on the Yamunā.
+          There is also a small detail for the attentive: a hair-fine dark ripple runs down the middle of the hollow.
+          Śaṅkara (Saundaryalaharī 77) says the faint something that discerning eyes make out at her waist is the sky,
+          squeezed to a thread as thin as the smallest ripple on the Yamunā.
         </>
       ),
     },
@@ -654,9 +686,10 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SafflowerSlope,
     intro: (Spot) => (
       <>
-        The verse calls the place her cloth lies a <i>taṭī</i>, the word for a mountainside, and Śaṅkara takes it at its word: the lord of mountains gave her
-        his own slope as a wedding gift. So the cloth lies along <Spot part="slope">a hillside at dawn</Spot>, before the sun is up. Every element comes from
-        one of the two names.
+        The verse calls the place her cloth lies a <i>taṭī</i>, the word for a mountainside, and Śaṅkara takes it at
+        its word: the lord of mountains gave her his own slope as a wedding gift. So the cloth lies along{" "}
+        <Spot part="slope">a hillside at dawn</Spot>, before the sun is up. Every element comes from one of the two
+        names.
       </>
     ),
     entries: [
@@ -677,8 +710,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "safflower",
       body: (
         <>
-          There is also a small detail for the attentive: below the hem grow three safflower heads, the thistle the dye is made from. Of every red there is,
-          safflower fades fastest in the light, and the poem chose it for a goddess whose colour is the few minutes before sunrise.
+          There is also a small detail for the attentive: below the hem grow three safflower heads, the thistle the dye
+          is made from. Of every red there is, safflower fades fastest in the light, and the poem chose it for a goddess
+          whose colour is the few minutes before sunrise.
         </>
       ),
     },
@@ -687,8 +721,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: DrawnCurtain,
     intro: (Spot) => (
       <>
-        One name of this verse withholds and the other displays, and the artwork is divided the same way, at a hem. Above it nothing is shown but{" "}
-        <Spot part="light">her light</Spot>, coming through the cloth. Every element comes from one of the two names.
+        One name of this verse withholds and the other displays, and the artwork is divided the same way, at a hem.
+        Above it nothing is shown but <Spot part="light">her light</Spot>, coming through the cloth. Every element
+        comes from one of the two names.
       </>
     ),
     entries: [
@@ -701,15 +736,17 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 40,
         part: "crowns",
-        depicts: "Below the hem the reticence stops, and two small crowns cut from ruby sit side by side in full colour, tier on tier, their stones flashing.",
+        depicts:
+          "Below the hem the reticence stops, and two small crowns cut from ruby sit side by side in full colour, tier on tier, their stones flashing.",
       },
     ],
     detail: {
       part: "border",
       body: (
         <>
-          There is also a small detail for the attentive: the curtain&rsquo;s border is woven with elephants&rsquo; trunks and plantain stems. Śaṅkara
-          (Saundaryalaharī 82) says her thighs defeated both, the two stock similes for a smooth tapering limb, so here they are, reduced to a hem.
+          There is also a small detail for the attentive: the curtain&rsquo;s border is woven with elephants&rsquo;
+          trunks and plantain stems. Śaṅkara (Saundaryalaharī 82) says her thighs defeated both, the two stock similes
+          for a smooth tapering limb, so here they are, reduced to a hem.
         </>
       ),
     },
@@ -718,8 +755,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: FirstRainQuivers,
     intro: (Spot) => (
       <>
-        The verse is set in <Spot part="rain">the first rain</Spot> of the monsoon, which is when its scarlet insects come up out of the ground. Every element
-        comes from one of the three names.
+        The verse is set in <Spot part="rain">the first rain</Spot> of the monsoon, which is when its scarlet insects
+        come up out of the ground. Every element comes from one of the three names.
       </>
     ),
     entries: [
@@ -745,8 +782,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "arrowheads",
       body: (
         <>
-          There is also a small detail for the attentive: ten bright points show through the grass at the quivers&rsquo; feet. Śaṅkara (Saundaryalaharī 83) says
-          Love loaded her two quivers with twice his five arrows, and that their ten heads, whetted on the crowns of the gods, are the nails of her feet.
+          There is also a small detail for the attentive: ten bright points show through the grass at the quivers&rsquo;
+          feet. Śaṅkara (Saundaryalaharī 83) says Love loaded her two quivers with twice his five arrows, and that
+          their ten heads, whetted on the crowns of the gods, are the nails of her feet.
         </>
       ),
     },
@@ -755,8 +793,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: NailMoons,
     intro: () => (
       <>
-        The verse looks no higher than her feet, which is where a person&rsquo;s eyes are after bowing, so nothing of her is shown but her two footprints and
-        what their light does. Every element comes from one of the two names.
+        The verse looks no higher than her feet, which is where a person&rsquo;s eyes are after bowing, so nothing of
+        her is shown but her two footprints and what their light does. Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -777,8 +815,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "hands",
       body: (
         <>
-          There is also a small detail for the attentive: the hands folded in the bowing are closed like buds. Śaṅkara (Saundaryalaharī 89) calls her nails
-          moons, and lotuses close when the moon is up, so the hands of the women of heaven, which are lotuses, can only fold before them.
+          There is also a small detail for the attentive: the hands folded in the bowing are closed like buds. Śaṅkara
+          (Saundaryalaharī 89) calls her nails moons, and lotuses close when the moon is up, so the hands of the women
+          of heaven, which are lotuses, can only fold before them.
         </>
       ),
     },
@@ -787,8 +826,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: StillWaterSteps,
     intro: (Spot) => (
       <>
-        The hymn&rsquo;s portrait of her reaches her feet in this verse, and closes by naming where all of it comes from. It is set on{" "}
-        <Spot part="water">still water</Spot>, because of the swan. Every element comes from one of the three names.
+        The hymn&rsquo;s portrait of her reaches her feet in this verse, and closes by naming where all of it comes
+        from. It is set on <Spot part="water">still water</Spot>, because of the swan. Every element comes from one
+        of the three names.
       </>
     ),
     entries: [
@@ -801,7 +841,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 47,
         part: "swan",
-        depicts: "A female swan keeps pace with her feet, so slowly that her wake hardly opens behind her and its ripples lie far apart.",
+        depicts:
+          "A female swan keeps pace with her feet, so slowly that her wake hardly opens behind her and its ripples lie far apart.",
       },
       {
         nama: 48,
@@ -814,8 +855,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "salt",
       body: (
         <>
-          There is also a small detail for the attentive: on the rim of the treasury lies a little heap of salt. The word for loveliness, <i>lāvaṇya</i>, is
-          made from <i>lavaṇa</i>, salt: it is the quality that makes a face worth looking at, as salt makes food worth eating.
+          There is also a small detail for the attentive: on the rim of the treasury lies a little heap of salt. The
+          word for loveliness, <i>lāvaṇya</i>, is made from <i>lavaṇa</i>, salt: it is the quality that makes a face
+          worth looking at, as salt makes food worth eating.
         </>
       ),
     },
@@ -824,8 +866,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: OnHisLap,
     intro: () => (
       <>
-        The portrait that began at her crown has reached her feet, and this verse sums it up in three names before naming, at last, the one whose lap she sits
-        on. Every element comes from one of the six names.
+        The portrait that began at her crown has reached her feet, and this verse sums it up in three names before
+        naming, at last, the one whose lap she sits on. Every element comes from one of the six names.
       </>
     ),
     entries: [
@@ -837,7 +879,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 50,
         part: "outline",
-        depicts: "Its outline is one unbroken gold line, closed in a single stroke and symmetrical, with nothing added and nothing to correct.",
+        depicts:
+          "Its outline is one unbroken gold line, closed in a single stroke and symmetrical, with nothing added and nothing to correct.",
       },
       {
         nama: 51,
@@ -869,15 +912,17 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MeruInward,
     intro: (Spot) => (
       <>
-        The verse moves inward, from the mountain at the centre of the world to the one seat at the centre of everything, and the artwork climbs with it to{" "}
-        <Spot part="light">her presence</Spot>, which is the light the whole of it is lit by. Every element comes from one of the four names.
+        The verse moves inward, from the mountain at the centre of the world to the one seat at the centre of
+        everything, and the artwork climbs with it to <Spot part="light">her presence</Spot>, which is the light the
+        whole of it is lit by. Every element comes from one of the four names.
       </>
     ),
     entries: [
       {
         nama: 55,
         part: "meru",
-        depicts: "Meru, the golden world-mountain, rises from the foot of the plate with three summits, and everything else stands on the middle one.",
+        depicts:
+          "Meru, the golden world-mountain, rises from the foot of the plate with three summits, and everything else stands on the middle one.",
       },
       {
         nama: 56,
@@ -888,7 +933,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 57,
         part: "house",
-        depicts: "On the innermost terrace stands a pavilion of the wish-granting gem, open between its pillars and roofed with the gem itself, cut in facets.",
+        depicts:
+          "On the innermost terrace stands a pavilion of the wish-granting gem, open between its pillars and roofed with the gem itself, cut in facets.",
       },
       {
         nama: 58,
@@ -902,9 +948,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: NectarIsland,
     intro: (Spot) => (
       <>
-        The first three names are frames, each wider than the last, and the artwork draws them as rings round <Spot part="light">her light</Spot>. Then the
-        verse turns from where she lives to her eyes, and the artwork turns with it, into the water nearest the viewer. Every element comes from one of the five
-        names.
+        The first three names are frames, each wider than the last, and the artwork draws them as rings round{" "}
+        <Spot part="light">her light</Spot>. Then the verse turns from where she lives to her eyes, and the artwork turns
+        with it, into the water nearest the viewer. Every element comes from one of the five names.
       </>
     ),
     entries: [
@@ -917,7 +963,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 60,
         part: "grove",
-        depicts: "Round the lotuses stands a grove of kadamba trees, glossy-leaved and hung with the orange, pale-whiskered balls that open at the first rain.",
+        depicts:
+          "Round the lotuses stands a grove of kadamba trees, glossy-leaved and hung with the orange, pale-whiskered balls that open at the first rain.",
       },
       {
         nama: 61,
@@ -943,8 +990,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: CourtAndArmy,
     intro: (Spot) => (
       <>
-        Two names a line long, and the hymn turns from describing her to telling a story. The artwork splits the same way, above and below{" "}
-        <Spot part="light">her glory</Spot>, the light everything here is gathered round. Every element comes from one of the two names.
+        Two names a line long, and the hymn turns from describing her to telling a story. The artwork splits the same
+        way, above and below <Spot part="light">her glory</Spot>, the light everything here is gathered round. Every
+        element comes from one of the two names.
       </>
     ),
     entries: [
@@ -966,8 +1014,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: ElephantsAndHorses,
     intro: (Spot) => (
       <>
-        The two names are built alike and part in their last words: the elephants attend her, the horses enclose her. The artwork keeps the difference, one a
-        retinue beside <Spot part="light">her light</Spot> and the other a ring round all of it. Every element comes from one of the two names.
+        The two names are built alike and part in their last words: the elephants attend her, the horses enclose her.
+        The artwork keeps the difference, one a retinue beside <Spot part="light">her light</Spot> and the other a ring
+        round all of it. Every element comes from one of the two names.
       </>
     ),
     entries: [
@@ -989,9 +1038,10 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: KingOfWheels,
     intro: (Spot) => (
       <>
-        <i>Cakrarāja</i>, King of Wheels, is one of the ordinary names of the Śrīcakra, and the tradition reads the nine tiers of her{" "}
-        <Spot part="chariot">chariot</Spot> as its nine enclosures. So the chariot is drawn as the diagram raised in steps and set on wheels, with{" "}
-        <Spot part="light">her light</Spot> at the summit. Every element comes from one of the two names.
+        <i>Cakrarāja</i>, King of Wheels, is one of the ordinary names of the Śrīcakra, and the tradition reads the
+        nine tiers of her <Spot part="chariot">chariot</Spot> as its nine enclosures. So the chariot is drawn as the
+        diagram raised in steps and set on wheels, with <Spot part="light">her light</Spot> at the summit. Every
+        element comes from one of the two names.
       </>
     ),
     entries: [
@@ -1012,8 +1062,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "triangles",
       body: (
         <>
-          On the top tier, the nine interlocking triangles, four pointing away and five toward you, laid out by the old rule of a diameter cut into forty-eight.
-          Saundaryalaharī 11 counts the same figure standing still.
+          On the top tier, the nine interlocking triangles, four pointing away and five toward you, laid out by the old
+          rule of a diameter cut into forty-eight. Saundaryalaharī 11 counts the same figure standing still.
         </>
       ),
     },
@@ -1022,8 +1072,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WallOfFire,
     intro: (Spot) => (
       <>
-        The verse pulls back to the shape of the whole field, so the camp is seen from outside and low, the way a besieger would see it, with{" "}
-        <Spot part="chariot">her own chariot</Spot> still moving in the middle of it.
+        The verse pulls back to the shape of the whole field, so the camp is seen from outside and low, the way a
+        besieger would see it, with <Spot part="chariot">her own chariot</Spot> still moving in the middle of it.
       </>
     ),
     entries: [
@@ -1044,8 +1094,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "lion",
       body: (
         <>
-          Before the Kiricakra stands a small gold lion. The Lalitopākhyāna gives Daṇḍanāthā a lion, Caṇḍocchaṇḍa, as well as her boar, and it goes ahead of her
-          chariot.
+          Before the Kiricakra stands a small gold lion. The Lalitopākhyāna gives Daṇḍanāthā a lion, Caṇḍocchaṇḍa,
+          as well as her boar, and it goes ahead of her chariot.
         </>
       ),
     },
@@ -1054,9 +1104,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: NityasOnslaught,
     intro: (Spot) => (
       <>
-        Both names are about her face while she watches, and neither has her strike a blow. So she stays out of the fight, on{" "}
-        <Spot part="chariot">her chariot</Spot> at the left, and <Spot part="gaze">her light leans toward it</Spot>, its glow and its gaze thrown forward over
-        the field.
+        Both names are about her face while she watches, and neither has her strike a blow. So she stays out of the
+        fight, on <Spot part="chariot">her chariot</Spot> at the left, and <Spot part="gaze">her light leans
+        toward it</Spot>, its glow and its gaze thrown forward over the field.
       </>
     ),
     entries: [
@@ -1075,15 +1125,21 @@ export const ARTWORK: Record<string, Artwork> = {
     ],
     detail: {
       part: "jvalamalini",
-      body: <>The fourteenth moon wears a ring of small flames. That night belongs to Jvālāmālinī, the Nityā who raised the wall of fire in the last verse.</>,
+      body: (
+        <>
+          The fourteenth moon wears a ring of small flames. That night belongs to Jvālāmālinī, the Nityā who raised the
+          wall of fire in the last verse.
+        </>
+      ),
     },
   },
   "029": {
     Art: BalasArrows,
     intro: (Spot) => (
       <>
-        Two more names of a mother&rsquo;s pleasure, and in neither does the sovereign lift a hand. She stays on <Spot part="chariot">her chariot</Spot> at the
-        left, as in the last verse, and her daughter and her minister do the fighting.
+        Two more names of a mother&rsquo;s pleasure, and in neither does the sovereign lift a hand. She stays on{" "}
+        <Spot part="chariot">her chariot</Spot> at the left, as in the last verse, and her daughter and her minister
+        do the fighting.
       </>
     ),
     entries: [
@@ -1104,8 +1160,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "syllables",
       body: (
         <>
-          Under Bālā, her three syllables, aiṃ klīṃ sauḥ. They are often the first mantra a student is given, and the nyāsa before the stotra has already set
-          them on the reciter&rsquo;s fingers.
+          Under Bālā, her three syllables, aiṃ klīṃ sauḥ. They are often the first mantra a student is given, and the
+          nyāsa before the stotra has already set them on the reciter&rsquo;s fingers.
         </>
       ),
     },
@@ -1114,8 +1170,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: GlanceAndASon,
     intro: (Spot) => (
       <>
-        The verse breaks in two, and so does the picture. Below the card the war stops for a look: her light at the left and Kāmeśvara&rsquo;s crescent at the
-        right, and <Spot part="glance">the look that passes between them</Spot>.
+        The verse breaks in two, and so does the picture. Below the card the war stops for a look: her light at the
+        left and Kāmeśvara&rsquo;s crescent at the right, and <Spot part="glance">the look that passes between
+        them</Spot>.
       </>
     ),
     entries: [
@@ -1134,15 +1191,19 @@ export const ARTWORK: Record<string, Artwork> = {
     ],
     detail: {
       part: "bow",
-      body: <>One of the ten things in his ring is his mother&rsquo;s own: the sugarcane bow, drawn as hers is in Shloka 3.</>,
+      body: (
+        <>
+          One of the ten things in his ring is his mother&rsquo;s own: the sugarcane bow, drawn as hers is in Shloka 3.
+        </>
+      ),
     },
   },
   "031": {
     Art: AnsweringRain,
     intro: (Spot) => (
       <>
-        Four verses of watching end here, and from the second name on she fights. So <Spot part="light">her light</Spot> at the left is no longer only looking:
-        the rain goes up from it.
+        Four verses of watching end here, and from the second name on she fights. So{" "}
+        <Spot part="light">her light</Spot> at the left is no longer only looking: the rain goes up from it.
       </>
     ),
     entries: [
@@ -1163,8 +1224,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "figure",
       body: (
         <>
-          On the broken pieces you can still see what Viśukra cut into the slab: an eight-angled figure with a trident at each of its eight points, where the
-          eight powers of obstruction, led by Alasā, Sloth, were posted.
+          On the broken pieces you can still see what Viśukra cut into the slab: an eight-angled figure with a trident
+          at each of its eight points, where the eight powers of obstruction, led by Alasā, Sloth, were posted.
         </>
       ),
     },
@@ -1173,8 +1234,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TenDescents,
     intro: (Spot) => (
       <>
-        Her two arms rise from <Spot part="light">her light</Spot> as beams, empty-handed, and the hands are drawn only as <Spot part="nails">their nails</Spot>
-        : five small moons at the end of each beam, as her toenails were in Shloka 19, with light coming off them.
+        Her two arms rise from <Spot part="light">her light</Spot> as beams, empty-handed, and the hands are drawn
+        only as <Spot part="nails">their nails</Spot>: five small moons at the end of each beam, as her toenails were
+        in Shloka 19, with light coming off them.
       </>
     ),
     entries: [
@@ -1195,8 +1257,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "narasimha",
       body: (
         <>
-          The man-lion is drawn with his claws showing. Narasiṃha killed with his nails because no weapon was allowed against the demon, so the form that comes
-          out of her nails is itself a form about nails.
+          The man-lion is drawn with his claws showing. Narasiṃha killed with his nails because no weapon was allowed
+          against the demon, so the form that comes out of her nails is itself a form about nails.
         </>
       ),
     },
@@ -1205,7 +1267,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: EmptyCity,
     intro: (Spot) => (
       <>
-        <Spot part="light">Her light</Spot>, at the left, has nothing left to send out and is all radiance now, as it was before the war began.
+        <Spot part="light">Her light</Spot>, at the left, has nothing left to send out and is all radiance now, as it
+        was before the war began.
       </>
     ),
     entries: [
@@ -1226,8 +1289,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "shoot",
       body: (
         <>
-          In the ash at the foot of the burnt city there is one green shoot. The demon was made from the ashes of Kāma, and the gods are about to ask her to
-          bring the god of love back to life; that is the next verse.
+          In the ash at the foot of the burnt city there is one green shoot. The demon was made from the ashes of
+          Kāma, and the gods are about to ask her to bring the god of love back to life; that is the next verse.
         </>
       ),
     },
@@ -1236,8 +1299,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: Sanjivani,
     intro: (Spot) => (
       <>
-        Her <Spot part="glance">sidelong look</Spot> falls from the lotus at the top onto the ash below. The purāṇa says Kāma was born again out of her look, as
-        Gaṇeśa was four verses earlier.
+        Her <Spot part="glance">sidelong look</Spot> falls from the lotus at the top onto the ash below. The
+        purāṇa says Kāma was born again out of her look, as Gaṇeśa was four verses earlier.
       </>
     ),
     entries: [
@@ -1258,8 +1321,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "kama",
       body: (
         <>
-          Kāma comes back as a rosy light with his bow and arrows made of flowers, and he and Rati look at each other. The purāṇa gives him two arms now where
-          he had four: what comes back is not quite what was lost.
+          Kāma comes back as a rosy light with his bow and arrows made of flowers, and he and Rati look at each other.
+          The purāṇa gives him two arms now where he had four: what comes back is not quite what was lost.
         </>
       ),
     },
@@ -1268,8 +1331,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MantraBody,
     intro: (Spot) => (
       <>
-        Her light stands as a tall column, her body spelled instead of painted. At the top is <Spot part="face">her face</Spot> from the last verse: the lotus,
-        and the cluster of speech rising over it.
+        Her light stands as a tall column, her body spelled instead of painted. At the top is{" "}
+        <Spot part="face">her face</Spot> from the last verse: the lotus, and the cluster of speech rising over it.
       </>
     ),
     entries: [
@@ -1290,8 +1353,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "seams",
       body: (
         <>
-          The two seams are at the throat and the waist, where the names divide her. Before the hymn is recited the three clusters are placed on the
-          reciter&apos;s own body at the same places, so in the nyāsa the reciter builds this body on his own.
+          The two seams are at the throat and the waist, where the names divide her. Before the hymn is recited the
+          three clusters are placed on the reciter&apos;s own body at the same places, so in the nyāsa the reciter builds
+          this body on his own.
         </>
       ),
     },
@@ -1300,7 +1364,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: RootMantra,
     intro: (Spot) => (
       <>
-        <Spot part="light">Her light</Spot> is in the crown, at the right, and everything else in the picture comes from it.
+        <Spot part="light">Her light</Spot> is in the crown, at the right, and everything else in the picture comes
+        from it.
       </>
     ),
     entries: [
@@ -1333,8 +1398,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "seal",
       body: (
         <>
-          The seal on the book carries only a small downward triangle, the sign of the goddess. Whatever is written inside is not drawn: the fifteen syllables
-          themselves are given at initiation, and this plate, like the printed manuals, leaves them out.
+          The seal on the book carries only a small downward triangle, the sign of the goddess. Whatever is written
+          inside is not drawn: the fifteen syllables themselves are given at initiation, and this plate, like the
+          printed manuals, leaves them out.
         </>
       ),
     },
@@ -1343,8 +1409,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: KulaAndSamaya,
     intro: (Spot) => (
       <>
-        The verse names both of the tradition&apos;s ways of worshipping her and puts her inside each, so her light is drawn twice:{" "}
-        <Spot part="within">once in the kula</Spot> at the left, and <Spot part="samaya">once in the samaya</Spot> at the right.
+        The verse names both of the tradition&apos;s ways of worshipping her and puts her inside each, so her light is
+        drawn twice: <Spot part="within">once in the kula</Spot> at the left, and{" "}
+        <Spot part="samaya">once in the samaya</Spot> at the right.
       </>
     ),
     entries: [
@@ -1362,7 +1429,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 94,
         part: "kaula",
-        depicts: "Before the door stand the outward rite's lamp and cup: the Kaula way worships her with the full apparatus of an external rite.",
+        depicts:
+          "Before the door stand the outward rite's lamp and cup: the Kaula way worships her with the full apparatus of an external rite.",
       },
       {
         nama: 95,
@@ -1390,22 +1458,28 @@ export const ARTWORK: Record<string, Artwork> = {
     ],
     detail: {
       part: "threshold",
-      body: <>On the household&apos;s threshold is a kolam, the line of rice-flour dots and loops the woman of the house draws at her door each morning.</>,
+      body: (
+        <>
+          On the household&apos;s threshold is a kolam, the line of rice-flour dots and loops the woman of the house draws at
+          her door each morning.
+        </>
+      ),
     },
   },
   "038": {
     Art: FirstTwoKnots,
     intro: (Spot) => (
       <>
-        The hymn turns inward here, to the body of whoever is chanting. <Spot part="channel">A channel of light</Spot> runs up the middle of the plate through
-        the centres, lit from the root as far as the second knot.
+        The hymn turns inward here, to the body of whoever is chanting. <Spot part="channel">A channel of light</Spot>{" "}
+        runs up the middle of the plate through the centres, lit from the root as far as the second knot.
       </>
     ),
     entries: [
       {
         nama: 99,
         part: "root",
-        depicts: "At the foot is the root centre, a lotus of four petals round the yellow square of earth, and her light is seated in it.",
+        depicts:
+          "At the foot is the root centre, a lotus of four petals round the yellow square of earth, and her light is seated in it.",
       },
       {
         nama: 100,
@@ -1429,8 +1503,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "silent",
       body: (
         <>
-          The verse names only two of the centres it passes. The others are drawn faint and unlit, and so is the thousand-petalled lotus at the top: the third
-          knot is still tied, and the next verse finishes the climb.
+          The verse names only two of the centres it passes. The others are drawn faint and unlit, and so is the
+          thousand-petalled lotus at the top: the third knot is still tied, and the next verse finishes the climb.
         </>
       ),
     },
@@ -1439,7 +1513,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SummitAndRain,
     intro: (Spot) => (
       <>
-        The climb of the last verse is finished: <Spot part="channel">the channel</Spot> is lit now from the root to the crown.
+        The climb of the last verse is finished: <Spot part="channel">the channel</Spot> is lit now from the root to the
+        crown.
       </>
     ),
     entries: [
@@ -1456,7 +1531,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 105,
         part: "summit",
-        depicts: "At the top the thousand-petalled lotus is lit, ring on ring of fine petals, and her light is mounted on it, as on a seat or a vehicle.",
+        depicts:
+          "At the top the thousand-petalled lotus is lit, ring on ring of fine petals, and her light is mounted on it, as on a seat or a vehicle.",
       },
       {
         nama: 106,
@@ -1469,8 +1545,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "passed",
       body: (
         <>
-          Below, the centres of the last verse are all lit now, the ones it passed over in silence too, and the knots of Brahmā and Viṣṇu hang open between
-          them.
+          Below, the centres of the last verse are all lit now, the ones it passed over in silence too, and the knots of
+          Brahmā and Viṣṇu hang open between them.
         </>
       ),
     },
@@ -1479,7 +1555,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: LightningVine,
     intro: (Spot) => (
       <>
-        Two verses have described a climb without naming what climbs. Here it is named: <Spot part="kundalini">the coiled one</Spot>.
+        Two verses have described a climb without naming what climbs. Here it is named:{" "}
+        <Spot part="kundalini">the coiled one</Spot>.
       </>
     ),
     entries: [
@@ -1498,7 +1575,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 109,
         part: "clinging",
-        depicts: "From the corners of the lightning, tendrils curl and grip, as a creeper's do: a great clinging, which holds however far she rises.",
+        depicts:
+          "From the corners of the lightning, tendrils curl and grip, as a creeper's do: a great clinging, which holds however far she rises.",
       },
       {
         nama: 110,
@@ -1517,8 +1595,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "wheels",
       body: (
         <>
-          The lightning goes straight through the centre of each of the six wheels, root, svādhiṣṭhāna, navel, heart, throat and brow, and zigzags only between
-          them.
+          The lightning goes straight through the centre of each of the six wheels, root, svādhiṣṭhāna, navel, heart,
+          throat and brow, and zigzags only between them.
         </>
       ),
     },
@@ -1527,14 +1605,16 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: ForestOfBecoming,
     intro: (Spot) => (
       <>
-        From here the hymn sorts her names by sound, and this verse turns one syllable, bha-, three ways. <Spot part="form">Her light</Spot> is in the crown.
+        From here the hymn sorts her names by sound, and this verse turns one syllable, bha-, three ways.{" "}
+        <Spot part="form">Her light</Spot> is in the crown.
       </>
     ),
     entries: [
       {
         nama: 112,
         part: "bhava",
-        depicts: "Beside her light is the crescent of Bhava, Rudra as the source of becoming, one of his oldest names; Bhavānī is his wife.",
+        depicts:
+          "Beside her light is the crescent of Bhava, Rudra as the source of becoming, one of his oldest names; Bhavānī is his wife.",
       },
       {
         nama: 113,
@@ -1551,7 +1631,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 115,
         part: "auspicious",
-        depicts: "At the left stands a full pot crowned with mango leaves and a coconut, the most auspicious of things, which she is fond of.",
+        depicts:
+          "At the left stands a full pot crowned with mango leaves and a coconut, the most auspicious of things, which she is fond of.",
       },
       {
         nama: 116,
@@ -1569,8 +1650,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "chips",
       body: (
         <>
-          The name says kuṭhārikā, a little axe, not kuṭhāra. It is the one from Paraśurāma&apos;s hand in Shloka 32, and the chips are still flying from the
-          trunk it is in.
+          The name says kuṭhārikā, a little axe, not kuṭhāra. It is the one from Paraśurāma&apos;s hand in Shloka 32, and the
+          chips are still flying from the trunk it is in.
         </>
       ),
     },
@@ -1579,8 +1660,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: DevotionGoverns,
     intro: (Spot) => (
       <>
-        The first three names are a ladder, and each rung concedes more. <Spot part="light">Her light</Spot> is in the crown, and everything below is reaching
-        for it.
+        The first three names are a ladder, and each rung concedes more. <Spot part="light">Her light</Spot> is in the
+        crown, and everything below is reaching for it.
       </>
     ),
     entries: [
@@ -1593,7 +1674,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 119,
         part: "road",
-        depicts: "From the flower a garland climbs all the way to her light. It is the one road that arrives.",
+        depicts:
+          "From the flower a garland climbs all the way to her light. It is the one road that arrives.",
       },
       {
         nama: 120,
@@ -1609,12 +1691,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 122,
         part: "sambhu",
-        depicts: "On one side of her light is the crescent of Śambhu, the gentlest of Śiva's names, the one used when the terrible aspect is set aside.",
+        depicts:
+          "On one side of her light is the crescent of Śambhu, the gentlest of Śiva's names, the one used when the terrible aspect is set aside.",
       },
       {
         nama: 123,
         part: "sarada",
-        depicts: "At the right Śāradā, the goddess of speech, a white light with her vīṇā, is worshipping her too.",
+        depicts:
+          "At the right Śāradā, the goddess of speech, a white light with her vīṇā, is worshipping her too.",
       },
       {
         nama: 124,
@@ -1632,7 +1716,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "short",
       body: (
         <>
-          Beside the garland two other roads set out, one from a palm-leaf book and one from a fire altar, knowledge and rite. Both stop short, under the dome.
+          Beside the garland two other roads set out, one from a palm-leaf book and one from a fire altar, knowledge and
+          rite. Both stop short, under the dome.
         </>
       ),
     },
@@ -1641,8 +1726,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: AutumnMoonTurn,
     intro: (Spot) => (
       <>
-        The verse starts with <Spot part="face">the moon</Spot> and ends by taking every comparison back. Six names of praise are drawn in the crown and at the
-        left, and the turn comes <Spot part="unsupported">at the lower right</Spot>.
+        The verse starts with <Spot part="face">the moon</Spot> and ends by taking every comparison back. Six names
+        of praise are drawn in the crown and at the left, and the turn comes <Spot part="unsupported">at the lower
+        right</Spot>.
       </>
     ),
     entries: [
@@ -1654,7 +1740,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 127,
         part: "sri",
-        depicts: "At the right of the crown a lotus, Śrī's flower, and gold falling from it: she makes splendour and fortune wherever she turns.",
+        depicts:
+          "At the right of the crown a lotus, Śrī's flower, and gold falling from it: she makes splendour and fortune wherever she turns.",
       },
       {
         nama: 128,
@@ -1670,7 +1757,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 130,
         part: "waist",
-        depicts: "Tied to the trident is Śiva's drum, drawn in to almost nothing at its waist, the one narrow line in a full shape.",
+        depicts:
+          "Tied to the trident is Śiva's drum, drawn in to almost nothing at its waist, the one narrow line in a full shape.",
       },
       {
         nama: 131,
@@ -1680,7 +1768,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 132,
         part: "unsupported",
-        depicts: "At the lower right her light hangs over an empty seat, and there is nothing at all under it: she is the ground, so she stands on nothing.",
+        depicts:
+          "At the lower right her light hangs over an empty seat, and there is nothing at all under it: she is the ground, so she stands on nothing.",
       },
       {
         nama: 133,
@@ -1693,8 +1782,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "clouds",
       body: (
         <>
-          At the edges of the crown the last clouds of the rains are going off. Śarat is the season after the monsoon, when the sky has been washed, and that is
-          why the autumn moon is the one faces are compared to.
+          At the edges of the crown the last clouds of the rains are going off. Śarat is the season after the monsoon,
+          when the sky has been washed, and that is why the autumn moon is the one faces are compared to.
         </>
       ),
     },
@@ -1703,7 +1792,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TenTakenAway,
     intro: (Spot) => (
       <>
-        Ten names, eight of them taken away. At the centre is <Spot part="formless">her light</Spot>, and round it the things that have no hold on her.
+        Ten names, eight of them taken away. At the centre is <Spot part="formless">her light</Spot>, and round it
+        the things that have no hold on her.
       </>
     ),
     entries: [
@@ -1725,12 +1815,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 137,
         part: "formless",
-        depicts: "Her light itself is only a glow, with no rim and no disc: there is no outline of her that could be drawn.",
+        depicts:
+          "Her light itself is only a glow, with no rim and no disc: there is no outline of her that could be drawn.",
       },
       {
         nama: 138,
         part: "unperturbed",
-        depicts: "At the left a lamp burns in a niche out of the wind and its flame does not flicker, the Gītā's image of a mind that nothing scatters.",
+        depicts:
+          "At the left a lamp burns in a niche out of the wind and its flame does not flicker, the Gītā's image of a mind that nothing scatters.",
       },
       {
         nama: 139,
@@ -1741,12 +1833,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 140,
         part: "partless",
-        depicts: "In the crown the moon is whole. A kalā is a digit of the moon, and none of hers has been taken away.",
+        depicts:
+          "In the crown the moon is whole. A kalā is a digit of the moon, and none of hers has been taken away.",
       },
       {
         nama: 141,
         part: "tranquil",
-        depicts: "At the lower right a fire has burnt down to embers in its ash, and its smoke goes straight up: every disturbance spent.",
+        depicts:
+          "At the lower right a fire has burnt down to embers in its ash, and its smoke goes straight up: every disturbance spent.",
       },
       {
         nama: 142,
@@ -1756,15 +1850,16 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 143,
         part: "calamity",
-        depicts: "Rāhu, the shadow that swallows the moon at an eclipse, has gone past it in the crown without touching it, and is going off.",
+        depicts:
+          "Rāhu, the shadow that swallows the moon at an eclipse, has gone past it in the crown without touching it, and is going off.",
       },
     ],
     detail: {
       part: "strands",
       body: (
         <>
-          A guṇa is literally a strand of a rope. Sattva, rajas and tamas, clarity, motion and heaviness, are traditionally white, red and dark, and everything
-          in nature is twisted out of the three.
+          A guṇa is literally a strand of a rope. Sattva, rajas and tamas, clarity, motion and heaviness, are
+          traditionally white, red and dark, and everything in nature is twisted out of the three.
         </>
       ),
     },
@@ -1773,8 +1868,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: PotAndSpace,
     intro: (Spot) => (
       <>
-        Eight names saying that nothing about her ever happened. Her light is drawn twice: once as <Spot part="awake">the pole star</Spot>, and once as{" "}
-        <Spot part="space">the one space</Spot> that the pots stand in.
+        Eight names saying that nothing about her ever happened. Her light is drawn twice: once as{" "}
+        <Spot part="awake">the pole star</Spot>, and once as <Spot part="space">the one space</Spot> that the pots
+        stand in.
       </>
     ),
     entries: [
@@ -1793,12 +1889,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 146,
         part: "pots",
-        depicts: "The pots stand in a row, every one a different shape. They are the world's manifold, and their shapes stop at their rims.",
+        depicts:
+          "The pots stand in a row, every one a different shape. They are the world's manifold, and their shapes stop at their rims.",
       },
       {
         nama: 147,
         part: "held",
-        depicts: "Round the pole star the other stars wheel on their trails. In the Purāṇas they are all tied to it, and it is tied to nothing.",
+        depicts:
+          "Round the pole star the other stars wheel on their trails. In the Purāṇas they are all tied to it, and it is tied to nothing.",
       },
       {
         nama: 148,
@@ -1819,15 +1917,16 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 151,
         part: "space",
-        depicts: "One band of her light runs through the pots and between them, inside and outside alike, without a gap anywhere.",
+        depicts:
+          "One band of her light runs through the pots and between them, inside and outside alike, without a gap anywhere.",
       },
     ],
     detail: {
       part: "free",
       body: (
         <>
-          This is the Vedāntins&apos; pot and space. The space in a pot seems to be a space of its own, and when the pot breaks it seems to be freed. It was the
-          one space all along.
+          This is the Vedāntins&apos; pot and space. The space in a pot seems to be a space of its own, and when the
+          pot breaks it seems to be freed. It was the one space all along.
         </>
       ),
     },
@@ -1836,8 +1935,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: OtherEndOfTheRope,
     intro: (Spot) => (
       <>
-        Four names that take something away from her, then two pairs that turn outward, where what she is free of she takes away from others too.{" "}
-        <Spot part="light">Her light</Spot> sits on her couch below the card, and nothing in the picture lit it.
+        Four names that take something away from her, then two pairs that turn outward, where what she is free of
+        she takes away from others too. <Spot part="light">Her light</Spot> sits on her couch below the card, and
+        nothing in the picture lit it.
       </>
     ),
     entries: [
@@ -1884,15 +1984,17 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 159,
         part: "elephant",
-        depicts: "The elephant has come close enough to take her cord in its trunk, and the rut on its temple has dried to a faint trace.",
+        depicts:
+          "The elephant has come close enough to take her cord in its trunk, and the rut on its temple has dried to a faint trace.",
       },
     ],
     detail: {
       part: "deer",
       body: (
         <>
-          The moon&apos;s mark is the deer of Shloka 5, and here it has leapt clear of the moon, at the top right. Kalaṅka, a mark, is a different word from
-          Shloka 44&apos;s kalā, a digit; that moon kept its deer, and this one has none.
+          The moon&apos;s mark is the deer of Shloka 5, and here it has leapt clear of the moon, at the top right.
+          Kalaṅka, a mark, is a different word from Shloka 44&apos;s kalā, a digit; that moon kept its deer, and this
+          one has none.
         </>
       ),
     },
@@ -1901,21 +2003,24 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TwoBirds,
     intro: (Spot) => (
       <>
-        Two names alone, then three pairs, each said once of her and once of what she does for whoever comes near. The verse is the Muṇḍaka Upaniṣad&apos;s two
-        birds on one <Spot part="tree">tree</Spot>: one eats its fruit, sunk, grieving and deluded; the other only looks on, and when the first sees it, its
-        grief goes. The tree grows from the kerb of a <Spot part="tank">temple tank</Spot>, as pippalas do.
+        Two names alone, then three pairs, each said once of her and once of what she does for whoever comes
+        near. The verse is the Muṇḍaka Upaniṣad&apos;s two birds on one <Spot part="tree">tree</Spot>: one eats
+        its fruit, sunk, grieving and deluded; the other only looks on, and when the first sees it, its grief
+        goes. The tree grows from the kerb of a <Spot part="tank">temple tank</Spot>, as pippalas do.
       </>
     ),
     entries: [
       {
         nama: 160,
         part: "still-leaves",
-        depicts: "A pippala's leaves hang on long stalks and tremble in the least air, all over the tree. Round her they hang still.",
+        depicts:
+          "A pippala's leaves hang on long stalks and tremble in the least air, all over the tree. Round her they hang still.",
       },
       {
         nama: 161,
         part: "light",
-        depicts: "On the bough where the second bird should sit there is only her light: nobody there to say I.",
+        depicts:
+          "On the bough where the second bird should sit there is only her light: nobody there to say I.",
       },
       {
         nama: 162,
@@ -1925,7 +2030,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 163,
         part: "bird",
-        depicts: "The other bird, low in the mist, has turned its head up to her, and the mist has cleared in a lane between them.",
+        depicts:
+          "The other bird, low in the mist, has turned its head up to her, and the mist has cleared in a lane between them.",
       },
       {
         nama: 164,
@@ -1935,7 +2041,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 165,
         part: "dropped",
-        depicts: "The fig the other bird was eating has fallen from its beak as it looked up, and is dropping into the water.",
+        depicts:
+          "The fig the other bird was eating has fallen from its beak as it looked up, and is dropping into the water.",
       },
       {
         nama: 166,
@@ -1946,15 +2053,16 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 167,
         part: "shaken",
-        depicts: "The bird shakes dark motes from its wings, and they go out as they fall. The Upaniṣad says that whoever sees her shakes off good and evil.",
+        depicts:
+          "The bird shakes dark motes from its wings, and they go out as they fall. The Upaniṣad says that whoever sees her shakes off good and evil.",
       },
     ],
     detail: {
       part: "seedling",
       body: (
         <>
-          In a crack of the kerb a pippala seedling has come up. Nobody plants a pippala: its seeds are sown by birds, which drop the figs they were eating, as
-          the bird in the mist has just done.
+          In a crack of the kerb a pippala seedling has come up. Nobody plants a pippala: its seeds are sown by
+          birds, which drop the figs they were eating, as the bird in the mist has just done.
         </>
       ),
     },
@@ -1963,21 +2071,24 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WheelStopped,
     intro: (Spot) => (
       <>
-        The most symmetrical verse in the hymn: four pairs, each naming a thing she is free of and then the same thing she destroys, so the picture is
-        symmetrical about her light. The <Spot part="sword">sword</Spot> and the <Spot part="wheel">wheel</Spot> come from the Muṇḍaka Upaniṣad (2.2.8): when
-        she is seen, the knot of the heart is split, doubts are cut, and the works that keep the round going are used up.
+        The most symmetrical verse in the hymn: four pairs, each naming a thing she is free of and then the same
+        thing she destroys, so the picture is symmetrical about her light. The <Spot part="sword">sword</Spot> and
+        the <Spot part="wheel">wheel</Spot> come from the Muṇḍaka Upaniṣad (2.2.8): when she is seen, the knot of the heart is split, doubts are cut, and the works
+        that keep the round going are used up.
       </>
     ),
     entries: [
       {
         nama: 168,
         part: "goad",
-        depicts: "Shloka 2 gave her a goad in the shape of anger. Here it stands point down, plain gold, nothing in it hot.",
+        depicts:
+          "Shloka 2 gave her a goad in the shape of anger. Here it stands point down, plain gold, nothing in it hot.",
       },
       {
         nama: 169,
         part: "steam",
-        depicts: "Its point rests in a basin of water, and the last red is leaving it as steam, cooled rather than answered.",
+        depicts:
+          "Its point rests in a basin of water, and the last red is leaving it as steam, cooled rather than answered.",
       },
       {
         nama: 170,
@@ -1987,7 +2098,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 171,
         part: "box",
-        depicts: "The water running from it has burst the lock of a strongbox at its foot and is carrying the coins away.",
+        depicts:
+          "The water running from it has burst the lock of a strongbox at its foot and is carrying the coins away.",
       },
       {
         nama: 172,
@@ -2016,8 +2128,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "strands",
       body: (
         <>
-          The rim is bound in three bands, ivory, red and dark: the three strands, the guṇas, that Shloka 44 drew as a rope coming undone. The Śvetāśvatara
-          Upaniṣad calls the wheel of becoming threefold for the same reason.
+          The rim is bound in three bands, ivory, red and dark: the three strands, the guṇas, that Shloka 44 drew
+          as a rope coming undone. The Śvetāśvatara Upaniṣad calls the wheel of becoming threefold for the same
+          reason.
         </>
       ),
     },
@@ -2026,16 +2139,19 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: RiversToTheSea,
     intro: (Spot) => (
       <>
-        The Kaṭha Upaniṣad, in the passage this verse stands on, says that rain falling on a <Spot part="peak">peak</Spot> runs off it every way, as a mind that
-        sees division runs after things, and that water poured into water becomes just that water. So one rain runs off one peak as two{" "}
-        <Spot part="rivers">rivers</Spot>, a white one and a dark one, and they come down either side of the picture to one sea.
+        The Kaṭha Upaniṣad, in the passage this verse stands on, says that rain falling on a{" "}
+        <Spot part="peak">peak</Spot> runs off it every way, as a mind that sees division runs after things, and
+        that water poured into water becomes just that water. So one rain runs off one peak as two{" "}
+        <Spot part="rivers">rivers</Spot>, a white one and a dark one, and they come down either side of the
+        picture to one sea.
       </>
     ),
     entries: [
       {
         nama: 176,
         part: "calm",
-        depicts: "Round her reflection the far sea lies without a ripple. Yoga calls the mind's movements waves, and she is where they have stopped.",
+        depicts:
+          "Round her reflection the far sea lies without a ripple. Yoga calls the mind's movements waves, and she is where they have stopped.",
       },
       {
         nama: 177,
@@ -2056,7 +2172,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 180,
         part: "cloud",
-        depicts: "The cloud over the peak is the sea's own water risen again, and its rain is where the rivers begin. None of it is ever lost.",
+        depicts:
+          "The cloud over the peak is the sea's own water risen again, and its rain is where the rivers begin. None of it is ever lost.",
       },
       {
         nama: 181,
@@ -2067,20 +2184,23 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 182,
         part: "reflection",
-        depicts: "Her light lies on the water in a column of broken gold that trembles with every ripple, while she herself does not move.",
+        depicts:
+          "Her light lies on the water in a column of broken gold that trembles with every ripple, while she herself does not move.",
       },
       {
         nama: 183,
         part: "boats",
-        depicts: "Offering lamps on leaf boats ride the dark river out to sea and go on past her. Nothing is taken from them.",
+        depicts:
+          "Offering lamps on leaf boats ride the dark river out to sea and go on past her. Nothing is taken from them.",
       },
     ],
     detail: {
       part: "sky-flower",
       body: (
         <>
-          Beside the cloud is a flower drawn only in dots, on no stalk: the sky-flower. Patañjali&apos;s commentators give it as their example of a{" "}
-          <i>vikalpa</i>, a word with nothing behind it, which is exactly what she is said not to be.
+          Beside the cloud is a flower drawn only in dots, on no stalk: the sky-flower. Patañjali&apos;s commentators
+          give it as their example of a <i>vikalpa</i>, a word with nothing behind it, which is exactly what she is
+          said not to be.
         </>
       ),
     },
@@ -2089,8 +2209,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: HillFort,
     intro: (Spot) => (
       <>
-        Durgā means a stronghold, and of all strongholds the law books put first a fort on a hill, the <i>giri-durga</i> (Manu 7.70–71). So this is one:{" "}
-        <Spot part="walls">walls</Spot> on a sheer <Spot part="crag">crag</Spot>, with her inside.
+        Durgā means a stronghold, and of all strongholds the law books put first a fort on a hill, the{" "}
+        <i>giri-durga</i> (Manu 7.70–71). So this is one: <Spot part="walls">walls</Spot> on a sheer{" "}
+        <Spot part="crag">crag</Spot>, with her inside.
       </>
     ),
     entries: [
@@ -2113,7 +2234,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 187,
         part: "gate",
-        depicts: "The gate stands open, its spiked doors folded back and its bar laid on the ground. No danger comes that it would have to be shut against.",
+        depicts:
+          "The gate stands open, its spiked doors folded back and its bar laid on the ground. No danger comes that it would have to be shut against.",
       },
       {
         nama: 188,
@@ -2123,7 +2245,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 189,
         part: "path",
-        depicts: "The way up goes back and forth across the cliff, broad and worn at the foot and narrowing as it climbs, because few walk it to the end.",
+        depicts:
+          "The way up goes back and forth across the cliff, broad and worn at the foot and narrowing as it climbs, because few walk it to the end.",
       },
       {
         nama: 190,
@@ -2133,20 +2256,22 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 191,
         part: "spear",
-        depicts: "Her spear, flung from the gate, has struck into a dark cleft in the rock, and the dark is breaking away from it in pieces and falling.",
+        depicts:
+          "Her spear, flung from the gate, has struck into a dark cleft in the rock, and the dark is breaking away from it in pieces and falling.",
       },
       {
         nama: 192,
         part: "spring",
-        depicts: "From the place it struck a spring gushes out and falls to a pool at the foot, so that where the dark was there is water.",
+        depicts:
+          "From the place it struck a spring gushes out and falls to a pool at the foot, so that where the dark was there is water.",
       },
     ],
     detail: {
       part: "lion",
       body: (
         <>
-          Beside the gate a small gold lion has sat down. Under this one name she is the Durgā of the Devī Māhātmya, who rides a lion into battle, and here,
-          with nothing left to fight, it waits at her door.
+          Beside the gate a small gold lion has sat down. Under this one name she is the Durgā of the Devī
+          Māhātmya, who rides a lion into battle, and here, with nothing left to fight, it waits at her door.
         </>
       ),
     },
@@ -2155,8 +2280,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MonsoonPool,
     intro: (Spot) => (
       <>
-        <i>Sāndra</i>, thick, is a word used of clouds, and <i>ghana</i>, dense, is simply another name for one. So her compassion is drawn as the rains: one
-        cloud over the whole sky, and under it a forest <Spot part="pool">pool</Spot> with her <Spot part="light">light</Spot> hanging low over the water.
+        <i>Sāndra</i>, thick, is a word used of clouds, and <i>ghana</i>, dense, is simply another name for one. So
+        her compassion is drawn as the rains: one cloud over the whole sky, and under it a forest{" "}
+        <Spot part="pool">pool</Spot> with her <Spot part="light">light</Spot> hanging low over the water.
       </>
     ),
     entries: [
@@ -2201,8 +2327,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "cataka",
       body: (
         <>
-          On a reed at the right a cātaka holds its beak open to the rain. It is said to drink nothing but rain from the cloud, and Bhartṛhari puts it in the
-          same verse as the owl: if no rain falls into its beak, is that the cloud&apos;s fault? Here a drop is falling straight in.
+          On a reed at the right a cātaka holds its beak open to the rain. It is said to drink nothing but rain from
+          the cloud, and Bhartṛhari puts it in the same verse as the owl: if no rain falls into its beak, is that the
+          cloud&apos;s fault? Here a drop is falling straight in.
         </>
       ),
     },
@@ -2211,8 +2338,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: LetterRosary,
     intro: (Spot) => (
       <>
-        Every name in this verse begins with <i>sarva</i>, all. After the long run of names that took things away, the hymn now adds, so the picture is full: a{" "}
-        <Spot part="mantra">rosary</Spot> strung round all of it, and inside it everything turned toward her <Spot part="light">light</Spot>.
+        Every name in this verse begins with <i>sarva</i>, all. After the long run of names that took things away, the
+        hymn now adds, so the picture is full: a <Spot part="mantra">rosary</Spot> strung round all of it, and inside
+        it everything turned toward her <Spot part="light">light</Spot>.
       </>
     ),
     entries: [
@@ -2257,8 +2385,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "meru",
       body: (
         <>
-          At the foot of the rosary, where the loop closes, the gold meru bead sits between अ, the first letter, and क्ष, the last. A rosary is called an{" "}
-          <i>akṣamālā</i>, and the tradition hears the word as the garland that runs from <i>a</i> to <i>kṣa</i>.
+          At the foot of the rosary, where the loop closes, the gold meru bead sits between अ, the first letter, and
+          क्ष, the last. A rosary is called an <i>akṣamālā</i>, and the tradition hears the word as the garland that runs
+          from <i>a</i> to <i>kṣa</i>.
         </>
       ),
     },
@@ -2267,8 +2396,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: GraciousOne,
     intro: (Spot) => (
       <>
-        The verse goes from everything to kindness, and the picture is a sanctum floor where all of it meets: a <Spot part="yantra">diagram</Spot> drawn on the
-        floor, a book, a bull, a bow, a bough, and over them a sound going up into silence.
+        The verse goes from everything to kindness, and the picture is a sanctum floor where all of it meets: a{" "}
+        <Spot part="yantra">diagram</Spot> drawn on the floor, a book, a bull, a bow, a bough, and over them a sound
+        going up into silence.
       </>
     ),
     entries: [
@@ -2319,8 +2449,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "ear",
       body: (
         <>
-          At Nandī&apos;s left ear a jasmine flower is tucked, and three small arcs go in. In Śiva temples people still lean down and whisper their prayers into
-          the bull&apos;s ear, so that he will carry them in.
+          At Nandī&apos;s left ear a jasmine flower is tucked, and three small arcs go in. In Śiva temples people still
+          lean down and whisper their prayers into the bull&apos;s ear, so that he will carry them in.
         </>
       ),
     },
@@ -2329,8 +2459,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: OneInManyPots,
     intro: (Spot) => (
       <>
-        Seven great-names make a night lake under the Milky Way. Her <Spot part="light">light</Spot> stands on a lotus in the still water, everything on the
-        lake moves toward her or away from her, and on the steps of the near bank nine <Spot part="pots">vessels</Spot> each hold all of it.
+        Seven great-names make a night lake under the Milky Way. Her <Spot part="light">light</Spot> stands on a lotus in
+        the still water, everything on the lake moves toward her or away from her, and on the steps of the near bank nine{" "}
+        <Spot part="pots">vessels</Spot> each hold all of it.
       </>
     ),
     entries: [
@@ -2380,7 +2511,10 @@ export const ARTWORK: Record<string, Artwork> = {
     detail: {
       part: "siva",
       body: (
-        <>On the nearest pot is painted शिव, Śiva, with its i-sign lit. The old saying goes that the i is Śakti, and without it śiva is only śava, a corpse.</>
+        <>
+          On the nearest pot is painted शिव, Śiva, with its i-sign lit. The old saying goes that the i is Śakti, and without
+          it śiva is only śava, a corpse.
+        </>
       ),
     },
   },
@@ -2388,8 +2522,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: StairOfAttainment,
     intro: (Spot) => (
       <>
-        Six names list the goods that practice was thought to win, and the picture lays them out on a <Spot part="stair">temple stair</Spot> whose last step is
-        her <Spot part="light">light</Spot>; the seventh name is for the people who climb it.
+        Six names list the goods that practice was thought to win, and the picture lays them out on a{" "}
+        <Spot part="stair">temple stair</Spot> whose last step is her <Spot part="light">light</Spot>; the seventh
+        name is for the people who climb it.
       </>
     ),
     entries: [
@@ -2439,8 +2574,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "mouse",
       body: (
         <>
-          A mouse is coming down the steps with a sweet from her leaf. Siddhi and Buddhi stand side by side in this verse as they do beside Gaṇeśa, whose two
-          wives they are, and this is his mouse.
+          A mouse is coming down the steps with a sweet from her leaf. Siddhi and Buddhi stand side by side in this
+          verse as they do beside Gaṇeśa, whose two wives they are, and this is his mouse.
         </>
       ),
     },
@@ -2449,9 +2584,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: GreatYantra,
     intro: (Spot) => (
       <>
-        Every name here begins with <i>mahā</i>, great, and the picture lays out the apparatus of her worship in the verse&apos;s own order, from the cloth
-        overhead to the <Spot part="yantra">diagram</Spot> where her <Spot part="light">light</Spot> is invoked to sit. Each piece is drawn as hers, not the
-        worshipper&apos;s.
+        Every name here begins with <i>mahā</i>, great, and the picture lays out the apparatus of her worship in the
+        verse&apos;s own order, from the cloth overhead to the <Spot part="yantra">diagram</Spot> where her{" "}
+        <Spot part="light">light</Spot> is invoked to sit. Each piece is drawn as hers, not the worshipper&apos;s.
       </>
     ),
     entries: [
@@ -2496,8 +2631,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "dog",
       body: (
         <>
-          Bhairava&apos;s black dog, his mount, lies asleep at the foot of the trident with its nose on its paws. At his temples people feed the dogs as a way
-          of feeding him; here, with its master at worship, it has nothing to guard.
+          Bhairava&apos;s black dog, his mount, lies asleep at the foot of the trident with its nose on its paws. At his
+          temples people feed the dogs as a way of feeding him; here, with its master at worship, it has nothing to
+          guard.
         </>
       ),
     },
@@ -2506,9 +2642,10 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WitnessOfTheDance,
     intro: (Spot) => (
       <>
-        At the end of a world-age Śiva dances the <Spot part="worlds">worlds</Spot> into the fire, their eggs and the lotus, discus and thunderbolt of the gods
-        who ran them, until there is only a field of ash. The picture draws the dance without the dancer. What it keeps still is her{" "}
-        <Spot part="light">light</Spot>, the one thing the dance happens in front of.
+        At the end of a world-age Śiva dances the <Spot part="worlds">worlds</Spot> into the fire, their eggs and the
+        lotus, discus and thunderbolt of the gods who ran them, until there is only a field of ash. The picture draws
+        the dance without the dancer. What it keeps still is her <Spot part="light">light</Spot>, the one thing the
+        dance happens in front of.
       </>
     ),
     entries: [
@@ -2535,9 +2672,10 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "beats",
       body: (
         <>
-          Above the drum hang the beats it has sounded, nine and then five. The grammarians say that when the king of dancers finished his dance he beat his
-          drum nine times and five, and the fourteen sounds became the fourteen sūtras with which Pāṇini begins: they are called the Māheśvara sūtras, after the
-          same Maheśvara as this name.
+          Above the drum hang the beats it has sounded, nine and then five. The grammarians say that when the king of
+          dancers finished his dance he beat his drum nine times and five, and the fourteen sounds became the fourteen
+          sūtras with which Pāṇini begins: they are called the Māheśvara sūtras, after the same Maheśvara as this
+          name.
         </>
       ),
     },
@@ -2546,9 +2684,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: YoginiTemple,
     intro: (Spot) => (
       <>
-        Sixty-four is said three times, and the picture is drawn where the third sixty-four was worshipped: a <Spot part="temple">yoginī temple</Spot>, round,
-        roofless, and lined inside with niches, as the ones at Hirapur and Bheraghat still are. In the middle stands her <Spot part="light">light</Spot> on a
-        round seat.
+        Sixty-four is said three times, and the picture is drawn where the third sixty-four was worshipped: a{" "}
+        <Spot part="temple">yoginī temple</Spot>, round, roofless, and lined inside with niches, as the ones at
+        Hirapur and Bheraghat still are. In the middle stands her <Spot part="light">light</Spot> on a round seat.
       </>
     ),
     entries: [
@@ -2575,8 +2713,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "moon",
       body: (
         <>
-          Inside the wheel of flocks the moon shows one thin digit. That digit is a kalā too, the same word as the arts of the second name: a part of something
-          larger, a sixteenth of the moon, a skill that can be taught.
+          Inside the wheel of flocks the moon shows one thin digit. That digit is a kalā too, the same word as
+          the arts of the second name: a part of something larger, a sixteenth of the moon, a skill that can be taught.
         </>
       ),
     },
@@ -2585,8 +2723,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MiddleOfTheMoon,
     intro: (Spot) => (
       <>
-        The verse turns on the moon, and so does the picture: below the card the <Spot part="orb">moon&rsquo;s full disc</Spot> stands upright, being filled,
-        and round it the moon waxes and wanes in fifteen small moons, each lit from her side. Their sixteenth is at the centre and never changes.
+        The verse turns on the moon, and so does the picture: below the card the{" "}
+        <Spot part="orb">moon&rsquo;s full disc</Spot> stands upright, being filled, and round it the moon waxes and
+        wanes in fifteen small moons, each lit from her side. Their sixteenth is at the centre and never changes.
       </>
     ),
     entries: [
@@ -2629,8 +2768,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "sour-gruel",
       body: (
         <>
-          A third cakora has flown off to the moon in the sky and is drinking that instead. Śaṅkara says her smile was so sweet that it numbed their beaks, so
-          now they take the cold-rayed moon for sour gruel, to clear the palate (Saundaryalaharī 63).
+          A third cakora has flown off to the moon in the sky and is drinking that instead. Śaṅkara says her smile
+          was so sweet that it numbed their beaks, so now they take the cold-rayed moon for sour gruel, to clear the
+          palate (Saundaryalaharī 63).
         </>
       ),
     },
@@ -2639,20 +2779,23 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MountainsDaughter,
     intro: (Spot) => (
       <>
-        The verse starts very far away and comes close enough to see her eyes, and so does the picture: <Spot part="mountain">Himavat</Spot> fills the plate,
-        snow peaks in the crown, and at his foot a cave opens in the rock with her house on its back wall.
+        The verse starts very far away and comes close enough to see her eyes, and so does the picture:{" "}
+        <Spot part="mountain">Himavat</Spot> fills the plate, snow peaks in the crown, and at his foot a cave opens in
+        the rock with her house on its back wall.
       </>
     ),
     entries: [
       {
         nama: 244,
         part: "world",
-        depicts: "On his flanks the deodars stand still and the wild geese come in over the snows: the unmoving world and the moving one, both under her rule.",
+        depicts:
+          "On his flanks the deodars stand still and the wild geese come in over the snows: the unmoving world and the moving one, both under her rule.",
       },
       {
         nama: 245,
         part: "cakra",
-        depicts: "On the back wall of the cave stands the Śrīcakra, the king of diagrams. It does not stand for her; it is the house she lives in.",
+        depicts:
+          "On the back wall of the cave stands the Śrīcakra, the king of diagrams. It does not stand for her; it is the house she lives in.",
       },
       {
         nama: 246,
@@ -2676,9 +2819,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "yak",
       body: (
         <>
-          On a ledge to the right a yak stands with its white tail lifted. Kālidāsa says the yaks of the Himālaya, flicking tails as white as moonbeams, fan him
-          as servants fan a king, and so make his title &ldquo;king of mountains&rdquo; true (Kumārasambhava 1.13). The verse has a king of diagrams; the
-          mountain has his whisks.
+          On a ledge to the right a yak stands with its white tail lifted. Kālidāsa says the yaks of the Himālaya, flicking
+          tails as white as moonbeams, fan him as servants fan a king, and so make his title &ldquo;king of
+          mountains&rdquo; true (Kumārasambhava 1.13). The verse has a king of diagrams; the mountain has his whisks.
         </>
       ),
     },
@@ -2687,8 +2830,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SaltAndTheCouch,
     intro: (Spot) => (
       <>
-        The verse&rsquo;s second line is the reason for its first, and the picture keeps them together: below the card <Spot part="light">her light</Spot> is
-        seated on the couch of the five gods, and all the life they have runs into them from her.
+        The verse&rsquo;s second line is the reason for its first, and the picture keeps them together: below the card{" "}
+        <Spot part="light">her light</Spot> is seated on the couch of the five gods, and all the life they have runs into
+        them from her.
       </>
     ),
     entries: [
@@ -2727,8 +2871,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "blush",
       body: (
         <>
-          The plank is white except where she sits, and there it is red. Śaṅkara says Sadāśiva, white as crystal, contrived to become the coverlet of her couch,
-          and reflecting her red light he looks like love itself made flesh, a delight to her eyes (Saundaryalaharī 92).
+          The plank is white except where she sits, and there it is red. Śaṅkara says Sadāśiva, white as crystal, contrived
+          to become the coverlet of her couch, and reflecting her red light he looks like love itself made flesh, a
+          delight to her eyes (Saundaryalaharī 92).
         </>
       ),
     },
@@ -2737,8 +2882,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WakingAndDream,
     intro: (Spot) => (
       <>
-        The Māṇḍūkya says the dreamer has the same limbs and the same mouths as the waker, only turned inward, and the picture takes it at its word: the waking
-        world stands along the far bank, and <Spot part="dream">the dream</Spot> is the same world turned over in the water.
+        The Māṇḍūkya says the dreamer has the same limbs and the same mouths as the waker, only turned inward, and the
+        picture takes it at its word: the waking world stands along the far bank, and{" "}
+        <Spot part="dream">the dream</Spot> is the same world turned over in the water.
       </>
     ),
     entries: [
@@ -2751,7 +2897,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 255,
         part: "leaf",
-        depicts: "Beside it a lotus leaf, which the water stands on in beads and never wets (Gītā 5.10): no deed, good or bad, leaves a mark on her.",
+        depicts:
+          "Beside it a lotus leaf, which the water stands on in beads and never wets (Gītā 5.10): no deed, good or bad, leaves a mark on her.",
       },
       {
         nama: 256,
@@ -2780,8 +2927,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "chariot",
       body: (
         <>
-          On the road along the bank there is nothing; on the same road in the water a chariot is driving. &ldquo;There are no chariots there, no teams, no
-          roads; but he makes chariots, teams and roads,&rdquo; says Yājñavalkya of the dreamer (Bṛhadāraṇyaka 4.3.10).
+          On the road along the bank there is nothing; on the same road in the water a chariot is driving. &ldquo;There are
+          no chariots there, no teams, no roads; but he makes chariots, teams and roads,&rdquo; says Yājñavalkya of the
+          dreamer (Bṛhadāraṇyaka 4.3.10).
         </>
       ),
     },
@@ -2790,8 +2938,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: OceanOfSleep,
     intro: (Spot) => (
       <>
-        The verse is a hinge between sleep and making, and the picture draws the scene the Purāṇas hang the two on: <Spot part="ocean">the one ocean</Spot> of
-        the night between worlds, Viṣṇu asleep on the serpent, and a lotus rising from his navel with Brahmā on it.
+        The verse is a hinge between sleep and making, and the picture draws the scene the Purāṇas hang the two on:{" "}
+        <Spot part="ocean">the one ocean</Spot> of the night between worlds, Viṣṇu asleep on the serpent, and a lotus
+        rising from his navel with Brahmā on it.
       </>
     ),
     entries: [
@@ -2848,9 +2997,10 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "banyan",
       body: (
         <>
-          On the water below the serpent&rsquo;s tail floats a single banyan leaf with a speck of the same dark light on it. In another telling the sleeper of
-          the one ocean is an infant lying on a banyan leaf, wondering who he is, and in the Devī Bhāgavata it is she who answers him with half a verse:
-          &ldquo;All this is I alone; there is nothing else eternal.&rdquo;
+          On the water below the serpent&rsquo;s tail floats a single banyan leaf with a speck of the same dark light on it. In another
+          telling the sleeper of the one ocean is an infant lying on a banyan leaf, wondering who he is, and in the
+          Devī Bhāgavata it is she who answers him with half a verse: &ldquo;All this is I alone; there is nothing else
+          eternal.&rdquo;
         </>
       ),
     },
@@ -2859,15 +3009,17 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TheDrawnScreen,
     intro: (Spot) => (
       <>
-        The five acts are drawn as a temple keeps them, at <Spot part="sanctum">the door of a sanctum</Spot> at the moment the screen is drawn aside. Inside
-        rest the same five gods who lay inert under her three verses back, now at work.
+        The five acts are drawn as a temple keeps them, at <Spot part="sanctum">the door of a sanctum</Spot> at the
+        moment the screen is drawn aside. Inside rest the same five gods who lay inert under her three verses back, now
+        at work.
       </>
     ),
     entries: [
       {
         nama: 268,
         part: "gather",
-        depicts: "In the crown the fourteen worlds are drawn in a spiral into the fire, shrinking as they go, the way a breath is taken in.",
+        depicts:
+          "In the crown the fourteen worlds are drawn in a spiral into the fire, shrinking as they go, the way a breath is taken in.",
       },
       {
         nama: 269,
@@ -2910,8 +3062,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "spider",
       body: (
         <>
-          Under the right end of the lintel a spider hangs on its thread from its web. &ldquo;As a spider sends out its thread and draws it in again, so from
-          the imperishable this world comes forth&rdquo; (Muṇḍaka 1.1.7): the Upaniṣad&rsquo;s own picture for making and withdrawing as one act of one maker.
+          Under the right end of the lintel a spider hangs on its thread from its web. &ldquo;As a spider sends out its
+          thread and draws it in again, so from the imperishable this world comes forth&rdquo; (Muṇḍaka 1.1.7): the
+          Upaniṣad&rsquo;s own picture for making and withdrawing as one act of one maker.
         </>
       ),
     },
@@ -2920,8 +3073,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: MiddleOfTheSun,
     intro: (Spot) => (
       <>
-        Six verses ago she stood in the middle of the moon; here she stands in <Spot part="light">the middle of the sun</Spot>, and the verse settles on her,
-        one name after another, what usually belongs to Lakṣmī.
+        Six verses ago she stood in the middle of the moon; here she stands in{" "}
+        <Spot part="light">the middle of the sun</Spot>, and the verse settles on her, one name after another, what
+        usually belongs to Lakṣmī.
       </>
     ),
     entries: [
@@ -2957,15 +3111,17 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 280,
         part: "twins",
-        depicts: "In the water before the sun a red lotus and a blue one, Viṣṇu's colour, rise on two stems from a single root: sahodarī, born of one womb.",
+        depicts:
+          "In the water before the sun a red lotus and a blue one, Viṣṇu's colour, rise on two stems from a single root: sahodarī, born of one womb.",
       },
     ],
     detail: {
       part: "horse",
       body: (
         <>
-          Far off on the water at the right, a small golden horse is wading in. Every spring at Madurai, Viṣṇu as Aḻagar rides down on a golden horse and into
-          the river Vaigai, on his way to give his sister Mīnākṣī to Sundareśvara, and arrives, as the story goes, too late for the wedding.
+          Far off on the water at the right, a small golden horse is wading in. Every spring at Madurai, Viṣṇu as
+          Aḻagar rides down on a golden horse and into the river Vaigai, on his way to give his sister Mīnākṣī to
+          Sundareśvara, and arrives, as the story goes, too late for the wedding.
         </>
       ),
     },
@@ -2974,8 +3130,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: WorldsInABlink,
     intro: (Spot) => (
       <>
-        The second line is the opening of the Puruṣa Sūkta, so the picture is the hymn&apos;s person of a thousand heads, eyes and feet, with no figure at all:
-        each is drawn the way this series always draws her, round <Spot part="light">her light</Spot>.
+        The second line is the opening of the Puruṣa Sūkta, so the picture is the hymn&apos;s person of a thousand
+        heads, eyes and feet, with no figure at all: each is drawn the way this series always draws her, round{" "}
+        <Spot part="light">her light</Spot>.
       </>
     ),
     entries: [
@@ -3008,8 +3165,9 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "fingers",
       body: (
         <>
-          The mirror&apos;s foot does not touch the earth, and the gap is marked off in ten small gold ticks. The second half of the Vedic line, which the
-          stotra leaves out, says the person stood out beyond the earth by ten fingers&apos; breadth.
+          The mirror&apos;s foot does not touch the earth, and the gap is marked off in ten small gold ticks. The
+          second half of the Vedic line, which the stotra leaves out, says the person stood out beyond the earth by
+          ten fingers&apos; breadth.
         </>
       ),
     },
@@ -3018,8 +3176,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TheHouseholdLamp,
     intro: (Spot) => (
       <>
-        Nothing in this verse describes her: each name is a relation between her and everything else. So the picture is a house at lamp-lighting, and she is{" "}
-        <Spot part="light">the lamp&apos;s one lit wick</Spot>.
+        Nothing in this verse describes her: each name is a relation between her and everything else. So the picture
+        is a house at lamp-lighting, and she is <Spot part="light">the lamp&apos;s one lit wick</Spot>.
       </>
     ),
     entries: [
@@ -3052,8 +3210,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "ants",
       body: (
         <>
-          A kolam is drawn in rice flour so that ants can eat it, the first meal of the day for the smallest of her children. At its right corner a file of ants
-          is already carrying it off, grain by grain.
+          A kolam is drawn in rice flour so that ants can eat it, the first meal of the day for the smallest of her
+          children. At its right corner a file of ants is already carrying it off, grain by grain.
         </>
       ),
     },
@@ -3062,8 +3220,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: VermilionAndPearl,
     intro: (Spot) => (
       <>
-        Two names, one to a line, and each a single picture: <Spot part="feet">her feet</Spot> as two red lotuses in the crown, and{" "}
-        <Spot part="light">her light</Spot> as a pearl below.
+        Two names, one to a line, and each a single picture: <Spot part="feet">her feet</Spot> as two red lotuses
+        in the crown, and <Spot part="light">her light</Spot> as a pearl below.
       </>
     ),
     entries: [
@@ -3084,8 +3242,8 @@ export const ARTWORK: Record<string, Artwork> = {
       part: "svati",
       body: (
         <>
-          High in the crown, one star with a drop of rain falling under it: Svāti. The poets held that rain falling into an open oyster while the moon is in
-          Svāti becomes a pearl.
+          High in the crown, one star with a drop of rain falling under it: Svāti. The poets held that rain falling
+          into an open oyster while the moon is in Svāti becomes a pearl.
         </>
       ),
     },
@@ -3094,8 +3252,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: FullFromFull,
     intro: (Spot) => (
       <>
-        At the middle of the floor stand <Spot part="footprints">her footprints</Spot> in vermilion, with <Spot part="her-light">her light</Spot> just above
-        them, and the verse&apos;s seven names are set round them.
+        At the middle of the floor stand <Spot part="footprints">her footprints</Spot> in vermilion, with{" "}
+        <Spot part="her-light">her light</Spot> just above them, and the verse&apos;s seven names are set round
+        them.
       </>
     ),
     entries: [
@@ -3120,12 +3279,14 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 294,
         part: "parasol",
-        depicts: "Over the whole floor stands her parasol, the sign of a sovereign, its staff running down behind the card.",
+        depicts:
+          "Over the whole floor stands her parasol, the sign of a sovereign, its staff running down behind the card.",
       },
       {
         nama: 295,
         part: "steps",
-        depicts: "Mother, the plainest of her names. Up to her footprints walk a child's small steps in rice flour, the way a child walks to its mother.",
+        depicts:
+          "Mother, the plainest of her names. Up to her footprints walk a child's small steps in rice flour, the way a child walks to its mother.",
       },
       {
         nama: 296,
@@ -3145,8 +3306,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: SeamOfTheDigits,
     intro: (Spot) => (
       <>
-        The hymn&apos;s divisions are named for <Spot part="digits">the sun&apos;s twelve digits</Spot>, and this verse holds <Spot part="seam">the seam</Spot>{" "}
-        between the fourth and the fifth. The first line&apos;s names sit to the left of it, the second&apos;s to the right.
+        The hymn&apos;s divisions are named for <Spot part="digits">the sun&apos;s twelve digits</Spot>, and this
+        verse holds <Spot part="seam">the seam</Spot> between the fourth and the fifth. The first line&apos;s names
+        sit to the left of it, the second&apos;s to the right.
       </>
     ),
     entries: [
@@ -3171,7 +3333,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 301,
         part: "hrim",
-        depicts: "The fifth digit opens with a syllable, not a word: ह्रीं, on a gold disc on the seam, just below the card.",
+        depicts:
+          "The fifth digit opens with a syllable, not a word: ह्रीं, on a gold disc on the seam, just below the card.",
       },
       {
         nama: 302,
@@ -3182,7 +3345,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 303,
         part: "heart",
-        depicts: "Her light sits in the heart's lotus of twelve petals, whose name, anāhata, means unstruck, the same sound that no one makes.",
+        depicts:
+          "Her light sits in the heart's lotus of twelve petals, whose name, anāhata, means unstruck, the same sound that no one makes.",
       },
       {
         nama: 304,
@@ -3196,7 +3360,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: QueenAndGirdle,
     intro: (Spot) => (
       <>
-        Eight names on one letter. Power is stated once and dropped, and the rest is pleasure, ending on <Spot part="her-light">her light</Spot> and a sound.
+        Eight names on one letter. Power is stated once and dropped, and the rest is pleasure, ending on{" "}
+        <Spot part="her-light">her light</Spot> and a sound.
       </>
     ),
     entries: [
@@ -3209,7 +3374,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 306,
         part: "seat",
-        depicts: "Rājñī is a woman who rules, not a king's wife. Her seat is made for one: a single cushion, armrests on both sides, and no place beside her.",
+        depicts:
+          "Rājñī is a woman who rules, not a king's wife. Her seat is made for one: a single cushion, armrests on both sides, and no place beside her.",
       },
       {
         nama: 307,
@@ -3230,7 +3396,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 310,
         part: "bough",
-        depicts: "At the tip of the mango bough hangs a flush of young leaves, copper and soft, the freshness that is a pleasure to look at.",
+        depicts:
+          "At the tip of the mango bough hangs a flush of young leaves, copper and soft, the freshness that is a pleasure to look at.",
       },
       {
         nama: 311,
@@ -3240,7 +3407,8 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 312,
         part: "bells",
-        depicts: "At her waist the girdle of bells is ringing, because she has just moved. Earlier in the hymn this girdle was only seen; now it is heard.",
+        depicts:
+          "At her waist the girdle of bells is ringing, because she has just moved. Earlier in the hymn this girdle was only seen; now it is heard.",
       },
     ],
   },
@@ -3248,8 +3416,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: FortuneAndTheFullMoon,
     intro: (Spot) => (
       <>
-        Fortune, the full moon, love, protection, killing and desire, all on one letter. At the middle, <Spot part="her-light">her light</Spot>; behind it{" "}
-        <Spot part="river">a river</Spot> runs across the night.
+        Fortune, the full moon, love, protection, killing and desire, all on one letter. At the middle,{" "}
+        <Spot part="her-light">her light</Spot>; behind it <Spot part="river">a river</Spot> runs across the night.
       </>
     ),
     entries: [
@@ -3279,8 +3447,7 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 317,
         part: "thread",
-        depicts:
-          "Round the floor runs a protective thread of red and turmeric, tied in a ring and knotted at the front: she sets a guard round whoever turns to her.",
+        depicts: "Round the floor runs a protective thread of red and turmeric, tied in a ring and knotted at the front: she sets a guard round whoever turns to her.",
       },
       {
         nama: 318,
@@ -3305,8 +3472,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: BulbOfTheWorld,
     intro: (Spot) => (
       <>
-        The verse goes from the most abstract thing it can say to the most concrete and back. Under the card, <Spot part="her-light">her light</Spot>, and under
-        the ground <Spot part="shoot">a shoot</Spot> coming up into the world.
+        The verse goes from the most abstract thing it can say to the most concrete and back. Under the card,{" "}
+        <Spot part="her-light">her light</Spot>, and under the ground <Spot part="shoot">a shoot</Spot> coming up into the world.
       </>
     ),
     entries: [
@@ -3352,8 +3519,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: KadambaWine,
     intro: (Spot) => (
       <>
-        Mistress of every art, and drunk. Under the card, <Spot part="her-light">her light</Spot>; in the crown, the kadamba of the verse before, turned into
-        wine.
+        Mistress of every art, and drunk. Under the card, <Spot part="her-light">her light</Spot>; in the crown, the kadamba of the verse
+        before, turned into wine.
       </>
     ),
     entries: [
@@ -3388,8 +3555,7 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 332,
         part: "wagtails",
-        depicts:
-          "The poets compare restless lovely eyes to wagtails. Two of them dart at the left, glancing at each other: a glance from her is itself a favour.",
+        depicts: "The poets compare restless lovely eyes to wagtails. Two of them dart at the left, glancing at each other: a glance from her is itself a favour.",
       },
       {
         nama: 333,
@@ -3403,8 +3569,9 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: VindhyaShrine,
     intro: (Spot) => (
       <>
-        The verse goes from as large as language allows to a particular address and back. Under the card, <Spot part="her-light">her light</Spot> in the door of{" "}
-        <Spot part="shrine">her shrine</Spot>, and a <Spot part="river">river</Spot> at the hills&apos; foot.
+        The verse goes from as large as language allows to a particular address and back. Under the card,{" "}
+        <Spot part="her-light">her light</Spot> in the door of <Spot part="shrine">her shrine</Spot>, and a{" "}
+        <Spot part="river">river</Spot> at the hills&apos; foot.
       </>
     ),
     entries: [
@@ -3417,8 +3584,7 @@ export const ARTWORK: Record<string, Artwork> = {
       {
         nama: 335,
         part: "stair",
-        depicts:
-          "What the Vedas are for is to make her knowable. A stair climbs to her shrine from the river, the one road to her; four names on, the verse says she built it.",
+        depicts: "What the Vedas are for is to make her knowable. A stair climbs to her shrine from the river, the one road to her; four names on, the verse says she built it.",
       },
       {
         nama: 336,
@@ -3453,8 +3619,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: TheField,
     intro: (Spot) => (
       <>
-        Five names on kṣ, four of them built on kṣetra, a field. Under the card <Spot part="field">the field</Spot> runs back, cut into plots that are
-        sprouting, ripe, reaped and flooded all at once.
+        Five names on kṣ, four of them built on kṣetra, a field. Under the card <Spot part="field">the field</Spot> runs back, cut
+        into plots that are sprouting, ripe, reaped and flooded all at once.
       </>
     ),
     entries: [
@@ -3492,8 +3658,8 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: RingOfFire,
     intro: (Spot) => (
       <>
-        Four names about conduct and reverence, then speech, her hair, and a place in the body. Under the card <Spot part="her-light">her light</Spot> sits low,
-        where the tradition places the fire.
+        Four names about conduct and reverence, then speech, her hair, and a place in the body. Under the card{" "}
+        <Spot part="her-light">her light</Spot> sits low, where the tradition places the fire.
       </>
     ),
     entries: [
