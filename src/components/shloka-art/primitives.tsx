@@ -3424,6 +3424,39 @@ export function Cakravaka() {
   );
 }
 
+/* ── Kāma's bow of flowers ─────────────────────────────────────────────── */
+
+/** A small five-petalled blossom, about 7 across, its petals curling. */
+export const BLOSSOM = Array.from({ length: 5 }, (_, k) => {
+  const p = polar(0, 0, 3.4, 90 + k * 72);
+  return `M 0 0 Q ${round(p.x * 0.4 - p.y * 0.5)} ${round(p.y * 0.4 + p.x * 0.5)} ${p.x} ${p.y} Q ${round(p.x * 0.4 + p.y * 0.5)} ${round(p.y * 0.4 - p.x * 0.5)} 0 0 Z`;
+}).join(" ");
+const FLOWER_BOW = { half: 48, bend: 16 };
+const BOW_STAVE = `M ${-FLOWER_BOW.half} ${FLOWER_BOW.bend} C ${-FLOWER_BOW.half * 0.7} ${-4} ${-FLOWER_BOW.half * 0.3} ${-6} 0 ${-6} C ${FLOWER_BOW.half * 0.3} ${-6} ${FLOWER_BOW.half * 0.7} ${-4} ${FLOWER_BOW.half} ${FLOWER_BOW.bend}`;
+const BOW_BLOSSOMS = Array.from({ length: 11 }, (_, k) => {
+  const t = k / 10;
+  const x = round(-FLOWER_BOW.half + 2 * FLOWER_BOW.half * t);
+  const u = Math.abs(2 * t - 1);
+  return { x, y: round(-6 + (FLOWER_BOW.bend + 6) * u * u), k };
+});
+/**
+ * Kāma's bow of flowers: a `--leaf` recurve about 96 long, its back up and its tips at y 16, with
+ * blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString` for its string.
+ */
+export function FlowerBow() {
+  return (
+    <>
+      <BeeString from={{ x: -FLOWER_BOW.half, y: FLOWER_BOW.bend }} to={{ x: FLOWER_BOW.half, y: FLOWER_BOW.bend }} spacing={7} />
+      <path d={BOW_STAVE} stroke="var(--leaf)" strokeWidth={2.4} strokeLinecap="round" />
+      {BOW_BLOSSOMS.map((b) => (
+        <g key={b.k} transform={`translate(${b.x} ${b.y}) scale(1.1)`}>
+          <path d={BLOSSOM} fill={b.k % 2 ? "var(--art-saffron)" : "var(--lotus)"} stroke="var(--gold)" strokeWidth={0.4} />
+        </g>
+      ))}
+    </>
+  );
+}
+
 /* ── The swan ──────────────────────────────────────────────────────────── */
 
 const SWAN_BODY = "M -54 -20 C -48 -8 -40 0 -28 0 L 24 0 C 36 0 42 -8 40 -15 C 38 -21 32 -23 26 -22 C 4 -20 -30 -16 -54 -20 Z";
