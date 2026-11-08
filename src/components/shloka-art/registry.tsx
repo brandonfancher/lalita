@@ -71,6 +71,7 @@ import { YoginiTemple } from "./yogini-temple";
 import { FullFromFull } from "./full-from-full";
 import { SeamOfTheDigits } from "./seam-of-the-digits";
 import { QueenAndGirdle } from "./queen-and-girdle";
+import { FortuneAndTheFullMoon } from "./fortune-and-the-full-moon";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3400,6 +3401,62 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "bells",
         depicts:
           "At her waist the girdle of bells is ringing, because she has just moved. Earlier in the hymn this girdle was only seen; now it is heard.",
+      },
+    ],
+  },
+  "072": {
+    Art: FortuneAndTheFullMoon,
+    intro: (Spot) => (
+      <>
+        Fortune, the full moon, love, protection, killing and desire, all on one letter. At the middle,{" "}
+        <Spot part="her-light">her light</Spot>; behind it <Spot part="river">a river</Spot> runs across the night.
+      </>
+    ),
+    entries: [
+      {
+        nama: 313,
+        part: "gold",
+        depicts:
+          "Ramā is Lakṣmī, fortune herself. From her light golden gooseberries rain into a poor alms bowl, as they did on the house that had given away its last dried gooseberry, when Śaṅkara sang for it.",
+      },
+      {
+        nama: 314,
+        part: "moon",
+        depicts:
+          "Rākā is the goddess of the full-moon night itself. In the crown her moon stands full, the half moon of the fifth verse come round to the whole disc.",
+      },
+      {
+        nama: 315,
+        part: "parrots",
+        depicts: "Inside the ring two parrots, the birds Kāma rides, touch beaks under a small red heart. Delight is not something she has but her shape.",
+      },
+      {
+        nama: 316,
+        part: "cane",
+        depicts:
+          "Love was burnt to ash, and she gave him back to Rati. From a heap of ash springs a green sugarcane, the stuff of Kāma's bow, with a bee already at it.",
+      },
+      {
+        nama: 317,
+        part: "thread",
+        depicts: "Round the floor runs a protective thread of red and turmeric, tied in a ring and knotted at the front: she sets a guard round whoever turns to her.",
+      },
+      {
+        nama: 318,
+        part: "club",
+        depicts:
+          "Outside the thread, at its knot, a demon's iron club lies broken in two, and her arrow stands in the ground beside it. Rakṣā, guarding, and rakṣas, what must be guarded against, come from one root.",
+      },
+      {
+        nama: 319,
+        part: "moths",
+        depicts: "Rāmā is the plain word for a woman one cannot look away from. Round her light the moths keep turning and cannot leave it.",
+      },
+      {
+        nama: 320,
+        part: "cakravakas",
+        depicts:
+          "Cakravākas are parted every night by a river. On one bank she calls across the water to him on the other, and wants nothing else until he is beside her: lampaṭā, greedy, is not a polite word.",
       },
     ],
   },

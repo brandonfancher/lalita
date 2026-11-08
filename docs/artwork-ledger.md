@@ -405,6 +405,14 @@ second time it is needed.
 | Cloth taking the dye (rañjanī) | A length of `--art-ivory` cloth hung over a turmeric pole on a forked hair-coloured post, its front end down into an ember clay pot of crimson dye (a shimmering vermilion surface): a gradient up the cloth from crimson through vermilion and saffron to ivory, the red climbing; carve folds; the short back end white | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
 | A mango bough in spring | A bough coming down from the crown's right edge, `--art-hair` at 0.55 with a gold line: dark `--leaf` mango leaves (lanceolate, gold edge and midrib) and at its tip a drooping flush of young leaves in a crimson-to-ember gradient with core midribs (`m-sway`); a ripe mango (a core-turmeric-saffron-vermilion radial gradient, ivory sheen) hanging on its stalk with a turmeric drop falling (`m-twinkle`); a koel (`--art-hair`, gold-edged, an ivory beak, a vermilion eye, long tail) perched on it, two dashed gold song arcs from its beak | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
 | Blue lotuses in profile (nīlotpala) | Two flowers on `--leaf` stalks in a gold bowl of moon water, at 1.25: five long narrow pointed `--art-hair` petals fanned from a leaf-green calyx, the middle one edged `--gold`, the rest `--gold-soft`. Compare the face-on nīlotpala of Shloka 50 | Inline (`queen-and-girdle.tsx`) | Shloka 71 |
+| The full moon of Rākā's night (rākā) | A full disc at (470, 98) r 40 in a core-moon-gold-soft radial gradient, gold-edged, in a moon glow, with four gold-soft rings of moonlight fading outward; the `MoonDeer` in it at 0.62. Shloka 5's half moon come round to the full | Inline (`fortune-and-the-full-moon.tsx`, using `MoonDeer`) | Shloka 72 |
+| The pair parted by the river (cakravāka) | A river under the card across the night (a moon band at 0.32 with a hair shade at 0.1, fading at both ends, ivory currents and shimmering glitter), and on its two banks one `Cakravaka` each at 1.05, the male flipped to face her; her beak open, three broken dashed gold arcs of calling going out across the water (`m-shimmer`) | Inline (`fortune-and-the-full-moon.tsx`, using `Cakravaka`) | Shloka 72 |
+| Moths round her light | Four ivory moths, gold-edged, ember eye-spots on the forewings, a hair body and feelers, set round her light at r 26–36 and turned to it, each on its own `m-sway` | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
+| The rain of golden gooseberries (Kanakadhārā) | Golden āmalaka fruits (a core-turmeric-gold radial gradient with two gold-soft segment lines) falling from her light on `m-sink`, heaped in a poor ember alms bowl with a gold rim and a few spilled before it. Fortune shown as the gift to the house that had nothing, not as Gajalakṣmī (Shloka 25 has the elephants pouring) | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
+| A protective thread tied in a ring (rakṣā) | An ellipse 312 by 68 round the floor: a 3.4 turmeric cord with a 4-4 dashed vermilion cord over it, twisted red and yellow; a vermilion knot at the front with turmeric edge, two tassels (one red, one yellow) with beads | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
+| A cane springing from ash (ratipriyā) | The `Ash` heap with a musk mound, and from it one jointed `--leaf` sugarcane with gold nodes and four long leaves, a bee (turmeric, hair-striped, ivory wings) at its top on `m-sway`. Kāma given back, as the stuff of his bow; compare Kāma reborn as a light (Shloka 34) | Inline (`fortune-and-the-full-moon.tsx`, using `Ash`) | Shloka 72 |
+| Two parrots touching beaks | Two `--leaf` parrots, gold-edged, facing each other, vermilion hooked beaks touching, hair and lotus neck-rings, under a small vermilion heart (`m-breathe`). Kāma's mount | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
+| A demon's club broken, and her arrow | An `--art-hair` iron club in two pieces with gold edges, banded haft and pommel, the spiked head turned away; her gold arrow with a vermilion head standing in the ground beside it | Inline (`fortune-and-the-full-moon.tsx`) | Shloka 72 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2814,6 +2822,35 @@ One entry per finished artwork, in the order they were made.
   mongoose was long and low with its head level, in plain stone, and read as a lizard by
   lamplight; it has an arched back, a raised head, a round ear and a bushy tail, with a moon
   wash. In the chant miniature the seat, the red cloth and the bough carry it.
+
+### Shloka 72: Fortune, the full moon, and a goddess greedy for her lover
+
+- **Component:** `fortune-and-the-full-moon.tsx` (defs prefix `sa72`)
+- **Composition:** the full moon stands in the crown. Under the card a river runs across the night,
+  and on its two banks a pair of cakravākas, parted till morning, she calling across the water.
+  Below it her light with moths round it, and from it golden gooseberries rain into a poor alms
+  bowl. Round the floor a protective thread of red and turmeric is tied in a ring; inside it a
+  green cane springs from ash on one side and two parrots touch beaks on the other. Outside it, at
+  the knot, a demon's iron club lies broken with her arrow standing beside it.
+- **Name → part:**
+  - Ramā → `gold`: the falling gooseberries, the alms bowl and its heap
+  - Rākenduvadanā → `moon`: the full moon, its deer and its rings
+  - Ratirūpā → `parrots`: the parrots and the heart
+  - Ratipriyā → `cane`: the ash, the cane and the bee
+  - Rakṣākarī → `thread`: the ring of thread, its knot and tassels
+  - Rākṣasaghnī → `club`: the broken club and the arrow
+  - Rāmā → `moths`: the four moths
+  - Ramaṇalampaṭā → `cakravakas`: the two birds and her call
+  - Intro, *her light* → `her-light`; *a river* → `river`
+- **Palette:** no additions.
+- **Motion:** `m-sink` (the gooseberries), `m-sway` (the moths, the bee), `m-shimmer` (the call,
+  the glitter), `m-breathe` (her light, the heart).
+- **Notes:** the cakravāka is promoted to `Cakravaka` in `primitives.tsx` from Shloka 54. This
+  title wraps, its second line reaching only x ≈ 102 (154 at 1100px), so the card sits at y ≈
+  225–438 and the first render's river was under it; everything below the crown moved down about
+  24, the river to y ≈ 446–470. The first river was a grey slab by lamplight; its moon and shade
+  are thinner and it carries ivory currents. In the chant miniature the moon, the river and the
+  ring carry it.
 
 ## Open questions
 
