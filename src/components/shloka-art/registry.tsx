@@ -81,6 +81,7 @@ import { LoosenedTether } from "./loosened-tether";
 import { MoonlightOnScorchedGround } from "./moonlight-on-scorched-ground";
 import { OneSavour } from "./one-savour";
 import { LevelsOfSpeech } from "./levels-of-speech";
+import { LifeVein } from "./life-vein";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3873,6 +3874,52 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "swan",
         depicts:
           "The devotee's mind is the lake Mānasa, and she is the swan floating on it. At the foot of the picture a still lake, and a white swan on it, its ripples spreading slowly.",
+      },
+    ],
+  },
+  "082": {
+    Art: LifeVein,
+    intro: (Spot) => (
+      <>
+        The verse runs from inside her consort's body out to a town one could walk to. It starts under the card with{" "}
+        <Spot part="her-light">her light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 373,
+        part: "vein",
+        depicts:
+          "She is the vessel his breath runs through, and without her nothing of him is left alive. From her light a vein runs to Kāmeśvara's crescent beside her, beads of breath travelling along it.",
+      },
+      {
+        nama: 374,
+        part: "gift",
+        depicts:
+          "Gratitude is usually the worshipper's part; here it is hers, and the smallest thing offered puts her under obligation. Below, a single jasmine flower laid on a leaf, and a fine ray from her light lands exactly on it.",
+      },
+      {
+        nama: 375,
+        part: "kama",
+        depicts:
+          "Kāma, burnt to ash by Śiva's eye, comes to her not as her weapon but as her worshipper. At the right his own rosy light, his bow of flowers and his five arrows laid down before her.",
+      },
+      {
+        nama: 376,
+        part: "lotus",
+        depicts:
+          "Śṛṅgāra, love, is the king of the rasas, the savours of the theatre, and she is filled with it to the brim. A red lotus, its heart brimming with nectar, and a bee asleep in it, as the love poets have it.",
+      },
+      {
+        nama: 377,
+        part: "drums",
+        depicts: "Jayā is victory itself. When a victory is won the drums of heaven sound and flowers fall from the sky: in the right column the drums, and the flowers falling.",
+      },
+      {
+        nama: 378,
+        part: "seat",
+        depicts:
+          "Jālandhara, in the Punjab, is one of the four great seats where the goddess is present in the land itself. At the left, at the end of a road, a stone seat daubed with vermilion, flowers round it and a small red flag.",
       },
     ],
   },

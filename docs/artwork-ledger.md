@@ -193,7 +193,7 @@ second time it is needed.
 | Indra's thunderbolt (vajra) | Upright, turned a little: a banded `--gold` grip with an `--art-vermilion` stud at its middle, and at each end a cage of five gold prongs closing to a point | `Vajra` in `primitives.tsx` (promoted at Shloka 57, used by Shloka 33) | Shloka 33 |
 | The high gods, praising | Never figures: each is his emblem in a soft `--art-core`-to-saffron glow above her, in order of precedence from the left: Brahmā's lotus (`OpenLotus` in `--art-vermilion`), Viṣṇu's discus and conch (`GanesaEmblem`), Indra's thunderbolt. The gods behind them are their lamps (`Lamp`), in two arcs round her light | Inline (`empty-city.tsx`) | Shloka 33 |
 | The herb that revives (sañjīvanī) | A slender `--leaf` stem with a fine `--art-core` line, five pairs of `--leaf` leaves edged and veined in `--art-core`, shrinking upward, and three small five-petalled `--art-ivory` blossoms at the top (`m-twinkle`) with a `glint` over them, in a breathing core-to-saffron glow: alight, as the herbs on Hanumān's mountain were. It grows out of ash (`Ash`) | Inline (`sanjivani.tsx`) | Shloka 34 |
-| Kāma, reborn | Never a figure: a small `--lotus` light with a gold ring in a rosy glow, his bow of flowers upright beside it (a `--leaf` recurve stave with small five-petalled blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString`), and his five flower arrows (`FlowerArrow`) in a narrow fan behind the light. Rati is a smaller `--art-moon` light with an ivory heart; the two look at each other as her light and Kāmeśvara's did (Shloka 30), three gold hairlines each way and a `glint` where they meet | Inline (`sanjivani.tsx`) | Shloka 34 |
+| Kāma, reborn | Never a figure: a small `--lotus` light with a gold ring in a rosy glow, his bow of flowers upright beside it (a `--leaf` recurve stave with small five-petalled blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString`), and his five flower arrows (`FlowerArrow`) in a narrow fan behind the light. Rati is a smaller `--art-moon` light with an ivory heart; the two look at each other as her light and Kāmeśvara's did (Shloka 30), three gold hairlines each way and a `glint` where they meet | Inline (`sanjivani.tsx`); the bow is `FlowerBow` in `primitives.tsx` (promoted at Shloka 82, used by Shloka 82) | Shloka 34 |
 | A cluster of the mantra (kūṭa) | A summit, as the word says: a dotted gold peak whose flanks carry its syllables as small `--art-core` lights with gold rims in their own glows (`m-twinkle`), shared out between the two flanks, and at the top a gold disc engraved in `--art-carve` with ह्रीं (Tiro Devanagari), the hṛllekhā that closes every cluster. The other syllables are given at initiation and are never written. The speech cluster (vāgbhava) has five syllables in all, the middle (kāmarāja) six, the śakti cluster four | `summit` and `Summit` in `primitives.tsx` (promoted at Shloka 35, used by Shlokas 34 and 35) | Shloka 34 |
 | Her face (mukha-paṅkaja) | A lotus (`OpenLotus`, 1.45 times), in her glow, with the speech cluster rising over it | Inline (`sanjivani.tsx`) | Shloka 34 |
 | Her mantra-body | Never a figure: her light as a tall column (an elliptical `--art-glow` glow, 320 by 640), crossed by two seams at the throat and the waist, each a gold line with slanting gold stitches and a gold knot at each end. Above the throat, her face as in Shloka 34 (a lotus and the speech cluster, its lights in `--art-core` glows); between the seams the middle cluster in `--lotus` glows over a faint rosy region; below the waist the śakti cluster in `--art-vermilion` glows, standing on a lotus | Inline (`mantra-body.tsx`) | Shloka 35 |
@@ -464,6 +464,12 @@ second time it is needed.
 | A flute, unplayed (madhyamā) | A bamboo flute about 112 long lying across the right column, tilted −6°: a turmeric-saffron-ember gradient across its width, gold-edged, two carve nodes, a vermilion binding, a mouth hole and six finger holes in a row, a core sheen. Upright in the column it read as a stick | Inline (`levels-of-speech.tsx`) | Shloka 81 |
 | A bell ringing (vaikharī) | The `Bell` (vermilion gem) at 2.4 on `m-sway`, and three pairs of `--gold-soft` arcs going out both sides from its ball (`m-shimmer`) | Inline (`levels-of-speech.tsx`, using `Bell`) | Shloka 81 |
 | The swan on the lake of the mind (Mānasa) | The `Swan` at 1.22 heading toward her light on a still lake (rx 238, ry 40, an `--art-moon` radial from 0.22 to nothing, a faint gold-soft inner shore), with three slow dashed ripple rings round her | Inline (`levels-of-speech.tsx`, using `Swan`) | Shloka 81 |
+| The vein of his life (prāṇanāḍī) | From her light to Kāmeśa's crescent beside her (the fourth night's `litPart`, r 32, horns up, moon with a 1.4 gold rim over a wide faint moon stroke, in a small core glow), a hanging cubic: a 6-wide `--art-vermilion` vessel at 0.35 with a crimson hairline and a dashed `--art-core` 1.4 line along it, and four core beads of breath on it (`m-twinkle`, staggered) | Inline (`life-vein.tsx`) | Shloka 82 |
+| A single flower, noticed (kṛtajña) | A `--leaf` leaf with one ivory `BLOSSOM` at 2 laid on it, and a fine ray from her light landing exactly on it, a gold-soft-to-core gradient, with a core `glint` where it lands (`m-lick`) | Inline (`life-vein.tsx`, using `BLOSSOM`) | Shloka 82 |
+| Kāma's bow and arrows laid down | Kāma's light as at Shloka 34 (a `--lotus` disc with a gold ring in a rosy glow, `m-shimmer`), and before it on the ground the `FlowerBow` at 0.8 lying back up, and his five `FlowerArrow`s at 0.5 laid side by side pointing toward her, slightly fanned | Inline (`life-vein.tsx`, using `FlowerBow` and `FlowerArrow`) | Shloka 82 |
+| A red lotus brimming, a bee asleep in it (śṛṅgāra) | `OpenLotus` at 0.9 with its heart brimming: a saffron ellipse of nectar with a core sheen, and lying in it a bee (turmeric body with hair bands, ivory wing, hair head). Sleep marks over the bee were cartoonish and were dropped | Inline (`life-vein.tsx`, using `OpenLotus`) | Shloka 82 |
+| A drum of heaven sounding, and flowers falling (dundubhi, puṣpavṛṣṭi) | In the top of the right column, a barrel drum 72 long tipped −8°: an ember body gold-edged with a turmeric V-lacing and a vermilion band, ivory heads at both ends, two curved turmeric sticks, and two gold-soft sound arcs off each head (`m-shimmer`). Below it sixteen petals (vermilion, saffron, lotus, ivory) scattered down the column on `m-sink` with varied durations and delays. A pair of kettledrums read as bowls of soup with chopsticks | Inline (`life-vein.tsx`) | Shloka 82 |
+| A seat of the goddess in the land (pīṭha) | At the end of a road (a turmeric band fading in from the left), a lumpy stone in a stone-to-musk gradient, gold-edged, daubed nearly all over with `--art-vermilion`, a core dot and sheen, four ivory and saffron `BLOSSOM`s at its foot, and a small vermilion pennant on an ember stick (`m-sway`). A symmetric dome read as a helmet | Inline (`life-vein.tsx`, using `BLOSSOM`) | Shloka 82 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3133,6 +3139,32 @@ One entry per finished artwork, in the order they were made.
   and the whole descent moved into the right column. At 1100px the title wraps (x ≈ 79). The
   card sits at y ≈ 184–396. The four stages are sometimes placed in the body (navel, heart,
   throat), but no figure is drawn here.
+
+### Shloka 82: The vein that carries her consort's life, and a seat in the Punjab
+
+- **Component:** `life-vein.tsx` (defs prefix `sa82`)
+- **Composition:** under the card her light, and a vein hanging from it to Kāmeśa's crescent
+  beside her, beads of breath travelling along it. Below, left to right: a stone seat daubed with
+  vermilion at the end of a road, with flowers and a small red flag; a single jasmine on a leaf,
+  a fine ray from her light landing on it; a red lotus brimming with nectar, a bee asleep in it;
+  Kāma's rosy light, his bow of flowers and five arrows laid down before her. At the top of the
+  right column a drum of heaven sounds and flowers fall down the column.
+- **Name → part:**
+  - Kāmeśvaraprāṇanāḍī → `vein`: the vein, its beads and his crescent
+  - Kṛtajñā → `gift`: the flower on its leaf and the ray
+  - Kāmapūjitā → `kama`: Kāma's light, bow and arrows
+  - Śṛṅgārarasasampūrṇā → `lotus`: the brimming lotus and the bee
+  - Jayā → `drums`: the drum and the falling flowers
+  - Jālandharasthitā → `seat`: the stone, its road, flowers and flag
+  - Intro, *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the breath), `m-lick` (the glint on the flower), `m-shimmer` (Kāma's
+  glow, the drum's sound), `m-sink` (the petals), `m-sway` (the pennant), `m-breathe` (her light).
+- **Primitives:** Shloka 34's bow of flowers promoted to `FlowerBow`, and its blossom to `BLOSSOM`.
+- **Notes:** this title wraps, its second line reaching x ≈ 87 (139 at 1100px), so the card sits
+  at y ≈ 225–438. Victory could not be a banner again (Shloka 77) or a garland (Shlokas 42 and
+  65), so it is the drum and the rain of flowers that greet a victory. Kāma stays a light, never a
+  figure, as at Shloka 34.
 
 ## Open questions
 
