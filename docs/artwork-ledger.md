@@ -444,6 +444,11 @@ second time it is needed.
 | A victory banner (vijaya-dhvaja) | A turmeric staff with a gold finial and bead, and a swallow-tailed vermilion banner streaming from it with a dashed turmeric inner border (`m-shimmer`) | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | Grass bending toward her (vandyā) | Eight tufts of five `--leaf` blades along the ground on both sides, every blade curving toward her light | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | A plait down the right column (vāmakeśī) | A `plait` from above the crown down the right column to y ≈ 392, 28 wide narrowing to 17, lobes every 13; on its lobes ivory jasmine buds and every third a five-petalled vermilion flower; a `PlaitTip` at the end. Her hair as the canon allows it | Inline (`ring-of-fire.tsx`, using `plait`, `PlaitLobes` and `PlaitTip`) | Shloka 77 |
+| The wish-yielding creeper on its post (kalpalatikā) | Up the right column: a slender turmeric post with gold edges, a base block and a capital carrying a small lamp (`m-flicker`, a core glow); round it a `taper` creeper in `--art-hair` winding side to side, `CreeperLeaf`s on alternate sides, three `creeperTendril`s, and at every third mark a jewel hanging on a gold stalk, a `Ruby` and a `Pearl` by turns. A creeper, not a tree: it needs something to climb | Inline (`loosened-tether.tsx`, using `CreeperLeaf`, `creeperTendril`, `Ruby` and `Pearl`) | Shloka 78 |
+| The stake with its rope untied (paśupāśa) | At 1.25: an ember sacrificial stake with a turmeric collar and a gold ring, and a turmeric rope with a carve twist hanging from the ring and lying slack in loops on the ground, its end frayed | Inline (`loosened-tether.tsx`) | Shloka 78 |
+| A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | Inline (`loosened-tether.tsx`) | Shloka 78 |
+| Wisps drawn into her light (saṃhṛta) | Three pairs of `taper` strands from the edges (upper left, lower left, upper right) to her light, wavering less as they near her and thinning from 4.4 to nothing, in an `--art-hair` gradient fading to 0 at her (`m-shimmer`). A single smooth strand read as a hill's skyline | Inline (`loosened-tether.tsx`) | Shloka 78 |
+| A wheel set rolling (pravartikā) | The `ChariotWheel` (r 22, at 1.25) turned 8°, on a faint carve road, a dashed track behind it, three musk dust puffs (`m-breathe`), three gold-soft motion arcs off its trailing rim (`m-shimmer`). Compare the broken wheel of becoming (Shloka 48) | Inline (`loosened-tether.tsx`, using `ChariotWheel`) | Shloka 78 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3017,6 +3022,29 @@ One entry per finished artwork, in the order they were made.
   The first lotus leaf had its notch at the side and read as a fish; the letters were too small
   and pale by day. The share card leaves out the letters, being text. In the chant miniature the
   fire triangle and the cow carry it.
+
+### Shloka 78: The wish-yielding creeper, the loosened tether, and the rule of good conduct
+
+- **Component:** `loosened-tether.tsx` (defs prefix `sa78`)
+- **Composition:** up the right column a slender post rises to a lamp and the wish-yielding
+  creeper climbs it, hung with rubies and pearls. Under the card her light, and three dark wisps
+  from the edges drawn into it and thinning out there. At the left a stake with its rope untied
+  and slack, and the goat that was tied to it walking free toward her. Along the road at the foot
+  a wheel set rolling, its track behind it.
+- **Name → part:**
+  - Bhaktimatkalpalatikā → `creeper`: the post, its lamp and the creeper
+  - Paśupāśavimocinī → `tether`: the stake and the slack rope
+  - Saṃhṛtāśeṣapāṣaṇḍā → `wisps`: the wisps
+  - Sadācārapravartikā → `wheel`: the wheel, its road and track
+  - Intro, *her light* → `her-light`; detail → `goat`
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the wisps, the wheel's motion arcs), `m-breathe` (her light, the
+  dust), `m-flicker` (the lamp).
+- **Notes:** this title wraps, its second line reaching x ≈ 209 (261 at 1100px), so the card sits
+  at y ≈ 225–438; the creeper takes the right column. The first wisps were single smooth strands
+  and read as the skyline of a hill; they are paired and wavering. The stake, the goat and the
+  wheel are drawn at 1.25 about (320, 588). In the chant miniature the creeper and the goat carry
+  it.
 
 ## Open questions
 

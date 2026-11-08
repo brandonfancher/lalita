@@ -77,6 +77,7 @@ import { KadambaWine } from "./kadamba-wine";
 import { VindhyaShrine } from "./vindhya-shrine";
 import { TheField } from "./the-field";
 import { RingOfFire } from "./ring-of-fire";
+import { LoosenedTether } from "./loosened-tether";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3701,5 +3702,44 @@ export const ARTWORK: Record<string, Artwork> = {
           "The body is divided into circles of fire, sun and moon, and the fire is lowest, where the coiled power sleeps. Her light is seated in the fire maṇḍala: an upward red triangle fringed with flame.",
       },
     ],
+  },
+  "078": {
+    Art: LoosenedTether,
+    intro: (Spot) => (
+      <>
+        Four names, one to each quarter of the verse, moving from the single devotee out to the ordering of the world. Under the card,{" "}
+        <Spot part="her-light">her light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 353,
+        part: "creeper",
+        depicts:
+          "Not a wish-granting tree but a creeper, slender, which cannot stand by itself. Up the right column it climbs a post to a lamp, hung with rubies and pearls: it grows where there is devotion for it to climb.",
+      },
+      {
+        nama: 354,
+        part: "tether",
+        depicts:
+          "The soul is the beast, paśu, and its bondage the rope, pāśa, that tied the victim to the stake. At the left the stake stands with its rope untied and lying slack on the ground.",
+      },
+      {
+        nama: 355,
+        part: "wisps",
+        depicts:
+          "Saṃhṛta is drawn back in, as the cosmos is at the end of an age: reabsorbed rather than smashed. Three dark wisps come in from the edges and thin out to nothing in her light.",
+      },
+      {
+        nama: 356,
+        part: "wheel",
+        depicts:
+          "Pravartikā is she who sets rolling. Along the road at the foot a wheel rolls on, its track behind it: the settled conduct of good people, kept moving once begun. Compare the broken wheel of the forty-eighth verse.",
+      },
+    ],
+    detail: {
+      part: "goat",
+      body: <>There is also a small detail for the attentive: the goat that was tied to the stake walks free toward her, and does not look back.</>,
+    },
   },
 };
