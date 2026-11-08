@@ -10,7 +10,7 @@
  * this artwork's entry.
  */
 
-import { artIds, Bell, glint, OpenLotus, partProps, polyline, round, Star } from "./primitives";
+import { artIds, Bell, glint, OpenLotus, partProps, polyline, round, Star, Swan } from "./primitives";
 import type { ArtProps } from "./types";
 
 const CX = 320;
@@ -54,18 +54,8 @@ const RINGING = [56, 84, 116, 152].map((r, k) => ({ rx: r, ry: round(r * 0.26), 
 
 /* ── The swan ──────────────────────────────────────────────────────────── */
 
+/** Turned to head left, after her feet. */
 const SWAN = { x: 474, y: 640, s: 1 };
-/** Drawn heading +x on the waterline at the origin, and turned to head left, after her feet. */
-const SWAN_BODY = "M -54 -20 C -48 -8 -40 0 -28 0 L 24 0 C 36 0 42 -8 40 -15 C 38 -21 32 -23 26 -22 C 4 -20 -30 -16 -54 -20 Z";
-/** The wing, arched up off the back as a swan carries it on calm water. */
-const SWAN_WING = "M 18 -20 C 10 -40 -20 -48 -40 -37 C -48 -32 -52 -26 -50 -22 C -30 -18 0 -20 18 -20 Z";
-const FEATHERS = [
-  "M 8 -24 C 0 -34 -16 -38 -30 -33",
-  "M 2 -21 C -6 -28 -20 -31 -36 -27",
-  "M -6 -19 C -14 -23 -28 -25 -44 -23",
-].join(" ");
-const SWAN_NECK = "M 30 -18 C 42 -34 24 -52 32 -70 C 35 -77 42 -79 46 -76";
-const SWAN_HEAD = { x: 46, y: -76 };
 /** The wake: a few flat rings trailing close behind her, far apart, because she is in no hurry. */
 const WAKE_LEN = 190;
 const WAKE = [62, 100, 144, 194].map((d, k) => {
@@ -248,20 +238,7 @@ export function StillWaterSteps({ idPrefix = "sa20", active = null }: ArtProps) 
       <g {...part("swan")}>
         <g transform={`translate(${SWAN.x} ${SWAN.y}) scale(${-SWAN.s} ${SWAN.s})`}>
           <path d={WAKE} stroke={url("wake")} strokeWidth={1.1} strokeLinecap="round" />
-          <g transform="scale(1 -0.45)" opacity={0.22}>
-            <path d={SWAN_BODY} fill="var(--art-moon)" />
-            <path d={SWAN_NECK} stroke="var(--art-moon)" strokeWidth={7} strokeLinecap="round" />
-          </g>
-          <path d="M -40 1 L 30 1" stroke="var(--gold-soft)" strokeWidth={1.2} />
-          <path d={SWAN_NECK} stroke="var(--gold)" strokeWidth={9} strokeLinecap="round" />
-          <path d={SWAN_NECK} stroke="var(--art-moon)" strokeWidth={7} strokeLinecap="round" />
-          <path d={SWAN_BODY} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
-          <path d={SWAN_WING} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} strokeLinejoin="round" />
-          <path d={SWAN_WING} fill="var(--gold-soft)" fillOpacity={0.25} />
-          <path d={FEATHERS} stroke="var(--gold)" strokeWidth={0.7} strokeLinecap="round" />
-          <circle cx={SWAN_HEAD.x} cy={SWAN_HEAD.y} r={6} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} />
-          <path d={`M ${SWAN_HEAD.x + 4} ${SWAN_HEAD.y - 2.6} L ${SWAN_HEAD.x + 15} ${SWAN_HEAD.y + 1.6} L ${SWAN_HEAD.x + 4} ${SWAN_HEAD.y + 3} Z`} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
-          <circle cx={SWAN_HEAD.x + 1.4} cy={SWAN_HEAD.y - 1.6} r={1.2} fill="var(--art-carve)" />
+          <Swan />
         </g>
       </g>
     </svg>
