@@ -69,6 +69,7 @@ import { TheHouseholdLamp } from "./the-household-lamp";
 import { VermilionAndPearl } from "./vermilion-and-pearl";
 import { YoginiTemple } from "./yogini-temple";
 import { FullFromFull } from "./full-from-full";
+import { SeamOfTheDigits } from "./seam-of-the-digits";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3288,6 +3289,60 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "gods",
         depicts:
           "At the card's door wait the emblems of the gods who serve her: Brahmā's lotus at the left, Viṣṇu's discus and conch and Indra's thunderbolt at the right.",
+      },
+    ],
+  },
+  "070": {
+    Art: SeamOfTheDigits,
+    intro: (Spot) => (
+      <>
+        The hymn&apos;s divisions are named for <Spot part="digits">the sun&apos;s twelve digits</Spot>, and this
+        verse holds <Spot part="seam">the seam</Spot> between the fourth and the fifth. The first line&apos;s names
+        sit to the left of it, the second&apos;s to the right.
+      </>
+    ),
+    entries: [
+      {
+        nama: 298,
+        part: "waters",
+        depicts:
+          "Nārāyaṇa is the one whose resting place is the waters. They lie still across the floor, and on them floats an empty banyan leaf, the god's bed between one world and the next.",
+      },
+      {
+        nama: 299,
+        part: "nada",
+        depicts:
+          "Sound before it breaks into syllables is one resonance, and it is her body. From her light rings spread over the water, and not one of them is broken.",
+      },
+      {
+        nama: 300,
+        part: "river",
+        depicts:
+          "A river comes down into the pool and its banks end there; in the water it has no name and no shape of its own (Muṇḍaka 3.2.8). This is the three hundredth name, the last of the fourth digit.",
+      },
+      {
+        nama: 301,
+        part: "hrim",
+        depicts:
+          "The fifth digit opens with a syllable, not a word: ह्रीं, on a gold disc on the seam, just below the card.",
+      },
+      {
+        nama: 302,
+        part: "mimosa",
+        depicts:
+          "Hrī is also modesty. On the bank grows the touch-me-not, which the Tamil and Malayalam names call bashful; most of its leaves have folded shut.",
+      },
+      {
+        nama: 303,
+        part: "heart",
+        depicts:
+          "Her light sits in the heart's lotus of twelve petals, whose name, anāhata, means unstruck, the same sound that no one makes.",
+      },
+      {
+        nama: 304,
+        part: "winnow",
+        depicts:
+          "A winnowing fan sorts what is kept from what is thrown away. It lies idle on the bank, its rice and husk left together, with nothing to sort.",
       },
     ],
   },

@@ -392,6 +392,13 @@ second time it is needed.
 | The four aims of life (puruṣārtha) | Four small things set on a ring round her: dharma a domestic fire (three vermilion `tongue`s with core hearts, `m-lick`) in a square pit seen on the slant (stone, an ember floor, a gold rim), in its own flicker glow; artha a heap of eight gold coins with carve undersides and a glint; kāma two `FlowerArrow`s at 0.62 laid crosswise; mokṣa a gold dome cage on a stone base, its door swung open and its bar gone, and a `Goose` (0.85) flying up from it toward her light | Inline (`full-from-full.tsx`) | Shloka 69 |
 | A cobra, coiled and hooded (bhogin) | Three stacked `--art-hair` coil rings (rx 30, 24, 17) with dashed gold scale lines, a neck rising from the top coil, and a broad hood (44 wide) with two gold-soft spectacle marks, the head on top with two core eyes and a forked `--art-vermilion` tongue (`m-flicker`); the hood sways (`m-sway` about its base with `swingFrom`). Over a gold bowl of milk. Compare Śeṣa's hoods (Shloka 63) | Inline (`full-from-full.tsx`) | Shloka 69 |
 | A child's steps walking up to her (ambikā) | Three small `Footprint`s (0.74, laid flat at 0.62, left, right, left) in `--art-ivory` rice flour with the gold edge, walking up from the front to her vermilion footprints and over the kolam's line | Inline (`full-from-full.tsx`) | Shloka 69 |
+| The sun's twelve digits (kalā), and the hymn's seam | Twelve small `--art-vermilion` `tongue` flames (13–16 tall, core hearts, `m-flicker` by turns) in small gold cups in a row 25 apart along the card's top edge, each in a small core glow; the gap between the fourth and the fifth is wider and sits on the plate's axis, and a gold seam (a gradient, fainter behind the card) runs down from it to the next thing below. The hymn's ten hundreds are named for digits 2–11 | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| Sound before it divides (nāda) | Unbroken rings on still water round its source: `--art-moon` ellipses (0.9 over a 1.8 `--gold-soft` under-stroke) 34 apart, at 0.3 of their width, fading outward, clipped to the pool, `m-shimmer` by turns. The opposite of the sound of bells, whose arcs are broken | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| A river losing its name in the waters (Muṇḍaka 3.2.8) | A winding band widening into the pool, `--art-moon` over an `--art-hair` shade so it shows by day, both fading out across the mouth; two fine ivory currents (`m-shimmer`), and two 2.2 gold banks that fade out before the water. Dashed currents read as a road | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| An empty banyan leaf on the waters (vaṭapatra) | A `--leaf` leaf with a gold edge and gold-soft veins, laid flat on the water at 0.52 with a curled stalk and a faint hair shadow, nothing on it: the bed of the god who rests on the waters | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| The heart's lotus (anāhata) | Twelve `--art-vermilion` petals in two rings (`yantraPetals`, the outer turned half a petal, at 0.55 and 0.85), laid flat on the water at 0.42, round an ivory pericarp with a smoky `--art-hair` six-pointed star (`tattvaSign` air); her light just above it. Compare the cakra canon of Shloka 37 | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| Touch-me-not, its leaves folded (lajjālu, modesty) | A low `--leaf` tuft of six fronds from one point, each a stalk forking into two pinnae with seven pairs of leaflets: four fronds drooped with their leaflets folded flat along the pinnae, two open with their leaflets spread across; two `--lotus` pompom flowers with turmeric tips | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
+| A winnowing fan laid down (śūrpa) | A `--art-turmeric` basket seen from the front: a floor wide at the open front and narrow at the back, a wall rising round the back and dying away along the sides, a 2.6 gold rim, a carve weave; inside a little heap of ivory rice and ember husks left together | Inline (`seam-of-the-digits.tsx`) | Shloka 70 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2737,6 +2744,40 @@ One entry per finished artwork, in the order they were made.
   placed by an outer group. The first hood was too narrow beside the coils, and the child's steps
   at 0.62 vanished by day. In the chant miniature the parasol, the ring and the gold pots carry
   it; the verse stays clear on phones.
+
+### Shloka 70: Where the fourth digit ends and the fifth begins
+
+- **Component:** `seam-of-the-digits.tsx` (defs prefix `sa70`)
+- **Composition:** the plate is split by a seam. The sun's twelve digits, for which the hymn's
+  divisions are named, burn as a row of small flames along the card's top edge, and the gap
+  between the fourth and the fifth is the plate's axis: a gold seam runs down from it behind the
+  card to ह्रीं on a gold disc, and on to her light in the heart's twelve-petalled lotus,
+  floating on still water, from which unbroken rings spread. Left of the seam (the first line's
+  names) a river comes down into the pool and its banks end there, and an empty banyan leaf
+  floats; right of it (the second line's) a touch-me-not with its leaves folded on the bank, and
+  a winnowing fan lying idle with its rice and husk together. The first plate split by a seam,
+  and the first river.
+- **Name → part:**
+  - Nārāyaṇī → `waters`: the pool, its ripples and the banyan leaf
+  - Nādarūpā → `nada`: the rings
+  - Nāmarūpavivarjitā → `river`: the river, its currents and its banks
+  - Hrīṅkārī → `hrim`: the disc, its glow and ह्रीं
+  - Hrīmatī → `mimosa`: the touch-me-not and its flowers
+  - Hṛdyā → `heart`: the lotus and her light
+  - Heyopādeyavarjitā → `winnow`: the fan and its rice
+  - Intro, *the sun's twelve digits* → `digits`; *the seam* → `seam`
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the digits), `m-shimmer` (the rings and the currents), `m-breathe`
+  (her light and the syllable's glow).
+- **Notes:** this title stays on one line and reaches x ≈ 457 (about 509 at 1100px) at y ≈
+  74–141, so the row of digits sits in the band under it at y ≈ 160–184, x ≈ 224–520. The first
+  pool was a hard grey disc with a rim and read as a record; it is now a radial moon gradient
+  fading at the edge. The first river came out of the card's foot as a grey strip ending in a
+  hard edge, and dashed currents made it a road; it now comes in from the left under the verse
+  panel, fades into the pool and carries two solid currents. The first winnowing fan was a
+  trapezoid and read as a box; it has a floor and a back wall now. On phones the row of digits
+  shows faintly behind the title. In the chant miniature the row, the seam and the rings carry
+  it. ह्रीं is omitted from the share card, as text is.
 
 ## Open questions
 
