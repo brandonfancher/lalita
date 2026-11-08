@@ -3355,6 +3355,34 @@ export function BrimmingPot({ water, spill = true }: { water: string; spill?: bo
   );
 }
 
+/* ── Cakravāka (ruddy shelduck) ────────────────────────────────────────── */
+
+const CAKRAVAKA_BODY =
+  "M -20 -4 C -22 -7 -20 -9 -17 -9 C -10 -13 2 -13 8 -9 C 10 -8 11 -10 10 -14 C 9 -19 11 -25 16 -26 C 21 -27 24 -23 23 -19 L 22 -15.5 C 20 -12 18 -6 14 -2 C 10 0 -12 1 -20 -4 Z";
+const CAKRAVAKA_HEAD = "M 10 -14 C 9 -19 11 -25 16 -26 C 21 -27 24 -23 23 -19 L 22 -15.5 C 18 -16 13 -16 10 -14 Z";
+const CAKRAVAKA_WING = "M -16 -7 C -8 -12 4 -12 9 -8 C 2 -5 -8 -4 -16 -7 Z";
+const CAKRAVAKA_TIP = "M -21 -5 C -19 -10 -13 -11 -10 -8 C -13 -6 -17 -5 -21 -5 Z";
+
+/**
+ * A cakravāka, the ruddy shelduck of the poets, whose pairs are parted every night: on the water,
+ * facing right, about 48 long, with a faint core reflection under it. Wants round joins.
+ */
+export function Cakravaka() {
+  return (
+    <>
+      <ellipse cx={0} cy={1.6} rx={22} ry={2} fill="var(--art-core)" fillOpacity={0.22} />
+      <path d={CAKRAVAKA_BODY} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.7} />
+      <path d={CAKRAVAKA_BODY} fill="var(--art-vermilion)" fillOpacity={0.4} />
+      <path d={CAKRAVAKA_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M 10.4 -13.4 C 13 -12.2 18 -12.6 21 -14.6" stroke="var(--art-hair)" strokeWidth={1.1} />
+      <path d={CAKRAVAKA_WING} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={CAKRAVAKA_TIP} fill="var(--art-hair)" />
+      <path d="M 23 -19 L 28 -17 L 22 -15.5 Z" fill="var(--art-hair)" />
+      <circle cx={18.6} cy={-21.4} r={1} fill="var(--art-hair)" />
+    </>
+  );
+}
+
 /* ── The royal parasol ─────────────────────────────────────────────────── */
 
 /**
