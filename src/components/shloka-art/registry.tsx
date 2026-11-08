@@ -83,6 +83,7 @@ import { OneSavour } from "./one-savour";
 import { LevelsOfSpeech } from "./levels-of-speech";
 import { LifeVein } from "./life-vein";
 import { SecretRite } from "./secret-rite";
+import { TheStageLamp } from "./the-stage-lamp";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3956,6 +3957,47 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "libation",
         depicts:
           "The offering poured for her in private is the one that reaches her and contents her. Beside her seat a spouted bell-metal vessel tips, and a thin stream runs onto the pedestal.",
+      },
+    ],
+  },
+  "084": {
+    Art: TheStageLamp,
+    intro: (Spot) => (
+      <>
+        The <Spot part="stage">stage</Spot> of a Kathakali night, in the hour after the play. The players have gone, and the{" "}
+        <Spot part="lamp">great bell-metal lamp</Spot> that was its only light burns on. Its flame is <Spot part="her-light">her light</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 383,
+        part: "bowl",
+        depicts:
+          "Prasāda first means what muddy water does when it settles and comes clear. The old figure for doing it at once is the clearing-nut: drop it in, and the mud sinks. At the lower left a bowl of muddy water, a nut just dropped in, and the water already clear round it.",
+      },
+      {
+        nama: 384,
+        part: "lit",
+        depicts:
+          "The Pañcadaśī's lamp of the theatre (10.11): set in the hall, it lights the patron, the audience and the dancer alike, and when they have all gone it goes on shining. Hers still shows what the night left on the boards, the actor's great crown set down on its stool and the cymbals.",
+      },
+      {
+        nama: 385,
+        part: "shadows",
+        depicts:
+          "If she witnesses everything, nothing is left outside to witness her. Everything on the stage throws its shadow away from the flame; the flame throws none, and needs no second lamp to be seen by.",
+      },
+      {
+        nama: 386,
+        part: "limbs",
+        depicts:
+          "The six limbs of her mantra, heart, head, crest, armour, eyes and weapon, each have a deity, and they attend her as a body's parts attend it. Round the flame six small lights, each with its sign.",
+      },
+      {
+        nama: 387,
+        part: "moons",
+        depicts:
+          "Six excellences, lordship, strength, fame, fortune, knowledge and detachment, and she has each of them entire, not in parts. The moon fills a digit at a time; over the stage six moons, all of them full.",
       },
     ],
   },

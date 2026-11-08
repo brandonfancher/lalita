@@ -475,6 +475,12 @@ second time it is needed.
 | The bindu in the nine triangles (bindumaṇḍala) | In the crown at 2.4: `SRI_TRIANGLES`, the downward ones `--art-vermilion` and the upward ones `--gold`, hair-thin at 0.55, inside a faint gold-soft circle, and the bindu at `SRI_BINDU_V`, a core dot with a vermilion edge in a core-to-vermilion glow (`m-breathe`) | Inline (`secret-rite.tsx`, using `SRI_TRIANGLES`) | Shloka 83 |
 | A shrine's doors, shut (rahoyāga) | Down the right column: two door leaves in an ember-crimson-ember gradient with gold-soft panel lines and gold studs, a gold bolt, in a stone frame under a turmeric lintel with a small arched crest and a vermilion dot, at the top of three stone steps. Lamplight shows only as a core line at the seam and a saffron-core strip under the sill (`m-flicker`) | Inline (`secret-rite.tsx`) | Shloka 83 |
 | A spouted bell-metal vessel pouring (kiṇḍī, tarpaṇa) | A round-bodied vessel on a flared foot with a narrow neck, a lip, and a curved spout from the shoulder, in a gold-turmeric-ember gradient with carve edges, tipped −38°; from the spout's lip a thin moon stream with a dashed core line (`m-shimmer`) falls onto the pedestal's top, a core glint where it lands | Inline (`secret-rite.tsx`) | Shloka 83 |
+| A great bell-metal stage lamp (āṭṭavilakku) | Drawn at 1.2 about its foot, under the card: a flared foot on a gold ellipse with a vermilion band, a turmeric stem tapering up through three gold knobs and a collar, and a wide shallow bowl with a vermilion band, gold rim and saffron oil, a thick ivory wick curling up to the flame. The flame is a tall teardrop in a vermilion-saffron-core gradient with a core heart (`m-flicker`) and her glow round it (`m-breathe`). It stands in a pool of glow-to-turmeric light on stage boards drawn as three dashed gold-soft seams | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| A Kathakali crown (kirīṭam) on a stool | At 1.18 on a low ember stool in the right column: a great round halo of saffron, vermilion and turmeric rings edged with 28 gold-soft beads and set with 16 core mirrors (some `m-twinkle`), a turmeric dome in front with vermilion bands and a core finial, a gold forehead band with vermilion beads, and a vermilion ear-disc with a core boss at each side | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| Hand cymbals (ilattālam) | A pair of small gold discs at 1.4, lying on the boards, each with a turmeric boss and a core glint, joined by a vermilion cord | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| Muddy water clearing round a clearing-nut (kataka) | A deep gold bowl at 1.25 with a vermilion band and turmeric rim, musk water with ember swirls, and round an ember nut a clear moon ellipse (`m-breathe`) in two gold-soft rings | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| The six limbs of a mantra (ṣaḍaṅga) | Six small ivory discs at 1.25 on a dotted gold-soft ellipse round the flame, each in a core glow (`m-twinkle`, staggered), with its sign: a vermilion heart, a saffron head, a saffron flame-shaped crest, turmeric armour, an eye, a hair-dark spearhead | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| Six full moons | Across the crown in a shallow arc, y ≈ 36–48: moon discs with gold edges, ivory highlights and faint core haloes (`m-twinkle`, staggered) | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3194,6 +3200,34 @@ One entry per finished artwork, in the order they were made.
   literal pedestal, so the two seats in consecutive verses do not repeat. The valley is green
   rather than snowy to keep clear of the Himavat. The private rite is shown by what cannot be
   seen: the doors are shut.
+
+### Shloka 84: Witness of everything, witnessed by nothing
+
+- **Component:** `the-stage-lamp.tsx` (defs prefix `sa84`)
+- **Composition:** the stage of a Kathakali night in the hour after the play, drawn after the
+  Pañcadaśī's lamp of the theatre (10.11), which lights the patron, the audience and the dancer
+  alike and burns on when they have gone. Under the card the great bell-metal stage lamp, its flame
+  her light, in a pool of light on the boards; round the flame six small lights with the signs of
+  her mantra's limbs. In the right column the actor's crown set down on a stool, and on the boards
+  the cymbals; at the lower left a bowl of muddy water clearing at once round a nut dropped in it.
+  Everything throws its shadow away from the flame. Across the crown six full moons.
+- **Name → part:**
+  - Sadyaḥprasādinī → `bowl`: the bowl, the muddy water and the clear water round the nut
+  - Viśvasākṣiṇī → `lit`: the crown, its stool and the cymbals
+  - Sākṣivarjitā → `shadows`: the shadows, thrown away from the flame, which throws none
+  - Ṣaḍaṅgadevatāyuktā → `limbs`: the six lights and their ring
+  - Ṣāḍguṇyaparipūritā → `moons`: the six full moons
+  - Intro, *stage* → `stage`: the pool of light and the boards; *great bell-metal lamp* → `lamp`;
+    *her light* → `her-light`: the flame and its glow
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the flame), `m-breathe` (her glow, the clear water), `m-twinkle` (the
+  limb lights, the moons, the crown's mirrors, the glint in the bowl).
+- **Notes:** this title stays on one line, reaching x ≈ 360 (412 at 1100px), so the card sits at
+  y ≈ 184–396. The first design was the Muṇḍaka's two birds on one tree, which Shloka 47 already
+  draws; Shloka 57 has the witness of the dance and an empty seat, and Shlokas 17 and 64 have
+  curtains, so the stage here has no dancer, seat or curtain, only what was left on it. Everything
+  first read too small; the lamp, crown, cymbals and bowl were scaled up, and the bowl deepened
+  when it read as a plate. In the chant miniature the lamp and its glow carry it.
 
 ## Open questions
 
