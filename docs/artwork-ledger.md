@@ -387,6 +387,11 @@ second time it is needed.
 | The shell of all scripture, shut on its pearl | A scallop shut in still water: a straight hinge with two small ears (gold-soft ear ribs, gold lines from the umbo, a saffron bead at the umbo), an upper valve in moon to ivory to saffron, gold-edged, with eleven gold-soft ribs and a crenellated lip; six growth lines, each the lip it once had, in gold with `--art-musk` ticks under them like a line of written letters; a narrow seam of `--art-core` along the lip, and a `Pearl` (r 9) showing in it; a darker ivory lower valve, a musk shadow, and a core reflection on the water (`m-shimmer`). Ticks in `--art-carve` vanished by day. Compare Shloka 51's open shell in the shallows | Inline (`vermilion-and-pearl.tsx`, using `Pearl`) | Shloka 68 |
 | Svāti and its raindrop | One `Star` (s 7, `m-twinkle`) in a faint gold-soft halo high in the crown, and under it a `--art-moon` drop, gold-edged, falling on `m-sink` (9s). The drop is inside a group that places it, so the motion doesn't override the placement | Inline (`vermilion-and-pearl.tsx`) | Shloka 68 |
 | A spider on its web (ūrṇanābhi, Muṇḍaka 1.1.7) | In the corner under the lintel's end: five `--gold-soft` spokes over a quarter turn with four rungs, and from the lintel a single thread to a small `--art-hair` spider (two round segments, eight fine legs, a vermilion spot) | Inline (`the-drawn-screen.tsx`) | Shloka 64 |
+| A full pot pouring into a full pot (pūrṇamadaḥ pūrṇamidam) | A `BrimmingPot` at 0.78 tipped 70° in the ring of a tall three-legged gold stand, `spill={false}` so its brim still shows full, pouring a moon stream (2.2 over a 4-wide `--art-hair` shadow, `m-shimmer`) into the brim of a second `BrimmingPot` (0.95) below it, which overflows as usual; its overflow runs away as a moon runnel off the foot of the plate. Both still full | Inline (`full-from-full.tsx`, using `BrimmingPot`) | Shloka 69 |
+| A kolam in one endless line (anādinidhanā) | One line whose radius about a ring (118, laid at 0.36) waves at a half-integer rate (10.5 waves a turn, amplitude 14), drawn over two turns: the second turn is the first one's mirror and the line closes on itself, crossing between every pair of its 21 dots, so it has no first stroke and no last. Drawn with `Kolam` (line 1.2, dots 1.7) | Inline (`full-from-full.tsx`) | Shloka 69 |
+| The four aims of life (puruṣārtha) | Four small things set on a ring round her: dharma a domestic fire (three vermilion `tongue`s with core hearts, `m-lick`) in a square pit seen on the slant (stone, an ember floor, a gold rim), in its own flicker glow; artha a heap of eight gold coins with carve undersides and a glint; kāma two `FlowerArrow`s at 0.62 laid crosswise; mokṣa a gold dome cage on a stone base, its door swung open and its bar gone, and a `Goose` (0.85) flying up from it toward her light | Inline (`full-from-full.tsx`) | Shloka 69 |
+| A cobra, coiled and hooded (bhogin) | Three stacked `--art-hair` coil rings (rx 30, 24, 17) with dashed gold scale lines, a neck rising from the top coil, and a broad hood (44 wide) with two gold-soft spectacle marks, the head on top with two core eyes and a forked `--art-vermilion` tongue (`m-flicker`); the hood sways (`m-sway` about its base with `swingFrom`). Over a gold bowl of milk. Compare Śeṣa's hoods (Shloka 63) | Inline (`full-from-full.tsx`) | Shloka 69 |
+| A child's steps walking up to her (ambikā) | Three small `Footprint`s (0.74, laid flat at 0.62, left, right, left) in `--art-ivory` rice flour with the gold edge, walking up from the front to her vermilion footprints and over the kolam's line | Inline (`full-from-full.tsx`) | Shloka 69 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -2694,6 +2699,44 @@ One entry per finished artwork, in the order they were made.
   plaits lean inward; the hinge is straight with ears sloping into the shell. The script ticks
   were `--art-carve` and vanished by day; they are `--art-musk`. In the chant miniature the
   glowing shell carries it by day and by lamplight, and the plaits read as a small fringe.
+
+### Shloka 69: Fullness, and the plainest of her names
+
+- **Component:** `full-from-full.tsx` (defs prefix `sa69`)
+- **Composition:** seven names round one floor. At the middle her footprints in vermilion, her
+  light just above them, and a child's small steps in rice flour walking up to them. Round them
+  a kolam in one endless line, round twice and closed on itself, and on its ring the four aims: a
+  fire in its square pit, a heap of coins, two flower arrows, and an open cage with its bird
+  flying up toward her. At the right a full pot, tipped on a tall stand, pours into a full pot
+  and both are still brimming; the overflow runs off the foot of the plate. At the left a cobra
+  risen over a bowl of milk, tongue out. Her parasol in the crown, its staff fading behind the
+  card, and at the card's door the gods' emblems in their glows: Brahmā's lotus at the left,
+  Viṣṇu's discus and conch and Indra's thunderbolt at the right, like attendants at either side
+  of a door. The first endless one-line kolam, the first pot pouring into a pot, and the first
+  snake drawn as itself.
+- **Name → part:**
+  - Puruṣārthapradā → `aims`: the fire and its pit, the coins, the arrows, the cage and the goose
+  - Pūrṇā → `pots`: both pots, the stand, the pouring stream and the runnel
+  - Bhoginī → `cobra`: the cobra and its bowl of milk
+  - Bhuvaneśvarī → `parasol`: the parasol and its staff
+  - Ambikā → `steps`: the child's three steps
+  - Anādinidhanā → `kolam`: the endless line and its dots
+  - Haribrahmendrasevitā → `gods`: the lotus, the discus and conch, the thunderbolt and their
+    glows
+  - Intro, *her footprints* → `footprints`; *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the water, the gods' glows), `m-lick` and `m-flicker` (the fire, the
+  cobra's tongue), `m-sway` (the hood and the goose), `m-breathe` (her light); the overflow's drops
+  keep `BrimmingPot`'s `m-twinkle`.
+- **Notes:** Shloka 48's brimming pot was promoted into `BrimmingPot` (the commit before this
+  one) and Shloka 48 renders exactly as before. This title stays on one line and reaches x ≈ 263
+  (315 at 1100px) at y ≈ 74–141, so the parasol sits at x ≈ 254–366 with its rim at 166, under
+  and beside the title's end. In the first render the tipped pot hung in the air and read as a
+  blob; it now sits in the ring of a tall stand whose legs stand behind the lower pot. The goose
+  was on `m-sway` in the same element as its placement, which threw it into the cage; it is now
+  placed by an outer group. The first hood was too narrow beside the coils, and the child's steps
+  at 0.62 vanished by day. In the chant miniature the parasol, the ring and the gold pots carry
+  it; the verse stays clear on phones.
 
 ## Open questions
 

@@ -68,6 +68,7 @@ import { WorldsInABlink } from "./worlds-in-a-blink";
 import { TheHouseholdLamp } from "./the-household-lamp";
 import { VermilionAndPearl } from "./vermilion-and-pearl";
 import { YoginiTemple } from "./yogini-temple";
+import { FullFromFull } from "./full-from-full";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3235,5 +3236,59 @@ export const ARTWORK: Record<string, Artwork> = {
         </>
       ),
     },
+  },
+  "069": {
+    Art: FullFromFull,
+    intro: (Spot) => (
+      <>
+        At the middle of the floor stand <Spot part="footprints">her footprints</Spot> in vermilion, with{" "}
+        <Spot part="her-light">her light</Spot> just above them, and the verse&apos;s seven names are set round
+        them.
+      </>
+    ),
+    entries: [
+      {
+        nama: 291,
+        part: "aims",
+        depicts:
+          "On the kolam sit the four aims of a life: a fire in its square pit for right living, a heap of coins for wealth, two flower arrows for love, and a cage standing open, its bird already away, for freedom. She gives all four.",
+      },
+      {
+        nama: 292,
+        part: "pots",
+        depicts:
+          "A full pot, tipped on its ring, pours into another full pot, and both are still brimming: full from full, and what is left is full. The overflow runs away off the foot of the page.",
+      },
+      {
+        nama: 293,
+        part: "cobra",
+        depicts:
+          "A bhogin is an enjoyer, and also a snake, coiled and hooded. The cobra rises over its bowl of milk with its tongue out, tasting, as she is the one who tastes every experience.",
+      },
+      {
+        nama: 294,
+        part: "parasol",
+        depicts:
+          "Over the whole floor stands her parasol, the sign of a sovereign, its staff running down behind the card.",
+      },
+      {
+        nama: 295,
+        part: "steps",
+        depicts:
+          "Mother, the plainest of her names. Up to her footprints walk a child's small steps in rice flour, the way a child walks to its mother.",
+      },
+      {
+        nama: 296,
+        part: "kolam",
+        depicts:
+          "Round her runs a kolam drawn in one line. It goes round twice, crossing itself between every pair of dots, and closes on itself, so it has no first stroke and no last.",
+      },
+      {
+        nama: 297,
+        part: "gods",
+        depicts:
+          "At the card's door wait the emblems of the gods who serve her: Brahmā's lotus at the left, Viṣṇu's discus and conch and Indra's thunderbolt at the right.",
+      },
+    ],
   },
 };
