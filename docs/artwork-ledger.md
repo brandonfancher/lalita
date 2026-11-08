@@ -449,6 +449,12 @@ second time it is needed.
 | A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | Inline (`loosened-tether.tsx`) | Shloka 78 |
 | Wisps drawn into her light (saṃhṛta) | Three pairs of `taper` strands from the edges (upper left, lower left, upper right) to her light, wavering less as they near her and thinning from 4.4 to nothing, in an `--art-hair` gradient fading to 0 at her (`m-shimmer`). A single smooth strand read as a hill's skyline | Inline (`loosened-tether.tsx`) | Shloka 78 |
 | A wheel set rolling (pravartikā) | The `ChariotWheel` (r 22, at 1.25) turned 8°, on a faint carve road, a dashed track behind it, three musk dust puffs (`m-breathe`), three gold-soft motion arcs off its trailing rim (`m-shimmer`). Compare the broken wheel of becoming (Shloka 48) | Inline (`loosened-tether.tsx`, using `ChariotWheel`) | Shloka 78 |
+| Ground cracked by heat | A broad ember ellipse (rx 238, ry 52, radial ember gradient) under her light, crossed by mud cracks: a jittered net of points, 7 rows by 16 columns with alternate rows offset, joined along each row and every other step between rows by slightly bent edges, clipped to the ellipse. Outside the moonlight the cracks are a wide faint `--art-vermilion` stroke under a fine `--art-saffron` one (`m-ember`); inside it they are `--gold-soft`. Long runs across the ground read as wood grain | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| Moonlight falling from her (candrikā) | A cone from her light to the ground, an `--art-moon` gradient (0.38 to 0.08) with faint `--gold-soft` edges fading downward, nine `--art-core` motes in it (`m-twinkle`), and an ellipse of moonlight where it lands. She is the moon here; no moon is drawn | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| Night lilies open on a pool (kumuda) | A small `--art-moon` pool with a faint hair shade in the moonlit ground, three notched `--leaf` pads, and two white night lilies (at 1.7 and 1.35): nine pointed `--art-ivory` petals fanned upward, gold-edged, round a `--art-turmeric` heart. The flower that opens to the moon | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| An ascetic's empty seat | At 1.6: a kuśa mat (`--leaf` with turmeric stripes and loose blades), a staff leaning on it (turmeric, gold bands), a brass water pot (kamaṇḍalu: round turmeric body, narrow neck, arched gold handle over the top, spout), and a rosary of fourteen ember beads with a vermilion head bead. A first pot with a lid knob read as a teapot | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| The narrow-waisted altar (vedi) | At 1.55, in plan on the ground: broad at both ends and drawn in at the middle, `--art-turmeric` 0.45 with a gold edge and an inner ivory line, three kuśa blades across it and a vermilion dot at the waist | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| Bats flying off | Three `--art-hair` bats with gold-soft edges (wings scalloped, small ears) at 1.5–2.2, tilted outward toward the lower corners (`m-dart`, staggered). A dark wash in the corners read as grey smudges by daylight and was dropped | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3045,6 +3051,30 @@ One entry per finished artwork, in the order they were made.
   and read as the skyline of a hill; they are paired and wavering. The stake, the goat and the
   wheel are drawn at 1.25 about (320, 588). In the chant miniature the creeper and the goat carry
   it.
+
+### Shloka 79: Moonlight on scorched ground, and the dark driven off
+
+- **Component:** `moonlight-on-scorched-ground.tsx` (defs prefix `sa79`)
+- **Composition:** under the card her light, and from it a cone of moonlight falling on a broad
+  stretch of ground cracked by heat. Outside the light the cracks glow like embers; where it lands
+  they are pale and cool. In the moonlit middle a small pool with two white night lilies open. At
+  the left an ascetic's empty seat on its kuśa mat, with his staff, water pot and rosary, facing
+  her. At the right a narrow-waisted altar marked out on the ground. Three bats fly off toward the
+  lower corners.
+- **Name → part:**
+  - Tāpatrayāgnisantaptasamāhlādanacandrikā → `moonlight`: the cone, its motes and the cooled cracks
+  - Taruṇī → `lilies`: the pool and the night lilies
+  - Tāpasārādhyā → `ascetic`: the seat, staff, pot and rosary
+  - Tanumadhyā → `altar`: the vedi
+  - Tamopahā → `bats`: the bats
+  - Intro, *her light* → `her-light`; *cracked with heat* → `ground`
+- **Palette:** no additions.
+- **Motion:** `m-ember` (the hot cracks), `m-twinkle` (the motes, a glint on the pool),
+  `m-breathe` (her light), `m-dart` (the bats).
+- **Notes:** this title wraps, but its second line ends at x ≈ −4 (48 at 1100px), clear of the
+  artwork; the card sits at y ≈ 225–438. The scene lives in one band, y ≈ 440–630, under the card.
+  The cracks were first drawn as long runs across the ground and read as wood grain; they are a
+  net of short edges now. The crown and right column are left empty, as night.
 
 ## Open questions
 
