@@ -1332,6 +1332,47 @@ export function KadambaHead({ head, fill }: { head: ReturnType<typeof kadambaHea
   );
 }
 
+const KADAMBA_BOUGH = "M 660 34 C 620 44 590 62 566 90 C 552 106 544 122 540 140";
+const KADAMBA_BOUGH_TWIG = "M 590 64 C 600 84 604 104 600 124";
+const KADAMBA_BOUGH_LEAVES = [
+  { x: 620, y: 46, deg: 150, l: 40, w: 10 },
+  { x: 596, y: 60, deg: 200, l: 36, w: 9 },
+  { x: 572, y: 84, deg: 120, l: 38, w: 10 },
+  { x: 560, y: 100, deg: 210, l: 34, w: 9 },
+  { x: 546, y: 126, deg: 160, l: 30, w: 8 },
+  { x: 600, y: 112, deg: 60, l: 30, w: 8 },
+].map((l) => ({ ...kadambaLeaf(l.l, l.w), at: `translate(${l.x} ${l.y}) rotate(${l.deg})` }));
+/** Where the bough's three heads hang, in its own coordinates (before any scale about the right edge). */
+export const KADAMBA_BOUGH_HEADS = [
+  { x: 540, y: 152, r: 11 },
+  { x: 600, y: 136, r: 10 },
+  { x: 566, y: 118, r: 8 },
+];
+const KADAMBA_BOUGH_HEAD_SHAPES = KADAMBA_BOUGH_HEADS.map((h, i) => kadambaHead(h, i + 1));
+
+/**
+ * A kadamba bough leaning in from the crown's right edge, its limb ending at
+ * about (540, 140) with three heads hanging from it. Scale it about (640, 0)
+ * to fill the crown; `fill` is the kadamba head gradient.
+ */
+export function KadambaBough({ fill }: { fill: string }) {
+  return (
+    <>
+      <path d={KADAMBA_BOUGH} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={4.6} strokeLinecap="round" />
+      <path d={KADAMBA_BOUGH} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.7} />
+      <path d={KADAMBA_BOUGH_TWIG} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={2.4} strokeLinecap="round" />
+      {KADAMBA_BOUGH_LEAVES.map((l, i) => (
+        <g key={i} transform={l.at}>
+          <KadambaLeaf {...l} />
+        </g>
+      ))}
+      {KADAMBA_BOUGH_HEAD_SHAPES.map((h, i) => (
+        <KadambaHead key={i} head={h} fill={fill} />
+      ))}
+    </>
+  );
+}
+
 /* ── Pearls ────────────────────────────────────────────────────────────── */
 
 /** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */

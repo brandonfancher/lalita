@@ -14,7 +14,7 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { KadambaHead, KadambaLeaf, artIds, hash, kadambaHead, kadambaLeaf, partProps, round } from "./primitives";
+import { KadambaBough, KadambaHead, KadambaLeaf, artIds, hash, kadambaHead, kadambaLeaf, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── Her light, and the four points ────────────────────────────────────── */
@@ -95,17 +95,6 @@ const SPROUTS = [-7, -5, -3, -1, 1, 3, 5, 7].map((x, k) => {
 
 /* ── Kadamba: the bough in the crown, and the spray laid before her ────── */
 
-const BOUGH = "M 660 34 C 620 44 590 62 566 90 C 552 106 544 122 540 140";
-const BOUGH_TWIG = "M 590 64 C 600 84 604 104 600 124";
-const BOUGH_LEAVES = [
-  { x: 620, y: 46, deg: 150, l: 40, w: 10 },
-  { x: 596, y: 60, deg: 200, l: 36, w: 9 },
-  { x: 572, y: 84, deg: 120, l: 38, w: 10 },
-  { x: 560, y: 100, deg: 210, l: 34, w: 9 },
-  { x: 546, y: 126, deg: 160, l: 30, w: 8 },
-  { x: 600, y: 112, deg: 60, l: 30, w: 8 },
-].map((l) => ({ ...kadambaLeaf(l.l, l.w), at: `translate(${l.x} ${l.y}) rotate(${l.deg})` }));
-const BOUGH_HEADS = [kadambaHead({ x: 540, y: 152, r: 11 }, 1), kadambaHead({ x: 600, y: 136, r: 10 }, 2), kadambaHead({ x: 566, y: 118, r: 8 }, 3)];
 const OFFERING = { x: 274, y: 536 };
 const OFFERING_LEAVES = [
   { deg: 186, l: 28, w: 8 },
@@ -180,17 +169,7 @@ export function BulbOfTheWorld({ idPrefix = "sa73", active = null }: ArtProps) {
       {/* The kadamba bough leaning into the crown */}
       <g {...part("kadamba")}>
         <g transform="translate(640 0) scale(1.35) translate(-640 0)">
-          <path d={BOUGH} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={4.6} strokeLinecap="round" />
-          <path d={BOUGH} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.7} />
-          <path d={BOUGH_TWIG} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={2.4} strokeLinecap="round" />
-          {BOUGH_LEAVES.map((l, i) => (
-            <g key={i} transform={l.at}>
-              <KadambaLeaf {...l} />
-            </g>
-          ))}
-          {BOUGH_HEADS.map((h, i) => (
-            <KadambaHead key={i} head={h} fill={url("kadamba")} />
-          ))}
+          <KadambaBough fill={url("kadamba")} />
         </g>
         <g transform={LOWER}>
           {OFFERING_LEAVES.map((l, i) => (
