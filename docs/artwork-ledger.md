@@ -470,6 +470,11 @@ second time it is needed.
 | A red lotus brimming, a bee asleep in it (śṛṅgāra) | `OpenLotus` at 0.9 with its heart brimming: a saffron ellipse of nectar with a core sheen, and lying in it a bee (turmeric body with hair bands, ivory wing, hair head). Sleep marks over the bee were cartoonish and were dropped | Inline (`life-vein.tsx`, using `OpenLotus`) | Shloka 82 |
 | A drum of heaven sounding, and flowers falling (dundubhi, puṣpavṛṣṭi) | In the top of the right column, a barrel drum 72 long tipped −8°: an ember body gold-edged with a turmeric V-lacing and a vermilion band, ivory heads at both ends, two curved turmeric sticks, and two gold-soft sound arcs off each head (`m-shimmer`). Below it sixteen petals (vermilion, saffron, lotus, ivory) scattered down the column on `m-sink` with varied durations and delays. A pair of kettledrums read as bowls of soup with chopsticks | Inline (`life-vein.tsx`) | Shloka 82 |
 | A seat of the goddess in the land (pīṭha) | At the end of a road (a turmeric band fading in from the left), a lumpy stone in a stone-to-musk gradient, gold-edged, daubed nearly all over with `--art-vermilion`, a core dot and sheen, four ivory and saffron `BLOSSOM`s at its foot, and a small vermilion pennant on an ember stick (`m-sway`). A symmetric dome read as a helmet | Inline (`life-vein.tsx`, using `BLOSSOM`) | Shloka 82 |
+| A valley far in the hills (Oḍyāṇa) | Four pairs of ridges coming down to a river from both sides, far to near, each lower and nearer the water: `--leaf` fills from 0.1 to 0.28 with `--gold-soft` crest lines, the whole faded out at its edges by an elliptical radial mask; a winding river from a point behind her light, widening toward the viewer, an `--art-moon` gradient (0.1 to 0.3) with ivory current strokes (`m-shimmer`). Hills cut off square at the sides and foot read as an open book | Inline (`secret-rite.tsx`) | Shloka 83 |
+| A pedestal (pīṭha) | A moulded stone base in three stages, `--art-stone` with gold edges: a broad foot, a narrower waist with a vermilion band, a top slab with a core sheen and a moon-coloured top, on a faint musk shadow. Her light rests on it | Inline (`secret-rite.tsx`) | Shloka 83 |
+| The bindu in the nine triangles (bindumaṇḍala) | In the crown at 2.4: `SRI_TRIANGLES`, the downward ones `--art-vermilion` and the upward ones `--gold`, hair-thin at 0.55, inside a faint gold-soft circle, and the bindu at `SRI_BINDU_V`, a core dot with a vermilion edge in a core-to-vermilion glow (`m-breathe`) | Inline (`secret-rite.tsx`, using `SRI_TRIANGLES`) | Shloka 83 |
+| A shrine's doors, shut (rahoyāga) | Down the right column: two door leaves in an ember-crimson-ember gradient with gold-soft panel lines and gold studs, a gold bolt, in a stone frame under a turmeric lintel with a small arched crest and a vermilion dot, at the top of three stone steps. Lamplight shows only as a core line at the seam and a saffron-core strip under the sill (`m-flicker`) | Inline (`secret-rite.tsx`) | Shloka 83 |
+| A spouted bell-metal vessel pouring (kiṇḍī, tarpaṇa) | A round-bodied vessel on a flared foot with a narrow neck, a lip, and a curved spout from the shoulder, in a gold-turmeric-ember gradient with carve edges, tipped −38°; from the spout's lip a thin moon stream with a dashed core line (`m-shimmer`) falls onto the pedestal's top, a core glint where it lands | Inline (`secret-rite.tsx`) | Shloka 83 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3165,6 +3170,30 @@ One entry per finished artwork, in the order they were made.
   at y ≈ 225–438. Victory could not be a banner again (Shloka 77) or a garland (Shlokas 42 and
   65), so it is the drum and the rain of flowers that greet a victory. Kāma stays a light, never a
   figure, as at Shloka 34.
+
+### Shloka 83: From a seat on the map to the point at the centre, and what is done there in private
+
+- **Component:** `secret-rite.tsx` (defs prefix `sa83`)
+- **Composition:** under the card a green valley far in the hills, ridges coming down to a river
+  from both sides, and on a terrace by the river her light resting on a moulded stone pedestal,
+  a spouted bell-metal vessel beside it pouring a thin stream onto the seat. In the crown at the
+  right the nine triangles of the Śrīcakra's centre, faint, and the bindu bright in them. Down the
+  right column a shrine's doors shut at the top of a short stair, lamplight at the seam and under
+  the sill.
+- **Name → part:**
+  - Oḍyāṇapīṭhanilayā → `seat`: the pedestal
+  - Bindumaṇḍalavāsinī → `bindu`: the nine triangles and the bindu
+  - Rahoyāgakramārādhyā → `doors`: the doors, their frame and stair
+  - Rahastarpaṇatarpitā → `libation`: the vessel and its stream
+  - Intro, *valley far in the hills* → `valley`; *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-shimmer` (the river, the stream), `m-breathe` (her light, the bindu),
+  `m-flicker` (the lamplight at the doors), `m-twinkle` (the glint on the seat).
+- **Notes:** this title wraps, its second line reaching x ≈ 297 (349 at 1100px), so the card sits
+  at y ≈ 225–438. Shloka 82's seat was a vermilion-daubed stone at a road's end; this one is the
+  literal pedestal, so the two seats in consecutive verses do not repeat. The valley is green
+  rather than snowy to keep clear of the Himavat. The private rite is shown by what cannot be
+  seen: the doors are shut.
 
 ## Open questions
 

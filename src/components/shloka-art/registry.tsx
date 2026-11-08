@@ -82,6 +82,7 @@ import { MoonlightOnScorchedGround } from "./moonlight-on-scorched-ground";
 import { OneSavour } from "./one-savour";
 import { LevelsOfSpeech } from "./levels-of-speech";
 import { LifeVein } from "./life-vein";
+import { SecretRite } from "./secret-rite";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3920,6 +3921,41 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "seat",
         depicts:
           "Jālandhara, in the Punjab, is one of the four great seats where the goddess is present in the land itself. At the left, at the end of a road, a stone seat daubed with vermilion, flowers round it and a small red flag.",
+      },
+    ],
+  },
+  "083": {
+    Art: SecretRite,
+    intro: (Spot) => (
+      <>
+        Two dwellings, the farthest and the nearest, and then what is done at them out of sight. Under the card, a{" "}
+        <Spot part="valley">valley far in the hills</Spot>, and <Spot part="her-light">her light</Spot> in it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 379,
+        part: "seat",
+        depicts:
+          "Oḍyāṇa, most likely the Swat valley in the far northwest, is another of the four great seats. A pīṭha is literally a pedestal, the base an image stands on: on a terrace by the river her light rests on one of moulded stone.",
+      },
+      {
+        nama: 380,
+        part: "bindu",
+        depicts:
+          "Her innermost address is the bindu, the point at the centre of the Śrīcakra where the whole figure gathers to a dot. In the crown the nine triangles of the centre, faint, and the bindu bright inside them.",
+      },
+      {
+        nama: 381,
+        part: "doors",
+        depicts:
+          "She is approached through the ordered steps of a rite done in private, not in public assembly. Down the right column a shrine's doors stand shut at the top of a short stair, and lamplight shows only at the seam and under the sill.",
+      },
+      {
+        nama: 382,
+        part: "libation",
+        depicts:
+          "The offering poured for her in private is the one that reaches her and contents her. Beside her seat a spouted bell-metal vessel tips, and a thin stream runs onto the pedestal.",
       },
     ],
   },
