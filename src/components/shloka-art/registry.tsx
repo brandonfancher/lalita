@@ -3824,7 +3824,7 @@ export const ARTWORK: Record<string, Artwork> = {
     ],
     detail: {
       part: "bees",
-      body: <>Each bee carries a dot of its own flower's colour, and each path turns to gold before it reaches the comb.</>,
+      body: <>Each bee carries a dot of its own flower&rsquo;s colour, and each path turns to gold before it reaches the comb.</>,
     },
   },
   "081": {
@@ -3882,7 +3882,7 @@ export const ARTWORK: Record<string, Artwork> = {
     Art: LifeVein,
     intro: (Spot) => (
       <>
-        The verse runs from inside her consort's body out to a town one could walk to. It starts under the card with{" "}
+        The verse runs from inside her consort&rsquo;s body out to a town one could walk to. It starts under the card with{" "}
         <Spot part="her-light">her light</Spot>.
       </>
     ),
