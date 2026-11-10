@@ -98,6 +98,7 @@ import { FireAndTheGarland } from "./fire-and-the-garland";
 import { TooFineToSee } from "./too-fine-to-see";
 import { MotherOfAdepts } from "./mother-of-adepts";
 import { ThroatWheel } from "./throat-wheel";
+import { MilkRiceAndTheRope } from "./milk-rice-and-the-rope";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4730,6 +4731,49 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "one-face",
         depicts:
           "She has one face, and the number is the first of a count: the goddess of each wheel below has one more, up to six. At the left one flame is lit, and under it the rows of two, three, four, five and six wait.",
+      },
+    ],
+  },
+  "099": {
+    Art: MilkRiceAndTheRope,
+    intro: (Spot) => (
+      <>
+        The second half of the throat wheel’s portrait moves outward and back in: from a dish of
+        milk-rice, to <Spot part="skin">the skin</Spot>, to the bound, frightened of her, and then to{" "}
+        <Spot part="amrta">the ring of sixteen powers</Spot> round her and the one at the centre, who is
+        named only at the end.
+      </>
+    ),
+    entries: [
+      {
+        nama: 480,
+        part: "payasa",
+        depicts:
+          "Pāyasa is rice boiled in milk and sweetened, the plainest festival food, and the dish actually cooked and offered when this wheel is worshipped. In front a gold bowl of it, with saffron, cashews and raisins.",
+      },
+      {
+        nama: 481,
+        part: "skin",
+        depicts:
+          "Each goddess of the wheels governs one of the body’s layers, and they run from the outside in: skin, blood, flesh, fat, bone, marrow, and the essence at the crown. At the left the seven are laid one under another, and only the skin, the outermost, is lit.",
+      },
+      {
+        nama: 482,
+        part: "pasu",
+        depicts:
+          "Paśu is the tethered animal and pāśa its rope, and the soul in Śaiva thought is the same as its lord with a rope on it. She is terrible to the bound, and terrible to the binding: at the front right a goat’s tether has just been cut, and the light is at the cut.",
+      },
+      {
+        nama: 483,
+        part: "amrta",
+        depicts:
+          "Sixteen powers sit on the throat wheel’s sixteen petals, headed by Amṛtā, the deathless, named for the nectar; the lists of the rest do not agree, so the hymn says “and the rest”. The first at the top is white as nectar, and in the crown the moon, whose digits are also sixteen.",
+      },
+      {
+        nama: 484,
+        part: "dakini",
+        depicts:
+          "Only at the end is she named: Ḍākinī, and īśvarī says both that she rules the ḍākinīs and that the ruler and the ruled are one. At the centre of the wheel her light, the same pale red.",
       },
     ],
   },
