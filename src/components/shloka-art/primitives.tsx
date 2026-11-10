@@ -3851,3 +3851,35 @@ export function Mouse() {
     </g>
   );
 }
+
+/* ── A palm-leaf book open on its stand ────────────────────────────────── */
+
+/**
+ * A palm-leaf book on a folding X-stand, its feet on y 36, about 84 across: a musk stand edged in
+ * gold over a crimson shelf, ivory leaves with turmeric edges between musk boards, two vermilion
+ * cords, and the top leaf laid open with carve writing and its two holes, the cord trailing to a
+ * gold bead. Filled in turmeric it read as gold bars.
+ */
+export function BookOnStand() {
+  return (
+    <g strokeLinejoin="round">
+      <ellipse cx={0} cy={36} rx={38} ry={4} fill="var(--art-musk)" fillOpacity={0.16} />
+      <path d="M -26 34 L 22 -2 M 26 34 L -22 -2" stroke="var(--art-musk)" strokeWidth={4.4} strokeLinecap="round" />
+      <path d="M -26 34 L 22 -2 M 26 34 L -22 -2" stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.8} strokeLinecap="round" />
+      <path d="M -40 -6 L 40 -6 L 38 0 L -38 0 Z" fill="var(--art-crimson)" stroke="var(--gold)" strokeWidth={0.8} />
+      <path d="M -36 -9 L 36 -9 L 36 -6 L -36 -6 Z" fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M -35 -21 L 35 -21 L 35 -9 L -35 -9 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} />
+      <path d="M -35 -12 L 35 -12 M -35 -15 L 35 -15 M -35 -18 L 35 -18" stroke="var(--art-turmeric)" strokeWidth={0.6} strokeOpacity={0.8} />
+      <path d="M -36 -24 L 36 -24 L 36 -21 L -36 -21 Z" fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M -21 -25 L -21 -8 M -17 -25 L -17 -8 M 17 -25 L 17 -8 M 21 -25 L 21 -8" stroke="var(--art-vermilion)" strokeWidth={1.2} />
+      <g transform="translate(-2 -27) rotate(-4)">
+        <path d="M -38 0 L 38 0 L 38 -6 L -38 -6 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} />
+        <path d="M -33 -3 L -24 -3 M -12 -3 L 10 -3 M 24 -3 L 33 -3" stroke="var(--art-carve)" strokeWidth={0.9} strokeDasharray="2.4 1.2" />
+        <circle cx={-19} cy={-3} r={1.2} fill="var(--art-musk)" />
+        <circle cx={19} cy={-3} r={1.2} fill="var(--art-musk)" />
+      </g>
+      <path d="M 21 -16 C 30 -10 34 -2 30 6 C 28 12 34 16 42 12" stroke="var(--art-vermilion)" strokeWidth={1.1} strokeLinecap="round" />
+      <circle cx={42} cy={12} r={2} fill="var(--gold)" />
+    </g>
+  );
+}
