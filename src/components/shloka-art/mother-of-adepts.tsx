@@ -14,23 +14,7 @@
  * this artwork's entry.
  */
 
-import {
-  Conch,
-  diamond,
-  FiveFaces,
-  FiveFacesDefs,
-  glint,
-  Lamp,
-  MantraClusterDefs,
-  RootMantraRing,
-  Vajra,
-  artIds,
-  partProps,
-  polar,
-  round,
-  taper,
-  through,
-} from "./primitives";
+import { Conch, diamond, FiveFaces, FiveFacesDefs, glint, Lamp, MantraClusterDefs, RootMantraRing, Vajra, artIds, partProps, polar, round, taper, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -50,12 +34,7 @@ const LAMPS = [
   { x: 388, y: 640, s: 1.9 },
 ].map((l, k) => {
   const flame = { x: l.x, y: round(l.y - 12 * l.s) };
-  const from = polar(
-    HER.x,
-    HER.y,
-    80,
-    (Math.atan2(HER.y - flame.y, flame.x - HER.x) * 180) / Math.PI,
-  );
+  const from = polar(HER.x, HER.y, 80, (Math.atan2(HER.y - flame.y, flame.x - HER.x) * 180) / Math.PI);
   return {
     ...l,
     k,
@@ -121,58 +100,26 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
   const part = partProps(active);
 
   return (
-    <svg
-      viewBox="0 0 640 830"
-      fill="none"
-      className="block h-full w-full overflow-visible"
-      aria-hidden="true"
-    >
+    <svg viewBox="0 0 640 830" fill="none" className="block h-full w-full overflow-visible" aria-hidden="true">
       <defs>
         <MantraClusterDefs id={id} />
         <FiveFacesDefs id={id} />
         <radialGradient id={id("her")}>
-          <stop
-            offset="0"
-            style={{ stopColor: "var(--art-core)", stopOpacity: 1 }}
-          />
-          <stop
-            offset="0.35"
-            style={{ stopColor: "var(--art-glow)", stopOpacity: 0.5 }}
-          />
-          <stop
-            offset="1"
-            style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }}
-          />
+          <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 1 }} />
+          <stop offset="0.35" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.5 }} />
+          <stop offset="1" style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }} />
         </radialGradient>
         <radialGradient id={id("siddha")}>
-          <stop
-            offset="0"
-            style={{ stopColor: "var(--art-core)", stopOpacity: 0.85 }}
-          />
-          <stop
-            offset="1"
-            style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }}
-          />
+          <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 0.85 }} />
+          <stop offset="1" style={{ stopColor: "var(--art-glow)", stopOpacity: 0 }} />
         </radialGradient>
         <radialGradient id={id("bolt")}>
-          <stop
-            offset="0"
-            style={{ stopColor: "var(--art-moon)", stopOpacity: 0.55 }}
-          />
-          <stop
-            offset="1"
-            style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }}
-          />
+          <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.55 }} />
+          <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
         </radialGradient>
         <radialGradient id={id("fame")}>
-          <stop
-            offset="0"
-            style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.6 }}
-          />
-          <stop
-            offset="1"
-            style={{ stopColor: "var(--art-ivory)", stopOpacity: 0 }}
-          />
+          <stop offset="0" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0.6 }} />
+          <stop offset="1" style={{ stopColor: "var(--art-ivory)", stopOpacity: 0 }} />
         </radialGradient>
       </defs>
 
@@ -182,20 +129,8 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
           <g key={s.k}>
             <path d={s.trail} fill="var(--gold-soft)" fillOpacity={0.5} />
             <g className={TWINKLE[s.k % 3]}>
-              <circle
-                cx={s.to.x}
-                cy={s.to.y}
-                r={s.r * 4}
-                fill={url("siddha")}
-              />
-              <circle
-                cx={s.to.x}
-                cy={s.to.y}
-                r={s.r}
-                fill="var(--art-core)"
-                stroke="var(--gold)"
-                strokeWidth={0.8}
-              />
+              <circle cx={s.to.x} cy={s.to.y} r={s.r * 4} fill={url("siddha")} />
+              <circle cx={s.to.x} cy={s.to.y} r={s.r} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.8} />
             </g>
           </g>
         ))}
@@ -203,29 +138,10 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
 
       {/* Her light, and round it the fifteen-syllabled vidyā, accomplished from the start */}
       <g {...part("siddhavidya")}>
-        <circle
-          className="m-shimmer"
-          cx={HER.x}
-          cy={HER.y}
-          r={120}
-          fill={url("her")}
-          opacity={0.45}
-        />
-        <circle
-          className="m-breathe"
-          cx={HER.x}
-          cy={HER.y}
-          r={30}
-          fill={url("her")}
-        />
+        <circle className="m-shimmer" cx={HER.x} cy={HER.y} r={120} fill={url("her")} opacity={0.45} />
+        <circle className="m-breathe" cx={HER.x} cy={HER.y} r={30} fill={url("her")} />
         <circle cx={HER.x} cy={HER.y} r={6} fill="var(--art-core)" />
-        <circle
-          cx={HER.x}
-          cy={HER.y}
-          r={10}
-          stroke="var(--gold)"
-          strokeWidth={0.9}
-        />
+        <circle cx={HER.x} cy={HER.y} r={10} stroke="var(--gold)" strokeWidth={0.9} />
 
         <RootMantraRing c={HER} r={RING_R} url={url} />
       </g>
@@ -233,15 +149,7 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
       {/* The adepts' pale lamps at her feet, each lit from her */}
       <g {...part("siddhamata")}>
         {LAMPS.map((l) => (
-          <path
-            key={l.k}
-            d={l.thread}
-            stroke="var(--gold-soft)"
-            strokeWidth={0.7}
-            strokeOpacity={0.7}
-            strokeDasharray="1 3"
-            strokeLinecap="round"
-          />
+          <path key={l.k} d={l.thread} stroke="var(--gold-soft)" strokeWidth={0.7} strokeOpacity={0.7} strokeDasharray="1 3" strokeLinecap="round" />
         ))}
         {LAMPS.map((l) => (
           <g key={l.k} transform={`translate(${l.x} ${l.y}) scale(${l.s})`}>
@@ -252,40 +160,17 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
 
       {/* Indra's thunderbolt, hers, with a diamond at its heart */}
       <g {...part("vajra")}>
-        <circle
-          className="m-breathe"
-          cx={BOLT.x}
-          cy={BOLT.y}
-          r={58}
-          fill={url("bolt")}
-        />
-        <g
-          transform={`translate(${BOLT.x} ${BOLT.y}) rotate(${BOLT.turn}) scale(${BOLT.s})`}
-        >
+        <circle className="m-breathe" cx={BOLT.x} cy={BOLT.y} r={58} fill={url("bolt")} />
+        <g transform={`translate(${BOLT.x} ${BOLT.y}) rotate(${BOLT.turn}) scale(${BOLT.s})`}>
           <g stroke="var(--gold)" strokeLinecap="round" strokeLinejoin="round">
             <Vajra />
           </g>
-          <path
-            d={GEM.girdle}
-            fill="var(--art-moon)"
-            stroke="var(--gold)"
-            strokeWidth={0.5}
-            strokeLinejoin="round"
-          />
-          <path
-            d={GEM.table}
-            fill="var(--art-ivory)"
-            stroke="var(--gold-soft)"
-            strokeWidth={0.3}
-          />
+          <path d={GEM.girdle} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.5} strokeLinejoin="round" />
+          <path d={GEM.table} fill="var(--art-ivory)" stroke="var(--gold-soft)" strokeWidth={0.3} />
           <path d={GEM.facets} stroke="var(--gold-soft)" strokeWidth={0.3} />
           {SPARKS.map((p, k) => (
             <g key={k} transform={`translate(${p.x} ${p.y})`}>
-              <path
-                className={TWINKLE[k]}
-                d={glint(p.s)}
-                fill="var(--art-core)"
-              />
+              <path className={TWINKLE[k]} d={glint(p.s)} fill="var(--art-core)" />
             </g>
           ))}
         </g>
@@ -299,166 +184,65 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
       {/* The six changes along a ground line, seed to dust; she is not among them */}
       <g {...part("ageless")}>
         <g transform={`translate(${ROW.x} ${ROW.y}) scale(${ROW.s})`}>
-          <path
-            d={`M ${STAGES[0] - 16} ${GROUND_Y} L ${STAGES[5] + 22} ${GROUND_Y}`}
-            stroke="var(--gold-soft)"
-            strokeWidth={0.8}
-            strokeOpacity={0.7}
-            strokeLinecap="round"
-          />
+          <path d={`M ${STAGES[0] - 16} ${GROUND_Y} L ${STAGES[5] + 22} ${GROUND_Y}`} stroke="var(--gold-soft)" strokeWidth={0.8} strokeOpacity={0.7} strokeLinecap="round" />
           {/* comes into being: a seed splitting */}
           <g transform={`translate(${STAGES[0]} ${GROUND_Y})`}>
-            <ellipse
-              cy={-3.4}
-              rx={5.4}
-              ry={3.6}
-              fill="var(--art-ember)"
-              stroke="var(--gold)"
-              strokeWidth={0.5}
-            />
-            <path
-              d="M -1 -6.6 C 0 -9 1.6 -10 3 -10.6"
-              stroke="var(--leaf)"
-              strokeWidth={1.2}
-              strokeLinecap="round"
-            />
+            <ellipse cy={-3.4} rx={5.4} ry={3.6} fill="var(--art-ember)" stroke="var(--gold)" strokeWidth={0.5} />
+            <path d="M -1 -6.6 C 0 -9 1.6 -10 3 -10.6" stroke="var(--leaf)" strokeWidth={1.2} strokeLinecap="round" />
           </g>
           {/* exists: a sprout */}
           <g transform={`translate(${STAGES[1]} ${GROUND_Y})`}>
-            <path
-              d="M 0 0 C 0 -6 -1 -10 0 -14"
-              stroke="var(--leaf)"
-              strokeWidth={1.4}
-              strokeLinecap="round"
-            />
-            <path
-              d={LEAF}
-              transform="translate(0 -14) rotate(-150) scale(0.8)"
-              fill="var(--leaf)"
-            />
-            <path
-              d={LEAF}
-              transform="translate(0 -14) rotate(-30) scale(0.8)"
-              fill="var(--leaf)"
-            />
+            <path d="M 0 0 C 0 -6 -1 -10 0 -14" stroke="var(--leaf)" strokeWidth={1.4} strokeLinecap="round" />
+            <path d={LEAF} transform="translate(0 -14) rotate(-150) scale(0.8)" fill="var(--leaf)" />
+            <path d={LEAF} transform="translate(0 -14) rotate(-30) scale(0.8)" fill="var(--leaf)" />
           </g>
           {/* grows: a sapling */}
           <g transform={`translate(${STAGES[2]} ${GROUND_Y})`}>
-            <path
-              d="M 0 0 C 1 -12 -1 -22 0 -34"
-              stroke="var(--leaf)"
-              strokeWidth={1.6}
-              strokeLinecap="round"
-            />
+            <path d="M 0 0 C 1 -12 -1 -22 0 -34" stroke="var(--leaf)" strokeWidth={1.6} strokeLinecap="round" />
             {[
               [-12, -160],
               [-18, -20],
               [-25, -155],
               [-31, -30],
             ].map(([y, deg], k) => (
-              <path
-                key={k}
-                d={LEAF}
-                transform={`translate(0 ${y}) rotate(${deg})`}
-                fill="var(--leaf)"
-              />
+              <path key={k} d={LEAF} transform={`translate(0 ${y}) rotate(${deg})`} fill="var(--leaf)" />
             ))}
           </g>
           {/* alters: in flower */}
           <g transform={`translate(${STAGES[3]} ${GROUND_Y})`}>
-            <path
-              d="M 0 0 C 1 -16 -1 -30 0 -46"
-              stroke="var(--leaf)"
-              strokeWidth={1.8}
-              strokeLinecap="round"
-            />
+            <path d="M 0 0 C 1 -16 -1 -30 0 -46" stroke="var(--leaf)" strokeWidth={1.8} strokeLinecap="round" />
             {[
               [-12, -160],
               [-18, -20],
               [-26, -155],
               [-33, -25],
             ].map(([y, deg], k) => (
-              <path
-                key={k}
-                d={LEAF}
-                transform={`translate(0 ${y}) rotate(${deg})`}
-                fill="var(--leaf)"
-              />
+              <path key={k} d={LEAF} transform={`translate(0 ${y}) rotate(${deg})`} fill="var(--leaf)" />
             ))}
             <g transform="translate(0 -48)">
               {BLOOM.map((deg) => (
-                <path
-                  key={deg}
-                  d={PETAL}
-                  transform={`rotate(${deg})`}
-                  fill="var(--art-vermilion)"
-                  stroke="var(--gold)"
-                  strokeWidth={0.4}
-                />
+                <path key={deg} d={PETAL} transform={`rotate(${deg})`} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.4} />
               ))}
               <circle r={2.4} fill="var(--art-turmeric)" />
             </g>
           </g>
           {/* wastes: bending, its leaves gone dry and a petal falling */}
           <g transform={`translate(${STAGES[4]} ${GROUND_Y})`}>
-            <path
-              d="M 0 0 C 1 -16 4 -30 14 -36 C 18 -38 20 -34 19 -28"
-              stroke="var(--art-turmeric)"
-              strokeWidth={1.6}
-              strokeLinecap="round"
-            />
-            <path
-              d={LEAF}
-              transform="translate(1 -14) rotate(150)"
-              fill="var(--art-turmeric)"
-              fillOpacity={0.8}
-            />
-            <path
-              d={LEAF}
-              transform="translate(3 -24) rotate(40)"
-              fill="var(--art-ember)"
-              fillOpacity={0.8}
-            />
+            <path d="M 0 0 C 1 -16 4 -30 14 -36 C 18 -38 20 -34 19 -28" stroke="var(--art-turmeric)" strokeWidth={1.6} strokeLinecap="round" />
+            <path d={LEAF} transform="translate(1 -14) rotate(150)" fill="var(--art-turmeric)" fillOpacity={0.8} />
+            <path d={LEAF} transform="translate(3 -24) rotate(40)" fill="var(--art-ember)" fillOpacity={0.8} />
             <g transform="translate(19 -27) rotate(180)">
               {BLOOM.slice(0, 3).map((deg) => (
-                <path
-                  key={deg}
-                  d={PETAL}
-                  transform={`rotate(${deg - 72})`}
-                  fill="var(--art-ember)"
-                  stroke="var(--gold)"
-                  strokeWidth={0.3}
-                />
+                <path key={deg} d={PETAL} transform={`rotate(${deg - 72})`} fill="var(--art-ember)" stroke="var(--gold)" strokeWidth={0.3} />
               ))}
             </g>
-            <path
-              d={PETAL}
-              transform="translate(26 -10) rotate(70)"
-              fill="var(--art-ember)"
-              fillOpacity={0.8}
-            />
+            <path d={PETAL} transform="translate(26 -10) rotate(70)" fill="var(--art-ember)" fillOpacity={0.8} />
           </g>
           {/* perishes: the stalk lying where it fell */}
           <g transform={`translate(${STAGES[5]} ${GROUND_Y})`}>
-            <path
-              d="M -4 -1.2 C 6 -3 16 -2.6 24 -1.4"
-              stroke="var(--art-musk)"
-              strokeWidth={1.4}
-              strokeOpacity={0.7}
-              strokeLinecap="round"
-            />
-            <path
-              d={LEAF}
-              transform="translate(6 -2) rotate(-10) scale(0.8)"
-              fill="var(--art-musk)"
-              fillOpacity={0.5}
-            />
-            <path
-              d={PETAL}
-              transform="translate(-8 -1) rotate(80)"
-              fill="var(--art-musk)"
-              fillOpacity={0.4}
-            />
+            <path d="M -4 -1.2 C 6 -3 16 -2.6 24 -1.4" stroke="var(--art-musk)" strokeWidth={1.4} strokeOpacity={0.7} strokeLinecap="round" />
+            <path d={LEAF} transform="translate(6 -2) rotate(-10) scale(0.8)" fill="var(--art-musk)" fillOpacity={0.5} />
+            <path d={PETAL} transform="translate(-8 -1) rotate(80)" fill="var(--art-musk)" fillOpacity={0.4} />
           </g>
         </g>
       </g>
@@ -466,9 +250,7 @@ export function MotherOfAdepts({ idPrefix = "sa97", active = null }: ArtProps) {
       {/* A conch, white as fame, sounding */}
       <g {...part("yasasvini")}>
         <circle cx={CONCH.x} cy={CONCH.y} r={44} fill={url("fame")} />
-        <g
-          transform={`translate(${CONCH.x} ${CONCH.y}) rotate(${CONCH.turn}) scale(${CONCH.s})`}
-        >
+        <g transform={`translate(${CONCH.x} ${CONCH.y}) rotate(${CONCH.turn}) scale(${CONCH.s})`}>
           <Conch />
         </g>
         <g stroke="var(--gold-soft)" strokeWidth={1.1} strokeLinecap="round">
