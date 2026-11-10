@@ -4056,3 +4056,59 @@ export function RootMantraRing({ c, r, url }: { c: Pt; r: number; url: (name: st
     </>
   );
 }
+
+/* ── Her three eyes: moon, fire and sun (trinayanā) ────────────────────── */
+
+/** The glows and the flame gradient the three eyes need: `moon-glow`, `fire-glow`, `eye-fire` and `sun-glow`. */
+export function ThreeEyesDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <linearGradient id={id("eye-fire")} x1={0} y1={0} x2={0} y2={-60} gradientUnits="userSpaceOnUse">
+        <stop offset="0" style={{ stopColor: "var(--art-vermilion)" }} />
+        <stop offset="0.55" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-core)" }} />
+      </linearGradient>
+      <radialGradient id={id("fire-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("moon-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("sun-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+/**
+ * Her three eyes, never as eyes: a full moon (radius 14), an upright tongue of fire 60 tall standing
+ * on `fire`, and a rayed sun (radius 22), all times `s`. Set them on a slant, falling left to right,
+ * so no two are level with a third between or above them. Needs `ThreeEyesDefs`.
+ */
+export function ThreeEyes({ moon, fire, sun, url, s = 1 }: { moon: Pt; fire: Pt; sun: Pt; url: (name: string) => string; s?: number }) {
+  const mr = round(14 * s);
+  const sr = round(22 * s);
+  const rays = Array.from({ length: 12 }, (_, k) => ({ a: polar(sun.x, sun.y, sr + 5 * s, k * 30), b: polar(sun.x, sun.y, sr + (k % 2 ? 10 : 16) * s, k * 30), k }));
+  return (
+    <>
+      <circle cx={moon.x} cy={moon.y} r={round(mr * 2.6)} fill={url("moon-glow")} />
+      <circle cx={moon.x} cy={moon.y} r={mr} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.7} />
+      <circle cx={round(moon.x - 4 * s)} cy={round(moon.y - 3 * s)} r={round(mr * 0.4)} fill="var(--art-ivory)" fillOpacity={0.6} />
+      <circle className="m-breathe" cx={fire.x} cy={round(fire.y - 24 * s)} r={round(46 * s)} fill={url("fire-glow")} />
+      <g transform={`translate(${fire.x} ${fire.y}) scale(${s})`}>
+        <path className="m-flicker" d={tongue(60, 20, 2.4)} fill={url("eye-fire")} stroke="var(--gold)" strokeWidth={0.6} />
+        <path className="m-flicker m-late" d={tongue(34, 9, -1.4)} fill="var(--art-core)" />
+      </g>
+      <circle className="m-breathe" cx={sun.x} cy={sun.y} r={round(sr * 2.6)} fill={url("sun-glow")} />
+      {rays.map((r) => (
+        <path key={r.k} d={`M ${r.a.x} ${r.a.y} L ${r.b.x} ${r.b.y}`} stroke="var(--art-saffron)" strokeWidth={1.4} strokeLinecap="round" />
+      ))}
+      <circle cx={sun.x} cy={sun.y} r={sr} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.8} />
+      <circle cx={sun.x} cy={sun.y} r={round(sr * 0.6)} fill="var(--art-core)" fillOpacity={0.7} />
+    </>
+  );
+}

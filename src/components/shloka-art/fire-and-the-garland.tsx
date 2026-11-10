@@ -12,15 +12,14 @@
  * artwork's entry.
  */
 
-import { artIds, BLOSSOM, partProps, polar, round, Swan, tongue, Wagtail } from "./primitives";
+import { artIds, BLOSSOM, partProps, polar, round, Swan, ThreeEyes, ThreeEyesDefs, tongue, Wagtail } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── Her three eyes: moon, fire and sun ────────────────────────────────── */
 
-const MOON = { x: 246, y: 54, r: 14 };
+const MOON = { x: 246, y: 54 };
 const FIRE = { x: 366, y: 124 };
-const SUN = { x: 486, y: 150, r: 22 };
-const SUN_RAYS = Array.from({ length: 12 }, (_, k) => ({ a: polar(SUN.x, SUN.y, SUN.r + 5, k * 30), b: polar(SUN.x, SUN.y, SUN.r + (k % 2 ? 10 : 16), k * 30), k }));
+const SUN = { x: 486, y: 150 };
 
 /* ── Her light, edged with flame ───────────────────────────────────────── */
 
@@ -87,23 +86,7 @@ export function FireAndTheGarland({ idPrefix = "sa95", active = null }: ArtProps
           <stop offset="0.6" style={{ stopColor: "var(--art-saffron)" }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)" }} />
         </linearGradient>
-        <linearGradient id={id("eye-fire")} x1={0} y1={0} x2={0} y2={-60} gradientUnits="userSpaceOnUse">
-          <stop offset="0" style={{ stopColor: "var(--art-vermilion)" }} />
-          <stop offset="0.55" style={{ stopColor: "var(--art-saffron)" }} />
-          <stop offset="1" style={{ stopColor: "var(--art-core)" }} />
-        </linearGradient>
-        <radialGradient id={id("fire-glow")}>
-          <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
-        </radialGradient>
-        <radialGradient id={id("moon-glow")}>
-          <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
-        </radialGradient>
-        <radialGradient id={id("sun-glow")}>
-          <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0 }} />
-        </radialGradient>
+        <ThreeEyesDefs id={id} />
         <radialGradient id={id("water")}>
           <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
           <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
@@ -118,20 +101,7 @@ export function FireAndTheGarland({ idPrefix = "sa95", active = null }: ArtProps
 
       {/* Her three eyes across the sky: the moon, the fire and the sun */}
       <g {...part("three-eyes")}>
-        <circle cx={MOON.x} cy={MOON.y} r={MOON.r * 2.6} fill={url("moon-glow")} />
-        <circle cx={MOON.x} cy={MOON.y} r={MOON.r} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.7} />
-        <circle cx={MOON.x - 4} cy={MOON.y - 3} r={MOON.r * 0.4} fill="var(--art-ivory)" fillOpacity={0.6} />
-        <circle className="m-breathe" cx={FIRE.x} cy={FIRE.y - 24} r={46} fill={url("fire-glow")} />
-        <g transform={`translate(${FIRE.x} ${FIRE.y})`}>
-          <path className="m-flicker" d={tongue(60, 20, 2.4)} fill={url("eye-fire")} stroke="var(--gold)" strokeWidth={0.6} />
-          <path className="m-flicker m-late" d={tongue(34, 9, -1.4)} fill="var(--art-core)" />
-        </g>
-        <circle className="m-breathe" cx={SUN.x} cy={SUN.y} r={SUN.r * 2.6} fill={url("sun-glow")} />
-        {SUN_RAYS.map((r) => (
-          <path key={r.k} d={`M ${r.a.x} ${r.a.y} L ${r.b.x} ${r.b.y}`} stroke="var(--art-saffron)" strokeWidth={1.4} strokeLinecap="round" />
-        ))}
-        <circle cx={SUN.x} cy={SUN.y} r={SUN.r} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.8} />
-        <circle cx={SUN.x} cy={SUN.y} r={SUN.r * 0.6} fill="var(--art-core)" fillOpacity={0.7} />
+        <ThreeEyes moon={MOON} fire={FIRE} sun={SUN} url={url} />
       </g>
 
       {/* Her light, edged all round with points of flame */}
