@@ -13,7 +13,7 @@
  * artwork's entry.
  */
 
-import { artIds, hash, partProps, round } from "./primitives";
+import { artIds, hash, NightLily, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── Her light, and the moonlight it throws ────────────────────────────── */
@@ -64,7 +64,6 @@ const LILIES = [
   { x: 302, y: 564, s: 1.7 },
   { x: 346, y: 570, s: 1.35 },
 ];
-const LILY_PETALS = [-70, -50, -30, -12, 6, 24, 42, 62, 80].map((deg, i) => ({ deg, l: i % 2 ? 9 : 11 }));
 const PADS = [
   { x: 276, y: 572, r: 12 },
   { x: 362, y: 562, r: 9 },
@@ -188,18 +187,7 @@ export function MoonlightOnScorchedGround({ idPrefix = "sa79", active = null }: 
         ))}
         {LILIES.map((l, i) => (
           <g key={i} transform={`translate(${l.x} ${l.y}) scale(${l.s})`}>
-            <ellipse cy={1} rx={10} ry={2} fill="var(--leaf)" fillOpacity={0.6} />
-            {LILY_PETALS.map((p, k) => (
-              <path
-                key={k}
-                transform={`rotate(${p.deg})`}
-                d={`M 0 0 C -2.6 ${-p.l * 0.4} -2 ${-p.l * 0.8} 0 ${-p.l} C 2 ${-p.l * 0.8} 2.6 ${-p.l * 0.4} 0 0 Z`}
-                fill="var(--art-ivory)"
-                stroke="var(--gold)"
-                strokeWidth={0.4}
-              />
-            ))}
-            <circle cy={-2} r={2.4} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.4} />
+            <NightLily />
           </g>
         ))}
         <circle className="m-twinkle" cx={POOL.x + 24} cy={POOL.y - 1} r={1} fill="var(--art-core)" />

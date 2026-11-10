@@ -3575,3 +3575,31 @@ export function Goat({ saddle = true, children }: { saddle?: boolean; children?:
     </>
   );
 }
+
+/* ── A night lily ──────────────────────────────────────────────────────── */
+
+const LILY_PETALS = [-70, -50, -30, -12, 6, 24, 42, 62, 80].map((deg, i) => ({ deg, l: i % 2 ? 9 : 11 }));
+
+/**
+ * A white night lily (kumuda) open on the water, about 24 wide at s = 1, its base on the origin:
+ * nine pointed ivory petals fanned upward, gold-edged, round a turmeric heart, on a leaf-green
+ * shadow. The flower that opens to the moon.
+ */
+export function NightLily() {
+  return (
+    <>
+      <ellipse cy={1} rx={10} ry={2} fill="var(--leaf)" fillOpacity={0.6} />
+      {LILY_PETALS.map((p, k) => (
+        <path
+          key={k}
+          transform={`rotate(${p.deg})`}
+          d={`M 0 0 C -2.6 ${-p.l * 0.4} -2 ${-p.l * 0.8} 0 ${-p.l} C 2 ${-p.l * 0.8} 2.6 ${-p.l * 0.4} 0 0 Z`}
+          fill="var(--art-ivory)"
+          stroke="var(--gold)"
+          strokeWidth={0.4}
+        />
+      ))}
+      <circle cy={-2} r={2.4} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.4} />
+    </>
+  );
+}
