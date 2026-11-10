@@ -547,6 +547,10 @@ second time it is needed.
 | Her ornaments on a tray (śobhanā) | A gold tray seen at a slant with a turmeric well, on it a loop of twenty-two `Pearl`s and a ruby pendant (`Ruby`) on a gold mount, with a smaller ruby loose | Inline (`too-fine-to-see.tsx`, with `Pearl` and `Ruby`) | Shloka 96 |
 | The dark throat (kālakaṇṭha), as a pot's | A pot's neck is its kaṇṭha: a round gold pot edged in carve, its neck and the water in its mouth `--art-hair` (the poison's dark blue), a dark drop over it edged in moon (`m-ember`), in a faint hair glow | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
 | The churned sea (kṣobha) | Five open rings of a whirl seen at a slant (rx 22 to 94, a quarter as deep), each a 3.2 `--art-ivory` foam line under a gold one and open where the next begins, rocking on `m-sway` by turns round its centre, over a gold-soft to moon glow, with an ivory point at the eye | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The six changes (ṣaḍ bhāvavikārāḥ, Nirukta 1.2) | Six stages of one plant along a `--gold-soft` ground line, drawn at 1.35: a splitting `--art-ember` seed with a leaf-green shoot (comes into being), a sprout with two leaves (exists), a four-leaved sapling (grows), a taller plant with a five-petalled vermilion flower and a turmeric heart (alters), a stalk bent over in `--art-turmeric` with dry ember leaves and a petal falling (wastes), and the stalk lying on the ground in `--art-musk` (perishes). Her light is kept out of the row | Inline (`mother-of-adepts.tsx`) | Shloka 97 |
+| The sky-going siddhas (khecara) | Five small `--art-core` lights with gold rims in soft core glows (`m-twinkle`, three groups), each at the head of a `--gold-soft` trail that tapers away behind it, coming in from both sides of the crown and converging over her. Kept in the strip above a one-line title | Inline (`mother-of-adepts.tsx`) | Shloka 97 |
+| The adepts' lamps, kindled from her | Five seers' `Lamp`s (pale flames) at about 2 in a shallow arc at her feet, each joined to her light by a dotted `--gold-soft` thread from 80 units out to just above its flame | Inline (`mother-of-adepts.tsx`, with `Lamp`) | Shloka 97 |
+| The thunderbolt with a diamond at its heart | `Vajra` at 2.7, turned 18°, in a soft `--art-moon` glow, a face-on `diamond` (radius 6.4) over its grip, and `--art-core` `glint`s at its upper and lower points and beside the gem (`m-twinkle`). Both senses of vajra at once | Inline (`mother-of-adepts.tsx`, with `Vajra` and `diamond`) | Shloka 97 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3596,6 +3600,15 @@ One entry per finished artwork, in the order they were made.
 - **Notes:** this title wraps, its first line reaching x ≈ 152 (204 at 1100px), so the card sits
   at y ≈ 225–438. The whirl first sat so low and pale that the ground's fade took it; it was raised
   and given ivory foam under its gold.
+
+### Shloka 97: Mistress of the thunderbolt, mother of the adepts
+
+- Component: `MotherOfAdepts` in `mother-of-adepts.tsx` (defs prefix `sa97`).
+- Composition: under the card her light at (320, 524) inside the fifteen syllables of the root mantra (`RootMantraRing`, radius 52), and at her feet five seers' lamps, each on a dotted thread from her. Five sky-going siddhas come in from both sides of the crown, above the title. At the right the thunderbolt with a diamond at its heart; at the left the five faces (radius 36) with Vāmadeva brought forward. In front at the left the six changes of a living thing along a ground line, seed to dust, and at the right a conch sounding in an ivory glow.
+- Name → part: Vajreśvarī → `vajra`; Vāmadevī → `vamadevi` (vāma is both lovely and left, so the faces stand at the left); Vayo'vasthāvivarjitā → `ageless` (Yāska's six changes; her light is not in the row); Siddheśvarī → `siddhesvari` (the siddhas as sky-goers, the ruler they answer to); Siddhavidyā → `siddhavidya` (her light and the fifteen-syllabled vidyā, which the manuals exempt from the tests); Siddhamātā → `siddhamata` (the adepts' lamps, each lit from her); Yaśasvinī → `yasasvini` (fame is white in the poets' convention). Intro: `siddhavidya`, `siddhamata`, `ageless`.
+- Palette: her light `--art-core` through `--art-glow`; the mantra in its three cluster glows; siddhas core and gold-soft; the vajra gold with a moon and ivory gem; the faces in their own colours; the plant leaf, vermilion, turmeric, ember and musk; the conch ivory.
+- Motion: her glow `m-shimmer` and `m-breathe`; the syllables and siddhas `m-twinkle` (three groups), the ह्रीं `m-breathe`; the lamps `m-flicker`; the vajra glow `m-breathe`, its glints `m-twinkle`; the sound arcs `m-twinkle`.
+- Notes: promotes the five faces (`FiveFaces`, from Shloka 61, with a new `stress`), the conch (`Conch`, from Shloka 52) and the root-mantra ring (`RootMantraRing` and `MantraClusterDefs`, from Shloka 36). The siddhas first came down through the crown and crossed the one-line title; they now converge in the strip above it, y ≤ 58. The title stays on one line and reaches x ≈ 455 (507 at 1100px) at y ≈ 74–141.
 
 ## Open questions
 

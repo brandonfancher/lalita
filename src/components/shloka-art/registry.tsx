@@ -96,6 +96,7 @@ import { KulaHollow } from "./kula-hollow";
 import { MotherOfTwoSons } from "./mother-of-two-sons";
 import { FireAndTheGarland } from "./fire-and-the-garland";
 import { TooFineToSee } from "./too-fine-to-see";
+import { MotherOfAdepts } from "./mother-of-adepts";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4629,6 +4630,62 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "subtle",
         depicts:
           "Her form is subtle, too fine for the senses: the mantra is a body of hers no less than the face the verse has built. At the top of the crown is a single point of light, almost too fine to see.",
+      },
+    ],
+  },
+  "097": {
+    Art: MotherOfAdepts,
+    intro: (Spot) => (
+      <>
+        Seven names run from what she is called, through what she is not, to what she is for those who
+        practise. Her light stands in <Spot part="siddhavidya">the vidyā already accomplished</Spot>, the
+        adepts’ lamps are <Spot part="siddhamata">kindled from her</Spot>, and the one thing she is not
+        is drawn along the front: <Spot part="ageless">the six changes</Spot> every living thing goes
+        through, with her light nowhere in the row.
+      </>
+    ),
+    entries: [
+      {
+        nama: 468,
+        part: "vajra",
+        depicts:
+          "Vajra is the hard thing, the diamond and Indra’s weapon, and both senses are alive in the name. At the right the thunderbolt stands, hers rather than his, with a diamond set at its heart.",
+      },
+      {
+        nama: 469,
+        part: "vamadevi",
+        depicts:
+          "Vāmadeva is the second of Śiva’s five faces, and vāma means both lovely and left. At the left the five faces burn as five flames, Vāmadeva’s brought forward.",
+      },
+      {
+        nama: 470,
+        part: "ageless",
+        depicts:
+          "The grammarians counted six changes everything in time goes through: it comes into being, exists, grows, alters, wastes and perishes. Along the front a plant goes through all six, seed to dust, and her light is not in the row.",
+      },
+      {
+        nama: 471,
+        part: "siddhesvari",
+        depicts:
+          "The siddhas are also beings who move through the sky. Down out of the crown they come to her, the ruler they answer to.",
+      },
+      {
+        nama: 472,
+        part: "siddhavidya",
+        depicts:
+          "A vidyā is a goddess’s mantra, and hers is exempt from the tests a mantra is put to: it works from the day it is received. Round her light runs the fifteen-syllabled vidyā whole.",
+      },
+      {
+        nama: 473,
+        part: "siddhamata",
+        depicts:
+          "She is the adepts’ mother, the source they came from, so their powers are neither their own nor a threat to her. At her feet their pale lamps burn, each lit from her by a thread of light.",
+      },
+      {
+        nama: 474,
+        part: "yasasvini",
+        depicts:
+          "Renowned: the only name here that says how she looks from outside. Fame in this poetry is white, and at the front right a white conch sounds.",
       },
     ],
   },
