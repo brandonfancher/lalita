@@ -99,6 +99,7 @@ import { TooFineToSee } from "./too-fine-to-see";
 import { MotherOfAdepts } from "./mother-of-adepts";
 import { ThroatWheel } from "./throat-wheel";
 import { MilkRiceAndTheRope } from "./milk-rice-and-the-rope";
+import { UnstruckHeart } from "./unstruck-heart";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4774,6 +4775,53 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "dakini",
         depicts:
           "Only at the end is she named: Ḍākinī, and īśvarī says both that she rules the ḍākinīs and that the ruler and the ruled are one. At the centre of the wheel her light, the same pale red.",
+      },
+    ],
+  },
+  "100": {
+    Art: UnstruckHeart,
+    intro: (Spot) => (
+      <>
+        The throat’s template runs again at the heart, every item in the same order with the values
+        changed. Her seat is named for <Spot part="anahata">a sound that nothing strikes</Spot>, and she
+        holds <Spot part="rosary">the same sound beaded and counted</Spot>: the place is not a gentle
+        one, and what guards it has <Spot part="fangs">teeth</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 485,
+        part: "anahata",
+        depicts:
+          "Anāhata, unstruck: ordinary sound is made by two things meeting, and this is the sound made by nothing striking anything, which does not begin or end. The heart’s wheel has twelve red petals bearing the consonants ka to ṭha round the sign of air, and round it rings that nothing set going.",
+      },
+      {
+        nama: 486,
+        part: "dark",
+        depicts:
+          "Śyāmā is every dark colour, the blue-black of a raincloud, and ābhā a sheen: her radiance itself is dark. In the heart of the wheel her light is a deep blue glow, and its sheen a single glint.",
+      },
+      {
+        nama: 487,
+        part: "two-faces",
+        depicts: "She has two faces, one more than the goddess of the throat. At the left the count goes on, its second row lit.",
+      },
+      {
+        nama: 488,
+        part: "fangs",
+        depicts:
+          "Daṃṣṭrā is the jutting tooth, a boar’s tusk or a snake’s fang, and hers blaze, catching the light. In the crown two tusks are crossed and bound with gold, light at their points.",
+      },
+      {
+        nama: 489,
+        part: "rosary",
+        depicts:
+          "Akṣa is a bead and also a letter, and the tradition reads her rosary as the whole alphabet strung in order. Round the wheel of unstruck sound she holds sound in its struck and countable form: fifty beads, अ to क्ष, told clockwise from the meru. And the rest: at the right, fainter, a trident and its drum.",
+      },
+      {
+        nama: 490,
+        part: "blood",
+        depicts: "Blood is the second of the body’s layers, from the skin in. At the right the seven are laid one under another, and now the blood is lit.",
       },
     ],
   },
