@@ -501,6 +501,11 @@ second time it is needed.
 | Śiva's offering at her feet | Her `Footprint`s at 1.5, and laid beside them, never under them, his crescent (`litPart(5, 13)` in `--art-moon`, gold-edged, tipped on its side) to the left and two trifoliate `--leaf` bilva leaves to the right. A crescent under the feet with a leaf each side read as a smiling face | Inline (`sunlit-heart.tsx`, with `Footprint`) | Shloka 88 |
 | Her light as the liṅga (Śivamūrti) | A round-topped column 34 wide and 58 tall filled with a saffron-core-glow gradient, gold-edged, on a stone pīṭha with its spout to the right, a carve-shaded basin and a lower stone drum, all gold-edged, in a glow (`m-breathe`). No marks on the column | Inline (`sunlit-heart.tsx`) | Shloka 88 |
 | A threshold made auspicious | A stone sill about 92 wide, a turmeric band along its top and a row of alternating kumkum and turmeric dots on its face, with a `FullPot` standing on it | Inline (`sunlit-heart.tsx`, with `FullPot`) | Shloka 88 |
+| Her light as the pillar without end (aprameyā, after the liṅgodbhava) | A column 30 wide from y 24 to 790, a glow-saffron-core-saffron-glow gradient across it with fine gold edges, in a 104-wide breathing glow (`m-breathe`), the whole faded out at both ends by a mask. Brahmā's `Goose` at 2.2 flying up beside it (`m-sway` on an inner group: a motion class on the group that carries the `transform` attribute replaces the placement and the goose vanished); Viṣṇu's `Boar` at 0.9 tipped 30° nose-down at its foot, ember clods thrown up behind it, a musk hollow where it digs | Inline (`pillar-of-light.tsx`, with `Goose` and `Boar`) | Shloka 89 |
+| Two lines of regard, his and hers | Śiva's crescent (`litPart(4, 13)` in `--art-moon`, gold-edged, horns up and tipped 20°) and between it and her light two dotted arcs (`strokeDasharray` 1 5, round caps): his in `--gold` going over, hers in `--art-vermilion` coming back under it (`m-shimmer` out of step). The crescent in a pale disc read as a smiling face | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| The sun and moon gone pale (Kaṭha 5.15) | A sun (r 26, with its inner ring) and a moon (r 15) as faint `--art-hair` discs with gold-soft rims, each lit only on the side that faces her by a core gradient, and three pale hair `glint` stars | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| Words turning back with the mind (Taittirīya 2.4.1) | Two hooked lines rising toward her and curling back before her glow: the eleven vowels अ to औ in `--font-tiro`, gold, smaller and fainter as they climb; and above them fifteen small gold-soft rings of thought, shrinking, on a faint tapering thread (some `m-twinkle`) | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| The seers' lamps raised, and a handful of flowers | Three `Lamp`s at 2.2 with the seers' pale flames in a row; at the pillar's foot seven small flowers of five round petals (vermilion, ivory, saffron, lotus) round turmeric hearts. Pointed `BLOSSOM` petals read as stars at this size | Inline (`pillar-of-light.tsx`, with `Lamp`) | Shloka 89 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3346,6 +3351,31 @@ One entry per finished artwork, in the order they were made.
   at y ≈ 225–438. Shloka 41's full pot was promoted to `FullPot` here. The sun first stood at
   x 478, where 1100px cut its rays. The rays were first a thin bundle that in the miniature read
   as a pole; they are wider apart now and leave out the stretch the card covers.
+
+### Shloka 89: Approved by the learned, and out of reach of speech
+
+- **Component:** `pillar-of-light.tsx` (defs prefix `sa89`)
+- **Composition:** her light as a pillar through the whole picture, fading out above and below;
+  the goose flies up beside it under the card and the boar digs at its foot. At the right under
+  the card Śiva's crescent and two dotted lines of regard, his and hers. At the left a pale sun and
+  moon lit only on her side; at the right letters and thought rising and curling back. In front the
+  seers' lamps and a handful of flowers at the pillar's foot.
+- **Name → part:**
+  - Śivapriyā → `dear`: the crescent and the gold line
+  - Śivaparā → `intent`: the vermilion line
+  - Śiṣṭeṣṭā → `learned`: the three lamps
+  - Śiṣṭapūjitā → `worship`: the flowers
+  - Aprameyā → `pillar`: the pillar, its glow, the goose, the boar, its hollow and clods
+  - Svaprakāśā → `self-lit`: the sun, the moon and the stars
+  - Manovācāmagocarā → `beyond-words`: the letters, the rings of thought and their thread
+  - Intro, *a pillar* → `pillar`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the pillar's glow), `m-sway` (the goose), `m-shimmer` (the lines of
+  regard), `m-twinkle` (the rings of thought).
+- **Notes:** this title stays on one line at 1440 and reaches x ≈ 490, so the card sits at
+  y ≈ 184–396 and the crown is all but closed; the goose and the crescent, first drawn in the
+  crown, came down under the card. The liṅgodbhava story is told of Śiva's pillar; here, for
+  aprameyā, the pillar is her light.
 
 ## Open questions
 

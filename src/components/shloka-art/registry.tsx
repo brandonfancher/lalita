@@ -88,6 +88,7 @@ import { HalfOfHisBody } from "./half-of-his-body";
 import { RootNature } from "./root-nature";
 import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
 import { SunlitHeart } from "./sunlit-heart";
+import { PillarOfLight } from "./pillar-of-light";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4171,6 +4172,58 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "auspicious",
         depicts:
           "Here śiva is the plain word again, auspicious, and she is the one who makes things so. At the front right a full pot is set on a threshold freshly marked with turmeric and kumkum.",
+      },
+    ],
+  },
+  "089": {
+    Art: PillarOfLight,
+    intro: (Spot) => (
+      <>
+        Her light stands through the whole picture as <Spot part="pillar">a pillar</Spot>, and fades out above and below without an end.
+      </>
+    ),
+    entries: [
+      {
+        nama: 409,
+        part: "dear",
+        depicts:
+          "She is dear to Śiva. At the right, under the card, his crescent, and from it a dotted gold line of his regard goes over to her pillar.",
+      },
+      {
+        nama: 410,
+        part: "intent",
+        depicts:
+          "And she is intent on him, para, with Śiva as her highest. Under his line a vermilion one goes back from her to his crescent.",
+      },
+      {
+        nama: 411,
+        part: "learned",
+        depicts:
+          "Śiṣṭa are the instructed, the people who keep the tradition and are its measure of right conduct, and she is the one they love. At the lower left the seers' lamps, with their pale flames, are raised to her.",
+      },
+      {
+        nama: 412,
+        part: "worship",
+        depicts:
+          "The same people worship her. At the pillar's foot a handful of flowers has been offered: red, white, saffron and pink.",
+      },
+      {
+        nama: 413,
+        part: "pillar",
+        depicts:
+          "Aprameyā is past every measure. When Brahmā and Viṣṇu quarrelled over who was greater, a pillar of fire stood up between them; Brahmā flew up as a goose to find its top and Viṣṇu dug down as a boar to find its foot, and neither did. Here her light is the pillar: the goose flies up beside it, the boar digs at its foot, and it fades out past both.",
+      },
+      {
+        nama: 414,
+        part: "self-lit",
+        depicts:
+          "She shines by her own light. The Kaṭha Upaniṣad says that there the sun does not shine, nor the moon and stars: it shines, and everything shines after it. At the left a sun and a moon have gone pale, lit only on the side that faces her, with pale stars about them.",
+      },
+      {
+        nama: 415,
+        part: "beyond-words",
+        depicts:
+          "She is out of the range of mind and speech; in the Taittirīya's phrase, words turn back from her together with the mind, not reaching her. At the right a line of letters and a line of dotted thought rise toward her and curl back before they arrive.",
       },
     ],
   },
