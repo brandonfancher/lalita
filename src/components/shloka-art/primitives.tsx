@@ -4247,3 +4247,12 @@ export function BodyLayers({ x0, x1, y0, h = 16, lit, glow }: { x0: number; x1: 
     </>
   );
 }
+
+/* ── The fifty letters (varṇamālā) ─────────────────────────────────────── */
+
+/** The fifty letters, अ to क्ष: sixteen vowels, the thirty-three consonants and क्ष. */
+export const VARNAMALA = [
+  ..."अ आ इ ई उ ऊ ऋ ॠ ऌ ॡ ए ऐ ओ औ अं अः".split(" "),
+  ..."क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म".split(" "),
+  ..."य र ल व श ष स ह क्ष".split(" "),
+];

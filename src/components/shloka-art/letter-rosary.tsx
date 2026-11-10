@@ -13,7 +13,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { Conch, Goose, Bangle, artIds, along, glint, hash, partProps, polar, round, through } from "./primitives";
+import { VARNAMALA, Conch, Goose, Bangle, artIds, along, glint, hash, partProps, polar, round, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -24,12 +24,6 @@ const HER = { x: 320, y: 468 };
 
 /* ── The rosary of letters (akṣamālā) ─────────────────────────────────── */
 
-/** The fifty letters, अ to क्ष: sixteen vowels, the thirty-three consonants and क्ष. */
-const LETTERS = [
-  ..."अ आ इ ई उ ऊ ऋ ॠ ऌ ॡ ए ऐ ओ औ अं अः".split(" "),
-  ..."क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म".split(" "),
-  ..."य र ल व श ष स ह क्ष".split(" "),
-];
 const MERU = { x: 320, y: 626, r: 12.5 };
 const BEAD_R = 10.5;
 /** The loop's left half, from the meru up and over to the top of the crown. */
@@ -57,7 +51,7 @@ const HALF_LENGTH = along(HALF, 0.5).at(-1)!.s;
 const GAP = 25;
 const STEP = (HALF_LENGTH - GAP) / 24.5;
 const LEFT_BEADS = along(HALF, STEP, GAP).slice(0, 25);
-const BEADS = [...LEFT_BEADS, ...[...LEFT_BEADS].reverse().map((b) => ({ ...b, x: round(640 - b.x) }))].map((b, k) => ({ x: b.x, y: b.y, letter: LETTERS[k] }));
+const BEADS = [...LEFT_BEADS, ...[...LEFT_BEADS].reverse().map((b) => ({ ...b, x: round(640 - b.x) }))].map((b, k) => ({ x: b.x, y: b.y, letter: VARNAMALA[k] }));
 const LOOP = (() => {
   const left = HALF.map((p) => `${p.x} ${p.y}`);
   const right = [...HALF].reverse().map((p) => `${round(640 - p.x)} ${p.y}`);
