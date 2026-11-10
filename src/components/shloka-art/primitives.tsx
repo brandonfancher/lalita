@@ -4208,3 +4208,42 @@ export function FaceCount({ x, y0, lit, glow, dy = 46, gap = 10 }: { x: number; 
     </>
   );
 }
+
+/* ── The seven layers of the body (dhātu) ──────────────────────────────── */
+
+/** What each layer is lit in: skin, blood, flesh, fat, bone, marrow, essence. */
+const TISSUE = ["var(--art-turmeric)", "var(--art-vermilion)", "var(--lotus)", "var(--art-moon)", "var(--art-ivory)", "var(--gold-soft)", "var(--art-core)"];
+
+/**
+ * The seven layers of the body from the skin in, a column from `x0` to `x1` of bands `h` deep from
+ * `y0` under slightly uneven boundaries, each tinted faintly in its own colour. Layer `lit` (0 is
+ * the skin) is the wheel's own, at 0.85 with a full gold edge, a core line along its top and
+ * `glow` behind it.
+ */
+export function BodyLayers({ x0, x1, y0, h = 16, lit, glow }: { x0: number; x1: number; y0: number; h?: number; lit: number; glow: string }) {
+  const edge = (y: number, phase: number) => Array.from({ length: 7 }, (_, i) => ({ x: round(x0 + ((x1 - x0) * i) / 6), y: round(y + Math.sin(i * 1.3 + phase) * 1.6) }));
+  const line = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
+  const layers = TISSUE.map((fill, k) => {
+    const upper = edge(y0 + k * h, k);
+    const lower = edge(y0 + (k + 1) * h, k + 1).reverse();
+    return { k, fill, upper: line(upper), d: `${line([...upper, ...lower])} Z` };
+  });
+  return (
+    <>
+      <ellipse cx={round((x0 + x1) / 2)} cy={y0 + lit * h} rx={round((x1 - x0) * 0.8)} ry={16} fill={glow} />
+      {layers.map((l) => (
+        <path
+          key={l.k}
+          d={l.d}
+          fill={l.fill}
+          fillOpacity={l.k === lit ? 0.85 : 0.16}
+          stroke="var(--gold)"
+          strokeWidth={l.k === lit ? 0.9 : 0.5}
+          strokeOpacity={l.k === lit ? 1 : 0.45}
+          strokeLinejoin="round"
+        />
+      ))}
+      <path d={layers[lit].upper} stroke="var(--art-core)" strokeWidth={1.6} strokeLinecap="round" />
+    </>
+  );
+}

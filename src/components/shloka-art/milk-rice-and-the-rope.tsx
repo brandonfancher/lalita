@@ -13,7 +13,7 @@
  * next to this artwork's entry.
  */
 
-import { CakraWheel, Flash, Goat, artIds, partProps, polar, round } from "./primitives";
+import { BodyLayers, CakraWheel, Flash, Goat, artIds, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -29,21 +29,7 @@ const MOON = { x: 488, y: 100, r: 22 };
 
 /* ── The seven layers, from the skin in ────────────────────────────────── */
 
-const STRATA = { x0: 132, x1: 196, y0: 470, h: 16 };
-/** What each layer will be lit in when its wheel comes: skin, blood, flesh, fat, bone, marrow, essence. */
-const TISSUE = ["var(--art-turmeric)", "var(--art-vermilion)", "var(--lotus)", "var(--art-moon)", "var(--art-ivory)", "var(--gold-soft)", "var(--art-core)"];
-/** A boundary between layers, a little uneven, left to right. */
-const edge = (y: number, phase: number) =>
-  Array.from({ length: 7 }, (_, i) => ({
-    x: round(STRATA.x0 + ((STRATA.x1 - STRATA.x0) * i) / 6),
-    y: round(y + Math.sin(i * 1.3 + phase) * 1.6),
-  }));
-const line = (ps: { x: number; y: number }[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
-const LAYERS = Array.from({ length: 7 }, (_, k) => {
-  const upper = edge(STRATA.y0 + k * STRATA.h, k);
-  const lower = edge(STRATA.y0 + (k + 1) * STRATA.h, k + 1).reverse();
-  return { k, upper: line(upper), d: `${line([...upper, ...lower])} Z` };
-});
+const STRATA = { x0: 132, x1: 196, y0: 470 };
 
 /* ── The bowl of milk-rice ─────────────────────────────────────────────── */
 
@@ -143,20 +129,7 @@ export function MilkRiceAndTheRope({ idPrefix = "sa99", active = null }: ArtProp
 
       {/* The seven layers of the body from the skin in, the skin alone lit */}
       <g {...part("skin")}>
-        <ellipse cx={(STRATA.x0 + STRATA.x1) / 2} cy={STRATA.y0} rx={52} ry={16} fill={url("skin")} />
-        {LAYERS.map((l) => (
-          <path
-            key={l.k}
-            d={l.d}
-            fill={TISSUE[l.k]}
-            fillOpacity={l.k === 0 ? 0.85 : 0.16}
-            stroke="var(--gold)"
-            strokeWidth={l.k === 0 ? 0.9 : 0.5}
-            strokeOpacity={l.k === 0 ? 1 : 0.45}
-            strokeLinejoin="round"
-          />
-        ))}
-        <path d={LAYERS[0].upper} stroke="var(--art-core)" strokeWidth={1.6} strokeLinecap="round" />
+        <BodyLayers x0={STRATA.x0} x1={STRATA.x1} y0={STRATA.y0} lit={0} glow={url("skin")} />
       </g>
 
       {/* A bowl of milk-rice, the offering she likes */}
