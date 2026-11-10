@@ -491,6 +491,10 @@ second time it is needed.
 | The unborn she-goat of three colours (ajā, Śvetāśvatara 4.5) | `Goat` without its saddle at 1.5, with an `--art-vermilion` patch on the forequarters (`GOAT_FORE`) and an `--art-hair` patch on the haunch (`GOAT_HIND`), the ivory coat between: red, white and black for the three guṇas. Two kids like her at 0.8 and 0.74 beside her | Inline (`root-nature.tsx`, with `Goat`) | Shloka 86 |
 | The fig and the seed broken open (Chāndogya 6.12) | Two halves of a banyan fig cut lengthwise, pear-shaped, an ember-crimson skin edged in gold, ivory flesh with a `--lotus` blush and thirty turmeric seed dots, a leaf stalk, tipped apart; beside them one seed in two turmeric D-shaped halves, hollow ivory inside, tipped open on their lower ends with a faint `--art-core` glow between them and nothing else (`m-breathe`). Two whole ellipse halves side by side read as spectacles | Inline (`root-nature.tsx`) | Shloka 86 |
 | A lotus, seen above and below the water (vyaktāvyakta) | A red `OpenLotus` at 0.92 and a leaf pad on the surface of a cut-away pool: a gold waterline, a faint `--leaf` water fading down and out at the sides, dashed gold-soft ripple lines, a musk mud bed; under the surface, at 0.6, the stalks in `--leaf` and the rhizome as four ivory segments edged in turmeric with turmeric nodes and rootlets. A grey `--art-moon` water read as a box, and loose ellipses for the root as pebbles | Inline (`root-nature.tsx`) | Shloka 86 |
+| Smoke on the hill, the fire unseen (vyāpti, the logicians' inference) | A hill at the crown's right, peak (452, 112), a `--leaf` fill fading downward with a gold ridge line fading out, a lower foothill over it; a faint saffron-ember glow just at the summit (`m-breathe`), and one thread of smoke going up from it, a wide musk `taper` with a `--gold-soft` one inside, both fading upward (`m-sway`). A round glow behind the peak read as the sun setting | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| Wave, foam and bubble, all one water | At a pool's edge the water rising in a curling wave, an `--art-moon`-to-`--leaf` gradient edged in gold-soft with a core line inside its face, ivory flecks of foam at the crest (some `m-twinkle`), and three bubbles at its foot, faint moon discs with a gold-soft rim and a core highlight | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| The rope taken for a snake (rajju-sarpa) | One rope lying in an S on the ground, a `StillLamp` at 2.4 by its frayed end with a glow: inside the lamp's reach (a radial mask) it is a turmeric rope with a carve twist and a gold line; beyond it the same path is an `--art-hair` band with a dotted moon line and a rounded head, a snake. No eye, no tongue | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| Her light as moonlight on the night lilies (kaumudī) | Her light as a moon-white glow (Shloka 79's gradient) above a pool (an `--art-moon` radial fill and a gold-soft inner line), five Moonlight rings round her, a short path of core dashes on the water below her (`m-twinkle`), three notched pads, and two `NightLily`s at 3 and 2.4, one behind the other, never side by side as a pair of eyes | Inline (`moonlight-on-the-lilies.tsx`, with `NightLily`) | Shloka 87 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3288,6 +3292,29 @@ One entry per finished artwork, in the order they were made.
   `GOAT_FORE` and `GOAT_HIND` for markings over its coat. The tiered parasol first stood at
   x 540, where 1100px crops it; at x 452 it stays in. The quarters' ring was narrowed to clear the
   verse panel, the first seed's halves read as spectacles, and the first pool as a grey box.
+
+### Shloka 87: Knowledge and ignorance, and the moonlight in Kāmeśa's eyes
+
+- **Component:** `moonlight-on-the-lilies.tsx` (defs prefix `sa87`)
+- **Composition:** under the card her light as moonlight, ringed, over a pool where two white
+  night lilies stand open. At the pool's left the water rises as a wave, foam and bubbles. At the
+  crown's right the logicians' hill with smoke going up and only a glow of the fire at its summit.
+  On the near bank a rope by a lamp, a rope in its light and a snake beyond it.
+- **Name → part:**
+  - Vyāpinī → `hill`: the hill, its smoke and the hidden fire
+  - Vividhākārā → `water`: the wave, its foam and the bubbles
+  - Vidyāvidyāsvarūpiṇī → `rope`: the rope, its two halves, the lamp and its glow
+  - Mahākāmeśanayanakumudāhlādakaumudī → `moonlight`: her light, its rings, the pool, the path
+    of light, the pads and the lilies
+  - Intro, *her light as moonlight* → `moonlight`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the hidden fire, the lamp's glow), `m-shimmer` (the rings),
+  `m-twinkle` (the path of light, the foam), `m-sway` (the smoke).
+- **Notes:** this title wraps, its first line reaching x ≈ 138 (190 at 1100px), so the card sits
+  at y ≈ 225–438. Shloka 79's night lily was promoted here to `NightLily`. Shloka 79 lit its
+  lilies with a cone; here the moonlight is rings and a path on the water, and the lilies are
+  larger and staggered so they never pair up as eyes. The first rope was too small to tell a rope
+  from a snake, and the first smoke was lost in dark mode until a gold-soft line went inside it.
 
 ## Open questions
 

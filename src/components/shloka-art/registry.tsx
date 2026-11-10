@@ -86,6 +86,7 @@ import { SecretRite } from "./secret-rite";
 import { TheStageLamp } from "./the-stage-lamp";
 import { HalfOfHisBody } from "./half-of-his-body";
 import { RootNature } from "./root-nature";
+import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4094,6 +4095,41 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "lotus",
         depicts:
           "Her form is both the manifest and the unmanifest. At the lower right a lotus stands in clear water: the flower in the open air, the stalk and root dim below the surface, one plant.",
+      },
+    ],
+  },
+  "087": {
+    Art: MoonlightOnTheLilies,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="moonlight">her light as moonlight</Spot> on a pool. Round it, a hill, a wave and a rope, each a
+        picture the philosophers use.
+      </>
+    ),
+    entries: [
+      {
+        nama: 400,
+        part: "hill",
+        depicts:
+          "Vyāpti, pervasion, is the logicians' word: where there is smoke there is fire, without one exception, and so there is fire on the hill though no one sees it. Her pervasion is like that. At the right of the crown smoke goes up from a hill, and the fire is only a glow behind the ridge.",
+      },
+      {
+        nama: 401,
+        part: "water",
+        depicts:
+          "She is of many shapes and one stuff, as the sea is wave, foam and bubble and only water. At the pool's left the water rises as a wave, breaks into foam at its crest and rounds into bubbles at its foot.",
+      },
+      {
+        nama: 402,
+        part: "rope",
+        depicts:
+          "Knowledge and ignorance are both her form. A rope seen in dusk is taken for a snake, and a lamp shows it for a rope; on the near bank one rope lies by a lamp, twisted strands in its light and a dark snake beyond it.",
+      },
+      {
+        nama: 403,
+        part: "moonlight",
+        depicts:
+          "Mahākāmeśa's eyes are night lilies, which open only to the moon, and she is the moonlight that gladdens them. Her light falls on the pool in rings and a path of light, and two white lilies stand open in it.",
       },
     ],
   },
