@@ -13,7 +13,7 @@
  * the registry, next to this artwork's entry.
  */
 
-import { Ash, AshDefs, BeeString, FlowerArrow, OpenLotus, Summit, artIds, glint, partProps, polar, round, summit } from "./primitives";
+import { Ash, AshDefs, BLOSSOM, FlowerArrow, FlowerBow, OpenLotus, Summit, artIds, glint, partProps, round, summit } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -55,10 +55,6 @@ const BLOSSOMS = [
   { x: HERB_TOP.x - 11, y: HERB_TOP.y + 9, s: 0.75 },
   { x: HERB_TOP.x + 11, y: HERB_TOP.y + 7, s: 0.8 },
 ];
-const BLOSSOM = Array.from({ length: 5 }, (_, k) => {
-  const p = polar(0, 0, 3.4, 90 + k * 72);
-  return `M 0 0 Q ${round(p.x * 0.4 - p.y * 0.5)} ${round(p.y * 0.4 + p.x * 0.5)} ${p.x} ${p.y} Q ${round(p.x * 0.4 + p.y * 0.5)} ${round(p.y * 0.4 - p.x * 0.5)} 0 0 Z`;
-}).join(" ");
 
 /* ── Her sidelong look, falling on the ash ─────────────────────────────── */
 
@@ -69,15 +65,6 @@ const LOOK = [-1, 0, 1].map((k) => `M ${LOOK_FROM.x + k * 1.4} ${LOOK_FROM.y} L 
 
 const KAMA = { x: 394, y: 474 };
 const RATI = { x: 496, y: 490 };
-/** His bow of flowers: a recurve with blossoms all along it, the string toward Rati. */
-const FLOWER_BOW = { half: 48, bend: 16 };
-const BOW_STAVE = `M ${-FLOWER_BOW.half} ${FLOWER_BOW.bend} C ${-FLOWER_BOW.half * 0.7} ${-4} ${-FLOWER_BOW.half * 0.3} ${-6} 0 ${-6} C ${FLOWER_BOW.half * 0.3} ${-6} ${FLOWER_BOW.half * 0.7} ${-4} ${FLOWER_BOW.half} ${FLOWER_BOW.bend}`;
-const BOW_BLOSSOMS = Array.from({ length: 11 }, (_, k) => {
-  const t = k / 10;
-  const x = round(-FLOWER_BOW.half + 2 * FLOWER_BOW.half * t);
-  const u = Math.abs(2 * t - 1);
-  return { x, y: round(-6 + (FLOWER_BOW.bend + 6) * u * u), k };
-});
 const ARROW_FAN = [-14, -7, 0, 7, 14];
 const RATI_LOOK = [-1, 0, 1].flatMap((k) => [
   `M ${KAMA.x + 14} ${KAMA.y + 2 + k * 1.4} L ${RATI.x - 12} ${RATI.y - 2 + k * 4}`,
@@ -177,13 +164,7 @@ export function Sanjivani({ idPrefix = "sa34", active = null }: ArtProps) {
           ))}
         </g>
         <g transform={`translate(${KAMA.x - 30} ${KAMA.y}) rotate(-90)`}>
-          <BeeString from={{ x: -FLOWER_BOW.half, y: FLOWER_BOW.bend }} to={{ x: FLOWER_BOW.half, y: FLOWER_BOW.bend }} spacing={7} />
-          <path d={BOW_STAVE} stroke="var(--leaf)" strokeWidth={2.4} strokeLinecap="round" />
-          {BOW_BLOSSOMS.map((b) => (
-            <g key={b.k} transform={`translate(${b.x} ${b.y}) scale(1.1)`}>
-              <path d={BLOSSOM} fill={b.k % 2 ? "var(--art-saffron)" : "var(--lotus)"} stroke="var(--gold)" strokeWidth={0.4} />
-            </g>
-          ))}
+          <FlowerBow />
         </g>
         <circle cx={KAMA.x + 6} cy={KAMA.y + 4} r={6.4} fill="var(--lotus)" stroke="var(--gold)" strokeWidth={1} />
         <circle cx={RATI.x} cy={RATI.y} r={5} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.9} />

@@ -17,7 +17,7 @@
  * to this artwork's entry.
  */
 
-import { Goad, artIds, glint, partProps, polar, radiance, round } from "./primitives";
+import { BrimmingPot, Goad, artIds, glint, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -113,18 +113,6 @@ const STEAM = [
 /* ── The full pot brimming over, and the strongbox it burst ───────────── */
 
 const POT = { x: 482, y: FLOOR, k: 1.1 };
-const POT_BODY = "M -12 -52 C -40 -48 -46 -12 -26 -2 C -16 3 16 3 26 -2 C 46 -12 40 -48 12 -52 Z";
-const POT_NECK = "M -12 -52 L -10 -60 L 10 -60 L 12 -52 Z";
-const POT_LIP = "M -17 -64 C -17 -61 17 -61 17 -64 L 15 -60 L -15 -60 Z";
-/** Water running over the lip and down the belly to the floor. */
-/** A sheet of water spilling over the front of the lip and down the belly, and one thin stream. */
-const SHEET = "M -15 -63 C -16 -58 -24 -54 -30 -44 C -36 -34 -36 -18 -30 -6 C -28 -2 -26 1 -24 3 L -12 3 C -14 -6 -18 -20 -16 -34 C -14 -46 -8 -56 -4 -62 Z";
-const STREAM = "M 9 -62 C 12 -57 20 -50 22 -40 C 24 -30 22 -18 20 -8";
-const DROPS = [
-  { x: -18, y: 4 },
-  { x: -4, y: 6 },
-  { x: 15, y: 2 },
-];
 const BOX = { x: 396, y: FLOOR + 16 };
 const COINS = [
   { x: 374, y: FLOOR + 22 },
@@ -304,21 +292,7 @@ export function WheelStopped({ idPrefix = "sa48", active = null }: ArtProps) {
       {/* The full pot, wanting nothing more, brimming over */}
       <g {...part("pot")}>
         <g transform={`translate(${POT.x} ${POT.y}) scale(${POT.k})`}>
-          <ellipse cy={1} rx={34} ry={4} fill="var(--art-musk)" fillOpacity={0.14} />
-          <path d={POT_NECK} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <path d={POT_BODY} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
-          <path d="M -36 -26 C -14 -18 14 -18 36 -26" stroke="var(--art-vermilion)" strokeWidth={1.6} />
-          <path d="M -34 -20 C -12 -12 12 -12 34 -20" stroke="var(--art-vermilion)" strokeWidth={0.6} />
-          <path d={POT_LIP} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-          <path d="M -15.5 -63.5 C -15.5 -67 15.5 -67 15.5 -63.5 C 15.5 -61 -15.5 -61 -15.5 -63.5 Z" fill="var(--art-moon)" stroke="var(--gold-soft)" strokeWidth={0.5} />
-          <path className="m-shimmer" d={SHEET} fill={url("water")} fillOpacity={0.8} stroke="var(--gold-soft)" strokeWidth={0.5} />
-          <path d="M -20 -48 C -26 -38 -26 -24 -22 -12" stroke="var(--art-ivory)" strokeWidth={0.8} strokeOpacity={0.8} strokeLinecap="round" />
-          <path d={STREAM} stroke="var(--art-hair)" strokeWidth={2.6} strokeOpacity={0.25} strokeLinecap="round" />
-          <path className="m-shimmer" d={STREAM} stroke="var(--art-moon)" strokeWidth={1.4} strokeLinecap="round" />
-          <ellipse cy={3} rx={30} ry={3.4} fill={url("water")} fillOpacity={0.6} stroke="var(--gold-soft)" strokeWidth={0.5} />
-          {DROPS.map((d, i) => (
-            <circle key={i} className={TWINKLE[i % 3]} cx={d.x} cy={d.y} r={1.3} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.4} />
-          ))}
+          <BrimmingPot water={url("water")} />
         </g>
       </g>
 

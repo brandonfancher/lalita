@@ -1332,6 +1332,47 @@ export function KadambaHead({ head, fill }: { head: ReturnType<typeof kadambaHea
   );
 }
 
+const KADAMBA_BOUGH = "M 660 34 C 620 44 590 62 566 90 C 552 106 544 122 540 140";
+const KADAMBA_BOUGH_TWIG = "M 590 64 C 600 84 604 104 600 124";
+const KADAMBA_BOUGH_LEAVES = [
+  { x: 620, y: 46, deg: 150, l: 40, w: 10 },
+  { x: 596, y: 60, deg: 200, l: 36, w: 9 },
+  { x: 572, y: 84, deg: 120, l: 38, w: 10 },
+  { x: 560, y: 100, deg: 210, l: 34, w: 9 },
+  { x: 546, y: 126, deg: 160, l: 30, w: 8 },
+  { x: 600, y: 112, deg: 60, l: 30, w: 8 },
+].map((l) => ({ ...kadambaLeaf(l.l, l.w), at: `translate(${l.x} ${l.y}) rotate(${l.deg})` }));
+/** Where the bough's three heads hang, in its own coordinates (before any scale about the right edge). */
+export const KADAMBA_BOUGH_HEADS = [
+  { x: 540, y: 152, r: 11 },
+  { x: 600, y: 136, r: 10 },
+  { x: 566, y: 118, r: 8 },
+];
+const KADAMBA_BOUGH_HEAD_SHAPES = KADAMBA_BOUGH_HEADS.map((h, i) => kadambaHead(h, i + 1));
+
+/**
+ * A kadamba bough leaning in from the crown's right edge, its limb ending at
+ * about (540, 140) with three heads hanging from it. Scale it about (640, 0)
+ * to fill the crown; `fill` is the kadamba head gradient.
+ */
+export function KadambaBough({ fill }: { fill: string }) {
+  return (
+    <>
+      <path d={KADAMBA_BOUGH} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={4.6} strokeLinecap="round" />
+      <path d={KADAMBA_BOUGH} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.7} />
+      <path d={KADAMBA_BOUGH_TWIG} stroke="var(--art-hair)" strokeOpacity={0.55} strokeWidth={2.4} strokeLinecap="round" />
+      {KADAMBA_BOUGH_LEAVES.map((l, i) => (
+        <g key={i} transform={l.at}>
+          <KadambaLeaf {...l} />
+        </g>
+      ))}
+      {KADAMBA_BOUGH_HEAD_SHAPES.map((h, i) => (
+        <KadambaHead key={i} head={h} fill={fill} />
+      ))}
+    </>
+  );
+}
+
 /* ── Pearls ────────────────────────────────────────────────────────────── */
 
 /** A pearl (muktā), lit from the upper left. With `cap`, the small gold cap it hangs from. */
@@ -3304,6 +3345,153 @@ export function Vajra() {
       <ellipse cx={0} cy={-7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
       <ellipse cx={0} cy={7} rx={4.6} ry={1.8} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
       <circle r={1.6} fill="var(--art-vermilion)" strokeWidth={0} />
+    </>
+  );
+}
+
+/* ── A full pot brimming over ──────────────────────────────────────────── */
+
+const BRIM_POT_BODY = "M -12 -52 C -40 -48 -46 -12 -26 -2 C -16 3 16 3 26 -2 C 46 -12 40 -48 12 -52 Z";
+const BRIM_POT_NECK = "M -12 -52 L -10 -60 L 10 -60 L 12 -52 Z";
+const BRIM_POT_LIP = "M -17 -64 C -17 -61 17 -61 17 -64 L 15 -60 L -15 -60 Z";
+/** A sheet of water spilling over the front of the lip and down the belly, and one thin stream. */
+const BRIM_SHEET = "M -15 -63 C -16 -58 -24 -54 -30 -44 C -36 -34 -36 -18 -30 -6 C -28 -2 -26 1 -24 3 L -12 3 C -14 -6 -18 -20 -16 -34 C -14 -46 -8 -56 -4 -62 Z";
+const BRIM_STREAM = "M 9 -62 C 12 -57 20 -50 22 -40 C 24 -30 22 -18 20 -8";
+const BRIM_DROPS = [
+  { x: -18, y: 4 },
+  { x: -4, y: 6 },
+  { x: 15, y: 2 },
+];
+const BRIM_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/**
+ * A round-bellied gold water pot standing at the origin, about 64 tall, brimming over: a moon-coloured
+ * brim, a sheet of water down the front of the belly and a thin stream at the back, to a puddle with
+ * drops. `water` fills the water (a vertical gradient from `--art-moon` to `--art-hair`). With
+ * `spill={false}` it is only full to the brim, nothing running over.
+ */
+export function BrimmingPot({ water, spill = true }: { water: string; spill?: boolean }) {
+  return (
+    <>
+      <ellipse cy={1} rx={34} ry={4} fill="var(--art-musk)" fillOpacity={0.14} />
+      <path d={BRIM_POT_NECK} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d={BRIM_POT_BODY} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+      <path d="M -36 -26 C -14 -18 14 -18 36 -26" stroke="var(--art-vermilion)" strokeWidth={1.6} />
+      <path d="M -34 -20 C -12 -12 12 -12 34 -20" stroke="var(--art-vermilion)" strokeWidth={0.6} />
+      <path d={BRIM_POT_LIP} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d="M -15.5 -63.5 C -15.5 -67 15.5 -67 15.5 -63.5 C 15.5 -61 -15.5 -61 -15.5 -63.5 Z" fill="var(--art-moon)" stroke="var(--gold-soft)" strokeWidth={0.5} />
+      {spill && (
+        <>
+          <path className="m-shimmer" d={BRIM_SHEET} fill={water} fillOpacity={0.8} stroke="var(--gold-soft)" strokeWidth={0.5} />
+          <path d="M -20 -48 C -26 -38 -26 -24 -22 -12" stroke="var(--art-ivory)" strokeWidth={0.8} strokeOpacity={0.8} strokeLinecap="round" />
+          <path d={BRIM_STREAM} stroke="var(--art-hair)" strokeWidth={2.6} strokeOpacity={0.25} strokeLinecap="round" />
+          <path className="m-shimmer" d={BRIM_STREAM} stroke="var(--art-moon)" strokeWidth={1.4} strokeLinecap="round" />
+          <ellipse cy={3} rx={30} ry={3.4} fill={water} fillOpacity={0.6} stroke="var(--gold-soft)" strokeWidth={0.5} />
+          {BRIM_DROPS.map((d, i) => (
+            <circle key={i} className={BRIM_TWINKLE[i % 3]} cx={d.x} cy={d.y} r={1.3} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.4} />
+          ))}
+        </>
+      )}
+    </>
+  );
+}
+
+/* ── Cakravāka (ruddy shelduck) ────────────────────────────────────────── */
+
+const CAKRAVAKA_BODY =
+  "M -20 -4 C -22 -7 -20 -9 -17 -9 C -10 -13 2 -13 8 -9 C 10 -8 11 -10 10 -14 C 9 -19 11 -25 16 -26 C 21 -27 24 -23 23 -19 L 22 -15.5 C 20 -12 18 -6 14 -2 C 10 0 -12 1 -20 -4 Z";
+const CAKRAVAKA_HEAD = "M 10 -14 C 9 -19 11 -25 16 -26 C 21 -27 24 -23 23 -19 L 22 -15.5 C 18 -16 13 -16 10 -14 Z";
+const CAKRAVAKA_WING = "M -16 -7 C -8 -12 4 -12 9 -8 C 2 -5 -8 -4 -16 -7 Z";
+const CAKRAVAKA_TIP = "M -21 -5 C -19 -10 -13 -11 -10 -8 C -13 -6 -17 -5 -21 -5 Z";
+
+/**
+ * A cakravāka, the ruddy shelduck of the poets, whose pairs are parted every night: on the water,
+ * facing right, about 48 long, with a faint core reflection under it. Wants round joins.
+ */
+export function Cakravaka() {
+  return (
+    <>
+      <ellipse cx={0} cy={1.6} rx={22} ry={2} fill="var(--art-core)" fillOpacity={0.22} />
+      <path d={CAKRAVAKA_BODY} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.7} />
+      <path d={CAKRAVAKA_BODY} fill="var(--art-vermilion)" fillOpacity={0.4} />
+      <path d={CAKRAVAKA_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M 10.4 -13.4 C 13 -12.2 18 -12.6 21 -14.6" stroke="var(--art-hair)" strokeWidth={1.1} />
+      <path d={CAKRAVAKA_WING} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={CAKRAVAKA_TIP} fill="var(--art-hair)" />
+      <path d="M 23 -19 L 28 -17 L 22 -15.5 Z" fill="var(--art-hair)" />
+      <circle cx={18.6} cy={-21.4} r={1} fill="var(--art-hair)" />
+    </>
+  );
+}
+
+/* ── Kāma's bow of flowers ─────────────────────────────────────────────── */
+
+/** A small five-petalled blossom, about 7 across, its petals curling. */
+export const BLOSSOM = Array.from({ length: 5 }, (_, k) => {
+  const p = polar(0, 0, 3.4, 90 + k * 72);
+  return `M 0 0 Q ${round(p.x * 0.4 - p.y * 0.5)} ${round(p.y * 0.4 + p.x * 0.5)} ${p.x} ${p.y} Q ${round(p.x * 0.4 + p.y * 0.5)} ${round(p.y * 0.4 - p.x * 0.5)} 0 0 Z`;
+}).join(" ");
+const FLOWER_BOW = { half: 48, bend: 16 };
+const BOW_STAVE = `M ${-FLOWER_BOW.half} ${FLOWER_BOW.bend} C ${-FLOWER_BOW.half * 0.7} ${-4} ${-FLOWER_BOW.half * 0.3} ${-6} 0 ${-6} C ${FLOWER_BOW.half * 0.3} ${-6} ${FLOWER_BOW.half * 0.7} ${-4} ${FLOWER_BOW.half} ${FLOWER_BOW.bend}`;
+const BOW_BLOSSOMS = Array.from({ length: 11 }, (_, k) => {
+  const t = k / 10;
+  const x = round(-FLOWER_BOW.half + 2 * FLOWER_BOW.half * t);
+  const u = Math.abs(2 * t - 1);
+  return { x, y: round(-6 + (FLOWER_BOW.bend + 6) * u * u), k };
+});
+/**
+ * Kāma's bow of flowers: a `--leaf` recurve about 96 long, its back up and its tips at y 16, with
+ * blossoms all along it, `--lotus` and `--art-saffron` by turns, and a `BeeString` for its string.
+ */
+export function FlowerBow() {
+  return (
+    <>
+      <BeeString from={{ x: -FLOWER_BOW.half, y: FLOWER_BOW.bend }} to={{ x: FLOWER_BOW.half, y: FLOWER_BOW.bend }} spacing={7} />
+      <path d={BOW_STAVE} stroke="var(--leaf)" strokeWidth={2.4} strokeLinecap="round" />
+      {BOW_BLOSSOMS.map((b) => (
+        <g key={b.k} transform={`translate(${b.x} ${b.y}) scale(1.1)`}>
+          <path d={BLOSSOM} fill={b.k % 2 ? "var(--art-saffron)" : "var(--lotus)"} stroke="var(--gold)" strokeWidth={0.4} />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── The swan ──────────────────────────────────────────────────────────── */
+
+const SWAN_BODY = "M -54 -20 C -48 -8 -40 0 -28 0 L 24 0 C 36 0 42 -8 40 -15 C 38 -21 32 -23 26 -22 C 4 -20 -30 -16 -54 -20 Z";
+/** The wing, arched up off the back as a swan carries it on calm water. */
+const SWAN_WING = "M 18 -20 C 10 -40 -20 -48 -40 -37 C -48 -32 -52 -26 -50 -22 C -30 -18 0 -20 18 -20 Z";
+const FEATHERS = [
+  "M 8 -24 C 0 -34 -16 -38 -30 -33",
+  "M 2 -21 C -6 -28 -20 -31 -36 -27",
+  "M -6 -19 C -14 -23 -28 -25 -44 -23",
+].join(" ");
+const SWAN_NECK = "M 30 -18 C 42 -34 24 -52 32 -70 C 35 -77 42 -79 46 -76";
+const SWAN_HEAD = { x: 46, y: -76 };
+
+/**
+ * A swan (haṃsī) on calm water, heading +x on the waterline at the origin, about 100 long and 80
+ * tall: a moon body, the wing arched up off the back, an S-curved neck, a saffron beak, and a
+ * faint reflection. The caller draws the wake.
+ */
+export function Swan() {
+  return (
+    <>
+      <g transform="scale(1 -0.45)" opacity={0.22}>
+        <path d={SWAN_BODY} fill="var(--art-moon)" />
+        <path d={SWAN_NECK} stroke="var(--art-moon)" strokeWidth={7} strokeLinecap="round" />
+      </g>
+      <path d="M -40 1 L 30 1" stroke="var(--gold-soft)" strokeWidth={1.2} />
+      <path d={SWAN_NECK} stroke="var(--gold)" strokeWidth={9} strokeLinecap="round" />
+      <path d={SWAN_NECK} stroke="var(--art-moon)" strokeWidth={7} strokeLinecap="round" />
+      <path d={SWAN_BODY} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1.1} strokeLinejoin="round" />
+      <path d={SWAN_WING} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} strokeLinejoin="round" />
+      <path d={SWAN_WING} fill="var(--gold-soft)" fillOpacity={0.25} />
+      <path d={FEATHERS} stroke="var(--gold)" strokeWidth={0.7} strokeLinecap="round" />
+      <circle cx={SWAN_HEAD.x} cy={SWAN_HEAD.y} r={6} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={1} />
+      <path d={`M ${SWAN_HEAD.x + 4} ${SWAN_HEAD.y - 2.6} L ${SWAN_HEAD.x + 15} ${SWAN_HEAD.y + 1.6} L ${SWAN_HEAD.x + 4} ${SWAN_HEAD.y + 3} Z`} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
+      <circle cx={SWAN_HEAD.x + 1.4} cy={SWAN_HEAD.y - 1.6} r={1.2} fill="var(--art-carve)" />
     </>
   );
 }
