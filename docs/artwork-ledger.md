@@ -506,6 +506,14 @@ second time it is needed.
 | The sun and moon gone pale (Kaṭha 5.15) | A sun (r 26, with its inner ring) and a moon (r 15) as faint `--art-hair` discs with gold-soft rims, each lit only on the side that faces her by a core gradient, and three pale hair `glint` stars | Inline (`pillar-of-light.tsx`) | Shloka 89 |
 | Words turning back with the mind (Taittirīya 2.4.1) | Two hooked lines rising toward her and curling back before her glow: the eleven vowels अ to औ in `--font-tiro`, gold, smaller and fainter as they climb; and above them fifteen small gold-soft rings of thought, shrinking, on a faint tapering thread (some `m-twinkle`) | Inline (`pillar-of-light.tsx`) | Shloka 89 |
 | The seers' lamps raised, and a handful of flowers | Three `Lamp`s at 2.2 with the seers' pale flames in a row; at the pillar's foot seven small flowers of five round petals (vermilion, ivory, saffron, lotus) round turmeric hearts. Pointed `BLOSSOM` petals read as stars at this size | Inline (`pillar-of-light.tsx`, with `Lamp`) | Shloka 89 |
+| The seam of night and day (sandhyā) | Across the crown a faint `--art-hair` night wash fading down to one gold line at y 120, a saffron day wash below it fading out by y 230, the whole faded out to the left under the title; six `--gold-soft` `glint` stars in the night part (`m-twinkle`). Hair at 0.34 was a grey block by day | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| The Gāyatrī's twenty-four syllables as floating lamps | Twenty-four `Lamp`s with the gods' flames, each on a small `--leaf` leaf-boat, in three rows of eight on the river, nearer rows larger and wider apart (1.15, 1.45, 1.85; 24, 30, 38 apart) | Inline (`dawn-ghat.tsx`, with `Lamp`) | Shloka 90 |
+| A river at dawn, the sun half risen | The rising sun's half disc (r 34, its 16 rays, clipped at the horizon) in a wide glow, over a river from the horizon to the near bank: a saffron-to-moon water, `seaSurface` ripples in gold and its saffron and core light column, faded out at the sides | Inline (`dawn-ghat.tsx`, with `sunRays` and `seaSurface`) | Shloka 90 |
+| A lodestone and its filings (jaḍaśakti) | A dark `--art-hair` stone with a gold edge and a gold-soft sheen on a stone step, and the filings as dashed hair lines: four arcs over it from end to end, and three open lines fanning from each end. Filings scattered along the field at points read as grass | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Stone steps of a ghat | Five treads across the ground from the river's edge down, each an `--art-stone` riser a little denser toward the viewer under a gold edge and a gold-soft line, faded out at the sides | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Copper water vessels, one pouring (arghya) | Round-bellied vessels (lotā) about 24 tall with a neck and a flared turmeric lip, an ember-turmeric-ember copper gradient, a gold edge and a core sheen, four in a row on a step; a fifth tipped 70° at the water's edge toward the sun, a short moon stream from its mouth and two core rings on the water (`m-shimmer`) | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| The three vyāhṛtis on three levels | भूः, भुवः and स्वः in `--sindura` (`--font-tiro`, 20) one above another up the right side: on the steps, over the water, among the stars | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Birds waking (cetanā) | Five `Goose`s at 1.3–1.7, mirrored to head right toward the sun and tipped up, wings by turns raised and lowered, rising from a clump of eleven `--leaf` reeds on the far bank | Inline (`dawn-ghat.tsx`, with `Goose`) | Shloka 90 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3376,6 +3384,31 @@ One entry per finished artwork, in the order they were made.
   y ≈ 184–396 and the crown is all but closed; the goose and the crescent, first drawn in the
   crown, came down under the card. The liṅgodbhava story is told of Śiva's pillar; here, for
   aprameyā, the pillar is her light.
+
+### Shloka 90: Consciousness and dead matter, and the brahmin's daily prayer
+
+- **Component:** `dawn-ghat.tsx` (defs prefix `sa90`)
+- **Composition:** dawn at a river ghat. In the crown the seam of night and day with the last
+  stars. Under the card the sun half risen over the river, and on the water twenty-four floating
+  lamps in three rows of eight. Birds rise from reeds on the far bank. On the stone steps a
+  lodestone with its filings and a row of copper vessels, one tipped to pour toward the sun. Up the
+  right side भूः, भुवः, स्वः on three levels.
+- **Name → part:**
+  - Cicchaktiḥ → `cit`: the sun, its glow and the river with its light
+  - Cetanārūpā → `sentience`: the birds and the reeds
+  - Jaḍaśaktiḥ → `matter-power`: the lodestone and its filings
+  - Jaḍātmikā → `inert`: the steps
+  - Gāyatrī → `gayatri`: the twenty-four lamps
+  - Vyāhṛtiḥ → `vyahrti`: the three words
+  - Sandhyā → `sandhya`: the night, the day and the seam, and the stars
+  - Dvijavṛndaniṣevitā → `twice-born`: the vessels, the pouring and its rings
+  - Intro, *the sun* → `cit`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the sun's glow), `m-twinkle` (the river's light, the stars),
+  `m-flicker` (the lamps, through `Lamp`), `m-shimmer` (the pouring).
+- **Notes:** this title wraps, its first line reaching x ≈ 134 (186 at 1100px), so the card sits
+  at y ≈ 225–438. Here the sun is cit, the light by which things are known, as the Gāyatrī asks of
+  it, rather than her own light. The night wash was halved and the filings redrawn as field lines.
 
 ## Open questions
 

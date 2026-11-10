@@ -89,6 +89,7 @@ import { RootNature } from "./root-nature";
 import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
 import { SunlitHeart } from "./sunlit-heart";
 import { PillarOfLight } from "./pillar-of-light";
+import { DawnGhat } from "./dawn-ghat";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4224,6 +4225,64 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "beyond-words",
         depicts:
           "She is out of the range of mind and speech; in the Taittirīya's phrase, words turn back from her together with the mind, not reaching her. At the right a line of letters and a line of dotted thought rise toward her and curl back before they arrive.",
+      },
+    ],
+  },
+  "090": {
+    Art: DawnGhat,
+    intro: (Spot) => (
+      <>
+        Dawn at a river ghat, the hour of the brahmin’s prayer, with <Spot part="cit">the sun</Spot> half risen under the card.
+      </>
+    ),
+    entries: [
+      {
+        nama: 416,
+        part: "cit",
+        depicts:
+          "She is the power of consciousness, the light by which anything is known at all; the Gāyatrī itself asks the sun's light to stir the mind. Under the card the sun half risen over the river, its light lying on the water.",
+      },
+      {
+        nama: 417,
+        part: "sentience",
+        depicts:
+          "Her form is sentience, whatever wakes and feels. At the left, birds wake at the first light and rise from the reeds on the far bank.",
+      },
+      {
+        nama: 418,
+        part: "matter-power",
+        depicts:
+          "She is also the power in what does not feel. A lodestone knows nothing, and the iron filings round it still stand up and turn along its pull; it lies on the steps at the left.",
+      },
+      {
+        nama: 419,
+        part: "inert",
+        depicts:
+          "And she is inert nature itself, whose self is matter. The stone steps of the ghat go down to the water.",
+      },
+      {
+        nama: 420,
+        part: "gayatri",
+        depicts:
+          "The Gāyatrī has twenty-four syllables in three lines of eight. On the river twenty-four lamps float in three rows of eight.",
+      },
+      {
+        nama: 421,
+        part: "vyahrti",
+        depicts:
+          "The vyāhṛtis, bhūḥ, bhuvaḥ, svaḥ, are said before the Gāyatrī, and they name the earth, the air between and the sky. Up the right side: भूः on the steps, भुवः over the water, स्वः in the sky among the stars.",
+      },
+      {
+        nama: 422,
+        part: "sandhya",
+        depicts:
+          "Sandhyā is the joint of night and day, and the prayer said at it. In the crown the last of the night, with its stars, meets the first of the day along one gold line.",
+      },
+      {
+        nama: 423,
+        part: "twice-born",
+        depicts:
+          "The twice-born come down to the river at this hour and serve her. Their copper water vessels stand on the steps, and one, tipped at the water's edge, pours its water out toward the sun.",
       },
     ],
   },
