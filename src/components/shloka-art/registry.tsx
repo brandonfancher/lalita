@@ -85,6 +85,7 @@ import { LifeVein } from "./life-vein";
 import { SecretRite } from "./secret-rite";
 import { TheStageLamp } from "./the-stage-lamp";
 import { HalfOfHisBody } from "./half-of-his-body";
+import { RootNature } from "./root-nature";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4040,6 +4041,59 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "one-body",
         depicts:
           "She is the left half of Śrīkaṇṭha's body, and he the right. The flame is one, but its half on the viewer's left is his, white as ash with his rudrākṣa beads and his crescent, and the half on the right is hers, vermilion, with a line of pearls.",
+      },
+    ],
+  },
+  "086": {
+    Art: RootNature,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="her-light">her light</Spot> with nothing under it, and round the ground the ring of the eight quarters. Below it, three
+        pictures the Upaniṣads give of the root of things.
+      </>
+    ),
+    entries: [
+      {
+        nama: 393,
+        part: "radiance",
+        depicts:
+          "Prabhā is the radiance a light sends out, and she has it. A hundred and eight fine rays go out from her light and fade before they reach the edges.",
+      },
+      {
+        nama: 394,
+        part: "her-light",
+        depicts:
+          "She is not only radiant; radiance is what she is. So her light is drawn as brightness alone, with no lamp, disc or body under it to give it.",
+      },
+      {
+        nama: 395,
+        part: "quarters",
+        depicts:
+          "Prasiddhā is the one known everywhere. The eight quarters are marked round the ground, and at every one a small light, and her name going up from it in rings.",
+      },
+      {
+        nama: 396,
+        part: "parasols",
+        depicts:
+          "A king is known by his parasol, and the one above all kings by parasols stacked one over another on a single staff. She is the supreme ruler: at the right of the crown her parasol of four tiers.",
+      },
+      {
+        nama: 397,
+        part: "goat",
+        depicts:
+          "The Śvetāśvatara Upaniṣad calls root-nature the one unborn she-goat, red, white and black, who bears many young like herself; the three colours are the three guṇas. At the lower left she walks with her two kids, each red at the shoulder, white at the middle and dark at the haunch.",
+      },
+      {
+        nama: 398,
+        part: "seed",
+        depicts:
+          "In the Chāndogya Upaniṣad a father has his son break a banyan fig, then one of its tiny seeds, and asks what he sees inside. Nothing, says the son; and from that unseen finest thing, says the father, the great tree stands. In the front, the fig broken open and a seed broken open, with nothing in it but a faint light.",
+      },
+      {
+        nama: 399,
+        part: "lotus",
+        depicts:
+          "Her form is both the manifest and the unmanifest. At the lower right a lotus stands in clear water: the flower in the open air, the stalk and root dim below the surface, one plant.",
       },
     ],
   },

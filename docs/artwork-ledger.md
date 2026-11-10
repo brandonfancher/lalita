@@ -446,7 +446,7 @@ second time it is needed.
 | A plait down the right column (vāmakeśī) | A `plait` from above the crown down the right column to y ≈ 392, 28 wide narrowing to 17, lobes every 13; on its lobes ivory jasmine buds and every third a five-petalled vermilion flower; a `PlaitTip` at the end. Her hair as the canon allows it | Inline (`ring-of-fire.tsx`, using `plait`, `PlaitLobes` and `PlaitTip`) | Shloka 77 |
 | The wish-yielding creeper on its post (kalpalatikā) | Up the right column: a slender turmeric post with gold edges, a base block and a capital carrying a small lamp (`m-flicker`, a core glow); round it a `taper` creeper in `--art-hair` winding side to side, `CreeperLeaf`s on alternate sides, three `creeperTendril`s, and at every third mark a jewel hanging on a gold stalk, a `Ruby` and a `Pearl` by turns. A creeper, not a tree: it needs something to climb | Inline (`loosened-tether.tsx`, using `CreeperLeaf`, `creeperTendril`, `Ruby` and `Pearl`) | Shloka 78 |
 | The stake with its rope untied (paśupāśa) | At 1.25: an ember sacrificial stake with a turmeric collar and a gold ring, and a turmeric rope with a carve twist hanging from the ring and lying slack in loops on the ground, its end frayed | Inline (`loosened-tether.tsx`) | Shloka 78 |
-| A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | Inline (`loosened-tether.tsx`) | Shloka 78 |
+| A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | `Goat` in `primitives.tsx` (promoted at Shloka 86, used by Shloka 78) | Shloka 78 |
 | Wisps drawn into her light (saṃhṛta) | Three pairs of `taper` strands from the edges (upper left, lower left, upper right) to her light, wavering less as they near her and thinning from 4.4 to nothing, in an `--art-hair` gradient fading to 0 at her (`m-shimmer`). A single smooth strand read as a hill's skyline | Inline (`loosened-tether.tsx`) | Shloka 78 |
 | A wheel set rolling (pravartikā) | The `ChariotWheel` (r 22, at 1.25) turned 8°, on a faint carve road, a dashed track behind it, three musk dust puffs (`m-breathe`), three gold-soft motion arcs off its trailing rim (`m-shimmer`). Compare the broken wheel of becoming (Shloka 48) | Inline (`loosened-tether.tsx`, using `ChariotWheel`) | Shloka 78 |
 | Ground cracked by heat | A broad ember ellipse (rx 238, ry 52, radial ember gradient) under her light, crossed by mud cracks: a jittered net of points, 7 rows by 16 columns with alternate rows offset, joined along each row and every other step between rows by slightly bent edges, clipped to the ellipse. Outside the moonlight the cracks are a wide faint `--art-vermilion` stroke under a fine `--art-saffron` one (`m-ember`); inside it they are `--gold-soft`. Long runs across the ground read as wood grain | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
@@ -486,6 +486,11 @@ second time it is needed.
 | A water pot that is never dry (prapā) | An unglazed clay pot at 1.32, about 76 wide: a crimson-vermilion-ember-crimson gradient across it, a gold edge, a dashed ivory band, a musk-dark mouth, an ivory sheen; twenty-six `--art-moon` beads of water edged in gold-soft scattered over the belly (some `m-twinkle`) and three tapering drips, on a twisted turmeric straw ring, over a wet `--art-hair` patch on the ground; a small gold cup of water beside it. The pot set out at a roadside shed for anyone who asks | Inline (`half-of-his-body.tsx`) | Shloka 85 |
 | A lamp just blown out (nirvāṇa) | A clay lamp at 1.6 (the crimson-ember gradient, a gold edge, musk oil), an ivory wick with an `--art-ember` glow at its end (`m-breathe`), and one thread of smoke from the wick, a `taper` through a smooth curve widening from 1.2 to 7, `--gold-soft` fading out upward (`m-shimmer`). Drawn through a few points without `through`, it read as a crack | Inline (`half-of-his-body.tsx`) | Shloka 85 |
 | The poets' standards, kept apart (upamāna) | The full moon (r 28, a gold rim, a gold-soft limb shade, `MoonDeer` at 0.4 and half opacity, a moon glow) and a red `OpenLotus` at 0.86, at the crown's far right, with nothing near her | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| The parasol of many tiers, for the ruler over rulers (chattrāvalī) | Four `Parasol`s on one gold staff at the crown's right, at 0.7, 0.56, 0.44 and 0.34 from the bottom up, each rim just under the one above's fringe, the staff rising above the top finial and ending below in a short vermilion grip | Inline (`root-nature.tsx`, with `Parasol`) | Shloka 86 |
+| The eight quarters, her name known in each | A gold ring on the ground (rx 208, ry 42) with a `glint` at each of the eight quarters (`m-twinkle` by turns) and two small dashed gold arcs rising over each (`m-shimmer`) | Inline (`root-nature.tsx`) | Shloka 86 |
+| The unborn she-goat of three colours (ajā, Śvetāśvatara 4.5) | `Goat` without its saddle at 1.5, with an `--art-vermilion` patch on the forequarters (`GOAT_FORE`) and an `--art-hair` patch on the haunch (`GOAT_HIND`), the ivory coat between: red, white and black for the three guṇas. Two kids like her at 0.8 and 0.74 beside her | Inline (`root-nature.tsx`, with `Goat`) | Shloka 86 |
+| The fig and the seed broken open (Chāndogya 6.12) | Two halves of a banyan fig cut lengthwise, pear-shaped, an ember-crimson skin edged in gold, ivory flesh with a `--lotus` blush and thirty turmeric seed dots, a leaf stalk, tipped apart; beside them one seed in two turmeric D-shaped halves, hollow ivory inside, tipped open on their lower ends with a faint `--art-core` glow between them and nothing else (`m-breathe`). Two whole ellipse halves side by side read as spectacles | Inline (`root-nature.tsx`) | Shloka 86 |
+| A lotus, seen above and below the water (vyaktāvyakta) | A red `OpenLotus` at 0.92 and a leaf pad on the surface of a cut-away pool: a gold waterline, a faint `--leaf` water fading down and out at the sides, dashed gold-soft ripple lines, a musk mud bed; under the surface, at 0.6, the stalks in `--leaf` and the rhizome as four ivory segments edged in turmeric with turmeric nodes and rootlets. A grey `--art-moon` water read as a box, and loose ellipses for the root as pebbles | Inline (`root-nature.tsx`) | Shloka 86 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3257,6 +3262,32 @@ One entry per finished artwork, in the order they were made.
   bindu; here the two halves are a whole flame. The first flame was too small and looked like a
   face, with ash bars, a kumkum dot and the crescent on its side; the beads along the edges carry
   the two halves instead, and the crescent moved to the tip.
+
+### Shloka 86: From radiance to root-nature
+
+- **Component:** `root-nature.tsx` (defs prefix `sa86`)
+- **Composition:** under the card her light as glow alone, its 108 rays fading outward, over a
+  ring of the eight quarters with a light at each. At the crown's right a parasol of four tiers on
+  one staff. On the ground three Upaniṣadic pictures of root-nature: at the left the unborn
+  she-goat of three colours with two kids; in the front a fig broken open and a seed broken open,
+  nothing in it but a faint light; at the right a lotus in clear water, its root dim below.
+- **Name → part:**
+  - Prabhāvatī → `radiance`: the 108 rays
+  - Prabhārūpā → `her-light`: the glow
+  - Prasiddhā → `quarters`: the ring, its eight lights and their arcs
+  - Parameśvarī → `parasols`: the tiered parasol and its staff
+  - Mūlaprakṛti → `goat`: the she-goat and her kids
+  - Avyaktā → `seed`: the fig, the seed and the glow between its halves
+  - Vyaktāvyaktasvarūpiṇī → `lotus`: the lotus, pad, pool, stalks and rhizome
+  - Intro, *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the seed's glow), `m-shimmer` (the rays, the quarters' arcs),
+  `m-twinkle` (the quarters' lights).
+- **Notes:** this title wraps, its first line reaching x ≈ 101 (153 at 1100px), so the card sits
+  at y ≈ 225–438 and the crown is free. Shloka 78's goat was promoted to `Goat` here, with
+  `GOAT_FORE` and `GOAT_HIND` for markings over its coat. The tiered parasol first stood at
+  x 540, where 1100px crops it; at x 452 it stays in. The quarters' ring was narrowed to clear the
+  verse panel, the first seed's halves read as spectacles, and the first pool as a grey box.
 
 ## Open questions
 
