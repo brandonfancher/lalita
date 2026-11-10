@@ -13,7 +13,7 @@
  * artwork's entry.
  */
 
-import { KADAMBA_BOUGH_HEADS, KadambaBough, Pearl, artIds, partProps, round } from "./primitives";
+import { KADAMBA_BOUGH_HEADS, KadambaBough, Pearl, Wagtail, artIds, partProps, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── The bough, and the liquor dripping into a cup ─────────────────────── */
@@ -60,8 +60,6 @@ const WAGTAILS = [
   { x: 196, y: 520, flip: false, cls: "m-dart" },
   { x: 252, y: 516, flip: true, cls: "m-dart m-late" },
 ];
-const WAGTAIL_BODY = "M 10 -10 C 14 -4 10 2 2 3 C -6 4 -12 2 -16 -1 L -32 -7 L -31 -9 L -14 -6 C -8 -10 2 -13 10 -10 Z";
-const WAGTAIL_BACK = "M 11 -9 C 4 -12 -6 -9 -14 -6 L -31 -9 L -32 -7 L -16 -1 C -10 -4 -2 -5 4 -5 C 8 -5 11 -7 11 -9 Z";
 
 /* ── The mirror ────────────────────────────────────────────────────────── */
 
@@ -229,16 +227,7 @@ export function KadambaWine({ idPrefix = "sa74", active = null }: ArtProps) {
         {WAGTAILS.map((w, i) => (
           <g key={i} transform={`translate(${w.x} ${w.y}) scale(${w.flip ? -1 : 1} 1)`}>
             <g className={w.cls}>
-              <path d="M 0 2 L -1 10 M 4 2 L 5 10" stroke="var(--art-carve)" strokeWidth={0.8} strokeLinecap="round" />
-              <path d={WAGTAIL_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
-              <path d={WAGTAIL_BACK} fill="var(--art-hair)" />
-              <path d="M 4 -6 C -2 -5 -8 -4 -14 -3" stroke="var(--art-ivory)" strokeWidth={1.2} strokeLinecap="round" />
-              <circle cx={13} cy={-13} r={5.4} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={0.5} />
-              <path d="M 9 -12 C 11 -9 15 -9 17.6 -11" stroke="var(--art-ivory)" strokeWidth={1.6} strokeLinecap="round" />
-              <path d="M 9.6 -16 C 12 -17.6 15 -17.4 17 -15.4" stroke="var(--art-ivory)" strokeWidth={0.8} strokeLinecap="round" />
-              <path d="M 18 -14.4 L 23 -13.2 L 18 -12.2 Z" fill="var(--art-hair)" />
-              <circle cx={15} cy={-14} r={1.1} fill="var(--art-core)" />
-              <circle cx={15} cy={-14} r={0.55} fill="var(--art-hair)" />
+              <Wagtail />
             </g>
           </g>
         ))}
