@@ -93,6 +93,7 @@ import { DawnGhat } from "./dawn-ghat";
 import { FiveSheaths } from "./five-sheaths";
 import { SandalAndCampaka } from "./sandal-and-campaka";
 import { KulaHollow } from "./kula-hollow";
+import { MotherOfTwoSons } from "./mother-of-two-sons";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4432,6 +4433,78 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "kaula",
         depicts:
           "She is served by those wholly given to the Kaula path. Up to the kula from the front comes a path, and on it, one behind the other, the lamps of those who walk it.",
+      },
+    ],
+  },
+  "094": {
+    Art: MotherOfTwoSons,
+    intro: (Spot) => (
+      <>
+        The verse names her the mother of <Spot part="sons">two sons</Spot>, and then stops describing a
+        goddess and lists goods, each a feminine noun that the grammar lets her simply be. So the picture
+        is a list too: round <Spot part="radiance">her light</Spot> each good is one plain thing, and it
+        ends, as the verse does, with the <Spot part="obstacles">obstacles broken</Spot>, the elder son’s
+        office now hers.
+      </>
+    ),
+    entries: [
+      {
+        nama: 442,
+        part: "sons",
+        depicts:
+          "She is the mother of Kumāra and of Gaṇanātha, Skanda and Gaṇeśa. At the left Kumāra is a saffron light among the six Kṛttikā stars who fostered him, his leaf-bladed spear beside him; at the right Gaṇeśa is a light ruddy as the dawn, his mouse at its foot with a sweet.",
+      },
+      {
+        nama: 443,
+        part: "contentment",
+        depicts:
+          "Tuṣṭi is being pleased, having enough. In front a plain earthen pot stands full to the brim with milk, and not a drop over.",
+      },
+      {
+        nama: 444,
+        part: "nourishment",
+        depicts:
+          "Puṣṭi is thriving, being well fed. At the left a sheaf of rice, tied at the waist, its ears bowed with ripe grain.",
+      },
+      {
+        nama: 445,
+        part: "understanding",
+        depicts: "Mati is understanding, from the root meaning to think. At the right a palm-leaf book lies open on its stand.",
+      },
+      {
+        nama: 446,
+        part: "steadfast",
+        depicts:
+          "Dhṛti is holding firm. In the crown stands the mountain, which is called the unmoving, and which is her father’s house when she is Pārvatī, its snows catching the light.",
+      },
+      {
+        nama: 447,
+        part: "peace",
+        depicts:
+          "Śānti is growing quiet. At the front left a pool lies so still that her light lies in it unbroken.",
+      },
+      {
+        nama: 448,
+        part: "wellbeing",
+        depicts:
+          "Svasti, “it is well”, is the old word of blessing that gave the svastika its name, and she possesses it, to hold and to give. Before her light a svastika is drawn on the ground in vermilion, a dot of turmeric in each quarter.",
+      },
+      {
+        nama: 449,
+        part: "radiance",
+        depicts: "Kānti is radiance, loveliness that shines. Under the card her light, its rays going out all round.",
+      },
+      {
+        nama: 450,
+        part: "nandini",
+        depicts:
+          "Nandinī is the one who delights, and the same word names Vasiṣṭha’s wish-granting cow, a source one attends on and is fed by. At the right the white cow lowers her head to her calf.",
+      },
+      {
+        nama: 451,
+        part: "obstacles",
+        depicts:
+          "Destroying obstacles is Gaṇeśa’s own office: in her war he shattered the demon’s engine of obstruction. The verse that began by calling her his mother ends by giving the title to her, and in front the engine lies broken, a gleam at the break.",
       },
     ],
   },

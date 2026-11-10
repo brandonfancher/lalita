@@ -529,6 +529,13 @@ second time it is needed.
 | The Kaula path | A path coming up from the front to the kula, two dashed gold edges widening toward us over a faint gold-soft tread, and on it, one behind the other, four `Lamp`s growing from 1.2 to 2.25: those set on the path | Inline (`kula-hollow.tsx`, with `Lamp`) | Shloka 93 |
 | Kuśa cut and tied, and the kuśa ring (pavitra) | Nine blades of kuśa, `--leaf` and `--art-turmeric` by turns, cut square at one end and fanning to their tips at the other, tied with two turns of turmeric, on a faint musk shadow; beside it a small ring of kuśa (a `--leaf` ellipse with a gold hairline) with its two ends standing up | Inline (`kula-hollow.tsx`) | Shloka 93 |
 | Śirīṣa, the softest flower | A thin `--art-musk` sprig with three powder-puff flowers, each 23 fine filaments fanned upward from a `--leaf` calyx, `--art-ivory` at the base to `--lotus` tips with a lotus dot at each, swaying by turns, and one feathery leaf of paired `--leaf` leaflets | Inline (`kula-hollow.tsx`) | Shloka 93 |
+| Kumāra (Skanda) | Never a figure: a small `--art-saffron` light with a gold ring in a saffron glow, ringed by the six Kṛttikā stars who fostered him (core `glint`s edged in gold, `m-twinkle` by turns), and standing beside it his spear (vel): a gold shaft with a broad leaf-shaped `--art-core` blade edged in gold and a vermilion binding under it | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Gaṇeśa, as her son | His light ruddy as the dawn (`DawnDefs`, a vermilion disc with a saffron highlight and gold ring), without his ring of ten things, and his `Mouse` facing it on the ground at its foot | Inline (`mother-of-two-sons.tsx`, with `DawnDefs` and `Mouse`) | Shloka 94 |
+| A mountain, the unmoving (acala) | A peak in the crown, `--gold-soft` fading out downward under a gold edge that fades with it, a lower shoulder each side, faint ridge lines, `--art-ivory` snow on the two summits edged in gold. Steadfastness, and her father's house as Pārvatī | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A ripe sheaf of rice (puṣṭi) | Nine `--art-turmeric` stalks gathered at the foot and fanning out, tied at the waist with a `--leaf` band, each ear bowed over with five turmeric grains edged in gold | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Svastika drawn on the ground (svasti) | A right-turning svastika in `--art-vermilion` 3 wide, flattened to lie on the ground (1.3 by 0.55), with a turmeric dot edged in gold in each quarter | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A still pool (śānti) | A small pool in an `--art-stone` kerb edged in gold-soft, `--art-moon` water, and her light lying in it unbroken: one core streak in a faint core halo, no ripples | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A pot full to the brim (tuṣṭi) | A round `--art-ember` earthen pot edged in gold with a turmeric band, its mouth an `--art-ivory` surface of milk level with the rim and a core sheen, nothing spilling | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3498,6 +3505,35 @@ One entry per finished artwork, in the order they were made.
   assembly of powers is promoted to `KulaAssembly`, which can now lie flat on the ground, and
   Shloka 40's coil to `coilPath` and `Coil`. A fan of three arrows behind Kurukullā read as a
   bouquet; one arrow nocked on the bow replaced it.
+
+### Shloka 94: Mother of two sons, and then nine words for what people want
+
+- **Component:** `mother-of-two-sons.tsx` (defs prefix `sa94`)
+- **Composition:** the verse stops describing a goddess and lists goods, so the picture is a list
+  too, each good one plain thing. Under the card her light, its rays all round; at the left Kumāra
+  among the six Kṛttikās with his spear, at the right Gaṇeśa's dawn-red light with his mouse. In
+  the crown the mountain. On the ground the sheaf, the svastika, and Nandinī with her calf; in
+  front the still pool, the full pot, the book on its stand, and the engine of obstacles broken.
+- **Name → part:**
+  - Kumāragaṇanāthāmbā → `sons`: Kumāra, his stars and spear, Gaṇeśa's light and mouse
+  - Tuṣṭi → `contentment`: the full pot
+  - Puṣṭi → `nourishment`: the sheaf
+  - Mati → `understanding`: the book on its stand
+  - Dhṛti → `steadfast`: the mountain
+  - Śānti → `peace`: the still pool
+  - Svastimatī → `wellbeing`: the svastika
+  - Kānti → `radiance`: her light and its rays
+  - Nandinī → `nandini`: the cow and her calf
+  - Vighnanāśinī → `obstacles`: the broken engine, its glow and gleam
+  - Intro, *two sons* → `sons`; *her light* → `radiance`; *obstacles broken* → `obstacles`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the lights), `m-shimmer` (her rays), `m-twinkle` (the Kṛttikās),
+  `m-lick` (the gleam at the break).
+- **Notes:** this title wraps, its first line reaching x ≈ 77 and its second x ≈ 146 (198 at
+  1100px), so the card sits at y ≈ 225–438. Four inline drawings get their second use here and are
+  promoted: Shloka 31's broken engine (`BrokenSlab`), Shloka 77's cow (`Cow`), Shloka 55's mouse
+  (`Mouse`) and Shloka 53's book on its stand (`BookOnStand`). The spear first stood down into the
+  sheaf, and the mouse floated with no ground under it.
 
 ## Open questions
 
