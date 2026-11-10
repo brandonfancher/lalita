@@ -3646,3 +3646,35 @@ export function FullPot() {
     </>
   );
 }
+
+/**
+ * The kula as the assembly of powers: eight small vermilion lights on a ring round `c`
+ * (`rx` across, `ry` deep, so it can lie on the ground), each joined to the next by a gold
+ * hairline bowed a little inward. `glow` is a vermilion radial gradient from the artwork.
+ * Spokes from the centre to each made a wheel.
+ */
+export function KulaAssembly({ c, rx, ry = rx, glow, r = 3 }: { c: Pt; rx: number; ry?: number; glow: string; r?: number }) {
+  const powers = Array.from({ length: 8 }, (_, k) => {
+    const t = ((90 - k * 45) * Math.PI) / 180;
+    return { x: round(c.x + rx * Math.cos(t)), y: round(c.y - ry * Math.sin(t)), k };
+  });
+  const joins = powers
+    .map((p, i) => {
+      const q = powers[(i + 1) % powers.length];
+      const m = { x: (p.x + q.x) / 2, y: (p.y + q.y) / 2 };
+      return `M ${p.x} ${p.y} Q ${round(m.x + (c.x - m.x) * 0.35)} ${round(m.y + (c.y - m.y) * 0.35)} ${q.x} ${q.y}`;
+    })
+    .join(" ");
+  const twinkle = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+  return (
+    <>
+      <path className="m-shimmer" d={joins} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
+      {powers.map((p) => (
+        <g key={p.k} className={twinkle[p.k % 3]}>
+          <circle cx={p.x} cy={p.y} r={r * 3} fill={glow} />
+          <circle cx={p.x} cy={p.y} r={r} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={r / 5} />
+        </g>
+      ))}
+    </>
+  );
+}
