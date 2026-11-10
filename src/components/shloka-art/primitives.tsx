@@ -3533,3 +3533,45 @@ export function Parasol({ cx, rim, s = 1 }: { cx: number; rim: number; s?: numbe
     </>
   );
 }
+
+/* ── A goat ────────────────────────────────────────────────────────────── */
+
+const GOAT_BODY =
+  "M -22 -26 C -12 -30 10 -30 18 -26 C 24 -23 25 -16 22 -12 C 18 -9 10 -9 4 -10 L -16 -10 C -22 -11 -26 -16 -26 -20 C -26 -23 -24 -25 -22 -26 Z";
+const GOAT_HEAD = "M 13 -27 C 18 -32 22 -38 26 -40 C 30 -41 34 -38 36 -34 C 37 -31 35 -29 32 -30 C 28 -30 24 -26 20 -21 Z";
+const GOAT_LEGS = [
+  { x: -18, dx: -3 },
+  { x: -12, dx: 2 },
+  { x: 12, dx: -2 },
+  { x: 18, dx: 4 },
+];
+/** The goat's forequarters and hindquarters, for markings drawn over its coat. */
+export const GOAT_FORE = "M 4 -28 C 12 -30 18 -28 21 -24 C 23 -19 21 -13 16 -11 C 10 -10 6 -12 4 -16 Z";
+export const GOAT_HIND = "M -22 -26 C -16 -28 -10 -28 -8 -24 C -6 -19 -10 -12 -16 -11 C -21 -12 -25 -16 -25 -20 C -25 -23 -24 -25 -22 -26 Z";
+
+/**
+ * A goat in stride, about 70 long, facing +x, hooves on the origin's line: an ivory coat edged
+ * in gold, backswept dark horns, a drooping ear, a beard, a raised tail. `saddle` gives it the
+ * dark saddle patch; `children` are markings drawn over the coat, under the head.
+ */
+export function Goat({ saddle = true, children }: { saddle?: boolean; children?: ReactNode }) {
+  return (
+    <>
+      {GOAT_LEGS.map((l, i) => (
+        <path key={i} d={`M ${l.x} -12 L ${l.x + l.dx} 0`} stroke="var(--art-ivory)" strokeWidth={2.4} strokeLinecap="round" />
+      ))}
+      {GOAT_LEGS.map((l, i) => (
+        <path key={`h${i}`} d={`M ${l.x + l.dx - 1.2} -0.6 H ${l.x + l.dx + 1.2}`} stroke="var(--art-hair)" strokeWidth={1.4} strokeLinecap="round" />
+      ))}
+      <path d="M -24 -23 L -31 -31 L -25 -21 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d={GOAT_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      {saddle && <path d="M -14 -28 C -8 -30 0 -29 4 -26 C 2 -21 -8 -20 -14 -22 Z" fill="var(--art-hair)" fillOpacity={0.7} />}
+      {children}
+      <path d={GOAT_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d="M 26 -40 C 22 -47 15 -47 12 -42" stroke="var(--art-hair)" strokeWidth={1.8} strokeLinecap="round" />
+      <path d="M 25 -36 C 21 -34 18 -31 17 -28" stroke="var(--art-hair)" strokeOpacity={0.8} strokeWidth={2.4} strokeLinecap="round" />
+      <path d="M 33 -30 L 32 -24 L 30 -29 Z" fill="var(--art-hair)" />
+      <circle cx={30} cy={-36} r={1} fill="var(--art-hair)" />
+    </>
+  );
+}
