@@ -3809,26 +3809,26 @@ const COW_LEGS = [-24, -17, 27, 34];
 export function Cow() {
   return (
     <>
-    {COW_LEGS.map((x, i) => (
-      <path key={i} d={`M ${x} -14 L ${x + (i % 2 ? 0.6 : -0.6)} -1`} stroke="var(--art-ivory)" strokeWidth={3.6} strokeLinecap="round" />
-    ))}
-    {COW_LEGS.map((x, i) => (
-      <path key={i} d={`M ${x - 2} -2 H ${x + 2}`} stroke="var(--art-hair)" strokeWidth={1.6} strokeLinecap="round" />
-    ))}
-    <path d="M 42 -36 C 50 -30 50 -20 48 -10" stroke="var(--art-ivory)" strokeWidth={1.4} strokeLinecap="round" />
-    <path d="M 48 -12 C 46 -8 50 -5 50 -3 C 47 -4 46 -7 48 -12 Z" fill="var(--art-hair)" />
-    <path d={COW_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-    <path d="M -20 -14 C 0 -10 20 -10 34 -14" stroke="var(--art-turmeric)" strokeWidth={2.4} strokeOpacity={0.35} strokeLinecap="round" />
-    <path d="M 10 -12 C 11 -8 17 -8 18 -12" fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
-    <path d={COW_DEWLAP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
-    <path d={COW_HUMP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-    <path d={COW_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-    <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--art-turmeric)" strokeWidth={2} strokeLinecap="round" />
-    <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--gold)" strokeWidth={0.5} strokeLinecap="round" />
-    <path d="M -42 -30 C -38 -32 -34 -31 -33 -28 C -36 -27 -39 -28 -42 -30 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
-    <circle cx={-50} cy={-22} r={1.2} fill="var(--art-hair)" />
-    <path d="M -63 -12 C -61 -9 -58 -9 -56 -11" stroke="var(--art-hair)" strokeWidth={0.8} strokeOpacity={0.6} />
-    <path d="M -44 -36 C -40 -38 -34 -38 -30 -36" stroke="var(--art-vermilion)" strokeWidth={1.4} strokeLinecap="round" />
-  </>
+      {COW_LEGS.map((x, i) => (
+        <path key={i} d={`M ${x} -14 L ${x + (i % 2 ? 0.6 : -0.6)} -1`} stroke="var(--art-ivory)" strokeWidth={3.6} strokeLinecap="round" />
+      ))}
+      {COW_LEGS.map((x, i) => (
+        <path key={i} d={`M ${x - 2} -2 H ${x + 2}`} stroke="var(--art-hair)" strokeWidth={1.6} strokeLinecap="round" />
+      ))}
+      <path d="M 42 -36 C 50 -30 50 -20 48 -10" stroke="var(--art-ivory)" strokeWidth={1.4} strokeLinecap="round" />
+      <path d="M 48 -12 C 46 -8 50 -5 50 -3 C 47 -4 46 -7 48 -12 Z" fill="var(--art-hair)" />
+      <path d={COW_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -20 -14 C 0 -10 20 -10 34 -14" stroke="var(--art-turmeric)" strokeWidth={2.4} strokeOpacity={0.35} strokeLinecap="round" />
+      <path d="M 10 -12 C 11 -8 17 -8 18 -12" fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={COW_DEWLAP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
+      <path d={COW_HUMP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d={COW_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--art-turmeric)" strokeWidth={2} strokeLinecap="round" />
+      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--gold)" strokeWidth={0.5} strokeLinecap="round" />
+      <path d="M -42 -30 C -38 -32 -34 -31 -33 -28 C -36 -27 -39 -28 -42 -30 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={-50} cy={-22} r={1.2} fill="var(--art-hair)" />
+      <path d="M -63 -12 C -61 -9 -58 -9 -56 -11" stroke="var(--art-hair)" strokeWidth={0.8} strokeOpacity={0.6} />
+      <path d="M -44 -36 C -40 -38 -34 -38 -30 -36" stroke="var(--art-vermilion)" strokeWidth={1.4} strokeLinecap="round" />
+    </>
   );
 }
