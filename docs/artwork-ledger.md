@@ -3621,7 +3621,7 @@ One entry per finished artwork, in the order they were made.
 - Name → part: Viśuddhicakranilayā → `visuddhi`; Āraktavarṇā → `ruddy`; Trilocanā → `three-eyes`; Khaṭvāṅgādipraharaṇā → `khatvanga` (the skull-staff, and the unfixed rest faint behind it); Vadanaikasamanvitā → `one-face`. Intro: `visuddhi`, `one-face`.
 - Palette: the wheel `--lotus` and gold, the letters `--sindura` on ivory; her light core, sindura and vermilion; the eyes moon, vermilion-to-core and saffron; the staff ember and gold with a vermilion ribbon and an ivory skull; the faces vermilion and gold-soft.
 - Motion: her light `m-breathe`; the eyes as in Shloka 95 (fire `m-flicker`, sun and fire glows `m-breathe`); the ribbon `m-sway`; the lit face's glow `m-breathe`.
-- Notes: promotes the three eyes (`ThreeEyes` and `ThreeEyesDefs`, from Shloka 95). This is the first of the seven wheel verses (98 to 105 and on), and its pattern is set for them: the wheel large under the card with its letters, her light in her colour, her weapons, and the count of faces at the left. The skull is seen from behind so it shows no face. The title stays on one line and reaches x ≈ 359 (411 at 1100px) at y ≈ 74–141.
+- Notes: promotes the three eyes (`ThreeEyes` and `ThreeEyesDefs`, from Shloka 95). This is the first of the verses on the wheels of the subtle body, and it sets their pattern: the wheel large under the card with its letters, her light in her colour, her weapons, and the count of faces at the left. The skull is seen from behind so it shows no face. The title stays on one line and reaches x ≈ 359 (411 at 1100px) at y ≈ 74–141.
 
 ## Open questions
 
