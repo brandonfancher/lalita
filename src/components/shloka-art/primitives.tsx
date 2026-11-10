@@ -3678,3 +3678,31 @@ export function KulaAssembly({ c, rx, ry = rx, glow, r = 3 }: { c: Pt; rx: numbe
     </>
   );
 }
+
+/**
+ * Kuṇḍalinī coiled: `turns` turns round `c`, seen a little from above (`tilt` as deep as wide),
+ * the radius narrowing from `r0` to `r1` and the coil rising `rise` as it goes, starting at the
+ * front. The path stops at the inner end; a caller can carry it on.
+ */
+export function coilPath(c: Pt, { r0 = 48, r1 = 36, turns = 3.5, tilt = 0.3, rise = 12 }: { r0?: number; r1?: number; turns?: number; tilt?: number; rise?: number } = {}) {
+  const n = Math.round(40 * turns);
+  const pts = Array.from({ length: n + 1 }, (_, i) => {
+    const t = i / n;
+    const a = Math.PI / 2 + t * turns * 2 * Math.PI;
+    const r = r0 - (r0 - r1) * t;
+    return { x: round(c.x + Math.cos(a) * r), y: round(c.y - rise * t + Math.sin(a) * r * tilt) };
+  });
+  return polyline(pts);
+}
+
+/** The coil's body along `d`: an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside. Taller and thicker, it read as a spring. */
+export function Coil({ d, w = 3.2 }: { d: string; w?: number }) {
+  const line = { strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+  return (
+    <>
+      <path d={d} stroke="var(--art-vermilion)" strokeWidth={w} {...line} />
+      <path d={d} stroke="var(--art-saffron)" strokeWidth={w * 0.56} {...line} />
+      <path d={d} stroke="var(--art-core)" strokeWidth={w * 0.16} {...line} />
+    </>
+  );
+}
