@@ -3560,7 +3560,7 @@ One entry per finished artwork, in the order they were made.
 - **Palette:** no additions.
 - **Motion:** `m-flicker` (the fire, her flames), `m-breathe` (the fire's and sun's glows, her
   light), `m-dart` (the wagtail), `m-sway` (the sandal trees).
-- **Notes:** this title wraps, its first line reaching x ≈ 126 and its second x ≈ 181 (233 at
+- **Notes:** this title wraps, its first line reaching x ≈ 126 and its second x ≈ 224 (276 at
   1100px), so the card sits at y ≈ 225–438. This sets the canon for her three eyes, and moves them
   out of the anticipated list: never drawn as eyes, and never level pairs. Shloka 74's wagtail is
   promoted to `Wagtail`. Flames pointing straight out from her light made a second sun.
