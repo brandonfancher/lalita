@@ -95,6 +95,7 @@ import { SandalAndCampaka } from "./sandal-and-campaka";
 import { KulaHollow } from "./kula-hollow";
 import { MotherOfTwoSons } from "./mother-of-two-sons";
 import { FireAndTheGarland } from "./fire-and-the-garland";
+import { TooFineToSee } from "./too-fine-to-see";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4562,6 +4563,72 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "malaya",
         depicts:
           "She lives on Malaya, the mountain of the south that supplied sandalwood to all India; acala, the unmoving, is the ordinary word for a mountain. At the right its green hills rise, dotted with sandal trees.",
+      },
+    ],
+  },
+  "096": {
+    Art: TooFineToSee,
+    intro: (Spot) => (
+      <>
+        The verse assembles a face name by name and then withdraws it, and the picture never draws one.
+        Her face is <Spot part="face">the mirror</Spot> it has always been here, and each feature is the
+        thing the poets set in its place, kept apart from the rest, until the last name leaves only{" "}
+        <Spot part="subtle">a point too fine to see</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 459,
+        part: "face",
+        depicts:
+          "Her face is lovely. As everywhere in these pictures, her face is the hand mirror, holding nothing but her light.",
+      },
+      {
+        nama: 460,
+        part: "lotus",
+        depicts:
+          "Nalinī is the lotus, named for the hollow stalk, nala, that carries it up to the surface, and the word also means a pond crowded with them. At the front left a pond of lotuses stands on their stalks.",
+      },
+      {
+        nama: 461,
+        part: "brows",
+        depicts:
+          "Her brows are beautiful, and the brow is the arc that Kāma’s bow is measured against. In the crown, on its own, his bow of flowers.",
+      },
+      {
+        nama: 462,
+        part: "splendid",
+        depicts: "Śobhanā, splendid, adorned. At the left her ornaments lie on a gold tray, a strand of pearls with a ruby pendant.",
+      },
+      {
+        nama: 463,
+        part: "gods",
+        depicts:
+          "She is the leader of the gods, and in the language of drama the nāyikā, the heroine of the story they are in. From the right the gods’ lamps come up behind her in a line.",
+      },
+      {
+        nama: 464,
+        part: "dark-throat",
+        depicts:
+          "When the ocean was churned, the poison that came up before the nectar was drunk by Śiva, and his wife caught his throat so that it stopped there and stained it. A pot’s neck is its throat too, and in front a gold pot stands with its throat stained dark, a dark drop over its mouth.",
+      },
+      {
+        nama: 465,
+        part: "radiant",
+        depicts:
+          "She possesses radiance, kānti given again with a different grammar. Her light in the mirror shines out past its frame in rings.",
+      },
+      {
+        nama: 466,
+        part: "agitator",
+        depicts:
+          "Kṣobhiṇī is the one who shakes, the word used of a churned ocean; in this school kṣobha is the first stir of a perfect stillness, without which nothing would move at all. At the front right the sea turns in a whirl.",
+      },
+      {
+        nama: 467,
+        part: "subtle",
+        depicts:
+          "Her form is subtle, too fine for the senses: the mantra is a body of hers no less than the face the verse has built. At the top of the crown is a single point of light, almost too fine to see.",
       },
     ],
   },

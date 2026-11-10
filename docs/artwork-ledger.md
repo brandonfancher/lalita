@@ -541,6 +541,12 @@ second time it is needed.
 | The garland of letters (Mālinī) | A `--leaf` thread sagging across the middle, with thirteen letters of the Mālinī order (न ऋ ॠ ऌ ॡ थ च ध ई ण उ ऊ ब, the vowels and consonants interwoven) hung on it as beads, each in `--sindura` (Tiro Devanagari, 17) on a faint core disc edged in gold, and between them a `BLOSSOM`, `--lotus` and `--art-saffron` by turns | Inline (`fire-and-the-garland.tsx`, with `BLOSSOM`) | Shloka 95 |
 | The plain word: माता | The word alone in `--sindura` (Tiro Devanagari, 40) at the front, with nothing round it | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
 | The hills of Malaya and their sandal trees | Two ranges of low rounded `--leaf` hills at the right, far and near, each fading downward under a faint gold ridge line, with six sandal trees on their slopes: a short `--art-musk` trunk under a crown of three `--leaf` ellipses dotted with two `--art-crimson` berries, swaying | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| Her face assembled, never drawn | When a verse builds her face feature by feature, each feature is the thing the poets set in its place and is kept well apart from the others: her face the hand mirror (Shloka 12) with only her light in it, her brows Kāma's `FlowerBow` alone in the crown, offset and tilted, never over the mirror. A brow arc set over a round thing would make a face | Inline (`too-fine-to-see.tsx`, with `HandMirror` and `FlowerBow`) | Shloka 96 |
+| Her subtle form (sūkṣma-rūpa) | A point of light almost too fine to see at the top of the crown: a 1.1 core dot with a gold hairline, three hairline gold rings (6, 11, 17) at falling opacity on `m-twinkle` by turns, in a small faint core glow | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The gods' lamps following her (suranāyikā) | Seven `Lamp`s (the gods' saffron flame) along a dashed gold-soft line curving up from the front right to behind her light, from 2.2 near us to 1 nearest her | Inline (`too-fine-to-see.tsx`, with `Lamp`) | Shloka 96 |
+| Her ornaments on a tray (śobhanā) | A gold tray seen at a slant with a turmeric well, on it a loop of twenty-two `Pearl`s and a ruby pendant (`Ruby`) on a gold mount, with a smaller ruby loose | Inline (`too-fine-to-see.tsx`, with `Pearl` and `Ruby`) | Shloka 96 |
+| The dark throat (kālakaṇṭha), as a pot's | A pot's neck is its kaṇṭha: a round gold pot edged in carve, its neck and the water in its mouth `--art-hair` (the poison's dark blue), a dark drop over it edged in moon (`m-ember`), in a faint hair glow | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The churned sea (kṣobha) | Five open rings of a whirl seen at a slant (rx 22 to 94, a quarter as deep), each a 3.2 `--art-ivory` foam line under a gold one and open where the next begins, rocking on `m-sway` by turns round its centre, over a gold-soft to moon glow, with an ivory point at the eye | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3564,6 +3570,32 @@ One entry per finished artwork, in the order they were made.
   1100px), so the card sits at y ≈ 225–438. This sets the canon for her three eyes, and moves them
   out of the anticipated list: never drawn as eyes, and never level pairs. Shloka 74's wagtail is
   promoted to `Wagtail`. Flames pointing straight out from her light made a second sun.
+
+### Shloka 96: A face assembled name by name, and then declared too fine to see
+
+- **Component:** `too-fine-to-see.tsx` (defs prefix `sa96`)
+- **Composition:** the verse builds a face and then withdraws it; the picture never draws one.
+  Under the card her face is the hand mirror, her light in it shining out past the frame in
+  rings. In the crown Kāma's bow alone, and at its very top a point of light. The gods' lamps come
+  up behind her from the right; at the left her ornaments on a tray. In front a lotus pond, a pot
+  with its throat stained dark, and the churned sea.
+- **Name → part:**
+  - Sumukhī → `face`: the mirror and her light in it
+  - Nalinī → `lotus`: the pond, its pads and lotuses
+  - Subhrūḥ → `brows`: the bow of flowers
+  - Śobhanā → `splendid`: the tray of ornaments
+  - Suranāyikā → `gods`: the gods' lamps and their line
+  - Kālakaṇṭhī → `dark-throat`: the pot, its dark throat and the drop
+  - Kāntimatī → `radiant`: her glow and the rings round the mirror
+  - Kṣobhiṇī → `agitator`: the whirl
+  - Sūkṣmarūpiṇī → `subtle`: the point of light
+  - Intro, *the mirror* → `face`; *a point too fine to see* → `subtle`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the point's glow), `m-shimmer` (the rings), `m-twinkle` (the
+  point's rings), `m-flicker` (the lamps), `m-ember` (the drop), `m-sway` (the whirl).
+- **Notes:** this title wraps, its first line reaching x ≈ 152 (204 at 1100px), so the card sits
+  at y ≈ 225–438. The whirl first sat so low and pale that the ground's fade took it; it was raised
+  and given ivory foam under its gold.
 
 ## Open questions
 
