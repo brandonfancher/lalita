@@ -14,7 +14,7 @@
  * up for readers in the registry, next to this artwork's entry.
  */
 
-import { Axe, StillLamp, artIds, litPart, partProps, polar, round } from "./primitives";
+import { Axe, FullPot, StillLamp, artIds, litPart, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -74,9 +74,6 @@ const THREAD = `M ${LAMP.x} ${LAMP.y - 22} L ${HER.x} ${HER.y + 14}`;
 /* ── The full pot, and the tray of good fortune ────────────────────────── */
 
 const KUMBHA = { x: 158, y: GROUND + 34 };
-const POT_BODY = "M -9 -20 C -26 -18 -28 6 -14 14 C -6 18 6 18 14 14 C 28 6 26 -18 9 -20 Z";
-const POT_NECK = "M -9 -20 L -7 -27 L 7 -27 L 9 -20 Z M -11 -29 L 11 -29 L 11 -26 L -11 -26 Z";
-const MANGO = [-60, -32, 0, 32, 60];
 const TRAY = { x: 488, y: GROUND + 40 };
 const MOTES = Array.from({ length: 10 }, (_, k) => ({
   x: round(TRAY.x - 26 + ((k * 23) % 52)),
@@ -190,15 +187,7 @@ export function ForestOfBecoming({ idPrefix = "sa41", active = null }: ArtProps)
 
       {/* The full pot, the auspicious thing she is fond of */}
       <g {...part("auspicious")} transform={`translate(${KUMBHA.x} ${KUMBHA.y})`}>
-        {MANGO.map((deg) => (
-          <path key={deg} d="M 0 -27 C -4 -34 -4 -46 0 -54 C 4 -46 4 -34 0 -27 Z" transform={`rotate(${deg} 0 -27)`} fill="var(--leaf)" stroke="var(--gold)" strokeWidth={0.4} />
-        ))}
-        <ellipse cy={-38} rx={9} ry={11} fill="var(--art-turmeric)" stroke="var(--art-musk)" strokeWidth={0.6} />
-        <path d="M -6 -44 C -2 -47 2 -47 6 -44" stroke="var(--art-musk)" strokeWidth={0.6} strokeOpacity={0.7} />
-        <path d={POT_NECK} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
-        <path d={POT_BODY} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
-        <path d="M -22 -4 C -10 2 10 2 22 -4" stroke="var(--art-vermilion)" strokeWidth={1.4} />
-        <circle cy={-6} r={2.4} fill="var(--art-vermilion)" />
+        <FullPot />
       </g>
 
       {/* The tray of the married woman's good fortune, which she hands out */}

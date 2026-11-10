@@ -3603,3 +3603,30 @@ export function NightLily() {
     </>
   );
 }
+
+/* ── The full pot ──────────────────────────────────────────────────────── */
+
+const FULL_POT_BODY = "M -9 -20 C -26 -18 -28 6 -14 14 C -6 18 6 18 14 14 C 28 6 26 -18 9 -20 Z";
+const FULL_POT_NECK = "M -9 -20 L -7 -27 L 7 -27 L 9 -20 Z M -11 -29 L 11 -29 L 11 -26 L -11 -26 Z";
+const MANGO = [-60, -32, 0, 32, 60];
+
+/**
+ * The full pot (pūrṇa-kumbha), about 52 wide and 72 tall, its foot at y 17: a round gold pot with a
+ * narrow neck and rim, a vermilion band and dot, five mango leaves fanned from its mouth and a
+ * turmeric coconut on top.
+ */
+export function FullPot() {
+  return (
+    <>
+      {MANGO.map((deg) => (
+        <path key={deg} d="M 0 -27 C -4 -34 -4 -46 0 -54 C 4 -46 4 -34 0 -27 Z" transform={`rotate(${deg} 0 -27)`} fill="var(--leaf)" stroke="var(--gold)" strokeWidth={0.4} />
+      ))}
+      <ellipse cy={-38} rx={9} ry={11} fill="var(--art-turmeric)" stroke="var(--art-musk)" strokeWidth={0.6} />
+      <path d="M -6 -44 C -2 -47 2 -47 6 -44" stroke="var(--art-musk)" strokeWidth={0.6} strokeOpacity={0.7} />
+      <path d={FULL_POT_NECK} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d={FULL_POT_BODY} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+      <path d="M -22 -4 C -10 2 10 2 22 -4" stroke="var(--art-vermilion)" strokeWidth={1.4} />
+      <circle cy={-6} r={2.4} fill="var(--art-vermilion)" />
+    </>
+  );
+}
