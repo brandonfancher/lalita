@@ -3965,3 +3965,29 @@ export function FiveFaces({ c, r, url, stress }: { c: Pt; r: number; url: (name:
     </>
   );
 }
+
+/* ── Conch (śaṅkha) ────────────────────────────────────────────────────── */
+
+const CONCH_BODY = "M -32 -1 L -25 -6 L -18 -10 C -8 -19 10 -19 22 -10 C 28 -5 32 0 34 5 C 26 5 18 9 8 12 C -4 15 -14 12 -20 6 L -26 3 Z";
+const CONCH_WHORLS = "M -25 -6 C -24 -3 -24 0 -26 3 M -18 -10 C -16 -4 -16 2 -20 6 M -8 -17 C -5 -8 -6 2 -10 11";
+const CONCH_RIDGES = "M 0 -18 C 4 -10 4 0 0 12 M 10 -16 C 14 -8 14 2 10 10 M 18 -12 C 21 -6 21 2 18 8";
+const CONCH_MOUTH = "M -6 9 C 6 3 20 1 32 4 C 22 8 8 12 -6 9 Z";
+
+/**
+ * A śaṅkha lying on its side, about 66 long, centred on the origin with its shadow on y 15: the
+ * stepped spire to the left, the lotus mouth open below, the canal at the right. The caller draws
+ * its sound.
+ */
+export function Conch() {
+  return (
+    <g strokeLinejoin="round">
+      <ellipse cx={2} cy={15} rx={30} ry={3.4} fill="var(--art-musk)" fillOpacity={0.14} />
+      <path d={CONCH_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={1.1} />
+      <path d={CONCH_WHORLS} stroke="var(--gold)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d={CONCH_RIDGES} stroke="var(--gold-soft)" strokeWidth={0.7} strokeLinecap="round" />
+      <path d={CONCH_MOUTH} fill="var(--lotus)" fillOpacity={0.75} stroke="var(--gold)" strokeWidth={0.8} />
+      <path d="M -2 9 C 8 5 18 4 28 5" stroke="var(--art-ivory)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d="M -6 -12 C 0 -16 8 -16 14 -13" stroke="var(--art-core)" strokeWidth={1.2} strokeOpacity={0.8} strokeLinecap="round" />
+    </g>
+  );
+}
