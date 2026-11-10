@@ -524,6 +524,11 @@ second time it is needed.
 | A pāṭala bough (the trumpet-flower), for flushed cheeks | A tapering `--art-musk` bough hanging in from the top right of the crown, with lance `--leaf` leaves edged in gold; seven trumpets about 26 long at 1 on short stalks, each a narrow tube flaring to a lipped mouth, filled `--lotus` to `--art-ivory`, edged and veined in `--art-crimson` at low opacity, a `--leaf` calyx, each nodding on `m-sway` by turns | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
 | Sandal ground on its stone (candana-drava) | A round grinding stone seen at a slant (rx 62 at 1), `--art-stone` with a thickness and a gold rim, wet with a pool of paste (`--art-core` to `--art-turmeric`) and a little `--art-moon` water; on it a sandalwood log, `--art-turmeric` to `--art-ember` with musk grain and a pale cut end showing its rings; beside it a footed gold bowl of the paste. Fragrance is not drawn | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
 | Campaka heaped on a leaf | Seven face-on `Campaka`s at 0.8 to 1.05, squashed a little in height to lie on a slant, heaped on a `--leaf` leaf plate with a gold-soft midrib | Inline (`sandal-and-campaka.tsx`, with `Campaka`) | Shloka 92 |
+| Kurukullā at the moat of nectar | Never a figure: an `--art-vermilion` light with a core heart and gold ring in a breathing vermilion glow, far off in the crown over the moat round her city (a faint band of `--art-moon` to `--gold-soft` nectar under `WavePattern`, curving, faded out at both ends, with a gold line along its far edge); beside the light her `FlowerBow` stood upright, string toward her, and one `FlowerArrow` nocked on it, aimed away. A fan of arrows behind the light made a bouquet | Inline (`kula-hollow.tsx`, with `FlowerBow` and `FlowerArrow`) | Shloka 93 |
+| The kula hollow (kulakuṇḍa) | A round pit seen a little from above (rx 62): an `--art-stone` rim edged in gold round a hollow shaded `--art-musk`; inside, the power coiled asleep (`coilPath`, 44 narrowing to 22, its inner end turning down to the centre, not rising, drawn as a `Coil`) in a saffron glow, and her light at its centre, the opening of the channel, rising out of the pit as a tall soft glow | Inline (`kula-hollow.tsx`, with `coilPath` and `Coil`) | Shloka 93 |
+| The Kaula path | A path coming up from the front to the kula, two dashed gold edges widening toward us over a faint gold-soft tread, and on it, one behind the other, four `Lamp`s growing from 1.2 to 2.25: those set on the path | Inline (`kula-hollow.tsx`, with `Lamp`) | Shloka 93 |
+| Kuśa cut and tied, and the kuśa ring (pavitra) | Nine blades of kuśa, `--leaf` and `--art-turmeric` by turns, cut square at one end and fanning to their tips at the other, tied with two turns of turmeric, on a faint musk shadow; beside it a small ring of kuśa (a `--leaf` ellipse with a gold hairline) with its two ends standing up | Inline (`kula-hollow.tsx`) | Shloka 93 |
+| Śirīṣa, the softest flower | A thin `--art-musk` sprig with three powder-puff flowers, each 23 fine filaments fanned upward from a `--leaf` calyx, `--art-ivory` at the base to `--lotus` tips with a lotus dot at each, swaying by turns, and one feathery leaf of paired `--leaf` leaflets | Inline (`kula-hollow.tsx`) | Shloka 93 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3466,6 +3471,33 @@ One entry per finished artwork, in the order they were made.
   wisps rising from the paste and the flowers were dropped: fragrance is never drawn as wisps
   (Shloka 10). The sandal bowl and the order, sandal then flowers, agree with Shloka 56's five
   offerings. The bough first ran out past x 520 and dipped into the card; it was drawn in.
+
+### Shloka 93: Six names on one syllable, and the hymn names its own tradition
+
+- **Component:** `kula-hollow.tsx` (defs prefix `sa93`)
+- **Composition:** the verse goes from what she is like to the school that claims her, and the
+  picture goes from the far edge of her island in to the hollow at its root. In the crown the moat
+  of nectar round her city, with Kurukullā over it as a red light, her flower bow and arrow beside
+  her. Under the card the kula hollow, the coiled power asleep in it and her light rising out of
+  it; round it on the ground the assembly of powers; up to it from the front the Kaula path, its
+  lamps the people on it. At the left kuśa cut and tied with a kuśa ring, at the right śirīṣa.
+- **Name → part:**
+  - Kuśalā → `skilful`: the kuśa bundle and ring
+  - Komalākārā → `tender`: the śirīṣa
+  - Kurukullā → `kurukulla`: the moat, her light, the bow and arrow
+  - Kuleśvarī → `kula`: the assembly of powers
+  - Kulakuṇḍālayā → `hollow`: the pit, the coil and her light
+  - Kaulamārgatatparasevitā → `kaula`: the path and its lamps
+  - Intro, *moat of nectar* → `kurukulla`; *hollow at its root* → `hollow`; *kula* → `kula`;
+    *Kaula path* → `kaula`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, Kurukullā, the coil's glow), `m-shimmer` (the powers' joins),
+  `m-twinkle` (the powers, the arrow's head), `m-flicker` (the lamps), `m-sway` (the śirīṣa).
+- **Notes:** this title wraps, its first line reaching x ≈ 110 and its second, longer, x ≈ 171
+  (223 at 1100px), so the card sits at y ≈ 225–438 and the moat starts right of x 196. Shloka 37's
+  assembly of powers is promoted to `KulaAssembly`, which can now lie flat on the ground, and
+  Shloka 40's coil to `coilPath` and `Coil`. A fan of three arrows behind Kurukullā read as a
+  bouquet; one arrow nocked on the bow replaced it.
 
 ## Open questions
 

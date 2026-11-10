@@ -92,6 +92,7 @@ import { PillarOfLight } from "./pillar-of-light";
 import { DawnGhat } from "./dawn-ghat";
 import { FiveSheaths } from "./five-sheaths";
 import { SandalAndCampaka } from "./sandal-and-campaka";
+import { KulaHollow } from "./kula-hollow";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4381,6 +4382,56 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "campaka",
         depicts:
           "Of all flowers she loves the campaka. Golden campakas lie heaped on a leaf at the right, offered after the sandal as worship requires.",
+      },
+    ],
+  },
+  "093": {
+    Art: KulaHollow,
+    intro: (Spot) => (
+      <>
+        Every name here begins on the same syllable, and the verse goes from what she is like to the
+        school that claims her. The picture goes the same way, from the far{" "}
+        <Spot part="kurukulla">moat of nectar</Spot> round her island in to the{" "}
+        <Spot part="hollow">hollow at its root</Spot>, where her light dwells, with the{" "}
+        <Spot part="kula">kula</Spot> round it and the <Spot part="kaula">Kaula path</Spot> leading up to it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 436,
+        part: "skilful",
+        depicts:
+          "Kuśala means skilful, and the old etymology takes it from kuśa, the sacred grass: the skilled man is the one who knows how to cut it for the rite. At the left a bundle of kuśa lies neatly cut and tied, and by it a ring of kuśa, worn on the finger in worship.",
+      },
+      {
+        nama: 437,
+        part: "tender",
+        depicts:
+          "Her form is soft. The poets hold the śirīṣa to be the most delicate of flowers, too soft even for a bee to stand on, and at the right a sprig of it holds up its pink-tipped puffs.",
+      },
+      {
+        nama: 438,
+        part: "kurukulla",
+        depicts:
+          "Kurukullā is a red goddess who carries a bow and arrows of flowers, and the tradition places her at the moat of nectar round her city. Far off in the crown the moat curves round, and over it Kurukullā is a red light, her bow and arrows of flowers beside her.",
+      },
+      {
+        nama: 439,
+        part: "kula",
+        depicts:
+          "Kula is a family, and in this tradition the whole manifest side of things: power, the body, the circle of yoginīs. She is its mistress. Round her on the ground the kula is a ring of red lights, each joined to the next.",
+      },
+      {
+        nama: 440,
+        part: "hollow",
+        depicts:
+          "Kuṇḍa is a round hollow, and the kula hollow is the one at the base of the body where the coiled power sleeps, her mouth over the opening of the central channel. Under the card is that hollow, the coil asleep in it and her light rising out of it.",
+      },
+      {
+        nama: 441,
+        part: "kaula",
+        depicts:
+          "She is served by those wholly given to the Kaula path. Up to the kula from the front comes a path, and on it, one behind the other, the lamps of those who walk it.",
       },
     ],
   },
