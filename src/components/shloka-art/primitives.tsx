@@ -3991,3 +3991,68 @@ export function Conch() {
     </g>
   );
 }
+
+/* ── The root mantra whole (mūlamantra) ────────────────────────────────── */
+
+const MANTRA_CLUSTERS = [
+  { name: "speech", fill: "var(--art-core)", o: [0.9, 0.3] },
+  { name: "desire", fill: "var(--lotus)", o: [0.85, 0.3] },
+  { name: "power", fill: "var(--art-vermilion)", o: [0.75, 0.26] },
+];
+const MANTRA_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** The glows of the mantra's three clusters, `speech`, `desire` and `power`. */
+export function MantraClusterDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      {MANTRA_CLUSTERS.map((c) => (
+        <radialGradient key={c.name} id={id(c.name)}>
+          <stop offset="0" style={{ stopColor: c.fill, stopOpacity: c.o[0] }} />
+          <stop offset="0.4" style={{ stopColor: c.fill, stopOpacity: c.o[1] }} />
+          <stop offset="1" style={{ stopColor: c.fill, stopOpacity: 0 }} />
+        </radialGradient>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The fifteen syllables of the root mantra on a dotted gold ring of radius `r` round `c`, clockwise
+ * from the top, each in its cluster's glow; the 5th, 11th and 15th are the ह्रीं that close the
+ * clusters, on small gold discs. Needs `MantraClusterDefs`.
+ */
+export function RootMantraRing({ c, r, url }: { c: Pt; r: number; url: (name: string) => string }) {
+  const syllables = Array.from({ length: 15 }, (_, k) => {
+    const cluster = k < 5 ? "speech" : k < 11 ? "desire" : "power";
+    return { ...polar(c.x, c.y, r, 90 - 12 - k * 24), cluster, seed: k === 4 || k === 10 || k === 14, k };
+  });
+  return (
+    <>
+      <circle cx={c.x} cy={c.y} r={r} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.55} strokeDasharray="1.5 3" strokeLinecap="round" />
+      {syllables.map((l) =>
+        l.seed ? (
+          <g key={l.k}>
+            <circle className="m-breathe" cx={l.x} cy={l.y} r={20} fill={url(l.cluster)} />
+            <circle cx={l.x} cy={l.y} r={9.4} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1} />
+            <text
+              x={l.x}
+              y={l.y + 0.8}
+              fontSize={9.4}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fill="var(--art-carve)"
+              style={{ fontFamily: "var(--font-tiro), serif" }}
+            >
+              ह्रीं
+            </text>
+          </g>
+        ) : (
+          <g key={l.k} className={MANTRA_TWINKLE[l.k % 3]}>
+            <circle cx={l.x} cy={l.y} r={11} fill={url(l.cluster)} />
+            <circle cx={l.x} cy={l.y} r={3.6} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.7} />
+          </g>
+        ),
+      )}
+    </>
+  );
+}

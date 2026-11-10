@@ -14,7 +14,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { NectarCup, Summit, artIds, partProps, polar, round, summit } from "./primitives";
+import { MantraClusterDefs, NectarCup, RootMantraRing, Summit, artIds, partProps, round, summit } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -23,11 +23,6 @@ const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
 const HER = { x: 468, y: 118 };
 const RING_R = 52;
-/** The fifteen syllables clockwise from the top; the 5th, 11th and 15th are the ह्रीं that close the clusters. */
-const SYLLABLES = Array.from({ length: 15 }, (_, k) => {
-  const cluster = k < 5 ? "speech" : k < 11 ? "desire" : "power";
-  return { ...polar(HER.x, HER.y, RING_R, 90 - 12 - k * 24), cluster, seed: k === 4 || k === 10 || k === 14, k };
-});
 
 /* ── The three clusters as one range ───────────────────────────────────── */
 
@@ -71,21 +66,7 @@ export function RootMantra({ idPrefix = "sa36", active = null }: ArtProps) {
           <stop offset="0.4" style={{ stopColor: "var(--art-core)", stopOpacity: 0.45 }} />
           <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
         </radialGradient>
-        <radialGradient id={id("speech")}>
-          <stop offset="0" style={{ stopColor: "var(--art-core)", stopOpacity: 0.9 }} />
-          <stop offset="0.4" style={{ stopColor: "var(--art-core)", stopOpacity: 0.3 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-core)", stopOpacity: 0 }} />
-        </radialGradient>
-        <radialGradient id={id("desire")}>
-          <stop offset="0" style={{ stopColor: "var(--lotus)", stopOpacity: 0.85 }} />
-          <stop offset="0.4" style={{ stopColor: "var(--lotus)", stopOpacity: 0.3 }} />
-          <stop offset="1" style={{ stopColor: "var(--lotus)", stopOpacity: 0 }} />
-        </radialGradient>
-        <radialGradient id={id("power")}>
-          <stop offset="0" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.75 }} />
-          <stop offset="0.4" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.26 }} />
-          <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
-        </radialGradient>
+        <MantraClusterDefs id={id} />
         <radialGradient id={id("range-glow")}>
           <stop offset="0" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.3 }} />
           <stop offset="0.6" style={{ stopColor: "var(--art-glow)", stopOpacity: 0.1 }} />
@@ -111,31 +92,7 @@ export function RootMantra({ idPrefix = "sa36", active = null }: ArtProps) {
       </g>
 
       <g {...part("mantra")}>
-        <circle cx={HER.x} cy={HER.y} r={RING_R} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.55} strokeDasharray="1.5 3" strokeLinecap="round" />
-        {SYLLABLES.map((l) =>
-          l.seed ? (
-            <g key={l.k}>
-              <circle className="m-breathe" cx={l.x} cy={l.y} r={20} fill={url(l.cluster)} />
-              <circle cx={l.x} cy={l.y} r={9.4} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1} />
-              <text
-                x={l.x}
-                y={l.y + 0.8}
-                fontSize={9.4}
-                textAnchor="middle"
-                dominantBaseline="central"
-                fill="var(--art-carve)"
-                style={{ fontFamily: "var(--font-tiro), serif" }}
-              >
-                ह्रीं
-              </text>
-            </g>
-          ) : (
-            <g key={l.k} className={TWINKLE[l.k % 3]}>
-              <circle cx={l.x} cy={l.y} r={11} fill={url(l.cluster)} />
-              <circle cx={l.x} cy={l.y} r={3.6} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.7} />
-            </g>
-          ),
-        )}
+        <RootMantraRing c={HER} r={RING_R} url={url} />
       </g>
 
       {/* The three clusters standing together as one range, her frame */}
