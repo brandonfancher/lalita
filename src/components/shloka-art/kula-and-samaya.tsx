@@ -13,22 +13,14 @@
  * registry, next to this artwork's entry.
  */
 
-import { Kolam, Lamp, NectarCup, OpenLotus, archPath, artIds, partProps, polar, round } from "./primitives";
+import { Kolam, KulaAssembly, Lamp, NectarCup, OpenLotus, archPath, artIds, partProps, polar, round } from "./primitives";
 import type { ArtProps } from "./types";
-
-const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
 
 /* ── The kula: a household doorway ─────────────────────────────────────── */
 
 const DOOR = { cx: 206, cy: 468, bottom: 556 };
 const DOOR_R = 58;
 const KULA = { x: DOOR.cx, y: 496 };
-/** The assembly of powers round her, each joined to her and to the next. */
-const POWERS = Array.from({ length: 8 }, (_, k) => ({ ...polar(KULA.x, KULA.y, 34, 90 - k * 45), k }));
-const JOINS = POWERS.map((p, i) => {
-  const q = POWERS[(i + 1) % POWERS.length];
-  return `M ${p.x} ${p.y} Q ${round((p.x + q.x) / 2 + (KULA.x - (p.x + q.x) / 2) * 0.35)} ${round((p.y + q.y) / 2 + (KULA.y - (p.y + q.y) / 2) * 0.35)} ${q.x} ${q.y}`;
-}).join(" ");
 /** Mango leaves (toraṇa) hung along the arch. */
 const TORANA = Array.from({ length: 9 }, (_, k) => {
   const deg = 160 - k * 17.5;
@@ -128,13 +120,7 @@ export function KulaAndSamaya({ idPrefix = "sa37", active = null }: ArtProps) {
 
       {/* The assembly of powers, each joined to her and to the next */}
       <g {...part("yogini")}>
-        <path className="m-shimmer" d={JOINS} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
-        {POWERS.map((p) => (
-          <g key={p.k} className={TWINKLE[p.k % 3]}>
-            <circle cx={p.x} cy={p.y} r={9} fill={url("power-glow")} />
-            <circle cx={p.x} cy={p.y} r={3} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.6} />
-          </g>
-        ))}
+        <KulaAssembly c={KULA} rx={34} glow={url("power-glow")} />
       </g>
 
       {/* Her light, inside the kula */}

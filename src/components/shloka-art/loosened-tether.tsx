@@ -13,7 +13,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { ChariotWheel, CreeperLeaf, Pearl, Ruby, along, artIds, creeperTendril, partProps, round, taper, through } from "./primitives";
+import { ChariotWheel, CreeperLeaf, Goat, Pearl, Ruby, along, artIds, creeperTendril, partProps, round, taper, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── The post and the creeper climbing it ──────────────────────────────── */
@@ -65,15 +65,6 @@ const NEAR = "translate(320 588) scale(1.25) translate(-320 -588)";
 const STAKE = { x: 166, foot: 586, top: 528 };
 const ROPE = "M 170 538 C 176 556 182 578 194 586 C 210 594 224 586 216 580 C 208 574 198 588 222 591 C 236 592 244 589 250 587";
 const GOAT = { x: 268, y: 584 };
-const GOAT_BODY =
-  "M -22 -26 C -12 -30 10 -30 18 -26 C 24 -23 25 -16 22 -12 C 18 -9 10 -9 4 -10 L -16 -10 C -22 -11 -26 -16 -26 -20 C -26 -23 -24 -25 -22 -26 Z";
-const GOAT_HEAD = "M 13 -27 C 18 -32 22 -38 26 -40 C 30 -41 34 -38 36 -34 C 37 -31 35 -29 32 -30 C 28 -30 24 -26 20 -21 Z";
-const GOAT_LEGS = [
-  { x: -18, dx: -3 },
-  { x: -12, dx: 2 },
-  { x: 12, dx: -2 },
-  { x: 18, dx: 4 },
-];
 
 /* ── The wheel set rolling ─────────────────────────────────────────────── */
 
@@ -196,20 +187,7 @@ export function LoosenedTether({ idPrefix = "sa78", active = null }: ArtProps) {
       <g {...part("goat")} transform={NEAR}>
         <ellipse cx={GOAT.x} cy={GOAT.y + 1} rx={26} ry={2.6} fill="var(--art-musk)" fillOpacity={0.25} />
         <g transform={`translate(${GOAT.x} ${GOAT.y})`}>
-          {GOAT_LEGS.map((l, i) => (
-            <path key={i} d={`M ${l.x} -12 L ${l.x + l.dx} 0`} stroke="var(--art-ivory)" strokeWidth={2.4} strokeLinecap="round" />
-          ))}
-          {GOAT_LEGS.map((l, i) => (
-            <path key={i} d={`M ${l.x + l.dx - 1.2} -0.6 H ${l.x + l.dx + 1.2}`} stroke="var(--art-hair)" strokeWidth={1.4} strokeLinecap="round" />
-          ))}
-          <path d="M -24 -23 L -31 -31 L -25 -21 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
-          <path d={GOAT_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-          <path d="M -14 -28 C -8 -30 0 -29 4 -26 C 2 -21 -8 -20 -14 -22 Z" fill="var(--art-hair)" fillOpacity={0.7} />
-          <path d={GOAT_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-          <path d="M 26 -40 C 22 -47 15 -47 12 -42" stroke="var(--art-hair)" strokeWidth={1.8} strokeLinecap="round" />
-          <path d="M 25 -36 C 21 -34 18 -31 17 -28" stroke="var(--art-hair)" strokeOpacity={0.8} strokeWidth={2.4} strokeLinecap="round" />
-          <path d="M 33 -30 L 32 -24 L 30 -29 Z" fill="var(--art-hair)" />
-          <circle cx={30} cy={-36} r={1} fill="var(--art-hair)" />
+          <Goat />
         </g>
       </g>
 

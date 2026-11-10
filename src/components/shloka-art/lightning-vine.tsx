@@ -12,7 +12,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { CakraLotus, OpenLotus, artIds, creeperTendril, glint, partProps, polyline, round, type Cakra } from "./primitives";
+import { CakraLotus, Coil, OpenLotus, artIds, coilPath, creeperTendril, glint, partProps, polyline, round, type Cakra } from "./primitives";
 import type { ArtProps } from "./types";
 
 const AXIS = 320;
@@ -51,17 +51,7 @@ const TENDRILS = BOLT.filter((p) => p.x !== AXIS)
   .map((p, i) => creeperTendril({ x: p.x, y: p.y, angle: -90, s: 0 }, p.x > AXIS ? 1 : -1, 6 + (i % 3), 1.6));
 
 /** Coiled three and a half times round the root, seen a little from above, rising into the bolt. */
-const COIL = (() => {
-  const n = 140;
-  const turns = 3.5;
-  const pts = Array.from({ length: n + 1 }, (_, i) => {
-    const t = i / n;
-    const a = Math.PI / 2 + t * turns * 2 * Math.PI;
-    const r = 48 - 12 * t;
-    return { x: round(AXIS + Math.cos(a) * r), y: round(ROOT_Y + 6 - 12 * t + Math.sin(a) * r * 0.3) };
-  });
-  return polyline(pts) + ` Q ${AXIS - 10} ${ROOT_Y - 14} ${AXIS} ${ROOT_Y - 30}`;
-})();
+const COIL = coilPath({ x: AXIS, y: ROOT_Y + 6 }) + ` Q ${AXIS - 10} ${ROOT_Y - 14} ${AXIS} ${ROOT_Y - 30}`;
 
 /** A lotus stalk broken in two, its fibres drawn out between the pieces. */
 const STALK = { x: 462, y: 524 };
@@ -119,9 +109,7 @@ export function LightningVine({ idPrefix = "sa40", active = null }: ArtProps) {
       {/* Still coiled at its foot, three and a half times round the root */}
       <g {...part("kundalini")}>
         <ellipse className="m-breathe" cx={AXIS} cy={ROOT_Y} rx={70} ry={34} fill={url("coil-glow")} />
-        <path d={COIL} stroke="var(--art-vermilion)" strokeWidth={3.2} strokeLinecap="round" strokeLinejoin="round" />
-        <path d={COIL} stroke="var(--art-saffron)" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
-        <path d={COIL} stroke="var(--art-core)" strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round" />
+        <Coil d={COIL} />
       </g>
 
       {/* Above the six wheels, her light */}

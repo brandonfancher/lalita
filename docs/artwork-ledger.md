@@ -56,7 +56,7 @@ second time it is needed.
 | Her ruby crown (koṭīra) | A gold dome that swells from the finial to a broad diadem: four tiers, each a band of rubies edged with a line of gold beads, the bands dipping slightly at the front. The diadem carries a row of larger rubies, a large front ruby in a ring of ten gold petals, a crest of gold petals each with a red dot, and a beaded lower rim. A small petal crest, a gold dome, and a bud holding one ruby make the finial. No side wings (they read as horns). Short rays spring from it, gold alternating with red | `RubyCrown` in `primitives.tsx` (drawn at Shloka 4's size; scale it with a transform, and pick its rays with `rays`) | Shloka 4 |
 | Ruby | An `--art-vermilion` oval (a little taller than wide) in a thin `--art-carve` setting ring, with a short `--art-core` highlight arc at the upper left. A flashing ruby adds a `Flash` (a `glint` with `m-lick`) | `Ruby`, `Flash` in `primitives.tsx` | Shloka 4 |
 | Her hair | Never drawn as a mass or a head. It shows as flowers and ornament, with `--art-hair` glimpsed between them: a plait of rounded lobes laid alternately from each side, each lobe with a gold sheen line and a flower on it, ending in a gold binding and a small tuft. Loose strands read as a broom or cords; don't draw them | `plait`, `PlaitLobes` and `PlaitTip` in `primitives.tsx` (promoted at Shloka 68): the artwork gives the centreline and width and works its own flowers into the lobes | Shloka 4, 68 |
-| Campaka | Nine slender, pointed, slightly twisted petals (`campakaPetal`) of `--art-core` edged in `--art-saffron`, a saffron centre. Seen from the side, see "Campaka, newly opened" | `campakaPetal` in `primitives.tsx`; the face-on flower inline (`flowering-hair.tsx`) | Shloka 4 |
+| Campaka | Nine slender, pointed, slightly twisted petals (`campakaPetal`) of `--art-core` edged in `--art-saffron`, a saffron centre. Seen from the side, see "Campaka, newly opened" | `campakaPetal` and the face-on `Campaka` in `primitives.tsx` (`Campaka` promoted at Shloka 92, used by Shloka 4) | Shloka 4 |
 | Aśoka | A round cluster of seven small four-petalled florets, mostly `--art-vermilion`, a few `--art-saffron`, with eleven long curved stamens tipped in `--art-core` fanning from the top | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Punnāga | Four rounded `--art-ivory` petals outlined in gold, round an `--art-core` boss ringed with gold stamen dots and a vermilion pistil | Inline (`flowering-hair.tsx`) | Shloka 4 |
 | Saugandhika (white water-lily) | Two rings of eight pointed `--art-ivory` petals outlined in gold, a small `--art-core` centre. Told from punnāga by its star of points | Inline (`flowering-hair.tsx`) | Shloka 4 |
@@ -184,7 +184,7 @@ second time it is needed.
 | The look between them | Her bindu and his crescent (the fourth night's `litPart`, radius 30, horns up, over a faint saffron tint so it shows by day) on one level, with three gold hairlines each way between them, a little spread, and a `glint` where they meet. A wedge of light hanging from the meeting point made the look and what came of it a necklace and pendant | Inline (`glance-and-a-son.tsx`) | Shloka 30 |
 | Mahāgaṇapati | Never a figure: a light ruddy as the dawn (an `--art-vermilion` disc with a saffron highlight and gold ring, in a saffron-to-vermilion glow, Bālā's light grown larger), ringed on a dotted gold circle by the ten things his hands hold, upright, open at the top: jewelled pot, ear of rice, discus (a small `ChariotWheel` in saffron tongues), sugarcane bow (`SugarcaneBow`), citron, tusk, lotus, conch, trident, mace. A crescent on his light made it a horned face | `Mahaganapati`, `GanesaEmblem`, `ganesaPlaces` and `DawnDefs` in `primitives.tsx` (promoted at Shloka 31, used by Shlokas 30 and 31; pass `skip` to draw one emblem as a part of its own) | Shloka 30 |
 | Missile and counter-missile (astra, pratyastra) | Hers: a gold shaft with a head of flame (an `--art-saffron` `tongue`), its trail a gold gradient back toward her light. Bhaṇḍa's: a dark barbed `--art-hair` head on an `--art-musk` shaft, with a hair-fine `--art-moon` line along it so it shows by lamplight, its trail coming from off the upper right. Where they meet, a soft `--art-core` burst, eight short rays and a `glint` (`m-lick`) | Inline (`answering-rain.tsx`) | Shloka 31 |
-| The obstruction-engine (vighna-yantra, Jayavighna) | A square stone slab seen from above at a slant (half 64 by 26, 7 deep), `--art-stone` with `--art-carve` sides and a `--gold-soft` edge, cut with an eight-angled figure (two squares, one turned 45°) and a trident at each point in `--art-crimson`. Broken, it is five wedge pieces from the centre, pushed apart and turned a little, the figure clipped to each, with powder blowing off on `m-ember` | Inline (`answering-rain.tsx`) | Shloka 31 |
+| The obstruction-engine (vighna-yantra, Jayavighna) | A square stone slab seen from above at a slant (half 64 by 26, 7 deep), `--art-stone` with `--art-carve` sides and a `--gold-soft` edge, cut with an eight-angled figure (two squares, one turned 45°) and a trident at each point in `--art-crimson`. Broken, it is five wedge pieces from the centre, pushed apart and turned a little, the figure clipped to each, with powder blowing off on `m-ember` | `BrokenSlab` in `primitives.tsx` (promoted at Shloka 94, used by Shloka 31; its `layer` draws the stone or the figure, so each can be a part); the dust inline (`answering-rain.tsx`) | Shloka 31 |
 | Her fingernails | Never a hand: at the tip of an arm-beam, five small moons fanned on round its end (the toenail moons of Shloka 19: `--art-core` to `--art-moon`, a gold rim, a moon glow 3.2 times the radius, `m-twinkle`), each with a gold hairline of light running on out. With both hands at one height over a band of fire, the two clusters and the fire made a face; the arms reach to different heights | Inline (`ten-descents.tsx`) | Shloka 32 |
 | The ten descents (daśākṛti) | Each form as its emblem in a small soft glow, never a figure: the fish (`Fish`), the tortoise (`Tortoise`), the boar (`Boar`), the man-lion (`Lion` with `--art-ivory` claws), the dwarf's `--art-turmeric` umbrella and gold water pot, Paraśurāma's axe (a turmeric haft with a broad `--art-moon` crescent blade), Rāma's bow (a turmeric recurve with an arrow on the string), the fourfold Vāsudeva as four small lights (`--art-hair`, `--art-moon`, `--art-vermilion`, `--art-saffron`) on a gold ring, and Kalki's horse (`Horse` in `--art-moon`) under a raised sword | Inline (`ten-descents.tsx`); the axe is `Axe` in `primitives.tsx` (promoted at Shloka 41, used by Shlokas 32 and 41) | Shloka 32 |
 | The Pāśupata | A gold trident-headed shaft with an `--art-saffron` flame at its point and a glint, flying low, a trail of light behind it; behind that, the host burnt out: a field of `tongue` flames (vermilion to saffron to core) dwindling back toward where it came from, with rising `--art-ember` sparks and a low saffron glow, and only a little ash left ahead of it | Inline (`ten-descents.tsx`) | Shloka 32 |
@@ -197,11 +197,11 @@ second time it is needed.
 | A cluster of the mantra (kūṭa) | A summit, as the word says: a dotted gold peak whose flanks carry its syllables as small `--art-core` lights with gold rims in their own glows (`m-twinkle`), shared out between the two flanks, and at the top a gold disc engraved in `--art-carve` with ह्रीं (Tiro Devanagari), the hṛllekhā that closes every cluster. The other syllables are given at initiation and are never written. The speech cluster (vāgbhava) has five syllables in all, the middle (kāmarāja) six, the śakti cluster four | `summit` and `Summit` in `primitives.tsx` (promoted at Shloka 35, used by Shlokas 34 and 35) | Shloka 34 |
 | Her face (mukha-paṅkaja) | A lotus (`OpenLotus`, 1.45 times), in her glow, with the speech cluster rising over it | Inline (`sanjivani.tsx`) | Shloka 34 |
 | Her mantra-body | Never a figure: her light as a tall column (an elliptical `--art-glow` glow, 320 by 640), crossed by two seams at the throat and the waist, each a gold line with slanting gold stitches and a gold knot at each end. Above the throat, her face as in Shloka 34 (a lotus and the speech cluster, its lights in `--art-core` glows); between the seams the middle cluster in `--lotus` glows over a faint rosy region; below the waist the śakti cluster in `--art-vermilion` glows, standing on a lotus | Inline (`mantra-body.tsx`) | Shloka 35 |
-| The root mantra whole (mūlamantra) | Fifteen syllables on a dotted gold ring round her bindu, clockwise from the top, each in its cluster's colour (`--art-core`, `--lotus`, `--art-vermilion` glows, as in Shloka 35), the 5th, 11th and 15th the three ह्रीं on small gold discs. The three clusters standing side by side on one gold ground line, the middle highest, are her frame (kalevara) | Inline (`root-mantra.tsx`) | Shloka 36 |
+| The root mantra whole (mūlamantra) | Fifteen syllables on a dotted gold ring round her bindu, clockwise from the top, each in its cluster's colour (`--art-core`, `--lotus`, `--art-vermilion` glows, as in Shloka 35), the 5th, 11th and 15th the three ह्रीं on small gold discs. The three clusters standing side by side on one gold ground line, the middle highest, are her frame (kalevara) | `RootMantraRing` and `MantraClusterDefs` in `primitives.tsx` (promoted at Shloka 97, used by Shloka 36); the three peaks are `Summit` | Shloka 36 |
 | Nectar (amṛta) of the kula | A thin fall, a gradient from transparent `--art-moon` to `--art-ivory`, with three `--art-ivory` drops (`m-twinkle`), into a small footed gold cup brimming with an ivory surface, in a moon glow. Falling from the crown or poured in the rite: the picture keeps both readings | `NectarCup` in `primitives.tsx` (promoted at Shloka 37, used by Shlokas 36 and 37); the fall inline (`root-mantra.tsx`) | Shloka 36 |
 | The kula's compact (saṅketa) | A palm-leaf book (pothi), `--art-turmeric` leaves between gold boards, bound shut with an `--art-vermilion` cord through two holes, knotted at an `--art-vermilion` seal with a gold rim engraved with a small downward triangle. Nothing inside it is drawn | Inline (`root-mantra.tsx`) | Shloka 36 |
 | The kula as a household | A round-topped doorway (`archPath`), a 2.4-unit gold line with a `--gold-soft` line inside, on a gold threshold step, hung along the arch with nine `--leaf` mango leaves (toraṇa) swaying in two groups; a kolam before it (a row of `--art-ivory` rice-flour dots inside an ivory loop, over a faint musk line so it shows by day). Before the door, the outward rite: a `Lamp` and a `NectarCup` | Inline (`kula-and-samaya.tsx`); its kolam is `Kolam` in `primitives.tsx` (promoted at Shloka 67: the artwork gives the line and the dots, the primitive the rice flour, musk shadow and gold-touched dots) | Shloka 37, 67 |
-| The kula as the assembly of powers | Eight small `--art-vermilion` lights with gold rims in vermilion glows, on a ring round her light, each joined to the next by a gold hairline bowed a little inward. Spokes from her to each made a wheel | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
+| The kula as the assembly of powers | Eight small `--art-vermilion` lights with gold rims in vermilion glows, on a ring round her light (flattened, it lies on the ground), each joined to the next by a gold hairline bowed a little inward. Spokes from her to each made a wheel | `KulaAssembly` in `primitives.tsx` (promoted at Shloka 93, used by Shloka 37) | Shloka 37 |
 | The centres of the body (inward worship) | A slender gold column (a gradient fading at both ends) through six small `OpenLotus`es without pads, the fourth, the heart, larger, with her light in it | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
 | Akula, beyond the kula | A pale still light with nothing round it and no motion: an `--art-moon` disc with a gold rim and an ivory heart, one faint gold ring, a wide moon glow and a faint saffron tint so it shows by day. Joined to nothing | Inline (`kula-and-samaya.tsx`) | Shloka 37 |
 | A centre of the subtle body (cakra) | A small lotus seen face on (`yantraPetals`), its petals filled in the centre's colour (75% lit, 18% unlit) with a gold outline (35% unlit), round a gold circle holding its element's sign (`tattvaSign`): the root centre four `--art-crimson` petals round the `--art-turmeric` square of earth; the svādhiṣṭhāna six `--art-vermilion`; the navel wheel ten `--art-hair` (the traditional dark blue) round the downward `--art-vermilion` triangle of fire; the heart twelve `--art-vermilion`; the throat sixteen `--lotus`; the brow two `--art-ivory` petals as wings. Lit, it has a glow in its own colour. The thousand-petalled lotus is three rings of 40, 52 and 64 fine petals | `CakraLotus` and `Cakra` in `primitives.tsx` (promoted at Shloka 39, used by Shlokas 38 and 39); the signs are `tattvaSign` | Shloka 38 |
@@ -210,10 +210,10 @@ second time it is needed.
 | The thousand-petalled lotus, lit (sahasrāra) | Four rings of 40, 56, 72 and 90 fine petals (`yantraPetals`), `--art-ivory` and `--lotus` by turns, fading outward, with gold hairline edges, in a wide `--art-glow` glow, her light mounted at its heart | Inline (`summit-and-rain.tsx`) | Shloka 39 |
 | The rain of nectar (sudhā-sāra) | From the crown's rim, two dotted `--art-moon` falls curving out and down past the body to the root, each with fourteen `--art-ivory` drops edged in gold in small moon glows (`m-twinkle` in three groups), and a fine rain of smaller drops under the lotus. The signs of water, air and space inside a centre's circle made faces (a smile, an eye), so only earth and fire are drawn | Inline (`summit-and-rain.tsx`) | Shloka 39 |
 | Lightning drawn out like a vine (taḍil-latā) | A sharp zigzag up the axis, meeting it at the centre of each wheel and swinging 11 units out between them, three strokes deep: a soft `--art-core` glow 7 wide, a 2.6 gold line and a 1.1 `--art-ivory` core (`m-flicker`). Gold `creeperTendril`s curl off alternate corners (`m-sway`): the clinging | Inline (`lightning-vine.tsx`) | Shloka 40 |
-| Kuṇḍalinī, coiled | Three and a half turns round the root centre, seen a little from above (radius 48 narrowing to 36, 0.3 as tall as wide, rising 12), drawn as an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside, in a breathing saffron glow, its upper end straightening into the lightning. Taller and thicker, it read as a spring | Inline (`lightning-vine.tsx`) | Shloka 40 |
+| Kuṇḍalinī, coiled | Three and a half turns round the root centre, seen a little from above (radius 48 narrowing to 36, 0.3 as tall as wide, rising 12), drawn as an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside, in a breathing saffron glow, its upper end straightening into the lightning. Taller and thicker, it read as a spring | `coilPath` and `Coil` in `primitives.tsx` (promoted at Shloka 93, used by Shloka 40) | Shloka 40 |
 | Lotus fibre (bisa-tantu) | A `--leaf` lotus stalk broken in two, a pad at one end and a small bud at the other, the broken ends `--art-ivory`, and five hair-fine ivory and gold fibres sagging between them | Inline (`lightning-vine.tsx`) | Shloka 40 |
 | The forest of becoming (bhavāraṇya) | Twelve trees in two rows along a ground line, the back row at 55%: a tapering `--art-musk` trunk under a crown of four overlapping discs, three `--leaf` and one musk shadow, edged faintly in musk, swaying in groups, over a faint musk shade. Cleared, it has a gap through the middle with two `--art-turmeric` stumps and two felled musk trunks, and the `Axe` in a stump, blade down, chips of turmeric still flying | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
-| Full pot (pūrṇa-kumbha) | A round gold pot with a narrow neck and rim, a vermilion band and dot, five `--leaf` mango leaves fanned from its mouth and an `--art-turmeric` coconut on top | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
+| Full pot (pūrṇa-kumbha) | A round gold pot with a narrow neck and rim, a vermilion band and dot, five `--leaf` mango leaves fanned from its mouth and an `--art-turmeric` coconut on top | `FullPot` in `primitives.tsx` (promoted at Shloka 88, used by Shloka 41) | Shloka 41 |
 | Good fortune (saubhāgya) | A small gold tray holding a mound of `--art-vermilion` kumkum, one of `--art-turmeric` and a pair of bangles (`--leaf` and vermilion), gold motes twinkling down onto it in a saffron glow | Inline (`forest-of-becoming.tsx`) | Shloka 41 |
 | A still lamp (contemplation) | The `Lamp`'s bowl with a narrower flame and no flicker, its one straight dotted gold line of light running to her | `StillLamp` in `primitives.tsx` (promoted at Shloka 44, used by Shlokas 41, 44 and 62) | Shloka 41 |
 | Devotee's offering (patraṁ puṣpaṁ phalaṁ toyam) | A `--leaf` leaf plate holding a leaf, a five-petalled `--art-vermilion` blossom, an `--art-turmeric` fruit and a small gold bowl of water, in a saffron glow | Inline (`devotion-governs.tsx`) | Shloka 42 |
@@ -287,16 +287,16 @@ second time it is needed.
 | Lightning in a cloud | Shloka 40's three strokes (`--art-core` glow 7, 2.6 gold, 1.1 ivory, `m-flicker`) as a zigzag with a short fork down the cloud's flank, faded in at the top under a mask | Inline (`monsoon-pool.tsx`) | Shloka 51 |
 | The sun and the moon behind the cloud | The sun as a soft `--art-saffron` glow with the full disc's two gold rings and no rays; the moon as an `--art-moon` disc with a gold rim, a `--gold-soft` shade at the lower right, one moonlight ring and `MoonDeer` at 0.42 and 0.4 opacity. Small brighter cloud lobes roll across the lower half of each, so both are behind the cloud | Inline (`monsoon-pool.tsx`) | Shloka 51 |
 | A forest pool | An uneven ellipse, `--art-core` at its centre shading to `--art-hair` at its edge, a gold rim, level `--gold-soft` lines closer toward the far bank, rain rings (`m-twinkle`), her light as a column of saffron and core lozenges, a saffron bank behind, `--leaf` reeds at its ends | Inline (`monsoon-pool.tsx`) | Shloka 51 |
-| The rosary of letters (akṣamālā, varṇamālā) | Fifty `--art-moon` beads (radius 10.5, a `--gold-soft` rim shade, a 0.9 gold edge) on a 1.2 gold thread, each with one letter in Tiro Devanagari, `--sindura`, 12.5 (10.5 for the two-part vowels), upright: अ to अः, क to ह and क्ष, clockwise from the meru. Strung round the whole picture, over the crown and down both sides clear of the card, closing at a gold meru bead (radius 12.5) with a vermilion tassel | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| The rosary of letters (akṣamālā, varṇamālā) | Fifty `--art-moon` beads (radius 10.5, a `--gold-soft` rim shade, a 0.9 gold edge) on a 1.2 gold thread, each with one letter in Tiro Devanagari, `--sindura`, 12.5 (10.5 for the two-part vowels), upright: अ to अः, क to ह and क्ष, clockwise from the meru. Strung round the whole picture, over the crown and down both sides clear of the card, closing at a gold meru bead (radius 12.5) with a vermilion tassel | Inline (`letter-rosary.tsx`); the letters are `VARNAMALA` in `primitives.tsx` (promoted at Shloka 100) | Shloka 52 |
 | Sparks of her own form (visphuliṅga) | Small bindus: a soft `--art-core` glow, a fine core ring, a saffron disc and a core dot, thrown up and out from her light along seven arcs, smaller as they fly (`m-twinkle`, three groups). With trails they read as tadpoles | Inline (`letter-rosary.tsx`) | Shloka 52 |
-| A conch sounding (śaṅkha) | Lying on its side, about 66 long: an `--art-ivory` body with a gold edge, gold whorl lines on the stepped spire, `--gold-soft` ridges, a `--lotus` mouth along the underside, a core sheen on the shoulder; three `--gold-soft` sound arcs from its canal (`m-twinkle`). Mahāgaṇapati's 24-unit emblem scaled up read as a lemon | Inline (`letter-rosary.tsx`) | Shloka 52 |
+| A conch sounding (śaṅkha) | Lying on its side, about 66 long: an `--art-ivory` body with a gold edge, gold whorl lines on the stepped spire, `--gold-soft` ridges, a `--lotus` mouth along the underside, a core sheen on the shoulder; three `--gold-soft` sound arcs from its canal (`m-twinkle`). Mahāgaṇapati's 24-unit emblem scaled up read as a lemon | `Conch` in `primitives.tsx` (promoted at Shloka 97, used by Shloka 52); the sound arcs inline | Shloka 52 |
 | The gods' crowns, bowed (Saundaryalaharī 29) | Three crowns in a gradient from `--art-turmeric` to `--gold` with `--art-carve` lines, at 1.18, on the floor before her footstool, the outer two tipped toward her: Brahmā's karaṇḍa-mukuṭa (three tiers and a bud, a vermilion lotus on the front), Viṣṇu's tall kirīṭa (bands, a vermilion jewel, leaf gems, a pearl rim and a vermilion finial), Indra's makuṭa (five pointed leaves on a band, `--art-hair` gems, vermilion beads) | Inline (`letter-rosary.tsx`) | Shloka 52 |
 | Her footstool | A low `--art-crimson` slab at 0.8, gold-edged, under a broad gold top line, with gold-soft studs and two short gold feet, just under her light | Inline (`letter-rosary.tsx`) | Shloka 52 |
 | Gold and the things made of it | A faceted gold nugget with a glint (`m-twinkle`) among a `Bangle`, a ring with a vermilion stone, an earring with a drop, and a beaded gold necklace laid in a loop with a pendant, in a faint core glow | Inline (`letter-rosary.tsx`, using `Bangle`) | Shloka 52 |
 | ॐ and the stages of its sound (nāda) | ॐ in Tiro Devanagari, 46, `--gold` over a thin `--art-carve` outline, just above the card; from its top one straight gold thread rises, tapering from 2 to 0.3 and fading out under a mask, with six stages marked on it as `--art-core` points in small glows, each smaller and fainter, and then nothing. In a soft core glow, with a few gold-soft stars. A wavering thread over a crescent read as incense smoke | Inline (`gracious-one.tsx`) | Shloka 53 |
 | A yantra drawn on the floor | A face-on yantra (a double square of gates, three circles, eight petals, a `--sindura` hexagram) laid flat by squashing it to 0.34, its lines `--art-ivory` 1.4 over a `--art-musk` 3 underline at 0.35 (`vector-effect: non-scaling-stroke`), with ivory dots at the gates. Her light stands over its bindu on a fine core thread | Inline (`gracious-one.tsx`) | Shloka 53 |
 | Nandī (Śiva's bull), couchant | In profile facing her, about 145 long at 1.16: an `--art-moon`-to-`--art-ivory` body with a gold edge, a steep hump over the shoulders, the head raised, short gold-and-turmeric horns, an ear laid back, a vermilion caparison with a dotted gold hem and ivory beads, a crimson neck cord with a gold bell, the forelegs folded, the tail curled on the ground. With tall horns and a low hump it read as a goat; seen from behind, as a person in a shawl | Inline (`gracious-one.tsx`) | Shloka 53 |
-| A palm-leaf book on its stand (tantra) | On a folding X-stand of `--art-musk` edged in gold, over a crimson shelf: a bundle of `--art-ivory` leaves with `--art-turmeric` edges between two musk boards, two vermilion cords through it, and the top leaf laid open on it with `--art-carve` writing and its two holes; the cord trails off to a gold bead. Filled in turmeric it read as gold bars | Inline (`gracious-one.tsx`) | Shloka 53 |
+| A palm-leaf book on its stand (tantra) | On a folding X-stand of `--art-musk` edged in gold, over a crimson shelf: a bundle of `--art-ivory` leaves with `--art-turmeric` edges between two musk boards, two vermilion cords through it, and the top leaf laid open on it with `--art-carve` writing and its two holes; the cord trails off to a gold bead. Filled in turmeric it read as gold bars | `BookOnStand` in `primitives.tsx` (promoted at Shloka 94, used by Shloka 53) | Shloka 53 |
 | Rudra's bow, unstrung (Mṛḍa) | Lying belly up on the floor, about 160 long: a musk stave tapering from 7.6 to 3 with a gold-soft highlight, gold horn tips, a vermilion-bound grip, its ivory string slipped from one tip and lying slack in a coil; a jasmine garland of ivory buds on a leaf cord laid over the grip, a vermilion knot. Short and turmeric it read as a banana | Inline (`gracious-one.tsx`) | Shloka 53 |
 | Bilva bough (śrīphala) | A tapering `--art-musk` bough from the top corner with trifoliate `--leaf` leaves (a long middle leaflet and two shorter, gold-edged, gold-soft veins) and round fruit in a gradient from `--art-turmeric` to `--leaf` with a core highlight, each on its stalk | Inline (`gracious-one.tsx`) | Shloka 53 |
 | The Milky Way (ākāśagaṅgā) | A band rising from the far shore at the right and arching up through the crown and out of the top, broadening as it climbs: ten `taper`ed widths of `--gold-soft` laid one over another (a gradient from 0.01 at the horizon to 0.06, then to nothing at its end, so it has no edge), knots of `--art-core` star cloud with the brightest, the galaxy's centre, over the crown (`m-shimmer`), a dark rift down one side in three broken `--art-carve` wisps, and some 360 `--gold-soft` stars scattered across it, the bright ones with core centres (`m-twinkle`). Five widths stepped like a rainbow, and a solid rift made it a quill | Inline (`one-in-many-pots.tsx`) | Shloka 54 |
@@ -314,7 +314,7 @@ second time it is needed.
 | A clear crystal (sphaṭika) | A quartz point about 38 tall: a six-sided prism seen across two faces in `--art-moon` at 0.45 with `--art-ivory` edges and facet lines, a core glint and a breathing core glow inside, on a small gold base, throwing a short fan of six coloured strokes (vermilion, saffron, turmeric, leaf, hair, lotus) across the floor beside it | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
 | A banana-leaf feast (bhoga) | A `--leaf` banana leaf laid flat at a slant, about 74 long, with a `--gold-soft` midrib and veins, spread with an ivory mound of rice with ghee, three saffron laddus, a white modaka, a turmeric banana, a gold cup of payasam, and a betel leaf with its areca nut | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
 | Sandals left at the door (pādukā) | Pairs of toe-knob sandals seen from above at a slant, each pair about 36 across at 1.55, toes in a little: a sole with a thickness under it, an instep line, a peg and knob; gold with a vermilion knob, `--art-moon` silver with gold, `--art-musk` wood with turmeric, side by side on the ground at the stair's foot | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
-| Gaṇeśa's mouse (mūṣaka) | About 26 long at 1.15, in profile: an `--art-musk` body with a gold edge, a round `--lotus` ear, an ivory eye, a curled tail, a white modaka in its mouth | Inline (`stair-of-attainment.tsx`) | Shloka 55 |
+| Gaṇeśa's mouse (mūṣaka) | About 26 long at 1.15, in profile: an `--art-musk` body with a gold edge, a round `--lotus` ear, an ivory eye, a curled tail, a white modaka in its mouth | `Mouse` and `MODAKA` in `primitives.tsx` (promoted at Shloka 94, used by Shloka 55) | Shloka 55 |
 | A canopy stretched on posts (vitāna) | A cloth seen from below, its far edge higher and narrower, sagging a little between four posts: `--art-vermilion` at 0.78 to 0.95 over `--art-stone`, lit from below by a shimmering core glow; `--art-saffron` borders at both edges, a woven temple border of vermilion triangles along the near one, two pairs of `--gold-soft` stripes and rows of gold-soft buta, and the warp, 64 `--gold-soft` hairlines, running front to back through all of it. At the near edge a turmeric rod with gold knobs, and below it the warp's ends hanging free, knotted four by four in gold. Turned `--art-turmeric` posts with gold bands, bud finials and gold foot blocks, the far pair fainter. Hung from cords with no posts, steep, it read as a lampshade; in turmeric at low opacity it went khaki by lamplight | Inline (`great-yantra.tsx`) | Shloka 56 |
 | The mantra in festoons | Three `--gold` swags from the canopy's rod, their widths in proportion to their syllables (five, six, four), each carrying its syllables but the last as `--art-core` lights in gold rings with saffron glows (`m-twinkle`, `m-shimmer`), and ending at a gold disc engraved ह्रीं in `--art-carve`, hung on a short gold cord. A different hanging of the kūṭas from Shloka 34's summits | Inline (`great-yantra.tsx`) | Shloka 56 |
 | The Śrīcakra face-on, in a plate | The anticipated flat yantra, at 2.2 plate units to a yantra unit: a square plate (`--art-stone` under a `--gold-soft` wash, a 2.2 gold edge and an inner hairline, a carve shadow), and on it with non-scaling strokes the square of gates (`gateSquare(48, 8, 5)` gold over `(45.6, 6.4, 5)` vermilion over `(43.2, 4.8, 5)` gold, as on the chariot), three gold circles (41.6, 40.2, 38.8), the sixteen petals in `--art-core` and the eight in `--art-saffron` (each ring on a stone disc so the plate doesn't show through), and the nine triangles over the field of her light, tinted as in `RathaTriangles`. Her bindu sits at `SRI_BINDU_V`. The innermost triangle drawn alone keeps the Dhyāna's faint trikoṇa canon | `SriCakraFace` in `primitives.tsx` (promoted at Shloka 60, used by Shlokas 56 and 60; needs `RathaDefs`), with the plate inline (`great-yantra.tsx`) | Shloka 56 |
@@ -344,7 +344,7 @@ second time it is needed.
 | A cave shrine in the rock | An arched mouth under the card with a gold lip, its inside `--art-musk` at 0.5 under a radial from `--art-vermilion` at her bindu through `--art-crimson` to `--art-musk` at the walls, and on its back wall the `SriCakraFace` at 0.86 without its plate, her light at its bindu (a core-to-vermilion-to-crimson radial over the whole cave and beyond, `m-shimmer`), cast as a red glimmer on the pool at its mouth | Inline (`mountains-daughter.tsx`) | Shloka 60 |
 | Deodar | A straight `--art-musk` trunk under six tiers of drooping branches, widest near the foot (`--leaf` at 0.9 with a hair-fine gold edge), 48 to 92 tall, in groves on the foothills, kept clear of the card | Inline (`mountains-daughter.tsx`) | Shloka 60 |
 | Yak (camarī) | In profile, about 75 long at 1.1: a great hump, the head carried low, `--art-ivory` horns curving up, a ragged skirt of hair nearly to the ground, short legs with gold hooves; `--art-musk` under a `--gold` wash at 0.14 (musk alone was lost by lamplight) with a 0.8 gold edge, `--gold-soft` hair strands, and its face and chest rimmed in `--art-core` where the shrine's light falls. Its tail is a long `--art-moon` plume thrown up and back like a whisk, swinging from its root (`m-sway`). The plume of the royal fly-whisk is the same hair | Inline (`mountains-daughter.tsx`) | Shloka 60 |
-| The five faces of Sadāśiva (pañcabrahma) | Five flames (`tongue(22, 9)` with a core tongue inside, a gold edge, each on a soft glow of its own colour, `m-twinkle`) laid out as the faces turn: Īśāna upward at the centre, larger (1.45), in `--art-ivory`, and on a `--gold-soft` ring of radius 54 round it Vāmadeva north in `--art-vermilion`, Tatpuruṣa east in `--art-turmeric`, Aghora south in `--art-hair`, Sadyojāta west in `--art-moon`. Dashed spokes from the centre made it a crosshair | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
+| The five faces of Sadāśiva (pañcabrahma) | Five flames (`tongue(22, 9)` with a core tongue inside, a gold edge, each on a soft glow of its own colour, `m-twinkle`) laid out as the faces turn: Īśāna upward at the centre, larger (1.45), in `--art-ivory`, and on a `--gold-soft` ring of radius 54 round it Vāmadeva north in `--art-vermilion`, Tatpuruṣa east in `--art-turmeric`, Aghora south in `--art-hair`, Sadyojāta west in `--art-moon`. Dashed spokes from the centre made it a crosshair | `FiveFaces` and `FiveFacesDefs` in `primitives.tsx` (promoted at Shloka 97, used by Shloka 61; `stress` brings one face forward) | Shloka 61 |
 | Her bliss as a widening lotus (the Taittirīya's ladder of joys) | Six rings of sixteen petals (`yantraPetals`) round her, each ring the last scaled by 1.42 and turned half a petal, from radius 40 to about 460, each a `--art-core` line over a wider faint `--gold` line (core alone was lost by day), fainter outward (`m-shimmer`, three groups), over a breathing `--art-glow` radiance (`m-breathe`, Taittirīya 2.7: who could breathe if this bliss did not fill the sky). Plain rings read as a target; motes of light as a starfield, or confetti by day | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
 | The couch's gods, inert (preta) | `BrahmaCouch` at 2.5 with each leg's shaft, above and below its medallion, under an `--art-hair` wash at 0.42, so the gold goes dull; a vein of her light (`--art-core`, a 3.6 soft stroke under a 1.1 line, `m-shimmer`) runs along the plank and down each leg into its medallion, which keeps its colour inside a core halo (a radial clear to 0.62, `m-twinkle`). A halo filled to the centre washed the emblems out | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
 | Sadāśiva blushing (Saundaryalaharī 92) | Over the white plank, a `--art-vermilion` radial centred under her (0.85 at the centre to nothing at 90), with a short core line along the plank's top, so the plank is red only where she sits | Inline (`salt-and-the-couch.tsx`) | Shloka 61 |
@@ -422,7 +422,7 @@ second time it is needed.
 | Kādambarī dripping into a cup | The `KadambaBough` at 1.2 in the crown, and from its lowest head four turmeric drops falling down the right column (`m-sink` by turns) into a gold drinking bowl on a short foot, a saffron surface with an ivory glint (`m-shimmer`) | Inline (`kadamba-wine.tsx`, using `KadambaBough`) | Shloka 74 |
 | A lotus turned down like a giving hand (varadā) | Under her light on a `--leaf` stem, five `--lotus` petals hanging open downward with ivory midribs and a leaf-green receptacle, two `Pearl`s falling from it (`m-sink`) to a small heap of six pearls on the floor. A hand in varada mudrā without drawing the hand | Inline (`kadamba-wine.tsx`, using `Pearl`) | Shloka 74 |
 | Vāruṇī's jar tipped over | An ember jar about 50 tall lying on its side with gold and dashed turmeric bands, a crimson mouth, an ivory sheen; a crimson stream from its lip into a vermilion-crimson pool 116 by 18 with three core rings moving on it (`m-shimmer`), the pool that will not lie still | Inline (`kadamba-wine.tsx`) | Shloka 74 |
-| Wagtails (khañjana), the poets' eyes | Two pied wagtails facing each other, about 55 long: an ivory body, an `--art-hair` back and round head with an ivory eyebrow and cheek stripe and an ivory wing bar, a long thin tail, a dark beak, a core eye, carve legs; each on its own `m-dart` inside its placement group. The first ones were long and flat and read as blades | Inline (`kadamba-wine.tsx`) | Shloka 74 |
+| Wagtails (khañjana), the poets' eyes | Two pied wagtails facing each other, about 55 long: an ivory body, an `--art-hair` back and round head with an ivory eyebrow and cheek stripe and an ivory wing bar, a long thin tail, a dark beak, a core eye, carve legs; each on its own `m-dart` inside its placement group. The first ones were long and flat and read as blades | `Wagtail` in `primitives.tsx` (promoted at Shloka 95, used by Shloka 74) | Shloka 74 |
 | A hand mirror (darpaṇa) | A round gold-framed mirror with a dashed turmeric rim, a gold handle with a vermilion stud, leaning; the glass a core-saffron-moon-gold-soft gradient with her light in it (`m-breathe`) and an ivory glint | Inline (`kadamba-wine.tsx`) | Shloka 74 |
 | A rudra vīṇā, and its ālāpa | A 256-long ember stem with fourteen gold frets closing toward the right, two gold-soft strings, a gold scroll, ivory beads, tilted 5° so it does not read as a bench; two turmeric-gold gourds (r 22 and 20) hung directly under it. Rising from the strings five broken dotted gold phrases and saffron dots, faint and fading (`m-shimmer`). Compare Sarasvatī's kacchapī (Shloka 11) | Inline (`kadamba-wine.tsx`) | Shloka 74 |
 | The Vindhyas, a wall of tablelands | Not peaks: one `through` skyline of flat tables with steep scarps between (the highest in the middle at y ≈ 484), across the plate under the card. `--art-stone` at 0.5 under a saffron-to-ember wash fading down, level `--gold-soft` sandstone beds clipped to the rock, a 1.4 gold skyline, a row of round `--leaf` tree crowns along the lower slopes (core sheen), faded out at both sides by a mask. Compare Himavat's snow peaks (Shlokas 16, 60) | Inline (`vindhya-shrine.tsx`) | Shloka 75 |
@@ -439,19 +439,19 @@ second time it is needed.
 | The field-guardian (kṣetrapāla) and his dog | Outside the fence at the near right: a rough stone daubed with sindūra (a vermilion-to-crimson gradient), two ivory eyes and a moon mouth-line, a hair trident with a vermilion band, a small lamp before it; Bhairava's black dog (`--art-hair`, gold-edged, a pricked ear, a curled tail, a core eye) sitting by it, both turned inward toward her | Inline (`the-field.tsx`) | Shloka 76 |
 | The fire maṇḍala (vahnimaṇḍala) | An upward triangle 100 wide and 82 tall under the card, a saffron-to-vermilion fill, a 1.4 gold edge and a core inner triangle at 0.76, fringed outward with sixteen small `tongue` flames in a vermilion-saffron-core gradient (`m-flicker` in three groups); her light seated in it. Compare the rampart of fire (Shloka 27) and the wheeling ring of the dance (Shloka 57) | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | The first vowels going out from her (vāgvādinī) | अ आ इ ई उ in Tiro Devanagari at 19, gold with a fine gold stroke, on an arc of radius 76 above her light (`m-twinkle` in three groups). At 15 unstroked they vanished by day | Inline (`ring-of-fire.tsx`) | Shloka 77 |
-| A cow licking her calf (vatsalā) | A white zebu about 110 long facing left, head lowered to the calf: an `--art-ivory` body, hump, dewlap and head, all gold-edged, a turmeric belly shade, curved turmeric horns, a vermilion forehead band, a lotus udder, hair hooves and tail tuft; the calf the same drawing flipped at 0.5, facing her | Inline (`ring-of-fire.tsx`) | Shloka 77 |
+| A cow licking her calf (vatsalā) | A white zebu about 110 long facing left, head lowered to the calf: an `--art-ivory` body, hump, dewlap and head, all gold-edged, a turmeric belly shade, curved turmeric horns, a vermilion forehead band, a lotus udder, hair hooves and tail tuft; the calf the same drawing flipped at 0.5, facing her | `Cow` in `primitives.tsx` (promoted at Shloka 94, used by Shloka 77) | Shloka 77 |
 | A lotus leaf holding a drop (vimalā) | A round `--leaf` pad 68 by 30 on a moon pool, its notch toward the viewer, gold edge and gold-soft veins from the centre; a water drop in a core-moon-gold-soft gradient with a hair shadow and a twinkling core glint. With the notch at the side it read as a fish | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | A victory banner (vijaya-dhvaja) | A turmeric staff with a gold finial and bead, and a swallow-tailed vermilion banner streaming from it with a dashed turmeric inner border (`m-shimmer`) | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | Grass bending toward her (vandyā) | Eight tufts of five `--leaf` blades along the ground on both sides, every blade curving toward her light | Inline (`ring-of-fire.tsx`) | Shloka 77 |
 | A plait down the right column (vāmakeśī) | A `plait` from above the crown down the right column to y ≈ 392, 28 wide narrowing to 17, lobes every 13; on its lobes ivory jasmine buds and every third a five-petalled vermilion flower; a `PlaitTip` at the end. Her hair as the canon allows it | Inline (`ring-of-fire.tsx`, using `plait`, `PlaitLobes` and `PlaitTip`) | Shloka 77 |
 | The wish-yielding creeper on its post (kalpalatikā) | Up the right column: a slender turmeric post with gold edges, a base block and a capital carrying a small lamp (`m-flicker`, a core glow); round it a `taper` creeper in `--art-hair` winding side to side, `CreeperLeaf`s on alternate sides, three `creeperTendril`s, and at every third mark a jewel hanging on a gold stalk, a `Ruby` and a `Pearl` by turns. A creeper, not a tree: it needs something to climb | Inline (`loosened-tether.tsx`, using `CreeperLeaf`, `creeperTendril`, `Ruby` and `Pearl`) | Shloka 78 |
 | The stake with its rope untied (paśupāśa) | At 1.25: an ember sacrificial stake with a turmeric collar and a gold ring, and a turmeric rope with a carve twist hanging from the ring and lying slack in loops on the ground, its end frayed | Inline (`loosened-tether.tsx`) | Shloka 78 |
-| A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | Inline (`loosened-tether.tsx`) | Shloka 78 |
+| A goat walking free | At 1.25, about 70 long facing right toward her: an `--art-ivory` body and head, gold-edged, a hair saddle patch, backswept hair horns, a drooping ear, a beard, a raised tail, legs in stride with hair hooves | `Goat` in `primitives.tsx` (promoted at Shloka 86, used by Shloka 78) | Shloka 78 |
 | Wisps drawn into her light (saṃhṛta) | Three pairs of `taper` strands from the edges (upper left, lower left, upper right) to her light, wavering less as they near her and thinning from 4.4 to nothing, in an `--art-hair` gradient fading to 0 at her (`m-shimmer`). A single smooth strand read as a hill's skyline | Inline (`loosened-tether.tsx`) | Shloka 78 |
 | A wheel set rolling (pravartikā) | The `ChariotWheel` (r 22, at 1.25) turned 8°, on a faint carve road, a dashed track behind it, three musk dust puffs (`m-breathe`), three gold-soft motion arcs off its trailing rim (`m-shimmer`). Compare the broken wheel of becoming (Shloka 48) | Inline (`loosened-tether.tsx`, using `ChariotWheel`) | Shloka 78 |
 | Ground cracked by heat | A broad ember ellipse (rx 238, ry 52, radial ember gradient) under her light, crossed by mud cracks: a jittered net of points, 7 rows by 16 columns with alternate rows offset, joined along each row and every other step between rows by slightly bent edges, clipped to the ellipse. Outside the moonlight the cracks are a wide faint `--art-vermilion` stroke under a fine `--art-saffron` one (`m-ember`); inside it they are `--gold-soft`. Long runs across the ground read as wood grain | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 | Moonlight falling from her (candrikā) | A cone from her light to the ground, an `--art-moon` gradient (0.38 to 0.08) with faint `--gold-soft` edges fading downward, nine `--art-core` motes in it (`m-twinkle`), and an ellipse of moonlight where it lands. She is the moon here; no moon is drawn | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
-| Night lilies open on a pool (kumuda) | A small `--art-moon` pool with a faint hair shade in the moonlit ground, three notched `--leaf` pads, and two white night lilies (at 1.7 and 1.35): nine pointed `--art-ivory` petals fanned upward, gold-edged, round a `--art-turmeric` heart. The flower that opens to the moon | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
+| Night lilies open on a pool (kumuda) | A small `--art-moon` pool with a faint hair shade in the moonlit ground, three notched `--leaf` pads, and two white night lilies (at 1.7 and 1.35): nine pointed `--art-ivory` petals fanned upward, gold-edged, round a `--art-turmeric` heart. The flower that opens to the moon | `NightLily` in `primitives.tsx` (promoted at Shloka 87, used by Shloka 79); the pool and pads inline | Shloka 79 |
 | An ascetic's empty seat | At 1.6: a kuśa mat (`--leaf` with turmeric stripes and loose blades), a staff leaning on it (turmeric, gold bands), a brass water pot (kamaṇḍalu: round turmeric body, narrow neck, arched gold handle over the top, spout), and a rosary of fourteen ember beads with a vermilion head bead. A first pot with a lid knob read as a teapot | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 | The narrow-waisted altar (vedi) | At 1.55, in plan on the ground: broad at both ends and drawn in at the middle, `--art-turmeric` 0.45 with a gold edge and an inner ivory line, three kuśa blades across it and a vermilion dot at the waist | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
 | Bats flying off | Three `--art-hair` bats with gold-soft edges (wings scalloped, small ears) at 1.5–2.2, tilted outward toward the lower corners (`m-dart`, staggered). A dark wash in the corners read as grey smudges by daylight and was dropped | Inline (`moonlight-on-scorched-ground.tsx`) | Shloka 79 |
@@ -481,6 +481,88 @@ second time it is needed.
 | Muddy water clearing round a clearing-nut (kataka) | A deep gold bowl at 1.25 with a vermilion band and turmeric rim, musk water with ember swirls, and round an ember nut a clear moon ellipse (`m-breathe`) in two gold-soft rings | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
 | The six limbs of a mantra (ṣaḍaṅga) | Six small ivory discs at 1.25 on a dotted gold-soft ellipse round the flame, each in a core glow (`m-twinkle`, staggered), with its sign: a vermilion heart, a saffron head, a saffron flame-shaped crest, turmeric armour, an eye, a hair-dark spearhead | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
 | Six full moons | Across the crown in a shallow arc, y ≈ 36–48: moon discs with gold edges, ivory highlights and faint core haloes (`m-twinkle`, staggered) | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| The Nityās on the triangle (tithi-nityā) | Fifteen moons on the sides of a downward triangle (circumradius 128, a 1.3 `--gold` edge, a faint saffron field and a `--gold-soft` inner line), five to a side at a tenth, three tenths and so on of each side, nights 1–15 clockwise from the top-left corner, growing from radius 7.3 to 11.5, each turned so its lit side faces the centre (the moon canon: `--art-hair` at 0.3, the `litPart` in `--art-moon`, a gold rim, a small moon glow, `m-twinkle` by turns). She is the sixteenth, at the centre. Paper-coloured discs behind the moons turned into dark buttons by lamplight | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| Her light as half his body (ardhanārī) | One flame-shaped light about 120 tall, its sides drawn in near the tip, split by a gold seam: the viewer's left his, an `--art-moon` to `--art-ivory` gradient with a `--gold-soft` line inside its edge, a row of `--art-ember` rudrākṣa beads edged in musk just outside it, and his crescent (the fourth night's `litPart`, horns up) on the tip; the right hers, `--art-saffron` to `--art-vermilion` with a core line inside its edge and a row of `--art-moon` pearls outside it. One gold outline round both, a core point on the seam (`m-flicker`) and an `--art-glow` glow (`m-breathe`). Three ash bars and a kumkum dot on the halves made it a face | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| A water pot that is never dry (prapā) | An unglazed clay pot at 1.32, about 76 wide: a crimson-vermilion-ember-crimson gradient across it, a gold edge, a dashed ivory band, a musk-dark mouth, an ivory sheen; twenty-six `--art-moon` beads of water edged in gold-soft scattered over the belly (some `m-twinkle`) and three tapering drips, on a twisted turmeric straw ring, over a wet `--art-hair` patch on the ground; a small gold cup of water beside it. The pot set out at a roadside shed for anyone who asks | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| A lamp just blown out (nirvāṇa) | A clay lamp at 1.6 (the crimson-ember gradient, a gold edge, musk oil), an ivory wick with an `--art-ember` glow at its end (`m-breathe`), and one thread of smoke from the wick, a `taper` through a smooth curve widening from 1.2 to 7, `--gold-soft` fading out upward (`m-shimmer`). Drawn through a few points without `through`, it read as a crack | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| The poets' standards, kept apart (upamāna) | The full moon (r 28, a gold rim, a gold-soft limb shade, `MoonDeer` at 0.4 and half opacity, a moon glow) and a red `OpenLotus` at 0.86, at the crown's far right, with nothing near her | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| The parasol of many tiers, for the ruler over rulers (chattrāvalī) | Four `Parasol`s on one gold staff at the crown's right, at 0.7, 0.56, 0.44 and 0.34 from the bottom up, each rim just under the one above's fringe, the staff rising above the top finial and ending below in a short vermilion grip | Inline (`root-nature.tsx`, with `Parasol`) | Shloka 86 |
+| The eight quarters, her name known in each | A gold ring on the ground (rx 208, ry 42) with a `glint` at each of the eight quarters (`m-twinkle` by turns) and two small dashed gold arcs rising over each (`m-shimmer`) | Inline (`root-nature.tsx`) | Shloka 86 |
+| The unborn she-goat of three colours (ajā, Śvetāśvatara 4.5) | `Goat` without its saddle at 1.5, with an `--art-vermilion` patch on the forequarters (`GOAT_FORE`) and an `--art-hair` patch on the haunch (`GOAT_HIND`), the ivory coat between: red, white and black for the three guṇas. Two kids like her at 0.8 and 0.74 beside her | Inline (`root-nature.tsx`, with `Goat`) | Shloka 86 |
+| The fig and the seed broken open (Chāndogya 6.12) | Two halves of a banyan fig cut lengthwise, pear-shaped, an ember-crimson skin edged in gold, ivory flesh with a `--lotus` blush and thirty turmeric seed dots, a leaf stalk, tipped apart; beside them one seed in two turmeric D-shaped halves, hollow ivory inside, tipped open on their lower ends with a faint `--art-core` glow between them and nothing else (`m-breathe`). Two whole ellipse halves side by side read as spectacles | Inline (`root-nature.tsx`) | Shloka 86 |
+| A lotus, seen above and below the water (vyaktāvyakta) | A red `OpenLotus` at 0.92 and a leaf pad on the surface of a cut-away pool: a gold waterline, a faint `--leaf` water fading down and out at the sides, dashed gold-soft ripple lines, a musk mud bed; under the surface, at 0.6, the stalks in `--leaf` and the rhizome as four ivory segments edged in turmeric with turmeric nodes and rootlets. A grey `--art-moon` water read as a box, and loose ellipses for the root as pebbles | Inline (`root-nature.tsx`) | Shloka 86 |
+| Smoke on the hill, the fire unseen (vyāpti, the logicians' inference) | A hill at the crown's right, peak (452, 112), a `--leaf` fill fading downward with a gold ridge line fading out, a lower foothill over it; a faint saffron-ember glow just at the summit (`m-breathe`), and one thread of smoke going up from it, a wide musk `taper` with a `--gold-soft` one inside, both fading upward (`m-sway`). A round glow behind the peak read as the sun setting | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| Wave, foam and bubble, all one water | At a pool's edge the water rising in a curling wave, an `--art-moon`-to-`--leaf` gradient edged in gold-soft with a core line inside its face, ivory flecks of foam at the crest (some `m-twinkle`), and three bubbles at its foot, faint moon discs with a gold-soft rim and a core highlight | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| The rope taken for a snake (rajju-sarpa) | One rope lying in an S on the ground, a `StillLamp` at 2.4 by its frayed end with a glow: inside the lamp's reach (a radial mask) it is a turmeric rope with a carve twist and a gold line; beyond it the same path is an `--art-hair` band with a dotted moon line and a rounded head, a snake. No eye, no tongue | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
+| Her light as moonlight on the night lilies (kaumudī) | Her light as a moon-white glow (Shloka 79's gradient) above a pool (an `--art-moon` radial fill and a gold-soft inner line), five Moonlight rings round her, a short path of core dashes on the water below her (`m-twinkle`), three notched pads, and two `NightLily`s at 3 and 2.4, one behind the other, never side by side as a pair of eyes | Inline (`moonlight-on-the-lilies.tsx`, with `NightLily`) | Shloka 87 |
+| The sun's unbroken stream of rays into the heart (bhānu-santati) | The sun's full disc (r 24, its two gold rings, 32 `sunRays` alternating vermilion and saffron, a glow) at (456, 100), and seven parallel rays 7 apart from it to a lattice in the right wall of a dark chamber: saffron at the sun fading out by y 250, fading in again from y 420 in gold, so the miniature, with no card over the middle, shows light and not a pole. Inside, the rays go on as core lines to the floor and pool there in a core-saffron glow (`m-breathe`); the lattice is a musk slot with core bars where the rays pass | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| The heart as a dark stone chamber | An arched room in section, about 134 wide and 140 tall: `--art-stone` walls edged in gold with gold-soft courses, the inside a musk-to-hair gradient | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| Śiva's envoy (Śivadūtī) | `trident` at 0.9 tipped 14° forward on a road going up to the right toward a small dark fort (a musk wall with merlons at 0.6), and tied under its prongs with a vermilion cord, a sealed palm-leaf letter: an ivory strip edged in turmeric, two vermilion bands and a vermilion seal. The road is a faint turmeric strip with gold-soft edges and a dashed middle line; filled only, it read as a spotlight | Inline (`sunlit-heart.tsx`, with `Trident`) | Shloka 88 |
+| Śiva's offering at her feet | Her `Footprint`s at 1.5, and laid beside them, never under them, his crescent (`litPart(5, 13)` in `--art-moon`, gold-edged, tipped on its side) to the left and two trifoliate `--leaf` bilva leaves to the right. A crescent under the feet with a leaf each side read as a smiling face | Inline (`sunlit-heart.tsx`, with `Footprint`) | Shloka 88 |
+| Her light as the liṅga (Śivamūrti) | A round-topped column 34 wide and 58 tall filled with a saffron-core-glow gradient, gold-edged, on a stone pīṭha with its spout to the right, a carve-shaded basin and a lower stone drum, all gold-edged, in a glow (`m-breathe`). No marks on the column | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| A threshold made auspicious | A stone sill about 92 wide, a turmeric band along its top and a row of alternating kumkum and turmeric dots on its face, with a `FullPot` standing on it | Inline (`sunlit-heart.tsx`, with `FullPot`) | Shloka 88 |
+| Her light as the pillar without end (aprameyā, after the liṅgodbhava) | A column 30 wide from y 24 to 790, a glow-saffron-core-saffron-glow gradient across it with fine gold edges, in a 104-wide breathing glow (`m-breathe`), the whole faded out at both ends by a mask. Brahmā's `Goose` at 2.2 flying up beside it (`m-sway` on an inner group: a motion class on the group that carries the `transform` attribute replaces the placement and the goose vanished); Viṣṇu's `Boar` at 0.9 tipped 30° nose-down at its foot, ember clods thrown up behind it, a musk hollow where it digs | Inline (`pillar-of-light.tsx`, with `Goose` and `Boar`) | Shloka 89 |
+| Two lines of regard, his and hers | Śiva's crescent (`litPart(4, 13)` in `--art-moon`, gold-edged, horns up and tipped 20°) and between it and her light two dotted arcs (`strokeDasharray` 1 5, round caps): his in `--gold` going over, hers in `--art-vermilion` coming back under it (`m-shimmer` out of step). The crescent in a pale disc read as a smiling face | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| The sun and moon gone pale (Kaṭha 5.15) | A sun (r 26, with its inner ring) and a moon (r 15) as faint `--art-hair` discs with gold-soft rims, each lit only on the side that faces her by a core gradient, and three pale hair `glint` stars | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| Words turning back with the mind (Taittirīya 2.4.1) | Two hooked lines rising toward her and curling back before her glow: the eleven vowels अ to औ in `--font-tiro`, gold, smaller and fainter as they climb; and above them fifteen small gold-soft rings of thought, shrinking, on a faint tapering thread (some `m-twinkle`) | Inline (`pillar-of-light.tsx`) | Shloka 89 |
+| The seers' lamps raised, and a handful of flowers | Three `Lamp`s at 2.2 with the seers' pale flames in a row; at the pillar's foot seven small flowers of five round petals (vermilion, ivory, saffron, lotus) round turmeric hearts. Pointed `BLOSSOM` petals read as stars at this size | Inline (`pillar-of-light.tsx`, with `Lamp`) | Shloka 89 |
+| The seam of night and day (sandhyā) | Across the crown a faint `--art-hair` night wash fading down to one gold line at y 120, a saffron day wash below it fading out by y 230, the whole faded out to the left under the title; six `--gold-soft` `glint` stars in the night part (`m-twinkle`). Hair at 0.34 was a grey block by day | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| The Gāyatrī's twenty-four syllables as floating lamps | Twenty-four `Lamp`s with the gods' flames, each on a small `--leaf` leaf-boat, in three rows of eight on the river, nearer rows larger and wider apart (1.15, 1.45, 1.85; 24, 30, 38 apart) | Inline (`dawn-ghat.tsx`, with `Lamp`) | Shloka 90 |
+| A river at dawn, the sun half risen | The rising sun's half disc (r 34, its 16 rays, clipped at the horizon) in a wide glow, over a river from the horizon to the near bank: a saffron-to-moon water, `seaSurface` ripples in gold and its saffron and core light column, faded out at the sides | Inline (`dawn-ghat.tsx`, with `sunRays` and `seaSurface`) | Shloka 90 |
+| A lodestone and its filings (jaḍaśakti) | A dark `--art-hair` stone with a gold edge and a gold-soft sheen on a stone step, and the filings as dashed hair lines: four arcs over it from end to end, and three open lines fanning from each end. Filings scattered along the field at points read as grass | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Stone steps of a ghat | Five treads across the ground from the river's edge down, each an `--art-stone` riser a little denser toward the viewer under a gold edge and a gold-soft line, faded out at the sides | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Copper water vessels, one pouring (arghya) | Round-bellied vessels (lotā) about 24 tall with a neck and a flared turmeric lip, an ember-turmeric-ember copper gradient, a gold edge and a core sheen, four in a row on a step; a fifth tipped 70° at the water's edge toward the sun, a short moon stream from its mouth and two core rings on the water (`m-shimmer`) | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| The three vyāhṛtis on three levels | भूः, भुवः and स्वः in `--sindura` (`--font-tiro`, 20) one above another up the right side: on the steps, over the water, among the stars | Inline (`dawn-ghat.tsx`) | Shloka 90 |
+| Birds waking (cetanā) | Five `Goose`s at 1.3–1.7, mirrored to head right toward the sun and tipped up, wings by turns raised and lowered, rising from a clump of eleven `--leaf` reeds on the far bank | Inline (`dawn-ghat.tsx`, with `Goose`) | Shloka 90 |
+| A seat of the thirty-six principles (tattvāsana) | Thirty-six thin tiers 1.7 tall stacked under her, from 124 wide at the top to 270 at the foot: the top eleven (the pure and the veiling principles) `--art-core`, the next seven `--gold`, the next eight `--art-turmeric` and the lowest ten `--art-stone`, each edged in a hair of gold-soft, with a gold line along the top | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| The five sheaths (pañcakośa) | Five nested `eggPath`s round her light, from bliss inmost to food outermost: `--lotus`, `--art-saffron`, `--gold`, `--gold-soft` and `--leaf` lines 1.6 wide over a faint fill of the same; each cut open at the front right by a wedge (masks), the outer ones widest (88° down to 24°), so every one shows the one within. One wedge through all five read as a pie with a slice gone | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| A boundary broken by her rays (niḥsīma) | A dashed gold ellipse round the ground (rx 204, ry 72), and six gold rays from just outside her sheaths across it, fading out beyond; wherever a ray crosses, the line is broken (a mask) and a core `glint` stands in the gap (`m-twinkle`) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| तत् far and त्वम् near, and the call (tat tvam ayī) | तत् small (15) in `--sindura` far off in the crown in a faint glow; त्वम् large (34) at the front; from it three `--sindura` arcs of a call opening toward her, fainter outward (`m-shimmer` by turns) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| A garland that does not wilt (Nala's gods) | Nineteen round flowers, vermilion and ivory by turns with turmeric hearts, on a leaf-green thread swung across the front of her seat, with core dewdrops on every fourth (`m-twinkle`) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| Her jewelled goblet (ratna-caṣaka) | Sets the Dhyāna's goblet: a gold cup about 32 wide at 1, a deep round bowl on a slim stem and a spread foot, edged in carve, with a band of three `Ruby`s round the bowl and one on the stem; filled to the brim with a crimson-to-vermilion wine, a core gleam on its surface, and one crimson drop running down the side (`m-shimmer`) | Inline (`five-sheaths.tsx`, with `Ruby`) | Shloka 91 |
+| Red lotuses for eyes reddened with rapture (madaghūrṇita-raktākṣa) | Two `OpenLotus`es without pads in `--art-vermilion` shaded `--art-crimson`, at 0.8 and 0.68, on tall tapering `--leaf` stalks from one faint `--art-moon` pool, leaning opposite ways (−12° and 14°) and of unequal height so they never pair up; each rocks from its stalk's foot on its own `m-sway` | Inline (`sandal-and-campaka.tsx`, with `OpenLotus`) | Shloka 92 |
+| A pāṭala bough (the trumpet-flower), for flushed cheeks | A tapering `--art-musk` bough hanging in from the top right of the crown, with lance `--leaf` leaves edged in gold; seven trumpets about 26 long at 1 on short stalks, each a narrow tube flaring to a lipped mouth, filled `--lotus` to `--art-ivory`, edged and veined in `--art-crimson` at low opacity, a `--leaf` calyx, each nodding on `m-sway` by turns | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
+| Sandal ground on its stone (candana-drava) | A round grinding stone seen at a slant (rx 62 at 1), `--art-stone` with a thickness and a gold rim, wet with a pool of paste (`--art-core` to `--art-turmeric`) and a little `--art-moon` water; on it a sandalwood log, `--art-turmeric` to `--art-ember` with musk grain and a pale cut end showing its rings; beside it a footed gold bowl of the paste. Fragrance is not drawn | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
+| Campaka heaped on a leaf | Seven face-on `Campaka`s at 0.8 to 1.05, squashed a little in height to lie on a slant, heaped on a `--leaf` leaf plate with a gold-soft midrib | Inline (`sandal-and-campaka.tsx`, with `Campaka`) | Shloka 92 |
+| Kurukullā at the moat of nectar | Never a figure: an `--art-vermilion` light with a core heart and gold ring in a breathing vermilion glow, far off in the crown over the moat round her city (a faint band of `--art-moon` to `--gold-soft` nectar under `WavePattern`, curving, faded out at both ends, with a gold line along its far edge); beside the light her `FlowerBow` stood upright, string toward her, and one `FlowerArrow` nocked on it, aimed away. A fan of arrows behind the light made a bouquet | Inline (`kula-hollow.tsx`, with `FlowerBow` and `FlowerArrow`) | Shloka 93 |
+| The kula hollow (kulakuṇḍa) | A round pit seen a little from above (rx 62): an `--art-stone` rim edged in gold round a hollow shaded `--art-musk`; inside, the power coiled asleep (`coilPath`, 44 narrowing to 22, its inner end turning down to the centre, not rising, drawn as a `Coil`) in a saffron glow, and her light at its centre, the opening of the channel, rising out of the pit as a tall soft glow | Inline (`kula-hollow.tsx`, with `coilPath` and `Coil`) | Shloka 93 |
+| The Kaula path | A path coming up from the front to the kula, two dashed gold edges widening toward us over a faint gold-soft tread, and on it, one behind the other, four `Lamp`s growing from 1.2 to 2.25: those set on the path | Inline (`kula-hollow.tsx`, with `Lamp`) | Shloka 93 |
+| Kuśa cut and tied, and the kuśa ring (pavitra) | Nine blades of kuśa, `--leaf` and `--art-turmeric` by turns, cut square at one end and fanning to their tips at the other, tied with two turns of turmeric, on a faint musk shadow; beside it a small ring of kuśa (a `--leaf` ellipse with a gold hairline) with its two ends standing up | Inline (`kula-hollow.tsx`) | Shloka 93 |
+| Śirīṣa, the softest flower | A thin `--art-musk` sprig with three powder-puff flowers, each 23 fine filaments fanned upward from a `--leaf` calyx, `--art-ivory` at the base to `--lotus` tips with a lotus dot at each, swaying by turns, and one feathery leaf of paired `--leaf` leaflets | Inline (`kula-hollow.tsx`) | Shloka 93 |
+| Kumāra (Skanda) | Never a figure: a small `--art-saffron` light with a gold ring in a saffron glow, ringed by the six Kṛttikā stars who fostered him (core `glint`s edged in gold, `m-twinkle` by turns), and standing beside it his spear (vel): a gold shaft with a broad leaf-shaped `--art-core` blade edged in gold and a vermilion binding under it | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Gaṇeśa, as her son | His light ruddy as the dawn (`DawnDefs`, a vermilion disc with a saffron highlight and gold ring), without his ring of ten things, and his `Mouse` facing it on the ground at its foot | Inline (`mother-of-two-sons.tsx`, with `DawnDefs` and `Mouse`) | Shloka 94 |
+| A mountain, the unmoving (acala) | A peak in the crown, `--gold-soft` fading out downward under a gold edge that fades with it, a lower shoulder each side, faint ridge lines, `--art-ivory` snow on the two summits edged in gold. Steadfastness, and her father's house as Pārvatī | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A ripe sheaf of rice (puṣṭi) | Nine `--art-turmeric` stalks gathered at the foot and fanning out, tied at the waist with a `--leaf` band, each ear bowed over with five turmeric grains edged in gold | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Svastika drawn on the ground (svasti) | A right-turning svastika in `--art-vermilion` 3 wide, flattened to lie on the ground (1.3 by 0.55), with a turmeric dot edged in gold in each quarter | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A still pool (śānti) | A small pool in an `--art-stone` kerb edged in gold-soft, `--art-moon` water, and her light lying in it unbroken: one core streak in a faint core halo, no ripples | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| A pot full to the brim (tuṣṭi) | A round `--art-ember` earthen pot edged in gold with a turmeric band, its mouth an `--art-ivory` surface of milk level with the rim and a core sheen, nothing spilling | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Her three eyes: moon, sun, and fire between (trinayanā) | Never as eyes, and never two round things level with a third between or above them: set out on a slant across the crown, falling left to right and each a different size, an `--art-moon` full moon (r 14, gold-edged, an ivory highlight, a moon glow), a tall upright tongue of fire (`tongue(60, 20)`, vermilion to saffron to core, edged in gold, with a core tongue inside, `m-flicker`, in a saffron glow), and a saffron sun (r 22, a core heart, twelve short saffron rays, in a breathing glow) | `ThreeEyes` and `ThreeEyesDefs` in `primitives.tsx` (promoted at Shloka 98, used by Shloka 95); `s` scales all three | Shloka 95 |
+| Her light, burning (tejas) | Thirteen `tongue`s of flame round the upper part of her light, rising rather than radiating (each turned a quarter of the way out), tallest at the top, on a vermilion-to-saffron-to-core gradient (`m-flicker` by turns). Tongues pointing straight out all round made a second sun | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| The garland of letters (Mālinī) | A `--leaf` thread sagging across the middle, with thirteen letters of the Mālinī order (न ऋ ॠ ऌ ॡ थ च ध ई ण उ ऊ ब, the vowels and consonants interwoven) hung on it as beads, each in `--sindura` (Tiro Devanagari, 17) on a faint core disc edged in gold, and between them a `BLOSSOM`, `--lotus` and `--art-saffron` by turns | Inline (`fire-and-the-garland.tsx`, with `BLOSSOM`) | Shloka 95 |
+| The plain word: माता | The word alone in `--sindura` (Tiro Devanagari, 40) at the front, with nothing round it | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| The hills of Malaya and their sandal trees | Two ranges of low rounded `--leaf` hills at the right, far and near, each fading downward under a faint gold ridge line, with six sandal trees on their slopes: a short `--art-musk` trunk under a crown of three `--leaf` ellipses dotted with two `--art-crimson` berries, swaying | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| Her face assembled, never drawn | When a verse builds her face feature by feature, each feature is the thing the poets set in its place and is kept well apart from the others: her face the hand mirror (Shloka 12) with only her light in it, her brows Kāma's `FlowerBow` alone in the crown, offset and tilted, never over the mirror. A brow arc set over a round thing would make a face | Inline (`too-fine-to-see.tsx`, with `HandMirror` and `FlowerBow`) | Shloka 96 |
+| Her subtle form (sūkṣma-rūpa) | A point of light almost too fine to see at the top of the crown: a 1.1 core dot with a gold hairline, three hairline gold rings (6, 11, 17) at falling opacity on `m-twinkle` by turns, in a small faint core glow | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The gods' lamps following her (suranāyikā) | Seven `Lamp`s (the gods' saffron flame) along a dashed gold-soft line curving up from the front right to behind her light, from 2.2 near us to 1 nearest her | Inline (`too-fine-to-see.tsx`, with `Lamp`) | Shloka 96 |
+| Her ornaments on a tray (śobhanā) | A gold tray seen at a slant with a turmeric well, on it a loop of twenty-two `Pearl`s and a ruby pendant (`Ruby`) on a gold mount, with a smaller ruby loose | Inline (`too-fine-to-see.tsx`, with `Pearl` and `Ruby`) | Shloka 96 |
+| The dark throat (kālakaṇṭha), as a pot's | A pot's neck is its kaṇṭha: a round gold pot edged in carve, its neck and the water in its mouth `--art-hair` (the poison's dark blue), a dark drop over it edged in moon (`m-ember`), in a faint hair glow | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The churned sea (kṣobha) | Five open rings of a whirl seen at a slant (rx 22 to 94, a quarter as deep), each a 3.2 `--art-ivory` foam line under a gold one and open where the next begins, rocking on `m-sway` by turns round its centre, over a gold-soft to moon glow, with an ivory point at the eye | Inline (`too-fine-to-see.tsx`) | Shloka 96 |
+| The six changes (ṣaḍ bhāvavikārāḥ, Nirukta 1.2) | Six stages of one plant along a `--gold-soft` ground line, drawn at 1.35: a splitting `--art-ember` seed with a leaf-green shoot (comes into being), a sprout with two leaves (exists), a four-leaved sapling (grows), a taller plant with a five-petalled vermilion flower and a turmeric heart (alters), a stalk bent over in `--art-turmeric` with dry ember leaves and a petal falling (wastes), and the stalk lying on the ground in `--art-musk` (perishes). Her light is kept out of the row | Inline (`mother-of-adepts.tsx`) | Shloka 97 |
+| The sky-going siddhas (khecara) | Five small `--art-core` lights with gold rims in soft core glows (`m-twinkle`, three groups), each at the head of a `--gold-soft` trail that tapers away behind it, coming in from both sides of the crown and converging over her. Kept in the strip above a one-line title | Inline (`mother-of-adepts.tsx`) | Shloka 97 |
+| The adepts' lamps, kindled from her | Five seers' `Lamp`s (pale flames) at about 2 in a shallow arc at her feet, each joined to her light by a dotted `--gold-soft` thread from 80 units out to just above its flame | Inline (`mother-of-adepts.tsx`, with `Lamp`) | Shloka 97 |
+| The thunderbolt with a diamond at its heart | `Vajra` at 2.7, turned 18°, in a soft `--art-moon` glow, a face-on `diamond` (radius 6.4) over its grip, and `--art-core` `glint`s at its upper and lower points and beside the gem (`m-twinkle`). Both senses of vajra at once | Inline (`mother-of-adepts.tsx`, with `Vajra` and `diamond`) | Shloka 97 |
+| The throat's wheel with its letters (viśuddhi) | The cakra canon drawn large under the card: sixteen `--lotus` petals at 0.5 (`yantraPetals(16, 34, 96)`) with a gold edge, in a soft lotus glow, round a gold-ringed pericarp holding the sign of space as a dotted gold double circle; on the petals the sixteen vowels अ to अः clockwise from the top, each in `--sindura` (Tiro Devanagari, 14) on a small `--art-ivory` disc with a gold-soft rim. Without the discs the letters vanished into the petals | `CakraWheel` in `primitives.tsx` (promoted at Shloka 99, used by Shloka 98) | Shloka 98 |
+| The wheel's goddess, in her colour | Her light at the wheel's centre in her colour: a breathing glow from `--art-core` through `--sindura` to `--art-vermilion` (radius 50) round a core dot, for Ḍākinī's light red. Each goddess of the wheels below takes her own colour the same way | Inline (`throat-wheel.tsx`) | Shloka 98 |
+| The skull-staff (khaṭvāṅga) | Planted upright, about 240 tall: a turned bed-leg in `--art-ember` with a turmeric hairline, five swellings and gold collars, a gold crossbar under the top, a vermilion ribbon (`m-sway` from the staff) and a small `Bell` hung from it, and on top a skull seen from behind (an `--art-ivory` dome with a gold-soft jaw line and the carve zigzags of its sutures), so it never shows a face. Its "and the rest" is a `Trident` and an `Axe` at half opacity behind it | Inline (`throat-wheel.tsx`, with `Bell`, `Trident` and `Axe`) | Shloka 98 |
+| The faces counted down the body (vadana) | A column of six rows at the left, one face more in each: faces are the five-faces flame (`tongue(22, 9)`), the wheel's own count lit (vermilion with a core tongue, at 1.3, in a breathing vermilion glow) and the other rows as gold-soft outlines at 0.62. Shloka 98 lights the single face at the top; each later wheel lights its own row, its faces spread to 1.4 times the gap | `FaceCount` in `primitives.tsx` (promoted at Shloka 100, used by Shloka 98) | Shloka 98 |
+| The sixteen powers on the throat's petals (Amṛtā and the rest) | `CakraWheel` without its letters, and on each petal at radius 68 a small `--art-core` light with a gold rim in a core glow (`m-twinkle`, three groups); the first, Amṛtā, at the top, an `--art-moon` disc with an ivory highlight in a breathing moon glow. A full moon in the crown keeps the sixteen digits they share | Inline (`milk-rice-and-the-rope.tsx`, with `CakraWheel`) | Shloka 99 |
+| The seven layers of the body (dhātu), from the skin in | A column 64 wide at the left of seven bands 16 deep under slightly uneven gold boundaries: skin, blood, flesh, fat, bone, marrow, essence, each tinted at 0.16 in the colour it will be lit in (`--art-turmeric`, `--art-vermilion`, `--lotus`, `--art-moon`, `--art-ivory`, `--gold-soft`, `--art-core`). The wheel's own layer is lit at 0.85 with a full gold edge; Shloka 99 lights the skin, with a core line along its top in a soft glow. In plain gold-soft it read as a stack of paper | `BodyLayers` in `primitives.tsx` (promoted at Shloka 100, used by Shloka 99) | Shloka 99 |
+| Milk-rice (pāyasa) | A shallow gold bowl at 1.35 with a carve edge and a vermilion band, a gold-soft rim, and an `--art-ivory` surface scattered with moon rice grains, short saffron threads, two turmeric cashews and two ember raisins, on a musk shadow | Inline (`milk-rice-and-the-rope.tsx`) | Shloka 99 |
+| The tether cut (paśu and pāśa) | `Goat` at 1.4 facing away from a short `--art-ember` peg, a twisted turmeric-and-ember rope from the peg to its neck cut through between them, the two ends parted, a `Flash` and a breathing core-to-saffron glow at the cut | Inline (`milk-rice-and-the-rope.tsx`, with `Goat` and `Flash`) | Shloka 99 |
+| The heart's wheel drawn large, unstruck (anāhata) | `CakraWheel` with twelve `--art-vermilion` petals (r0 30, r1 72) round the sign of air, in a soft vermilion glow, the consonants क to ठ on its petals at radius 52; round it the unstruck sound as three dotted `--gold-soft` rings (84, 94, 104, fading outward, `m-shimmer` staggered) with no source drawn anywhere | Inline (`unstruck-heart.tsx`, with `CakraWheel`) | Shloka 100 |
+| Her light with a dark sheen (śyāmābhā) | A breathing `--art-hair` glow (radius 30, opaque at the centre) with a single `--art-moon` `glint` in it (`m-shimmer`). A gold rim and a moon dot in the middle made an iris | Inline (`unstruck-heart.tsx`) | Shloka 100 |
+| The rosary of letters, round a wheel | The Shloka 52 rosary drawn small and closed round the wheel on a gold circle of radius 116: the fifty letters (`VARNAMALA`) on moon beads of radius 6.6 (a radial ivory-moon-gold-soft shade, a gold edge), `--sindura` at 7.6 (6.4 for the two-part letters), clockwise from a gold meru at the foot with a vermilion cord and tassel | Inline (`unstruck-heart.tsx`) | Shloka 100 |
+| Her fangs, blazing (daṃṣṭrā) | Two boar's tusks at 1.5, `--art-ivory` with a gold edge and a core line along the inner curve, each rooted 14 from the centre and leaning across so they cross, bound with a gold-and-vermilion band where they meet, a core `glint` at each point (`m-twinkle`), in a breathing core-to-saffron glow. Never as a pair of teeth | Inline (`unstruck-heart.tsx`) | Shloka 100 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -491,9 +573,9 @@ Not yet drawn. Whoever draws one first sets its canon here.
 
 - **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
   fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
-- **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
-  water-lily of its first verse, the golden lotus of its third, her three eyes (sun, moon, and fire
-  between them, Saundaryalaharī 48), and her red garland. Whoever draws one first sets its canon.
+- **Her other hand-held things.** The Dhyāna names, but doesn't draw, the red water-lily of its
+  first verse, the golden lotus of its third, and her red garland (its jewelled goblet is drawn
+  at Shloka 91, and her three eyes at Shloka 95). Whoever draws one first sets its canon.
 
 ## Palette additions
 
@@ -3228,6 +3310,344 @@ One entry per finished artwork, in the order they were made.
   curtains, so the stage here has no dancer, seat or curtain, only what was left on it. Everything
   first read too small; the lamp, crown, cymbals and bowl were scaled up, and the bowl deepened
   when it read as a plate. In the chant miniature the lamp and its glow carry it.
+
+### Shloka 85: The ever-moist Nityā, and half of Śiva's body
+
+- **Component:** `half-of-his-body.tsx` (defs prefix `sa85`)
+- **Composition:** under the card the innermost triangle, fifteen moons waxing round its sides,
+  and at its heart one flame split down a gold seam: his half white with rudrākṣa beads and his
+  crescent on the tip, hers vermilion with pearls. At the lower left an unglazed water pot beaded
+  and dripping, a cup beside it; at the lower right a clay lamp just blown out, one thread of smoke
+  going up. The moon and a red lotus keep to the crown's far right.
+- **Name → part:**
+  - Nityaklinnā → `pot`: the pot, its ring, the wet ground and the cup
+  - Nirupamā → `similes`: the moon and the lotus
+  - Nirvāṇasukhadāyinī → `blown-out`: the lamp and its smoke
+  - Nityāṣoḍaśikārūpā → `nityas`: the triangle and its fifteen moons
+  - Śrīkaṇṭhārdhaśarīriṇī → `one-body`: the split flame, its beads, crescent and glow
+  - Intro, *one flame* → `one-body`
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the moons, the beads of water), `m-breathe` (the glow, the ember),
+  `m-flicker` (the point on the seam), `m-shimmer` (the smoke).
+- **Notes:** this title stays on one line, reaching x ≈ 397 (449 at 1100px), so the card sits at
+  y ≈ 184–396 and the crown is only free to the right. Shloka 21 already has a red and white
+  bindu; here the two halves are a whole flame. The first flame was too small and looked like a
+  face, with ash bars, a kumkum dot and the crescent on its side; the beads along the edges carry
+  the two halves instead, and the crescent moved to the tip.
+
+### Shloka 86: From radiance to root-nature
+
+- **Component:** `root-nature.tsx` (defs prefix `sa86`)
+- **Composition:** under the card her light as glow alone, its 108 rays fading outward, over a
+  ring of the eight quarters with a light at each. At the crown's right a parasol of four tiers on
+  one staff. On the ground three Upaniṣadic pictures of root-nature: at the left the unborn
+  she-goat of three colours with two kids; in the front a fig broken open and a seed broken open,
+  nothing in it but a faint light; at the right a lotus in clear water, its root dim below.
+- **Name → part:**
+  - Prabhāvatī → `radiance`: the 108 rays
+  - Prabhārūpā → `her-light`: the glow
+  - Prasiddhā → `quarters`: the ring, its eight lights and their arcs
+  - Parameśvarī → `parasols`: the tiered parasol and its staff
+  - Mūlaprakṛti → `goat`: the she-goat and her kids
+  - Avyaktā → `seed`: the fig, the seed and the glow between its halves
+  - Vyaktāvyaktasvarūpiṇī → `lotus`: the lotus, pad, pool, stalks and rhizome
+  - Intro, *her light* → `her-light`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the seed's glow), `m-shimmer` (the rays, the quarters' arcs),
+  `m-twinkle` (the quarters' lights).
+- **Notes:** this title wraps, its first line reaching x ≈ 101 (153 at 1100px), so the card sits
+  at y ≈ 225–438 and the crown is free. Shloka 78's goat was promoted to `Goat` here, with
+  `GOAT_FORE` and `GOAT_HIND` for markings over its coat. The tiered parasol first stood at
+  x 540, where 1100px crops it; at x 452 it stays in. The quarters' ring was narrowed to clear the
+  verse panel, the first seed's halves read as spectacles, and the first pool as a grey box.
+
+### Shloka 87: Knowledge and ignorance, and the moonlight in Kāmeśa's eyes
+
+- **Component:** `moonlight-on-the-lilies.tsx` (defs prefix `sa87`)
+- **Composition:** under the card her light as moonlight, ringed, over a pool where two white
+  night lilies stand open. At the pool's left the water rises as a wave, foam and bubbles. At the
+  crown's right the logicians' hill with smoke going up and only a glow of the fire at its summit.
+  On the near bank a rope by a lamp, a rope in its light and a snake beyond it.
+- **Name → part:**
+  - Vyāpinī → `hill`: the hill, its smoke and the hidden fire
+  - Vividhākārā → `water`: the wave, its foam and the bubbles
+  - Vidyāvidyāsvarūpiṇī → `rope`: the rope, its two halves, the lamp and its glow
+  - Mahākāmeśanayanakumudāhlādakaumudī → `moonlight`: her light, its rings, the pool, the path
+    of light, the pads and the lilies
+  - Intro, *her light as moonlight* → `moonlight`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the hidden fire, the lamp's glow), `m-shimmer` (the rings),
+  `m-twinkle` (the path of light, the foam), `m-sway` (the smoke).
+- **Notes:** this title wraps, its first line reaching x ≈ 138 (190 at 1100px), so the card sits
+  at y ≈ 225–438. Shloka 79's night lily was promoted here to `NightLily`. Shloka 79 lit its
+  lilies with a cone; here the moonlight is rings and a path on the water, and the lilies are
+  larger and staggered so they never pair up as eyes. The first rope was too small to tell a rope
+  from a snake, and the first smoke was lost in dark mode until a gold-soft line went inside it.
+
+### Shloka 88: Sunlight into the heart, and four ways of standing next to Śiva
+
+- **Component:** `sunlit-heart.tsx` (defs prefix `sa88`)
+- **Composition:** the sun at the crown's right sends seven parallel rays down behind the card
+  and through the lattice of a dark stone chamber at the lower left, where they lie across its
+  floor. Under the card her light stands as the liṅga on its seat. To the right his trident goes
+  up a road toward a dark fort with her sealed letter tied to it; in front, his crescent and bilva
+  leaves lie beside her footprints, and a full pot stands on a threshold marked with turmeric and
+  kumkum.
+- **Name → part:**
+  - Bhaktahārdatamobhedabhānumadbhānusantatiḥ → `sunbeams`: the sun, the rays, the chamber,
+    its lattice and the light on its floor
+  - Śivadūtī → `envoy`: the road, the fort, the trident and the letter
+  - Śivārādhyā → `worship`: the footprints, the crescent and the bilva leaves
+  - Śivamūrtiḥ → `form`: the liṅga of her light, its seat and its glow
+  - Śivaṅkarī → `auspicious`: the threshold, its marks and the full pot
+  - Intro, *her light as the liṅga* → `form`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the sun's glow, the light on the floor, the liṅga's glow), `m-shimmer`
+  (the rays).
+- **Notes:** this title wraps, its first line reaching x ≈ 152 (204 at 1100px), so the card sits
+  at y ≈ 225–438. Shloka 41's full pot was promoted to `FullPot` here. The sun first stood at
+  x 478, where 1100px cut its rays. The rays were first a thin bundle that in the miniature read
+  as a pole; they are wider apart now and leave out the stretch the card covers.
+
+### Shloka 89: Approved by the learned, and out of reach of speech
+
+- **Component:** `pillar-of-light.tsx` (defs prefix `sa89`)
+- **Composition:** her light as a pillar through the whole picture, fading out above and below;
+  the goose flies up beside it under the card and the boar digs at its foot. At the right under
+  the card Śiva's crescent and two dotted lines of regard, his and hers. At the left a pale sun and
+  moon lit only on her side; at the right letters and thought rising and curling back. In front the
+  seers' lamps and a handful of flowers at the pillar's foot.
+- **Name → part:**
+  - Śivapriyā → `dear`: the crescent and the gold line
+  - Śivaparā → `intent`: the vermilion line
+  - Śiṣṭeṣṭā → `learned`: the three lamps
+  - Śiṣṭapūjitā → `worship`: the flowers
+  - Aprameyā → `pillar`: the pillar, its glow, the goose, the boar, its hollow and clods
+  - Svaprakāśā → `self-lit`: the sun, the moon and the stars
+  - Manovācāmagocarā → `beyond-words`: the letters, the rings of thought and their thread
+  - Intro, *a pillar* → `pillar`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the pillar's glow), `m-sway` (the goose), `m-shimmer` (the lines of
+  regard), `m-twinkle` (the rings of thought).
+- **Notes:** this title stays on one line at 1440 and reaches x ≈ 490, so the card sits at
+  y ≈ 184–396 and the crown is all but closed; the goose and the crescent, first drawn in the
+  crown, came down under the card. The liṅgodbhava story is told of Śiva's pillar; here, for
+  aprameyā, the pillar is her light.
+
+### Shloka 90: Consciousness and dead matter, and the brahmin's daily prayer
+
+- **Component:** `dawn-ghat.tsx` (defs prefix `sa90`)
+- **Composition:** dawn at a river ghat. In the crown the seam of night and day with the last
+  stars. Under the card the sun half risen over the river, and on the water twenty-four floating
+  lamps in three rows of eight. Birds rise from reeds on the far bank. On the stone steps a
+  lodestone with its filings and a row of copper vessels, one tipped to pour toward the sun. Up the
+  right side भूः, भुवः, स्वः on three levels.
+- **Name → part:**
+  - Cicchaktiḥ → `cit`: the sun, its glow and the river with its light
+  - Cetanārūpā → `sentience`: the birds and the reeds
+  - Jaḍaśaktiḥ → `matter-power`: the lodestone and its filings
+  - Jaḍātmikā → `inert`: the steps
+  - Gāyatrī → `gayatri`: the twenty-four lamps
+  - Vyāhṛtiḥ → `vyahrti`: the three words
+  - Sandhyā → `sandhya`: the night, the day and the seam, and the stars
+  - Dvijavṛndaniṣevitā → `twice-born`: the vessels, the pouring and its rings
+  - Intro, *the sun* → `cit`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the sun's glow), `m-twinkle` (the river's light, the stars),
+  `m-flicker` (the lamps, through `Lamp`), `m-shimmer` (the pouring).
+- **Notes:** this title wraps, its first line reaching x ≈ 134 (186 at 1100px), so the card sits
+  at y ≈ 225–438. Here the sun is cit, the light by which things are known, as the Gāyatrī asks of
+  it, rather than her own light. The night wash was halved and the filings redrawn as field lines.
+
+### Shloka 91: Seated on the principles, hidden in the sheaths, flushed with wine
+
+- **Component:** `five-sheaths.tsx` (defs prefix `sa91`)
+- **Composition:** under the card her light within five sheaths, each opened at the front so the
+  next shows, on a seat of thirty-six thin tiers with a fresh garland across it. Round the ground a
+  boundary broken wherever her rays cross it. तत् far off in the crown, त्वम् near at the front with
+  the rings of a call going out to her, and at the right her jewelled goblet, brimming.
+- **Name → part:**
+  - Tattvāsanā → `tattvas`: the seat
+  - Tat → `tat`: तत् and its glow
+  - Tvam → `tvam`: त्वम्
+  - Ayī → `ayi`: the call
+  - Pañcakośāntarasthitā → `sheaths`: the five sheaths and her light
+  - Niḥsīmamahimā → `boundless`: the boundary, the rays and the gaps
+  - Nityayauvanā → `young`: the garland and its dew
+  - Madaśālinī → `mada`: the goblet
+  - Intro, *her light within five sheaths* → `sheaths`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light), `m-shimmer` (the rays, the call, the drop), `m-twinkle`
+  (the gaps, the dew).
+- **Notes:** this title wraps, its first line reaching x ≈ 124 (176 at 1100px), so the card sits
+  at y ≈ 225–438. This sets the canon for the Dhyāna's jewelled goblet, and moves it out of the
+  anticipated list. One wedge cut through all five sheaths read as a pie; the cuts now step.
+
+### Shloka 92: Rolling eyes, flushed cheeks, sandal paste and campaka
+
+- **Component:** `sandal-and-campaka.tsx` (defs prefix `sa92`)
+- **Composition:** the verse looks at her face, so the picture keeps to what the poets set beside
+  one, and nothing is drawn that could read as a face. Under the card her light. At the left two
+  red lotuses on tall stalks rock unsteadily, each its own way; from the crown's top right a pāṭala
+  bough hangs its pale rose trumpets. In front, left to right as they are offered, a sandal log on
+  its wet grinding stone with a bowl of the paste, and campakas heaped on a leaf.
+- **Name → part:**
+  - Madaghūrṇitaraktākṣī → `eyes`: the two red lotuses and their pool
+  - Madapāṭalagaṇḍabhūḥ → `cheeks`: the pāṭala bough
+  - Candanadravadigdhāṅgī → `sandal`: the stone, the log, the paste and the bowl
+  - Cāmpeyakusumapriyā → `campaka`: the campakas on their leaf
+  - Intro, *red lotuses*, *pāṭala flowers*, *sandal paste* and *flowers* → each part
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light), `m-sway` (the lotuses, the trumpets, by turns).
+- **Notes:** this title wraps, its first line reaching x ≈ 46 (98 at 1100px), so the card sits at
+  y ≈ 225–438. The face-on campaka of Shloka 4 is promoted to `Campaka` for its second use. Scent
+  wisps rising from the paste and the flowers were dropped: fragrance is never drawn as wisps
+  (Shloka 10). The sandal bowl and the order, sandal then flowers, agree with Shloka 56's five
+  offerings. The bough first ran out past x 520 and dipped into the card; it was drawn in.
+
+### Shloka 93: Six names on one syllable, and the hymn names its own tradition
+
+- **Component:** `kula-hollow.tsx` (defs prefix `sa93`)
+- **Composition:** the verse goes from what she is like to the school that claims her, and the
+  picture goes from the far edge of her island in to the hollow at its root. In the crown the moat
+  of nectar round her city, with Kurukullā over it as a red light, her flower bow and arrow beside
+  her. Under the card the kula hollow, the coiled power asleep in it and her light rising out of
+  it; round it on the ground the assembly of powers; up to it from the front the Kaula path, its
+  lamps the people on it. At the left kuśa cut and tied with a kuśa ring, at the right śirīṣa.
+- **Name → part:**
+  - Kuśalā → `skilful`: the kuśa bundle and ring
+  - Komalākārā → `tender`: the śirīṣa
+  - Kurukullā → `kurukulla`: the moat, her light, the bow and arrow
+  - Kuleśvarī → `kula`: the assembly of powers
+  - Kulakuṇḍālayā → `hollow`: the pit, the coil and her light
+  - Kaulamārgatatparasevitā → `kaula`: the path and its lamps
+  - Intro, *moat of nectar* → `kurukulla`; *hollow at its root* → `hollow`; *kula* → `kula`;
+    *Kaula path* → `kaula`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, Kurukullā, the coil's glow), `m-shimmer` (the powers' joins),
+  `m-twinkle` (the powers, the arrow's head), `m-flicker` (the lamps), `m-sway` (the śirīṣa).
+- **Notes:** this title wraps, its first line reaching x ≈ 110 and its second, longer, x ≈ 171
+  (223 at 1100px), so the card sits at y ≈ 225–438 and the moat starts right of x 196. Shloka 37's
+  assembly of powers is promoted to `KulaAssembly`, which can now lie flat on the ground, and
+  Shloka 40's coil to `coilPath` and `Coil`. A fan of three arrows behind Kurukullā read as a
+  bouquet; one arrow nocked on the bow replaced it.
+
+### Shloka 94: Mother of two sons, and then nine words for what people want
+
+- **Component:** `mother-of-two-sons.tsx` (defs prefix `sa94`)
+- **Composition:** the verse stops describing a goddess and lists goods, so the picture is a list
+  too, each good one plain thing. Under the card her light, its rays all round; at the left Kumāra
+  among the six Kṛttikās with his spear, at the right Gaṇeśa's dawn-red light with his mouse. In
+  the crown the mountain. On the ground the sheaf, the svastika, and Nandinī with her calf; in
+  front the still pool, the full pot, the book on its stand, and the engine of obstacles broken.
+- **Name → part:**
+  - Kumāragaṇanāthāmbā → `sons`: Kumāra, his stars and spear, Gaṇeśa's light and mouse
+  - Tuṣṭi → `contentment`: the full pot
+  - Puṣṭi → `nourishment`: the sheaf
+  - Mati → `understanding`: the book on its stand
+  - Dhṛti → `steadfast`: the mountain
+  - Śānti → `peace`: the still pool
+  - Svastimatī → `wellbeing`: the svastika
+  - Kānti → `radiance`: her light and its rays
+  - Nandinī → `nandini`: the cow and her calf
+  - Vighnanāśinī → `obstacles`: the broken engine, its glow and gleam
+  - Intro, *two sons* → `sons`; *her light* → `radiance`; *obstacles broken* → `obstacles`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the lights), `m-shimmer` (her rays), `m-twinkle` (the Kṛttikās),
+  `m-lick` (the gleam at the break).
+- **Notes:** this title wraps, its first line reaching x ≈ 77 and its second x ≈ 146 (198 at
+  1100px), so the card sits at y ≈ 225–438. Four inline drawings get their second use here and are
+  promoted: Shloka 31's broken engine (`BrokenSlab`), Shloka 77's cow (`Cow`), Shloka 55's mouse
+  (`Mouse`) and Shloka 53's book on its stand (`BookOnStand`). The spear first stood down into the
+  sheaf, and the mouse floated with no ground under it.
+
+### Shloka 95: Fire, a third eye, the garland of letters, the swan, and one plain word
+
+- **Component:** `fire-and-the-garland.tsx` (defs prefix `sa95`)
+- **Composition:** the verse opens hot and ends fragrant, and the picture runs from the crown
+  down. In the crown her three eyes on a slant: the moon, the fire, the sun. Under the card her
+  light burning. At the left a wagtail on its stone; across the middle the garland of letters in
+  the Mālinī order. In front a swan on still water, the word माता, and at the right the hills of
+  Malaya with their sandal trees.
+- **Name → part:**
+  - Tejovatī → `tejas`: her light and its flames
+  - Trinayanā → `three-eyes`: the moon, the fire and the sun
+  - Lolākṣīkāmarūpiṇī → `lolaksi`: the wagtail and its stone
+  - Mālinī → `malini`: the garland of letters
+  - Haṃsinī → `hamsini`: the swan and its water
+  - Mātā → `mata`: the word
+  - Malayācalavāsinī → `malaya`: the hills and the sandal trees
+  - Intro, *her three eyes* → `three-eyes`; *her light edged with flame* → `tejas`; *swan on still
+    water* → `hamsini`; *one plain word* → `mata`; *sandal hills* → `malaya`
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the fire, her flames), `m-breathe` (the fire's and sun's glows, her
+  light), `m-dart` (the wagtail), `m-sway` (the sandal trees).
+- **Notes:** this title wraps, its first line reaching x ≈ 126 and its second x ≈ 224 (276 at
+  1100px), so the card sits at y ≈ 225–438. This sets the canon for her three eyes, and moves them
+  out of the anticipated list: never drawn as eyes, and never level pairs. Shloka 74's wagtail is
+  promoted to `Wagtail`. Flames pointing straight out from her light made a second sun.
+
+### Shloka 96: A face assembled name by name, and then declared too fine to see
+
+- **Component:** `too-fine-to-see.tsx` (defs prefix `sa96`)
+- **Composition:** the verse builds a face and then withdraws it; the picture never draws one.
+  Under the card her face is the hand mirror, her light in it shining out past the frame in
+  rings. In the crown Kāma's bow alone, and at its very top a point of light. The gods' lamps come
+  up behind her from the right; at the left her ornaments on a tray. In front a lotus pond, a pot
+  with its throat stained dark, and the churned sea.
+- **Name → part:**
+  - Sumukhī → `face`: the mirror and her light in it
+  - Nalinī → `lotus`: the pond, its pads and lotuses
+  - Subhrūḥ → `brows`: the bow of flowers
+  - Śobhanā → `splendid`: the tray of ornaments
+  - Suranāyikā → `gods`: the gods' lamps and their line
+  - Kālakaṇṭhī → `dark-throat`: the pot, its dark throat and the drop
+  - Kāntimatī → `radiant`: her glow and the rings round the mirror
+  - Kṣobhiṇī → `agitator`: the whirl
+  - Sūkṣmarūpiṇī → `subtle`: the point of light
+  - Intro, *the mirror* → `face`; *a point too fine to see* → `subtle`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light, the point's glow), `m-shimmer` (the rings), `m-twinkle` (the
+  point's rings), `m-flicker` (the lamps), `m-ember` (the drop), `m-sway` (the whirl).
+- **Notes:** this title wraps, its first line reaching x ≈ 152 (204 at 1100px), so the card sits
+  at y ≈ 225–438. The whirl first sat so low and pale that the ground's fade took it; it was raised
+  and given ivory foam under its gold.
+
+### Shloka 97: Mistress of the thunderbolt, mother of the adepts
+
+- Component: `MotherOfAdepts` in `mother-of-adepts.tsx` (defs prefix `sa97`).
+- Composition: under the card her light at (320, 524) inside the fifteen syllables of the root mantra (`RootMantraRing`, radius 52), and at her feet five seers' lamps, each on a dotted thread from her. Five sky-going siddhas come in from both sides of the crown, above the title. At the right the thunderbolt with a diamond at its heart; at the left the five faces (radius 36) with Vāmadeva brought forward. In front at the left the six changes of a living thing along a ground line, seed to dust, and at the right a conch sounding in an ivory glow.
+- Name → part: Vajreśvarī → `vajra`; Vāmadevī → `vamadevi` (vāma is both lovely and left, so the faces stand at the left); Vayo'vasthāvivarjitā → `ageless` (Yāska's six changes; her light is not in the row); Siddheśvarī → `siddhesvari` (the siddhas as sky-goers, the ruler they answer to); Siddhavidyā → `siddhavidya` (her light and the fifteen-syllabled vidyā, which the manuals exempt from the tests); Siddhamātā → `siddhamata` (the adepts' lamps, each lit from her); Yaśasvinī → `yasasvini` (fame is white in the poets' convention). Intro: `siddhavidya`, `siddhamata`, `ageless`.
+- Palette: her light `--art-core` through `--art-glow`; the mantra in its three cluster glows; siddhas core and gold-soft; the vajra gold with a moon and ivory gem; the faces in their own colours; the plant leaf, vermilion, turmeric, ember and musk; the conch ivory.
+- Motion: her glow `m-shimmer` and `m-breathe`; the syllables and siddhas `m-twinkle` (three groups), the ह्रीं `m-breathe`; the lamps `m-flicker`; the vajra glow `m-breathe`, its glints `m-twinkle`; the sound arcs `m-twinkle`.
+- Notes: promotes the five faces (`FiveFaces`, from Shloka 61, with a new `stress`), the conch (`Conch`, from Shloka 52) and the root-mantra ring (`RootMantraRing` and `MantraClusterDefs`, from Shloka 36). The siddhas first came down through the crown and crossed the one-line title; they now converge in the strip above it, y ≤ 58. The title stays on one line and reaches x ≈ 455 (507 at 1100px) at y ≈ 74–141.
+
+### Shloka 98: Ḍākinī at the throat, three-eyed and armed
+
+- Component: `ThroatWheel` in `throat-wheel.tsx` (defs prefix `sa98`).
+- Composition: under the card the throat's wheel, large, at (320, 548), sixteen petals with the sixteen vowels on them and the sign of space at the centre, and her light in it, pale red. In the crown her three eyes (`ThreeEyes`): the moon at (232, 36), the fire at (368, 68) and the sun at (488, 150), falling left to right past the end of the title. At the right the skull-staff planted at x 470, with a faint trident and axe behind it. At the left the faces counted down the body, rows of one to six with the single face lit.
+- Name → part: Viśuddhicakranilayā → `visuddhi`; Āraktavarṇā → `ruddy`; Trilocanā → `three-eyes`; Khaṭvāṅgādipraharaṇā → `khatvanga` (the skull-staff, and the unfixed rest faint behind it); Vadanaikasamanvitā → `one-face`. Intro: `visuddhi`, `one-face`.
+- Palette: the wheel `--lotus` and gold, the letters `--sindura` on ivory; her light core, sindura and vermilion; the eyes moon, vermilion-to-core and saffron; the staff ember and gold with a vermilion ribbon and an ivory skull; the faces vermilion and gold-soft.
+- Motion: her light `m-breathe`; the eyes as in Shloka 95 (fire `m-flicker`, sun and fire glows `m-breathe`); the ribbon `m-sway`; the lit face's glow `m-breathe`.
+- Notes: promotes the three eyes (`ThreeEyes` and `ThreeEyesDefs`, from Shloka 95). This is the first of the verses on the wheels of the subtle body, and it sets their pattern: the wheel large under the card with its letters, her light in her colour, her weapons, and the count of faces at the left. The skull is seen from behind so it shows no face. The title stays on one line and reaches x ≈ 359 (411 at 1100px) at y ≈ 74–141.
+
+### Shloka 99: Milk-rice, the skin, and terror to the bound
+
+- Component: `MilkRiceAndTheRope` in `milk-rice-and-the-rope.tsx` (defs prefix `sa99`).
+- Composition: the throat's wheel again under the card at (320, 548), now without its letters and with the sixteen powers on its petals, Amṛtā at the top; her light at the centre, the same pale red as in Shloka 98. A full moon in the crown at (488, 100), right of the title. At the left the seven layers of the body with the skin lit. In front a bowl of milk-rice at the left and at the right a goat whose tether has been cut.
+- Name → part: Pāyasānnapriyā → `payasa`; Tvaksthā → `skin`; Paśulokabhayaṅkarī → `pasu` (terrible to the bound and to the binding, so the light is at the cut rope); Amṛtādimahāśaktisaṃvṛtā → `amrta` (the wheel, its sixteen powers and the moon); Ḍākinīśvarī → `dakini`. Intro: `skin`, `amrta`.
+- Palette: the wheel `--lotus` and gold; the powers core and gold, Amṛtā moon and ivory; her light core, sindura and vermilion; the layers in their tissue colours; the bowl gold, ivory, saffron, turmeric and ember; the goat ivory, the rope turmeric and ember.
+- Motion: her light, Amṛtā's glow and the cut's glow `m-breathe`; the powers `m-twinkle` in three groups; the flash at the cut `m-lick`.
+- Notes: promotes the throat wheel (`CakraWheel`, from Shloka 98). Starts the series of the body's layers: each later wheel lights its own layer, blood at the heart. The goat first stood over the cut; it now stands clear to the right. The title stays on one line and reaches x ≈ 337 (389 at 1100px) at y ≈ 74–141.
+
+### Shloka 100: Rākiṇī at the heart: unstruck sound, fangs, a rosary
+
+- Component: `UnstruckHeart` in `unstruck-heart.tsx` (defs prefix `sa100`).
+- Composition: under the card the heart's wheel at (320, 572) with the consonants on its petals, the unstruck rings round it and the rosary of the fifty letters round those, its meru at the foot; her light dark at the centre. At the left the count of faces (`FaceCount`, second row lit); at the right the seven layers (`BodyLayers`, blood lit), and under them at half opacity a trident with its drum. In the crown the crossed tusks at (462, 44), right of and above the wrapped title.
+- Name → part: Anāhatābjanilayā → `anahata` (the wheel and the rings nothing set going); Śyāmābhā → `dark`; Vadanadvayā → `two-faces`; Daṃṣṭrojjvalā → `fangs`; Akṣamālādidharā → `rosary` (the rosary as the alphabet, sound struck and counted round the unstruck; the rest faint by the layers); Rudhirasaṃsthitā → `blood`. Intro: `anahata`, `rosary`, `fangs`.
+- Palette: the wheel vermilion and gold with sindura on ivory; her light `--art-hair` with a moon glint; the rosary moon, gold and sindura with a vermilion tassel; the tusks ivory and gold in a saffron blaze; the faces and layers as their primitives have them.
+- Motion: her glow `m-breathe`, its glint `m-shimmer`; the unstruck rings `m-shimmer` (staggered); the tusks' glow `m-breathe`, their glints `m-twinkle`; the lit faces' glow `m-breathe`.
+- Notes: promotes the count of faces (`FaceCount`, from Shloka 98), the seven layers (`BodyLayers`, from Shloka 99) and the fifty letters (`VARNAMALA`, from Shloka 52). The heart's goddess is named only in the next verse, so her light carries no name of its own here beyond its colour. The title wraps, its first line the longer, reaching x ≈ 131 (183 at 1100px).
 
 ## Open questions
 

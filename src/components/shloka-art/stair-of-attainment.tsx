@@ -14,7 +14,7 @@
  * in the registry, next to this artwork's entry.
  */
 
-import { Elephant, ELEPHANT_TRUNK, ElephantDefs, Lion, StillLamp, artIds, hash, partProps, polar, radiance, round } from "./primitives";
+import { MODAKA, Mouse, Elephant, ELEPHANT_TRUNK, ElephantDefs, Lion, StillLamp, artIds, hash, partProps, polar, radiance, round } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -104,8 +104,6 @@ const SANDALS = [
 /* ── The mouse, making off with a sweet ───────────────────────────────── */
 
 const MOUSE = { x: 398, y: 522.3, k: 1.15 };
-const MOUSE_BODY = "M -9 0 C -11 -4 -9 -9 -2 -10 C 4 -10.6 8 -8 10 -4.6 L 13.4 -2.4 C 12.6 -0.4 9 0 6 0 Z";
-const MODAKA = "M 0 -4.6 C 1.2 -3 3.4 -1.4 3.4 0.8 C 3.4 2.8 1.8 3.6 0 3.6 C -1.8 3.6 -3.4 2.8 -3.4 0.8 C -3.4 -1.4 -1.2 -3 0 -4.6 Z";
 
 /* ── The royal fly-whisks, crossed in the crown ───────────────────────── */
 
@@ -343,12 +341,8 @@ export function StairOfAttainment({ idPrefix = "sa55", active = null }: ArtProps
 
       {/* Gaṇeśa's mouse, making off with a sweet */}
       <g {...part("mouse")}>
-        <g transform={`translate(${MOUSE.x} ${MOUSE.y}) scale(${MOUSE.k})`} strokeLinejoin="round">
-          <path d="M -9 -1 C -15 0 -18 -4 -15 -8" stroke="var(--art-musk)" strokeWidth={0.9} strokeLinecap="round" />
-          <path d={MOUSE_BODY} fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
-          <circle cx={3.6} cy={-8.6} r={2.4} fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
-          <circle cx={8.4} cy={-5.4} r={0.7} fill="var(--art-ivory)" />
-          <path d={MODAKA} transform="translate(15.4 -2.6) scale(0.8)" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+        <g transform={`translate(${MOUSE.x} ${MOUSE.y}) scale(${MOUSE.k})`}>
+          <Mouse />
         </g>
       </g>
     </svg>

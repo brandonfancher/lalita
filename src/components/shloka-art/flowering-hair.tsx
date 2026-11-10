@@ -9,7 +9,7 @@
  * next to this artwork's entry.
  */
 
-import { PlaitLobes, PlaitTip, artIds, campakaPetal, downAlong, partProps, plait, round, Ruby, RubyCrown, Star } from "./primitives";
+import { Campaka, PlaitLobes, PlaitTip, artIds, downAlong, partProps, plait, round, Ruby, RubyCrown, Star } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -68,22 +68,6 @@ const rosette = Array.from({ length: 12 }, (_, k) => {
 });
 
 /* The four flowers, each centred on the origin and about 26 units across. */
-
-const CAMPAKA_PETALS = Array.from({ length: 9 }, (_, i) => ({ angle: i * 40 + (i % 2) * 6, l: i % 2 ? 11 : 13.5 }));
-
-/** Campaka: slender, pointed, slightly twisted petals of deep gold. */
-function Campaka() {
-  return (
-    <g>
-      <g fill="var(--art-core)" stroke="var(--art-saffron)" strokeWidth={0.55}>
-        {CAMPAKA_PETALS.map((p, i) => (
-          <path key={i} d={campakaPetal(p.l)} transform={`rotate(${p.angle})`} />
-        ))}
-      </g>
-      <circle r={2.4} fill="var(--art-saffron)" />
-    </g>
-  );
-}
 
 const ASOKA_FLORETS = [
   { x: 0, y: -1, c: "var(--art-vermilion)" },

@@ -13,7 +13,7 @@
  * registry, next to this artwork's entry.
  */
 
-import { Goose, Bangle, artIds, along, glint, hash, partProps, polar, round, through } from "./primitives";
+import { VARNAMALA, Conch, Goose, Bangle, artIds, along, glint, hash, partProps, polar, round, through } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -24,12 +24,6 @@ const HER = { x: 320, y: 468 };
 
 /* ── The rosary of letters (akṣamālā) ─────────────────────────────────── */
 
-/** The fifty letters, अ to क्ष: sixteen vowels, the thirty-three consonants and क्ष. */
-const LETTERS = [
-  ..."अ आ इ ई उ ऊ ऋ ॠ ऌ ॡ ए ऐ ओ औ अं अः".split(" "),
-  ..."क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म".split(" "),
-  ..."य र ल व श ष स ह क्ष".split(" "),
-];
 const MERU = { x: 320, y: 626, r: 12.5 };
 const BEAD_R = 10.5;
 /** The loop's left half, from the meru up and over to the top of the crown. */
@@ -57,7 +51,7 @@ const HALF_LENGTH = along(HALF, 0.5).at(-1)!.s;
 const GAP = 25;
 const STEP = (HALF_LENGTH - GAP) / 24.5;
 const LEFT_BEADS = along(HALF, STEP, GAP).slice(0, 25);
-const BEADS = [...LEFT_BEADS, ...[...LEFT_BEADS].reverse().map((b) => ({ ...b, x: round(640 - b.x) }))].map((b, k) => ({ x: b.x, y: b.y, letter: LETTERS[k] }));
+const BEADS = [...LEFT_BEADS, ...[...LEFT_BEADS].reverse().map((b) => ({ ...b, x: round(640 - b.x) }))].map((b, k) => ({ x: b.x, y: b.y, letter: VARNAMALA[k] }));
 const LOOP = (() => {
   const left = HALF.map((p) => `${p.x} ${p.y}`);
   const right = [...HALF].reverse().map((p) => `${round(640 - p.x)} ${p.y}`);
@@ -85,10 +79,6 @@ const SPARKS = [152, 128, 108, 90, 72, 52, 28]
 
 /** A śaṅkha lying on its side: its spire to the left, its mouth open below, the canal pointing at her. */
 const CONCH = { x: 202, y: 452, turn: 8 };
-const CONCH_BODY = "M -32 -1 L -25 -6 L -18 -10 C -8 -19 10 -19 22 -10 C 28 -5 32 0 34 5 C 26 5 18 9 8 12 C -4 15 -14 12 -20 6 L -26 3 Z";
-const CONCH_WHORLS = "M -25 -6 C -24 -3 -24 0 -26 3 M -18 -10 C -16 -4 -16 2 -20 6 M -8 -17 C -5 -8 -6 2 -10 11";
-const CONCH_RIDGES = "M 0 -18 C 4 -10 4 0 0 12 M 10 -16 C 14 -8 14 2 10 10 M 18 -12 C 21 -6 21 2 18 8";
-const CONCH_MOUTH = "M -6 9 C 6 3 20 1 32 4 C 22 8 8 12 -6 9 Z";
 const SOUND = [14, 24, 34].map((r) => {
   const c = { x: 240, y: 460 };
   const a = polar(c.x, c.y, r, -42);
@@ -209,14 +199,8 @@ export function LetterRosary({ idPrefix = "sa52", active = null }: ArtProps) {
 
       {/* The conch, sounding */}
       <g {...part("conch")}>
-        <g transform={`translate(${CONCH.x} ${CONCH.y}) rotate(${CONCH.turn})`} strokeLinejoin="round">
-          <ellipse cx={2} cy={15} rx={30} ry={3.4} fill="var(--art-musk)" fillOpacity={0.14} />
-          <path d={CONCH_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={1.1} />
-          <path d={CONCH_WHORLS} stroke="var(--gold)" strokeWidth={0.8} strokeLinecap="round" />
-          <path d={CONCH_RIDGES} stroke="var(--gold-soft)" strokeWidth={0.7} strokeLinecap="round" />
-          <path d={CONCH_MOUTH} fill="var(--lotus)" fillOpacity={0.75} stroke="var(--gold)" strokeWidth={0.8} />
-          <path d="M -2 9 C 8 5 18 4 28 5" stroke="var(--art-ivory)" strokeWidth={0.8} strokeLinecap="round" />
-          <path d="M -6 -12 C 0 -16 8 -16 14 -13" stroke="var(--art-core)" strokeWidth={1.2} strokeOpacity={0.8} strokeLinecap="round" />
+        <g transform={`translate(${CONCH.x} ${CONCH.y}) rotate(${CONCH.turn})`}>
+          <Conch />
         </g>
         <g stroke="var(--gold-soft)" strokeWidth={1} strokeLinecap="round">
           {SOUND.map((d, i) => (

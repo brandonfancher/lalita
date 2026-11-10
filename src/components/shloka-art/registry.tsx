@@ -84,6 +84,22 @@ import { LevelsOfSpeech } from "./levels-of-speech";
 import { LifeVein } from "./life-vein";
 import { SecretRite } from "./secret-rite";
 import { TheStageLamp } from "./the-stage-lamp";
+import { HalfOfHisBody } from "./half-of-his-body";
+import { RootNature } from "./root-nature";
+import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
+import { SunlitHeart } from "./sunlit-heart";
+import { PillarOfLight } from "./pillar-of-light";
+import { DawnGhat } from "./dawn-ghat";
+import { FiveSheaths } from "./five-sheaths";
+import { SandalAndCampaka } from "./sandal-and-campaka";
+import { KulaHollow } from "./kula-hollow";
+import { MotherOfTwoSons } from "./mother-of-two-sons";
+import { FireAndTheGarland } from "./fire-and-the-garland";
+import { TooFineToSee } from "./too-fine-to-see";
+import { MotherOfAdepts } from "./mother-of-adepts";
+import { ThroatWheel } from "./throat-wheel";
+import { MilkRiceAndTheRope } from "./milk-rice-and-the-rope";
+import { UnstruckHeart } from "./unstruck-heart";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3998,6 +4014,814 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "moons",
         depicts:
           "Six excellences, lordship, strength, fame, fortune, knowledge and detachment, and she has each of them entire, not in parts. The moon fills a digit at a time; over the stage six moons, all of them full.",
+      },
+    ],
+  },
+  "085": {
+    Art: HalfOfHisBody,
+    intro: (Spot) => (
+      <>
+        Under the card, the innermost triangle of the yantra, where the Nityās are worshipped. At its heart is{" "}
+        <Spot part="one-body">one flame</Spot>, split down the middle.
+      </>
+    ),
+    entries: [
+      {
+        nama: 388,
+        part: "pot",
+        depicts:
+          "Nityaklinnā is the third of the Nityās, and klinna is plain wetness. An unglazed water pot of the kind set out at a roadside shed for anyone who asks is never dry: at the lower left one stands beaded and dripping, a cup beside it.",
+      },
+      {
+        nama: 389,
+        part: "similes",
+        depicts:
+          "Poets set a face beside the moon and a hand or a foot beside the lotus. Here the moon and the lotus keep to the far corner of the crown, and nothing is set beside her.",
+      },
+      {
+        nama: 390,
+        part: "blown-out",
+        depicts:
+          "Nirvāṇa is first what a flame does when it goes out. At the lower right a clay lamp has just been blown out, an ember on its wick and one thread of smoke going up.",
+      },
+      {
+        nama: 391,
+        part: "nityas",
+        depicts:
+          "The fifteen Nityās are the fifteen nights of the waxing moon, worshipped on the sides of the central triangle, five to a side. Here they wax round it in order, and she is the sixteenth in the middle, the whole of them.",
+      },
+      {
+        nama: 392,
+        part: "one-body",
+        depicts:
+          "She is the left half of Śrīkaṇṭha's body, and he the right. The flame is one, but its half on the viewer's left is his, white as ash with his rudrākṣa beads and his crescent, and the half on the right is hers, vermilion, with a line of pearls.",
+      },
+    ],
+  },
+  "086": {
+    Art: RootNature,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="her-light">her light</Spot> with nothing under it, and round the ground the ring of the eight quarters. Below it, three
+        pictures the Upaniṣads give of the root of things.
+      </>
+    ),
+    entries: [
+      {
+        nama: 393,
+        part: "radiance",
+        depicts:
+          "Prabhā is the radiance a light sends out, and she has it. A hundred and eight fine rays go out from her light and fade before they reach the edges.",
+      },
+      {
+        nama: 394,
+        part: "her-light",
+        depicts:
+          "She is not only radiant; radiance is what she is. So her light is drawn as brightness alone, with no lamp, disc or body under it to give it.",
+      },
+      {
+        nama: 395,
+        part: "quarters",
+        depicts:
+          "Prasiddhā is the one known everywhere. The eight quarters are marked round the ground, and at every one a small light, and her name going up from it in rings.",
+      },
+      {
+        nama: 396,
+        part: "parasols",
+        depicts:
+          "A king is known by his parasol, and the one above all kings by parasols stacked one over another on a single staff. She is the supreme ruler: at the right of the crown her parasol of four tiers.",
+      },
+      {
+        nama: 397,
+        part: "goat",
+        depicts:
+          "The Śvetāśvatara Upaniṣad calls root-nature the one unborn she-goat, red, white and black, who bears many young like herself; the three colours are the three guṇas. At the lower left she walks with her two kids, each red at the shoulder, white at the middle and dark at the haunch.",
+      },
+      {
+        nama: 398,
+        part: "seed",
+        depicts:
+          "In the Chāndogya Upaniṣad a father has his son break a banyan fig, then one of its tiny seeds, and asks what he sees inside. Nothing, says the son; and from that unseen finest thing, says the father, the great tree stands. In the front, the fig broken open and a seed broken open, with nothing in it but a faint light.",
+      },
+      {
+        nama: 399,
+        part: "lotus",
+        depicts:
+          "Her form is both the manifest and the unmanifest. At the lower right a lotus stands in clear water: the flower in the open air, the stalk and root dim below the surface, one plant.",
+      },
+    ],
+  },
+  "087": {
+    Art: MoonlightOnTheLilies,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="moonlight">her light as moonlight</Spot> on a pool. Round it, a hill, a wave and a rope, each a
+        picture the philosophers use.
+      </>
+    ),
+    entries: [
+      {
+        nama: 400,
+        part: "hill",
+        depicts:
+          "Vyāpti, pervasion, is the logicians' word: where there is smoke there is fire, without one exception, and so there is fire on the hill though no one sees it. Her pervasion is like that. At the right of the crown smoke goes up from a hill, and the fire is only a glow behind the ridge.",
+      },
+      {
+        nama: 401,
+        part: "water",
+        depicts:
+          "She is of many shapes and one stuff, as the sea is wave, foam and bubble and only water. At the pool's left the water rises as a wave, breaks into foam at its crest and rounds into bubbles at its foot.",
+      },
+      {
+        nama: 402,
+        part: "rope",
+        depicts:
+          "Knowledge and ignorance are both her form. A rope seen in dusk is taken for a snake, and a lamp shows it for a rope; on the near bank one rope lies by a lamp, twisted strands in its light and a dark snake beyond it.",
+      },
+      {
+        nama: 403,
+        part: "moonlight",
+        depicts:
+          "Mahākāmeśa's eyes are night lilies, which open only to the moon, and she is the moonlight that gladdens them. Her light falls on the pool in rings and a path of light, and two white lilies stand open in it.",
+      },
+    ],
+  },
+  "088": {
+    Art: SunlitHeart,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="form">her light as the liṅga</Spot> on its seat. Round it, Śiva stands next to her in four ways.
+      </>
+    ),
+    entries: [
+      {
+        nama: 404,
+        part: "sunbeams",
+        depicts:
+          "She is the unbroken stream of the sun's rays that splits the darkness lodged in her devotees' hearts: not one flash but light that keeps arriving. From the sun at the right of the crown seven rays come down through the lattice of a dark stone chamber and lie across its floor.",
+      },
+      {
+        nama: 405,
+        part: "envoy",
+        depicts:
+          "In the Devī Māhātmya she sends Śiva as her messenger to the demon kings Śumbha and Niśumbha, and takes the name for herself. At the right his trident goes down the road toward their dark fort, her sealed palm-leaf letter tied to it with a red cord.",
+      },
+      {
+        nama: 406,
+        part: "worship",
+        depicts:
+          "Śiva, whom others worship, worships her. At the front his crescent and two of the bilva leaves that are offered to him are laid at her footprints.",
+      },
+      {
+        nama: 407,
+        part: "form",
+        depicts:
+          "A mūrti is a form that has set into shape, the form in which the formless is seen, and she is Śiva's. Under the card his liṅga stands on its seat, made of her light.",
+      },
+      {
+        nama: 408,
+        part: "auspicious",
+        depicts:
+          "Here śiva is the plain word again, auspicious, and she is the one who makes things so. At the front right a full pot is set on a threshold freshly marked with turmeric and kumkum.",
+      },
+    ],
+  },
+  "089": {
+    Art: PillarOfLight,
+    intro: (Spot) => (
+      <>
+        Her light stands through the whole picture as <Spot part="pillar">a pillar</Spot>, and fades out above and below without an end.
+      </>
+    ),
+    entries: [
+      {
+        nama: 409,
+        part: "dear",
+        depicts:
+          "She is dear to Śiva. At the right, under the card, his crescent, and from it a dotted gold line of his regard goes over to her pillar.",
+      },
+      {
+        nama: 410,
+        part: "intent",
+        depicts:
+          "And she is intent on him, para, with Śiva as her highest. Under his line a vermilion one goes back from her to his crescent.",
+      },
+      {
+        nama: 411,
+        part: "learned",
+        depicts:
+          "Śiṣṭa are the instructed, the people who keep the tradition and are its measure of right conduct, and she is the one they love. At the lower left the seers' lamps, with their pale flames, are raised to her.",
+      },
+      {
+        nama: 412,
+        part: "worship",
+        depicts:
+          "The same people worship her. At the pillar's foot a handful of flowers has been offered: red, white, saffron and pink.",
+      },
+      {
+        nama: 413,
+        part: "pillar",
+        depicts:
+          "Aprameyā is past every measure. When Brahmā and Viṣṇu quarrelled over who was greater, a pillar of fire stood up between them; Brahmā flew up as a goose to find its top and Viṣṇu dug down as a boar to find its foot, and neither did. Here her light is the pillar: the goose flies up beside it, the boar digs at its foot, and it fades out past both.",
+      },
+      {
+        nama: 414,
+        part: "self-lit",
+        depicts:
+          "She shines by her own light. The Kaṭha Upaniṣad says that there the sun does not shine, nor the moon and stars: it shines, and everything shines after it. At the left a sun and a moon have gone pale, lit only on the side that faces her, with pale stars about them.",
+      },
+      {
+        nama: 415,
+        part: "beyond-words",
+        depicts:
+          "She is out of the range of mind and speech; in the Taittirīya's phrase, words turn back from her together with the mind, not reaching her. At the right a line of letters and a line of dotted thought rise toward her and curl back before they arrive.",
+      },
+    ],
+  },
+  "090": {
+    Art: DawnGhat,
+    intro: (Spot) => (
+      <>
+        Dawn at a river ghat, the hour of the brahmin’s prayer, with <Spot part="cit">the sun</Spot> half risen under the card.
+      </>
+    ),
+    entries: [
+      {
+        nama: 416,
+        part: "cit",
+        depicts:
+          "She is the power of consciousness, the light by which anything is known at all; the Gāyatrī itself asks the sun's light to stir the mind. Under the card the sun half risen over the river, its light lying on the water.",
+      },
+      {
+        nama: 417,
+        part: "sentience",
+        depicts:
+          "Her form is sentience, whatever wakes and feels. At the left, birds wake at the first light and rise from the reeds on the far bank.",
+      },
+      {
+        nama: 418,
+        part: "matter-power",
+        depicts:
+          "She is also the power in what does not feel. A lodestone knows nothing, and the iron filings round it still stand up and turn along its pull; it lies on the steps at the left.",
+      },
+      {
+        nama: 419,
+        part: "inert",
+        depicts:
+          "And she is inert nature itself, whose self is matter. The stone steps of the ghat go down to the water.",
+      },
+      {
+        nama: 420,
+        part: "gayatri",
+        depicts:
+          "The Gāyatrī has twenty-four syllables in three lines of eight. On the river twenty-four lamps float in three rows of eight.",
+      },
+      {
+        nama: 421,
+        part: "vyahrti",
+        depicts:
+          "The vyāhṛtis, bhūḥ, bhuvaḥ, svaḥ, are said before the Gāyatrī, and they name the earth, the air between and the sky. Up the right side: भूः on the steps, भुवः over the water, स्वः in the sky among the stars.",
+      },
+      {
+        nama: 422,
+        part: "sandhya",
+        depicts:
+          "Sandhyā is the joint of night and day, and the prayer said at it. In the crown the last of the night, with its stars, meets the first of the day along one gold line.",
+      },
+      {
+        nama: 423,
+        part: "twice-born",
+        depicts:
+          "The twice-born come down to the river at this hour and serve her. Their copper water vessels stand on the steps, and one, tipped at the water's edge, pours its water out toward the sun.",
+      },
+    ],
+  },
+  "091": {
+    Art: FiveSheaths,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="sheaths">her light within five sheaths</Spot>, seated on the principles of the world.
+      </>
+    ),
+    entries: [
+      {
+        nama: 424,
+        part: "tattvas",
+        depicts:
+          "The Śaiva and Śākta systems count thirty-six tattvas, the principles from earth up to Śiva by which the world is built, and she sits on them as on a seat. Under her a seat of thirty-six thin tiers, stone at the foot and light at the top.",
+      },
+      {
+        nama: 425,
+        part: "tat",
+        depicts:
+          "The word tattvamayī is divided into three names here, and they give the Chāndogya's great sentence, tat tvam asi, that thou art. Tat, that, is the far term: in the crown, small and distant, तत्.",
+      },
+      {
+        nama: 426,
+        part: "tvam",
+        depicts:
+          "Tvam, thou, is the near one. At the front, large and close, त्वम्.",
+      },
+      {
+        nama: 427,
+        part: "ayi",
+        depicts:
+          "In place of asi, thou art, the name has ayī, the particle of calling out: O! The statement has turned into an address. From त्वम् the rings of a call go out toward her.",
+      },
+      {
+        nama: 428,
+        part: "sheaths",
+        depicts:
+          "The Taittirīya Upaniṣad finds the self inside five sheaths, of food, breath, mind, understanding and bliss, each within the last; she abides within all five. Round her light five sheaths, each cut open at the front so the next shows through.",
+      },
+      {
+        nama: 429,
+        part: "boundless",
+        depicts:
+          "Her greatness has no sīmā, no boundary line of the kind that marks one field from the next. A boundary is drawn round the ground, and it is broken wherever one of her rays goes across it.",
+      },
+      {
+        nama: 430,
+        part: "young",
+        depicts:
+          "She is ever young. When Damayantī had to pick Nala out from among gods wearing his shape, she knew the gods because their garlands never wilted. Across the front of her seat a garland, still fresh, with dew on it.",
+      },
+      {
+        nama: 431,
+        part: "mada",
+        depicts:
+          "Mada is wine and the rapture of it, and she abounds in it; the Dhyāna puts a jewelled goblet in her hand. At the right the goblet stands full to the brim, a drop running down its side.",
+      },
+    ],
+  },
+  "092": {
+    Art: SandalAndCampaka,
+    intro: (Spot) => (
+      <>
+        The verse works across her face and then turns from sight to smell, and the picture keeps to the
+        things the poets set beside a face: <Spot part="eyes">red lotuses</Spot> for her eyes,{" "}
+        <Spot part="cheeks">pāṭala flowers</Spot> for her cheeks. In front are the{" "}
+        <Spot part="sandal">sandal paste</Spot> and the <Spot part="campaka">flowers</Spot>, the third and
+        fourth services of worship, offered in that order just as the verse names them.
+      </>
+    ),
+    entries: [
+      {
+        nama: 432,
+        part: "eyes",
+        depicts:
+          "Her eyes are reddened and roll with rapture, and red lotuses are what the poets compare such eyes to. At the left two of them rock unsteadily on their tall stalks, each leaning its own way.",
+      },
+      {
+        nama: 433,
+        part: "cheeks",
+        depicts:
+          "Pāṭala is the pale rose of the trumpet-flower tree, and the wine has spread that colour over her cheeks. A bough of it hangs in from the top right, its trumpets nodding.",
+      },
+      {
+        nama: 434,
+        part: "sandal",
+        depicts:
+          "Her limbs are smeared with liquid sandal. In front a log of sandalwood lies on the wet stone it is ground on, the pale paste spread beneath it and gathered in a gold bowl beside.",
+      },
+      {
+        nama: 435,
+        part: "campaka",
+        depicts:
+          "Of all flowers she loves the campaka. Golden campakas lie heaped on a leaf at the right, offered after the sandal as worship requires.",
+      },
+    ],
+  },
+  "093": {
+    Art: KulaHollow,
+    intro: (Spot) => (
+      <>
+        Every name here begins on the same syllable, and the verse goes from what she is like to the
+        school that claims her. The picture goes the same way, from the far{" "}
+        <Spot part="kurukulla">moat of nectar</Spot> round her island in to the{" "}
+        <Spot part="hollow">hollow at its root</Spot>, where her light dwells, with the{" "}
+        <Spot part="kula">kula</Spot> round it and the <Spot part="kaula">Kaula path</Spot> leading up to it.
+      </>
+    ),
+    entries: [
+      {
+        nama: 436,
+        part: "skilful",
+        depicts:
+          "Kuśala means skilful, and the old etymology takes it from kuśa, the sacred grass: the skilled man is the one who knows how to cut it for the rite. At the left a bundle of kuśa lies neatly cut and tied, and by it a ring of kuśa, worn on the finger in worship.",
+      },
+      {
+        nama: 437,
+        part: "tender",
+        depicts:
+          "Her form is soft. The poets hold the śirīṣa to be the most delicate of flowers, too soft even for a bee to stand on, and at the right a sprig of it holds up its pink-tipped puffs.",
+      },
+      {
+        nama: 438,
+        part: "kurukulla",
+        depicts:
+          "Kurukullā is a red goddess who carries a bow and arrows of flowers, and the tradition places her at the moat of nectar round her city. Far off in the crown the moat curves round, and over it Kurukullā is a red light, her bow and arrows of flowers beside her.",
+      },
+      {
+        nama: 439,
+        part: "kula",
+        depicts:
+          "Kula is a family, and in this tradition the whole manifest side of things: power, the body, the circle of yoginīs. She is its mistress. Round her on the ground the kula is a ring of red lights, each joined to the next.",
+      },
+      {
+        nama: 440,
+        part: "hollow",
+        depicts:
+          "Kuṇḍa is a round hollow, and the kula hollow is the one at the base of the body where the coiled power sleeps, her mouth over the opening of the central channel. Under the card is that hollow, the coil asleep in it and her light rising out of it.",
+      },
+      {
+        nama: 441,
+        part: "kaula",
+        depicts:
+          "She is served by those wholly given to the Kaula path. Up to the kula from the front comes a path, and on it, one behind the other, the lamps of those who walk it.",
+      },
+    ],
+  },
+  "094": {
+    Art: MotherOfTwoSons,
+    intro: (Spot) => (
+      <>
+        The verse names her the mother of <Spot part="sons">two sons</Spot>, and then stops describing a
+        goddess and lists goods, each a feminine noun that the grammar lets her simply be. So the picture
+        is a list too: round <Spot part="radiance">her light</Spot> each good is one plain thing, and it
+        ends, as the verse does, with the <Spot part="obstacles">obstacles broken</Spot>, the elder son’s
+        office now hers.
+      </>
+    ),
+    entries: [
+      {
+        nama: 442,
+        part: "sons",
+        depicts:
+          "She is the mother of Kumāra and of Gaṇanātha, Skanda and Gaṇeśa. At the left Kumāra is a saffron light among the six Kṛttikā stars who fostered him, his leaf-bladed spear beside him; at the right Gaṇeśa is a light ruddy as the dawn, his mouse at its foot with a sweet.",
+      },
+      {
+        nama: 443,
+        part: "contentment",
+        depicts:
+          "Tuṣṭi is being pleased, having enough. In front a plain earthen pot stands full to the brim with milk, and not a drop over.",
+      },
+      {
+        nama: 444,
+        part: "nourishment",
+        depicts:
+          "Puṣṭi is thriving, being well fed. At the left a sheaf of rice, tied at the waist, its ears bowed with ripe grain.",
+      },
+      {
+        nama: 445,
+        part: "understanding",
+        depicts: "Mati is understanding, from the root meaning to think. At the right a palm-leaf book lies open on its stand.",
+      },
+      {
+        nama: 446,
+        part: "steadfast",
+        depicts:
+          "Dhṛti is holding firm. In the crown stands the mountain, which is called the unmoving, and which is her father’s house when she is Pārvatī, its snows catching the light.",
+      },
+      {
+        nama: 447,
+        part: "peace",
+        depicts:
+          "Śānti is growing quiet. At the front left a pool lies so still that her light lies in it unbroken.",
+      },
+      {
+        nama: 448,
+        part: "wellbeing",
+        depicts:
+          "Svasti, “it is well”, is the old word of blessing that gave the svastika its name, and she possesses it, to hold and to give. Before her light a svastika is drawn on the ground in vermilion, a dot of turmeric in each quarter.",
+      },
+      {
+        nama: 449,
+        part: "radiance",
+        depicts: "Kānti is radiance, loveliness that shines. Under the card her light, its rays going out all round.",
+      },
+      {
+        nama: 450,
+        part: "nandini",
+        depicts:
+          "Nandinī is the one who delights, and the same word names Vasiṣṭha’s wish-granting cow, a source one attends on and is fed by. At the right the white cow lowers her head to her calf.",
+      },
+      {
+        nama: 451,
+        part: "obstacles",
+        depicts:
+          "Destroying obstacles is Gaṇeśa’s own office: in her war he shattered the demon’s engine of obstruction. The verse that began by calling her his mother ends by giving the title to her, and in front the engine lies broken, a gleam at the break.",
+      },
+    ],
+  },
+  "095": {
+    Art: FireAndTheGarland,
+    intro: (Spot) => (
+      <>
+        The verse opens hot and ends fragrant, and the picture runs the same way from the crown down:
+        from <Spot part="three-eyes">her three eyes</Spot> and <Spot part="tejas">her light edged with
+        flame</Spot> to a <Spot part="hamsini">swan on still water</Spot>, the{" "}
+        <Spot part="mata">one plain word</Spot>, and the <Spot part="malaya">sandal hills</Spot> of the
+        south.
+      </>
+    ),
+    entries: [
+      {
+        nama: 452,
+        part: "tejas",
+        depicts:
+          "Tejas is first the edge of a blade and the point of a flame: light with force in it. Under the card her light is edged all round with points of flame.",
+      },
+      {
+        nama: 453,
+        part: "three-eyes",
+        depicts:
+          "She has three eyes, which the tradition reads as the moon, the sun and the fire between them, the third the one that opened on Kāma and burned him. Across the crown, on a slant, the moon, a tongue of fire, and the sun.",
+      },
+      {
+        nama: 454,
+        part: "lolaksi",
+        depicts:
+          "Lolākṣī is the goddess of restless eyes, lola being anything that will not stay put, and she takes her form at will. The poets’ bird for restless eyes is the wagtail, and at the left one darts on its stone, never still.",
+      },
+      {
+        nama: 455,
+        part: "malini",
+        depicts:
+          "Mālinī is the garlanded one, and also the arrangement of the alphabet in which vowels and consonants are strung together out of their grammatical order, as flowers of different kinds are in a garland. Across the middle hangs that garland, its letters in the Mālinī order beginning न ऋ ॠ ऌ ॡ, with flowers between.",
+      },
+      {
+        nama: 456,
+        part: "hamsini",
+        depicts:
+          "The haṃsa is the bird that can drink the milk out of milk and water, the self that moves through the worlds, and the sound of the breath, haṃ out and sa in. At the front left a swan rests on still water.",
+      },
+      {
+        nama: 457,
+        part: "mata",
+        depicts:
+          "Mātā, mother: after hundreds of long compounds the hymn sets down two syllables and lets them stand. In front, the word itself, with nothing round it.",
+      },
+      {
+        nama: 458,
+        part: "malaya",
+        depicts:
+          "She lives on Malaya, the mountain of the south that supplied sandalwood to all India; acala, the unmoving, is the ordinary word for a mountain. At the right its green hills rise, dotted with sandal trees.",
+      },
+    ],
+  },
+  "096": {
+    Art: TooFineToSee,
+    intro: (Spot) => (
+      <>
+        The verse assembles a face name by name and then withdraws it, and the picture never draws one.
+        Her face is <Spot part="face">the mirror</Spot> it has always been here, and each feature is the
+        thing the poets set in its place, kept apart from the rest, until the last name leaves only{" "}
+        <Spot part="subtle">a point too fine to see</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 459,
+        part: "face",
+        depicts:
+          "Her face is lovely. As everywhere in these pictures, her face is the hand mirror, holding nothing but her light.",
+      },
+      {
+        nama: 460,
+        part: "lotus",
+        depicts:
+          "Nalinī is the lotus, named for the hollow stalk, nala, that carries it up to the surface, and the word also means a pond crowded with them. At the front left a pond of lotuses stands on their stalks.",
+      },
+      {
+        nama: 461,
+        part: "brows",
+        depicts:
+          "Her brows are beautiful, and the brow is the arc that Kāma’s bow is measured against. In the crown, on its own, his bow of flowers.",
+      },
+      {
+        nama: 462,
+        part: "splendid",
+        depicts: "Śobhanā, splendid, adorned. At the left her ornaments lie on a gold tray, a strand of pearls with a ruby pendant.",
+      },
+      {
+        nama: 463,
+        part: "gods",
+        depicts:
+          "She is the leader of the gods, and in the language of drama the nāyikā, the heroine of the story they are in. From the right the gods’ lamps come up behind her in a line.",
+      },
+      {
+        nama: 464,
+        part: "dark-throat",
+        depicts:
+          "When the ocean was churned, the poison that came up before the nectar was drunk by Śiva, and his wife caught his throat so that it stopped there and stained it. A pot’s neck is its throat too, and in front a gold pot stands with its throat stained dark, a dark drop over its mouth.",
+      },
+      {
+        nama: 465,
+        part: "radiant",
+        depicts:
+          "She possesses radiance, kānti given again with a different grammar. Her light in the mirror shines out past its frame in rings.",
+      },
+      {
+        nama: 466,
+        part: "agitator",
+        depicts:
+          "Kṣobhiṇī is the one who shakes, the word used of a churned ocean; in this school kṣobha is the first stir of a perfect stillness, without which nothing would move at all. At the front right the sea turns in a whirl.",
+      },
+      {
+        nama: 467,
+        part: "subtle",
+        depicts:
+          "Her form is subtle, too fine for the senses: the mantra is a body of hers no less than the face the verse has built. At the top of the crown is a single point of light, almost too fine to see.",
+      },
+    ],
+  },
+  "097": {
+    Art: MotherOfAdepts,
+    intro: (Spot) => (
+      <>
+        Seven names run from what she is called, through what she is not, to what she is for those who
+        practise. Her light stands in <Spot part="siddhavidya">the vidyā already accomplished</Spot>, the
+        adepts’ lamps are <Spot part="siddhamata">kindled from her</Spot>, and the one thing she is not
+        is drawn along the front: <Spot part="ageless">the six changes</Spot> every living thing goes
+        through, with her light nowhere in the row.
+      </>
+    ),
+    entries: [
+      {
+        nama: 468,
+        part: "vajra",
+        depicts:
+          "Vajra is the hard thing, the diamond and Indra’s weapon, and both senses are alive in the name. At the right the thunderbolt stands, hers rather than his, with a diamond set at its heart.",
+      },
+      {
+        nama: 469,
+        part: "vamadevi",
+        depicts:
+          "Vāmadeva is the second of Śiva’s five faces, and vāma means both lovely and left. At the left the five faces burn as five flames, Vāmadeva’s brought forward.",
+      },
+      {
+        nama: 470,
+        part: "ageless",
+        depicts:
+          "The grammarians counted six changes everything in time goes through: it comes into being, exists, grows, alters, wastes and perishes. Along the front a plant goes through all six, seed to dust, and her light is not in the row.",
+      },
+      {
+        nama: 471,
+        part: "siddhesvari",
+        depicts:
+          "The siddhas are also beings who move through the sky. Down out of the crown they come to her, the ruler they answer to.",
+      },
+      {
+        nama: 472,
+        part: "siddhavidya",
+        depicts:
+          "A vidyā is a goddess’s mantra, and hers is exempt from the tests a mantra is put to: it works from the day it is received. Round her light runs the fifteen-syllabled vidyā whole.",
+      },
+      {
+        nama: 473,
+        part: "siddhamata",
+        depicts:
+          "She is the adepts’ mother, the source they came from, so their powers are neither their own nor a threat to her. At her feet their pale lamps burn, each lit from her by a thread of light.",
+      },
+      {
+        nama: 474,
+        part: "yasasvini",
+        depicts:
+          "Renowned: the only name here that says how she looks from outside. Fame in this poetry is white, and at the front right a white conch sounds.",
+      },
+    ],
+  },
+  "098": {
+    Art: ThroatWheel,
+    intro: (Spot) => (
+      <>
+        Here the hymn goes inside the body, and this verse sets the pattern the next six repeat: the
+        wheel she sits in, her colour, her eyes, her weapons, her faces. Her seat is{" "}
+        <Spot part="visuddhi">the throat’s wheel of purification</Spot>, and the last name begins a count
+        the section will keep: <Spot part="one-face">one face</Spot> here, and one more at every wheel
+        below.
+      </>
+    ),
+    entries: [
+      {
+        nama: 475,
+        part: "visuddhi",
+        depicts:
+          "Viśuddhi, thorough cleansing, is the wheel at the base of the throat, where Śiva held the poison. Its sixteen lotus petals carry the sixteen vowels, round the sign of its element, space.",
+      },
+      {
+        nama: 476,
+        part: "ruddy",
+        depicts: "She is of a light red hue. In the heart of the wheel her light burns a pale red.",
+      },
+      {
+        nama: 477,
+        part: "three-eyes",
+        depicts:
+          "Three eyes are Śiva’s mark, read as the sun, the moon and the fire between them. Across the sky they stand on a slant: the moon, the fire, the sun.",
+      },
+      {
+        nama: 478,
+        part: "khatvanga",
+        depicts:
+          "The khaṭvāṅga is the leg of a bed with a skull fixed on top, the staff of the skull-bearing ascetics, brought from the cremation ground into the body. It stands planted at the right with a red ribbon and a bell. The name ends in “and the rest”, and the manuals never agree on the rest: behind it, fainter, a trident and an axe.",
+      },
+      {
+        nama: 479,
+        part: "one-face",
+        depicts:
+          "She has one face, and the number is the first of a count: the goddess of each wheel below has one more, up to six. At the left one flame is lit, and under it the rows of two, three, four, five and six wait.",
+      },
+    ],
+  },
+  "099": {
+    Art: MilkRiceAndTheRope,
+    intro: (Spot) => (
+      <>
+        The second half of the throat wheel’s portrait moves outward and back in: from a dish of
+        milk-rice, to <Spot part="skin">the skin</Spot>, to the bound, frightened of her, and then to{" "}
+        <Spot part="amrta">the ring of sixteen powers</Spot> round her and the one at the centre, who is
+        named only at the end.
+      </>
+    ),
+    entries: [
+      {
+        nama: 480,
+        part: "payasa",
+        depicts:
+          "Pāyasa is rice boiled in milk and sweetened, the plainest festival food, and the dish actually cooked and offered when this wheel is worshipped. In front a gold bowl of it, with saffron, cashews and raisins.",
+      },
+      {
+        nama: 481,
+        part: "skin",
+        depicts:
+          "Each goddess of the wheels governs one of the body’s layers, and they run from the outside in: skin, blood, flesh, fat, bone, marrow, and the essence at the crown. At the left the seven are laid one under another, and only the skin, the outermost, is lit.",
+      },
+      {
+        nama: 482,
+        part: "pasu",
+        depicts:
+          "Paśu is the tethered animal and pāśa its rope, and the soul in Śaiva thought is the same as its lord with a rope on it. She is terrible to the bound, and terrible to the binding: at the front right a goat’s tether has just been cut, and the light is at the cut.",
+      },
+      {
+        nama: 483,
+        part: "amrta",
+        depicts:
+          "Sixteen powers sit on the throat wheel’s sixteen petals, headed by Amṛtā, the deathless, named for the nectar; the lists of the rest do not agree, so the hymn says “and the rest”. The first at the top is white as nectar, and in the crown the moon, whose digits are also sixteen.",
+      },
+      {
+        nama: 484,
+        part: "dakini",
+        depicts:
+          "Only at the end is she named: Ḍākinī, and īśvarī says both that she rules the ḍākinīs and that the ruler and the ruled are one. At the centre of the wheel her light, the same pale red.",
+      },
+    ],
+  },
+  "100": {
+    Art: UnstruckHeart,
+    intro: (Spot) => (
+      <>
+        The throat’s template runs again at the heart, every item in the same order with the values
+        changed. Her seat is named for <Spot part="anahata">a sound that nothing strikes</Spot>, and she
+        holds <Spot part="rosary">the same sound beaded and counted</Spot>: the place is not a gentle
+        one, and what guards it has <Spot part="fangs">teeth</Spot>.
+      </>
+    ),
+    entries: [
+      {
+        nama: 485,
+        part: "anahata",
+        depicts:
+          "Anāhata, unstruck: ordinary sound is made by two things meeting, and this is the sound made by nothing striking anything, which does not begin or end. The heart’s wheel has twelve red petals bearing the consonants ka to ṭha round the sign of air, and round it rings that nothing set going.",
+      },
+      {
+        nama: 486,
+        part: "dark",
+        depicts:
+          "Śyāmā is every dark colour, the blue-black of a raincloud, and ābhā a sheen: her radiance itself is dark. In the heart of the wheel her light is a deep blue glow, and its sheen a single glint.",
+      },
+      {
+        nama: 487,
+        part: "two-faces",
+        depicts: "She has two faces, one more than the goddess of the throat. At the left the count goes on, its second row lit.",
+      },
+      {
+        nama: 488,
+        part: "fangs",
+        depicts:
+          "Daṃṣṭrā is the jutting tooth, a boar’s tusk or a snake’s fang, and hers blaze, catching the light. In the crown two tusks are crossed and bound with gold, light at their points.",
+      },
+      {
+        nama: 489,
+        part: "rosary",
+        depicts:
+          "Akṣa is a bead and also a letter, and the tradition reads her rosary as the whole alphabet strung in order. Round the wheel of unstruck sound she holds sound in its struck and countable form: fifty beads, अ to क्ष, told clockwise from the meru. And the rest: at the right, fainter, a trident and its drum.",
+      },
+      {
+        nama: 490,
+        part: "blood",
+        depicts: "Blood is the second of the body’s layers, from the skin in. At the right the seven are laid one under another, and now the blood is lit.",
       },
     ],
   },

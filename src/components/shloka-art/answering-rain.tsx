@@ -12,7 +12,7 @@
  * readers in the registry, next to this artwork's entry.
  */
 
-import { DawnDefs, Mahaganapati, GanesaEmblem, artIds, glint, partProps, polar, round, tongue } from "./primitives";
+import { BrokenSlab, DawnDefs, Mahaganapati, GanesaEmblem, artIds, glint, partProps, polar, round, tongue } from "./primitives";
 import type { ArtProps } from "./types";
 
 type Pt = { x: number; y: number };
@@ -70,42 +70,6 @@ const HIS_HEAD = "M 0 0 L -9 -4.6 L -6.4 0 L -9 4.6 Z";
 /* ── Viśukra's slab, broken ────────────────────────────────────────────── */
 
 const SLAB = { x: 454, y: 540, hu: 64, hv: 26, depth: 7 };
-const CUTS = [18, 96, 162, 232, 304];
-/** A point on the edge of the unit square (u, v in −1…1) in the direction a. */
-const edge = (deg: number) => {
-  const t = (deg * Math.PI) / 180;
-  const c = Math.cos(t);
-  const s = Math.sin(t);
-  const k = 1 / Math.max(Math.abs(c), Math.abs(s));
-  return { u: c * k, v: s * k };
-};
-const onSlab = ({ u, v }: { u: number; v: number }) => ({ x: round(SLAB.x + u * SLAB.hu), y: round(SLAB.y + v * SLAB.hv) });
-const PIECES = CUTS.map((a0, i) => {
-  const a1 = i === CUTS.length - 1 ? CUTS[0] + 360 : CUTS[i + 1];
-  const corners = [45, 135, 225, 315, 405, 495].filter((c) => c > a0 && c < a1);
-  const uv = [{ u: 0, v: 0 }, edge(a0), ...corners.map(edge), edge(a1)];
-  const pts = uv.map(onSlab);
-  const mid = (((a0 + a1) / 2) * Math.PI) / 180;
-  const off = { x: round(Math.cos(mid) * (8 + i * 2)), y: round(Math.sin(mid) * 5 - 2 - (i % 2) * 3) };
-  const top = pts.map((p, k) => `${k ? "L" : "M"} ${p.x} ${p.y}`).join(" ") + " Z";
-  const sides = pts.map((p, k) => {
-    const q = pts[(k + 1) % pts.length];
-    return `M ${p.x} ${p.y} L ${q.x} ${q.y} L ${q.x} ${q.y + SLAB.depth} L ${p.x} ${p.y + SLAB.depth} Z`;
-  });
-  return { i, top, sides, off, spin: round(((i * 7) % 5) - 2) };
-});
-/** The eight-angled figure: two squares, one turned through 45°. */
-const OCTA_R = 0.8;
-const octaPoint = (deg: number) => {
-  const t = (deg * Math.PI) / 180;
-  return onSlab({ u: OCTA_R * Math.cos(t), v: OCTA_R * Math.sin(t) });
-};
-const OCTAGRAM = [0, 45]
-  .map((start) => [0, 1, 2, 3].map((k) => octaPoint(start + k * 90)))
-  .map((sq) => sq.map((p, k) => `${k ? "L" : "M"} ${p.x} ${p.y}`).join(" ") + " Z")
-  .join(" ");
-const TRIDENT_AT = Array.from({ length: 8 }, (_, k) => octaPoint(k * 45));
-const TRIDENT = "M 0 0 V -9 M -3.4 -8.6 C -3.4 -5 -1.8 -4 0 -4 C 1.8 -4 3.4 -5 3.4 -8.6";
 /** The powder he made of it, thrown away on the wind. */
 const DUST = Array.from({ length: 34 }, (_, k) => ({
   x: round(SLAB.x + 30 + ((k * 41) % 150)),
@@ -160,11 +124,6 @@ export function AnsweringRain({ idPrefix = "sa31", active = null }: ArtProps) {
             <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.55 }} />
           </linearGradient>
         ))}
-        {PIECES.map((p) => (
-          <clipPath key={p.i} id={id(`piece-${p.i}`)}>
-            <path d={p.top} />
-          </clipPath>
-        ))}
         <DawnDefs id={id} />
       </defs>
 
@@ -205,14 +164,7 @@ export function AnsweringRain({ idPrefix = "sa31", active = null }: ArtProps) {
       <g {...part("yantra")}>
         <Mahaganapati x={GANESA.x} y={GANESA.y} k={GANESA_K} url={url} skip="tusk" />
         <ellipse cx={SLAB.x + 6} cy={SLAB.y + SLAB.hv + 16} rx={SLAB.hu + 22} ry={9} fill={url("shadow")} />
-        {PIECES.map((p) => (
-          <g key={p.i} transform={`translate(${p.off.x} ${p.off.y}) rotate(${p.spin} ${SLAB.x} ${SLAB.y})`}>
-            {p.sides.map((d, k) => (
-              <path key={k} d={d} fill="var(--art-stone)" stroke="var(--art-carve)" strokeWidth={0.6} strokeLinejoin="round" />
-            ))}
-            <path d={p.top} fill="var(--art-stone)" stroke="var(--gold-soft)" strokeWidth={0.8} strokeLinejoin="round" />
-          </g>
-        ))}
+        <BrokenSlab slab={SLAB} id={id} url={url} layer="stone" />
         <g transform={`translate(${SLAB.x - SLAB.hu - 34} ${SLAB.y - 4}) rotate(64) scale(1.5)`}>
           <GanesaEmblem name="tusk" />
         </g>
@@ -232,16 +184,7 @@ export function AnsweringRain({ idPrefix = "sa31", active = null }: ArtProps) {
 
       {/* Cut into the slab: the eight-angled figure and its eight tridents, broken with it */}
       <g {...part("figure")}>
-        {PIECES.map((p) => (
-          <g key={p.i} transform={`translate(${p.off.x} ${p.off.y}) rotate(${p.spin} ${SLAB.x} ${SLAB.y})`}>
-            <g clipPath={url(`piece-${p.i}`)}>
-              <path d={OCTAGRAM} stroke="var(--art-crimson)" strokeWidth={1} strokeLinejoin="round" />
-              {TRIDENT_AT.map((t, k) => (
-                <path key={k} d={TRIDENT} transform={`translate(${t.x} ${t.y + 3}) scale(0.8)`} stroke="var(--art-crimson)" strokeWidth={0.9} strokeLinecap="round" />
-              ))}
-            </g>
-          </g>
-        ))}
+        <BrokenSlab slab={SLAB} id={id} url={url} layer="figure" />
       </g>
     </svg>
   );

@@ -89,6 +89,22 @@ export function campakaPetal(l: number, w = 2.6, t = 2.2) {
   return `M 0 0 C ${-w} ${round(-l * 0.35)} ${round(-w * 0.5 + t * 0.4)} ${round(-l * 0.8)} ${t} ${-l} C ${round(w * 0.3 + t)} ${round(-l * 0.7)} ${round(w * 1.1)} ${round(-l * 0.3)} 0 0 Z`;
 }
 
+const CAMPAKA_PETALS = Array.from({ length: 9 }, (_, i) => ({ angle: i * 40 + (i % 2) * 6, l: i % 2 ? 11 : 13.5 }));
+
+/** A campaka seen face-on, centred on the origin and about 26 across: nine slender, twisted core petals edged in saffron round a saffron centre. */
+export function Campaka() {
+  return (
+    <g>
+      <g fill="var(--art-core)" stroke="var(--art-saffron)" strokeWidth={0.55}>
+        {CAMPAKA_PETALS.map((p, i) => (
+          <path key={i} d={campakaPetal(p.l)} transform={`rotate(${p.angle})`} />
+        ))}
+      </g>
+      <circle r={2.4} fill="var(--art-saffron)" />
+    </g>
+  );
+}
+
 /**
  * A row of pointed lotus petals standing on `base`, `count` of them across
  * `width` from `x`. A negative `height` turns them down.
@@ -3533,3 +3549,710 @@ export function Parasol({ cx, rim, s = 1 }: { cx: number; rim: number; s?: numbe
     </>
   );
 }
+
+/* ── A goat ────────────────────────────────────────────────────────────── */
+
+const GOAT_BODY =
+  "M -22 -26 C -12 -30 10 -30 18 -26 C 24 -23 25 -16 22 -12 C 18 -9 10 -9 4 -10 L -16 -10 C -22 -11 -26 -16 -26 -20 C -26 -23 -24 -25 -22 -26 Z";
+const GOAT_HEAD = "M 13 -27 C 18 -32 22 -38 26 -40 C 30 -41 34 -38 36 -34 C 37 -31 35 -29 32 -30 C 28 -30 24 -26 20 -21 Z";
+const GOAT_LEGS = [
+  { x: -18, dx: -3 },
+  { x: -12, dx: 2 },
+  { x: 12, dx: -2 },
+  { x: 18, dx: 4 },
+];
+/** The goat's forequarters and hindquarters, for markings drawn over its coat. */
+export const GOAT_FORE = "M 4 -28 C 12 -30 18 -28 21 -24 C 23 -19 21 -13 16 -11 C 10 -10 6 -12 4 -16 Z";
+export const GOAT_HIND = "M -22 -26 C -16 -28 -10 -28 -8 -24 C -6 -19 -10 -12 -16 -11 C -21 -12 -25 -16 -25 -20 C -25 -23 -24 -25 -22 -26 Z";
+
+/**
+ * A goat in stride, about 70 long, facing +x, hooves on the origin's line: an ivory coat edged
+ * in gold, backswept dark horns, a drooping ear, a beard, a raised tail. `saddle` gives it the
+ * dark saddle patch; `children` are markings drawn over the coat, under the head.
+ */
+export function Goat({ saddle = true, children }: { saddle?: boolean; children?: ReactNode }) {
+  return (
+    <>
+      {GOAT_LEGS.map((l, i) => (
+        <path key={i} d={`M ${l.x} -12 L ${l.x + l.dx} 0`} stroke="var(--art-ivory)" strokeWidth={2.4} strokeLinecap="round" />
+      ))}
+      {GOAT_LEGS.map((l, i) => (
+        <path key={`h${i}`} d={`M ${l.x + l.dx - 1.2} -0.6 H ${l.x + l.dx + 1.2}`} stroke="var(--art-hair)" strokeWidth={1.4} strokeLinecap="round" />
+      ))}
+      <path d="M -24 -23 L -31 -31 L -25 -21 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d={GOAT_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      {saddle && <path d="M -14 -28 C -8 -30 0 -29 4 -26 C 2 -21 -8 -20 -14 -22 Z" fill="var(--art-hair)" fillOpacity={0.7} />}
+      {children}
+      <path d={GOAT_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d="M 26 -40 C 22 -47 15 -47 12 -42" stroke="var(--art-hair)" strokeWidth={1.8} strokeLinecap="round" />
+      <path d="M 25 -36 C 21 -34 18 -31 17 -28" stroke="var(--art-hair)" strokeOpacity={0.8} strokeWidth={2.4} strokeLinecap="round" />
+      <path d="M 33 -30 L 32 -24 L 30 -29 Z" fill="var(--art-hair)" />
+      <circle cx={30} cy={-36} r={1} fill="var(--art-hair)" />
+    </>
+  );
+}
+
+/* ── A night lily ──────────────────────────────────────────────────────── */
+
+const LILY_PETALS = [-70, -50, -30, -12, 6, 24, 42, 62, 80].map((deg, i) => ({ deg, l: i % 2 ? 9 : 11 }));
+
+/**
+ * A white night lily (kumuda) open on the water, about 24 wide at s = 1, its base on the origin:
+ * nine pointed ivory petals fanned upward, gold-edged, round a turmeric heart, on a leaf-green
+ * shadow. The flower that opens to the moon.
+ */
+export function NightLily() {
+  return (
+    <>
+      <ellipse cy={1} rx={10} ry={2} fill="var(--leaf)" fillOpacity={0.6} />
+      {LILY_PETALS.map((p, k) => (
+        <path
+          key={k}
+          transform={`rotate(${p.deg})`}
+          d={`M 0 0 C -2.6 ${-p.l * 0.4} -2 ${-p.l * 0.8} 0 ${-p.l} C 2 ${-p.l * 0.8} 2.6 ${-p.l * 0.4} 0 0 Z`}
+          fill="var(--art-ivory)"
+          stroke="var(--gold)"
+          strokeWidth={0.4}
+        />
+      ))}
+      <circle cy={-2} r={2.4} fill="var(--art-turmeric)" stroke="var(--gold)" strokeWidth={0.4} />
+    </>
+  );
+}
+
+/* ── The full pot ──────────────────────────────────────────────────────── */
+
+const FULL_POT_BODY = "M -9 -20 C -26 -18 -28 6 -14 14 C -6 18 6 18 14 14 C 28 6 26 -18 9 -20 Z";
+const FULL_POT_NECK = "M -9 -20 L -7 -27 L 7 -27 L 9 -20 Z M -11 -29 L 11 -29 L 11 -26 L -11 -26 Z";
+const MANGO = [-60, -32, 0, 32, 60];
+
+/**
+ * The full pot (pūrṇa-kumbha), about 52 wide and 72 tall, its foot at y 17: a round gold pot with a
+ * narrow neck and rim, a vermilion band and dot, five mango leaves fanned from its mouth and a
+ * turmeric coconut on top.
+ */
+export function FullPot() {
+  return (
+    <>
+      {MANGO.map((deg) => (
+        <path key={deg} d="M 0 -27 C -4 -34 -4 -46 0 -54 C 4 -46 4 -34 0 -27 Z" transform={`rotate(${deg} 0 -27)`} fill="var(--leaf)" stroke="var(--gold)" strokeWidth={0.4} />
+      ))}
+      <ellipse cy={-38} rx={9} ry={11} fill="var(--art-turmeric)" stroke="var(--art-musk)" strokeWidth={0.6} />
+      <path d="M -6 -44 C -2 -47 2 -47 6 -44" stroke="var(--art-musk)" strokeWidth={0.6} strokeOpacity={0.7} />
+      <path d={FULL_POT_NECK} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.5} />
+      <path d={FULL_POT_BODY} fill="var(--gold)" stroke="var(--art-carve)" strokeWidth={0.6} />
+      <path d="M -22 -4 C -10 2 10 2 22 -4" stroke="var(--art-vermilion)" strokeWidth={1.4} />
+      <circle cy={-6} r={2.4} fill="var(--art-vermilion)" />
+    </>
+  );
+}
+
+/**
+ * The kula as the assembly of powers: eight small vermilion lights on a ring round `c`
+ * (`rx` across, `ry` deep, so it can lie on the ground), each joined to the next by a gold
+ * hairline bowed a little inward. `glow` is a vermilion radial gradient from the artwork.
+ * Spokes from the centre to each made a wheel.
+ */
+export function KulaAssembly({ c, rx, ry = rx, glow, r = 3 }: { c: Pt; rx: number; ry?: number; glow: string; r?: number }) {
+  const powers = Array.from({ length: 8 }, (_, k) => {
+    const t = ((90 - k * 45) * Math.PI) / 180;
+    return { x: round(c.x + rx * Math.cos(t)), y: round(c.y - ry * Math.sin(t)), k };
+  });
+  const joins = powers
+    .map((p, i) => {
+      const q = powers[(i + 1) % powers.length];
+      const m = { x: (p.x + q.x) / 2, y: (p.y + q.y) / 2 };
+      return `M ${p.x} ${p.y} Q ${round(m.x + (c.x - m.x) * 0.35)} ${round(m.y + (c.y - m.y) * 0.35)} ${q.x} ${q.y}`;
+    })
+    .join(" ");
+  const twinkle = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+  return (
+    <>
+      <path className="m-shimmer" d={joins} stroke="var(--gold)" strokeWidth={0.6} strokeOpacity={0.6} strokeLinejoin="round" />
+      {powers.map((p) => (
+        <g key={p.k} className={twinkle[p.k % 3]}>
+          <circle cx={p.x} cy={p.y} r={r * 3} fill={glow} />
+          <circle cx={p.x} cy={p.y} r={r} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={r / 5} />
+        </g>
+      ))}
+    </>
+  );
+}
+
+/**
+ * Kuṇḍalinī coiled: `turns` turns round `c`, seen a little from above (`tilt` as deep as wide),
+ * the radius narrowing from `r0` to `r1` and the coil rising `rise` as it goes, starting at the
+ * front. The path stops at the inner end; a caller can carry it on.
+ */
+export function coilPath(c: Pt, { r0 = 48, r1 = 36, turns = 3.5, tilt = 0.3, rise = 12 }: { r0?: number; r1?: number; turns?: number; tilt?: number; rise?: number } = {}) {
+  const n = Math.round(40 * turns);
+  const pts = Array.from({ length: n + 1 }, (_, i) => {
+    const t = i / n;
+    const a = Math.PI / 2 + t * turns * 2 * Math.PI;
+    const r = r0 - (r0 - r1) * t;
+    return { x: round(c.x + Math.cos(a) * r), y: round(c.y - rise * t + Math.sin(a) * r * tilt) };
+  });
+  return polyline(pts);
+}
+
+/** The coil's body along `d`: an `--art-vermilion` stroke with an `--art-saffron` one and an `--art-core` hairline inside. Taller and thicker, it read as a spring. */
+export function Coil({ d, w = 3.2 }: { d: string; w?: number }) {
+  const line = { strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+  return (
+    <>
+      <path d={d} stroke="var(--art-vermilion)" strokeWidth={w} {...line} />
+      <path d={d} stroke="var(--art-saffron)" strokeWidth={w * 0.56} {...line} />
+      <path d={d} stroke="var(--art-core)" strokeWidth={w * 0.16} {...line} />
+    </>
+  );
+}
+
+/* ── The obstruction-engine (vighna-yantra), broken ────────────────────── */
+
+/** A square stone slab seen from above at a slant: its centre, half-width `hu`, half-depth `hv`, and thickness. */
+export type Slab = { x: number; y: number; hu: number; hv: number; depth: number };
+
+const SLAB_CUTS = [18, 96, 162, 232, 304];
+const VIGHNA_TRIDENT = "M 0 0 V -9 M -3.4 -8.6 C -3.4 -5 -1.8 -4 0 -4 C 1.8 -4 3.4 -5 3.4 -8.6";
+/** A point on the edge of the unit square (u, v in −1…1) in the direction a. */
+const squareEdge = (deg: number) => {
+  const t = (deg * Math.PI) / 180;
+  const c = Math.cos(t);
+  const s = Math.sin(t);
+  const k = 1 / Math.max(Math.abs(c), Math.abs(s));
+  return { u: c * k, v: s * k };
+};
+
+/** The slab split from its centre into five wedges pushed apart, and the eight-angled figure cut into it. */
+function brokenSlab(slab: Slab) {
+  const onSlab = ({ u, v }: { u: number; v: number }) => ({ x: round(slab.x + u * slab.hu), y: round(slab.y + v * slab.hv) });
+  const pieces = SLAB_CUTS.map((a0, i) => {
+    const a1 = i === SLAB_CUTS.length - 1 ? SLAB_CUTS[0] + 360 : SLAB_CUTS[i + 1];
+    const corners = [45, 135, 225, 315, 405, 495].filter((c) => c > a0 && c < a1);
+    const pts = [{ u: 0, v: 0 }, squareEdge(a0), ...corners.map(squareEdge), squareEdge(a1)].map(onSlab);
+    const mid = (((a0 + a1) / 2) * Math.PI) / 180;
+    const off = { x: round(Math.cos(mid) * (8 + i * 2)), y: round(Math.sin(mid) * 5 - 2 - (i % 2) * 3) };
+    const top = pts.map((p, k) => `${k ? "L" : "M"} ${p.x} ${p.y}`).join(" ") + " Z";
+    const sides = pts.map((p, k) => {
+      const q = pts[(k + 1) % pts.length];
+      return `M ${p.x} ${p.y} L ${q.x} ${q.y} L ${q.x} ${q.y + slab.depth} L ${p.x} ${p.y + slab.depth} Z`;
+    });
+    return { i, top, sides, off, spin: round(((i * 7) % 5) - 2) };
+  });
+  const octaPoint = (deg: number) => {
+    const t = (deg * Math.PI) / 180;
+    return onSlab({ u: 0.8 * Math.cos(t), v: 0.8 * Math.sin(t) });
+  };
+  const octagram = [0, 45]
+    .map((start) => [0, 1, 2, 3].map((k) => octaPoint(start + k * 90)))
+    .map((sq) => sq.map((p, k) => `${k ? "L" : "M"} ${p.x} ${p.y}`).join(" ") + " Z")
+    .join(" ");
+  const tridents = Array.from({ length: 8 }, (_, k) => octaPoint(k * 45));
+  return { pieces, octagram, tridents };
+}
+
+/**
+ * The obstruction-engine broken: its stone pieces (`layer="stone"`), or the crimson eight-angled
+ * figure and eight tridents cut into it, clipped to each piece (`layer="figure"`), so the two can
+ * be parts of their own. Draw the stone first.
+ */
+export function BrokenSlab({ slab, id, url, layer }: { slab: Slab; id: (name: string) => string; url: (name: string) => string; layer: "stone" | "figure" }) {
+  const { pieces, octagram, tridents } = brokenSlab(slab);
+  const place = (p: (typeof pieces)[number]) => `translate(${p.off.x} ${p.off.y}) rotate(${p.spin} ${slab.x} ${slab.y})`;
+  if (layer === "stone")
+    return (
+      <>
+        {pieces.map((p) => (
+          <g key={p.i} transform={place(p)}>
+            {p.sides.map((d, k) => (
+              <path key={k} d={d} fill="var(--art-stone)" stroke="var(--art-carve)" strokeWidth={0.6} strokeLinejoin="round" />
+            ))}
+            <path d={p.top} fill="var(--art-stone)" stroke="var(--gold-soft)" strokeWidth={0.8} strokeLinejoin="round" />
+          </g>
+        ))}
+      </>
+    );
+  return (
+    <>
+      {pieces.map((p) => (
+        <clipPath key={p.i} id={id(`piece-${p.i}`)}>
+          <path d={p.top} />
+        </clipPath>
+      ))}
+      {pieces.map((p) => (
+        <g key={p.i} transform={place(p)}>
+          <g clipPath={url(`piece-${p.i}`)}>
+            <path d={octagram} stroke="var(--art-crimson)" strokeWidth={1} strokeLinejoin="round" />
+            {tridents.map((t, k) => (
+              <path key={k} d={VIGHNA_TRIDENT} transform={`translate(${t.x} ${t.y + 3}) scale(0.8)`} stroke="var(--art-crimson)" strokeWidth={0.9} strokeLinecap="round" />
+            ))}
+          </g>
+        </g>
+      ))}
+    </>
+  );
+}
+
+/* ── Cow (go) ──────────────────────────────────────────────────────────── */
+
+const COW_BODY = "M -28 -42 C -14 -48 22 -47 36 -42 C 44 -39 46 -30 43 -22 C 41 -15 35 -12 28 -12 L -22 -12 C -30 -14 -34 -22 -33 -30 C -33 -36 -31 -40 -28 -42 Z";
+const COW_HEAD = "M -26 -42 C -38 -43 -46 -37 -52 -29 C -58 -22 -64 -16 -63 -11 C -62 -8 -57 -8 -54 -11 C -48 -16 -40 -22 -32 -26 Z";
+const COW_HUMP = "M -30 -41 C -29 -51 -19 -53 -14 -45 Z";
+const COW_DEWLAP = "M -34 -27 C -35 -19 -31 -14 -24 -12 L -28 -18 Z";
+const COW_LEGS = [-24, -17, 27, 34];
+
+/**
+ * A white zebu cow in profile facing left, hooves on the origin's line, about 110 long, her head
+ * lowered (to lick a calf, or to graze): ivory, gold-edged, a turmeric belly shade, turmeric horns,
+ * a vermilion forehead band, a lotus udder. The calf is the same drawing flipped at 0.5.
+ */
+export function Cow() {
+  return (
+    <>
+      {COW_LEGS.map((x, i) => (
+        <path key={i} d={`M ${x} -14 L ${x + (i % 2 ? 0.6 : -0.6)} -1`} stroke="var(--art-ivory)" strokeWidth={3.6} strokeLinecap="round" />
+      ))}
+      {COW_LEGS.map((x, i) => (
+        <path key={i} d={`M ${x - 2} -2 H ${x + 2}`} stroke="var(--art-hair)" strokeWidth={1.6} strokeLinecap="round" />
+      ))}
+      <path d="M 42 -36 C 50 -30 50 -20 48 -10" stroke="var(--art-ivory)" strokeWidth={1.4} strokeLinecap="round" />
+      <path d="M 48 -12 C 46 -8 50 -5 50 -3 C 47 -4 46 -7 48 -12 Z" fill="var(--art-hair)" />
+      <path d={COW_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -20 -14 C 0 -10 20 -10 34 -14" stroke="var(--art-turmeric)" strokeWidth={2.4} strokeOpacity={0.35} strokeLinecap="round" />
+      <path d="M 10 -12 C 11 -8 17 -8 18 -12" fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
+      <path d={COW_DEWLAP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
+      <path d={COW_HUMP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
+      <path d={COW_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--art-turmeric)" strokeWidth={2} strokeLinecap="round" />
+      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--gold)" strokeWidth={0.5} strokeLinecap="round" />
+      <path d="M -42 -30 C -38 -32 -34 -31 -33 -28 C -36 -27 -39 -28 -42 -30 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={-50} cy={-22} r={1.2} fill="var(--art-hair)" />
+      <path d="M -63 -12 C -61 -9 -58 -9 -56 -11" stroke="var(--art-hair)" strokeWidth={0.8} strokeOpacity={0.6} />
+      <path d="M -44 -36 C -40 -38 -34 -38 -30 -36" stroke="var(--art-vermilion)" strokeWidth={1.4} strokeLinecap="round" />
+    </>
+  );
+}
+
+/* ── Gaṇeśa's mouse (mūṣaka) ───────────────────────────────────────────── */
+
+const MOUSE_BODY = "M -9 0 C -11 -4 -9 -9 -2 -10 C 4 -10.6 8 -8 10 -4.6 L 13.4 -2.4 C 12.6 -0.4 9 0 6 0 Z";
+/** A modaka, the sweet dumpling, its pleated tip up, about 7 across. */
+export const MODAKA = "M 0 -4.6 C 1.2 -3 3.4 -1.4 3.4 0.8 C 3.4 2.8 1.8 3.6 0 3.6 C -1.8 3.6 -3.4 2.8 -3.4 0.8 C -3.4 -1.4 -1.2 -3 0 -4.6 Z";
+
+/** Gaṇeśa's mouse in profile facing right, feet on the origin's line, about 26 long: musk, gold-edged, a round lotus ear, an ivory eye, a curled tail, a modaka in its mouth. */
+export function Mouse() {
+  return (
+    <g strokeLinejoin="round">
+      <path d="M -9 -1 C -15 0 -18 -4 -15 -8" stroke="var(--art-musk)" strokeWidth={0.9} strokeLinecap="round" />
+      <path d={MOUSE_BODY} fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={3.6} cy={-8.6} r={2.4} fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
+      <circle cx={8.4} cy={-5.4} r={0.7} fill="var(--art-ivory)" />
+      <path d={MODAKA} transform="translate(15.4 -2.6) scale(0.8)" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+    </g>
+  );
+}
+
+/* ── A palm-leaf book open on its stand ────────────────────────────────── */
+
+/**
+ * A palm-leaf book on a folding X-stand, its feet on y 36, about 84 across: a musk stand edged in
+ * gold over a crimson shelf, ivory leaves with turmeric edges between musk boards, two vermilion
+ * cords, and the top leaf laid open with carve writing and its two holes, the cord trailing to a
+ * gold bead. Filled in turmeric it read as gold bars.
+ */
+export function BookOnStand() {
+  return (
+    <g strokeLinejoin="round">
+      <ellipse cx={0} cy={36} rx={38} ry={4} fill="var(--art-musk)" fillOpacity={0.16} />
+      <path d="M -26 34 L 22 -2 M 26 34 L -22 -2" stroke="var(--art-musk)" strokeWidth={4.4} strokeLinecap="round" />
+      <path d="M -26 34 L 22 -2 M 26 34 L -22 -2" stroke="var(--gold)" strokeWidth={0.8} strokeOpacity={0.8} strokeLinecap="round" />
+      <path d="M -40 -6 L 40 -6 L 38 0 L -38 0 Z" fill="var(--art-crimson)" stroke="var(--gold)" strokeWidth={0.8} />
+      <path d="M -36 -9 L 36 -9 L 36 -6 L -36 -6 Z" fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M -35 -21 L 35 -21 L 35 -9 L -35 -9 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} />
+      <path d="M -35 -12 L 35 -12 M -35 -15 L 35 -15 M -35 -18 L 35 -18" stroke="var(--art-turmeric)" strokeWidth={0.6} strokeOpacity={0.8} />
+      <path d="M -36 -24 L 36 -24 L 36 -21 L -36 -21 Z" fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M -21 -25 L -21 -8 M -17 -25 L -17 -8 M 17 -25 L 17 -8 M 21 -25 L 21 -8" stroke="var(--art-vermilion)" strokeWidth={1.2} />
+      <g transform="translate(-2 -27) rotate(-4)">
+        <path d="M -38 0 L 38 0 L 38 -6 L -38 -6 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} />
+        <path d="M -33 -3 L -24 -3 M -12 -3 L 10 -3 M 24 -3 L 33 -3" stroke="var(--art-carve)" strokeWidth={0.9} strokeDasharray="2.4 1.2" />
+        <circle cx={-19} cy={-3} r={1.2} fill="var(--art-musk)" />
+        <circle cx={19} cy={-3} r={1.2} fill="var(--art-musk)" />
+      </g>
+      <path d="M 21 -16 C 30 -10 34 -2 30 6 C 28 12 34 16 42 12" stroke="var(--art-vermilion)" strokeWidth={1.1} strokeLinecap="round" />
+      <circle cx={42} cy={12} r={2} fill="var(--gold)" />
+    </g>
+  );
+}
+
+/* ── Wagtail (khañjana) ────────────────────────────────────────────────── */
+
+const WAGTAIL_BODY = "M 10 -10 C 14 -4 10 2 2 3 C -6 4 -12 2 -16 -1 L -32 -7 L -31 -9 L -14 -6 C -8 -10 2 -13 10 -10 Z";
+const WAGTAIL_BACK = "M 11 -9 C 4 -12 -6 -9 -14 -6 L -31 -9 L -32 -7 L -16 -1 C -10 -4 -2 -5 4 -5 C 8 -5 11 -7 11 -9 Z";
+
+/**
+ * A pied wagtail, the poets' bird for restless eyes, facing right, feet on y 10, about 55 long: an
+ * ivory body, an `--art-hair` back and round head with ivory brow and cheek stripes, a long thin
+ * tail, a dark beak, a core eye, carve legs. Put it on `m-dart` in a group of its own.
+ */
+export function Wagtail() {
+  return (
+    <>
+      <path d="M 0 2 L -1 10 M 4 2 L 5 10" stroke="var(--art-carve)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d={WAGTAIL_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
+      <path d={WAGTAIL_BACK} fill="var(--art-hair)" />
+      <path d="M 4 -6 C -2 -5 -8 -4 -14 -3" stroke="var(--art-ivory)" strokeWidth={1.2} strokeLinecap="round" />
+      <circle cx={13} cy={-13} r={5.4} fill="var(--art-hair)" stroke="var(--gold)" strokeWidth={0.5} />
+      <path d="M 9 -12 C 11 -9 15 -9 17.6 -11" stroke="var(--art-ivory)" strokeWidth={1.6} strokeLinecap="round" />
+      <path d="M 9.6 -16 C 12 -17.6 15 -17.4 17 -15.4" stroke="var(--art-ivory)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d="M 18 -14.4 L 23 -13.2 L 18 -12.2 Z" fill="var(--art-hair)" />
+      <circle cx={15} cy={-14} r={1.1} fill="var(--art-core)" />
+      <circle cx={15} cy={-14} r={0.55} fill="var(--art-hair)" />
+    </>
+  );
+}
+
+/* ── The five faces of Sadāśiva (pañcabrahma) ──────────────────────────── */
+
+export type FaceName = "isana" | "vamadeva" | "tatpurusa" | "aghora" | "sadyojata";
+/** Īśāna upward at the centre, then north, east, south and west, each in the colour its dhyāna gives it. */
+const FIVE_FACES: { name: FaceName; deg: number | null; fill: string }[] = [
+  { name: "isana", deg: null, fill: "var(--art-ivory)" },
+  { name: "vamadeva", deg: 90, fill: "var(--art-vermilion)" },
+  { name: "tatpurusa", deg: 0, fill: "var(--art-turmeric)" },
+  { name: "aghora", deg: 270, fill: "var(--art-hair)" },
+  { name: "sadyojata", deg: 180, fill: "var(--art-moon)" },
+];
+const FACE_FLAME = tongue(22, 9, 0);
+const FACE_FLAME_CORE = tongue(10, 4, 0);
+const FACE_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** The glows the five faces stand in, one per face. */
+export function FiveFacesDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      {FIVE_FACES.map((f) => (
+        <radialGradient key={f.name} id={id(`face-${f.name}`)}>
+          <stop offset="0" style={{ stopColor: f.fill, stopOpacity: 0.5 }} />
+          <stop offset="1" style={{ stopColor: f.fill, stopOpacity: 0 }} />
+        </radialGradient>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The five faces of Sadāśiva as five flames, laid out as the faces turn: Īśāna at `c`, larger,
+ * and the other four on a gold-soft ring of radius `r` round it, north at the top. `stress`
+ * draws one face larger and the rest fainter. Needs `FiveFacesDefs`. Spokes made a crosshair.
+ */
+export function FiveFaces({ c, r, url, stress }: { c: Pt; r: number; url: (name: string) => string; stress?: FaceName }) {
+  return (
+    <>
+      <circle cx={c.x} cy={c.y} r={r} stroke="var(--gold-soft)" strokeWidth={0.7} />
+      {FIVE_FACES.map((f, i) => {
+        const at = f.deg === null ? c : polar(c.x, c.y, r, f.deg);
+        const s = (f.deg === null ? 1.45 : 1.2) * (stress === f.name ? 1.4 : 1);
+        return (
+          <g key={f.name} transform={`translate(${round(at.x)} ${round(at.y)})`} opacity={stress && stress !== f.name ? 0.55 : undefined}>
+            <circle className={FACE_TWINKLE[i % 3]} r={24 * s} fill={url(`face-${f.name}`)} />
+            <g transform={`translate(0 ${round(9 * s)}) scale(${round(s)})`}>
+              <path d={FACE_FLAME} fill={f.fill} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+              <path d={FACE_FLAME_CORE} fill="var(--art-core)" fillOpacity={0.85} />
+            </g>
+          </g>
+        );
+      })}
+    </>
+  );
+}
+
+/* ── Conch (śaṅkha) ────────────────────────────────────────────────────── */
+
+const CONCH_BODY = "M -32 -1 L -25 -6 L -18 -10 C -8 -19 10 -19 22 -10 C 28 -5 32 0 34 5 C 26 5 18 9 8 12 C -4 15 -14 12 -20 6 L -26 3 Z";
+const CONCH_WHORLS = "M -25 -6 C -24 -3 -24 0 -26 3 M -18 -10 C -16 -4 -16 2 -20 6 M -8 -17 C -5 -8 -6 2 -10 11";
+const CONCH_RIDGES = "M 0 -18 C 4 -10 4 0 0 12 M 10 -16 C 14 -8 14 2 10 10 M 18 -12 C 21 -6 21 2 18 8";
+const CONCH_MOUTH = "M -6 9 C 6 3 20 1 32 4 C 22 8 8 12 -6 9 Z";
+
+/**
+ * A śaṅkha lying on its side, about 66 long, centred on the origin with its shadow on y 15: the
+ * stepped spire to the left, the lotus mouth open below, the canal at the right. The caller draws
+ * its sound.
+ */
+export function Conch() {
+  return (
+    <g strokeLinejoin="round">
+      <ellipse cx={2} cy={15} rx={30} ry={3.4} fill="var(--art-musk)" fillOpacity={0.14} />
+      <path d={CONCH_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={1.1} />
+      <path d={CONCH_WHORLS} stroke="var(--gold)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d={CONCH_RIDGES} stroke="var(--gold-soft)" strokeWidth={0.7} strokeLinecap="round" />
+      <path d={CONCH_MOUTH} fill="var(--lotus)" fillOpacity={0.75} stroke="var(--gold)" strokeWidth={0.8} />
+      <path d="M -2 9 C 8 5 18 4 28 5" stroke="var(--art-ivory)" strokeWidth={0.8} strokeLinecap="round" />
+      <path d="M -6 -12 C 0 -16 8 -16 14 -13" stroke="var(--art-core)" strokeWidth={1.2} strokeOpacity={0.8} strokeLinecap="round" />
+    </g>
+  );
+}
+
+/* ── The root mantra whole (mūlamantra) ────────────────────────────────── */
+
+const MANTRA_CLUSTERS = [
+  { name: "speech", fill: "var(--art-core)", o: [0.9, 0.3] },
+  { name: "desire", fill: "var(--lotus)", o: [0.85, 0.3] },
+  { name: "power", fill: "var(--art-vermilion)", o: [0.75, 0.26] },
+];
+const MANTRA_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** The glows of the mantra's three clusters, `speech`, `desire` and `power`. */
+export function MantraClusterDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      {MANTRA_CLUSTERS.map((c) => (
+        <radialGradient key={c.name} id={id(c.name)}>
+          <stop offset="0" style={{ stopColor: c.fill, stopOpacity: c.o[0] }} />
+          <stop offset="0.4" style={{ stopColor: c.fill, stopOpacity: c.o[1] }} />
+          <stop offset="1" style={{ stopColor: c.fill, stopOpacity: 0 }} />
+        </radialGradient>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The fifteen syllables of the root mantra on a dotted gold ring of radius `r` round `c`, clockwise
+ * from the top, each in its cluster's glow; the 5th, 11th and 15th are the ह्रीं that close the
+ * clusters, on small gold discs. Needs `MantraClusterDefs`.
+ */
+export function RootMantraRing({ c, r, url }: { c: Pt; r: number; url: (name: string) => string }) {
+  const syllables = Array.from({ length: 15 }, (_, k) => {
+    const cluster = k < 5 ? "speech" : k < 11 ? "desire" : "power";
+    return { ...polar(c.x, c.y, r, 90 - 12 - k * 24), cluster, seed: k === 4 || k === 10 || k === 14, k };
+  });
+  return (
+    <>
+      <circle cx={c.x} cy={c.y} r={r} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.55} strokeDasharray="1.5 3" strokeLinecap="round" />
+      {syllables.map((l) =>
+        l.seed ? (
+          <g key={l.k}>
+            <circle className="m-breathe" cx={l.x} cy={l.y} r={20} fill={url(l.cluster)} />
+            <circle cx={l.x} cy={l.y} r={9.4} fill="var(--gold)" stroke="var(--gold-soft)" strokeWidth={1} />
+            <text
+              x={l.x}
+              y={l.y + 0.8}
+              fontSize={9.4}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fill="var(--art-carve)"
+              style={{ fontFamily: "var(--font-tiro), serif" }}
+            >
+              ह्रीं
+            </text>
+          </g>
+        ) : (
+          <g key={l.k} className={MANTRA_TWINKLE[l.k % 3]}>
+            <circle cx={l.x} cy={l.y} r={11} fill={url(l.cluster)} />
+            <circle cx={l.x} cy={l.y} r={3.6} fill="var(--art-core)" stroke="var(--gold)" strokeWidth={0.7} />
+          </g>
+        ),
+      )}
+    </>
+  );
+}
+
+/* ── Her three eyes: moon, fire and sun (trinayanā) ────────────────────── */
+
+/** The glows and the flame gradient the three eyes need: `moon-glow`, `fire-glow`, `eye-fire` and `sun-glow`. */
+export function ThreeEyesDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      <linearGradient id={id("eye-fire")} x1={0} y1={0} x2={0} y2={-60} gradientUnits="userSpaceOnUse">
+        <stop offset="0" style={{ stopColor: "var(--art-vermilion)" }} />
+        <stop offset="0.55" style={{ stopColor: "var(--art-saffron)" }} />
+        <stop offset="1" style={{ stopColor: "var(--art-core)" }} />
+      </linearGradient>
+      <radialGradient id={id("fire-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("moon-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-moon)", stopOpacity: 0.6 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-moon)", stopOpacity: 0 }} />
+      </radialGradient>
+      <radialGradient id={id("sun-glow")}>
+        <stop offset="0" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0.55 }} />
+        <stop offset="1" style={{ stopColor: "var(--art-saffron)", stopOpacity: 0 }} />
+      </radialGradient>
+    </>
+  );
+}
+
+/**
+ * Her three eyes, never as eyes: a full moon (radius 14), an upright tongue of fire 60 tall standing
+ * on `fire`, and a rayed sun (radius 22), all times `s`. Set them on a slant, falling left to right,
+ * so no two are level with a third between or above them. Needs `ThreeEyesDefs`.
+ */
+export function ThreeEyes({ moon, fire, sun, url, s = 1 }: { moon: Pt; fire: Pt; sun: Pt; url: (name: string) => string; s?: number }) {
+  const mr = round(14 * s);
+  const sr = round(22 * s);
+  const rays = Array.from({ length: 12 }, (_, k) => ({ a: polar(sun.x, sun.y, sr + 5 * s, k * 30), b: polar(sun.x, sun.y, sr + (k % 2 ? 10 : 16) * s, k * 30), k }));
+  return (
+    <>
+      <circle cx={moon.x} cy={moon.y} r={round(mr * 2.6)} fill={url("moon-glow")} />
+      <circle cx={moon.x} cy={moon.y} r={mr} fill="var(--art-moon)" stroke="var(--gold)" strokeWidth={0.7} />
+      <circle cx={round(moon.x - 4 * s)} cy={round(moon.y - 3 * s)} r={round(mr * 0.4)} fill="var(--art-ivory)" fillOpacity={0.6} />
+      <circle className="m-breathe" cx={fire.x} cy={round(fire.y - 24 * s)} r={round(46 * s)} fill={url("fire-glow")} />
+      <g transform={`translate(${fire.x} ${fire.y}) scale(${s})`}>
+        <path className="m-flicker" d={tongue(60, 20, 2.4)} fill={url("eye-fire")} stroke="var(--gold)" strokeWidth={0.6} />
+        <path className="m-flicker m-late" d={tongue(34, 9, -1.4)} fill="var(--art-core)" />
+      </g>
+      <circle className="m-breathe" cx={sun.x} cy={sun.y} r={round(sr * 2.6)} fill={url("sun-glow")} />
+      {rays.map((r) => (
+        <path key={r.k} d={`M ${r.a.x} ${r.a.y} L ${r.b.x} ${r.b.y}`} stroke="var(--art-saffron)" strokeWidth={1.4} strokeLinecap="round" />
+      ))}
+      <circle cx={sun.x} cy={sun.y} r={sr} fill="var(--art-saffron)" stroke="var(--gold)" strokeWidth={0.8} />
+      <circle cx={sun.x} cy={sun.y} r={round(sr * 0.6)} fill="var(--art-core)" fillOpacity={0.7} />
+    </>
+  );
+}
+
+/* ── A wheel of the subtle body, drawn large ───────────────────────────── */
+
+/**
+ * A wheel of the subtle body drawn large, centred on `c`: `n` petals in `fill` at 0.5 with a gold
+ * edge (`yantraPetals(n, r0, r1)`), in `glow` if given, round a gold-ringed pericarp holding its
+ * element's sign as a dotted gold line. `letters`, if given, go on the petals clockwise from the
+ * top at radius `letterR`, each in `--sindura` on a small ivory disc; without the discs they
+ * vanish into the petals.
+ */
+export function CakraWheel({
+  c,
+  n,
+  r0,
+  r1,
+  fill,
+  sign,
+  glow,
+  letters,
+  letterR = round(r0 + (r1 - r0) * 0.6),
+}: {
+  c: Pt;
+  n: number;
+  r0: number;
+  r1: number;
+  fill: string;
+  sign: Tattva;
+  glow?: string;
+  letters?: string[];
+  letterR?: number;
+}) {
+  const at = (letters ?? []).map((ch, k) => ({ ch, ...polar(c.x, c.y, letterR, 90 - (k * 360) / n), k }));
+  return (
+    <>
+      {glow && <circle cx={c.x} cy={c.y} r={r1 + 24} fill={glow} />}
+      <g transform={`translate(${c.x} ${c.y})`}>
+        <path d={yantraPetals(n, r0, r1)} fill={fill} fillOpacity={0.5} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+        <circle r={r0} fill="var(--art-ivory)" fillOpacity={0.22} stroke="var(--gold)" strokeWidth={0.9} />
+        <path d={tattvaSign(sign, round(r0 * 0.76))} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.6} strokeDasharray="1.5 2.5" />
+      </g>
+      {at.map((l) => (
+        <circle key={l.k} cx={l.x} cy={l.y} r={9.4} fill="var(--art-ivory)" fillOpacity={0.7} stroke="var(--gold-soft)" strokeWidth={0.5} />
+      ))}
+      {at.map((l) => (
+        <text
+          key={l.k}
+          x={l.x}
+          y={l.y}
+          fontSize={l.ch.length > 1 ? 12 : 14}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill="var(--sindura)"
+          style={{ fontFamily: "var(--font-tiro), serif" }}
+        >
+          {l.ch}
+        </text>
+      ))}
+    </>
+  );
+}
+
+/* ── The faces counted down the body ───────────────────────────────────── */
+
+const COUNT_FACE = tongue(22, 9, 0);
+const COUNT_FACE_CORE = tongue(10, 4, 0);
+
+/**
+ * The wheels' faces as a count: six rows, one face more in each, centred on x and `dy` apart from
+ * `y0`, each face the five-faces flame. Row `lit` is the wheel's own, vermilion at 1.3 in `glow`;
+ * the rest are gold-soft outlines at 0.62, still to come.
+ */
+export function FaceCount({ x, y0, lit, glow, dy = 46, gap = 10 }: { x: number; y0: number; lit: number; glow: string; dy?: number; gap?: number }) {
+  const rows = [1, 2, 3, 4, 5, 6].map((n, i) => {
+    const g = n === lit ? gap * 1.4 : gap;
+    return { n, y: y0 + i * dy, xs: Array.from({ length: n }, (_, j) => round(x + (j - (n - 1) / 2) * g)) };
+  });
+  return (
+    <>
+      <circle className="m-breathe" cx={x} cy={y0 + (lit - 1) * dy - 8} r={22 + lit * 4} fill={glow} />
+      {rows.map((row) =>
+        row.xs.map((fx, j) =>
+          row.n === lit ? (
+            <g key={`${row.n}-${j}`} transform={`translate(${fx} ${row.y}) scale(1.3)`}>
+              <path d={COUNT_FACE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+              <path d={COUNT_FACE_CORE} fill="var(--art-core)" fillOpacity={0.85} />
+            </g>
+          ) : (
+            <g key={`${row.n}-${j}`} transform={`translate(${fx} ${row.y}) scale(0.62)`}>
+              <path d={COUNT_FACE} stroke="var(--gold-soft)" strokeWidth={1.2} strokeOpacity={0.75} strokeLinejoin="round" />
+            </g>
+          ),
+        ),
+      )}
+    </>
+  );
+}
+
+/* ── The seven layers of the body (dhātu) ──────────────────────────────── */
+
+/** What each layer is lit in: skin, blood, flesh, fat, bone, marrow, essence. */
+const TISSUE = ["var(--art-turmeric)", "var(--art-vermilion)", "var(--lotus)", "var(--art-moon)", "var(--art-ivory)", "var(--gold-soft)", "var(--art-core)"];
+
+/**
+ * The seven layers of the body from the skin in, a column from `x0` to `x1` of bands `h` deep from
+ * `y0` under slightly uneven boundaries, each tinted faintly in its own colour. Layer `lit` (0 is
+ * the skin) is the wheel's own, at 0.85 with a full gold edge, a core line along its top and
+ * `glow` behind it.
+ */
+export function BodyLayers({ x0, x1, y0, h = 16, lit, glow }: { x0: number; x1: number; y0: number; h?: number; lit: number; glow: string }) {
+  const edge = (y: number, phase: number) => Array.from({ length: 7 }, (_, i) => ({ x: round(x0 + ((x1 - x0) * i) / 6), y: round(y + Math.sin(i * 1.3 + phase) * 1.6) }));
+  const line = (ps: Pt[]) => ps.map((p, i) => `${i ? "L" : "M"} ${p.x} ${p.y}`).join(" ");
+  const layers = TISSUE.map((fill, k) => {
+    const upper = edge(y0 + k * h, k);
+    const lower = edge(y0 + (k + 1) * h, k + 1).reverse();
+    return { k, fill, upper: line(upper), d: `${line([...upper, ...lower])} Z` };
+  });
+  return (
+    <>
+      <ellipse cx={round((x0 + x1) / 2)} cy={y0 + lit * h} rx={round((x1 - x0) * 0.8)} ry={16} fill={glow} />
+      {layers.map((l) => (
+        <path
+          key={l.k}
+          d={l.d}
+          fill={l.fill}
+          fillOpacity={l.k === lit ? 0.85 : 0.16}
+          stroke="var(--gold)"
+          strokeWidth={l.k === lit ? 0.9 : 0.5}
+          strokeOpacity={l.k === lit ? 1 : 0.45}
+          strokeLinejoin="round"
+        />
+      ))}
+      <path d={layers[lit].upper} stroke="var(--art-core)" strokeWidth={1.6} strokeLinecap="round" />
+    </>
+  );
+}
+
+/* ── The fifty letters (varṇamālā) ─────────────────────────────────────── */
+
+/** The fifty letters, अ to क्ष: sixteen vowels, the thirty-three consonants and क्ष. */
+export const VARNAMALA = [
+  ..."अ आ इ ई उ ऊ ऋ ॠ ऌ ॡ ए ऐ ओ औ अं अः".split(" "),
+  ..."क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म".split(" "),
+  ..."य र ल व श ष स ह क्ष".split(" "),
+];
