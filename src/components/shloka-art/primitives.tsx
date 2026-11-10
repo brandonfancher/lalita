@@ -3832,3 +3832,22 @@ export function Cow() {
     </>
   );
 }
+
+/* ── Gaṇeśa's mouse (mūṣaka) ───────────────────────────────────────────── */
+
+const MOUSE_BODY = "M -9 0 C -11 -4 -9 -9 -2 -10 C 4 -10.6 8 -8 10 -4.6 L 13.4 -2.4 C 12.6 -0.4 9 0 6 0 Z";
+/** A modaka, the sweet dumpling, its pleated tip up, about 7 across. */
+export const MODAKA = "M 0 -4.6 C 1.2 -3 3.4 -1.4 3.4 0.8 C 3.4 2.8 1.8 3.6 0 3.6 C -1.8 3.6 -3.4 2.8 -3.4 0.8 C -3.4 -1.4 -1.2 -3 0 -4.6 Z";
+
+/** Gaṇeśa's mouse in profile facing right, feet on the origin's line, about 26 long: musk, gold-edged, a round lotus ear, an ivory eye, a curled tail, a modaka in its mouth. */
+export function Mouse() {
+  return (
+    <g strokeLinejoin="round">
+      <path d="M -9 -1 C -15 0 -18 -4 -15 -8" stroke="var(--art-musk)" strokeWidth={0.9} strokeLinecap="round" />
+      <path d={MOUSE_BODY} fill="var(--art-musk)" stroke="var(--gold)" strokeWidth={0.5} />
+      <circle cx={3.6} cy={-8.6} r={2.4} fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
+      <circle cx={8.4} cy={-5.4} r={0.7} fill="var(--art-ivory)" />
+      <path d={MODAKA} transform="translate(15.4 -2.6) scale(0.8)" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
+    </g>
+  );
+}
