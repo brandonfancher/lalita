@@ -13,7 +13,7 @@
  * artwork's entry.
  */
 
-import { PlaitLobes, PlaitTip, artIds, downAlong, partProps, plait, polar, round, tongue } from "./primitives";
+import { Cow, PlaitLobes, PlaitTip, artIds, downAlong, partProps, plait, polar, round, tongue } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── The fire maṇḍala, and her light in it ─────────────────────────────── */
@@ -57,11 +57,6 @@ const BLADES = [-4, -2, 0, 2, 4].map((dx, k) => ({ dx, h: 12 + ((k * 7) % 5) * 2
 /* ── The cow and her calf ──────────────────────────────────────────────── */
 
 const COW = { x: 476, y: 578 };
-const COW_BODY = "M -28 -42 C -14 -48 22 -47 36 -42 C 44 -39 46 -30 43 -22 C 41 -15 35 -12 28 -12 L -22 -12 C -30 -14 -34 -22 -33 -30 C -33 -36 -31 -40 -28 -42 Z";
-const COW_HEAD = "M -26 -42 C -38 -43 -46 -37 -52 -29 C -58 -22 -64 -16 -63 -11 C -62 -8 -57 -8 -54 -11 C -48 -16 -40 -22 -32 -26 Z";
-const COW_HUMP = "M -30 -41 C -29 -51 -19 -53 -14 -45 Z";
-const COW_DEWLAP = "M -34 -27 C -35 -19 -31 -14 -24 -12 L -28 -18 Z";
-const COW_LEGS = [-24, -17, 27, 34];
 const CALF = { x: 410, y: 578, s: 0.5 };
 
 /* ── The lotus leaf and its drop, the banner ───────────────────────────── */
@@ -92,31 +87,6 @@ const HAIR = plait(
 export function RingOfFire({ idPrefix = "sa77", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
   const part = partProps(active);
-
-  const cow = (
-    <>
-      {COW_LEGS.map((x, i) => (
-        <path key={i} d={`M ${x} -14 L ${x + (i % 2 ? 0.6 : -0.6)} -1`} stroke="var(--art-ivory)" strokeWidth={3.6} strokeLinecap="round" />
-      ))}
-      {COW_LEGS.map((x, i) => (
-        <path key={i} d={`M ${x - 2} -2 H ${x + 2}`} stroke="var(--art-hair)" strokeWidth={1.6} strokeLinecap="round" />
-      ))}
-      <path d="M 42 -36 C 50 -30 50 -20 48 -10" stroke="var(--art-ivory)" strokeWidth={1.4} strokeLinecap="round" />
-      <path d="M 48 -12 C 46 -8 50 -5 50 -3 C 47 -4 46 -7 48 -12 Z" fill="var(--art-hair)" />
-      <path d={COW_BODY} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-      <path d="M -20 -14 C 0 -10 20 -10 34 -14" stroke="var(--art-turmeric)" strokeWidth={2.4} strokeOpacity={0.35} strokeLinecap="round" />
-      <path d="M 10 -12 C 11 -8 17 -8 18 -12" fill="var(--lotus)" stroke="var(--gold)" strokeWidth={0.4} />
-      <path d={COW_DEWLAP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.6} strokeLinejoin="round" />
-      <path d={COW_HUMP} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.8} strokeLinejoin="round" />
-      <path d={COW_HEAD} fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.9} strokeLinejoin="round" />
-      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--art-turmeric)" strokeWidth={2} strokeLinecap="round" />
-      <path d="M -47 -31 C -50 -38 -47 -43 -42 -44 M -51 -28 C -56 -33 -57 -39 -53 -43" stroke="var(--gold)" strokeWidth={0.5} strokeLinecap="round" />
-      <path d="M -42 -30 C -38 -32 -34 -31 -33 -28 C -36 -27 -39 -28 -42 -30 Z" fill="var(--art-ivory)" stroke="var(--gold)" strokeWidth={0.5} />
-      <circle cx={-50} cy={-22} r={1.2} fill="var(--art-hair)" />
-      <path d="M -63 -12 C -61 -9 -58 -9 -56 -11" stroke="var(--art-hair)" strokeWidth={0.8} strokeOpacity={0.6} />
-      <path d="M -44 -36 C -40 -38 -34 -38 -30 -36" stroke="var(--art-vermilion)" strokeWidth={1.4} strokeLinecap="round" />
-    </>
-  );
 
   return (
     <svg viewBox="0 0 640 830" fill="none" className="block h-full w-full overflow-visible" aria-hidden="true">
@@ -220,8 +190,12 @@ export function RingOfFire({ idPrefix = "sa77", active = null }: ArtProps) {
       {/* The cow licking her calf */}
       <g {...part("cow")}>
         <ellipse cx={COW.x - 20} cy={COW.y} rx={74} ry={4} fill="var(--art-musk)" fillOpacity={0.22} />
-        <g transform={`translate(${CALF.x} ${CALF.y}) scale(${-CALF.s} ${CALF.s})`}>{cow}</g>
-        <g transform={`translate(${COW.x} ${COW.y})`}>{cow}</g>
+        <g transform={`translate(${CALF.x} ${CALF.y}) scale(${-CALF.s} ${CALF.s})`}>
+          <Cow />
+        </g>
+        <g transform={`translate(${COW.x} ${COW.y})`}>
+          <Cow />
+        </g>
       </g>
 
       {/* The fire maṇḍala, and her light seated in it */}
