@@ -4112,3 +4112,63 @@ export function ThreeEyes({ moon, fire, sun, url, s = 1 }: { moon: Pt; fire: Pt;
     </>
   );
 }
+
+/* ── A wheel of the subtle body, drawn large ───────────────────────────── */
+
+/**
+ * A wheel of the subtle body drawn large, centred on `c`: `n` petals in `fill` at 0.5 with a gold
+ * edge (`yantraPetals(n, r0, r1)`), in `glow` if given, round a gold-ringed pericarp holding its
+ * element's sign as a dotted gold line. `letters`, if given, go on the petals clockwise from the
+ * top at radius `letterR`, each in `--sindura` on a small ivory disc; without the discs they
+ * vanish into the petals.
+ */
+export function CakraWheel({
+  c,
+  n,
+  r0,
+  r1,
+  fill,
+  sign,
+  glow,
+  letters,
+  letterR = round(r0 + (r1 - r0) * 0.6),
+}: {
+  c: Pt;
+  n: number;
+  r0: number;
+  r1: number;
+  fill: string;
+  sign: Tattva;
+  glow?: string;
+  letters?: string[];
+  letterR?: number;
+}) {
+  const at = (letters ?? []).map((ch, k) => ({ ch, ...polar(c.x, c.y, letterR, 90 - (k * 360) / n), k }));
+  return (
+    <>
+      {glow && <circle cx={c.x} cy={c.y} r={r1 + 24} fill={glow} />}
+      <g transform={`translate(${c.x} ${c.y})`}>
+        <path d={yantraPetals(n, r0, r1)} fill={fill} fillOpacity={0.5} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+        <circle r={r0} fill="var(--art-ivory)" fillOpacity={0.22} stroke="var(--gold)" strokeWidth={0.9} />
+        <path d={tattvaSign(sign, round(r0 * 0.76))} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.6} strokeDasharray="1.5 2.5" />
+      </g>
+      {at.map((l) => (
+        <circle key={l.k} cx={l.x} cy={l.y} r={9.4} fill="var(--art-ivory)" fillOpacity={0.7} stroke="var(--gold-soft)" strokeWidth={0.5} />
+      ))}
+      {at.map((l) => (
+        <text
+          key={l.k}
+          x={l.x}
+          y={l.y}
+          fontSize={l.ch.length > 1 ? 12 : 14}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill="var(--sindura)"
+          style={{ fontFamily: "var(--font-tiro), serif" }}
+        >
+          {l.ch}
+        </text>
+      ))}
+    </>
+  );
+}

@@ -13,14 +13,13 @@
  * for readers in the registry, next to this artwork's entry.
  */
 
-import { Axe, Bell, ThreeEyes, ThreeEyesDefs, Trident, artIds, partProps, polar, round, tattvaSign, tongue, trident, yantraPetals } from "./primitives";
+import { Axe, Bell, CakraWheel, ThreeEyes, ThreeEyesDefs, Trident, artIds, partProps, round, tongue, trident } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── The wheel of purification ─────────────────────────────────────────── */
 
 const WHEEL = { x: 320, y: 548, r0: 34, r1: 96 };
 const VOWELS = ["अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ", "ॠ", "ऌ", "ॡ", "ए", "ऐ", "ओ", "औ", "अं", "अः"];
-const LETTERS = VOWELS.map((ch, k) => ({ ch, ...polar(WHEEL.x, WHEEL.y, 72, 90 - k * 22.5), k }));
 
 /* ── Her three eyes ────────────────────────────────────────────────────── */
 
@@ -90,29 +89,7 @@ export function ThroatWheel({ idPrefix = "sa98", active = null }: ArtProps) {
 
       {/* The throat's wheel: sixteen petals, the sixteen vowels, the sign of space */}
       <g {...part("visuddhi")}>
-        <circle cx={WHEEL.x} cy={WHEEL.y} r={WHEEL.r1 + 24} fill={url("wheel")} />
-        <g transform={`translate(${WHEEL.x} ${WHEEL.y})`}>
-          <path d={yantraPetals(16, WHEEL.r0, WHEEL.r1)} fill="var(--lotus)" fillOpacity={0.5} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
-          <circle r={WHEEL.r0} fill="var(--art-ivory)" fillOpacity={0.22} stroke="var(--gold)" strokeWidth={0.9} />
-          <path d={tattvaSign("space", 26)} stroke="var(--gold)" strokeWidth={0.7} strokeOpacity={0.6} strokeDasharray="1.5 2.5" />
-        </g>
-        {LETTERS.map((l) => (
-          <circle key={l.k} cx={l.x} cy={l.y} r={9.4} fill="var(--art-ivory)" fillOpacity={0.7} stroke="var(--gold-soft)" strokeWidth={0.5} />
-        ))}
-        {LETTERS.map((l) => (
-          <text
-            key={l.k}
-            x={l.x}
-            y={l.y}
-            fontSize={l.ch.length > 1 ? 12 : 14}
-            textAnchor="middle"
-            dominantBaseline="central"
-            fill="var(--sindura)"
-            style={{ fontFamily: "var(--font-tiro), serif" }}
-          >
-            {l.ch}
-          </text>
-        ))}
+        <CakraWheel c={WHEEL} n={16} r0={WHEEL.r0} r1={WHEEL.r1} fill="var(--lotus)" sign="space" glow={url("wheel")} letters={VOWELS} letterR={72} />
       </g>
 
       {/* Her light in the wheel, a light red */}
