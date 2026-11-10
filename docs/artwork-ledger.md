@@ -520,6 +520,10 @@ second time it is needed.
 | तत् far and त्वम् near, and the call (tat tvam ayī) | तत् small (15) in `--sindura` far off in the crown in a faint glow; त्वम् large (34) at the front; from it three `--sindura` arcs of a call opening toward her, fainter outward (`m-shimmer` by turns) | Inline (`five-sheaths.tsx`) | Shloka 91 |
 | A garland that does not wilt (Nala's gods) | Nineteen round flowers, vermilion and ivory by turns with turmeric hearts, on a leaf-green thread swung across the front of her seat, with core dewdrops on every fourth (`m-twinkle`) | Inline (`five-sheaths.tsx`) | Shloka 91 |
 | Her jewelled goblet (ratna-caṣaka) | Sets the Dhyāna's goblet: a gold cup about 32 wide at 1, a deep round bowl on a slim stem and a spread foot, edged in carve, with a band of three `Ruby`s round the bowl and one on the stem; filled to the brim with a crimson-to-vermilion wine, a core gleam on its surface, and one crimson drop running down the side (`m-shimmer`) | Inline (`five-sheaths.tsx`, with `Ruby`) | Shloka 91 |
+| Red lotuses for eyes reddened with rapture (madaghūrṇita-raktākṣa) | Two `OpenLotus`es without pads in `--art-vermilion` shaded `--art-crimson`, at 0.8 and 0.68, on tall tapering `--leaf` stalks from one faint `--art-moon` pool, leaning opposite ways (−12° and 14°) and of unequal height so they never pair up; each rocks from its stalk's foot on its own `m-sway` | Inline (`sandal-and-campaka.tsx`, with `OpenLotus`) | Shloka 92 |
+| A pāṭala bough (the trumpet-flower), for flushed cheeks | A tapering `--art-musk` bough hanging in from the top right of the crown, with lance `--leaf` leaves edged in gold; seven trumpets about 26 long at 1 on short stalks, each a narrow tube flaring to a lipped mouth, filled `--lotus` to `--art-ivory`, edged and veined in `--art-crimson` at low opacity, a `--leaf` calyx, each nodding on `m-sway` by turns | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
+| Sandal ground on its stone (candana-drava) | A round grinding stone seen at a slant (rx 62 at 1), `--art-stone` with a thickness and a gold rim, wet with a pool of paste (`--art-core` to `--art-turmeric`) and a little `--art-moon` water; on it a sandalwood log, `--art-turmeric` to `--art-ember` with musk grain and a pale cut end showing its rings; beside it a footed gold bowl of the paste. Fragrance is not drawn | Inline (`sandal-and-campaka.tsx`) | Shloka 92 |
+| Campaka heaped on a leaf | Seven face-on `Campaka`s at 0.8 to 1.05, squashed a little in height to lie on a slant, heaped on a `--leaf` leaf plate with a gold-soft midrib | Inline (`sandal-and-campaka.tsx`, with `Campaka`) | Shloka 92 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3440,6 +3444,28 @@ One entry per finished artwork, in the order they were made.
 - **Notes:** this title wraps, its first line reaching x ≈ 124 (176 at 1100px), so the card sits
   at y ≈ 225–438. This sets the canon for the Dhyāna's jewelled goblet, and moves it out of the
   anticipated list. One wedge cut through all five sheaths read as a pie; the cuts now step.
+
+### Shloka 92: Rolling eyes, flushed cheeks, sandal paste and campaka
+
+- **Component:** `sandal-and-campaka.tsx` (defs prefix `sa92`)
+- **Composition:** the verse looks at her face, so the picture keeps to what the poets set beside
+  one, and nothing is drawn that could read as a face. Under the card her light. At the left two
+  red lotuses on tall stalks rock unsteadily, each its own way; from the crown's top right a pāṭala
+  bough hangs its pale rose trumpets. In front, left to right as they are offered, a sandal log on
+  its wet grinding stone with a bowl of the paste, and campakas heaped on a leaf.
+- **Name → part:**
+  - Madaghūrṇitaraktākṣī → `eyes`: the two red lotuses and their pool
+  - Madapāṭalagaṇḍabhūḥ → `cheeks`: the pāṭala bough
+  - Candanadravadigdhāṅgī → `sandal`: the stone, the log, the paste and the bowl
+  - Cāmpeyakusumapriyā → `campaka`: the campakas on their leaf
+  - Intro, *red lotuses*, *pāṭala flowers*, *sandal paste* and *flowers* → each part
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light), `m-sway` (the lotuses, the trumpets, by turns).
+- **Notes:** this title wraps, its first line reaching x ≈ 46 (98 at 1100px), so the card sits at
+  y ≈ 225–438. The face-on campaka of Shloka 4 is promoted to `Campaka` for its second use. Scent
+  wisps rising from the paste and the flowers were dropped: fragrance is never drawn as wisps
+  (Shloka 10). The sandal bowl and the order, sandal then flowers, agree with Shloka 56's five
+  offerings. The bough first ran out past x 520 and dipped into the card; it was drawn in.
 
 ## Open questions
 

@@ -91,6 +91,7 @@ import { SunlitHeart } from "./sunlit-heart";
 import { PillarOfLight } from "./pillar-of-light";
 import { DawnGhat } from "./dawn-ghat";
 import { FiveSheaths } from "./five-sheaths";
+import { SandalAndCampaka } from "./sandal-and-campaka";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4342,6 +4343,44 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "mada",
         depicts:
           "Mada is wine and the rapture of it, and she abounds in it; the Dhyāna puts a jewelled goblet in her hand. At the right the goblet stands full to the brim, a drop running down its side.",
+      },
+    ],
+  },
+  "092": {
+    Art: SandalAndCampaka,
+    intro: (Spot) => (
+      <>
+        The verse works across her face and then turns from sight to smell, and the picture keeps to the
+        things the poets set beside a face: <Spot part="eyes">red lotuses</Spot> for her eyes,{" "}
+        <Spot part="cheeks">pāṭala flowers</Spot> for her cheeks. In front are the{" "}
+        <Spot part="sandal">sandal paste</Spot> and the <Spot part="campaka">flowers</Spot>, the third and
+        fourth services of worship, offered in that order just as the verse names them.
+      </>
+    ),
+    entries: [
+      {
+        nama: 432,
+        part: "eyes",
+        depicts:
+          "Her eyes are reddened and roll with rapture, and red lotuses are what the poets compare such eyes to. At the left two of them rock unsteadily on their tall stalks, each leaning its own way.",
+      },
+      {
+        nama: 433,
+        part: "cheeks",
+        depicts:
+          "Pāṭala is the pale rose of the trumpet-flower tree, and the wine has spread that colour over her cheeks. A bough of it hangs in from the top right, its trumpets nodding.",
+      },
+      {
+        nama: 434,
+        part: "sandal",
+        depicts:
+          "Her limbs are smeared with liquid sandal. In front a log of sandalwood lies on the wet stone it is ground on, the pale paste spread beneath it and gathered in a gold bowl beside.",
+      },
+      {
+        nama: 435,
+        part: "campaka",
+        depicts:
+          "Of all flowers she loves the campaka. Golden campakas lie heaped on a leaf at the right, offered after the sandal as worship requires.",
       },
     ],
   },
