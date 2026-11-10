@@ -4039,7 +4039,7 @@ export const ARTWORK: Record<string, Artwork> = {
         nama: 392,
         part: "one-body",
         depicts:
-          "She is the left half of Śrīkaṇṭha's body, and he the right. The flame is one, but its half on the viewer's left is his, white as ash with three bars of it and his crescent, and the half on the right is hers, vermilion, with a line of pearls.",
+          "She is the left half of Śrīkaṇṭha's body, and he the right. The flame is one, but its half on the viewer's left is his, white as ash with his rudrākṣa beads and his crescent, and the half on the right is hers, vermilion, with a line of pearls.",
       },
     ],
   },
