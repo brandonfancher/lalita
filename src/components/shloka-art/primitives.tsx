@@ -89,6 +89,22 @@ export function campakaPetal(l: number, w = 2.6, t = 2.2) {
   return `M 0 0 C ${-w} ${round(-l * 0.35)} ${round(-w * 0.5 + t * 0.4)} ${round(-l * 0.8)} ${t} ${-l} C ${round(w * 0.3 + t)} ${round(-l * 0.7)} ${round(w * 1.1)} ${round(-l * 0.3)} 0 0 Z`;
 }
 
+const CAMPAKA_PETALS = Array.from({ length: 9 }, (_, i) => ({ angle: i * 40 + (i % 2) * 6, l: i % 2 ? 11 : 13.5 }));
+
+/** A campaka seen face-on, centred on the origin and about 26 across: nine slender, twisted core petals edged in saffron round a saffron centre. */
+export function Campaka() {
+  return (
+    <g>
+      <g fill="var(--art-core)" stroke="var(--art-saffron)" strokeWidth={0.55}>
+        {CAMPAKA_PETALS.map((p, i) => (
+          <path key={i} d={campakaPetal(p.l)} transform={`rotate(${p.angle})`} />
+        ))}
+      </g>
+      <circle r={2.4} fill="var(--art-saffron)" />
+    </g>
+  );
+}
+
 /**
  * A row of pointed lotus petals standing on `base`, `count` of them across
  * `width` from `x`. A negative `height` turns them down.
