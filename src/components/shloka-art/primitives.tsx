@@ -3910,3 +3910,58 @@ export function Wagtail() {
     </>
   );
 }
+
+/* ── The five faces of Sadāśiva (pañcabrahma) ──────────────────────────── */
+
+export type FaceName = "isana" | "vamadeva" | "tatpurusa" | "aghora" | "sadyojata";
+/** Īśāna upward at the centre, then north, east, south and west, each in the colour its dhyāna gives it. */
+const FIVE_FACES: { name: FaceName; deg: number | null; fill: string }[] = [
+  { name: "isana", deg: null, fill: "var(--art-ivory)" },
+  { name: "vamadeva", deg: 90, fill: "var(--art-vermilion)" },
+  { name: "tatpurusa", deg: 0, fill: "var(--art-turmeric)" },
+  { name: "aghora", deg: 270, fill: "var(--art-hair)" },
+  { name: "sadyojata", deg: 180, fill: "var(--art-moon)" },
+];
+const FACE_FLAME = tongue(22, 9, 0);
+const FACE_FLAME_CORE = tongue(10, 4, 0);
+const FACE_TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
+
+/** The glows the five faces stand in, one per face. */
+export function FiveFacesDefs({ id }: { id: (name: string) => string }) {
+  return (
+    <>
+      {FIVE_FACES.map((f) => (
+        <radialGradient key={f.name} id={id(`face-${f.name}`)}>
+          <stop offset="0" style={{ stopColor: f.fill, stopOpacity: 0.5 }} />
+          <stop offset="1" style={{ stopColor: f.fill, stopOpacity: 0 }} />
+        </radialGradient>
+      ))}
+    </>
+  );
+}
+
+/**
+ * The five faces of Sadāśiva as five flames, laid out as the faces turn: Īśāna at `c`, larger,
+ * and the other four on a gold-soft ring of radius `r` round it, north at the top. `stress`
+ * draws one face larger and the rest fainter. Needs `FiveFacesDefs`. Spokes made a crosshair.
+ */
+export function FiveFaces({ c, r, url, stress }: { c: Pt; r: number; url: (name: string) => string; stress?: FaceName }) {
+  return (
+    <>
+      <circle cx={c.x} cy={c.y} r={r} stroke="var(--gold-soft)" strokeWidth={0.7} />
+      {FIVE_FACES.map((f, i) => {
+        const at = f.deg === null ? c : polar(c.x, c.y, r, f.deg);
+        const s = (f.deg === null ? 1.45 : 1.2) * (stress === f.name ? 1.4 : 1);
+        return (
+          <g key={f.name} transform={`translate(${round(at.x)} ${round(at.y)})`} opacity={stress && stress !== f.name ? 0.55 : undefined}>
+            <circle className={FACE_TWINKLE[i % 3]} r={24 * s} fill={url(`face-${f.name}`)} />
+            <g transform={`translate(0 ${round(9 * s)}) scale(${round(s)})`}>
+              <path d={FACE_FLAME} fill={f.fill} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+              <path d={FACE_FLAME_CORE} fill="var(--art-core)" fillOpacity={0.85} />
+            </g>
+          </g>
+        );
+      })}
+    </>
+  );
+}

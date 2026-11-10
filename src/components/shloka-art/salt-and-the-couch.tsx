@@ -14,7 +14,7 @@
  * artwork's entry.
  */
 
-import { BrahmaCouch, artIds, glint, hash, partProps, polar, round, tongue, yantraPetals } from "./primitives";
+import { BrahmaCouch, FiveFaces, FiveFacesDefs, artIds, glint, hash, partProps, round, yantraPetals } from "./primitives";
 import type { ArtProps } from "./types";
 
 const TWINKLE = ["m-twinkle", "m-twinkle m-late", "m-twinkle m-later"];
@@ -64,16 +64,6 @@ const BLISS = Array.from({ length: 6 }, (_, k) => {
 /* ── The five faces, in the crown ──────────────────────────────────────── */
 
 const FACES_AT = { x: CX, y: 94, r: 54 };
-/** Īśāna upward at the centre, then north, east, south and west, each in the colour its dhyāna gives it. */
-const FACES = [
-  { name: "isana", x: FACES_AT.x, y: FACES_AT.y, fill: "var(--art-ivory)", s: 1.45 },
-  { name: "vamadeva", ...polar(FACES_AT.x, FACES_AT.y, FACES_AT.r, 90), fill: "var(--art-vermilion)", s: 1.2 },
-  { name: "tatpurusa", ...polar(FACES_AT.x, FACES_AT.y, FACES_AT.r, 0), fill: "var(--art-turmeric)", s: 1.2 },
-  { name: "aghora", ...polar(FACES_AT.x, FACES_AT.y, FACES_AT.r, 270), fill: "var(--art-hair)", s: 1.2 },
-  { name: "sadyojata", ...polar(FACES_AT.x, FACES_AT.y, FACES_AT.r, 180), fill: "var(--art-moon)", s: 1.2 },
-];
-const FLAME = tongue(22, 9, 0);
-const FLAME_CORE = tongue(10, 4, 0);
 
 /* ── The salt in the bowl ──────────────────────────────────────────────── */
 
@@ -125,12 +115,7 @@ export function SaltAndTheCouch({ idPrefix = "sa61", active = null }: ArtProps) 
           <stop offset="0.45" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0.4 }} />
           <stop offset="1" style={{ stopColor: "var(--art-vermilion)", stopOpacity: 0 }} />
         </radialGradient>
-        {FACES.map((f) => (
-          <radialGradient key={f.name} id={id(`face-${f.name}`)}>
-            <stop offset="0" style={{ stopColor: f.fill, stopOpacity: 0.5 }} />
-            <stop offset="1" style={{ stopColor: f.fill, stopOpacity: 0 }} />
-          </radialGradient>
-        ))}
+        <FiveFacesDefs id={id} />
         <linearGradient id={id("brass")} x1={0} y1={BOWL.y} x2={0} y2={BOWL.y + 30} gradientUnits="userSpaceOnUse">
           <stop offset="0" style={{ stopColor: "var(--gold)" }} />
           <stop offset="1" style={{ stopColor: "var(--art-turmeric)" }} />
@@ -163,16 +148,7 @@ export function SaltAndTheCouch({ idPrefix = "sa61", active = null }: ArtProps) 
 
       {/* The five faces of Sadāśiva, which are her own form */}
       <g {...part("five")}>
-        <circle cx={FACES_AT.x} cy={FACES_AT.y} r={FACES_AT.r} stroke="var(--gold-soft)" strokeWidth={0.7} />
-        {FACES.map((f, i) => (
-          <g key={f.name} transform={`translate(${round(f.x)} ${round(f.y)})`}>
-            <circle className={TWINKLE[i % 3]} r={24 * f.s} fill={url(`face-${f.name}`)} />
-            <g transform={`translate(0 ${round(9 * f.s)}) scale(${f.s})`}>
-              <path d={FLAME} fill={f.fill} stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
-              <path d={FLAME_CORE} fill="var(--art-core)" fillOpacity={0.85} />
-            </g>
-          </g>
-        ))}
+        <FiveFaces c={FACES_AT} r={FACES_AT.r} url={url} />
       </g>
 
       {/* The couch of the five Brahmās, the four gods its legs and Sadāśiva its plank */}
