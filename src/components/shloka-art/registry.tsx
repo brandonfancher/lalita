@@ -90,6 +90,7 @@ import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
 import { SunlitHeart } from "./sunlit-heart";
 import { PillarOfLight } from "./pillar-of-light";
 import { DawnGhat } from "./dawn-ghat";
+import { FiveSheaths } from "./five-sheaths";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4283,6 +4284,64 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "twice-born",
         depicts:
           "The twice-born come down to the river at this hour and serve her. Their copper water vessels stand on the steps, and one, tipped at the water's edge, pours its water out toward the sun.",
+      },
+    ],
+  },
+  "091": {
+    Art: FiveSheaths,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="sheaths">her light within five sheaths</Spot>, seated on the principles of the world.
+      </>
+    ),
+    entries: [
+      {
+        nama: 424,
+        part: "tattvas",
+        depicts:
+          "The Śaiva and Śākta systems count thirty-six tattvas, the principles from earth up to Śiva by which the world is built, and she sits on them as on a seat. Under her a seat of thirty-six thin tiers, stone at the foot and light at the top.",
+      },
+      {
+        nama: 425,
+        part: "tat",
+        depicts:
+          "The word tattvamayī is divided into three names here, and they give the Chāndogya's great sentence, tat tvam asi, that thou art. Tat, that, is the far term: in the crown, small and distant, तत्.",
+      },
+      {
+        nama: 426,
+        part: "tvam",
+        depicts:
+          "Tvam, thou, is the near one. At the front, large and close, त्वम्.",
+      },
+      {
+        nama: 427,
+        part: "ayi",
+        depicts:
+          "In place of asi, thou art, the name has ayī, the particle of calling out: O! The statement has turned into an address. From त्वम् the rings of a call go out toward her.",
+      },
+      {
+        nama: 428,
+        part: "sheaths",
+        depicts:
+          "The Taittirīya Upaniṣad finds the self inside five sheaths, of food, breath, mind, understanding and bliss, each within the last; she abides within all five. Round her light five sheaths, each cut open at the front so the next shows through.",
+      },
+      {
+        nama: 429,
+        part: "boundless",
+        depicts:
+          "Her greatness has no sīmā, no boundary line of the kind that marks one field from the next. A boundary is drawn round the ground, and it is broken wherever one of her rays goes across it.",
+      },
+      {
+        nama: 430,
+        part: "young",
+        depicts:
+          "She is ever young. When Damayantī had to pick Nala out from among gods wearing his shape, she knew the gods because their garlands never wilted. Across the front of her seat a garland, still fresh, with dew on it.",
+      },
+      {
+        nama: 431,
+        part: "mada",
+        depicts:
+          "Mada is wine and the rapture of it, and she abounds in it; the Dhyāna puts a jewelled goblet in her hand. At the right the goblet stands full to the brim, a drop running down its side.",
       },
     ],
   },

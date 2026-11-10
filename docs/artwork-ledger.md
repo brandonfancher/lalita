@@ -514,6 +514,12 @@ second time it is needed.
 | Copper water vessels, one pouring (arghya) | Round-bellied vessels (lotā) about 24 tall with a neck and a flared turmeric lip, an ember-turmeric-ember copper gradient, a gold edge and a core sheen, four in a row on a step; a fifth tipped 70° at the water's edge toward the sun, a short moon stream from its mouth and two core rings on the water (`m-shimmer`) | Inline (`dawn-ghat.tsx`) | Shloka 90 |
 | The three vyāhṛtis on three levels | भूः, भुवः and स्वः in `--sindura` (`--font-tiro`, 20) one above another up the right side: on the steps, over the water, among the stars | Inline (`dawn-ghat.tsx`) | Shloka 90 |
 | Birds waking (cetanā) | Five `Goose`s at 1.3–1.7, mirrored to head right toward the sun and tipped up, wings by turns raised and lowered, rising from a clump of eleven `--leaf` reeds on the far bank | Inline (`dawn-ghat.tsx`, with `Goose`) | Shloka 90 |
+| A seat of the thirty-six principles (tattvāsana) | Thirty-six thin tiers 1.7 tall stacked under her, from 124 wide at the top to 270 at the foot: the top eleven (the pure and the veiling principles) `--art-core`, the next seven `--gold`, the next eight `--art-turmeric` and the lowest ten `--art-stone`, each edged in a hair of gold-soft, with a gold line along the top | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| The five sheaths (pañcakośa) | Five nested `eggPath`s round her light, from bliss inmost to food outermost: `--lotus`, `--art-saffron`, `--gold`, `--gold-soft` and `--leaf` lines 1.6 wide over a faint fill of the same; each cut open at the front right by a wedge (masks), the outer ones widest (88° down to 24°), so every one shows the one within. One wedge through all five read as a pie with a slice gone | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| A boundary broken by her rays (niḥsīma) | A dashed gold ellipse round the ground (rx 204, ry 72), and six gold rays from just outside her sheaths across it, fading out beyond; wherever a ray crosses, the line is broken (a mask) and a core `glint` stands in the gap (`m-twinkle`) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| तत् far and त्वम् near, and the call (tat tvam ayī) | तत् small (15) in `--sindura` far off in the crown in a faint glow; त्वम् large (34) at the front; from it three `--sindura` arcs of a call opening toward her, fainter outward (`m-shimmer` by turns) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| A garland that does not wilt (Nala's gods) | Nineteen round flowers, vermilion and ivory by turns with turmeric hearts, on a leaf-green thread swung across the front of her seat, with core dewdrops on every fourth (`m-twinkle`) | Inline (`five-sheaths.tsx`) | Shloka 91 |
+| Her jewelled goblet (ratna-caṣaka) | Sets the Dhyāna's goblet: a gold cup about 32 wide at 1, a deep round bowl on a slim stem and a spread foot, edged in carve, with a band of three `Ruby`s round the bowl and one on the stem; filled to the brim with a crimson-to-vermilion wine, a core gleam on its surface, and one crimson drop running down the side (`m-shimmer`) | Inline (`five-sheaths.tsx`, with `Ruby`) | Shloka 91 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -524,8 +530,8 @@ Not yet drawn. Whoever draws one first sets its canon here.
 
 - **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
   fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
-- **Her other hand-held things.** The Dhyāna names, but doesn't draw, the jewelled goblet and red
-  water-lily of its first verse, the golden lotus of its third, her three eyes (sun, moon, and fire
+- **Her other hand-held things.** The Dhyāna names, but doesn't draw, the red water-lily of its
+  first verse (its jewelled goblet is now drawn, at Shloka 91), the golden lotus of its third, her three eyes (sun, moon, and fire
   between them, Saundaryalaharī 48), and her red garland. Whoever draws one first sets its canon.
 
 ## Palette additions
@@ -3409,6 +3415,30 @@ One entry per finished artwork, in the order they were made.
 - **Notes:** this title wraps, its first line reaching x ≈ 134 (186 at 1100px), so the card sits
   at y ≈ 225–438. Here the sun is cit, the light by which things are known, as the Gāyatrī asks of
   it, rather than her own light. The night wash was halved and the filings redrawn as field lines.
+
+### Shloka 91: Seated on the principles, hidden in the sheaths, flushed with wine
+
+- **Component:** `five-sheaths.tsx` (defs prefix `sa91`)
+- **Composition:** under the card her light within five sheaths, each opened at the front so the
+  next shows, on a seat of thirty-six thin tiers with a fresh garland across it. Round the ground a
+  boundary broken wherever her rays cross it. तत् far off in the crown, त्वम् near at the front with
+  the rings of a call going out to her, and at the right her jewelled goblet, brimming.
+- **Name → part:**
+  - Tattvāsanā → `tattvas`: the seat
+  - Tat → `tat`: तत् and its glow
+  - Tvam → `tvam`: त्वम्
+  - Ayī → `ayi`: the call
+  - Pañcakośāntarasthitā → `sheaths`: the five sheaths and her light
+  - Niḥsīmamahimā → `boundless`: the boundary, the rays and the gaps
+  - Nityayauvanā → `young`: the garland and its dew
+  - Madaśālinī → `mada`: the goblet
+  - Intro, *her light within five sheaths* → `sheaths`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (her light), `m-shimmer` (the rays, the call, the drop), `m-twinkle`
+  (the gaps, the dew).
+- **Notes:** this title wraps, its first line reaching x ≈ 124 (176 at 1100px), so the card sits
+  at y ≈ 225–438. This sets the canon for the Dhyāna's jewelled goblet, and moves it out of the
+  anticipated list. One wedge cut through all five sheaths read as a pie; the cuts now step.
 
 ## Open questions
 
