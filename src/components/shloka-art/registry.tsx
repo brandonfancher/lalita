@@ -84,6 +84,7 @@ import { LevelsOfSpeech } from "./levels-of-speech";
 import { LifeVein } from "./life-vein";
 import { SecretRite } from "./secret-rite";
 import { TheStageLamp } from "./the-stage-lamp";
+import { HalfOfHisBody } from "./half-of-his-body";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -3998,6 +3999,47 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "moons",
         depicts:
           "Six excellences, lordship, strength, fame, fortune, knowledge and detachment, and she has each of them entire, not in parts. The moon fills a digit at a time; over the stage six moons, all of them full.",
+      },
+    ],
+  },
+  "085": {
+    Art: HalfOfHisBody,
+    intro: (Spot) => (
+      <>
+        Under the card, the innermost triangle of the yantra, where the Nityās are worshipped. At its heart is{" "}
+        <Spot part="one-body">one flame</Spot>, split down the middle.
+      </>
+    ),
+    entries: [
+      {
+        nama: 388,
+        part: "pot",
+        depicts:
+          "Nityaklinnā is the third of the Nityās, and klinna is plain wetness. An unglazed water pot of the kind set out at a roadside shed for anyone who asks is never dry: at the lower left one stands beaded and dripping, a cup beside it.",
+      },
+      {
+        nama: 389,
+        part: "similes",
+        depicts:
+          "Poets set a face beside the moon and a hand or a foot beside the lotus. Here the moon and the lotus keep to the far corner of the crown, and nothing is set beside her.",
+      },
+      {
+        nama: 390,
+        part: "blown-out",
+        depicts:
+          "Nirvāṇa is first what a flame does when it goes out. At the lower right a clay lamp has just been blown out, an ember on its wick and one thread of smoke going up.",
+      },
+      {
+        nama: 391,
+        part: "nityas",
+        depicts:
+          "The fifteen Nityās are the fifteen nights of the waxing moon, worshipped on the sides of the central triangle, five to a side. Here they wax round it in order, and she is the sixteenth in the middle, the whole of them.",
+      },
+      {
+        nama: 392,
+        part: "one-body",
+        depicts:
+          "She is the left half of Śrīkaṇṭha's body, and he the right. The flame is one, but its half on the viewer's left is his, white as ash with three bars of it and his crescent, and the half on the right is hers, vermilion, with a line of pearls.",
       },
     ],
   },

@@ -481,6 +481,11 @@ second time it is needed.
 | Muddy water clearing round a clearing-nut (kataka) | A deep gold bowl at 1.25 with a vermilion band and turmeric rim, musk water with ember swirls, and round an ember nut a clear moon ellipse (`m-breathe`) in two gold-soft rings | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
 | The six limbs of a mantra (ṣaḍaṅga) | Six small ivory discs at 1.25 on a dotted gold-soft ellipse round the flame, each in a core glow (`m-twinkle`, staggered), with its sign: a vermilion heart, a saffron head, a saffron flame-shaped crest, turmeric armour, an eye, a hair-dark spearhead | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
 | Six full moons | Across the crown in a shallow arc, y ≈ 36–48: moon discs with gold edges, ivory highlights and faint core haloes (`m-twinkle`, staggered) | Inline (`the-stage-lamp.tsx`) | Shloka 84 |
+| The Nityās on the triangle (tithi-nityā) | Fifteen moons on the sides of a downward triangle (circumradius 128, a 1.3 `--gold` edge, a faint saffron field and a `--gold-soft` inner line), five to a side at a tenth, three tenths and so on of each side, nights 1–15 clockwise from the top-left corner, growing from radius 7.3 to 11.5, each turned so its lit side faces the centre (the moon canon: `--art-hair` at 0.3, the `litPart` in `--art-moon`, a gold rim, a small moon glow, `m-twinkle` by turns). She is the sixteenth, at the centre. Paper-coloured discs behind the moons turned into dark buttons by lamplight | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| Her light as half his body (ardhanārī) | One flame-shaped light about 120 tall, its sides drawn in near the tip, split by a gold seam: the viewer's left his, an `--art-moon` to `--art-ivory` gradient with a `--gold-soft` line inside its edge, a row of `--art-ember` rudrākṣa beads edged in musk just outside it, and his crescent (the fourth night's `litPart`, horns up) on the tip; the right hers, `--art-saffron` to `--art-vermilion` with a core line inside its edge and a row of `--art-moon` pearls outside it. One gold outline round both, a core point on the seam (`m-flicker`) and an `--art-glow` glow (`m-breathe`). Three ash bars and a kumkum dot on the halves made it a face | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| A water pot that is never dry (prapā) | An unglazed clay pot at 1.32, about 76 wide: a crimson-vermilion-ember-crimson gradient across it, a gold edge, a dashed ivory band, a musk-dark mouth, an ivory sheen; twenty-six `--art-moon` beads of water edged in gold-soft scattered over the belly (some `m-twinkle`) and three tapering drips, on a twisted turmeric straw ring, over a wet `--art-hair` patch on the ground; a small gold cup of water beside it. The pot set out at a roadside shed for anyone who asks | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| A lamp just blown out (nirvāṇa) | A clay lamp at 1.6 (the crimson-ember gradient, a gold edge, musk oil), an ivory wick with an `--art-ember` glow at its end (`m-breathe`), and one thread of smoke from the wick, a `taper` through a smooth curve widening from 1.2 to 7, `--gold-soft` fading out upward (`m-shimmer`). Drawn through a few points without `through`, it read as a crack | Inline (`half-of-his-body.tsx`) | Shloka 85 |
+| The poets' standards, kept apart (upamāna) | The full moon (r 28, a gold rim, a gold-soft limb shade, `MoonDeer` at 0.4 and half opacity, a moon glow) and a red `OpenLotus` at 0.86, at the crown's far right, with nothing near her | Inline (`half-of-his-body.tsx`) | Shloka 85 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3228,6 +3233,30 @@ One entry per finished artwork, in the order they were made.
   curtains, so the stage here has no dancer, seat or curtain, only what was left on it. Everything
   first read too small; the lamp, crown, cymbals and bowl were scaled up, and the bowl deepened
   when it read as a plate. In the chant miniature the lamp and its glow carry it.
+
+### Shloka 85: The ever-moist Nityā, and half of Śiva's body
+
+- **Component:** `half-of-his-body.tsx` (defs prefix `sa85`)
+- **Composition:** under the card the innermost triangle, fifteen moons waxing round its sides,
+  and at its heart one flame split down a gold seam: his half white with rudrākṣa beads and his
+  crescent on the tip, hers vermilion with pearls. At the lower left an unglazed water pot beaded
+  and dripping, a cup beside it; at the lower right a clay lamp just blown out, one thread of smoke
+  going up. The moon and a red lotus keep to the crown's far right.
+- **Name → part:**
+  - Nityaklinnā → `pot`: the pot, its ring, the wet ground and the cup
+  - Nirupamā → `similes`: the moon and the lotus
+  - Nirvāṇasukhadāyinī → `blown-out`: the lamp and its smoke
+  - Nityāṣoḍaśikārūpā → `nityas`: the triangle and its fifteen moons
+  - Śrīkaṇṭhārdhaśarīriṇī → `one-body`: the split flame, its beads, crescent and glow
+  - Intro, *one flame* → `one-body`
+- **Palette:** no additions.
+- **Motion:** `m-twinkle` (the moons, the beads of water), `m-breathe` (the glow, the ember),
+  `m-flicker` (the point on the seam), `m-shimmer` (the smoke).
+- **Notes:** this title stays on one line, reaching x ≈ 397 (449 at 1100px), so the card sits at
+  y ≈ 184–396 and the crown is only free to the right. Shloka 21 already has a red and white
+  bindu; here the two halves are a whole flame. The first flame was too small and looked like a
+  face, with ash bars, a kumkum dot and the crescent on its side; the beads along the edges carry
+  the two halves instead, and the crescent moved to the tip.
 
 ## Open questions
 
