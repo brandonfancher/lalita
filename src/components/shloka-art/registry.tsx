@@ -87,6 +87,7 @@ import { TheStageLamp } from "./the-stage-lamp";
 import { HalfOfHisBody } from "./half-of-his-body";
 import { RootNature } from "./root-nature";
 import { MoonlightOnTheLilies } from "./moonlight-on-the-lilies";
+import { SunlitHeart } from "./sunlit-heart";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4130,6 +4131,46 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "moonlight",
         depicts:
           "Mahākāmeśa's eyes are night lilies, which open only to the moon, and she is the moonlight that gladdens them. Her light falls on the pool in rings and a path of light, and two white lilies stand open in it.",
+      },
+    ],
+  },
+  "088": {
+    Art: SunlitHeart,
+    intro: (Spot) => (
+      <>
+        Under the card, <Spot part="form">her light as the liṅga</Spot> on its seat. Round it, Śiva stands next to her in four ways.
+      </>
+    ),
+    entries: [
+      {
+        nama: 404,
+        part: "sunbeams",
+        depicts:
+          "She is the unbroken stream of the sun's rays that splits the darkness lodged in her devotees' hearts: not one flash but light that keeps arriving. From the sun at the right of the crown seven rays come down through the lattice of a dark stone chamber and lie across its floor.",
+      },
+      {
+        nama: 405,
+        part: "envoy",
+        depicts:
+          "In the Devī Māhātmya she sends Śiva as her messenger to the demon kings Śumbha and Niśumbha, and takes the name for herself. At the right his trident goes down the road toward their dark fort, her sealed palm-leaf letter tied to it with a red cord.",
+      },
+      {
+        nama: 406,
+        part: "worship",
+        depicts:
+          "Śiva, whom others worship, worships her. At the front his crescent and two of the bilva leaves that are offered to him are laid at her footprints.",
+      },
+      {
+        nama: 407,
+        part: "form",
+        depicts:
+          "A mūrti is a form that has set into shape, the form in which the formless is seen, and she is Śiva's. Under the card his liṅga stands on its seat, made of her light.",
+      },
+      {
+        nama: 408,
+        part: "auspicious",
+        depicts:
+          "Here śiva is the plain word again, auspicious, and she is the one who makes things so. At the front right a full pot is set on a threshold freshly marked with turmeric and kumkum.",
       },
     ],
   },

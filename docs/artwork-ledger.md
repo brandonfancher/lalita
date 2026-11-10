@@ -495,6 +495,12 @@ second time it is needed.
 | Wave, foam and bubble, all one water | At a pool's edge the water rising in a curling wave, an `--art-moon`-to-`--leaf` gradient edged in gold-soft with a core line inside its face, ivory flecks of foam at the crest (some `m-twinkle`), and three bubbles at its foot, faint moon discs with a gold-soft rim and a core highlight | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
 | The rope taken for a snake (rajju-sarpa) | One rope lying in an S on the ground, a `StillLamp` at 2.4 by its frayed end with a glow: inside the lamp's reach (a radial mask) it is a turmeric rope with a carve twist and a gold line; beyond it the same path is an `--art-hair` band with a dotted moon line and a rounded head, a snake. No eye, no tongue | Inline (`moonlight-on-the-lilies.tsx`) | Shloka 87 |
 | Her light as moonlight on the night lilies (kaumudī) | Her light as a moon-white glow (Shloka 79's gradient) above a pool (an `--art-moon` radial fill and a gold-soft inner line), five Moonlight rings round her, a short path of core dashes on the water below her (`m-twinkle`), three notched pads, and two `NightLily`s at 3 and 2.4, one behind the other, never side by side as a pair of eyes | Inline (`moonlight-on-the-lilies.tsx`, with `NightLily`) | Shloka 87 |
+| The sun's unbroken stream of rays into the heart (bhānu-santati) | The sun's full disc (r 24, its two gold rings, 32 `sunRays` alternating vermilion and saffron, a glow) at (456, 100), and seven parallel rays 7 apart from it to a lattice in the right wall of a dark chamber: saffron at the sun fading out by y 250, fading in again from y 420 in gold, so the miniature, with no card over the middle, shows light and not a pole. Inside, the rays go on as core lines to the floor and pool there in a core-saffron glow (`m-breathe`); the lattice is a musk slot with core bars where the rays pass | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| The heart as a dark stone chamber | An arched room in section, about 134 wide and 140 tall: `--art-stone` walls edged in gold with gold-soft courses, the inside a musk-to-hair gradient | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| Śiva's envoy (Śivadūtī) | `trident` at 0.9 tipped 14° forward on a road going up to the right toward a small dark fort (a musk wall with merlons at 0.6), and tied under its prongs with a vermilion cord, a sealed palm-leaf letter: an ivory strip edged in turmeric, two vermilion bands and a vermilion seal. The road is a faint turmeric strip with gold-soft edges and a dashed middle line; filled only, it read as a spotlight | Inline (`sunlit-heart.tsx`, with `Trident`) | Shloka 88 |
+| Śiva's offering at her feet | Her `Footprint`s at 1.5, and laid beside them, never under them, his crescent (`litPart(5, 13)` in `--art-moon`, gold-edged, tipped on its side) to the left and two trifoliate `--leaf` bilva leaves to the right. A crescent under the feet with a leaf each side read as a smiling face | Inline (`sunlit-heart.tsx`, with `Footprint`) | Shloka 88 |
+| Her light as the liṅga (Śivamūrti) | A round-topped column 34 wide and 58 tall filled with a saffron-core-glow gradient, gold-edged, on a stone pīṭha with its spout to the right, a carve-shaded basin and a lower stone drum, all gold-edged, in a glow (`m-breathe`). No marks on the column | Inline (`sunlit-heart.tsx`) | Shloka 88 |
+| A threshold made auspicious | A stone sill about 92 wide, a turmeric band along its top and a row of alternating kumkum and turmeric dots on its face, with a `FullPot` standing on it | Inline (`sunlit-heart.tsx`, with `FullPot`) | Shloka 88 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -3315,6 +3321,31 @@ One entry per finished artwork, in the order they were made.
   lilies with a cone; here the moonlight is rings and a path on the water, and the lilies are
   larger and staggered so they never pair up as eyes. The first rope was too small to tell a rope
   from a snake, and the first smoke was lost in dark mode until a gold-soft line went inside it.
+
+### Shloka 88: Sunlight into the heart, and four ways of standing next to Śiva
+
+- **Component:** `sunlit-heart.tsx` (defs prefix `sa88`)
+- **Composition:** the sun at the crown's right sends seven parallel rays down behind the card
+  and through the lattice of a dark stone chamber at the lower left, where they lie across its
+  floor. Under the card her light stands as the liṅga on its seat. To the right his trident goes
+  up a road toward a dark fort with her sealed letter tied to it; in front, his crescent and bilva
+  leaves lie beside her footprints, and a full pot stands on a threshold marked with turmeric and
+  kumkum.
+- **Name → part:**
+  - Bhaktahārdatamobhedabhānumadbhānusantatiḥ → `sunbeams`: the sun, the rays, the chamber,
+    its lattice and the light on its floor
+  - Śivadūtī → `envoy`: the road, the fort, the trident and the letter
+  - Śivārādhyā → `worship`: the footprints, the crescent and the bilva leaves
+  - Śivamūrtiḥ → `form`: the liṅga of her light, its seat and its glow
+  - Śivaṅkarī → `auspicious`: the threshold, its marks and the full pot
+  - Intro, *her light as the liṅga* → `form`
+- **Palette:** no additions.
+- **Motion:** `m-breathe` (the sun's glow, the light on the floor, the liṅga's glow), `m-shimmer`
+  (the rays).
+- **Notes:** this title wraps, its first line reaching x ≈ 152 (204 at 1100px), so the card sits
+  at y ≈ 225–438. Shloka 41's full pot was promoted to `FullPot` here. The sun first stood at
+  x 478, where 1100px cut its rays. The rays were first a thin bundle that in the miniature read
+  as a pole; they are wider apart now and leave out the stretch the card covers.
 
 ## Open questions
 
