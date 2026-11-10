@@ -13,7 +13,7 @@
  * for readers in the registry, next to this artwork's entry.
  */
 
-import { Axe, Bell, CakraWheel, ThreeEyes, ThreeEyesDefs, Trident, artIds, partProps, round, tongue, trident } from "./primitives";
+import { Axe, Bell, CakraWheel, FaceCount, ThreeEyes, ThreeEyesDefs, Trident, artIds, partProps, trident } from "./primitives";
 import type { ArtProps } from "./types";
 
 /* ── The wheel of purification ─────────────────────────────────────────── */
@@ -46,14 +46,7 @@ const AXE = { x: 428, y: 644, s: 1.5, turn: -14 };
 
 /* ── The faces, counted down the body ──────────────────────────────────── */
 
-const COUNT = { x: 162, y0: 478, dy: 46, gap: 10 };
-const ROWS = [1, 2, 3, 4, 5, 6].map((n, i) => ({
-  n,
-  y: COUNT.y0 + i * COUNT.dy,
-  xs: Array.from({ length: n }, (_, j) => round(COUNT.x + (j - (n - 1) / 2) * COUNT.gap)),
-}));
-const FACE = tongue(22, 9, 0);
-const FACE_CORE = tongue(10, 4, 0);
+const COUNT = { x: 162, y0: 478 };
 
 export function ThroatWheel({ idPrefix = "sa98", active = null }: ArtProps) {
   const { id, url } = artIds(idPrefix);
@@ -131,21 +124,7 @@ export function ThroatWheel({ idPrefix = "sa98", active = null }: ArtProps) {
 
       {/* The faces counted down the body: one lit, the rest to come */}
       <g {...part("one-face")}>
-        <circle className="m-breathe" cx={COUNT.x} cy={COUNT.y0 - 8} r={26} fill={url("face")} />
-        {ROWS.map((row) =>
-          row.xs.map((x, j) =>
-            row.n === 1 ? (
-              <g key={`${row.n}-${j}`} transform={`translate(${x} ${row.y}) scale(1.3)`}>
-                <path d={FACE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
-                <path d={FACE_CORE} fill="var(--art-core)" fillOpacity={0.85} />
-              </g>
-            ) : (
-              <g key={`${row.n}-${j}`} transform={`translate(${x} ${row.y}) scale(0.62)`}>
-                <path d={FACE} stroke="var(--gold-soft)" strokeWidth={1.2} strokeOpacity={0.75} strokeLinejoin="round" />
-              </g>
-            ),
-          ),
-        )}
+        <FaceCount x={COUNT.x} y0={COUNT.y0} lit={1} glow={url("face")} />
       </g>
     </svg>
   );

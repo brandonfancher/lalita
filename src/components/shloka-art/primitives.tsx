@@ -4172,3 +4172,39 @@ export function CakraWheel({
     </>
   );
 }
+
+/* ── The faces counted down the body ───────────────────────────────────── */
+
+const COUNT_FACE = tongue(22, 9, 0);
+const COUNT_FACE_CORE = tongue(10, 4, 0);
+
+/**
+ * The wheels' faces as a count: six rows, one face more in each, centred on x and `dy` apart from
+ * `y0`, each face the five-faces flame. Row `lit` is the wheel's own, vermilion at 1.3 in `glow`;
+ * the rest are gold-soft outlines at 0.62, still to come.
+ */
+export function FaceCount({ x, y0, lit, glow, dy = 46, gap = 10 }: { x: number; y0: number; lit: number; glow: string; dy?: number; gap?: number }) {
+  const rows = [1, 2, 3, 4, 5, 6].map((n, i) => {
+    const g = n === lit ? gap * 1.4 : gap;
+    return { n, y: y0 + i * dy, xs: Array.from({ length: n }, (_, j) => round(x + (j - (n - 1) / 2) * g)) };
+  });
+  return (
+    <>
+      <circle className="m-breathe" cx={x} cy={y0 + (lit - 1) * dy - 8} r={22 + lit * 4} fill={glow} />
+      {rows.map((row) =>
+        row.xs.map((fx, j) =>
+          row.n === lit ? (
+            <g key={`${row.n}-${j}`} transform={`translate(${fx} ${row.y}) scale(1.3)`}>
+              <path d={COUNT_FACE} fill="var(--art-vermilion)" stroke="var(--gold)" strokeWidth={0.7} strokeLinejoin="round" />
+              <path d={COUNT_FACE_CORE} fill="var(--art-core)" fillOpacity={0.85} />
+            </g>
+          ) : (
+            <g key={`${row.n}-${j}`} transform={`translate(${fx} ${row.y}) scale(0.62)`}>
+              <path d={COUNT_FACE} stroke="var(--gold-soft)" strokeWidth={1.2} strokeOpacity={0.75} strokeLinejoin="round" />
+            </g>
+          ),
+        ),
+      )}
+    </>
+  );
+}
