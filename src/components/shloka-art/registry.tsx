@@ -97,6 +97,7 @@ import { MotherOfTwoSons } from "./mother-of-two-sons";
 import { FireAndTheGarland } from "./fire-and-the-garland";
 import { TooFineToSee } from "./too-fine-to-see";
 import { MotherOfAdepts } from "./mother-of-adepts";
+import { ThroatWheel } from "./throat-wheel";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4686,6 +4687,49 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "yasasvini",
         depicts:
           "Renowned: the only name here that says how she looks from outside. Fame in this poetry is white, and at the front right a white conch sounds.",
+      },
+    ],
+  },
+  "098": {
+    Art: ThroatWheel,
+    intro: (Spot) => (
+      <>
+        Here the hymn goes inside the body, and this verse sets the pattern the next six repeat: the
+        wheel she sits in, her colour, her eyes, her weapons, her faces. Her seat is{" "}
+        <Spot part="visuddhi">the throat’s wheel of purification</Spot>, and the last name begins a count
+        the section will keep: <Spot part="one-face">one face</Spot> here, and one more at every wheel
+        below.
+      </>
+    ),
+    entries: [
+      {
+        nama: 475,
+        part: "visuddhi",
+        depicts:
+          "Viśuddhi, thorough cleansing, is the wheel at the base of the throat, where Śiva held the poison. Its sixteen lotus petals carry the sixteen vowels, round the sign of its element, space.",
+      },
+      {
+        nama: 476,
+        part: "ruddy",
+        depicts: "She is of a light red hue. In the heart of the wheel her light burns a pale red.",
+      },
+      {
+        nama: 477,
+        part: "three-eyes",
+        depicts:
+          "Three eyes are Śiva’s mark, read as the sun, the moon and the fire between them. Across the sky they stand on a slant: the moon, the fire, the sun.",
+      },
+      {
+        nama: 478,
+        part: "khatvanga",
+        depicts:
+          "The khaṭvāṅga is the leg of a bed with a skull fixed on top, the staff of the skull-bearing ascetics, brought from the cremation ground into the body. It stands planted at the right with a red ribbon and a bell. The name ends in “and the rest”, and the manuals never agree on the rest: behind it, fainter, a trident and an axe.",
+      },
+      {
+        nama: 479,
+        part: "one-face",
+        depicts:
+          "She has one face, and the number is the first of a count: the goddess of each wheel below has one more, up to six. At the left one flame is lit, and under it the rows of two, three, four, five and six wait.",
       },
     ],
   },
