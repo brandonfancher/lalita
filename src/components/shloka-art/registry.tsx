@@ -94,6 +94,7 @@ import { FiveSheaths } from "./five-sheaths";
 import { SandalAndCampaka } from "./sandal-and-campaka";
 import { KulaHollow } from "./kula-hollow";
 import { MotherOfTwoSons } from "./mother-of-two-sons";
+import { FireAndTheGarland } from "./fire-and-the-garland";
 
 /** Artwork adorning each shloka page, keyed by module id, with its note for readers. */
 export const ARTWORK: Record<string, Artwork> = {
@@ -4505,6 +4506,62 @@ export const ARTWORK: Record<string, Artwork> = {
         part: "obstacles",
         depicts:
           "Destroying obstacles is Gaṇeśa’s own office: in her war he shattered the demon’s engine of obstruction. The verse that began by calling her his mother ends by giving the title to her, and in front the engine lies broken, a gleam at the break.",
+      },
+    ],
+  },
+  "095": {
+    Art: FireAndTheGarland,
+    intro: (Spot) => (
+      <>
+        The verse opens hot and ends fragrant, and the picture runs the same way from the crown down:
+        from <Spot part="three-eyes">her three eyes</Spot> and <Spot part="tejas">her light edged with
+        flame</Spot> to a <Spot part="hamsini">swan on still water</Spot>, the{" "}
+        <Spot part="mata">one plain word</Spot>, and the <Spot part="malaya">sandal hills</Spot> of the
+        south.
+      </>
+    ),
+    entries: [
+      {
+        nama: 452,
+        part: "tejas",
+        depicts:
+          "Tejas is first the edge of a blade and the point of a flame: light with force in it. Under the card her light is edged all round with points of flame.",
+      },
+      {
+        nama: 453,
+        part: "three-eyes",
+        depicts:
+          "She has three eyes, which the tradition reads as the moon, the sun and the fire between them, the third the one that opened on Kāma and burned him. Across the crown, on a slant, the moon, a tongue of fire, and the sun.",
+      },
+      {
+        nama: 454,
+        part: "lolaksi",
+        depicts:
+          "Lolākṣī is the goddess of restless eyes, lola being anything that will not stay put, and she takes her form at will. The poets’ bird for restless eyes is the wagtail, and at the left one darts on its stone, never still.",
+      },
+      {
+        nama: 455,
+        part: "malini",
+        depicts:
+          "Mālinī is the garlanded one, and also the arrangement of the alphabet in which vowels and consonants are strung together out of their grammatical order, as flowers of different kinds are in a garland. Across the middle hangs that garland, its letters in the Mālinī order beginning न ऋ ॠ ऌ ॡ, with flowers between.",
+      },
+      {
+        nama: 456,
+        part: "hamsini",
+        depicts:
+          "The haṃsa is the bird that can drink the milk out of milk and water, the self that moves through the worlds, and the sound of the breath, haṃ out and sa in. At the front left a swan rests on still water.",
+      },
+      {
+        nama: 457,
+        part: "mata",
+        depicts:
+          "Mātā, mother: after hundreds of long compounds the hymn sets down two syllables and lets them stand. In front, the word itself, with nothing round it.",
+      },
+      {
+        nama: 458,
+        part: "malaya",
+        depicts:
+          "She lives on Malaya, the mountain of the south that supplied sandalwood to all India; acala, the unmoving, is the ordinary word for a mountain. At the right its green hills rise, dotted with sandal trees.",
       },
     ],
   },

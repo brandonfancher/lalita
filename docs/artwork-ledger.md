@@ -536,6 +536,11 @@ second time it is needed.
 | Svastika drawn on the ground (svasti) | A right-turning svastika in `--art-vermilion` 3 wide, flattened to lie on the ground (1.3 by 0.55), with a turmeric dot edged in gold in each quarter | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
 | A still pool (śānti) | A small pool in an `--art-stone` kerb edged in gold-soft, `--art-moon` water, and her light lying in it unbroken: one core streak in a faint core halo, no ripples | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
 | A pot full to the brim (tuṣṭi) | A round `--art-ember` earthen pot edged in gold with a turmeric band, its mouth an `--art-ivory` surface of milk level with the rim and a core sheen, nothing spilling | Inline (`mother-of-two-sons.tsx`) | Shloka 94 |
+| Her three eyes: moon, sun, and fire between (trinayanā) | Never as eyes, and never two round things level with a third between or above them: set out on a slant across the crown, falling left to right and each a different size, an `--art-moon` full moon (r 14, gold-edged, an ivory highlight, a moon glow), a tall upright tongue of fire (`tongue(60, 20)`, vermilion to saffron to core, edged in gold, with a core tongue inside, `m-flicker`, in a saffron glow), and a saffron sun (r 22, a core heart, twelve short saffron rays, in a breathing glow) | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| Her light, burning (tejas) | Thirteen `tongue`s of flame round the upper part of her light, rising rather than radiating (each turned a quarter of the way out), tallest at the top, on a vermilion-to-saffron-to-core gradient (`m-flicker` by turns). Tongues pointing straight out all round made a second sun | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| The garland of letters (Mālinī) | A `--leaf` thread sagging across the middle, with thirteen letters of the Mālinī order (न ऋ ॠ ऌ ॡ थ च ध ई ण उ ऊ ब, the vowels and consonants interwoven) hung on it as beads, each in `--sindura` (Tiro Devanagari, 17) on a faint core disc edged in gold, and between them a `BLOSSOM`, `--lotus` and `--art-saffron` by turns | Inline (`fire-and-the-garland.tsx`, with `BLOSSOM`) | Shloka 95 |
+| The plain word: माता | The word alone in `--sindura` (Tiro Devanagari, 40) at the front, with nothing round it | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
+| The hills of Malaya and their sandal trees | Two ranges of low rounded `--leaf` hills at the right, far and near, each fading downward under a faint gold ridge line, with six sandal trees on their slopes: a short `--art-musk` trunk under a crown of three `--leaf` ellipses dotted with two `--art-crimson` berries, swaying | Inline (`fire-and-the-garland.tsx`) | Shloka 95 |
 
 When all four weapons appear together, the upper hands hold the noose (left) and the goad
 (right), as in Shloka 2, and the lower hands hold the bow (left) and the arrows (right).
@@ -547,9 +552,8 @@ Not yet drawn. Whoever draws one first sets its canon here.
 - **Kāma's fish banner (mīna-ketana).** Shloka 6's commentary gives Kāma both the archway and the
   fish flag; the artwork draws only the fish. If his banner is drawn, fly the Shloka 6 fish on it.
 - **Her other hand-held things.** The Dhyāna names, but doesn't draw, the red water-lily of its
-  first verse (its jewelled goblet is drawn, at Shloka 91), the golden lotus of its third, her
-  three eyes (sun, moon, and fire between them, Saundaryalaharī 48), and her red garland.
-  Whoever draws one first sets its canon.
+  first verse, the golden lotus of its third, and her red garland (its jewelled goblet is drawn
+  at Shloka 91, and her three eyes at Shloka 95). Whoever draws one first sets its canon.
 
 ## Palette additions
 
@@ -3534,6 +3538,32 @@ One entry per finished artwork, in the order they were made.
   promoted: Shloka 31's broken engine (`BrokenSlab`), Shloka 77's cow (`Cow`), Shloka 55's mouse
   (`Mouse`) and Shloka 53's book on its stand (`BookOnStand`). The spear first stood down into the
   sheaf, and the mouse floated with no ground under it.
+
+### Shloka 95: Fire, a third eye, the garland of letters, the swan, and one plain word
+
+- **Component:** `fire-and-the-garland.tsx` (defs prefix `sa95`)
+- **Composition:** the verse opens hot and ends fragrant, and the picture runs from the crown
+  down. In the crown her three eyes on a slant: the moon, the fire, the sun. Under the card her
+  light burning. At the left a wagtail on its stone; across the middle the garland of letters in
+  the Mālinī order. In front a swan on still water, the word माता, and at the right the hills of
+  Malaya with their sandal trees.
+- **Name → part:**
+  - Tejovatī → `tejas`: her light and its flames
+  - Trinayanā → `three-eyes`: the moon, the fire and the sun
+  - Lolākṣīkāmarūpiṇī → `lolaksi`: the wagtail and its stone
+  - Mālinī → `malini`: the garland of letters
+  - Haṃsinī → `hamsini`: the swan and its water
+  - Mātā → `mata`: the word
+  - Malayācalavāsinī → `malaya`: the hills and the sandal trees
+  - Intro, *her three eyes* → `three-eyes`; *her light edged with flame* → `tejas`; *swan on still
+    water* → `hamsini`; *one plain word* → `mata`; *sandal hills* → `malaya`
+- **Palette:** no additions.
+- **Motion:** `m-flicker` (the fire, her flames), `m-breathe` (the fire's and sun's glows, her
+  light), `m-dart` (the wagtail), `m-sway` (the sandal trees).
+- **Notes:** this title wraps, its first line reaching x ≈ 126 and its second x ≈ 181 (233 at
+  1100px), so the card sits at y ≈ 225–438. This sets the canon for her three eyes, and moves them
+  out of the anticipated list: never drawn as eyes, and never level pairs. Shloka 74's wagtail is
+  promoted to `Wagtail`. Flames pointing straight out from her light made a second sun.
 
 ## Open questions
 
